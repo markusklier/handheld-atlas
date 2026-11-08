@@ -1,0 +1,26 @@
+name: Checks
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: python scripts/validate.py
+      - run: python scripts/quality_audit.py
+      - run: python scripts/triage_media.py
+      - run: node --test tests/core.test.cjs
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: python scripts/build.py

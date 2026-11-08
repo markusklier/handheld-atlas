@@ -1,0 +1,85 @@
+name: Propose catalog updates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7,19 * * *'
+    - cron: '23 8 * * 6' # Weekly deep new-repository and source-media discovery
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: catalog-source-update
+  cancel-in-progress: false
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Fetch update branch for safe force-with-lease
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin automation/source-updates >/dev/null 2>&1; then
+            git fetch origin automation/source-updates
+          fi
+      - uses: actions/cache@v6
+        with:
+          path: .cache/github.json
+          key: github-source-cache-${{ github.run_id }}
+          restore-keys: github-source-cache-
+      - name: Fetch metadata, not executable artifacts
+        id: sync
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_sources.py
+      - name: Discover previously unknown repositories (review-only)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 8 * * 6'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_repositories.py
+      - name: Extract original-project screenshot candidates (review-only)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 8 * * 6'
+        continue-on-error: true
+        run: python scripts/discover_media.py --fetch
+      - name: Deep targeted Minecraft search (GitHub + Modrinth + optional CurseForge)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 8 * * 6'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: python scripts/deep_research.py --game minecraft --live --budget 9
+      - name: Rotate through other curated games (review only)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 8 * * 6'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: python scripts/deep_research.py --batch 3 --live --budget 4
+      - name: Collect unapproved screenshot leads
+        run: python scripts/triage_media.py
+      - name: Update catalog quality audit without changing verified game routes
+        run: python scripts/quality_audit.py
+      - run: python scripts/validate.py
+      - name: Open or update review pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          git config user.name "Atlas source monitor"
+          git config user.email "atlas-source-monitor@users.noreply.github.com"
+          git checkout -B automation/source-updates
+          git add data/updates.json data/candidates.json data/media_candidates.json data/research_queue.json data/media_review.json data/quality_report.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh upstream metadata and unreviewed discovery candidates"
+          git push --force-with-lease origin HEAD:automation/source-updates
+          if [ -z "$(gh pr list --head automation/source-updates --state open --json number --jq '.[0].number // empty')" ]; then
+            gh pr create --base main --head automation/source-updates \
+              --title "Review source changes and discovery candidates" \
+              --body "Metadata/research candidates only. Review data/updates.json, candidates.json, research_queue.json, media_candidates.json, media_review.json and quality_report.json. New links and images remain pending; catalog.json is NOT automatically changed. Run the Checks workflow before merging."
+          fi
