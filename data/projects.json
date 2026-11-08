@@ -293,7 +293,8 @@
         "pokemon-sword",
         "pokemon-shield",
         "cult-of-the-lamb",
-        "minecraft"
+        "minecraft",
+        "crash-team-racing"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -428,7 +429,8 @@
         "grand-theft-auto-iv",
         "grand-theft-auto-v",
         "tomb-raider",
-        "the-elder-scrolls-v-skyrim"
+        "the-elder-scrolls-v-skyrim",
+        "hollow-knight"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -1435,6 +1437,246 @@
       "description": "",
       "games": [
         "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "rejuv-dual",
+      "name": "Rejuv Dual",
+      "kind": "port",
+      "url": "https://github.com/Enecchii/rejuv-dual",
+      "repo": "Enecchii/rejuv-dual",
+      "description": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten sowie Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken einschließlich AP und Effektivität. Android-Player auf mkxp-z-Basis; automatischer Vorab-Build vom 8. November 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Enecchii/rejuv-dual/main/README.md))",
+      "games": [
+        "pokemon-rejuvenation"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "xenogears-link",
+      "name": "Xenogears-Link",
+      "kind": "companion",
+      "url": "https://github.com/Nihilspire/Xenogears-Link",
+      "repo": "Nihilspire/Xenogears-Link",
+      "description": "Live-Gruppenwerte, Ausrüstung von Piloten und Gears, Inventar, Gold und Spielzeit; aus der Spielgeometrie erzeugte Raumkarten mit Position, Ausgängen, Schätzen und Etagen. Dazu Kampfinformationen und optionale Wegführung. Liest RetroArch Nightly über Network Commands; Veröffentlichungen vom Oktober 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Nihilspire/Xenogears-Link/main/README.md))",
+      "games": [
+        "xenogears"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ds-forever",
+      "name": "DS Forever",
+      "kind": "companion",
+      "url": "https://github.com/Jreese702/DS-Forever",
+      "repo": "Jreese702/DS-Forever",
+      "description": "Controllerorientierte Begleitoberfläche mit Zaubern und Radialmenüs, Taschen sowie Welt- und Innenraumkarten. Karten zeigen unter anderem Quests, beobachtete NPCs und Ressourcen. Für WoW Forever auf dem Thor; alternativ PC-Streaming mit Companion unten. Erste öffentliche Version am 13. Oktober 2026. ([github.com](https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0))",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "gba-ds",
+      "name": "GBA DS",
+      "kind": "emulator",
+      "url": "https://github.com/kyannon/gba-ds",
+      "repo": "kyannon/gba-ds",
+      "description": "Zeigt bei diesen Spielen die laufend aktualisierte spielinterne Karte separat an; weitere Spielprofile nutzen Bildschirm 2 etwa für Renn-HUDs, Aufgabenlisten oder Menüs. Eigenständiger GBA-Emulator für Android und Linux. Erstveröffentlichung am 13. Oktober 2026; Version 1.4.11 vom 7. November ergänzt Wario Land 4. ([raw.githubusercontent.com](https://raw.githubusercontent.com/kyannon/gba-ds/main/CHANGELOG.md))",
+      "games": [
+        "metroid-fusion-metroid-zero-mission-castlevania-aria-of-sorr"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "thor-dual-screen",
+      "name": "Thor Dual Screen",
+      "kind": "mod",
+      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+      "repo": "hung-eggie-do-covergo/stardew-thor-dual-screen",
+      "description": "Touch-Inventar, Herstellung, Truhen, Einkaufen, Versandkiste und Werkzeug-Zielauswahl; dazu Wetter, Glück, Pflanzen, Geburtstage, Geschenkvorlieben und aktuelle NPC-Positionen. Kostenloser SMAPI-Mod für die Desktop-Fassung in Cinderbox, nicht für die reguläre Android-App. Veröffentlichungen vom Oktober 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/main/README.md))",
+      "games": [
+        "stardew-valley"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "bloodborne-thor-companion",
+      "name": "Bloodborne · Thor Companion",
+      "kind": "port",
+      "url": "https://github.com/emerytech/Bloodborne-Android",
+      "repo": "emerytech/Bloodborne-Android",
+      "description": "Integrierte Touch-Begleitung mit Live-Spielerwerten, Inventar und optionaler Gegenstandsbenutzung, Spielmenü, Trophäen, Notizen und Leistungsdaten. Die Hunter's-Atlas-Karte des zugrunde liegenden Ports bleibt nutzbar. Experimenteller Fork; benötigt eigene Bloodborne-1.09-Dateien. ([github.com](https://github.com/emerytech/Bloodborne-Android))",
+      "games": [
+        "bloodborne"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "tomba2recompds",
+      "name": "Tomba2RecompDS",
+      "kind": "port",
+      "url": "https://github.com/igawa6/Tomba2RecompDS",
+      "repo": "igawa6/Tomba2RecompDS",
+      "description": "Live-Begleitseite mit Gegenständen, Ereignissen, Status und Walkthrough-Leser; die Informationen stammen aus dem laufenden Spielspeicher, nicht aus einem statischen Overlay. Android-Recomp für die US-Fassung; erste Veröffentlichung am 12. September 2026. ([github.com](https://github.com/igawa6/Tomba2RecompDS))",
+      "games": [
+        "tomba-2-the-evil-swine-return"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "silksong-android",
+      "name": "Silksong Android",
+      "kind": "official",
+      "url": "https://github.com/jakobkhansen/SilksongAndroid",
+      "repo": "jakobkhansen/SilksongAndroid",
+      "description": "Bedienbare Umsetzung des Spielmenüs auf Bildschirm 2: Karte anzeigen, Gegenstände verwenden und Crest wechseln. Nativer arm64-Port mit optionaler Steam-Anbindung für eigene Spieldateien und Cloud-Spielstände; öffentliche Builds seit mindestens August 2026. ([github.com](https://github.com/jakobkhansen/SilksongAndroid))",
+      "games": [
+        "hollow-knight-silksong"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "hk-dual-souls",
+      "name": "HK: Dual Souls",
+      "kind": "official",
+      "url": "https://github.com/igawa6/dualsouls",
+      "repo": "igawa6/dualsouls",
+      "description": "Live-HUD mit Masken, Seele und Geo; Touch-Karte mit Position, Zoom und Markierungen sowie Inventar und Amulette. Auch Dialoge und Fundmeldungen werden unten ausgegeben. Benötigt die eigene Steam-/GOG-Fassung; erste Veröffentlichung am 22. August 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/igawa6/dualsouls/main/README.md))",
+      "games": [
+        "hollow-knight"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "dusklight-dual-screen",
+      "name": "Dusklight Dual Screen",
+      "kind": "port",
+      "url": "https://github.com/igawa6/dusklight",
+      "repo": "igawa6/dusklight",
+      "description": "Touch-Minimap und Dungeonkarte mit Verschieben und Zoom, Herzen, Rubine, Inventar und Gegenstandsausrüstung einschließlich zusätzlicher Touch-Slots. Wahlweise Wii-U- oder 3DS-artiges Layout. Android-Fork von Dusklight; im September 2026 erschien die neue 2.0-basierte Linie. ([github.com](https://github.com/igawa6/dusklight))",
+      "games": [
+        "the-legend-of-zelda-twilight-princess"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ctr-ds",
+      "name": "CTR-DS",
+      "kind": "port",
+      "url": "https://github.com/igawa6/ctr-native-android",
+      "repo": "igawa6/ctr-native-android",
+      "description": "Separater Rennbegleitbildschirm mit Streckenkarte, Platzierungen, Gegenständen, Zeit und Geschwindigkeitsanzeige. Android-Fork von CTR Native, auf dem AYN Thor ausgeführt; erste Veröffentlichung am 30. August 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/codm2000/Dual-Screen-Games/main/README.md))",
+      "games": [
+        "crash-team-racing"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "metroid-dual-metroid-link",
+      "name": "Metroid Dual / Metroid Link",
+      "kind": "emulator",
+      "url": "https://github.com/Nihilspire/Metroid-Dual",
+      "repo": "Nihilspire/Metroid-Dual",
+      "description": "Live-Status, automatisch aufgezeichnete Karte, optionale nächste Zielvorgabe, eingesammelte Gegenstände, Spielzeit und Savestate-Abkürzungen. Android-App mit integriertem Emulator; Metroid Link ist zusätzlich als separate RetroArch-Begleitung vorgesehen. Quellcode vorhanden, aber noch keine GitHub-Releases. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/README.md))",
+      "games": [
+        "metroid"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "zeldawwhdrecomp",
+      "name": "ZeldaWWHDRecomp",
+      "kind": "port",
+      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+      "repo": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+      "description": "Separater Wii-U-GamePad-Ausgang für Karte, Gegenstände und Menüs einschließlich Touch-Eingabe, während das TV-Bild auf dem Hauptdisplay bleibt. Android-Dual-Display-Implementierung vorhanden; die Geräteprüfliste kennzeichnet reale Dual-Screen-Hardwaretests jedoch ausdrücklich als ausstehend. Deshalb als experimentell einordnen, nicht als bestätigte Thor-Kompatibilität. ([raw.githubusercontent.com](https://raw.githubusercontent.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/main/README.md))",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker-hd"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ducvd89-bloodborne-android",
+      "name": "ducvd89/Bloodborne-Android",
+      "kind": "port",
+      "url": "https://github.com/ducvd89/Bloodborne-Android",
+      "repo": "ducvd89/Bloodborne-Android",
+      "description": "",
+      "games": [
+        "bloodborne"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ctr-native-android",
+      "name": "CTR Native Android",
+      "kind": "port",
+      "url": "https://github.com/Simon358/ctr-native-android",
+      "repo": "Simon358/ctr-native-android",
+      "description": "",
+      "games": [
+        "crash-team-racing"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ctr-mobile",
+      "name": "CTR Mobile",
+      "kind": "port",
+      "url": "https://github.com/ThiagoAciole/ctr-mobile",
+      "repo": "ThiagoAciole/ctr-mobile",
+      "description": "",
+      "games": [
+        "crash-team-racing"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ctr-60-fps-widescreen",
+      "name": "CTR 60 FPS Widescreen",
+      "kind": "mod",
+      "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c",
+      "repo": null,
+      "description": "",
+      "games": [
+        "crash-team-racing"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "hkds",
+      "name": "HKDS",
+      "kind": "companion",
+      "url": "https://github.com/Joxarx/HKDS",
+      "repo": "Joxarx/HKDS",
+      "description": "",
+      "games": [
+        "hollow-knight"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "hollowknightandroid",
+      "name": "HollowKnightAndroid",
+      "kind": "official",
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid",
+      "repo": "Darkaxt/HollowKnightAndroid",
+      "description": "",
+      "games": [
+        "hollow-knight"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "winlator-ludashi-plus",
+      "name": "Winlator-Ludashi-Plus",
+      "kind": "runtime",
+      "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus",
+      "repo": "TripleJ160/Winlator-Ludashi-Plus",
+      "description": "",
+      "games": [
+        "hollow-knight"
       ],
       "checkedAt": "2026-11-08"
     }

@@ -1,0 +1,263 @@
+{
+  "id": "bloodborne",
+  "title": "Bloodborne",
+  "franchise": "Bloodborne",
+  "platforms": [
+    "PlayStation 4"
+  ],
+  "versions": [
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "original",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    },
+    {
+      "id": "nightmare-2015",
+      "name": "Nightmare Edition",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "year": 2015,
+      "traits": [
+        "controller"
+      ],
+      "note": "Sammleredition mit zusätzlichen physischen Beigaben und dem kosmetischen „Top Hat“-Messenger-Skin. Keine erweiterte Kampagne und kein Ersatz für die spätere Ausgabe mit The Old Hunters.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/archive/2014/12/11/bloodborne-collectors-editions-pre-order-extras-revealed"
+        }
+      ]
+    },
+    {
+      "id": "goty-2015",
+      "name": "Game of the Year Edition",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "year": 2015,
+      "traits": [
+        "controller",
+        "online"
+      ],
+      "note": "Europäische Komplettausgabe mit Hauptspiel und The Old Hunters, erschienen am 27. November 2015. Die europäische Kennung CUSA03173 ist außerdem die ausdrücklich getestete Grundlage des Android-Projekts.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/archive/2015/10/13/bloodborne-game-of-the-year-edition-launches-on-25th-november"
+        }
+      ]
+    },
+    {
+      "id": "old-hunters-2015",
+      "name": "The Old Hunters Edition",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "year": 2015,
+      "traits": [
+        "controller",
+        "online"
+      ],
+      "note": "Japanische Komplettausgabe vom 3. Dezember 2015 mit Hauptspiel und The Old Hunters. Keine eigenständige Fortsetzung und kein Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.fromsoftware.jp/ww/detail.html?csm=096"
+        }
+      ]
+    },
+    {
+      "id": "hits-2018",
+      "name": "PlayStation Hits",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "year": 2018,
+      "traits": [
+        "controller"
+      ],
+      "note": "Budget-Neuauflage des Grundspiels unter dem PlayStation-Hits-Label, in Europa ab 18. Juli 2018. Interessant als günstigere Originalausgabe, nicht als technische Überarbeitung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/archive/2018/06/19/introducing-playstation-hits-acclaimed-ps4-games-for-only-19-99"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-bloodborne-thor-companion",
+      "name": "Bloodborne · Thor Companion",
+      "kind": "recomp",
+      "release": "playstation-4",
+      "runtime": null,
+      "projects": [
+        "bloodborne-thor-companion"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Integrierte Touch-Begleitung mit Live-Spielerwerten, Inventar und optionaler Gegenstandsbenutzung, Spielmenü, Trophäen, Notizen und Leistungsdaten. Die Hunter's-Atlas-Karte des zugrunde liegenden Ports bleibt nutzbar. Experimenteller Fork; benötigt eigene Bloodborne-1.09-Dateien. ([github.com](https://github.com/emerytech/Bloodborne-Android))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/emerytech/Bloodborne-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-bloodborne-android-mit-hunters-atlas",
+      "name": "Bloodborne-Android mit Hunter’s Atlas",
+      "kind": "recomp",
+      "release": "goty-2015",
+      "runtime": "Bloodborne-Android: ARM64-AOT-Code, native PS4-Systemersatzbibliotheken und Vulkan-Renderer auf shadPS4-/bbport-Basis",
+      "projects": [
+        "ducvd89-bloodborne-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "native-arm",
+        "online",
+        "touch",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": "Die App zeichnet Hunter’s Atlas mit Live-Spielerposition, Ebenen, Lampen, Gegenständen und NPCs auf dem zweiten Display; alternativ ist eine schwebende Minikarte möglich.",
+      "requires": [
+        "Eigene Bloodborne-Spieldaten einschließlich Update 1.09; getestet mit CUSA03173",
+        "Unveränderte eboot.bin von Version 1.09",
+        "Android-ARM64-Gerät mit unterstützter Adreno-GPU; AYN Thor ist ausdrücklich getestet",
+        "Speicherplatz für Spiel und den einmalig selbst erzeugten ARM64-Code",
+        "Optional: Community-Konto für Online-Funktionen"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Bereits das Upstream-Projekt bietet die Live-Karte für Thors zweiten Bildschirm. Der Spielcode wird vorab übersetzt; Wine und Box64 sind nicht erforderlich.",
+      "caveat": "Experimentell, auf Geräten mit 16 GB RAM getestet; Mali wird nicht unterstützt. Andere 1.09-Ausgaben sind nicht ausdrücklich getestet. Vorab gepatchte 60-FPS-eboot-Dateien verursachen laut Projekt Abstürze im Gestenmenü; Online-Spiel nutzt Community- statt Sony-Server.",
+      "steps": [
+        "App aus den offiziellen Projekt-Releases installieren.",
+        "Eigenen extrahierten 1.09-Spielordner auswählen oder eigene Basis- und Update-Pakete importieren.",
+        "Beim ersten Start den nativen Code auf dem Gerät erzeugen; alternativ das Rebuild Tool auf dem PC verwenden.",
+        "Hunter’s Atlas für den zweiten Bildschirm aktivieren und Grafikoptionen konservativ einstellen."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ducvd89/Bloodborne-Android/master/docs/images/ayn-thor-atlas.jpg",
+          "caption": "Bloodborne oben, Old-Yharnam-Karte unten auf AYN-Handheld",
+          "source": "https://github.com/ducvd89/Bloodborne-Android",
+          "credit": "ducvd89/Bloodborne-Android",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ducvd89/Bloodborne-Android/master/docs/images/find-n5-minimap.jpg",
+          "caption": "Bloodborne mit Touch-Steuerung und schwebender Minikarte",
+          "source": "https://github.com/ducvd89/Bloodborne-Android",
+          "credit": "ducvd89/Bloodborne-Android",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/ducvd89/Bloodborne-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [
+    {
+      "id": "hunters-atlas-android-integration",
+      "name": "Hunter’s Atlas – Android-Integration",
+      "category": "dual-screen",
+      "url": "https://github.com/MikeTat1988/HuntersAtlas",
+      "edition": "Bloodborne 1.09 über Bloodborne-Android und Thor-Companion-Fork",
+      "description": "Im Android-Port integrierte Live-Karte mit Spielerposition, Ebenen und Fundmarkierungen auf dem zweiten Display. Das ursprüngliche Windows-Projekt ist nicht selbst eine Android-App; verwendet wird dessen ausdrücklich dokumentierte Integration.",
+      "verification": "ai-unverified",
+      "release": [
+        "goty-2015",
+        "playstation-4"
+      ]
+    },
+    {
+      "id": "xbox-and-switch-ui-for-bloodborne",
+      "name": "Xbox (and switch) UI for Bloodborne",
+      "category": "controls",
+      "url": "https://www.nexusmods.com/bloodborne/mods/30",
+      "edition": "Datendatei-Mod über den Thor-Companion-Modbrowser",
+      "description": "Ersetzt Tastensymbole durch Xbox-/Switch-Varianten, ohne die Controllerbelegung zu ändern. Im Starterkatalog des Thor-Forks aufgeführt; Dateistruktur geprüft, aber ausdrücklich nicht im Thor-Spielbetrieb getestet.",
+      "verification": "ai-unverified",
+      "release": [
+        "goty-2015",
+        "playstation-4"
+      ]
+    },
+    {
+      "id": "more-options-at-lamps",
+      "name": "More Options At Lamps",
+      "category": "qol",
+      "url": "https://www.nexusmods.com/bloodborne/mods/107",
+      "edition": "Experimenteller Katalogeintrag des Thor-Companion-Modbrowsers",
+      "description": "Mod für zusätzliche Optionen an Lampen, im Thor-Starterkatalog verlinkt. Die aktuelle PC-Port-Ausgabe und mögliche Patch-Abhängigkeiten sind für Android nicht verifiziert; keine bestätigte Thor-Kompatibilität.",
+      "verification": "ai-unverified",
+      "release": [
+        "goty-2015",
+        "playstation-4"
+      ]
+    },
+    {
+      "id": "reduced-physics",
+      "name": "Reduced Physics",
+      "category": "performance",
+      "url": "https://www.nexusmods.com/bloodborne/mods/114",
+      "edition": "Experimenteller Katalogeintrag des Thor-Companion-Modbrowsers",
+      "description": "Im Thor-Starterkatalog aufgeführter Physik-Workaround. Nicht auf Thor spielgetestet; das Projekt warnt ausdrücklich davor, einen Emulator-Workaround automatisch als Vorteil für den nativen Android-Weg anzusehen.",
+      "verification": "ai-unverified",
+      "release": [
+        "goty-2015",
+        "playstation-4"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "summary": "Auf dem AYN Thor ist die inoffizielle ARM64-Rekompilierung mit Hunter’s Atlas als Live-Karte interessant; der Thor-Companion-Fork ergänzt ein integriertes Touch-Panel mit Live-Inventar."
+}

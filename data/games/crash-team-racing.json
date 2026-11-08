@@ -1,0 +1,432 @@
+{
+  "id": "crash-team-racing",
+  "title": "Crash Team Racing",
+  "franchise": "Crash Bandicoot",
+  "platforms": [
+    "PlayStation",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1999,
+      "note": "Das ursprüngliche Kart-Rennspiel von Naughty Dog mit Abenteuer-, Zeitfahren- und Mehrspielermodi. Diese Fassung bildet die Grundlage der Android-Fanports und der meisten klassischen CTR-Mods.",
+      "traits": [
+        "controller"
+      ]
+    },
+    {
+      "id": "nitro-fueled",
+      "name": "Crash Team Racing Nitro-Fueled",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "online",
+        "widescreen"
+      ],
+      "note": "Grafisch umfassend erneuerte Fassung mit zusätzlichen Strecken und Kampfarenen aus Crash Nitro Kart, Kart-Anpassung und Online-Mehrspieler. Die PS4-Ausgabe besitzt exklusive Retro-Inhalte.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
+        }
+      ]
+    },
+    {
+      "id": "nitro-fueled-oxide",
+      "name": "Crash Team Racing Nitro-Fueled – Nitros Oxide Edition",
+      "type": "release",
+      "platforms": [
+        "Nintendo Switch",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "online",
+        "widescreen"
+      ],
+      "note": "Deluxe-Edition mit dem vollständigen Nitro-Fueled und zusätzlichen kosmetischen Inhalten wie den Star-Skins. Nitros Oxide und sein Hovercraft werden unmittelbar zugänglich; diese beiden Inhalte lassen sich auch in der Standardfassung erspielen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-ctr-ds",
+      "name": "CTR-DS",
+      "kind": "decomp",
+      "release": "playstation",
+      "runtime": null,
+      "projects": [
+        "ctr-ds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Separater Rennbegleitbildschirm mit Streckenkarte, Platzierungen, Gegenständen, Zeit und Geschwindigkeitsanzeige. Android-Fork von CTR Native, auf dem AYN Thor ausgeführt; erste Veröffentlichung am 30. August 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/codm2000/Dual-Screen-Games/main/README.md))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/ctr-native-android"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1w2mw0s/crash_team_racing_ps1_dual_screen/",
+          "device": "AYN Thor",
+          "summary": "Der Autor zeigt die Dual-Screen-Fassung und nennt den Thor ausdrücklich als getestetes Gerät.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-ctr-native-android",
+      "name": "CTR Native Android",
+      "kind": "decomp",
+      "release": "playstation",
+      "runtime": "Native Android-App mit SDL3 und OpenGL ES 3.0",
+      "projects": [
+        "ctr-native-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PlayStation-Ausgabe von Crash Team Racing",
+        "Eigene kompatible NTSC-U-Spieldaten",
+        "Android-Gerät mit Unterstützung für 32-Bit-ARM-Apps und OpenGL ES 3.0"
+      ],
+      "benefit": "Eigenständiger Android-Port mit Gamepad-Unterstützung, automatischen Touch-Tasten und Controller-Vibration, ohne zusätzlichen Emulator.",
+      "caveat": "Dieser Upstream-Port verwendet armeabi-v7a und besitzt nicht die Zweitbildschirm-Erweiterungen von CTR-DS. Der Entwickler hat die Android-Fassung nicht vollständig durchgespielt und weist auf mögliche Fehler hin.",
+      "steps": [
+        "Android-Build aus den offiziellen Projekt-Releases installieren.",
+        "Beim ersten Start den eigenen unterstützten Disc-Dump über den Dateiauswahldialog importieren.",
+        "Nach dem Kopieren die App neu starten und den Controller testen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Simon358/ctr-native-android/blob/master/README_ANDROID.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-ctr-mobile",
+      "name": "CTR Mobile",
+      "kind": "decomp",
+      "release": "playstation",
+      "runtime": "Selbst kompilierte native Android-App mit SDL3",
+      "projects": [
+        "ctr-mobile"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "fps-cap",
+        "high-fps",
+        "live-map",
+        "native-arm",
+        "touch",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": "Der Fork dokumentiert eine zusätzliche Anzeige für HUD und Karte auf Android-Handhelds mit zwei Displays.",
+      "requires": [
+        "Eigene PlayStation-Ausgabe und kompatibler NTSC-U-Dump als BIN oder CHD",
+        "Android Studio und Android SDK auf einem Computer",
+        "Android NDK 27.2.12479018 und CMake 3.22.1",
+        "Android-Gerät mit OpenGL ES 3.0"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Weiterer Android-Fork mit Touch-Oberfläche, Gamepad-Unterstützung, ARM64-Build und dokumentierter Zusatzanzeige.",
+      "caveat": "Work-in-Progress mit dokumentiertem Selbstbau statt einer verlässlich belegten fertigen Release-Fassung. Ein erfolgreicher Build ersetzt keinen Kompatibilitätstest auf dem Thor.",
+      "steps": [
+        "Repository mit Abhängigkeiten beziehen und den Ordner android in Android Studio öffnen.",
+        "Die dokumentierten SDK-, NDK- und CMake-Komponenten installieren.",
+        "Mit Gradle die Debug-APK bauen und auf dem Handheld installieren.",
+        "Den eigenen NTSC-U-Dump im Launcher importieren und Anzeige sowie Eingaben prüfen."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/main/screenshots/corrida-controles-toque.png",
+          "caption": "Crash Team Racing mit eingeblendeten Touch-Bedienelementen.",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile/blob/main/README_ANDROID.md",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/main/screenshots/menu-principal.png",
+          "caption": "Hauptmenü von CTR Mobile mit portugiesischen Menütexten.",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile/blob/main/README_ANDROID.md",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/ThiagoAciole/ctr-mobile/blob/main/README_ANDROID.md"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AndroidNativePorts/comments/1xd9ws5/wip_ctr_mobile_crash_team_racing_ps1_com_port/",
+          "device": "Android; Modell nicht angegeben",
+          "summary": "Der Entwickler stellt seinen laufenden Android-Port mit Touch-Steuerung, Gamepad-Unterstützung und Breitbild als Work-in-Progress vor.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-playstation-mit-60-fps-widescreen-patch",
+      "name": "PlayStation mit 60-FPS-/Widescreen-Patch",
+      "kind": "emulator-mod",
+      "release": "playstation",
+      "runtime": "DuckStation für Android mit gepatchtem eigenem Disc-Dump",
+      "projects": [
+        "ctr-60-fps-widescreen"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "high-fps",
+        "mods",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene unterstützte NTSC-U-Ausgabe von Crash Team Racing als BIN-Dump",
+        "Eigene PlayStation-BIOS-Datei für DuckStation",
+        "Xdelta-Patchwerkzeug"
+      ],
+      "benefit": "Spielspezifischer Patch für echte 60 FPS und optional 16:9 einschließlich angepasster Benutzeroberfläche, statt lediglich das Emulationstempo zu erhöhen.",
+      "caveat": "Die Veröffentlichung unterstützt NTSC-U, nicht PAL oder Japan. Andere Widescreen- oder 60-FPS-Codes dürfen nicht zusätzlich aktiviert werden; DuckStations Widescreen-Rendering muss ausgeschaltet bleiben.",
+      "steps": [
+        "Den 16:9- oder 4:3-Xdelta-Patch aus den Links des Veröffentlichungstrailers beziehen.",
+        "Den Patch auf eine Kopie des eigenen passenden BIN-Dumps anwenden.",
+        "In DuckStation die emulierte CPU-Taktsteuerung auf 400 Prozent und VSync einschalten.",
+        "Für die Breitbildvariante 16:9 auswählen, aber Widescreen-Rendering deaktivieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-nitro-fueled-mit-eden-duo-und-ctrnf-ds",
+      "name": "Nitro-Fueled mit Eden Duo und CTRNF-DS",
+      "kind": "emulator-mod",
+      "release": "nitro-fueled",
+      "runtime": "Eden Duo für Android mit spielbezogenem .dsmod.zip-Paket",
+      "projects": [
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "touch"
+      ],
+      "dualScreen": "Das installierbare Companion-Modul zeichnet aus dem laufenden Spiel Fahrerreihenfolge, Live-Karte, Position, Runde und Zeit auf das zweite Display und kann fünf HUD-Elemente der Hauptansicht ausblenden.",
+      "requires": [
+        "Eigene Nintendo-Switch-Ausgabe von Crash Team Racing Nitro-Fueled",
+        "Eigener Spiel-Dump mit Titel-ID 0100F9F00C696000 und Update 1.0.15",
+        "Eigene Konsolenschlüssel und Firmware",
+        "Android 13 oder neuer auf ARM64 und ein zweites Display",
+        "Eden Duo ab Version 1.1.0 und das passende Companion-Paket"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Auch die modernisierte Fassung erhält eine echte Live-Zusatzanzeige mit den Grafiken und Fahrernamen des Spiels.",
+      "caveat": "Das Modul ist exakt an Spielversion 1.0.15 gebunden und für einen lokalen Spieler während der Rennen ausgelegt. Es ist ein innerhalb des Emulator-Forks geladenes Modul, keine separate Begleit-App; eine konkrete Thor-Leistungszusage liegt nicht vor.",
+      "steps": [
+        "Eden Duo aus den Projekt-Releases installieren und eigene Schlüssel, Firmware sowie Spieldaten einrichten.",
+        "Das eigene Spiel auf die unterstützte Version 1.0.15 bringen.",
+        "Das Nitro-Fueled-Companion-Paket aus Eden Duo Companions beziehen.",
+        "Das Spiel lange drücken und unter Add-ons, Install und Dual screen mods die .dsmod.zip-Datei auswählen.",
+        "Das Spiel starten und die Zusatzanzeige während eines Rennens prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/race.png",
+          "caption": "Rennansicht oben, Karte und Fahrerreihenfolge unten.",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/settings.png",
+          "caption": "HUD-Einstellungen auf dem zweiten Bildschirm.",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/hud.png",
+          "caption": "Rennansicht und Zusatzdisplay mit Karte und Fahrerreihenfolge",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [
+    {
+      "id": "ctr-60-fps-widescreen",
+      "name": "CTR 60 FPS Widescreen",
+      "category": "widescreen-fps",
+      "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c",
+      "edition": "PlayStation NTSC-U; emulierter, mit Xdelta gepatchter Disc-Dump",
+      "description": "Kombiniert 60 FPS mit angepasstem Spieltiming und echtem 16:9 samt überarbeiteter Benutzeroberfläche; alternativ existiert eine 4:3-Variante. Nicht mit anderen FPS- oder Breitbild-Patches kombinieren.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation"
+      ]
+    },
+    {
+      "id": "ctr-unlimited",
+      "name": "CTR Unlimited",
+      "category": "content",
+      "url": "https://customteamracing.com/ctr-unlimited/",
+      "edition": "PlayStation-ROM-Hack für DuckStation; nicht automatisch mit nativen Android-Ports kompatibel",
+      "description": "Mod-Zusammenstellung mit über 25 Änderungen, sieben zusätzlichen Strecken, kombinierbaren Spielmodi, Breitbild, Reserveanzeige und spielbarem Oxide. Die Projektseite verlangt unter anderem 8 MB emulierten RAM, 1000 Prozent CPU-Takt, Recompiler-ICache und beschleunigte Disc-Zugriffe; Xdelta-Patches nicht beliebig stapeln.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation"
+      ]
+    },
+    {
+      "id": "hatsune-miku-fur-ctr-unlimited",
+      "name": "Hatsune Miku für CTR Unlimited",
+      "category": "graphics",
+      "url": "https://customteamracing.com/hatsune-miku/",
+      "edition": "CTR Unlimited",
+      "description": "Ergänzt Hatsune Miku als angepasste Spielfigur mit zwei unterschiedlichen Modellen abhängig vom Spielmodus. Für die Unlimited-Modifikation gedacht, nicht als allgemein kompatibles Texturpaket für CTR-DS.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation"
+      ]
+    },
+    {
+      "id": "ctr-modsdk-mod-collection",
+      "name": "CTR-ModSDK Mod Collection",
+      "category": "gameplay",
+      "url": "https://github.com/CTR-tools/CTR-ModSDK/releases",
+      "edition": "Je nach Modul und Mod-Paket; zahlreiche Varianten nur für NTSC-U",
+      "description": "Sammlung unter anderem mit Mirror Mode, Kart-Neulackierungen, alternativen Fahrerporträts, Motorauswahl, Retro-Fueled und Oxide-Fehlerbehebungen. Voraussetzungen und Kombinierbarkeit hängen vom konkreten Modul beziehungsweise vorgefertigten Patch ab.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation"
+      ]
+    },
+    {
+      "id": "ctrnf-ds-nitro-fueled-companion",
+      "name": "CTRNF-DS / Nitro-Fueled Companion",
+      "category": "dual-screen",
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+      "edition": "Nintendo Switch, Titel-ID 0100F9F00C696000, Update 1.0.15; Eden Duo",
+      "description": "Installierbares Zweitbildschirm-Modul mit Live-Streckenkarte, Fahrerporträts, Platzierungen, Runde und Rennzeit sowie Schaltern für fünf originale HUD-Elemente. Für einen lokalen Spieler ausgelegt; die benötigten Grafiken werden aus den eigenen Spieldaten gelesen.",
+      "verification": "ai-unverified",
+      "release": [
+        "nitro-fueled"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "summary": "Auf dem AYN Thor ist der inoffizielle Android-Port CTR-DS besonders interessant: Das Rennen bleibt oben, während HUD und Live-Streckenkarte unten erscheinen."
+}

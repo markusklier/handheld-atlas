@@ -1,3 +1,54 @@
 {
-  "jobs": []
+  "jobs": [
+    {
+      "game": "hollow-knight-silksong",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "metroid",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "metroid-fusion-metroid-zero-mission-castlevania-aria-of-sorr",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "pokemon-rejuvenation",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "stardew-valley",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "the-legend-of-zelda-the-wind-waker-hd",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "the-legend-of-zelda-twilight-princess",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "tomba-2-the-evil-swine-return",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "world-of-warcraft-forever",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "xenogears",
+      "reason": "Dual-Screen-Suchlauf",
+      "added": "2026-11-08"
+    }
+  ]
 }

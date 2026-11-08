@@ -1,0 +1,59 @@
+{
+  "id": "tomba-2-the-evil-swine-return",
+  "title": "Tomba! 2: The Evil Swine Return",
+  "franchise": "Tomba! 2: The Evil Swine Return",
+  "platforms": [
+    "PlayStation"
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-tomba2recompds",
+      "name": "Tomba2RecompDS",
+      "kind": "recomp",
+      "release": "playstation",
+      "runtime": null,
+      "projects": [
+        "tomba2recompds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Live-Begleitseite mit Gegenständen, Ereignissen, Status und Walkthrough-Leser; die Informationen stammen aus dem laufenden Spielspeicher, nicht aus einem statischen Overlay. Android-Recomp für die US-Fassung; erste Veröffentlichung am 12. September 2026. ([github.com](https://github.com/igawa6/Tomba2RecompDS))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/Tomba2RecompDS"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

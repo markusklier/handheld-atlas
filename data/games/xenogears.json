@@ -31,6 +31,44 @@
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "ds-xenogears-link",
+      "name": "Xenogears-Link",
+      "kind": "companion",
+      "release": "playstation",
+      "runtime": null,
+      "projects": [
+        "xenogears-link"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Live-Gruppenwerte, Ausrüstung von Piloten und Gears, Inventar, Gold und Spielzeit; aus der Spielgeometrie erzeugte Raumkarten mit Position, Ausgängen, Schätzen und Etagen. Dazu Kampfinformationen und optionale Wegführung. Liest RetroArch Nightly über Network Commands; Veröffentlichungen vom Oktober 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Nihilspire/Xenogears-Link/main/README.md))",
+      "dualScreenType": "companion",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Nihilspire/Xenogears-Link/blob/main/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08"
 }

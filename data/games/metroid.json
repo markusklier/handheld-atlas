@@ -1,0 +1,59 @@
+{
+  "id": "metroid",
+  "title": "Metroid",
+  "franchise": "Metroid",
+  "platforms": [
+    "NES"
+  ],
+  "versions": [
+    {
+      "id": "nes",
+      "name": "NES",
+      "type": "original",
+      "platforms": [
+        "NES"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-metroid-dual-metroid-link",
+      "name": "Metroid Dual / Metroid Link",
+      "kind": "emulation",
+      "release": "nes",
+      "runtime": null,
+      "projects": [
+        "metroid-dual-metroid-link"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Live-Status, automatisch aufgezeichnete Karte, optionale nächste Zielvorgabe, eingesammelte Gegenstände, Spielzeit und Savestate-Abkürzungen. Android-App mit integriertem Emulator; Metroid Link ist zusätzlich als separate RetroArch-Begleitung vorgesehen. Quellcode vorhanden, aber noch keine GitHub-Releases. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/README.md))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

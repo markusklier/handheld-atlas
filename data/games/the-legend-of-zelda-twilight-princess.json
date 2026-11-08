@@ -4,7 +4,8 @@
   "franchise": "The Legend of Zelda",
   "platforms": [
     "Nintendo GameCube",
-    "Wii"
+    "Wii",
+    "GameCube"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Twilight%20Princess%20%28USA%29.png",
@@ -38,8 +39,54 @@
       "platforms": [
         "Wii"
       ]
+    },
+    {
+      "id": "gamecube",
+      "name": "GameCube",
+      "type": "release",
+      "platforms": [
+        "GameCube"
+      ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "ds-dusklight-dual-screen",
+      "name": "Dusklight Dual Screen",
+      "kind": "decomp",
+      "release": "gamecube",
+      "runtime": null,
+      "projects": [
+        "dusklight-dual-screen"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Touch-Minimap und Dungeonkarte mit Verschieben und Zoom, Herzen, Rubine, Inventar und Gegenstandsausrüstung einschließlich zusätzlicher Touch-Slots. Wahlweise Wii-U- oder 3DS-artiges Layout. Android-Fork von Dusklight; im September 2026 erschien die neue 2.0-basierte Linie. ([github.com](https://github.com/igawa6/dusklight))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/dusklight"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08"
 }

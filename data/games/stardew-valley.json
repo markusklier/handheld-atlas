@@ -106,6 +106,43 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "companion"
+    },
+    {
+      "id": "ds-thor-dual-screen",
+      "name": "Thor Dual Screen",
+      "kind": "native-mod",
+      "release": "pc",
+      "runtime": null,
+      "projects": [
+        "thor-dual-screen"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Touch-Inventar, Herstellung, Truhen, Einkaufen, Versandkiste und Werkzeug-Zielauswahl; dazu Wetter, Glück, Pflanzen, Geburtstage, Geschenkvorlieben und aktuelle NPC-Positionen. Kostenloser SMAPI-Mod für die Desktop-Fassung in Cinderbox, nicht für die reguläre Android-App. Veröffentlichungen vom Oktober 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/main/README.md))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen/blob/main/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
   "updatedAt": "2026-11-08"

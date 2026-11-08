@@ -4,7 +4,16 @@
   "franchise": "Hollow Knight",
   "platforms": [
     "Nintendo Switch",
-    "PC"
+    "PC",
+    "PC (Windows)",
+    "macOS",
+    "Linux",
+    "PlayStation 4",
+    "Xbox One",
+    "PC (Microsoft Store)",
+    "Nintendo Switch 2",
+    "PlayStation 5",
+    "Xbox Series X|S"
   ],
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
@@ -49,6 +58,11 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "year": 2018,
+      "note": "Seit dem 12. Juni 2018 erhältlich. Zum Start waren Hidden Dreams, The Grimm Troupe und Lifeblood enthalten; gegenüber der PC-Fassung bietet dieser Konsolenport keinen Zugang zum PC-Mod-Ökosystem.",
+      "traits": [
+        "controller"
       ]
     },
     {
@@ -56,10 +70,365 @@
       "name": "PC",
       "type": "release",
       "platforms": [
-        "PC"
+        "PC",
+        "PC (Windows)",
+        "macOS",
+        "Linux"
+      ],
+      "year": 2017,
+      "note": "Windows erschien am 24. Februar 2017; macOS und Linux folgten am 11. April desselben Jahres. Grundlage für PC-Mods und die hier aufgeführten Android-Fanprojekte; das offizielle Update von 2026 ergänzt unter anderem 16:10- und 21:9-Unterstützung.",
+      "traits": [
+        "controller",
+        "mods",
+        "widescreen"
+      ]
+    },
+    {
+      "id": "voidheart-2018",
+      "name": "Voidheart Edition (2018)",
+      "type": "port",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One",
+        "PC (Microsoft Store)"
+      ],
+      "year": 2018,
+      "traits": [
+        "controller"
+      ],
+      "note": "Die Konsolenedition erschien am 25. September 2018 und enthält alle vier Inhaltspakete einschließlich Godmaster. Auch im Microsoft-/Xbox-PC-Angebot unter diesem Namen erhältlich; nicht mit einem exklusiven zusätzlichen Inhaltspaket gegenüber der aktualisierten Originalfassung verwechseln.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.xbox.com/en-US/games/store/hollow-knight-voidheart-edition/9MW9469V91LM/0010/9ZMKD799TP74"
+        }
+      ]
+    },
+    {
+      "id": "upgraded-2026",
+      "name": "Nintendo Switch 2 Edition / aktualisierte Konsolenports (2026)",
+      "type": "port",
+      "platforms": [
+        "Nintendo Switch 2",
+        "PlayStation 5",
+        "Xbox Series X|S"
+      ],
+      "year": 2026,
+      "traits": [
+        "controller",
+        "high-fps"
+      ],
+      "note": "Am 5. Februar 2026 veröffentlichte Fassungen mit höheren Bildraten, höheren Auflösungen und zusätzlichen Effekten. Kostenloses Upgrade für Besitzer der entsprechenden älteren Konsolenfassung; kein Remake.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.teamcherry.com.au/blog/hollowknightupgraded"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08"
+  "routes": [
+    {
+      "id": "ds-hk-dual-souls",
+      "name": "HK: Dual Souls",
+      "kind": "native",
+      "release": "pc",
+      "runtime": null,
+      "projects": [
+        "hk-dual-souls"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Live-HUD mit Masken, Seele und Geo; Touch-Karte mit Position, Zoom und Markierungen sowie Inventar und Amulette. Auch Dialoge und Fundmeldungen werden unten ausgegeben. Benötigt die eigene Steam-/GOG-Fassung; erste Veröffentlichung am 22. August 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/igawa6/dualsouls/main/README.md))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/dualsouls/blob/main/README.md"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1xg7giz/birthday_thor/",
+          "device": "AYN Thor Max",
+          "summary": "Der Besitzer zeigt Hollow Knight mit Karte auf dem unteren Display und bestätigt die Einrichtung von Dual Souls mit eigenen Steam-Dateien und Projektpatch.",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1vv1adg/hollow_knight_dual_souls_unofficial_dualscreen/",
+          "device": "Nicht ausdrücklich genannt; Beitrag in r/AynThor",
+          "summary": "Nutzer loben den flüssigen Betrieb, melden aber auch falsch positionierte Todesmarker auf der unteren Karte.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-hollow-knight-dual-screen-map-companion",
+      "name": "Hollow Knight Dual-Screen Map Companion",
+      "kind": "companion",
+      "release": "pc",
+      "runtime": "HKModLoader-Mod und separate Android-App",
+      "projects": [
+        "hkds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "mods"
+      ],
+      "dualScreen": "Eine separate Android-App empfängt Spieler- und Kartendaten über einen lokalen TCP-Socket und zeigt Karte, Gesundheit, Seele und Geo auf dem zweiten Display.",
+      "requires": [
+        "Eigene PC-, macOS- oder Linux-Fassung",
+        "Hollow Knight Modding API",
+        "Build-Umgebung für C# und Android",
+        "Android 11 oder neuer"
+      ],
+      "dualScreenType": "companion",
+      "benefit": "Eigenständiger Companion-Ansatz statt eines fest eingebauten Android-Ports.",
+      "caveat": "Quellcodeprojekt zum Selbstbauen; ein verifizierter Android-Spielruntime ist nicht dokumentiert. Die Anleitung setzt Spiel und Companion auf demselben Gerät voraus, weshalb die Kombination mit einer PC-Laufzeit gesondert geprüft werden muss.",
+      "steps": [
+        "C#-Mod mit Verweisen auf die DLLs der eigenen Spielinstallation bauen.",
+        "Android-Companion mit dem Android SDK bauen und installieren.",
+        "Mod über HKModLoader laden.",
+        "Spiel oben und Companion unten starten; vorgesehen ist localhost:9876."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Joxarx/HKDS"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-hollow-knight-android-experimenteller-arm64-neuaufbau",
+      "name": "Hollow Knight Android – experimenteller ARM64-Neuaufbau",
+      "kind": "native",
+      "release": "pc",
+      "runtime": "Android-Launcher mit geräteinterner Konvertierung der Linux-Fassung",
+      "projects": [
+        "hollowknightandroid"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "mods",
+        "native-arm",
+        "touch",
+        "touch-inventory"
+      ],
+      "dualScreen": "Integrierte untere Oberfläche mit HUD, Inventar, Karte und Talismanen; unterstützt Kartenmarker sowie Zoom und Verschieben per Touch.",
+      "requires": [
+        "Eigene vollständige Linux-Spieldateien oder Steam-Besitz für den unterstützten Linux-Depotdownload",
+        "Signierter Build aus dem Projekt"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Experimentelle Alternative mit optionalem Steam-Download, Cloud-Synchronisierung und getrennten Spielprofilen.",
+      "caveat": "Das aktuelle README bezeichnet das Projekt ausdrücklich als unfertige öffentliche Veröffentlichung. Mod-Unterstützung betrifft nur eine Teilmenge von BepInEx-5-/Harmony-Mods; Silksong-Tests sind kein Kompatibilitätsnachweis für Hollow Knight.",
+      "steps": [
+        "Signierten Projektbuild erstellen und installieren.",
+        "Hollow Knight im Launcher auswählen.",
+        "Eigene Linux-Dateien auswählen oder den unterstützten Steam-Download verwenden.",
+        "Konvertierung abschließen und das Spielprofil starten."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Darkaxt/HollowKnightAndroid"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-steam-fassung-uber-gamenative",
+      "name": "Steam-Fassung über GameNative",
+      "kind": "pc-runtime",
+      "release": "pc",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Steam-Fassung von Hollow Knight",
+        "Steam-Konto"
+      ],
+      "benefit": "Spielspezifisch auf Snapdragon 8 Gen 2 vorgeführt; erhält die normale Steam-Installation und ermöglicht laut Testbericht die Nutzung von Steam Cloud.",
+      "caveat": "Keine integrierte zweite Spieloberfläche. Thor-Nutzer berichten auch über schwarze Startbildschirme; ein erfolgreicher Smartphone-Test garantiert daher nicht jede Thor-Konfiguration.",
+      "steps": [
+        "GameNative über die offizielle Projektseite installieren und bei Steam anmelden.",
+        "Hollow Knight installieren.",
+        "Falls angeboten Use known config verwenden.",
+        "Bei Startproblemen die Konfiguration des verlinkten Spieltests vergleichen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1vzvsvv/hollow_knight_on_android_gamenative_configuration/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1vzvsvv/hollow_knight_on_android_gamenative_configuration/",
+          "device": "Poco F6 Pro – Snapdragon 8 Gen 2, Adreno 740",
+          "summary": "Der Autor zeigt die Steam-Fassung samt Konfiguration und berichtet von auf 60 FPS begrenztem Betrieb bei 1600 × 900.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-pc-fassung-uber-winlator-ludashi-plus",
+      "name": "PC-Fassung über Winlator-Ludashi-Plus",
+      "kind": "pc-runtime",
+      "release": "pc",
+      "runtime": "Winlator-Ludashi-Plus",
+      "projects": [
+        "winlator-ludashi-plus"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Windows-Fassung von Hollow Knight"
+      ],
+      "benefit": "Der Fork dokumentiert Hollow Knight ausdrücklich als getestet und lauffähig auf einem Odin 2 Portal mit derselben Snapdragon-/Adreno-Klasse wie der Thor.",
+      "caveat": "Technischer Entwicklertest statt Thor-Kompletttest; keine zusätzliche Dual-Screen-Oberfläche. Der dokumentierte Test verwendet Android 13, Proton 9.0 und DXVK 2.x.",
+      "steps": [
+        "Winlator-Ludashi-Plus aus dem Projekt installieren.",
+        "Die eigene Windows-Installation in einem Container bereitstellen.",
+        "Für eine vergleichbare Ausgangsbasis Proton 9.0 und DXVK 2.x verwenden.",
+        "Spiel starten und Controllerbelegung prüfen."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus/blob/ludashi-3.0/architecture-analysis.md"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus/blob/ludashi-3.0/architecture-analysis.md",
+          "device": "AYN Odin 2 Portal",
+          "summary": "Der Entwickler führt Hollow Knight im FIFO-Präsentationsmodus sowohl für Quality und Performance als auch für Native X11 als funktionierend auf.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "mods": [
+    {
+      "id": "customknight-skins",
+      "name": "CustomKnight-Skins",
+      "category": "graphics",
+      "url": "https://prashantmohta.github.io/HollowKnight.CustomKnight/",
+      "edition": "PC mit Modding API; Skin-Import auch in HK: Dual Souls",
+      "description": "Ersetzt Texturbögen durch eigene Skins. Dual Souls liest Skin-Ordner direkt ohne PC-Modloader ein, unterstützt aber nicht alle CustomKnight-Bereiche, etwa freie Hintergrund- und Videoersetzungen.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "dual-souls-integriertes-mod-menu",
+      "name": "Dual Souls – integriertes Mod-Menü",
+      "category": "qol",
+      "url": "https://github.com/igawa6/dualsouls/releases",
+      "edition": "Nur HK: Dual Souls",
+      "description": "Optionale Komfort- und Cheat-Funktionen wie automatische Karte, Bank-Teleport, Gegner-Lebensleisten, Boss-Wiederholung und Speicherzustände. Seit 1.0.3 unter Options → Mods erreichbar; kein allgemeiner PC-Modloader.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "hkds-map-exporter",
+      "name": "HKDS Map Exporter",
+      "category": "dual-screen",
+      "url": "https://github.com/Joxarx/HKDS",
+      "edition": "PC-Fassung mit HKModLoader",
+      "description": "Exportiert Live-Spielerzustand und Kartendaten an die separate Android-Companion-App. Selbstbau erforderlich; der Einsatz innerhalb einer Android-PC-Laufzeit ist nicht unabhängig bestätigt.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "randomizer-4",
+      "name": "Randomizer 4",
+      "category": "gameplay",
+      "url": "https://github.com/homothetyhk/RandomizerMod",
+      "edition": "PC 1.5 mit passender Modding API",
+      "description": "Randomisiert Gegenstände und auf Wunsch Raumübergänge. Benötigt unter anderem MenuChanger, ItemChanger und RandomizerCore; für Android nur als PC-Laufzeit-Kandidat einordnen, nicht als bestätigten Dual-Souls-Mod.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    }
+  ],
+  "summary": "Auf dem AYN Thor ist die PC-Fassung besonders interessant: HK: Dual Souls ergänzt eine interaktive Live-Karte, Inventar und Talismane auf dem unteren Display."
 }

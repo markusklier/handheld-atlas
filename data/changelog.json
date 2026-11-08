@@ -4,6 +4,388 @@
       "date": "2026-11-08",
       "type": "screenshot-added",
       "by": "ai-research",
+      "text": "KI-Bildprüfung: 7 Screenshots bestätigt, 2 unpassende entfernt"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Voidheart Edition (2018) (KI-Recherche)",
+      "url": "https://www.xbox.com/en-US/games/store/hollow-knight-voidheart-edition/9MW9469V91LM/0010/9ZMKD799TP74",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Nintendo Switch 2 Edition / aktualisierte Konsolenports (2026) (KI-Recherche)",
+      "url": "https://www.teamcherry.com.au/blog/hollowknightupgraded",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "screenshot-added",
+      "text": "Screenshots für HK: Dual Souls (KI-Recherche)",
+      "url": "https://github.com/igawa6/dualsouls",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-updated",
+      "text": "2 Erfahrungsbericht(e) zu HK: Dual Souls (KI-Recherche)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1xg7giz/birthday_thor/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Hollow Knight Dual-Screen Map Companion (PC, KI-Recherche)",
+      "url": "https://github.com/Joxarx/HKDS",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Hollow Knight Android – experimenteller ARM64-Neuaufbau (PC, KI-Recherche)",
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Steam-Fassung über GameNative (PC, KI-Recherche)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1vzvsvv/hollow_knight_on_android_gamenative_configuration/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PC-Fassung über Winlator-Ludashi-Plus (PC, KI-Recherche)",
+      "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus/blob/ludashi-3.0/architecture-analysis.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: CustomKnight-Skins (KI-Recherche)",
+      "url": "https://prashantmohta.github.io/HollowKnight.CustomKnight/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Dual Souls – integriertes Mod-Menü (KI-Recherche)",
+      "url": "https://github.com/igawa6/dualsouls/releases",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: HKDS Map Exporter (KI-Recherche)",
+      "url": "https://github.com/Joxarx/HKDS",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Randomizer 4 (KI-Recherche)",
+      "url": "https://github.com/homothetyhk/RandomizerMod",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "hollow-knight"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Crash Team Racing Nitro-Fueled (KI-Recherche)",
+      "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Crash Team Racing Nitro-Fueled – Nitros Oxide Edition (KI-Recherche)",
+      "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "screenshot-added",
+      "text": "Screenshots für CTR-DS (KI-Recherche)",
+      "url": "https://github.com/igawa6/ctr-native-android",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-updated",
+      "text": "1 Erfahrungsbericht(e) zu CTR-DS (KI-Recherche)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1w2mw0s/crash_team_racing_ps1_dual_screen/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: CTR Native Android (PlayStation, KI-Recherche)",
+      "url": "https://github.com/Simon358/ctr-native-android/blob/master/README_ANDROID.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: CTR Mobile (PlayStation, KI-Recherche)",
+      "url": "https://github.com/ThiagoAciole/ctr-mobile/blob/main/README_ANDROID.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PlayStation mit 60-FPS-/Widescreen-Patch (PlayStation, KI-Recherche)",
+      "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Nitro-Fueled mit Eden Duo und CTRNF-DS (Crash Team Racing Nitro-Fueled, KI-Recherche)",
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: CTR 60 FPS Widescreen (KI-Recherche)",
+      "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: CTR Unlimited (KI-Recherche)",
+      "url": "https://customteamracing.com/ctr-unlimited/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Hatsune Miku für CTR Unlimited (KI-Recherche)",
+      "url": "https://customteamracing.com/hatsune-miku/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: CTR-ModSDK Mod Collection (KI-Recherche)",
+      "url": "https://github.com/CTR-tools/CTR-ModSDK/releases",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: CTRNF-DS / Nitro-Fueled Companion (KI-Recherche)",
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "crash-team-racing"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Nightmare Edition (KI-Recherche)",
+      "url": "https://blog.playstation.com/archive/2014/12/11/bloodborne-collectors-editions-pre-order-extras-revealed",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Game of the Year Edition (KI-Recherche)",
+      "url": "https://blog.playstation.com/archive/2015/10/13/bloodborne-game-of-the-year-edition-launches-on-25th-november",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Old Hunters Edition (KI-Recherche)",
+      "url": "https://www.fromsoftware.jp/ww/detail.html?csm=096",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: PlayStation Hits (KI-Recherche)",
+      "url": "https://blog.playstation.com/archive/2018/06/19/introducing-playstation-hits-acclaimed-ps4-games-for-only-19-99",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Bloodborne-Android mit Hunter’s Atlas (Game of the Year Edition, KI-Recherche)",
+      "url": "https://github.com/ducvd89/Bloodborne-Android",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Hunter’s Atlas – Android-Integration (KI-Recherche)",
+      "url": "https://github.com/MikeTat1988/HuntersAtlas",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Xbox (and switch) UI for Bloodborne (KI-Recherche)",
+      "url": "https://www.nexusmods.com/bloodborne/mods/30",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: More Options At Lamps (KI-Recherche)",
+      "url": "https://www.nexusmods.com/bloodborne/mods/107",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Reduced Physics (KI-Recherche)",
+      "url": "https://www.nexusmods.com/bloodborne/mods/114",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "bloodborne"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "pokemon-rejuvenation",
+      "text": "Dual Screen: Rejuv Dual für Pokémon Rejuvenation (Suchlauf)",
+      "url": "https://github.com/Enecchii/rejuv-dual/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "xenogears",
+      "text": "Dual Screen: Xenogears-Link für Xenogears (Suchlauf)",
+      "url": "https://github.com/Nihilspire/Xenogears-Link/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "world-of-warcraft-forever",
+      "text": "Dual Screen: DS Forever für World of Warcraft: Forever (Suchlauf)",
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "metroid-fusion-metroid-zero-mission-castlevania-aria-of-sorr",
+      "text": "Dual Screen: GBA DS für Metroid Fusion; Metroid: Zero Mission; Castlevania: Aria of Sorrow (Suchlauf)",
+      "url": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "stardew-valley",
+      "text": "Dual Screen: Thor Dual Screen für Stardew Valley (Suchlauf)",
+      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "bloodborne",
+      "text": "Dual Screen: Bloodborne · Thor Companion für Bloodborne (Suchlauf)",
+      "url": "https://github.com/emerytech/Bloodborne-Android"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "tomba-2-the-evil-swine-return",
+      "text": "Dual Screen: Tomba2RecompDS für Tomba! 2: The Evil Swine Return (Suchlauf)",
+      "url": "https://github.com/igawa6/Tomba2RecompDS"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "hollow-knight-silksong",
+      "text": "Dual Screen: Silksong Android für Hollow Knight: Silksong (Suchlauf)",
+      "url": "https://github.com/jakobkhansen/SilksongAndroid"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "hollow-knight",
+      "text": "Dual Screen: HK: Dual Souls für Hollow Knight (Suchlauf)",
+      "url": "https://github.com/igawa6/dualsouls/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "the-legend-of-zelda-twilight-princess",
+      "text": "Dual Screen: Dusklight Dual Screen für The Legend of Zelda: Twilight Princess (Suchlauf)",
+      "url": "https://github.com/igawa6/dusklight"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "crash-team-racing",
+      "text": "Dual Screen: CTR-DS für Crash Team Racing (Suchlauf)",
+      "url": "https://github.com/igawa6/ctr-native-android"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "metroid",
+      "text": "Dual Screen: Metroid Dual / Metroid Link für Metroid (Suchlauf)",
+      "url": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "ai-research",
+      "game": "the-legend-of-zelda-the-wind-waker-hd",
+      "text": "Dual Screen: ZeldaWWHDRecomp für The Legend of Zelda: The Wind Waker HD (Suchlauf)",
+      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
       "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
     },
     {

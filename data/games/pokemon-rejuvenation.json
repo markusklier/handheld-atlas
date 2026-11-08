@@ -1,0 +1,59 @@
+{
+  "id": "pokemon-rejuvenation",
+  "title": "Pokémon Rejuvenation",
+  "franchise": "Pokémon",
+  "platforms": [
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-rejuv-dual",
+      "name": "Rejuv Dual",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": null,
+      "projects": [
+        "rejuv-dual"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten sowie Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken einschließlich AP und Effektivität. Android-Player auf mkxp-z-Basis; automatischer Vorab-Build vom 8. November 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Enecchii/rejuv-dual/main/README.md))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Enecchii/rejuv-dual/blob/main/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

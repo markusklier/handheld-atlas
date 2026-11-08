@@ -1,0 +1,59 @@
+{
+  "id": "world-of-warcraft-forever",
+  "title": "World of Warcraft: Forever",
+  "franchise": "World of Warcraft: Forever",
+  "platforms": [
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-ds-forever",
+      "name": "DS Forever",
+      "kind": "companion",
+      "release": "pc",
+      "runtime": null,
+      "projects": [
+        "ds-forever"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Controllerorientierte Begleitoberfläche mit Zaubern und Radialmenüs, Taschen sowie Welt- und Innenraumkarten. Karten zeigen unter anderem Quests, beobachtete NPCs und Ressourcen. Für WoW Forever auf dem Thor; alternativ PC-Streaming mit Companion unten. Erste öffentliche Version am 13. Oktober 2026. ([github.com](https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0))",
+      "dualScreenType": "companion",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

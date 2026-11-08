@@ -1,0 +1,59 @@
+{
+  "id": "hollow-knight-silksong",
+  "title": "Hollow Knight: Silksong",
+  "franchise": "Hollow Knight: Silksong",
+  "platforms": [
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ds-silksong-android",
+      "name": "Silksong Android",
+      "kind": "native",
+      "release": "pc",
+      "runtime": null,
+      "projects": [
+        "silksong-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Bedienbare Umsetzung des Spielmenüs auf Bildschirm 2: Karte anzeigen, Gegenstände verwenden und Crest wechseln. Nativer arm64-Port mit optionaler Steam-Anbindung für eigene Spieldateien und Cloud-Spielstände; öffentliche Builds seit mindestens August 2026. ([github.com](https://github.com/jakobkhansen/SilksongAndroid))",
+      "dualScreenType": "integrated",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/jakobkhansen/SilksongAndroid"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}
