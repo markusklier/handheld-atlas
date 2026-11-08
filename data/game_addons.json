@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "notice": "Mods are source-linked suggestions, not verified compatible combinations or performance measurements.",
+  "games": {
+    "minecraft": [
+      {"id":"sodium","name":"Sodium","category":"performance-rendering","projectUrl":"https://modrinth.com/mod/sodium","description":"Optimierter Java-Renderer. Hinweis: Das Projekt unterstützt Android OpenGL-Übersetzungsschichten nicht offiziell. Deshalb kein pauschaler Thor-FPS-Tipp.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/sodium"},
+      {"id":"lithium","name":"Lithium","category":"performance-logic","projectUrl":"https://modrinth.com/mod/lithium","description":"Optimierungen der Spielsimulation. Version und Modloader müssen zur Java-Edition passen; keine Thor-Messwerte.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/lithium"},
+      {"id":"ferritecore","name":"FerriteCore","category":"performance-memory","projectUrl":"https://modrinth.com/mod/ferrite-core","description":"Reduziert die Speichernutzung bestimmter Minecraft-Java-Versionen. Spezifische Builds und Loader gegenprüfen.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/ferrite-core"}
+    ]
+  }
+}
