@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from ai_agents import model_research, model_vision, parse_json
+from ai_agents import model_research, model_vision, parse_json, vision_queue
 
 
 class StructuredAIOutputTests(unittest.TestCase):
@@ -21,6 +21,25 @@ class StructuredAIOutputTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'invalid JSON') as caught:
             parse_json(raw)
         self.assertNotIn('oops', str(caught.exception))
+
+    def test_vision_uses_curated_images_if_discovery_has_no_media(self):
+        image = 'https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/metroid-dread/map.png'
+        catalog = {'games': [{'id': 'metroid-dread', 'title': 'Metroid Dread', 'routes': [
+            {'id': 'dread-duo', 'name': 'Eden Duo Companion', 'media': [
+                {'url': image, 'caption': 'Map', 'sourceUrl': 'https://github.com/igawa6/eden-duo-companions'}]}]}]}
+        queue = vision_queue({'candidates': []}, {'results': {}}, 2, catalog=catalog)
+        self.assertEqual(len(queue), 1)
+        self.assertEqual(queue[0][1]['gameTitle'], 'Metroid Dread')
+        self.assertEqual(queue[0][1]['routeId'], 'dread-duo')
+        self.assertEqual(queue[0][2]['url'], image)
+        self.assertEqual(vision_queue({'candidates': []},
+                         {'results': {queue[0][0]: {'verdict': 'plausible'}}}, 2, catalog=catalog), [])
+
+    def test_curated_image_not_processed_without_allowed_url(self):
+        catalog = {'games': [{'id': 'demo', 'title': 'Demo', 'routes': [
+            {'id': 'demo-route', 'name': 'Demo port', 'media': [
+                {'url': 'https://localhost:4567/exfil.png'}]}]}]}
+        self.assertEqual(vision_queue({'candidates': []}, {'results': {}}, 2, catalog=catalog), [])
 
     def test_research_sends_strict_schema_and_high_context(self):
         seen = {}
