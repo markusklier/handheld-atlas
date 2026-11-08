@@ -180,6 +180,10 @@ def from_modrinth(game,target,hit,query):
     title=str(hit.get('title') or '')[:140]
     summary=str(hit.get('description') or '')[:450]
     if not relevant(game,target,title,summary,strict=False):return None
+    # The word 'companion' often means a pet/NPC, not a secondary screen.
+    # Require explicit platform/display wording before entering the handheld queue.
+    device_terms = re.compile(r'\b(?:dual[ -]?screens?|second[ -]?screens?|secondary[ -]?displays?|two[ -]?screens?|multi[ -]?screens?|second[ -]?monitors?|ayn[ -]?thor|android[ -]?handhelds?|droidbridge|pojavlauncher|zalithlauncher)\b', re.I)
+    if not device_terms.search(title+' '+summary):return None
     slug=str(hit.get('slug') or '').strip()
     if not re.fullmatch(r'[a-zA-Z0-9_-]{2,90}',slug):return None
     url='https://modrinth.com/mod/'+slug

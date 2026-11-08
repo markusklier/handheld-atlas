@@ -6,12 +6,36 @@ import unittest
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from atlas_v4 import make_index, media_url, project_url
+from atlas_v4 import make_index, media_url, project_url, handheld_mod_relevant
 from ai_agents import choose_game, run_research, validate_vision, vision_queue
 
 CAT = json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
 
 class AtlasV4Tests(unittest.TestCase):
+    def test_generic_minecraft_pets_are_not_handheld_projects(self):
+        generic = {'provider': 'modrinth', 'project': 'AI Buddy',
+                   'label': 'A Minecraft companion pet following the player',
+                   'discoveryMode': 'live', 'gameId': 'minecraft',
+                   'url': 'https://modrinth.com/mod/ai-buddy',
+                   'evidence': [{'sourceUrl': 'https://modrinth.com/mod/ai-buddy',
+                                 'excerpt': 'AI pet companion'}]}
+        self.assertFalse(handheld_mod_relevant(generic))
+        out = make_index(CAT, {'candidates': [generic]}, {'candidates': []},
+                         {'findings': []}, {'results': {}}, stamp='2026-11-08T00:00:00Z')
+        self.assertFalse(any('modrinth.com/mod/ai-buddy' in p['url'] for p in out['projects']))
+
+    def test_dual_screen_modrinth_project_can_surface(self):
+        item = {'provider': 'modrinth', 'project': 'Inventory on second screen',
+                'label': 'Minecraft mod for AYN Thor secondary display',
+                'discoveryMode': 'live', 'gameId': 'minecraft',
+                'url': 'https://modrinth.com/mod/second-inventory',
+                'evidence': [{'sourceUrl': 'https://modrinth.com/mod/second-inventory',
+                              'excerpt': 'Inventory on second screen'}]}
+        self.assertTrue(handheld_mod_relevant(item))
+        out = make_index(CAT, {'candidates': [item]}, {'candidates': []},
+                         {'findings': []}, {'results': {}}, stamp='2026-11-08T00:00:00Z')
+        self.assertTrue(any('modrinth.com/mod/second-inventory' in p['url'] for p in out['projects']))
+
     def test_project_nodes_connect_routes_but_are_not_device_tests(self):
         out=make_index(CAT,{'candidates':[]},{'candidates':[]},{'findings':[]},{'results':{}},stamp='2026-11-08T00:00:00Z')
         self.assertGreater(out['totalProjects'], 0)

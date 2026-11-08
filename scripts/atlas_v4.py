@@ -16,6 +16,19 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECT_HOSTS = {'github.com', 'modrinth.com', 'www.curseforge.com', 'andreyvelsk.github.io', 'opengameports.com'}
 IMAGE_HOSTS = {'raw.githubusercontent.com', 'cdn.modrinth.com', 'media.forgecdn.net', 'mediafilez.forgecdn.net'}
 
+# Broad searches can match pets and unrelated HUD widgets; retain raw leads
+# without publishing them as Android handheld or dual-screen game paths.
+HANDHELD_MOD_TERMS = re.compile(
+    r'\b(?:dual[ -]?screens?|second[ -]?screens?|secondary[ -]?displays?|'
+    r'two[ -]?screens?|multi[ -]?screens?|second[ -]?monitors?|'
+    r'ayn[ -]?thor|android[ -]?handhelds?|droidbridge|pojavlauncher|zalithlauncher)\b',
+    re.I)
+
+def handheld_mod_relevant(item):
+    text = ' '.join(str(item.get(key) or '') for key in ('project', 'label'))
+    return bool(HANDHELD_MOD_TERMS.search(text))
+
+
 def now():
     return datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
 
@@ -84,6 +97,7 @@ def make_index(catalog, research, source_candidates, ai, vision, previous=None, 
     # Only genuinely live provider results. Historical offline fixtures never surface as news.
     for item in research.get('candidates', []):
         if item.get('discoveryMode') != 'live' or item.get('status') == 'rejected':continue
+        if item.get('provider') == 'modrinth' and not handheld_mod_relevant(item):continue
         url = project_url(item.get('url'))
         if not url:continue
         evidence = [e for e in item.get('evidence', [])[:5] if clean_url(e.get('sourceUrl'), PROJECT_HOSTS)]
