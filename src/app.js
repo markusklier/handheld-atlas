@@ -27,7 +27,7 @@
   const games = new Map(catalog.games.map(g => [g.id, g]));
   const KEY = 'handheld-atlas.preferences.v1';
   let storageAvailable = true;
-  let prefs = {schemaVersion:1, watch:{}, customGames:{}, checks:{}, profile:'thor', lastSeen:null};
+  let prefs = {schemaVersion:1, watch:{}, customGames:{}, checks:{}, profile:'thor', lastSeen:null,previewDual:false,previewPreference:'auto'};
   try { const raw = localStorage.getItem(KEY); if(raw) prefs = C.sanitizePreferences(JSON.parse(raw), catalog); }
   catch (_) { storageAvailable = false; }
   // User-provided titles are local placeholders, never compatibility claims.
@@ -41,10 +41,16 @@
     }
   }
   restoreCustomGames();
+  // Android-native wrapper capability hook. In browsers, no device inference.
+  try { const caps=window.HandheldAtlasBridge?.getCapabilities?.();
+    if(caps?.dualScreen===true && prefs.previewPreference!=='manual')prefs.previewDual=true;
+  } catch (_) {}
+  const galleryPositions=new Map();
+  let activePreviewCard=null,previewTimer=null,activeGalleryId=null;
   let view = 'discover', selected = null, tab = 'routes', comparing = new Set(), deferredInstall = null;
   let lastFocus = null;
   let visibleLimit=48;
-  const defaults = () => ({q:'',profile:prefs.profile,feature:'',kind:'',franchise:'',evidence:'',effort:'',original:'',sort:'editorial',showOtherPlatforms:false,includeArchived:false});
+  const defaults = () => ({q:'',profile:prefs.profile,feature:'',kind:'',franchise:'',evidence:'',effort:'',original:'',sort:'editorial',onlyWithImages:false,showOtherPlatforms:false,includeArchived:false});
   let filters = defaults();
   const icons = {
     compass:'<circle cx="12" cy="12" r="9"/><path d="m15.7 8.3-2.3 5.1-5.1 2.3 2.3-5.1z"/>',
@@ -119,7 +125,56 @@
     return routes.flatMap(r=>(r.media||[]).map(m=>({...m,routeName:r.name,dual:r.features.includes('dual-screen')})))
       .find(m=>safeArtwork(m.url));
   }
-  function primaryShot(routes) {return routes.flatMap(r=>r.media||[]).find(m=>safeArtwork(m.url));}
+  function previewItems(game,routes) {
+    const cover=gameMedia(game).cover;
+    const originals=(gameMedia(game).screenshots||[]).slice(0,6)
+      .map(m=>({...m,label:'Originalspiel · Szene',type:'original'}));
+    const variants=routes.flatMap(r=>(r.media||[]).map(m=>({...m,
+      label:r.features.includes('dual-screen')?'Dual-Screen · '+r.name:'Spielweg · '+r.name,
+      type:r.features.includes('dual-screen')?'dual':'route'}))).slice(0,5);
+    const covers=cover?[{...cover,label:'Spielcover',type:'cover'}]:[];
+    const dual=Boolean(prefs.previewDual||filters.feature==='dual-screen');
+    const ordered=dual?[...variants.filter(m=>m.type==='dual'),...originals,...covers,...variants.filter(m=>m.type!=='dual')]:
+      [...originals,...covers,...variants];
+    const seen=new Set();return ordered.filter(m=>{const u=safeArtwork(m.url);if(!u||seen.has(u))return false;seen.add(u);return true;}).slice(0,7);
+  }
+  function galleryPictures(items,limit=12) {
+    const seen=new Set();return (items||[]).filter(m=>{const u=safeArtwork(m.url);if(!u||seen.has(u))return false;seen.add(u);return true;}).slice(0,limit)
+      .map(m=>({url:safeArtwork(m.url),caption:String(m.caption||'Screenshot').slice(0,150),
+        sourceUrl:C.safeURL(m.sourceUrl)||'',label:String(m.label||'Originalquelle').slice(0,100)}));
+  }
+  function gallery(id,pictures,title,empty) {
+    const items=galleryPictures(pictures);
+    if(!items.length)return `<div class="media-unavailable">${icon('info')} ${E(empty||'Noch keine eindeutig zugeordneten Bilder vorhanden.')}</div>`;
+    const index=Math.min(galleryPositions.get(id)||0,items.length-1),item=items[index];
+    return `<section class="atlas-gallery" data-gallery="${E(id)}" data-gallery-pictures="${E(JSON.stringify(items))}" tabindex="0" role="group" aria-label="${E(title)}. Bilder mit Pfeiltasten oder L1/R1 wechseln.">
+       <div class="atlas-gallery-stage"><span class="gallery-unavailable" hidden>Bild derzeit nicht erreichbar · Quelle unten öffnen</span><img class="remote-photo atlas-gallery-photo" src="${E(item.url)}" alt="${E(item.caption)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+       ${items.length>1?`<button class="gallery-control gallery-prev" type="button" data-gallery-step="-1" aria-label="Vorheriges Bild">&#8249;</button><button class="gallery-control gallery-next" type="button" data-gallery-step="1" aria-label="Nächstes Bild">&#8250;</button>`:''}
+       <span class="gallery-image-type">${E(title)}</span></div>
+       <div class="gallery-under"><span class="gallery-counter" data-gallery-counter>${index+1} / ${items.length}</span><span class="gallery-caption" data-gallery-caption>${E(item.caption)}</span><a data-gallery-source href="${E(item.sourceUrl||item.url)}" target="_blank" rel="noopener noreferrer">Originalquelle</a></div>
+       ${items.length>1?`<div class="gallery-thumbs" aria-label="Screenshot auswählen">${items.map((m,i)=>`<button type="button" class="gallery-thumb ${i===index?'selected':''}" data-gallery-index="${i}" aria-label="Bild ${i+1}: ${E(m.caption)}" aria-pressed="${i===index}"><img src="${E(m.url)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt=""><span>${i+1}</span></button>`).join('')}</div>`:''}
+    </section>`;
+  }
+  function galleryChange(section,value,absolute=false) {
+    if(!section)return;
+    let images=[];try{images=JSON.parse(section.dataset.galleryPictures||'[]');}catch(_){return;}
+    if(!images.length)return;
+    const id=section.dataset.gallery,prior=galleryPositions.get(id)||0;
+    const index=absolute?Math.max(0,Math.min(images.length-1,value)):(prior+value+images.length)%images.length;
+    const pic=images[index],url=safeArtwork(pic.url),img=section.querySelector('.atlas-gallery-photo');
+    if(!url||!img)return;
+    galleryPositions.set(id,index);activeGalleryId=id;img.hidden=false;const warning=section.querySelector('.gallery-unavailable');if(warning)warning.hidden=true;img.src=url;img.alt=pic.caption;
+    const count=section.querySelector('[data-gallery-counter]');if(count)count.textContent=`${index+1} / ${images.length}`;
+    const caption=section.querySelector('[data-gallery-caption]');if(caption)caption.textContent=pic.caption;
+    const source=section.querySelector('[data-gallery-source]');if(source)source.href=C.safeURL(pic.sourceUrl)||url;
+    section.querySelectorAll('[data-gallery-index]').forEach((b,i)=>{b.classList.toggle('selected',i===index);b.setAttribute('aria-pressed',String(i===index));});
+  }
+  function detailActiveGallery() {
+    const dialog=$('#detail-dialog');if(!dialog.open)return null;
+    const within=document.activeElement?.closest?.('[data-gallery]');
+    return within|| (activeGalleryId?[...dialog.querySelectorAll('[data-gallery]')].find(x=>x.dataset.gallery===activeGalleryId):null)
+      ||dialog.querySelector('.detail-original-gallery [data-gallery]')||dialog.querySelector('[data-gallery]');
+  }
   function artworkImage(image,css='') {
     const url=safeArtwork(image?.url);
     if(!url)return '';
@@ -133,8 +188,8 @@
   function originalShots(game,limit=8) {
     const media=gameMedia(game);
     const shots=(media.screenshots||[]).filter(m=>safeArtwork(m.url)).slice(0,limit);
-    if(!shots.length)return '<p class="media-unavailable">Noch keine allgemeinen Originalspiel-Screenshots mit bestätigter Zuordnung verfügbar.</p>';
-    return `<div class="route-screen-grid">${shots.map(m=>`<figure class="route-shot"><a href="${E(safeArtwork(m.url))}" target="_blank" rel="noopener noreferrer">${artworkImage(m,'original-shot')}</a><figcaption>Originalspiel · kein Handheld-Test. ${link(m.sourceUrl,'Bildquelle')}</figcaption></figure>`).join('')}</div>`;
+    if(!shots.length){const cover=media.cover;return safeArtwork(cover?.url)?gallery(`fallback-cover-${game.id}`,[{...cover,caption:'Cover des Originalspiels – noch keine Spielszenen vorhanden'}],'Cover statt Originalspiel-Screenshot'):'<p class="media-unavailable">Noch keine allgemeinen Originalspiel-Screenshots mit bestätigter Zuordnung verfügbar. Spielweg-Bilder bleiben im Bereich Spielwege.</p>'; }
+    return gallery(`original-${game.id}`,shots.map(m=>({...m,label:'Originalspiel · keine Mod'})),'Originalspiel · allgemeine Spielszenen');
   }
   function platformOptions(game) {
     const paths=platformSuggestions(game);
@@ -159,34 +214,48 @@
   function routeScreens(r,limit=3) {
     const items=(r.media||[]).filter(m=>C.safeURL(m.url)).slice(0,limit);
     if(!items.length) return `<div class="media-unavailable">${icon('info')} Für diesen Spielweg fehlt noch ein zugeordneter, überprüfter Screenshot. ${link(sources.get(r.sources[0])?.url||'','Bilder im Originalprojekt suchen')}</div>`;
-    return `<div class="route-screen-grid">${items.map(m=>`<figure class="route-shot"><a href="${E(C.safeURL(m.url))}" target="_blank" rel="noopener noreferrer" title="Originalbild öffnen"><span class="image-placeholder">Bild vom Originalprojekt laden oder hier öffnen</span>${shotImage(m)}</a><figcaption><span>${E(m.caption)}</span>${link(m.sourceUrl,'Quelle')}</figcaption></figure>`).join('')}</div>`;
+    return gallery(`route-${r.id}`,items.map(m=>({...m,label:'Spielweg · '+r.name})),`Spielweg: ${r.name}`);
   }
   function gameCard(game,routes) {
-    const indexed=!game.routes.length;
-    const dual=routes.some(r=>r.features.includes('dual-screen'));
+    const indexed=!game.routes.length,dual=routes.some(r=>r.features.includes('dual-screen'));
     const kinds=[...new Set(routes.map(r=>catalog.kinds[r.kind]))];
-    const official=gameMedia(game).cover;
-    const cover=safeArtwork(official?.url)?official:null;
-    const original=generalShot(game);
-    const route=routeShot(game,routes);
-    const dualView=filters.feature==='dual-screen' && dual;
-    const primary=dualView?(route||cover||original):(cover||route||original);
-    const preview=dualView?(original||cover||route):(route||original||cover);
-    const credit=primary===cover?'Spielcover / Originalgrafik':primary===route?'Bild des dokumentierten Spielwegs':'Originalspiel-Screenshot';
-    const base=art(game,indexed?'Spieleindex':dual?icon('dual')+'Dual-Screen':icon('box')+'Spielwege');
-    const showCover=safeArtwork(primary?.url);
-    const hover=safeArtwork(preview?.url);
-    const artPart=showCover?`<div class="game-cover cover-aspect ${primary?.portrait?'cover-portrait':''}">${base}${artworkImage(primary,'game-cover-img')}${hover&&hover!==showCover?`<img class="hover-preview" data-hover-src="${E(hover)}" alt="${E(preview?.caption||'Spielvorschau')}" decoding="async">`:''}${cover&&primary!==cover?`<div class="inset-cover">${artworkImage(cover)}</div>`:''}<span class="cover-credit">${E(credit)}</span></div>`:
-      `<div class="game-cover cover-aspect">${base}<span class="cover-credit">Noch kein belegtes Spielcover</span></div>`;
+    const preview=previewItems(game,routes),cover=gameMedia(game).cover,first=preview[0];
     const pathCount=platformSuggestions(game).length;
-    return `<article class="game-card ${indexed?'index-card':''}">
+    const fallback=art(game,indexed?'Spieleindex':dual?icon('dual')+'Dual-Screen':icon('box')+'Spielwege');
+    const picture=first?`<img class="card-photo" src="${E(safeArtwork(first.url))}" alt="${E(first.caption||'Spielmotiv')}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'';
+    const inset=first&&cover&&safeArtwork(cover.url)&&first.url!==cover.url?`<div class="inset-cover">${artworkImage(cover)}</div>`:'';
+    const previews=preview.map(m=>({url:safeArtwork(m.url),caption:m.caption||'Spielbild',label:m.label||'Bild',type:m.type}));
+    return `<article class="game-card ${indexed?'index-card':''}" data-previews="${E(JSON.stringify(previews))}" data-preview-index="0">
       <button type="button" class="save-btn ${prefs.watch[game.id]?'saved':''}" data-watch="${game.id}" aria-label="${prefs.watch[game.id]?'Aus Merkliste entfernen':'Merken'}: ${E(game.title)}" aria-pressed="${!!prefs.watch[game.id]}">${icon('bookmark')}</button>
-      <button type="button" class="card-open" data-game="${game.id}" aria-label="${E(game.title)}: ${indexed?'Mögliche Spielwege und Recherche':'Spielwege ansehen'}">${artPart}
-       <div class="card-copy"><div class="card-meta">${E(game.original)}${indexed?' · nicht getestet':' · '+E(game.genre)}</div><h3>${E(game.title)}</h3><div class="route-tags">${indexed?tag(pathCount?`${pathCount} Plattformoption${pathCount>1?'en':''}`:'Noch keine geprüften Wege','amber'):kinds.slice(0,2).map(k=>tag(k)).join('')}</div></div></button>
-      <div class="card-bottom"><span>${indexed?'Spieleindex / mögliche Wege':routes.length+' von '+game.routes.length+' dokumentierten Wegen'}</span><button type="button" data-game="${game.id}"><strong>Ansehen ${icon('arrow')}</strong></button></div></article>`;
+      <button type="button" class="card-open" data-game="${game.id}" aria-label="${E(game.title)}: ${indexed?'Mögliche Spielwege':'Spielwege ansehen'}">
+        <div class="game-cover cover-aspect">${fallback}${picture}${inset}<span class="cover-credit" data-preview-label>${E(first?.label||'Noch kein Quellenbild')}</span></div>
+        <div class="card-copy"><div class="card-meta">${E(game.original)}${indexed?' · nicht getestet':' · '+E(game.genre)}</div><h3>${E(game.title)}</h3><div class="route-tags">${indexed?tag(pathCount?`${pathCount} Plattformoption${pathCount>1?'en':''}`:'Noch keine geprüften Wege','amber'):kinds.slice(0,2).map(k=>tag(k)).join('')}</div></div>
+      </button>
+      ${preview.length>1?`<div class="card-preview-controls"><button type="button" data-card-step="-1" aria-label="Vorheriges Bild für ${E(game.title)}">&#8249;</button><span data-card-counter>1 / ${preview.length}</span><button type="button" data-card-step="1" aria-label="Nächstes Bild für ${E(game.title)}">&#8250;</button></div>`:''}
+      <div class="card-bottom"><span>${indexed?'Spieleindex / mögliche Wege':routes.length+' von '+game.routes.length+' dokumentierten Wegen'}</span><button type="button" data-game="${game.id}"><strong>Ansehen ${icon('arrow')}</strong></button></div>
+    </article>`;
   }
+  function cardChange(card,step) {
+    if(!card)return;
+    let slides=[];try{slides=JSON.parse(card.dataset.previews||'[]');}catch(_){return;}
+    if(!slides.length)return;
+    const before=Number(card.dataset.previewIndex)||0,next=(before+step+slides.length)%slides.length;
+    const pic=slides[next],src=safeArtwork(pic.url);if(!src)return;
+    card.dataset.previewIndex=String(next);
+    const img=card.querySelector('.card-photo');if(img){img.hidden=false;img.src=src;img.alt=pic.caption;}
+    const label=card.querySelector('[data-preview-label]');if(label)label.textContent=pic.label;
+    const count=card.querySelector('[data-card-counter]');if(count)count.textContent=`${next+1} / ${slides.length}`;
+    const inset=card.querySelector('.inset-cover');if(inset)inset.hidden=pic.type==='cover';
+  }
+  function stopCardPreview(){if(previewTimer)clearInterval(previewTimer);previewTimer=null;activePreviewCard=null;}
+  function startCardPreview(card){if(!card||activePreviewCard===card)return;stopCardPreview();activePreviewCard=card;
+    if(card.querySelector('[data-card-step]')&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches)previewTimer=setInterval(()=>cardChange(card,1),2700);}
   function discover() {
-    const results=C.filterGames(catalog,filters,prefs.watch);
+    const results=C.filterGames(catalog,filters,prefs.watch).filter(x=>!filters.onlyWithImages||
+      Boolean(gameMedia(x.game).cover || gameMedia(x.game).screenshots?.length || x.routes.some(r=>r.media?.length)));
+    if(filters.sort==='images')results.sort((a,b)=>
+      Number(Boolean(gameMedia(b.game).screenshots?.length||gameMedia(b.game).cover?.url||b.routes.some(r=>r.media?.length)))-
+      Number(Boolean(gameMedia(a.game).screenshots?.length||gameMedia(a.game).cover?.url||a.routes.some(r=>r.media?.length))));
     const franchises=[...new Set(catalog.games.map(g=>g.franchise))].sort((a,b)=>a.localeCompare(b,'de'));
     const platforms=[...new Set(catalog.games.flatMap(g=>g.knownPlatforms||[]))].sort((a,b)=>a.localeCompare(b,'de'));
     const routeCount=catalog.games.reduce((n,g)=>n+g.routes.length,0);
@@ -197,14 +266,14 @@
       <div class="section-heading" id="browse"><div><h2>${filters.franchise?E(filters.franchise):'Was willst du spielen?'}</h2><p>Cover, Originalspiel-Screenshots und Variantenbilder entdecken – Spielwege getrennt von Kompatibilitätstests.</p></div><span class="result-count" aria-live="polite">${results.length} Spiele</span></div>
       <div class="quick-filters">${quick.map(([f,t,i])=>`<button class="chip ${filters.feature===f?'active':''}" data-feature="${f}" type="button" aria-pressed="${filters.feature===f}">${icon(i)}${t}</button>`).join('')}
        <button class="chip ${filters.effort==='easy'?'active':''}" data-easy type="button">${icon('check')} Einfaches Setup</button>
-       <button class="chip" type="button" data-info-battery>${icon('pulse')} Akkulaufzeit?</button></div>
+       <button class="chip ${prefs.previewDual?'active':''}" type="button" data-toggle-dual aria-pressed="${!!prefs.previewDual}">${icon('dual')} Dual-Screen-Bilder vorziehen (manuell)</button></div>
       <div class="filters"><div class="filter-control"><label for="kind">Technischer Weg</label><select id="kind" data-filter="kind">${options([['','Alle Wege'],...Object.entries(catalog.kinds)],filters.kind)}</select></div>
       <div class="filter-control"><label for="original">Konsole / Plattform</label><select id="original" data-filter="original">${options([['','Alle Plattformen'],...platforms.map(p=>[p,p])],filters.original)}</select></div>
       <div class="filter-control"><label for="franchise">Franchise</label><select id="franchise" data-filter="franchise">${options([['','Alle Franchises'],...franchises.map(f=>[f,f])],filters.franchise)}</select></div>
       <div class="filter-control"><label for="evidence">Stand</label><select id="evidence" data-filter="evidence">${options([['','Mit Watchlist-Index'],['documented','Nur dokumentierte Varianten']],filters.evidence)}</select></div>
-      <div class="filter-control"><label for="sort">Sortieren</label><select id="sort" data-filter="sort">${options([['editorial','Relevanz / dokumentiert zuerst'],['az','Alphabetisch']],filters.sort)}</select></div>
-      <label class="filter-check"><input type="checkbox" data-filter="showOtherPlatforms" ${filters.showOtherPlatforms?'checked':''}> Auch andere Betriebssysteme</label><button class="reset-button" type="button" data-reset>Filter löschen</button></div>
-      ${cheapNotice}<section class="game-grid" aria-label="Spielergebnisse">${results.length?results.slice(0,visibleLimit).map(x=>gameCard(x.game,x.routes)).join(''):`<div class="empty">${icon('search')}<h3>Keine passende, geprüfte Variante gefunden.</h3><p>Das ist kein Beweis, dass das Spiel nicht existiert. Für Akku- und FPS-Filter fehlen noch systematisch erhobene Messwerte.</p><button class="secondary" type="button" data-reset>Filter zurücksetzen</button>${filters.q.trim().length>1&&!catalog.games.some(g=>C.normalize(g.title)===C.normalize(filters.q.trim()))?`<button class="primary" type="button" data-add-custom>„${E(filters.q.trim().slice(0,70))}“ für die Merkliste erfassen</button>`:''}</div>`}</section>
+      <div class="filter-control"><label for="sort">Sortieren</label><select id="sort" data-filter="sort">${options([['editorial','Relevanz / dokumentiert zuerst'],['az','Alphabetisch'],['images','Mit Bildern zuerst']],filters.sort)}</select></div>
+      <label class="filter-check"><input type="checkbox" data-filter="onlyWithImages" ${filters.onlyWithImages?'checked':''}> Nur mit Bildern</label><label class="filter-check"><input type="checkbox" data-filter="showOtherPlatforms" ${filters.showOtherPlatforms?'checked':''}> Auch andere Betriebssysteme</label><button class="reset-button" type="button" data-reset>Filter löschen</button></div>
+      ${cheapNotice}<section class="game-grid" aria-label="Spielergebnisse">${results.length?results.slice(0,visibleLimit).map(x=>gameCard(x.game,x.routes)).join(''):`<div class="empty">${icon('search')}<h3>Keine passende, geprüfte Variante gefunden.</h3><p>Das ist kein Beweis, dass das Spiel nicht existiert. Ein Spiel kann auch ohne dokumentierten Spielweg über andere Emulatoren oder Ports spielbar sein.</p><button class="secondary" type="button" data-reset>Filter zurücksetzen</button>${filters.q.trim().length>1&&!catalog.games.some(g=>C.normalize(g.title)===C.normalize(filters.q.trim()))?`<button class="primary" type="button" data-add-custom>„${E(filters.q.trim().slice(0,70))}“ für die Merkliste erfassen</button>`:''}</div>`}</section>
       ${results.length>visibleLimit?`<div class="load-more"><button class="secondary" type="button" data-more>Mehr Spiele anzeigen (${results.length-visibleLimit} weitere)</button></div>`:''}
       <p class="footer-note">Stand ${date(catalog.reviewedAt)}. Ohne eigene ROMs, keine Downloads von Spieldaten. Externe Projektbilder werden mit Ursprungsquelle eingeblendet; offline stehen sie nicht zur Verfügung.</p>`;
   }
@@ -295,15 +364,17 @@
     if(!selected)return;
     let content='';
     if(tab==='routes')content=(selected.routes.length?selected.routes.map(routeCard).join(''):`<div class="empty"><h3>Dieses Spiel kannst du schon beobachten.</h3><p>Es ist im Spieleindex oder als eigener Suchlisten-Eintrag erfasst. Noch kein einzeln geprüfter, gerätespezifischer Spielweg liegt in Atlas vor. Das bedeutet NICHT, dass keine Emulation oder Mod existiert.</p><div class="toolbar"><button class="primary" data-watch="${selected.id}" type="button">${icon('bookmark')} ${prefs.watch[selected.id]?'Aus Merkliste entfernen':'Für Dual-Screen-Mods merken'}</button><button class="secondary" data-research="${selected.id}" type="button">GitHub-Projekte suchen ${icon('external')}</button></div></div>`) + (selected.routes.length?`<div class="compare-bar"><span>${comparing.size} von maximal 3 Spielwegen ausgew\u00e4hlt</span><button type="button" class="primary" data-tab="compare" ${comparing.size<2?'disabled':''}>Vergleich \u00f6ffnen ${icon('arrow')}</button></div>`:'');
-    if(tab==='routes')content += platformOptions(selected)+editionLinks(selected);
+    if(tab==='routes')content += '<div class="info-banner neutral">Spielweg-Screenshots stehen direkt beim jeweiligen Spielweg. Oben siehst du ausschließlich Originalspiel-Bilder.</div>';
+    if(tab==='original')content=platformOptions(selected)+editionLinks(selected);
+    if(tab==='original'&&!content)content='<div class="media-unavailable">Noch keine weiteren Originaleditionen oder Plattformoptionen erfasst.</div>';
     if(tab==='compare')content=comparison();
     if(tab==='research')content=researchForGame(selected);
     if(tab==='media')content=selected.routes.length?selected.routes.map(r=>`<section class="gallery-section"><h3>${E(r.name)}</h3><p class="route-sub">${E(r.edition)} · ${E(r.runtime)}</p>${routeScreens(r,15)}</section>`).join(''):'<p class="info-banner neutral">Für dieses Spiel liegen noch keine zugeordneten Projektbilder vor.</p>';
-    if(tab==='media') content = `<section class="gallery-section"><h3>Originalspiel · allgemeine Spielszenen</h3><p class="footer-note">Screenshots des Originalspiels – nicht eines Mods oder Emulators.</p>${originalShots(selected)}</section>`+content+unreviewedScreens(selected);
+    if(tab==='media')content += unreviewedScreens(selected);
     if(tab==='mods')content=addOnSection(selected);
-    $('#detail-content').innerHTML=`<div class="dialog-head"><div class="eyebrow">SPIEL / EDITION / SPIELWEG</div><button type="button" class="close" data-close="detail" aria-label="Spieldetails schlie\u00dfen">${icon('close')}</button></div><div class="detail-hero">${safeArtwork(gameMedia(selected).cover?.url)?`<div class="detail-cover">${artworkImage(gameMedia(selected).cover,'detail-game-cover')}<span>Original-Cover / ${E(gameMedia(selected).provenance||'Metadatenquelle')}</span></div>`:art(selected)}<div><div class="card-meta">${E(selected.franchise)} / ${E(selected.original)}</div><h2 id="detail-title">${E(selected.title)}</h2><p>${E(selected.blurb)}</p><div class="route-actions"><button type="button" class="secondary" data-watch="${selected.id}">${icon('bookmark')}${prefs.watch[selected.id]?'Gemerkt':'Spiel merken'}</button><button type="button" class="quiet" data-share="${selected.id}">Link kopieren</button></div></div></div><div class="detail-body"><div class="detail-tabs" role="tablist" aria-label="Spielansichten">${[['routes',`Spielwege (${selected.routes.length})`],['compare','Direktvergleich'],['media','Bilder: Original & Varianten'],['mods',`Mods & Performance (${gameAddonsFor(selected).length})`],['research','Recherche-Stand']].map(([id,label])=>`<button class="detail-tab ${tab===id?'active':''}" type="button" role="tab" aria-selected="${tab===id}" data-tab="${id}">${label}</button>`).join('')}</div>${content}</div>`;
+    $('#detail-content').innerHTML=`<div class="dialog-head"><div class="eyebrow">SPIEL / EDITION / SPIELWEG</div><button type="button" class="close" data-close="detail" aria-label="Spieldetails schlie\u00dfen">${icon('close')}</button></div><div class="detail-hero">${safeArtwork(gameMedia(selected).cover?.url)?`<div class="detail-cover">${artworkImage(gameMedia(selected).cover,'detail-game-cover')}<span>Original-Cover / ${E(gameMedia(selected).provenance||'Metadatenquelle')}</span></div>`:art(selected)}<div><div class="card-meta">${E(selected.franchise)} / ${E(selected.original)}</div><h2 id="detail-title">${E(selected.title)}</h2><p>${E(selected.blurb)}</p><div class="route-actions"><button type="button" class="secondary" data-watch="${selected.id}">${icon('bookmark')}${prefs.watch[selected.id]?'Gemerkt':'Spiel merken'}</button><button type="button" class="quiet" data-share="${selected.id}">Link kopieren</button></div></div></div><div class="detail-original-gallery"><div class="original-gallery-head"><h3>Originalspiel · Bildergalerie</h3><span>Nur Originalspielbilder, keine Mod- oder Emulatorbilder. Mit Pfeilen, Vorschaubildern oder L1/R1 durchblättern.</span></div>${originalShots(selected)}</div><div class="detail-body"><div class="detail-tabs" role="tablist" aria-label="Spielansichten">${[['routes',`Spielwege (${selected.routes.length})`],['compare','Direktvergleich'],['original','Originalvarianten'],['media','Bilder der Spielwege'],['mods',`Mods & Performance (${gameAddonsFor(selected).length})`],['research','Recherche-Stand']].map(([id,label])=>`<button class="detail-tab ${tab===id?'active':''}" type="button" role="tab" aria-selected="${tab===id}" data-tab="${id}">${label}</button>`).join('')}</div>${content}</div>`;
   }
-  function openGame(id) {const g=games.get(id);if(!g)return;lastFocus=document.activeElement;selected=g;tab='routes';comparing=new Set();renderDetail();if(!$('#detail-dialog').open)$('#detail-dialog').showModal();$('#detail-dialog').scrollTop=0;}
+  function openGame(id) {const g=games.get(id);if(!g)return;stopCardPreview();lastFocus=document.activeElement;selected=g;tab='routes';comparing=new Set();galleryPositions.clear();activeGalleryId=null;renderDetail();if(!$('#detail-dialog').open)$('#detail-dialog').showModal();$('#detail-dialog').scrollTop=0;}
   function info(title,body) {$('#info-content').innerHTML=`<div class="dialog-head"><h2 id="info-title" style="font-size:19px">${E(title)}</h2><button class="close" type="button" data-close="info" aria-label="Dialog schlie\u00dfen">${icon('close')}</button></div><div class="info-body">${body}</div>`;if(!$('#info-dialog').open)$('#info-dialog').showModal();}
   function getRoute(id) {for(const g of catalog.games){const r=g.routes.find(r=>r.id===id);if(r)return {g,r};}return null;}
   function setup(id) {
@@ -336,23 +407,30 @@
       toast('Datenstand nicht erreichbar; vorhandene Daten bleiben erhalten.');
     }
   }
-  // On desktop, lazily fetch game-specific preview screenshots on hover or keyboard focus.
-  // No third-party script and no image fetch before actual card interaction.
-  function loadPreview(card) {
-    const image=card?.querySelector('img[data-hover-src]');
-    const url=safeArtwork(image?.dataset.hoverSrc);
-    if(image&&url&&!image.getAttribute('src'))image.setAttribute('src',url);
-  }
-  document.addEventListener('pointerover',event=>{
-    if(window.matchMedia('(hover:hover)').matches)loadPreview(event.target.closest('.game-card'));
+  // Auto-rotate visible card previews on hover/focus; manual controls also work on touch.
+  document.addEventListener('pointerover',e=>{
+    if(window.matchMedia('(hover:hover)').matches)startCardPreview(e.target.closest('.game-card'));
   });
-  document.addEventListener('focusin',event=>loadPreview(event.target.closest('.game-card')));
-  document.addEventListener('error',event=>{
-    if(event.target?.tagName==='IMG' && event.target.classList.contains('game-cover-img'))event.target.hidden=true;
-    if(event.target?.tagName==='IMG' && event.target.classList.contains('hover-preview'))event.target.hidden=true;
+  document.addEventListener('pointerout',e=>{
+    if(activePreviewCard&&!activePreviewCard.contains(e.relatedTarget))stopCardPreview();
+  });
+  document.addEventListener('focusin',e=>{
+    const card=e.target.closest('.game-card');if(card)startCardPreview(card);
+    const g=e.target.closest('[data-gallery]');if(g)activeGalleryId=g.dataset.gallery;
+  });
+  document.addEventListener('focusout',e=>{
+    if(activePreviewCard&&!activePreviewCard.contains(e.relatedTarget))stopCardPreview();
+  });
+  document.addEventListener('error',e=>{
+    if(e.target?.tagName==='IMG'&&e.target.classList.contains('card-photo'))e.target.hidden=true;
+    if(e.target?.tagName==='IMG'&&e.target.classList.contains('atlas-gallery-photo')){e.target.hidden=true;const msg=e.target.closest('.atlas-gallery-stage')?.querySelector('.gallery-unavailable');if(msg)msg.hidden=false;}
   },true);
   document.addEventListener('click',async event=>{
     const b=event.target.closest('button,a');if(!b)return;
+    if('cardStep' in b.dataset){cardChange(b.closest('.game-card'),Number(b.dataset.cardStep));return;}
+    if('galleryStep' in b.dataset){galleryChange(b.closest('[data-gallery]'),Number(b.dataset.galleryStep));return;}
+    if('galleryIndex' in b.dataset){galleryChange(b.closest('[data-gallery]'),Number(b.dataset.galleryIndex),true);return;}
+    if('toggleDual' in b.dataset){prefs.previewDual=!prefs.previewDual;prefs.previewPreference='manual';persist();render();toast(prefs.previewDual?'Dual-Screen-Bilder werden in Vorschauen priorisiert.':'Originalspiel-Bilder werden priorisiert.');return;}
     if(b.dataset.nav)navigate(b.dataset.nav);
     if(b.dataset.game)openGame(b.dataset.game);
     if(b.dataset.watch)watch(b.dataset.watch);
@@ -383,7 +461,6 @@
       render();toast('Eigener Titel gespeichert – noch ohne geprüfte Varianten oder automatische Benachrichtigung.');
     }
     if('easy' in b.dataset){filters.effort=filters.effort==='easy'?'':'easy';filters.feature='';visibleLimit=48;render();}
-    if('infoBattery' in b.dataset)info('Akkufilter ist noch nicht belastbar','<p>Ein einfach zu emulierendes Retrospiel kann weniger Leistung benötigen, aber Laufzeit hängt von Bildschirmhelligkeit, Emulator, Displayanzahl, Leistungsprofil und Spiel ab. Atlas behauptet ohne standardisierte Messungen keine verifizierten Batteriewerte. Als Zwischenlösung kannst du nach ursprünglicher Konsole oder einfachem Setup filtern.</p>');
     if(b.dataset.research){const g=games.get(b.dataset.research);if(g){const q=encodeURIComponent('"'+g.title+'" dual screen android handheld');const url='https://github.com/search?q='+q+'&type=repositories';window.open(url,'_blank','noopener,noreferrer');}}
 
     if('install' in b.dataset||b.id==='install')installInfo();
@@ -404,14 +481,15 @@
   // Offline/unreachable links remain honest, readable placeholders.
   document.addEventListener('load', e => {if(e.target.matches?.('img.remote-photo'))e.target.classList.add('loaded');}, true);
   document.addEventListener('error', e => {if(e.target.matches?.('img.remote-photo'))e.target.classList.add('unavailable');}, true);
-  document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&!$('dialog[open]')){e.preventDefault();$('#search').focus();}if(e.key==='Escape'&&!$('dialog[open]'))$('#search').blur();});
+  document.addEventListener('keydown',e=>{if($('#detail-dialog').open&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName||'')&&['ArrowLeft','ArrowRight','PageUp','PageDown','[',']'].includes(e.key)){const g=detailActiveGallery();if(g){e.preventDefault();galleryChange(g,['ArrowRight','PageDown',']'].includes(e.key)?1:-1);return;}}if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&!$('dialog[open]')){e.preventDefault();$('#search').focus();}if(e.key==='Escape'&&!$('dialog[open]'))$('#search').blur();});
+  let touchGalleryStart=null;document.addEventListener('touchstart',e=>{const g=e.target.closest('[data-gallery]');if(g&&e.touches.length===1)touchGalleryStart={x:e.touches[0].clientX,y:e.touches[0].clientY,g};},{passive:true});document.addEventListener('touchend',e=>{if(!touchGalleryStart)return;const {x,y,g}=touchGalleryStart;touchGalleryStart=null;const dx=e.changedTouches[0]?.clientX-x,dy=e.changedTouches[0]?.clientY-y;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.4)galleryChange(g,dx>0?-1:1);},{passive:true});
   for(const dialog of document.querySelectorAll('dialog'))dialog.addEventListener('click',e=>{if(e.target===dialog){const rect=dialog.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)dialog.close();}});
   window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('#install').innerHTML='App installieren '+icon('download');});
   function applyHash(){const hash=decodeURIComponent(location.hash.slice(1));if(hash.startsWith('game/')){navigate('discover');openGame(hash.slice(5));}else if(['discover','franchises','watchlist','updates','sources'].includes(hash))navigate(hash);else render();}
   window.addEventListener('hashchange',applyHash);
   function moveFocus(dx,dy){const root=$('#info-dialog[open]')||$('#detail-dialog[open]')||document;const elements=[...root.querySelectorAll('button:not(:disabled),a[href],input,select,summary')].filter(el=>el.getClientRects().length&&!el.hidden);if(!elements.length)return;const current=document.activeElement;if(!elements.includes(current)){elements[0].focus();return;}const a=current.getBoundingClientRect(),ax=a.x+a.width/2,ay=a.y+a.height/2;let best=null,score=Infinity;for(const el of elements){if(el===current)continue;const b=el.getBoundingClientRect(),x=b.x+b.width/2-ax,y=b.y+b.height/2-ay;if(dx*x+dy*y<8)continue;const s=Math.hypot(x,y)+2.5*Math.abs(dx?y:x);if(s<score){score=s;best=el;}}if(best){best.focus();best.scrollIntoView({block:'nearest'});}}
   let padTime=0,padButtons=[];
-  function gamepadFrame(time){try{const pad=Array.from(navigator.getGamepads?.()||[]).find(Boolean);if(pad){const pressed=pad.buttons.map(b=>b.pressed);if(time-padTime>170){const x=pressed[14]?-1:pressed[15]?1:Math.abs(pad.axes[0]||0)>.65?Math.sign(pad.axes[0]):0;const y=pressed[12]?-1:pressed[13]?1:Math.abs(pad.axes[1]||0)>.65?Math.sign(pad.axes[1]):0;if(x||y){moveFocus(x,y);padTime=time;}}if(pressed[0]&&!padButtons[0])document.activeElement?.click();if(pressed[1]&&!padButtons[1])($('#info-dialog[open]')||$('#detail-dialog[open]'))?.close();padButtons=pressed;}else padButtons=[];}catch(_){}requestAnimationFrame(gamepadFrame);}
+  function gamepadFrame(time){try{const pad=Array.from(navigator.getGamepads?.()||[]).find(Boolean);if(pad){const pressed=pad.buttons.map(b=>b.pressed);if(time-padTime>170){const x=pressed[14]?-1:pressed[15]?1:Math.abs(pad.axes[0]||0)>.65?Math.sign(pad.axes[0]):0;const y=pressed[12]?-1:pressed[13]?1:Math.abs(pad.axes[1]||0)>.65?Math.sign(pad.axes[1]):0;if(x||y){moveFocus(x,y);padTime=time;}}if(pressed[4]&&!padButtons[4])galleryChange(detailActiveGallery(),-1);if(pressed[5]&&!padButtons[5])galleryChange(detailActiveGallery(),1);if(pressed[0]&&!padButtons[0])document.activeElement?.click();if(pressed[1]&&!padButtons[1])($('#info-dialog[open]')||$('#detail-dialog[open]'))?.close();padButtons=pressed;}else padButtons=[];}catch(_){}requestAnimationFrame(gamepadFrame);}
   applyHash();requestAnimationFrame(gamepadFrame);
   if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 })();

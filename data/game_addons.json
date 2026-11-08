@@ -3,9 +3,96 @@
   "notice": "Mods are source-linked suggestions, not verified compatible combinations or performance measurements.",
   "games": {
     "minecraft": [
-      {"id":"sodium","name":"Sodium","category":"performance-rendering","projectUrl":"https://modrinth.com/mod/sodium","description":"Optimierter Java-Renderer. Hinweis: Das Projekt unterstützt Android OpenGL-Übersetzungsschichten nicht offiziell. Deshalb kein pauschaler Thor-FPS-Tipp.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/sodium"},
-      {"id":"lithium","name":"Lithium","category":"performance-logic","projectUrl":"https://modrinth.com/mod/lithium","description":"Optimierungen der Spielsimulation. Version und Modloader müssen zur Java-Edition passen; keine Thor-Messwerte.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/lithium"},
-      {"id":"ferritecore","name":"FerriteCore","category":"performance-memory","projectUrl":"https://modrinth.com/mod/ferrite-core","description":"Reduziert die Speichernutzung bestimmter Minecraft-Java-Versionen. Spezifische Builds und Loader gegenprüfen.","status":"source-documented-mod","thorStatus":"unknown","edition":"Java Edition","evidence":"https://modrinth.com/mod/ferrite-core"}
+      {
+        "id": "sodium",
+        "name": "Sodium",
+        "category": "performance-rendering",
+        "projectUrl": "https://modrinth.com/mod/sodium",
+        "description": "Optimierter Java-Renderer. Hinweis: Das Projekt unterstützt Android OpenGL-Übersetzungsschichten nicht offiziell. Deshalb kein pauschaler Thor-FPS-Tipp.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "edition": "Java Edition",
+        "evidence": "https://modrinth.com/mod/sodium"
+      },
+      {
+        "id": "lithium",
+        "name": "Lithium",
+        "category": "performance-logic",
+        "projectUrl": "https://modrinth.com/mod/lithium",
+        "description": "Optimierungen der Spielsimulation. Version und Modloader müssen zur Java-Edition passen; keine Thor-Messwerte.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "edition": "Java Edition",
+        "evidence": "https://modrinth.com/mod/lithium"
+      },
+      {
+        "id": "ferritecore",
+        "name": "FerriteCore",
+        "category": "performance-memory",
+        "projectUrl": "https://modrinth.com/mod/ferrite-core",
+        "description": "Reduziert die Speichernutzung bestimmter Minecraft-Java-Versionen. Spezifische Builds und Loader gegenprüfen.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "edition": "Java Edition",
+        "evidence": "https://modrinth.com/mod/ferrite-core"
+      }
+    ],
+    "morrowind": [
+      {
+        "id": "mw-project-atlas",
+        "name": "Project Atlas",
+        "category": "performance-textures",
+        "edition": "Original-PC-Dateien mit OpenMW",
+        "projectUrl": "https://modding-openmw.com/mods/project-atlas/",
+        "description": "Textur-Atlanten und Mesh-Anpassungen zur Reduktion von Draw Calls. OpenMW-Guide führt die Mod als kompatibel; Wirkung auf Android separat messen.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "evidence": "https://modding-openmw.com/mods/project-atlas/"
+      },
+      {
+        "id": "mw-optimization-patch",
+        "name": "Morrowind Optimization Patch",
+        "category": "performance-assets",
+        "edition": "Original-PC-Dateien mit OpenMW",
+        "projectUrl": "https://www.nexusmods.com/morrowind/mods/45384",
+        "description": "Optimierte Original-Meshes. OpenMW-Modding-Performanceguide empfiehlt die Mod; Versions- und Konfliktprüfung erforderlich.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "evidence": "https://modding-openmw.com/tips/performance/"
+      },
+      {
+        "id": "mw-patch-for-purists",
+        "name": "Patch for Purists",
+        "category": "patch-bugfix",
+        "edition": "Morrowind + OpenMW",
+        "projectUrl": "https://www.nexusmods.com/morrowind/mods/45096",
+        "description": "Community-Fixes für Spielinhalte; im PortMaster-OpenMW-Handheld-Setup als unterstützte Mod dokumentiert. Kein Performance-Mod und kein Thor-Test.",
+        "status": "source-documented-mod",
+        "thorStatus": "unknown",
+        "evidence": "https://portmastergames.com/detail-31702b3d"
+      },
+      {
+        "id": "mw-openmw-android-port",
+        "name": "OpenMW Android/ChromeOS (Andiweli)",
+        "category": "runtime-android-port",
+        "edition": "Morrowind PC-Datendateien",
+        "projectUrl": "https://github.com/Andiweli/OpenMW-Android",
+        "description": "Eigenständiger Android-Port/Fork mit OpenMW 0.51, Touch- und Gamepad-Anpassungen. Alternativer Spielweg, nicht selbst eine Daten-/Performance-Mod; Einrichtung und Gerät separat prüfen.",
+        "status": "source-documented-project",
+        "thorStatus": "unknown",
+        "evidence": "https://github.com/Andiweli/OpenMW-Android"
+      },
+      {
+        "id": "mw-openmw-performance-config",
+        "name": "OpenMW Performance Settings",
+        "category": "configuration-performance",
+        "edition": "OpenMW (Android und Desktop; Version prüfen)",
+        "projectUrl": "https://modding-openmw.com/tips/performance/",
+        "description": "Einstellungen für Sichtweite, Physik-Threads, Schatten und Objektpaging. Konfigurationshinweise statt Installationsmod; echte Verbesserungen müssen auf dem Thor gemessen werden.",
+        "status": "source-documented-guidance",
+        "thorStatus": "unknown",
+        "evidence": "https://modding-openmw.com/tips/performance/"
+      }
     ]
   }
 }

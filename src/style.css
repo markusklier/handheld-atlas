@@ -93,3 +93,52 @@
 @media(max-width:430px){.game-grid{gap:8px}.game-cover .inset-cover{width:40px;height:58px}.game-cover.cover-aspect .cover-credit{font-size:8px;padding:4px 6px}.franchise-cover-strip{height:104px}.franchise-cover-thumb{height:102px}}
 .game-cover.cover-aspect>.cover-credit{display:block}
 @media(min-width:1250px) and (max-width:1500px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* 0.5.1 – landscape image-first cards and source-linked manual galleries */
+.game-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px}
+.game-card{position:relative;min-width:0;overflow:hidden}
+.game-card>.card-open{display:grid;grid-template-columns:minmax(0,47%) minmax(0,53%);width:100%;text-align:left;min-height:185px;align-items:stretch}
+.game-card .game-cover.cover-aspect{aspect-ratio:auto!important;min-height:185px;height:100%;border-radius:10px 0 0 0;background:#0e1517}
+.game-card .game-cover .game-art{height:100%;position:absolute;inset:0}
+.game-card .card-photo{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;z-index:1;background:#0e1616}
+.game-card .card-photo[hidden]{display:none}
+.game-card .cover-credit{position:absolute;left:8px;bottom:8px;z-index:4;display:block!important;color:#e9f3ea;background:#102018df;padding:5px 7px;border-radius:5px;font-size:9px;max-width:calc(100% - 16px)}
+.game-card .inset-cover{top:7px;right:8px;width:41px;height:57px}
+.game-card .card-copy{display:flex;flex-direction:column;justify-content:center;min-height:0;padding:16px 17px 35px}
+.game-card .card-copy h3{min-height:0;margin:6px 0 8px;font-size:17px;line-height:1.24}
+.game-card .card-meta{line-height:1.5;font-size:10px}
+.game-card .card-bottom{padding:10px 14px;border-top:1px solid var(--line)}
+.game-card .save-btn{z-index:8;right:8px;top:8px;box-shadow:0 2px 9px #0009}
+.card-preview-controls{position:absolute;top:148px;left:3px;width:calc(47% - 6px);z-index:7;display:flex;justify-content:space-between;align-items:center;color:#f4f8f3;pointer-events:none}
+.card-preview-controls button{pointer-events:auto;color:#f4f8f3;background:#101e19d9;border:1px solid #aec8b78f;border-radius:50%;width:31px;height:31px;display:grid;place-items:center;font-size:20px;line-height:1}
+.card-preview-controls span{font-size:10px;background:#101e19d9;padding:3px 7px;border-radius:8px;font-variant-numeric:tabular-nums}
+.card-preview-controls button:focus-visible,.gallery-control:focus-visible,.gallery-thumb:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.detail-original-gallery{padding:14px 28px 19px;border-bottom:1px solid var(--line);background:#111a19}
+.original-gallery-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:8px}
+.original-gallery-head h3{font-size:17px;margin:0}
+.original-gallery-head span{font-size:10px;line-height:1.4;color:var(--muted)}
+.atlas-gallery{border:1px solid #385249;border-radius:12px;overflow:hidden;background:#0a1213;min-width:0;margin:13px 0 20px;outline-offset:3px}
+.atlas-gallery-stage{position:relative;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:#080f10}
+.atlas-gallery-photo{width:100%;height:100%;object-fit:contain;display:block;background:#080f10}
+.atlas-gallery-photo[hidden]{display:none}
+.gallery-image-type{position:absolute;top:12px;left:12px;padding:5px 9px;background:#0e1718dd;color:#def5e7;font-size:10px;border-radius:6px;max-width:calc(100% - 24px)}
+.gallery-control{position:absolute;top:50%;transform:translateY(-50%);width:41px;height:48px;background:#0d1a1ae0;color:white;z-index:2;border:1px solid #6b9c87;border-radius:8px;font-size:32px;line-height:1}
+.gallery-prev{left:9px}.gallery-next{right:9px}
+.gallery-control:hover,.card-preview-controls button:hover{background:#315544}
+.gallery-under{display:flex;align-items:center;gap:13px;padding:10px 13px;min-height:39px;color:#dcebe1;font-size:12px;flex-wrap:wrap}
+.gallery-counter{font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap}
+.gallery-caption{flex:1;min-width:80px}
+.gallery-under a{color:var(--accent);font-size:11px}
+.gallery-thumbs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:thin;padding:0 11px 12px}
+.gallery-thumb{position:relative;flex:0 0 85px;height:54px;background:#111b19;border:2px solid transparent;border-radius:6px;overflow:hidden;padding:0;color:white}
+.gallery-thumb img{width:100%;height:100%;object-fit:contain}
+.gallery-thumb span{position:absolute;right:1px;bottom:1px;background:#061310d9;padding:2px 4px;border-radius:3px;font-size:9px}
+.gallery-thumb.selected{border-color:#a3ebc1}
+.route-card .atlas-gallery{max-width:650px;margin-left:0}
+.detail-original-gallery .atlas-gallery{max-width:880px;margin:12px auto}
+@media(min-width:1750px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:1050px){.game-grid{grid-template-columns:1fr!important}.game-card>.card-open{min-height:170px}.game-card .game-cover.cover-aspect{min-height:170px}.card-preview-controls{top:132px}}
+@media(max-width:760px){.game-grid{grid-template-columns:1fr!important;gap:10px}.game-card>.card-open{grid-template-columns:45% 55%;min-height:155px}.game-card .game-cover.cover-aspect{min-height:155px}.game-card .card-copy{padding:12px 13px 30px}.game-card .card-copy h3{font-size:15px}.card-preview-controls{width:calc(45% - 6px);top:119px}.detail-original-gallery{padding:11px 17px 14px}.original-gallery-head{display:block}.original-gallery-head span{display:block;margin-top:6px}.gallery-thumb{flex-basis:69px;height:49px}.gallery-control{height:39px;width:34px;font-size:27px}}
+@media(max-width:440px){.game-card>.card-open{min-height:140px}.game-card .game-cover.cover-aspect{min-height:140px}.game-card .card-copy h3{font-size:13px}.card-preview-controls{top:105px}.game-card .card-meta{font-size:9px}.gallery-image-type{font-size:9px}.atlas-gallery-stage{aspect-ratio:16/10}}
+@media(prefers-reduced-motion:reduce){.game-card .card-photo,.gallery-control{transition:none}}
+
+.gallery-unavailable:not([hidden]){display:flex;position:absolute;inset:0;align-items:center;justify-content:center;background:#111d1b;color:#b6c8bc;text-align:center;padding:30px;font-size:13px}

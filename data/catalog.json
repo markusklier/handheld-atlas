@@ -4163,7 +4163,8 @@
       "title": "Rayman 2: The Great Escape",
       "franchise": "Rayman 2: The Great Escape",
       "platforms": [
-        "Nintendo 64"
+        "Nintendo 64",
+        "Dreamcast"
       ]
     },
     {
@@ -6156,7 +6157,8 @@
       "title": "Okami",
       "franchise": "Okami",
       "platforms": [
-        "PlayStation 2"
+        "PlayStation 2",
+        "Wii"
       ]
     },
     {
@@ -6212,7 +6214,8 @@
       "title": "Resident Evil 4",
       "franchise": "Resident Evil",
       "platforms": [
-        "PlayStation 2"
+        "PlayStation 2",
+        "Nintendo GameCube"
       ]
     },
     {
@@ -6608,6 +6611,3606 @@
       "platforms": [
         "PC"
       ]
+    },
+    {
+      "id": "eternal-darkness-sanity-s-requiem",
+      "title": "Eternal Darkness: Sanity's Requiem",
+      "franchise": "Eternal Darkness: Sanity's Requiem",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "luigi-s-mansion",
+      "title": "Luigi's Mansion",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-mario-sunshine",
+      "title": "Super Mario Sunshine",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mario-kart-double-dash",
+      "title": "Mario Kart: Double Dash!!",
+      "franchise": "Mario Kart",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metroid-prime",
+      "title": "Metroid Prime",
+      "franchise": "Metroid",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metroid-prime-2-echoes",
+      "title": "Metroid Prime 2: Echoes",
+      "franchise": "Metroid",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-zelda-the-wind-waker",
+      "title": "The Legend of Zelda: The Wind Waker",
+      "franchise": "The Legend of Zelda",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-zelda-twilight-princess",
+      "title": "The Legend of Zelda: Twilight Princess",
+      "franchise": "The Legend of Zelda",
+      "platforms": [
+        "Nintendo GameCube",
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-zelda-four-swords-adventures",
+      "title": "The Legend of Zelda: Four Swords Adventures",
+      "franchise": "The Legend of Zelda",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "pikmin",
+      "title": "Pikmin",
+      "franchise": "Pikmin",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "pikmin-2",
+      "title": "Pikmin 2",
+      "franchise": "Pikmin 2",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "f-zero-gx",
+      "title": "F-Zero GX",
+      "franchise": "F-Zero GX",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-fox-adventures",
+      "title": "Star Fox Adventures",
+      "franchise": "Star Fox Adventures",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-fox-assault",
+      "title": "Star Fox: Assault",
+      "franchise": "Star Fox: Assault",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fire-emblem-path-of-radiance",
+      "title": "Fire Emblem: Path of Radiance",
+      "franchise": "Fire Emblem",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "paper-mario-the-thousand-year-door",
+      "title": "Paper Mario: The Thousand-Year Door",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "pokemon-colosseum",
+      "title": "Pokémon Colosseum",
+      "franchise": "Pokémon",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "pokemon-xd-gale-of-darkness",
+      "title": "Pokémon XD: Gale of Darkness",
+      "franchise": "Pokémon",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-smash-bros-melee",
+      "title": "Super Smash Bros. Melee",
+      "franchise": "Super Smash Bros. Melee",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resident-evil-zero",
+      "title": "Resident Evil Zero",
+      "franchise": "Resident Evil",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "viewtiful-joe",
+      "title": "Viewtiful Joe",
+      "franchise": "Viewtiful Joe",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "viewtiful-joe-2",
+      "title": "Viewtiful Joe 2",
+      "franchise": "Viewtiful Joe 2",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "chibi-robo",
+      "title": "Chibi-Robo!",
+      "franchise": "Chibi-Robo!",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-monkey-ball",
+      "title": "Super Monkey Ball",
+      "franchise": "Super Monkey Ball",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-monkey-ball-2",
+      "title": "Super Monkey Ball 2",
+      "franchise": "Super Monkey Ball 2",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-adventure-2-battle",
+      "title": "Sonic Adventure 2: Battle",
+      "franchise": "Sonic",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tales-of-symphonia",
+      "title": "Tales of Symphonia",
+      "franchise": "Tales of Symphonia",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "baten-kaitos-eternal-wings-and-the-lost-ocean",
+      "title": "Baten Kaitos: Eternal Wings and the Lost Ocean",
+      "franchise": "Baten Kaitos: Eternal Wings and the Lost Ocean",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "baten-kaitos-origins",
+      "title": "Baten Kaitos Origins",
+      "franchise": "Baten Kaitos Origins",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "skies-of-arcadia-legends",
+      "title": "Skies of Arcadia Legends",
+      "franchise": "Skies of Arcadia Legends",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "killer7",
+      "title": "Killer7",
+      "franchise": "Killer7",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ikaruga",
+      "title": "Ikaruga",
+      "franchise": "Ikaruga",
+      "platforms": [
+        "Nintendo GameCube",
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "harvest-moon-a-wonderful-life",
+      "title": "Harvest Moon: A Wonderful Life",
+      "franchise": "Harvest Moon: A Wonderful Life",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mario-golf-toadstool-tour",
+      "title": "Mario Golf: Toadstool Tour",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mario-superstar-baseball",
+      "title": "Mario Superstar Baseball",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "billy-hatcher-and-the-giant-egg",
+      "title": "Billy Hatcher and the Giant Egg",
+      "franchise": "Billy Hatcher and the Giant Egg",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "soulcalibur-ii",
+      "title": "Soulcalibur II",
+      "franchise": "Soulcalibur",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "final-fantasy-crystal-chronicles",
+      "title": "Final Fantasy Crystal Chronicles",
+      "franchise": "Final Fantasy",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "geist",
+      "title": "Geist",
+      "franchise": "Geist",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wario-world",
+      "title": "Wario World",
+      "franchise": "Wario",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "custom-robo",
+      "title": "Custom Robo",
+      "franchise": "Custom Robo",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "timesplitters-2",
+      "title": "TimeSplitters 2",
+      "franchise": "TimeSplitters 2",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-wars-rogue-squadron-ii-rogue-leader",
+      "title": "Star Wars Rogue Squadron II: Rogue Leader",
+      "franchise": "Star Wars",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-wars-rogue-squadron-iii-rebel-strike",
+      "title": "Star Wars Rogue Squadron III: Rebel Strike",
+      "franchise": "Star Wars",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metal-gear-solid-the-twin-snakes",
+      "title": "Metal Gear Solid: The Twin Snakes",
+      "franchise": "Metal Gear",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wii-sports",
+      "title": "Wii Sports",
+      "franchise": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wii-sports-resort",
+      "title": "Wii Sports Resort",
+      "franchise": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wii-play",
+      "title": "Wii Play",
+      "franchise": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wii-fit",
+      "title": "Wii Fit",
+      "franchise": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-mario-galaxy",
+      "title": "Super Mario Galaxy",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-mario-galaxy-2",
+      "title": "Super Mario Galaxy 2",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "new-super-mario-bros-wii",
+      "title": "New Super Mario Bros. Wii",
+      "franchise": "New Super Mario Bros. Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mario-kart-wii",
+      "title": "Mario Kart Wii",
+      "franchise": "Mario Kart",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-smash-bros-brawl",
+      "title": "Super Smash Bros. Brawl",
+      "franchise": "Super Smash Bros. Brawl",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "donkey-kong-country-returns",
+      "title": "Donkey Kong Country Returns",
+      "franchise": "Donkey Kong Country Returns",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-zelda-skyward-sword",
+      "title": "The Legend of Zelda: Skyward Sword",
+      "franchise": "The Legend of Zelda",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metroid-prime-3-corruption",
+      "title": "Metroid Prime 3: Corruption",
+      "franchise": "Metroid",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metroid-prime-trilogy",
+      "title": "Metroid Prime Trilogy",
+      "franchise": "Metroid",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "xenoblade-chronicles",
+      "title": "Xenoblade Chronicles",
+      "franchise": "Xenoblade Chronicles",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-last-story",
+      "title": "The Last Story",
+      "franchise": "The Last Story",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "pandora-s-tower",
+      "title": "Pandora's Tower",
+      "franchise": "Pandora's Tower",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "kirby-s-epic-yarn",
+      "title": "Kirby's Epic Yarn",
+      "franchise": "Kirby",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "kirby-s-return-to-dream-land",
+      "title": "Kirby's Return to Dream Land",
+      "franchise": "Kirby",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wario-land-shake-it",
+      "title": "Wario Land: Shake It!",
+      "franchise": "Wario",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "zack-wiki-quest-for-barbaros-treasure",
+      "title": "Zack & Wiki: Quest for Barbaros' Treasure",
+      "franchise": "Zack & Wiki: Quest for Barbaros' Treasure",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "no-more-heroes",
+      "title": "No More Heroes",
+      "franchise": "No More Heroes",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "no-more-heroes-2-desperate-struggle",
+      "title": "No More Heroes 2: Desperate Struggle",
+      "franchise": "No More Heroes 2: Desperate Struggle",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "madworld",
+      "title": "MadWorld",
+      "franchise": "MadWorld",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sin-and-punishment-star-successor",
+      "title": "Sin and Punishment: Star Successor",
+      "franchise": "Sin and Punishment: Star Successor",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "little-king-s-story",
+      "title": "Little King's Story",
+      "franchise": "Little King's Story",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-colors",
+      "title": "Sonic Colors",
+      "franchise": "Sonic",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-unleashed",
+      "title": "Sonic Unleashed",
+      "franchise": "Sonic",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-and-the-secret-rings",
+      "title": "Sonic and the Secret Rings",
+      "franchise": "Sonic",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-and-the-black-knight",
+      "title": "Sonic and the Black Knight",
+      "franchise": "Sonic",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resident-evil-the-umbrella-chronicles",
+      "title": "Resident Evil: The Umbrella Chronicles",
+      "franchise": "Resident Evil",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resident-evil-the-darkside-chronicles",
+      "title": "Resident Evil: The Darkside Chronicles",
+      "franchise": "Resident Evil",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "red-steel-2",
+      "title": "Red Steel 2",
+      "franchise": "Red Steel 2",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dead-space-extraction",
+      "title": "Dead Space: Extraction",
+      "franchise": "Dead Space: Extraction",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "house-of-the-dead-overkill",
+      "title": "House of the Dead: Overkill",
+      "franchise": "House of the Dead: Overkill",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "excite-truck",
+      "title": "Excite Truck",
+      "franchise": "Excite Truck",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "excitebots-trick-racing",
+      "title": "Excitebots: Trick Racing",
+      "franchise": "Excitebots: Trick Racing",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "punch-out",
+      "title": "Punch-Out!!",
+      "franchise": "Punch-Out!!",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tatsunoko-vs-capcom-ultimate-all-stars",
+      "title": "Tatsunoko vs. Capcom: Ultimate All-Stars",
+      "franchise": "Tatsunoko vs. Capcom: Ultimate All-Stars",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "a-boy-and-his-blob",
+      "title": "A Boy and His Blob",
+      "franchise": "A Boy and His Blob",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "muramasa-the-demon-blade",
+      "title": "Muramasa: The Demon Blade",
+      "franchise": "Muramasa: The Demon Blade",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rhythm-heaven-fever",
+      "title": "Rhythm Heaven Fever",
+      "franchise": "Rhythm Heaven Fever",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wii-party",
+      "title": "Wii Party",
+      "franchise": "Wii",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mario-strikers-charged",
+      "title": "Mario Strikers Charged",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fire-emblem-radiant-dawn",
+      "title": "Fire Emblem: Radiant Dawn",
+      "franchise": "Fire Emblem",
+      "platforms": [
+        "Wii"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "crisis-core-final-fantasy-vii",
+      "title": "Crisis Core: Final Fantasy VII",
+      "franchise": "Crisis Core: Final Fantasy VII",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dissidia-final-fantasy",
+      "title": "Dissidia Final Fantasy",
+      "franchise": "Dissidia Final Fantasy",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dissidia-012-final-fantasy",
+      "title": "Dissidia 012 Final Fantasy",
+      "franchise": "Dissidia 012 Final Fantasy",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "final-fantasy-tactics-the-war-of-the-lions",
+      "title": "Final Fantasy Tactics: The War of the Lions",
+      "franchise": "Final Fantasy",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "final-fantasy-iv-the-complete-collection",
+      "title": "Final Fantasy IV: The Complete Collection",
+      "franchise": "Final Fantasy",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "kingdom-hearts-birth-by-sleep",
+      "title": "Kingdom Hearts: Birth by Sleep",
+      "franchise": "Kingdom Hearts",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "persona-2-innocent-sin",
+      "title": "Persona 2: Innocent Sin",
+      "franchise": "Persona",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "jeanne-d-arc",
+      "title": "Jeanne d'Arc",
+      "franchise": "Jeanne d'Arc",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tactics-ogre-let-us-cling-together",
+      "title": "Tactics Ogre: Let Us Cling Together",
+      "franchise": "Tactics Ogre: Let Us Cling Together",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky",
+      "title": "The Legend of Heroes: Trails in the Sky",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky-sc",
+      "title": "The Legend of Heroes: Trails in the Sky SC",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky-the-3rd",
+      "title": "The Legend of Heroes: Trails in the Sky the 3rd",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "valkyria-chronicles-ii",
+      "title": "Valkyria Chronicles II",
+      "franchise": "Valkyria Chronicles",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "valkyria-chronicles-iii",
+      "title": "Valkyria Chronicles III",
+      "franchise": "Valkyria Chronicles",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-3rd-birthday",
+      "title": "The 3rd Birthday",
+      "franchise": "The 3rd Birthday",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "monster-hunter-freedom",
+      "title": "Monster Hunter Freedom",
+      "franchise": "Monster Hunter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "monster-hunter-freedom-2",
+      "title": "Monster Hunter Freedom 2",
+      "franchise": "Monster Hunter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "monster-hunter-freedom-unite",
+      "title": "Monster Hunter Freedom Unite",
+      "franchise": "Monster Hunter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "monster-hunter-portable-3rd",
+      "title": "Monster Hunter Portable 3rd",
+      "franchise": "Monster Hunter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-portable",
+      "title": "Phantasy Star Portable",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-portable-2",
+      "title": "Phantasy Star Portable 2",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "god-of-war-chains-of-olympus",
+      "title": "God of War: Chains of Olympus",
+      "franchise": "God of War",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "god-of-war-ghost-of-sparta",
+      "title": "God of War: Ghost of Sparta",
+      "franchise": "God of War",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "grand-theft-auto-liberty-city-stories",
+      "title": "Grand Theft Auto: Liberty City Stories",
+      "franchise": "Grand Theft Auto",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "grand-theft-auto-vice-city-stories",
+      "title": "Grand Theft Auto: Vice City Stories",
+      "franchise": "Grand Theft Auto",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metal-gear-solid-peace-walker",
+      "title": "Metal Gear Solid: Peace Walker",
+      "franchise": "Metal Gear",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metal-gear-solid-portable-ops",
+      "title": "Metal Gear Solid: Portable Ops",
+      "franchise": "Metal Gear",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "patapon",
+      "title": "Patapon",
+      "franchise": "Patapon",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "patapon-2",
+      "title": "Patapon 2",
+      "franchise": "Patapon 2",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "patapon-3",
+      "title": "Patapon 3",
+      "franchise": "Patapon 3",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "locoroco",
+      "title": "LocoRoco",
+      "franchise": "LocoRoco",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "locoroco-2",
+      "title": "LocoRoco 2",
+      "franchise": "LocoRoco 2",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "locoroco-midnight-carnival",
+      "title": "LocoRoco Midnight Carnival",
+      "franchise": "LocoRoco Midnight Carnival",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "daxter",
+      "title": "Daxter",
+      "franchise": "Daxter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "secret-agent-clank",
+      "title": "Secret Agent Clank",
+      "franchise": "Secret Agent Clank",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ratchet-clank-size-matters",
+      "title": "Ratchet & Clank: Size Matters",
+      "franchise": "Ratchet & Clank",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "littlebigplanet-psp",
+      "title": "LittleBigPlanet (PSP)",
+      "franchise": "LittleBigPlanet (PSP)",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "killzone-liberation",
+      "title": "Killzone: Liberation",
+      "franchise": "Killzone: Liberation",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resistance-retribution",
+      "title": "Resistance: Retribution",
+      "franchise": "Resistance: Retribution",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "syphon-filter-dark-mirror",
+      "title": "Syphon Filter: Dark Mirror",
+      "franchise": "Syphon Filter: Dark Mirror",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "syphon-filter-logan-s-shadow",
+      "title": "Syphon Filter: Logan's Shadow",
+      "franchise": "Syphon Filter: Logan's Shadow",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "lumines",
+      "title": "Lumines",
+      "franchise": "Lumines",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "lumines-ii",
+      "title": "Lumines II",
+      "franchise": "Lumines II",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "half-minute-hero",
+      "title": "Half-Minute Hero",
+      "franchise": "Half-Minute Hero",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-warriors-psp",
+      "title": "The Warriors (PSP)",
+      "franchise": "The Warriors (PSP)",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "burnout-legends",
+      "title": "Burnout Legends",
+      "franchise": "Burnout",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "burnout-dominator",
+      "title": "Burnout Dominator",
+      "franchise": "Burnout",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wipeout-pure",
+      "title": "Wipeout Pure",
+      "franchise": "Wipeout Pure",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wipeout-pulse",
+      "title": "Wipeout Pulse",
+      "franchise": "Wipeout Pulse",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ridge-racer-psp",
+      "title": "Ridge Racer (PSP)",
+      "franchise": "Ridge Racer (PSP)",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ridge-racer-2",
+      "title": "Ridge Racer 2",
+      "franchise": "Ridge Racer 2",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tekken-dark-resurrection",
+      "title": "Tekken: Dark Resurrection",
+      "franchise": "Tekken",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tekken-6",
+      "title": "Tekken 6",
+      "franchise": "Tekken",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "soulcalibur-broken-destiny",
+      "title": "Soulcalibur: Broken Destiny",
+      "franchise": "Soulcalibur",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "street-fighter-alpha-3-max",
+      "title": "Street Fighter Alpha 3 MAX",
+      "franchise": "Street Fighter",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "blazblue-continuum-shift-ii",
+      "title": "BlazBlue: Continuum Shift II",
+      "franchise": "BlazBlue: Continuum Shift II",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "guilty-gear-xx-accent-core-plus",
+      "title": "Guilty Gear XX Accent Core Plus",
+      "franchise": "Guilty Gear XX Accent Core Plus",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "castlevania-the-dracula-x-chronicles",
+      "title": "Castlevania: The Dracula X Chronicles",
+      "franchise": "Castlevania",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mega-man-powered-up",
+      "title": "Mega Man Powered Up",
+      "franchise": "Mega Man Powered Up",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mega-man-maverick-hunter-x",
+      "title": "Mega Man Maverick Hunter X",
+      "franchise": "Mega Man Maverick Hunter X",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "prinny-can-i-really-be-the-hero",
+      "title": "Prinny: Can I Really Be the Hero?",
+      "franchise": "Prinny: Can I Really Be the Hero?",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "prinny-2-dawn-of-operation-panties-dood",
+      "title": "Prinny 2: Dawn of Operation Panties, Dood!",
+      "franchise": "Prinny 2: Dawn of Operation Panties, Dood!",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ys-seven",
+      "title": "Ys Seven",
+      "franchise": "Ys",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ys-the-oath-in-felghana",
+      "title": "Ys: The Oath in Felghana",
+      "franchise": "Ys: The Oath in Felghana",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ys-the-ark-of-napishtim",
+      "title": "Ys: The Ark of Napishtim",
+      "franchise": "Ys: The Ark of Napishtim",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-ocean-first-departure",
+      "title": "Star Ocean: First Departure",
+      "franchise": "Star Ocean",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "star-ocean-second-evolution",
+      "title": "Star Ocean: Second Evolution",
+      "franchise": "Star Ocean",
+      "platforms": [
+        "PSP"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-adventure",
+      "title": "Sonic Adventure",
+      "franchise": "Sonic",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-adventure-2",
+      "title": "Sonic Adventure 2",
+      "franchise": "Sonic",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "crazy-taxi",
+      "title": "Crazy Taxi",
+      "franchise": "Crazy Taxi",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "crazy-taxi-2",
+      "title": "Crazy Taxi 2",
+      "franchise": "Crazy Taxi 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "jet-set-radio",
+      "title": "Jet Set Radio",
+      "franchise": "Jet Set Radio",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shenmue",
+      "title": "Shenmue",
+      "franchise": "Shenmue",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shenmue-ii",
+      "title": "Shenmue II",
+      "franchise": "Shenmue II",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "skies-of-arcadia",
+      "title": "Skies of Arcadia",
+      "franchise": "Skies of Arcadia",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "soulcalibur",
+      "title": "Soulcalibur",
+      "franchise": "Soulcalibur",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "power-stone",
+      "title": "Power Stone",
+      "franchise": "Power Stone",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "power-stone-2",
+      "title": "Power Stone 2",
+      "franchise": "Power Stone 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "marvel-vs-capcom-2-new-age-of-heroes",
+      "title": "Marvel vs. Capcom 2: New Age of Heroes",
+      "franchise": "Marvel vs. Capcom 2: New Age of Heroes",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "street-fighter-iii-3rd-strike",
+      "title": "Street Fighter III: 3rd Strike",
+      "franchise": "Street Fighter",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "capcom-vs-snk-2",
+      "title": "Capcom vs. SNK 2",
+      "franchise": "Capcom vs. SNK 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-online",
+      "title": "Phantasy Star Online",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-online-ver-2",
+      "title": "Phantasy Star Online Ver. 2",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resident-evil-code-veronica",
+      "title": "Resident Evil Code: Veronica",
+      "franchise": "Resident Evil",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "space-channel-5",
+      "title": "Space Channel 5",
+      "franchise": "Space Channel 5",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "space-channel-5-part-2",
+      "title": "Space Channel 5: Part 2",
+      "franchise": "Space Channel 5: Part 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rez",
+      "title": "Rez",
+      "franchise": "Rez",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "grandia-ii",
+      "title": "Grandia II",
+      "franchise": "Grandia II",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-house-of-the-dead-2",
+      "title": "The House of the Dead 2",
+      "franchise": "The House of the Dead 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hydro-thunder",
+      "title": "Hydro Thunder",
+      "franchise": "Hydro Thunder",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "metropolis-street-racer",
+      "title": "Metropolis Street Racer",
+      "franchise": "Metropolis Street Racer",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sega-rally-2",
+      "title": "Sega Rally 2",
+      "franchise": "Sega Rally 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "virtua-tennis",
+      "title": "Virtua Tennis",
+      "franchise": "Virtua Tennis",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "virtua-tennis-2",
+      "title": "Virtua Tennis 2",
+      "franchise": "Virtua Tennis 2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "chuchu-rocket",
+      "title": "ChuChu Rocket!",
+      "franchise": "ChuChu Rocket!",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "seaman",
+      "title": "Seaman",
+      "franchise": "Seaman",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ecco-the-dolphin-defender-of-the-future",
+      "title": "Ecco the Dolphin: Defender of the Future",
+      "franchise": "Ecco the Dolphin",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "record-of-lodoss-war",
+      "title": "Record of Lodoss War",
+      "franchise": "Record of Lodoss War",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dynamite-cop",
+      "title": "Dynamite Cop",
+      "franchise": "Dynamite Cop",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "project-justice",
+      "title": "Project Justice",
+      "franchise": "Project Justice",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-shuffle",
+      "title": "Sonic Shuffle",
+      "franchise": "Sonic",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "headhunter",
+      "title": "Headhunter",
+      "franchise": "Headhunter",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "mdk2",
+      "title": "MDK2",
+      "franchise": "MDK2",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-typing-of-the-dead",
+      "title": "The Typing of the Dead",
+      "franchise": "The Typing of the Dead",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "nfl-2k1",
+      "title": "NFL 2K1",
+      "franchise": "NFL 2K1",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "gravity-rush",
+      "title": "Gravity Rush",
+      "franchise": "Gravity Rush",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tearaway",
+      "title": "Tearaway",
+      "franchise": "Tearaway",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "uncharted-golden-abyss",
+      "title": "Uncharted: Golden Abyss",
+      "franchise": "Uncharted: Golden Abyss",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "killzone-mercenary",
+      "title": "Killzone: Mercenary",
+      "franchise": "Killzone: Mercenary",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "persona-4-golden",
+      "title": "Persona 4 Golden",
+      "franchise": "Persona",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "freedom-wars",
+      "title": "Freedom Wars",
+      "franchise": "Freedom Wars",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "soul-sacrifice",
+      "title": "Soul Sacrifice",
+      "franchise": "Soul Sacrifice",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "soul-sacrifice-delta",
+      "title": "Soul Sacrifice Delta",
+      "franchise": "Soul Sacrifice Delta",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "wipeout-2048",
+      "title": "Wipeout 2048",
+      "franchise": "Wipeout 2048",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "littlebigplanet-ps-vita",
+      "title": "LittleBigPlanet PS Vita",
+      "franchise": "LittleBigPlanet PS Vita",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "unit-13",
+      "title": "Unit 13",
+      "franchise": "Unit 13",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "resistance-burning-skies",
+      "title": "Resistance: Burning Skies",
+      "franchise": "Resistance: Burning Skies",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dragon-s-crown",
+      "title": "Dragon's Crown",
+      "franchise": "Dragon's Crown",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "muramasa-rebirth",
+      "title": "Muramasa Rebirth",
+      "franchise": "Muramasa Rebirth",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "odin-sphere-leifthrasir",
+      "title": "Odin Sphere Leifthrasir",
+      "franchise": "Odin Sphere Leifthrasir",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "child-of-light",
+      "title": "Child of Light",
+      "franchise": "Child of Light",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "danganronpa-trigger-happy-havoc",
+      "title": "Danganronpa: Trigger Happy Havoc",
+      "franchise": "Danganronpa",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "danganronpa-2-goodbye-despair",
+      "title": "Danganronpa 2: Goodbye Despair",
+      "franchise": "Danganronpa",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "danganronpa-v3-killing-harmony",
+      "title": "Danganronpa V3: Killing Harmony",
+      "franchise": "Danganronpa",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "steins-gate",
+      "title": "Steins;Gate",
+      "franchise": "Steins;Gate",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "zero-escape-virtue-s-last-reward",
+      "title": "Zero Escape: Virtue's Last Reward",
+      "franchise": "Zero Escape: Virtue's Last Reward",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "zero-time-dilemma",
+      "title": "Zero Time Dilemma",
+      "franchise": "Zero Time Dilemma",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-house-in-fata-morgana",
+      "title": "The House in Fata Morgana",
+      "franchise": "The House in Fata Morgana",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ys-memories-of-celceta",
+      "title": "Ys: Memories of Celceta",
+      "franchise": "Ys: Memories of Celceta",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ys-viii-lacrimosa-of-dana",
+      "title": "Ys VIII: Lacrimosa of Dana",
+      "franchise": "Ys",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "tokyo-xanadu",
+      "title": "Tokyo Xanadu",
+      "franchise": "Tokyo Xanadu",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "trails-of-cold-steel",
+      "title": "Trails of Cold Steel",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "trails-of-cold-steel-ii",
+      "title": "Trails of Cold Steel II",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky-fc-evolution",
+      "title": "The Legend of Heroes: Trails in the Sky FC Evolution",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky-sc-evolution",
+      "title": "The Legend of Heroes: Trails in the Sky SC Evolution",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-legend-of-heroes-trails-in-the-sky-the-3rd-evolution",
+      "title": "The Legend of Heroes: Trails in the Sky the 3rd Evolution",
+      "franchise": "The Legend of Heroes",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hatsune-miku-project-diva-f",
+      "title": "Hatsune Miku: Project DIVA f",
+      "franchise": "Hatsune Miku: Project DIVA f",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hatsune-miku-project-diva-f-2nd",
+      "title": "Hatsune Miku: Project DIVA F 2nd",
+      "franchise": "Hatsune Miku: Project DIVA F 2nd",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hatsune-miku-project-diva-x",
+      "title": "Hatsune Miku: Project DIVA X",
+      "franchise": "Hatsune Miku: Project DIVA X",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hotline-miami",
+      "title": "Hotline Miami",
+      "franchise": "Hotline Miami",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "hotline-miami-2-wrong-number",
+      "title": "Hotline Miami 2: Wrong Number",
+      "franchise": "Hotline Miami 2: Wrong Number",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "spelunky",
+      "title": "Spelunky",
+      "franchise": "Spelunky",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "velocity-2x",
+      "title": "Velocity 2X",
+      "franchise": "Velocity 2X",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "guacamelee",
+      "title": "Guacamelee!",
+      "franchise": "Guacamelee!",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shovel-knight",
+      "title": "Shovel Knight",
+      "franchise": "Shovel Knight",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rayman-origins",
+      "title": "Rayman Origins",
+      "franchise": "Rayman Origins",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rayman-legends",
+      "title": "Rayman Legends",
+      "franchise": "Rayman Legends",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "minecraft-playstation-vita-edition",
+      "title": "Minecraft: PlayStation Vita Edition",
+      "franchise": "Minecraft: PlayStation Vita Edition",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "final-fantasy-x-x-2-hd-remaster",
+      "title": "Final Fantasy X / X-2 HD Remaster",
+      "franchise": "Final Fantasy",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dragon-quest-builders",
+      "title": "Dragon Quest Builders",
+      "franchise": "Dragon Quest Builders",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-the-hedgehog",
+      "title": "Sonic the Hedgehog",
+      "franchise": "Sonic",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-the-hedgehog-2",
+      "title": "Sonic the Hedgehog 2",
+      "franchise": "Sonic",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-the-hedgehog-3",
+      "title": "Sonic the Hedgehog 3",
+      "franchise": "Sonic",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "sonic-knuckles",
+      "title": "Sonic & Knuckles",
+      "franchise": "Sonic",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "streets-of-rage",
+      "title": "Streets of Rage",
+      "franchise": "Streets of Rage",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "streets-of-rage-2",
+      "title": "Streets of Rage 2",
+      "franchise": "Streets of Rage",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "streets-of-rage-3",
+      "title": "Streets of Rage 3",
+      "franchise": "Streets of Rage",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "gunstar-heroes",
+      "title": "Gunstar Heroes",
+      "franchise": "Gunstar Heroes",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "castlevania-bloodlines",
+      "title": "Castlevania: Bloodlines",
+      "franchise": "Castlevania",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "contra-hard-corps",
+      "title": "Contra: Hard Corps",
+      "franchise": "Contra: Hard Corps",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shinobi-iii-return-of-the-ninja-master",
+      "title": "Shinobi III: Return of the Ninja Master",
+      "franchise": "Shinobi III: Return of the Ninja Master",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-revenge-of-shinobi",
+      "title": "The Revenge of Shinobi",
+      "franchise": "The Revenge of Shinobi",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "golden-axe",
+      "title": "Golden Axe",
+      "franchise": "Golden Axe",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "golden-axe-ii",
+      "title": "Golden Axe II",
+      "franchise": "Golden Axe II",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "golden-axe-iii",
+      "title": "Golden Axe III",
+      "franchise": "Golden Axe III",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ristar",
+      "title": "Ristar",
+      "franchise": "Ristar",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "comix-zone",
+      "title": "Comix Zone",
+      "franchise": "Comix Zone",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "vectorman",
+      "title": "Vectorman",
+      "franchise": "Vectorman",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "vectorman-2",
+      "title": "Vectorman 2",
+      "franchise": "Vectorman 2",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ecco-the-dolphin",
+      "title": "Ecco the Dolphin",
+      "franchise": "Ecco the Dolphin",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ecco-the-tides-of-time",
+      "title": "Ecco: The Tides of Time",
+      "franchise": "Ecco the Dolphin",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-ii",
+      "title": "Phantasy Star II",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-iii-generations-of-doom",
+      "title": "Phantasy Star III: Generations of Doom",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phantasy-star-iv-the-end-of-the-millennium",
+      "title": "Phantasy Star IV: The End of the Millennium",
+      "franchise": "Phantasy Star",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shining-force",
+      "title": "Shining Force",
+      "franchise": "Shining",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shining-force-ii",
+      "title": "Shining Force II",
+      "franchise": "Shining",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shining-in-the-darkness",
+      "title": "Shining in the Darkness",
+      "franchise": "Shining",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "landstalker-the-treasures-of-king-nole",
+      "title": "Landstalker: The Treasures of King Nole",
+      "franchise": "Landstalker: The Treasures of King Nole",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "beyond-oasis",
+      "title": "Beyond Oasis",
+      "franchise": "Beyond Oasis",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "thunder-force-iv",
+      "title": "Thunder Force IV",
+      "franchise": "Thunder Force IV",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "alien-soldier",
+      "title": "Alien Soldier",
+      "franchise": "Alien Soldier",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dynamite-headdy",
+      "title": "Dynamite Headdy",
+      "franchise": "Dynamite Headdy",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "toejam-earl",
+      "title": "Toejam & Earl",
+      "franchise": "Toejam & Earl",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "toejam-earl-in-panic-on-funkotron",
+      "title": "ToeJam & Earl in Panic on Funkotron",
+      "franchise": "ToeJam & Earl in Panic on Funkotron",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "micro-machines-2-turbo-tournament",
+      "title": "Micro Machines 2: Turbo Tournament",
+      "franchise": "Micro Machines 2: Turbo Tournament",
+      "platforms": [
+        "Sega Mega Drive"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "silent-hill-4-the-room",
+      "title": "Silent Hill 4: The Room",
+      "franchise": "Silent Hill 4: The Room",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rule-of-rose",
+      "title": "Rule of Rose",
+      "franchise": "Rule of Rose",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fatal-frame",
+      "title": "Fatal Frame",
+      "franchise": "Fatal Frame",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fatal-frame-ii-crimson-butterfly",
+      "title": "Fatal Frame II: Crimson Butterfly",
+      "franchise": "Fatal Frame II: Crimson Butterfly",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fatal-frame-iii-the-tormented",
+      "title": "Fatal Frame III: The Tormented",
+      "franchise": "Fatal Frame III: The Tormented",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "devil-may-cry-2",
+      "title": "Devil May Cry 2",
+      "franchise": "Devil May Cry",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "devil-may-cry-3-dante-s-awakening",
+      "title": "Devil May Cry 3: Dante's Awakening",
+      "franchise": "Devil May Cry",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "onimusha-warlords",
+      "title": "Onimusha: Warlords",
+      "franchise": "Onimusha: Warlords",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "onimusha-2-samurai-s-destiny",
+      "title": "Onimusha 2: Samurai's Destiny",
+      "franchise": "Onimusha 2: Samurai's Destiny",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "onimusha-3-demon-siege",
+      "title": "Onimusha 3: Demon Siege",
+      "franchise": "Onimusha 3: Demon Siege",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "onimusha-dawn-of-dreams",
+      "title": "Onimusha: Dawn of Dreams",
+      "franchise": "Onimusha: Dawn of Dreams",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "kingdom-hearts-re-chain-of-memories",
+      "title": "Kingdom Hearts Re:Chain of Memories",
+      "franchise": "Kingdom Hearts",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dragon-quest-viii-journey-of-the-cursed-king",
+      "title": "Dragon Quest VIII: Journey of the Cursed King",
+      "franchise": "Dragon Quest VIII: Journey of the Cursed King",
+      "platforms": [
+        "PlayStation 2",
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rogue-galaxy",
+      "title": "Rogue Galaxy",
+      "franchise": "Rogue Galaxy",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dark-cloud",
+      "title": "Dark Cloud",
+      "franchise": "Dark Cloud",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dark-chronicle",
+      "title": "Dark Chronicle",
+      "franchise": "Dark Chronicle",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "radiata-stories",
+      "title": "Radiata Stories",
+      "franchise": "Radiata Stories",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shin-megami-tensei-nocturne",
+      "title": "Shin Megami Tensei: Nocturne",
+      "franchise": "Shin Megami Tensei",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "digital-devil-saga",
+      "title": "Digital Devil Saga",
+      "franchise": "Digital Devil Saga",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "digital-devil-saga-2",
+      "title": "Digital Devil Saga 2",
+      "franchise": "Digital Devil Saga 2",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "yakuza",
+      "title": "Yakuza",
+      "franchise": "Yakuza",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "yakuza-2",
+      "title": "Yakuza 2",
+      "franchise": "Yakuza",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "the-warriors",
+      "title": "The Warriors",
+      "franchise": "The Warriors",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "def-jam-fight-for-ny",
+      "title": "Def Jam: Fight for NY",
+      "franchise": "Def Jam: Fight for NY",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "timesplitters-future-perfect",
+      "title": "TimeSplitters: Future Perfect",
+      "franchise": "TimeSplitters: Future Perfect",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "gran-turismo-3-a-spec",
+      "title": "Gran Turismo 3: A-Spec",
+      "franchise": "Gran Turismo 3: A-Spec",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "burnout-revenge",
+      "title": "Burnout Revenge",
+      "franchise": "Burnout",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "jak-and-daxter-the-precursor-legacy",
+      "title": "Jak and Daxter: The Precursor Legacy",
+      "franchise": "Jak and Daxter",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ace-combat-04-shattered-skies",
+      "title": "Ace Combat 04: Shattered Skies",
+      "franchise": "Ace Combat",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ace-combat-5-the-unsung-war",
+      "title": "Ace Combat 5: The Unsung War",
+      "franchise": "Ace Combat",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ace-combat-zero-the-belkan-war",
+      "title": "Ace Combat Zero: The Belkan War",
+      "franchise": "Ace Combat",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "super-smash-bros-for-nintendo-3ds",
+      "title": "Super Smash Bros. for Nintendo 3DS",
+      "franchise": "Super Smash Bros. for Nintendo 3DS",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "luigi-s-mansion-nintendo-3ds",
+      "title": "Luigi's Mansion (Nintendo 3DS)",
+      "franchise": "Super Mario",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fire-emblem-fates-birthright",
+      "title": "Fire Emblem Fates: Birthright",
+      "franchise": "Fire Emblem",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "fire-emblem-fates-conquest",
+      "title": "Fire Emblem Fates: Conquest",
+      "franchise": "Fire Emblem",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "radiant-historia-perfect-chronology",
+      "title": "Radiant Historia: Perfect Chronology",
+      "franchise": "Radiant Historia: Perfect Chronology",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shin-megami-tensei-iv",
+      "title": "Shin Megami Tensei IV",
+      "franchise": "Shin Megami Tensei",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shin-megami-tensei-iv-apocalypse",
+      "title": "Shin Megami Tensei IV: Apocalypse",
+      "franchise": "Shin Megami Tensei",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shin-megami-tensei-strange-journey-redux",
+      "title": "Shin Megami Tensei: Strange Journey Redux",
+      "franchise": "Shin Megami Tensei",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "shin-megami-tensei-devil-survivor-overclocked",
+      "title": "Shin Megami Tensei: Devil Survivor Overclocked",
+      "franchise": "Shin Megami Tensei",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "etrian-odyssey-iv-legends-of-the-titan",
+      "title": "Etrian Odyssey IV: Legends of the Titan",
+      "franchise": "Etrian Odyssey IV: Legends of the Titan",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "etrian-odyssey-v-beyond-the-myth",
+      "title": "Etrian Odyssey V: Beyond the Myth",
+      "franchise": "Etrian Odyssey V: Beyond the Myth",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "etrian-odyssey-untold-the-millennium-girl",
+      "title": "Etrian Odyssey Untold: The Millennium Girl",
+      "franchise": "Etrian Odyssey Untold: The Millennium Girl",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "monster-hunter-stories",
+      "title": "Monster Hunter Stories",
+      "franchise": "Monster Hunter",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "ever-oasis",
+      "title": "Ever Oasis",
+      "franchise": "Ever Oasis",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "rune-factory-4",
+      "title": "Rune Factory 4",
+      "franchise": "Rune Factory 4",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "professor-layton-and-the-miracle-mask",
+      "title": "Professor Layton and the Miracle Mask",
+      "franchise": "Professor Layton and the Miracle Mask",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "professor-layton-and-the-azran-legacy",
+      "title": "Professor Layton and the Azran Legacy",
+      "franchise": "Professor Layton and the Azran Legacy",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phoenix-wright-ace-attorney-dual-destinies",
+      "title": "Phoenix Wright: Ace Attorney - Dual Destinies",
+      "franchise": "Phoenix Wright: Ace Attorney - Dual Destinies",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "phoenix-wright-ace-attorney-spirit-of-justice",
+      "title": "Phoenix Wright: Ace Attorney - Spirit of Justice",
+      "franchise": "Phoenix Wright: Ace Attorney - Spirit of Justice",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "donkey-kong-country-returns-3d",
+      "title": "Donkey Kong Country Returns 3D",
+      "franchise": "Donkey Kong Country Returns 3D",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "xenoblade-chronicles-3d",
+      "title": "Xenoblade Chronicles 3D",
+      "franchise": "Xenoblade Chronicles 3D",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
+    },
+    {
+      "id": "dragon-quest-vii-fragments-of-the-forgotten-past",
+      "title": "Dragon Quest VII: Fragments of the Forgotten Past",
+      "franchise": "Dragon Quest VII: Fragments of the Forgotten Past",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "indexSource": "editorial-name-only-v051",
+      "verification": "title-platform-lead",
+      "note": "Kein Spielweg, keine Performance- oder Gerätevalidierung."
     }
   ]
 }

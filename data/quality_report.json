@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:36:49Z",
+  "generatedAt": "2026-11-08T17:42:30Z",
   "catalogGames": 41,
-  "watchlistOnlyGames": 333,
+  "watchlistOnlyGames": 660,
   "gamesWithPictures": 26,
   "routesWithoutPictures": 34,
-  "pendingResearchCandidates": 39,
+  "pendingResearchCandidates": 5,
   "notice": "Coverage is internal observation, not a proof that no other variants exist. Fixture-based research is NOT a live scan.",
   "games": [
     {
@@ -43,9 +43,9 @@
       ],
       "routesWithVersionRequirements": 4,
       "monitoredOriginalRepos": 6,
-      "pendingResearchCandidates": 39,
-      "lastDeepResearchAt": "2026-11-08T16:36:36Z",
-      "researchMode": "live",
+      "pendingResearchCandidates": 5,
+      "lastDeepResearchAt": "2026-11-08T02:59:55Z",
+      "researchMode": "fixture",
       "coverageAssertion": "unknown; targeted searches cannot prove all variants were found"
     },
     {

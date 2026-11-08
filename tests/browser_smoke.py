@@ -18,7 +18,7 @@ with sync_playwright() as p:
     page.evaluate("""() => {const values={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>values[k]||null,setItem:(k,v)=>values[k]=v,removeItem:k=>delete values[k]},configurable:true});} """)
     page.set_content(html,wait_until='domcontentloaded')
     assert page.locator('.game-card').count()==48
-    assert '374 Spiele' in page.locator('#main').inner_text()
+    assert '701 Spiele' in page.locator('#main').inner_text()
     assert page.locator('button[data-more]').count()==1
     checks.append('Expanded catalogue with pagination and separate broad index')
     page.screenshot(path=str(OUT/'desktop.png'),full_page=False)
@@ -91,12 +91,12 @@ with sync_playwright() as p:
     page.locator('#nav [data-nav="discover"]').click()
     page.locator('#search').fill('Metroid Dread')
     page.locator('.card-open[data-game="metroid-dread"]').click()
-    assert page.locator('.route-screen-grid img[src^="https://raw.githubusercontent.com/igawa6/"]').count()>=1
-    assert page.locator('.route-shot figcaption a').count()>=1
+    assert page.locator('.route-card .atlas-gallery img[src^="https://raw.githubusercontent.com/igawa6/"]').count()>=1
+    assert page.locator('.route-card .atlas-gallery [data-gallery-source]').count()>=1
     # Network is explicitly blocked; fallback should be readable, not an empty rectangle.
-    assert page.locator('.image-placeholder').count()>=1
+    assert page.locator('.route-card .atlas-gallery .gallery-unavailable').count()>=1
     page.locator('[data-tab="media"]').click()
-    assert page.locator('.gallery-section img').count()>=1
+    assert page.locator('.gallery-section .atlas-gallery img').count()>=1
     page.locator('[data-close="detail"]').click()
     checks.append('Screenshots are attached to individual variants with source attributions and an offline fallback')
 

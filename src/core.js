@@ -75,7 +75,7 @@
       if (routeIds.has(id) && Array.isArray(v)) checks[id] = [...new Set(v.filter(n => Number.isInteger(n) && n >= 0 && n < 30))];
     }
     const profile = catalog.profiles.some(p => p.id === raw.profile) ? raw.profile : 'thor';
-    return {schemaVersion:1, watch, customGames, checks, profile, lastSeen:validDate(raw.lastSeen) ? raw.lastSeen : null};
+    return {schemaVersion:1, watch, customGames, checks, profile, lastSeen:validDate(raw.lastSeen) ? raw.lastSeen : null, previewDual:raw.previewDual===true, previewPreference:raw.previewPreference==='manual'?'manual':'auto'};
   }
   function validDate(s) { return typeof s === 'string' && s.length <= 40 && Number.isFinite(Date.parse(s)); }
   function eventsForWatchlist(events, watch, catalog) {

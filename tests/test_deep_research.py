@@ -52,6 +52,7 @@ class DeepResearchTest(unittest.TestCase):
         self.assertEqual(c['status'],'pending-review')
         self.assertTrue(c['notTested'])
 
+
     def test_modrinth_search_gallery_provides_source_linked_candidates(self):
         hit={'title':'Dual Screen HUD', 'description':'Second display on Android handheld',
              'slug':'dual-screen-hud', 'versions':['1.21.11'], 'categories':['fabric'],
@@ -110,7 +111,7 @@ class DeepResearchTest(unittest.TestCase):
         q,_=run([mc],targets,fixture,False,leads,{'schemaVersion':1,'candidates':[],'runs':[]},budget=8)
         r=report(catalog,q)
         self.assertIn('unknown',r['games'][0]['coverageAssertion'])
-        self.assertEqual(r['watchlistOnlyGames'],333)
+        self.assertEqual(r['watchlistOnlyGames'],len(catalog['gameIndex']))
         self.assertTrue(any(x['researchMode']=='fixture' for x in r['games']))
 
 if __name__=='__main__':unittest.main()

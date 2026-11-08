@@ -1,5 +1,16 @@
 # Handheld Atlas 0.4 – automatische Entdeckung, optional KI & Vision
 
+## Version 0.5.1 – Querformat, Galerien, größerer Index
+
+- Horizontale Suchkarten mit manuell durchklickbarer und bei Hover wechselnder Bildervorschau; originale Game-Cover bleiben getrennt von allgemeinen Screenshots und Variantenbildern.
+- Großes Originalspiel-Bilderkarussell im Detail **oberhalb** der Tabs; separate Bildergalerien **für jeden Spielweg** mit Pfeilen, Vorschaubildern, Tastatur und Touch.
+- Optionale Dual-Screen-Bilderpriorität per **manuellem Schalter**. Gamepad-L1/R1 ist vorbereitet, aber AYN-Thor-Hardwarebelegung und automatische Display-Erkennung sind noch **nicht getestet bzw. nicht implementiert**.
+- 701 suchbare Spiele inklusive 327 neuer **nur titelbasierter, ungetesteter** Index-Einträge; 60 bisher dokumentierte, quellenverlinkte Spielwege. Siehe `docs/V051-BROWSING.md`.
+- PSP, Dreamcast, GameCube, Wii, PS Vita, Sega Mega Drive und PS2 erhalten generische, **unbestätigte** Emulator-/Plattformoptionen.
+- Morrowind: Performance-Mods (Project Atlas, MOP), Patch for Purists und OpenMW-Android-Projekt als separat gekennzeichnete Recherchehinweise.
+- Akkulaufzeit-Schaltfläche entfernt, da keine vergleichbaren Messungen hinterlegt sind.
+
+
 ## Version 0.5 – Spielebrowser mit Cover/Originalszenen und Plattformoptionen
 
 - Für PC-Titel lädt der neue Metadaten-Workflow kostenlose Quellmetadaten mit offiziell verlinkten Steam-Bibliothekscovern und Originalspiel-Screenshots (keine Bilddateien im Repo). Optional kann IGDB über die nichtkommerzielle Twitch-API angeschlossen werden. Bildquellen und Rechtehinweise bleiben sichtbar. **Fehlende Cover werden nicht durch erfundene Bilder ersetzt.**
@@ -45,7 +56,7 @@
 ## Was neu ist
 
 - Minecraft **DroidBridge Launcher** und **DroidBridge + Dual Screen HUD** als zwei separate dokumentierte Spielwege, neben Bedrock, ExoJosh, Abacus, Zalith und Amethyst. Versions- und Modloader-Konflikte sind explizit beschrieben; keine Hardware-Benchmarks erfunden.
-- Datenmodell bleibt getrennt: **374 suchbare Spiele** (41 kuratierte Spiele + 333 Index-/Watchlist-Titel) und **60 dokumentierte Spielwege**. Eine Suchindex-Karte ist kein Kompatibilitätsnachweis.
+- Datenmodell bleibt getrennt: **701 suchbare Spiele** (41 kuratierte Spiele + 660 Index-/Watchlist-Titel) und **60 dokumentierte Spielwege**. Eine Suchindex-Karte ist kein Kompatibilitätsnachweis.
 - **Screenshot-Verknüpfung unverändert:** 77 bereits in v0.2 zugeordnete Quellbilder von Eden-Duo-Companions. Bei neuen DroidBridge-Spielwegen sind noch keine sicher zugeordneten Bilder eingebunden; originaler CurseForge-Galerielink statt falscher Screenshots.
 - GitHub-, Modrinth- und optional CurseForge-Recherche pro Spiel in `scripts/deep_research.py`; mit URL-Deduplikation, Quellenverweisen, Versions-/Loader-Hinweisen und Reviewstatus.
 - `data/research_queue.json` enthält zur Demonstration nur **synthetische Test-API-Antworten auf Grundlage bekannter Projekte**. **Kein Live-Abgleich**. Recherchequeue und veröffentlichte Spielwege sind getrennt.
