@@ -1484,7 +1484,9 @@
       "repo": "kyannon/gba-ds",
       "description": "Zeigt bei diesen Spielen die laufend aktualisierte spielinterne Karte separat an; weitere Spielprofile nutzen Bildschirm 2 etwa für Renn-HUDs, Aufgabenlisten oder Menüs. Eigenständiger GBA-Emulator für Android und Linux. Erstveröffentlichung am 13. Oktober 2026; Version 1.4.11 vom 7. November ergänzt Wario Land 4. ([raw.githubusercontent.com](https://raw.githubusercontent.com/kyannon/gba-ds/main/CHANGELOG.md))",
       "games": [
-        "metroid-fusion-metroid-zero-mission-castlevania-aria-of-sorr"
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
       ],
       "checkedAt": "2026-11-08"
     },

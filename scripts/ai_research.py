@@ -522,7 +522,7 @@ Mods, Companion-Apps, Emulator-Forks und native Ports, die den zweiten Bildschir
 Prüfe zusätzlich diese Kandidaten aus unserem Watcher und nimm die echten Dual-Screen-Projekte auf:
 {json.dumps(lead_list, ensure_ascii=False)}
 Diese Projekte kennen wir schon (nicht erneut nennen): {json.dumps(sorted(known_urls)[:400])}
-Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielfassung, die es nutzt, z. B. "PC", "SNES",
+Je Projekt und Spiel ein Eintrag (unterstützt ein Projekt mehrere Spiele, mehrere Einträge): gameTitle (genau EIN englischer Originaltitel), platform (Plattform der Spielfassung, die es nutzt, z. B. "PC", "SNES",
 "Nintendo Switch", "Android"), name, projectUrl, kind, dualScreen (deutsch: was zeigt Bildschirm 2), dualScreenType
 (integrated/companion/info/native), sourceUrl, released (YYYY-MM oder ""). Keine Piraterie-Seiten. Höchstens {max_new}."""}, token)
     data, sources = output_json(resp), searched_urls(resp)
@@ -530,10 +530,18 @@ Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielf
     inbox['dualScanSeen'] = sorted(seen | {l['url'] for l in leads})
     added, touched_games = [], set()
     atlas_mod = __import__('atlas')
+    items = []
     for item in data.get('projects', [])[:max_new]:
+        # one project for several games ("A; B; C") -> one entry per game
+        titles = [t.strip() for t in re.split(r'\s*;\s*|\s+\|\s+', item.get('gameTitle') or '') if t.strip()]
+        items += [{**item, 'gameTitle': t} for t in titles] or [item]
+    known_before, batch_seen = set(known_urls), set()
+    for item in items:
         purl = item.get('projectUrl')
-        if not ok_url(purl) or not ok_url(item.get('sourceUrl'), sources) or norm_url(purl) in known_urls:
+        pair = (norm_url(purl), (item.get('gameTitle') or '').lower())
+        if not ok_url(purl) or not ok_url(item.get('sourceUrl'), sources) or norm_url(purl) in known_before or pair in batch_seen:
             continue
+        batch_seen.add(pair)
         if len((item.get('gameTitle') or '').strip()) < 2 or not (item.get('platform') or '').strip():
             log(f"  übersprungen (Titel/Plattform fehlt): {item.get('name')}")
             continue

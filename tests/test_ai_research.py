@@ -175,22 +175,27 @@ class QueueAndDualScanTest(ModesTest):
         self.assertEqual(len(ai_research.queue_load()['jobs']), max(0, before - 1))
 
     def test_dual_scan_adds_route_for_new_and_existing_games(self):
+        ai_research.create_game('ZZ Existing Knight', ['PC'], None, 2017, log=lambda *a: None)   # existing, not researched
         resp = fake_response({'projects': [
-            {'gameTitle': 'Hollow Knight', 'platform': 'PC', 'name': 'HK Dual Map', 'projectUrl': 'https://github.com/x/hk-dual',
+            {'gameTitle': 'ZZ Existing Knight', 'platform': 'PC', 'name': 'HK Dual Map', 'projectUrl': 'https://github.com/x/hk-dual',
              'kind': 'native-mod', 'dualScreen': 'Karte unten', 'dualScreenType': 'integrated', 'sourceUrl': 'https://github.com/x/hk-dual', 'released': '2026-10'},
             {'gameTitle': 'Totally New Game', 'platform': 'SNES', 'name': 'TNG Companion', 'projectUrl': 'https://github.com/y/tng',
              'kind': 'companion', 'dualScreen': 'Inventar', 'dualScreenType': 'companion', 'sourceUrl': 'https://github.com/y/tng', 'released': ''},
+            {'gameTitle': 'ZZ Alpha; ZZ Beta', 'platform': 'SNES', 'name': 'Multi DS', 'projectUrl': 'https://github.com/m/multi',
+             'kind': 'emulator-mod', 'dualScreen': 'Karte', 'dualScreenType': 'integrated', 'sourceUrl': 'https://github.com/m/multi', 'released': ''},
             {'gameTitle': 'Fake', 'platform': 'PC', 'name': 'Unsourced', 'projectUrl': 'https://github.com/z/fake',
              'kind': 'mod', 'dualScreen': '', 'dualScreenType': 'info', 'sourceUrl': 'https://nowhere.example', 'released': ''}]},
-            ['https://github.com/x/hk-dual', 'https://github.com/y/tng'])
+            ['https://github.com/x/hk-dual', 'https://github.com/y/tng', 'https://github.com/m/multi'])
         original = ai_research.call_openai
         ai_research.call_openai = lambda payload, token: resp
         try:
             added = ai_research.dual_scan('key', 'model', log=lambda *a: None)
         finally:
             ai_research.call_openai = original
-        self.assertEqual(len(added), 2)
-        hk = atlas.read(atlas.DATA / 'games' / f"{ai_research.find_game('Hollow Knight')}.json")
+        self.assertEqual(len(added), 4)
+        self.assertTrue(ai_research.find_game('ZZ Alpha') and ai_research.find_game('ZZ Beta'))   # multi-title split
+        self.assertIsNone(ai_research.find_game('ZZ Alpha; ZZ Beta'))
+        hk = atlas.read(atlas.DATA / 'games' / f"{ai_research.find_game('ZZ Existing Knight')}.json")
         r = next(r for r in hk['routes'] if r['name'] == 'HK Dual Map')
         self.assertEqual((r['dualScreenType'], r['verification'], 'dual-screen' in r['features']), ('integrated', 'ai-unverified', True))
         self.assertTrue(ai_research.find_game('Totally New Game'))

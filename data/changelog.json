@@ -306,8 +306,8 @@
       "date": "2026-11-08",
       "type": "route-added",
       "by": "ai-research",
-      "game": "metroid-fusion-metroid-zero-mission-castlevania-aria-of-sorr",
-      "text": "Dual Screen: GBA DS für Metroid Fusion; Metroid: Zero Mission; Castlevania: Aria of Sorrow (Suchlauf)",
+      "game": "metroid-fusion",
+      "text": "Dual Screen: GBA DS für Metroid Fusion, Metroid: Zero Mission und Castlevania: Aria of Sorrow (Suchlauf)",
       "url": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md"
     },
     {
