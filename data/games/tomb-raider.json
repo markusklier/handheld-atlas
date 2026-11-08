@@ -4,7 +4,19 @@
   "franchise": "Tomb Raider",
   "platforms": [
     "PlayStation",
-    "PC"
+    "PC",
+    "Sega Saturn",
+    "Mac OS Classic",
+    "Pocket PC",
+    "Nokia N-Gage",
+    "iOS",
+    "Android",
+    "PlayStation 3",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Evercade",
+    "HyperMegaTech Super Pocket",
+    "Xbox Series X|S"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
@@ -65,9 +77,526 @@
           "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
         }
       ]
+    },
+    {
+      "id": "saturn",
+      "name": "Tomb Raider – Sega Saturn",
+      "type": "original",
+      "platforms": [
+        "Sega Saturn"
+      ],
+      "year": 1996,
+      "traits": [
+        "controller"
+      ],
+      "note": "Zusätzliche ursprüngliche Konsolenfassung neben den bereits erfassten PlayStation- und DOS-Versionen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://gamefaqs.gamespot.com/saturn/199041-tomb-raider/data"
+        }
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Tomb Raider Gold / Unfinished Business",
+      "type": "rerelease",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1998,
+      "note": "Neuauflage des Hauptspiels mit vier zusätzlichen Levels in den beiden Abenteuern Shadow of the Cat und Unfinished Business.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://ns2.tombraiders.net/stella/trub.html"
+        }
+      ]
+    },
+    {
+      "id": "mac-gold",
+      "name": "Tomb Raider Gold – Macintosh",
+      "type": "port",
+      "platforms": [
+        "Mac OS Classic"
+      ],
+      "year": 1999,
+      "note": "Macintosh-Portierung einschließlich der Gold-Zusatzlevels; nicht mit einer nativen modernen macOS-Fassung gleichzusetzen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_Gold"
+        }
+      ]
+    },
+    {
+      "id": "pocket-pc",
+      "name": "Tomb Raider – Pocket PC",
+      "type": "port",
+      "platforms": [
+        "Pocket PC"
+      ],
+      "year": 2002,
+      "note": "Mobile 3D-Portierung von Ideaworks3D für Windows-Powered-Pocket-PCs; keine Android-App.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraiderchronicles.com/games/"
+        }
+      ]
+    },
+    {
+      "id": "ngage",
+      "name": "Tomb Raider – Nokia N-Gage",
+      "type": "port",
+      "platforms": [
+        "Nokia N-Gage"
+      ],
+      "year": 2003,
+      "traits": [
+        "controller"
+      ],
+      "note": "Portierung von Ideaworks3D; Veröffentlichung im Vereinigten Königreich am 7. Oktober 2003. Die damaligen Arena-Funktionen sind kein Beleg für heute verfügbare Online-Dienste.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraiderchronicles.com/headlines1449.html"
+        }
+      ]
+    },
+    {
+      "id": "ios-classic",
+      "name": "Tomb Raider I – iOS",
+      "type": "port",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2013,
+      "traits": [
+        "touch"
+      ],
+      "note": "Offizielle Mobilportierung des Originals vom 17. Dezember 2013, einschließlich der Gold-Zusatzlevels; nicht die spätere Remastered-App.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gamespot.com/articles/original-tomb-raider-hits-ios-for-99-cents-promises-15-hours-of-gameplay/1100-6416765/"
+        }
+      ]
+    },
+    {
+      "id": "android-classic",
+      "name": "Tomb Raider I – Android-Klassikport",
+      "type": "android",
+      "platforms": [
+        "Android"
+      ],
+      "year": 2015,
+      "traits": [
+        "touch",
+        "controller"
+      ],
+      "note": "Eigenständige offizielle Square-Enix-App des Klassikers mit den zusätzlichen Kapiteln der Gold-Ausgabe. Historische App-ID: com.squareenix.tombraider1classic. Nicht mit I–III Remastered verwechseln; heute kein regulärer Neukauf über die geprüfte öffentliche Store-Seite möglich.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/"
+        }
+      ]
+    },
+    {
+      "id": "trilogy-2011",
+      "name": "The Tomb Raider Trilogy",
+      "type": "collection",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2011,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Enthält die HD-Fassung von Anniversary zusammen mit Legend und Underworld. Nicht mit der Sammlung der ursprünglichen Teile I–III verwechseln.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/?p=43005"
+        }
+      ]
+    },
+    {
+      "id": "anniversary-ps4-ps5",
+      "name": "Tomb Raider: Anniversary – PlayStation-Neuauflage",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller"
+      ],
+      "note": "Zusätzliche offizielle Wiederveröffentlichung von Anniversary im PlayStation Store vom 18. November 2025.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store"
+        }
+      ]
+    },
+    {
+      "id": "evercade",
+      "name": "Tomb Raider Collection 1",
+      "type": "collection",
+      "platforms": [
+        "Evercade",
+        "HyperMegaTech Super Pocket"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller"
+      ],
+      "note": "Physische Sammlung der ursprünglichen drei Konsolenspiele; Veröffentlichung am 30. August 2024. Kein Remaster und keine Android-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today"
+        }
+      ]
+    },
+    {
+      "id": "legacy-atlantis",
+      "name": "Tomb Raider: Legacy of Atlantis",
+      "type": "remake",
+      "platforms": [
+        "PC",
+        "PlayStation 5",
+        "Xbox Series X|S"
+      ],
+      "year": 2027,
+      "note": "Angekündigte erneute Neuinterpretation des Spiels von 1996 mit Unreal Engine 5. Noch nicht erschienen: Das konkrete Datumsfeld der offiziellen Produktseite nennt den 12. Februar 2027, obwohl der Beschreibungstext noch 2026 erwähnt. Kein belegter lokaler Android-Spielweg.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/products/games/tomb-raider-legacy-of-atlantis"
+        }
+      ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "ai-iiii-remastered-als-offizielle-android-app",
+      "name": "I–III Remastered als offizielle Android-App",
+      "kind": "native",
+      "release": "remastered",
+      "runtime": "Offizielle Aspyr-Android-App",
+      "projects": [
+        "tomb-raider-iiii-remastered-aspyr"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Android-Freischaltung der Vollversion über den offiziellen Store; zum Ausprobieren genügt die kostenlose Demo"
+      ],
+      "benefit": "Direkter Android-Weg ohne Emulator und ohne Übertragen eigener PC-Spieldaten; auf dem AYN Thor mit Controller erprobt.",
+      "caveat": "Die Demo ersetzt nicht den Kauf der Vollversion. Aspyrs Patch vom 6. Oktober 2026 behebt unter anderem Controller-Ausfälle nach dem Minimieren; deshalb vor dem Test aktualisieren.",
+      "steps": [
+        "Die offizielle App mit der Paket-ID com.aspyr.trm aus Google Play installieren.",
+        "Zunächst die angebotenen ersten Levels mit den Thor-Controllern testen.",
+        "Bei zufriedenstellender Funktion die Vollversion innerhalb der App freischalten."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/SBCGaming/comments/1tlk9xh/whawhatcha_playing/",
+          "device": "AYN Thor",
+          "summary": "Der Nutzer berichtet, dass die offizielle Android-Demo problemlos läuft und vollständige Controller-Unterstützung bietet.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-openlara-mit-eigenen-original-spieldaten",
+      "name": "OpenLara mit eigenen Original-Spieldaten",
+      "kind": "source-port",
+      "release": "pc-dos",
+      "runtime": "OpenLara für Android",
+      "projects": [
+        "openlara"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Originalfassung von Tomb Raider mit passenden Spieldaten",
+        "Ein Android-System, das die ABI des veröffentlichten Pakets unterstützt, oder eine selbst angepasste Kompilierung"
+      ],
+      "benefit": "Native offene Neuimplementierung der klassischen Engine statt DOS- oder PlayStation-Emulation.",
+      "caveat": "Das veröffentlichte Android-Paket ist laut Release-Seite vom 24. Dezember 2022. Ein dokumentierter Installationsfehler auf Android 15 betrifft fehlende passende ABIs; das bestehende Paket ist daher keine sichere Empfehlung für jeden modernen Handheld. Remastered-Spieldaten nicht voraussetzen.",
+      "steps": [
+        "OpenLara_android.zip ausschließlich aus den offiziellen Projekt-Releases beziehen.",
+        "Die enthaltene Readme zur Installation und Datenstruktur befolgen.",
+        "Die benötigten Daten aus der eigenen Originalausgabe übernehmen.",
+        "Installation und Eingaben zunächst prüfen; bei ABI-Fehlern nicht von einer funktionierenden Thor-Unterstützung ausgehen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/XProger/OpenLara/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/XProger/OpenLara/issues/522",
+          "device": "BVL-N49 mit MagicOS 9 / Android 15",
+          "summary": "Der Nutzer kann das Paket wegen INSTALL_FAILED_NO_MATCHING_ABIS nicht installieren; im Issue wird eine ARM64-Neukompilierung als erforderliche Anpassung genannt.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-historische-offizielle-android-app-aus-eigenem-kaufkonto",
+      "name": "Historische offizielle Android-App aus eigenem Kaufkonto",
+      "kind": "native",
+      "release": "android-classic",
+      "runtime": "Square-Enix-Klassikport",
+      "projects": [
+        "tomb-raider-i-square-enix"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Bereits erworbene Lizenz der ursprünglichen Android-App",
+        "Weiterhin verfügbare Installation über das eigene Kaufkonto",
+        "Mit der alten App kompatibles Android-Gerät"
+      ],
+      "benefit": "Offizieller Klassiker einschließlich Gold-Zusatzkapiteln ohne Emulator.",
+      "caveat": "Archivierter Bestandskundenweg, keine verlässliche Neuinstallationsempfehlung für den Thor. Nutzer berichten über erneutes Herunterladen aus früheren Käufen; das garantiert weder Verfügbarkeit für jedes Konto noch Kompatibilität mit aktuellen Android-Versionen.",
+      "steps": [
+        "Im damaligen Google-Konto die Liste bereits gekaufter Apps prüfen.",
+        "Nur eine noch angebotene offizielle Installation verwenden.",
+        "Start, Zusatzkapitel und Controllerbelegung testen; bei fehlender Verfügbarkeit auf Remastered oder einen datenbasierten Source-Port ausweichen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "archived",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/TombRaider/comments/1rs0ni5/tr12_android_ports_vs_tr_iiii_remastered/",
+          "device": "",
+          "summary": "Ein früherer Käufer berichtet im März 2026, dass sich die alten Mobilportierungen weiterhin über seine Play-Store-Kaufhistorie herunterladen lassen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-trx-mobile-fork-selbst-fur-android-kompilieren",
+      "name": "TRX-Mobile-Fork selbst für Android kompilieren",
+      "kind": "decomp",
+      "release": "pc-dos",
+      "runtime": "Inoffizieller OpenGLES-Fork von TRX",
+      "projects": [
+        "checkm8croft-trx"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende Tomb-Raider-Spieldaten",
+        "Entwicklungsumgebung und Kenntnisse zum Portieren und Kompilieren des Forks"
+      ],
+      "benefit": "Experimenteller Ansatz, die weiterentwickelte TRX-Neuimplementierung auf Mobilgeräte zu bringen.",
+      "caveat": "Kein belegter fertiger Android-Spielweg: Der Entwickler bestätigt funktionierendes iOS, besitzt aber kein Android-Testgerät und schlägt lediglich einen eigenen Android-Build vor. Nicht mit offizieller Android-Unterstützung des TRX-Hauptprojekts gleichsetzen.",
+      "steps": [
+        "Den ios-Zweig des Checkm8Croft-Forks und dessen Bauanleitung prüfen.",
+        "Die Android-Anpassungen selbst kompilieren und testen.",
+        "Nur eigene Spieldaten verwenden und Fehler beim Fork statt beim TRX-Hauptprojekt melden."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraiderforums.com/showthread.php?nojs=1&p=8622254"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-pc-remaster-uber-gamenative-mit-manuellem-exe-start",
+      "name": "PC-Remaster über GameNative mit manuellem EXE-Start",
+      "kind": "pc-runtime",
+      "release": "remastered",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz von I–III Remastered; konkret belegt ist die Epic-Ausgabe",
+        "Installierte Windows-Spieldateien"
+      ],
+      "benefit": "Kann eine bereits vorhandene PC-Lizenz nutzbar machen; ein spielspezifischer Workaround umgeht den dokumentierten schwarzen Startbildschirm.",
+      "caveat": "In GameNative 0.9.2 scheiterte der normale Start im Bericht. Funktionierend belegt ist das manuelle Ausführen von tomb123.exe im Container auf einem Konkr Pocket Fit, nicht auf dem Thor; kein allgemeiner Kompatibilitätsnachweis.",
+      "steps": [
+        "Die eigene PC-Ausgabe in GameNative installieren.",
+        "Bei schwarzem Bildschirm Open Container wählen.",
+        "Im Container Laufwerk A: öffnen und tomb123.exe direkt ausführen.",
+        "Speichern und erneuten Spielstart prüfen."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/GameNative/comments/1tk3t1b/game_only_runs_if_you_open_container_and_launch/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/GameNative/comments/1tk3t1b/game_only_runs_if_you_open_container_and_launch/",
+          "device": "Konkr Pocket Fit, Snapdragon G3 Gen 3",
+          "summary": "Der Nutzer berichtet über funktionierenden Betrieb durch direkten Start von tomb123.exe und meldet später den Abschluss seines Durchgangs mit diesem Workaround.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-n-gage-portierung-uber-eka2l1",
+      "name": "N-Gage-Portierung über EKA2L1",
+      "kind": "emulation",
+      "release": "ngage",
+      "runtime": "EKA2L1 für Android",
+      "projects": [
+        "eka2l1"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene N-Gage-Ausgabe von Tomb Raider",
+        "Benötigte rechtmäßig gesicherte Symbian-/N-Gage-Systemdaten gemäß EKA2L1-Dokumentation"
+      ],
+      "benefit": "Erhält die besondere historische N-Gage-Portierung; ein spielspezifischer Android-Startbericht liegt vor.",
+      "caveat": "Der Bericht bestätigt nur den laufenden Spielstart und fragt nach bislang nicht funktionierenden Shadern; ein vollständiger Durchgang oder Thor-Test ist nicht belegt.",
+      "steps": [
+        "EKA2L1 anhand der offiziellen Projektdokumentation einrichten.",
+        "Die eigene N-Gage-Ausgabe mit den erforderlichen eigenen Systemdaten installieren.",
+        "Zuerst ohne zusätzliche Shader testen."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/ngage/comments/1l3z42h/eka2l1_android_how_to_use_shaders/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/ngage/comments/1l3z42h/eka2l1_android_how_to_use_shaders/",
+          "device": "",
+          "summary": "Der Nutzer bestätigt laufendes N-Gage-Tomb-Raider unter Android, konnte seine zusätzlich eingerichteten Shader jedoch nicht aktivieren.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
-  "summary": "Das PlayStation-Original per Emulation oder die Remastered-Sammlung, die es inzwischen auch als offizielle Android-Fassung gibt."
+  "summary": "Ergänzungen und Korrekturen, Stand 8. November 2026. Für den Thor ist die offizielle Android-Fassung von I–III Remastered der unkomplizierteste belegte Weg; die Mobilportierung erschien erst am 12. März 2026. Für Anniversary gibt es konkrete Android-Berichte sowie Kamera- und Bildraten-Patches. OpenLara ist verfügbar, aber sein älteres Android-Paket hat dokumentierte ABI-Probleme auf neueren Geräten. Der mobile TRX-Fork ist ausdrücklich experimentell. Einen spielspezifischen Dual-Screen-Mod oder Inventar-Companion konnte ich nicht belastbar belegen. Tomb Raider von 2013 ist ein anderes Spiel und hier nicht als Fassung des Originals erfasst.",
+  "mods": [
+    {
+      "id": "anniversary-right-analog-support",
+      "name": "Anniversary – Right Analog Support",
+      "category": "Steuerung",
+      "url": "https://forums.ppsspp.org/showthread.php?pid=126027&tid=22787",
+      "edition": "Tomb Raider: Anniversary für PSP, ULUS-10253 / ULES-00826",
+      "description": "CWCheat-Patch von Kabuto_Kun für unabhängige Kamera- und Zielsteuerung mit dem rechten Analogstick in PPSSPP. Die spielinternen Optionen zur Achseninvertierung bleiben nutzbar. Android-tauglicher Kamerapatch, kein Vita-exklusives PRX-Plugin.",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "anniversary-retroachievements-60-fps-patch",
+      "name": "Anniversary – RetroAchievements-60-FPS-Patch",
+      "category": "Bildrate",
+      "url": "https://github.com/RetroAchievements/RAPatches/blob/main/PS2/Improvement/19341-TombRaiderAnniversary-60fps.zip",
+      "edition": "Tomb Raider: Anniversary für PS2; zur Patchanleitung passende Ausgabe",
+      "description": "Separater 60-FPS-Verbesserungspatch im RetroAchievements-Patcharchiv. Ein Android-Handheld-Bericht verlinkt ihn ausdrücklich; vor der Anwendung die benötigte Ausgangsausgabe prüfen und eine Sicherung des eigenen Dumps behalten.",
+      "verification": "ai-unverified"
+    }
+  ]
 }

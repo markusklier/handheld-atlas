@@ -1,6 +1,158 @@
 {
   "entries": [
     {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider – Sega Saturn (KI-Recherche)",
+      "url": "https://gamefaqs.gamespot.com/saturn/199041-tomb-raider/data",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider Gold / Unfinished Business (KI-Recherche)",
+      "url": "https://ns2.tombraiders.net/stella/trub.html",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider Gold – Macintosh (KI-Recherche)",
+      "url": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_Gold",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider – Pocket PC (KI-Recherche)",
+      "url": "https://www.tombraiderchronicles.com/games/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider – Nokia N-Gage (KI-Recherche)",
+      "url": "https://www.tombraiderchronicles.com/headlines1449.html",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider I – iOS (KI-Recherche)",
+      "url": "https://www.gamespot.com/articles/original-tomb-raider-hits-ios-for-99-cents-promises-15-hours-of-gameplay/1100-6416765/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider I – Android-Klassikport (KI-Recherche)",
+      "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Tomb Raider Trilogy (KI-Recherche)",
+      "url": "https://blog.playstation.com/?p=43005",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider: Anniversary – PlayStation-Neuauflage (KI-Recherche)",
+      "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider Collection 1 (KI-Recherche)",
+      "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider: Legacy of Atlantis (KI-Recherche)",
+      "url": "https://www.tombraider.com/products/games/tomb-raider-legacy-of-atlantis",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: I–III Remastered als offizielle Android-App (Tomb Raider I–III Remastered (2024), KI-Recherche)",
+      "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: OpenLara mit eigenen Original-Spieldaten (PC (MS-DOS, 1996), KI-Recherche)",
+      "url": "https://github.com/XProger/OpenLara/releases",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Historische offizielle Android-App aus eigenem Kaufkonto (Tomb Raider I – Android-Klassikport, KI-Recherche)",
+      "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: TRX-Mobile-Fork selbst für Android kompilieren (PC (MS-DOS, 1996), KI-Recherche)",
+      "url": "https://www.tombraiderforums.com/showthread.php?nojs=1&p=8622254",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PC-Remaster über GameNative mit manuellem EXE-Start (Tomb Raider I–III Remastered (2024), KI-Recherche)",
+      "url": "https://www.reddit.com/r/GameNative/comments/1tk3t1b/game_only_runs_if_you_open_container_and_launch/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: N-Gage-Portierung über EKA2L1 (Tomb Raider – Nokia N-Gage, KI-Recherche)",
+      "url": "https://www.reddit.com/r/ngage/comments/1l3z42h/eka2l1_android_how_to_use_shaders/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Anniversary – Right Analog Support (KI-Recherche)",
+      "url": "https://forums.ppsspp.org/showthread.php?pid=126027&tid=22787",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Anniversary – RetroAchievements-60-FPS-Patch (KI-Recherche)",
+      "url": "https://github.com/RetroAchievements/RAPatches/blob/main/PS2/Improvement/19341-TombRaiderAnniversary-60fps.zip",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "tomb-raider"
+    },
+    {
       "date": "2026-11-08",
       "type": "release",
       "text": "Xash3D FWGS continuous (Vorabversion) veröffentlicht.",

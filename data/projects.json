@@ -426,7 +426,8 @@
       "games": [
         "cyberpunk-2077",
         "grand-theft-auto-iv",
-        "grand-theft-auto-v"
+        "grand-theft-auto-v",
+        "tomb-raider"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -1109,6 +1110,66 @@
       "games": [],
       "checkedAt": "2026-11-08",
       "pushedAt": "2026-10-24"
+    },
+    {
+      "id": "tomb-raider-iiii-remastered-aspyr",
+      "name": "Tomb Raider I–III Remastered – Aspyr",
+      "kind": "official",
+      "url": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+      "repo": null,
+      "description": "",
+      "games": [
+        "tomb-raider"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "openlara",
+      "name": "OpenLara",
+      "kind": "port",
+      "url": "https://github.com/XProger/OpenLara",
+      "repo": "XProger/OpenLara",
+      "description": "",
+      "games": [
+        "tomb-raider"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "tomb-raider-i-square-enix",
+      "name": "Tomb Raider I – Square Enix",
+      "kind": "official",
+      "url": "https://play.google.com/store/apps/details?id=com.squareenix.tombraider1classic",
+      "repo": null,
+      "description": "",
+      "games": [
+        "tomb-raider"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "checkm8croft-trx",
+      "name": "Checkm8Croft/TRX",
+      "kind": "port",
+      "url": "https://github.com/Checkm8Croft/TRX/tree/ios",
+      "repo": "Checkm8Croft/TRX",
+      "description": "",
+      "games": [
+        "tomb-raider"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "eka2l1",
+      "name": "EKA2L1",
+      "kind": "emulator",
+      "url": "https://github.com/EKA2L1/EKA2L1",
+      "repo": "EKA2L1/EKA2L1",
+      "description": "",
+      "games": [
+        "tomb-raider"
+      ],
+      "checkedAt": "2026-11-08"
     }
   ]
 }
