@@ -6,5 +6,9 @@
     "PC"
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Diablo_II"
+  }
 }

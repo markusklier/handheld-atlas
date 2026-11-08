@@ -6,5 +6,9 @@
     "PSP"
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Persona_2_IS_Box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Persona_2%3A_Innocent_Sin"
+  }
 }

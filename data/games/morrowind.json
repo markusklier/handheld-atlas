@@ -132,5 +132,9 @@
       "verification": "documented"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/53/MorrowindCOVER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
+  }
 }

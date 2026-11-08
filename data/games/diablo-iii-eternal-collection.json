@@ -69,5 +69,9 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/80/Diablo_III_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Diablo_III"
+  }
 }
