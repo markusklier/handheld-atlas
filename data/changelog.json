@@ -4,6 +4,164 @@
       "date": "2026-11-08",
       "type": "screenshot-added",
       "by": "ai-research",
+      "text": "KI-Bildprüfung: 16 Screenshots bestätigt, 1 unpassende entfernt"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Special Edition für PC (KI-Recherche)",
+      "url": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Anniversary Edition für PC (KI-Recherche)",
+      "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim für Nintendo Switch (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Elder-Scrolls-V-Skyrim--1177455.html",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Anniversary Edition für Nintendo Switch (KI-Recherche)",
+      "url": "https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: SkyrimSE-DualScreen auf dem Thor (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Special Edition über GameNative (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1x1p837/any_tips_and_tricks_for_skyrim_se_on_gamenative/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "1 Erfahrungsbericht(e) zu Special Edition über GameNative (KI-Recherche)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1ue73v8/testing_modded_skyrim_anniversary_edition_100/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Special Edition über Winlator (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://www.reddit.com/r/OdinHandheld/comments/1e5vc97/how_to_fix_fallout_4_and_skyrim_se_in_winlator/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Originalfassung als ARM64-Rekompilation (PC, KI-Recherche)",
+      "url": "https://github.com/ttom795/Skyrim_Android",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Skyrim Androidborn mit Controller-Launcher (PC, KI-Recherche)",
+      "url": "https://github.com/igortiburcio/skyrim_androidborn",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: SkyrimWebMonitor als separater Zweitbildschirm-Companion (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://github.com/andreyvelsk/SkyrimWebSocket",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Unofficial Skyrim Special Edition Patch – USSEP (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/266",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: SkyUI für Special Edition (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/12604",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: SSE Display Tweaks (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/34705",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Skyrim Project Optimization SE (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/14084",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: BethINI / Bethini Pie (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/4875",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Static Mesh Improvement Mod – SMIM (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/659",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Skyrim 202X Downscale (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/68307",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: JK's Skyrim (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6289",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
       "text": "KI-Bildprüfung: 31 Screenshots bestätigt, 4 unpassende entfernt"
     },
     {

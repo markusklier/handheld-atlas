@@ -427,7 +427,8 @@
         "cyberpunk-2077",
         "grand-theft-auto-iv",
         "grand-theft-auto-v",
-        "tomb-raider"
+        "tomb-raider",
+        "the-elder-scrolls-v-skyrim"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -1232,7 +1233,9 @@
       "url": "https://github.com/brunodev85/winlator",
       "repo": "brunodev85/winlator",
       "description": "Windows-Programme und PC-Spiele auf Android über Wine und Box64.",
-      "games": [],
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
       "checkedAt": "2026-11-08",
       "pushedAt": "2026-11-02",
       "latestRelease": {
@@ -1277,6 +1280,54 @@
       "games": [],
       "checkedAt": "2026-11-08",
       "pushedAt": "2026-10-28"
+    },
+    {
+      "id": "skyrimse-dualscreen",
+      "name": "SkyrimSE-DualScreen",
+      "kind": "runtime",
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+      "repo": "Plus-Cloud/SkyrimSE-DualScreen",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "skyrim-android",
+      "name": "Skyrim_Android",
+      "kind": "port",
+      "url": "https://github.com/ttom795/Skyrim_Android",
+      "repo": "ttom795/Skyrim_Android",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "skyrim-androidborn",
+      "name": "Skyrim Androidborn",
+      "kind": "port",
+      "url": "https://github.com/igortiburcio/skyrim_androidborn",
+      "repo": "igortiburcio/skyrim_androidborn",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "skyrimwebmonitor-skyrimwebsocket",
+      "name": "SkyrimWebMonitor / SkyrimWebSocket",
+      "kind": "companion",
+      "url": "https://github.com/andreyvelsk/SkyrimWebMonitor",
+      "repo": "andreyvelsk/SkyrimWebMonitor",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
     }
   ]
 }

@@ -3,7 +3,8 @@
   "title": "The Elder Scrolls V: Skyrim",
   "franchise": "The Elder Scrolls",
   "platforms": [
-    "PC"
+    "PC",
+    "Nintendo Switch"
   ],
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/72850/library_600x900_2x.jpg",
@@ -49,8 +50,551 @@
       "platforms": [
         "PC"
       ]
+    },
+    {
+      "id": "se",
+      "name": "Skyrim Special Edition für PC",
+      "type": "remaster",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2016,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "note": "Enthält die drei Erweiterungen und überarbeitete Grafik. Für den Thor besonders interessant, weil sowohl PC-Laufzeiten als auch ein eigens entwickelter Dual-Screen-Weg dafür dokumentiert sind. ([store.steampowered.com](https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/))",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
+        }
+      ]
+    },
+    {
+      "id": "ae",
+      "name": "Skyrim Anniversary Edition für PC",
+      "type": "rerelease",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2021,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "note": "Special Edition samt den zum Jubiläumsstart veröffentlichten Creation-Club-Inhalten, darunter zusätzliche Quests, Ausrüstung und Spielmodi. Kein eigenständiges Remake: Für Mods und Laufzeiten sind die konkrete EXE-Version und der Store wichtiger als die Bezeichnung „Anniversary“. ([elderscrolls.bethesda.net](https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq))",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq"
+        }
+      ]
+    },
+    {
+      "id": "switch",
+      "name": "Skyrim für Nintendo Switch",
+      "type": "port",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2017,
+      "traits": [
+        "controller"
+      ],
+      "note": "Konsolenport mit Dawnguard, Hearthfire und Dragonborn sowie Zelda-Ausrüstung. Eine Alternative für Besitzer eines eigenen Switch-Dumps; Android-Berichte nennen allerdings flackernde Lichtquellen in Innenräumen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Elder-Scrolls-V-Skyrim--1177455.html"
+        }
+      ]
+    },
+    {
+      "id": "switch-ae",
+      "name": "Skyrim Anniversary Edition für Nintendo Switch",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2022,
+      "traits": [
+        "controller"
+      ],
+      "note": "Erweitert den Switch-Port um zahlreiche Creation-Club-Inhalte und ist auch als Upgrade erhältlich. Sinnvoll für zusätzliche Abenteuer ohne selbst zusammengestellte PC-Modliste; nicht mit der separaten Switch-2-Fassung verwechseln. ([nintendo.com](https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/))",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08"
+  "routes": [
+    {
+      "id": "ai-skyrimse-dualscreen-auf-dem-thor",
+      "name": "SkyrimSE-DualScreen auf dem Thor",
+      "kind": "pc-runtime",
+      "release": "se",
+      "runtime": "Auf GameNative basierende Android-App mit Wine und integriertem Companion",
+      "projects": [
+        "skyrimse-dualscreen"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "fps-cap",
+        "live-map",
+        "mods",
+        "touch",
+        "touch-inventory",
+        "two-screens"
+      ],
+      "dualScreen": "Oben läuft Skyrim; unten erscheinen Charakterwerte, gespiegelter Kompass, Quests, Inventar, Magie, Favoriten und eine interaktive Karte mit Schnellreise. Wahlweise laufen die Menüs ohne Spielpause.",
+      "requires": [
+        "AYN Thor",
+        "Eigene Steam-Lizenz von Skyrim Special Edition",
+        "Laut README die Steam-Spielversion 1.7.104",
+        "PC zum einmaligen Kopieren des installierten Spielordners",
+        "Zusätzlicher Speicher für die Laufzeit; laut Projekt ungefähr 3 GB",
+        "Optional ein Nexus-Mods-Konto"
+      ],
+      "benefit": "Der am stärksten auf den Thor zugeschnittene Weg: integrierte Touch-Bedienung und Modverwaltung statt eines lediglich gespiegelten zweiten Bildschirms.",
+      "caveat": "Sehr junges Projekt mit erster Veröffentlichung am 6. November 2026. Nur die ausdrücklich unterstützte Steam-Version verwenden; das ist keine native ARM-Neufassung von Skyrim. Leistungsangaben des Autors sind keine unabhängige Langzeitmessung.",
+      "steps": [
+        "Den vollständigen Skyrim-Special-Edition-Ordner vom PC auf den Thor kopieren.",
+        "Die APK aus den offiziellen Projekt-Releases installieren.",
+        "Dateizugriff erlauben, Spielordner auswählen und bei Steam anmelden.",
+        "Die Laufzeit herunterladen lassen und das Spiel über Play starten."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1xp53zx/release_skyrimsedualscreen_10_skyrim_se_with_a/",
+          "device": "AYN Thor",
+          "summary": "Der Entwickler zeigt den integrierten Companion und beschreibt Inventarbedienung, Schnellreise und laufend aktualisierte Spielwerte; ein Autorenbericht, kein unabhängiger Dauertest.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-special-edition-uber-gamenative",
+      "name": "Special Edition über GameNative",
+      "kind": "pc-runtime",
+      "release": "se",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz von Skyrim Special Edition beim unterstützten Store",
+        "Zugriff auf die eigenen Installationsdateien beziehungsweise das Store-Konto"
+      ],
+      "benefit": "Thor-Berichte belegen einen tatsächlich nutzbaren PC-Weg mit Modmöglichkeiten, ohne auf die Switch-Fassung ausweichen zu müssen.",
+      "caveat": "Startprobleme und fehlende Dialogstimmen sind dokumentiert. Grafikprofil, Treiber, Redistributables und Spielversion können entscheidend sein; ein erfolgreicher Start garantiert keine fehlerfreie lange Kampagne.",
+      "steps": [
+        "GameNative aus den offiziellen Releases installieren und die eigene Store-Fassung einrichten.",
+        "Zum Einstieg niedrige Grafikdetails und 1280 × 720 ausprobieren.",
+        "Falls der Launcher keine brauchbare Konfiguration erzeugt, die am PC erzeugten Skyrim.ini und SkyrimPrefs.ini übernehmen.",
+        "Bei Tonproblemen die benötigten DirectX-Komponenten innerhalb des Containers prüfen und installieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/AynThor/comments/1x1p837/any_tips_and_tricks_for_skyrim_se_on_gamenative/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1x1p837/any_tips_and_tricks_for_skyrim_se_on_gamenative/",
+          "device": "AYN Thor",
+          "summary": "Nutzer beschreiben funktionierendes Skyrim SE, niedrig eingestellte PC-Konfigurationsdateien und 720p-Vollbild, während ein anderer Nutzer fehlende Charakterstimmen meldet.",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://www.reddit.com/r/OdinHandheld/comments/1sz1dmi/whats_the_best_way_to_play_skyrim_on_the_odin_2/",
+          "device": "AYN Thor",
+          "summary": "Ein Thor-Besitzer berichtet von Spielbetrieb über GameNative und zuvor GameHub und bevorzugt die Grafik seiner Steam-Fassung gegenüber der Switch-Version.",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1ue73v8/testing_modded_skyrim_anniversary_edition_100/",
+          "device": "Nubia Z60, Snapdragon 8 Gen 3",
+          "summary": "Der Autor demonstriert Skyrim Anniversary Edition mit nach eigener Angabe mehr als 100 Mods und stellt klar, dass keine Frame-Generierung verwendet wird.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-special-edition-uber-winlator",
+      "name": "Special Edition über Winlator",
+      "kind": "pc-runtime",
+      "release": "se",
+      "runtime": "Winlator mit Wine und x86-64-Übersetzung",
+      "projects": [
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Fassung von Skyrim Special Edition; im Gerätebericht die GOG-Version",
+        "Eigene Installationsdateien",
+        "Bei Bedarf die offiziellen DirectX-Redistributables"
+      ],
+      "benefit": "Für den Odin 2 Base sind Spielbetrieb, funktionierender Ton und Controller sowie Mods ohne SKSE direkt dokumentiert.",
+      "caveat": "Der ältere Bericht benötigte Audioanpassungen und konnte SKSE nicht laden. Den damaligen XInputBridge-Workaround nicht blind übernehmen: Der Autor kennzeichnet ihn nach einem Geräteupdate ausdrücklich als nicht mehr erforderlich.",
+      "steps": [
+        "Winlator aus den offiziellen Releases installieren und die eigene PC-Fassung im Container einrichten.",
+        "Mit niedrigen Grafikdetails beginnen und Controller sowie Dialogton testen.",
+        "Bei Tonproblemen die DirectX-Audiokomponenten und den ALSA-Treiber prüfen.",
+        "Mods ohne SKSE in Data installieren und gegebenenfalls in der zum Store passenden plugins.txt aktivieren."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/OdinHandheld/comments/1e5vc97/how_to_fix_fallout_4_and_skyrim_se_in_winlator/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/OdinHandheld/comments/1e5vc97/how_to_fix_fallout_4_and_skyrim_se_in_winlator/",
+          "device": "AYN Odin 2 Base",
+          "summary": "Der Autor zeigt Skyrim SE mit funktionierendem Ton und Controller und bestätigt später JK's Skyrim, berichtet aber bei SKSE von einem DLL-Injektionsfehler.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-originalfassung-als-arm64-rekompilation",
+      "name": "Originalfassung als ARM64-Rekompilation",
+      "kind": "recomp",
+      "release": "pc",
+      "runtime": "Skyrim_Android mit SDL2 und angepasstem dxvk-native",
+      "projects": [
+        "skyrim-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "fps-cap",
+        "native-arm",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Originalfassung von Skyrim von 2011",
+        "Laut README TESV.exe 1.9.32.0.8 sowie Data und die dort aufgeführten DLLs aus eigener Installation beziehungsweise dem offiziellen DirectX-Paket",
+        "ARM64-Android ab Version 9 mit Vulkan 1.1"
+      ],
+      "benefit": "Führt statisch übersetzten ARM64-Code ohne vollständige Windows-Laufzeit aus und bietet einen Android-Launcher mit Touch- und Controlleroptionen.",
+      "caveat": "Experimentell: 0.30.15 ist als Vorabversion ausgewiesen. Special Edition funktioniert damit nicht; DLCs und Mods sind laut README ungetestet, und Geräteberichte nennen Controller-, Seitenverhältnis- und Grafikprobleme.",
+      "steps": [
+        "Eine veröffentlichte APK aus den offiziellen GitHub-Releases installieren.",
+        "Die im README genannten eigenen Spieldateien in einen Ordner außerhalb von Android/data kopieren.",
+        "Im Launcher Choose Skyrim folder wählen und die Dateiprüfung abwarten.",
+        "Mit niedrigen Details beginnen und Eingabe, Karte und Wiederaufnahme nach Standby prüfen."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ttom795/Skyrim_Android/main/images/launcher.png",
+          "caption": "Android-Launcher von Skyrim mit Grafikeinstellungen",
+          "source": "https://github.com/ttom795/Skyrim_Android",
+          "credit": "Skyrim_Android",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/ttom795/Skyrim_Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-skyrim-androidborn-mit-controller-launcher",
+      "name": "Skyrim Androidborn mit Controller-Launcher",
+      "kind": "recomp",
+      "release": "pc",
+      "runtime": "Skyrim Androidborn, Fork von Skyrim_Android",
+      "projects": [
+        "skyrim-androidborn"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Steam-Lizenz des Skyrim-Originals von 2011 oder Data-Ordner aus eigener PC-Installation",
+        "ARM64-Android ab Version 9 mit Vulkan 1.1",
+        "Laut Projekt ungefähr 10 GB freier Speicher"
+      ],
+      "benefit": "Ergänzt einen controllerorientierten Launcher, GPU-Treiberauswahl und seit Version 0.2.0 den direkten Download der eigenen Spieldaten über Steam; damit ist kein PC zum Kopieren nötig.",
+      "caveat": "Früher Fork mit gemischten Controllerberichten. Zum Veröffentlichungszeitpunkt bezeichnet der Autor Modunterstützung noch als nicht vorhanden; Steam-Download der DLCs bedeutet nicht, dass sämtliche Inhalte bereits umfassend getestet wurden.",
+      "steps": [
+        "Die APK aus den offiziellen Projekt-Releases installieren.",
+        "Unter Game Files bei Steam anmelden und die eigenen Spieldaten herunterladen oder den vorhandenen Data-Ordner auswählen.",
+        "Grafikprofil und Eingabemethode festlegen.",
+        "Vor einer längeren Partie Controller, Ton und Spielstände testen."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igortiburcio/skyrim_androidborn/main/images/androidborn-launcher.jpg",
+          "caption": "Skyrim-Androidborn-Launcher mit Controller-Bedienhinweisen",
+          "source": "https://github.com/igortiburcio/skyrim_androidborn",
+          "credit": "Skyrim Androidborn",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igortiburcio/skyrim_androidborn/main/images/androidborn-gameplay.jpg",
+          "caption": "Skyrim: Dorfansicht mit Feuerzauber in der linken Hand",
+          "source": "https://github.com/igortiburcio/skyrim_androidborn",
+          "credit": "Skyrim Androidborn",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igortiburcio/skyrim_androidborn"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AndroidNativePorts/comments/1xpg9cs/skyrim_androidborn/",
+          "device": "Retroid Pocket 5",
+          "summary": "Ein Nutzer berichtet von verbessertem Bildschirmformat gegenüber dem ursprünglichen Port, während andere weiterhin Probleme mit externen Controllern nennen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-skyrimwebmonitor-als-separater-zweitbildschirm-companion",
+      "name": "SkyrimWebMonitor als separater Zweitbildschirm-Companion",
+      "kind": "companion",
+      "release": "se",
+      "runtime": "Android-App oder Browser/PWA plus SkyrimWebSocket-SKSE-Plugin",
+      "projects": [
+        "skyrimwebmonitor-skyrimwebsocket"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "mods",
+        "touch",
+        "touch-inventory",
+        "two-screens"
+      ],
+      "dualScreen": "Das eigentliche PC-Spiel läuft oben beziehungsweise auf dem Spielgerät; unten zeigt der Companion live Charakterwerte, Inventar, Magie und Schnellzugriffe über eine WebSocket-Verbindung.",
+      "requires": [
+        "Eigene PC-Fassung von Skyrim Special Edition",
+        "Bereits funktionierender PC-Spielweg auf Android oder ein separat laufender PC",
+        "Zur Spielversion passendes SKSE64",
+        "Address Library for SKSE Plugins",
+        "SkyrimWebSocket-Plugin"
+      ],
+      "benefit": "Modularer Companion für den Thor, der auch mit einem Browser, Smartphone oder Tablet als zusätzlichem Bildschirm genutzt werden kann.",
+      "caveat": "Kein eigenständiger Port und kein Ersatz für GameNative oder Winlator. SKSE muss im gewählten Spielweg tatsächlich funktionieren; Plugin-, Address-Library- und EXE-Version müssen zusammenpassen. Die dokumentierte Oberfläche ist Englisch oder Russisch.",
+      "steps": [
+        "SKSE64 und die passende Address Library in der PC-Spielinstallation einrichten.",
+        "SkyrimWebSocket.dll nach Data/SKSE/Plugins kopieren.",
+        "Skyrim über skse64_loader.exe starten und einen Spielstand laden.",
+        "Die Companion-App auf dem unteren Display öffnen und mit dem WebSocket-Server verbinden."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/andreyvelsk/SkyrimWebSocket"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "mods": [
+    {
+      "id": "unofficial-skyrim-special-edition-patch-ussep",
+      "name": "Unofficial Skyrim Special Edition Patch – USSEP",
+      "category": "fixes",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/266",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Umfangreiche Korrekturen für Quests, Objekte, Dialoge und weitere Spielfehler. Unbedingt die Anforderungen an Spielversion und enthaltene Creations prüfen; nicht für das Original von 2011 oder dessen ARM64-Rekompilation verwenden.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "skyui-fur-special-edition",
+      "name": "SkyUI für Special Edition",
+      "category": "qol",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/12604",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Übersichtlichere Inventarlisten und Mod Configuration Menu. Benötigt funktionierendes SKSE; deshalb erst nach einem erfolgreichen SKSE-Test im gewählten Android-Spielweg installieren.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "sse-display-tweaks",
+      "name": "SSE Display Tweaks",
+      "category": "widescreen-fps",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/34705",
+      "edition": "PC Special Edition / Anniversary Edition mit kompatiblem SKSE",
+      "description": "Konfigurierbare Bildratenbegrenzung, Auflösungs- und Vollbildoptionen sowie Physikkorrekturen für hohe Bildraten. Kein garantierter Leistungsgewinn unter Android; die SKSE-Plugin-Version muss zur konkreten EXE passen.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "skyrim-project-optimization-se",
+      "name": "Skyrim Project Optimization SE",
+      "category": "performance",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/14084",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Optimiert Innenräume durch Occlusion-Planes, damit verdeckte Bereiche nicht unnötig gerendert werden. Interessant als Leistungsmod, aber Konflikte mit veränderten Innenräumen und die passende Downloadvariante beachten; keine belegte Thor-FPS-Zusage.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "bethini-bethini-pie",
+      "name": "BethINI / Bethini Pie",
+      "category": "performance",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/4875",
+      "edition": "PC-Konfigurationswerkzeug",
+      "description": "Werkzeug für Grafikpresets und INI-Einstellungen; die Projektseite verweist inzwischen auf den Nachfolger Bethini Pie. Für Handhelds lassen sich Konfigurationen am PC vorbereiten, statt umfangreiche Grafikmods zu installieren; keine native Android-App.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "pc",
+        "se"
+      ]
+    },
+    {
+      "id": "static-mesh-improvement-mod-smim",
+      "name": "Static Mesh Improvement Mod – SMIM",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/659",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Detailliertere Modelle für zahlreiche Alltagsobjekte und Umgebungsdetails. Als Grafikoption für die PC-Laufzeitwege relevant, aber kein Leistungsmod und kein bestätigtes Standardprofil für den Thor.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "skyrim-202x-downscale",
+      "name": "Skyrim 202X Downscale",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/68307",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Niedriger aufgelöste Varianten des großen Skyrim-202X-Texturpakets mit 1K-, 2K- und 4K-Auswahl. Die kleinere Variante ist für begrenzten Grafikspeicher die naheliegendere Wahl; zusätzliche Parallax-Effekte benötigen gesonderte Voraussetzungen und sind kein notwendiger Bestandteil eines Handheld-Setups.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "jk-s-skyrim",
+      "name": "JK's Skyrim",
+      "category": "content",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6289",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Scriptfreier Ausbau vieler Städte und Dörfer mit zusätzlichen Gebäuden und Details. Im Odin-2-Winlator-Bericht ausdrücklich erfolgreich getestet; trotzdem kein Leistungsmod und mit anderen Ortsüberarbeitungen auf Konflikte prüfen.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    }
+  ],
+  "summary": "Auf dem Thor ist die PC-Special-Edition besonders interessant: GameNative ist durch Geräteberichte belegt, und SkyrimSE-DualScreen ergänzt Karte, Inventar und Quests auf dem unteren Touchscreen. Für das ursprüngliche Skyrim gibt es inzwischen auch ARM64-Rekompilationen, deren Controller- und Grafikp"
 }

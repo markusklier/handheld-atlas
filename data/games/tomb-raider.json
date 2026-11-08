@@ -399,45 +399,45 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/braid.jpg",
-          "caption": "Braid",
+          "caption": "Lara Croft in einer antiken Säulenhalle in Tomb Raider",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/enemy_health_bar_and_scaling.jpg",
-          "caption": "Enemy health bar and scaling",
+          "caption": "Lara Croft mit gezogenen Pistolen in steinernen Ruinen",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/photo_mode.webp",
-          "caption": "Photo mode",
+          "caption": "Lara Croft an einem Kanal im Fotomodus",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/3d_pickups.jpg",
-          "caption": "3d pickups",
+          "caption": "Lara Croft neben einem Medipack in eisigen Ruinen",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/skybox.jpg",
-          "caption": "Skybox",
+          "caption": "Lara Croft in überwucherten Ruinen bei Mondschein",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/sprint.webp",
-          "caption": "Sprint",
+          "caption": "Lara Croft läuft durch einen schmalen Steingang.",
           "source": "https://github.com/Checkm8Croft/TRX",
           "credit": "Checkm8Croft/TRX",
-          "check": "readme"
+          "check": "ai-verified"
         }
       ],
       "links": [
