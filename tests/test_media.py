@@ -38,6 +38,7 @@ class FillTest(unittest.TestCase):
         shutil.copytree(atlas.DATA, self.tmp / 'data')
         self._orig = media.DATA
         media.DATA = self.tmp / 'data'
+        (media.DATA / 'media_state.json').unlink(missing_ok=True)  # tests must not depend on earlier runs
 
     def tearDown(self):
         media.DATA = self._orig
@@ -89,6 +90,9 @@ class FillTest(unittest.TestCase):
                                              'thumbnail': {'source': 'https://upload.wikimedia.org/dread.jpg'}}]}}
             return {'query': {'pages': [{'title': 'Something', 'description': 'River in Europe',
                                          'thumbnail': {'source': 'https://upload.wikimedia.org/river.jpg'}}]}}
+        dread = self.game('metroid-dread')
+        dread.pop('cover', None)
+        atlas.write(media.DATA / 'games' / 'metroid-dread.json', dread)
         media.fill_wikipedia(fetch, pause=0, limit=1000)
         self.assertEqual(self.game('metroid-dread')['cover']['url'], 'https://upload.wikimedia.org/dread.jpg')
         self.assertNotIn('river', json.dumps([atlas.read(f).get('cover') for f in (media.DATA / 'games').glob('*.json')]))

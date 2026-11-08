@@ -188,9 +188,21 @@ def wikipedia_cover(title, fetch=get):
     for page in pages:
         desc = (page.get('description') or '').lower()
         thumb = (page.get('thumbnail') or {}).get('source')
-        if thumb and 'game' in desc and 'series' not in desc and not page.get('missing'):
+        if thumb and 'game' in desc and 'series' not in desc and not page.get('missing') \
+                and not re.search(r'\.svg', thumb, re.I) and same_edition(title, page['title']):
             return thumb, 'https://en.wikipedia.org/wiki/' + urllib.parse.quote(page['title'].replace(' ', '_'))
     return None, None
+
+
+EDITION_WORDS = {'remaster', 'remastered', 'remake', 'deluxe', 'royal', 'hd', 'definitive', 'edition', 'reload',
+                 'portable', 'golden', 'complete', 'anniversary', 'reloaded', 'rebirth', 'leifthrasir', 'vita', 'switch',
+                 '3d', 'ds', 'dx', 'redux', 'collection', 'eternal'}
+
+
+def same_edition(game_title, page_title):
+    """Wikipedia redirects remakes to the original ("Metroid Prime Remastered" -> "Metroid Prime"): reject those."""
+    page_words = set(norm(page_title).split())
+    return all(w in page_words for w in set(norm(game_title).split()) & EDITION_WORDS)
 
 
 def load_state():
