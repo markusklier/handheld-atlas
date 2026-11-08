@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "gameId": "minecraft",
+  "findings": [
+    {
+      "claimType": "loader",
+      "claim": "The referenced project description mentions Fabric; verify against each individual release file before asserting other loaders.",
+      "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/dual-screen",
+      "sourceExcerpt": "This release is currently only for ... Fabric (currently).",
+      "reviewRequired": true,
+      "verification": "contradictory",
+      "confidence": 0.78
+    }
+  ]
+}

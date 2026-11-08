@@ -1,0 +1,13 @@
+{
+  "name": "handheld-atlas",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Local-first discovery for Android and open handheld platforms",
+  "scripts": {
+    "test": "node --test tests/core.test.cjs",
+    "build": "python3 scripts/build.py",
+    "start": "python3 scripts/serve.py"
+  },
+  "engines": {"node": ">=20"},
+  "license": "MIT"
+}

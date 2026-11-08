@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "Desktop initial rendering: 12 cards",
+    "Search, game dialog and two-route comparison",
+    "Setup progress, read-only plan download, watchlist and backup export",
+    "Franchise, empty evidence filter, Linux platform filter",
+    "32 source cards including user additions and empty honest update feed",
+    "Sanitized import merges known games only",
+    "390px mobile layout, mobile profile and modal width",
+    "No JavaScript page errors throughout interaction test"
+  ],
+  "errors": [],
+  "mode": "HTML set_content; storage mocked; no live HTTP or hardware tests"
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "id": "87830cb66f1bc9599740",
+      "gameId": "minecraft",
+      "provider": "github",
+      "project": "ayn-dual-screen",
+      "url": "https://github.com/Abacus1829/ayn-dual-screen",
+      "label": "Second screen companion for Minecraft Java Forge on AYN Thor",
+      "status": "pending-review",
+      "score": 3,
+      "matchedQueries": [
+        "\"minecraft\" \"second screen\" in:name,description,readme"
+      ],
+      "versionsMentioned": [
+        "1.21.1"
+      ],
+      "loadersMentioned": [
+        "forge"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://github.com/Abacus1829/ayn-dual-screen/blob/HEAD/README.md",
+          "excerpt": "Minecraft Java 1.21.1 Forge companion to show a second screen inventory, HUD, map over web and Android app."
+        }
+      ],
+      "mediaCandidates": [],
+      "notTested": true,
+      "rights": "External project: check licence, media permissions and publisher terms.",
+      "firstSeenAt": "2026-11-08T02:56:50Z",
+      "lastSeenAt": "2026-11-08T02:59:55Z"
+    },
+    {
+      "id": "6b3c2e45a0309c599fb8",
+      "gameId": "minecraft",
+      "provider": "github",
+      "project": "DroidBridgeLauncherGplayGithub",
+      "url": "https://github.com/DNAMobileApplications/DroidBridgeLauncherGplayGithub",
+      "label": "Minecraft Java Edition launcher for Android with dual-screen device support",
+      "status": "pending-review",
+      "score": 3,
+      "matchedQueries": [
+        "\"DroidBridge\" \"Minecraft\" in:name,description,readme"
+      ],
+      "versionsMentioned": [],
+      "loadersMentioned": [],
+      "evidence": [
+        {
+          "sourceUrl": "https://github.com/DNAMobileApplications/DroidBridgeLauncherGplayGithub/blob/HEAD/README.md",
+          "excerpt": "Minecraft Java Edition launcher for Android dual-screen devices, game ownership required. Supports game instances and multiple Java versions."
+        }
+      ],
+      "mediaCandidates": [],
+      "notTested": true,
+      "rights": "External project: check licence, media permissions and publisher terms.",
+      "firstSeenAt": "2026-11-08T02:56:50Z",
+      "lastSeenAt": "2026-11-08T02:59:55Z"
+    },
+    {
+      "id": "38b3f024d755b1c5a771",
+      "gameId": "minecraft",
+      "provider": "github",
+      "project": "AynThorSecondScreen",
+      "url": "https://github.com/exojosh/AynThorSecondScreen",
+      "label": "Minecraft second-screen mod for AYN Thor: moves HUD content to bottom display",
+      "status": "pending-review",
+      "score": 2,
+      "matchedQueries": [
+        "\"Minecraft\" \"dual screen\" in:name,description,readme"
+      ],
+      "versionsMentioned": [
+        "1.21.11"
+      ],
+      "loadersMentioned": [
+        "fabric"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://github.com/exojosh/AynThorSecondScreen/blob/HEAD/README.md",
+          "excerpt": "Minecraft AYN Thor Second Screen"
+        },
+        {
+          "sourceUrl": "https://github.com/exojosh/AynThorSecondScreen/blob/HEAD/README.md",
+          "excerpt": "Minecraft Java Edition 1.21.11. This Fabric mod moves the HUD to Android bottom screen with a companion APK. Requires Fabric Loader 0.19.3 and Fabric API."
+        }
+      ],
+      "mediaCandidates": [],
+      "notTested": true,
+      "rights": "External project: check licence, media permissions and publisher terms.",
+      "firstSeenAt": "2026-11-08T02:56:50Z",
+      "lastSeenAt": "2026-11-08T02:59:55Z"
+    },
+    {
+      "id": "ce10b76dabcf188dee89",
+      "gameId": "minecraft",
+      "provider": "curseforge",
+      "project": "Dual Screen Hud (Android)",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dual-screen",
+      "label": "Minecraft Java dual screen HUD for DroidBridge Launcher, Fabric and Android dual-screen devices",
+      "status": "pending-review",
+      "score": 2,
+      "matchedQueries": [
+        "Dual Screen Hud",
+        "external-research-lead"
+      ],
+      "versionsMentioned": [
+        "1.21.6"
+      ],
+      "loadersMentioned": [
+        "fabric"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/dual-screen",
+          "excerpt": "Minecraft Java dual screen HUD for DroidBridge Launcher, Fabric and Android dual-screen devices"
+        },
+        {
+          "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/dual-screen",
+          "excerpt": "Projektdateien mit Edition/Loader/Version pro Datei prüfen; README nennt Fabric auf DroidBridge und Minecraft 1.21.6+. Unverifizierter Thor-Betrieb."
+        }
+      ],
+      "mediaCandidates": [],
+      "notTested": true,
+      "rights": "CurseForge assets may only be used in accordance with developer API and media terms.",
+      "firstSeenAt": "2026-11-08T02:56:50Z",
+      "lastSeenAt": "2026-11-08T02:59:55Z"
+    },
+    {
+      "id": "775f89b8f5b22c7b1886",
+      "gameId": "minecraft",
+      "provider": "community-lead",
+      "project": "DroidBridge Launcher – offizielles Android-Angebot",
+      "url": "https://play.google.com/store/apps/details?id=ca.dnamobile.droidbridgelauncher",
+      "label": "Minecraft Java Edition Android-Launcher; bietet mehrere Spielversionen und Dual-Screen-Modus. Keine automatische Mod-Kompatibilitätsgarantie.",
+      "status": "pending-review",
+      "score": 1,
+      "matchedQueries": [
+        "external-research-lead"
+      ],
+      "versionsMentioned": [],
+      "loadersMentioned": [],
+      "evidence": [
+        {
+          "sourceUrl": "https://play.google.com/store/apps/details?id=ca.dnamobile.droidbridgelauncher",
+          "excerpt": "Minecraft Java Edition Android-Launcher; bietet mehrere Spielversionen und Dual-Screen-Modus. Keine automatische Mod-Kompatibilitätsgarantie."
+        }
+      ],
+      "mediaCandidates": [],
+      "notTested": true,
+      "rights": "Imported lead: verify firsthand and check media rights.",
+      "firstSeenAt": "2026-11-08T02:56:50Z",
+      "lastSeenAt": "2026-11-08T02:59:55Z"
+    }
+  ],
+  "runs": [
+    {
+      "gameId": "minecraft",
+      "title": "Minecraft",
+      "checkedAt": "2026-11-08T02:56:50Z",
+      "providerHits": {
+        "github": 3,
+        "modrinth": 0,
+        "curseforge": 1,
+        "community-lead": 2
+      },
+      "errors": [],
+      "skipped": [],
+      "result": "completed",
+      "note": "Search coverage is bounded, not proof of absence or compatibility."
+    },
+    {
+      "gameId": "minecraft",
+      "title": "Minecraft",
+      "checkedAt": "2026-11-08T02:57:29Z",
+      "providerHits": {
+        "github": 3,
+        "modrinth": 0,
+        "curseforge": 1,
+        "community-lead": 2
+      },
+      "errors": [],
+      "skipped": [],
+      "result": "fixture-only",
+      "mode": "fixture",
+      "note": "Search coverage is bounded, not proof of absence or compatibility. Fixture results are synthetic tests, not live findings."
+    },
+    {
+      "gameId": "minecraft",
+      "title": "Minecraft",
+      "checkedAt": "2026-11-08T02:58:34Z",
+      "providerHits": {
+        "github": 3,
+        "modrinth": 0,
+        "curseforge": 1,
+        "community-lead": 2
+      },
+      "errors": [],
+      "skipped": [],
+      "result": "fixture-only",
+      "mode": "fixture",
+      "note": "Search coverage is bounded, not proof of absence or compatibility. Fixture results are synthetic tests, not live findings."
+    },
+    {
+      "gameId": "minecraft",
+      "title": "Minecraft",
+      "checkedAt": "2026-11-08T02:59:55Z",
+      "providerHits": {
+        "github": 3,
+        "modrinth": 0,
+        "curseforge": 1,
+        "community-lead": 2
+      },
+      "errors": [],
+      "skipped": [],
+      "result": "fixture-only",
+      "mode": "fixture",
+      "note": "Search coverage is bounded, not proof of absence or compatibility. Fixture results are synthetic tests, not live findings."
+    }
+  ],
+  "researchedAt": "2026-11-08T02:59:55Z",
+  "warning": "Automated discovery is incomplete. Every route, version claim, screenshot and compatibility conclusion requires original-source review.",
+  "lastMode": "fixture"
+}

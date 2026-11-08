@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Handheld Atlas AI research suggestions (review only)",
+  "type": "object",
+  "required": ["schemaVersion", "gameId", "findings"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "gameId": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "findings": {
+      "type": "array", "maxItems": 30,
+      "items": {
+        "type": "object",
+        "required": ["claimType", "claim", "sourceUrl", "sourceExcerpt", "reviewRequired", "verification"],
+        "properties": {
+          "claimType": {"enum": ["edition", "version", "loader", "runtime", "feature", "device", "media", "limitation", "security", "unknown"]},
+          "claim": {"type": "string", "minLength": 3, "maxLength": 240},
+          "sourceUrl": {"type": "string", "format": "uri", "maxLength": 1000},
+          "sourceExcerpt": {"type": "string", "minLength": 12, "maxLength": 350},
+          "reviewRequired": {"const": true},
+          "verification": {"enum": ["unreviewed", "contradictory", "needs-reproduction"]},
+          "imageUrl": {"type": "string", "format": "uri", "maxLength": 1000},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

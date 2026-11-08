@@ -1,0 +1,30 @@
+{
+  "_notice": "DETERMINISTIC OFFLINE TEST FIXTURE. Examples of structured API responses based on publicly documented projects; not evidence that a live API was queried.",
+  "github": {
+    "\"Minecraft\" \"dual screen\" in:name,description,readme": [
+      {"full_name":"exojosh/AynThorSecondScreen","name":"AynThorSecondScreen","description":"Minecraft second-screen mod for AYN Thor: moves HUD content to bottom display"}
+    ],
+    "\"DroidBridge\" \"Minecraft\" in:name,description,readme": [
+      {"full_name":"DNAMobileApplications/DroidBridgeLauncherGplayGithub","name":"DroidBridgeLauncherGplayGithub","description":"Minecraft Java Edition launcher for Android with dual-screen device support"}
+    ],
+    "\"minecraft\" \"second screen\" in:name,description,readme": [
+      {"full_name":"Abacus1829/ayn-dual-screen","name":"ayn-dual-screen","description":"Second screen companion for Minecraft Java Forge on AYN Thor"}
+    ]
+  },
+  "modrinth": {
+    "dual screen hud": [],
+    "second screen": [],
+    "minecraft companion": []
+  },
+  "curseforge": {
+    "Dual Screen Hud": [
+      {"name":"Dual Screen Hud (Android)","summary":"Minecraft Java dual screen HUD for DroidBridge Launcher, Fabric and Android dual-screen devices", "links":{"websiteUrl":"https://www.curseforge.com/minecraft/mc-mods/dual-screen"},"screenshots":[]}
+    ],
+    "DroidBridge": []
+  },
+  "readmes": {
+    "exojosh/AynThorSecondScreen": "# Minecraft AYN Thor Second Screen\nMinecraft Java Edition 1.21.11. This Fabric mod moves the HUD to Android bottom screen with a companion APK. Requires Fabric Loader 0.19.3 and Fabric API.\n",
+    "DNAMobileApplications/DroidBridgeLauncherGplayGithub": "# DroidBridge Launcher\nMinecraft Java Edition launcher for Android dual-screen devices, game ownership required. Supports game instances and multiple Java versions.\n",
+    "Abacus1829/ayn-dual-screen": "# AYN Dual Screen\nMinecraft Java 1.21.1 Forge companion to show a second screen inventory, HUD, map over web and Android app.\n"
+  }
+}
