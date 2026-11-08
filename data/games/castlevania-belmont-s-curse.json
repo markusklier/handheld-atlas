@@ -17,6 +17,74 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/51e6fa25-e1ae-4206-aa87-aa9452169786",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-10-31",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "Immediate (Off)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "2x"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0dcb387e-2f60-41f6-bca9-6b05a25e3eb5",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-10-31",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "Immediate (Off)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "2x"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f0879005-ac2c-4c5c-8b02-b0d18ca58b5e",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Dips below 60 on occasions but runs smooth and without issues.",
+          "votes": 0,
+          "date": "2026-10-16"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/610c8f2b-83b5-41a6-a5c4-858257131d23"
+        }
       ]
     }
   ],

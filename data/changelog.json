@@ -1,6 +1,166 @@
 {
   "entries": [
     {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "grand-theft-auto-v",
+      "text": "12 Community-Berichte von EmuReady für Grand Theft Auto V (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "grand-theft-auto-san-andreas",
+      "text": "3 Community-Berichte von EmuReady für Grand Theft Auto: San Andreas (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "grand-theft-auto-iv",
+      "text": "4 Community-Berichte von EmuReady für Grand Theft Auto IV (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "fire-emblem-three-houses",
+      "text": "3 Community-Berichte von EmuReady für Fire Emblem: Three Houses (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "fire-emblem-engage",
+      "text": "3 Community-Berichte von EmuReady für Fire Emblem Engage (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "dragon-quest-iii-hd-2d-remake",
+      "text": "2 Community-Berichte von EmuReady für Dragon Quest III HD-2D Remake (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "diablo-iii-eternal-collection",
+      "text": "7 Community-Berichte von EmuReady für Diablo III: Eternal Collection (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "dave-the-diver",
+      "text": "8 Community-Berichte von EmuReady für Dave the Diver (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "cyberpunk-2077",
+      "text": "3 Community-Berichte von EmuReady für Cyberpunk 2077 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "cult-of-the-lamb",
+      "text": "5 Community-Berichte von EmuReady für Cult of the Lamb (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "crash-team-racing-nitro-fueled",
+      "text": "6 Community-Berichte von EmuReady für Crash Team Racing Nitro-Fueled (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "chrono-trigger",
+      "text": "1 Community-Berichte von EmuReady für Chrono Trigger (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "chained-echoes",
+      "text": "3 Community-Berichte von EmuReady für Chained Echoes (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "castlevania-belmont-s-curse",
+      "text": "3 Community-Berichte von EmuReady für Castlevania: Belmont's Curse (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "balatro",
+      "text": "12 Community-Berichte von EmuReady für Balatro (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "game": "animal-crossing-new-horizons",
+      "text": "12 Community-Berichte von EmuReady für Animal Crossing: New Horizons (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "XenDroid XenDroid-c4f6863 veröffentlicht.",
+      "project": "xendroid",
+      "url": "https://github.com/rfandango/XenDroid/releases/tag/XenDroid-c4f6863"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Winlator v11.2.0 veröffentlicht.",
+      "project": "winlator",
+      "url": "https://github.com/brunodev85/winlator/releases/tag/v11.2.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "XHYN IV 0.9.24-xhyn-layer-test1 (Vorabversion) veröffentlicht.",
+      "project": "xhyn-iv",
+      "games": [
+        "grand-theft-auto-iv"
+      ],
+      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-layer-test1"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "LibertyRecompAndroid v0.5.9.3 veröffentlicht.",
+      "project": "libertyrecompandroid",
+      "games": [
+        "grand-theft-auto-iv"
+      ],
+      "url": "https://github.com/vaduur/LibertyRecompAndroid/releases/tag/v0.5.9.3"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "EKA2L1 continous veröffentlicht.",
+      "project": "eka2l1",
+      "games": [
+        "tomb-raider"
+      ],
+      "url": "https://github.com/EKA2L1/EKA2L1/releases/tag/continous"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Checkm8Croft/TRX ios veröffentlicht.",
+      "project": "checkm8croft-trx",
+      "games": [
+        "tomb-raider"
+      ],
+      "url": "https://github.com/Checkm8Croft/TRX/releases/tag/ios"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "OpenLara latest veröffentlicht.",
+      "project": "openlara",
+      "games": [
+        "tomb-raider"
+      ],
+      "url": "https://github.com/XProger/OpenLara/releases/tag/latest"
+    },
+    {
       "type": "route-updated",
       "text": "Neue Fassung: Grand Theft Auto IV: The Complete Edition – PC-Neuauflage (KI-Recherche)",
       "url": "https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support",

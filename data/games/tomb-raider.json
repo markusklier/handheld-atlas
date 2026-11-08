@@ -396,7 +396,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/braid.jpg",
+          "caption": "Braid",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/enemy_health_bar_and_scaling.jpg",
+          "caption": "Enemy health bar and scaling",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/photo_mode.webp",
+          "caption": "Photo mode",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/3d_pickups.jpg",
+          "caption": "3d pickups",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/skybox.jpg",
+          "caption": "Skybox",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Checkm8Croft/TRX/HEAD/docs/showcase/sprint.webp",
+          "caption": "Sprint",
+          "source": "https://github.com/Checkm8Croft/TRX",
+          "credit": "Checkm8Croft/TRX",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

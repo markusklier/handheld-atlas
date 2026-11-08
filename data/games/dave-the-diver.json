@@ -17,6 +17,146 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/59755188-550c-43c6-9c3c-b52e9b3051f1",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Notes:** This game runs perfectly with **Mesa Turnip Driver v25.2.0-R8-Auto** **1x (720p/1080p) Handheld,** no need for *Docked Mode* game runs at **30 FPS pinned.** *When running* **AMD FidelityFX - Super Resolution**",
+          "votes": 3,
+          "date": "2025-08-24",
+          "settings": {
+            "Emulator Version": "0.0.3-rc2",
+            "Driver Version": "[KIMCHI Turnip] 06042025|||Turnip_v25.2.0_R8_Auto.zip",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fcd77565-0347-4749-adb0-f0ee5b5e7f64",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Emureadys list does not have the driver I'm using by the same name so make sure it reads Turnip Adreno Driver T23 in the emulator, it should auto recommend it for install when you first go to open the drivers menu.",
+          "votes": 1,
+          "date": "2026-03-03",
+          "settings": {
+            "Emulator Version": "v0.2.0-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/553a970f-9a84-4c2a-bff4-677e30482647",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Completed the game with no issues. 1.0.4.1039 update does not work. DLC pack does.",
+          "votes": 1,
+          "date": "2025-10-27"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/af5a7727-d49d-4f28-9563-65d4f8733ebf",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game runs perfectly with Qualcomm Adreno 805 1x (720p/1080p) Docked Mode (Emulated via toggle switch) *When running* **AMD FidelityFX - Super Resolution** *Change the Audio output engine to* **Cubeb** *(if) the game",
+          "votes": 1,
+          "date": "2025-07-18",
+          "settings": {
+            "Emulator Version": "Build c7431bd",
+            "Driver Version": "Qualcomm Adreno 805",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/40dd5829-2c8b-42a0-9a2f-a77a546d1d81",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No flaws, absolutely amazing performance",
+          "votes": 0,
+          "date": "2026-07-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c21a745c-22fb-4118-8bb0-f1515b2e0d9a",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Stock standard settings. Works like a treat",
+          "votes": 0,
+          "date": "2026-05-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b8c8d66b-8086-4f57-85fc-608de328c575",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Works well however there can be the occasional screen tearing that's",
+          "votes": 1,
+          "date": "2026-04-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d04cf84b-f9b9-43ad-8968-b48ca709aee6",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-10-19"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4dd33cb8-d5c2-4a7b-9644-eff906ffc489"
+        }
       ]
     }
   ],

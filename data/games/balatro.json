@@ -51,6 +51,206 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/56705442-26e3-4d21-9566-225ebf6b6712",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works perfectly, but you have to deactivate \"Screen Trackpad\" to make Balatro correctly accept controller inputs.",
+          "votes": 11,
+          "date": "2025-11-01",
+          "settings": {
+            "Emulator Version": "v5.0.4",
+            "Using GameHub Lite": "True",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1e1b879c-d2fc-431a-a8e3-f6d24358123a",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 4,
+          "date": "2025-11-07",
+          "settings": {
+            "Emulator Version": "v5.0.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/68abde30-5472-421b-bfea-bf7ddb5de562",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Ran well in proton 11.",
+          "votes": 1,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.9.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.7.1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/367cc5f1-da4c-4471-bb93-4035bf3428fa",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Frame drops when you start making ridiculous builds but that happens normally anyways",
+          "votes": 1,
+          "date": "2026-03-20",
+          "settings": {
+            "Emulator Version": "0.8.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Graphics Driver": "Vortek (Universal)",
+            "Dynamic Driver Version": "Default System Driver",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b8d053ca-d1a6-4ab3-a9da-b304fe0d1de6",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works perfectly after a few tweaks. Portal is in Xbox mode for controls and Performance mode for power. Edit container for the game and enable \"Use SDL API\" for controller support. XInput and DirectInput didn't work for ",
+          "votes": 1,
+          "date": "2025-07-13"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8762ccf0-1864-458a-a8ec-8f272840a13e",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This seems to work with no issues!",
+          "votes": 0,
+          "date": "2026-07-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e5b0ac74-c8c7-47ad-be50-880adc97298e",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-07-21"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e81cb3e7-7e8b-4e00-96d4-6329ba0970c3",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/de649237-a3f3-4dd9-b370-ba33e4bd5c44",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60fps",
+          "votes": 0,
+          "date": "2026-04-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c8093da2-5ed4-497f-9e31-12035cb2df26",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "FPS didnt show, but zero issues and worked great",
+          "votes": 0,
+          "date": "2026-04-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/eab951f5-3af5-484d-a4aa-f32542c66554",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Had to bump down to proton9.0 to stop startup screen from crashing.",
+          "votes": 7,
+          "date": "2025-11-24"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5f356501-ac74-4215-a4ee-f297d4ea2ceb",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-04-21"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b06d6375-6641-4573-9851-a3b5ecfc63c5"
+        }
       ]
     },
     {

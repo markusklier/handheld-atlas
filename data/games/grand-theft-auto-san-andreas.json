@@ -32,7 +32,62 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2004
+      "year": 2004,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4be2f909-d9c4-416f-a433-a731c8163575",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfectly, no graphical issues or crashes",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.7(turnip)",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "8",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "3.0.0"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1b2051a8-adb4-46d7-bafb-550886974713",
+          "device": "Xiaomi 13",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-06-17",
+          "settings": {
+            "Emulator Version": "Latest",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "4",
+            "Upscale Multiplier": "4",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/dda95028-0484-4728-94d4-2b2c2056209f"
+        }
+      ]
     },
     {
       "id": "pc",
@@ -45,7 +100,37 @@
       "traits": [
         "mods"
       ],
-      "note": "Basis der großen PC-Mod-Szene. Auf Android nur über eine PC-Laufzeitumgebung spielbar."
+      "note": "Basis der großen PC-Mod-Szene. Auf Android nur über eine PC-Laufzeitumgebung spielbar.",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/29340eba-4518-4d9c-bef2-85b05463bf6e",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Winlator",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Playable, also work with mods like SA:MP.",
+          "votes": 0,
+          "date": "2025-06-18",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "10",
+            "Graphics Driver": "Turnip",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "PulseAudio",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "720p"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2475c3b8-c3dc-485c-9d33-fbc5a9770a8a"
+        }
+      ]
     },
     {
       "id": "xbox",
@@ -54,6 +139,13 @@
       "year": 2005,
       "platforms": [
         "Xbox"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f5711a7d-4e89-4118-bf1e-1990b2a8cfa5"
+        }
       ]
     },
     {

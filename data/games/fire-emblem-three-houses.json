@@ -17,6 +17,74 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7a2571b5-2a32-48a1-bc26-2d4de4c83e8c",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 8,
+          "date": "2025-11-04",
+          "settings": {
+            "Emulator Version": "0.0.4-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/389be6bb-e450-467e-8a0d-aaaa8828694b",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-05-12",
+          "settings": {
+            "Emulator Version": "0.2.0-rc2",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e50acc15-6fb7-4a71-b22b-ce2e91b7b7b9",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "K11MCH1 v25.3.0 Revision 11 works great",
+          "votes": 5,
+          "date": "2025-10-10"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1e529fbe-fd8d-41cd-beb5-256244ca4e14"
+        }
       ]
     }
   ],

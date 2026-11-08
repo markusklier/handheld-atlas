@@ -27,6 +27,110 @@
         "controller",
         "mods",
         "widescreen"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0c2d7389-0802-48c4-b48c-a114fc5de19d",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Bionic container- with fexcore for both. Must disable experimental Wow64 mode to fix the spinning camera issues when aiming down sight or entering vehicles.",
+          "votes": 1,
+          "date": "2025-12-01",
+          "settings": {
+            "Winlator Fork": "cmod_bionic",
+            "Emulator Version": "13.1.1",
+            "Controller Support": "True",
+            "Wine Version": "Proton-9.0-arm64ec",
+            "Turnip Driver Version ": "[KIMCHI Turnip] v25.3.0 - Revision 4|||Turnip_v25.3.0_R4_Auto.zip",
+            "Graphics Driver": "Wrapper v2",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.3.1-arm64ec-gplasync. Enabled async and cache.",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Performance"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9494aef9-9bb9-4e92-bd0e-32f934be1a58",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs 40-60 fps with occasional frame drops",
+          "votes": 2,
+          "date": "2025-10-07",
+          "settings": {
+            "Emulator Version": "5.1.0",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "DX Wrapper": "DXVK",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "DXVK Version": "dxvk-2.3.1",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/690c5968-dcd4-4fd6-92a9-7b8cb6821bb9",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Winlator",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Indoors it runs at 60fps. Outdoors, looking at the Liberty city skyline during the day, I had around 25-29ish FPS. Driving around the City in heavier traffic is around 30-35FPS. * Texture Quality = High * Reflection Reso",
+          "votes": 3,
+          "date": "2025-06-28",
+          "settings": {
+            "Winlator Fork": "frost_glibc",
+            "Emulator Version": "10.0 Final v4.1",
+            "Graphics Driver": "Turnip v25.2.0",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "v2.4.1-1-gplasync / 4096MB",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.3.6",
+            "Resolution (Screen Size)": "1280x720"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/07f4458d-4c9c-4e1e-ad85-2fbe0850e9a1",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "GameHub",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-10-14",
+          "settings": {
+            "Emulator Version": "5.0.4",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "DX Wrapper": "DXVK",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "DXVK Version": "dxvk-2.3.1",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9ca44a8e-dc81-4301-a633-7aaf3bb73e3f"
+        }
       ]
     },
     {
@@ -49,6 +153,13 @@
       "traits": [
         "controller",
         "widescreen"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/5fd44af4-37fb-4547-b850-96808299bcd7"
+        }
       ]
     },
     {
@@ -171,7 +282,36 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png",
+          "caption": "Liberty Recompiled for Android",
+          "source": "https://github.com/vaduur/LibertyRecompAndroid",
+          "credit": "LibertyRecompAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/ingame.jpg",
+          "caption": "GTA IV running on a Retroid Pocket 5",
+          "source": "https://github.com/vaduur/LibertyRecompAndroid",
+          "credit": "LibertyRecompAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/touch_gamepad.png",
+          "caption": "The on screen gamepad",
+          "source": "https://github.com/vaduur/LibertyRecompAndroid",
+          "credit": "LibertyRecompAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/launcher_install_v2.png",
+          "caption": "Installing from the launcher",
+          "source": "https://github.com/vaduur/LibertyRecompAndroid",
+          "credit": "LibertyRecompAndroid",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

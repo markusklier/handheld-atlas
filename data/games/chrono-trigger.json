@@ -40,6 +40,35 @@
       "type": "release",
       "platforms": [
         "Nintendo DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d183df71-2356-4091-bb24-9adc460de7c8",
+          "device": "AYN Thor Pro",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-09-10",
+          "settings": {
+            "Emulator Version": "2.0.1",
+            "Renderer": "OpenGL",
+            "Resolution Scale": "4",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "Audio Interpolation": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0fdf6560-cb69-4877-8743-fd5c2df59e7b"
+        }
       ]
     },
     {

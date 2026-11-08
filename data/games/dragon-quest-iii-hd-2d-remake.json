@@ -13,6 +13,62 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0d9d9ae9-ca58-42d0-a367-54d29cbfcd8b",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "I've fixed the frame pacing mode to 30fps. Shader loading causes stuttering; I'd appreciate it if you could tell me if there are any better settings that can solve this problem.",
+          "votes": 2,
+          "date": "2026-03-18",
+          "settings": {
+            "Emulator Version": "0.2.0-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple-T19-toasted.adpkg|||turnip_mrpurple-T19-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9ba13e0b-b0da-4160-9daf-659c30fcba1c",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "I feel the T19 driver is more stable than the T28. I enable the option to force the maximum GPU clock and synchronize core speeds. I also enable the \"Vertex Input Dynamic State\" setting, though I'm not sure if it actuall",
+          "votes": 0,
+          "date": "2026-06-27",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple-T19-toasted.adpkg|||turnip_mrpurple-T19-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0c504891-1bf9-4e7d-b505-73a39817012a"
+        }
       ]
     }
   ],

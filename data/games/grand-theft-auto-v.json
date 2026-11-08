@@ -20,6 +20,215 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/39b0617a-a026-426d-b74c-c0a8a035d630",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Important, read before proceeding To get the best possible performance, set the Translation Params to “Extreme” (this is VERY IMPORTANT). To launch the game, simply open it through GTAVLauncher.exe. To avoid thermal thro",
+          "votes": 7,
+          "date": "2025-11-09",
+          "settings": {
+            "Emulator Version": "v5.1.0",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Force Enabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Other/Custom",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5092125c-fc75-4e65-a792-c3c6fb149e36",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Almost all settings are set to high except shadow quality and particles quality and they are set to medium because I didn’t want to set them to high. I use the balanced profile with the pulse app and set the performance ",
+          "votes": 6,
+          "date": "2026-08-06",
+          "settings": {
+            "Emulator Version": "5.1.8",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Force Enabled",
+            "Game Resolution": "1152x648",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.1.0_R3",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d1a55430-3392-4c00-8770-d90c711bdd88",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "** If a setting is not listed, it is whatever the default setting is at! ** --- General: Container Variant -> bionic Wine Version -> proton-10.0-arm64ec-2 Exec Arguments -> -nobattleye Screen Size -> 1280x720 (16:9) Audi",
+          "votes": 5,
+          "date": "2026-03-12",
+          "settings": {
+            "Emulator Version": "v.0.8.0",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.3.1",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "DX Wrapper -> DXVK\nDXVK Version -> 2.7.1",
+            "Audio Driver": "PulseAudio",
+            "Box64 Version": "0.4.0",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "1280x720 (16:9)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bd3a40fa-d506-4a6e-b60c-0fcb7c4824c1",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "General notes: •Cracked Version •Able to beat campaign with no issues or crashes •40-60 FSP •Must have VRam Limit set to 2GB or game will crash after 1-2hrs Components: •vcredist2012 •vcredist2022 Translation Parameters:",
+          "votes": 5,
+          "date": "2026-02-11"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a366e306-e156-4217-b92d-ac2570b5eee7",
+          "device": "AYN Odin 2 Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This is for Grand Theft Auto 5 Legacy. Not for Enhanced. The following settings give between 45 to 60 FPS at the expense of battery life. You can limit FPS to 30 to save battery life and keep the temperature low. FPS is ",
+          "votes": 4,
+          "date": "2026-01-27"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f3e013e2-d8ee-4558-b833-a058dbb2ce01",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs stable 40fps Translation params Extreme In game settings DirectX 11 Fullscreen 1280x720 120Hz FXAA on VSync off Soft shadows Softer Antisotropic filtering X8 Gamehub in game settings Enable frame limit 40fps HDR on ",
+          "votes": 3,
+          "date": "2025-11-22"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a38e6c15-a476-4359-a2b8-387aaf4e1f09",
+          "device": "AYN Odin 2 Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-01-09"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/62bd7bc4-3a4f-4d32-8513-299171831d22",
+          "device": "Motorola Edge+ (2023)",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-12-04",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "2.0",
+            "Controller Support": "True",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "729p"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/67f8baf7-43a9-4060-999d-74c915e60e16",
+          "device": "Sony Xperia 1 V",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-10-22"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ec62f264-a12e-4d78-a8e9-b0c36bbd95bf",
+          "device": "Samsung Galaxy S23+ (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-03-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d6afcf13-f257-41bd-98eb-a8a17e27480f",
+          "device": "Samsung Galaxy S23+ (SD)",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-03-12",
+          "settings": {
+            "Winlator Fork": "ludashi",
+            "Emulator Version": "2.8.2",
+            "Controller Support": "True",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "720p",
+            "Average FPS": "Locked to 30fps"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2d8df39d-1ac9-4c07-8835-401735ff60c8",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-01-12"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/6e06c087-b5ee-4ce2-bc2f-23f2f9487546"
+        }
       ]
     },
     {
@@ -28,6 +237,13 @@
       "type": "release",
       "platforms": [
         "PlayStation 3"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/28a3c772-dbd8-468a-bfa4-7dae41f470bf"
+        }
       ]
     },
     {
@@ -36,6 +252,13 @@
       "type": "release",
       "platforms": [
         "Xbox 360"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f94eff35-1039-4b18-b140-654325c35b55"
+        }
       ]
     }
   ],

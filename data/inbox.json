@@ -1,6 +1,230 @@
 {
   "leads": [
     {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xr98no/inlay_v13_is_out_my_controller_keyboard_for/",
+      "title": "Inlay v1.3 is out. My controller keyboard for Android got a split layout, plus a bunch more.",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Tufein/SwitchRecompHelper",
+      "title": "Tufein/SwitchRecompHelper",
+      "excerpt": "Dumping switch roms on Android + extra's",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/enhansome/enhansome-gtk",
+      "title": "enhansome/enhansome-gtk",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/SirBaron/SemaTor",
+      "title": "SirBaron/SemaTor",
+      "excerpt": "Atari ST Translation Layer for Modern Systems",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Hooandee/panel-de-control",
+      "title": "Hooandee/panel-de-control",
+      "excerpt": "El plugin más completo para tu Handheld PC!",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/nick-monto/acore-thor-selfhost",
+      "title": "nick-monto/acore-thor-selfhost",
+      "excerpt": "Self host stack for AYN Thor hosting",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/poooooby/PlayNav",
+      "title": "poooooby/PlayNav",
+      "excerpt": "NaviPlay: Pokémon-Amie and Super Training on a DS-style touch screen for Gen1Recomp",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/kyannon/gba-ds",
+      "title": "kyannon/gba-ds",
+      "excerpt": "Dual-screen GBA for your Android or Linux emulation handheld.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/zahrahusniaa/Andy-Android-Emulator-Windows-Setup-Guide",
+      "title": "zahrahusniaa/Andy-Android-Emulator-Windows-Setup-Guide",
+      "excerpt": "Andy Android Emulator for Windows 11 and 10: Install and Setup Guide 2026",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/bransboner406/Air-Display-Connect-Full-Version-Unlocked",
+      "title": "bransboner406/Air-Display-Connect-Full-Version-Unlocked",
+      "excerpt": "Get Air Display Connect — a remote control desktop tool for Windows, offering a free download to connect your PC with a second screen. Enjoy wireless touch controls and a customizable screen orientation. Download and run today.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Enecchii/rejuv-dual",
+      "title": "Enecchii/rejuv-dual",
+      "excerpt": "Dual screen repo for Rejuv",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/moffatwarren/HaakonLife",
+      "title": "moffatwarren/HaakonLife",
+      "excerpt": "A game exploring Haakon",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/adamz999/ftc-26",
+      "title": "adamz999/ftc-26",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/sulemanrashid00-wq/hyperGamebooster",
+      "title": "sulemanrashid00-wq/hyperGamebooster",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/hawktocomet/DualOS",
+      "title": "hawktocomet/DualOS",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/tardis5356/BioBuzz",
+      "title": "tardis5356/BioBuzz",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/BuzyU/Rider_APP",
+      "title": "BuzyU/Rider_APP",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Baker0o7/MiniMart-Pos",
+      "title": "Baker0o7/MiniMart-Pos",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Muhtasim0712/Shikor",
+      "title": "Muhtasim0712/Shikor",
+      "excerpt": "Shikor is an Android app for preserving family heritage. Features include interactive family trees, relative profiles, photo and story sharing, elder voice recordings, shared family spaces with code-based access, event reminders, offline data access and cloud sync. Built to help families organize, share and preserve their memories for generations.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/seven-lynx/Roam",
+      "title": "seven-lynx/Roam",
+      "excerpt": "Roam — discover a random corner of the web. Explore with a browser extension, Android app, and web layer.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/topaxi/OpenAntiGrav",
+      "title": "topaxi/OpenAntiGrav",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/alouafi/ayn-translate",
+      "title": "alouafi/ayn-translate",
+      "excerpt": "Read Japanese games on dual-screen Android handhelds (AYN Thor): furigana, translation and a kanji dictionary on the second screen",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/enhansome/enhansome-fansub-guide",
+      "title": "enhansome/enhansome-fansub-guide",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/leonardrua/android_device_oppo_CPH1909",
+      "title": "leonardrua/android_device_oppo_CPH1909",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/gitwithmasum/Aurora-Planet-Tracker",
+      "title": "gitwithmasum/Aurora-Planet-Tracker",
+      "excerpt": "Explore the Universe. Track the Planets. Discover the Cosmos.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/hasamba/DFIR-Companion",
+      "title": "hasamba/DFIR-Companion",
+      "excerpt": "DFIR forensics companion server + capture extension",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/CTO-DRS/NexusLink",
+      "title": "CTO-DRS/NexusLink",
+      "excerpt": "One local hub for your devices: screen mirroring & control, clipboard, file transfer, media streaming and routines — fully on your Wi-Fi, end-to-end encrypted, no cloud, no accounts. | ربط كل أجهزتك على شبكتك: مرآة الشاشة، نقل ملفات، مزامنة حافظة، تحكم عن بعد — بلا سحابة ولا حسابات.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/niknight1403/LaunchpadControl",
+      "title": "niknight1403/LaunchpadControl",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
       "url": "https://github.com/ManuthMethnidu/Echoes",
       "title": "ManuthMethnidu/Echoes",
       "excerpt": "Clean, ad-free, open-source music streaming player with 32-band Web Audio DSP, real-time cross-device sync, lyrics, and offline playback.",
@@ -5670,9 +5894,9 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-08T20:12:17Z",
-    "newLeads": 17,
-    "newEvents": 0
+    "lastRun": "2026-11-08T21:59:08Z",
+    "newLeads": 28,
+    "newEvents": 7
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

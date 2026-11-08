@@ -1129,11 +1129,17 @@
       "kind": "port",
       "url": "https://github.com/XProger/OpenLara",
       "repo": "XProger/OpenLara",
-      "description": "",
+      "description": "Classic Tomb Raider open-source engine",
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-07-26",
+      "latestRelease": {
+        "tag": "latest",
+        "url": "https://github.com/XProger/OpenLara/releases/tag/latest",
+        "date": "2019-01-11"
+      }
     },
     {
       "id": "tomb-raider-i-square-enix",
@@ -1153,11 +1159,17 @@
       "kind": "port",
       "url": "https://github.com/Checkm8Croft/TRX/tree/ios",
       "repo": "Checkm8Croft/TRX",
-      "description": "",
+      "description": "Open source re-implementation of Tomb Raider I, Tomb Raider II and Tomb Raider III, along with additional enhancements and bugfixes",
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-21",
+      "latestRelease": {
+        "tag": "ios",
+        "url": "https://github.com/Checkm8Croft/TRX/releases/tag/ios",
+        "date": "2026-07-17"
+      }
     },
     {
       "id": "eka2l1",
@@ -1165,11 +1177,17 @@
       "kind": "emulator",
       "url": "https://github.com/EKA2L1/EKA2L1",
       "repo": "EKA2L1/EKA2L1",
-      "description": "",
+      "description": "A Symbian OS/N-Gage emulator",
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "continous",
+        "url": "https://github.com/EKA2L1/EKA2L1/releases/tag/continous",
+        "date": "2024-04-10"
+      }
     },
     {
       "id": "libertyrecompandroid",
@@ -1177,11 +1195,17 @@
       "kind": "port",
       "url": "https://github.com/vaduur/LibertyRecompAndroid",
       "repo": "vaduur/LibertyRecompAndroid",
-      "description": "",
+      "description": "An unofficial Android port of the Xbox 360 version of Grand Theft Auto IV created through the process of static recompilation",
       "games": [
         "grand-theft-auto-iv"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-27",
+      "latestRelease": {
+        "tag": "v0.5.9.3",
+        "url": "https://github.com/vaduur/LibertyRecompAndroid/releases/tag/v0.5.9.3",
+        "date": "2026-10-14"
+      }
     },
     {
       "id": "xhyn-iv",
@@ -1189,11 +1213,17 @@
       "kind": "port",
       "url": "https://github.com/XHYN-PH/XHYN-IV-recomp",
       "repo": "XHYN-PH/XHYN-IV-recomp",
-      "description": "",
+      "description": "Unofficial GTA IV port for Android with customizable touch controls, controller support, and graphics settings. Requires your own Xbox 360 GTA IV USA game files and Title Update 8.",
       "games": [
         "grand-theft-auto-iv"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "0.9.24-xhyn-layer-test1",
+        "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-layer-test1",
+        "date": "2026-11-08"
+      }
     },
     {
       "id": "winlator",
@@ -1203,7 +1233,13 @@
       "repo": "brunodev85/winlator",
       "description": "Windows-Programme und PC-Spiele auf Android über Wine und Box64.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-02",
+      "latestRelease": {
+        "tag": "v11.2.0",
+        "url": "https://github.com/brunodev85/winlator/releases/tag/v11.2.0",
+        "date": "2026-08-19"
+      }
     },
     {
       "id": "x1-box",
@@ -1223,7 +1259,13 @@
       "repo": "rfandango/XenDroid",
       "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia Edge; empfohlen ab Snapdragon 8 Gen 2 mit Turnip-Treiber.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-08-20",
+      "latestRelease": {
+        "tag": "XenDroid-c4f6863",
+        "url": "https://github.com/rfandango/XenDroid/releases/tag/XenDroid-c4f6863",
+        "date": "2026-08-14"
+      }
     },
     {
       "id": "ax360e",
@@ -1233,7 +1275,8 @@
       "repo": "aenu1/ax360e",
       "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-28"
     }
   ]
 }

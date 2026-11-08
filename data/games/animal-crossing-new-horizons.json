@@ -17,6 +17,194 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b5415f8f-831c-4628-a458-e7213690fad3",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Beautiful and clean gameplay.",
+          "votes": 4,
+          "date": "2025-08-15",
+          "settings": {
+            "Emulator Version": "0.0.3-r2-Optimised",
+            "Driver Version": "[K11MCH1/AdrenoToolsDrivers] v25.3.0 - Revision 4",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p (1.5x)",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "ScaleForce",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bfb2ddfc-7942-4e99-bed6-f2737af20324",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-05-30",
+          "settings": {
+            "Disk shader cache": "True",
+            "Emulator Version": "0.2.0",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6d27cda9-2935-4723-8a96-80b23ef4a8db",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "T28 drivers gave me infinite loading screen as seen in the video.",
+          "votes": 3,
+          "date": "2026-05-10"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/21e34120-0331-4af9-8a4e-b6fadad30dac",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-01-17"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2b3dad99-5779-49c5-9833-d870464ac0a5",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-05-30"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/67fb4923-d139-4ab7-83ef-7455729ce8f8",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Everything works great. Stable 720p at 30 FPS, including in docked mode. After 25+ hours of gameplay, I experienced one freeze when entering a building. I had to restart the game and lost some progress. Didn't encounter ",
+          "votes": 0,
+          "date": "2026-10-10"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/210087e1-6b74-48f0-bc37-f1e21e2d906f",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs perfectly",
+          "votes": 0,
+          "date": "2026-09-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6123ee31-96d6-4a2f-9671-02c44dc78a5f",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "runs perfectly on 1.5x res, 30fps, ayn performance mode standard,",
+          "votes": 0,
+          "date": "2026-01-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/136ceee1-1443-4c1f-99d0-8bb90179191d",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-07-19"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0110e41b-7068-40ed-93dc-26fdc75247c6",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Perfect, However sometimes hangs on boot and requires restart of eden",
+          "votes": 1,
+          "date": "2025-11-03"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e3d36cbf-d71b-4784-8928-0287cd28d0e4",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Completely stable during most scenes. FPS dipped consistently around more detailed scenes, about 24~FPS. But switching from the T23 driver to T24 seemed to smooth that out.",
+          "votes": 1,
+          "date": "2026-02-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fd89a36f-7727-430f-880f-a53b0555b001",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Citron",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "decent, and might even work in docked mode, but heats up after 10ish minutes and sometimes has minor drops into the 20s",
+          "votes": 0,
+          "date": "2025-06-21",
+          "settings": {
+            "Emulator Version": "51800e249",
+            "Driver Version": "Mesa Turnip Driver v24.3.0 R3",
+            "Accuracy Level": "Normal",
+            "Resolution": "360p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Audio output engine": "Auto",
+            "GPU API": "Vulkan"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0eafb7d9-da35-43a4-93b0-e977522c51ae"
+        }
       ]
     }
   ],

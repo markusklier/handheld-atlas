@@ -17,6 +17,74 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5dcbf7f0-baa5-472d-9506-311fbdc38efe",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-04-12",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0de4123d-fcdd-4c17-9ab6-ab6433c45093",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-04-12",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cf213784-62d4-4b98-8d4c-695de859f629",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-10-11"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c5bf3488-4347-4e02-94b6-903a78bdeeb7"
+        }
       ]
     }
   ],

@@ -17,6 +17,74 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fa335ae4-1e6a-4575-9a1e-2da43928faf0",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at 60 FPS, no problems at all.",
+          "votes": 0,
+          "date": "2026-10-06",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T30-toasted.adpkg|||turnip_mrpurple_T30-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/558a0ddb-b1e9-40d5-96e6-bb32ba025998",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-01-24",
+          "settings": {
+            "Use Fast GPU Time": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "GPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "Never",
+            "Game Version": "V851968",
+            "Average FPS": "60",
+            "Emulator Version": "V0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Accuracy Level": "Normal"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6c4e26bb-70a0-47a0-a1ff-4346633f32e9",
+          "device": "OnePlus 12R",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "1080p@60fps. Almost no tweaks. No glitches , stutters seen.",
+          "votes": 0,
+          "date": "2025-09-19"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/70122252-9596-43f3-964b-c38dd5058d44"
+        }
       ]
     }
   ],

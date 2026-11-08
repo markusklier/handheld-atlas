@@ -13,6 +13,134 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1213d540-699d-4713-8712-3c8941d8ef75",
+          "device": "AYN Odin 2",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60 to 45 fps",
+          "votes": 3,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "latest version of citron",
+            "Driver Version": "Mesa Turnip driver v25.2.0 - Revision 7",
+            "Accuracy Level": "Normal",
+            "Resolution": "native resolution",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Audio output engine": "Auto",
+            "GPU API": "Vulkan"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/842c50f3-106f-41f9-aadf-fd2ea1901f25",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-11-09",
+          "settings": {
+            "Emulator Version": "0.0.3-rc",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 1|||Turnip_v26.0.0_R1.zip",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/07845dc5-0244-4840-9736-d4fc88f45be9",
+          "device": "Xiaomi Poco F6 Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Stable 60fps (capped), no visual glitches",
+          "votes": 2,
+          "date": "2025-08-21",
+          "settings": {
+            "Emulator Version": "0.0.3-rc3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple-T21-toasted.adpkg|||turnip_mrpurple-T21-toas",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720p/1080p) Docked Mode",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/58bac5a3-bd94-4571-8cd9-aa936846ce18",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-03-12"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3e0006a8-5bdf-455d-b958-b5565d309f67",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "*French :* Le jeu se comporte très bien. L'émulation est d'une grande stabilité, permettant de profiter du titre dans d'excellentes conditions sans aucun souci technique. *English :* The game runs very well. The emulatio",
+          "votes": 0,
+          "date": "2026-10-24"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4edc5cc4-08da-40a0-b598-0802f46a6cd4",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-06-17"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7e2be61b-83e7-4c40-b6e0-3161ab2551ab",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 3,
+          "date": "2025-06-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/926a0da1-c51a-4040-b0cc-119da41b25be"
+        }
       ]
     }
   ],

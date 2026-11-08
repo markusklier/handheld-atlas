@@ -17,6 +17,98 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/41b15e18-d685-4ea0-9290-53f618b1fe6f",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "DLC 5 not work",
+          "votes": 2,
+          "date": "2025-12-05",
+          "settings": {
+            "Emulator Version": "0.0.4-rc3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2bcd3b9b-178c-4819-abce-18548e763fcd",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Wont boot with pilgrim DLC. Activated 1-4 and 6 the game plays great.",
+          "votes": 1,
+          "date": "2026-02-23",
+          "settings": {
+            "Game Version": "v1.5.11",
+            "Average FPS": "60+",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/307da5be-711e-44f4-aa6f-d61250bc5830",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-09-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/56846c49-3960-403b-b816-3caf9cdd1aec",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs 50 fps, x1.5 resolution",
+          "votes": 1,
+          "date": "2026-06-22"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/85f28671-5ca1-4297-892c-28c78451e8d7",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Some slowdowns during combat with lots of shaders, but completely acceptable and playable. Update 1.4.6 works perfectly, but DLCs cause crash on start. - Default options with Mesa Turnip driver v25.2.0 - Revision 4 - FIX",
+          "votes": 1,
+          "date": "2025-06-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/40cc4599-e3c0-460a-a1a9-2cc7fe0b5fec"
+        }
       ]
     }
   ],
