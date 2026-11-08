@@ -1,6 +1,21 @@
-# Handheld Atlas 0.3 – Datenqualität und Recherche
+# Handheld Atlas 0.4 – automatische Entdeckung, optional KI & Vision
 
 **Spielzentrierte Discovery für AYN Thor, Android- und offene Handheld-Plattformen. 8. November 2026.**
+
+
+## Version 0.4 – automatisierter, quellenbelegter Projekt-Radar
+
+- Projektzentrierter Index `data/projects.json`: ein Projekt kann mit mehreren Spielen und Spielwegen verbunden sein. Automatische Funde erscheinen im Reiter **Aktuelles** mit explizitem Status **nicht getestet**, nicht als bestätigte Installationswege.
+- Neue Kandidaten erhalten Quellenangaben und soweit vorhanden direkt zugehörige Bildkandidaten. **KI-Visionsprüfung ist nur Plausibilität; Bildrechte und genaue Version sind damit nicht geklärt.** Bestehende 77 dokumentierte Eden-Duo-Fotos bleiben den konkreten Varianten zugeordnet.
+- `scripts/deep_research.py --batch` rotiert auch durch die Titel des breiteren Watchlist-Indexes. Minecraft ist im Workflow kein hart codierter Sonderlauf mehr. Suchabdeckung kann trotzdem nicht als vollständig gelten.
+- `scripts/ai_agents.py --research` und `--vision` nutzen optional die OpenAI Responses API mit Websuche und Bild-Eingaben. **Ohne `OPENAI_API_KEY` werden keine API-Aufrufe ausgeführt**. Die Recherche ist begrenzt auf einen Titel pro Durchlauf, Vision auf höchstens zwei Bilder im Standardworkflow. `docs/V4-OPERATIONS.md` erklärt Kosten-, Datenschutz- und Sicherheitsgrenzen.
+- `.github/workflows/update-sources.yml` aktualisiert nur strukturierte Daten automatisch auf dem Hauptbranch; du musst keine inhaltlichen PRs freigeben. Im privaten Repository gibt es außerdem ein herunterladbares ZIP des Browser-Builds als GitHub-Actions-Artefakt.
+
+**Erster Start:** GitHub Actions → **Checks** → Run workflow. Wenn der Build grün ist, kannst du die ZIP-Datei `handheld-atlas-preview` herunterladen und lokal per `python3 -m http.server` ausprobieren. Danach **Automated Atlas discovery** → Run workflow. Für kostenpflichtige Recherche die Option `run_ai` nur nach eigener API-Freigabe aktivieren. Einrichtung: [docs/V4-OPERATIONS.md](docs/V4-OPERATIONS.md).
+
+**Wichtige Grenze:** Live-APIs und Modellabrechnung konnten in der lokalen Entwicklungsumgebung mangels Netzwerk/API-Schlüssel noch nicht end-to-end geprüft werden. Veröffentlichte Spielwege sind nicht automatisch Geräte-Benchmarks; die KI führt keine Installation und kein Debugging auf deinem Thor durch.
+
+---
 
 ## Schnellstart
 

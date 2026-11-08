@@ -19,7 +19,7 @@ QUERIES=[
  '"dual-screen" android emulator in:name,description,readme',
  '"eden duo" companion in:name,description,readme',
  '"android port" game in:name,description',
- '"minecraft" "second screen" in:name,description,readme',
+ '"game" "second screen" in:name,description,readme',
 ]
 
 

@@ -24,3 +24,9 @@ jobs:
       - run: node --test tests/core.test.cjs
       - run: python -m unittest discover -s tests -p 'test_*.py'
       - run: python scripts/build.py
+      - name: Private preview artifact (without GitHub Pages)
+        uses: actions/upload-artifact@v4
+        with:
+          name: handheld-atlas-preview
+          path: dist/
+          retention-days: 7

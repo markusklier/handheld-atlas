@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-08T15:03:31Z",
+  "warning": "Automatische Funde sind KEINE Kompatibilitätstests. Rechte an Projektbildern sind ungeklärt.",
+  "projects": [
+    {
+      "id": "4602e3927ae7e81041",
+      "url": "https://github.com/Waterdish/2ship2harkinian-Android",
+      "name": "2 Ship 2 Harkinian Android",
+      "gameIds": [
+        "majoras-mask"
+      ],
+      "routeIds": [
+        "mm-2ship"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "36226854373246f67e",
+      "url": "https://github.com/Abacus1829/ayn-dual-screen",
+      "name": "Abacus Ayn Dual Screen",
+      "gameIds": [
+        "minecraft",
+        "stardew-valley",
+        "terraria"
+      ],
+      "routeIds": [
+        "mc-abacus",
+        "stardew-valley-abacus",
+        "terraria-abacus"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "23fd1af7961c7ffc70",
+      "url": "https://github.com/AngelAuraMC/Amethyst-Android",
+      "name": "Amethyst Android",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [
+        "mc-java"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2252229332b36f59ee",
+      "url": "https://github.com/rosbean/balatro-dualscreen",
+      "name": "Balatro Dual Screen",
+      "gameIds": [
+        "balatro"
+      ],
+      "routeIds": [
+        "balatro-dual"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "dfd28298cd53293cf2",
+      "url": "https://github.com/AurelioB/BanjoRecomp-Android",
+      "name": "BanjoRecomp Android",
+      "gameIds": [
+        "banjo-kazooie"
+      ],
+      "routeIds": [
+        "banjo-recomp"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "bbfc607ce8a6bc493f",
+      "url": "https://github.com/kalenjohnson/chrono-duo",
+      "name": "ChronoDuo",
+      "gameIds": [
+        "chrono-trigger"
+      ],
+      "routeIds": [
+        "chrono-duo"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "50257035c21a250008",
+      "url": "https://github.com/DNAMobileApplications/DroidBridgeLauncherGplayGithub",
+      "name": "DroidBridge Launcher (offizielles Projekt)",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [
+        "mc-droidbridge",
+        "mc-droidbridge-dualhud"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2e86e7f28c0d3f7be5",
+      "url": "https://github.com/Droid-Deck/DroidDeck",
+      "name": "DroidDeck",
+      "gameIds": [
+        "cyberpunk-2077"
+      ],
+      "routeIds": [
+        "cp-droiddeck"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "82fd0176887aa86d9f",
+      "url": "https://github.com/igawa6/eden-duo",
+      "name": "Eden Duo",
+      "gameIds": [
+        "animal-crossing-new-horizons",
+        "castlevania-belmont-s-curse",
+        "chained-echoes",
+        "crash-team-racing-nitro-fueled",
+        "cult-of-the-lamb",
+        "dave-the-diver",
+        "diablo-iii-eternal-collection",
+        "dragon-quest-iii-hd-2d-remake",
+        "farming-simulator-nintendo-switch-edition",
+        "fire-emblem-engage",
+        "fire-emblem-three-houses",
+        "mario-kart-8-deluxe",
+        "metroid-dread",
+        "octopath-traveler-0",
+        "persona-3-portable",
+        "persona-5-royal",
+        "pokemon-brilliant-diamond",
+        "pokemon-shield",
+        "pokemon-shining-pearl",
+        "pokemon-sword",
+        "super-mario-bros-wonder",
+        "super-mario-odyssey",
+        "the-binding-of-isaac-afterbirth",
+        "the-legend-of-zelda-breath-of-the-wild",
+        "the-legend-of-zelda-echoes-of-wisdom",
+        "the-legend-of-zelda-link-s-awakening",
+        "va-11-hall-a-cyberpunk-bartender-action",
+        "yoru-tomosu"
+      ],
+      "routeIds": [
+        "dread-eden",
+        "eden-animal-crossing-new-horizons",
+        "eden-castlevania-belmont-s-curse",
+        "eden-chained-echoes",
+        "eden-crash-team-racing-nitro-fueled",
+        "eden-cult-of-the-lamb",
+        "eden-dave-the-diver",
+        "eden-diablo-iii-eternal-collection",
+        "eden-dragon-quest-iii-hd-2d-remake",
+        "eden-farming-simulator-nintendo-switch-edition",
+        "eden-fire-emblem-engage",
+        "eden-fire-emblem-three-houses",
+        "eden-mario-kart-8-deluxe",
+        "eden-octopath-traveler-0",
+        "eden-persona-3-portable",
+        "eden-persona-5-royal",
+        "eden-pokemon-brilliant-diamond",
+        "eden-pokemon-shield",
+        "eden-pokemon-shining-pearl",
+        "eden-pokemon-sword",
+        "eden-super-mario-bros-wonder",
+        "eden-super-mario-odyssey",
+        "eden-the-binding-of-isaac-afterbirth",
+        "eden-the-legend-of-zelda-breath-of-the-wild",
+        "eden-the-legend-of-zelda-echoes-of-wisdom",
+        "eden-the-legend-of-zelda-link-s-awakening",
+        "eden-va-11-hall-a-cyberpunk-bartender-action",
+        "eden-yoru-tomosu"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "54ea7e3fa08547ff2e",
+      "url": "https://github.com/igawa6/eden-duo-companions",
+      "name": "Eden Duo Companions",
+      "gameIds": [
+        "animal-crossing-new-horizons",
+        "castlevania-belmont-s-curse",
+        "chained-echoes",
+        "crash-team-racing-nitro-fueled",
+        "cult-of-the-lamb",
+        "dave-the-diver",
+        "diablo-iii-eternal-collection",
+        "dragon-quest-iii-hd-2d-remake",
+        "farming-simulator-nintendo-switch-edition",
+        "fire-emblem-engage",
+        "fire-emblem-three-houses",
+        "mario-kart-8-deluxe",
+        "metroid-dread",
+        "octopath-traveler-0",
+        "persona-3-portable",
+        "persona-5-royal",
+        "pokemon-brilliant-diamond",
+        "pokemon-shield",
+        "pokemon-shining-pearl",
+        "pokemon-sword",
+        "super-mario-bros-wonder",
+        "super-mario-odyssey",
+        "the-binding-of-isaac-afterbirth",
+        "the-legend-of-zelda-breath-of-the-wild",
+        "the-legend-of-zelda-echoes-of-wisdom",
+        "the-legend-of-zelda-link-s-awakening",
+        "va-11-hall-a-cyberpunk-bartender-action",
+        "yoru-tomosu"
+      ],
+      "routeIds": [
+        "dread-eden",
+        "eden-animal-crossing-new-horizons",
+        "eden-castlevania-belmont-s-curse",
+        "eden-chained-echoes",
+        "eden-crash-team-racing-nitro-fueled",
+        "eden-cult-of-the-lamb",
+        "eden-dave-the-diver",
+        "eden-diablo-iii-eternal-collection",
+        "eden-dragon-quest-iii-hd-2d-remake",
+        "eden-farming-simulator-nintendo-switch-edition",
+        "eden-fire-emblem-engage",
+        "eden-fire-emblem-three-houses",
+        "eden-mario-kart-8-deluxe",
+        "eden-octopath-traveler-0",
+        "eden-persona-3-portable",
+        "eden-persona-5-royal",
+        "eden-pokemon-brilliant-diamond",
+        "eden-pokemon-shield",
+        "eden-pokemon-shining-pearl",
+        "eden-pokemon-sword",
+        "eden-super-mario-bros-wonder",
+        "eden-super-mario-odyssey",
+        "eden-the-binding-of-isaac-afterbirth",
+        "eden-the-legend-of-zelda-breath-of-the-wild",
+        "eden-the-legend-of-zelda-echoes-of-wisdom",
+        "eden-the-legend-of-zelda-link-s-awakening",
+        "eden-va-11-hall-a-cyberpunk-bartender-action",
+        "eden-yoru-tomosu"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "663ea6e6ebd96bf48d",
+      "url": "https://github.com/utkarshdalal/GameNative",
+      "name": "GameNative",
+      "gameIds": [
+        "cyberpunk-2077"
+      ],
+      "routeIds": [
+        "cp-gamenative"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2afc00d733df905ad4",
+      "url": "https://github.com/rafaelvcaetano/melonDS-android",
+      "name": "melonDS Android",
+      "gameIds": [
+        "chrono-trigger"
+      ],
+      "routeIds": [
+        "chrono-ds"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "55970b6737a391c7a2",
+      "url": "https://github.com/Raekwon1603/RetroArch",
+      "name": "MetroidArch",
+      "gameIds": [
+        "super-metroid"
+      ],
+      "routeIds": [
+        "sm-metroidarch"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "493cdfc81842a08d46",
+      "url": "https://github.com/Raekwon1603/super_metroid-android",
+      "name": "MetroidArch / Projektumzug",
+      "gameIds": [
+        "super-metroid"
+      ],
+      "routeIds": [
+        "sm-legacy",
+        "sm-metroidarch"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "91dca9435a449e35a7",
+      "url": "https://github.com/exojosh/Android_AynThor_MinecraftSecondScreen",
+      "name": "Minecraft Second Screen: Companion",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [
+        "mc-exojosh"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "6946141c8dff0b0a11",
+      "url": "https://github.com/exojosh/AynThorSecondScreen",
+      "name": "Minecraft Second Screen: Fabric-Mod",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [
+        "mc-exojosh"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "87cd11f95f5e3b62ac",
+      "url": "https://github.com/samyost1/tmc-android",
+      "name": "Minish Cap Dual Screen",
+      "gameIds": [
+        "minish-cap"
+      ],
+      "routeIds": [
+        "tmc-dual"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a6c9dcb7ce9dcce2cf",
+      "url": "https://github.com/OpenMW/openmw",
+      "name": "OpenMW",
+      "gameIds": [
+        "morrowind"
+      ],
+      "routeIds": [
+        "mw-openmw"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1e92ab4c590e2f3d40",
+      "url": "https://github.com/Josh-Daniels/OpenMW-DS",
+      "name": "OpenMW-DS",
+      "gameIds": [
+        "morrowind"
+      ],
+      "routeIds": [
+        "mw-ds"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7160b5c9efb99562f5",
+      "url": "https://github.com/lidor30/pokedaisy",
+      "name": "PokeDaisy",
+      "gameIds": [
+        "pokemon-emerald"
+      ],
+      "routeIds": [
+        "emerald-pokedaisy"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ad9d7b4e4a003a4887",
+      "url": "https://github.com/ZalithLauncher/ZalithLauncher2",
+      "name": "Zalith Launcher 2",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [
+        "mc-exojosh",
+        "mc-zalith"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "880aa9c1f7660b4e3f",
+      "url": "https://github.com/samyost1/zelda3-android",
+      "name": "Zelda3 Android",
+      "gameIds": [
+        "a-link-to-the-past"
+      ],
+      "routeIds": [
+        "alttp-port"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "caef04e09c4348a9d2",
+      "url": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+      "name": "Zelda64Recomp",
+      "gameIds": [
+        "majoras-mask"
+      ],
+      "routeIds": [
+        "mm-recomp"
+      ],
+      "providers": [
+        "catalog"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T14:58:54Z",
+      "lastSeenAt": "2026-11-08T14:58:54Z",
+      "curated": true,
+      "documentation": "curated",
+      "deviceTest": "not-tested"
+    }
+  ],
+  "discoveredCount": 0,
+  "totalProjects": 23
+}

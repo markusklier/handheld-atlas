@@ -315,6 +315,8 @@ def main():
     if not 1<=args.budget<=12 or not 0<=args.batch<=10:p.error('Invalid budget/batch')
     catalog=load_json(ROOT/'data/catalog.json')
     games_by_id={g['id']:g for g in catalog['games']}
+    for entry in catalog.get('gameIndex',[]):
+        games_by_id.setdefault(entry['id'],{'id':entry['id'],'title':entry['title'],'routes':[]})
     queue=load_json(QUEUE,{'schemaVersion':1,'candidates':[],'runs':[]})
     if args.game:
         if args.game not in games_by_id:p.error('Unknown game ID: '+args.game)
@@ -325,7 +327,7 @@ def main():
         for entry in queue.get('runs',[]):
             if entry.get('mode')=='live' and entry.get('result')=='completed':
                 latest[entry['gameId']]=entry['checkedAt']
-        games=sorted(catalog['games'],key=lambda g:(latest.get(g['id'],'0000'),
+        games=sorted(games_by_id.values(),key=lambda g:(latest.get(g['id'],'0000'),
              not any('dual-screen' in r['features'] for r in g['routes']),g['id']))[:args.batch]
     registry=load_json(TARGETS,{}).get('targets',{})
     fixture=load_json(args.fixture,{}) if args.fixture else None
