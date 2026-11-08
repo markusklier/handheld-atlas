@@ -32,6 +32,7 @@ FORMAT = {'type': 'json_schema', 'name': 'atlas_image_check', 'strict': True, 's
         'captionDe': {'type': 'string'},
     }}}
 TO_CHECK = {'readme', 'ai'}
+check_link = None   # set in main(); tests replace it
 
 
 def candidates():
@@ -61,6 +62,18 @@ def ask(game, item, shot, kind, token, model):
     return output_json(resp)
 
 
+def reachable_image(url):
+    """True if the URL really serves an image; dead or HTML links are dropped without asking the model."""
+    import urllib.request
+    req = urllib.request.Request(url, headers={'User-Agent': 'HandheldAtlas/1.2 (+https://github.com/markusklier/handheld-atlas)',
+                                               'Range': 'bytes=0-2047'})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.headers.get('Content-Type', '').startswith('image/')
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def decide(verdict, shot):
     """Mutates shot; returns 'keep', 'drop' or 'unclear'."""
     if verdict['kind'] in ('logo', 'promo', 'diagram') or verdict['showsGame'] == 'no' or verdict['showsVariant'] == 'no':
@@ -84,6 +97,8 @@ def main():
     if not token:
         print('OPENAI_API_KEY fehlt – keine Bildprüfung.')
         return 0
+    global check_link
+    check_link = check_link or reachable_image
     model = os.environ.get('OPENAI_VISION_MODEL') or os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     stats = {'keep': 0, 'drop': 0, 'unclear': 0, 'error': 0}
     state_path = DATA / 'media_state.json'
@@ -99,6 +114,12 @@ def main():
         item = next(x for x in coll if x['id'] == item['id'])
         shot = next((s for s in item.get('screenshots', []) if s['url'] == shot['url']), None)
         if not shot:
+            continue
+        if not check_link(shot['url']):
+            stats['drop'] += 1
+            item['screenshots'] = [x for x in item['screenshots'] if x['url'] != shot['url']]
+            rejected.add(shot['url'])
+            touched[f] = g
             continue
         try:
             result = decide(ask(g, item, shot, kind, token, model), shot)

@@ -36,6 +36,7 @@ class VisionTest(unittest.TestCase):
             return {'showsGame': 'no' if bad else 'yes', 'showsVariant': 'yes', 'kind': 'gameplay',
                     'dualScreenVisible': False, 'captionDe': 'Im Spiel'}
         ai_vision.ask = fake_ask
+        ai_vision.check_link = lambda url: True
         import os
         os.environ['OPENAI_API_KEY'] = 'test'
         sys.argv = ['ai_vision.py', '--limit', '6']
@@ -48,6 +49,7 @@ class VisionTest(unittest.TestCase):
             self.assertEqual(atlas.validate(), [])
         finally:
             ai_vision.ask = orig_ask
+            ai_vision.check_link = None
             os.environ.pop('OPENAI_API_KEY', None)
             atlas.DATA, ai_vision.DATA = orig
             shutil.rmtree(tmp)
