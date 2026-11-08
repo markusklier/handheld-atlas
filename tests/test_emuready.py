@@ -74,3 +74,17 @@ class EmuReadyTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class RateLimitTest(unittest.TestCase):
+    def test_stops_after_second_429(self):
+        import urllib.error
+        calls = []
+
+        def fetch(url):
+            calls.append(url)
+            raise urllib.error.HTTPError(url, 429, 'Too Many Requests', {}, None)
+        client = emuready.Client(pause=0, fetch=fetch, backoff=0)
+        with self.assertRaises(emuready.RateLimited):
+            client.call('games.searchGames', {'query': 'x'})
+        self.assertEqual(len(calls), 2)

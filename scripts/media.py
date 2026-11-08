@@ -80,6 +80,8 @@ def readme_images(text, raw_url, repo, branch='HEAD'):
         if not re.search(r'\.(png|jpe?g|webp|gif)(\?|$)', src, re.I) and 'user-attachments/assets' not in src \
                 and 'user-images.githubusercontent.com' not in src:
             continue
+        if not src.startswith('https://'):   # http images break validation (and mixed content in the app)
+            continue
         if src in seen:
             continue
         seen.add(src)

@@ -100,3 +100,10 @@ class FillTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class HttpImagesTest(unittest.TestCase):
+    def test_http_images_are_skipped(self):
+        text = '![shot](http://xproger.info/shots/a.jpg) ![ok](https://example.org/b.png)'
+        urls = [i['url'] for i in media.readme_images(text, 'https://raw.githubusercontent.com/a/b/HEAD/README.md', 'a/b')]
+        self.assertEqual(urls, ['https://example.org/b.png'])

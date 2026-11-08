@@ -17,6 +17,7 @@ import re
 import sys
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date, timedelta
@@ -59,9 +60,13 @@ def platform_of(system_name):
     return None
 
 
+class RateLimited(Exception):
+    """EmuReady asked us to slow down twice in a row – stop for today, keep what we have."""
+
+
 class Client:
-    def __init__(self, pause=1.2, fetch=None):
-        self.pause, self.fetch = pause, fetch or self._fetch
+    def __init__(self, pause=3.0, fetch=None, backoff=45):
+        self.pause, self.fetch, self.backoff = pause, fetch or self._fetch, backoff
         self.key = os.environ.get('EMUREADY_API_KEY')
 
     def _fetch(self, url):
@@ -73,7 +78,14 @@ class Client:
 
     def call(self, procedure, payload):
         url = BASE + procedure + '?input=' + urllib.parse.quote(json.dumps({'json': payload}, separators=(',', ':')))
-        data = self.fetch(url)
+        for attempt in range(2):
+            try:
+                data = self.fetch(url)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code != 429 or attempt:
+                    raise RateLimited() if e.code == 429 else e
+                time.sleep(self.backoff)   # rate limited: wait once, then give up for today
         if self.pause:
             time.sleep(self.pause)
         res = data[0] if isinstance(data, list) else data
@@ -170,7 +182,7 @@ def sync_game(client, game, device_ids, log=print):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--limit', type=int, default=40)
+    ap.add_argument('--limit', type=int, default=25)
     ap.add_argument('--game')
     args = ap.parse_args()
     state_path = DATA / 'emuready_state.json'
@@ -196,6 +208,9 @@ def main():
         done += 1
         try:
             n = sync_game(client, g, devices)
+        except RateLimited:
+            print('EmuReady drosselt – Rest folgt beim nächsten Lauf.', file=sys.stderr)
+            break
         except Exception as e:  # noqa: BLE001
             print(f'! {g["id"]}: {e}', file=sys.stderr)
             continue

@@ -37,9 +37,9 @@ jobs:
         continue-on-error: true
         env:
           EMUREADY_API_KEY: ${{ secrets.EMUREADY_API_KEY }}
-        run: python scripts/emuready.py --limit 40
-      - name: Keep franchises consistent
-        run: python scripts/franchises.py --fix
+        run: python scripts/emuready.py --limit 25
+      - name: Keep franchises consistent, drop invalid URLs
+        run: python scripts/franchises.py --fix && python scripts/atlas.py repair
       - run: python scripts/atlas.py validate
       - id: commit
         run: |

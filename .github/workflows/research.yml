@@ -96,7 +96,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
         run: python scripts/ai_vision.py --limit 40
-      - run: python scripts/franchises.py --fix && python scripts/atlas.py format && python scripts/atlas.py validate
+      - run: python scripts/franchises.py --fix && python scripts/atlas.py repair && python scripts/atlas.py format && python scripts/atlas.py validate
       - id: commit
         run: |
           if git diff --quiet data; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi

@@ -5,6 +5,7 @@
     python3 scripts/atlas.py build        # validate, then write dist/ (app + data.json + offline HTML)
     python3 scripts/atlas.py stats        # quick overview of the database
     python3 scripts/atlas.py format       # rewrite all data files with canonical formatting
+    python3 scripts/atlas.py repair       # drop entries with non-https URLs (runs before validate in workflows)
 
 Standard library only (Python 3.10+).
 """
@@ -290,6 +291,27 @@ def stats():
     print('Franchise = Titel (prüfen):', no_fr)
 
 
+def repair():
+    """Drop list entries whose URL is not https (images, links, reports) so one bad item never blocks a whole run."""
+    bad = lambda x: not str((x or {}).get('url') or (x or {}).get('source') or '').startswith('https://')
+    removed = 0
+    for f in (DATA / 'games').glob('*.json'):
+        g = read(f)
+        before = json.dumps(g)
+        for holder in [g, *g.get('versions', []), *g.get('routes', []), *g.get('mods', [])]:
+            for key in ('screenshots', 'links', 'reports'):
+                if key in holder:
+                    keep = [x for x in holder[key] if not bad(x)]
+                    removed += len(holder[key]) - len(keep)
+                    holder[key] = keep
+        if g.get('cover') and bad(g['cover']):
+            g.pop('cover')
+            removed += 1
+        if json.dumps(g) != before:
+            write(f, g)
+    print(f'repair: {removed} ungültige Einträge entfernt')
+
+
 def fmt():
     for f in (DATA / 'games').glob('*.json'):
         write(f, read(f))
@@ -304,4 +326,4 @@ if __name__ == '__main__':
         problems = validate()
         print('\n'.join(problems) or 'OK – keine Fehler')
         sys.exit(1 if problems else 0)
-    {'build': build, 'stats': stats, 'format': fmt}.get(cmd, lambda: sys.exit(__doc__))()
+    {'build': build, 'stats': stats, 'format': fmt, 'repair': repair}.get(cmd, lambda: sys.exit(__doc__))()
