@@ -37,5 +37,6 @@ jobs:
             echo 'HTML snapshot already current'; exit 0
           fi
           git commit -m 'build: refresh downloadable Atlas HTML'
+          git reset --hard HEAD
           git pull --rebase origin main
           git push origin HEAD:main
