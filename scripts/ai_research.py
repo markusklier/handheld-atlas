@@ -31,7 +31,7 @@ BLOCKED = re.compile(r'romsfun|romspedia|vimm\.net|coolrom|emuparadise|nicoblog|
                      r'getmodsapk|liteapks|torrent|1337x|piratebay|fitgirl|dodi', re.I)
 KINDS = ['emulation', 'emulator-mod', 'native', 'native-mod', 'decomp', 'recomp', 'source-port', 'companion',
          'java', 'pc-runtime']
-MAX_NEW_VERSIONS = 6
+MAX_NEW_VERSIONS = 12
 PROJECT_KIND = {'emulation': 'emulator', 'emulator-mod': 'mod', 'native': 'official', 'native-mod': 'mod',
                 'decomp': 'port', 'recomp': 'port', 'source-port': 'port', 'companion': 'companion',
                 'java': 'launcher', 'pc-runtime': 'runtime'}
@@ -59,7 +59,9 @@ def schema(meta):
                              'year': {'type': 'integer'}, 'platforms': arr(s()), 'traits': arr(features),
                              'note': s(), 'sourceUrl': s()})),
         'routes': arr(obj({'name': s(), 'versionKey': s(), 'kind': {'type': 'string', 'enum': KINDS}, 'runtime': s(),
-                           'features': arr(features), 'dualScreen': s(), 'requires': arr(s()), 'benefit': s(),
+                           'features': arr(features), 'dualScreen': s(),
+                           'dualScreenType': {'type': 'string', 'enum': ['', 'integrated', 'companion', 'info', 'native']},
+                           'requires': arr(s()), 'benefit': s(),
                            'caveat': s(), 'steps': arr(s()),
                            'effort': {'type': 'string', 'enum': sorted(meta['effort'])},
                            'status': {'type': 'string', 'enum': ['active', 'experimental', 'archived']},
@@ -72,15 +74,22 @@ def schema(meta):
 
 
 RULES = """Finde mit der Websuche:
-1. versions: die Fassungen, die für jemanden mit einem Android-Handheld HEUTE eine echte Wahl sind: Original,
-   wichtige Portierungen, offizielle Android-Fassungen (auch eingestellte), Remaster, Remakes, aktuelle Neuauflagen.
-   Höchstens 8. Weglassen: historische Plattformen ohne praktischen Weg auf Android (z. B. Pocket PC, Mac OS Classic,
-   Evercade), reine Sammel-Neuveröffentlichungen ohne Unterschied, angekündigte oder unveröffentlichte Fassungen.
-   Jeweils Plattformen, Erscheinungsjahr, was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde).
-   Für bekannte Fassungen den vorhandenen key wiederverwenden, sonst einen neuen kurzen key (z. B. "remastered-2024").
+1. versions: VOLLSTÄNDIG alle offiziell erschienenen Fassungen (Atlas ist auch ein Archiv): Original mit allen
+   Erstplattformen, spätere Portierungen, Editionen (z. B. Special/Anniversary/GOTY), offizielle Android-Fassungen (auch
+   eingestellte), Remaster, Remakes, Neuauflagen. Gleiche Veröffentlichung auf mehreren Plattformen = EINE Fassung mit
+   mehreren Plattformen (z. B. "Original (2011)": PC, Xbox 360, PlayStation 3). Höchstens 15. Weglassen nur:
+   angekündigte/unveröffentlichte Fassungen und reine Sammelboxen ohne Unterschied. Jeweils Plattformen, Erscheinungsjahr,
+   was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde oder was anders ist).
+   Für bekannte Fassungen den vorhandenen key wiederverwenden (auch wenn du weitere Plattformen ergänzt), sonst einen
+   neuen kurzen key (z. B. "remastered-2024").
 2. routes: konkrete Wege, eine Fassung auf Android zu spielen, die über einen allgemeinen Emulator hinausgehen:
    offizielle Android-App, native Ports/Decomps/Recomps/Source-Ports, PC-Laufzeit (GameNative, Winlator, GameHub …)
    mit spielspezifischen Belegen, Dual-Screen-Mods/Companions, Emulator-Forks mit Spiel-Patches (Widescreen, 60 FPS).
+   Dual Screen hat Priorität: suche gezielt nach Dual-Screen-Mods, Companions und Forks („<Spiel> dual screen“,
+   „<Spiel> second screen AYN Thor“, GitHub, r/SBCGaming, r/AYN). dualScreenType: integrated = das Spiel/der Port
+   zeichnet selbst auf den zweiten Bildschirm (live), companion = separate Begleit-App, info = nur statische Infos/Karte,
+   native = das Original hatte zwei Bildschirme (DS, 3DS, Wii U); "" wenn kein Dual Screen. Feature "two-screens" NUR
+   für Originale mit zwei Bildschirmen, sonst "dual-screen".
    Je Weg: versionKey, Projekt-URL (Projektseite/GitHub/Google Play), kurze deutsche Texte (benefit, caveat,
    requires = was man selbst besitzen muss), Aufwand, Status. reports: echte Erfahrungsberichte (Reddit, Foren,
    Videos, EmuReady) mit Gerät, 1 Satz Zusammenfassung – bevorzugt AYN Thor, Odin 2, Retroid Pocket 5.
@@ -162,6 +171,39 @@ def ok_url(u, sources=None):
 IMG = re.compile(r'\.(png|jpe?g|webp|gif)(\?|$)|user-attachments/assets|user-images\.githubusercontent', re.I)
 
 
+MD_CITE = re.compile(r'\s*\(\[[^\]]*\]\([^)]*\)\)')        # " ([site.com](https://…))" citation markers
+MD_LINK = re.compile(r'\[([^\]]+)\]\((https?://[^)]+)\)')   # [text](url) -> text
+
+
+def clean(text, limit=None):
+    """Strip markdown citations/links the model sometimes puts into plain-text fields; cut at a sentence end."""
+    if not isinstance(text, str):
+        return text
+    t = MD_LINK.sub(r'\1', MD_CITE.sub('', text))
+    t = re.sub(r'\s+', ' ', t).strip()
+    if limit and len(t) > limit:
+        cut = max(t.rfind('. ', 0, limit), t.rfind('! ', 0, limit), t.rfind('? ', 0, limit))
+        t = t[:cut + 1] if cut > limit // 3 else t[:limit].rsplit(' ', 1)[0] + ' …'
+    return t
+
+
+def clean_result(result):
+    for key in ('summary', 'series'):
+        result[key] = clean(result.get(key, ''))
+    for v in result.get('versions', []):
+        v['note'], v['name'] = clean(v.get('note', ''), 400), clean(v.get('name', ''))
+    for r in result.get('routes', []):
+        for k in ('name', 'runtime', 'dualScreen', 'benefit', 'caveat'):
+            r[k] = clean(r.get(k, ''), 500)
+        r['requires'] = [clean(x) for x in r.get('requires', [])]
+        r['steps'] = [clean(x) for x in r.get('steps', [])]
+        for rep in r.get('reports', []):
+            rep['summary'] = clean(rep.get('summary', ''), 300)
+    for m in result.get('mods', []):
+        m['description'] = clean(m.get('description', ''), 400)
+    return result
+
+
 def shots_of(nr, project, credit=None):
     """Screenshots the model found for a way; linked only, checked later by ai_vision.py / the agent."""
     out = []
@@ -176,6 +218,7 @@ def shots_of(nr, project, credit=None):
 def merge(game, projects, result, sources, log):
     """Apply one research result to copies; returns (game, projects, changelog entries)."""
     g, prj = copy.deepcopy(game), copy.deepcopy(projects)
+    result = clean_result(copy.deepcopy(result))
     by_url = {norm_url(p['url']): p for p in prj['projects']}
     entries = []
     versions = g.setdefault('versions', [])
@@ -199,6 +242,11 @@ def merge(game, projects, result, sources, log):
             if not v.get('note') and nv.get('note'):
                 v['note'] = nv['note']
             v['traits'] = sorted(set(v.get('traits', [])) | set(traits))
+            for pl in nv.get('platforms', []):           # e.g. Xbox 360 / PS3 added to "Original (2011)"
+                if pl not in v['platforms'] and len(v['platforms']) < 10:
+                    v['platforms'].append(pl)
+                    if pl not in g['platforms']:
+                        g['platforms'].append(pl)
         else:
             if added_versions >= MAX_NEW_VERSIONS:
                 log(f"  übersprungen (max. {MAX_NEW_VERSIONS} neue Fassungen pro Lauf): {nv['name']}")
@@ -268,6 +316,7 @@ def merge(game, projects, result, sources, log):
         route = {'id': rid, 'name': nr['name'], 'kind': nr['kind'], 'release': v['id'], 'runtime': nr.get('runtime') or None,
                  'projects': [p['id']], 'targets': ['android'], 'features': sorted(set(nr.get('features', []))),
                  'dualScreen': nr.get('dualScreen') or None, 'requires': nr.get('requires', []),
+                 **({'dualScreenType': nr['dualScreenType']} if nr.get('dualScreenType') and 'dual-screen' in nr.get('features', []) else {}),
                  'benefit': nr.get('benefit', ''), 'caveat': nr.get('caveat', ''), 'steps': nr.get('steps', []),
                  'version': None, 'effort': nr['effort'], 'status': nr['status'], 'verification': 'ai-unverified',
                  'testedOn': [], 'screenshots': shots_of(nr, p), 'links': [{'label': 'Quelle', 'url': nr['sourceUrl']}],
@@ -299,7 +348,7 @@ def merge(game, projects, result, sources, log):
     if series and (g.get('franchise') in (None, '', g['title'])) and len(series) < 80:
         g['franchise'] = series
     if result.get('summary') and not g.get('summary'):
-        g['summary'] = result['summary'][:300]
+        g['summary'] = clean(result['summary'], 300)
     if entries:
         g['updatedAt'] = TODAY
     for e in entries:
@@ -395,6 +444,9 @@ und eine Quelle. Plattformnamen wenn möglich aus dieser Liste: {', '.join(known
         cl = read(DATA / 'changelog.json')
         cl['entries'][0:0] = entries
         write(DATA / 'changelog.json', cl)
+    # deep research for every game of the series that has not been researched yet
+    queued = queue_add([g['id'] for g in franchise_games(name)], f'Reihe {name}', front=True)
+    log(f'  {queued} Spiele der Reihe in die Warteschlange gestellt')
     return entries
 
 
@@ -402,6 +454,135 @@ SHOTS_FORMAT = {'type': 'json_schema', 'name': 'atlas_route_screenshots', 'stric
     'type': 'object', 'additionalProperties': False, 'required': ['screenshots'], 'properties': {'screenshots': {
         'type': 'array', 'items': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'caption', 'sourceUrl'],
                                    'properties': {'url': {'type': 'string'}, 'caption': {'type': 'string'}, 'sourceUrl': {'type': 'string'}}}}}}}
+
+
+# ---------------- queue: research that the owner asked for, processed in small portions ----------------
+def queue_load():
+    path = DATA / 'queue.json'
+    return read(path) if path.exists() else {'jobs': []}
+
+
+def queue_add(game_ids, reason, front=False):
+    q = queue_load()
+    done = read(DATA / 'inbox.json').get('aiResearch', {})
+    known = {j['game'] for j in q['jobs']}
+    new = []
+    for gid in game_ids:
+        if gid not in known and gid not in done:
+            known.add(gid)
+            new.append({'game': gid, 'reason': reason, 'added': TODAY})
+    q['jobs'] = (new + q['jobs']) if front else (q['jobs'] + new)
+    write(DATA / 'queue.json', q)
+    return len(new)
+
+
+def queue_pop(n):
+    q = queue_load()
+    jobs, q['jobs'] = q['jobs'][:n], q['jobs'][n:]
+    write(DATA / 'queue.json', q)
+    return jobs
+
+
+def franchise_games(name):
+    return sorted((read(f) for f in (DATA / 'games').glob('*.json') if read(f).get('franchise') == name),
+                  key=lambda g: (min([v.get('year') or 9999 for v in g.get('versions', [])] or [9999]), g['title']))
+
+
+DUAL_FORMAT = {'type': 'json_schema', 'name': 'atlas_dual_scan', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['projects'], 'properties': {'projects': {'type': 'array', 'items': {
+        'type': 'object', 'additionalProperties': False,
+        'required': ['gameTitle', 'platform', 'name', 'projectUrl', 'kind', 'dualScreen', 'dualScreenType', 'sourceUrl', 'released'],
+        'properties': {'gameTitle': {'type': 'string'}, 'platform': {'type': 'string'}, 'name': {'type': 'string'},
+                       'projectUrl': {'type': 'string'}, 'kind': {'type': 'string', 'enum': KINDS},
+                       'dualScreen': {'type': 'string'},
+                       'dualScreenType': {'type': 'string', 'enum': ['integrated', 'companion', 'info', 'native']},
+                       'sourceUrl': {'type': 'string'}, 'released': {'type': 'string'}}}}}}}
+
+
+def dual_scan(token, model, log=print, max_new=25):
+    """Find dual-screen projects for Android handhelds that Atlas does not list yet (incl. dual-screen inbox leads)."""
+    known_urls = set()
+    for f in (DATA / 'games').glob('*.json'):
+        g = read(f)
+        for r in g.get('routes', []):
+            known_urls |= {norm_url(l['url']) for l in r.get('links', [])}
+    projects = read(DATA / 'projects.json')
+    known_urls |= {norm_url(p['url']) for p in projects['projects']}
+    inbox = read(DATA / 'inbox.json')
+    seen = set(inbox.get('dualScanSeen', []))
+    leads = [l for l in inbox.get('leads', []) if re.search(r'dual|second.screen|zweit|two.screen|companion', f"{l['title']} {l.get('excerpt') or ''}", re.I)
+             and l['url'] not in seen][:40]
+    lead_list = [{'url': l['url'], 'title': l['title'], 'excerpt': (l.get('excerpt') or '')[:200]} for l in leads]
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'high'}],
+                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'medium'},
+                        'text': {'format': DUAL_FORMAT}, 'max_output_tokens': 12000,
+                        'input': f"""Suche aktuelle Dual-Screen-Projekte für Android-Handhelds mit zwei Displays (AYN Thor u. ä.):
+Mods, Companion-Apps, Emulator-Forks und native Ports, die den zweiten Bildschirm für ein bestimmtes Spiel nutzen
+(Karte, Inventar, HUD, Touch-Steuerung). Besonders Neues der letzten 90 Tage (GitHub, r/SBCGaming, r/AYN, r/EmulationOnAndroid).
+Prüfe zusätzlich diese Kandidaten aus unserem Watcher und nimm die echten Dual-Screen-Projekte auf:
+{json.dumps(lead_list, ensure_ascii=False)}
+Diese Projekte kennen wir schon (nicht erneut nennen): {json.dumps(sorted(known_urls)[:400])}
+Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielfassung, die es nutzt, z. B. "PC", "SNES",
+"Nintendo Switch", "Android"), name, projectUrl, kind, dualScreen (deutsch: was zeigt Bildschirm 2), dualScreenType
+(integrated/companion/info/native), sourceUrl, released (YYYY-MM oder ""). Keine Piraterie-Seiten. Höchstens {max_new}."""}, token)
+    data, sources = output_json(resp), searched_urls(resp)
+    sources |= {norm_url(l['url']) for l in leads}
+    inbox['dualScanSeen'] = sorted(seen | {l['url'] for l in leads})
+    added, touched_games = [], set()
+    for item in data.get('projects', [])[:max_new]:
+        purl = item.get('projectUrl')
+        if not ok_url(purl) or not ok_url(item.get('sourceUrl'), sources) or norm_url(purl) in known_urls:
+            continue
+        gid, created = create_game(item['gameTitle'], [item['platform']] if item.get('platform') else [], None, None, log)
+        g = read(DATA / 'games' / f'{gid}.json')
+        version = next((v for v in g.get('versions', []) if item['platform'] in v['platforms']), None)
+        if not version:
+            vid = slug(item['platform'] or 'fassung')
+            while any(v['id'] == vid for v in g.get('versions', [])):
+                vid += '-2'
+            version = {'id': vid, 'name': item['platform'], 'type': 'release', 'platforms': [item['platform']]}
+            g.setdefault('versions', []).append(version)
+            if item['platform'] not in g['platforms']:
+                g['platforms'].append(item['platform'])
+        m = re.match(r'https://github\.com/([^/]+/[^/#?]+)', purl)
+        p = next((x for x in projects['projects'] if norm_url(x['url']) == norm_url(purl)), None)
+        if not p:
+            pid = slug(item['name'])
+            while any(x['id'] == pid for x in projects['projects']):
+                pid += '-2'
+            p = {'id': pid, 'name': item['name'], 'kind': PROJECT_KIND.get(item['kind'], 'mod'), 'url': purl,
+                 'repo': m.group(1) if m else None, 'description': item.get('dualScreen', ''), 'games': [], 'checkedAt': TODAY}
+            projects['projects'].append(p)
+        if gid not in p['games']:
+            p['games'].append(gid)
+        rid = slug('ds-' + item['name'])
+        while any(r['id'] == rid for r in g.get('routes', [])):
+            rid += '-2'
+        g.setdefault('routes', []).append({
+            'id': rid, 'name': item['name'], 'kind': item['kind'], 'release': version['id'], 'runtime': None, 'projects': [p['id']],
+            'targets': ['android'], 'features': ['two-screens'] if item['dualScreenType'] == 'native' else ['dual-screen'],
+            'dualScreen': item.get('dualScreen') or None, 'dualScreenType': item['dualScreenType'], 'requires': [], 'benefit': '',
+            'caveat': 'Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.', 'steps': [], 'version': None,
+            'effort': 'guided', 'status': 'active', 'verification': 'ai-unverified', 'testedOn': [], 'screenshots': [],
+            'links': [{'label': 'Quelle', 'url': item['sourceUrl']}], 'reports': [], 'performance': [], 'checkedAt': TODAY})
+        g['updatedAt'] = TODAY
+        write(DATA / 'games' / f'{gid}.json', g)
+        known_urls.add(norm_url(purl))
+        touched_games.add(gid)
+        added.append({'date': TODAY, 'type': 'route-added', 'by': 'ai-research', 'game': gid,
+                      'text': f"Dual Screen: {item['name']} für {g['title']} (Suchlauf)", 'url': item['sourceUrl']})
+    inbox['leads'] = [l for l in inbox['leads'] if norm_url(l['url']) not in known_urls]
+    inbox['dualScan'] = {'lastRun': TODAY, 'found': len(added)}
+    write(DATA / 'inbox.json', inbox)
+    write(DATA / 'projects.json', projects)
+    if __import__('atlas').validate():
+        raise RuntimeError('Validierung nach Dual-Screen-Suchlauf fehlgeschlagen')
+    if added:
+        cl = read(DATA / 'changelog.json')
+        cl['entries'][0:0] = added
+        write(DATA / 'changelog.json', cl)
+        queue_add(sorted(touched_games), 'Dual-Screen-Suchlauf', front=True)
+    return added
 
 
 def routes_without_shots(limit):
@@ -497,6 +678,8 @@ def main():
     ap.add_argument('--new-game', help='Titel eines Spiels, das Atlas noch nicht kennt')
     ap.add_argument('--franchise', help='Reihe: fehlende Spiele anlegen')
     ap.add_argument('--screenshots', type=int, default=0, help='Bilder für N Spielwege ohne Screenshot suchen')
+    ap.add_argument('--queue', type=int, default=0, help='N Spiele aus der Warteschlange recherchieren')
+    ap.add_argument('--dual-scan', action='store_true', help='Dual-Screen-Suchlauf über alle Quellen')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
     app_payload = '```json' in (args.issue_body or '')
@@ -505,6 +688,15 @@ def main():
         return 0
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     jobs = []   # (kind, value, focus)
+    if args.dual_scan:
+        try:
+            found = dual_scan(token, model)
+            print(f'Dual-Screen-Suchlauf: {len(found)} neue Wege' + (': ' + '; '.join(e['text'] for e in found) if found else ''))
+            Path(os.environ.get('RESEARCH_REPORT', '/tmp/atlas-research.md')).write_text(
+                f'Dual-Screen-Suchlauf: {len(found)} neue Wege\n' + '\n'.join('- ' + e['text'] for e in found) + '\n', encoding='utf-8')
+        except Exception as e:  # noqa: BLE001
+            print(f'! Dual-Screen-Suchlauf: {type(e).__name__}: {str(e)[:200]}')
+        args.queue = max(args.queue, 3)
     if args.screenshots:
         total = 0
         for gid, rid in routes_without_shots(args.screenshots):
@@ -513,7 +705,7 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
         print(f'Bildersuche: {total} Screenshots gefunden')
-        if not (args.game or args.batch or args.issue_body or args.new_game or args.franchise):
+        if not (args.game or args.batch or args.issue_body or args.new_game or args.franchise or args.queue):
             return 0
     if args.game:
         jobs = [('game', args.game, args.version)]
@@ -523,7 +715,7 @@ def main():
         jobs = [('franchise', args.franchise, None)]
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
-        m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in ('game', 'version', 'new-game', 'franchise')}
+        m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in ('game', 'version', 'new-game', 'franchise', 'dual-scan')}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
         if 'game' in val and payload:
@@ -536,6 +728,9 @@ def main():
             jobs = [('new', val['new-game'], None)]
         elif 'franchise' in val:
             jobs = [('franchise', val['franchise'], None)]
+            args.queue = max(args.queue, 3)        # start the deep research right away
+        elif 'dual-scan' in val:
+            args.dual_scan = True
         else:
             title = re.sub(r'^recherche:\s*', '', args.issue_title, flags=re.I).strip()
             gid = find_game(title) if title else None
@@ -573,6 +768,16 @@ def main():
             lines.append(f'- `{value}`: Fehler – {type(e).__name__}: {str(e)[:200]}')
             continue
         lines.append(f'- **{value}**: ' + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
+    for job in (queue_pop(args.queue) if args.queue else []):
+        try:
+            print(f"Warteschlange: {job['game']} ({job['reason']})")
+            entries = research(job['game'], token, model)
+            lines.append(f"- **{job['game']}** ({job['reason']}): " + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
+        except Exception as e:  # noqa: BLE001
+            lines.append(f"- `{job['game']}`: Fehler – {type(e).__name__}: {str(e)[:200]}")
+    left = len(queue_load()['jobs'])
+    if args.queue:
+        lines.append(f'- Warteschlange: noch {left} Spiele')
     report = '\n'.join(lines) or 'Kein Spiel ausgewählt.'
     print(report)
     if os.environ.get('GITHUB_STEP_SUMMARY'):

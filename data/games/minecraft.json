@@ -171,7 +171,8 @@
       "checkedAt": "2026-11-08",
       "release": "pc",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     },
     {
       "id": "mc-zalith",
@@ -254,7 +255,8 @@
       "checkedAt": "2026-11-08",
       "release": "pc",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     },
     {
       "id": "mc-droidbridge",
@@ -386,7 +388,8 @@
       "checkedAt": "2026-11-08",
       "release": "pc",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     },
     {
       "id": "mc-thorcraft",
@@ -440,7 +443,8 @@
       "checkedAt": "2026-11-08",
       "release": "pc",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     },
     {
       "id": "mc-eden-companion",
@@ -513,7 +517,8 @@
       "checkedAt": "2026-11-08",
       "release": "nintendo-switch",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     }
   ],
   "mods": [

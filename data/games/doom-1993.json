@@ -180,15 +180,14 @@
         "dual-screen",
         "live-map",
         "mods",
-        "native-arm",
-        "two-screens"
+        "native-arm"
       ],
       "dualScreen": "Oben erscheint die Spielansicht ohne klassische Statusleiste; unten rendert die Engine gleichzeitig ihre echte Automap und Statusleiste. Der Fork wurde ausdrücklich für den AYN Thor gebaut und getestet.",
       "requires": [
         "Eigene DOOM.WAD aus der registrierten PC-Fassung oder The Ultimate DOOM",
         "Für die gleichzeitige Kartenanzeige ein Android-Gerät mit zweitem Display"
       ],
-      "benefit": "Nutzt beide Thor-Displays sinnvoll, ohne die Action zum Kartenlesen zu unterbrechen; die Karte stammt direkt aus der Engine und ist keine externe Nachbildung. ([github.com](https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases))",
+      "benefit": "Nutzt beide Thor-Displays sinnvoll, ohne die Action zum Kartenlesen zu unterbrechen; die Karte stammt direkt aus der Engine und ist keine externe Nachbildung.",
       "caveat": "Separater Community-Fork, kein Bestandteil von Delta Touch. Seine veröffentlichten Builds enthalten nur UZDoom; für den echten Controller muss das virtuelle Controller-Overlay abgeschaltet werden.",
       "steps": [
         "Den Android-Build aus den Releases des Forks installieren.",
@@ -234,7 +233,8 @@
         }
       ],
       "performance": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "dualScreenType": "integrated"
     },
     {
       "id": "ai-bethesdas-offizielle-android-app",
@@ -257,7 +257,7 @@
         "Kauf beziehungsweise vorhandene Google-Play-Lizenz der offiziellen DOOM-App",
         "Ein vom Play Store als kompatibel eingestuftes Android-Gerät"
       ],
-      "benefit": "Direkter Einstieg ohne WAD-Import: Das Spiel einschließlich vierter Episode ist bereits enthalten. ([play.google.com](https://play.google.com/store/apps/details?id=com.bethsoft.DOOM))",
+      "benefit": "Direkter Einstieg ohne WAD-Import: Das Spiel einschließlich vierter Episode ist bereits enthalten.",
       "caveat": "Die Store-Freigabe muss auf dem konkreten Handheld geprüft werden. Ein Nutzer mit Pixel 7 Pro meldet Probleme beim Schießen mit einem 8BitDo-Controller; eine fehlerfreie Thor-Belegung ist damit nicht belegt.",
       "steps": [
         "Die offizielle Bethesda-App im Google Play Store auf dem Handheld aufrufen.",
@@ -308,7 +308,7 @@
         "Eigene PlayStation-Ausgabe von DOOM",
         "Selbst erstelltes Disc-Abbild mit zusammengehörigen CUE- und BIN-Dateien"
       ],
-      "benefit": "Spielt die eigenständige PS1-Fassung über einen dafür entwickelten Port statt über einen allgemeinen PlayStation-Emulator; auf dem Retroid Pocket 5 werden Bild und Steuerung ausdrücklich positiv beschrieben. ([reddit.com](https://www.reddit.com/r/retroid/comments/1peijq0/tested_more_android_ports_on_rp5/?utm_source=openai))",
+      "benefit": "Spielt die eigenständige PS1-Fassung über einen dafür entwickelten Port statt über einen allgemeinen PlayStation-Emulator; auf dem Retroid Pocket 5 werden Bild und Steuerung ausdrücklich positiv beschrieben.",
       "caveat": "Die PC-WAD genügt nicht. Der Android-Port nennt Vulkan beziehungsweise einen älteren GLES-Renderer und warnt vor Leistungsproblemen auf Mali/PowerVR; ein eigener Thor-Test ist nicht belegt.",
       "steps": [
         "Den Android-Launcher aus dem Projekt installieren und PsyDoom auswählen.",
@@ -360,7 +360,7 @@
         "Eigene DOOM.WAD aus der PC-Fassung oder The Ultimate DOOM",
         "Für zusätzliche Mods deren separat bezogene Dateien"
       ],
-      "benefit": "Kostenloser, quelloffener zusätzlicher Android-Spielweg für das Original und moderne Mods; neuere Builds verwenden UZDoom anstelle des früher enthaltenen GZDoom. ([f-droid.org](https://f-droid.org/packages/com.karin.idTech4Amm/?utm_source=openai))",
+      "benefit": "Kostenloser, quelloffener zusätzlicher Android-Spielweg für das Original und moderne Mods; neuere Builds verwenden UZDoom anstelle des früher enthaltenen GZDoom.",
       "caveat": "Nicht mit einem DOOM-3-Spielweg verwechseln: Für DOOM von 1993 muss UZDoom gewählt werden. Ältere Anleitungen nennen noch GZDoom; außerdem dokumentiert der Issue-Tracker Grafikprobleme mit einer älteren GZDoom-Konfiguration auf Snapdragon Gen 2.",
       "steps": [
         "idTech4A++ über das Projekt oder F-Droid installieren.",
@@ -409,7 +409,7 @@
         "Eigene Windows-Ausgabe von DOOM + DOOM II",
         "Zugriff auf deren installierte PC-Spieldateien"
       ],
-      "benefit": "Ein spielspezifischer Odin-2-Bericht bestätigt den Start der eigentlichen Neuauflage nach dem Kopieren des installierten Steam-Spielordners. ([reddit.com](https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/))",
+      "benefit": "Ein spielspezifischer Odin-2-Bericht bestätigt den Start der eigentlichen Neuauflage nach dem Kopieren des installierten Steam-Spielordners.",
       "caveat": "Der Bericht ist versionsabhängig und kein aktueller Thor-Kompletttest: Genannt werden Menüfehler mit Winlator 9 und bessere Ergebnisse mit einer damaligen 7-glibc-Konfiguration; die Controller-Kompatibilität von DOOM wird nicht separat bestätigt.",
       "steps": [
         "Winlator aus dem offiziellen Projekt installieren.",

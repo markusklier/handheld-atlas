@@ -119,7 +119,8 @@
       "checkedAt": "2026-11-08",
       "release": "snes",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     },
     {
       "id": "sm-snes9x",
@@ -233,7 +234,8 @@
       "checkedAt": "2026-11-08",
       "release": "snes",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     }
   ],
   "updatedAt": "2026-11-08"

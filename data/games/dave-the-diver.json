@@ -201,7 +201,8 @@
       "checkedAt": "2026-11-08",
       "release": "nintendo-switch",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     }
   ],
   "updatedAt": "2026-11-08"

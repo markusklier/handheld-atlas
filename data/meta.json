@@ -14,7 +14,7 @@
   },
   "features": {
     "dual-screen": "Physisches Dual-Screen",
-    "two-screens": "Zwei Spielbildschirme (DS/3DS)",
+    "two-screens": "Zwei Bildschirme im Original (DS/3DS/Wii U)",
     "live-map": "Live-Karte",
     "touch-inventory": "Touch-Inventar",
     "widescreen": "Widescreen",
@@ -91,5 +91,11 @@
     "translation": "Übersetzung",
     "multiplayer": "Multiplayer",
     "other": "Sonstiges"
+  },
+  "dualScreenTypes": {
+    "integrated": "Im Spiel integriert",
+    "companion": "Companion-App",
+    "info": "Zusatzinfos",
+    "native": "Original mit zwei Bildschirmen"
   }
 }

@@ -364,3 +364,12 @@ details.settings ul { margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; }
 .field input { background: var(--surface-2); border: 1px solid var(--line-2); border-radius: 10px; padding: 8px 10px; color: var(--text); }
 .meter { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; font-size: 13.5px; margin: 6px 0; }
 .meter i { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--accent) var(--v), var(--surface-3) var(--v)); }
+.item.online img, .item.online .mini { width: 54px; height: 72px; object-fit: cover; border-radius: 8px; background: var(--surface-3); flex: none; }
+.item.online { cursor: default; flex-wrap: wrap; }
+.item.online .row .btn { padding: 6px 11px; font-size: 13px; }
+details.generic-group > summary { list-style: none; display: flex; gap: 8px; align-items: center; padding: 9px 12px; border: 1px dashed var(--line-2); border-radius: 13px; cursor: pointer; color: var(--muted); font-size: 13.5px; flex-wrap: wrap; }
+details.generic-group > summary::-webkit-details-marker { display: none; }
+details.generic-group[open] > summary { margin-bottom: 6px; }
+.dual-item img, .dual-item .mini { width: 96px; height: 60px; object-fit: cover; border-radius: 9px; background: var(--surface-3); flex: none; }
+.dual-table { min-width: 680px; }
+.coverage .meter { max-width: 520px; }

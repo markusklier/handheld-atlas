@@ -161,6 +161,8 @@ def validate(db=None):
                     err(f'{rw}: Projekt {p!r} fehlt in projects.json')
             if not r.get('projects') and not r.get('links'):
                 err(f'{rw}: braucht mindestens ein Projekt oder einen Link als Quelle')
+            if r.get('dualScreenType') and r['dualScreenType'] not in meta.get('dualScreenTypes', {}):
+                err(f"{rw}: dualScreenType {r['dualScreenType']!r} unbekannt")
             if r.get('release') not in version_ids:
                 err(f"{rw}: release {r.get('release')!r} ist keine Fassung dieses Spiels ({sorted(version_ids)})")
             for s in r.get('screenshots', []):
@@ -228,6 +230,10 @@ def bundle(db):
         'changelog': db['changelog'][:300],
         'inboxCount': len(db['inbox'].get('leads', [])),
         'research': research_spec(db['meta']),
+        'researched': db['inbox'].get('aiResearch', {}),
+        'queue': [{'game': j['game'], 'reason': j.get('reason', '')} for j in
+                  (read(DATA / 'queue.json')['jobs'] if (DATA / 'queue.json').exists() else [])],
+        'dualScan': db['inbox'].get('dualScan', {}),
         'agent': db['inbox'].get('agent', {}),
     }
 

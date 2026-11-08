@@ -149,7 +149,7 @@
         "Xbox 360"
       ],
       "year": 2008,
-      "note": "Jahresergänzung: Veröffentlichung am 29. April 2008. Durch LibertyRecompAndroid ist diese Fassung nun auch als Datenbasis für einen nativen Android-Spielweg interessant; dessen konkrete Regions- und Update-Anforderungen stehen beim Spielweg. ([ir.take2games.com](https://ir.take2games.com/static-files/a30ac581-38d0-4841-8753-0f7015521faf?utm_source=openai))",
+      "note": "Jahresergänzung: Veröffentlichung am 29. April 2008. Durch LibertyRecompAndroid ist diese Fassung nun auch als Datenbasis für einen nativen Android-Spielweg interessant; dessen konkrete Regions- und Update-Anforderungen stehen beim Spielweg.",
       "traits": [
         "controller",
         "widescreen"
@@ -175,7 +175,7 @@
         "mods",
         "widescreen"
       ],
-      "note": "Die Neuauflage von 2020 enthält das Hauptspiel und beide Episoden; Games for Windows Live und der ursprüngliche PC-Mehrspieler wurden entfernt. Sie ist die relevante Kauf- und Modding-Fassung für GameNative, nicht lediglich eine unveränderte Sammlung. ([gamedeveloper.com](https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support?utm_source=openai))",
+      "note": "Die Neuauflage von 2020 enthält das Hauptspiel und beide Episoden; Games for Windows Live und der ursprüngliche PC-Mehrspieler wurden entfernt. Sie ist die relevante Kauf- und Modding-Fassung für GameNative, nicht lediglich eine unveränderte Sammlung.",
       "links": [
         {
           "label": "Quelle",
@@ -242,7 +242,8 @@
           "date": "2026-11-08"
         }
       ],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     },
     {
       "id": "ai-libertyrecompandroid-native-xbox-360-rekompilierung",
@@ -269,7 +270,7 @@
         "64-Bit-Android ab Version 10 und kompatibles Snapdragon-/Adreno-Gerät",
         "Etwa 15 GB freier Speicher für die Installation; 8 GB RAM empfohlen"
       ],
-      "benefit": "Führt die rekompilierte Xbox-360-Fassung direkt auf ARM64 aus, ohne Windows-Laufzeit. Der Entwickler dokumentiert gespielte frühe Missionen, freies Fahren und persistente Spielstände auf dem Retroid Pocket 5. ([github.com](https://github.com/vaduur/LibertyRecompAndroid))",
+      "benefit": "Führt die rekompilierte Xbox-360-Fassung direkt auf ARM64 aus, ohne Windows-Laufzeit. Der Entwickler dokumentiert gespielte frühe Missionen, freies Fahren und persistente Spielstände auf dem Retroid Pocket 5.",
       "caveat": "Experimentell: gelegentliche Abstürze und fehlende einzelne Lichteffekte sind bekannt; Episoden und Online-Mehrspieler sind auf Android ungetestet. Nur die US-Disc ist verifiziert, das PAL-Update 0.0.8.6 wird abgewiesen.",
       "steps": [
         "Die Android-App aus den offiziellen Projekt-Releases installieren.",
@@ -387,7 +388,7 @@
       "category": "fixes",
       "url": "https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix",
       "edition": "PC: The Complete Edition; alte PC-Builds nur mit zusätzlichem Legacy Addon",
-      "description": "Umfangreiche Korrekturen für die PC-Fassung; der Einsatz über GameNative ist auf Odin 2 und Retroid Pocket 6 dokumentiert. Unter Wine muss der vom Projekt beschriebene DLL-Override eingerichtet werden; dies ist kein Mod für die Xbox-360-Rekompilierung. ([github.com](https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix))",
+      "description": "Umfangreiche Korrekturen für die PC-Fassung; der Einsatz über GameNative ist auf Odin 2 und Retroid Pocket 6 dokumentiert. Unter Wine muss der vom Projekt beschriebene DLL-Override eingerichtet werden; dies ist kein Mod für die Xbox-360-Rekompilierung.",
       "verification": "ai-unverified",
       "release": [
         "complete-2020"
@@ -399,7 +400,7 @@
       "category": "performance",
       "url": "https://github.com/llamacomma/Mjolnir_IV",
       "edition": "PC: The Complete Edition, insbesondere Steam-Build 1.2.0.59",
-      "description": "Adressiert unter anderem die CPU-Kernbindung und eine Busy-Wait-Schleife; ein Android-Handheld-Bericht dokumentiert den gemeinsamen Einsatz mit FusionFix über GameNative. Bei vorhandenem ASI-Loader die ASI-Variante verwenden, statt eine zweite dinput8.dll darüberzukopieren; keinen pauschalen Leistungsgewinn erwarten. ([github.com](https://github.com/llamacomma/Mjolnir_IV))",
+      "description": "Adressiert unter anderem die CPU-Kernbindung und eine Busy-Wait-Schleife; ein Android-Handheld-Bericht dokumentiert den gemeinsamen Einsatz mit FusionFix über GameNative. Bei vorhandenem ASI-Loader die ASI-Variante verwenden, statt eine zweite dinput8.dll darüberzukopieren; keinen pauschalen Leistungsgewinn erwarten.",
       "verification": "ai-unverified",
       "release": [
         "complete-2020"

@@ -80,7 +80,8 @@
       "checkedAt": "2026-11-08",
       "release": "nintendo-ds",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "native"
     }
   ],
   "updatedAt": "2026-11-08"

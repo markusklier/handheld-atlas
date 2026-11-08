@@ -73,7 +73,8 @@
       "checkedAt": "2026-11-08",
       "release": "pc",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     }
   ],
   "updatedAt": "2026-11-08"

@@ -78,7 +78,8 @@
       "checkedAt": "2026-11-08",
       "release": "nintendo-gamecube",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     }
   ],
   "updatedAt": "2026-11-08"

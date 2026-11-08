@@ -71,7 +71,8 @@
       "checkedAt": "2026-11-08",
       "release": "game-boy-advance",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     },
     {
       "id": "tmc-mgba",

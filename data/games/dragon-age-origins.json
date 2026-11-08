@@ -89,7 +89,8 @@
       "checkedAt": "2026-11-08",
       "release": "xbox-360",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "companion"
     }
   ],
   "updatedAt": "2026-11-08"

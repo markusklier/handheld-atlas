@@ -63,7 +63,8 @@
       "checkedAt": "2026-11-08",
       "release": "playstation-4",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     }
   ],
   "updatedAt": "2026-11-08"

@@ -110,7 +110,8 @@
       "checkedAt": "2026-11-08",
       "release": "nintendo-64",
       "reports": [],
-      "performance": []
+      "performance": [],
+      "dualScreenType": "integrated"
     },
     {
       "id": "banjo-n64",

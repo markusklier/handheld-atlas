@@ -63,7 +63,7 @@
         "controller",
         "mods"
       ],
-      "note": "Enthält die drei Erweiterungen und überarbeitete Grafik. Für den Thor besonders interessant, weil sowohl PC-Laufzeiten als auch ein eigens entwickelter Dual-Screen-Weg dafür dokumentiert sind. ([store.steampowered.com](https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/))",
+      "note": "Enthält die drei Erweiterungen und überarbeitete Grafik. Für den Thor besonders interessant, weil sowohl PC-Laufzeiten als auch ein eigens entwickelter Dual-Screen-Weg dafür dokumentiert sind.",
       "links": [
         {
           "label": "Quelle",
@@ -83,7 +83,7 @@
         "controller",
         "mods"
       ],
-      "note": "Special Edition samt den zum Jubiläumsstart veröffentlichten Creation-Club-Inhalten, darunter zusätzliche Quests, Ausrüstung und Spielmodi. Kein eigenständiges Remake: Für Mods und Laufzeiten sind die konkrete EXE-Version und der Store wichtiger als die Bezeichnung „Anniversary“. ([elderscrolls.bethesda.net](https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq))",
+      "note": "Special Edition samt den zum Jubiläumsstart veröffentlichten Creation-Club-Inhalten, darunter zusätzliche Quests, Ausrüstung und Spielmodi. Kein eigenständiges Remake: Für Mods und Laufzeiten sind die konkrete EXE-Version und der Store wichtiger als die Bezeichnung „Anniversary“.",
       "links": [
         {
           "label": "Quelle",
@@ -121,7 +121,7 @@
       "traits": [
         "controller"
       ],
-      "note": "Erweitert den Switch-Port um zahlreiche Creation-Club-Inhalte und ist auch als Upgrade erhältlich. Sinnvoll für zusätzliche Abenteuer ohne selbst zusammengestellte PC-Modliste; nicht mit der separaten Switch-2-Fassung verwechseln. ([nintendo.com](https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/))",
+      "note": "Erweitert den Switch-Port um zahlreiche Creation-Club-Inhalte und ist auch als Upgrade erhältlich. Sinnvoll für zusätzliche Abenteuer ohne selbst zusammengestellte PC-Modliste; nicht mit der separaten Switch-2-Fassung verwechseln.",
       "links": [
         {
           "label": "Quelle",
@@ -150,8 +150,7 @@
         "live-map",
         "mods",
         "touch",
-        "touch-inventory",
-        "two-screens"
+        "touch-inventory"
       ],
       "dualScreen": "Oben läuft Skyrim; unten erscheinen Charakterwerte, gespiegelter Kompass, Quests, Inventar, Magie, Favoriten und eine interaktive Karte mit Schnellreise. Wahlweise laufen die Menüs ohne Spielpause.",
       "requires": [
@@ -191,7 +190,8 @@
         }
       ],
       "performance": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "dualScreenType": "companion"
     },
     {
       "id": "ai-special-edition-uber-gamenative",
@@ -452,8 +452,7 @@
         "dual-screen",
         "mods",
         "touch",
-        "touch-inventory",
-        "two-screens"
+        "touch-inventory"
       ],
       "dualScreen": "Das eigentliche PC-Spiel läuft oben beziehungsweise auf dem Spielgerät; unten zeigt der Companion live Charakterwerte, Inventar, Magie und Schnellzugriffe über eine WebSocket-Verbindung.",
       "requires": [
@@ -485,7 +484,8 @@
       ],
       "reports": [],
       "performance": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "dualScreenType": "companion"
     }
   ],
   "updatedAt": "2026-11-08",
@@ -596,5 +596,5 @@
       ]
     }
   ],
-  "summary": "Auf dem Thor ist die PC-Special-Edition besonders interessant: GameNative ist durch Geräteberichte belegt, und SkyrimSE-DualScreen ergänzt Karte, Inventar und Quests auf dem unteren Touchscreen. Für das ursprüngliche Skyrim gibt es inzwischen auch ARM64-Rekompilationen, deren Controller- und Grafikp"
+  "summary": "Auf dem Thor ist die PC-Special-Edition besonders interessant: GameNative ist durch Geräteberichte belegt, und SkyrimSE-DualScreen ergänzt Karte, Inventar und Quests auf dem unteren Touchscreen."
 }

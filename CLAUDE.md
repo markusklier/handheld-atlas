@@ -43,6 +43,13 @@ scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im W
 - `versions[].reports` füllt `scripts/emuready.py` automatisch (Quelle EmuReady, mit Bewertung `rating`/`rank` 1–8,
   Gerät, Emulator, Kurznotiz, teils Einstellungen). Nicht von Hand bearbeiten; die App ordnet sie den Wegen per
   Emulatorname zu und zeigt unbekannte Emulatoren als Weg „Laut Community“.
+- **Dual Screen** hat Priorität. Jeder Dual-Screen-Weg bekommt `dualScreenType`: `integrated` (Spiel/Port/Emulator-Mod
+  zeichnet selbst live auf Bildschirm 2), `companion` (separate Begleit-App), `info` (nur statische Infos/Karte),
+  `native` (Original hatte zwei Bildschirme; dann Feature `two-screens` statt `dual-screen`).
+- **Fassungen vollständig** (Archiv-Anspruch): alle offiziellen Veröffentlichungen, gleiche Veröffentlichung auf mehreren
+  Plattformen = eine Fassung mit mehreren Plattformen. Die App klappt Fassungen ohne Weg automatisch ein.
+- **Warteschlange** `data/queue.json`: Spiele, die Markus per Reihen-Analyse oder Dual-Screen-Suchlauf angefordert hat;
+  die Action „KI-Recherche“ arbeitet sie alle 2 Stunden ab (3 Spiele). Du kannst Spiele vorne einreihen, aber nicht löschen.
 - **Reihe (`franchise`)** = die Spielereihe, nicht das Universum: Luigi's Mansion, Paper Mario, Mario Party, Mario & Luigi
   sind eigene Reihen. Nach Änderungen `python3 scripts/franchises.py` (Vorschläge) bzw. `--fix` ausführen;
   der Test `FranchiseTest` schlägt bei Inkonsistenzen fehl. Neue Ableger-Regeln dort in `SERIES` ergänzen.

@@ -163,3 +163,45 @@ class ScreenshotSearchTest(ModesTest):
         self.assertEqual([(s['url'], s['check']) for s in route['screenshots']], [('https://i.redd.it/thor.jpg', 'ai')])
         self.assertNotIn((gid, rid), ai_research.routes_without_shots(50))   # not searched again this month
         self.assertEqual(atlas.validate(), [])
+
+
+class QueueAndDualScanTest(ModesTest):
+    def test_franchise_queues_unresearched_games_and_queue_pops(self):
+        n = ai_research.queue_add(['doom-1993', 'doom-ii', 'doom-ii'], 'Reihe Doom')
+        self.assertEqual(n, 2 - sum(1 for g in ['doom-1993', 'doom-ii']
+                                   if g in atlas.read(atlas.DATA / 'inbox.json').get('aiResearch', {})))
+        before = len(ai_research.queue_load()['jobs'])
+        self.assertEqual(len(ai_research.queue_pop(1)), min(1, before))
+        self.assertEqual(len(ai_research.queue_load()['jobs']), max(0, before - 1))
+
+    def test_dual_scan_adds_route_for_new_and_existing_games(self):
+        resp = fake_response({'projects': [
+            {'gameTitle': 'Hollow Knight', 'platform': 'PC', 'name': 'HK Dual Map', 'projectUrl': 'https://github.com/x/hk-dual',
+             'kind': 'native-mod', 'dualScreen': 'Karte unten', 'dualScreenType': 'integrated', 'sourceUrl': 'https://github.com/x/hk-dual', 'released': '2026-10'},
+            {'gameTitle': 'Totally New Game', 'platform': 'SNES', 'name': 'TNG Companion', 'projectUrl': 'https://github.com/y/tng',
+             'kind': 'companion', 'dualScreen': 'Inventar', 'dualScreenType': 'companion', 'sourceUrl': 'https://github.com/y/tng', 'released': ''},
+            {'gameTitle': 'Fake', 'platform': 'PC', 'name': 'Unsourced', 'projectUrl': 'https://github.com/z/fake',
+             'kind': 'mod', 'dualScreen': '', 'dualScreenType': 'info', 'sourceUrl': 'https://nowhere.example', 'released': ''}]},
+            ['https://github.com/x/hk-dual', 'https://github.com/y/tng'])
+        original = ai_research.call_openai
+        ai_research.call_openai = lambda payload, token: resp
+        try:
+            added = ai_research.dual_scan('key', 'model', log=lambda *a: None)
+        finally:
+            ai_research.call_openai = original
+        self.assertEqual(len(added), 2)
+        hk = atlas.read(atlas.DATA / 'games' / f"{ai_research.find_game('Hollow Knight')}.json")
+        r = next(r for r in hk['routes'] if r['name'] == 'HK Dual Map')
+        self.assertEqual((r['dualScreenType'], r['verification'], 'dual-screen' in r['features']), ('integrated', 'ai-unverified', True))
+        self.assertTrue(ai_research.find_game('Totally New Game'))
+        self.assertIsNone(ai_research.find_game('Fake'))
+        jobs = [j['game'] for j in ai_research.queue_load()['jobs']]
+        self.assertIn(hk['id'], jobs)                                   # deep research queued
+        self.assertEqual(atlas.validate(), [])
+
+
+class CleanTest(unittest.TestCase):
+    def test_strips_citations_and_cuts_at_sentence(self):
+        t = 'Für den Thor interessant. ([store.steampowered.com](https://store.steampowered.com/app/1)) Siehe [Wiki](https://x.org/a) dazu.'
+        self.assertEqual(ai_research.clean(t), 'Für den Thor interessant. Siehe Wiki dazu.')
+        self.assertEqual(ai_research.clean('Erster Satz ist lang genug. Zweiter Satz geht weiter und weiter.', 40), 'Erster Satz ist lang genug.')
