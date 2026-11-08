@@ -27,7 +27,7 @@ on:
         default: '3'
         type: string
   issues:
-    types: [opened, labeled]
+    types: [opened, labeled]   # labeled: label added later to an existing issue
   schedule:
     - cron: '43 18 * * 3'
 permissions:
@@ -36,7 +36,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: data-writes
+  group: research-${{ github.event.issue.number || github.run_id }}
   cancel-in-progress: false
 jobs:
   research:
@@ -50,10 +50,22 @@ jobs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: main          # always the latest data, not the commit that triggered the (possibly queued) run
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: Schon erledigt?
+        id: guard
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # an issue created with a label fires "opened" AND "labeled"; the second run finds it closed and stops
+        run: |
+          state=$(gh issue view ${{ github.event.issue.number }} --repo ${{ github.repository }} --json state --jq .state)
+          echo "skip=$([ "$state" = "CLOSED" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
       - name: Recherche
+        if: steps.guard.outputs.skip != 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
@@ -78,6 +90,7 @@ jobs:
             python scripts/ai_research.py --batch "$COUNT"
           fi
       - name: KI-Bildprüfung neuer Screenshots
+        if: steps.guard.outputs.skip != 'true'
         continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -95,7 +108,7 @@ jobs:
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Ergebnis im Issue melden
-        if: github.event_name == 'issues' && always()
+        if: github.event_name == 'issues' && always() && steps.guard.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
