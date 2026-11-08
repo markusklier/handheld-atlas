@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T15:17:23Z",
+  "generatedAt": "2026-11-08T15:50:33Z",
   "warning": "Automatische Funde sind KEINE Kompatibilitätstests. Rechte an Projektbildern sind ungeklärt.",
   "projects": [
     {
@@ -22,7 +22,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -46,7 +46,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -70,7 +70,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -94,7 +94,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -118,7 +118,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -142,7 +142,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -166,7 +166,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -190,7 +190,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -214,7 +214,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -238,7 +238,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -262,7 +262,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -286,7 +286,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -310,7 +310,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -334,7 +334,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -358,7 +358,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -382,7 +382,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -406,7 +406,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -430,7 +430,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -454,7 +454,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -478,7 +478,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -502,7 +502,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -526,7 +526,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -550,7 +550,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -574,7 +574,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -598,7 +598,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -622,7 +622,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -646,7 +646,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -670,7 +670,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -694,7 +694,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -718,7 +718,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -742,7 +742,7 @@
       ],
       "media": [],
       "firstSeenAt": "2026-11-08T15:17:23Z",
-      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
       "curated": false,
       "documentation": "primary-source-lead",
       "deviceTest": "not-tested"
@@ -4403,6 +4403,125 @@
       "deviceTest": "not-tested"
     },
     {
+      "id": "0a9398aa2248b29dde",
+      "url": "https://github.com/MildRain479/PokePark-Wiicompiled",
+      "name": "A native PC port of PokePark Wii: Pikachu's Adventure by static recompilation (open beta). No game data includ",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b7fd96b81ca916c632",
+      "url": "https://github.com/bahuckel/EDEXO",
+      "name": "Companion app for Elite Dangerous, making smart data-based predictions for potential exobiology on a planet by",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1ac5f3dc6d76617108",
+      "url": "https://github.com/krishna3163/best-root-apps-for-android",
+      "name": "Curated directory of Android root apps, Magisk, KernelSU, LSPosed modules, system tools, privacy utilities, an",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c4cff72b6bafb4e18b",
+      "url": "https://github.com/BobMoraneRetro/one4all4one-fanartstar-4testing",
+      "name": "Fanartstar – version de test non compressée",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "4d5ae1617ceee8e0f6",
+      "url": "https://github.com/pugilist1956/Yu-Gi-Oh-Duel-Companion",
+      "name": "Get Yu-Gi-Oh! Duel Companion — a games accessory for Windows offering a free download. This app helps track li",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e10162cf5d411aefda",
+      "url": "https://github.com/Project-Holon/eidos",
+      "name": "Native PC port of Pokemon Black and White, built on aletheia",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "24a904228b433e6b57",
+      "url": "https://github.com/kvarflow/Pcalc",
+      "name": "Pcalc short for Pokemon Calculator an app which runs on the second screen of the AYN Thor (or thats the plan)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:50:33Z",
+      "lastSeenAt": "2026-11-08T15:49:41Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
       "id": "4602e3927ae7e81041",
       "url": "https://github.com/Waterdish/2ship2harkinian-Android",
       "name": "2 Ship 2 Harkinian Android",
@@ -5001,6 +5120,6 @@
       "deviceTest": "not-tested"
     }
   ],
-  "discoveredCount": 246,
-  "totalProjects": 269
+  "discoveredCount": 253,
+  "totalProjects": 276
 }

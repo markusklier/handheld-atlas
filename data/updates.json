@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-08T15:16:30Z",
+  "lastAttemptAt": "2026-11-08T15:49:00Z",
   "lastSuccessAt": null,
   "projects": {
     "Raekwon1603/super_metroid-android": {
       "repo": "Raekwon1603/super_metroid-android",
       "url": "https://github.com/Raekwon1603/super_metroid-android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": true,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "NOASSERTION",
@@ -21,7 +21,7 @@
     "Raekwon1603/RetroArch": {
       "repo": "Raekwon1603/RetroArch",
       "url": "https://github.com/Raekwon1603/RetroArch",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "metroidarch-dual-screen",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -33,7 +33,7 @@
     "igawa6/eden-duo": {
       "repo": "igawa6/eden-duo",
       "url": "https://github.com/igawa6/eden-duo",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -48,7 +48,7 @@
     "samyost1/tmc-android": {
       "repo": "samyost1/tmc-android",
       "url": "https://github.com/samyost1/tmc-android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "dual-screen-native",
       "licenseReportedByGitHub": "NOASSERTION",
@@ -63,7 +63,7 @@
     "samyost1/zelda3-android": {
       "repo": "samyost1/zelda3-android",
       "url": "https://github.com/samyost1/zelda3-android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "dual-screen",
       "licenseReportedByGitHub": null,
@@ -78,7 +78,7 @@
     "Josh-Daniels/OpenMW-DS": {
       "repo": "Josh-Daniels/OpenMW-DS",
       "url": "https://github.com/Josh-Daniels/OpenMW-DS",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -93,7 +93,7 @@
     "OpenMW/openmw": {
       "repo": "OpenMW/openmw",
       "url": "https://github.com/OpenMW/openmw",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "master",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -108,7 +108,7 @@
     "AngelAuraMC/Amethyst-Android": {
       "repo": "AngelAuraMC/Amethyst-Android",
       "url": "https://github.com/AngelAuraMC/Amethyst-Android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "v3_openjdk",
       "licenseReportedByGitHub": "LGPL-3.0",
@@ -123,7 +123,7 @@
     "exojosh/AynThorSecondScreen": {
       "repo": "exojosh/AynThorSecondScreen",
       "url": "https://github.com/exojosh/AynThorSecondScreen",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "master",
       "licenseReportedByGitHub": "CC0-1.0",
@@ -138,7 +138,7 @@
     "exojosh/Android_AynThor_MinecraftSecondScreen": {
       "repo": "exojosh/Android_AynThor_MinecraftSecondScreen",
       "url": "https://github.com/exojosh/Android_AynThor_MinecraftSecondScreen",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "master",
       "licenseReportedByGitHub": "CC0-1.0",
@@ -148,7 +148,7 @@
     "kalenjohnson/chrono-duo": {
       "repo": "kalenjohnson/chrono-duo",
       "url": "https://github.com/kalenjohnson/chrono-duo",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "MIT",
@@ -163,7 +163,7 @@
     "rafaelvcaetano/melonDS-android": {
       "repo": "rafaelvcaetano/melonDS-android",
       "url": "https://github.com/rafaelvcaetano/melonDS-android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "master",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -178,7 +178,7 @@
     "rosbean/balatro-dualscreen": {
       "repo": "rosbean/balatro-dualscreen",
       "url": "https://github.com/rosbean/balatro-dualscreen",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -193,7 +193,7 @@
     "AurelioB/BanjoRecomp-Android": {
       "repo": "AurelioB/BanjoRecomp-Android",
       "url": "https://github.com/AurelioB/BanjoRecomp-Android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "android",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -208,7 +208,7 @@
     "lidor30/pokedaisy": {
       "repo": "lidor30/pokedaisy",
       "url": "https://github.com/lidor30/pokedaisy",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -223,7 +223,7 @@
     "utkarshdalal/GameNative": {
       "repo": "utkarshdalal/GameNative",
       "url": "https://github.com/utkarshdalal/GameNative",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "master",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -238,7 +238,7 @@
     "Droid-Deck/DroidDeck": {
       "repo": "Droid-Deck/DroidDeck",
       "url": "https://github.com/Droid-Deck/DroidDeck",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -253,7 +253,7 @@
     "Waterdish/2ship2harkinian-Android": {
       "repo": "Waterdish/2ship2harkinian-Android",
       "url": "https://github.com/Waterdish/2ship2harkinian-Android",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "android",
       "licenseReportedByGitHub": "CC0-1.0",
@@ -268,7 +268,7 @@
     "Zelda64Recomp/Zelda64Recomp": {
       "repo": "Zelda64Recomp/Zelda64Recomp",
       "url": "https://github.com/Zelda64Recomp/Zelda64Recomp",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "dev",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -283,7 +283,7 @@
     "andreyvelsk/GAFT": {
       "repo": "andreyvelsk/GAFT",
       "url": "https://github.com/andreyvelsk/GAFT",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": null,
@@ -293,7 +293,7 @@
     "codm2000/Dual-Screen-Games": {
       "repo": "codm2000/Dual-Screen-Games",
       "url": "https://github.com/codm2000/Dual-Screen-Games",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": null,
@@ -303,7 +303,7 @@
     "abduznik/awesome-android-native-ports": {
       "repo": "abduznik/awesome-android-native-ports",
       "url": "https://github.com/abduznik/awesome-android-native-ports",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "NOASSERTION",
@@ -313,7 +313,7 @@
     "igawa6/eden-duo-companions": {
       "repo": "igawa6/eden-duo-companions",
       "url": "https://github.com/igawa6/eden-duo-companions",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -328,7 +328,7 @@
     "Abacus1829/ayn-dual-screen": {
       "repo": "Abacus1829/ayn-dual-screen",
       "url": "https://github.com/Abacus1829/ayn-dual-screen",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "NOASSERTION",
@@ -343,7 +343,7 @@
     "ZalithLauncher/ZalithLauncher2": {
       "repo": "ZalithLauncher/ZalithLauncher2",
       "url": "https://github.com/ZalithLauncher/ZalithLauncher2",
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "archived": false,
       "defaultBranch": "main",
       "licenseReportedByGitHub": "GPL-3.0",
@@ -361,7 +361,7 @@
     {
       "repo": "DNAMobileApplications/DroidBridgeLauncherGplayGithub",
       "message": "GitHub HTTP 404",
-      "at": "2026-11-08T15:16:30Z"
+      "at": "2026-11-08T15:49:00Z"
     }
   ],
   "sourceHashes": {
@@ -371,17 +371,17 @@
   },
   "sourceSnapshots": {
     "gaft": {
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "hash": "927039df87f79d34cd0e42cd3817559c9fff2e0f9c1bbcb0a14a8ba049d8cf32",
       "linkCount": 88
     },
     "dual-list": {
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "hash": "80da552daa0858077abd509c66b6414f24bb44ed",
       "linkCount": 50
     },
     "native-ports": {
-      "checkedAt": "2026-11-08T15:16:30Z",
+      "checkedAt": "2026-11-08T15:49:00Z",
       "hash": "8fde65f1a83ef26bc44bd04529e2b5f2f653a2a5",
       "linkCount": 228
     }
