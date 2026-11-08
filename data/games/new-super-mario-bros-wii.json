@@ -5,7 +5,53 @@
   "platforms": [
     "Wii"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "nsmbw-wiids",
+      "name": "WiiDS – New Super Mario Bros. Wii",
+      "kind": "recomp",
+      "edition": "USA (SMNE01 Rev 1), optional „Just a Little Adventure“",
+      "runtime": "WiiDS (statische Recompilation/Decomp-Ports)",
+      "projects": [
+        "wiids"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Level-Fortschritt, Star-Coin-Slots, Itemvorrat",
+      "requires": [
+        "Eigene NSMB-Wii-Disc als Dump (USA SMNE01 Rev 1)",
+        "AYN Thor"
+      ],
+      "benefit": "Nativer Port statt Emulation; Star Coins und Fortschritt auf dem unteren Display.",
+      "caveat": "Öffentliche Beta (0.9.0); nur exakt diese Disc-Version. Nur auf dem Thor vorgesehen.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/Maddex712/WiiDS/raw/main/docs/images/nsmb-beta3-course.png",
+          "caption": "World 1-1 mit Star-Coin-Anzeige unten (AYN Thor)",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Maddex712/WiiDS"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/New%20Super%20Mario%20Bros.%20Wii%20%28USA%29.png",

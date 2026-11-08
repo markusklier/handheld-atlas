@@ -5,7 +5,55 @@
   "platforms": [
     "Wii"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "mkw-wiids",
+      "name": "WiiDS – Mario Kart Wii",
+      "kind": "recomp",
+      "edition": "PAL (RMCP01 Rev 0), optional Retro Rewind",
+      "runtime": "WiiDS (statische Recompilation/Decomp-Ports)",
+      "projects": [
+        "wiids"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "Live-Streckenkarte und Platzierungen",
+      "requires": [
+        "Eigene Mario-Kart-Wii-Disc als Dump (PAL RMCP01 Rev 0, keine NKit-Images)",
+        "AYN Thor",
+        "Internet für den optionalen Retro-Rewind-Download in der App"
+      ],
+      "benefit": "Läuft laut README nativ (Recomp, u. a. DriftDroid/WiiCompiled) statt per Emulation; unten Karte und Rangliste.",
+      "caveat": "Öffentliche Beta (0.9.0); vorerst nur für den Thor, Einzelbildschirm-Geräte geplant. Nur exakt diese Disc-Version wird akzeptiert.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/Maddex712/WiiDS/raw/main/docs/images/mkw-original-luigi-circuit.jpg",
+          "caption": "Luigi Circuit mit Platzierung und Karte unten (AYN Thor)",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Maddex712/WiiDS"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Mario%20Kart%20Wii%20%28USA%29.png",

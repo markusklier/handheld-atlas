@@ -290,6 +290,57 @@
         }
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-thorcraft",
+      "name": "ThorCraft (Fabric + Thor-Panel)",
+      "kind": "companion",
+      "edition": "Java Edition 1.21.1 (Fabric), empfohlen mit Cobbleverse 1.7.42",
+      "runtime": "Zalith Launcher 2",
+      "projects": [
+        "thorcraft",
+        "zalith"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "mods",
+        "controller"
+      ],
+      "dualScreen": "Inventare und Truhen zum Antippen, Server-GUIs, Chat, Kompass/Minimap, Cobbleverse-Kampfmenüs",
+      "requires": [
+        "Minecraft-Java-Lizenz",
+        "Zalith Launcher 2 (nur von den GitHub-Releases)",
+        "Fabric 1.21.1 bzw. Cobbleverse-Instanz (.mrpack) aus der Modrinth App",
+        "ThorCraft-Mod (.jar) und ThorCraft-Panel-App",
+        "4–6 GB Arbeitsspeicher für Cobbleverse laut README"
+      ],
+      "benefit": "Welt oben, Menüs/Inventar/Chat und Cobblemon-Kämpfe unten per Touch; Panel verbindet sich automatisch mit dem Spiel.",
+      "caveat": "Frühe Version (0.1.0 laut README), noch keine Releases auf GitHub sichtbar. Nur für Fabric 1.21.1 dokumentiert; Panel braucht die Berechtigung „Über anderen Apps einblenden“.",
+      "steps": [
+        "Zalith Launcher 2 von den offiziellen GitHub-Releases installieren.",
+        "Cobbleverse-Instanz in der Modrinth App als .mrpack exportieren und in Zalith importieren.",
+        "ThorCraft-Panel installieren und thorcraft-*.jar in den mods-Ordner legen (oder über die App installieren).",
+        "Panel öffnen, Overlay-Berechtigung erlauben, Panel auf dem unteren Bildschirm starten.",
+        "Cobbleverse in Zalith starten; unter More → Controller setup die Steuerung einrichten."
+      ],
+      "version": "Fabric 1.21.1, Cobbleverse 1.7.42, ThorCraft 0.1.0",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Leymo0/ThorCraft"
+        }
+      ],
+      "checkedAt": "2026-11-08"
     }
   ],
   "mods": [

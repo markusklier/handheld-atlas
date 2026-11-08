@@ -5,7 +5,48 @@
   "platforms": [
     "PC"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "pz-zomboidds",
+      "name": "ZomboidDS (Zomdroid + Companion)",
+      "kind": "companion",
+      "edition": "Build 42",
+      "runtime": "Zomdroid (Android-Port von udarmolota)",
+      "projects": [
+        "zomboidds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch-inventory"
+      ],
+      "dualScreen": "Inventar und Behälter, Aktionsleiste, Moodles/Verletzungen, Crafting-Rezepte, Fahrzeuganzeige",
+      "requires": [
+        "Eigene Kopie von Project Zomboid (Build 42)",
+        "Zomdroid",
+        "ZomboidDS-APK aus den GitHub-Releases",
+        "Mod-Loader ZombieBuddy (lädt die App auf Wunsch nach)"
+      ],
+      "benefit": "Inventar, Gesundheit und Crafting per Touch auf dem unteren Display, das Spiel bleibt oben frei.",
+      "caveat": "Inoffiziell, nicht mit The Indie Stone verbunden. Wie Zomdroid das Spiel ausführt, beschreibt die README nicht; Leistung auf dem Thor ungeprüft.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Space001000/ZomboidDS"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/library_600x900_2x.jpg",

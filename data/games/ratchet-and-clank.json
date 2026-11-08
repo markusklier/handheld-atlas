@@ -5,6 +5,49 @@
   "platforms": [
     "PlayStation 2"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "rac-rerac-android",
+      "name": "ReRAC Android (Dual-Screen-Mod)",
+      "kind": "source-port",
+      "edition": "PS2, USA v1.00 (SCUS-97199)",
+      "runtime": "ReRAC (Android-Adaption)",
+      "projects": [
+        "rerac-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "controller"
+      ],
+      "dualScreen": "Karten, Menüs, Waffen und Gadgets mit Schnellauswahl per Touch",
+      "requires": [
+        "Eigenes Ratchet-&-Clank-ISO (USA v1.00, SCUS-97199) oder daraus extrahierte Spieldaten"
+      ],
+      "benefit": "Natives Android-Paket mit Launcher, wählbarer Auflösung und Controller-Unterstützung; Waffenschnellwahl auf dem zweiten Display.",
+      "caveat": "Beta; Leistung laut README abhängig von Gerät und Treiber. Die Android-Bibliotheken sind laut README nicht vollständig aus dem Quellcode nachbaubar. Art der Portierung (Recomp/Reimplementierung) dort nicht näher beschrieben.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-"
+        },
+        {
+          "label": "ReRAC (Original)",
+          "url": "https://github.com/re-rac/rerac"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08"
 }

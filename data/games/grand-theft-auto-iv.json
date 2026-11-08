@@ -1,0 +1,64 @@
+{
+  "id": "grand-theft-auto-iv",
+  "title": "Grand Theft Auto IV",
+  "franchise": "Grand Theft Auto",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Action",
+  "summary": "PC-Fassung über Windows-Laufzeiten auf Android, mit Dual-Screen-Companion für den Thor.",
+  "routes": [
+    {
+      "id": "gta4-gtc",
+      "name": "Grand Theft Companion (PC via Winlator/GameNative)",
+      "kind": "companion",
+      "edition": "PC, Complete Edition 1.2.0.59",
+      "runtime": "GameHub Lite, Winlator, GameNative oder DroidDeck",
+      "projects": [
+        "grand-theft-companion",
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "HUD mit Geld/Waffe/Fahrzeug/Radio, Waffenrad, gespiegelte Minikarte, Blip-Liste mit GPS-Routing",
+      "requires": [
+        "Eigene PC-Version von GTA IV Complete Edition (1.2.0.59)",
+        "Ultimate ASI Loader (dinput8.dll) und ThorBridge.asi",
+        "WINEDLLOVERRIDES=dinput8=n,b im Launcher",
+        "Android 13+"
+      ],
+      "benefit": "Unterer Bildschirm wird zum HUD mit Waffenrad und Karte, während das Spiel oben läuft.",
+      "caveat": "Nur auf dem AYN Thor getestet. Ob GTA IV selbst flüssig über die PC-Laufzeit läuft, ist nicht Teil des Projekts.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/BrianJr03/GrandTheftCompanion/raw/main/assets/screenshot.png",
+          "caption": "GTA IV oben, Companion-HUD unten",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

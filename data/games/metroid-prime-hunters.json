@@ -5,7 +5,55 @@
   "platforms": [
     "Nintendo DS"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "mph-hunters-recomp",
+      "name": "Hunters Recomp",
+      "kind": "recomp",
+      "edition": "Nintendo DS, USA Rev 0",
+      "runtime": "ndsrecomp / MetroidPrimeHuntersRecomp (arm64)",
+      "projects": [
+        "hunters-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "two-screens",
+        "dual-screen",
+        "controller"
+      ],
+      "dualScreen": "Unterer DS-Bildschirm mit Touch-Eingabe (4:3 oder gestreckt); im Launcher Steuerungsübersicht und RetroAchievements",
+      "requires": [
+        "Eigener Dump des US-Moduls Rev 0 (64 MiB, per SHA-1 geprüft)",
+        "arm64-Android 11+ mit zweitem Bildschirm"
+      ],
+      "benefit": "Statisch recompiliert statt emuliert; Twin-Stick-Steuerung, HD-Rendering bis 4× und RetroAchievements.",
+      "caveat": "Nur auf dem AYN Thor getestet; andere Regionen/Revisionen werden abgelehnt.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/aabrole/HuntersRecomp/raw/main/docs/media/hero-thor.png",
+          "caption": "Hunters Recomp auf dem AYN Thor",
+          "source": "https://github.com/aabrole/HuntersRecomp",
+          "credit": "Hunters Recomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/aabrole/HuntersRecomp"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",

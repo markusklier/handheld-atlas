@@ -423,7 +423,9 @@
       "repo": "utkarshdalal/GameNative",
       "description": "Native PC gaming with Steam, Epic, GOG and Amazon integrations on Android",
       "games": [
-        "cyberpunk-2077"
+        "cyberpunk-2077",
+        "grand-theft-auto-iv",
+        "grand-theft-auto-v"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -787,6 +789,153 @@
         "date": "2025-08-27"
       },
       "pushedAt": "2026-09-25"
+    },
+    {
+      "id": "thorcraft",
+      "name": "ThorCraft",
+      "kind": "companion",
+      "url": "https://github.com/Leymo0/ThorCraft",
+      "repo": "Leymo0/ThorCraft",
+      "description": "Fabric-Mod + Android-Panel-App für den AYN Thor: Menüs, Inventare, Chat, Minimap und Cobbleverse-Kämpfe auf dem unteren Bildschirm.",
+      "games": [
+        "minecraft"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "zomboidds",
+      "name": "ZomboidDS",
+      "kind": "companion",
+      "url": "https://github.com/Space001000/ZomboidDS",
+      "repo": "Space001000/ZomboidDS",
+      "description": "Companion-App für Project Zomboid (Build 42) via Zomdroid: Inventar, Status, Crafting und Fahrzeug auf dem zweiten Bildschirm.",
+      "games": [
+        "project-zomboid"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "pokeemerald-ds",
+      "name": "Pokémon Emerald Dual Screen",
+      "kind": "port",
+      "url": "https://github.com/Goldoire/pokeemerald-dualscreen",
+      "repo": "Goldoire/pokeemerald-dualscreen",
+      "description": "Dual-Screen-Mod der pokeemerald-Decompilation (SDL2-Port), läuft nativ auf Android.",
+      "games": [
+        "pokemon-emerald"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "wiids",
+      "name": "WiiDS",
+      "kind": "port",
+      "url": "https://github.com/Maddex712/WiiDS",
+      "repo": "Maddex712/WiiDS",
+      "description": "Android-App für den AYN Thor mit Recomp-/Decomp-Ports von Wii- und GameCube-Spielen und DS-artigem Companion auf dem zweiten Bildschirm.",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "dao-duo",
+      "name": "DAO-Duo (Dragon Age: Origins Recomp Android)",
+      "kind": "port",
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
+      "repo": "mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
+      "description": "Android-Port von Dragon Age: Origins (Xbox 360) auf Basis von DAORecomp, mit Companion-Deck für Dual-Screen.",
+      "games": [
+        "dragon-age-origins"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "grand-theft-companion",
+      "name": "Grand Theft Companion",
+      "kind": "companion",
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion",
+      "repo": "BrianJr03/GrandTheftCompanion",
+      "description": "HUD-, Waffenrad- und Karten-Companion für GTA IV/V (PC-Fassungen über Winlator-artige Launcher) auf dem unteren Thor-Bildschirm.",
+      "games": [
+        "grand-theft-auto-iv",
+        "grand-theft-auto-v"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "sa-companion",
+      "name": "SA-Companion",
+      "kind": "companion",
+      "url": "https://github.com/Gamersmood/SA-Companion",
+      "repo": "Gamersmood/SA-Companion",
+      "description": "PDA-artiger Companion für GTA San Andreas (Android, 32-Bit) mit Karte, Waffenrad und Radio auf dem zweiten Bildschirm.",
+      "games": [
+        "grand-theft-auto-san-andreas"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "hunters-recomp",
+      "name": "Hunters Recomp",
+      "kind": "port",
+      "url": "https://github.com/aabrole/HuntersRecomp",
+      "repo": "aabrole/HuntersRecomp",
+      "description": "Native Android-Recompilation von Metroid Prime Hunters (DS) für Dual-Screen-Handhelds, basiert auf MetroidPrimeHuntersRecomp.",
+      "games": [
+        "metroid-prime-hunters"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "rerac-android",
+      "name": "ReRAC Android + Thor Dual Screen Mod",
+      "kind": "port",
+      "url": "https://github.com/HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-",
+      "repo": "HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-",
+      "description": "Inoffizielle Android-Adaption des ReRAC-Projekts (Ratchet & Clank, PS2) mit optionalem Dual-Screen-Mod.",
+      "games": [
+        "ratchet-and-clank"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "pt-android",
+      "name": "P.T. Android (pt-pc)",
+      "kind": "port",
+      "url": "https://github.com/StoneColdOS/pt-pc",
+      "repo": "StoneColdOS/pt-pc",
+      "description": "Inoffizieller Android-Build des nativen PC-Ports von P.T. (LoreanXavier), mit Uhr/Untertiteln auf dem zweiten Bildschirm.",
+      "games": [
+        "p-t"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "am2r-autopatcher",
+      "name": "AM2R Autopatcher für Android",
+      "kind": "port",
+      "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android",
+      "repo": "am2r-android/AM2R-Autopatcher-Android",
+      "description": "Erzeugt auf dem Gerät eine AM2R-APK (Community Updates 1.5.5) aus der eigenen AM2R-1.1-Datei, mit Dual-Screen-Edition.",
+      "games": [
+        "am2r"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "sephiria-companion",
+      "name": "Sephiria Companion",
+      "kind": "companion",
+      "url": "https://github.com/SibiryakovSA/SephiriaCompanion",
+      "repo": "SibiryakovSA/SephiriaCompanion",
+      "description": "Second-Screen-Companion für Sephiria (PC) mit HUD, Etagenkarte und Rucksack; AddOn + Android-WebView-App über localhost.",
+      "games": [
+        "sephiria"
+      ],
+      "checkedAt": "2026-11-08"
     }
   ]
 }

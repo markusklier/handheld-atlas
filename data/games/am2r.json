@@ -1,0 +1,52 @@
+{
+  "id": "am2r",
+  "title": "AM2R – Another Metroid 2 Remake",
+  "franchise": "Metroid",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Fan-Remake von Metroid II; der Android-Autopatcher baut eine native APK mit Live-Karte auf dem zweiten Bildschirm.",
+  "routes": [
+    {
+      "id": "am2r-android-ds",
+      "name": "AM2R Autopatcher (Dual-Screen-Edition)",
+      "kind": "native",
+      "edition": "AM2R 1.1 → Community Updates 1.5.5",
+      "runtime": "Native ARM64-APK (wird auf dem Gerät gebaut)",
+      "projects": [
+        "am2r-autopatcher"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "controller"
+      ],
+      "dualScreen": "Live-Karte unter dem Spielbild",
+      "requires": [
+        "Eigene Original-AM2R-1.1-Windows-Datei (AM2R_11.zip, keine Community-Updates-Version)",
+        "ARM64-Android 10+"
+      ],
+      "benefit": "Autopatcher baut und prüft die Spiel-APK lokal; Dual-Screen-Profile für AYN Thor, RG DS, Retroid Pocket Duo und AYANEO Pocket DS.",
+      "caveat": "Inoffizielles Fanprojekt. Laut README nur das Thor-Profil auf echter Hardware geprüft.",
+      "steps": [],
+      "version": "1.5.5.11-hotfix1",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

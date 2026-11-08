@@ -1,0 +1,53 @@
+{
+  "id": "p-t",
+  "title": "P.T.",
+  "franchise": "Silent Hills",
+  "platforms": [
+    "PlayStation 4"
+  ],
+  "genre": "Horror",
+  "summary": "Spielbarer Teaser zu Silent Hills; inoffizieller nativer Port für Adreno-Handhelds mit Uhr-Anzeige auf dem zweiten Bildschirm.",
+  "routes": [
+    {
+      "id": "pt-android-port",
+      "name": "P.T. Android-Port",
+      "kind": "source-port",
+      "edition": "PS4 (CUSA01127, US; EU/JP laut README vermutlich)",
+      "runtime": "Nativer C++/Vulkan-Port (LoreanXavier) mit Turnip-Treiber",
+      "projects": [
+        "pt-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "controller"
+      ],
+      "dualScreen": "Flur-Uhr (23:59), aktuelle Schleife, Radio- und Untertitelzeilen",
+      "requires": [
+        "Eigener P.T.-Dump von der eigenen PS4 (CUSA01127)",
+        "Qualcomm Adreno 6xx/7xx, Android 10+ (64-Bit)",
+        "Gamepad (keine Touch-Steuerung)",
+        "ca. 1,4 GB freier Speicher"
+      ],
+      "benefit": "Läuft nativ statt per PS4-Emulation; zweiter Bildschirm zeigt Uhr und Untertitel, auch übersprungene Zeilen.",
+      "caveat": "Früher Testbuild, nur auf dem AYN Thor Max getestet. Nicht mit Konami/Kojima verbunden. PlayStation-Store-PKGs funktionieren nicht (verschlüsselt). Nur Adreno-GPUs.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/StoneColdOS/pt-pc"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

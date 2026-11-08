@@ -2,6 +2,182 @@
   "entries": [
     {
       "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dragon-age-origins",
+      "text": "Neues Spiel: Dragon Age: Origins (KI-Fund)",
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "dragon-age-origins",
+      "text": "Neuer Spielweg: DAO-Duo – Xbox-360-Recomp mit Companion-Deck (KI-Fund)",
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "metroid-prime-hunters",
+      "text": "Neuer Spielweg: Hunters Recomp – native Android-Recompilation (KI-Fund)",
+      "url": "https://github.com/aabrole/HuntersRecomp"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "mario-kart-wii",
+      "text": "Neuer Spielweg: WiiDS – nativer Port mit Streckenkarte unten (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "new-super-mario-bros-wii",
+      "text": "Neuer Spielweg: WiiDS – nativer Port mit Star-Coin-Anzeige (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "super-mario-sunshine",
+      "text": "Neuer Spielweg: WiiDS – nativer Port mit Episodenführer (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "pokemon-emerald",
+      "text": "Neuer Spielweg: Pokémon Emerald Dual Screen – Decomp mit Team, Karte und Beutel unten (KI-Fund)",
+      "url": "https://github.com/Goldoire/pokeemerald-dualscreen"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "minecraft",
+      "text": "Neuer Spielweg: ThorCraft – Fabric-Mod + Thor-Panel für Cobbleverse (KI-Fund)",
+      "url": "https://github.com/Leymo0/ThorCraft"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "project-zomboid",
+      "text": "Neuer Spielweg: ZomboidDS – Companion für Zomdroid (KI-Fund)",
+      "url": "https://github.com/Space001000/ZomboidDS"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "grand-theft-auto-iv",
+      "text": "Neues Spiel: Grand Theft Auto IV (KI-Fund)",
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "grand-theft-auto-iv",
+      "text": "Neuer Spielweg: Grand Theft Companion – HUD und Karte unten (KI-Fund)",
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "grand-theft-auto-v",
+      "text": "Neues Spiel: Grand Theft Auto V (KI-Fund)",
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "grand-theft-auto-v",
+      "text": "Neuer Spielweg: Grand Theft Companion V – HUD und Karte unten (KI-Fund)",
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "grand-theft-auto-san-andreas",
+      "text": "Neuer Spielweg: SA-Companion für die Android-Fassung (KI-Fund)",
+      "url": "https://github.com/Gamersmood/SA-Companion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "ratchet-and-clank",
+      "text": "Neuer Spielweg: ReRAC Android mit Dual-Screen-Mod (KI-Fund)",
+      "url": "https://github.com/HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "p-t",
+      "text": "Neues Spiel: P.T. (KI-Fund)",
+      "url": "https://github.com/StoneColdOS/pt-pc"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "p-t",
+      "text": "Neuer Spielweg: P.T. Android-Port mit Uhr auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/StoneColdOS/pt-pc"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "am2r",
+      "text": "Neues Spiel: AM2R – Another Metroid 2 Remake (KI-Fund)",
+      "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "am2r",
+      "text": "Neuer Spielweg: AM2R Autopatcher mit Dual-Screen-Edition (KI-Fund)",
+      "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "agent",
+      "game": "sephiria",
+      "text": "Neues Spiel: Sephiria (KI-Fund)",
+      "url": "https://github.com/SibiryakovSA/SephiriaCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "game": "sephiria",
+      "text": "Neuer Spielweg: Sephiria Companion (KI-Fund)",
+      "url": "https://github.com/SibiryakovSA/SephiriaCompanion"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "removed",
+      "by": "agent",
+      "game": "pokemon-emerald",
+      "text": "Dublette „Pokémon Emerald“ mit „Pokémon Smaragd“ zusammengeführt; 34 Reihen-Zuordnungen (Franchise) korrigiert.",
+      "url": "https://github.com/markusklier/handheld-atlas"
+    },
+    {
+      "date": "2026-11-08",
       "type": "release",
       "text": "Vita3K v12 veröffentlicht.",
       "project": "vita3k",

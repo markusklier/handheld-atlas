@@ -73,6 +73,53 @@
       "screenshots": [],
       "links": [],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "emerald-decomp-ds",
+      "name": "Pokémon Emerald Dual Screen (Decomp)",
+      "kind": "decomp",
+      "edition": "Pokémon Emerald (USA/Europa)",
+      "runtime": "pokeemerald-Decomp, SDL2-Port",
+      "projects": [
+        "pokeemerald-ds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "widescreen"
+      ],
+      "dualScreen": "Team mit KP/Status, Touch-Kämpfe im Stil der 4. Generation, PokéNav-Karte mit Live-Position, Beutel, Trainerpass",
+      "requires": [
+        "Eigene Pokémon-Emerald-ROM (USA oder Europa, per SHA-1 geprüft)"
+      ],
+      "benefit": "Kein Emulator: das Spiel läuft nativ oben, unten Team, Karte und Beutel; optional Widescreen und Vorspulen.",
+      "caveat": "Inoffizieller Fan-Port; Android warnt bei der Installation vor unbekanntem Entwickler. Voxel-Renderer laut README experimentell. Spielstände als 128-KB-.sav.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/Goldoire/pokeemerald-dualscreen/raw/main/docs/screenshots/showcase.png",
+          "caption": "Übersicht: oberer und unterer Bildschirm",
+          "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
+          "credit": "Pokémon Emerald Dual Screen",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Goldoire/pokeemerald-dualscreen"
+        }
+      ],
+      "checkedAt": "2026-11-08"
     }
   ],
   "updatedAt": "2026-11-08",

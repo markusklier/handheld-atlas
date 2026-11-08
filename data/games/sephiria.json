@@ -1,0 +1,69 @@
+{
+  "id": "sephiria",
+  "title": "Sephiria",
+  "franchise": "Sephiria",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Roguelike-Action",
+  "summary": "Companion zeigt HUD, Karte und Rucksack auf dem zweiten Bildschirm (PC-Fassung).",
+  "routes": [
+    {
+      "id": "sephiria-companion",
+      "name": "Sephiria Companion (PC-Fassung)",
+      "kind": "companion",
+      "edition": "PC",
+      "runtime": "PC-Fassung lokal auf dem Gerät (Windows-Laufzeit nicht in der README genannt)",
+      "projects": [
+        "sephiria-companion"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory"
+      ],
+      "dualScreen": "HUD (HP/MP, Währung, Dashes), Etagenkarte mit Raumreise, Rucksack mit Drag & Drop, Itembeschreibungen",
+      "requires": [
+        "Eigene PC-Version von Sephiria mit AddOn-Loader",
+        "AddOn-Ordner neben Sephiria.exe",
+        "Android 8.0+",
+        "Spiel und App im selben localhost-Netz"
+      ],
+      "benefit": "Karte und Rucksack per Touch auf dem zweiten Display.",
+      "caveat": "Laut README auf dem AYN Thor gebaut und getestet, aber wie das PC-Spiel auf Android läuft (Winlator/GameNative o. ä.), ist nicht beschrieben. Keine Lizenzangabe, keine Releases sichtbar.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/SibiryakovSA/SephiriaCompanion/raw/codex/initial-import/docs/screenshots/hud.png",
+          "caption": "Companion: HUD",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://github.com/SibiryakovSA/SephiriaCompanion/raw/codex/initial-import/docs/screenshots/map.png",
+          "caption": "Companion: Etagenkarte",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/SibiryakovSA/SephiriaCompanion"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

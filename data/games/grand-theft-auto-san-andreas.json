@@ -5,7 +5,49 @@
   "platforms": [
     "PlayStation 2"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "gtasa-sa-companion",
+      "name": "SA-Companion (Android-Fassung)",
+      "kind": "native-mod",
+      "edition": "Android-Fassung, 32-Bit (com.rockstargames.gtasa)",
+      "runtime": "Offizielle Android-App + AML + CLEO",
+      "projects": [
+        "sa-companion"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "mods"
+      ],
+      "dualScreen": "Position, Gesundheit, Geld, Fahndungslevel, Waffenrad, Radio, San-Andreas-Karte mit Radar, Gangrevieren und Wegpunkten",
+      "requires": [
+        "Eigene GTA San Andreas für Android (32-Bit-Fassung)",
+        "AndroidModLoader (AML)",
+        "CLEO-Mod für Android",
+        "Android 13+ mit „Zugriff auf alle Dateien“"
+      ],
+      "benefit": "Karte, Waffen und Radio auf dem zweiten Display; Wegpunkte erscheinen im Spiel.",
+      "caveat": "64-Bit-Fassung laut README nicht unterstützt. Nur auf dem AYN Thor Max getestet. Keine Lizenzangabe und noch keine GitHub-Releases.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Gamersmood/SA-Companion"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",

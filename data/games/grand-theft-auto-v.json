@@ -1,0 +1,64 @@
+{
+  "id": "grand-theft-auto-v",
+  "title": "Grand Theft Auto V",
+  "franchise": "Grand Theft Auto",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Action",
+  "summary": "PC-Fassung über Windows-Laufzeiten auf Android, mit Dual-Screen-Companion für den Thor.",
+  "routes": [
+    {
+      "id": "gta5-gtc",
+      "name": "Grand Theft Companion V (PC via Winlator/GameNative)",
+      "kind": "companion",
+      "edition": "PC, Story-Modus (Legacy/Enhanced mit Script Hook V)",
+      "runtime": "GameHub Lite, Winlator, GameNative oder DroidDeck",
+      "projects": [
+        "grand-theft-companion",
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "HUD mit Geld/Waffe/Fahrzeug/Radio, Waffenrad, gespiegelte Minikarte, Blip-Liste mit GPS-Routing",
+      "requires": [
+        "Eigene PC-Version von GTA V",
+        "Script Hook V + dinput8.dll und ThorBridgeV.asi",
+        "WINEDLLOVERRIDES=dinput8=n,b im Launcher",
+        "Android 13+"
+      ],
+      "benefit": "Unterer Bildschirm wird zum HUD mit Waffenrad und Karte, während das Spiel oben läuft.",
+      "caveat": "GTA-V-Plugin laut README experimentell und nur für den Story-Modus. Nur auf dem AYN Thor getestet; Spielleistung über die PC-Laufzeit nicht dokumentiert.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/BrianJr03/GrandTheftCompanion/raw/main/assets/screenshot_v.png",
+          "caption": "GTA V oben, Companion-HUD unten",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BrianJr03/GrandTheftCompanion"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "dragon-age-origins",
+  "title": "Dragon Age: Origins",
+  "franchise": "Dragon Age",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Xbox-360-Fassung als statische Recompilation für Android mit Companion-Deck auf dem zweiten Bildschirm.",
+  "routes": [
+    {
+      "id": "dao-recomp-duo",
+      "name": "DAO-Duo (Recomp)",
+      "kind": "recomp",
+      "edition": "Xbox 360 (Media-ID 186A1115), optional Ultimate Edition Disc 2",
+      "runtime": "DAORecomp + Xenia-Vulkan-GPU-Backend",
+      "projects": [
+        "dao-duo"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "controller"
+      ],
+      "dualScreen": "Companion-Deck: Party, Quickbar (antippbar), Quests, Karte, Taktik, Kodex, Items, Leistung",
+      "requires": [
+        "Eigenes Xbox-360-Disc-Image von Dragon Age: Origins (Media-ID 186A1115)",
+        "Android 13+ (arm64) mit Vulkan 1.1+",
+        "ca. 7 GB (+4 GB für Erweiterungen) und ca. 1 GB für App und Build"
+      ],
+      "benefit": "Statische Recompilation statt Xbox-360-Emulation; Partyinfos, Karte und Quickbar auf dem zweiten Display.",
+      "caveat": "Open Alpha v0.1, nur auf dem AYN Thor getestet. Erster Start baut das Programm auf dem Gerät (laut README ca. 8 Minuten). Updates über die alte Version installieren, Deinstallieren löscht Spielstände.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/raw/main/docs/images/thor-both-screens.jpg",
+          "caption": "Beide Bildschirme auf dem AYN Thor",
+          "source": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
+          "credit": "DAO-Duo",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}
