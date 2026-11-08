@@ -51,16 +51,20 @@ def build():
              'CANDIDATES':json_embed(ROOT/'data/candidates.json'),
              'RESEARCH':json_embed(ROOT/'data/research_queue.json'),
              'PROJECTS':json_embed(ROOT/'data/projects.json'),
-             'QUALITY':json_embed(ROOT/'data/quality_report.json')}
+             'QUALITY':json_embed(ROOT/'data/quality_report.json'),
+             'MEDIA':json_embed(ROOT/'data/game_media.json'),
+             'PLATFORM_PATHS':json_embed(ROOT/'data/platform_paths.json'),
+             'ADDONS':json_embed(ROOT/'data/game_addons.json'),
+             'PROJECT_CHECKS':json_embed(ROOT/'data/project_checks.json')}
     for key, content in parts.items():
         html = html.replace('/*__' + key + '__*/', content)
     hashes = ' '.join("'sha256-" + base64.b64encode(hashlib.sha256(parts[k].encode()).digest()).decode() + "'" for k in ('CORE','APP'))
-    csp = "default-src 'none'; script-src " + hashes + "; style-src 'unsafe-inline'; img-src 'self' data: https://raw.githubusercontent.com https://cdn.modrinth.com https://media.forgecdn.net https://mediafilez.forgecdn.net; manifest-src 'self'; connect-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'"
+    csp = "default-src 'none'; script-src " + hashes + "; style-src 'unsafe-inline'; img-src 'self' data: https://raw.githubusercontent.com https://cdn.modrinth.com https://media.forgecdn.net https://mediafilez.forgecdn.net https://shared.fastly.steamstatic.com https://shared.cloudflare.steamstatic.com https://shared.akamai.steamstatic.com https://shared.steamstatic.com https://cdn.cloudflare.steamstatic.com https://cdn.akamai.steamstatic.com https://images.igdb.com; manifest-src 'self'; connect-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'"
     html = html.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<meta http-equiv="Content-Security-Policy" content="' + csp + '">')
     (DIST/'index.html').write_text(html, encoding='utf-8')
     portable = html.replace('<link rel="manifest" href="manifest.webmanifest">','').replace('<link rel="icon" href="assets/icon.svg" type="image/svg+xml">','')
     (ROOT/'Handheld-Atlas.html').write_text(portable, encoding='utf-8')
-    for name in ['catalog.json','updates.json','candidates.json','research_queue.json','quality_report.json','projects.json']:
+    for name in ['catalog.json','updates.json','candidates.json','research_queue.json','quality_report.json','projects.json','game_media.json','platform_paths.json','game_addons.json','project_checks.json']:
         shutil.copy2(ROOT/'data'/name, DIST/'data'/name)
     svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="36" fill="#b2f4cb"/><g fill="none" stroke="#163022" stroke-width="11"><rect x="44" y="40" width="104" height="45" rx="5"/><rect x="44" y="107" width="104" height="45" rx="5"/></g></svg>'
     (DIST/'assets/icon.svg').write_text(svg)
@@ -75,7 +79,7 @@ def build():
     sw = '''/* Local assets only. Never cache external downloads or execute remote code. */
 const CACHE = 'atlas-VERSION';
 const ROOT = new URL('./', self.location).href;
-const PATHS = ['./','index.html','manifest.webmanifest','assets/icon.svg','assets/icon-192.png','assets/icon-512.png','data/catalog.json','data/updates.json','data/candidates.json','data/research_queue.json','data/quality_report.json','data/projects.json'];
+const PATHS = ['./','index.html','manifest.webmanifest','assets/icon.svg','assets/icon-192.png','assets/icon-512.png','data/catalog.json','data/updates.json','data/candidates.json','data/research_queue.json','data/quality_report.json','data/projects.json','data/game_media.json','data/platform_paths.json','data/game_addons.json','data/project_checks.json'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(c => c.addAll(PATHS)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('atlas-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {

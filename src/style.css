@@ -62,3 +62,34 @@
 .discovery-body p{font-size:12px;line-height:1.5;color:#c3d2ca;overflow-wrap:anywhere}
 .discovery-game{font-weight:600;color:#b7ecc5!important}
 .discovery-body .route-actions{margin-top:10px;flex-wrap:wrap}
+
+/* 0.5 – Launcher-style cover browser. Original game artwork and variant screenshots stay separate. */
+@media(min-width:1150px){.game-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}}
+@media(min-width:1750px){.game-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.game-cover.cover-aspect{position:relative;aspect-ratio:3/4;overflow:hidden;min-height:0;height:auto;background:#151d1a}
+.game-cover.cover-aspect .game-art{height:100%;min-height:0;position:absolute;inset:0}
+.game-cover.cover-aspect .game-cover-img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.game-cover.cover-portrait .game-cover-img{object-position:center}
+.game-cover .hover-preview{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .25s;pointer-events:none}
+@media(hover:hover){.game-card:hover .hover-preview[src],.game-card:focus-within .hover-preview[src]{opacity:1}}
+.game-cover.cover-aspect .cover-credit{z-index:4;font-size:9px;letter-spacing:.015em;background:#111d18d9;color:#dfebe3;bottom:8px;left:8px;border-radius:6px;padding:6px 8px;max-width:calc(100% - 16px)}
+.game-cover .inset-cover{position:absolute;z-index:3;right:8px;top:8px;width:53px;height:76px;border:2px solid #edf6eb;box-shadow:0 4px 14px #000a;border-radius:4px;overflow:hidden;background:#151d1a}
+.game-cover .inset-cover img{width:100%;height:100%;object-fit:cover}
+.game-cover img[hidden]{display:none!important}
+.card-copy{min-height:117px}.card-copy h3{font-size:15px;line-height:1.3}
+.franchise-cover-strip{display:flex;align-items:stretch;justify-content:center;height:126px;gap:6px;margin-bottom:16px}
+.franchise-cover-thumb{max-width:31%;width:80px;height:125px;object-fit:cover;border-radius:6px;box-shadow:0 7px 15px #0008}
+.franchise-placeholder{display:flex;align-items:center;justify-content:center;width:100%;min-height:104px;background:linear-gradient(125deg,#33443b,#1c2926);border-radius:8px;color:#b2f4cb}
+.detail-hero>.detail-cover{width:132px;height:189px;flex:0 0 132px;border-radius:10px;background:#151f19;overflow:hidden;position:relative}
+.detail-game-cover{height:100%;width:100%;object-fit:cover}
+.detail-cover>span{position:absolute;left:0;right:0;bottom:0;padding:7px;background:#14231ddc;font-size:8px;color:#d8f0dd}
+.platform-path-section,.related-editions{padding:16px 0 20px;border-top:1px solid var(--line);margin-top:20px}
+.platform-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.platform-option{border:1px solid var(--line);background:var(--panel);padding:16px;border-radius:12px;display:flex;flex-direction:column;gap:10px}
+.platform-option h3{font-size:15px;letter-spacing:-.02em}.platform-option p{font-size:12px;color:var(--muted)}
+.platform-option .route-actions{margin-top:auto}.edition-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.original-shot{width:100%;height:100%;object-fit:cover}
+@media(max-width:800px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card-copy{padding:11px;min-height:118px}.card-copy h3{font-size:12px}.platform-path-grid{grid-template-columns:1fr}.detail-hero>.detail-cover{width:100px;height:148px;flex:0 0 100px}}
+@media(max-width:430px){.game-grid{gap:8px}.game-cover .inset-cover{width:40px;height:58px}.game-cover.cover-aspect .cover-credit{font-size:8px;padding:4px 6px}.franchise-cover-strip{height:104px}.franchise-cover-thumb{height:102px}}
+.game-cover.cover-aspect>.cover-credit{display:block}
+@media(min-width:1250px) and (max-width:1500px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}

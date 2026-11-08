@@ -18,6 +18,10 @@
   const research = JSON.parse($('#research-data').textContent);
   let projects = JSON.parse($('#projects-data').textContent);
   const quality = JSON.parse($('#quality-data').textContent);
+  let mediaLibrary = JSON.parse($('#media-data').textContent);
+  const platformPaths = JSON.parse($('#platform-paths-data').textContent);
+  const gameAddons = JSON.parse($('#addons-data').textContent);
+  let projectChecks = JSON.parse($('#project-checks-data').textContent);
   const auditByGame = new Map((quality.games || []).map(x=>[x.gameId,x]));
   const sources = new Map(catalog.sources.map(s => [s.id, s]));
   const games = new Map(catalog.games.map(g => [g.id, g]));
@@ -99,7 +103,54 @@
     };
     return `<div class="game-art" style="--base:${base};--glow:${glow};--ink:${ink}"><svg viewBox="0 0 340 190" aria-hidden="true">${paths[game.theme] || paths.orbit}</svg>${chip?`<span class="art-chip">${chip}</span>`:''}<span class="art-label">Illustration / kein Spielbild</span></div>`;
   }
-  function primaryShot(routes) {return routes.flatMap(r=>r.media||[]).find(m=>C.safeURL(m.url));}
+  const artHosts = new Set(['images.igdb.com','shared.fastly.steamstatic.com',
+    'shared.cloudflare.steamstatic.com','shared.akamai.steamstatic.com','shared.steamstatic.com',
+    'cdn.cloudflare.steamstatic.com','cdn.akamai.steamstatic.com',
+    'raw.githubusercontent.com','cdn.modrinth.com','media.forgecdn.net','mediafilez.forgecdn.net']);
+  function safeArtwork(raw) {
+    const url=C.safeURL(raw);
+    if(!url)return null;
+    try { const parsed=new URL(url);return artHosts.has(parsed.hostname) ? url : null; }
+    catch(_){return null;}
+  }
+  function gameMedia(game) { return mediaLibrary.games?.[game.id] || {}; }
+  function generalShot(game) {return (gameMedia(game).screenshots||[]).find(x=>safeArtwork(x.url));}
+  function routeShot(game,routes) {
+    return routes.flatMap(r=>(r.media||[]).map(m=>({...m,routeName:r.name,dual:r.features.includes('dual-screen')})))
+      .find(m=>safeArtwork(m.url));
+  }
+  function primaryShot(routes) {return routes.flatMap(r=>r.media||[]).find(m=>safeArtwork(m.url));}
+  function artworkImage(image,css='') {
+    const url=safeArtwork(image?.url);
+    if(!url)return '';
+    return `<img class="${css}" src="${E(url)}" alt="${E(image.caption||'Spielmotiv')}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`;
+  }
+  function platformSuggestions(game) {
+    const platforms=game.knownPlatforms||[];
+    return (platformPaths.paths||[]).filter(path=>platforms.includes(path.platform));
+  }
+  function gameAddonsFor(game) {return gameAddons.games?.[game.id]||[];}
+  function originalShots(game,limit=8) {
+    const media=gameMedia(game);
+    const shots=(media.screenshots||[]).filter(m=>safeArtwork(m.url)).slice(0,limit);
+    if(!shots.length)return '<p class="media-unavailable">Noch keine allgemeinen Originalspiel-Screenshots mit bestätigter Zuordnung verfügbar.</p>';
+    return `<div class="route-screen-grid">${shots.map(m=>`<figure class="route-shot"><a href="${E(safeArtwork(m.url))}" target="_blank" rel="noopener noreferrer">${artworkImage(m,'original-shot')}</a><figcaption>Originalspiel · kein Handheld-Test. ${link(m.sourceUrl,'Bildquelle')}</figcaption></figure>`).join('')}</div>`;
+  }
+  function platformOptions(game) {
+    const paths=platformSuggestions(game);
+    if(!paths.length)return '';
+    return `<section class="platform-path-section"><div class="section-heading"><div><h3>Weitere mögliche Wege über die Originalplattform</h3><p>Plattformbasierte Ansätze – ausdrücklich keine Einzelspiel- oder Thor-Kompatibilitätstests</p></div></div><div class="platform-path-grid">${paths.map(p=>`<article class="platform-option"><div>${tag('Möglicher Emulatorweg','amber')} ${tag(p.platform)}</div><h3>${E(p.name)}</h3><p>${E(p.description)}</p><div class="route-actions">${link(p.projectUrl,'Offizielles Projekt')}</div></article>`).join('')}</div></section>`;
+  }
+  function addOnSection(game) {
+    const addons=gameAddonsFor(game);
+    if(!addons.length)return '<div class="media-unavailable">Für dieses Spiel liegen noch keine separat katalogisierten Performance- oder Erweiterungsmods vor.</div>';
+    return `<div class="info-banner amber">Performance-Mods und Erweiterungen sind nicht automatisch auf Android oder dem Thor kompatibel. Die Versionen von Spiel, Launcher und Modloader müssen zusammenpassen.</div><div class="platform-path-grid">${addons.map(a=>`<article class="platform-option"><div>${tag(a.category.includes('performance')?'Performance-Mod':'Erweiterung','amber')} ${tag(a.edition||'Edition prüfen')}</div><h3>${E(a.name)}</h3><p>${E(a.description)}</p><p class="footer-note">Thor-Test: nicht vorhanden · Modversion/Loader separat prüfen</p><div class="route-actions">${link(a.projectUrl,'Mod-Projekt')}</div></article>`).join('')}</div>`;
+  }
+  function editionLinks(game) {
+    const related=catalog.games.filter(g=>g.id!==game.id && g.franchise===game.franchise).slice(0,10);
+    if(!related.length)return '';
+    return `<section class="related-editions"><h3>Weitere Spiele und Editionen der Reihe</h3><div class="edition-chips">${related.map(g=>`<button type="button" class="chip" data-game="${g.id}">${E(g.title)} ${icon('arrow')}</button>`).join('')}</div></section>`;
+  }
   function shotImage(m,css='') {
     const src=C.safeURL(m.url);
     if(!src)return '';
@@ -114,13 +165,25 @@
     const indexed=!game.routes.length;
     const dual=routes.some(r=>r.features.includes('dual-screen'));
     const kinds=[...new Set(routes.map(r=>catalog.kinds[r.kind]))];
-    const media=primaryShot(routes);
-    const artPart=media?`<div class="game-cover">${art(game)}${shotImage(media,'game-cover-img')}<span class="cover-credit">Screenshot: ${E(media.sourceLabel||'Originalprojekt')}</span></div>`:art(game,indexed?'Für Watchlist':dual?icon('dual')+'Dual-Screen':icon('box')+'Varianten');
+    const official=gameMedia(game).cover;
+    const cover=safeArtwork(official?.url)?official:null;
+    const original=generalShot(game);
+    const route=routeShot(game,routes);
+    const dualView=filters.feature==='dual-screen' && dual;
+    const primary=dualView?(route||cover||original):(cover||route||original);
+    const preview=dualView?(original||cover||route):(route||original||cover);
+    const credit=primary===cover?'Spielcover / Originalgrafik':primary===route?'Bild des dokumentierten Spielwegs':'Originalspiel-Screenshot';
+    const base=art(game,indexed?'Spieleindex':dual?icon('dual')+'Dual-Screen':icon('box')+'Spielwege');
+    const showCover=safeArtwork(primary?.url);
+    const hover=safeArtwork(preview?.url);
+    const artPart=showCover?`<div class="game-cover cover-aspect ${primary?.portrait?'cover-portrait':''}">${base}${artworkImage(primary,'game-cover-img')}${hover&&hover!==showCover?`<img class="hover-preview" data-hover-src="${E(hover)}" alt="${E(preview?.caption||'Spielvorschau')}" decoding="async">`:''}${cover&&primary!==cover?`<div class="inset-cover">${artworkImage(cover)}</div>`:''}<span class="cover-credit">${E(credit)}</span></div>`:
+      `<div class="game-cover cover-aspect">${base}<span class="cover-credit">Noch kein belegtes Spielcover</span></div>`;
+    const pathCount=platformSuggestions(game).length;
     return `<article class="game-card ${indexed?'index-card':''}">
       <button type="button" class="save-btn ${prefs.watch[game.id]?'saved':''}" data-watch="${game.id}" aria-label="${prefs.watch[game.id]?'Aus Merkliste entfernen':'Merken'}: ${E(game.title)}" aria-pressed="${!!prefs.watch[game.id]}">${icon('bookmark')}</button>
-      <button type="button" class="card-open" data-game="${game.id}" aria-label="${E(game.title)}: ${indexed?'Watchlist / Recherche':'Spielwege ansehen'}">${artPart}
-       <div class="card-copy"><div class="card-meta">${E(game.original)}${indexed?' · nicht geprüft':' · '+E(game.genre)}</div><h3>${E(game.title)}</h3><div class="route-tags">${indexed?tag('Noch keine geprüften Wege','amber'):kinds.slice(0,2).map(k=>tag(k)).join('')}</div></div></button>
-      <div class="card-bottom"><span>${indexed?'Spieleindex / Watchlist':routes.length+' von '+game.routes.length+' Spielwegen'}</span><button type="button" data-game="${game.id}"><strong>${indexed?'Ansehen':'Varianten'} ${icon('arrow')}</strong></button></div></article>`;
+      <button type="button" class="card-open" data-game="${game.id}" aria-label="${E(game.title)}: ${indexed?'Mögliche Spielwege und Recherche':'Spielwege ansehen'}">${artPart}
+       <div class="card-copy"><div class="card-meta">${E(game.original)}${indexed?' · nicht getestet':' · '+E(game.genre)}</div><h3>${E(game.title)}</h3><div class="route-tags">${indexed?tag(pathCount?`${pathCount} Plattformoption${pathCount>1?'en':''}`:'Noch keine geprüften Wege','amber'):kinds.slice(0,2).map(k=>tag(k)).join('')}</div></div></button>
+      <div class="card-bottom"><span>${indexed?'Spieleindex / mögliche Wege':routes.length+' von '+game.routes.length+' dokumentierten Wegen'}</span><button type="button" data-game="${game.id}"><strong>Ansehen ${icon('arrow')}</strong></button></div></article>`;
   }
   function discover() {
     const results=C.filterGames(catalog,filters,prefs.watch);
@@ -131,7 +194,7 @@
     const quick=[['','Alles','compass'],['dual-screen','Dual-Screen','dual'],['mods','Mods & Erweiterungen','spark'],['widescreen','Widescreen','settings'],['controller','Controller','box']];
     const cheapNotice=filters.effort?'<p class="footer-note">Einfach einzurichten meint wenige dokumentierte Setup-Schritte, nicht garantierte Performance oder Akkulaufzeit.</p>':'';
     return `${mobileProfile()}${hero}<div class="stat-strip"><span class="stat"><strong>${catalog.games.length}</strong> Spiele (inkl. Watchlist-Index)</span><span class="stat"><strong>${catalog.games.filter(g=>g.routes.length).length}</strong> mit dokumentierten Spielwegen</span><span class="stat"><strong>${routeCount}</strong> Varianten</span><span class="evidence-note">${icon('shield')} Index ≠ Kompatibilitätsnachweis.</span></div>
-      <div class="section-heading" id="browse"><div><h2>${filters.franchise?E(filters.franchise):'Was willst du spielen?'}</h2><p>Spiele entdecken, Wege vergleichen oder für neue Mods beobachten.</p></div><span class="result-count" aria-live="polite">${results.length} Spiele</span></div>
+      <div class="section-heading" id="browse"><div><h2>${filters.franchise?E(filters.franchise):'Was willst du spielen?'}</h2><p>Cover, Originalspiel-Screenshots und Variantenbilder entdecken – Spielwege getrennt von Kompatibilitätstests.</p></div><span class="result-count" aria-live="polite">${results.length} Spiele</span></div>
       <div class="quick-filters">${quick.map(([f,t,i])=>`<button class="chip ${filters.feature===f?'active':''}" data-feature="${f}" type="button" aria-pressed="${filters.feature===f}">${icon(i)}${t}</button>`).join('')}
        <button class="chip ${filters.effort==='easy'?'active':''}" data-easy type="button">${icon('check')} Einfaches Setup</button>
        <button class="chip" type="button" data-info-battery>${icon('pulse')} Akkulaufzeit?</button></div>
@@ -146,8 +209,10 @@
       <p class="footer-note">Stand ${date(catalog.reviewedAt)}. Ohne eigene ROMs, keine Downloads von Spieldaten. Externe Projektbilder werden mit Ursprungsquelle eingeblendet; offline stehen sie nicht zur Verfügung.</p>`;
   }
   function franchisesView() {
-    const groups = [...new Set(catalog.games.map(g=>g.franchise))].sort();
-    return `${mobileProfile()}<div class="page-title"><div class="eyebrow">VON DER SERIE ZUM SPIELWEG</div><h1>Deine Franchises.</h1><p>Originalplattformen, Neuinterpretationen und Community-Projekte gemeinsam entdecken.</p></div><div class="info-banner neutral">Dies ist ein erweiterter, noch nicht vollst\u00e4ndiger Franchise-Index. Nur Spielwege mit Quellen gelten als dokumentiert. Plattformprofil und Filter wirken erst beim \u00d6ffnen einer Franchise.</div><section class="franchise-grid">${groups.map(f=>{const gs=catalog.games.filter(g=>g.franchise===f);return `<button type="button" class="franchise-card" data-franchise="${E(f)}">${icon('library')}<h3>${E(f)}</h3><p>${gs.length} ${gs.length===1?'Spiel':'Spiele'} / ${gs.reduce((n,g)=>n+g.routes.length,0)} Spielwege</p><p style="margin-top:8px">${E([...new Set(gs.map(g=>g.original))].join(' \u00b7 '))}</p></button>`;}).join('')}</section>`;
+    const groups=[...new Set(catalog.games.map(g=>g.franchise))].sort();
+    return `${mobileProfile()}<div class="page-title"><div class="eyebrow">FRANCHISE → SPIEL → EDITION → SPIELWEG</div><h1>Franchises entdecken.</h1><p>Spielcover, Originalplattformen und Community-Spielwege gemeinsam durchstöbern.</p></div><div class="info-banner neutral">Eine Reihe hat oft mehrere Editionen; ihr Cover ist eine repräsentative Grafik eines konkreten Spiels, kein eigenes offizielles Franchise-Cover.</div><section class="franchise-grid">${groups.map(f=>{const gs=catalog.games.filter(g=>g.franchise===f);const covers=gs.map(g=>gameMedia(g).cover).filter(m=>safeArtwork(m?.url)).slice(0,3);
+    return `<button type="button" class="franchise-card" data-franchise="${E(f)}"><span class="franchise-cover-strip">${covers.length?covers.map(m=>artworkImage(m,'franchise-cover-thumb')).join(''):`<span class="franchise-placeholder">${icon('library')}</span>`}</span><h3>${E(f)}</h3><p>${gs.length} Spiele · ${gs.reduce((n,g)=>n+g.routes.length,0)} dokumentierte Spielwege</p></button>`;
+   }).join('')}</section>`;
   }
   function watchlistView() {
     const items=Object.entries(prefs.watch);
@@ -164,12 +229,13 @@
       (p.documentation==='ai-source-lead')?'KI-Quellenhinweis – noch nicht verifiziert':'Originalprojekt gefunden – nicht getestet';
     const names = p.gameIds.map(id=>games.get(id)?.title || id).join(' · ');
     const picture = (p.media||[]).find(m=>C.safeURL(m.url));
-    return `<article class="discovery-card">${picture?`<div class="discovery-media">${shotImage(picture)}<span>Bildkandidat · Rechte nicht geklärt</span></div>`:''}<div class="discovery-body">${tag(discovered,'amber')}<h3>${E(p.name)}</h3>${names?`<p class="discovery-game">${E(names)}</p>`:''}${p.evidence?.length?`<p>${E(p.evidence[0].excerpt)}</p>`:'<p>Automatisch gefundenes Repository. Spielzuordnung und Funktionen noch nicht belegt.</p>'}<div class="route-actions">${link(p.url,'Projekt ansehen','secondary')}${p.evidence?.[0]?.sourceUrl?link(p.evidence[0].sourceUrl,'Beleg ansehen'):''}</div></div></article>`;
+    const projectVerification=projectChecks.projects?.[p.url];
+    return `<article class="discovery-card">${picture?`<div class="discovery-media">${shotImage(picture)}<span>Bildkandidat · Rechte nicht geklärt</span></div>`:''}<div class="discovery-body">${tag(discovered,'amber')}${projectVerification?.status==='source-exists'?tag('Projektquelle erreichbar','green'):''}<h3>${E(p.name)}</h3>${names?`<p class="discovery-game">${E(names)}</p>`:''}${p.evidence?.length?`<p>${E(p.evidence[0].excerpt)}</p>`:'<p>Automatisch gefundenes Repository. Spielzuordnung und Funktionen noch nicht belegt.</p>'}<div class="route-actions">${link(p.url,'Projekt ansehen','secondary')}${p.evidence?.[0]?.sourceUrl?link(p.evidence[0].sourceUrl,'Beleg ansehen'):''}</div></div></article>`;
   }
   function updatesView() {
     const matched=C.eventsForWatchlist(updates.events,prefs.watch,catalog);
     const fresh = (projects.projects || []).filter(p=>!p.curated);
-    return `<div class="page-title"><div class="eyebrow">NEUE VERSION IST NICHT GLEICH BESSERE VERSION</div><h1>Was hat sich ge\u00e4ndert?</h1><p>Projekt-Releases und best\u00e4tigte Funktions\u00e4nderungen bleiben bewusst getrennt.</p></div><div class="info-banner neutral">Letzter vollst\u00e4ndiger Quellenabgleich: <strong>${date(updates.lastSuccessAt)}</strong>. Letzter Versuch: ${date(updates.lastAttemptAt)}. ${location.protocol==='file:'?'Diese heruntergeladene HTML-Kopie aktualisiert sich nicht von selbst. Nach einem Quellenlauf die neue Handheld-Atlas.html von GitHub herunterladen.':'Diese gehostete App kann neue Projekt- und Release-Daten von ihrem Server laden.'} Projekt-Datenstand: ${date(projects.generatedAt)}.</div><div class="toolbar"><button class="secondary" type="button" data-refresh>${icon('pulse')} Ver\u00f6ffentlichte Release-Daten laden</button><button class="quiet" type="button" data-nav="sources">Aktualisierung verstehen ${icon('arrow')}</button></div>${fresh.length?`<h2 class="source-heading">Neue Projektfunde (${fresh.length})</h2><div class="discovery-grid">${fresh.slice(0,24).map(projectCard).join('')}</div><p class="footer-note">Automatisch gefunden: Projekt- und Bildhinweise sind keine bestätigten Installations- oder Leistungstests. Versionen und Bildrechte beim Original prüfen.</p>`:`<div class="info-banner neutral">Noch keine LIVE-Projektfunde. Beispiel- und Fixture-Daten werden absichtlich nicht als aktuelle Entdeckungen ausgegeben. Starte den Quellenworkflow auf GitHub.</div>`}${matched.length?`<h2 class="source-heading">F\u00fcr deine Merkliste</h2>${matched.map(eventRow).join('')}`:''}<h2 class="source-heading">Katalog-Feed</h2>${updates.events.length?updates.events.slice(0,80).map(eventRow).join(''):`<div class="empty">${icon('pulse')}<h3>Noch keine \u00c4nderungsereignisse.</h3><p>Der erste Quellenabgleich legt einen Ausgangsstand an. Bestehende Releases werden nicht als neue Entdeckungen ausgegeben. Erst sp\u00e4tere \u00c4nderungen erscheinen hier.</p></div>`}${updates.errors.length?`<h2 class="source-heading">Nicht erreichbare Quellen</h2><div class="info-banner amber">${updates.errors.map(e=>E(e.repo||e.source||'Quelle')+': '+E(e.message)).join('<br>')}<br>Bestehende Daten bleiben erhalten; fehlgeschlagene Abrufe sind kein Beleg f\u00fcr ein eingestelltes Projekt.</div>`:''}`;
+    return `<div class="page-title"><div class="eyebrow">NEUE VERSION IST NICHT GLEICH BESSERE VERSION</div><h1>Was hat sich ge\u00e4ndert?</h1><p>Projekt-Releases und best\u00e4tigte Funktions\u00e4nderungen bleiben bewusst getrennt.</p></div><div class="info-banner neutral">Letzter vollst\u00e4ndiger Quellenabgleich: <strong>${date(updates.lastSuccessAt)}</strong>. Letzter Versuch: ${date(updates.lastAttemptAt)}. ${location.protocol==='file:'?'Dies ist eine heruntergeladene HTML-Kopie; sie aktualisiert sich nicht automatisch. Nach Quellen-Updates bitte die neue Handheld-Atlas.html aus GitHub herunterladen.':'Die gehostete App kann hier neue Projekt- und Release-Daten laden. Bei größeren Updates die Seite neu öffnen.'} Katalog-Schnappschuss: ${date(projects.generatedAt)}.</div><div class="toolbar"><button class="secondary" type="button" data-refresh>${icon('pulse')} Ver\u00f6ffentlichte Release-Daten laden</button><button class="quiet" type="button" data-nav="sources">Aktualisierung verstehen ${icon('arrow')}</button></div>${fresh.length?`<h2 class="source-heading">Neue Projektfunde (${fresh.length})</h2><div class="discovery-grid">${fresh.slice(0,24).map(projectCard).join('')}</div><p class="footer-note">Automatisch gefunden: Projekt- und Bildhinweise sind keine bestätigten Installations- oder Leistungstests. Versionen und Bildrechte beim Original prüfen.</p>`:`<div class="info-banner neutral">Noch keine LIVE-Projektfunde. Beispiel- und Fixture-Daten werden absichtlich nicht als aktuelle Entdeckungen ausgegeben. Starte den Quellenworkflow auf GitHub.</div>`}${matched.length?`<h2 class="source-heading">F\u00fcr deine Merkliste</h2>${matched.map(eventRow).join('')}`:''}<h2 class="source-heading">Katalog-Feed</h2>${updates.events.length?updates.events.slice(0,80).map(eventRow).join(''):`<div class="empty">${icon('pulse')}<h3>Noch keine \u00c4nderungsereignisse.</h3><p>Der erste Quellenabgleich legt einen Ausgangsstand an. Bestehende Releases werden nicht als neue Entdeckungen ausgegeben. Erst sp\u00e4tere \u00c4nderungen erscheinen hier.</p></div>`}${updates.errors.length?`<h2 class="source-heading">Nicht erreichbare Quellen</h2><div class="info-banner amber">${updates.errors.map(e=>E(e.repo||e.source||'Quelle')+': '+E(e.message)).join('<br>')}<br>Bestehende Daten bleiben erhalten; fehlgeschlagene Abrufe sind kein Beleg f\u00fcr ein eingestelltes Projekt.</div>`:''}`;
   }
   function sourceCard(s) {
     const project = s.repo ? updates.projects[s.repo] : null;
@@ -229,11 +295,13 @@
     if(!selected)return;
     let content='';
     if(tab==='routes')content=(selected.routes.length?selected.routes.map(routeCard).join(''):`<div class="empty"><h3>Dieses Spiel kannst du schon beobachten.</h3><p>Es ist im Spieleindex oder als eigener Suchlisten-Eintrag erfasst. Noch kein einzeln geprüfter, gerätespezifischer Spielweg liegt in Atlas vor. Das bedeutet NICHT, dass keine Emulation oder Mod existiert.</p><div class="toolbar"><button class="primary" data-watch="${selected.id}" type="button">${icon('bookmark')} ${prefs.watch[selected.id]?'Aus Merkliste entfernen':'Für Dual-Screen-Mods merken'}</button><button class="secondary" data-research="${selected.id}" type="button">GitHub-Projekte suchen ${icon('external')}</button></div></div>`) + (selected.routes.length?`<div class="compare-bar"><span>${comparing.size} von maximal 3 Spielwegen ausgew\u00e4hlt</span><button type="button" class="primary" data-tab="compare" ${comparing.size<2?'disabled':''}>Vergleich \u00f6ffnen ${icon('arrow')}</button></div>`:'');
+    if(tab==='routes')content += platformOptions(selected)+editionLinks(selected);
     if(tab==='compare')content=comparison();
     if(tab==='research')content=researchForGame(selected);
     if(tab==='media')content=selected.routes.length?selected.routes.map(r=>`<section class="gallery-section"><h3>${E(r.name)}</h3><p class="route-sub">${E(r.edition)} · ${E(r.runtime)}</p>${routeScreens(r,15)}</section>`).join(''):'<p class="info-banner neutral">Für dieses Spiel liegen noch keine zugeordneten Projektbilder vor.</p>';
-    if(tab==='media') content += unreviewedScreens(selected);
-    $('#detail-content').innerHTML=`<div class="dialog-head"><div class="eyebrow">SPIEL / EDITION / SPIELWEG</div><button type="button" class="close" data-close="detail" aria-label="Spieldetails schlie\u00dfen">${icon('close')}</button></div><div class="detail-hero">${art(selected)}<div><div class="card-meta">${E(selected.franchise)} / ${E(selected.original)}</div><h2 id="detail-title">${E(selected.title)}</h2><p>${E(selected.blurb)}</p><div class="route-actions"><button type="button" class="secondary" data-watch="${selected.id}">${icon('bookmark')}${prefs.watch[selected.id]?'Gemerkt':'Spiel merken'}</button><button type="button" class="quiet" data-share="${selected.id}">Link kopieren</button></div></div></div><div class="detail-body"><div class="detail-tabs" role="tablist" aria-label="Spielansichten">${[['routes',`Spielwege (${selected.routes.length})`],['compare','Direktvergleich'],['media','Galerie je Variante'],['research','Recherche-Stand']].map(([id,label])=>`<button class="detail-tab ${tab===id?'active':''}" type="button" role="tab" aria-selected="${tab===id}" data-tab="${id}">${label}</button>`).join('')}</div>${content}</div>`;
+    if(tab==='media') content = `<section class="gallery-section"><h3>Originalspiel · allgemeine Spielszenen</h3><p class="footer-note">Screenshots des Originalspiels – nicht eines Mods oder Emulators.</p>${originalShots(selected)}</section>`+content+unreviewedScreens(selected);
+    if(tab==='mods')content=addOnSection(selected);
+    $('#detail-content').innerHTML=`<div class="dialog-head"><div class="eyebrow">SPIEL / EDITION / SPIELWEG</div><button type="button" class="close" data-close="detail" aria-label="Spieldetails schlie\u00dfen">${icon('close')}</button></div><div class="detail-hero">${safeArtwork(gameMedia(selected).cover?.url)?`<div class="detail-cover">${artworkImage(gameMedia(selected).cover,'detail-game-cover')}<span>Original-Cover / ${E(gameMedia(selected).provenance||'Metadatenquelle')}</span></div>`:art(selected)}<div><div class="card-meta">${E(selected.franchise)} / ${E(selected.original)}</div><h2 id="detail-title">${E(selected.title)}</h2><p>${E(selected.blurb)}</p><div class="route-actions"><button type="button" class="secondary" data-watch="${selected.id}">${icon('bookmark')}${prefs.watch[selected.id]?'Gemerkt':'Spiel merken'}</button><button type="button" class="quiet" data-share="${selected.id}">Link kopieren</button></div></div></div><div class="detail-body"><div class="detail-tabs" role="tablist" aria-label="Spielansichten">${[['routes',`Spielwege (${selected.routes.length})`],['compare','Direktvergleich'],['media','Bilder: Original & Varianten'],['mods',`Mods & Performance (${gameAddonsFor(selected).length})`],['research','Recherche-Stand']].map(([id,label])=>`<button class="detail-tab ${tab===id?'active':''}" type="button" role="tab" aria-selected="${tab===id}" data-tab="${id}">${label}</button>`).join('')}</div>${content}</div>`;
   }
   function openGame(id) {const g=games.get(id);if(!g)return;lastFocus=document.activeElement;selected=g;tab='routes';comparing=new Set();renderDetail();if(!$('#detail-dialog').open)$('#detail-dialog').showModal();$('#detail-dialog').scrollTop=0;}
   function info(title,body) {$('#info-content').innerHTML=`<div class="dialog-head"><h2 id="info-title" style="font-size:19px">${E(title)}</h2><button class="close" type="button" data-close="info" aria-label="Dialog schlie\u00dfen">${icon('close')}</button></div><div class="info-body">${body}</div>`;if(!$('#info-dialog').open)$('#info-dialog').showModal();}
@@ -248,25 +316,41 @@
     info('Browser zuerst. App-Gef\u00fchl inklusive.','<p>Atlas ist als Progressive Web App vorbereitet. Auf einer HTTPS-Adresse oder localhost kannst du sie \u00fcber das Browser-Men\u00fc installieren bzw. zum Startbildschirm hinzuf\u00fcgen, sofern dein Browser das unterst\u00fctzt.</p><p>Eine lokal ge\u00f6ffnete HTML-Datei ist eine Vorschau: ohne Service Worker und ohne PWA-Installation. F\u00fcr Offline-Cache und Installation den beiliegenden Server oder HTTPS-Hosting verwenden.</p><p>Die PWA ersetzt keinen Emulator und steuert nicht das zweite Display anderer Apps. Native Android-Integrationen kommen erst in einer sp\u00e4teren Ausbaustufe.</p><div class="code">python scripts/serve.py\n\nhttp://localhost:8765</div>');
   }
   async function refresh() {
-    if(!/^https?:$/.test(location.protocol)) {
-      toast('HTML-Datei ist ein Offline-Schnappschuss. Aktualisierte Datei von GitHub herunterladen.');return;
+    if(!/^https?:$/.test(location.protocol)){
+      toast('HTML-Datei ist offline: neue Version aus GitHub herunterladen.');return;
     }
     try {
-      const [ru,rp]=await Promise.all([
+      const [ru,rp,rm]=await Promise.all([
         fetch('data/updates.json',{cache:'no-store'}),
-        fetch('data/projects.json',{cache:'no-store'})
+        fetch('data/projects.json',{cache:'no-store'}),
+        fetch('data/game_media.json',{cache:'no-store'})
       ]);
-      if(!ru.ok||!rp.ok)throw new Error('Not reachable');
-      const [next,nextProjects]=await Promise.all([ru.json(),rp.json()]);
+      if(!ru.ok||!rp.ok)throw new Error('Daten nicht erreichbar');
+      const [next,nextProjects,nextMedia]=await Promise.all([ru.json(),rp.json(),rm.json()]);
       if(next.schemaVersion!==1||!Array.isArray(next.events)||!Array.isArray(next.errors)||!next.projects||
-         nextProjects.schemaVersion!==1||!Array.isArray(nextProjects.projects))throw new Error('Invalid catalog update');
+         nextProjects.schemaVersion!==1||!Array.isArray(nextProjects.projects))throw new Error('Ungültiges Datenformat');
       const changed=JSON.stringify(nextProjects)!==JSON.stringify(projects);
-      updates=next;projects=nextProjects;render();
-      toast(changed?'Neue Projekt- und Release-Daten geladen.':'Bereits auf dem veröffentlichten Datenstand.');
+      updates=next;projects=nextProjects;if(nextMedia?.schemaVersion===1&&typeof nextMedia.games==='object')mediaLibrary=nextMedia;render();
+      toast(changed?'Neue Projekte und Release-Daten geladen.':'Bereits auf dem veröffentlichten Datenstand.');
     } catch(e) {
-      toast('Veröffentlichte Daten nicht erreichbar; bisheriger Stand bleibt erhalten.');
+      toast('Datenstand nicht erreichbar; vorhandene Daten bleiben erhalten.');
     }
   }
+  // On desktop, lazily fetch game-specific preview screenshots on hover or keyboard focus.
+  // No third-party script and no image fetch before actual card interaction.
+  function loadPreview(card) {
+    const image=card?.querySelector('img[data-hover-src]');
+    const url=safeArtwork(image?.dataset.hoverSrc);
+    if(image&&url&&!image.getAttribute('src'))image.setAttribute('src',url);
+  }
+  document.addEventListener('pointerover',event=>{
+    if(window.matchMedia('(hover:hover)').matches)loadPreview(event.target.closest('.game-card'));
+  });
+  document.addEventListener('focusin',event=>loadPreview(event.target.closest('.game-card')));
+  document.addEventListener('error',event=>{
+    if(event.target?.tagName==='IMG' && event.target.classList.contains('game-cover-img'))event.target.hidden=true;
+    if(event.target?.tagName==='IMG' && event.target.classList.contains('hover-preview'))event.target.hidden=true;
+  },true);
   document.addEventListener('click',async event=>{
     const b=event.target.closest('button,a');if(!b)return;
     if(b.dataset.nav)navigate(b.dataset.nav);
