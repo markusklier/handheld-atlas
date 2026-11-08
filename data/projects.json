@@ -215,7 +215,7 @@
     {
       "id": "droiddeck",
       "name": "DroidDeck",
-      "kind": "companion",
+      "kind": "runtime",
       "url": "https://github.com/Droid-Deck/DroidDeck",
       "repo": "Droid-Deck/DroidDeck",
       "description": "DroidDeck brings the SteamOS experience to Android",

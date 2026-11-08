@@ -107,12 +107,84 @@ function coverHTML(g, { badges = true } = {}) {
   return `<div class="cover${portrait}">${ph}${img}${b ? `<div class="badges">${b}</div>` : ''}</div>`;
 }
 
+/* Slides for the card preview: original screenshots and screenshots of the ways to play.
+   On a dual-screen device the dual-screen variants come first. */
+function previewSlides(g) {
+  const orig = g.screenshots.map((s) => ({ url: s.url, label: s.caption === 'Titelbild' ? 'Titelbild' : 'Original' }));
+  const dual = [], other = [];
+  for (const r of g.routes) {
+    const isDual = r.features?.includes('dual-screen');
+    for (const s of r.screenshots || []) (isDual ? dual : other).push({ url: s.url, label: `${isDual ? 'Dual Screen · ' : ''}${r.name}`, dual: isDual });
+  }
+  for (const m of g.mods) for (const s of m.screenshots || []) other.push({ url: s.url, label: `Mod · ${m.name}` });
+  const ordered = device().dualScreen ? [...dual, ...orig, ...other] : [...orig, ...dual, ...other];
+  const seen = new Set();
+  return ordered.filter((s) => !seen.has(s.url) && seen.add(s.url)).slice(0, 12);
+}
+
 function cardHTML(g) {
   const ways = g.routes.length
     ? `<b>${g.routes.length} ${g.routes.length === 1 ? 'Spielweg' : 'Spielwege'}</b> · ${esc(g.platforms[0] || '')}`
     : `${esc(g.platforms.join(', '))}${g._platformOptions ? ' · Emulation' : ''}`;
-  return `<a class="card" href="#/spiel/${esc(g.id)}" data-game="${esc(g.id)}">${coverHTML(g)}<div><div class="t">${esc(g.title)}</div><div class="s">${ways}</div></div></a>`;
+  const h = hue(g.franchise || g.title);
+  const backdrop = g.screenshots.find((s) => s.caption !== 'Titelbild') || g.screenshots[0];
+  const slides = previewSlides(g).length;
+  let badges = '';
+  if (g._dual) badges += `<span class="tag dual">${icon('dual')}Dual</span>`;
+  if (g._ai) badges += `<span class="tag ai">${icon('ai')}KI</span>`;
+  return `<a class="card" href="#/spiel/${esc(g.id)}" data-game="${esc(g.id)}">
+    <div class="media" style="--h:${h}">
+      <div class="ph"><span>${esc(g.title)}</span><small>${esc(g.platforms[0] || '')}</small></div>
+      ${backdrop ? `<img class="bg" src="${esc(backdrop.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
+      ${g.cover ? `<img class="box" src="${esc(g.cover.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
+      <div class="slide" aria-hidden="true"></div>
+      ${badges ? `<div class="badges">${badges}</div>` : ''}
+      ${slides > 1 ? `<span class="nav prev" data-slide="-1" aria-hidden="true">${icon('back')}</span><span class="nav next" data-slide="1" aria-hidden="true">${icon('back')}</span>` : ''}
+      ${slides ? `<span class="shots">${icon('compass')}${slides}</span>` : ''}
+    </div>
+    <div><div class="t">${esc(g.title)}</div><div class="s">${ways}</div></div></a>`;
 }
+
+/* ---- card slideshow (mouse hover, gamepad/keyboard focus, arrows) ---- */
+const preview = { card: null, i: 0, timer: null, slides: [] };
+function showSlide(i) {
+  const { card, slides } = preview;
+  if (!card || !slides.length) return;
+  preview.i = (i + slides.length) % slides.length;
+  const s = slides[preview.i];
+  const layer = card.querySelector('.slide');
+  const pixel = s.url.includes('libretro-thumbnails') ? ' pixel' : '';
+  layer.innerHTML = `<img class="${pixel}" src="${esc(s.url)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">
+    <span class="cap${s.dual ? ' dual' : ''}">${esc(s.label)}</span>
+    <span class="dots">${slides.map((_, k) => `<i class="${k === preview.i ? 'on' : ''}"></i>`).join('')}</span>`;
+  card.classList.add('previewing');
+}
+function startPreview(card) {
+  if (preview.card === card) return;
+  stopPreview();
+  const g = DB.byId.get(card.dataset.game);
+  const slides = g ? previewSlides(g) : [];
+  if (!slides.length) return;
+  Object.assign(preview, { card, slides, i: 0 });
+  preview.delay = setTimeout(() => {
+    showSlide(0);
+    preview.timer = setInterval(() => showSlide(preview.i + 1), 1600);
+  }, 350); // don't flicker while the mouse just passes over
+}
+function stopPreview() {
+  clearTimeout(preview.delay); clearInterval(preview.timer);
+  if (preview.card) { preview.card.classList.remove('previewing'); preview.card.querySelector('.slide').innerHTML = ''; }
+  preview.card = null;
+}
+function stepPreview(card, d) {
+  if (preview.card !== card) { startPreview(card); clearTimeout(preview.delay); showSlide(d > 0 ? 0 : -1); }
+  else showSlide(preview.i + d);
+  clearInterval(preview.timer);
+  preview.timer = setInterval(() => showSlide(preview.i + 1), 2600);
+}
+document.addEventListener('mouseover', (e) => { const c = e.target.closest?.('.card'); if (c) startPreview(c); });
+document.addEventListener('mouseout', (e) => { const c = e.target.closest?.('.card'); if (c && !c.contains(e.relatedTarget)) stopPreview(); });
+document.addEventListener('focusin', (e) => { const c = e.target.closest?.('.card'); if (c) startPreview(c); else stopPreview(); });
 
 const gridHTML = (games) => games.length ? `<div class="grid">${games.map(cardHTML).join('')}</div>` : `<div class="empty">Nichts gefunden.</div>`;
 
@@ -208,7 +280,7 @@ function viewGame(id) {
   } else if (tab === 'mods') {
     body = `<div class="mods">${g.mods.map((m) => `<div class="mod"><div class="row" style="justify-content:space-between"><h3>${esc(m.name)}</h3>${verifTag(m.verification || 'documented')}</div>
       <div class="row">${m.category ? `<span class="tag">${esc(m.category)}</span>` : ''}${m.edition ? `<span class="tag">${esc(m.edition)}</span>` : ''}</div>
-      <p class="muted" style="margin:0">${esc(m.description)}</p><a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
+      <p class="muted" style="margin:0">${esc(m.description)}</p>${shotsHTML(m.screenshots, 'm:' + m.id)}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
   } else {
     body = `<p class="muted" style="margin:14px 0 0">Allgemeine Emulatoren für die Originalplattform. Ob ${esc(g.title)} darin gut läuft, ist nicht spielspezifisch geprüft.</p>
       <div class="routes">${plat.map((o) => {
@@ -375,12 +447,13 @@ function route() {
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);
   currentKey = hash;
+  stopPreview();
   $('#view').innerHTML = html;
   renderTabs(tab);
   window.scrollTo(0, scrollMemo.get(hash) || 0);
 }
 
-function rerender() { const y = window.scrollY; $('#view').innerHTML = viewDiscover(); window.scrollTo(0, y); }
+function rerender() { const y = window.scrollY; stopPreview(); $('#view').innerHTML = viewDiscover(); window.scrollTo(0, y); }
 let depth = 0; // how many in-app steps we can go back without leaving Atlas
 
 function renderTabs(active) {
@@ -391,7 +464,11 @@ function renderTabs(active) {
 function openLightbox(group, i) {
   let shots;
   if (group === 'game') shots = DB.byId.get(state.lastGame)?.screenshots;
-  else for (const r of DB.byId.get(state.lastGame)?.routes || []) if ('r:' + r.id === group) shots = r.screenshots;
+  else {
+    const g = DB.byId.get(state.lastGame);
+    for (const r of g?.routes || []) if ('r:' + r.id === group) shots = r.screenshots;
+    for (const m of g?.mods || []) if ('m:' + m.id === group) shots = m.screenshots;
+  }
   if (!shots?.length) return;
   const lb = $('#lightbox');
   const show = (k) => {
@@ -411,6 +488,8 @@ function openLightbox(group, i) {
 const closeLightbox = () => { const lb = $('#lightbox'); if (!lb.hidden) { lb.hidden = true; lb.innerHTML = ''; return true; } return false; };
 
 document.addEventListener('click', (e) => {
+  const arrow = e.target.closest('[data-slide]');
+  if (arrow) { e.preventDefault(); e.stopPropagation(); stepPreview(arrow.closest('.card'), +arrow.dataset.slide); return; }
   const t = e.target.closest('button, a');
   if (!t) return;
   if (t.dataset.chip) { state.chips.has(t.dataset.chip) ? state.chips.delete(t.dataset.chip) : state.chips.add(t.dataset.chip); state.limit = PAGE; rerender(); restoreFocus(`[data-chip="${t.dataset.chip}"]`); }

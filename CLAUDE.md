@@ -104,20 +104,33 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    Suche gezielt: „<Spiel> android port“, „<Spiel> dual screen“, „<Spiel> AYN Thor“, „<Spiel> decomp/recomp android“,
    Mods für Android-taugliche Fassungen. Quellen: GitHub, offizielle Projektseiten, Google Play, r/SBCGaming, r/AYN,
    r/EmulationOnAndroid, EmuReady, PortMaster, GAFT. Pro Spiel nur Wege, die es **wirklich** gibt.
-5. **Screenshots je Spielweg**
-   Bilder aus README, Release-Notes oder Projektseite des jeweiligen Projekts verlinken (nie kopieren).
-   `check: "source-verified"` nur, wenn das Bild genau so in der Quelle eingebunden ist. Wenn möglich, Bild laden und
-   ansehen: zeigt es wirklich dieses Spiel und diese Variante (z. B. zweiter Bildschirm)? Falsche Bilder entfernen.
-   Fehlende Cover: PC-Spiele über Steam (`https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/<appid>/library_600x900_2x.jpg`,
-   vorher prüfen, dass die URL existiert), Konsolenspiele über `python3 scripts/covers.py`.
-6. **Datenqualität** (nebenbei, ~10 Korrekturen)
+5. **Screenshots je Spielweg** (wichtig: die App zeigt sie in der Kachel-Vorschau, Dual-Screen-Bilder zuerst)
+   Der Watcher holt automatisch Bilder aus dem README spielbezogener Projekte (`scripts/media.py`) und markiert sie
+   mit `check: "readme"`. Deine Aufgabe pro Lauf:
+   - **Bis zu 10 Spielwege mit `check: "readme"` prüfen:** Bild herunterladen (`curl -sL <url> -o /tmp/x.png`) und mit
+     dem Read-Tool ansehen. Zeigt es dieses Spiel in dieser Variante (z. B. zweiter Bildschirm)? → `check: "source-verified"`,
+     `caption` auf Deutsch („Karte auf dem unteren Bildschirm“). Logo, Menü eines anderen Spiels, Werbegrafik → entfernen.
+     Bei Dual-Screen-Wegen das aussagekräftigste Dual-Screen-Bild an die erste Stelle.
+   - **Spielwege ohne Bilder** (v. a. Dual Screen und Mods): in Release-Notes, Projektseite, Reddit-Posts des Autors suchen.
+     Nur verlinken, nie kopieren; `check: "source-verified"` nur, wenn das Bild genau so in der Quelle eingebunden ist.
+   - Mods (`mods[]`) dürfen ebenfalls `screenshots` haben (gleiches Format), z. B. aus Modrinth-/ModDB-Galerien.
+   Fehlende Cover/Originalscreenshots füllt der Watcher (libretro-thumbnails, Steam, Wikipedia). Bleibt ein wichtiges
+   Spiel leer, selbst suchen (Steam-Seite, Wikipedia-Artikel) und prüfen, dass die URL existiert.
+6. **Spieleliste erweitern** (bis zu 10 Spiele pro Lauf)
+   Neue Spiele nur, wenn es für sie mindestens einen echten Spielweg gibt, der über „allgemeiner Emulator“ hinausgeht
+   (nativer Port, Decomp/Recomp, Source-Port, Dual-Screen-Mod, Companion, offizielle Android-Version) – das ist der Kern
+   von Atlas. Quellen: Verzeichnis-Projekte in `projects.json` (`kind: directory`, z. B. awesome-android-native-ports,
+   PortMaster, GAFT, Dual-Screen-Games, Port-Kataloge) und Leads. Vorher per Titel suchen (keine Dubletten, auch nicht
+   unter anderem Namen wie „Pokémon Smaragd“/„Pokémon Emerald“ – dann den bekannteren englischen Titel verwenden).
+   Neue Spiele bekommen Franchise, Plattformen und einen Satz `summary`; Cover/Screenshots ergänzt der Watcher am nächsten Tag.
+7. **Datenqualität** (nebenbei, ~10 Korrekturen)
    Franchise = Titel bei Spielen, die zu einer Reihe gehören → richtige Reihe; falsche Plattformen; Dubletten zusammenführen.
-7. **Changelog & Bericht**
+8. **Changelog & Bericht**
    Für jede sichtbare Änderung einen Eintrag oben in `changelog.json`:
    `{"date": "YYYY-MM-DD", "type": "route-added", "by": "agent", "game": "<id>", "text": "Neuer Spielweg: … (KI-Fund)", "url": "<Quelle>"}`
    (types: route-added, route-updated, game-added, mod-added, project-added, screenshot-added, verified, removed).
    In `inbox.json` → `"agent": {"lastRun": "<ISO-Zeit>", "summary": "1 Satz: was wurde gemacht"}`.
-8. **Prüfen und veröffentlichen**
+9. **Prüfen und veröffentlichen**
    `python3 scripts/atlas.py format && python3 scripts/atlas.py validate && python3 -m unittest discover -s tests`
    Commit `data: Agent YYYY-MM-DD – <Kurzfassung>`, dann `git pull --rebase` und `git push` auf `main`.
    Bei Rebase-Konflikten in `changelog.json`/`inbox.json`: beide Seiten behalten (Watcher-Einträge nicht verwerfen).

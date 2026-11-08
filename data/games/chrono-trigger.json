@@ -39,7 +39,29 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/kalenjohnson/chrono-duo/HEAD/docs/screenshots/overworld.webp",
+          "caption": "Overworld on the top screen, the parchment world map with a live position marker",
+          "source": "https://github.com/kalenjohnson/chrono-duo",
+          "credit": "ChronoDuo",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kalenjohnson/chrono-duo/HEAD/docs/screenshots/battle.webp",
+          "caption": "Battle with the Attack, Tech and Item menu mirrored to the bottom screen",
+          "source": "https://github.com/kalenjohnson/chrono-duo",
+          "credit": "ChronoDuo",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kalenjohnson/chrono-duo/HEAD/docs/screenshots/forest.webp",
+          "caption": "Guardia Forest with the DS area map on the bottom screen",
+          "source": "https://github.com/kalenjohnson/chrono-duo",
+          "credit": "ChronoDuo",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     },

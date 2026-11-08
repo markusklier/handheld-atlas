@@ -39,7 +39,36 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/hand.png",
+          "caption": "Playing a hand",
+          "source": "https://github.com/rosbean/balatro-dualscreen",
+          "credit": "Balatro Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/shop.png",
+          "caption": "The shop",
+          "source": "https://github.com/rosbean/balatro-dualscreen",
+          "credit": "Balatro Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/buffoon-pack.png",
+          "caption": "Opening a booster pack",
+          "source": "https://github.com/rosbean/balatro-dualscreen",
+          "credit": "Balatro Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/menu.png",
+          "caption": "The main menu",
+          "source": "https://github.com/rosbean/balatro-dualscreen",
+          "credit": "Balatro Dual Screen",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     },

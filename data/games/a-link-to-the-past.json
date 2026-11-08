@@ -36,7 +36,15 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/samyost1/zelda3-android/HEAD/showcase.png",
+          "caption": "Showcase",
+          "source": "https://github.com/samyost1/zelda3-android",
+          "credit": "Zelda3 Android",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     },

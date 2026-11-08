@@ -39,7 +39,50 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay.png",
+          "caption": "Main gameplay screen",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay-hud-hidden.png",
+          "caption": "Main gameplay screen with the HUD toggled off",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-hp-ammo.png",
+          "caption": "Second screen HP and ammo readout, highlighted, on the Map tab",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-room.png",
+          "caption": "Second screen room view with a map marker placed",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-station.png",
+          "caption": "Second screen Map Station reveal",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-items.png",
+          "caption": "Second screen items tab",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Release v1.0.2-debug2",
@@ -109,7 +152,50 @@
       "status": "archived",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay.png",
+          "caption": "Main gameplay screen",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay-hud-hidden.png",
+          "caption": "Main gameplay screen with the HUD toggled off",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-hp-ammo.png",
+          "caption": "Second screen HP and ammo readout, highlighted, on the Map tab",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-room.png",
+          "caption": "Second screen room view with a map marker placed",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-station.png",
+          "caption": "Second screen Map Station reveal",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-items.png",
+          "caption": "Second screen items tab",
+          "source": "https://github.com/Raekwon1603/super_metroid-android",
+          "credit": "MetroidArch / Projektumzug",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     }

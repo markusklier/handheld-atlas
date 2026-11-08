@@ -67,7 +67,15 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Zelda64Recomp/Zelda64Recomp/HEAD/docs/deck_gyro_1.jpg",
+          "caption": "Controller Settings menu",
+          "source": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+          "credit": "Zelda64Recomp",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     },

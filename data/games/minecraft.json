@@ -374,7 +374,36 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/inventory-with-items.png",
+          "caption": "Inventory showing item stacks and counts, player status, and the selected Birch ",
+          "source": "https://github.com/erikvanhoolst/minecraft-companion",
+          "credit": "Minecraft Companion (Eden Duo)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/map.png",
+          "caption": "Map tab showing terrain, the player marker, coordinates, heading, and zoom contr",
+          "source": "https://github.com/erikvanhoolst/minecraft-companion",
+          "credit": "Minecraft Companion (Eden Duo)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/waypoints.png",
+          "caption": "Waypoints with a selected destination, direction arrow and distance",
+          "source": "https://github.com/erikvanhoolst/minecraft-companion",
+          "credit": "Minecraft Companion (Eden Duo)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/projects.png",
+          "caption": "Projects listing 128 cobblestone, 32 oak planks and 16 glass",
+          "source": "https://github.com/erikvanhoolst/minecraft-companion",
+          "credit": "Minecraft Companion (Eden Duo)",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

@@ -36,7 +36,50 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/main-menu-primary.png",
+          "caption": "Main menu on the primary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/slot-select-primary.png",
+          "caption": "Slot select on the primary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/slot-select-secondary.png",
+          "caption": "Slot select companion stats on the secondary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/gruntildas-lair-primary.png",
+          "caption": "Gruntilda's lair on the primary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/gruntildas-lair-secondary.png",
+          "caption": "Gruntilda's lair companion stats on the secondary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/BanjoRecomp-Android/HEAD/docs/assets/android-dual-screen/mumbos-mountain-primary.png",
+          "caption": "Mumbo's Mountain on the primary display",
+          "source": "https://github.com/AurelioB/BanjoRecomp-Android",
+          "credit": "BanjoRecomp Android",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08"
     },
