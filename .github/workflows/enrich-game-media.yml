@@ -49,7 +49,7 @@ jobs:
           if [ -n "$GAME_ID" ]; then
             python scripts/enrich_game_media.py --live --provider "$PROVIDER" --game "$GAME_ID" --limit 1
           else
-            python scripts/enrich_game_media.py --live --provider "$PROVIDER" --limit 18
+            python scripts/enrich_game_media.py --live --provider "$PROVIDER" --limit 20
           fi
       - name: Validate source and code
         run: |
