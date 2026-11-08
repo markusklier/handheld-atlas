@@ -86,6 +86,9 @@ def main():
         return 0
     model = os.environ.get('OPENAI_VISION_MODEL') or os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     stats = {'keep': 0, 'drop': 0, 'unclear': 0, 'error': 0}
+    state_path = DATA / 'media_state.json'
+    state = read(state_path) if state_path.exists() else {}
+    rejected = set(state.get('rejectedImages', []))
     touched = {}
     for f, g, item, shot, kind in candidates():
         if sum(stats.values()) >= args.limit:
@@ -108,11 +111,14 @@ def main():
         stats[result] += 1
         if result == 'drop':
             item['screenshots'] = [s for s in item['screenshots'] if s['url'] != shot['url']]
+            rejected.add(shot['url'])   # media.py must not re-add it from the README tomorrow
         # dual-screen pictures first, then verified ones
         item['screenshots'].sort(key=lambda s: (not s.get('dual'), s.get('check') != 'ai-verified'))
         touched[f] = g
     for f, g in touched.items():
         write(f, g)
+    state['rejectedImages'] = sorted(rejected)
+    write(state_path, state)
     problems = atlas.validate()
     if problems:
         print('Validierung fehlgeschlagen:', problems[:3])

@@ -52,7 +52,7 @@ class FillTest(unittest.TestCase):
             if url.endswith('/README.md'):
                 return README
             raise OSError('404')
-        media.fill_route_shots(fetch)
+        media.fill_route_shots(fetch, fetch_json=lambda url: [])
         chrono = self.game('chrono-trigger')
         duo = next(r for r in chrono['routes'] if 'chrono' in r.get('projects', []))
         self.assertTrue(duo['screenshots'])
@@ -100,6 +100,23 @@ class FillTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+    def test_new_release_images_top_up_and_rejected_stay_out(self):
+        chrono = self.game('chrono-trigger')
+        route = next(r for r in chrono['routes'] if 'chrono' in r.get('projects', []))
+        route['screenshots'] = [{'url': 'https://raw.githubusercontent.com/me/chrono-duo/HEAD/docs/screenshots/battle.webp',
+                                 'caption': 'x', 'check': 'ai-verified'}]
+        atlas.write(media.DATA / 'games' / 'chrono-trigger.json', chrono)
+        atlas.write(media.DATA / 'media_state.json', {'rejectedImages': ['https://github.com/user-attachments/assets/1234-abcd']})
+        notes = [{'body': '![Dual screen](https://github.com/user-attachments/assets/new-shot)'}]
+        media.fill_route_shots(lambda url, as_json=False: README if url.endswith('/README.md') else (_ for _ in ()).throw(OSError()),
+                               fetch_json=lambda url: notes)
+        urls = [s['url'] for r in self.game('chrono-trigger')['routes'] if 'chrono' in r.get('projects', []) for s in r['screenshots']]
+        self.assertEqual(urls[0], 'https://raw.githubusercontent.com/me/chrono-duo/HEAD/docs/screenshots/battle.webp')
+        self.assertIn('https://github.com/user-attachments/assets/new-shot', urls)            # from release notes
+        self.assertNotIn('https://github.com/user-attachments/assets/1234-abcd', urls)        # rejected earlier
+        self.assertEqual(len(urls), len(set(urls)))
 
 
 class HttpImagesTest(unittest.TestCase):

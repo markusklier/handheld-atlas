@@ -157,6 +157,9 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    - **Spielwege ohne Bilder** (v. a. Dual Screen und Mods): in Release-Notes, Projektseite, Reddit-Posts des Autors suchen.
      Nur verlinken, nie kopieren; `check: "source-verified"` nur, wenn das Bild genau so in der Quelle eingebunden ist.
    - Mods (`mods[]`) dürfen ebenfalls `screenshots` haben (gleiches Format), z. B. aus Modrinth-/ModDB-Galerien.
+   Automatisch passiert schon: Watcher ergänzt täglich neue README-/Release-Bilder; die Action „KI-Recherche“ sucht
+   wöchentlich Bilder für 10 Spielwege ohne Bild (Modus „bilder“) und prüft bis zu 40 neue Bilder (`ai_vision.py`).
+   Von der KI verworfene Bilder stehen in `media_state.json` → `rejectedImages` und kommen nicht wieder.
    Fehlende Cover/Originalscreenshots füllt der Watcher (libretro-thumbnails, Steam, Wikipedia). Bleibt ein wichtiges
    Spiel leer, selbst suchen (Steam-Seite, Wikipedia-Artikel) und prüfen, dass die URL existiert.
 6. **Spieleliste erweitern** (bis zu 10 Spiele pro Lauf)

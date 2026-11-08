@@ -398,6 +398,66 @@ und eine Quelle. Plattformnamen wenn möglich aus dieser Liste: {', '.join(known
     return entries
 
 
+SHOTS_FORMAT = {'type': 'json_schema', 'name': 'atlas_route_screenshots', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['screenshots'], 'properties': {'screenshots': {
+        'type': 'array', 'items': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'caption', 'sourceUrl'],
+                                   'properties': {'url': {'type': 'string'}, 'caption': {'type': 'string'}, 'sourceUrl': {'type': 'string'}}}}}}}
+
+
+def routes_without_shots(limit):
+    """Dual-screen and curated ways first – they matter most in the card preview."""
+    found = []
+    state = read(DATA / 'inbox.json').get('shotSearch', {})
+    for f in sorted((DATA / 'games').glob('*.json')):
+        g = read(f)
+        for r in g.get('routes', []):
+            if not r.get('screenshots') and state.get(f"{g['id']}/{r['id']}", '') < TODAY[:7]:   # once a month at most
+                found.append(((('dual-screen' not in r.get('features', [])), r.get('verification') == 'ai-unverified', g['id']), g['id'], r['id']))
+    return [(gid, rid) for _, gid, rid in sorted(found)[:limit]]
+
+
+def find_screenshots(game_id, route_id, token, model, log=print):
+    path = DATA / 'games' / f'{game_id}.json'
+    g = read(path)
+    r = next(x for x in g['routes'] if x['id'] == route_id)
+    projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
+    proj = [projects[p] for p in r.get('projects', []) if p in projects]
+    where = ', '.join(p['url'] for p in proj) or ', '.join(l['url'] for l in r.get('links', []))
+    dual = f" Der zweite Bildschirm zeigt: {r.get('dualScreen')}. Bevorzuge Bilder, auf denen beide Bildschirme zu sehen sind." \
+        if 'dual-screen' in r.get('features', []) else ''
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
+                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
+                        'text': {'format': SHOTS_FORMAT}, 'max_output_tokens': 4000,
+                        'input': f"""Finde bis zu 4 direkte Bild-URLs (png/jpg/webp/gif, https), die „{g['title']}“ über den Weg
+„{r['name']}“ ({r.get('runtime') or r['kind']}) auf einem Android-Gerät zeigen.{dual} Suche auf der Projektseite, in README und
+Release-Notes ({where}), in Beiträgen des Autors (Reddit, Foren) und in Videos-Thumbnails nur, wenn sie das Spiel zeigen.
+Keine Logos, Icons, Werbegrafiken, Stockfotos. Nur echte Bild-URLs, die in der Quelle eingebunden sind; caption auf Deutsch."""}, token)
+    data, sources = output_json(resp), searched_urls(resp)
+    shots = []
+    for sh in data.get('screenshots', [])[:4]:
+        if ok_url(sh.get('url')) and IMG.search(sh['url']) and ok_url(sh.get('sourceUrl'), sources):
+            shots.append({'url': sh['url'], 'caption': (sh.get('caption') or 'Screenshot')[:80], 'source': sh['sourceUrl'],
+                          'credit': proj[0]['name'] if proj else '', 'check': 'ai'})
+    rejected = set((read(DATA / 'media_state.json') if (DATA / 'media_state.json').exists() else {}).get('rejectedImages', []))
+    shots = [s for s in shots if s['url'] not in rejected]
+    inbox = read(DATA / 'inbox.json')
+    inbox.setdefault('shotSearch', {})[f'{game_id}/{route_id}'] = TODAY
+    write(DATA / 'inbox.json', inbox)
+    if shots:
+        r['screenshots'] = shots
+        write(path, g)
+        if __import__('atlas').validate():
+            r['screenshots'] = []
+            write(path, g)
+            return 0
+        cl = read(DATA / 'changelog.json')
+        cl['entries'].insert(0, {'date': TODAY, 'type': 'screenshot-added', 'by': 'ai-research', 'game': game_id,
+                                 'text': f"{len(shots)} Screenshots für {r['name']} gefunden (KI, Prüfung folgt)", 'url': shots[0]['source']})
+        write(DATA / 'changelog.json', cl)
+    log(f'  {game_id}/{route_id}: {len(shots)} Bilder')
+    return len(shots)
+
+
 def from_app_result(game_id, result, log=print):
     """Result of an in-app instant analysis, pasted into an issue by the owner. No new API call needed."""
     game, projects = read(DATA / 'games' / f'{game_id}.json'), read(DATA / 'projects.json')
@@ -436,6 +496,7 @@ def main():
     ap.add_argument('--version', help='Schwerpunkt auf eine Fassung (id)')
     ap.add_argument('--new-game', help='Titel eines Spiels, das Atlas noch nicht kennt')
     ap.add_argument('--franchise', help='Reihe: fehlende Spiele anlegen')
+    ap.add_argument('--screenshots', type=int, default=0, help='Bilder für N Spielwege ohne Screenshot suchen')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
     app_payload = '```json' in (args.issue_body or '')
@@ -444,6 +505,16 @@ def main():
         return 0
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     jobs = []   # (kind, value, focus)
+    if args.screenshots:
+        total = 0
+        for gid, rid in routes_without_shots(args.screenshots):
+            try:
+                total += find_screenshots(gid, rid, token, model)
+            except Exception as e:  # noqa: BLE001
+                print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
+        print(f'Bildersuche: {total} Screenshots gefunden')
+        if not (args.game or args.batch or args.issue_body or args.new_game or args.franchise):
+            return 0
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:

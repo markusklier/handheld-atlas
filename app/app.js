@@ -652,7 +652,9 @@ function qualityPanel() {
     ['Fassungen mit Erscheinungsjahr', pct(versions.filter((v) => v.year).length, versions.length)],
   ];
   return `<div class="panel"><h3>Datenqualität</h3>${rows.map(([l, v]) => `<div class="meter"><span>${l}</span><b>${v} %</b><i style="--v:${v}%"></i></div>`).join('')}
-    <p class="faint">${versions.filter((v) => (v.reports || []).length).length} Fassungen mit Community-Berichten · ${DB.inboxCount} unsortierte Funde</p></div>`;
+    <p class="faint">${routes.filter((r) => (r.features || []).includes('dual-screen') && !(r.screenshots || []).length).length} Dual-Screen-Wege noch ohne Bild ·
+      ${shots.filter((s) => ['readme', 'ai', 'ai-unclear'].includes(s.check)).length} Bilder warten auf Prüfung ·
+      ${versions.filter((v) => (v.reports || []).length).length} Fassungen mit Community-Berichten · ${DB.inboxCount} unsortierte Funde</p></div>`;
 }
 
 function viewInfo() {

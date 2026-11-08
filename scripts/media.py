@@ -11,6 +11,7 @@
     python3 scripts/media.py [--routes] [--steam] [--wikipedia]   (default: all three)
 """
 import json
+import os
 import re
 import sys
 import time
@@ -95,14 +96,33 @@ def caption_from(alt, url):
     return (text[:1].upper() + text[1:])[:80] if text else 'Screenshot'
 
 
-def fill_route_shots(fetch=get):
+def release_images(repo, fetch_json=None):
+    """Images embedded in the newest release notes (often the freshest screenshots of a port)."""
+    token = os.environ.get('GITHUB_TOKEN')
+    fetch_json = fetch_json or (lambda url: json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={
+        'User-Agent': UA, 'Accept': 'application/vnd.github+json', **({'Authorization': f'Bearer {token}'} if token else {})}),
+        timeout=25).read().decode()))
+    out = []
+    try:
+        for rel in fetch_json(f'https://api.github.com/repos/{repo}/releases?per_page=3') or []:
+            out += readme_images(rel.get('body') or '', f'https://raw.githubusercontent.com/{repo}/HEAD/RELEASE.md', repo)
+    except Exception as e:  # noqa: BLE001 – releases are a bonus
+        log(f'! Releases {repo}: {e}')
+    return out
+
+
+def fill_route_shots(fetch=get, fetch_json=None):
+    """New README/release-note images for game-specific projects; also tops up routes that already have pictures.
+    Images rejected by ai_vision.py (media_state.json → rejectedImages) never come back."""
     projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
+    rejected = set(load_state().get('rejectedImages', []))
     cache, added = {}, 0
     for f in sorted((DATA / 'games').glob('*.json')):
         g = read(f)
         changed = False
         for r in g.get('routes', []):
-            if r.get('screenshots'):
+            have = {s['url'] for s in r.get('screenshots', [])}
+            if len(have) >= MAX_ROUTE_SHOTS:
                 continue
             for pid in r.get('projects', []):
                 p = projects.get(pid, {})
@@ -113,19 +133,22 @@ def fill_route_shots(fetch=get):
                 key = (repo, p.get('branch'))
                 if key not in cache:
                     url, text = readme(repo, p.get('branch'), fetch)
-                    cache[key] = (url, readme_images(text, url, repo) if text else [])
-                url, images = cache[key]
-                if not images:
+                    imgs = readme_images(text, url, repo) if text else []
+                    cache[key] = imgs + [i for i in release_images(repo, fetch_json) if i['url'] not in {x['url'] for x in imgs}]
+                new = [i for i in cache[key] if i['url'] not in have and i['url'] not in rejected]
+                if not new:
                     continue
                 source = f"https://github.com/{repo}" + (f"/tree/{p['branch']}" if p.get('branch') else '')
-                r['screenshots'] = [{'url': i['url'], 'caption': caption_from(i['alt'], i['url']), 'source': source,
-                                     'credit': p['name'], 'check': 'readme'} for i in images[:MAX_ROUTE_SHOTS]]
+                room = MAX_ROUTE_SHOTS - len(have)
+                r.setdefault('screenshots', []).extend(
+                    {'url': i['url'], 'caption': caption_from(i['alt'], i['url']), 'source': source,
+                     'credit': p['name'], 'check': 'readme'} for i in new[:room])
                 changed = True
                 added += 1
                 break
         if changed:
             write(f, g)
-    print(f'media.py: {added} Spielwege mit README-Screenshots ergänzt')
+    print(f'media.py: {added} Spielwege mit neuen README-/Release-Bildern ergänzt')
     return added
 
 

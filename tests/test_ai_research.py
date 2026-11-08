@@ -138,3 +138,28 @@ class ModesTest(unittest.TestCase):
         self.assertEqual(route['screenshots'][0]['check'], 'ai')
         self.assertTrue(entries)
         self.assertEqual(atlas.validate(), [])
+
+
+class ScreenshotSearchTest(ModesTest):
+    def test_dual_screen_routes_first_and_only_sourced_images(self):
+        todo = ai_research.routes_without_shots(50)
+        games = {gid: atlas.read(atlas.DATA / 'games' / f'{gid}.json') for gid, _ in todo}
+        dual = ['dual-screen' in next(r for r in games[g]['routes'] if r['id'] == rid).get('features', []) for g, rid in todo]
+        self.assertEqual(dual, sorted(dual, reverse=True))          # all dual-screen ways come first
+        gid, rid = todo[0]
+        resp = fake_response({'screenshots': [
+            {'url': 'https://i.redd.it/thor.jpg', 'caption': 'Beide Bildschirme', 'sourceUrl': 'https://reddit.com/r/AYN/comments/z'},
+            {'url': 'https://example.com/logo.svg', 'caption': 'Logo', 'sourceUrl': 'https://reddit.com/r/AYN/comments/z'},
+            {'url': 'https://cdn.example.com/x.png', 'caption': 'x', 'sourceUrl': 'https://not-searched.example/'}]},
+            ['https://reddit.com/r/AYN/comments/z'])
+        original = ai_research.call_openai
+        ai_research.call_openai = lambda payload, token: resp
+        try:
+            n = ai_research.find_screenshots(gid, rid, 'key', 'model', log=lambda *a: None)
+        finally:
+            ai_research.call_openai = original
+        self.assertEqual(n, 1)
+        route = next(r for r in atlas.read(atlas.DATA / 'games' / f'{gid}.json')['routes'] if r['id'] == rid)
+        self.assertEqual([(s['url'], s['check']) for s in route['screenshots']], [('https://i.redd.it/thor.jpg', 'ai')])
+        self.assertNotIn((gid, rid), ai_research.routes_without_shots(50))   # not searched again this month
+        self.assertEqual(atlas.validate(), [])

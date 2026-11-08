@@ -5,6 +5,11 @@ name: KI-Recherche
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'Was soll laufen?'
+        type: choice
+        default: recherche
+        options: [recherche, bilder, bildpruefung]
       game:
         description: 'Spiel-ID, z. B. grand-theft-auto-san-andreas (leer = automatisch auswählen)'
         required: false
@@ -22,7 +27,7 @@ on:
         required: false
         type: string
       count:
-        description: 'Wie viele Spiele automatisch, wenn nichts anderes angegeben ist'
+        description: 'Anzahl: Spiele (recherche ohne ID) bzw. Spielwege (bilder)'
         required: false
         default: '3'
         type: string
@@ -78,7 +83,14 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           RESEARCH_REPORT: ${{ runner.temp }}/report.md
         run: |
-          if [ "${{ github.event_name }}" = "issues" ]; then
+          MODE="${{ inputs.mode }}"
+          if [ "$MODE" = "bildpruefung" ]; then
+            echo "Nur Bildprüfung."
+          elif [ "$MODE" = "bilder" ]; then
+            python scripts/ai_research.py --screenshots "${COUNT:-15}"
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            python scripts/ai_research.py --batch 3 --screenshots 10
+          elif [ "${{ github.event_name }}" = "issues" ]; then
             python scripts/ai_research.py --issue-body "$ISSUE_BODY" --issue-title "$ISSUE_TITLE"
           elif [ -n "$GAME" ]; then
             python scripts/ai_research.py --game "$GAME" ${VERSION:+--version "$VERSION"}
