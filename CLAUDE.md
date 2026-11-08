@@ -24,6 +24,9 @@ scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
 scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
+scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai → ai-verified, ai-unclear oder entfernt)
+scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
+scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im Watcher)
 ```
 
 ### Grundidee: Spiel → Fassungen → Spielwege
@@ -37,6 +40,12 @@ scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Re
   „Offizielle Android-App“. Einen Spielweg dafür nur anlegen, wenn es Details gibt (Play-Store-Link, Controller, Dual Screen).
 - Die App empfiehlt pro Gerät die ersten drei Wege (Prüfstufe, Dual Screen, nativ, Aufwand, Berichte). Gute Daten in
   `reports` und `performance` verbessern die Empfehlung direkt.
+- `versions[].reports` füllt `scripts/emuready.py` automatisch (Quelle EmuReady, mit Bewertung `rating`/`rank` 1–8,
+  Gerät, Emulator, Kurznotiz, teils Einstellungen). Nicht von Hand bearbeiten; die App ordnet sie den Wegen per
+  Emulatorname zu und zeigt unbekannte Emulatoren als Weg „Laut Community“.
+- **Reihe (`franchise`)** = die Spielereihe, nicht das Universum: Luigi's Mansion, Paper Mario, Mario Party, Mario & Luigi
+  sind eigene Reihen. Nach Änderungen `python3 scripts/franchises.py` (Vorschläge) bzw. `--fix` ausführen;
+  der Test `FranchiseTest` schlägt bei Inkonsistenzen fehl. Neue Ableger-Regeln dort in `SERIES` ergänzen.
 
 ### Spiel (`data/games/<id>.json`)
 ```json
@@ -53,8 +62,10 @@ scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Re
                 "traits": ["widescreen"], "note": "1–2 Sätze, was diese Fassung auszeichnet",
                 "links": [{"label": "Quelle", "url": "https://…"}]}],   // type: meta.json versionTypes
   "routes": [ … ],                  // Spielwege, siehe unten
-  "mods": [{"id": "brutal-doom", "name": "…", "category": "gameplay", "url": "https://…",
-            "edition": "…", "description": "…", "verification": "ai-unverified"}],
+  "mods": [{"id": "brutal-doom", "name": "…", "category": "gameplay",   // meta.json modCategories
+            "release": ["pc"],                                           // Fassungen, mit denen der Mod funktioniert
+            "url": "https://…", "edition": "…", "description": "…", "verification": "ai-unverified",
+            "screenshots": [ … ]}],
   "updatedAt": "YYYY-MM-DD"
 }
 ```
@@ -108,6 +119,8 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    Neue Issues mit Label `recherche` bearbeitet sofort die GitHub Action „KI-Recherche“ (OpenAI) und schließt sie.
    Deine Aufgabe: Changelog-Einträge mit `"by": "ai-research"` seit deinem letzten Lauf durchgehen, die Quellen öffnen,
    Falsches korrigieren oder entfernen, Fassungen zusammenführen, Texte glätten, Screenshots ergänzen.
+   Issues können auch `new-game: <Titel>`, `franchise: <Reihe>`, `version: <id>` oder ein ```json-Ergebnis einer
+   Sofortanalyse aus der App enthalten – das übernimmt die Action ohne neue KI-Anfrage. Prüfe solche Einträge besonders.
    Noch offene Issues (z. B. wenn die Action fehlschlug):
    `gh api "repos/markusklier/handheld-atlas/issues?labels=recherche&state=open"` – im Body steht `game: <id>`.
    Spiel recherchieren (Schritt 4), danach Issue mit kurzer Zusammenfassung kommentieren und schließen:
@@ -135,7 +148,9 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
 5. **Screenshots je Spielweg** (wichtig: die App zeigt sie in der Kachel-Vorschau, Dual-Screen-Bilder zuerst)
    Der Watcher holt automatisch Bilder aus dem README spielbezogener Projekte (`scripts/media.py`) und markiert sie
    mit `check: "readme"`. Deine Aufgabe pro Lauf:
-   - **Bis zu 10 Spielwege mit `check: "readme"` prüfen:** Bild herunterladen (`curl -sL <url> -o /tmp/x.png`) und mit
+   Prüfstufen der Bilder: `readme`/`ai` = ungeprüft · `ai-verified` = von der KI-Bildprüfung bestätigt ·
+   `ai-unclear` = KI unsicher → **deine Aufgabe** · `source-verified` = genau so in der Quelle eingebunden.
+   - **Bis zu 10 Bilder mit `check: "ai-unclear"` oder `"readme"` prüfen:** Bild herunterladen (`curl -sL <url> -o /tmp/x.png`) und mit
      dem Read-Tool ansehen. Zeigt es dieses Spiel in dieser Variante (z. B. zweiter Bildschirm)? → `check: "source-verified"`,
      `caption` auf Deutsch („Karte auf dem unteren Bildschirm“). Logo, Menü eines anderen Spiels, Werbegrafik → entfernen.
      Bei Dual-Screen-Wegen das aussagekräftigste Dual-Screen-Bild an die erste Stelle.

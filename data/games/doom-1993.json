@@ -112,16 +112,22 @@
       "url": "https://www.moddb.com/mods/brutal-doom",
       "edition": "GZDoom oder Zandronum (in Delta Touch enthalten)",
       "description": "Gameplay-Mod von Sergeant Mark IV mit neuen Effekten, Animationen und Waffenverhalten. Version v21 (2019), v22 als Beta (2024). Läuft mit Doom, Ultimate Doom, Doom II und Final Doom. Leistung auf Android ungeprüft.",
-      "verification": "ai-unverified"
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "sigil",
       "name": "SIGIL",
-      "category": "maps",
+      "category": "content",
       "url": "https://www.doomwiki.org/wiki/SIGIL",
       "edition": "Doom/Ultimate Doom, Limit-removing-Port (z. B. PrBoom+ oder GZDoom)",
       "description": "Inoffizielle fünfte Episode von John Romero (2019, kostenlos): 9 Einzelspieler-Level. Für Ports ohne Episode-5-Unterstützung gibt es eine Kompatibilitätsdatei, die Episode 3 ersetzt.",
-      "verification": "ai-unverified"
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
     }
   ],
   "updatedAt": "2026-11-08"

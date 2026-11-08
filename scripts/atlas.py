@@ -127,6 +127,8 @@ def validate(db=None):
                     err(f'{vw}: trait {t!r} unbekannt (meta.json features)')
             for l in v.get('links', []):
                 url_ok(l.get('url'), f'{vw}/links')
+            for rep in v.get('reports', []):
+                url_ok(rep.get('url'), f'{vw}/reports')
         if g.get('routes') and not version_ids:
             err(f'{where}: Spiel mit Spielwegen braucht mindestens eine Fassung (versions)')
         route_ids = set()
@@ -174,8 +176,14 @@ def validate(db=None):
                 url_ok(perf.get('source'), f'{rw}/performance')
             if r.get('checkedAt') and not DATE_RE.match(r['checkedAt']):
                 err(f'{rw}: checkedAt muss YYYY-MM-DD sein')
+        mod_cats = set(meta.get('modCategories', {}))
         for m in g.get('mods', []):
             mw = f"{where}/mods/{m.get('id')}"
+            if mod_cats and m.get('category', 'other') not in mod_cats:
+                err(f"{mw}: category {m.get('category')!r} nicht in {sorted(mod_cats)}")
+            for vid in m.get('release', []):
+                if vid not in version_ids:
+                    err(f'{mw}: release {vid!r} ist keine Fassung dieses Spiels')
             if not m.get('name'):
                 err(f'{mw}: name fehlt')
             url_ok(m.get('url'), mw)
@@ -218,8 +226,15 @@ def bundle(db):
         'platforms': db['platforms'],
         'changelog': db['changelog'][:300],
         'inboxCount': len(db['inbox'].get('leads', [])),
+        'research': research_spec(db['meta']),
         'agent': db['inbox'].get('agent', {}),
     }
+
+
+def research_spec(meta):
+    """Prompt rules + JSON schema of the AI research, so the app's instant analysis asks exactly the same."""
+    import ai_research  # local import: ai_research imports this module
+    return {'rules': ai_research.RULES, 'format': ai_research.schema(meta), 'model': 'gpt-6.1-sol'}
 
 
 def build():
@@ -263,6 +278,13 @@ def stats():
     print('Dual Screen:', sum(1 for r in routes if 'dual-screen' in r.get('features', [])))
     print('Mit Screenshots:', sum(1 for r in routes if r.get('screenshots')), 'Spielwege,',
           sum(1 for g in games if g.get('cover')), 'Cover')
+    shots = [sh for r in routes for sh in r.get('screenshots', [])]
+    print('Spielweg-Bilder nach Prüfung:', dict(Counter(sh.get('check', 'ohne Angabe') for sh in shots)))
+    print('Spielwege ohne Bild:', sum(1 for r in routes if not r.get('screenshots')), '| Dual Screen ohne Bild:',
+          sum(1 for r in routes if 'dual-screen' in r.get('features', []) and not r.get('screenshots')))
+    versions = [v for g in games for v in g.get('versions', [])]
+    print('Fassungen:', len(versions), '| mit Jahr:', sum(1 for v in versions if v.get('year')),
+          '| mit Community-Berichten:', sum(1 for v in versions if v.get('reports')))
     print('Inbox:', len(db['inbox'].get('leads', [])), 'Funde warten auf den Agenten')
     no_fr = sum(1 for g in games if g['franchise'] == g['title'])
     print('Franchise = Titel (prüfen):', no_fr)

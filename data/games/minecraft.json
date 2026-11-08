@@ -479,29 +479,38 @@
     {
       "id": "sodium",
       "name": "Sodium",
-      "category": "performance-rendering",
+      "category": "performance",
       "url": "https://modrinth.com/mod/sodium",
       "edition": "Java Edition",
       "description": "Optimierter Java-Renderer. Hinweis: Das Projekt unterstützt Android OpenGL-Übersetzungsschichten nicht offiziell. Deshalb kein pauschaler Thor-FPS-Tipp.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "lithium",
       "name": "Lithium",
-      "category": "performance-logic",
+      "category": "performance",
       "url": "https://modrinth.com/mod/lithium",
       "edition": "Java Edition",
       "description": "Optimierungen der Spielsimulation. Version und Modloader müssen zur Java-Edition passen; keine Thor-Messwerte.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "ferritecore",
       "name": "FerriteCore",
-      "category": "performance-memory",
+      "category": "performance",
       "url": "https://modrinth.com/mod/ferrite-core",
       "edition": "Java Edition",
       "description": "Reduziert die Speichernutzung bestimmter Minecraft-Java-Versionen. Spezifische Builds und Loader gegenprüfen.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     }
   ],
   "updatedAt": "2026-11-08"

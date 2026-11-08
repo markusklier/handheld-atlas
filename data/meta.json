@@ -76,5 +76,20 @@
     "rerelease": "Neuauflage",
     "collection": "Sammlung",
     "release": "Veröffentlichung"
+  },
+  "modCategories": {
+    "graphics": "Grafik & Texturen",
+    "shader": "Shader & Filter",
+    "performance": "Performance",
+    "widescreen-fps": "Widescreen & Bildrate",
+    "fixes": "Fehlerbehebungen",
+    "controls": "Steuerung",
+    "gameplay": "Gameplay",
+    "content": "Neue Inhalte & Level",
+    "qol": "Komfort",
+    "dual-screen": "Dual Screen",
+    "translation": "Übersetzung",
+    "multiplayer": "Multiplayer",
+    "other": "Sonstiges"
   }
 }

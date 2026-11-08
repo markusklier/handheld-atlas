@@ -318,3 +318,49 @@ table.compare td:first-child { position: sticky; left: 0; background: var(--bg);
 .reasons { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
 details.more-versions > summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 10px 12px; border: 1px dashed var(--line-2); border-radius: 13px; }
 details.more-versions[open] > summary { margin-bottom: 4px; }
+
+/* ---------- platform badges ---------- */
+.pfs { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 4px; }
+.pf { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 700; letter-spacing: .02em; padding: 2px 7px 2px 5px; border-radius: 6px; border: 1px solid; }
+.pf svg { width: 14px; height: 14px; }
+.mk-nintendo { color: #ff9a9a; border-color: #5a2a2a; background: #2a1414; }
+.mk-sony { color: #9ec5ff; border-color: #2a3d5a; background: #121c2b; }
+.mk-microsoft { color: #9ee6a8; border-color: #2a5a33; background: #13261a; }
+.mk-sega { color: #8fd6ff; border-color: #24485a; background: #10212b; }
+.mk-android { color: #c6f08f; border-color: #44582a; background: #1d2613; }
+.mk-apple, .mk-pc { color: var(--documented); border-color: var(--line-2); background: var(--surface-2); }
+
+/* ---------- community reports, ratings ---------- */
+.community { display: flex; flex-direction: column; gap: 6px; }
+.community h4 { margin: 4px 0 0; }
+.report { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); flex-wrap: wrap; }
+.report .grow { flex: 1; min-width: 180px; font-size: 13.5px; }
+.report .btn { padding: 5px 10px; font-size: 13px; }
+.rating { display: inline-flex; align-items: center; font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 7px; white-space: nowrap; }
+.rating.good { background: var(--accent-soft); color: var(--accent); }
+.rating.ok { background: #13283a; color: var(--community); }
+.rating.bad { background: #3a1d14; color: var(--warn); }
+details.settings { margin-top: 4px; }
+details.settings > summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+details.settings dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 6px 0 0; font-size: 12.5px; }
+details.settings dt { color: var(--faint); }
+details.settings dd { margin: 0; }
+details.settings ul { margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; }
+
+/* ---------- instant analysis ---------- */
+.analysis { background: var(--surface); border: 1px solid #5a4419; border-radius: 18px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.analysis h2 { display: flex; align-items: center; gap: 8px; }
+.analysis h4 { margin: 6px 0 0; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--faint); }
+.an-list { display: flex; flex-direction: column; gap: 6px; }
+.an-item { padding: 9px 11px; border-radius: 11px; background: var(--surface-2); display: flex; flex-direction: column; gap: 4px; font-size: 13.5px; }
+.an-shots { display: flex; gap: 6px; overflow-x: auto; }
+.an-shots img { height: 90px; border-radius: 8px; }
+.spinner { width: 16px; height: 16px; border: 2px solid var(--line-2); border-top-color: var(--ai); border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.warn { color: #ffc9b6; }
+.btn.small { padding: 5px 10px; font-size: 12.5px; }
+.tag.linkish { cursor: pointer; border: 0; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); margin: 8px 0; }
+.field input { background: var(--surface-2); border: 1px solid var(--line-2); border-radius: 10px; padding: 8px 10px; color: var(--text); }
+.meter { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; font-size: 13.5px; margin: 6px 0; }
+.meter i { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--accent) var(--v), var(--surface-3) var(--v)); }

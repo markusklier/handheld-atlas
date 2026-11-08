@@ -98,3 +98,43 @@ class AiResearchTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class ModesTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        shutil.copytree(atlas.DATA, self.tmp / 'data')
+        self.orig = (atlas.DATA, ai_research.DATA)
+        atlas.DATA = ai_research.DATA = self.tmp / 'data'
+
+    def tearDown(self):
+        atlas.DATA, ai_research.DATA = self.orig
+        shutil.rmtree(self.tmp)
+
+    def test_new_game_is_created_once(self):
+        gid, created = ai_research.create_game("No Man's Sky", ['PC'], None, 2016, log=lambda *a: None)
+        self.assertTrue(created)
+        self.assertEqual(ai_research.create_game("No Man’s Sky", log=lambda *a: None), (gid, False))  # other apostrophe
+        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        self.assertEqual(g['versions'][0], {'id': 'pc', 'name': 'PC (2016)', 'type': 'original', 'platforms': ['PC'], 'year': 2016})
+        self.assertEqual(atlas.validate(), [])
+
+    def test_app_result_with_mod_categories_and_screenshots(self):
+        result = {'summary': '', 'series': '', 'versions': [], 'mods': [
+            {'name': 'Shader Pack X', 'url': 'https://www.nexusmods.com/x', 'category': 'shader', 'versionKeys': ['pc'],
+             'edition': '', 'description': 'ReShade-Preset.', 'sourceUrl': 'https://www.nexusmods.com/x'}],
+            'routes': [{'name': 'Winlator mit DXVK', 'versionKey': 'pc', 'kind': 'pc-runtime', 'runtime': 'Winlator', 'features': [],
+                        'dualScreen': '', 'requires': [], 'benefit': 'x', 'caveat': '', 'steps': [], 'effort': 'advanced',
+                        'status': 'active', 'projectName': 'Winlator', 'projectUrl': 'https://github.com/brunodev85/winlator',
+                        'sourceUrl': 'https://reddit.com/r/winlator/comments/y',
+                        'screenshots': [{'url': 'https://i.redd.it/abc.png', 'caption': 'Im Spiel'},
+                                        {'url': 'https://example.com/page', 'caption': 'kein Bild'}], 'reports': []}]}
+        entries = ai_research.from_app_result('grand-theft-auto-san-andreas', result, log=lambda *a: None)
+        g = atlas.read(atlas.DATA / 'games' / 'grand-theft-auto-san-andreas.json')
+        mod = next(m for m in g['mods'] if m['name'] == 'Shader Pack X')
+        self.assertEqual((mod['category'], mod['release']), ('shader', ['pc']))
+        route = next(r for r in g['routes'] if r['name'] == 'Winlator mit DXVK')
+        self.assertEqual([s['url'] for s in route['screenshots']], ['https://i.redd.it/abc.png'])
+        self.assertEqual(route['screenshots'][0]['check'], 'ai')
+        self.assertTrue(entries)
+        self.assertEqual(atlas.validate(), [])

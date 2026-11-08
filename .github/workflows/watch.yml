@@ -33,6 +33,13 @@ jobs:
       - name: Screenshots per way to play (project READMEs), Steam and Wikipedia covers
         continue-on-error: true
         run: python scripts/media.py
+      - name: Community reports from EmuReady (devices with the AYN Thor's chip)
+        continue-on-error: true
+        env:
+          EMUREADY_API_KEY: ${{ secrets.EMUREADY_API_KEY }}
+        run: python scripts/emuready.py --limit 40
+      - name: Keep franchises consistent
+        run: python scripts/franchises.py --fix
       - run: python scripts/atlas.py validate
       - id: commit
         run: |

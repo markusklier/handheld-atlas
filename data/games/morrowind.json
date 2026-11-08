@@ -109,47 +109,62 @@
     {
       "id": "mw-project-atlas",
       "name": "Project Atlas",
-      "category": "performance-textures",
+      "category": "graphics",
       "url": "https://modding-openmw.com/mods/project-atlas/",
       "edition": "Original-PC-Dateien mit OpenMW",
       "description": "Textur-Atlanten und Mesh-Anpassungen zur Reduktion von Draw Calls. OpenMW-Guide führt die Mod als kompatibel; Wirkung auf Android separat messen.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "mw-optimization-patch",
       "name": "Morrowind Optimization Patch",
-      "category": "performance-assets",
+      "category": "performance",
       "url": "https://www.nexusmods.com/morrowind/mods/45384",
       "edition": "Original-PC-Dateien mit OpenMW",
       "description": "Optimierte Original-Meshes. OpenMW-Modding-Performanceguide empfiehlt die Mod; Versions- und Konfliktprüfung erforderlich.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "mw-patch-for-purists",
       "name": "Patch for Purists",
-      "category": "patch-bugfix",
+      "category": "fixes",
       "url": "https://www.nexusmods.com/morrowind/mods/45096",
       "edition": "Morrowind + OpenMW",
       "description": "Community-Fixes für Spielinhalte; im PortMaster-OpenMW-Handheld-Setup als unterstützte Mod dokumentiert. Kein Performance-Mod und kein Thor-Test.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "mw-openmw-android-port",
       "name": "OpenMW Android/ChromeOS (Andiweli)",
-      "category": "runtime-android-port",
+      "category": "other",
       "url": "https://github.com/Andiweli/OpenMW-Android",
       "edition": "Morrowind PC-Datendateien",
       "description": "Eigenständiger Android-Port/Fork mit OpenMW 0.51, Touch- und Gamepad-Anpassungen. Alternativer Spielweg, nicht selbst eine Daten-/Performance-Mod; Einrichtung und Gerät separat prüfen.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "mw-openmw-performance-config",
       "name": "OpenMW Performance Settings",
-      "category": "configuration-performance",
+      "category": "performance",
       "url": "https://modding-openmw.com/tips/performance/",
       "edition": "OpenMW (Android und Desktop; Version prüfen)",
       "description": "Einstellungen für Sichtweite, Physik-Threads, Schatten und Objektpaging. Konfigurationshinweise statt Installationsmod; echte Verbesserungen müssen auf dem Thor gemessen werden.",
-      "verification": "documented"
+      "verification": "documented",
+      "release": [
+        "pc"
+      ]
     }
   ],
   "updatedAt": "2026-11-08"

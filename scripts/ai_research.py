@@ -51,8 +51,10 @@ def schema(meta):
     arr = lambda items: {'type': 'array', 'items': items}
     obj = lambda props: {'type': 'object', 'additionalProperties': False, 'properties': props, 'required': list(props)}
     features = {'type': 'string', 'enum': sorted(meta['features'])}
+    mod_cats = {'type': 'string', 'enum': sorted(meta.get('modCategories') or ['other'])}
     return {'type': 'json_schema', 'name': 'atlas_game_research', 'strict': True, 'schema': obj({
         'summary': s(),
+        'series': s(),
         'versions': arr(obj({'key': s(), 'name': s(), 'type': {'type': 'string', 'enum': sorted(meta['versionTypes'])},
                              'year': {'type': 'integer'}, 'platforms': arr(s()), 'traits': arr(features),
                              'note': s(), 'sourceUrl': s()})),
@@ -62,25 +64,14 @@ def schema(meta):
                            'effort': {'type': 'string', 'enum': sorted(meta['effort'])},
                            'status': {'type': 'string', 'enum': ['active', 'experimental', 'archived']},
                            'projectName': s(), 'projectUrl': s(), 'sourceUrl': s(),
+                           'screenshots': arr(obj({'url': s(), 'caption': s()})),
                            'reports': arr(obj({'url': s(), 'device': s(), 'summary': s()}))})),
-        'mods': arr(obj({'name': s(), 'url': s(), 'category': s(), 'edition': s(), 'description': s(), 'sourceUrl': s()})),
+        'mods': arr(obj({'name': s(), 'url': s(), 'category': mod_cats, 'versionKeys': arr(s()), 'edition': s(),
+                         'description': s(), 'sourceUrl': s()})),
     })}
 
 
-def prompt(game, platforms):
-    known = {
-        'versions': [{'key': v['id'], 'name': v['name'], 'platforms': v['platforms'], 'year': v.get('year')} for v in game.get('versions', [])],
-        'routes': [{'name': r['name'], 'version': r.get('release'), 'kind': r['kind']} for r in game.get('routes', [])],
-        'mods': [m['name'] for m in game.get('mods', [])],
-    }
-    return f"""Du recherchierst für „Handheld Atlas“, einen spielzentrierten Katalog für Android-Handhelds
-(Referenzgerät AYN Thor: Snapdragon 8 Gen 2, zwei Displays, Controller). Spiel: „{game['title']}“ ({', '.join(game.get('platforms', []))}).
-
-Bereits bekannt (nicht wiederholen, nur ergänzen oder korrigieren): {json.dumps(known, ensure_ascii=False)}
-Allgemeine Emulatoren je Plattform sind schon hinterlegt: {', '.join(sorted(platforms))} – liste sie NICHT als Spielweg,
-außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Einstellungen, Fork mit Dual Screen).
-
-Finde mit der Websuche:
+RULES = """Finde mit der Websuche:
 1. versions: die Fassungen, die für jemanden mit einem Android-Handheld HEUTE eine echte Wahl sind: Original,
    wichtige Portierungen, offizielle Android-Fassungen (auch eingestellte), Remaster, Remakes, aktuelle Neuauflagen.
    Höchstens 8. Weglassen: historische Plattformen ohne praktischen Weg auf Android (z. B. Pocket PC, Mac OS Classic,
@@ -88,18 +79,44 @@ Finde mit der Websuche:
    Jeweils Plattformen, Erscheinungsjahr, was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde).
    Für bekannte Fassungen den vorhandenen key wiederverwenden, sonst einen neuen kurzen key (z. B. "remastered-2024").
 2. routes: konkrete Wege, eine Fassung auf Android zu spielen, die über einen allgemeinen Emulator hinausgehen:
-   offizielle Android-App, native Ports/Decomps/Recomps/Source-Ports, PC-Laufzeit mit spielspezifischen Belegen,
-   Dual-Screen-Mods/Companions, Emulator-Forks mit Spiel-Patches (Widescreen, 60 FPS, Upscaling).
+   offizielle Android-App, native Ports/Decomps/Recomps/Source-Ports, PC-Laufzeit (GameNative, Winlator, GameHub …)
+   mit spielspezifischen Belegen, Dual-Screen-Mods/Companions, Emulator-Forks mit Spiel-Patches (Widescreen, 60 FPS).
    Je Weg: versionKey, Projekt-URL (Projektseite/GitHub/Google Play), kurze deutsche Texte (benefit, caveat,
    requires = was man selbst besitzen muss), Aufwand, Status. reports: echte Erfahrungsberichte (Reddit, Foren,
-   Videos) mit Gerät, 1 Satz Zusammenfassung – bevorzugt AYN Thor, Odin, Retroid.
-3. mods: bekannte Mods, die auf Android-tauglichen Fassungen laufen.
+   Videos, EmuReady) mit Gerät, 1 Satz Zusammenfassung – bevorzugt AYN Thor, Odin 2, Retroid Pocket 5.
+   screenshots: bis zu 4 direkte Bild-URLs (png/jpg/webp/gif), die genau diesen Weg zeigen (README, Release-Notes,
+   Projektseite, Beitrag des Autors) – bei Dual-Screen-Wegen bevorzugt Bilder mit beiden Bildschirmen.
+3. mods: bekannte Mods für Android-taugliche Fassungen, auch Grafik/Texturen, Shader/ReShade, Widescreen-/FPS-Patches,
+   Fehlerbehebungen, Übersetzungen. category passend wählen; versionKeys = Fassungen, mit denen der Mod funktioniert.
+4. series: die Spielereihe, unter der das Spiel erscheint (z. B. "Luigi's Mansion", nicht "Super Mario"); "" wenn Einzeltitel.
 
 summary: 1–2 Sätze für Spieler (welche Fassung/welcher Weg ist auf dem Handheld interessant), kein Rechercheprotokoll.
 
 Regeln: Jede Angabe braucht sourceUrl/url aus deiner Websuche. Nichts erfinden, keine FPS-Zahlen ohne Quelle.
 Keine Links zu ROMs, ISOs, Spieldaten, APK-Spiegeln oder Piraterie. Alle Texte auf Deutsch mit Umlauten.
-year = 0, wenn unbekannt. Leere Felder als "" bzw. [].""".strip()
+year = 0, wenn unbekannt. Leere Felder als "" bzw. []."""
+
+
+def prompt(game, platforms, focus=None):
+    known = {
+        'versions': [{'key': v['id'], 'name': v['name'], 'platforms': v['platforms'], 'year': v.get('year')} for v in game.get('versions', [])],
+        'routes': [{'name': r['name'], 'version': r.get('release'), 'kind': r['kind']} for r in game.get('routes', [])],
+        'mods': [m['name'] for m in game.get('mods', [])],
+    }
+    focus_text = ''
+    if focus:
+        v = next((v for v in game.get('versions', []) if v['id'] == focus), None)
+        if v:
+            focus_text = (f"\nSCHWERPUNKT: Fassung „{v['name']}“ (key {v['id']}, {', '.join(v['platforms'])}). Suche vor allem Wege, "
+                          f"Erfahrungsberichte, Einstellungen und Mods für genau diese Fassung auf dem AYN Thor.\n")
+    return f"""Du recherchierst für „Handheld Atlas“, einen spielzentrierten Katalog für Android-Handhelds
+(Referenzgerät AYN Thor: Snapdragon 8 Gen 2, zwei Displays, Controller). Spiel: „{game['title']}“ ({', '.join(game.get('platforms', [])) or 'Plattformen unbekannt'}).
+{focus_text}
+Bereits bekannt (nicht wiederholen, nur ergänzen oder korrigieren): {json.dumps(known, ensure_ascii=False)}
+Allgemeine Emulatoren je Plattform sind schon hinterlegt: {', '.join(sorted(platforms))} – liste sie NICHT als Spielweg,
+außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Einstellungen, Fork mit Dual Screen).
+
+""" + RULES
 
 
 def call_openai(payload, token):
@@ -140,6 +157,20 @@ def ok_url(u, sources=None):
     n = norm_url(u)
     # same page or a page on the same site path the search returned (e.g. GitHub repo vs. its README)
     return n in sources or any(s.startswith(n + '/') or n.startswith(s + '/') for s in sources)
+
+
+IMG = re.compile(r'\.(png|jpe?g|webp|gif)(\?|$)|user-attachments/assets|user-images\.githubusercontent', re.I)
+
+
+def shots_of(nr, project, credit=None):
+    """Screenshots the model found for a way; linked only, checked later by ai_vision.py / the agent."""
+    out = []
+    for sh in nr.get('screenshots', [])[:4]:
+        url = sh.get('url')
+        if ok_url(url) and IMG.search(url):
+            out.append({'url': url, 'caption': (sh.get('caption') or 'Screenshot')[:80], 'source': nr['sourceUrl'],
+                        'credit': credit or (project or {}).get('name') or nr.get('projectName') or '', 'check': 'ai'})
+    return out
 
 
 def merge(game, projects, result, sources, log):
@@ -209,6 +240,10 @@ def merge(game, projects, result, sources, log):
             for r in g['routes']:
                 urls = {norm_url(l['url']) for l in r.get('links', [])} | {norm_url(p['url']) for p in prj['projects'] if p['id'] in r.get('projects', [])}
                 if norm_url(nr['projectUrl']) in urls or slug(r['name']) == slug(nr['name']):
+                    if not r.get('screenshots'):
+                        r['screenshots'] = shots_of(nr, None, r['name'])
+                        if r['screenshots']:
+                            entries.append({'type': 'screenshot-added', 'text': f"Screenshots für {r['name']} (KI-Recherche)", 'url': r['screenshots'][0]['source']})
                     have = {norm_url(x['url']) for x in r.setdefault('reports', [])}
                     new = [x for x in reports if norm_url(x['url']) not in have]
                     r['reports'].extend(new)
@@ -235,7 +270,7 @@ def merge(game, projects, result, sources, log):
                  'dualScreen': nr.get('dualScreen') or None, 'requires': nr.get('requires', []),
                  'benefit': nr.get('benefit', ''), 'caveat': nr.get('caveat', ''), 'steps': nr.get('steps', []),
                  'version': None, 'effort': nr['effort'], 'status': nr['status'], 'verification': 'ai-unverified',
-                 'testedOn': [], 'screenshots': [], 'links': [{'label': 'Quelle', 'url': nr['sourceUrl']}],
+                 'testedOn': [], 'screenshots': shots_of(nr, p), 'links': [{'label': 'Quelle', 'url': nr['sourceUrl']}],
                  'reports': reports, 'performance': [], 'checkedAt': TODAY}
         g['routes'].append(route)
         existing.add(norm_url(nr['projectUrl']))
@@ -248,12 +283,21 @@ def merge(game, projects, result, sources, log):
             continue
         if norm_url(nm['url']) in have_mods or slug(nm['name']) in have_mods:
             continue
-        g.setdefault('mods', []).append({'id': slug(nm['name']), 'name': nm['name'], 'category': nm.get('category') or 'other',
-                                         'url': nm['url'], 'edition': nm.get('edition') or None,
-                                         'description': nm.get('description', ''), 'verification': 'ai-unverified'})
+        release = sorted({vmap[k]['id'] for k in nm.get('versionKeys', []) if k in vmap})
+        mod = {'id': slug(nm['name']), 'name': nm['name'], 'category': nm.get('category') or 'other',
+               'url': nm['url'], 'edition': nm.get('edition') or None,
+               'description': nm.get('description', ''), 'verification': 'ai-unverified'}
+        if release:
+            mod['release'] = release
+        while any(m['id'] == mod['id'] for m in g.get('mods', [])):
+            mod['id'] += '-2'
+        g.setdefault('mods', []).append(mod)
         have_mods.add(norm_url(nm['url']))
         entries.append({'type': 'mod-added', 'text': f"Neuer Mod: {nm['name']} (KI-Recherche)", 'url': nm['url']})
 
+    series = (result.get('series') or '').strip()
+    if series and (g.get('franchise') in (None, '', g['title'])) and len(series) < 80:
+        g['franchise'] = series
     if result.get('summary') and not g.get('summary'):
         g['summary'] = result['summary'][:300]
     if entries:
@@ -276,16 +320,88 @@ def pick_games(n):
     return [g['id'] for g in sorted(games, key=key)[:n]]
 
 
-def research(game_id, token, model, log=print):
+def research(game_id, token, model, log=print, focus=None):
     path = DATA / 'games' / f'{game_id}.json'
     game, projects, meta = read(path), read(DATA / 'projects.json'), read(DATA / 'meta.json')
     platforms = read(DATA / 'platforms.json')['platforms']
     resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'high'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required',
                         'reasoning': {'effort': 'medium'}, 'text': {'format': schema(meta)},
-                        'input': prompt(game, platforms), 'max_output_tokens': 16000}, token)
+                        'input': prompt(game, platforms, focus), 'max_output_tokens': 16000}, token)
     result = output_json(resp)
     g, prj, entries = merge(game, projects, result, searched_urls(resp), log)
+    return apply(game_id, g, prj, entries, log)
+
+
+def find_game(title):
+    want = re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode().lower())
+    for f in (DATA / 'games').glob('*.json'):
+        g = read(f)
+        if re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', g['title']).encode('ascii', 'ignore').decode().lower()) == want:
+            return g['id']
+    return None
+
+
+def create_game(title, platforms=(), franchise=None, year=None, log=print):
+    """Skeleton for a game Atlas does not know yet; returns its id (existing id if the title is known)."""
+    existing = find_game(title)
+    if existing:
+        return existing, False
+    gid = slug(title)
+    while (DATA / 'games' / f'{gid}.json').exists():
+        gid += '-2'
+    versions = [{'id': slug(p), 'name': f'{p} ({year})' if year and i == 0 else p, 'type': 'original' if i == 0 else 'release',
+                 'platforms': [p], **({'year': year} if year and i == 0 else {})} for i, p in enumerate(platforms)]
+    write(DATA / 'games' / f'{gid}.json', {'id': gid, 'title': title, 'franchise': franchise or title,
+                                          'platforms': list(platforms), 'versions': versions, 'routes': [], 'mods': [],
+                                          'updatedAt': TODAY})
+    log(f'  neues Spiel angelegt: {gid}')
+    return gid, True
+
+
+FRANCHISE_FORMAT = {'type': 'json_schema', 'name': 'atlas_franchise', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['games'], 'properties': {'games': {'type': 'array', 'items': {
+        'type': 'object', 'additionalProperties': False, 'required': ['title', 'year', 'platforms', 'sourceUrl'],
+        'properties': {'title': {'type': 'string'}, 'year': {'type': 'integer'}, 'platforms': {'type': 'array', 'items': {'type': 'string'}},
+                       'sourceUrl': {'type': 'string'}}}}}}}
+
+
+def research_franchise(name, token, model, log=print):
+    """List the games of a series and create the missing ones (deep research then happens per game)."""
+    known_platforms = sorted(read(DATA / 'platforms.json')['platforms'])
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
+                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required',
+                        'reasoning': {'effort': 'low'}, 'text': {'format': FRANCHISE_FORMAT}, 'max_output_tokens': 8000,
+                        'input': f"""Liste die veröffentlichten Hauptspiele, Remakes und wichtigen Ableger der Spielereihe „{name}“
+(höchstens 30), jeweils Originaltitel (englisch), Erscheinungsjahr der Erstveröffentlichung, Plattformen der Erstveröffentlichung
+und eine Quelle. Plattformnamen wenn möglich aus dieser Liste: {', '.join(known_platforms)}, sonst üblicher Name
+(z. B. "PlayStation 4", "Xbox One", "Android"). Keine angekündigten Spiele."""}, token)
+    data, sources = output_json(resp), searched_urls(resp)
+    entries = []
+    for item in data.get('games', [])[:30]:
+        if not item.get('title') or not ok_url(item.get('sourceUrl'), sources) or item.get('year', 0) > int(TODAY[:4]):
+            continue
+        gid, created = create_game(item['title'], item.get('platforms', [])[:6], name, item.get('year') or None, log)
+        if created:
+            entries.append({'date': TODAY, 'type': 'game-added', 'by': 'ai-research', 'game': gid,
+                            'text': f"Neues Spiel aus der Reihe {name}: {item['title']} (KI-Recherche)", 'url': item['sourceUrl']})
+    if entries:
+        problems = __import__('atlas').validate()
+        if problems:
+            for e in entries:
+                (DATA / 'games' / f"{e['game']}.json").unlink(missing_ok=True)
+            log(f'  NICHT übernommen: {problems[:3]}')
+            return []
+        cl = read(DATA / 'changelog.json')
+        cl['entries'][0:0] = entries
+        write(DATA / 'changelog.json', cl)
+    return entries
+
+
+def from_app_result(game_id, result, log=print):
+    """Result of an in-app instant analysis, pasted into an issue by the owner. No new API call needed."""
+    game, projects = read(DATA / 'games' / f'{game_id}.json'), read(DATA / 'projects.json')
+    g, prj, entries = merge(game, projects, result, None, log)
     return apply(game_id, g, prj, entries, log)
 
 
@@ -317,36 +433,75 @@ def main():
     ap.add_argument('--batch', type=int, default=0)
     ap.add_argument('--issue-body', default='')
     ap.add_argument('--issue-title', default='')
+    ap.add_argument('--version', help='Schwerpunkt auf eine Fassung (id)')
+    ap.add_argument('--new-game', help='Titel eines Spiels, das Atlas noch nicht kennt')
+    ap.add_argument('--franchise', help='Reihe: fehlende Spiele anlegen')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
-    if not token:
+    app_payload = '```json' in (args.issue_body or '')
+    if not token and not app_payload:
         print('OPENAI_API_KEY fehlt – keine KI-Recherche ausgeführt.')
         return 0
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
-    ids = []
+    jobs = []   # (kind, value, focus)
     if args.game:
-        ids = [args.game]
+        jobs = [('game', args.game, args.version)]
+    elif args.new_game:
+        jobs = [('new', args.new_game, None)]
+    elif args.franchise:
+        jobs = [('franchise', args.franchise, None)]
     elif args.issue_body or args.issue_title:
-        m = re.search(r'game:\s*([a-z0-9-]+)', args.issue_body)
-        if m:
-            ids = [m.group(1)]
+        body = args.issue_body or ''
+        m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in ('game', 'version', 'new-game', 'franchise')}
+        val = {k: v.group(1).strip() for k, v in m.items() if v}
+        payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
+        if 'game' in val and payload:
+            jobs = [('app', val['game'], json.loads(payload.group(1)))]
+        elif 'new-game' in val and payload:
+            jobs = [('newapp', val['new-game'], json.loads(payload.group(1)))]
+        elif 'game' in val:
+            jobs = [('game', val['game'], val.get('version'))]
+        elif 'new-game' in val:
+            jobs = [('new', val['new-game'], None)]
+        elif 'franchise' in val:
+            jobs = [('franchise', val['franchise'], None)]
         else:
-            title = re.sub(r'^recherche:\s*', '', args.issue_title, flags=re.I).strip().lower()
-            ids = [read(f)['id'] for f in (DATA / 'games').glob('*.json') if read(f)['title'].lower() == title][:1]
+            title = re.sub(r'^recherche:\s*', '', args.issue_title, flags=re.I).strip()
+            gid = find_game(title) if title else None
+            jobs = [('game', gid, None)] if gid else ([('new', title, None)] if title else [])
     elif args.batch:
-        ids = pick_games(args.batch)
+        jobs = [('game', gid, None) for gid in pick_games(args.batch)]
     lines = []
-    for gid in ids:
-        if not (DATA / 'games' / f'{gid}.json').exists():
-            lines.append(f'- `{gid}`: Spiel nicht gefunden')
-            continue
-        print(f'Recherche: {gid} ({model})')
+    for kind, value, extra in jobs:
         try:
-            entries = research(gid, token, model)
-        except Exception as e:  # noqa: BLE001 – one failing game must not stop the batch
-            lines.append(f'- `{gid}`: Fehler – {type(e).__name__}: {str(e)[:200]}')
+            if kind == 'franchise':
+                print(f'Reihe: {value} ({model})')
+                entries = research_franchise(value, token, model)
+                lines.append(f'- Reihe **{value}**: ' + (f'{len(entries)} neue Spiele angelegt: ' + ', '.join(e["game"] for e in entries) if entries else 'keine neuen Spiele'))
+                continue
+            if kind in ('new', 'newapp'):
+                value, created = create_game(value)
+                if created:
+                    lines.append(f'- Neues Spiel angelegt: `{value}`')
+            if not value or not (DATA / 'games' / f'{value}.json').exists():
+                lines.append(f'- `{value}`: Spiel nicht gefunden')
+                continue
+            if kind in ('app', 'newapp'):
+                print(f'Übernahme der Sofortanalyse: {value}')
+                entries = from_app_result(value, extra)
+            else:
+                print(f'Recherche: {value} ({model})' + (f', Fassung {extra}' if extra else ''))
+                entries = research(value, token, model, focus=extra)
+            if kind in ('new', 'newapp') and not entries:
+                g = read(DATA / 'games' / f'{value}.json')
+                if not g.get('versions') and not g.get('routes'):
+                    (DATA / 'games' / f'{value}.json').unlink()
+                    lines.append(f'- `{value}`: nichts Belastbares gefunden, nicht aufgenommen')
+                    continue
+        except Exception as e:  # noqa: BLE001 – one failing job must not stop the batch
+            lines.append(f'- `{value}`: Fehler – {type(e).__name__}: {str(e)[:200]}')
             continue
-        lines.append(f'- **{gid}**: ' + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
+        lines.append(f'- **{value}**: ' + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
     report = '\n'.join(lines) or 'Kein Spiel ausgewählt.'
     print(report)
     if os.environ.get('GITHUB_STEP_SUMMARY'):

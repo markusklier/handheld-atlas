@@ -143,16 +143,22 @@
       "url": "https://www.moddb.com/mods/brutal-doom",
       "edition": "GZDoom oder Zandronum (in Delta Touch enthalten)",
       "description": "Gameplay-Mod von Sergeant Mark IV mit neuen Effekten, Animationen und Waffenverhalten. Version v21 (2019), v22 als Beta (2024). Läuft mit Doom, Ultimate Doom, Doom II und Final Doom. Leistung auf Android ungeprüft.",
-      "verification": "ai-unverified"
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
     },
     {
       "id": "eviternity",
       "name": "Eviternity",
-      "category": "maps",
+      "category": "content",
       "url": "https://doomwiki.org/wiki/Eviternity",
       "edition": "Doom II, Boom/MBF-kompatibler Port (z. B. PrBoom+ oder GZDoom)",
       "description": "Megawad von Joshua O'Sullivan u. a. (2018), ausgezeichnet bei den Cacowards 2019. MBF-kompatibel; mitgelieferte Demos brauchen einen Boom-kompatiblen Port.",
-      "verification": "ai-unverified"
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
     }
   ],
   "updatedAt": "2026-11-08"

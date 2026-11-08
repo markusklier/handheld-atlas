@@ -9,8 +9,20 @@ on:
         description: 'Spiel-ID, z. B. grand-theft-auto-san-andreas (leer = automatisch auswählen)'
         required: false
         type: string
+      version:
+        description: 'Optional: Fassung (id) als Schwerpunkt, z. B. xbox'
+        required: false
+        type: string
+      new_game:
+        description: 'Neues Spiel aufnehmen (Titel), z. B. No Man''s Sky'
+        required: false
+        type: string
+      franchise:
+        description: 'Reihe erfassen: fehlende Spiele anlegen, z. B. Tomb Raider'
+        required: false
+        type: string
       count:
-        description: 'Wie viele Spiele automatisch, wenn keine ID angegeben ist'
+        description: 'Wie viele Spiele automatisch, wenn nichts anderes angegeben ist'
         required: false
         default: '3'
         type: string
@@ -28,7 +40,10 @@ concurrency:
   cancel-in-progress: false
 jobs:
   research:
-    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'recherche')
+    # public repo: only the owner/collaborators can trigger research via issues (and paste in-app results)
+    if: >-
+      github.event_name != 'issues' || (contains(github.event.issue.labels.*.name, 'recherche') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
     runs-on: ubuntu-latest
     timeout-minutes: 40
     outputs:
@@ -43,6 +58,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           GAME: ${{ inputs.game }}
+          VERSION: ${{ inputs.version }}
+          NEW_GAME: ${{ inputs.new_game }}
+          FRANCHISE: ${{ inputs.franchise }}
           COUNT: ${{ inputs.count || '3' }}
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
@@ -51,11 +69,21 @@ jobs:
           if [ "${{ github.event_name }}" = "issues" ]; then
             python scripts/ai_research.py --issue-body "$ISSUE_BODY" --issue-title "$ISSUE_TITLE"
           elif [ -n "$GAME" ]; then
-            python scripts/ai_research.py --game "$GAME"
+            python scripts/ai_research.py --game "$GAME" ${VERSION:+--version "$VERSION"}
+          elif [ -n "$NEW_GAME" ]; then
+            python scripts/ai_research.py --new-game "$NEW_GAME"
+          elif [ -n "$FRANCHISE" ]; then
+            python scripts/ai_research.py --franchise "$FRANCHISE"
           else
             python scripts/ai_research.py --batch "$COUNT"
           fi
-      - run: python scripts/atlas.py format && python scripts/atlas.py validate
+      - name: KI-Bildprüfung neuer Screenshots
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: python scripts/ai_vision.py --limit 40
+      - run: python scripts/franchises.py --fix && python scripts/atlas.py format && python scripts/atlas.py validate
       - id: commit
         run: |
           if git diff --quiet data; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi

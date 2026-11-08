@@ -109,3 +109,17 @@ class WatcherTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class FranchiseTest(unittest.TestCase):
+    def test_repository_franchises_are_consistent(self):
+        import franchises
+        games = [atlas.read(f) for f in (atlas.DATA / 'games').glob('*.json')]
+        issues = [f"{g['id']}: {cur} -> {new}" for g, cur, new, _ in franchises.suggest(games)]
+        self.assertEqual(issues, [], 'python3 scripts/franchises.py --fix ausführen')
+
+    def test_spinoff_rule(self):
+        import franchises
+        games = [{'id': 'a', 'title': "Luigi's Mansion", 'franchise': 'Super Mario'},
+                 {'id': 'b', 'title': 'Super Mario 64', 'franchise': 'Super Mario'}]
+        self.assertEqual([(g['id'], new) for g, _, new, _ in franchises.suggest(games)], [('a', "Luigi's Mansion")])

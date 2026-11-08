@@ -93,6 +93,15 @@
           "android"
         ],
         "note": "Lokale Windows-PC-Spielausführung über GameNative, kein Streaming. Funktioniert nicht mit allen Spielen; Besitz und Kompatibilitätsdaten separat prüfen."
+      },
+      {
+        "name": "Winlator",
+        "kind": "pc-runtime",
+        "project": "winlator",
+        "targets": [
+          "android"
+        ],
+        "note": "PC-Spiele über Wine/Box64 auf Android. Einstellungen (Treiber, DXVK, Box64-Preset) je Spiel sehr unterschiedlich."
       }
     ],
     "Nintendo GameCube": [
@@ -181,6 +190,37 @@
           "android"
         ],
         "note": "Switch-Emulation auf Android. Spielkompatibilität und Version je Titel prüfen."
+      }
+    ],
+    "Xbox": [
+      {
+        "name": "X1 BOX",
+        "kind": "emulation",
+        "project": "x1-box",
+        "targets": [
+          "android"
+        ],
+        "note": "Original-Xbox-Emulation (xemu-Port) im frühen Stadium. Eigene BIOS-, MCPX- und Festplattendateien nötig; Leistung stark spielabhängig."
+      }
+    ],
+    "Xbox 360": [
+      {
+        "name": "XenDroid",
+        "kind": "emulation",
+        "project": "xendroid",
+        "targets": [
+          "android"
+        ],
+        "note": "Experimentelle Xbox-360-Emulation; viele Spiele noch nicht spielbar. Turnip-Treiber empfohlen."
+      },
+      {
+        "name": "aX360e",
+        "kind": "emulation",
+        "project": "ax360e",
+        "targets": [
+          "android"
+        ],
+        "note": "Experimentelle Xbox-360-Emulation auf Xenia-Basis."
       }
     ]
   }

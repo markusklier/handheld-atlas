@@ -1194,6 +1194,46 @@
         "grand-theft-auto-iv"
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "winlator",
+      "name": "Winlator",
+      "kind": "runtime",
+      "url": "https://github.com/brunodev85/winlator",
+      "repo": "brunodev85/winlator",
+      "description": "Windows-Programme und PC-Spiele auf Android über Wine und Box64.",
+      "games": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "x1-box",
+      "name": "X1 BOX",
+      "kind": "emulator",
+      "url": "https://play.google.com/store/apps/details?id=com.izzy2lost.x1box",
+      "repo": null,
+      "description": "Inoffizieller Android-Port des Original-Xbox-Emulators xemu (frühes Stadium, kostenpflichtig im Play Store).",
+      "games": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "xendroid",
+      "name": "XenDroid",
+      "kind": "emulator",
+      "url": "https://github.com/rfandango/XenDroid",
+      "repo": "rfandango/XenDroid",
+      "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia Edge; empfohlen ab Snapdragon 8 Gen 2 mit Turnip-Treiber.",
+      "games": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ax360e",
+      "name": "aX360e",
+      "kind": "emulator",
+      "url": "https://github.com/aenu1/ax360e",
+      "repo": "aenu1/ax360e",
+      "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia.",
+      "games": [],
+      "checkedAt": "2026-11-08"
     }
   ]
 }

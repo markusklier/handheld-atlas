@@ -188,7 +188,11 @@ document.addEventListener('mouseover', (e) => { const c = e.target.closest?.('.c
 document.addEventListener('mouseout', (e) => { const c = e.target.closest?.('.card'); if (c && !c.contains(e.relatedTarget)) stopPreview(); });
 document.addEventListener('focusin', (e) => { const c = e.target.closest?.('.card'); if (c) startPreview(c); else stopPreview(); });
 
-const gridHTML = (games) => games.length ? `<div class="grid">${games.map(cardHTML).join('')}</div>` : `<div class="empty">Nichts gefunden.</div>`;
+const gridHTML = (games) => games.length ? `<div class="grid">${games.map(cardHTML).join('')}</div>`
+  : state.q.trim().length > 2 ? `<div class="panel"><h3>„${esc(state.q.trim())}“ ist noch nicht in Atlas</h3>
+      <p class="muted">Lass die KI nachsehen, welche Fassungen und Wege es gibt, oder nimm das Spiel bzw. die ganze Reihe direkt auf.</p>
+      <div class="row"><a class="btn primary" href="#/neu-spiel/${encodeURIComponent(state.q.trim())}">${icon('ai')}Spiel recherchieren</a></div></div>`
+  : `<div class="empty">Nichts gefunden.</div>`;
 
 function verifTag(v) {
   const ic = { 'thor-tested': 'check', community: 'gamepad', documented: 'info', 'ai-unverified': 'ai' }[v] || 'info';
@@ -257,6 +261,43 @@ function viewDiscover() {
   return html;
 }
 
+
+/* ---------- platform badges (own icons + short codes; no manufacturer logos) ---------- */
+const PLATFORMS = {
+  'NES': ['NES', 'console', 'nintendo'], 'SNES': ['SNES', 'console', 'nintendo'], 'Nintendo 64': ['N64', 'console', 'nintendo'],
+  'Nintendo GameCube': ['GC', 'console', 'nintendo'], 'Wii': ['Wii', 'console', 'nintendo'], 'Wii U': ['Wii U', 'console', 'nintendo'],
+  'Nintendo Switch': ['Switch', 'handheld', 'nintendo'], 'Game Boy / Game Boy Color': ['GB', 'handheld', 'nintendo'],
+  'Game Boy Advance': ['GBA', 'handheld', 'nintendo'], 'Nintendo DS': ['DS', 'handheld', 'nintendo'], 'Nintendo 3DS': ['3DS', 'handheld', 'nintendo'],
+  'PlayStation': ['PS1', 'console', 'sony'], 'PlayStation 2': ['PS2', 'console', 'sony'], 'PlayStation 3': ['PS3', 'console', 'sony'],
+  'PlayStation 4': ['PS4', 'console', 'sony'], 'PlayStation 5': ['PS5', 'console', 'sony'], 'PSP': ['PSP', 'handheld', 'sony'],
+  'PlayStation Vita': ['Vita', 'handheld', 'sony'], 'Xbox': ['Xbox', 'console', 'microsoft'], 'Xbox 360': ['360', 'console', 'microsoft'],
+  'Xbox One': ['XB1', 'console', 'microsoft'], 'Xbox Series': ['XSX', 'console', 'microsoft'], 'Dreamcast': ['DC', 'console', 'sega'],
+  'Sega Saturn': ['Saturn', 'console', 'sega'], 'Sega Mega Drive': ['MD', 'console', 'sega'], 'PC': ['PC', 'pc', 'pc'],
+  'Android': ['Android', 'phone', 'android'], 'iOS': ['iOS', 'phone', 'apple'], 'Arcade': ['Arcade', 'arcade', 'pc'], 'Nokia N-Gage': ['N-Gage', 'handheld', 'pc'],
+};
+const ICON_OF = { console: 'console', handheld: 'handheld', pc: 'pc', phone: 'phone', arcade: 'arcade' };
+function platformBadge(p) {
+  const [abbr, family, maker] = PLATFORMS[p] || [p.length > 8 ? p.split(' ').map((w) => w[0]).join('') : p, 'console', 'pc'];
+  return `<span class="pf mk-${maker}" title="${esc(p)}">${icon(ICON_OF[family])}${esc(abbr)}</span>`;
+}
+const badges = (list, max = 5) => list.slice(0, max).map(platformBadge).join('') + (list.length > max ? `<span class="pf mk-pc">+${list.length - max}</span>` : '');
+
+const modsFor = (g, v) => (g.mods || []).filter((m) => (m.release || []).includes(v.id));
+
+function modsView(g) {
+  const cats = DB.meta.modCategories || {};
+  const vname = (id) => versionsOf(g).find((v) => v.id === id)?.name || id;
+  const present = Object.keys(cats).filter((c) => g.mods.some((m) => (m.category || 'other') === c));
+  const sel = state.modCat && present.includes(state.modCat) ? state.modCat : null;
+  const shown = g.mods.filter((m) => !sel || (m.category || 'other') === sel);
+  return `<p class="muted" style="margin:14px 0 8px">Community-Mods und Patches. „Funktioniert mit“ zeigt, welche Fassung du dafür brauchst – das entscheidet oft, welchen Spielweg du wählst.</p>
+    ${present.length > 1 ? `<div class="chips"><button class="chip" data-modcat="" aria-pressed="${!sel}">Alle</button>${present.map((c) => `<button class="chip" data-modcat="${esc(c)}" aria-pressed="${sel === c}">${esc(cats[c])}</button>`).join('')}</div>` : ''}
+    <div class="mods">${shown.map((m) => `<div class="mod"><div class="row" style="justify-content:space-between"><h3>${esc(m.name)}</h3>${verifTag(m.verification || 'documented')}</div>
+      <div class="row"><span class="tag">${icon('wrench')}${esc(label('modCategories', m.category || 'other'))}</span>
+        ${(m.release || []).length ? `<span class="faint">Funktioniert mit:</span>${m.release.map((id) => `<button class="tag linkish" data-open-version="${esc(id)}">${esc(vname(id))}</button>`).join('')}` : (m.edition ? `<span class="faint">${esc(m.edition)}</span>` : '')}</div>
+      <p class="muted" style="margin:0">${esc(m.description)}</p>${shotsHTML(m.screenshots, 'm:' + m.id)}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
+}
+
 /* ---------- versions ("Fassungen") and ways to play them ---------- */
 const NATIVE = new Set(['native', 'native-mod', 'decomp', 'recomp', 'source-port']);
 const VERIF_SCORE = { 'thor-tested': 50, community: 30, documented: 18, 'ai-unverified': 8 };
@@ -285,9 +326,36 @@ function waysFor(g) {
       seen.add(o.project);
       ways.push({ key: `g:${v.id}:${o.project}`, type: 'generic', o, v, name: o.name, kind: o.kind, features: [], targets: o.targets });
     }
+    attachReports(ways.filter((w) => w.v === v), v);
   }
   for (const w of ways) Object.assign(w, rate(w));
   return ways;
+}
+
+/* Community reports (EmuReady etc.) live on the version; give each way the reports of its emulator.
+   Emulators nobody in Atlas knows yet become their own way, so e.g. Winlator vs GameNative shows up by itself. */
+const PC_RUNTIMES = /gamenative|winlator|gamehub|droiddeck|mobox|exagear|cassia/i;
+function attachReports(ways, v) {
+  const reps = v.reports || [];
+  const key = (s) => norm(s).replace(/[^a-z0-9]/g, '');
+  const used = new Set();
+  for (const w of ways) {
+    const names = [w.name, w.r?.runtime, ...(w.r?.projects || []).map((p) => DB.projects[p]?.name), DB.projects[w.o?.project]?.name]
+      .filter(Boolean).map(key);
+    w.community = reps.filter((rep) => {
+      const e = key(rep.emulator);
+      const hit = e && names.some((n) => n.includes(e) || e.includes(n.slice(0, Math.max(4, e.length))));
+      if (hit) used.add(rep);
+      return hit;
+    });
+  }
+  const rest = reps.filter((rep) => !used.has(rep) && rep.emulator);
+  const byEmu = new Map();
+  for (const rep of rest) { if (!byEmu.has(rep.emulator)) byEmu.set(rep.emulator, []); byEmu.get(rep.emulator).push(rep); }
+  for (const [emu, list] of byEmu) {
+    ways.push({ key: `c:${v.id}:${key(emu)}`, type: 'community', v, name: emu, kind: PC_RUNTIMES.test(emu) ? 'pc-runtime' : 'emulation',
+      features: [], targets: ['android'], community: list });
+  }
 }
 
 /* Transparent ranking for the selected device. Every point comes with a visible reason. */
@@ -296,7 +364,7 @@ function rate(w) {
   const r = w.r;
   const targets = r?.targets || w.targets || ['android'];
   if (device().target && !targets.includes(device().target)) return { score: -999, reasons, fits: false };
-  let score = w.type === 'route' ? VERIF_SCORE[r.verification] ?? 8 : w.type === 'official' ? 22 : 5;
+  let score = w.type === 'route' ? VERIF_SCORE[r.verification] ?? 8 : w.type === 'official' ? 22 : w.type === 'community' ? 6 : 5;
   if (w.type === 'route' && r.verification === 'thor-tested') reasons.push(['check', 'Auf dem Thor getestet']);
   if (w.type === 'route' && r.verification === 'community') reasons.push(['gamepad', 'Erfahrungsberichte']);
   if (w.type === 'official') reasons.push(['check', 'Offiziell für Android']);
@@ -306,30 +374,55 @@ function rate(w) {
     if (w.features.includes(f)) { score += 4; reasons.push(['spark', txt]); }
   }
   if (w.features.includes('mods')) { score += 3; reasons.push(['wrench', 'Mods']); }
-  if (w.type === 'generic') reasons.push(['info', 'Allgemein, ungeprüft']);
+  if (w.type === 'generic' && !(w.community || []).length) reasons.push(['info', 'Allgemein, ungeprüft']);
+  if (w.type === 'community') score += 4;
   const effort = r?.effort || (w.type === 'generic' ? 'guided' : 'easy');
   score += { easy: 6, guided: 2, advanced: 0, experimental: -6 }[effort] ?? 0;
   if (r?.status === 'archived') { score -= 40; reasons.push(['alert', 'Archiviert']); }
   if (r?.status === 'experimental') { score -= 6; reasons.push(['alert', 'Experimentell']); }
-  const reports = r?.reports?.length || 0;
-  if (reports) score += Math.min(reports * 3, 15);
-  return { score, reasons, fits: true, effort, reports, perf: r?.performance?.length || 0 };
+  const community = w.community || [];
+  const reports = (r?.reports?.length || 0) + community.length;
+  if (reports) score += Math.min(reports * 2, 10);
+  const best = community.reduce((b, rep) => (rep.rank && rep.rank < (b?.rank ?? 99) ? rep : b), null);
+  if (best) {
+    score += { 1: 20, 2: 15, 3: 8, 4: 0, 5: -5, 6: -10, 7: -12, 8: -15 }[best.rank] ?? 0;
+    reasons.push([best.rank <= 3 ? 'gamepad' : 'alert', `Community: ${best.ratingDe || best.rating} (${community.length})`]);
+  }
+  return { score, reasons, fits: true, effort, reports, best, perf: r?.performance?.length || 0 };
 }
 
 function wayTag(w) {
   if (w.type === 'route') return verifTag(w.r.verification);
   if (w.type === 'official') return `<span class="tag v-documented">${icon('check')}Offizielle App</span>`;
+  if (w.type === 'community') return `<span class="tag v-community">${icon('gamepad')}Laut Community</span>`;
   return `<span class="tag">${icon('info')}Allgemein</span>`;
 }
 
+const RANK_CLASS = (rank) => (rank <= 2 ? 'good' : rank <= 3 ? 'ok' : 'bad');
+function communityHTML(w) {
+  const list = w.community || [];
+  if (!list.length) return '';
+  return `<div class="community"><h4>Erfahrungen von Geräten mit dem Chip des ${esc(DB.meta.devices?.[0]?.name || 'Referenzgeräts')} <span class="faint">· Quelle: EmuReady</span></h4>
+    ${list.slice(0, 5).map((rep) => `<div class="report"><span class="rating ${RANK_CLASS(rep.rank)}">${esc(rep.ratingDe || rep.rating)}</span>
+      <div class="grow"><div><b>${esc(rep.device)}</b> · ${esc(rep.emulator)}${rep.date ? ' · ' + fmtDate(rep.date) : ''}</div>
+      ${rep.summary ? `<div class="muted">${esc(rep.summary)}</div>` : ''}
+      ${rep.settings ? `<details class="settings"><summary>Einstellungen (${Object.keys(rep.settings).length})</summary><dl>${Object.entries(rep.settings).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></details>` : ''}</div>
+      <a class="btn" href="${esc(rep.url)}" target="_blank" rel="noopener">Bericht ${icon('ext')}</a></div>`).join('')}
+    ${list.length > 5 ? `<p class="faint">${list.length - 5} weitere Berichte auf EmuReady.</p>` : ''}</div>`;
+}
+
 function wayBody(g, w) {
-  if (w.type === 'route') return routeHTML(g, w.r);
+  const extra = communityHTML(w);
+  if (w.type === 'route') return routeHTML(g, w.r).replace(/<\/article>$/, extra + '</article>');
+  if (w.type === 'community') {
+    return `<article class="route"><p class="muted">${esc(w.name)} ist in Atlas noch nicht als Weg für ${esc(w.v.name)} eingetragen, aber Nutzer berichten davon.</p>${extra}</article>`;
+  }
   if (w.type === 'official') {
     return `<article class="route"><p>${esc(w.v.name)} ist offiziell für Android erschienen: kaufen und installieren über den Play Store, keine Emulation nötig.</p>
       ${(w.v.links || []).length ? `<div class="row">${w.v.links.map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
-      <p class="faint">Controller- und Zweitbildschirm-Unterstützung sind für diese Fassung noch nicht eingetragen.</p></article>`;
+      <p class="faint">Controller- und Zweitbildschirm-Unterstützung sind für diese Fassung noch nicht eingetragen.</p>${extra}</article>`;
   }
-  return `<article class="route"><p class="muted">${esc(w.o.note)}</p><p class="faint">Allgemeiner Emulator für ${esc(w.v.platforms.join(', '))}. Ob ${esc(g.title)} darin gut läuft, ist noch nicht spielspezifisch geprüft.</p>${projectLine(DB.projects[w.o.project])}</article>`;
+  return `<article class="route"><p class="muted">${esc(w.o.note)}</p><p class="faint">Allgemeiner Emulator für ${esc(w.v.platforms.join(', '))}. ${(w.community || []).length ? '' : `Ob ${esc(g.title)} darin gut läuft, ist noch nicht spielspezifisch geprüft.`}</p>${extra}${projectLine(DB.projects[w.o.project])}</article>`;
 }
 
 const wayId = (key) => 'w-' + key.replace(/[^a-z0-9-]/gi, '_');
@@ -339,7 +432,7 @@ function wayRow(g, w, open) {
   const mini = w.reasons.filter(([ic]) => ic === 'spark' || ic === 'wrench' || ic === 'chip').map(([, t]) => `<span class="tag">${esc(t)}</span>`).join('');
   return `<details class="way${w.type === 'generic' ? ' generic' : ''}" id="${wayId(w.key)}" ${open ? 'open' : ''}>
     <summary><span class="way-name">${esc(w.name)}<small>${esc(label('kinds', w.kind))}${w.r?.runtime ? ' · ' + esc(w.r.runtime) : ''}</small></span>
-      <span class="way-tags">${dual ? `<span class="tag dual">${icon('dual')}Dual</span>` : ''}${mini}${wayTag(w)}</span></summary>
+      <span class="way-tags">${dual ? `<span class="tag dual">${icon('dual')}Dual</span>` : ''}${mini}${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)} · ${w.community.length}</span>` : ''}${wayTag(w)}</span></summary>
     ${wayBody(g, w)}</details>`;
 }
 
@@ -349,8 +442,10 @@ function versionCard(g, v, ways) {
   const shown = state.dualOnly ? ways.filter((w) => w.features.includes('dual-screen')) : ways;
   const plats = v.platforms.length > 1 || v.platforms[0] !== v.name ? ' · ' + esc(v.platforms.join(', ')) : '';
   return `<section class="version" id="v-${esc(v.id)}">
-    <div class="version-head"><div><h3>${esc(v.name)}</h3><div class="sub">${esc(meta)}${plats}</div></div>
-      <div class="row">${android ? `<span class="tag v-documented">${icon('check')}Android offiziell</span>` : ''}${(v.traits || []).map((t) => `<span class="tag">${esc(label('features', t))}</span>`).join('')}</div></div>
+    <div class="version-head"><div><div class="pfs">${badges(v.platforms)}</div><h3>${esc(v.name)}</h3><div class="sub">${esc(meta)}${plats}</div></div>
+      <div class="row">${android ? `<span class="tag v-documented">${icon('check')}Android offiziell</span>` : ''}${(v.traits || []).map((t) => `<span class="tag">${esc(label('features', t))}</span>`).join('')}
+        ${modsFor(g, v).length ? `<button class="tag linkish" data-gtab="mods">${icon('wrench')}${modsFor(g, v).length} Mods</button>` : ''}
+        <button class="btn small" data-analyze="${esc(g.id)}" data-focus="${esc(v.id)}" title="Sofortanalyse nur für diese Fassung">${icon('ai')}${ways.length ? 'Mehr finden' : 'Wege suchen'}</button></div></div>
     ${v.note ? `<p class="muted">${esc(v.note)}</p>` : ''}
     ${shown.length ? `<div class="ways">${shown.map((w) => wayRow(g, w, state.openWay === w.key)).join('')}</div>`
       : `<p class="faint">${ways.length ? 'Kein Dual-Screen-Weg für diese Fassung.' : 'Für diese Fassung ist auf Android noch kein Weg bekannt.'}</p>`}
@@ -368,7 +463,7 @@ function compareTable(g, ways) {
   ${ways.map((w) => `<tr><td><button class="linkish" data-open="${esc(w.key)}">${esc(w.name)}</button></td><td>${esc(w.v.name)}</td><td>${art(w)}</td>
     <td>${yes(w.features.includes('dual-screen'))}</td><td>${pic(w) ? esc(pic(w)) : '<span class="no">–</span>'}</td>
     <td>${yes(w.features.includes('mods'))}</td><td>${esc(label('effort', w.effort))}</td><td>${wayTag(w)}</td>
-    <td>${w.reports || '<span class="no">–</span>'}</td><td>${w.perf ? `${w.perf} Messung(en)` : '<span class="no">noch keine</span>'}</td></tr>`).join('')}
+    <td>${w.reports || '<span class="no">–</span>'}</td><td>${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)}</span>` : w.perf ? `${w.perf} Messung(en)` : '<span class="no">noch keine</span>'}</td></tr>`).join('')}
   </tbody></table></div>`;
 }
 
@@ -410,20 +505,21 @@ function viewGame(id) {
   } else if (tab === 'compare') {
     body = compareTable(g, fitting);
   } else {
-    body = `<div class="mods">${g.mods.map((m) => `<div class="mod"><div class="row" style="justify-content:space-between"><h3>${esc(m.name)}</h3>${verifTag(m.verification || 'documented')}</div>
-      <div class="row">${m.category ? `<span class="tag">${esc(m.category)}</span>` : ''}${m.edition ? `<span class="tag">${esc(m.edition)}</span>` : ''}</div>
-      <p class="muted" style="margin:0">${esc(m.description)}</p>${shotsHTML(m.screenshots, 'm:' + m.id)}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
+    body = modsView(g);
   }
   return `<a class="btn back" href="#/" data-back>${icon('back')}Zurück</a>
     <div class="hero">${coverHTML(g, { badges: false })}<div class="meta">
       <a class="franchise" href="#/franchise/${encodeURIComponent(g.franchise)}">${esc(g.franchise)}</a>
       <h1>${esc(g.title)}</h1>
+      <div class="pfs">${badges(g.platforms, 8)}</div>
       <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
       <div class="row"><button class="btn ${fav ? 'on' : ''}" id="fav">${icon('bookmark')}${fav ? 'Gemerkt' : 'Merken'}</button>
-      ${DB.meta.repo ? `<a class="btn" href="https://github.com/${esc(DB.meta.repo)}/issues/new?labels=recherche&title=${encodeURIComponent('Recherche: ' + g.title)}&body=${encodeURIComponent('game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)')}" target="_blank" rel="noopener">${icon('ai')}Recherche anfordern</a>` : ''}
+      <button class="btn" data-analyze="${esc(g.id)}">${icon('ai')}Sofortanalyse</button>
+      ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Recherche anfordern</a>` : ''}
       ${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
     </div></div>
+    ${analysisPanel(g.id)}
     ${recommendation(g, fitting)}
     ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>Originalspiel</h2></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
     <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>`;
@@ -456,6 +552,10 @@ function routeHTML(g, r) {
     ${r.version ? `<div class="faint">Version: ${esc(r.version)}</div>` : ''}
     ${projects ? `<div class="projects-line"><h4 class="faint" style="margin:0">Projekte</h4>${projects}</div>` : ''}
     ${links ? `<div class="row">${links}</div>` : ''}
+    ${(r.reports || []).length ? `<div class="community"><h4>Erfahrungsberichte</h4>${r.reports.map((rep) => `<div class="report"><span class="rating ok">${esc(rep.device || 'Bericht')}</span>
+      <div class="grow muted">${esc(rep.summary)}</div><a class="btn" href="${esc(rep.url)}" target="_blank" rel="noopener">Bericht ${icon('ext')}</a></div>`).join('')}</div>` : ''}
+    ${(r.performance || []).length ? `<div class="community"><h4>Performance</h4>${r.performance.map((pf) => `<div class="report"><span class="rating good">${esc(pf.device)}</span>
+      <div class="grow">${esc(pf.result)}${pf.settings ? `<div class="faint">${esc(pf.settings)}</div>` : ''}</div><a class="btn" href="${esc(pf.source)}" target="_blank" rel="noopener">Quelle ${icon('ext')}</a></div>`).join('')}</div>` : ''}
     <div class="faint">Geprüft am ${fmtDate(r.checkedAt)}${r.testedOn?.length ? ' · getestet auf ' + esc(r.testedOn.join(', ')) : ''}</div>
   </article>`;
 }
@@ -538,6 +638,23 @@ function viewFavs() {
   return `<h1>Merkliste</h1><p class="muted">Gespeichert nur auf diesem Gerät.</p><div class="section">${games.length ? gridHTML(games) : '<div class="empty">Noch nichts gemerkt. Öffne ein Spiel und tippe auf „Merken“.</div>'}</div>`;
 }
 
+function qualityPanel() {
+  const routes = DB.games.flatMap((g) => g.routes);
+  const shots = routes.flatMap((r) => r.screenshots || []);
+  const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
+  const withShots = routes.filter((r) => (r.screenshots || []).length).length;
+  const verified = shots.filter((s) => ['ai-verified', 'source-verified'].includes(s.check)).length;
+  const versions = DB.games.flatMap((g) => g.versions || []);
+  const rows = [
+    ['Spiele mit Cover', pct(DB.games.filter((g) => g.cover).length, DB.games.length)],
+    ['Spielwege mit Screenshots', pct(withShots, routes.length)],
+    ['Screenshots geprüft', pct(verified, shots.length)],
+    ['Fassungen mit Erscheinungsjahr', pct(versions.filter((v) => v.year).length, versions.length)],
+  ];
+  return `<div class="panel"><h3>Datenqualität</h3>${rows.map(([l, v]) => `<div class="meter"><span>${l}</span><b>${v} %</b><i style="--v:${v}%"></i></div>`).join('')}
+    <p class="faint">${versions.filter((v) => (v.reports || []).length).length} Fassungen mit Community-Berichten · ${DB.inboxCount} unsortierte Funde</p></div>`;
+}
+
 function viewInfo() {
   return `<h1>Info</h1>
   <div class="panels section">
@@ -545,11 +662,150 @@ function viewInfo() {
       <div class="chips">${(DB.meta.devices || []).map((d) => `<button class="chip" data-device="${esc(d.id)}" aria-pressed="${d.id === state.device}">${esc(d.name)}</button>`).join('')}</div></div>
     <div class="panel"><h3>Was die Markierungen bedeuten</h3><div class="legend">
       ${Object.keys(DB.meta.verification || {}).map((k) => `<div>${verifTag(k)}</div>`).join('')}</div></div>
+    <div class="panel"><h3>${icon('ai')} KI-Sofortanalyse</h3><p class="muted">Mit deinem OpenAI-API-Schlüssel recherchiert Atlas ein Spiel oder eine Fassung sofort (1–3 Minuten, kostet API-Guthaben). Der Schlüssel bleibt auf diesem Gerät und geht nur an api.openai.com.</p>
+      <label class="field">API-Schlüssel<input id="ai-key" type="password" autocomplete="off" placeholder="sk-…" value="${esc(aiKey())}"></label>
+      <label class="field">Modell<input id="ai-model" type="text" autocomplete="off" placeholder="${esc(DB.research?.model || '')}" value="${esc(store.get('openaiModel', ''))}"></label>
+      <div class="row"><button class="btn primary" id="ai-save">Speichern</button>${aiKey() ? '<button class="btn" id="ai-clear">Löschen</button>' : ''}</div></div>
+    ${qualityPanel()}
     <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche.</p></div>
     <div class="panel"><h3>Daten</h3><p class="muted">Stand ${fmtDate(DB.builtAt)}. ${DB.games.length} Spiele, ${Object.keys(DB.projects).length} Projekte. Die App holt sich neue Daten selbst, sobald sie online geöffnet wird.</p>
       <div class="row"><button class="btn" id="update">Nach Updates suchen</button>${window.ATLAS_EMBEDDED ? '' : '<a class="btn" href="Handheld-Atlas-offline.html" download>Offline-Version laden</a>'}</div></div>
   </div>
   <p class="faint section">Atlas installiert und startet keine Spiele und enthält keine ROMs, APKs oder Spieldaten. Alle Projekte gehören ihren Urhebern; Bilder sind verlinkt und stammen aus den angegebenen Quellen (u. a. libretro-thumbnails, Steam, Projekt-Repositories).</p>`;
+}
+
+/* ---------------- instant analysis (OpenAI, straight from this device) ----------------
+   Same rules and JSON schema as scripts/ai_research.py (shipped in data.json → DB.research).
+   The API key never leaves this device except towards api.openai.com. Results are shown immediately and
+   are NOT saved; "Dauerhaft übernehmen" opens a GitHub issue that the KI-Recherche workflow applies. */
+const analyses = new Map();   // key: game id or "new:<title>"
+const aiKey = () => store.get('openaiKey', '');
+const aiModel = () => store.get('openaiModel', '') || DB.research?.model || 'gpt-6.1-sol';
+
+function analysisPrompt(g, focus) {
+  const known = {
+    versions: versionsOf(g).map((v) => ({ key: v.id, name: v.name, platforms: v.platforms, year: v.year ?? null })),
+    routes: (g.routes || []).map((r) => ({ name: r.name, version: r.release, kind: r.kind })),
+    mods: (g.mods || []).map((m) => m.name),
+  };
+  const v = focus && versionsOf(g).find((x) => x.id === focus);
+  const focusText = v ? `\nSCHWERPUNKT: Fassung „${v.name}“ (key ${v.id}, ${v.platforms.join(', ')}). Suche vor allem Wege, Erfahrungsberichte, Einstellungen und Mods für genau diese Fassung auf dem AYN Thor.\n` : '';
+  return `Du recherchierst für „Handheld Atlas“, einen spielzentrierten Katalog für Android-Handhelds
+(Referenzgerät AYN Thor: Snapdragon 8 Gen 2, zwei Displays, Controller). Spiel: „${g.title}“ (${(g.platforms || []).join(', ') || 'Plattformen unbekannt'}).
+${focusText}
+Bereits bekannt (nicht wiederholen, nur ergänzen oder korrigieren): ${JSON.stringify(known)}
+Allgemeine Emulatoren je Plattform sind schon hinterlegt: ${Object.keys(DB.platforms).sort().join(', ')} – liste sie NICHT als Spielweg,
+außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Einstellungen, Fork mit Dual Screen).
+
+${DB.research.rules}`;
+}
+
+async function runAnalysis(key, g, focus) {
+  if (!aiKey()) { analyses.set(key, { status: 'nokey', focus }); refreshAnalysis(key); return; }
+  const ctrl = new AbortController();
+  const a = { status: 'running', focus, started: Date.now(), ctrl };
+  analyses.set(key, a);
+  refreshAnalysis(key);
+  a.tick = setInterval(() => { const el = document.getElementById('an-elapsed'); if (el) el.textContent = Math.round((Date.now() - a.started) / 1000) + ' s'; }, 1000);
+  try {
+    const res = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST', signal: ctrl.signal,
+      headers: { Authorization: 'Bearer ' + aiKey(), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: aiModel(), store: false, tools: [{ type: 'web_search', search_context_size: 'high' }],
+        include: ['web_search_call.action.sources'], tool_choice: 'required', reasoning: { effort: 'medium' },
+        text: { format: DB.research.format }, input: analysisPrompt(g, focus), max_output_tokens: 16000 }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data?.error?.message || `HTTP ${res.status}`);
+    if (data.status && data.status !== 'completed') throw new Error(`Antwort unvollständig (${data.incomplete_details?.reason || data.status})`);
+    const text = (data.output || []).filter((o) => o.type === 'message').flatMap((o) => o.content || [])
+      .filter((c) => c.type === 'output_text').map((c) => c.text).join('\n');
+    const sources = new Set();
+    for (const o of data.output || []) {
+      for (const s of o.action?.sources || []) if (s.url) sources.add(s.url);
+      for (const c of o.content || []) for (const an of c.annotations || []) if (an.url) sources.add(an.url);
+    }
+    Object.assign(a, { status: 'done', result: JSON.parse(text), sources: [...sources], at: new Date().toISOString() });
+  } catch (err) {
+    Object.assign(a, { status: err.name === 'AbortError' ? 'cancelled' : 'error', error: err.message });
+  } finally {
+    clearInterval(a.tick);
+    refreshAnalysis(key);
+  }
+}
+
+function refreshAnalysis(key) {
+  const el = document.getElementById('analysis');
+  if (el && el.dataset.key === key) el.outerHTML = analysisPanel(key);
+}
+
+function issueUrl(title, body) {
+  return `https://github.com/${DB.meta.repo}/issues/new?labels=recherche&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}
+
+function adoptUrl(key, g, a) {
+  const head = key.startsWith('new:') ? `new-game: ${g.title}` : `game: ${g.id}`;
+  const json = JSON.stringify(a.result);
+  const withJson = `${head}\n\nErgebnis der Sofortanalyse vom ${fmtDate(a.at)} (${aiModel()}), wird ohne neue KI-Anfrage übernommen:\n\n\`\`\`json\n${json}\n\`\`\``;
+  // GitHub limits URL length; very large results are researched again by the workflow instead
+  return issueUrl(`Recherche: ${g.title}`, encodeURIComponent(withJson).length < 7000 ? withJson : `${head}${a.focus ? `\nversion: ${a.focus}` : ''}`);
+}
+
+function analysisPanel(key) {
+  const a = analyses.get(key);
+  if (!a) return `<div id="analysis" data-key="${esc(key)}"></div>`;
+  const g = key.startsWith('new:') ? { id: null, title: key.slice(4), platforms: [], versions: [], routes: [], mods: [] } : DB.byId.get(key);
+  const focusName = a.focus ? versionsOf(g).find((v) => v.id === a.focus)?.name : null;
+  let body;
+  if (a.status === 'nokey') {
+    body = `<p>Für die Sofortanalyse braucht Atlas einmalig deinen OpenAI-API-Schlüssel. Er wird nur auf diesem Gerät gespeichert.</p>
+      <div class="row"><a class="btn primary" href="#/info">Schlüssel eintragen</a>
+      ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl(`Recherche: ${g.title}`, key.startsWith('new:') ? `new-game: ${g.title}` : `game: ${g.id}${a.focus ? `\nversion: ${a.focus}` : ''}`))}" target="_blank" rel="noopener">Stattdessen über GitHub recherchieren (3–5 Min.)</a>` : ''}</div>`;
+  } else if (a.status === 'running') {
+    body = `<div class="row"><span class="spinner"></span><span>Recherchiere${focusName ? ` „${esc(focusName)}“` : ''} mit Websuche … <b id="an-elapsed">0 s</b> (meist 1–3 Minuten)</span>
+      <button class="btn" data-an-cancel="${esc(key)}">Abbrechen</button></div>`;
+  } else if (a.status === 'error' || a.status === 'cancelled') {
+    body = `<p class="warn">${a.status === 'cancelled' ? 'Abgebrochen.' : 'Fehler: ' + esc(a.error)}</p>
+      <div class="row"><button class="btn" data-analyze="${esc(key)}" data-focus="${esc(a.focus || '')}">Erneut versuchen</button></div>`;
+  } else {
+    const r = a.result;
+    const knownV = new Set(versionsOf(g).flatMap((v) => [v.id, norm(v.name)]));
+    const vName = (k) => (r.versions.find((v) => v.key === k)?.name) || versionsOf(g).find((v) => v.id === k)?.name || k;
+    const src = (u) => u ? `<a class="link" href="${esc(u)}" target="_blank" rel="noopener">Quelle ${icon('ext')}</a>` : '';
+    body = `${r.summary ? `<p>${esc(r.summary)}</p>` : ''}
+      ${r.versions.length ? `<h4>Fassungen</h4><div class="an-list">${r.versions.map((v) => `<div class="an-item">
+        <div class="row"><b>${esc(v.name)}</b>${knownV.has(v.key) || knownV.has(norm(v.name)) ? '<span class="tag">bekannt</span>' : '<span class="tag v-ai-unverified">neu</span>'}
+        <span class="faint">${esc(label('versionTypes', v.type))}${v.year ? ' · ' + v.year : ''} · ${esc(v.platforms.join(', '))}</span></div>
+        ${v.note ? `<div class="muted">${esc(v.note)}</div>` : ''}${src(v.sourceUrl)}</div>`).join('')}</div>` : ''}
+      ${r.routes.length ? `<h4>Spielwege</h4><div class="an-list">${r.routes.map((w) => `<div class="an-item">
+        <div class="row"><b>${esc(w.name)}</b><span class="faint">${esc(vName(w.versionKey))} · ${esc(label('kinds', w.kind))}</span>
+        ${(w.features || []).map((f) => `<span class="tag${f === 'dual-screen' ? ' dual' : ''}">${esc(label('features', f))}</span>`).join('')}</div>
+        ${w.benefit ? `<div>${esc(w.benefit)}</div>` : ''}${w.caveat ? `<div class="warn">${esc(w.caveat)}</div>` : ''}
+        ${(w.requires || []).length ? `<div class="faint">Du brauchst: ${esc(w.requires.join(' · '))}</div>` : ''}
+        ${(w.screenshots || []).length ? `<div class="an-shots">${w.screenshots.map((s) => `<img src="${esc(s.url)}" alt="${esc(s.caption)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`).join('')}</div>` : ''}
+        ${(w.reports || []).map((rep) => `<div class="faint">${icon('gamepad')} ${esc(rep.device)}: ${esc(rep.summary)} <a class="link" href="${esc(rep.url)}" target="_blank" rel="noopener">Bericht</a></div>`).join('')}
+        <div class="row">${w.projectUrl ? `<a class="link" href="${esc(w.projectUrl)}" target="_blank" rel="noopener">${esc(w.projectName || 'Projekt')} ${icon('ext')}</a>` : ''}${src(w.sourceUrl)}</div></div>`).join('')}</div>` : ''}
+      ${r.mods.length ? `<h4>Mods</h4><div class="an-list">${r.mods.map((m) => `<div class="an-item"><div class="row"><b>${esc(m.name)}</b>
+        <span class="tag">${esc(label('modCategories', m.category))}</span><span class="faint">${esc((m.versionKeys || []).map(vName).join(', '))}</span></div>
+        ${m.description ? `<div class="muted">${esc(m.description)}</div>` : ''}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>` : ''}
+      ${!r.versions.length && !r.routes.length && !r.mods.length ? '<p class="muted">Nichts Neues gefunden.</p>' : ''}
+      <details class="settings"><summary>${a.sources.length} Quellen der Websuche</summary><ul>${a.sources.slice(0, 40).map((u) => `<li><a class="link" href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, '').slice(0, 80))}</a></li>`).join('')}</ul></details>
+      <div class="row">${DB.meta.repo ? `<a class="btn primary" href="${esc(adoptUrl(key, g, a))}" target="_blank" rel="noopener">${icon('check')}Dauerhaft in Atlas übernehmen</a>` : ''}
+        <button class="btn" data-analyze="${esc(key)}" data-focus="${esc(a.focus || '')}">Neu analysieren</button></div>
+      <p class="faint">Nicht gespeichert, bis du übernimmst. Übernommene Einträge erscheinen als „KI-Fund, ungeprüft“ nach etwa 2–3 Minuten.</p>`;
+  }
+  return `<section class="section analysis" id="analysis" data-key="${esc(key)}"><div class="section-head"><h2>${icon('ai')} Sofortanalyse${focusName ? `: ${esc(focusName)}` : ''}</h2>
+    <span class="faint">KI mit Websuche · ${esc(aiModel())} · ungeprüft</span></div>${body}</section>`;
+}
+
+function viewNewGame(title) {
+  const key = 'new:' + title;
+  return `<a class="btn back" href="#/" data-back>${icon('back')}Zurück</a>
+    <h1>${esc(title)}</h1><p class="muted">Dieses Spiel ist noch nicht in Atlas. Die Sofortanalyse sucht Fassungen und Wege, ohne etwas zu speichern; übernehmen kannst du das Ergebnis danach mit einem Klick.</p>
+    <div class="row section"><button class="btn primary" data-analyze="${esc(key)}">${icon('ai')}Sofortanalyse starten</button>
+    ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl(`Recherche: ${title}`, `new-game: ${title}`))}" target="_blank" rel="noopener">Direkt aufnehmen lassen (GitHub)</a>
+      <a class="btn" href="${esc(issueUrl(`Reihe: ${title}`, `franchise: ${title}`))}" target="_blank" rel="noopener">${icon('layers')}Als ganze Reihe erfassen</a>` : ''}</div>
+    ${analysisPanel(key)}`;
 }
 
 /* ---------------- router ---------------- */
@@ -569,6 +825,7 @@ function route() {
   else if (a === 'neu') { html = viewNews(); tab = 'news'; }
   else if (a === 'merkliste') { html = viewFavs(); tab = 'favs'; }
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
+  else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);
@@ -618,6 +875,26 @@ document.addEventListener('click', (e) => {
   if (arrow) { e.preventDefault(); e.stopPropagation(); stepPreview(arrow.closest('.card'), +arrow.dataset.slide); return; }
   const t = e.target.closest('button, a');
   if (!t) return;
+  if (t.dataset.analyze) {
+    e.preventDefault();
+    const key = t.dataset.analyze;
+    const g = key.startsWith('new:') ? { id: null, title: key.slice(4), platforms: [], versions: [], routes: [], mods: [] } : DB.byId.get(key);
+    runAnalysis(key, g, t.dataset.focus || null);
+    requestAnimationFrame(() => document.getElementById('analysis')?.scrollIntoView({ block: 'start', behavior: 'smooth' }));
+    return;
+  }
+  if (t.dataset.modcat !== undefined) { e.preventDefault(); state.modCat = t.dataset.modcat || null; route(); restoreFocus(`[data-modcat="${t.dataset.modcat}"]`); return; }
+  if (t.dataset.openVersion) {
+    e.preventDefault(); state.gameTab = 'versions'; route();
+    document.getElementById('v-' + t.dataset.openVersion)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    return;
+  }
+  if (t.dataset.anCancel) { e.preventDefault(); analyses.get(t.dataset.anCancel)?.ctrl?.abort(); return; }
+  if (t.id === 'ai-save') {
+    store.set('openaiKey', $('#ai-key').value.trim()); store.set('openaiModel', $('#ai-model').value.trim());
+    toast(aiKey() ? 'Schlüssel gespeichert (nur auf diesem Gerät).' : 'Kein Schlüssel eingetragen.'); route(); return;
+  }
+  if (t.id === 'ai-clear') { store.set('openaiKey', ''); toast('Schlüssel gelöscht.'); route(); return; }
   if (t.dataset.open) {
     e.preventDefault();
     state.openWay = t.dataset.open; state.gameTab = 'versions'; route();
