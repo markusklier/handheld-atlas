@@ -217,7 +217,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://preview.redd.it/gta-sa-dual-screen-release-v0-u2p2bbuhejzh1.jpeg?auto=webp&crop=smart&s=d1a5561ec951cdf9dec324b1ba733fab60cbcf61&width=640",
+          "caption": "SA Companion auf dem AYN Thor Max: oben GTA San Andreas für Android während eine",
+          "source": "https://www.reddit.com/r/AynThor/comments/1xngqbw/gta_sa_dual_screen_release/",
+          "credit": "SA-Companion",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

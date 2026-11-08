@@ -56,10 +56,11 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/Josh-Daniels/OpenMW-DS/HEAD/outputs/OpenMW-DS%20Thumnail.jpg",
-          "caption": "Image of the HUD tab in game",
+          "caption": "OpenMW-DS: Spielansicht oben, Journal unten",
           "source": "https://github.com/Josh-Daniels/OpenMW-DS",
           "credit": "OpenMW-DS",
-          "check": "readme"
+          "check": "ai-verified",
+          "dual": true
         }
       ],
       "links": [],

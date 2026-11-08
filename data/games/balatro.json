@@ -297,31 +297,35 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/hand.png",
-          "caption": "Playing a hand",
+          "caption": "Balatro auf zwei Bildschirmen, unten die Handkarten",
           "source": "https://github.com/rosbean/balatro-dualscreen",
           "credit": "Balatro Dual Screen",
-          "check": "readme"
+          "check": "ai-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/shop.png",
-          "caption": "The shop",
+          "caption": "Balatro mit Shop auf dem zweiten Bildschirm",
           "source": "https://github.com/rosbean/balatro-dualscreen",
           "credit": "Balatro Dual Screen",
-          "check": "readme"
+          "check": "ai-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/buffoon-pack.png",
-          "caption": "Opening a booster pack",
+          "caption": "Balatro: Joker-Auswahl im Booster auf dem unteren Bildschirm",
           "source": "https://github.com/rosbean/balatro-dualscreen",
           "credit": "Balatro Dual Screen",
-          "check": "readme"
+          "check": "ai-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/rosbean/balatro-dualscreen/HEAD/screenshots/menu.png",
-          "caption": "The main menu",
+          "caption": "Balatro-Hauptmenü auf zwei Bildschirmen",
           "source": "https://github.com/rosbean/balatro-dualscreen",
           "credit": "Balatro Dual Screen",
-          "check": "readme"
+          "check": "ai-verified",
+          "dual": true
         }
       ],
       "links": [],

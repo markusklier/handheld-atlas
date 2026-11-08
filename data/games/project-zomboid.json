@@ -83,7 +83,16 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://andreyvelsk.github.io/GAFT/content/zomboidds/preview.webp",
+          "caption": "ZomboidDS: oben Autofahrt, unten die Companion-Karte",
+          "source": "https://andreyvelsk.github.io/GAFT/project/zomboidds/",
+          "credit": "ZomboidDS",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

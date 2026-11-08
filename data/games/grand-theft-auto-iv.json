@@ -284,32 +284,25 @@
       "testedOn": [],
       "screenshots": [
         {
-          "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png",
-          "caption": "Liberty Recompiled for Android",
-          "source": "https://github.com/vaduur/LibertyRecompAndroid",
-          "credit": "LibertyRecompAndroid",
-          "check": "readme"
-        },
-        {
           "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/ingame.jpg",
-          "caption": "GTA IV running on a Retroid Pocket 5",
+          "caption": "Autofahrt durch neblige Straßen in GTA IV",
           "source": "https://github.com/vaduur/LibertyRecompAndroid",
           "credit": "LibertyRecompAndroid",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/touch_gamepad.png",
-          "caption": "The on screen gamepad",
+          "caption": "GTA IV mit eingeblendeter Touch-Steuerung",
           "source": "https://github.com/vaduur/LibertyRecompAndroid",
           "credit": "LibertyRecompAndroid",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/launcher_install_v2.png",
-          "caption": "Installing from the launcher",
+          "caption": "GTA IV im Launcher von Liberty Recompiled für Android",
           "source": "https://github.com/vaduur/LibertyRecompAndroid",
           "credit": "LibertyRecompAndroid",
-          "check": "readme"
+          "check": "ai-verified"
         }
       ],
       "links": [

@@ -69,45 +69,45 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay.png",
-          "caption": "Main gameplay screen",
+          "caption": "Samus in einer Speicherstation in Super Metroid",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/main-gameplay-hud-hidden.png",
-          "caption": "Main gameplay screen with the HUD toggled off",
+          "caption": "Samus in einer Speicherstation ohne eingeblendetes HUD",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-hp-ammo.png",
-          "caption": "Second screen HP and ammo readout, highlighted, on the Map tab",
+          "caption": "Zusatzkarte mit Lebensenergie und Munitionsanzeige",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-room.png",
-          "caption": "Second screen room view with a map marker placed",
+          "caption": "Tourian-Karte mit gesetzter Markierung und Kartensteuerung",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-map-station.png",
-          "caption": "Second screen Map Station reveal",
+          "caption": "Zusatzkarte mit Crateria und Kartensteuerung",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Raekwon1603/super_metroid-android/HEAD/docs/screenshots/second-screen-items.png",
-          "caption": "Second screen items tab",
+          "caption": "Zusatzansicht mit Samus und Ausrüstungsübersicht",
           "source": "https://github.com/Raekwon1603/super_metroid-android",
           "credit": "MetroidArch / Projektumzug",
-          "check": "readme"
+          "check": "ai-verified"
         }
       ],
       "links": [

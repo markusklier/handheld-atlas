@@ -48,7 +48,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/am2r-for-android-dual-screen-edition-unofficial-v0-MWhtaXpsMXZuaXVoMVQB4FiN7XFbieVBqIXJYa5DFlw2sWqFkwjD-2O-9t2d.png?auto=webp&crop=smart&format=pjpg&s=cb2d07e25fa57038a33b69ff99a619165f4a9d14&width=640",
+          "caption": "Vorschaubild der Gameplay-Demonstration des Entwicklers zur Android-Dual-Screen-",
+          "source": "https://www.reddit.com/r/AM2R/comments/1x1yoqc/am2r_for_android_dual_screen_edition_unofficial/",
+          "credit": "AM2R Autopatcher für Android",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://external-preview.redd.it/am2r-on-the-thor-v0-bzJpYmp4OXdxeHRoMcjvTGF3eDcwUBq-eFGEVTeQIAwshIwmgOjQOSiUAy33.jpeg?auto=webp&crop=smart&format=pjpg&s=4b85e8dc2ddd66ba696fa995578399a8d8610a57&width=640",
+          "caption": "Video-Vorschaubild aus dem Entwicklerbeitrag „AM2R on the Thor!“: AM2R auf einem",
+          "source": "https://www.reddit.com/r/AM2R/comments/1wzi4mu/am2r_on_the_thor/",
+          "credit": "AM2R Autopatcher für Android",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

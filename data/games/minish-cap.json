@@ -66,15 +66,7 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://github.com/samyost1/tmc-android/releases/download/v1.0/showcase.png",
-          "caption": "Showcase",
-          "source": "https://github.com/samyost1/tmc-android",
-          "credit": "Minish Cap Dual Screen",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [],
       "checkedAt": "2026-11-08",
       "release": "game-boy-advance",

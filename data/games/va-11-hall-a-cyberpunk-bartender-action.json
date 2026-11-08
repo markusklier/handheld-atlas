@@ -52,7 +52,15 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://storage.ko-fi.com/cdn/useruploads/post/c20d53a4-57c4-4784-a1da-20b31d792caa_2.jpg",
+          "caption": "Vom Companion-Autor Mati als „VA-11 Hall-A: Cyberpunk Bartender Action Companion",
+          "source": "https://ko-fi.com/matinc",
+          "credit": "Eden Duo Companions",
+          "check": "ai"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08",
       "release": "nintendo-switch",

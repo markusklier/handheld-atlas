@@ -147,5 +147,11 @@
     "system-shock-2": "2026-11-08",
     "the-elder-scrolls-iv-oblivion": "2026-11-08",
     "the-witcher-3-wild-hunt": "2026-11-08"
-  }
+  },
+  "rejectedImages": [
+    "https://github.com/samyost1/tmc-android/releases/download/v1.0/showcase.png",
+    "https://raw.githubusercontent.com/Zelda64Recomp/Zelda64Recomp/HEAD/docs/deck_gyro_1.jpg",
+    "https://raw.githubusercontent.com/samyost1/zelda3-android/HEAD/showcase.png",
+    "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png"
+  ]
 }

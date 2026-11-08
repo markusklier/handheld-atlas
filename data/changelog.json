@@ -2,6 +2,60 @@
   "entries": [
     {
       "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 31 Screenshots bestätigt, 4 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "project-zomboid",
+      "text": "1 Screenshots für ZomboidDS (Zomdroid + Companion) gefunden (KI, Prüfung folgt)",
+      "url": "https://andreyvelsk.github.io/GAFT/project/zomboidds/"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "grand-theft-auto-san-andreas",
+      "text": "1 Screenshots für SA-Companion (Android-Fassung) gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1xngqbw/gta_sa_dual_screen_release/"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "am2r",
+      "text": "2 Screenshots für AM2R Autopatcher (Dual-Screen-Edition) gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AM2R/comments/1x1yoqc/am2r_for_android_dual_screen_edition_unofficial/"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "va-11-hall-a-cyberpunk-bartender-action",
+      "text": "1 Screenshots für Eden Duo + Spiel-Companion gefunden (KI, Prüfung folgt)",
+      "url": "https://ko-fi.com/matinc"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "minecraft",
+      "text": "1 Screenshots für ExoJosh / Fabric + Android Companion gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1vjvo8t/version_10_of_the_minecraft_dual_screen_mod_is/"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "minecraft",
+      "text": "4 Screenshots für DroidBridge + Dual Screen HUD gefunden (KI, Prüfung folgt)",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery"
+    },
+    {
+      "date": "2026-11-08",
       "type": "route-updated",
       "game": "grand-theft-auto-v",
       "text": "12 Community-Berichte von EmuReady für Grand Theft Auto V (Geräte mit dem Chip des AYN Thor)"

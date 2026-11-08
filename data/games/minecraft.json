@@ -158,7 +158,15 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://preview.redd.it/version-1-0-of-the-minecraft-dual-screen-mod-is-here-v0-xp1sgpm1sdih1.jpeg?auto=webp&crop=smart&s=d8e40b14aab4dde1fe7e16944b05812c96fc55a6&width=640",
+          "caption": "Minecraft auf dem AYN Thor aus ExoJoshs Release-Beitrag zur Fabric-Mod mit Andro",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vjvo8t/version_10_of_the_minecraft_dual_screen_mod_is/",
+          "credit": "Minecraft Second Screen: Fabric-Mod",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08",
       "release": "pc",
@@ -335,7 +343,40 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://media.forgecdn.net/attachments/1927/562/screen1-png.png",
+          "caption": "Minecraft auf Dual-Screen-Handheld mit HUD und Karte unten",
+          "source": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery",
+          "credit": "Dual Screen HUD (Android) – CurseForge",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://media.forgecdn.net/attachments/1927/561/screen2-png.png",
+          "caption": "Minecraft mit HUD-Menü und Touch-Tasten auf zwei Bildschirmen",
+          "source": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery",
+          "credit": "Dual Screen HUD (Android) – CurseForge",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://media.forgecdn.net/attachments/1927/560/screen3-png.png",
+          "caption": "Minecraft auf Dual-Screen-Handheld mit Karte und HUD",
+          "source": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery",
+          "credit": "Dual Screen HUD (Android) – CurseForge",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://media.forgecdn.net/attachments/1927/559/screen4-png.png",
+          "caption": "Minecraft auf Dual-Screen-Handheld mit Bildschirmtastatur",
+          "source": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery",
+          "credit": "Dual Screen HUD (Android) – CurseForge",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
       "links": [
         {
           "label": "Mod-Dateien / Screenshots bei CurseForge",
@@ -436,31 +477,31 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/inventory-with-items.png",
-          "caption": "Inventory showing item stacks and counts, player status, and the selected Birch ",
+          "caption": "Inventar mit Blockstapeln, Statusanzeigen und Birkenholz",
           "source": "https://github.com/erikvanhoolst/minecraft-companion",
           "credit": "Minecraft Companion (Eden Duo)",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/map.png",
-          "caption": "Map tab showing terrain, the player marker, coordinates, heading, and zoom contr",
+          "caption": "Kartenansicht mit Koordinaten, Richtung und Zoomsteuerung",
           "source": "https://github.com/erikvanhoolst/minecraft-companion",
           "credit": "Minecraft Companion (Eden Duo)",
-          "check": "readme"
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/projects.png",
+          "caption": "Projektansicht mit Bruchstein, Eichenbrettern und Glas",
+          "source": "https://github.com/erikvanhoolst/minecraft-companion",
+          "credit": "Minecraft Companion (Eden Duo)",
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/waypoints.png",
           "caption": "Waypoints with a selected destination, direction arrow and distance",
           "source": "https://github.com/erikvanhoolst/minecraft-companion",
           "credit": "Minecraft Companion (Eden Duo)",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/projects.png",
-          "caption": "Projects listing 128 cobblestone, 32 oak planks and 16 glass",
-          "source": "https://github.com/erikvanhoolst/minecraft-companion",
-          "credit": "Minecraft Companion (Eden Duo)",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [
