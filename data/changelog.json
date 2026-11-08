@@ -8,6 +8,172 @@
     },
     {
       "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Legendary Edition (KI-Recherche)",
+      "url": "https://www.shacknews.com/article/78901/skyrim-legendary-edition-confirmed-for-june-4",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim VR (KI-Recherche)",
+      "url": "https://elderscrolls.bethesda.net/en-US/news/4cHsGJ5fssgCaAUEwaMAWO/the-elder-scrolls-v-skyrim-vr-and-skyrim-for-nintendo-switch-launch-details",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim: Very Special Edition (KI-Recherche)",
+      "url": "https://skills-store.amazon.com/deeplink/dp/B07D6STSX8",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Special Edition – Next-Gen-Fassung (KI-Recherche)",
+      "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Skyrim Anniversary Edition für Nintendo Switch 2 (KI-Recherche)",
+      "url": "https://bethesda.net/en-US/news/the-elder-scrolls-v-skyrim-anniversary-edition-out-now-on-nintendo-switch-2",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "screenshot-added",
+      "text": "Screenshots für SkyrimSE-DualScreen auf dem Thor (KI-Recherche)",
+      "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/README.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Skyrim SE mit ProfMags' DualScreen Launcher (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1w32w8v/9_new_dual_screen_mods_available/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Ayn Dual Screen für Skyrim SE – experimenteller Browser-Companion (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://raw.githubusercontent.com/Abacus1829/ayn-dual-screen/main/skyrimse/README.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Special Edition über GameHub mit dokumentiertem Odin-2-Profil (Skyrim Special Edition für PC, KI-Recherche)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1mksra7/the_elder_scrolls_v_skyrim_on_odin_2_portal/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Legendary Edition über GameHub mit Android-Handheld-Modprofil (Skyrim Legendary Edition, KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrim/mods/122056?tab=description",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Switch-Fassung über Eden – mit Skyrim-Erfahrungsberichten (Skyrim für Nintendo Switch, KI-Recherche)",
+      "url": "https://www.reddit.com/r/retroid/comments/1kkpiwn/i_cant_believe_how_well_redacted_games_run_on_the/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Skyrim Android Guide – Controller-, Schrift- und Übersetzungsprofil (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrim/mods/122056",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Skyrim Script Extender 64 – SKSE64 (KI-Recherche)",
+      "url": "https://skse.silverlock.org/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: SSE Engine Fixes (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/17230",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: SSE Engine Fixes for Wine (KI-Recherche)",
+      "url": "https://github.com/cashcon57/SSEEngineFixesForWine",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Cleaned Skyrim SE Textures (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/38775",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: eFPS – Exterior FPS Boost (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54907",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Vanilla Script (micro)Optimizations (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54061",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Dear Diary Dark Mode (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/60837",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Optimized Vanilla Textures (KI-Recherche)",
+      "url": "https://www.nexusmods.com/skyrim/mods/57353",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "the-elder-scrolls-v-skyrim"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "type": "route-updated",
       "text": "Neue Fassung: The Ultimate DOOM (KI-Recherche)",
       "url": "https://www.mobygames.com/game/707/the-ultimate-doom/",
       "date": "2026-11-08",

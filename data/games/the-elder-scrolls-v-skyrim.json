@@ -4,7 +4,17 @@
   "franchise": "The Elder Scrolls",
   "platforms": [
     "PC",
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Xbox 360",
+    "PlayStation 3",
+    "PlayStation 4",
+    "Xbox One",
+    "PlayStation 4 / PlayStation VR",
+    "PC / SteamVR",
+    "Amazon Alexa",
+    "PlayStation 5",
+    "Xbox Series X|S",
+    "Nintendo Switch 2"
   ],
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/72850/library_600x900_2x.jpg",
@@ -48,7 +58,14 @@
       "name": "PC",
       "type": "original",
       "platforms": [
-        "PC"
+        "PC",
+        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "year": 2011,
+      "note": "Korrektur des bisherigen PC-Eintrags: Das Original erschien gleichzeitig auch für Xbox 360 und PlayStation 3. Die klassische PC-Fassung ist von der späteren Special Edition zu unterscheiden.",
+      "traits": [
+        "controller"
       ]
     },
     {
@@ -56,7 +73,9 @@
       "name": "Skyrim Special Edition für PC",
       "type": "remaster",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
       ],
       "year": 2016,
       "traits": [
@@ -76,7 +95,11 @@
       "name": "Skyrim Anniversary Edition für PC",
       "type": "rerelease",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation 4",
+        "Xbox One",
+        "PlayStation 5",
+        "Xbox Series X|S"
       ],
       "year": 2021,
       "traits": [
@@ -128,6 +151,104 @@
           "url": "https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/"
         }
       ]
+    },
+    {
+      "id": "legendary",
+      "name": "Skyrim Legendary Edition",
+      "type": "rerelease",
+      "platforms": [
+        "PC",
+        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "year": 2013,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "note": "Enthält das Original mit Dawnguard, Hearthfire, Dragonborn und Patch 1.9. Für klassische PC-Mods und den Android-Leitfaden für Oldrim interessant; kein grafisches Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.shacknews.com/article/78901/skyrim-legendary-edition-confirmed-for-june-4"
+        }
+      ]
+    },
+    {
+      "id": "vr",
+      "name": "Skyrim VR",
+      "type": "port",
+      "platforms": [
+        "PlayStation 4 / PlayStation VR",
+        "PC / SteamVR"
+      ],
+      "year": 2017,
+      "traits": [
+        "controller"
+      ],
+      "note": "Eigenständige VR-Adaption des vollständigen Spiels einschließlich aller drei Erweiterungen; zuerst 2017 für PSVR, anschließend 2018 für PC. Benötigt ein VR-Headset und ist keine gewöhnliche Handheld-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://elderscrolls.bethesda.net/en-US/news/4cHsGJ5fssgCaAUEwaMAWO/the-elder-scrolls-v-skyrim-vr-and-skyrim-for-nintendo-switch-launch-details"
+        }
+      ]
+    },
+    {
+      "id": "very-special",
+      "name": "Skyrim: Very Special Edition",
+      "type": "release",
+      "platforms": [
+        "Amazon Alexa"
+      ],
+      "year": 2018,
+      "note": "Tatsächlich veröffentlichte, sprachgesteuerte Parodie als Alexa-Skill mit Erkundung, Kämpfen und Quests. Keine Umsetzung des vollständigen 3D-Rollenspiels und keine eigenständige Android-Portierung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://skills-store.amazon.com/deeplink/dp/B07D6STSX8"
+        }
+      ]
+    },
+    {
+      "id": "se-nextgen",
+      "name": "Skyrim Special Edition – Next-Gen-Fassung",
+      "type": "port",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox Series X|S"
+      ],
+      "year": 2021,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "note": "Kostenloses Next-Gen-Upgrade der Special Edition mit verbesserten technischen Eigenschaften und kürzeren Ladezeiten. Der zusätzliche Creation-Club-Inhalt der Anniversary Edition ist dadurch nicht automatisch enthalten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq"
+        }
+      ]
+    },
+    {
+      "id": "switch2-ae",
+      "name": "Skyrim Anniversary Edition für Nintendo Switch 2",
+      "type": "port",
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller"
+      ],
+      "note": "Am 9. Dezember 2025 veröffentlichte, technisch überarbeitete Switch-2-Umsetzung mit Hauptspiel, drei Erweiterungen und Anniversary-Inhalten. Besitzer der Anniversary Edition für die erste Switch erhalten das Upgrade kostenlos.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://bethesda.net/en-US/news/the-elder-scrolls-v-skyrim-anniversary-edition-out-now-on-nintendo-switch-2"
+        }
+      ]
     }
   ],
   "routes": [
@@ -174,7 +295,24 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/docs/screenshots/character.png",
+          "caption": "Skyrim oben, Charakterwerte und Karte unten.",
+          "source": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/README.md",
+          "credit": "SkyrimSE-DualScreen auf dem Thor",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/docs/screenshots/map_world.png",
+          "caption": "Skyrim oben, Weltkarte und Kompass auf dem Zweitbildschirm.",
+          "source": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/README.md",
+          "credit": "SkyrimSE-DualScreen auf dem Thor",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -486,6 +624,271 @@
       "performance": [],
       "checkedAt": "2026-11-08",
       "dualScreenType": "companion"
+    },
+    {
+      "id": "ai-skyrim-se-mit-profmags-dualscreen-launcher",
+      "name": "Skyrim SE mit ProfMags' DualScreen Launcher",
+      "kind": "pc-runtime",
+      "release": "se",
+      "runtime": "DualScreen Launcher / WEMU",
+      "projects": [
+        "dualscreen-launcher"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen"
+      ],
+      "dualScreen": "Spielspezifische Dual-Screen-Modifikation innerhalb des Launchers; nicht mit SkyrimSE-DualScreen von Plus-Cloud gleichzusetzen.",
+      "requires": [
+        "Eigene PC-Fassung von Skyrim Special Edition",
+        "Zum Launcher-Profil passende Spielversion",
+        "Dual-Screen-Android-Handheld, insbesondere AYN Thor"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Der Launcher übernimmt nach Import der eigenen Dateien Installation der Modifikation sowie spielspezifische Konfiguration; Skyrim SE wird ausdrücklich als verfügbar geführt.",
+      "caveat": "Geschlossener Quellcode und Bindung an das jeweilige Spielprofil. Die passende Spielversion muss in den App-Details geprüft werden; die Entwicklerdemo ersetzt keinen umfassenden Kompatibilitätstest.",
+      "steps": [
+        "Den DualScreen Launcher aus dessen offiziellen GitHub-Releases installieren.",
+        "Skyrim Special Edition auswählen und die geforderte Spielversion prüfen.",
+        "Eigene Spieldateien ohne zusätzlichen übergeordneten Ordner als ZIP importieren.",
+        "Automatische Einrichtung abschließen und Play wählen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/AynThor/comments/1w32w8v/9_new_dual_screen_mods_available/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1w0z4tq/a_look_at_the_skyrim_mod/",
+          "device": "AYN Thor",
+          "summary": "Der Entwickler zeigt eine frühe funktionierende Skyrim-Dual-Screen-Modifikation und erläutert, dass die PC-Special-Edition über seine WEMU-Laufzeit genutzt wird.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-ayn-dual-screen-fur-skyrim-se-experimenteller-browser-com",
+      "name": "Ayn Dual Screen für Skyrim SE – experimenteller Browser-Companion",
+      "kind": "companion",
+      "release": "se",
+      "runtime": "SKSE64-Plugin und Browser beziehungsweise Ayn-Dual-Screen-App",
+      "projects": [
+        "ayn-dual-screen-skyrim-special-edition"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch"
+      ],
+      "dualScreen": "Separater Browser zeigt die vom Plugin bereitgestellte Oberfläche; vorgesehen sind Kartenmarker, Inventar, Magie und Charakterdaten.",
+      "requires": [
+        "Eigene Skyrim-Special-Edition-PC-Fassung",
+        "Passendes SKSE64",
+        "Windows-Buildumgebung zum Kompilieren des Plugins",
+        "Browser auf dem zweiten Display"
+      ],
+      "dualScreenType": "companion",
+      "benefit": "Offener Companion-Ansatz für den Thor und beliebige Geräte mit Browser; die Oberfläche lässt sich bereits gegen einen Mockserver testen.",
+      "caveat": "Noch kein nachgewiesener Spielweg: Laut README kompiliert das Plugin, wurde aber noch nie in Skyrim geladen. Auch Android-PC-Laufzeiten sind nicht verifiziert; Questaktivierung, Favoriten und Warten fehlen.",
+      "steps": [
+        "Den Entwicklungsstatus im Skyrim-SE-README prüfen.",
+        "Für Oberflächentests zunächst den mitgelieferten Mockserver verwenden.",
+        "Für eigene Experimente das Plugin mit den dokumentierten Windows-Werkzeugen bauen und zusammen mit SKSE installieren.",
+        "Nur mit gesicherten Spielständen testen; Browseradresse dem Plugin-Log entnehmen."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://raw.githubusercontent.com/Abacus1829/ayn-dual-screen/main/skyrimse/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-special-edition-uber-gamehub-mit-dokumentiertem-odin-2-pr",
+      "name": "Special Edition über GameHub mit dokumentiertem Odin-2-Profil",
+      "kind": "pc-runtime",
+      "release": "se",
+      "runtime": "GameHub / GameFusion mit Wine, Box64 und DXVK",
+      "projects": [
+        "gamehub"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz von Skyrim Special Edition",
+        "Eigene Spieldateien beziehungsweise Steam-Zugang"
+      ],
+      "benefit": "Ein ausführlicher Test auf dem Odin 2 Portal Max dokumentiert Spielbetrieb einschließlich funktionierender Audioausgabe auf Snapdragon 8 Gen 2.",
+      "caveat": "Das Profil stammt aus einem älteren GameHub-Build; Komponenten und Menüs können inzwischen abweichen. Ergebnisse sind nicht automatisch auf jedes Gerät oder die Anniversary Edition übertragbar.",
+      "steps": [
+        "GameHub vom offiziellen Anbieter installieren und die eigene Special Edition einrichten.",
+        "Das dokumentierte Testprofil als Ausgangspunkt verwenden: 1280 × 720, wine9.16-x64-1 und Translation Params Common.",
+        "Im damaligen Profil wurden Turnip v25.3.0_R3, DXVK 2.3.1-async, Pulse und Box64 0.32 verwendet.",
+        "Mit einem eigenen Spielstand Grafik, Audio und längere Außengebietsabschnitte prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1mksra7/the_elder_scrolls_v_skyrim_on_odin_2_portal/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/OdinHandheld/comments/1mksosf",
+          "device": "AYN Odin 2 Portal Max",
+          "summary": "Der Autor zeigt einen längeren Skyrim-SE-Test mit funktionierendem Ton und veröffentlicht die verwendeten GameHub-Komponenten und Einstellungen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-legendary-edition-uber-gamehub-mit-android-handheld-modpr",
+      "name": "Legendary Edition über GameHub mit Android-Handheld-Modprofil",
+      "kind": "pc-runtime",
+      "release": "legendary",
+      "runtime": "GameHub; vom Autor mit GameHub Lite getestet",
+      "projects": [
+        "skyrim-android-guide-von-bebeidon"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "fps-cap",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene klassische PC-Fassung mit Dawnguard, Hearthfire und Dragonborn",
+        "Eigene Steam-Lizenz",
+        "Die im Leitfaden aufgeführten Mods und passenden SKSE-Komponenten"
+      ],
+      "benefit": "Spielspezifischer Leitfaden für Snapdragon-8-Gen-2-Handhelds mit größerer Schrift, angepassten Controller-Menüs und optionalen deutschen Übersetzungen.",
+      "caveat": "Für Oldrim beziehungsweise Legendary Edition, nicht für SE oder AE. Das vollständige Modprofil erfordert zusätzliche Einrichtung; für die ARM64-Rekompilation ist es nicht freigegeben.",
+      "steps": [
+        "Die eigene klassische Skyrim-Fassung mit Erweiterungen in GameHub installieren.",
+        "Das Profil des Autors mit 1280 × 720 und nicht-asynchronem DXVK als Ausgangspunkt verwenden.",
+        "Die Modsammlung samt Controller- und Schriftanpassungen nach Anleitung installieren.",
+        "Die vorbereiteten INI-Dateien übernehmen; bei fehlenden Stimmen die dokumentierten Microsoft-DirectX-Komponenten einrichten."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nexusmods.com/skyrim/mods/122056?tab=description"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/skyrimmods/comments/1vemepp/skyrim_le_on_android_snapdragon_8_gen_2/",
+          "device": "Retroid Pocket 6",
+          "summary": "Der Profilautor beschreibt seine Tests mit Legendary Edition, überarbeiteten Controller-Menüs, größerer Schrift und deutschen Umlautkorrekturen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-switch-fassung-uber-eden-mit-skyrim-erfahrungsberichten",
+      "name": "Switch-Fassung über Eden – mit Skyrim-Erfahrungsberichten",
+      "kind": "emulation",
+      "release": "switch",
+      "runtime": "Eden für Android",
+      "projects": [
+        "eden-2"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Nintendo-Switch-Fassung von Skyrim",
+        "Selbst aus eigener Hardware ausgelesene, erforderliche Systemdaten und Schlüssel"
+      ],
+      "benefit": "Als ergänzender Weg durch konkrete Skyrim-Berichte belegt: Auf dem Retroid Pocket 5 wird Spielbetrieb mit Eden beschrieben.",
+      "caveat": "Berichte nennen Tonstottern und Leistungseinbrüche; andere Nutzer melden Einfrieren. Kein belegter Dual-Screen-Modus und keine pauschale Stabilitätsgarantie für den Thor.",
+      "steps": [
+        "Eden aus den offiziellen Projekt-Releases installieren.",
+        "Eigene ausgelesene Systemdaten und die eigene Spielkopie einrichten.",
+        "Mit dem unveränderten Spielprofil beginnen und längere Abschnitte außerhalb von Helgen testen.",
+        "Bei Grafik- oder Stabilitätsproblemen Treibervarianten einzeln vergleichen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/retroid/comments/1kkpiwn/i_cant_believe_how_well_redacted_games_run_on_the/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/retroid/comments/1kkpiwn/i_cant_believe_how_well_redacted_games_run_on_the/",
+          "device": "Retroid Pocket 5",
+          "summary": "Ein Nutzer berichtet von spielbarem Skyrim mit Eden und Sudachi, nennt aber gelegentliche Einbrüche und Tonstottern.",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1omduu7",
+          "device": "",
+          "summary": "Der Thread dokumentiert wiederholtes Einfrieren von Skyrim unter Eden und zeigt, dass erfolgreiche Einzelberichte keine allgemeine Stabilität belegen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
   "updatedAt": "2026-11-08",
@@ -593,6 +996,123 @@
       "release": [
         "ae",
         "se"
+      ]
+    },
+    {
+      "id": "skyrim-android-guide-controller-schrift-und-ubersetzungsprof",
+      "name": "Skyrim Android Guide – Controller-, Schrift- und Übersetzungsprofil",
+      "category": "controls",
+      "url": "https://www.nexusmods.com/skyrim/mods/122056",
+      "edition": "Klassische PC-Fassung mit Erweiterungen; GameHub",
+      "description": "Android-spezifische Konfiguration mit Switch-Tastenbelegung, größerer Schrift, angepassten Menüs und deutschen Übersetzungen. Enthält außerdem abgestimmte Grafik- und SKSE-Konfigurationen; nicht für die native Recomp bestätigt.",
+      "verification": "ai-unverified",
+      "release": [
+        "legendary",
+        "pc"
+      ]
+    },
+    {
+      "id": "skyrim-script-extender-64-skse64",
+      "name": "Skyrim Script Extender 64 – SKSE64",
+      "category": "other",
+      "url": "https://skse.silverlock.org/",
+      "edition": "PC; exakt zu Store und Spiel-Build passende Ausgabe",
+      "description": "Grundlage vieler komplexer Interface- und Gameplay-Mods. Steam- und GOG-Builds unterscheiden sich; der Projektseite zufolge benötigt Steam-Build 1.7.104 SKSE 2.3.1. Keine Erweiterung für Switch oder die ARM64-Rekompilation.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "sse-engine-fixes",
+      "name": "SSE Engine Fixes",
+      "category": "fixes",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/17230",
+      "edition": "PC; SKSE64 und Address Library erforderlich",
+      "description": "Behebt zahlreiche Fehler der Special-Edition-Engine. Passende Ausgabe und dokumentierte Laufzeitabhängigkeiten verwenden; die Unterstützung einer Android-PC-Laufzeit muss separat geprüft werden.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "sse-engine-fixes-for-wine",
+      "name": "SSE Engine Fixes for Wine",
+      "category": "fixes",
+      "url": "https://github.com/cashcon57/SSEEngineFixesForWine",
+      "edition": "PC-Builds 1.5.97 und 1.6.1170 laut Projekt",
+      "description": "Wine-spezifischer Fork mit angepasstem Speicherallocator und Änderungen am Ladeverfahren. Für Android-Laufzeiten nur ein experimenteller Kandidat: dokumentiert sind Wine, Proton und CrossOver, nicht ausdrücklich Winlator; kein Nachweis für Steam-Build 1.7.104.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "cleaned-skyrim-se-textures",
+      "name": "Cleaned Skyrim SE Textures",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/38775",
+      "edition": "PC; zur Spielversion passendes Dateipaket",
+      "description": "Bereinigt Kompressionsartefakte und fehlerhafte Hochskalierung der Originaltexturen, statt ein umfangreiches neues HD-Design einzuführen. Die angebotenen Archivvarianten müssen zur installierten Spielversion passen.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "efps-exterior-fps-boost",
+      "name": "eFPS – Exterior FPS Boost",
+      "category": "performance",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54907",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Ergänzt Occlusion-Culling für Außenbereiche. Bei Stadtumbauten wie JK's Skyrim passende Kompatibilitätspatches berücksichtigen; kein garantierter Leistungsgewinn für jedes Android-Profil.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "vanilla-script-micro-optimizations",
+      "name": "Vanilla Script (micro)Optimizations",
+      "category": "performance",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54061",
+      "edition": "PC Special Edition / Anniversary Edition",
+      "description": "Überarbeitet Originalskripte für effizientere Ausführung und geringeren Ressourcenbedarf. Früh laden und spezialisierte Mods bei Konflikten überschreiben lassen; keine pauschale FPS-Steigerung versprechen.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "dear-diary-dark-mode",
+      "name": "Dear Diary Dark Mode",
+      "category": "qol",
+      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/60837",
+      "edition": "PC; SkyUI-Menüersatz",
+      "description": "Dunkle, anpassbare Menügestaltung mit überarbeiteten Listen, Textfarben und optionalen Interface-Elementen. Unterstützt verschiedene Seitenverhältnisse; auf dem Handheld Schriftgröße und Lesbarkeit selbst prüfen.",
+      "verification": "ai-unverified",
+      "release": [
+        "ae",
+        "se"
+      ]
+    },
+    {
+      "id": "optimized-vanilla-textures",
+      "name": "Optimized Vanilla Textures",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/skyrim/mods/57353",
+      "edition": "Klassische PC-Fassung",
+      "description": "Optimiert die Originaltexturen einschließlich verkleinerter einfarbiger Texturen und flacher Normalmaps. Für klassische PC-Laufzeit-Installationen interessant; die besonderen Dateiprüfungen einer Recomp müssen separat berücksichtigt werden.",
+      "verification": "ai-unverified",
+      "release": [
+        "legendary",
+        "pc"
       ]
     }
   ],

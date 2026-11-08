@@ -1377,6 +1377,66 @@
         "doom-1993"
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "dualscreen-launcher",
+      "name": "DualScreen Launcher",
+      "kind": "runtime",
+      "url": "https://github.com/JoeCorrell/DualScreen-Launcher",
+      "repo": "JoeCorrell/DualScreen-Launcher",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ayn-dual-screen-skyrim-special-edition",
+      "name": "Ayn Dual Screen – Skyrim Special Edition",
+      "kind": "companion",
+      "url": "https://github.com/Abacus1829/ayn-dual-screen/tree/main/skyrimse",
+      "repo": "Abacus1829/ayn-dual-screen",
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "gamehub",
+      "name": "GameHub",
+      "kind": "runtime",
+      "url": "https://gamehub.xiaoji.com/",
+      "repo": null,
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "skyrim-android-guide-von-bebeidon",
+      "name": "Skyrim Android Guide von bebeidon",
+      "kind": "runtime",
+      "url": "https://www.nexusmods.com/skyrim/mods/122056",
+      "repo": null,
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "eden-2",
+      "name": "Eden",
+      "kind": "emulator",
+      "url": "https://git.eden-emu.dev/eden-emu/eden/releases",
+      "repo": null,
+      "description": "",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
     }
   ]
 }
