@@ -1,0 +1,22 @@
+{
+  "id": "doom-ii-hell-on-earth",
+  "title": "Doom II: Hell on Earth",
+  "franchise": "Doom",
+  "platforms": [
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1994)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1994
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

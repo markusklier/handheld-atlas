@@ -1,6 +1,238 @@
 {
   "entries": [
     {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Offizielle Android-App – eingestellt (Android (2021), KI-Recherche)",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/59032/~/where-can-i-download-mighty-doom%3F",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "mighty-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Mighty Resurrection – gehosteter Community-Server (Android (2021), KI-Recherche)",
+      "url": "https://mightyresurrection.app/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "mighty-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Mighty DOOM Server – eigenes Backend (Android (2021), KI-Recherche)",
+      "url": "https://www.reddit.com/r/MightyDoom/comments/1lj67wy/mighty_doom_resurrection_private_server_tutorial/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "mighty-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Mighty Resurrection – Inhaltswiederherstellung 1.14.1 (KI-Recherche)",
+      "url": "https://mightyresurrection.app/release",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "mighty-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Macintosh-Portierung (1995) (KI-Recherche)",
+      "url": "https://groups.google.com/g/bit.listserv.games-l/c/1NQvF_9jw3o",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: NEC-PC-98-Portierung (1995) (KI-Recherche)",
+      "url": "https://www.mobygames.com/game/299/doom-ii/releases/pc98/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM für PlayStation – DOOM-II-Kampagne (1995) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM II für Windows 95 / Doom95 (1996) (KI-Recherche)",
+      "url": "https://doom.fandom.com/wiki/Doom95",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM für Sega Saturn – DOOM-II-Kampagne (1997) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: AcornDoom / DOOM Trilogy für RISC OS (1998) (KI-Recherche)",
+      "url": "https://presentation.riscos.online/doom-games/speaker-notes.html",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Game-Boy-Advance-Portierung (2002) (KI-Recherche)",
+      "url": "https://investor.activision.com/static-files/31b89230-c1c5-4581-bbc7-90e8ca9c35c8",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tapwave-Zodiac-Portierung (2004) (KI-Recherche)",
+      "url": "https://www.mobygames.com/game/299/doom-ii/releases/zodiac/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Xbox-Portierung in DOOM 3 / Resurrection of Evil (2005) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Xbox Live Arcade (2010) (KI-Recherche)",
+      "url": "https://www.xbox.com/en-US/games/store/doom-ii/BRJXN52GVNLG/0001",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM II in DOOM 3: BFG Edition (2012) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_3",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM II in DOOM Classic Complete (2012) (KI-Recherche)",
+      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: UZDoom mit echter Zweitbildschirm-Automap (Original (PC, 1994), KI-Recherche)",
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PsyDoom für Android – PlayStation-DOOM-II-Kampagne (DOOM für PlayStation – DOOM-II-Kampagne (1995), KI-Recherche)",
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/blob/main/README.md",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Freedoom for Android 2026 mit eigener DOOM2.WAD (Original (PC, 1994), KI-Recherche)",
+      "url": "https://github.com/manuelsiuro/GZDoom-Android-2026",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Widescreen Statusbars (KI-Recherche)",
+      "url": "https://github.com/NightFright2k19/doom_widehud",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Eviternity II (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/eviternity-ii",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: BTSX / Back to Saturn X – Episode 1 und 2 (KI-Recherche)",
+      "url": "https://bethesda.net/en-US/news/new-add-on-available-btsx-episode-1",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: PSX DOOM CE (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Master Levels for DOOM II (KI-Recherche)",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-ii"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-ii-hell-on-earth",
+      "text": "Neues Spiel aus der Reihe Doom: Doom II: Hell on Earth (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_II"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "mighty-doom",
+      "text": "Neues Spiel aus der Reihe Doom: Mighty Doom (KI-Recherche)",
+      "url": "https://www.pocketgamer.biz/bethesda-mighty-doom-soft-launch-google-play/"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-doom-ii",
+      "text": "Neues Spiel aus der Reihe Doom: Doom + Doom II (KI-Recherche)",
+      "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-the-dark-ages",
+      "text": "Neues Spiel aus der Reihe Doom: Doom: The Dark Ages (KI-Recherche)",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/68565/~/what-platforms-will-doom%3A-the-dark-ages-be-available-on%3F"
+    },
+    {
       "date": "2026-11-08",
       "type": "screenshot-added",
       "by": "ai-research",

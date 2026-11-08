@@ -1340,7 +1340,8 @@
       "repo": "andreyvelsk/com.mobilerpgpack.phone",
       "description": "",
       "games": [
-        "doom-1993"
+        "doom-1993",
+        "doom-ii"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1364,7 +1365,8 @@
       "repo": "sandstranger/com.mobilerpgpack.phone",
       "description": "",
       "games": [
-        "doom-1993"
+        "doom-1993",
+        "doom-ii"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1679,6 +1681,54 @@
       "description": "",
       "games": [
         "hollow-knight"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "gzdoom-android-2026-freedoom-for-android",
+      "name": "GZDoom-Android-2026 / Freedoom for Android",
+      "kind": "port",
+      "url": "https://github.com/manuelsiuro/GZDoom-Android-2026",
+      "repo": "manuelsiuro/GZDoom-Android-2026",
+      "description": "",
+      "games": [
+        "doom-ii"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mighty-doom",
+      "name": "Mighty DOOM",
+      "kind": "official",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/59032/~/where-can-i-download-mighty-doom%3F",
+      "repo": null,
+      "description": "",
+      "games": [
+        "mighty-doom"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mighty-resurrection",
+      "name": "Mighty Resurrection",
+      "kind": "mod",
+      "url": "https://mightyresurrection.app/",
+      "repo": null,
+      "description": "",
+      "games": [
+        "mighty-doom"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mighty-doom-server",
+      "name": "Mighty DOOM Server",
+      "kind": "mod",
+      "url": "https://gitlab.com/dannyhpy/mightydoom-gameserver",
+      "repo": null,
+      "description": "",
+      "games": [
+        "mighty-doom"
       ],
       "checkedAt": "2026-11-08"
     }

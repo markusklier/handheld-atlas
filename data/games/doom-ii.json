@@ -3,7 +3,19 @@
   "title": "DOOM II",
   "franchise": "Doom",
   "platforms": [
-    "PC"
+    "PC",
+    "Macintosh",
+    "NEC PC-98",
+    "PlayStation",
+    "PC (Windows)",
+    "Sega Saturn",
+    "Acorn RISC OS",
+    "Game Boy Advance",
+    "Tapwave Zodiac",
+    "Xbox",
+    "Xbox 360",
+    "PlayStation 3",
+    "Android (NVIDIA SHIELD)"
   ],
   "genre": "Ego-Shooter",
   "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
@@ -77,6 +89,235 @@
           "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
         }
       ]
+    },
+    {
+      "id": "mac-1995",
+      "name": "Macintosh-Portierung (1995)",
+      "type": "port",
+      "platforms": [
+        "Macintosh"
+      ],
+      "year": 1995,
+      "traits": [
+        "mods"
+      ],
+      "note": "Eigenständige Umsetzung von Lion Entertainment für klassische Macs. Unterstützt PC-kompatible Zusatz-WADs und zusätzliche Macintosh-Netzwerkoptionen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://groups.google.com/g/bit.listserv.games-l/c/1NQvF_9jw3o"
+        }
+      ]
+    },
+    {
+      "id": "pc98-1995",
+      "name": "NEC-PC-98-Portierung (1995)",
+      "type": "port",
+      "platforms": [
+        "NEC PC-98"
+      ],
+      "year": 1995,
+      "note": "Offizielle japanische Umsetzung für NECs PC-98-Rechner, veröffentlicht von Imagineer. Vor allem als historische Plattformfassung interessant.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/299/doom-ii/releases/pc98/"
+        }
+      ]
+    },
+    {
+      "id": "psx-1995",
+      "name": "DOOM für PlayStation – DOOM-II-Kampagne (1995)",
+      "type": "port",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1995,
+      "traits": [
+        "controller"
+      ],
+      "note": "DOOM II ist in die PlayStation-Ausgabe von DOOM integriert. Veränderte Karten, farbige Beleuchtung und Aubrey Hodges’ atmosphärische Klangkulisse ergeben eine deutlich andere Spielerfahrung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
+        }
+      ]
+    },
+    {
+      "id": "doom95",
+      "name": "DOOM II für Windows 95 / Doom95 (1996)",
+      "type": "port",
+      "platforms": [
+        "PC (Windows)"
+      ],
+      "year": 1996,
+      "traits": [
+        "mods"
+      ],
+      "note": "Offizielle Windows-Portierung mit höheren Auflösungen, Fensterbetrieb und grafischem Startprogramm für Zusatz-WADs. Historisch relevant, aber mit eigenen Fehlern gegenüber der DOS-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://doom.fandom.com/wiki/Doom95"
+        }
+      ]
+    },
+    {
+      "id": "saturn-1997",
+      "name": "DOOM für Sega Saturn – DOOM-II-Kampagne (1997)",
+      "type": "port",
+      "platforms": [
+        "Sega Saturn"
+      ],
+      "year": 1997,
+      "traits": [
+        "controller"
+      ],
+      "note": "Saturn-Umsetzung der kombinierten PlayStation-Ausgabe mit DOOM-II-Inhalten. Aufgrund deutlicher technischer Einschränkungen eher eine Archivfassung als die bevorzugte Spielversion.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
+        }
+      ]
+    },
+    {
+      "id": "riscos-1998",
+      "name": "AcornDoom / DOOM Trilogy für RISC OS (1998)",
+      "type": "port",
+      "platforms": [
+        "Acorn RISC OS"
+      ],
+      "year": 1998,
+      "traits": [
+        "mods"
+      ],
+      "note": "Offizielle R-Comp-Portierung, deren Trilogy-Veröffentlichung DOOM II und die Master Levels umfasst. Die spätere Doom+-Weiterentwicklung ergänzte unter anderem grafische Verbesserungen und Netzwerkfunktionen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://presentation.riscos.online/doom-games/speaker-notes.html"
+        }
+      ]
+    },
+    {
+      "id": "gba-2002",
+      "name": "Game-Boy-Advance-Portierung (2002)",
+      "type": "port",
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "year": 2002,
+      "traits": [
+        "controller"
+      ],
+      "note": "Von Torus Games entwickelte Handheld-Umsetzung. Bietet Koop für zwei Spieler und Deathmatch über Verbindungskabel statt der PC-Netzwerklösung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://investor.activision.com/static-files/31b89230-c1c5-4581-bbc7-90e8ca9c35c8"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-2004",
+      "name": "Tapwave-Zodiac-Portierung (2004)",
+      "type": "port",
+      "platforms": [
+        "Tapwave Zodiac"
+      ],
+      "year": 2004,
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle Umsetzung von MachineWorks Northwest für den Palm-OS-Handheld. Bewahrt die ursprüngliche Kampagne und ist eine eigenständige historische Mobilfassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/299/doom-ii/releases/zodiac/"
+        }
+      ]
+    },
+    {
+      "id": "xbox-2005",
+      "name": "Xbox-Portierung in DOOM 3 / Resurrection of Evil (2005)",
+      "type": "port",
+      "platforms": [
+        "Xbox"
+      ],
+      "year": 2005,
+      "traits": [
+        "controller"
+      ],
+      "note": "Als Bonusspiel in der Limited Collector’s Edition von DOOM 3 sowie in Resurrection of Evil enthalten. Die Umsetzung bietet lokalen Mehrspielerbetrieb mit geteiltem Bildschirm.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
+        }
+      ]
+    },
+    {
+      "id": "xbla-2010",
+      "name": "Xbox Live Arcade (2010)",
+      "type": "port",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2010,
+      "traits": [
+        "controller",
+        "online"
+      ],
+      "note": "Erste Veröffentlichung mit der Zusatzkampagne No Rest for the Living. Ergänzt HD-Ausgabe sowie lokalen und Online-Mehrspielerbetrieb.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.xbox.com/en-US/games/store/doom-ii/BRJXN52GVNLG/0001"
+        }
+      ]
+    },
+    {
+      "id": "bfg-2012",
+      "name": "DOOM II in DOOM 3: BFG Edition (2012)",
+      "type": "rerelease",
+      "platforms": [
+        "PC (Windows)",
+        "PlayStation 3",
+        "Xbox 360",
+        "Android (NVIDIA SHIELD)"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
+      "note": "Enthält DOOM II einschließlich No Rest for the Living mit gegenüber dem DOS-Original veränderten Inhalten. Die offizielle Android-Portierung erschien am 4. Juni 2015 für SHIELD Tablet und SHIELD TV; sie ist keine allgemeine Snapdragon-Android-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "classic-complete-2012",
+      "name": "DOOM II in DOOM Classic Complete (2012)",
+      "type": "port",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
+      "note": "Separate PSN-Umsetzung mit No Rest for the Living und den Master Levels. Damit unterscheidet sich der DOOM-II-Inhalt von der ebenfalls 2012 erschienenen BFG-Beigabe.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/"
+        }
+      ]
     }
   ],
   "routes": [
@@ -133,6 +374,160 @@
       "release": "pc",
       "reports": [],
       "performance": []
+    },
+    {
+      "id": "ai-uzdoom-mit-echter-zweitbildschirm-automap",
+      "name": "UZDoom mit echter Zweitbildschirm-Automap",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom im Dual-Screen-Fork von Mobile RPG Pack",
+      "projects": [
+        "andreyvelsk-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "native-arm"
+      ],
+      "dualScreen": "Oben läuft die Egoansicht im Vollbild; unten zeichnet die Engine ihre echte, laufend aktualisierte Automap einschließlich Statusleiste.",
+      "requires": [
+        "Eine rechtmäßig erworbene PC-Ausgabe von DOOM II mit eigener DOOM2.WAD",
+        "Android-Handheld mit zwei physischen Displays"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Gezielt für den AYN Thor gebaut und getestet; die Karte benötigt weder Bildschirmaufnahme noch eine separat rekonstruierte Begleitansicht.",
+      "caveat": "Separater Fork, nicht eine Funktion von Delta Touch. Im Fork ist nur UZDoom für den Zweitbildschirm freigeschaltet; für physische Controller muss das Bildschirm-Steuerungsoverlay deaktiviert werden.",
+      "steps": [
+        "Die Android-Installationsdatei aus den offiziellen GitHub-Releases des Forks installieren.",
+        "Die eigene DOOM2.WAD auf das Gerät übertragen und im UZDoom-Startprogramm auswählen.",
+        "Das Bildschirm-Steuerungsoverlay für die Verwendung der eingebauten Controller deaktivieren.",
+        "Spiel starten und die Automap samt Statusleiste auf dem zweiten Display prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/great_way_to_play_doom_on/",
+          "device": "AYN Thor",
+          "summary": "Ein Nutzer zeigt den UZDoom-Fork mit laufender Karte auf dem unteren Display und nennt zusätzlich seine Verwendung von WadFusion.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-psydoom-fur-android-playstation-doom-ii-kampagne",
+      "name": "PsyDoom für Android – PlayStation-DOOM-II-Kampagne",
+      "kind": "source-port",
+      "release": "psx-1995",
+      "runtime": "PsyDoom innerhalb von Mobile RPG Pack",
+      "projects": [
+        "classic-core-engines-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PlayStation-Ausgabe von DOOM",
+        "Ein selbst erstelltes, von PsyDoom unterstütztes Disc-Abbild mit CUE/BIN-Dateien"
+      ],
+      "benefit": "Spielt die eigenständige PlayStation-Interpretation einschließlich ihrer DOOM-II-Kampagne über eine nativ zurückportierte Engine statt über einen allgemeinen PlayStation-Emulator.",
+      "caveat": "Benötigt PlayStation-Spieldaten, nicht DOOM2.WAD. Der Android-Port dokumentiert GPU-spezifische Einschränkungen; ein konkreter Thor-Erfahrungsbericht ist nicht belegt.",
+      "steps": [
+        "Mobile RPG Pack über die vom Projekt verlinkte offizielle Bezugsquelle installieren.",
+        "Das eigene unterstützte CUE/BIN-Abbild übertragen und PsyDoom auswählen.",
+        "Den Vulkan-Renderer verwenden; bei Problemen den dokumentierten älteren OpenGL-ES-Renderer prüfen.",
+        "Für den eingebauten Controller das Bildschirm-Steuerungsoverlay deaktivieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/blob/main/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-freedoom-for-android-2026-mit-eigener-doom2-wad",
+      "name": "Freedoom for Android 2026 mit eigener DOOM2.WAD",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom 5.0.0-pre im GZDoom-Android-2026-Fork",
+      "projects": [
+        "gzdoom-android-2026-freedoom-for-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene DOOM2.WAD aus einer rechtmäßig erworbenen PC-Ausgabe",
+        "Installation beziehungsweise eigener Build des Community-Projekts"
+      ],
+      "benefit": "Freie Alternative mit WAD-Import, Mod-Profilen, integriertem Karteneditor und idgames-Browser; der Entwickler dokumentiert ausdrücklich den Start von DOOM2.WAD auf ARM64.",
+      "caveat": "Die mitgelieferten Freedoom-Daten sind nicht DOOM II. Vorab-Engine und Modernisierungsfork; weder Thor-Dual-Screen noch eine vollständige Belegung der Thor-Controller sind dokumentiert.",
+      "steps": [
+        "Installationsdatei beziehungsweise Build-Anleitung aus dem Projekt verwenden.",
+        "Die eigene DOOM2.WAD über den Android-Dateiauswahldialog importieren.",
+        "DOOM II als Basis auswählen und zunächst ohne zusätzliche Mods starten.",
+        "Zusatz-WADs bei Bedarf in einem eigenen Mod-Profil konfigurieren."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/manuelsiuro/GZDoom-Android-2026"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/manuelsiuro/GZDoom-Android-2026",
+          "device": "Samsung Galaxy S24",
+          "summary": "Der Entwickler dokumentiert funktionierende Darstellung, Audio und Touch-Steuerung auf einem realen Gerät sowie einen gesondert verifizierten DOOM2.WAD-Start auf ARM64.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
   "mods": [
@@ -157,6 +552,79 @@
       "description": "Megawad von Joshua O'Sullivan u. a. (2018), ausgezeichnet bei den Cacowards 2019. MBF-kompatibel; mitgelieferte Demos brauchen einen Boom-kompatiblen Port.",
       "verification": "ai-unverified",
       "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "beautiful-doom",
+      "name": "Beautiful Doom",
+      "category": "graphics",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "edition": "DOOM2.WAD mit geeignetem GZDoom-/UZDoom-Port",
+      "description": "Umfassende audiovisuelle Überarbeitung mit weicheren Animationen, verbesserten Sprites, Partikeln und optionalen Gameplay-Änderungen. Für Android über die passende Engine laden, nicht als Add-on der offiziellen Unity-App.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "widescreen-statusbars",
+      "name": "Widescreen Statusbars",
+      "category": "widescreen-fps",
+      "url": "https://github.com/NightFright2k19/doom_widehud",
+      "edition": "GZDoom, Crispy Doom, DSDA-Doom und weitere unterstützte Ports",
+      "description": "Breitbildgerechte Statusleisten für DOOM II und zahlreiche Kartenpakete. Die jeweils passende Datei laden; Vanilla und Chocolate Doom werden ausdrücklich nicht unterstützt.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "eviternity-ii",
+      "name": "Eviternity II",
+      "category": "content",
+      "url": "https://www.moddb.com/mods/eviternity-ii",
+      "edition": "DOOM2.WAD mit aktuellem DSDA-Doom oder GZDoom",
+      "description": "Eigenständiger Nachfolger von Eviternity mit neuen Karten und MBF21-Anforderungen. Die Autoren empfehlen DSDA-Doom mit Complevel 21 oder aktuelles GZDoom mit Standard-Kompatibilitätseinstellungen.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "btsx-back-to-saturn-x-episode-1-und-2",
+      "name": "BTSX / Back to Saturn X – Episode 1 und 2",
+      "category": "content",
+      "url": "https://bethesda.net/en-US/news/new-add-on-available-btsx-episode-1",
+      "edition": "PC-WADs im Source-Port oder offizielle Add-on-Fassungen der Jubiläums-Neuauflage",
+      "description": "Große Zusatzkampagnen mit eigener Grafik und Musik. Die offiziellen BTSX-Fassungen sind auch über das Add-on-System der Unity-Neuauflage zugänglich.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "psx-doom-ce",
+      "name": "PSX DOOM CE",
+      "category": "content",
+      "url": "https://www.moddb.com/mods/doom-ce",
+      "edition": "DOOM2.WAD mit der zur Mod-Version passenden GZDoom-/UZDoom-Engine",
+      "description": "Rekonstruiert die PlayStation-Erfahrung einschließlich der DOOM-II-Kampagne und bietet optionale Grafikverbesserungen. Aktuelle Versionen verlangen eine aktuelle UZDoom-Engine; daher Engine-Version prüfen und auf Android gegebenenfalls die Lite-Ausgabe bevorzugen.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "master-levels-for-doom-ii",
+      "name": "Master Levels for DOOM II",
+      "category": "content",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII",
+      "edition": "Offizielle Erweiterung; in späteren Neuauflagen enthalten",
+      "description": "Offiziell veröffentlichte Sammlung zusätzlicher Karten. Bei der Android-Jubiläumsfassung bereits enthalten; bei einem PC-Source-Port müssen die entsprechenden Karten aus dem eigenen Kaufbestand stammen.",
+      "verification": "ai-unverified",
+      "release": [
+        "doom-doom-ii-2024",
         "pc"
       ]
     }

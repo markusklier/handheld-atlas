@@ -1,0 +1,198 @@
+{
+  "id": "mighty-doom",
+  "title": "Mighty Doom",
+  "franchise": "Doom",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "versions": [
+    {
+      "id": "android",
+      "name": "Android (2021)",
+      "type": "original",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "year": 2021,
+      "note": "Die bislang getrennten Android- und iOS-Einträge gehören zu einer gemeinsamen Mobilfassung: begrenzter Start 2021, reguläre Veröffentlichung am 21. März 2023. Der Top-down-Ableger wurde am 7. August 2024 abgeschaltet; keine eigenständige spätere Edition belegt.",
+      "traits": [
+        "controller",
+        "online",
+        "touch"
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "type": "release",
+      "platforms": [
+        "iOS"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-offizielle-android-app-eingestellt",
+      "name": "Offizielle Android-App – eingestellt",
+      "kind": "native",
+      "release": "android",
+      "runtime": "Android",
+      "projects": [
+        "mighty-doom"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "online",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Historisch: die offizielle Android-App und Zugang zu den Bethesda-Spielservern"
+      ],
+      "benefit": "Archiviert den ursprünglichen nativen Android-Spielweg.",
+      "caveat": "Bethesda bestätigt die Serverabschaltung zum 7. August 2024. Eine vorhandene Installation stellt den offiziellen Spielbetrieb nicht wieder her.",
+      "steps": [],
+      "version": null,
+      "effort": "easy",
+      "status": "archived",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/59032/~/where-can-i-download-mighty-doom%3F"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-mighty-resurrection-gehosteter-community-server",
+      "name": "Mighty Resurrection – gehosteter Community-Server",
+      "kind": "native-mod",
+      "release": "android",
+      "runtime": "Modifizierter Android-Client mit inoffiziellem Backend",
+      "projects": [
+        "mighty-resurrection"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "online",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Android-Gerät",
+        "Internetverbindung und erreichbarer Community-Server",
+        "Ein zum Community-Server passender Android-Client"
+      ],
+      "benefit": "Das Fanprojekt stellt einen spielbaren Android-Zugang nach der offiziellen Abschaltung bereit und ergänzt wiederhergestellte Inhalte.",
+      "caveat": "Nicht von Bethesda unterstützt; der Betreiber verteilt einen vorkonfigurierten Client, keinen hier belegten separaten Patch für eine eigene Installation. Serververfügbarkeit und Sicherheit sind nicht unabhängig bestätigt; konkrete Thor-Erfahrungen und spielspezifische Dual-Screen-Unterstützung sind nicht belegt.",
+      "steps": [
+        "Projektinformationen und Serverstatus auf der Projektseite prüfen.",
+        "Die dort beschriebenen Voraussetzungen für den angepassten Android-Client prüfen.",
+        "Bei erreichbarem Community-Backend den angepassten Client starten und verbinden."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://mightyresurrection.app/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom/comments/1w670wr/mighty_doom_lives_again_unofficial_community/",
+          "device": "Android-Gerät, Modell nicht genannt",
+          "summary": "Nutzer melden einen direkt funktionierenden Start, andere berichten über Verbindungsprobleme oder einen hängenbleibenden Ladebildschirm.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-mighty-doom-server-eigenes-backend",
+      "name": "Mighty DOOM Server – eigenes Backend",
+      "kind": "native-mod",
+      "release": "android",
+      "runtime": "Android-Client mit selbst gehostetem Ersatzserver",
+      "projects": [
+        "mighty-doom-server"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "online"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene rechtmäßig bezogene Android-Installation beziehungsweise Sicherung des Spiels",
+        "Separater Rechner für den Ersatzserver und die Client-Anpassung",
+        "Technische Kenntnisse zur Einrichtung und Netzwerkverbindung"
+      ],
+      "benefit": "Ermöglicht experimentell einen eigenen Ersatz für das abgeschaltete Backend, statt ausschließlich auf einen fremden Community-Server angewiesen zu sein.",
+      "caveat": "Die dokumentierte Einrichtung ist aufwendig und der historische Funktionsumfang unvollständig. Der Serverrechner muss während des Spielens laufen; ein vollständig autarker Offline-Betrieb direkt auf Android ist damit nicht belegt.",
+      "steps": [
+        "Das Serverprojekt und die vom Tutorial-Autor dokumentierte Einrichtung prüfen.",
+        "Einen eigenen Ersatzserver auf dem Rechner einrichten.",
+        "Die eigene Android-Installation entsprechend der dokumentierten Verbindungsmethode auf den Ersatzserver ausrichten.",
+        "Den Server während des Spielens erreichbar halten."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/MightyDoom/comments/1lj67wy/mighty_doom_resurrection_private_server_tutorial/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/MightyDoom/comments/1litbsb/mighty_doom_resurrection_server_working/",
+          "device": "Android-Gerät mit Windows-Rechner als Server; Modelle nicht genannt",
+          "summary": "Der Verfasser bestätigt einen funktionierenden Spielstart nach Einrichtung des Ersatzservers und Anpassung der Android-App, weist aber auf erheblichen Einrichtungsaufwand hin.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [
+    {
+      "id": "mighty-resurrection-inhaltswiederherstellung-1-14-1",
+      "name": "Mighty Resurrection – Inhaltswiederherstellung 1.14.1",
+      "category": "content",
+      "url": "https://mightyresurrection.app/release",
+      "edition": "Android-Community-Client 1.14.1",
+      "description": "Die Veröffentlichung vom 6. November 2026 macht das zuvor unfertige Kapitel „Gore on Earth“ spielbar, ergänzt Fähigkeiten für Praetor und Scuba und stellt weitere Waffen-Skins wieder her. Bestandteil des Community-Clients, kein separat belegter Mod-Patch.",
+      "verification": "ai-unverified",
+      "release": [
+        "android"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "summary": "Die offizielle App ist seit der Serverabschaltung am 7. August 2024 nicht mehr spielbar. Für Android ist das inoffizielle Projekt Mighty Resurrection interessant; es benötigt weiterhin einen Community-Server und ist nicht speziell für den AYN Thor oder zwei Displays bestätigt."
+}

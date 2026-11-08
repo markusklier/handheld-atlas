@@ -1,0 +1,40 @@
+{
+  "id": "doom-the-dark-ages",
+  "title": "Doom: The Dark Ages",
+  "franchise": "Doom",
+  "platforms": [
+    "PC",
+    "PlayStation 5",
+    "Xbox Series X/S"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2025)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2025
+    },
+    {
+      "id": "playstation-5",
+      "name": "PlayStation 5",
+      "type": "release",
+      "platforms": [
+        "PlayStation 5"
+      ]
+    },
+    {
+      "id": "xbox-series-x-s",
+      "name": "Xbox Series X/S",
+      "type": "release",
+      "platforms": [
+        "Xbox Series X/S"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-08"
+}

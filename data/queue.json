@@ -1,6 +1,21 @@
 {
   "jobs": [
     {
+      "game": "doom-doom-ii",
+      "reason": "Reihe Doom",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "doom-the-dark-ages",
+      "reason": "Reihe Doom",
+      "added": "2026-11-08"
+    },
+    {
+      "game": "doom-3",
+      "reason": "Reihe Doom",
+      "added": "2026-11-08"
+    },
+    {
       "game": "hollow-knight-silksong",
       "reason": "Dual-Screen-Suchlauf",
       "added": "2026-11-08"
