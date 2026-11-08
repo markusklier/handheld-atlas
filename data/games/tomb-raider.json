@@ -6,16 +6,12 @@
     "PlayStation",
     "PC",
     "Sega Saturn",
-    "Mac OS Classic",
-    "Pocket PC",
     "Nokia N-Gage",
     "iOS",
     "Android",
     "PlayStation 3",
     "PlayStation 4",
     "PlayStation 5",
-    "Evercade",
-    "HyperMegaTech Super Pocket",
     "Xbox Series X|S"
   ],
   "cover": {
@@ -114,38 +110,6 @@
       ]
     },
     {
-      "id": "mac-gold",
-      "name": "Tomb Raider Gold – Macintosh",
-      "type": "port",
-      "platforms": [
-        "Mac OS Classic"
-      ],
-      "year": 1999,
-      "note": "Macintosh-Portierung einschließlich der Gold-Zusatzlevels; nicht mit einer nativen modernen macOS-Fassung gleichzusetzen.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_Gold"
-        }
-      ]
-    },
-    {
-      "id": "pocket-pc",
-      "name": "Tomb Raider – Pocket PC",
-      "type": "port",
-      "platforms": [
-        "Pocket PC"
-      ],
-      "year": 2002,
-      "note": "Mobile 3D-Portierung von Ideaworks3D für Windows-Powered-Pocket-PCs; keine Android-App.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://www.tombraiderchronicles.com/games/"
-        }
-      ]
-    },
-    {
       "id": "ngage",
       "name": "Tomb Raider – Nokia N-Gage",
       "type": "port",
@@ -204,26 +168,6 @@
       ]
     },
     {
-      "id": "trilogy-2011",
-      "name": "The Tomb Raider Trilogy",
-      "type": "collection",
-      "platforms": [
-        "PlayStation 3"
-      ],
-      "year": 2011,
-      "traits": [
-        "controller",
-        "widescreen"
-      ],
-      "note": "Enthält die HD-Fassung von Anniversary zusammen mit Legend und Underworld. Nicht mit der Sammlung der ursprünglichen Teile I–III verwechseln.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://blog.playstation.com/?p=43005"
-        }
-      ]
-    },
-    {
       "id": "anniversary-ps4-ps5",
       "name": "Tomb Raider: Anniversary – PlayStation-Neuauflage",
       "type": "rerelease",
@@ -240,44 +184,6 @@
         {
           "label": "Quelle",
           "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store"
-        }
-      ]
-    },
-    {
-      "id": "evercade",
-      "name": "Tomb Raider Collection 1",
-      "type": "collection",
-      "platforms": [
-        "Evercade",
-        "HyperMegaTech Super Pocket"
-      ],
-      "year": 2024,
-      "traits": [
-        "controller"
-      ],
-      "note": "Physische Sammlung der ursprünglichen drei Konsolenspiele; Veröffentlichung am 30. August 2024. Kein Remaster und keine Android-Fassung.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today"
-        }
-      ]
-    },
-    {
-      "id": "legacy-atlantis",
-      "name": "Tomb Raider: Legacy of Atlantis",
-      "type": "remake",
-      "platforms": [
-        "PC",
-        "PlayStation 5",
-        "Xbox Series X|S"
-      ],
-      "year": 2027,
-      "note": "Angekündigte erneute Neuinterpretation des Spiels von 1996 mit Unreal Engine 5. Noch nicht erschienen: Das konkrete Datumsfeld der offiziellen Produktseite nennt den 12. Februar 2027, obwohl der Beschreibungstext noch 2026 erwähnt. Kein belegter lokaler Android-Spielweg.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://www.tombraider.com/products/games/tomb-raider-legacy-of-atlantis"
         }
       ]
     }

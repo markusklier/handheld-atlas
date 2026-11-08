@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "date": "2026-11-08",
+      "type": "removed",
+      "by": "agent",
+      "game": "tomb-raider",
+      "text": "Tomb Raider: 5 Fassungen ohne praktischen Weg auf Android entfernt (Pocket PC, Mac, Evercade, PS3-Trilogie, unveröffentlichtes Remake)."
+    },
+    {
       "type": "route-updated",
       "text": "Neue Fassung: Tomb Raider – Sega Saturn (KI-Recherche)",
       "url": "https://gamefaqs.gamespot.com/saturn/199041-tomb-raider/data",

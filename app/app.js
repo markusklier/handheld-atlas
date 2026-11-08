@@ -399,7 +399,13 @@ function viewGame(id) {
     const order = [...versions].sort((a, b) => best(b) - best(a));
     body = `<p class="explain"><b>Fassung</b> = welche Version des Spiels (z. B. PS2-Original, PC-Fassung, Android-App, Remaster). <b>Spielweg</b> = womit du sie auf deinem Gerät spielst (Emulator, nativer Port, App, Mod).</p>
       ${g._dual ? `<div class="row" style="margin-top:10px"><button class="chip" id="dualOnly" aria-pressed="${!!state.dualOnly}">${icon('dual')}Nur Dual Screen</button></div>` : ''}
-      <div class="versions">${order.map((v) => versionCard(g, v, fitting.filter((w) => w.v === v))).join('')}</div>
+      <div class="versions">${order.filter((v) => fitting.some((w) => w.v === v)).map((v) => versionCard(g, v, fitting.filter((w) => w.v === v))).join('')}</div>
+      ${(() => {
+        const rest = order.filter((v) => !fitting.some((w) => w.v === v));
+        if (!rest.length) return '';
+        return `<details class="more-versions section"><summary>${rest.length} weitere ${rest.length === 1 ? 'Fassung' : 'Fassungen'} ohne bekannten Weg auf ${esc(device().name)}: ${esc(rest.map((v) => v.name).join(', '))}</summary>
+          <div class="versions">${rest.map((v) => versionCard(g, v, [])).join('')}</div></details>`;
+      })()}
       ${hidden ? `<p class="faint section">${hidden} Weg(e) nur für andere Plattformen als ${esc(device().name)} ausgeblendet (Info → Gerät).</p>` : ''}`;
   } else if (tab === 'compare') {
     body = compareTable(g, fitting);

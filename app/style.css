@@ -316,3 +316,5 @@ table.compare td:first-child { position: sticky; left: 0; background: var(--bg);
 .reco-main { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .reco-main small { color: var(--muted); }
 .reasons { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+details.more-versions > summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 10px 12px; border: 1px dashed var(--line-2); border-radius: 13px; }
+details.more-versions[open] > summary { margin-bottom: 4px; }

@@ -31,6 +31,7 @@ BLOCKED = re.compile(r'romsfun|romspedia|vimm\.net|coolrom|emuparadise|nicoblog|
                      r'getmodsapk|liteapks|torrent|1337x|piratebay|fitgirl|dodi', re.I)
 KINDS = ['emulation', 'emulator-mod', 'native', 'native-mod', 'decomp', 'recomp', 'source-port', 'companion',
          'java', 'pc-runtime']
+MAX_NEW_VERSIONS = 6
 PROJECT_KIND = {'emulation': 'emulator', 'emulator-mod': 'mod', 'native': 'official', 'native-mod': 'mod',
                 'decomp': 'port', 'recomp': 'port', 'source-port': 'port', 'companion': 'companion',
                 'java': 'launcher', 'pc-runtime': 'runtime'}
@@ -80,9 +81,12 @@ Allgemeine Emulatoren je Plattform sind schon hinterlegt: {', '.join(sorted(plat
 außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Einstellungen, Fork mit Dual Screen).
 
 Finde mit der Websuche:
-1. versions: alle relevanten Fassungen: Original, Portierungen, offizielle Android-Fassung, Remaster, Remakes,
-   Neuauflagen/Sammlungen. Jeweils Plattformen, Erscheinungsjahr, was sie auszeichnet (traits, note). Für bekannte
-   Fassungen den vorhandenen key wiederverwenden, sonst einen neuen kurzen key (z. B. "remastered-2024").
+1. versions: die Fassungen, die für jemanden mit einem Android-Handheld HEUTE eine echte Wahl sind: Original,
+   wichtige Portierungen, offizielle Android-Fassungen (auch eingestellte), Remaster, Remakes, aktuelle Neuauflagen.
+   Höchstens 8. Weglassen: historische Plattformen ohne praktischen Weg auf Android (z. B. Pocket PC, Mac OS Classic,
+   Evercade), reine Sammel-Neuveröffentlichungen ohne Unterschied, angekündigte oder unveröffentlichte Fassungen.
+   Jeweils Plattformen, Erscheinungsjahr, was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde).
+   Für bekannte Fassungen den vorhandenen key wiederverwenden, sonst einen neuen kurzen key (z. B. "remastered-2024").
 2. routes: konkrete Wege, eine Fassung auf Android zu spielen, die über einen allgemeinen Emulator hinausgehen:
    offizielle Android-App, native Ports/Decomps/Recomps/Source-Ports, PC-Laufzeit mit spielspezifischen Belegen,
    Dual-Screen-Mods/Companions, Emulator-Forks mit Spiel-Patches (Widescreen, 60 FPS, Upscaling).
@@ -145,7 +149,12 @@ def merge(game, projects, result, sources, log):
     vmap = {v['id']: v for v in versions}
     vname = {slug(v['name']): v for v in versions}
 
+    added_versions = 0
+    this_year = int(TODAY[:4])
     for nv in result.get('versions', []):
+        if nv.get('year', 0) > this_year:
+            log(f"  verworfen (noch nicht erschienen): {nv.get('name')}")
+            continue
         if not ok_url(nv.get('sourceUrl'), sources) or not nv.get('name') or not nv.get('platforms'):
             log(f"  verworfen (Fassung ohne belegte Quelle): {nv.get('name')}")
             continue
@@ -158,6 +167,10 @@ def merge(game, projects, result, sources, log):
                 v['note'] = nv['note']
             v['traits'] = sorted(set(v.get('traits', [])) | set(traits))
         else:
+            if added_versions >= MAX_NEW_VERSIONS:
+                log(f"  übersprungen (max. {MAX_NEW_VERSIONS} neue Fassungen pro Lauf): {nv['name']}")
+                continue
+            added_versions += 1
             vid = slug(nv['key'] or nv['name'])
             while vid in vmap:
                 vid += '-2'
