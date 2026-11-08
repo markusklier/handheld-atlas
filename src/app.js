@@ -16,7 +16,7 @@
   let updates = JSON.parse($('#updates-data').textContent);
   let candidates = JSON.parse($('#candidates-data').textContent);
   const research = JSON.parse($('#research-data').textContent);
-  const projects = JSON.parse($('#projects-data').textContent);
+  let projects = JSON.parse($('#projects-data').textContent);
   const quality = JSON.parse($('#quality-data').textContent);
   const auditByGame = new Map((quality.games || []).map(x=>[x.gameId,x]));
   const sources = new Map(catalog.sources.map(s => [s.id, s]));
@@ -169,7 +169,7 @@
   function updatesView() {
     const matched=C.eventsForWatchlist(updates.events,prefs.watch,catalog);
     const fresh = (projects.projects || []).filter(p=>!p.curated);
-    return `<div class="page-title"><div class="eyebrow">NEUE VERSION IST NICHT GLEICH BESSERE VERSION</div><h1>Was hat sich ge\u00e4ndert?</h1><p>Projekt-Releases und best\u00e4tigte Funktions\u00e4nderungen bleiben bewusst getrennt.</p></div><div class="info-banner neutral">Letzter vollst\u00e4ndiger Quellenabgleich: <strong>${date(updates.lastSuccessAt)}</strong>. Letzter Versuch: ${date(updates.lastAttemptAt)}. Der mitgelieferte GitHub-Workflow muss erst in deinem Repository aktiviert werden.</div><div class="toolbar"><button class="secondary" type="button" data-refresh>${icon('pulse')} Ver\u00f6ffentlichte Release-Daten laden</button><button class="quiet" type="button" data-nav="sources">Aktualisierung verstehen ${icon('arrow')}</button></div>${fresh.length?`<h2 class="source-heading">Neue Projektfunde (${fresh.length})</h2><div class="discovery-grid">${fresh.slice(0,24).map(projectCard).join('')}</div><p class="footer-note">Automatisch gefunden: Projekt- und Bildhinweise sind keine bestätigten Installations- oder Leistungstests. Versionen und Bildrechte beim Original prüfen.</p>`:`<div class="info-banner neutral">Noch keine LIVE-Projektfunde. Beispiel- und Fixture-Daten werden absichtlich nicht als aktuelle Entdeckungen ausgegeben. Starte den Quellenworkflow auf GitHub.</div>`}${matched.length?`<h2 class="source-heading">F\u00fcr deine Merkliste</h2>${matched.map(eventRow).join('')}`:''}<h2 class="source-heading">Katalog-Feed</h2>${updates.events.length?updates.events.slice(0,80).map(eventRow).join(''):`<div class="empty">${icon('pulse')}<h3>Noch keine \u00c4nderungsereignisse.</h3><p>Der erste Quellenabgleich legt einen Ausgangsstand an. Bestehende Releases werden nicht als neue Entdeckungen ausgegeben. Erst sp\u00e4tere \u00c4nderungen erscheinen hier.</p></div>`}${updates.errors.length?`<h2 class="source-heading">Nicht erreichbare Quellen</h2><div class="info-banner amber">${updates.errors.map(e=>E(e.repo||e.source||'Quelle')+': '+E(e.message)).join('<br>')}<br>Bestehende Daten bleiben erhalten; fehlgeschlagene Abrufe sind kein Beleg f\u00fcr ein eingestelltes Projekt.</div>`:''}`;
+    return `<div class="page-title"><div class="eyebrow">NEUE VERSION IST NICHT GLEICH BESSERE VERSION</div><h1>Was hat sich ge\u00e4ndert?</h1><p>Projekt-Releases und best\u00e4tigte Funktions\u00e4nderungen bleiben bewusst getrennt.</p></div><div class="info-banner neutral">Letzter vollst\u00e4ndiger Quellenabgleich: <strong>${date(updates.lastSuccessAt)}</strong>. Letzter Versuch: ${date(updates.lastAttemptAt)}. ${location.protocol==='file:'?'Diese heruntergeladene HTML-Kopie aktualisiert sich nicht von selbst. Nach einem Quellenlauf die neue Handheld-Atlas.html von GitHub herunterladen.':'Diese gehostete App kann neue Projekt- und Release-Daten von ihrem Server laden.'} Projekt-Datenstand: ${date(projects.generatedAt)}.</div><div class="toolbar"><button class="secondary" type="button" data-refresh>${icon('pulse')} Ver\u00f6ffentlichte Release-Daten laden</button><button class="quiet" type="button" data-nav="sources">Aktualisierung verstehen ${icon('arrow')}</button></div>${fresh.length?`<h2 class="source-heading">Neue Projektfunde (${fresh.length})</h2><div class="discovery-grid">${fresh.slice(0,24).map(projectCard).join('')}</div><p class="footer-note">Automatisch gefunden: Projekt- und Bildhinweise sind keine bestätigten Installations- oder Leistungstests. Versionen und Bildrechte beim Original prüfen.</p>`:`<div class="info-banner neutral">Noch keine LIVE-Projektfunde. Beispiel- und Fixture-Daten werden absichtlich nicht als aktuelle Entdeckungen ausgegeben. Starte den Quellenworkflow auf GitHub.</div>`}${matched.length?`<h2 class="source-heading">F\u00fcr deine Merkliste</h2>${matched.map(eventRow).join('')}`:''}<h2 class="source-heading">Katalog-Feed</h2>${updates.events.length?updates.events.slice(0,80).map(eventRow).join(''):`<div class="empty">${icon('pulse')}<h3>Noch keine \u00c4nderungsereignisse.</h3><p>Der erste Quellenabgleich legt einen Ausgangsstand an. Bestehende Releases werden nicht als neue Entdeckungen ausgegeben. Erst sp\u00e4tere \u00c4nderungen erscheinen hier.</p></div>`}${updates.errors.length?`<h2 class="source-heading">Nicht erreichbare Quellen</h2><div class="info-banner amber">${updates.errors.map(e=>E(e.repo||e.source||'Quelle')+': '+E(e.message)).join('<br>')}<br>Bestehende Daten bleiben erhalten; fehlgeschlagene Abrufe sind kein Beleg f\u00fcr ein eingestelltes Projekt.</div>`:''}`;
   }
   function sourceCard(s) {
     const project = s.repo ? updates.projects[s.repo] : null;
@@ -248,9 +248,24 @@
     info('Browser zuerst. App-Gef\u00fchl inklusive.','<p>Atlas ist als Progressive Web App vorbereitet. Auf einer HTTPS-Adresse oder localhost kannst du sie \u00fcber das Browser-Men\u00fc installieren bzw. zum Startbildschirm hinzuf\u00fcgen, sofern dein Browser das unterst\u00fctzt.</p><p>Eine lokal ge\u00f6ffnete HTML-Datei ist eine Vorschau: ohne Service Worker und ohne PWA-Installation. F\u00fcr Offline-Cache und Installation den beiliegenden Server oder HTTPS-Hosting verwenden.</p><p>Die PWA ersetzt keinen Emulator und steuert nicht das zweite Display anderer Apps. Native Android-Integrationen kommen erst in einer sp\u00e4teren Ausbaustufe.</p><div class="code">python scripts/serve.py\n\nhttp://localhost:8765</div>');
   }
   async function refresh() {
-    if(!/^https?:$/.test(location.protocol)){toast('Dateivorschau: Live-Daten erfordern den lokalen Server oder HTTPS-Hosting.');return;}
-    try {const res=await fetch('data/updates.json',{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const next=await res.json();if(next.schemaVersion!==1||!Array.isArray(next.events)||!Array.isArray(next.errors)||!next.projects)throw new Error('Ung\u00fcltiges Datenformat');updates=next;render();toast('Ver\u00f6ffentlichten Datenstand geladen. Kein externer Quellenabgleich ausgel\u00f6st.');}
-    catch(e){toast('Datenstand nicht erreichbar; vorhandene Daten bleiben erhalten.');}
+    if(!/^https?:$/.test(location.protocol)) {
+      toast('HTML-Datei ist ein Offline-Schnappschuss. Aktualisierte Datei von GitHub herunterladen.');return;
+    }
+    try {
+      const [ru,rp]=await Promise.all([
+        fetch('data/updates.json',{cache:'no-store'}),
+        fetch('data/projects.json',{cache:'no-store'})
+      ]);
+      if(!ru.ok||!rp.ok)throw new Error('Not reachable');
+      const [next,nextProjects]=await Promise.all([ru.json(),rp.json()]);
+      if(next.schemaVersion!==1||!Array.isArray(next.events)||!Array.isArray(next.errors)||!next.projects||
+         nextProjects.schemaVersion!==1||!Array.isArray(nextProjects.projects))throw new Error('Invalid catalog update');
+      const changed=JSON.stringify(nextProjects)!==JSON.stringify(projects);
+      updates=next;projects=nextProjects;render();
+      toast(changed?'Neue Projekt- und Release-Daten geladen.':'Bereits auf dem veröffentlichten Datenstand.');
+    } catch(e) {
+      toast('Veröffentlichte Daten nicht erreichbar; bisheriger Stand bleibt erhalten.');
+    }
   }
   document.addEventListener('click',async event=>{
     const b=event.target.closest('button,a');if(!b)return;

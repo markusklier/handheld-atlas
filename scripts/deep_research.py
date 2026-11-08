@@ -190,11 +190,18 @@ def from_modrinth(game,target,hit,query):
     # Modrinth's 'versions' are platform metadata, not tested on the Thor.
     versions=[v for v in hit.get('versions',[]) if isinstance(v,str)][:35]
     cats=[v for v in hit.get('categories',[]) if isinstance(v,str)][:20]
+    # The official Modrinth search API supplies original project-gallery URLs.
+    gallery=[]
+    for picture in (hit.get('gallery') or [])[:8]:
+        url_img=safe_project_image(picture)
+        if url_img and url_img not in {m['url'] for m in gallery}:
+            gallery.append({'url':url_img,'caption':'Modrinth-Projektgalerie',
+              'sourceUrl':url,'reviewStatus':'needs-context-and-rights-review'})
     return {'id':digest(game['id']+'|'+url),'gameId':game['id'],'provider':'modrinth','project':title,'url':url,
             'label':summary,'status':'pending-review','score':2,'matchedQueries':[query],
             'versionsMentioned':versions,'loadersMentioned':[c for c in cats if c in ('fabric','forge','neoforge','quilt')],
             'evidence':[{'sourceUrl':url,'excerpt':summary}] if summary else [],
-            'mediaCandidates':[], 'notTested':True,
+            'mediaCandidates':gallery, 'notTested':True,
             'rights':'Project metadata only; Modrinth gallery URLs require review before public use.'}
 
 def from_curseforge(game,target,hit,query):

@@ -1,5 +1,14 @@
 # Handheld Atlas 0.4 – automatische Entdeckung, optional KI & Vision
 
+## Version 0.4.1 – automatische HTML-Schnappschüsse und Quellenbilder
+
+- **Eine heruntergeladene `Handheld-Atlas.html` aktualisiert sich nicht selbst.** Der Quellenworkflow speichert aber jetzt den neu gebauten HTML-Schnappschuss mit den aktualisierten Daten im privaten Repository. Danach die Datei erneut herunterladen.
+- **Gehostete PWA:** Die Schaltfläche „Veröffentlichte Release-Daten laden“ lädt nun die Projektliste und Release-Informationen vom selben Server. Für echte automatische Updates benötigt Atlas eine HTTPS-Website; die Offline-Datei genügt dafür nicht.
+- **Mehr Quellbilder:** `scripts/enrich_media.py` durchsucht offizielle Modrinth-Galerien, GitHub-README-Bilder und Screenshot-Verzeichnisse mit begrenztem Abfragebudget; die Modrinth-Suche nimmt ihre Originalgalerie direkt mit.
+- Neue Bilder bleiben **ungeprüfte Projektbilder mit Quellenverweis**. Keine Behauptung von Thor-Kompatibilität, exaktem Spiel-Build oder Nutzungsfreigabe. Sie werden nicht in dieses Repository gespiegelt.
+- **Privater Test:** GitHub → Actions → erfolgreichen Checks-/Discovery-Lauf → Artefakt `handheld-atlas-preview` herunterladen oder `Handheld-Atlas.html` aus dem Repository herunterladen. GitHub Pages ist ohne gesonderte Zugriffskontrolle nicht als private Website geeignet.
+
+
 **Spielzentrierte Discovery für AYN Thor, Android- und offene Handheld-Plattformen. 8. November 2026.**
 
 

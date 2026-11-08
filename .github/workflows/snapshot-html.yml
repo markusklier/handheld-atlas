@@ -1,0 +1,41 @@
+name: Update downloadable HTML snapshot
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/build.py'
+      - 'data/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: atlas-html-snapshot
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Build the safe, read-only static HTML
+        run: |
+          python scripts/validate.py
+          python scripts/build.py
+      - name: Commit generated HTML only if changed
+        shell: bash
+        run: |
+          git config user.name 'Atlas HTML builder'
+          git config user.email 'atlas-html-builder@users.noreply.github.com'
+          git add Handheld-Atlas.html
+          if git diff --cached --quiet; then
+            echo 'HTML snapshot already current'; exit 0
+          fi
+          git commit -m 'build: refresh downloadable Atlas HTML'
+          git pull --rebase origin main
+          git push origin HEAD:main

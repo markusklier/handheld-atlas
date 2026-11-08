@@ -52,6 +52,16 @@ class DeepResearchTest(unittest.TestCase):
         self.assertEqual(c['status'],'pending-review')
         self.assertTrue(c['notTested'])
 
+    def test_modrinth_search_gallery_provides_source_linked_candidates(self):
+        hit={'title':'Dual Screen HUD', 'description':'Second display on Android handheld',
+             'slug':'dual-screen-hud', 'versions':['1.21.11'], 'categories':['fabric'],
+             'gallery':['https://cdn.modrinth.com/data/abc/images/dual.png',
+                        'https://evil.example/tracker.png']}
+        item=from_modrinth(mc,targets['minecraft'],hit,'dual screen')
+        self.assertEqual(len(item['mediaCandidates']),1)
+        self.assertEqual(item['mediaCandidates'][0]['sourceUrl'],item['url'])
+        self.assertEqual(item['mediaCandidates'][0]['reviewStatus'],'needs-context-and-rights-review')
+
     def test_urls_images_and_markdown_are_safely_limited(self):
         self.assertEqual(canonical_url('https://www.curseforge.com/minecraft/mc-mods/dual-screen?utm_source=foo'),
                          'https://www.curseforge.com/minecraft/mc-mods/dual-screen')
