@@ -1,8 +1,4407 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T15:03:31Z",
+  "generatedAt": "2026-11-08T15:17:23Z",
   "warning": "Automatische Funde sind KEINE Kompatibilitätstests. Rechte an Projektbildern sind ungeklärt.",
   "projects": [
+    {
+      "id": "f0705443e3c3489624",
+      "url": "https://modrinth.com/mod/advanced-keystrokes",
+      "name": "Advanced Keystrokes",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/advanced-keystrokes",
+          "excerpt": "The Advanced Keystrokes Mod is an on-screen heads-up display (HUD) that tracks and shows your real-time keyboard and mouse inputs, including WASD/movement keys, the spacebar, left-click (LMB), right-click (RMB), and your clicks per second (CPS)."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b82366f3f02ce94a38",
+      "url": "https://modrinth.com/mod/ai-buddy",
+      "name": "Ai Buddy",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/ai-buddy",
+          "excerpt": "“A persistent AI companion for Minecraft that can talk, follow, find resources, transform into different forms, and fly with you.”"
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d254f8831865b952c0",
+      "url": "https://modrinth.com/mod/akusticstatus",
+      "name": "AkusticStatus",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/akusticstatus",
+          "excerpt": "A music companion app with Discord Rich Presence, Spotify & YouTube Music support, mobile control, and Minecraft mod integration."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "44732a2e4d80b936ed",
+      "url": "https://modrinth.com/mod/best-buddys",
+      "name": "Best Buddys",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/best-buddys",
+          "excerpt": "Best Buddys adds animated 3D companions to Minecraft. Choose a buddy, customize it with headwear and held items, and let it follow you through singleplayer, multiplayer, and servers that do not have the mod installed."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "162da771532da9a9a6",
+      "url": "https://modrinth.com/mod/betterpets",
+      "name": "Better Pets",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/betterpets",
+          "excerpt": "Customize your Minecraft experience with new pets, offering unique abilities and companionship during your adventures."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "4b4207b00f25c06ef1",
+      "url": "https://modrinth.com/mod/brainrot-pet",
+      "name": "Brainrot Pet",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/brainrot-pet",
+          "excerpt": "A client-side Minecraft companion following your movement direction."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3ae23c91c8f2f4439d",
+      "url": "https://modrinth.com/mod/catchem-all",
+      "name": "Catch'Em All",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/catchem-all",
+          "excerpt": "Catch'Em All adds four types of Poké Balls with unique capture multipliers to Minecraft. Weaken mobs to improve your chances, then right-click to throw—and once caught, your new companion will fight alongside you and never turn against you."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b98c2746b49747d3b2",
+      "url": "https://modrinth.com/mod/champion-companions",
+      "name": "Champion Companions",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/champion-companions",
+          "excerpt": "Discover, challenge, recruit, and build League-inspired Champion companions in survival Minecraft."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ba38a50e273b662c40",
+      "url": "https://modrinth.com/mod/corpanion",
+      "name": "Corpanion",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/corpanion",
+          "excerpt": "Corpanion - The Companion Mod for the German Corpium Minecraft Server."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "83c197f8ba38258397",
+      "url": "https://modrinth.com/mod/craftyai",
+      "name": "CraftyAI",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/craftyai",
+          "excerpt": "An intelligent, free AI companion for Minecraft. Talk naturally, scan your surroundings, and run game actions in chat!"
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f4b7216b7789671752",
+      "url": "https://modrinth.com/mod/doubaoai",
+      "name": "DoubaoAI",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/doubaoai",
+          "excerpt": "I added Doubao into MC.  A Minecraft mod that lets players summon AI companions with customizable names, skins, and personalities."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7b227c5fb43db1b884",
+      "url": "https://modrinth.com/mod/fast-ghast",
+      "name": "Fast Ghast - VB Addon",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/fast-ghast",
+          "excerpt": "VanillaBackport addon for Minecraft 1.21.1. While riding your Happy Ghast, hold up a Ghast Tear and your little companion will unleash its full power."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2b639480dbf84eb2bd",
+      "url": "https://modrinth.com/mod/girlfriend",
+      "name": "Girlfriend Mod",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/girlfriend",
+          "excerpt": "A cute, loyal girlfriend companion for Minecraft. She follows you, protects you, picks you flowers, chats with you and grows closer every day. Fabric 26.3."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7571b19fffc6b0e7a4",
+      "url": "https://modrinth.com/mod/greenwood-mods",
+      "name": "GreenWood mods",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/greenwood-mods",
+          "excerpt": "Official client companion mod for the GreenWood Minecraft server."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "879a847a9ef4d05d26",
+      "url": "https://modrinth.com/mod/hubextended",
+      "name": "HubExtended",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/hubextended",
+          "excerpt": "CustomCosmetics is a client-side companion mod designed exclusively for the PokéHub Minecraft server."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1b6fed20b8bf91457e",
+      "url": "https://modrinth.com/mod/lamai",
+      "name": "LamAI",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/lamai",
+          "excerpt": "LamAI adds an AI assistant to Minecraft, allowing players to chat with an intelligent companion in-game"
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "9105c0588aacf192b3",
+      "url": "https://modrinth.com/mod/lovely-robot-tribute",
+      "name": "Lovely Robot: Tribute",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/lovely-robot-tribute",
+          "excerpt": "A faithful recreation of lilacx02's original companion mod. Four robots, their original colours, their original feel — modernised to run on current Minecraft versions."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "be108a3a24ca21819c",
+      "url": "https://modrinth.com/mod/minecraft-sync",
+      "name": "MC-Sync",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/minecraft-sync",
+          "excerpt": "Two-way chat between your Minecraft server and a Discord channel, plus server status, whitelist and alerts. No open port needed. Companion plugin for the Minecraft Sync Discord bot."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a8d5230db55d1593a3",
+      "url": "https://modrinth.com/mod/mebahels-rpg-villager-quests-and-companions",
+      "name": "Mebahel's RPG - Villager Quests and Companions",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/mebahels-rpg-villager-quests-and-companions",
+          "excerpt": "Turn Minecraft villages into living RPG adventures with story-driven villager quests, branching choices, recruitable companions, quest-board contracts, a quest journal, and an in-game quest creator."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2763eaffe1b6318a96",
+      "url": "https://modrinth.com/mod/menace-modmaki",
+      "name": "Menace Modmaki",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/menace-modmaki",
+          "excerpt": "A Minecraft mod adding a certain cat maid as an adoptable companion."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "633bfee237b6a56eff",
+      "url": "https://modrinth.com/mod/more-protective-and-fun-mods",
+      "name": "More protective and fun mods",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/more-protective-and-fun-mods",
+          "excerpt": "This mod adds practical companion items, rare iron golem taming and various interesting survival tweaks to enrich your Minecraft adventure gameplay."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "84309579e7cb45709a",
+      "url": "https://modrinth.com/mod/player2npc",
+      "name": "Player2 AI NPC",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/player2npc",
+          "excerpt": "This is not just another companion mod; it is a live showcase of the PlayerEngine framework, built to fundamentally change our perception of AI NPCs in Minecraft."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c084e8341a4b1c984c",
+      "url": "https://modrinth.com/mod/pulseai",
+      "name": "PulseAI",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/pulseai",
+          "excerpt": "PulseAI: A futuristic AI companion living inside your Minecraft HUD."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b95d899812df8221b4",
+      "url": "https://modrinth.com/mod/raccoonsbytapka",
+      "name": "Raccoons!",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/raccoonsbytapka",
+          "excerpt": "Raccoons! adds mischievous raccoons to Minecraft that climb blocks and steal loot from chests. Tame your own companion, equip them with a craftable hat, and complete unique in-game achievements."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0f60bca1481e23b402",
+      "url": "https://modrinth.com/mod/ride-together-mca-immersive-vehicles",
+      "name": "Ride Together (MCA + Immersive Vehicles)",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/ride-together-mca-immersive-vehicles",
+          "excerpt": "Automatically lets Minecraft Comes Alive Reborn companions ride with you in Immersive Vehicles instead of running behind your vehicle."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "16f3abbf883f0122b1",
+      "url": "https://modrinth.com/mod/root-companion",
+      "name": "Root Companion",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/root-companion",
+          "excerpt": "Root Companion is a Minecraft Forge 1.20.1 mod that turns Root, Aywen's mascot, into a useful and interactive companion for the player."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "538726bcbdde5a2024",
+      "url": "https://modrinth.com/mod/spooky-companions",
+      "name": "Spooky Companions",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/spooky-companions",
+          "excerpt": "Meet 11 spooky companions for Minecraft Bedrock! Tame adorable Halloween pets with unique abilities, three color variants, and charming animations. From a treasure-hunting ghost pup to a spellcasting owl, bring a little magic to your next great adventure."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ffb0fee10925595e5d",
+      "url": "https://modrinth.com/mod/tame-every-mob",
+      "name": "tame every mob",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/tame-every-mob",
+          "excerpt": "Tame every regular Minecraft mob, then command, ride, store and upgrade your companions."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0d4907fdc073ca4e54",
+      "url": "https://modrinth.com/mod/tobys-camera",
+      "name": "Toby's Camera",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/tobys-camera",
+          "excerpt": "Capture and share Minecraft moments with a client camera and companion server plugin"
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "9131d83deb7fd3c879",
+      "url": "https://modrinth.com/mod/undead-alliance",
+      "name": "Undead Alliance",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/undead-alliance",
+          "excerpt": "Turn zombies into loyal companions with trust, personality, and smart AI. Recruit, command, and survive together in Minecraft."
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "9eb2ba9057d5f6f25e",
+      "url": "https://modrinth.com/mod/wanderers-across-worlds",
+      "name": "Wanderers Across Worlds",
+      "gameIds": [
+        "minecraft"
+      ],
+      "routeIds": [],
+      "providers": [
+        "modrinth"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://modrinth.com/mod/wanderers-across-worlds",
+          "excerpt": "Companions from every world, brought to life in Minecraft, a living party that fights, feels, remembers, and forms bonds of its own. Download characters in-game (no dependencies.)"
+        }
+      ],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "primary-source-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "462023f6a5ce9a23bc",
+      "url": "https://github.com/joiha-steven/plumemu",
+      "name": "A calm, light frontend (launcher) for Android retro handhelds. Names your games offline, picks the emulators,",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "bb036e0c205829aaa2",
+      "url": "https://github.com/Nihilspire/SMBA-Dual-Screen-Mods",
+      "name": "A collection of ai-assisted dual screen applications for Super Mario Advance. For use with USA, Europe game.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1791ccc462564a5409",
+      "url": "https://github.com/AlterDigga/Cult-of-the-lamb-companion",
+      "name": "A dual-screen companion for Cult of the Lamb, intended to be used with Eden Duo.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ae67fb6b748b9255eb",
+      "url": "https://github.com/Alpish08/MinimaUI",
+      "name": "A minimalist frontend for android handhelds.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a9f5ef83818b300ded",
+      "url": "https://github.com/Frostie77/Skull-Kid",
+      "name": "A Native Android Port of the brutal action Flash game Skull Kid.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3db38e66f44ff9d755",
+      "url": "https://github.com/Frostie77/The-Last-Stand-2",
+      "name": "A Native Android Port of the classic Flash survival game The Last Stand 2.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "4358301da4824f83a8",
+      "url": "https://github.com/Frostie77/Dad-n-Me",
+      "name": "A Native Android Port of the violent Flash game Dad 'n ME.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b8bf46d4000f8e4410",
+      "url": "https://github.com/cadeambrose/knox-link",
+      "name": "A second screen for Project Zomboid: map, vitals, gear, journal and more on a phone, tablet, second monitor or",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "54aedff9c9741a16bf",
+      "url": "https://github.com/elasota/Aerofoil",
+      "name": "Aerofoil (Glider PRO)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "33f30d71e989121669",
+      "url": "https://github.com/harmssi/thor-aok",
+      "name": "Age of Empires II on the AYN Thor: map on top, command deck on the second screen (OpenAoK fork, plays from you",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f7e87bae1ea9b74959",
+      "url": "https://github.com/InukaAsith/TwinDesk",
+      "name": "All your computers and your phone, working as one desk. Screens, apps, files, clipboard, calls, texts, notifi",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ed1d80126ddd1c9a3a",
+      "url": "https://github.com/NoxProductions/Casualties_Android",
+      "name": "An Android port of the well known game Scav Prototype ( Also known as Casualties: Unknown )",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "076618208b115ffd95",
+      "url": "https://github.com/predmore/foldcade",
+      "name": "An open-source gaming frontend built for the AYN Thor.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "51f07406337005babe",
+      "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
+      "name": "An unofficial native GTA V port for Android, based on the Chinese Android port. Maintained by XHYN-PH. Require",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a786dacaed874e82c3",
+      "url": "https://github.com/zod701/Pagurin",
+      "name": "Android launcher that keeps your ported games in one app, such as those made with nx2android: library, per-gam",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8650ce2e29b033d850",
+      "url": "https://github.com/shahzadp/DoL-by-Alex",
+      "name": "Android port of Degrees of Lewdity - SugarCube/Twine adult game (CC BY-NC-SA 4.0). Community fork for Android;",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "009c391d616c242879",
+      "url": "https://github.com/richardyusan/multihero-android",
+      "name": "Android port of Multihero, a 2D multi-hero game from the original Blitz3D version.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "df5700f51870808ff9",
+      "url": "https://github.com/henroids/black-mesa-tennis",
+      "name": "android port of pretty much the only table tennis game.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "db0266d06307a4a04d",
+      "url": "https://github.com/shahzadp/Project-Alice-Android-by-Alex",
+      "name": "Android port of Project Alice - the open-source engine for playing Victoria 2. Requires a copy of Victoria 2;",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e9e3e40067bfbf8d1f",
+      "url": "https://github.com/11NU0/taisei-android",
+      "name": "Android port of Taisei Project — an open-source Touhou Project danmaku (bullet hell) fan-game",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8a49553acdfad61116",
+      "url": "https://github.com/Baggio94/SleepManager",
+      "name": "Android sleep/wake manager for handhelds — reduce standby battery drain by managing Wi-Fi, Bluetooth, Syncthin",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8cf7309ada80b2ba33",
+      "url": "https://github.com/zwaetschge/ACGC-Android-Port",
+      "name": "Animal Crossing (GameCube)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0e4b94feaf090b5fe7",
+      "url": "https://github.com/quantavil/awesome-android-games",
+      "name": "awesome-android-games",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "77e12ba9223d675914",
+      "url": "https://github.com/surfnterd/ayn-thor-notes",
+      "name": "AYN Thor: Valheim online multiplayer via DroidDeck (real Steam), Discord voice on the bottom screen, emulation",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3e5a3acf2b506341f6",
+      "url": "https://github.com/wyattabuntjer/AYN-Thor-WoW-Launcher",
+      "name": "Ayn-Thor-WoW-Launcher 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e417488d607294054e",
+      "url": "https://github.com/denissteinhorst/thor-back-button-hero",
+      "name": "Back Button Hero - a customizable back-button utility for the AYN Thor Android handheld.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "905c29626aeac44f22",
+      "url": "https://github.com/hashtagbasit/Zaviya",
+      "name": "Based on SteamOS for ARM, built for ARM handhelds and tablets. Formerly known as Unofficial SteamOS ARM Port.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2e57671e5416ab2d39",
+      "url": "https://github.com/wootbeer/btgarecomp",
+      "name": "BattleTanx: Global Assault",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2f7937d2beab338bc6",
+      "url": "https://github.com/openblack/openblack",
+      "name": "Black & White",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8305096143ee4341ac",
+      "url": "https://github.com/ducvd89/Bloodborne-Android",
+      "name": "Bloodborne-Android 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "83e2cc7707a094ad84",
+      "url": "https://github.com/sassiestrhihno/boxshelf-beta",
+      "name": "Boxshelf public beta for Windows, Android (AYN Thor) and Linux / Steam Deck: a TV-style 3D box-art shelf for y",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "46b3d20047a741e692",
+      "url": "https://github.com/bilgincoskun/brogue-android-port",
+      "name": "Brogue",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "955575488c69b641c7",
+      "url": "https://github.com/xenophobentx/takedawn",
+      "name": "Burnout 3: Takedown",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3e4919744d845c2728",
+      "url": "https://github.com/shipa-2/Xerenge",
+      "name": "Burnout Revenge",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "501de401c3eb524019",
+      "url": "https://github.com/harmssi/thor-conquer",
+      "name": "C&C Tiberian Dawn + Red Alert native on the AYN Thor – command deck on the second screen (Vanilla Conquer, GPL",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "57a907e991ac4d6640",
+      "url": "https://github.com/bvschaik/julius",
+      "name": "Caesar III",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "cc509b6b7be61c1fee",
+      "url": "https://github.com/wildonrio/emufusion",
+      "name": "Cinematic Pegasus Frontend theme and Android companion for single- and dual-screen gaming devices",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "125d0d6ab5ce1059d5",
+      "url": "https://github.com/scummvm/scummvm",
+      "name": "Classic adventure games (ScummVM)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c31553afdbbba3fe77",
+      "url": "https://github.com/pablocpas/OpenCMR2",
+      "name": "Colin McRae Rally 2.0",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b8a16bbc269c9dcd73",
+      "url": "https://github.com/molotovgit/CnC-Generals-ZeroHour-Android",
+      "name": "Command & Conquer: Generals - Zero Hour",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "4c6a0d0e38626ba4ce",
+      "url": "https://github.com/dk8827/ra-port",
+      "name": "Command & Conquer: Red Alert",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0512ac3e1ace003e22",
+      "url": "https://github.com/dk8827/cnc-port",
+      "name": "Command & Conquer: Tiberian Dawn",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3434e3e1f119d5e092",
+      "url": "https://github.com/pelya/commandergenius",
+      "name": "Commander Genius (SDL for Android)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3c8e8b45be9cbeecf5",
+      "url": "https://github.com/FabianZettl/armadalive",
+      "name": "Companion app for the AYN Thor's bottom screen on Armada OS, for ES-DE and Steam / Big Picture",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "228cd7237bab0dbc74",
+      "url": "https://github.com/khumam/gba-duo-companions",
+      "name": "Companions for GBA Duo",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c00ff30774b2e68135",
+      "url": "https://github.com/codepdbh/CBFD-Recompiled-Android-Evolved",
+      "name": "Conker's Bad Fur Day",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "749d96c9879f22f41a",
+      "url": "https://github.com/esko997/thortracker",
+      "name": "Controller-first GB/GBC music tracker for Android, designed for the AYN Thor's dual screens. hUGEDriver playba",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "6613f3a6d05f81cf7a",
+      "url": "https://github.com/igawa6/ctr-native-android",
+      "name": "CTR-DS 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7cdec305d5c33f2504",
+      "url": "https://github.com/krishna3163/best_shizuku_apps_for_android_no_root",
+      "name": "Curated Shizuku and no-root Android apps, wireless ADB tools, debloat utilities, privacy tools, and root alter",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "abd8106b6f9a6f6cbf",
+      "url": "https://github.com/HiramRG/Delphis",
+      "name": "Delphis: automatic controller setup for the Dolphin emulator on dual-screen handhelds like the AYN Thor.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e90e0cb7d1156c249e",
+      "url": "https://github.com/diasurgical/DevilutionX",
+      "name": "Diablo & Hellfire",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5ccf801faa5303d4b0",
+      "url": "https://github.com/weeknds/diablo3-duo",
+      "name": "Diablo III companion for Eden Duo on AYN Thor. Development preview; live game data is not yet verified.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "48fe359eb9d0226f92",
+      "url": "https://github.com/harmssi/thor-d3",
+      "name": "Diablo III on the AYN Thor: game on top, touch control deck on the second screen (fork of Desm0nt/diablo3-port",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "42c17bdde76cf03d30",
+      "url": "https://github.com/deivid22srk/dk64-recomp-android",
+      "name": "Donkey Kong 64",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "65b0039a54cacd96bb",
+      "url": "https://github.com/glKarin/com.n0n3m4.diii4a",
+      "name": "DOOM 3, Quake 4, Prey and more (idTech4A++)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "df2d422b8913a61517",
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+      "name": "Doom, Wolfenstein RPG, Quake and more (Mobile RPG Pack)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0a6b32224b51bb1354",
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
+      "name": "Dragon Age: Origins (Xbox 360) on Android, for the AYN Thor - built on DAORecomp, bring your own discs",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "668207f5f89b095e8c",
+      "url": "https://github.com/dfdx047/Dragon-Burst",
+      "name": "Dragon Ball Z: Burst Limit",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "afd91e1ed928ead1a5",
+      "url": "https://github.com/enrique-paulino/DualScreenDex",
+      "name": "DualScreenDex",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a8fbe308196b44f4e2",
+      "url": "https://github.com/igawa6/dusklight",
+      "name": "Dusklight Dual Screen 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d304571d647b155474",
+      "url": "https://github.com/rsigristc/DW3-DS-Android",
+      "name": "DW3-DS 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "640adbd14dabbf4e65",
+      "url": "https://github.com/ProfoundBandit86/eclipse",
+      "name": "eclipse is an multi-emulator frontend and rom manager for android",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "6688117cf88fd48ccf",
+      "url": "https://github.com/aedurappa/Eden_Duo_Mode",
+      "name": "Eden Duo companion mods: Korean/multilingual and other modifications (GPL-3.0-or-later, no game assets)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1e52f09e5567d349c6",
+      "url": "https://github.com/tapionallanaire/duet-plus",
+      "name": "Eden Duo fork with extra Switch compatibility and stability fixes for Android dual-screen handhelds (AYN Thor)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7230d20b4eba86db8e",
+      "url": "https://github.com/Broomm/broomm",
+      "name": "Emulation frontend with automatic emulator configuration and integration with the RomM Manager to sync cloud s",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "4eea3f1e436d4616b6",
+      "url": "https://github.com/danielbuva/ror2-android-port",
+      "name": "Environment bootstrap and validation for a future native ARM64 Android port. No proprietary game content.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b579aadbd63f20245c",
+      "url": "https://github.com/N4UX-GIT/Offhand-DualMonitor",
+      "name": "Equip your Offhand. Dual wield your monitors!",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "92530eb4ff69233f46",
+      "url": "https://github.com/erikvanhoolst/minecraft-companion",
+      "name": "erikvanhoolst/minecraft-companion",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a30231261ea6b488b2",
+      "url": "https://github.com/birabittoh/EternalSonataReprise",
+      "name": "Eternal Sonata",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d233cfac2ab99c6d3a",
+      "url": "https://github.com/GenissonEmilio/Brawl-Android",
+      "name": "Experimental native ARM64 Android port of BrawlRecompiled, with GameCube multitouch controls and regression te",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2fd855d650fe20a380",
+      "url": "https://github.com/sirbilliams/Fallout2Ce-Dualscreen-Android",
+      "name": "Fallout2Ce-DS 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ee76f30473b06a466b",
+      "url": "https://github.com/james2doyle/ffta-recomp",
+      "name": "Final Fantasy Tactics Advance (gbarecomp)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1ba9957895818c1513",
+      "url": "https://github.com/arcanite24/pinyon-shift",
+      "name": "Forza Horizon",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "346ebf883d33778306",
+      "url": "https://github.com/khumam/gba-duo",
+      "name": "GBADuo is a Game Boy Advance, Game Boy Color and Game Boy player for dual-screen Android handhelds.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "08f8ee3e0eee4c3b64",
+      "url": "https://github.com/mstan/gbarecomp",
+      "name": "GBARecomp",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3bb579e5d0e5af8516",
+      "url": "https://github.com/ptitSeb/gl4es",
+      "name": "gl4es",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0da47595d03428918e",
+      "url": "https://github.com/arnaldolima1/gow-ghost-of-sparta-pc",
+      "name": "God of War: Ghost of Sparta",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "18b203995da925fea1",
+      "url": "https://github.com/UnknownSecurity/grimoire-mobile",
+      "name": "Grimoire Exodus Mobile is the standalone Android port of Grimoire Exodus. It owns its AQW client, uses the ori",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7c3bcc0e9bc41376fd",
+      "url": "https://github.com/codepdbh/PSPRecomp-LCS-Android",
+      "name": "GTA: Liberty City Stories",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ebcd145f2e07a9bcd2",
+      "url": "https://github.com/codepdbh/PSPRecomp-VCS-Android",
+      "name": "GTA: Vice City Stories",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8013d5fcb208212776",
+      "url": "https://github.com/26zl/fedora-kde-setup",
+      "name": "Hardware-aware post-install for Fedora 45 KDE Plasma 6 on Wayland: NVIDIA, AMD or Intel, desktop or laptop, du",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5ae1d535f66e08abe0",
+      "url": "https://github.com/igawa6/HarvestMoon64Recomp",
+      "name": "Harvest Moon 64 Recomp 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7dc07889cdf9b56717",
+      "url": "https://github.com/mastercook777/Heimdall-AYN-Thor-Assistant",
+      "name": "Heimdall 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "9282e3edfd40c3e34e",
+      "url": "https://github.com/ihhub/fheroes2",
+      "name": "Heroes of Might and Magic II",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d2d7c3ee5af444fd42",
+      "url": "https://github.com/vcmi/vcmi",
+      "name": "Heroes of Might and Magic III",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8576cc85754da52591",
+      "url": "https://github.com/harmssi/thor-heroes3",
+      "name": "Heroes of Might and Magic III on the AYN Thor: map on top, touch deck on the second screen (VCMI fork, works w",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "21f7940c909128ca65",
+      "url": "https://github.com/igawa6/dualsouls",
+      "name": "HK: Dual Souls 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a11f5c5e1bd7654c44",
+      "url": "https://github.com/nathanialf/ico-pc",
+      "name": "ICO",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "922d1191fac9667f47",
+      "url": "https://github.com/andreyvelsk/GAFT",
+      "name": "index",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7527a1c09556b1afc1",
+      "url": "https://github.com/sergiomanzur/issd-native",
+      "name": "International Superstar Soccer Deluxe",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "227e55689b48c45d86",
+      "url": "https://github.com/ja2-stracciatella/ja2-stracciatella",
+      "name": "Jagged Alliance 2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "136739af24a59f6714",
+      "url": "https://github.com/deathkiller/jazz2-native",
+      "name": "Jazz Jackrabbit 2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "36ea7fd1451a3872d5",
+      "url": "https://github.com/kalasyan/recompa",
+      "name": "kalasyan/recompa",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "07410e43080768134b",
+      "url": "https://github.com/sonofskywalker3/khdays-358-android",
+      "name": "Kingdom Hearts 358/2 Days native port for Android (AYN Thor, two screens), following khdays-port",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c48d41f2c5ddc2c593",
+      "url": "https://github.com/harmssi/thor-kknd2",
+      "name": "KKND2 Krossfire on the AYN Thor: native dual-screen port (OpenRA + OpenKrush), build menu on the second screen",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0362b38848b14c25cb",
+      "url": "https://github.com/youkaicountry/yknytt",
+      "name": "Knytt Stories",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d2134eac613fd8abd2",
+      "url": "https://github.com/isledecomp/isle-portable",
+      "name": "LEGO Island",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ea6617682a55022399",
+      "url": "https://github.com/zmelumian972/LRUE5",
+      "name": "LEGO Racers (1999) rebuilt in Unreal Engine 5. Linux, Windows, AYN Thor. Needs your original game files.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1df3dc7503ea071a99",
+      "url": "https://github.com/freefrank/LostOdysseyRecomp",
+      "name": "Lost Odyssey",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1778a479cdafdc0b5f",
+      "url": "https://github.com/linkzenic/Zelda64Recomp-Android",
+      "name": "Majora's Mask",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ba80af87804b8248d9",
+      "url": "https://github.com/linkzenic/2ship2harkinian-Android",
+      "name": "Majora's Mask (2 Ship 2 Harkinian, linkzenic fork)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "fc43cf513ac1e6b2fe",
+      "url": "https://github.com/Tufein/DuoFrost",
+      "name": "Make your AYN device's lighting your own. Ambient colors, audio-reactive effects, widgets, sleep timers and be",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1a9bb971f51cc123c0",
+      "url": "https://github.com/daniele-rapagnani/alephone-android",
+      "name": "Marathon",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "eaf9c7d92f920f329b",
+      "url": "https://github.com/izzy2lost/SpaghettiKart",
+      "name": "Mario Kart 64 (SpaghettiKart)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ee7649e7070c9fb305",
+      "url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp",
+      "name": "Mario Kart 8 Deluxe recompiled to run natively on your PC: no JIT, FSR 3.1 + frame generation, experimental DL",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e09fda16ffc8b76cdf",
+      "url": "https://github.com/dorPXP/driftdroid",
+      "name": "Mario Kart Wii (DriftDroid)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "64d5f50448c7591348",
+      "url": "https://github.com/chrissotraidis/kartpad",
+      "name": "Mario Kart Wii (KartPad)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f3ce80075fbfba676c",
+      "url": "https://github.com/mariopartyrd/partyboard",
+      "name": "Mario Party 4",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "6f1d3839fab539b94f",
+      "url": "https://github.com/zeranemesis/Marioparty4",
+      "name": "Mario Party 4 (phone and Quest)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3c8e7edfb6f3fcd53d",
+      "url": "https://github.com/iirg4x/mp6-native-port",
+      "name": "Mario Party 6",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7557457fa5861a9b9f",
+      "url": "https://github.com/markusklier/handheld-atlas",
+      "name": "markusklier/handheld-atlas",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7d44864b0b4c032ed7",
+      "url": "https://github.com/nautilusbits/mdk-sdl",
+      "name": "MDK",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0ff8aa093020547bb2",
+      "url": "https://github.com/stormpanda/megingiard",
+      "name": "Megingiard 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a8b9eb0623eed233b4",
+      "url": "https://github.com/ds17f/andropolis",
+      "name": "Micropolis",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "9e42d214cbd83659b9",
+      "url": "https://github.com/josiahg2502-glitch/Mother3Recomp",
+      "name": "MOTHER 3",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "169f756988045144de",
+      "url": "https://github.com/ogdanimal/Goemon64Recomp-Android",
+      "name": "Mystical Ninja Starring Goemon",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "274070bb54badfa38a",
+      "url": "https://github.com/cylonid/NativeAlphaForAndroid",
+      "name": "Native Alpha",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "bdc63320859c020afa",
+      "url": "https://github.com/Sp4wnE/RavenDroid",
+      "name": "Native Android Port for Ravenfield, with offline game data and customizable touch controls.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2d6000c9a1831b8e90",
+      "url": "https://github.com/EddyGameDev/mgs3-recompiled-android",
+      "name": "Native Android port of MGS3 Subsistence via PS2Recomp static recompilation - launcher app, no game data",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "daae2cc50b0603bec9",
+      "url": "https://github.com/blackorange-sketch/RA3-Native",
+      "name": "Native Android port of Red Alert 3 (tools only, no game files)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "6cbd8cc455dbe3d4db",
+      "url": "https://github.com/khorne-hub/gu-native",
+      "name": "Native Android port with touch controls. Bring your own copy of the game.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "61a5695a13fdf6ab40",
+      "url": "https://github.com/HUEVOMAN77/xboxcore",
+      "name": "Native Android ports of original Xbox games by static recompilation (XboxXBERecomp SDK, MIT). No game code or",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "483f18e25533a196eb",
+      "url": "https://github.com/martin2844/juiced",
+      "name": "Native macOS, Linux/NixOS and Android ports of OpenJuice by Sidewinder. Requires original Juiced game data.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2968120d04b47c2314",
+      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
+      "name": "Native PC and Android port of The Legend of Zelda: Phantom Hourglass by static recompilation. Bring your own R",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "19f78d79bebc8b231a",
+      "url": "https://github.com/zaps166/NFSIISE",
+      "name": "Need for Speed II SE",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0721ee292ccef441a5",
+      "url": "https://github.com/codepdbh/NFS3-HP-AndroidEvolved",
+      "name": "Need for Speed III: Hot Pursuit (Android Evolved)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1a50e658fd29ec7967",
+      "url": "https://github.com/codepdbh/NFS-CARBON-360-ANDROID-RECOMP",
+      "name": "Need for Speed: Carbon",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b53516036b7f5b2645",
+      "url": "https://github.com/codepdbh/nfsmwpc-recompiled",
+      "name": "Need for Speed: Most Wanted (2005, PC recomp)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ff833115722f7bd762",
+      "url": "https://github.com/codepdbh/nfsmw-android",
+      "name": "Need for Speed: Most Wanted (2005, PC)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "12482b396c5641562b",
+      "url": "https://github.com/madelrandel-blip/NFSMW-Recompiled",
+      "name": "Need for Speed: Most Wanted (2005, Xbox 360)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "af1a32e25a64995c9a",
+      "url": "https://github.com/codepdbh/nfsu1-recompiled",
+      "name": "Need for Speed: Underground",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ae5e2be6d50a2124a6",
+      "url": "https://github.com/codepdbh/nfsu2-recompiled",
+      "name": "Need for Speed: Underground 2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f2abac58e5792f315b",
+      "url": "https://github.com/gurrhack/NetHack-Android",
+      "name": "NetHack",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "716670a28f17fb0b83",
+      "url": "https://github.com/gamboozino/ngbrecomp",
+      "name": "Ninja Gaiden Black (Xbox, 2005) statically recompiled into native Linux and Windows builds, with an experiment",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1c5fe57baa74e3a666",
+      "url": "https://github.com/zhouwuqi/noitadroid",
+      "name": "Noita Android port: the Windows game statically recompiled to native ARM64, for Android handhelds and phones.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ea849d0423fefe3214",
+      "url": "https://github.com/heyalmoo/Obtainium-Android-Recomps",
+      "name": "Obtainium Android Recomps",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e7adbe070f4f9fa528",
+      "url": "https://github.com/linkzenic/Shipwright-Android",
+      "name": "Ocarina of Time (Ship of Harkinian, linkzenic fork)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0c3e18733b87719785",
+      "url": "https://github.com/ZahakJ/tandem",
+      "name": "Open-source dual-screen game frontend for Android handhelds",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "114ea702a6163cbb93",
+      "url": "https://github.com/rsigristc/OpenFusion-Pocket",
+      "name": "OpenFusion-Pocket 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "177b6ad7c410f319ea",
+      "url": "https://github.com/pelya/openttd-android",
+      "name": "OpenTTD",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "31d48ab7f181124e5c",
+      "url": "https://github.com/sfalexrog/openxcom-android",
+      "name": "OpenXcom",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3ba7b6bdc48bc30dc7",
+      "url": "https://github.com/kirby-letsgo/oracles-decomp",
+      "name": "Oracle of Ages and Oracle of Seasons",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ec58727745798b95ee",
+      "url": "https://github.com/thibautbus/top",
+      "name": "Oracle of Ages and Oracle of Seasons (The Oracles Project)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "65e3aead327a710fa6",
+      "url": "https://github.com/sdlpal/sdlpal",
+      "name": "PAL (Legend of Sword and Fairy)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d6ecddd0d726cc7eaa",
+      "url": "https://github.com/izzy2lost/perfect_dark",
+      "name": "Perfect Dark",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d694a8c68626b3986e",
+      "url": "https://github.com/harmssi/thor-pipboy",
+      "name": "Pip-Boy companion for Fallout 4 on the AYN Thor's second screen (F4SE plugin + Android app, bring your own gam",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5ce21970fd682b23c6",
+      "url": "https://github.com/rexmont/Pixel-Guide-Android",
+      "name": "Pixel Guide",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e2b60b6cd6971d56c4",
+      "url": "https://github.com/sofianeelhor/PKForge",
+      "name": "PKForge",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "bce88a52df25b68c03",
+      "url": "https://github.com/wszqkzqk/PvZ-Portable",
+      "name": "Plants vs. Zombies",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e13c9061600fe773c2",
+      "url": "https://github.com/johnpaulnarisetty/eden-duo",
+      "name": "Play Nintendo Switch games on dual-screen Android handhelds, with live companion screens on the second display",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "39be8ca54cbb1a33e1",
+      "url": "https://github.com/mstan/EmeraldRecomp",
+      "name": "Pokémon Emerald",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5de62bfc4a8bdb990f",
+      "url": "https://github.com/bryanthaboi/gen1recomp",
+      "name": "Pokémon Red, Blue, Yellow, Gold, Silver, Crystal and more",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ab73d71af7c921005e",
+      "url": "https://github.com/missingno7/pre2_port",
+      "name": "Prehistorik 2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "66efefe7adef8a2717",
+      "url": "https://github.com/themuffinator/openQ4",
+      "name": "Quake 4",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "11fce1f38a75d3e2cf",
+      "url": "https://github.com/easleyclaymore/Rance10-Android-Port",
+      "name": "Rance10 Android native port - xsystem4 downstream fork (engine source only, no game assets)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "486fa8259f7bbb7174",
+      "url": "https://github.com/skynettx/raptor",
+      "name": "Raptor: Call of the Shadows",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "de635fad8e59ac772b",
+      "url": "https://github.com/tokeneffortports/ReCompiledSteel",
+      "name": "Real Steel",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5009a9db227050e059",
+      "url": "https://github.com/sirbilliams/Tinkerbell-Android",
+      "name": "Reconstruction of Disney's You Can Fly! with Tinker Bell (2002 PC) running natively on Android and the AYN Tho",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a55e8e8d4fd0b287c2",
+      "url": "https://github.com/harmssi/thor-ra2",
+      "name": "Red Alert 2 / Yuri's Revenge on the AYN Thor: map on top, touch command deck on the second screen (RA2 Engine",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d85391dc3860ed6692",
+      "url": "https://github.com/sergiomanzur/regaiden-recomp",
+      "name": "Resident Evil Gaiden",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f9d7ea175a74e38bf8",
+      "url": "https://github.com/empy94/retro-survival-thor",
+      "name": "Retro Survival sur Android : tactile et manettes, visée radiale, buffs ou sorts auto au choix, second écran fa",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c1bc84b23b13c2eea4",
+      "url": "https://github.com/rexglue/rexglue-sdk",
+      "name": "ReXGlue SDK",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3c0717d107d123a289",
+      "url": "https://github.com/lhr0909/richman4-remastered",
+      "name": "Richman 4",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f7236cc51450a09cac",
+      "url": "https://github.com/h4mu/rott94",
+      "name": "Rise of the Triad",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ffa1791d52e7f4e8df",
+      "url": "https://github.com/silentsudin/RoadTripAdventure-recomp",
+      "name": "Road Trip Recomp 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d8ac7cfaca1bea182b",
+      "url": "https://github.com/rt64/rt64",
+      "name": "RT64",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f313678290fc3bc278",
+      "url": "https://github.com/libsdl-org/SDL",
+      "name": "SDL",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "894896253cece50392",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack",
+      "name": "Selection of recomp for the Ayn Thor",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ffb7f5143741062c16",
+      "url": "https://github.com/konovalov-aleks/reSL",
+      "name": "Shortline",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "34c1c32d2fab58f1c7",
+      "url": "https://github.com/castdrian/showdown-ds",
+      "name": "Showdown-DS",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5837c89e50845599d8",
+      "url": "https://github.com/jakobkhansen/SilksongAndroid",
+      "name": "Silksong Android 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "65cf3d94745098b6ae",
+      "url": "https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp",
+      "name": "Skies of Arcadia Legends",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ccd53fbef25aa35f5d",
+      "url": "https://github.com/andreyvelsk/SkyrimWebMonitor",
+      "name": "Skyrim Web Monitor 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e4231793604685a030",
+      "url": "https://github.com/thegreatbbd94-ux/SRB2-Android-Port",
+      "name": "Sonic Robo Blast 2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a2f75a18b73fb7a647",
+      "url": "https://github.com/Sonoran-Solutions/dualdex",
+      "name": "Sonoran-Solutions/dualdex",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8c965a26df2fb82bf3",
+      "url": "https://github.com/iscle/SpaceCadetPinball",
+      "name": "Space Cadet Pinball",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "a947a593061985b837",
+      "url": "https://github.com/pakompom/SpaceRangersHD_FPC",
+      "name": "Space Rangers HD: A War Apart",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "deb87fe0a99a8775d5",
+      "url": "https://github.com/yancharkin/SpelunkyClassicHD",
+      "name": "Spelunky Classic HD",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e088841fdbf42b0b3e",
+      "url": "https://github.com/izzy2lost/Starship",
+      "name": "Star Fox 64 (Starship)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "19bda2fe882b987d96",
+      "url": "https://github.com/imjustadudegamer/VoyagerSP-Android",
+      "name": "Star Trek: Voyager - Elite Force",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d5008832a6918a2ba0",
+      "url": "https://github.com/imjustadudegamer/VoyagerHM-Android",
+      "name": "Star Trek: Voyager - Elite Force Holomatch",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0e1e8c261a3e41b887",
+      "url": "https://github.com/n0madic/StarCraft64-recomp",
+      "name": "StarCraft 64",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "3c87721f875556afde",
+      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+      "name": "Stardew-Thor-DS 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "57709e656a9ec54a1a",
+      "url": "https://github.com/mstan/SuperMarioLand2Recomp",
+      "name": "Super Mario Land 2: 6 Golden Coins",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "7f33ab15fc49780bf7",
+      "url": "https://github.com/dyzz/srw64-recomp",
+      "name": "Super Robot Wars 64",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d325654de239829768",
+      "url": "https://github.com/raposomiguel50/system-shock-android",
+      "name": "System Shock",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b125eea26fd76ce129",
+      "url": "https://github.com/whylurking/IsaacRecomp",
+      "name": "The Binding of Isaac",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1749adfd68145a3104",
+      "url": "https://github.com/troyedwardsjr/z2rs",
+      "name": "The Legend of Zelda II",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2cddc70400eec8aff1",
+      "url": "https://github.com/timbo722/ZLAA",
+      "name": "The Legend of Zelda: Link's Awakening (Switch) recompiled to run natively on Android",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "f0a4f13a6dcd66d195",
+      "url": "https://github.com/chrissotraidis/bluewake",
+      "name": "The Legend of Zelda: The Wind Waker",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "d02eb71964f593e9da",
+      "url": "https://github.com/Yusfft/Castlevania-Belmont-s-Curse-Eden-Duo-Companion",
+      "name": "This is a simple mod showing the map of the game on the second screen. More features are on the way!",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8ddadf563a5121415a",
+      "url": "https://github.com/base64E/The-Jolly-Gang-s-Misadventures-in-Africa-Android-port",
+      "name": "This is an unofficial Android port of the classic point-and-click adventure game \"The Jolly Gang's Misadventur",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5fbccb5b02c000ae44",
+      "url": "https://github.com/harmssi/thor-d2",
+      "name": "Thor-D2 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2ef4baa83c809c4c92",
+      "url": "https://github.com/harmssi/thor-halflife",
+      "name": "Thor-HalfLife 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2c653b1f45d48addc9",
+      "url": "https://github.com/igawa6/Tomba2RecompDS",
+      "name": "Tomba2RecompDS 🤖",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ff98d3a07e2f80937a",
+      "url": "https://github.com/MPDERPER/totk-android-ultracam-ports",
+      "name": "TOTK Android UltraCam 2.7.1/3.0.0 ports with 720p optimization, Eden Nightly installation guides, compatibilit",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "881c9f5cc1a47f7e1b",
+      "url": "https://github.com/Zensenshi/JarnGrip",
+      "name": "Touch control pad for the AYN Thor's bottom screen: buttons, number pad, trackpad and keyboard for WoW and oth",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0fcfaddf9daa7591ec",
+      "url": "https://github.com/maluramichael/awesome-reverse-engineer-anything",
+      "name": "Trending open projects that reverse engineered apps, games, consoles, protocols and devices, plus the tools th",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ed1304ef967e89cdf1",
+      "url": "https://github.com/JestyLabs/Jesty-Thor-Fix",
+      "name": "True hardware-level bottom display off, wake repair, and live CPU/display telemetry for the AYN Thor.",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "2a559468e044eb3bcf",
+      "url": "https://github.com/andyvand/opentyrian2000",
+      "name": "Tyrian 2000",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b7b540d042a9eb9976",
+      "url": "https://github.com/synthwave-pixel/ultima5",
+      "name": "Ultima V",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "fe3457cc4d99cea796",
+      "url": "https://github.com/exult/exult",
+      "name": "Ultima VII (Exult)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "5f6649868f1fea1d61",
+      "url": "https://github.com/rafli6373/Black-Android",
+      "name": "Unofficial Android port and fan-made remake project of the classic FPS game BLACK",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "51a5fefd98c0a31ce8",
+      "url": "https://github.com/shendyvisual07-eng/crashwoc-android",
+      "name": "Unofficial Android port of Crash Bandicoot: The Wrath of Cortex. Requires your own legally obtained game files",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "8c4e867ced6468b09a",
+      "url": "https://github.com/Rayan-XOO/horizon",
+      "name": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, tou",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "c0935647c60f20ce03",
+      "url": "https://github.com/samilry/rimworld-android-port",
+      "name": "Unofficial Android port of RimWorld 1.7 (Waylith engine, .NET 10): Android host, PC-mod compatibility layer, t",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "0edcb33f6b33522aec",
+      "url": "https://github.com/RanggaCasper/MostWanted-Android",
+      "name": "Unofficial native Android port of Need for Speed: Most Wanted (Xbox Black Edition). The x86 code is statically",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "ad59467a053c536b93",
+      "url": "https://github.com/Psychoghost/Vanillara_android_port",
+      "name": "Vanillara source port for android. Buy the game with link provided (not affiliate)",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "1592875c7571c74e0a",
+      "url": "https://github.com/blairisme/warcraft",
+      "name": "Warcraft II",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "afd7bc73a05af37da6",
+      "url": "https://github.com/mstan/WarioWareTwistedRecomp",
+      "name": "WarioWare: Twisted!",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "85f071ee0feb01206c",
+      "url": "https://github.com/dorakyuraduang/whitealbum2-Android",
+      "name": "WHITE ALBUM2",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "e569f4b43880e67933",
+      "url": "https://github.com/patchzyy/Wiicompiled",
+      "name": "WiiCompiled",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "68a4d946c448e5e423",
+      "url": "https://github.com/jjmhalew/WoodyRE",
+      "name": "Woody Woodpecker: Escape from Buzz Buzzard Park",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "b4075ee0149cd32c67",
+      "url": "https://github.com/hedge-dev/XenonRecomp",
+      "name": "XenonRecomp",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:16:30Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
+    {
+      "id": "936c96e9156b7fb103",
+      "url": "https://github.com/Atom0131/Bori-dex",
+      "name": "🔴 Bori-dex: An authentic, open-source AI Pokédex for Android featuring on-device │ TensorFlow Lite computer vi",
+      "gameIds": [],
+      "routeIds": [],
+      "providers": [
+        "github-search"
+      ],
+      "evidence": [],
+      "media": [],
+      "firstSeenAt": "2026-11-08T15:17:23Z",
+      "lastSeenAt": "2026-11-08T15:17:11Z",
+      "curated": false,
+      "documentation": "unclassified-lead",
+      "deviceTest": "not-tested"
+    },
     {
       "id": "4602e3927ae7e81041",
       "url": "https://github.com/Waterdish/2ship2harkinian-Android",
@@ -602,6 +5001,6 @@
       "deviceTest": "not-tested"
     }
   ],
-  "discoveredCount": 0,
-  "totalProjects": 23
+  "discoveredCount": 246,
+  "totalProjects": 269
 }

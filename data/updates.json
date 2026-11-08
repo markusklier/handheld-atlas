@@ -1,8 +1,389 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": null,
+  "lastAttemptAt": "2026-11-08T15:16:30Z",
   "lastSuccessAt": null,
-  "projects": {},
+  "projects": {
+    "Raekwon1603/super_metroid-android": {
+      "repo": "Raekwon1603/super_metroid-android",
+      "url": "https://github.com/Raekwon1603/super_metroid-android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": true,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "NOASSERTION",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "384679998",
+        "tag": "v1.2",
+        "url": "https://github.com/Raekwon1603/super_metroid-android/releases/tag/v1.2",
+        "publishedAt": "2026-09-08T11:42:20Z"
+      }
+    },
+    "Raekwon1603/RetroArch": {
+      "repo": "Raekwon1603/RetroArch",
+      "url": "https://github.com/Raekwon1603/RetroArch",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "metroidarch-dual-screen",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": null,
+      "branch": "metroidarch-dual-screen",
+      "branchHead": "0bfcb06888b7a86b87b01d0436aeb732e38863bb"
+    },
+    "igawa6/eden-duo": {
+      "repo": "igawa6/eden-duo",
+      "url": "https://github.com/igawa6/eden-duo",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "431421880",
+        "tag": "v1.3.4",
+        "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.4",
+        "publishedAt": "2026-11-02T12:13:28Z"
+      }
+    },
+    "samyost1/tmc-android": {
+      "repo": "samyost1/tmc-android",
+      "url": "https://github.com/samyost1/tmc-android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "dual-screen-native",
+      "licenseReportedByGitHub": "NOASSERTION",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "373144302",
+        "tag": "v1.2",
+        "url": "https://github.com/samyost1/tmc-android/releases/tag/v1.2",
+        "publishedAt": "2026-08-19T15:06:11Z"
+      }
+    },
+    "samyost1/zelda3-android": {
+      "repo": "samyost1/zelda3-android",
+      "url": "https://github.com/samyost1/zelda3-android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "dual-screen",
+      "licenseReportedByGitHub": null,
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "359390830",
+        "tag": "v2.0",
+        "url": "https://github.com/samyost1/zelda3-android/releases/tag/v2.0",
+        "publishedAt": "2026-07-24T15:25:37Z"
+      }
+    },
+    "Josh-Daniels/OpenMW-DS": {
+      "repo": "Josh-Daniels/OpenMW-DS",
+      "url": "https://github.com/Josh-Daniels/OpenMW-DS",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "427324131",
+        "tag": "v1.4.0",
+        "url": "https://github.com/Josh-Daniels/OpenMW-DS/releases/tag/v1.4.0",
+        "publishedAt": "2026-10-29T00:23:23Z"
+      }
+    },
+    "OpenMW/openmw": {
+      "repo": "OpenMW/openmw",
+      "url": "https://github.com/OpenMW/openmw",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "master",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "334684060",
+        "tag": "openmw-0.51.0",
+        "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-0.51.0",
+        "publishedAt": "2026-06-19T19:58:46Z"
+      }
+    },
+    "AngelAuraMC/Amethyst-Android": {
+      "repo": "AngelAuraMC/Amethyst-Android",
+      "url": "https://github.com/AngelAuraMC/Amethyst-Android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "v3_openjdk",
+      "licenseReportedByGitHub": "LGPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "362825381",
+        "tag": "1.1.7",
+        "url": "https://github.com/AngelAuraMC/Amethyst-Android/releases/tag/1.1.7",
+        "publishedAt": "2026-07-31T03:09:40Z"
+      }
+    },
+    "exojosh/AynThorSecondScreen": {
+      "repo": "exojosh/AynThorSecondScreen",
+      "url": "https://github.com/exojosh/AynThorSecondScreen",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "master",
+      "licenseReportedByGitHub": "CC0-1.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "367562775",
+        "tag": "v1.0.1",
+        "url": "https://github.com/exojosh/AynThorSecondScreen/releases/tag/v1.0.1",
+        "publishedAt": "2026-08-09T19:15:47Z"
+      }
+    },
+    "exojosh/Android_AynThor_MinecraftSecondScreen": {
+      "repo": "exojosh/Android_AynThor_MinecraftSecondScreen",
+      "url": "https://github.com/exojosh/Android_AynThor_MinecraftSecondScreen",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "master",
+      "licenseReportedByGitHub": "CC0-1.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": null
+    },
+    "kalenjohnson/chrono-duo": {
+      "repo": "kalenjohnson/chrono-duo",
+      "url": "https://github.com/kalenjohnson/chrono-duo",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "MIT",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "399405051",
+        "tag": "v0.7",
+        "url": "https://github.com/kalenjohnson/chrono-duo/releases/tag/v0.7",
+        "publishedAt": "2026-09-29T18:11:08Z"
+      }
+    },
+    "rafaelvcaetano/melonDS-android": {
+      "repo": "rafaelvcaetano/melonDS-android",
+      "url": "https://github.com/rafaelvcaetano/melonDS-android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "master",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "318115221",
+        "tag": "2.0.1",
+        "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/2.0.1",
+        "publishedAt": "2026-05-06T00:03:15Z"
+      }
+    },
+    "rosbean/balatro-dualscreen": {
+      "repo": "rosbean/balatro-dualscreen",
+      "url": "https://github.com/rosbean/balatro-dualscreen",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "363616301",
+        "tag": "v1.0",
+        "url": "https://github.com/rosbean/balatro-dualscreen/releases/tag/v1.0",
+        "publishedAt": "2026-08-01T20:07:04Z"
+      }
+    },
+    "AurelioB/BanjoRecomp-Android": {
+      "repo": "AurelioB/BanjoRecomp-Android",
+      "url": "https://github.com/AurelioB/BanjoRecomp-Android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "android",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "339099521",
+        "tag": "android-v0.1.1",
+        "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.1",
+        "publishedAt": "2026-06-14T04:18:31Z"
+      }
+    },
+    "lidor30/pokedaisy": {
+      "repo": "lidor30/pokedaisy",
+      "url": "https://github.com/lidor30/pokedaisy",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "433046545",
+        "tag": "v1.4.0",
+        "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.4.0",
+        "publishedAt": "2026-11-03T18:03:02Z"
+      }
+    },
+    "utkarshdalal/GameNative": {
+      "repo": "utkarshdalal/GameNative",
+      "url": "https://github.com/utkarshdalal/GameNative",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "master",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "435273958",
+        "tag": "v1.4.0",
+        "url": "https://github.com/utkarshdalal/GameNative/releases/tag/v1.4.0",
+        "publishedAt": "2026-11-05T13:59:50Z"
+      }
+    },
+    "Droid-Deck/DroidDeck": {
+      "repo": "Droid-Deck/DroidDeck",
+      "url": "https://github.com/Droid-Deck/DroidDeck",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "438311515",
+        "tag": "0.7.0",
+        "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.7.0",
+        "publishedAt": "2026-11-08T14:50:34Z"
+      }
+    },
+    "Waterdish/2ship2harkinian-Android": {
+      "repo": "Waterdish/2ship2harkinian-Android",
+      "url": "https://github.com/Waterdish/2ship2harkinian-Android",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "android",
+      "licenseReportedByGitHub": "CC0-1.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "225365256",
+        "tag": "v1.1.2P1",
+        "url": "https://github.com/Waterdish/2ship2harkinian-Android/releases/tag/v1.1.2P1",
+        "publishedAt": "2025-06-14T23:27:40Z"
+      }
+    },
+    "Zelda64Recomp/Zelda64Recomp": {
+      "repo": "Zelda64Recomp/Zelda64Recomp",
+      "url": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "dev",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "242740890",
+        "tag": "v1.2.2",
+        "url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2",
+        "publishedAt": "2025-08-27T00:58:35Z"
+      }
+    },
+    "andreyvelsk/GAFT": {
+      "repo": "andreyvelsk/GAFT",
+      "url": "https://github.com/andreyvelsk/GAFT",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": null,
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": null
+    },
+    "codm2000/Dual-Screen-Games": {
+      "repo": "codm2000/Dual-Screen-Games",
+      "url": "https://github.com/codm2000/Dual-Screen-Games",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": null,
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": null
+    },
+    "abduznik/awesome-android-native-ports": {
+      "repo": "abduznik/awesome-android-native-ports",
+      "url": "https://github.com/abduznik/awesome-android-native-ports",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "NOASSERTION",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": null
+    },
+    "igawa6/eden-duo-companions": {
+      "repo": "igawa6/eden-duo-companions",
+      "url": "https://github.com/igawa6/eden-duo-companions",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "438194784",
+        "tag": "cult-of-the-lamb-1.1.0",
+        "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/cult-of-the-lamb-1.1.0",
+        "publishedAt": "2026-11-08T11:15:41Z"
+      }
+    },
+    "Abacus1829/ayn-dual-screen": {
+      "repo": "Abacus1829/ayn-dual-screen",
+      "url": "https://github.com/Abacus1829/ayn-dual-screen",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "NOASSERTION",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "380529459",
+        "tag": "v2026.09.01c",
+        "url": "https://github.com/Abacus1829/ayn-dual-screen/releases/tag/v2026.09.01c",
+        "publishedAt": "2026-09-01T13:35:17Z"
+      }
+    },
+    "ZalithLauncher/ZalithLauncher2": {
+      "repo": "ZalithLauncher/ZalithLauncher2",
+      "url": "https://github.com/ZalithLauncher/ZalithLauncher2",
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "archived": false,
+      "defaultBranch": "main",
+      "licenseReportedByGitHub": "GPL-3.0",
+      "licenseScopeNote": "Repository metadata only; media and catalog permissions require review.",
+      "latestRelease": {
+        "id": "436308068",
+        "tag": "2.8.2",
+        "url": "https://github.com/ZalithLauncher/ZalithLauncher2/releases/tag/2.8.2",
+        "publishedAt": "2026-11-06T09:24:12Z"
+      }
+    }
+  },
   "events": [],
-  "errors": []
+  "errors": [
+    {
+      "repo": "DNAMobileApplications/DroidBridgeLauncherGplayGithub",
+      "message": "GitHub HTTP 404",
+      "at": "2026-11-08T15:16:30Z"
+    }
+  ],
+  "sourceHashes": {
+    "gaft": "927039df87f79d34cd0e42cd3817559c9fff2e0f9c1bbcb0a14a8ba049d8cf32",
+    "dual-list": "80da552daa0858077abd509c66b6414f24bb44ed",
+    "native-ports": "8fde65f1a83ef26bc44bd04529e2b5f2f653a2a5"
+  },
+  "sourceSnapshots": {
+    "gaft": {
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "hash": "927039df87f79d34cd0e42cd3817559c9fff2e0f9c1bbcb0a14a8ba049d8cf32",
+      "linkCount": 88
+    },
+    "dual-list": {
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "hash": "80da552daa0858077abd509c66b6414f24bb44ed",
+      "linkCount": 50
+    },
+    "native-ports": {
+      "checkedAt": "2026-11-08T15:16:30Z",
+      "hash": "8fde65f1a83ef26bc44bd04529e2b5f2f653a2a5",
+      "linkCount": 228
+    }
+  }
 }
