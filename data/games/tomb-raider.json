@@ -484,7 +484,7 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "summary": "Ergänzungen und Korrekturen, Stand 8. November 2026. Für den Thor ist die offizielle Android-Fassung von I–III Remastered der unkomplizierteste belegte Weg; die Mobilportierung erschien erst am 12. März 2026. Für Anniversary gibt es konkrete Android-Berichte sowie Kamera- und Bildraten-Patches. OpenLara ist verfügbar, aber sein älteres Android-Paket hat dokumentierte ABI-Probleme auf neueren Geräten. Der mobile TRX-Fork ist ausdrücklich experimentell. Einen spielspezifischen Dual-Screen-Mod oder Inventar-Companion konnte ich nicht belastbar belegen. Tomb Raider von 2013 ist ein anderes Spiel und hier nicht als Fassung des Originals erfasst.",
+  "summary": "Am einfachsten ist die offizielle Android-Fassung von Tomb Raider I–III Remastered. Wer das Original will, spielt es per PlayStation-Emulation oder nativ mit OpenLara (experimentell).",
   "mods": [
     {
       "id": "anniversary-right-analog-support",

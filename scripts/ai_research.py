@@ -95,6 +95,8 @@ Finde mit der Websuche:
    Videos) mit Gerät, 1 Satz Zusammenfassung – bevorzugt AYN Thor, Odin, Retroid.
 3. mods: bekannte Mods, die auf Android-tauglichen Fassungen laufen.
 
+summary: 1–2 Sätze für Spieler (welche Fassung/welcher Weg ist auf dem Handheld interessant), kein Rechercheprotokoll.
+
 Regeln: Jede Angabe braucht sourceUrl/url aus deiner Websuche. Nichts erfinden, keine FPS-Zahlen ohne Quelle.
 Keine Links zu ROMs, ISOs, Spieldaten, APK-Spiegeln oder Piraterie. Alle Texte auf Deutsch mit Umlauten.
 year = 0, wenn unbekannt. Leere Felder als "" bzw. [].""".strip()
@@ -252,8 +254,8 @@ def merge(game, projects, result, sources, log):
         have_mods.add(norm_url(nm['url']))
         entries.append({'type': 'mod-added', 'text': f"Neuer Mod: {nm['name']} (KI-Recherche)", 'url': nm['url']})
 
-    if result.get('summary') and (not g.get('summary') or len(g.get('versions', [])) > len(game.get('versions', []))):
-        g['summary'] = result['summary']
+    if result.get('summary') and not g.get('summary'):
+        g['summary'] = result['summary'][:300]
     if entries:
         g['updatedAt'] = TODAY
     for e in entries:
