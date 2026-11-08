@@ -529,11 +529,19 @@ Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielf
     sources |= {norm_url(l['url']) for l in leads}
     inbox['dualScanSeen'] = sorted(seen | {l['url'] for l in leads})
     added, touched_games = [], set()
+    atlas_mod = __import__('atlas')
     for item in data.get('projects', [])[:max_new]:
         purl = item.get('projectUrl')
         if not ok_url(purl) or not ok_url(item.get('sourceUrl'), sources) or norm_url(purl) in known_urls:
             continue
-        gid, created = create_game(item['gameTitle'], [item['platform']] if item.get('platform') else [], None, None, log)
+        if len((item.get('gameTitle') or '').strip()) < 2 or not (item.get('platform') or '').strip():
+            log(f"  übersprungen (Titel/Plattform fehlt): {item.get('name')}")
+            continue
+        # every find is applied on its own and rolled back if the database would become invalid
+        existing_gid = find_game(item['gameTitle'])
+        snap_game = (DATA / 'games' / f'{existing_gid}.json').read_text(encoding='utf-8') if existing_gid else None
+        snap_projects = copy.deepcopy(projects)
+        gid, created = create_game(item['gameTitle'], [item['platform']], None, None, log)
         g = read(DATA / 'games' / f'{gid}.json')
         version = next((v for v in g.get('versions', []) if item['platform'] in v['platforms']), None)
         if not version:
@@ -567,6 +575,17 @@ Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielf
             'links': [{'label': 'Quelle', 'url': item['sourceUrl']}], 'reports': [], 'performance': [], 'checkedAt': TODAY})
         g['updatedAt'] = TODAY
         write(DATA / 'games' / f'{gid}.json', g)
+        write(DATA / 'projects.json', projects)
+        problems = atlas_mod.validate()
+        if problems:
+            log(f"  verworfen ({item['name']} / {item['gameTitle']}): {problems[0]}")
+            if created:
+                (DATA / 'games' / f'{gid}.json').unlink(missing_ok=True)
+            else:
+                (DATA / 'games' / f'{gid}.json').write_text(snap_game, encoding='utf-8')
+            projects = snap_projects
+            write(DATA / 'projects.json', projects)
+            continue
         known_urls.add(norm_url(purl))
         touched_games.add(gid)
         added.append({'date': TODAY, 'type': 'route-added', 'by': 'ai-research', 'game': gid,
@@ -575,8 +594,9 @@ Je Projekt: gameTitle (englischer Originaltitel), platform (Plattform der Spielf
     inbox['dualScan'] = {'lastRun': TODAY, 'found': len(added)}
     write(DATA / 'inbox.json', inbox)
     write(DATA / 'projects.json', projects)
-    if __import__('atlas').validate():
-        raise RuntimeError('Validierung nach Dual-Screen-Suchlauf fehlgeschlagen')
+    problems = atlas_mod.validate()
+    if problems:
+        raise RuntimeError(f'Validierung nach Dual-Screen-Suchlauf fehlgeschlagen: {problems[:3]}')
     if added:
         cl = read(DATA / 'changelog.json')
         cl['entries'][0:0] = added
