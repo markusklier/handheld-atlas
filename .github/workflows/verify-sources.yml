@@ -1,0 +1,45 @@
+name: Recheck discovered project evidence
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-sources.yml'
+  schedule:
+    - cron: '21 8 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-discovery-main
+  cancel-in-progress: false
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Check project URLs, not game compatibility
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/verify_project_sources.py --limit 12
+      - name: Build data viewer
+        run: |
+          python scripts/validate.py
+          python -m unittest discover -s tests -p 'test_*.py'
+          python scripts/build.py
+      - name: Commit evidence status and updated viewer
+        shell: bash
+        run: |
+          git config user.name 'Atlas evidence bot'
+          git config user.email 'atlas-evidence@users.noreply.github.com'
+          git add data/project_checks.json Handheld-Atlas.html
+          if git diff --cached --quiet; then echo 'No changes'; exit 0; fi
+          git commit -m 'data: update external project source checks'
+          git reset --hard HEAD
+          git pull --rebase origin main
+          git push origin HEAD:main

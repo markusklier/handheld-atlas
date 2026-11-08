@@ -1,12 +1,21 @@
 # Handheld Atlas 0.4 – automatische Entdeckung, optional KI & Vision
 
+## Version 0.5 – Spielebrowser mit Cover/Originalszenen und Plattformoptionen
+
+- Für PC-Titel lädt der neue Metadaten-Workflow kostenlose Quellmetadaten mit offiziell verlinkten Steam-Bibliothekscovern und Originalspiel-Screenshots (keine Bilddateien im Repo). Optional kann IGDB über die nichtkommerzielle Twitch-API angeschlossen werden. Bildquellen und Rechtehinweise bleiben sichtbar. **Fehlende Cover werden nicht durch erfundene Bilder ersetzt.**
+- Beim Hover über die Cover-Karte zeigt Atlas eine Spielszenen- bzw. bei Dual-Screen-Filter eine dokumentierte Varianten-Vorschau. Im Spiel-Detail sind Originalbilder und Bilder der einzelnen Spielwege streng getrennt.
+- Für Nintendo 3DS, PlayStation 1, DS, N64, SNES, GBA, GB/GBC und PC enthält Atlas allgemeine Plattformoptionen (Azahar, DuckStation, GameNative usw.). **Keine individuelle Kompatibilitätsbestätigung!**
+- Minecraft hat eine separate, quellenbelegte Liste für potenzielle Performance-Mods (einschließlich Sodium mit Android-Einschränkung). Neue Projekte können regelmäßig auf *Existenz* geprüft werden, ohne damit einen Community- oder Hardwaretest zu behaupten.
+- **Hosting:** Das Repository bleibt zunächst privat. Falls dein GitHub-Plan Pages aus einem privaten Repo erlaubt, kann die Website öffentlich erreichbar sein, ohne den Quellcode zu öffnen. Bei GitHub Free empfiehlt sich ein separates neutrales Public-Repository nur mit gebauten HTML-Dateien. Details: [docs/V05-PLAYWAYS-MEDIA.md](docs/V05-PLAYWAYS-MEDIA.md).
+
+
 ## Version 0.4.1 – automatische HTML-Schnappschüsse und Quellenbilder
 
-- **Eine heruntergeladene `Handheld-Atlas.html` aktualisiert sich nicht selbst.** Der Quellenworkflow speichert aber jetzt den neu gebauten HTML-Schnappschuss mit den aktualisierten Daten im privaten Repository. Danach die Datei erneut herunterladen.
-- **Gehostete PWA:** Die Schaltfläche „Veröffentlichte Release-Daten laden“ lädt nun die Projektliste und Release-Informationen vom selben Server. Für echte automatische Updates benötigt Atlas eine HTTPS-Website; die Offline-Datei genügt dafür nicht.
-- **Mehr Quellbilder:** `scripts/enrich_media.py` durchsucht offizielle Modrinth-Galerien, GitHub-README-Bilder und Screenshot-Verzeichnisse mit begrenztem Abfragebudget; die Modrinth-Suche nimmt ihre Originalgalerie direkt mit.
-- Neue Bilder bleiben **ungeprüfte Projektbilder mit Quellenverweis**. Keine Behauptung von Thor-Kompatibilität, exaktem Spiel-Build oder Nutzungsfreigabe. Sie werden nicht in dieses Repository gespiegelt.
-- **Privater Test:** GitHub → Actions → erfolgreichen Checks-/Discovery-Lauf → Artefakt `handheld-atlas-preview` herunterladen oder `Handheld-Atlas.html` aus dem Repository herunterladen. GitHub Pages ist ohne gesonderte Zugriffskontrolle nicht als private Website geeignet.
+- **Eine heruntergeladene `Handheld-Atlas.html` aktualisiert sich nicht selbst.** Recherche-Actions speichern künftig bei Datenänderungen auch das frisch gebaute HTML in das private Repository. Lade die HTML-Datei erneut herunter, um Änderungen zu sehen. Die Web-PWA kann sich nach Veröffentlichung über HTTPS bei neuem Aufruf aktualisieren.
+- **„Veröffentlichte Release-Daten laden“** holt auf HTTP(S) sowohl `data/updates.json` als auch `data/projects.json` von derselben Website. Unter `file://` geht das absichtlich nicht.
+- `scripts/enrich_media.py` findet weitere **Modrinth-Projektgalerien**, **GitHub-README-Bilder** und Screenshot-Verzeichnisse in den eigentlichen Projekt-Repositories. Die Medien werden verlinkt, nicht kopiert, und als **unverifizierte Bildkandidaten** mit Originalquelle ausgewiesen. Bildrechte und genaue Build-Kompatibilität müssen separat geklärt werden.
+- Zielgerichtete KI-Bildprüfung kann ab jetzt neue Bilder derselben `game_id` bevorzugen. Eine KI-Bildprüfung ist keine echte Hardware-Verifikation.
+- **Private Nutzung:** Den HTML-Schnappschuss aus dem Repository laden oder im erfolgreichen Checks-/Research-Lauf das `handheld-atlas-preview`-Artefakt herunterladen. GitHub Pages macht eine private Repository-Website nicht automatisch privat.
 
 
 **Spielzentrierte Discovery für AYN Thor, Android- und offene Handheld-Plattformen. 8. November 2026.**
