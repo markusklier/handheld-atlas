@@ -75,7 +75,7 @@ class FillTest(unittest.TestCase):
         original = media.urllib.request.urlopen
         media.urllib.request.urlopen = lambda *a, **k: None  # library art exists
         try:
-            media.fill_steam(fetch)
+            media.fill_steam(fetch, pause=0)
         finally:
             media.urllib.request.urlopen = original
         g = self.game(target['id'])
@@ -84,14 +84,12 @@ class FillTest(unittest.TestCase):
 
     def test_wikipedia_only_accepts_video_game_articles(self):
         def fetch(url, as_json=False):
-            if 'video+game' in url:
-                return {'query': {'pages': [{'title': 'X', 'missing': True}]}}
             if 'Metroid+Dread' in url:
                 return {'query': {'pages': [{'title': 'Metroid Dread', 'description': '2021 video game',
                                              'thumbnail': {'source': 'https://upload.wikimedia.org/dread.jpg'}}]}}
             return {'query': {'pages': [{'title': 'Something', 'description': 'River in Europe',
                                          'thumbnail': {'source': 'https://upload.wikimedia.org/river.jpg'}}]}}
-        media.fill_wikipedia(fetch)
+        media.fill_wikipedia(fetch, pause=0, limit=1000)
         self.assertEqual(self.game('metroid-dread')['cover']['url'], 'https://upload.wikimedia.org/dread.jpg')
         self.assertNotIn('river', json.dumps([atlas.read(f).get('cover') for f in (media.DATA / 'games').glob('*.json')]))
 

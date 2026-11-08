@@ -15,8 +15,8 @@ Screenshots der Variante, Voraussetzungen, Projektlinks und dem neuesten Release
 
 | Wer | Wann | Was |
 |---|---|---|
-| **Watcher** (`scripts/watch.py`, GitHub Action, ohne KI) | täglich | neue Releases/Archivierung aller bekannten Projekte → Reiter „Neu“; neue Kandidaten aus GitHub-Suche, aktiven Forks, Modrinth und Reddit → `data/inbox.json`; fehlende Cover aus libretro-thumbnails |
-| **Pflege-Agent** (Claude, geplante Aufgabe) | wöchentlich | sortiert die Inbox in Spiele ein, recherchiert Spiele, ergänzt Screenshots je Spielweg, korrigiert Franchises; Ablauf in [`CLAUDE.md`](CLAUDE.md) |
+| **Watcher** (`scripts/watch.py`, GitHub Action, ohne KI) | täglich | neue Releases/Archivierung aller bekannten Projekte → Reiter „Neu“; neue Kandidaten aus GitHub-Suche, aktiven Forks, Modrinth und Reddit → `data/inbox.json`; fehlende Cover/Screenshots (libretro-thumbnails, Steam, Wikipedia) und Screenshots je Spielweg aus den READMEs der Projekte |
+| **Pflege-Agent** (Claude, geplante Aufgabe) | wöchentlich | sortiert die Inbox in Spiele ein, erweitert die Spieleliste um Spiele mit echten Wegen, prüft README-Bilder visuell, ergänzt fehlende Spielweg-Screenshots, korrigiert Franchises; Ablauf in [`CLAUDE.md`](CLAUDE.md) |
 | **Du** | wann du willst | „Recherche anfordern“ im Spiel (legt ein GitHub-Issue an, der Agent arbeitet es zuerst ab) oder Claude sagen: „Spielweg X läuft auf dem Thor“ |
 
 Alles landet direkt auf `main` und ist nach dem automatischen Deploy in der App. Jeder Spielweg trägt eine Prüfstufe:
@@ -44,6 +44,7 @@ data/changelog.json  Reiter „Neu“
 scripts/atlas.py     validate · build · stats · format
 scripts/watch.py     Watcher
 scripts/covers.py    Cover/Screenshots aus libretro-thumbnails
+scripts/media.py     Spielweg-Screenshots (Projekt-READMEs), Steam, Wikipedia
 ```
 
 ```sh

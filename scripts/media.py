@@ -13,6 +13,7 @@
 import json
 import re
 import sys
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -137,12 +138,17 @@ def steam_lookup(title, fetch=get):
     return None
 
 
-def fill_steam(fetch=get):
+def fill_steam(fetch=get, pause=0.7):
     added = 0
+    state = load_state()
     for f in sorted((DATA / 'games').glob('*.json')):
         g = read(f)
-        if 'PC' not in g.get('platforms', []) or g.get('cover'):
+        if 'PC' not in g.get('platforms', []) or g.get('cover') or recently_tried(state, 'steam', g['id']):
             continue
+        mark_tried(state, 'steam', g['id'])
+        write(DATA / 'media_state.json', state)
+        if pause:
+            time.sleep(pause)
         try:
             appid = steam_lookup(g['title'], fetch)
             if not appid:
@@ -173,34 +179,63 @@ def fill_steam(fetch=get):
 
 # ---------------- 3. Wikipedia cover fallback ----------------
 def wikipedia_cover(title, fetch=get):
-    for t in (f'{title} (video game)', title):
-        q = urllib.parse.urlencode({'action': 'query', 'titles': t, 'prop': 'pageimages|description', 'piprop': 'thumbnail',
-                                    'pithumbsize': 600, 'redirects': 1, 'format': 'json', 'formatversion': 2})
-        res = fetch('https://en.wikipedia.org/w/api.php?' + q, as_json=True)
-        for page in res.get('query', {}).get('pages', []):
-            desc = (page.get('description') or '').lower()
-            thumb = (page.get('thumbnail') or {}).get('source')
-            if thumb and 'game' in desc and 'series' not in desc and not page.get('missing'):
-                return thumb, 'https://en.wikipedia.org/wiki/' + urllib.parse.quote(page['title'].replace(' ', '_'))
+    """Both spellings in one request; Wikimedia rate-limits bursts (HTTP 429)."""
+    q = urllib.parse.urlencode({'action': 'query', 'titles': f'{title} (video game)|{title}', 'prop': 'pageimages|description',
+                                'piprop': 'thumbnail', 'pithumbsize': 600, 'redirects': 1, 'format': 'json',
+                                'formatversion': 2, 'maxlag': 5})
+    res = fetch('https://en.wikipedia.org/w/api.php?' + q, as_json=True)
+    pages = sorted(res.get('query', {}).get('pages', []), key=lambda p: '(video game)' not in p.get('title', ''))
+    for page in pages:
+        desc = (page.get('description') or '').lower()
+        thumb = (page.get('thumbnail') or {}).get('source')
+        if thumb and 'game' in desc and 'series' not in desc and not page.get('missing'):
+            return thumb, 'https://en.wikipedia.org/wiki/' + urllib.parse.quote(page['title'].replace(' ', '_'))
     return None, None
 
 
-def fill_wikipedia(fetch=get):
-    added = 0
+def load_state():
+    path = DATA / 'media_state.json'
+    return read(path) if path.exists() else {'wikipedia': {}, 'steam': {}}
+
+
+def recently_tried(state, source, gid, days=30):
+    from datetime import date, timedelta
+    last = state.setdefault(source, {}).get(gid)
+    return bool(last) and last >= (date.today() - timedelta(days=days)).isoformat()
+
+
+def mark_tried(state, source, gid):
+    from datetime import date
+    state.setdefault(source, {})[gid] = date.today().isoformat()
+
+
+def fill_wikipedia(fetch=get, pause=1.0, limit=80):
+    added = tried = 0
+    state = load_state()
     for f in sorted((DATA / 'games').glob('*.json')):
         g = read(f)
-        if g.get('cover'):
+        if g.get('cover') or tried >= limit or recently_tried(state, 'wikipedia', g['id']):
             continue
-        try:
-            url, source = wikipedia_cover(g['title'], fetch)
-        except Exception as e:  # noqa: BLE001
-            log(f'! Wikipedia {g["title"]}: {e}')
-            continue
+        tried += 1
+        mark_tried(state, 'wikipedia', g['id'])
+        url = None
+        for attempt in range(2):
+            try:
+                url, source = wikipedia_cover(g['title'], fetch)
+                break
+            except Exception as e:  # noqa: BLE001
+                if '429' in str(e) and attempt == 0:
+                    time.sleep(20)
+                    continue
+                log(f'! Wikipedia {g["title"]}: {e}')
+        if pause:
+            time.sleep(pause)
         if url:
             g['cover'] = {'url': url, 'source': source}
             write(f, g)
             added += 1
-    print(f'media.py: {added} Cover aus Wikipedia ergänzt')
+    write(DATA / 'media_state.json', state)
+    print(f'media.py: {added} Cover aus Wikipedia ergänzt ({tried} versucht)')
     return added
 
 
