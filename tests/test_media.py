@@ -53,10 +53,14 @@ class FillTest(unittest.TestCase):
                 return README
             raise OSError('404')
         media.fill_route_shots(fetch, fetch_json=lambda url: [])
+        before = next(r for r in atlas.read(self._orig / 'games' / 'chrono-trigger.json')['routes'] if 'chrono' in r.get('projects', []))
         chrono = self.game('chrono-trigger')
         duo = next(r for r in chrono['routes'] if 'chrono' in r.get('projects', []))
-        self.assertTrue(duo['screenshots'])
-        self.assertTrue(all(s['check'] == 'readme' for s in duo['screenshots']))
+        old = before.get('screenshots', [])
+        self.assertEqual(duo['screenshots'][:len(old)], old)                           # existing (checked) images kept, in order
+        self.assertTrue(all(s['check'] == 'readme' for s in duo['screenshots'][len(old):]))
+        self.assertTrue(len(duo['screenshots']) > len(old))
+        self.assertEqual(len({s['url'] for s in duo['screenshots']}), len(duo['screenshots']))  # no duplicates
         # generic emulators (Snes9x, RetroArch, Eden …) never receive README images
         sm = self.game('super-metroid')
         self.assertFalse(any(s.get('check') == 'readme' for r in sm['routes'] if r['projects'] == ['snes9x']
