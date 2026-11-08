@@ -5,7 +5,53 @@
   "platforms": [
     "Nintendo 64"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "sf64-starship-android",
+      "name": "Starship (Android-Port)",
+      "kind": "decomp",
+      "edition": "Nintendo 64, USA 1.0 oder 1.1 (Rev A), .z64",
+      "runtime": "Starship / libultraship (Android-Fork von izzy2lost)",
+      "projects": [
+        "starship-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Star-Fox-64-ROM (USA 1.0 oder 1.1, .z64)",
+        "Android 7.0+ (ARM64 oder ARMv7)"
+      ],
+      "benefit": "Läuft nativ statt per N64-Emulation; die ROM wird in der App einmalig umgewandelt (kein PC nötig). Mod- und Spielstandverwaltung im Spielmenü.",
+      "caveat": "Inoffizieller Fork; die README beschreibt nur die PC-Builds, Android-Hinweise stehen in den Release-Notes. Controller-Unterstützung dort nicht erwähnt.",
+      "steps": [
+        "APK aus den GitHub-Releases installieren.",
+        "App starten und die eigene .z64-ROM über die Dateiauswahl wählen.",
+        "Einmalige Umwandlung abwarten, dann spielen."
+      ],
+      "version": "Starship v2.0.0 (Android)",
+      "effort": "easy",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub-Releases",
+          "url": "https://github.com/izzy2lost/Starship/releases"
+        },
+        {
+          "label": "Starship (Upstream)",
+          "url": "https://github.com/HarbourMasters/Starship"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Star%20Fox%2064%20%28USA%29.png",
@@ -22,5 +68,7 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
     }
-  ]
+  ],
+  "genre": "Rail-Shooter",
+  "summary": "Nativer Android-Port auf Basis von Starship (HarbourMasters) – eigene N64-ROM wird direkt auf dem Gerät umgewandelt."
 }

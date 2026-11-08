@@ -32,15 +32,20 @@
         "MetroidArch, Branch metroidarch-dual-screen"
       ],
       "benefit": "Dual-Screen-Ansicht und Widescreen in einem spezialisierten RetroArch-Fork.",
-      "caveat": "Kein nativer Recomp. Der alte APK-Port wurde abgelöst; Spielstände vor einem Wechsel sichern.",
+      "caveat": "Kein nativer Recomp. Der alte APK-Port wurde abgelöst; Spielstände vor einem Wechsel sichern. Vorabversion v1.0.2-debug2 behebt einen Ladehänger bei ROMs über Android-Speicherzugriff (SAF); dafür den Core „bsnes-hd (MetroidArch)“ verwenden, nicht bsnes-hd aus dem Online-Updater.",
       "steps": [],
-      "version": "Branch metroidarch-dual-screen",
+      "version": "Branch metroidarch-dual-screen; Vorabversion v1.0.2-debug2 (Okt. 2026)",
       "effort": "guided",
       "status": "active",
       "verification": "documented",
       "testedOn": [],
       "screenshots": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Release v1.0.2-debug2",
+          "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2"
+        }
+      ],
       "checkedAt": "2026-11-08"
     },
     {

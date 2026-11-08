@@ -5,7 +5,51 @@
   "platforms": [
     "PC"
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "hl-xash3d-fwgs",
+      "name": "Xash3D FWGS",
+      "kind": "source-port",
+      "edition": "PC (Steam-Fassung, Ordner „valve“)",
+      "runtime": "Xash3D FWGS",
+      "projects": [
+        "xash3d-fwgs"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Half-Life-Spieldaten (Ordner „valve“ aus der Steam-Fassung)"
+      ],
+      "benefit": "Native Half-Life-kompatible Engine für Android und Linux; unterstützt Steam-Half-Life (HLSDK 2.5) und laut README wiederhergestellten Code für Erweiterungen und einige Mods.",
+      "caveat": "Android-APK wird als Testbuild (Release-Tag continuous) angeboten. Leistung und Controller-Belegung auf dem Thor ungeprüft. Einzelne Mods brauchen passende Spielbibliotheken.",
+      "steps": [
+        "APK aus den GitHub-Releases (Tag continuous) installieren.",
+        "Ordner „valve“ aus der eigenen Steam-Installation nach „xash“ im internen Speicher kopieren.",
+        "App starten und Spiel auswählen."
+      ],
+      "version": "Testbuild (continuous)",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/FWGS/xash3d-fwgs"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
   "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900_2x.jpg",
@@ -42,5 +86,7 @@
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/70/"
     }
-  ]
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Mit Xash3D FWGS läuft die Steam-Fassung nativ auf Android – eigene Spieldaten vorausgesetzt."
 }

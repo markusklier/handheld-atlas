@@ -2,6 +2,77 @@
   "entries": [
     {
       "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Delta Touch (GZDoom, PrBoom+ u. a.) mit eigener DOOM.WAD (KI-Fund)",
+      "url": "https://doomwiki.org/wiki/Delta_Touch",
+      "game": "doom-1993"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "mod-added",
+      "by": "agent",
+      "text": "Neue Mods: Brutal Doom und SIGIL (KI-Fund)",
+      "url": "https://www.moddb.com/mods/brutal-doom",
+      "game": "doom-1993"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Delta Touch (GZDoom, PrBoom+ u. a.) mit eigener DOOM2.WAD (KI-Fund)",
+      "url": "https://doomwiki.org/wiki/Delta_Touch",
+      "game": "doom-ii"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "mod-added",
+      "by": "agent",
+      "text": "Neue Mods: Brutal Doom und Eviternity (KI-Fund)",
+      "url": "https://doomwiki.org/wiki/Eviternity",
+      "game": "doom-ii"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Starship als nativer Android-Port (KI-Fund)",
+      "url": "https://github.com/izzy2lost/Starship/releases",
+      "game": "star-fox-64"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Xash3D FWGS (KI-Fund)",
+      "url": "https://github.com/FWGS/xash3d-fwgs",
+      "game": "half-life"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Eden Duo + Minecraft Companion für die Switch-Fassung (KI-Fund)",
+      "url": "https://github.com/erikvanhoolst/minecraft-companion",
+      "game": "minecraft"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "route-updated",
+      "by": "agent",
+      "text": "MetroidArch: Vorabversion v1.0.2-debug2 (SAF-Ladefix) und Core-Hinweis ergänzt",
+      "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2",
+      "game": "super-metroid"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neue Verzeichnisse: PortHub Catalog, PortHub-App und Android Ports Master (KI-Fund)",
+      "url": "https://github.com/orev7s/porthub-catalog"
+    },
+    {
+      "date": "2026-11-08",
       "type": "game-added",
       "by": "agent",
       "game": "dragon-age-origins",

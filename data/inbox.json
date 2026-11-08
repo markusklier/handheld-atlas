@@ -633,30 +633,6 @@
       "foundAt": "2026-11-08"
     },
     {
-      "url": "https://github.com/keika-sy/android-ports-master",
-      "title": "keika-sy/android-ports-master",
-      "excerpt": "Master catalog & dashboard of native Android game ports (decomp/recomp/source ports) — 866 entries, 702 games",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/orev7s/porthub-catalog",
-      "title": "orev7s/porthub-catalog",
-      "excerpt": "PortHub game catalog — one JSON feed of Android ports, decomps, recomps. Links only, no game data.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/orev7s/porthub",
-      "title": "orev7s/porthub",
-      "excerpt": "Search every Android game port, decomp and recomp in one app. Kotlin + Compose.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
       "url": "https://github.com/Mozarella-png/Vib-ribbon-android",
       "title": "Mozarella-png/Vib-ribbon-android",
       "excerpt": "Port of Vib ribbon decomp for android",
@@ -1833,14 +1809,6 @@
       "foundAt": "2026-11-08"
     },
     {
-      "url": "https://github.com/erikvanhoolst/minecraft-companion",
-      "title": "minecraft-companion",
-      "excerpt": "",
-      "game": "minecraft",
-      "source": "github",
-      "foundAt": "2026-11-08"
-    },
-    {
       "url": "https://github.com/joiha-steven/plumemu",
       "title": "A calm, light frontend (launcher) for Android retro handhelds. Names your games offline, picks the emulators,",
       "excerpt": "",
@@ -2275,14 +2243,6 @@
     {
       "url": "https://github.com/glKarin/com.n0n3m4.diii4a",
       "title": "DOOM 3, Quake 4, Prey and more (idTech4A++)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
-      "title": "Doom, Wolfenstein RPG, Quake and more (Mobile RPG Pack)",
       "excerpt": "",
       "game": null,
       "source": "github-search",
@@ -5268,13 +5228,14 @@
     "https://www.reddit.com/r/SBCGaming/comments/1xompdg/odin_3_expectations_exceeded/",
     "https://www.reddit.com/r/SBCGaming/comments/1xqc3kx/recommendations_for_a_gift_for_my_boyfriend/",
     "https://www.reddit.com/r/SBCGaming/comments/1xqm9mx/dual_screens_problems/",
-    "https://www.reddit.com/r/SBCGaming/comments/1xqnv5z/is_it_really_worth_the_form_factor_to_get_an_ayn/"
+    "https://www.reddit.com/r/SBCGaming/comments/1xqnv5z/is_it_really_worth_the_form_factor_to_get_an_ayn/",
+    "https://github.com/sandstranger/com.mobilerpgpack.phone"
   ],
   "agent": {
-    "lastRun": "2026-11-08T19:43:39Z",
-    "summary": "31 Leads bearbeitet: 12 Dual-Screen-Projekte (u. a. WiiDS, Hunters Recomp, DAO-Duo, ThorCraft, Pokémon Emerald DS) mit 15 neuen Spielwegen und 6 neuen Spielen eingetragen, 19 reine Reddit-Diskussionen verworfen; 6 Reddit-Leads blieben offen, weil Reddit nicht abrufbar war; Steam-Cover konnten nicht geprüft werden.",
-    "processed": 31,
-    "rejected": 19
+    "lastRun": "2026-11-08T19:51:56Z",
+    "summary": "Doom und Doom II mit Delta-Touch-Spielweg und Mods-Bereich (Brutal Doom, SIGIL, Eviternity), neue Wege für Star Fox 64 (Starship Android), Half-Life (Xash3D FWGS) und Minecraft (Eden-Duo-Companion), MetroidArch-Vorabversion nachgetragen, 3 Port-Kataloge aufgenommen, 25 Franchise-Korrekturen; Modrinth, Steam und Reddit waren nicht erreichbar, GitHub zeitweise gedrosselt, daher nur 5 Leads bearbeitet; Switch-Cover offen (keine verlässliche frei verlinkbare Quelle).",
+    "processed": 5,
+    "rejected": 1
   },
   "watcher": {
     "lastRun": "2026-11-08T19:30:37Z",

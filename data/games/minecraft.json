@@ -341,6 +341,47 @@
         }
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-eden-companion",
+      "name": "Eden Duo + Minecraft Companion (Switch)",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch, getestet mit Spielversion 1.2.12",
+      "runtime": "Eden Duo 1.1.0+ (Runtime 18+)",
+      "projects": [
+        "minecraft-eden-companion",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory"
+      ],
+      "dualScreen": "Inventar, Karte, Wegpunkte, Bauprojekte",
+      "requires": [
+        "Eigene Spieldaten und erforderliche Systemdateien",
+        "Eden Duo 1.1.0 mit Runtime 18 oder neuer",
+        "Companion-Paket (.dsmod.zip) aus den GitHub-Releases"
+      ],
+      "benefit": "Inventar und Karte der Switch-Fassung auf dem zweiten Display.",
+      "caveat": "Frühes Projekt. Getestet mit Version 1.2.12; der Build für 1.26.13 ist experimentell und laut README noch nicht in einer laufenden Welt getestet. Die README nennt die Edition nicht ausdrücklich (vermutlich Switch, da Eden Duo).",
+      "steps": [],
+      "version": "Minecraft 1.2.12 (getestet), 1.26.13 experimentell",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/erikvanhoolst/minecraft-companion"
+        }
+      ],
+      "checkedAt": "2026-11-08"
     }
   ],
   "mods": [

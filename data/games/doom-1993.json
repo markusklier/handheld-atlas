@@ -5,6 +5,80 @@
   "platforms": [
     "PC"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08"
+  "routes": [
+    {
+      "id": "d1-delta-touch",
+      "name": "Delta Touch (GZDoom, PrBoom+ u. a.)",
+      "kind": "source-port",
+      "edition": "PC-Spieldaten (DOOM.WAD (Doom/Ultimate Doom))",
+      "runtime": "Delta Touch – wählbare Engines: GZDoom, LZDoom, Zandronum, Chocolate Doom, Crispy Doom, PrBoom+, Doom Retro",
+      "projects": [
+        "delta-touch"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene DOOM.WAD (Doom/Ultimate Doom) (z. B. aus der Steam- oder GOG-Fassung)",
+        "Delta Touch (kostenpflichtig, Google Play)"
+      ],
+      "benefit": "Mehrere Source-Ports in einer App: klassisch (Chocolate/Crispy Doom), Boom-kompatibel (PrBoom+) oder modern mit Mod-Unterstützung (GZDoom). Eigene WADs und PK3-Mods ladbar; Freedoom lässt sich zum Ausprobieren direkt herunterladen.",
+      "caveat": "Laut Doom Wiki laufen nicht alle PWADs/PK3s mit jeder Engine. Ein Doomworld-Erfahrungsbericht (2021) nennt mit GZDoom und Mod-Paket ca. 40–50 FPS auf einem Telefon – keine Aussage für den Thor. Keine Dual-Screen-Funktion bekannt.",
+      "steps": [
+        "Delta Touch aus Google Play installieren.",
+        "Eigene DOOM.WAD (Doom/Ultimate Doom) auf das Gerät kopieren und in der App als Spieldatei auswählen.",
+        "Engine wählen (für große Mods GZDoom, für klassische Maps PrBoom+ oder Crispy Doom).",
+        "Optional Mods (WAD/PK3) hinzufügen."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch"
+        },
+        {
+          "label": "Doom Wiki: Delta Touch",
+          "url": "https://doomwiki.org/wiki/Delta_Touch"
+        },
+        {
+          "label": "Doomworld-Thread",
+          "url": "https://www.doomworld.com/forum/topic/106799-delta-touch-on-android/?page=10"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "genre": "Ego-Shooter",
+  "summary": "Auf Android über Source-Ports wie GZDoom oder PrBoom+ mit eigenen WADs spielbar – inklusive großer Mod-Szene.",
+  "mods": [
+    {
+      "id": "brutal-doom",
+      "name": "Brutal Doom",
+      "category": "gameplay",
+      "url": "https://www.moddb.com/mods/brutal-doom",
+      "edition": "GZDoom oder Zandronum (in Delta Touch enthalten)",
+      "description": "Gameplay-Mod von Sergeant Mark IV mit neuen Effekten, Animationen und Waffenverhalten. Version v21 (2019), v22 als Beta (2024). Läuft mit Doom, Ultimate Doom, Doom II und Final Doom. Leistung auf Android ungeprüft.",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "sigil",
+      "name": "SIGIL",
+      "category": "maps",
+      "url": "https://www.doomwiki.org/wiki/SIGIL",
+      "edition": "Doom/Ultimate Doom, Limit-removing-Port (z. B. PrBoom+ oder GZDoom)",
+      "description": "Inoffizielle fünfte Episode von John Romero (2019, kostenlos): 9 Einzelspieler-Level. Für Ports ohne Episode-5-Unterstützung gibt es eine Kompatibilitätsdatei, die Episode 3 ersetzt.",
+      "verification": "ai-unverified"
+    }
+  ]
 }

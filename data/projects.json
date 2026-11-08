@@ -292,7 +292,8 @@
         "octopath-traveler-0",
         "pokemon-sword",
         "pokemon-shield",
-        "cult-of-the-lamb"
+        "cult-of-the-lamb",
+        "minecraft"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -935,6 +936,85 @@
       "games": [
         "sephiria"
       ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "delta-touch",
+      "name": "Delta Touch",
+      "kind": "launcher",
+      "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+      "repo": null,
+      "description": "Kostenpflichtige Android-App von Open Touch Gaming mit mehreren Doom-Source-Ports (u. a. GZDoom, LZDoom, Zandronum, Chocolate Doom, Crispy Doom, PrBoom+, Doom Retro) und Unterstützung für eigene WADs/PK3-Mods.",
+      "games": [
+        "doom-1993",
+        "doom-ii"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "minecraft-eden-companion",
+      "name": "Minecraft Companion (Eden Duo)",
+      "kind": "companion",
+      "url": "https://github.com/erikvanhoolst/minecraft-companion",
+      "repo": "erikvanhoolst/minecraft-companion",
+      "description": "Companion für Eden Duo: Inventar, Karte, Wegpunkte und Bauprojekte von Minecraft (Switch) auf dem zweiten Bildschirm.",
+      "games": [
+        "minecraft"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "starship-android",
+      "name": "Starship (Android, izzy2lost)",
+      "kind": "port",
+      "url": "https://github.com/izzy2lost/Starship",
+      "repo": "izzy2lost/Starship",
+      "description": "Android-Fork von HarbourMasters' Starship (PC-Port von Star Fox 64 auf libultraship-Basis); APK in den GitHub-Releases.",
+      "games": [
+        "star-fox-64"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "xash3d-fwgs",
+      "name": "Xash3D FWGS",
+      "kind": "port",
+      "url": "https://github.com/FWGS/xash3d-fwgs",
+      "repo": "FWGS/xash3d-fwgs",
+      "description": "Half-Life-kompatible Engine (Fork von Xash3D) für Windows, Linux, Android u. a.; Android-APK als Testbuild in den GitHub-Releases (Tag continuous).",
+      "games": [
+        "half-life"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "porthub-catalog",
+      "name": "PortHub Catalog",
+      "kind": "directory",
+      "url": "https://github.com/orev7s/porthub-catalog",
+      "repo": "orev7s/porthub-catalog",
+      "description": "JSON-Feed (games.json, laut README 1239 Einträge) mit Android-Ports, Decomps, Recomps und Engine-Reimplementierungen; nur Links, keine Spieldaten. Einträge aus mehreren Drittquellen zusammengeführt – vor Übernahme Upstream prüfen.",
+      "games": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "porthub",
+      "name": "PortHub (App)",
+      "kind": "tool",
+      "url": "https://github.com/orev7s/porthub",
+      "repo": "orev7s/porthub",
+      "description": "Android-App (Kotlin/Compose) zum Durchsuchen des PortHub-Katalogs; frühes Stadium, noch keine Releases.",
+      "games": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "android-ports-master",
+      "name": "Android Ports Master",
+      "kind": "directory",
+      "url": "https://github.com/keika-sy/android-ports-master",
+      "repo": "keika-sy/android-ports-master",
+      "description": "Katalog und Dashboard nativer Android-Ports (laut README 866 Einträge zu 702 Spielen) als CSV/JSON; keine Spieldaten.",
+      "games": [],
       "checkedAt": "2026-11-08"
     }
   ]
