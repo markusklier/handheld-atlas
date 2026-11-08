@@ -1,4 +1,25 @@
 {
   "schemaVersion": 1,
-  "results": {}
+  "results": {
+    "472a670a2bf8631fd762": {
+      "verdict": "mismatch",
+      "checkedAt": "2026-11-08T16:14:23Z",
+      "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/animal-crossing-new-horizons/map.png",
+      "sourceUrl": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+      "gameId": "animal-crossing-new-horizons",
+      "routeId": "eden-animal-crossing-new-horizons",
+      "discoveryMode": "curated-source-image",
+      "note": "Automatic image plausibility only; rights, exact version and device support are not verified."
+    },
+    "179b444122bb6c06d7d5": {
+      "verdict": "plausible",
+      "checkedAt": "2026-11-08T16:14:29Z",
+      "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/animal-crossing-new-horizons/pockets.png",
+      "sourceUrl": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+      "gameId": "animal-crossing-new-horizons",
+      "routeId": "eden-animal-crossing-new-horizons",
+      "discoveryMode": "curated-source-image",
+      "note": "Automatic image plausibility only; rights, exact version and device support are not verified."
+    }
+  }
 }
