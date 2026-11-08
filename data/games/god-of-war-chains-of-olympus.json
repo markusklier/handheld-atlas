@@ -1,0 +1,26 @@
+{
+  "id": "god-of-war-chains-of-olympus",
+  "title": "God of War: Chains of Olympus",
+  "franchise": "God of War",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/God%20of%20War%20-%20Chains%20of%20Olympus%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/God%20of%20War%20-%20Chains%20of%20Olympus%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/God%20of%20War%20-%20Chains%20of%20Olympus%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

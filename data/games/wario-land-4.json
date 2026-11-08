@@ -1,0 +1,26 @@
+{
+  "id": "wario-land-4",
+  "title": "Wario Land 4",
+  "franchise": "Wario",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Wario%20Land%204%20%28USA%2C%20Europe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Wario%20Land%204%20%28USA%2C%20Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Wario%20Land%204%20%28USA%2C%20Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "fallout-new-vegas",
+  "title": "Fallout: New Vegas",
+  "franchise": "Fallout",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22380/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/22380/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_62f8d0b006935ff6de7fe276f713e7d15e579bc9.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_ec8a28942fcb5cb15718f949ab81124932a5084d.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_f703adcb9aa1d718a39288adf7d2e1b4dc0e568a.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_e05e3697347c076d3382188bcf883339cf6144d5.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_e430a2c8a841d4bc32bd8207223a91e3dbe0cdea.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_7cf86a5e4c98db502ca36444d883f94c4147f5d2.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22380/"
+    }
+  ]
+}

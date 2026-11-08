@@ -1,0 +1,51 @@
+{
+  "id": "dave-the-diver",
+  "title": "Dave the Diver",
+  "franchise": "Dave the Diver",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "routes": [
+    {
+      "id": "eden-dave-the-diver",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 1.0.6.1267",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Karte, Missions- und Ausrüstungsinformationen auf dem unteren Display.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "1.0.6.1267",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

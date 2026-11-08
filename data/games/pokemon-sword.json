@@ -1,0 +1,73 @@
+{
+  "id": "pokemon-sword",
+  "title": "Pokémon Sword",
+  "franchise": "Pokémon",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "routes": [
+    {
+      "id": "eden-pokemon-sword",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 1.3.2",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Galar-Karte, Team, Pokedex und Kampfeingaben auf dem zweiten Bildschirm.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "1.3.2",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/pokemon-sword/town-map.png",
+          "caption": "Town map",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/pokemon-sword/battle.png",
+          "caption": "Battle",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/pokemon-sword/pokedex.png",
+          "caption": "Pokedex",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

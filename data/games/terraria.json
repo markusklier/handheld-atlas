@@ -1,0 +1,89 @@
+{
+  "id": "terraria",
+  "title": "Terraria",
+  "franchise": "Terraria",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Simulation / Sandbox",
+  "summary": "Quellprojekt dokumentiert Web-Companion für einen zweiten Bildschirm. Kein Atlas-Gerätetest.",
+  "routes": [
+    {
+      "id": "terraria-abacus",
+      "name": "Terraria + Abacus Companion",
+      "kind": "companion",
+      "edition": "PC-Mod-Edition",
+      "runtime": "tModLoader + Browser/Android Companion",
+      "projects": [
+        "abacus-dual"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "dual-screen",
+        "mods"
+      ],
+      "dualScreen": "Web Companion",
+      "requires": [
+        "Eigene PC-Spieldateien und Installation",
+        "Passende Mod-Umgebung tModLoader",
+        "Zweiter Bildschirm mit Browser/Companion"
+      ],
+      "benefit": "Interaktives Zusatzdisplay für Status und Spielinformationen.",
+      "caveat": "Mod läuft in einer passenden PC-Umgebung; Start auf Android in einem Windows-Container nicht belegt.",
+      "steps": [
+        "Originalprojekt und konkrete Mod-Version prüfen",
+        "Eigene Spielstände sichern",
+        "Server-Mod und Browser-Companion nach Dokumentation einrichten"
+      ],
+      "version": "tModLoader",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/105600/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_75ea9a7e39eb34b40efa1e6dfd2536098dc4734b.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_782374517c1792debd74d24856203b876eba3a5d.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/ss_04dd9f0a5773b686a452ba480b951f83b3ed5061.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/105600/"
+    }
+  ]
+}

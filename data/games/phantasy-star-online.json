@@ -1,0 +1,26 @@
+{
+  "id": "phantasy-star-online",
+  "title": "Phantasy Star Online",
+  "franchise": "Phantasy Star",
+  "platforms": [
+    "Dreamcast"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Phantasy%20Star%20Online%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Phantasy%20Star%20Online%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29%20%28Rev%20B%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Phantasy%20Star%20Online%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29%20%28Rev%20B%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    }
+  ]
+}

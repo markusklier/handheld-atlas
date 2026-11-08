@@ -1,0 +1,26 @@
+{
+  "id": "marvel-vs-capcom-2-new-age-of-heroes",
+  "title": "Marvel vs. Capcom 2: New Age of Heroes",
+  "franchise": "Marvel vs. Capcom 2: New Age of Heroes",
+  "platforms": [
+    "Dreamcast"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Marvel%20vs.%20Capcom%202%20-%20New%20Age%20of%20Heroes%20%28Europe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Marvel%20vs.%20Capcom%202%20-%20New%20Age%20of%20Heroes%20%28Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Marvel%20vs.%20Capcom%202%20-%20New%20Age%20of%20Heroes%20%28Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    }
+  ]
+}

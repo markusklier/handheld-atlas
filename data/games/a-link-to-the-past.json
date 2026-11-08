@@ -1,0 +1,94 @@
+{
+  "id": "a-link-to-the-past",
+  "title": "The Legend of Zelda: A Link to the Past",
+  "franchise": "The Legend of Zelda",
+  "platforms": [
+    "SNES"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Die SNES-ROM kann als Grundlage für Emulation oder einen Android-Port mit eigener Oberfläche dienen.",
+  "routes": [
+    {
+      "id": "alttp-port",
+      "name": "Zelda3 Android",
+      "kind": "decomp",
+      "edition": "SNES",
+      "runtime": "Zelda3 Android-Fork",
+      "projects": [
+        "alttp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Port-eigene Zusatzansicht",
+      "requires": [
+        "Eigene kompatible Zelda3-ROM",
+        "Zum ROM passender Projekt-Build"
+      ],
+      "benefit": "Android-Port mit Dual-Screen-Erweiterung.",
+      "caveat": "Eigene Port-Konfiguration; ROM-Revision und Funktionsumfang am aktuellen Projektstand prüfen.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "alttp-snes",
+      "name": "SNES via RetroArch",
+      "kind": "emulation",
+      "edition": "SNES",
+      "runtime": "Snes9x",
+      "projects": [
+        "snes9x"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende SNES-ROM",
+        "RetroArch und verfügbarer Snes9x-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
+}

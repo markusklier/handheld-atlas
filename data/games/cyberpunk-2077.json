@@ -1,0 +1,112 @@
+{
+  "id": "cyberpunk-2077",
+  "title": "Cyberpunk 2077",
+  "franchise": "Cyberpunk",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Ein bewusst offener Vergleich: zwei PC-Laufzeitumgebungen, aber noch kein belastbarer Thor-Benchmark.",
+  "routes": [
+    {
+      "id": "cp-gamenative",
+      "name": "GameNative (Prüfkandidat)",
+      "kind": "pc-runtime",
+      "edition": "PC / Store-Ausgabe prüfen",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz",
+        "Passendes Gerät, Runtime und Treiber",
+        "Konkreter Spieltest steht aus"
+      ],
+      "benefit": "Eine mögliche PC-Laufzeitumgebung zur Untersuchung.",
+      "caveat": "Nur die Runtime ist belegt. Startbarkeit, FPS und beste Store-Ausgabe von Cyberpunk sind hier UNGETESTET. Keine Kaufempfehlung.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "cp-droiddeck",
+      "name": "DroidDeck (Prüfkandidat)",
+      "kind": "pc-runtime",
+      "edition": "PC / Store-Ausgabe prüfen",
+      "runtime": "DroidDeck",
+      "projects": [
+        "droiddeck"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz",
+        "Unterstützte Adreno-Hardware laut Projekt",
+        "Linux-Runtime und ausreichend Speicher",
+        "Konkreter Spieltest steht aus"
+      ],
+      "benefit": "Alternative PC-Umgebung auf Android; als Kandidat vergleichbar.",
+      "caveat": "Keine Aussage, dass Cyberpunk auf deinem Gerät läuft. Keine belegte Performance-Rangfolge gegenüber GameNative.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/1091500/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/900f9bda156599fcd235f08ffb64667f9baa1afe/ss_900f9bda156599fcd235f08ffb64667f9baa1afe.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc/ss_f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0ed9487e305983d60646ba163a3d8970efb6b347/ss_0ed9487e305983d60646ba163a3d8970efb6b347.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_0e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f39ac45fd0d29c687b0c822b704f93a0764ce3e0/ss_f39ac45fd0d29c687b0c822b704f93a0764ce3e0.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1091500/"
+    }
+  ]
+}

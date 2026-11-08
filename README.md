@@ -1,90 +1,62 @@
-# Handheld Atlas 0.4 – automatische Entdeckung, optional KI & Vision
+# Handheld Atlas
 
-## Version 0.5.1 – Querformat, Galerien, größerer Index
+**Ein Spiel. Alle Wege, es zu spielen.** Spielzentrierte Discovery für Android-Handhelds, gebaut für den **AYN Thor**.
 
-- Horizontale Suchkarten mit manuell durchklickbarer und bei Hover wechselnder Bildervorschau; originale Game-Cover bleiben getrennt von allgemeinen Screenshots und Variantenbildern.
-- Großes Originalspiel-Bilderkarussell im Detail **oberhalb** der Tabs; separate Bildergalerien **für jeden Spielweg** mit Pfeilen, Vorschaubildern, Tastatur und Touch.
-- Optionale Dual-Screen-Bilderpriorität per **manuellem Schalter**. Gamepad-L1/R1 ist vorbereitet, aber AYN-Thor-Hardwarebelegung und automatische Display-Erkennung sind noch **nicht getestet bzw. nicht implementiert**.
-- 701 suchbare Spiele inklusive 327 neuer **nur titelbasierter, ungetesteter** Index-Einträge; 60 bisher dokumentierte, quellenverlinkte Spielwege. Siehe `docs/V051-BROWSING.md`.
-- PSP, Dreamcast, GameCube, Wii, PS Vita, Sega Mega Drive und PS2 erhalten generische, **unbestätigte** Emulator-/Plattformoptionen.
-- Morrowind: Performance-Mods (Project Atlas, MOP), Patch for Purists und OpenMW-Android-Projekt als separat gekennzeichnete Recherchehinweise.
-- Akkulaufzeit-Schaltfläche entfernt, da keine vergleichbaren Messungen hinterlegt sind.
+Du suchst ein Spiel, zum Beispiel *Super Metroid*, und siehst nebeneinander, wie es auf dem Handheld läuft:
+klassische Emulation, RetroArch-Fork mit Karte auf dem zweiten Bildschirm, nativer Port, Mods, jeweils mit
+Screenshots der Variante, Voraussetzungen, Projektlinks und dem neuesten Release.
 
+- **701 Spiele** in Franchises sortiert, davon 41 mit 60 dokumentierten Spielwegen und 542 mit Cover und Originalscreenshots
+- **Filter**: Dual Screen · Native Ports · Emulation · Mods · Thor-getestet · KI-Funde · Plattform
+- **Für den Thor gemacht**: Querformat, Steuerkreuz/Gamepad-Navigation (A öffnen, B zurück, L1/R1 Bereiche), installierbar als App, offline nutzbar
+- **Pflegt sich selbst**: täglicher Watcher plus KI-Agent, ohne manuelle Freigabe
 
-## Version 0.5 – Spielebrowser mit Cover/Originalszenen und Plattformoptionen
+## So hält sich die Datenbank aktuell
 
-- Für PC-Titel lädt der neue Metadaten-Workflow kostenlose Quellmetadaten mit offiziell verlinkten Steam-Bibliothekscovern und Originalspiel-Screenshots (keine Bilddateien im Repo). Optional kann IGDB über die nichtkommerzielle Twitch-API angeschlossen werden. Bildquellen und Rechtehinweise bleiben sichtbar. **Fehlende Cover werden nicht durch erfundene Bilder ersetzt.**
-- Beim Hover über die Cover-Karte zeigt Atlas eine Spielszenen- bzw. bei Dual-Screen-Filter eine dokumentierte Varianten-Vorschau. Im Spiel-Detail sind Originalbilder und Bilder der einzelnen Spielwege streng getrennt.
-- Für Nintendo 3DS, PlayStation 1, DS, N64, SNES, GBA, GB/GBC und PC enthält Atlas allgemeine Plattformoptionen (Azahar, DuckStation, GameNative usw.). **Keine individuelle Kompatibilitätsbestätigung!**
-- Minecraft hat eine separate, quellenbelegte Liste für potenzielle Performance-Mods (einschließlich Sodium mit Android-Einschränkung). Neue Projekte können regelmäßig auf *Existenz* geprüft werden, ohne damit einen Community- oder Hardwaretest zu behaupten.
-- **Hosting:** Das Repository bleibt zunächst privat. Falls dein GitHub-Plan Pages aus einem privaten Repo erlaubt, kann die Website öffentlich erreichbar sein, ohne den Quellcode zu öffnen. Bei GitHub Free empfiehlt sich ein separates neutrales Public-Repository nur mit gebauten HTML-Dateien. Details: [docs/V05-PLAYWAYS-MEDIA.md](docs/V05-PLAYWAYS-MEDIA.md).
+| Wer | Wann | Was |
+|---|---|---|
+| **Watcher** (`scripts/watch.py`, GitHub Action, ohne KI) | täglich | neue Releases/Archivierung aller bekannten Projekte → Reiter „Neu“; neue Kandidaten aus GitHub-Suche, aktiven Forks, Modrinth und Reddit → `data/inbox.json`; fehlende Cover aus libretro-thumbnails |
+| **Pflege-Agent** (Claude, geplante Aufgabe) | wöchentlich | sortiert die Inbox in Spiele ein, recherchiert Spiele, ergänzt Screenshots je Spielweg, korrigiert Franchises; Ablauf in [`CLAUDE.md`](CLAUDE.md) |
+| **Du** | wann du willst | „Recherche anfordern“ im Spiel (legt ein GitHub-Issue an, der Agent arbeitet es zuerst ab) oder Claude sagen: „Spielweg X läuft auf dem Thor“ |
 
+Alles landet direkt auf `main` und ist nach dem automatischen Deploy in der App. Jeder Spielweg trägt eine Prüfstufe:
+**Auf dem AYN Thor getestet** · **Community-Erfahrung** · **Laut Projektdoku** · **KI-Fund, ungeprüft**.
 
-## Version 0.4.1 – automatische HTML-Schnappschüsse und Quellenbilder
+## Einrichtung (einmalig)
 
-- **Eine heruntergeladene `Handheld-Atlas.html` aktualisiert sich nicht selbst.** Recherche-Actions speichern künftig bei Datenänderungen auch das frisch gebaute HTML in das private Repository. Lade die HTML-Datei erneut herunter, um Änderungen zu sehen. Die Web-PWA kann sich nach Veröffentlichung über HTTPS bei neuem Aufruf aktualisieren.
-- **„Veröffentlichte Release-Daten laden“** holt auf HTTP(S) sowohl `data/updates.json` als auch `data/projects.json` von derselben Website. Unter `file://` geht das absichtlich nicht.
-- `scripts/enrich_media.py` findet weitere **Modrinth-Projektgalerien**, **GitHub-README-Bilder** und Screenshot-Verzeichnisse in den eigentlichen Projekt-Repositories. Die Medien werden verlinkt, nicht kopiert, und als **unverifizierte Bildkandidaten** mit Originalquelle ausgewiesen. Bildrechte und genaue Build-Kompatibilität müssen separat geklärt werden.
-- Zielgerichtete KI-Bildprüfung kann ab jetzt neue Bilder derselben `game_id` bevorzugen. Eine KI-Bildprüfung ist keine echte Hardware-Verifikation.
-- **Private Nutzung:** Den HTML-Schnappschuss aus dem Repository laden oder im erfolgreichen Checks-/Research-Lauf das `handheld-atlas-preview`-Artefakt herunterladen. GitHub Pages macht eine private Repository-Website nicht automatisch privat.
+1. **GitHub Pages aktivieren:** Repository → Settings → Pages → *Source: GitHub Actions*.
+   Hinweis: Mit GitHub Free funktioniert Pages nur für **öffentliche** Repositories; für ein privates Repo braucht es GitHub Pro.
+   Die Website selbst ist in beiden Fällen öffentlich erreichbar (sie enthält nur öffentliche Links).
+2. Actions → **Deploy app** → *Run workflow*. Danach läuft die App unter `https://markusklier.github.io/handheld-atlas/`.
+3. Auf dem Thor die Adresse in Chrome öffnen → Menü → **Zum Startbildschirm hinzufügen**.
 
+Ohne Pages: `dist/Handheld-Atlas-offline.html` (aus dem Build oder in der App unter Info) enthält alle Daten in einer Datei.
 
-**Spielzentrierte Discovery für AYN Thor, Android- und offene Handheld-Plattformen. 8. November 2026.**
+## Aufbau
 
-
-## Version 0.4 – automatisierter, quellenbelegter Projekt-Radar
-
-- Projektzentrierter Index `data/projects.json`: ein Projekt kann mit mehreren Spielen und Spielwegen verbunden sein. Automatische Funde erscheinen im Reiter **Aktuelles** mit explizitem Status **nicht getestet**, nicht als bestätigte Installationswege.
-- Neue Kandidaten erhalten Quellenangaben und soweit vorhanden direkt zugehörige Bildkandidaten. **KI-Visionsprüfung ist nur Plausibilität; Bildrechte und genaue Version sind damit nicht geklärt.** Bestehende 77 dokumentierte Eden-Duo-Fotos bleiben den konkreten Varianten zugeordnet.
-- `scripts/deep_research.py --batch` rotiert auch durch die Titel des breiteren Watchlist-Indexes. Minecraft ist im Workflow kein hart codierter Sonderlauf mehr. Suchabdeckung kann trotzdem nicht als vollständig gelten.
-- `scripts/ai_agents.py --research` und `--vision` nutzen optional die OpenAI Responses API mit Websuche und Bild-Eingaben. **Ohne `OPENAI_API_KEY` werden keine API-Aufrufe ausgeführt**. Die Recherche ist begrenzt auf einen Titel pro Durchlauf, Vision auf höchstens zwei Bilder im Standardworkflow. `docs/V4-OPERATIONS.md` erklärt Kosten-, Datenschutz- und Sicherheitsgrenzen.
-- `.github/workflows/update-sources.yml` aktualisiert nur strukturierte Daten automatisch auf dem Hauptbranch; du musst keine inhaltlichen PRs freigeben. Im privaten Repository gibt es außerdem ein herunterladbares ZIP des Browser-Builds als GitHub-Actions-Artefakt.
-
-**Erster Start:** GitHub Actions → **Checks** → Run workflow. Wenn der Build grün ist, kannst du die ZIP-Datei `handheld-atlas-preview` herunterladen und lokal per `python3 -m http.server` ausprobieren. Danach **Automated Atlas discovery** → Run workflow. **Pages-Deploy ist standardmäßig deaktiviert**, solange die Actions-Variable `ATLAS_ENABLE_PAGES=true` nicht gesetzt ist. Für kostenpflichtige Recherche die Option `run_ai` nur nach eigener API-Freigabe aktivieren. Einrichtung: [docs/V4-OPERATIONS.md](docs/V4-OPERATIONS.md).
-
-**Wichtige Grenze:** Live-APIs und Modellabrechnung konnten in der lokalen Entwicklungsumgebung mangels Netzwerk/API-Schlüssel noch nicht end-to-end geprüft werden. Veröffentlichte Spielwege sind nicht automatisch Geräte-Benchmarks; die KI führt keine Installation und kein Debugging auf deinem Thor durch.
-
----
-
-## Schnellstart
-
-- **Browser ohne Installation:** `Handheld-Atlas.html` öffnen. Externe Originalscreenshots benötigen eine Internetverbindung.
-- **PWA-Entwicklung:** `python3 scripts/serve.py` starten, `http://localhost:8765` öffnen. Die PWA wird erst nach HTTPS-Hosting auf einem Android-Handheld installierbar.
-- **Recherche lesen:** Minecraft öffnen → Reiter **Recherche-Stand**. Dort sind die Funde als **Offline-Demo**, nicht als Live-Befunde, markiert.
-- **Vollständiger technischer Plan:** [`docs/DEEP-RESEARCH.md`](docs/DEEP-RESEARCH.md).
-
-## Was neu ist
-
-- Minecraft **DroidBridge Launcher** und **DroidBridge + Dual Screen HUD** als zwei separate dokumentierte Spielwege, neben Bedrock, ExoJosh, Abacus, Zalith und Amethyst. Versions- und Modloader-Konflikte sind explizit beschrieben; keine Hardware-Benchmarks erfunden.
-- Datenmodell bleibt getrennt: **701 suchbare Spiele** (41 kuratierte Spiele + 660 Index-/Watchlist-Titel) und **60 dokumentierte Spielwege**. Eine Suchindex-Karte ist kein Kompatibilitätsnachweis.
-- **Screenshot-Verknüpfung unverändert:** 77 bereits in v0.2 zugeordnete Quellbilder von Eden-Duo-Companions. Bei neuen DroidBridge-Spielwegen sind noch keine sicher zugeordneten Bilder eingebunden; originaler CurseForge-Galerielink statt falscher Screenshots.
-- GitHub-, Modrinth- und optional CurseForge-Recherche pro Spiel in `scripts/deep_research.py`; mit URL-Deduplikation, Quellenverweisen, Versions-/Loader-Hinweisen und Reviewstatus.
-- `data/research_queue.json` enthält zur Demonstration nur **synthetische Test-API-Antworten auf Grundlage bekannter Projekte**. **Kein Live-Abgleich**. Recherchequeue und veröffentlichte Spielwege sind getrennt.
-- `scripts/quality_audit.py` zeigt Datenlücken, `scripts/triage_media.py` führt unbestätigte Bildkandidaten zusammen, `scripts/validate_agent_findings.py` validiert optionales KI-JSON, ohne selbst ein Modell aufzurufen.
-- `.github/workflows/update-sources.yml` schlägt wöchentlich Deep-Research-Ergebnisse und zweimal täglich andere Quelländerungen per Pull Request vor; startet erst nach Hosting in einem Repository. Ein aktiv laufender Agent, echte KI-Vision oder Push-Benachrichtigungen sind **nicht** enthalten.
-
-## Recherche lokal reproduzieren
-
-```sh
-python3 scripts/deep_research.py --game minecraft --fixture fixtures/minecraft_research.json --leads fixtures/minecraft_leads.json --budget 8
-python3 scripts/triage_media.py
-python3 scripts/quality_audit.py
-python3 scripts/validate.py
-python3 -m unittest discover -s tests -p 'test_*.py'
-node --test tests/core.test.cjs
-python3 scripts/build.py
+```
+app/                 Web-App (HTML/CSS/JS, kein Framework)
+data/games/*.json    ein Spiel pro Datei, inklusive Spielwege, Mods, Screenshots
+data/projects.json   Emulatoren, Ports, Launcher, Mods – mit GitHub-Repo, damit der Watcher Releases findet
+data/platforms.json  allgemeine Emulatoren je Plattform
+data/inbox.json      unsortierte Funde für den Agenten
+data/changelog.json  Reiter „Neu“
+scripts/atlas.py     validate · build · stats · format
+scripts/watch.py     Watcher
+scripts/covers.py    Cover/Screenshots aus libretro-thumbnails
 ```
 
-## Eigene echte API-Recherche
-
 ```sh
-# GITHUB_TOKEN ist sinnvoll (optional), CURSEFORGE_API_KEY nur mit API-Genehmigung.
-python3 scripts/deep_research.py --game minecraft --live --budget 9
-python3 scripts/deep_research.py --batch 3 --live --budget 4
+python3 scripts/atlas.py validate      # Datenprüfung
+python3 -m unittest discover -s tests  # Tests
+python3 scripts/atlas.py build         # → dist/
+python3 -m http.server -d dist 8000    # http://localhost:8000
 ```
 
-Diese Befehle setzen erreichbares Internet voraus und wurden in dieser Umgebung **nicht erfolgreich live ausgeführt** (externe DNS-Auflösung nicht verfügbar). Die vorhandenen Test-API-Antworten sind als Fixture gekennzeichnet; ein Live-Lauf entfernt die Demo-Kandidaten aus der Recherchequeue.
+Nur Python-Standardbibliothek, keine Abhängigkeiten.
 
-Keine ROMs, APKs, privaten Spieldaten oder Screenshots werden kopiert oder installiert. Bilder müssen gesondert nach Spielweg, tatsächlicher Darstellung und Rechten geprüft werden. Allgemeine Projekt-READMEs oder KI-Ausgaben sind kein Beleg für reale Thor-Kompatibilität.
+## Grenzen
 
-Quellcode MIT (`LICENSE`); bei fremden Metadaten, Medien, Markenzeichen und Projektdateien gelten die Rechte der jeweiligen Urheber. Für das rechtssichere Einbinden von Reddit-, CurseForge- und anderen Community-Daten müssen deren Nutzungsbedingungen eingehalten werden.
+Atlas installiert nichts, startet keine Spiele und verlinkt keine ROMs, ISOs oder Spieldaten. „KI-Fund“ und
+„Laut Projektdoku“ sind keine Gerätetests. Bilder werden verlinkt, nicht kopiert; Rechte liegen bei den jeweiligen Urhebern.
+Quellcode: MIT (`LICENSE`).

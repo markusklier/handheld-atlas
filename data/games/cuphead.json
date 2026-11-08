@@ -1,0 +1,46 @@
+{
+  "id": "cuphead",
+  "title": "Cuphead",
+  "franchise": "Cuphead",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/268910/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_e3096a5555cb77d88db165c83d5ef3a24af1354a.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_615455299355eaf552c638c7ea5b24a8b46e02dd.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_48477e4a865827aa0be6a44f00944d8d2a3e5eb9.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_380296effbf1073bbedfd480e50cf246eb542b66.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_aefad3850c3bc04000cbe0d620bea6807e0a0331.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/268910/"
+    }
+  ]
+}

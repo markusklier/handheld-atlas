@@ -1,0 +1,26 @@
+{
+  "id": "super-smash-bros-for-nintendo-3ds",
+  "title": "Super Smash Bros. for Nintendo 3DS",
+  "franchise": "Super Smash Bros.",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Super%20Smash%20Bros.%20for%20Nintendo%203DS%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Super%20Smash%20Bros.%20for%20Nintendo%203DS%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Super%20Smash%20Bros.%20for%20Nintendo%203DS%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ]
+}

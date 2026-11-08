@@ -1,0 +1,26 @@
+{
+  "id": "tony-hawk-s-pro-skater-2",
+  "title": "Tony Hawk's Pro Skater 2",
+  "franchise": "Tony Hawk",
+  "platforms": [
+    "PlayStation"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tony%20Hawk%27s%20Pro%20Skater%202%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
+}

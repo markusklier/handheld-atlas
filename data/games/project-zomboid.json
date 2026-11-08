@@ -1,0 +1,46 @@
+{
+  "id": "project-zomboid",
+  "title": "Project Zomboid",
+  "franchise": "Project Zomboid",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/108600/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/108600/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/e0dd37d69051f7da85896d11027ab018d23893fa/ss_e0dd37d69051f7da85896d11027ab018d23893fa.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/d9df2102dd12526700b15660bc5ec8f039dc8742/ss_d9df2102dd12526700b15660bc5ec8f039dc8742.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/4c8860818ac52c685bbe0988aa137d52bad4aac5/ss_4c8860818ac52c685bbe0988aa137d52bad4aac5.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/ss_eb1862af5109e4658e2538d897cbd16b87ad1818.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/ss_507e952789822b69868d768e1e4476946f37b1fb.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/ss_eca8be032b3f5508bf5bea74cfbc823a4df047ce.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/108600/"
+    }
+  ]
+}

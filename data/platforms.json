@@ -1,0 +1,187 @@
+{
+  "platforms": {
+    "Nintendo 3DS": [
+      {
+        "name": "Azahar",
+        "kind": "emulation",
+        "project": "azahar",
+        "targets": [
+          "android",
+          "windows-x86_64",
+          "linux-x86_64"
+        ],
+        "note": "Android- und Desktop-Emulator für Nintendo 3DS; spielspezifische Kompatibilität, Version, Bildschirmaufteilung und Performance separat prüfen."
+      }
+    ],
+    "PlayStation": [
+      {
+        "name": "DuckStation",
+        "kind": "emulation",
+        "project": "duckstation",
+        "targets": [
+          "android",
+          "windows-x86_64",
+          "linux-x86_64"
+        ],
+        "note": "PlayStation-1-Emulation auf Android/PC. Spiel funktioniert auf dem AYN Thor nicht automatisch garantiert; Konfiguration und Disc-/BIOS-Anforderungen prüfen."
+      }
+    ],
+    "Nintendo DS": [
+      {
+        "name": "melonDS Android",
+        "kind": "emulation",
+        "project": "melonds",
+        "targets": [
+          "android"
+        ],
+        "note": "Nintendo-DS-Emulation mit mehreren Bildschirmlayouts. Physische Verteilung auf beide Displays des Thor ist damit nicht belegt."
+      }
+    ],
+    "Nintendo 64": [
+      {
+        "name": "Mupen64Plus FZ",
+        "kind": "emulation",
+        "project": "mupen64plus-fz",
+        "targets": [
+          "android"
+        ],
+        "note": "Allgemeine Nintendo-64-Emulation auf Android; Spiele, Grafik-Plugins und Leistung unterscheiden sich."
+      }
+    ],
+    "SNES": [
+      {
+        "name": "RetroArch / SNES-Kern",
+        "kind": "emulation",
+        "project": "retroarch",
+        "targets": [
+          "android",
+          "linux-x86_64"
+        ],
+        "note": "Allgemeiner SNES-Emulatorweg. Keine individuelle Prüfung des Spiels oder seiner Mods."
+      }
+    ],
+    "Game Boy Advance": [
+      {
+        "name": "RetroArch / GBA-Kern",
+        "kind": "emulation",
+        "project": "mgba",
+        "targets": [
+          "android",
+          "linux-x86_64"
+        ],
+        "note": "Allgemeiner GBA-Emulatorweg; kein Nachweis für speziellen zweiten Bildschirm."
+      }
+    ],
+    "Game Boy / Game Boy Color": [
+      {
+        "name": "RetroArch / GB-Kern",
+        "kind": "emulation",
+        "project": "retroarch",
+        "targets": [
+          "android",
+          "linux-x86_64"
+        ],
+        "note": "Allgemeiner Game-Boy-/GBC-Weg. Keine individuelle Prüfung."
+      }
+    ],
+    "PC": [
+      {
+        "name": "GameNative",
+        "kind": "pc-runtime",
+        "project": "gamenative",
+        "targets": [
+          "android"
+        ],
+        "note": "Lokale Windows-PC-Spielausführung über GameNative, kein Streaming. Funktioniert nicht mit allen Spielen; Besitz und Kompatibilitätsdaten separat prüfen."
+      }
+    ],
+    "Nintendo GameCube": [
+      {
+        "name": "Dolphin",
+        "kind": "emulation",
+        "project": "dolphin",
+        "targets": [
+          "android"
+        ],
+        "note": "Dolphin bietet GameCube-Emulation auch für Android. Ob dieses Spiel auf deinem Gerät spielbar ist, muss getrennt geprüft werden."
+      }
+    ],
+    "Wii": [
+      {
+        "name": "Dolphin",
+        "kind": "emulation",
+        "project": "dolphin",
+        "targets": [
+          "android"
+        ],
+        "note": "Wii-Emulation auf Android und Desktop mit Dolphin; Bewegungssteuerung und Spielgeschwindigkeit hängen stark vom Titel ab."
+      }
+    ],
+    "PSP": [
+      {
+        "name": "PPSSPP",
+        "kind": "emulation",
+        "project": "ppsspp",
+        "targets": [
+          "android"
+        ],
+        "note": "PPSSPP emuliert PSP-Spiele auf Android. Kein Einzelspiel-Test und keine FPS-Zusage."
+      }
+    ],
+    "Dreamcast": [
+      {
+        "name": "Flycast",
+        "kind": "emulation",
+        "project": "flycast",
+        "targets": [
+          "android"
+        ],
+        "note": "Flycast für Dreamcast und verwandte Arcade-Systeme ist auf Android verfügbar. Spiel- und Gerätekompatibilität separat prüfen."
+      }
+    ],
+    "PlayStation Vita": [
+      {
+        "name": "Vita3K",
+        "kind": "emulation",
+        "project": "vita3k",
+        "targets": [
+          "android"
+        ],
+        "note": "Experimentelle PS-Vita-Emulation auf Android. Nicht jeder Titel startet oder läuft stabil; aktuelle Kompatibilitätsdaten prüfen."
+      }
+    ],
+    "Sega Mega Drive": [
+      {
+        "name": "RetroArch",
+        "kind": "emulation",
+        "project": "retroarch",
+        "targets": [
+          "android"
+        ],
+        "note": "Mega-Drive-Emulation über RetroArch-Kerne. Keine individuelle Thor-Messung."
+      }
+    ],
+    "PlayStation 2": [
+      {
+        "name": "NetherSX2",
+        "kind": "emulation",
+        "project": "nethersx2",
+        "targets": [
+          "android"
+        ],
+        "note": "Android-PS2-Emulation auf Basis der AetherSX2-Laufzeit; Community-Updates, Herkunft und Spielkompatibilität prüfen. Kein garantierter Thor-Spielweg."
+      }
+    ],
+    "Nintendo Switch": [
+      {
+        "name": "Eden",
+        "kind": "emulation",
+        "project": "eden",
+        "targets": [
+          "android"
+        ],
+        "note": "Switch-Emulation auf Android. Spielkompatibilität und Version je Titel prüfen."
+      }
+    ]
+  }
+}

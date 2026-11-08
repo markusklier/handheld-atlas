@@ -1,0 +1,15 @@
+{
+  "id": "gravity-rush",
+  "title": "Gravity Rush",
+  "franchise": "Gravity Rush",
+  "platforms": [
+    "PlayStation Vita"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Gravity%20Rush%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+  },
+  "screenshots": []
+}

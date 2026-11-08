@@ -1,0 +1,26 @@
+{
+  "id": "grand-theft-auto-liberty-city-stories",
+  "title": "Grand Theft Auto: Liberty City Stories",
+  "franchise": "Grand Theft Auto",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20Liberty%20City%20Stories%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.05%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Grand%20Theft%20Auto%20-%20Liberty%20City%20Stories%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.05%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Grand%20Theft%20Auto%20-%20Liberty%20City%20Stories%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v3.00%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

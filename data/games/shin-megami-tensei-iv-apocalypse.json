@@ -1,0 +1,26 @@
+{
+  "id": "shin-megami-tensei-iv-apocalypse",
+  "title": "Shin Megami Tensei IV: Apocalypse",
+  "franchise": "Shin Megami Tensei",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Shin%20Megami%20Tensei%20IV%20-%20Apocalypse%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Shin%20Megami%20Tensei%20IV%20-%20Apocalypse%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Shin%20Megami%20Tensei%20IV%20-%20Apocalypse%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ]
+}

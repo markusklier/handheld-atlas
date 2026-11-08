@@ -1,0 +1,26 @@
+{
+  "id": "rhythm-heaven",
+  "title": "Rhythm Heaven",
+  "franchise": "Rhythm Heaven",
+  "platforms": [
+    "Nintendo DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Rhythm%20Heaven%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Rhythm%20Heaven%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Rhythm%20Heaven%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+    }
+  ]
+}

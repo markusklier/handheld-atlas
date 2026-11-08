@@ -1,0 +1,33 @@
+{
+  "note": "Was der Watcher (scripts/watch.py, ohne KI) täglich abfragt. Der Pflege-Agent darf diese Listen erweitern.",
+  "githubQueries": [
+    "dual screen android in:name,description,readme",
+    "\"second screen\" android game in:name,description,readme",
+    "\"ayn thor\" in:name,description,readme",
+    "\"dual screen\" companion in:name,description,readme",
+    "droidbridge in:name,description,readme",
+    "eden duo in:name,description,readme",
+    "recomp android in:name,description",
+    "decomp android port in:name,description",
+    "\"android port\" game in:name,description",
+    "retroarch fork dual screen"
+  ],
+  "forkWatch": [
+    "igawa6/eden-duo",
+    "Raekwon1603/RetroArch",
+    "rafaelvcaetano/melonDS-android",
+    "OpenMW/openmw"
+  ],
+  "modrinthQueries": [
+    "dual screen",
+    "second screen",
+    "android"
+  ],
+  "rssFeeds": [
+    "https://www.reddit.com/r/SBCGaming/search.rss?q=thor+dual+screen&restrict_sr=1&sort=new",
+    "https://www.reddit.com/r/AYN/new/.rss",
+    "https://www.reddit.com/r/EmulationOnAndroid/search.rss?q=dual+screen&restrict_sr=1&sort=new"
+  ],
+  "maxInbox": 800,
+  "searchWindowDays": 120
+}

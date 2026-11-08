@@ -1,0 +1,26 @@
+{
+  "id": "onimusha-3-demon-siege",
+  "title": "Onimusha 3: Demon Siege",
+  "franchise": "Onimusha 3: Demon Siege",
+  "platforms": [
+    "PlayStation 2"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Onimusha%203%20-%20Demon%20Siege%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Onimusha%203%20-%20Demon%20Siege%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Onimusha%203%20-%20Demon%20Siege%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
+}

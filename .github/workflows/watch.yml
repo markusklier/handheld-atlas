@@ -1,0 +1,48 @@
+name: Watcher
+# Daily, no AI: new releases of known projects, new candidates (GitHub, forks, Modrinth, Reddit),
+# missing covers from libretro-thumbnails. Commits straight to main and redeploys the app.
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Watch projects and discover candidates
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/watch.py
+      - name: Fill missing covers
+        continue-on-error: true
+        run: python scripts/covers.py
+      - run: python scripts/atlas.py validate
+      - id: commit
+        run: |
+          if git diff --quiet data; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "atlas-watcher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "data: Watcher $(date -u +%F)"
+          # the maintenance agent may have pushed meanwhile; on a conflict skip today, tomorrow's run catches up
+          git pull --rebase origin main || { git rebase --abort; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+  deploy:
+    needs: watch
+    if: needs.watch.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml

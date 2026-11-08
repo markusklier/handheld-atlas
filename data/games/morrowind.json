@@ -1,0 +1,128 @@
+{
+  "id": "morrowind",
+  "title": "The Elder Scrolls III: Morrowind",
+  "franchise": "The Elder Scrolls",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Dieselben Spieldaten, unterschiedliche Engines: Dual-Screen auf Android oder OpenMW am Linux-Handheld.",
+  "routes": [
+    {
+      "id": "mw-ds",
+      "name": "OpenMW-DS",
+      "kind": "source-port",
+      "edition": "PC-Spieldaten",
+      "runtime": "OpenMW-DS",
+      "projects": [
+        "openmw-ds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "mods"
+      ],
+      "dualScreen": "Karte, Journal, Inventar",
+      "requires": [
+        "Eigene Morrowind-Spieldaten",
+        "Mod-Kompatibilität mit dem verwendeten OpenMW-Build"
+      ],
+      "benefit": "Karte, Journal und Charakteroberfläche auf dem zweiten Display.",
+      "caveat": "Ein OpenMW-Fork, keine Windows-Emulation. Nicht jeder klassische Engine-Mod ist kompatibel.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mw-openmw",
+      "name": "OpenMW Desktop",
+      "kind": "source-port",
+      "edition": "PC-Spieldaten",
+      "runtime": "OpenMW",
+      "projects": [
+        "openmw"
+      ],
+      "targets": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Morrowind-Spieldaten",
+        "Passender Desktop-Build"
+      ],
+      "benefit": "Alternative Engine für offene Desktop-Handhelds.",
+      "caveat": "Keine Aussage zur Thor-Android-Kompatibilität dieses Desktop-Builds.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [
+    {
+      "id": "mw-project-atlas",
+      "name": "Project Atlas",
+      "category": "performance-textures",
+      "url": "https://modding-openmw.com/mods/project-atlas/",
+      "edition": "Original-PC-Dateien mit OpenMW",
+      "description": "Textur-Atlanten und Mesh-Anpassungen zur Reduktion von Draw Calls. OpenMW-Guide führt die Mod als kompatibel; Wirkung auf Android separat messen.",
+      "verification": "documented"
+    },
+    {
+      "id": "mw-optimization-patch",
+      "name": "Morrowind Optimization Patch",
+      "category": "performance-assets",
+      "url": "https://www.nexusmods.com/morrowind/mods/45384",
+      "edition": "Original-PC-Dateien mit OpenMW",
+      "description": "Optimierte Original-Meshes. OpenMW-Modding-Performanceguide empfiehlt die Mod; Versions- und Konfliktprüfung erforderlich.",
+      "verification": "documented"
+    },
+    {
+      "id": "mw-patch-for-purists",
+      "name": "Patch for Purists",
+      "category": "patch-bugfix",
+      "url": "https://www.nexusmods.com/morrowind/mods/45096",
+      "edition": "Morrowind + OpenMW",
+      "description": "Community-Fixes für Spielinhalte; im PortMaster-OpenMW-Handheld-Setup als unterstützte Mod dokumentiert. Kein Performance-Mod und kein Thor-Test.",
+      "verification": "documented"
+    },
+    {
+      "id": "mw-openmw-android-port",
+      "name": "OpenMW Android/ChromeOS (Andiweli)",
+      "category": "runtime-android-port",
+      "url": "https://github.com/Andiweli/OpenMW-Android",
+      "edition": "Morrowind PC-Datendateien",
+      "description": "Eigenständiger Android-Port/Fork mit OpenMW 0.51, Touch- und Gamepad-Anpassungen. Alternativer Spielweg, nicht selbst eine Daten-/Performance-Mod; Einrichtung und Gerät separat prüfen.",
+      "verification": "documented"
+    },
+    {
+      "id": "mw-openmw-performance-config",
+      "name": "OpenMW Performance Settings",
+      "category": "configuration-performance",
+      "url": "https://modding-openmw.com/tips/performance/",
+      "edition": "OpenMW (Android und Desktop; Version prüfen)",
+      "description": "Einstellungen für Sichtweite, Physik-Threads, Schatten und Objektpaging. Konfigurationshinweise statt Installationsmod; echte Verbesserungen müssen auf dem Thor gemessen werden.",
+      "verification": "documented"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

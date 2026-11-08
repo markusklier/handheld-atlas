@@ -1,0 +1,26 @@
+{
+  "id": "super-mario-land-2-6-golden-coins",
+  "title": "Super Mario Land 2: 6 Golden Coins",
+  "franchise": "Super Mario",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Boxarts/Super%20Mario%20Land%202%20-%206%20Golden%20Coins%20%28USA%2C%20Europe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Snaps/Super%20Mario%20Land%202%20-%206%20Golden%20Coins%20%28USA%2C%20Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Titles/Super%20Mario%20Land%202%20-%206%20Golden%20Coins%20%28USA%2C%20Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+    }
+  ]
+}

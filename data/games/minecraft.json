@@ -1,0 +1,325 @@
+{
+  "id": "minecraft",
+  "title": "Minecraft",
+  "franchise": "Minecraft",
+  "platforms": [
+    "PC",
+    "Android"
+  ],
+  "genre": "Sandbox",
+  "summary": "Minecraft Bedrock, verschiedene Java-Launcher sowie mehrere voneinander unabhängige Dual-Screen-Mods: ExoJosh, Abacus und DroidBridge. Versionen und Modloader unbedingt unterscheiden.",
+  "routes": [
+    {
+      "id": "mc-bedrock",
+      "name": "Bedrock für Android",
+      "kind": "native",
+      "edition": "Bedrock Edition",
+      "runtime": "Offizielle Android-App",
+      "projects": [
+        "minecraft"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Android-Lizenz für Minecraft"
+      ],
+      "benefit": "Offizieller Android-Vertriebsweg.",
+      "caveat": "Java-Mods wie Exojoshs Second-Screen-Mod passen nicht zu dieser Edition. Keine Dual-Screen-Erweiterung hier belegt.",
+      "steps": [],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Offizielle Bezugsquellen",
+          "url": "https://www.minecraft.net/en-us/download"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-java",
+      "name": "Java mit Amethyst",
+      "kind": "java",
+      "edition": "Java Edition",
+      "runtime": "Amethyst Android",
+      "projects": [
+        "amethyst",
+        "minecraft"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Minecraft-Java-Lizenz",
+        "Zur Spielversion passende Java- und Renderer-Einstellungen"
+      ],
+      "benefit": "Java-Edition auf Android; Zugang zum Java-Mod-Ökosystem.",
+      "caveat": "Nicht Bedrock. Modloader, Renderer und Controller-Konfiguration müssen zusammenpassen.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-exojosh",
+      "name": "ExoJosh / Fabric + Android Companion",
+      "kind": "companion",
+      "edition": "Java Edition 1.21.11",
+      "runtime": "Zalith Launcher 2 / Pojav-basierter Launcher",
+      "projects": [
+        "exojosh",
+        "exojosh-app",
+        "zalith"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "mods"
+      ],
+      "dualScreen": "HUD + interaktives Inventar",
+      "requires": [
+        "Minecraft Java 1.21.11",
+        "Fabric Loader mindestens 0.19.3 und Fabric API für Java 1.21.11",
+        "Fabric-Mod UND Android-Companion",
+        "Zweiter Android-Presentation-Bildschirm"
+      ],
+      "benefit": "Versetzt HUD, Karte, Inventar und Chat auf das zweite Display; beide Komponenten kommunizieren lokal.",
+      "caveat": "Exakte Kombination beider Projekte erforderlich; nicht auf Bedrock oder beliebige neue Java-Versionen übertragbar.",
+      "steps": [
+        "Java-Lizenz und die Version 1.21.11 prüfen.",
+        "Eigenes Spielprofil und Welten sichern.",
+        "Fabric und Fabric API passend zur Version einrichten.",
+        "Mod und Companion aus den Originalprojekten beziehen.",
+        "Welt starten und Verbindung zwischen beiden Komponenten prüfen."
+      ],
+      "version": "Java 1.21.11, Fabric >= 0.19.3, passende Fabric API",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-zalith",
+      "name": "Minecraft Java via Zalith Launcher 2",
+      "kind": "java",
+      "edition": "Java Edition (versionsabhängig)",
+      "runtime": "Zalith Launcher 2",
+      "projects": [
+        "zalith"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Rechtmäßig erworbene Minecraft Java Edition",
+        "Zum gewünschten Mod passende Java-, Loader- und Renderer-Version"
+      ],
+      "benefit": "Java-Edition mit Modloadern auf Android, Basis für ausgewählte Dual-Screen-Mods.",
+      "caveat": "Ohne zusätzlichen Companion kein automatischer Dual-Screen-Mod. Keine Benchmark-Aussage.",
+      "steps": [
+        "Launcher von der Projektquelle beziehen",
+        "Java-Profil und passende Runtime konfigurieren",
+        "Funktion ohne Mods prüfen"
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-abacus",
+      "name": "Abacus Dual Screen / Forge-Web-Companion",
+      "kind": "companion",
+      "edition": "Java Edition 1.21.1",
+      "runtime": "Minecraft Forge + Web/Android Companion",
+      "projects": [
+        "abacus-dual"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "dual-screen",
+        "mods"
+      ],
+      "dualScreen": "Web Companion für die zweite Anzeige",
+      "requires": [
+        "Minecraft Java 1.21.1",
+        "MinecraftForge 52.x, Java 21",
+        "Passender Server-Mod und Companion-Browser auf zweitem Bildschirm",
+        "Ggf. Rechner im lokalen Netzwerk; lokaler Android-Betrieb nicht von Atlas getestet"
+      ],
+      "benefit": "Stellt Karte, Inventar und Status als interaktive Webansicht bereit. Unterer Bildschirm kann Browser anzeigen.",
+      "caveat": "Anderer Mod als ExoJosh. Quellcode ist source-available, nicht frei zum Spiegeln. Webserver ohne Standard-Authentifizierung: nur in vertrauenswürdigem Netz einsetzen.",
+      "steps": [
+        "Exakte Java-, Forge- und Java-Laufzeitversion abgleichen.",
+        "Mod von Originalquelle laden und lokalen Netzwerkzugriff absichern.",
+        "Companion im Browser des zweiten Bildschirms öffnen."
+      ],
+      "version": "Minecraft Java 1.21.1; Forge 52.x",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-droidbridge",
+      "name": "DroidBridge Launcher (Minecraft Java)",
+      "kind": "java",
+      "edition": "Java Edition (je nach Build)",
+      "runtime": "DroidBridge Launcher (Android)",
+      "projects": [
+        "droidbridge-official",
+        "droidbridge-play"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Minecraft-Java-Lizenz und Microsoft-Anmeldung",
+        "Unterstützte Android-Version und passende Java-/Grafiklaufzeit",
+        "Gewünschte Minecraft-Version im Launcher als Instanz installieren"
+      ],
+      "benefit": "Ein Android-Launcher mit Instanzverwaltung, Java-Versionen, Modverwaltung und Controller-Einstellungen; Grundlage für den speziellen Dual Screen HUD-Mod.",
+      "caveat": "Der Launcher allein bedeutet nicht, dass jede Minecraft-Version dual-screenfähig ist. Thor-Kompatibilität und Performance sind nicht unabhängig getestet.",
+      "steps": [
+        "Offizielle Android-App und eigene Java-Lizenz prüfen.",
+        "Version und Modloader für gewünschte Mods wählen.",
+        "Spiel ohne zusätzliche Mods starten und Steuerung testen."
+      ],
+      "version": "Je nach Spiel-/Launcher-Build und installiertem Mod",
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Google Play (DroidBridge)",
+          "url": "https://play.google.com/store/apps/details?id=ca.dnamobile.droidbridgelauncher"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mc-droidbridge-dualhud",
+      "name": "DroidBridge + Dual Screen HUD",
+      "kind": "emulator-mod",
+      "edition": "Minecraft Java 1.21.6+; einzelne 1.21.x- und 26.x-Builds",
+      "runtime": "DroidBridge Launcher / Fabric / Dual Screen HUD-Mod",
+      "projects": [
+        "droidbridge-hud",
+        "droidbridge-official"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "mods",
+        "controller"
+      ],
+      "dualScreen": "HUD und je nach Build zusätzliche Karten-/Touch-Funktionen",
+      "requires": [
+        "Eigene Minecraft-Java-Lizenz",
+        "DroidBridge Launcher mit Dual-Screen-Modus (Mod-Doku nennt 0.8.3+)",
+        "Zum genauen Minecraft-Build passende Dual Screen HUD-Mod-Datei",
+        "Fabric Loader und Fabric API laut Projektbeschreibung; Loader der konkreten Datei separat prüfen"
+      ],
+      "benefit": "HUD, Hotbar und optional Karten-/Koordinatenanzeige auf dem zweiten Display; Android-seitige Dual-Screen-Steuerung.",
+      "caveat": "Die Beschreibungsseite nennt Fabric, die CurseForge-Dateiliste nennt teils auch Forge/NeoForge. Daraus folgt KEINE universelle Loader-Kompatibilität. 1.21.6+ nicht gleichbedeutend mit sämtlichen künftigen Releases; einzelne Dateien und Versionen prüfen. Keine Atlas-Thor-Messung.",
+      "steps": [
+        "Minecraft-Java-Edition und genaue Versionsnummer identifizieren.",
+        "DroidBridge aus offizieller Quelle installieren und Instanz mit passendem Fabric-Loader vorbereiten.",
+        "Kompatible Mod-Datei direkt in CurseForge unter Files anhand der Spielversion auswählen.",
+        "Fabric API und Mod in die Instanz importieren.",
+        "DroidBridge-Dual-Screen-Modus aktivieren und Spiel mit zunächst deaktivierten Fremdmods testen.",
+        "Nur falls Mod und Build es unterstützen: Weltkarte/HUD im Mod-Menü aktivieren."
+      ],
+      "version": "DroidBridge 0.8.3+ laut Projekttext; Minecraft Java 1.21.6+ in konkret angebotenen Dateien; Fabric-Bindung pro Datei prüfen",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Mod-Dateien / Screenshots bei CurseForge",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dual-screen"
+        }
+      ],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "mods": [
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "performance-rendering",
+      "url": "https://modrinth.com/mod/sodium",
+      "edition": "Java Edition",
+      "description": "Optimierter Java-Renderer. Hinweis: Das Projekt unterstützt Android OpenGL-Übersetzungsschichten nicht offiziell. Deshalb kein pauschaler Thor-FPS-Tipp.",
+      "verification": "documented"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "category": "performance-logic",
+      "url": "https://modrinth.com/mod/lithium",
+      "edition": "Java Edition",
+      "description": "Optimierungen der Spielsimulation. Version und Modloader müssen zur Java-Edition passen; keine Thor-Messwerte.",
+      "verification": "documented"
+    },
+    {
+      "id": "ferritecore",
+      "name": "FerriteCore",
+      "category": "performance-memory",
+      "url": "https://modrinth.com/mod/ferrite-core",
+      "edition": "Java Edition",
+      "description": "Reduziert die Speichernutzung bestimmter Minecraft-Java-Versionen. Spezifische Builds und Loader gegenprüfen.",
+      "verification": "documented"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

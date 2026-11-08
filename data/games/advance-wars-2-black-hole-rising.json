@@ -1,0 +1,26 @@
+{
+  "id": "advance-wars-2-black-hole-rising",
+  "title": "Advance Wars 2: Black Hole Rising",
+  "franchise": "Advance Wars",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Advance%20Wars%202%20-%20Black%20Hole%20Rising%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Advance%20Wars%202%20-%20Black%20Hole%20Rising%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Advance%20Wars%202%20-%20Black%20Hole%20Rising%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "dragon-quest-iii-hd-2d-remake",
+  "title": "Dragon Quest III HD-2D Remake",
+  "franchise": "Dragon Quest",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "routes": [
+    {
+      "id": "eden-dragon-quest-iii-hd-2d-remake",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 1.1.0.0",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Karte, Charaktermenüs und Kampfinformationen auf dem unteren Bildschirm.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "1.1.0.0",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/dragon-quest-iii-hd-2d-remake/map.png",
+          "caption": "Map",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/dragon-quest-iii-hd-2d-remake/party.png",
+          "caption": "Party",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/dragon-quest-iii-hd-2d-remake/battle.png",
+          "caption": "Battle",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

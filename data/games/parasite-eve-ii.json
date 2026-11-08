@@ -1,0 +1,26 @@
+{
+  "id": "parasite-eve-ii",
+  "title": "Parasite Eve II",
+  "franchise": "Parasite Eve II",
+  "platforms": [
+    "PlayStation"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Parasite%20Eve%20II%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Parasite%20Eve%20II%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Parasite%20Eve%20II%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
+}

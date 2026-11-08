@@ -1,0 +1,37 @@
+name: Deploy app
+# Publishes dist/ to GitHub Pages. Runs on every push to main (data or app changed)
+# and is called by the watcher, because pushes made with GITHUB_TOKEN do not trigger workflows.
+on:
+  push:
+    branches: [main]
+    paths: ['data/**', 'app/**', 'scripts/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python scripts/atlas.py build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

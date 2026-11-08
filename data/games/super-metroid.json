@@ -1,0 +1,129 @@
+{
+  "id": "super-metroid",
+  "title": "Super Metroid",
+  "franchise": "Metroid",
+  "platforms": [
+    "SNES"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Original-Emulation oder eine Karte auf dem zweiten Display? Hier werden die Unterschiede sichtbar.",
+  "routes": [
+    {
+      "id": "sm-metroidarch",
+      "name": "MetroidArch",
+      "kind": "emulator-mod",
+      "edition": "SNES",
+      "runtime": "RetroArch-Fork / bsnes-hd",
+      "projects": [
+        "metroidarch",
+        "metroidarch-new"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "widescreen"
+      ],
+      "dualScreen": "Interaktive Zusatzansicht",
+      "requires": [
+        "Eigene kompatible Super-Metroid-ROM",
+        "MetroidArch, Branch metroidarch-dual-screen"
+      ],
+      "benefit": "Dual-Screen-Ansicht und Widescreen in einem spezialisierten RetroArch-Fork.",
+      "caveat": "Kein nativer Recomp. Der alte APK-Port wurde abgelöst; Spielstände vor einem Wechsel sichern.",
+      "steps": [],
+      "version": "Branch metroidarch-dual-screen",
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "sm-snes9x",
+      "name": "SNES via RetroArch",
+      "kind": "emulation",
+      "edition": "SNES",
+      "runtime": "Snes9x",
+      "projects": [
+        "snes9x"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende SNES-ROM",
+        "RetroArch und verfügbarer Snes9x-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "sm-legacy",
+      "name": "Super Metroid Android (alt)",
+      "kind": "emulator-mod",
+      "edition": "SNES",
+      "runtime": "Eigenständige Android-APK",
+      "projects": [
+        "metroidarch"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "Karte und Ausrüstung",
+      "requires": [
+        "Super Metroid (Japan, USA) (En,Ja)-ROM"
+      ],
+      "benefit": "Früherer Dual-Screen-Ansatz bleibt als Vergleich sichtbar.",
+      "caveat": "Archiviert; das Projekt verweist auf MetroidArch. Nicht als Neueinstieg empfohlen.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "archived",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "blast-corps",
+  "title": "Blast Corps",
+  "franchise": "Blast Corps",
+  "platforms": [
+    "Nintendo 64"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Blast%20Corps%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Blast%20Corps%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Blast%20Corps%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    }
+  ]
+}

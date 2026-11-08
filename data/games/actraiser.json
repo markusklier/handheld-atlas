@@ -1,0 +1,26 @@
+{
+  "id": "actraiser",
+  "title": "ActRaiser",
+  "franchise": "ActRaiser",
+  "platforms": [
+    "SNES"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/ActRaiser%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/ActRaiser%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/ActRaiser%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
+}

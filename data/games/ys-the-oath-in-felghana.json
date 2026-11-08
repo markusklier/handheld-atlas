@@ -1,0 +1,26 @@
+{
+  "id": "ys-the-oath-in-felghana",
+  "title": "Ys: The Oath in Felghana",
+  "franchise": "Ys",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Ys%20-%20The%20Oath%20in%20Felghana%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Ys%20-%20The%20Oath%20in%20Felghana%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Ys%20-%20The%20Oath%20in%20Felghana%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "metroid-zero-mission",
+  "title": "Metroid: Zero Mission",
+  "franchise": "Metroid",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ]
+}

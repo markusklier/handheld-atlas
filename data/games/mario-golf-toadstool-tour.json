@@ -1,0 +1,26 @@
+{
+  "id": "mario-golf-toadstool-tour",
+  "title": "Mario Golf: Toadstool Tour",
+  "franchise": "Super Mario",
+  "platforms": [
+    "Nintendo GameCube"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Mario%20Golf_%20Toadstool%20Tour%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Mario%20Golf%20-%20Toadstool%20Tour%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Mario%20Golf%20-%20Toadstool%20Tour%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "fire-emblem-engage",
+  "title": "Fire Emblem Engage",
+  "franchise": "Fire Emblem",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "routes": [
+    {
+      "id": "eden-fire-emblem-engage",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 2.0.0",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Taktikkarte und Einheitsinformationen auf dem zweiten Display.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "2.0.0",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/fire-emblem-engage/war.png",
+          "caption": "War",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/fire-emblem-engage/unit-details.png",
+          "caption": "Unit details",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/fire-emblem-engage/somniel.png",
+          "caption": "Somniel",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

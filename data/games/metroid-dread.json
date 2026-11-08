@@ -1,0 +1,70 @@
+{
+  "id": "metroid-dread",
+  "title": "Metroid Dread",
+  "franchise": "Metroid",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Eine zusätzliche Live-Karte entsteht hier durch einen Emulator-Fork und ein versionsgebundenes Companion-Paket.",
+  "routes": [
+    {
+      "id": "dread-eden",
+      "name": "Eden Duo + Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "Spielabhängiger Companion",
+      "requires": [
+        "Eigene Spieldaten und erforderliche Systemdateien",
+        "Spiel-Update 2.1.0",
+        "Zum Spiel passendes Companion-Paket"
+      ],
+      "benefit": "Live-Gebietskarte und Status auf dem unteren Display.",
+      "caveat": "Versionsbindung ist strikt. Kein FPS- oder Stabilitätsnachweis für deinen Thor im Katalog.",
+      "steps": [],
+      "version": "Metroid Dread 2.1.0",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/metroid-dread/map.png",
+          "caption": "Map",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/metroid-dread/emmi.png",
+          "caption": "Emmi",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/metroid-dread/water.png",
+          "caption": "Water",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

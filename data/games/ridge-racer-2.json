@@ -1,0 +1,21 @@
+{
+  "id": "ridge-racer-2",
+  "title": "Ridge Racer 2",
+  "franchise": "Ridge Racer",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Ridge%20Racer%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Ridge%20Racer%202%20%28Asia%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

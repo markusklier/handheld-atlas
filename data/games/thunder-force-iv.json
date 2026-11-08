@@ -1,0 +1,26 @@
+{
+  "id": "thunder-force-iv",
+  "title": "Thunder Force IV",
+  "franchise": "Thunder Force IV",
+  "platforms": [
+    "Sega Mega Drive"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Thunder%20Force%20IV%20%28Europe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Thunder%20Force%20IV%20%28Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Thunder%20Force%20IV%20%28Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    }
+  ]
+}

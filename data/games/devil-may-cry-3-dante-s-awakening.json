@@ -1,0 +1,26 @@
+{
+  "id": "devil-may-cry-3-dante-s-awakening",
+  "title": "Devil May Cry 3: Dante's Awakening",
+  "franchise": "Devil May Cry",
+  "platforms": [
+    "PlayStation 2"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Devil%20May%20Cry%203%20-%20Dante%27s%20Awakening%20%28USA%29%20%28En%2CJa%2CKo%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Devil%20May%20Cry%203%20-%20Dante%27s%20Awakening%20%28USA%29%20%28En%2CJa%2CKo%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Devil%20May%20Cry%203%20-%20Dante%27s%20Awakening%20%28USA%29%20%28En%2CJa%2CKo%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
+}

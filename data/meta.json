@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kinds": {
+    "emulation": "Emulation",
+    "emulator-mod": "Emulator + Mod",
+    "native": "Native App",
+    "native-mod": "Native App + Mod",
+    "decomp": "Decomp-Port",
+    "recomp": "Recompilation",
+    "source-port": "Source Port / Engine",
+    "companion": "Companion + Spiel",
+    "java": "Java-Launcher",
+    "pc-runtime": "PC-Laufzeitumgebung"
+  },
+  "features": {
+    "dual-screen": "Physisches Dual-Screen",
+    "two-screens": "Zwei Spielbildschirme (DS/3DS)",
+    "live-map": "Live-Karte",
+    "touch-inventory": "Touch-Inventar",
+    "widescreen": "Widescreen",
+    "mods": "Mod-Unterstützung",
+    "controller": "Controller dokumentiert",
+    "fps-cap": "FPS-Limit wählbar"
+  },
+  "verification": {
+    "thor-tested": "Auf dem AYN Thor getestet",
+    "community": "Community-Erfahrung",
+    "documented": "Laut Projektdoku",
+    "ai-unverified": "KI-Fund, ungeprüft"
+  },
+  "effort": {
+    "easy": "Einfach",
+    "guided": "Mit Anleitung",
+    "advanced": "Fortgeschritten",
+    "experimental": "Experimentell"
+  },
+  "targets": {
+    "android": "Android",
+    "linux-x86_64": "Linux x86-64",
+    "linux-arm64": "Linux ARM64",
+    "windows-x86_64": "Windows"
+  },
+  "devices": [
+    {
+      "id": "thor",
+      "name": "AYN Thor",
+      "target": "android",
+      "dualScreen": true
+    },
+    {
+      "id": "android",
+      "name": "Android-Handheld (ein Display)",
+      "target": "android",
+      "dualScreen": false
+    },
+    {
+      "id": "all",
+      "name": "Alle Geräte",
+      "target": null,
+      "dualScreen": true
+    }
+  ],
+  "repo": "markusklier/handheld-atlas"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "locoroco",
+  "title": "LocoRoco",
+  "franchise": "LocoRoco",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/LocoRoco%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CNl%2CPt%2CSv%2CNo%2CDa%2CFi%2CZh%2CKo%2CRu%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/LocoRoco%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CNl%2CPt%2CSv%2CNo%2CDa%2CFi%2CZh%2CKo%2CRu%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/LocoRoco%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CNl%2CPt%2CSv%2CNo%2CDa%2CFi%2CZh%2CKo%2CRu%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

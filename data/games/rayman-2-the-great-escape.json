@@ -1,0 +1,27 @@
+{
+  "id": "rayman-2-the-great-escape",
+  "title": "Rayman 2: The Great Escape",
+  "franchise": "Rayman",
+  "platforms": [
+    "Nintendo 64",
+    "Dreamcast"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Rayman%202%20-%20The%20Great%20Escape%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    }
+  ]
+}

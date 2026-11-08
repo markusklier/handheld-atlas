@@ -1,0 +1,26 @@
+{
+  "id": "sonic-and-the-black-knight",
+  "title": "Sonic and the Black Knight",
+  "franchise": "Sonic",
+  "platforms": [
+    "Wii"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Sonic%20and%20the%20Black%20Knight%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Sonic%20and%20the%20Black%20Knight%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Sonic%20and%20the%20Black%20Knight%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
+}

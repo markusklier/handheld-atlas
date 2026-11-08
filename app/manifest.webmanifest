@@ -1,0 +1,17 @@
+{
+  "name": "Handheld Atlas",
+  "short_name": "Atlas",
+  "description": "Alle Wege, ein Spiel auf deinem Android-Handheld zu spielen.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0d0c",
+  "theme_color": "#0a0d0c",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}

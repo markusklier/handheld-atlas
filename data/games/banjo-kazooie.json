@@ -1,0 +1,94 @@
+{
+  "id": "banjo-kazooie",
+  "title": "Banjo-Kazooie",
+  "franchise": "Banjo-Kazooie",
+  "platforms": [
+    "Nintendo 64"
+  ],
+  "genre": "Platformer",
+  "summary": "N64 emulieren oder einen Android-Recomp verwenden: gleiche Spielvorlage, anderer technischer Weg.",
+  "routes": [
+    {
+      "id": "banjo-recomp",
+      "name": "BanjoRecomp Android",
+      "kind": "recomp",
+      "edition": "Nintendo 64",
+      "runtime": "N64: Recompiled / Android",
+      "projects": [
+        "banjo"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Spielfortschritt und Informationen",
+      "requires": [
+        "Eigene kompatible Banjo-Kazooie-ROM",
+        "Passender Android-Recomp-Build"
+      ],
+      "benefit": "Recompilation mit einer zusätzlichen Informationsansicht.",
+      "caveat": "Passende ROM-Revision vorab im Projekt prüfen. Hier kein unabhängiger Gerätetest.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "banjo-n64",
+      "name": "N64 via RetroArch",
+      "kind": "emulation",
+      "edition": "N64",
+      "runtime": "Mupen64Plus-Next",
+      "projects": [
+        "n64"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende N64-ROM",
+        "RetroArch und verfügbarer Mupen64Plus-Next-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Banjo-Kazooie%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Banjo-Kazooie%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Banjo-Kazooie%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    }
+  ]
+}

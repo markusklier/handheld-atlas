@@ -1,0 +1,26 @@
+{
+  "id": "shinobi-iii-return-of-the-ninja-master",
+  "title": "Shinobi III: Return of the Ninja Master",
+  "franchise": "Shinobi III: Return of the Ninja Master",
+  "platforms": [
+    "Sega Mega Drive"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Shinobi%20III%20-%20Return%20of%20the%20Ninja%20Master%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "capcom-vs-snk-2",
+  "title": "Capcom vs. SNK 2",
+  "franchise": "Capcom vs. SNK 2",
+  "platforms": [
+    "Dreamcast"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Capcom%20vs.%20SNK%202%20-%20Millionaire%20Fighting%202001%20%28Japan%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Capcom%20vs.%20SNK%202%20-%20Millionaire%20Fighting%202001%20%28Japan%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Capcom%20vs.%20SNK%202%20-%20Millionaire%20Fighting%202001%20%28Japan%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "locoroco-midnight-carnival",
+  "title": "LocoRoco Midnight Carnival",
+  "franchise": "LocoRoco Midnight Carnival",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/LocoRoco%20-%20Midnight%20Carnival%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": []
+}

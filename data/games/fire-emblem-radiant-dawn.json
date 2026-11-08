@@ -1,0 +1,26 @@
+{
+  "id": "fire-emblem-radiant-dawn",
+  "title": "Fire Emblem: Radiant Dawn",
+  "franchise": "Fire Emblem",
+  "platforms": [
+    "Wii"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Fire%20Emblem_%20Radiant%20Dawn%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Fire%20Emblem_%20Radiant%20Dawn%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Fire%20Emblem_%20Radiant%20Dawn%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
+}

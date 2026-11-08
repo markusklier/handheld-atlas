@@ -1,0 +1,26 @@
+{
+  "id": "super-mario-world-2-yoshi-s-island",
+  "title": "Super Mario World 2: Yoshi's Island",
+  "franchise": "Super Mario",
+  "platforms": [
+    "SNES"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
+}

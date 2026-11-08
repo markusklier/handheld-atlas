@@ -1,0 +1,95 @@
+{
+  "id": "pokemon-emerald",
+  "title": "Pokémon Smaragd",
+  "franchise": "Pokémon",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Ein Pokémon-spezifischer Companion kann mehr anzeigen als ein allgemeiner GBA-Emulator.",
+  "routes": [
+    {
+      "id": "emerald-pokedaisy",
+      "name": "PokeDaisy",
+      "kind": "emulator-mod",
+      "edition": "GBA / Pokémon Emerald",
+      "runtime": "PokeDaisy",
+      "projects": [
+        "pokedaisy"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "Pokémon-Companion",
+      "requires": [
+        "Eigene unterstützte ROM",
+        "ROM-spezifische Funktionsliste beachten"
+      ],
+      "benefit": "Spielbezogene Informationen und Companion statt einer bloßen zweiten Kopie des Bilds.",
+      "caveat": "Nicht jede ROM-Region oder jeder Hack besitzt denselben Funktionsumfang.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "emerald-mgba",
+      "name": "GBA via RetroArch",
+      "kind": "emulation",
+      "edition": "GBA",
+      "runtime": "mGBA",
+      "projects": [
+        "mgba"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende GBA-ROM",
+        "RetroArch und verfügbarer mGBA-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ]
+}

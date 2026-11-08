@@ -1,0 +1,26 @@
+{
+  "id": "new-super-mario-bros-wii",
+  "title": "New Super Mario Bros. Wii",
+  "franchise": "Super Mario",
+  "platforms": [
+    "Wii"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/New%20Super%20Mario%20Bros.%20Wii%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/New%20Super%20Mario%20Bros.%20Wii%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/New%20Super%20Mario%20Bros.%20Wii%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
+}

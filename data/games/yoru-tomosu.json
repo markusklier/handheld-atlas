@@ -1,0 +1,73 @@
+{
+  "id": "yoru-tomosu",
+  "title": "Yoru Tomosu",
+  "franchise": "Yoru Tomosu",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "routes": [
+    {
+      "id": "eden-yoru-tomosu",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 1.0.0",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Dialogverlauf, Optionen und freigeschaltete Szenen als Companion.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "1.0.0",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/yoru-tomosu/log.png",
+          "caption": "Log",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/yoru-tomosu/option.png",
+          "caption": "Option",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/yoru-tomosu/cg.png",
+          "caption": "Cg",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08"
+}

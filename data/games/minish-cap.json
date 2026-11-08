@@ -1,0 +1,98 @@
+{
+  "id": "minish-cap",
+  "title": "The Legend of Zelda: The Minish Cap",
+  "franchise": "The Legend of Zelda",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Ein nativer Dual-Screen-Port neben klassischer GBA-Emulation; die ROM-Region macht einen Unterschied.",
+  "routes": [
+    {
+      "id": "tmc-dual",
+      "name": "Minish Cap Dual Screen",
+      "kind": "decomp",
+      "edition": "GBA / USA-Baseline",
+      "runtime": "Project Picori / Android",
+      "projects": [
+        "minish"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "widescreen"
+      ],
+      "dualScreen": "Karte + Touch-Inventar",
+      "requires": [
+        "Eigene baserom.gba",
+        "USA-Baseline: SHA-1 b4bd50e4131b027c334547b4524e2dbbd4227130",
+        "Zur Region passender Build"
+      ],
+      "benefit": "Karte, Queststatus und Touch-Inventar; Widescreen als Portfunktion.",
+      "caveat": "EU-ROM mit USA-Build ist laut Projekt ein Hybrid mit möglichen Abweichungen. APK ist debug-signiert.",
+      "steps": [],
+      "version": "ROM-Region muss zur Build-Baseline passen",
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "tmc-mgba",
+      "name": "GBA via RetroArch",
+      "kind": "emulation",
+      "edition": "GBA",
+      "runtime": "mGBA",
+      "projects": [
+        "mgba"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende GBA-ROM",
+        "RetroArch und verfügbarer mGBA-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20The%20Minish%20Cap%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ]
+}

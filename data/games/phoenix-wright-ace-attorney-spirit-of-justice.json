@@ -1,0 +1,21 @@
+{
+  "id": "phoenix-wright-ace-attorney-spirit-of-justice",
+  "title": "Phoenix Wright: Ace Attorney - Spirit of Justice",
+  "franchise": "Ace Attorney",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Phoenix%20Wright%20-%20Ace%20Attorney%20-%20Spirit%20of%20Justice%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Phoenix%20Wright%20-%20Ace%20Attorney%20-%20Spirit%20of%20Justice%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ]
+}

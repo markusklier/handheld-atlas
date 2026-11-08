@@ -1,0 +1,26 @@
+{
+  "id": "etrian-odyssey-iv-legends-of-the-titan",
+  "title": "Etrian Odyssey IV: Legends of the Titan",
+  "franchise": "Etrian Odyssey",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Etrian%20Odyssey%20IV%20-%20Legends%20of%20the%20Titan%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Etrian%20Odyssey%20IV%20-%20Legends%20of%20the%20Titan%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Etrian%20Odyssey%20IV%20-%20Legends%20of%20the%20Titan%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ]
+}

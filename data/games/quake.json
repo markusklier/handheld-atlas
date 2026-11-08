@@ -1,0 +1,46 @@
+{
+  "id": "quake",
+  "title": "Quake",
+  "franchise": "Quake",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2310/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2310/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_b7d9bbc1036fe011e076eb70d57cfc6251863a4c.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_f05136331569b5ca973b5295041ff7ce58fb2590.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_e31f19558199f97dd40cdf8655e67e28018d849c.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_3e486cb2013c5c6de74806826a26367194f452f3.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_94541aa0f1106de0c4004d6151536e0c65c92a73.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2310/ss_bfe906143a3ec377e5525affa45b1a2018e71c31.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2310/"
+    }
+  ]
+}

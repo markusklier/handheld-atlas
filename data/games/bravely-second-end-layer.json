@@ -1,0 +1,26 @@
+{
+  "id": "bravely-second-end-layer",
+  "title": "Bravely Second: End Layer",
+  "franchise": "Bravely Second: End Layer",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Bravely%20Second%20-%20End%20Layer%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Bravely%20Second%20-%20End%20Layer%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Bravely%20Second%20-%20End%20Layer%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ]
+}

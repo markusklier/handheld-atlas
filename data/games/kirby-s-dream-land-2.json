@@ -1,0 +1,26 @@
+{
+  "id": "kirby-s-dream-land-2",
+  "title": "Kirby's Dream Land 2",
+  "franchise": "Kirby",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Boxarts/Kirby%27s%20Dream%20Land%202%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Snaps/Kirby%27s%20Dream%20Land%202%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Titles/Kirby%27s%20Dream%20Land%202%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "billy-hatcher-and-the-giant-egg",
+  "title": "Billy Hatcher and the Giant Egg",
+  "franchise": "Billy Hatcher and the Giant Egg",
+  "platforms": [
+    "Nintendo GameCube"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Billy%20Hatcher%20and%20the%20Giant%20Egg%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Billy%20Hatcher%20and%20the%20Giant%20Egg%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Billy%20Hatcher%20and%20the%20Giant%20Egg%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "factorio",
+  "title": "Factorio",
+  "franchise": "Factorio",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/427520/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_36e4d8e5540805f5ed492d24d784ed9ba661752b.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_171f398a8e347fad650a9c1b6c3b77c612781510.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_0bf814493f247b6baa093511b46c352cf9e98435.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_2533e54b0bd90a29adbedb60108ed277536ad445.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_192864c00fc38b5ef97b97ca7fa655a9aed7c0da.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_e301bde0fc0e996ba93e92639cd49dd90ae47b36.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/427520/"
+    }
+  ]
+}

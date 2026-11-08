@@ -1,0 +1,26 @@
+{
+  "id": "kirby-s-return-to-dream-land",
+  "title": "Kirby's Return to Dream Land",
+  "franchise": "Kirby",
+  "platforms": [
+    "Wii"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Kirby%27s%20Return%20to%20Dream%20Land%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Kirby%27s%20Return%20to%20Dream%20Land%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Kirby%27s%20Return%20to%20Dream%20Land%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
+}

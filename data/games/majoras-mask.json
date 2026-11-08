@@ -1,0 +1,125 @@
+{
+  "id": "majoras-mask",
+  "title": "The Legend of Zelda: Majora's Mask",
+  "franchise": "The Legend of Zelda",
+  "platforms": [
+    "Nintendo 64"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Decomp-Port für Android, Recomp für Desktop und klassischer N64-Emulator bleiben getrennte Optionen.",
+  "routes": [
+    {
+      "id": "mm-2ship",
+      "name": "2 Ship 2 Harkinian Android",
+      "kind": "decomp",
+      "edition": "Nintendo 64",
+      "runtime": "2 Ship 2 Harkinian",
+      "projects": [
+        "2ship"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene kompatible ROM bzw. daraus erzeugte Spieldaten",
+        "Projektanleitung für Android"
+      ],
+      "benefit": "Android-Port auf Basis der Decompilation.",
+      "caveat": "Dual-Screen hier nicht belegt; nicht automatisch mit Desktop-Recomp-Funktionen gleichsetzen.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mm-recomp",
+      "name": "Zelda64Recomp",
+      "kind": "recomp",
+      "edition": "Nintendo 64",
+      "runtime": "Zelda64Recomp",
+      "projects": [
+        "zelda64"
+      ],
+      "targets": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene kompatible Majora-ROM",
+        "Passender Linux- oder Windows-Build"
+      ],
+      "benefit": "Statische Recompilation für Desktop-Handhelds.",
+      "caveat": "Dieser Eintrag ist kein Android-Port und kein Nachweis für Linux auf ARM.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "mm-n64",
+      "name": "N64 via RetroArch",
+      "kind": "emulation",
+      "edition": "N64",
+      "runtime": "Mupen64Plus-Next",
+      "projects": [
+        "n64"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende N64-ROM",
+        "RetroArch und verfügbarer Mupen64Plus-Next-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    }
+  ]
+}

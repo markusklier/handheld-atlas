@@ -1,0 +1,26 @@
+{
+  "id": "baten-kaitos-eternal-wings-and-the-lost-ocean",
+  "title": "Baten Kaitos: Eternal Wings and the Lost Ocean",
+  "franchise": "Baten Kaitos: Eternal Wings and the Lost Ocean",
+  "platforms": [
+    "Nintendo GameCube"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Baten%20Kaitos%20Eternal%20Wings%20and%20the%20Lost%20Ocean%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Baten%20Kaitos%20-%20Eternal%20Wings%20and%20the%20Lost%20Ocean%20%28USA%29%20%28Disc%201%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Baten%20Kaitos%20-%20Eternal%20Wings%20and%20the%20Lost%20Ocean%20%28USA%29%20%28Disc%201%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    }
+  ]
+}

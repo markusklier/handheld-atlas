@@ -1,0 +1,26 @@
+{
+  "id": "jet-set-radio",
+  "title": "Jet Set Radio",
+  "franchise": "Jet Set Radio",
+  "platforms": [
+    "Dreamcast"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Jet%20Set%20Radio%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Jet%20Set%20Radio%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Jet%20Set%20Radio%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    }
+  ]
+}

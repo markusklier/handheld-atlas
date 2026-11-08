@@ -1,0 +1,129 @@
+{
+  "id": "chrono-trigger",
+  "title": "Chrono Trigger",
+  "franchise": "Chrono",
+  "platforms": [
+    "SNES",
+    "Nintendo DS"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "DS-Edition, SNES-Original und Android-Spiel mit Companion sind drei verschiedene Wege, kein gemeinsamer Mod.",
+  "routes": [
+    {
+      "id": "chrono-duo",
+      "name": "Android + ChronoDuo",
+      "kind": "companion",
+      "edition": "Android / Google Play",
+      "runtime": "ChronoDuo",
+      "projects": [
+        "chrono"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "dualScreen": "Companion zur Android-Version",
+      "requires": [
+        "Offizielle Android-Version",
+        "ChronoDuo; projektspezifische Berechtigungen",
+        "Optionale eigene DS-ROM für bestimmte Karten"
+      ],
+      "benefit": "Android-Spiel mit ergänzender Zweitbildschirm-Oberfläche.",
+      "caveat": "Nicht mit der DS-Edition gleichsetzen; Versions- und Berechtigungsanforderungen im Projekt prüfen.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "chrono-ds",
+      "name": "Nintendo-DS-Edition",
+      "kind": "emulation",
+      "edition": "Nintendo DS",
+      "runtime": "melonDS Android",
+      "projects": [
+        "melonds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "two-screens"
+      ],
+      "dualScreen": "Zwei Spielbildschirme; physische Ausgabe ungeprüft",
+      "requires": [
+        "Eigene DS-ROM",
+        "melonDS; passende Bildschirmkonfiguration"
+      ],
+      "benefit": "Die DS-Spielversion besitzt bereits zwei Spielbildschirme.",
+      "caveat": "Zwei emulierte Bildschirme garantieren noch keine Ausgabe auf zwei physischen Thor-Displays. Diese Zuordnung hier nicht verifiziert.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "chrono-snes",
+      "name": "SNES via RetroArch",
+      "kind": "emulation",
+      "edition": "SNES",
+      "runtime": "Snes9x",
+      "projects": [
+        "snes9x"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene passende SNES-ROM",
+        "RetroArch und verfügbarer Snes9x-Core"
+      ],
+      "benefit": "Originalfassung in einem gemeinsamen Emulator-Frontend.",
+      "caveat": "Keine zusätzliche Dual-Screen-Oberfläche. Plattformweg dokumentiert; diese Kombination nicht auf einem Gerät getestet.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Chrono%20Trigger%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Chrono%20Trigger%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "golden-axe",
+  "title": "Golden Axe",
+  "franchise": "Golden Axe",
+  "platforms": [
+    "Sega Mega Drive"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Golden%20Axe%20%28World%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Golden%20Axe%20%28World%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Golden%20Axe%20%28World%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    }
+  ]
+}

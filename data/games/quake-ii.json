@@ -1,0 +1,46 @@
+{
+  "id": "quake-ii",
+  "title": "Quake II",
+  "franchise": "Quake",
+  "platforms": [
+    "PC"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2320/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2320/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_5b85c7ee18c210a2f75320331b22abb860a10471.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_8b699b0ffdb585386e3092b31efbd487f9dcf011.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_863a58fb51dbc1d64b05358b61359ad297fe9459.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_7df88eccd9b900a60ecd40e50dbce10acad877c3.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_b54d1ba9801d9b8ef5f6f5dbb8c6c8e283214e31.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2320/ss_0fd985f0c53e261ac78f2dda6b95db34aec02f46.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2320/"
+    }
+  ]
+}

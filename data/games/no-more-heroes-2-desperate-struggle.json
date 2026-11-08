@@ -1,0 +1,26 @@
+{
+  "id": "no-more-heroes-2-desperate-struggle",
+  "title": "No More Heroes 2: Desperate Struggle",
+  "franchise": "No More Heroes 2: Desperate Struggle",
+  "platforms": [
+    "Wii"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/No%20More%20Heroes%202_%20Desperate%20Struggle%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/No%20More%20Heroes%202%20-%20Desperate%20Struggle%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/No%20More%20Heroes%202%20-%20Desperate%20Struggle%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
+}

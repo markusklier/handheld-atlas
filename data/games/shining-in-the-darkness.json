@@ -1,0 +1,26 @@
+{
+  "id": "shining-in-the-darkness",
+  "title": "Shining in the Darkness",
+  "franchise": "Shining",
+  "platforms": [
+    "Sega Mega Drive"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Shining%20in%20the%20Darkness%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Shining%20in%20the%20Darkness%20%28USA%2C%20Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Shining%20in%20the%20Darkness%20%28USA%2C%20Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    }
+  ]
+}

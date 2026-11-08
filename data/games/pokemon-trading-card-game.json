@@ -1,0 +1,26 @@
+{
+  "id": "pokemon-trading-card-game",
+  "title": "Pokémon Trading Card Game",
+  "franchise": "Pokémon",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Pokemon%20Trading%20Card%20Game%20%28Europe%29%20%28En%2CEs%2CIt%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Pokemon%20Trading%20Card%20Game%20%28Europe%29%20%28En%2CEs%2CIt%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Pokemon%20Trading%20Card%20Game%20%28Europe%29%20%28En%2CEs%2CIt%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "monster-hunter-portable-3rd",
+  "title": "Monster Hunter Portable 3rd",
+  "franchise": "Monster Hunter",
+  "platforms": [
+    "PSP"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Monster%20Hunter%20Portable%203rd%20%28Japan%29%20%28v1.02%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Monster%20Hunter%20Portable%203rd%20%28Japan%2C%20Asia%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
+}

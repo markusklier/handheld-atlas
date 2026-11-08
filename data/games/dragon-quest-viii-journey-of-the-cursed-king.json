@@ -1,0 +1,27 @@
+{
+  "id": "dragon-quest-viii-journey-of-the-cursed-king",
+  "title": "Dragon Quest VIII: Journey of the Cursed King",
+  "franchise": "Dragon Quest",
+  "platforms": [
+    "PlayStation 2",
+    "Nintendo 3DS"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dragon%20Quest%20VIII%20-%20Journey%20of%20the%20Cursed%20King%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Dragon%20Quest%20VIII%20-%20Journey%20of%20the%20Cursed%20King%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Dragon%20Quest%20VIII%20-%20Journey%20of%20the%20Cursed%20King%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
+}

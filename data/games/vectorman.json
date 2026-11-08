@@ -1,0 +1,26 @@
+{
+  "id": "vectorman",
+  "title": "Vectorman",
+  "franchise": "Vectorman",
+  "platforms": [
+    "Sega Mega Drive"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Vectorman%20%28USA%29%20%28Genesis%20Mini%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Vectorman%20%28USA%29%20%28Genesis%20Mini%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Vectorman%20%28USA%29%20%28Genesis%20Mini%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+    }
+  ]
+}

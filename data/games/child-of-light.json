@@ -1,0 +1,26 @@
+{
+  "id": "child-of-light",
+  "title": "Child of Light",
+  "franchise": "Child of Light",
+  "platforms": [
+    "PlayStation Vita"
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Snaps/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Titles/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+    }
+  ]
+}
