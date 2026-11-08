@@ -1,4 +1,6 @@
 name: Update downloadable HTML snapshot
+# The discovery workflow commits generated HTML itself because GITHUB_TOKEN pushes
+# do not trigger additional push workflows on GitHub. This workflow handles user edits.
 on:
   push:
     branches: [main]
