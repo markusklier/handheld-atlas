@@ -2,6 +2,130 @@
   "entries": [
     {
       "date": "2026-11-08",
+      "type": "release",
+      "text": "Vita3K v12 veröffentlicht.",
+      "project": "vita3k",
+      "url": "https://github.com/Vita3K/Vita3K-Android/releases/tag/v12"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Recompa v0.4.1 veröffentlicht.",
+      "project": "recompa",
+      "url": "https://github.com/kalasyan/recompa/releases/tag/v0.4.1"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "OpenMW openmw-52-rc1 (Vorabversion) veröffentlicht.",
+      "project": "openmw",
+      "games": [
+        "morrowind"
+      ],
+      "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-52-rc1"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "NetherSX2 2.2n veröffentlicht.",
+      "project": "nethersx2",
+      "url": "https://github.com/Trixarian/NetherSX2-patch/releases/tag/2.2n"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "MetroidArch v1.0.2-debug2 (Vorabversion) veröffentlicht.",
+      "project": "metroidarch-new",
+      "games": [
+        "super-metroid"
+      ],
+      "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "melonDS Android nightly-release (Vorabversion) veröffentlicht.",
+      "project": "melonds",
+      "games": [
+        "chrono-trigger"
+      ],
+      "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/nightly-release"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Flycast v2.7 veröffentlicht.",
+      "project": "flycast",
+      "url": "https://github.com/flyinghead/flycast/releases/tag/v2.7"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Eden Duo Companions fire-emblem-three-houses-1.0.2 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "the-legend-of-zelda-link-s-awakening",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-afterbirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/fire-emblem-three-houses-1.0.2"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Eden Duo v1.3.5 veröffentlicht.",
+      "project": "eden",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "the-legend-of-zelda-link-s-awakening",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-afterbirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake"
+      ],
+      "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.5"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "DuckStation preview (Vorabversion) veröffentlicht.",
+      "project": "duckstation",
+      "url": "https://github.com/stenzek/duckstation/releases/tag/preview"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "BanjoRecomp Android android-v0.1.2 (Vorabversion) veröffentlicht.",
+      "project": "banjo",
+      "games": [
+        "banjo-kazooie"
+      ],
+      "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.2"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Azahar 2127.0-rc2 (Vorabversion) veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc2"
+    },
+    {
+      "date": "2026-11-08",
       "type": "system",
       "text": "Atlas 1.0: Datenbank auf ein Spiel pro Datei umgestellt (701 Spiele, 60 Spielwege, 50 Projekte)."
     }

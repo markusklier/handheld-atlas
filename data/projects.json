@@ -15,7 +15,8 @@
         "tag": "v1.1.2P1",
         "url": "https://github.com/Waterdish/2ship2harkinian-Android/releases/tag/v1.1.2P1",
         "date": "2025-06-14"
-      }
+      },
+      "pushedAt": "2025-06-14"
     },
     {
       "id": "abacus-dual",
@@ -23,7 +24,7 @@
       "kind": "mod",
       "url": "https://github.com/Abacus1829/ayn-dual-screen",
       "repo": "Abacus1829/ayn-dual-screen",
-      "description": "",
+      "description": "Second-screen companion for the AYN Thor and any browser: a live, touchable map/inventory/status UI served by a mod running inside your game. Android app plus mods for Stardew Valley, Terraria and Minecraft.",
       "games": [
         "minecraft",
         "stardew-valley",
@@ -34,7 +35,8 @@
         "tag": "v2026.09.01c",
         "url": "https://github.com/Abacus1829/ayn-dual-screen/releases/tag/v2026.09.01c",
         "date": "2026-09-01"
-      }
+      },
+      "pushedAt": "2026-09-01"
     },
     {
       "id": "alttp",
@@ -42,7 +44,7 @@
       "kind": "port",
       "url": "https://github.com/samyost1/zelda3-android",
       "repo": "samyost1/zelda3-android",
-      "description": "",
+      "description": "A port of Zelda3 to Android",
       "games": [
         "a-link-to-the-past"
       ],
@@ -51,7 +53,8 @@
         "tag": "v2.0",
         "url": "https://github.com/samyost1/zelda3-android/releases/tag/v2.0",
         "date": "2026-07-24"
-      }
+      },
+      "pushedAt": "2026-08-04"
     },
     {
       "id": "amethyst",
@@ -59,7 +62,7 @@
       "kind": "launcher",
       "url": "https://github.com/AngelAuraMC/Amethyst-Android",
       "repo": "AngelAuraMC/Amethyst-Android",
-      "description": "",
+      "description": "A Minecraft: Java Edition Launcher for Android and iOS based on PojavLauncher. This repository contains source code for Android platform.",
       "games": [
         "minecraft"
       ],
@@ -68,7 +71,8 @@
         "tag": "1.1.7",
         "url": "https://github.com/AngelAuraMC/Amethyst-Android/releases/tag/1.1.7",
         "date": "2026-07-31"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "azahar",
@@ -76,9 +80,15 @@
       "kind": "emulator",
       "url": "https://github.com/azahar-emu/azahar",
       "repo": "azahar-emu/azahar",
-      "description": "",
+      "description": "An open-source 3DS emulator project based on Citra.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-06",
+      "latestRelease": {
+        "tag": "2127.0-rc2",
+        "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc2",
+        "date": "2026-11-06"
+      }
     },
     {
       "id": "balatro",
@@ -86,7 +96,7 @@
       "kind": "mod",
       "url": "https://github.com/rosbean/balatro-dualscreen",
       "repo": "rosbean/balatro-dualscreen",
-      "description": "",
+      "description": "Android mod of Balatro, optimised for dual screen devices and targeting and tested on the AYN Thor.",
       "games": [
         "balatro"
       ],
@@ -95,7 +105,8 @@
         "tag": "v1.0",
         "url": "https://github.com/rosbean/balatro-dualscreen/releases/tag/v1.0",
         "date": "2026-08-01"
-      }
+      },
+      "pushedAt": "2026-08-01"
     },
     {
       "id": "balatro-official",
@@ -115,16 +126,17 @@
       "kind": "port",
       "url": "https://github.com/AurelioB/BanjoRecomp-Android",
       "repo": "AurelioB/BanjoRecomp-Android",
-      "description": "",
+      "description": "Android Port of Banjo-Kazooie made using N64: Recompiled",
       "games": [
         "banjo-kazooie"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
-        "tag": "android-v0.1.1",
-        "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.1",
-        "date": "2026-06-14"
-      }
+        "tag": "android-v0.1.2",
+        "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.2",
+        "date": "2026-07-13"
+      },
+      "pushedAt": "2026-07-13"
     },
     {
       "id": "chrono",
@@ -132,7 +144,7 @@
       "kind": "companion",
       "url": "https://github.com/kalenjohnson/chrono-duo",
       "repo": "kalenjohnson/chrono-duo",
-      "description": "",
+      "description": "An Android app for dual-screen devices like the Ayn Thor, to wrap the Chrono Trigger Android app and create a dual-screen experience",
       "games": [
         "chrono-trigger"
       ],
@@ -141,7 +153,8 @@
         "tag": "v0.7",
         "url": "https://github.com/kalenjohnson/chrono-duo/releases/tag/v0.7",
         "date": "2026-09-29"
-      }
+      },
+      "pushedAt": "2026-09-29"
     },
     {
       "id": "curseforge-api",
@@ -205,7 +218,7 @@
       "kind": "companion",
       "url": "https://github.com/Droid-Deck/DroidDeck",
       "repo": "Droid-Deck/DroidDeck",
-      "description": "",
+      "description": "DroidDeck brings the SteamOS experience to Android",
       "games": [
         "cyberpunk-2077"
       ],
@@ -214,7 +227,8 @@
         "tag": "0.7.0",
         "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.7.0",
         "date": "2026-11-08"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "dual-list",
@@ -222,9 +236,10 @@
       "kind": "directory",
       "url": "https://github.com/codm2000/Dual-Screen-Games",
       "repo": "codm2000/Dual-Screen-Games",
-      "description": "",
+      "description": "Collection of dual screen games and apps for Android handhelds like the Ayn Thor",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-05"
     },
     {
       "id": "duckstation",
@@ -232,9 +247,15 @@
       "kind": "emulator",
       "url": "https://github.com/stenzek/duckstation",
       "repo": "stenzek/duckstation",
-      "description": "",
+      "description": "Fast PlayStation 1 emulator for x86-64/AArch32/AArch64/RV64",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "preview",
+        "url": "https://github.com/stenzek/duckstation/releases/tag/preview",
+        "date": "2026-11-08"
+      }
     },
     {
       "id": "eden",
@@ -275,10 +296,11 @@
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
-        "tag": "v1.3.4",
-        "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.4",
-        "date": "2026-11-02"
-      }
+        "tag": "v1.3.5",
+        "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.5",
+        "date": "2026-11-08"
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "eden-companions",
@@ -319,10 +341,11 @@
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
-        "tag": "cult-of-the-lamb-1.1.0",
-        "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/cult-of-the-lamb-1.1.0",
+        "tag": "fire-emblem-three-houses-1.0.2",
+        "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/fire-emblem-three-houses-1.0.2",
         "date": "2026-11-08"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "emuready",
@@ -340,7 +363,7 @@
       "kind": "mod",
       "url": "https://github.com/exojosh/AynThorSecondScreen",
       "repo": "exojosh/AynThorSecondScreen",
-      "description": "",
+      "description": "Second Screen Helper Mod for Minecraft that moves HUD content and various other features to the bottom screen of a dual screen android device.",
       "games": [
         "minecraft"
       ],
@@ -349,7 +372,8 @@
         "tag": "v1.0.1",
         "url": "https://github.com/exojosh/AynThorSecondScreen/releases/tag/v1.0.1",
         "date": "2026-08-09"
-      }
+      },
+      "pushedAt": "2026-10-09"
     },
     {
       "id": "exojosh-app",
@@ -361,7 +385,8 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-08-09"
     },
     {
       "id": "flycast",
@@ -369,9 +394,15 @@
       "kind": "emulator",
       "url": "https://github.com/flyinghead/flycast",
       "repo": "flyinghead/flycast",
-      "description": "",
+      "description": "Flycast is a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "v2.7",
+        "url": "https://github.com/flyinghead/flycast/releases/tag/v2.7",
+        "date": "2026-08-19"
+      }
     },
     {
       "id": "gaft",
@@ -379,9 +410,10 @@
       "kind": "directory",
       "url": "https://andreyvelsk.github.io/GAFT/",
       "repo": "andreyvelsk/GAFT",
-      "description": "",
+      "description": "A curated collection of games and apps that truly shine on the AYN Thor dual-screen handheld console",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "gamenative",
@@ -389,7 +421,7 @@
       "kind": "runtime",
       "url": "https://github.com/utkarshdalal/GameNative",
       "repo": "utkarshdalal/GameNative",
-      "description": "",
+      "description": "Native PC gaming with Steam, Epic, GOG and Amazon integrations on Android",
       "games": [
         "cyberpunk-2077"
       ],
@@ -398,7 +430,8 @@
         "tag": "v1.4.0",
         "url": "https://github.com/utkarshdalal/GameNative/releases/tag/v1.4.0",
         "date": "2026-11-05"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "igdb",
@@ -416,16 +449,17 @@
       "kind": "emulator",
       "url": "https://github.com/rafaelvcaetano/melonDS-android",
       "repo": "rafaelvcaetano/melonDS-android",
-      "description": "",
+      "description": "Android port of melonDS",
       "games": [
         "chrono-trigger"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
-        "tag": "2.0.1",
-        "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/2.0.1",
-        "date": "2026-05-06"
-      }
+        "tag": "nightly-release",
+        "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/nightly-release",
+        "date": "2023-07-28"
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "metroidarch",
@@ -433,7 +467,7 @@
       "kind": "emulator-fork",
       "url": "https://github.com/Raekwon1603/super_metroid-android",
       "repo": "Raekwon1603/super_metroid-android",
-      "description": "",
+      "description": "early version",
       "games": [
         "super-metroid"
       ],
@@ -443,7 +477,8 @@
         "url": "https://github.com/Raekwon1603/super_metroid-android/releases/tag/v1.2",
         "date": "2026-09-08"
       },
-      "archived": true
+      "archived": true,
+      "pushedAt": "2026-09-08"
     },
     {
       "id": "metroidarch-new",
@@ -451,12 +486,18 @@
       "kind": "emulator-fork",
       "url": "https://github.com/Raekwon1603/RetroArch/tree/metroidarch-dual-screen",
       "repo": "Raekwon1603/RetroArch",
-      "description": "",
+      "description": "Cross-platform, sophisticated frontend for the libretro API. Licensed GPLv3.",
       "games": [
         "super-metroid"
       ],
       "checkedAt": "2026-11-08",
-      "branch": "metroidarch-dual-screen"
+      "branch": "metroidarch-dual-screen",
+      "pushedAt": "2026-10-03",
+      "latestRelease": {
+        "tag": "v1.0.2-debug2",
+        "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2",
+        "date": "2026-10-02"
+      }
     },
     {
       "id": "mgba",
@@ -489,7 +530,7 @@
       "kind": "port",
       "url": "https://github.com/samyost1/tmc-android",
       "repo": "samyost1/tmc-android",
-      "description": "",
+      "description": "Minish Cap dual-screen mod for the AYN Thor — bottom-screen map, quest status and touch inventory, all decoded from the ROM at runtime",
       "games": [
         "minish-cap"
       ],
@@ -498,7 +539,8 @@
         "tag": "v1.2",
         "url": "https://github.com/samyost1/tmc-android/releases/tag/v1.2",
         "date": "2026-08-19"
-      }
+      },
+      "pushedAt": "2026-08-19"
     },
     {
       "id": "modrinth-api",
@@ -539,9 +581,10 @@
       "kind": "directory",
       "url": "https://github.com/abduznik/awesome-android-native-ports",
       "repo": "abduznik/awesome-android-native-ports",
-      "description": "",
+      "description": "A curated list of native Android ports of PC and console games: source ports, decompilations and static recompilations",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-21"
     },
     {
       "id": "nethersx2",
@@ -549,9 +592,15 @@
       "kind": "emulator",
       "url": "https://github.com/Trixarian/NetherSX2-patch",
       "repo": "Trixarian/NetherSX2-patch",
-      "description": "",
+      "description": "Continuation of NetherSX2 based on AetherSX2 4248",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-09-22",
+      "latestRelease": {
+        "tag": "2.2n",
+        "url": "https://github.com/Trixarian/NetherSX2-patch/releases/tag/2.2n",
+        "date": "2025-12-25"
+      }
     },
     {
       "id": "opengameports",
@@ -569,16 +618,17 @@
       "kind": "port",
       "url": "https://github.com/OpenMW/openmw",
       "repo": "OpenMW/openmw",
-      "description": "",
+      "description": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
       "games": [
         "morrowind"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
-        "tag": "openmw-0.51.0",
-        "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-0.51.0",
-        "date": "2026-06-19"
-      }
+        "tag": "openmw-52-rc1",
+        "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-52-rc1",
+        "date": "2026-11-01"
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "openmw-ds",
@@ -595,7 +645,8 @@
         "tag": "v1.4.0",
         "url": "https://github.com/Josh-Daniels/OpenMW-DS/releases/tag/v1.4.0",
         "date": "2026-10-29"
-      }
+      },
+      "pushedAt": "2026-10-29"
     },
     {
       "id": "pokedaisy",
@@ -603,7 +654,7 @@
       "kind": "companion",
       "url": "https://github.com/lidor30/pokedaisy",
       "repo": "lidor30/pokedaisy",
-      "description": "",
+      "description": "A Game Boy, Game Boy Color and GBA player for Android handhelds with two screens or one, with a live companion for Pokémon games and ROM hacks.",
       "games": [
         "pokemon-emerald"
       ],
@@ -612,7 +663,8 @@
         "tag": "v1.4.0",
         "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.4.0",
         "date": "2026-11-03"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "portmaster",
@@ -642,7 +694,13 @@
       "repo": "kalasyan/recompa",
       "description": "Geplante Datenquelle (noch nicht angebunden).",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "v0.4.1",
+        "url": "https://github.com/kalasyan/recompa/releases/tag/v0.4.1",
+        "date": "2026-11-04"
+      }
     },
     {
       "id": "retroarch",
@@ -674,9 +732,15 @@
       "kind": "emulator",
       "url": "https://github.com/Vita3K/Vita3K-Android",
       "repo": "Vita3K/Vita3K-Android",
-      "description": "",
+      "description": "Public releases and CI for the Vita3K Android app",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2025-02-22",
+      "latestRelease": {
+        "tag": "v12",
+        "url": "https://github.com/Vita3K/Vita3K-Android/releases/tag/v12",
+        "date": "2024-06-06"
+      }
     },
     {
       "id": "wikidata",
@@ -694,7 +758,7 @@
       "kind": "launcher",
       "url": "https://github.com/ZalithLauncher/ZalithLauncher2",
       "repo": "ZalithLauncher/ZalithLauncher2",
-      "description": "",
+      "description": "A Minecraft: Java Edition Launcher for Android",
       "games": [
         "minecraft"
       ],
@@ -703,7 +767,8 @@
         "tag": "2.8.2",
         "url": "https://github.com/ZalithLauncher/ZalithLauncher2/releases/tag/2.8.2",
         "date": "2026-11-06"
-      }
+      },
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "zelda64",
@@ -711,7 +776,7 @@
       "kind": "port",
       "url": "https://github.com/Zelda64Recomp/Zelda64Recomp",
       "repo": "Zelda64Recomp/Zelda64Recomp",
-      "description": "",
+      "description": "Static recompilation of Majora's Mask (and soon Ocarina of Time) for PC (Windows/Linux/Mac)",
       "games": [
         "majoras-mask"
       ],
@@ -720,7 +785,8 @@
         "tag": "v1.2.2",
         "url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2",
         "date": "2025-08-27"
-      }
+      },
+      "pushedAt": "2026-09-25"
     }
   ]
 }
