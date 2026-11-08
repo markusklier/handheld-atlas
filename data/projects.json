@@ -1170,6 +1170,30 @@
         "tomb-raider"
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "libertyrecompandroid",
+      "name": "LibertyRecompAndroid",
+      "kind": "port",
+      "url": "https://github.com/vaduur/LibertyRecompAndroid",
+      "repo": "vaduur/LibertyRecompAndroid",
+      "description": "",
+      "games": [
+        "grand-theft-auto-iv"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "xhyn-iv",
+      "name": "XHYN IV",
+      "kind": "port",
+      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp",
+      "repo": "XHYN-PH/XHYN-IV-recomp",
+      "description": "",
+      "games": [
+        "grand-theft-auto-iv"
+      ],
+      "checkedAt": "2026-11-08"
     }
   ]
 }

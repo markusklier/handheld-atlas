@@ -20,6 +20,13 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2008,
+      "note": "Jahresergänzung: Die PC-Fassung erschien 2008. Für aktuelle Android-Einrichtungen ist die unten separat aufgeführte Complete Edition zweckmäßiger: FusionFix unterstützt alte Builds nur mit zusätzlichem Legacy Addon.",
+      "traits": [
+        "controller",
+        "mods",
+        "widescreen"
       ]
     },
     {
@@ -36,6 +43,33 @@
       "type": "release",
       "platforms": [
         "Xbox 360"
+      ],
+      "year": 2008,
+      "note": "Jahresergänzung: Veröffentlichung am 29. April 2008. Durch LibertyRecompAndroid ist diese Fassung nun auch als Datenbasis für einen nativen Android-Spielweg interessant; dessen konkrete Regions- und Update-Anforderungen stehen beim Spielweg. ([ir.take2games.com](https://ir.take2games.com/static-files/a30ac581-38d0-4841-8753-0f7015521faf?utm_source=openai))",
+      "traits": [
+        "controller",
+        "widescreen"
+      ]
+    },
+    {
+      "id": "complete-2020",
+      "name": "Grand Theft Auto IV: The Complete Edition – PC-Neuauflage",
+      "type": "rerelease",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "mods",
+        "widescreen"
+      ],
+      "note": "Die Neuauflage von 2020 enthält das Hauptspiel und beide Episoden; Games for Windows Live und der ursprüngliche PC-Mehrspieler wurden entfernt. Sie ist die relevante Kauf- und Modding-Fassung für GameNative, nicht lediglich eine unveränderte Sammlung. ([gamedeveloper.com](https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support?utm_source=openai))",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support"
+        }
       ]
     }
   ],
@@ -89,9 +123,148 @@
       ],
       "checkedAt": "2026-11-08",
       "release": "pc",
-      "reports": [],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1xbgmrm/repost_after_taken_down_best_way_to_play_gta_iv/",
+          "device": "AYN Odin 2 mit 12 GB RAM; Retroid Pocket 6 mit 8 GB RAM",
+          "summary": "Der Verfasser berichtet von gutem Spielbetrieb mit bekannter GameNative-Konfiguration, FusionFix und Mjolnir IV sowie längeren Sitzungen auf beiden Geräten.",
+          "date": "2026-11-08"
+        }
+      ],
       "performance": []
+    },
+    {
+      "id": "ai-libertyrecompandroid-native-xbox-360-rekompilierung",
+      "name": "LibertyRecompAndroid – native Xbox-360-Rekompilierung",
+      "kind": "recomp",
+      "release": "xbox-360",
+      "runtime": "Native ARM64-Rekompilierung mit Vulkan und auswählbarem Grafiktreiber",
+      "projects": [
+        "libertyrecompandroid"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "fps-cap",
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump der US-/NTSC-U-Xbox-360-Disc von GTA IV",
+        "Dazugehöriges Title Update 8, Version 0.0.8.5",
+        "64-Bit-Android ab Version 10 und kompatibles Snapdragon-/Adreno-Gerät",
+        "Etwa 15 GB freier Speicher für die Installation; 8 GB RAM empfohlen"
+      ],
+      "benefit": "Führt die rekompilierte Xbox-360-Fassung direkt auf ARM64 aus, ohne Windows-Laufzeit. Der Entwickler dokumentiert gespielte frühe Missionen, freies Fahren und persistente Spielstände auf dem Retroid Pocket 5. ([github.com](https://github.com/vaduur/LibertyRecompAndroid))",
+      "caveat": "Experimentell: gelegentliche Abstürze und fehlende einzelne Lichteffekte sind bekannt; Episoden und Online-Mehrspieler sind auf Android ungetestet. Nur die US-Disc ist verifiziert, das PAL-Update 0.0.8.6 wird abgewiesen.",
+      "steps": [
+        "Die Android-App aus den offiziellen Projekt-Releases installieren.",
+        "Im Launcher den eigenen US-Disc-Dump und das passende Title Update 8 auswählen.",
+        "Die Installation im Launcher durchführen und zunächst den mitgelieferten beziehungsweise automatisch gewählten Treiber verwenden.",
+        "Mit dem Handheld-Controller starten und wegen möglicher Abstürze regelmäßig speichern."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/vaduur/LibertyRecompAndroid"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AndroidNativePorts/comments/1x0uuit/gta_iv_native_port_running_on_rp5/",
+          "device": "Retroid Pocket 5",
+          "summary": "Der Maintainer demonstriert den nativen Port auf dem RP5; die Diskussion zeigt zugleich treiberabhängige Startprobleme auf anderen Geräten.",
+          "date": "2026-11-08"
+        },
+        {
+          "url": "https://www.reddit.com/r/AndroidNativePorts/comments/1x0uuit/gta_iv_native_port_running_on_rp5/",
+          "device": "AYN Odin 3",
+          "summary": "Ein Nutzer bestätigt den Spielstart mit einem passenden Treiber, ohne damit einen vollständigen Durchlauf zu belegen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-xhyn-iv-bedienungsorientierter-libertyrecompandroid-fork",
+      "name": "XHYN IV – bedienungsorientierter LibertyRecompAndroid-Fork",
+      "kind": "recomp",
+      "release": "xbox-360",
+      "runtime": "LibertyRecompAndroid-Fork für ARM64-Android",
+      "projects": [
+        "xhyn-iv"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "fps-cap",
+        "mods",
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener US-Xbox-360-Disc-Dump von GTA IV",
+        "Passendes Title Update 8, Version 0.0.8.5",
+        "Android ab Version 10, ARM64 und Vulkan 1.2",
+        "Etwa 15 GB freier Installationsspeicher; 8 GB RAM empfohlen"
+      ],
+      "benefit": "Ergänzt den Basisport um controllerbedienbare Menüs, anpassbare Touch-Layouts, Controller-Abstimmung, Spielstandsicherungen und einen Manager für kompatible Spieldatei-Mods.",
+      "caveat": "Testveröffentlichung, keine belegte Leistungssteigerung gegenüber dem Basisport. Beide Apps führen getrennte Spielstände und Einstellungen; ein belastbarer Thor-Erfahrungsbericht ist hier nicht hinterlegt.",
+      "steps": [
+        "Die App aus den offiziellen Projekt-Releases installieren.",
+        "Unter Game files den eigenen Disc-Dump und Title Update 8 auswählen und installieren.",
+        "Controller und Grafiktreiber zunächst mit konservativen Einstellungen testen.",
+        "Spielstände vor App-Wechseln oder Experimenten sichern."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/XHYN-PH/XHYN-IV-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "mods": [
+    {
+      "id": "fusionfix",
+      "name": "FusionFix",
+      "category": "Fehlerbehebung und Darstellung",
+      "url": "https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix",
+      "edition": "PC: The Complete Edition; alte PC-Builds nur mit zusätzlichem Legacy Addon",
+      "description": "Umfangreiche Korrekturen für die PC-Fassung; der Einsatz über GameNative ist auf Odin 2 und Retroid Pocket 6 dokumentiert. Unter Wine muss der vom Projekt beschriebene DLL-Override eingerichtet werden; dies ist kein Mod für die Xbox-360-Rekompilierung. ([github.com](https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix))",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "mjolnir-iv",
+      "name": "Mjolnir IV",
+      "category": "CPU- und Frametime-Korrekturen",
+      "url": "https://github.com/llamacomma/Mjolnir_IV",
+      "edition": "PC: The Complete Edition, insbesondere Steam-Build 1.2.0.59",
+      "description": "Adressiert unter anderem die CPU-Kernbindung und eine Busy-Wait-Schleife; ein Android-Handheld-Bericht dokumentiert den gemeinsamen Einsatz mit FusionFix über GameNative. Bei vorhandenem ASI-Loader die ASI-Variante verwenden, statt eine zweite dinput8.dll darüberzukopieren; keinen pauschalen Leistungsgewinn erwarten. ([github.com](https://github.com/llamacomma/Mjolnir_IV))",
+      "verification": "ai-unverified"
+    }
+  ]
 }

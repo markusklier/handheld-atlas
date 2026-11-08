@@ -1,6 +1,54 @@
 {
   "entries": [
     {
+      "type": "route-updated",
+      "text": "Neue Fassung: Grand Theft Auto IV: The Complete Edition – PC-Neuauflage (KI-Recherche)",
+      "url": "https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
+      "type": "route-updated",
+      "text": "1 Erfahrungsbericht(e) zu Grand Theft Companion (PC via Winlator/GameNative) (KI-Recherche)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1xbgmrm/repost_after_taken_down_best_way_to_play_gta_iv/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: LibertyRecompAndroid – native Xbox-360-Rekompilierung (Xbox 360, KI-Recherche)",
+      "url": "https://github.com/vaduur/LibertyRecompAndroid",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: XHYN IV – bedienungsorientierter LibertyRecompAndroid-Fork (Xbox 360, KI-Recherche)",
+      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: FusionFix (KI-Recherche)",
+      "url": "https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Mjolnir IV (KI-Recherche)",
+      "url": "https://github.com/llamacomma/Mjolnir_IV",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "grand-theft-auto-iv"
+    },
+    {
       "date": "2026-11-08",
       "type": "removed",
       "by": "agent",
