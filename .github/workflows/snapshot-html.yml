@@ -9,6 +9,8 @@ on:
       - 'scripts/build.py'
       - 'data/**'
       - '.github/workflows/snapshot-html.yml'
+      - '.github/workflows/enrich-game-media.yml'
+      - '.github/workflows/verify-sources.yml'
   workflow_dispatch:
 permissions:
   contents: write
