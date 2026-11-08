@@ -801,7 +801,13 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-21",
+      "latestRelease": {
+        "tag": "build-9",
+        "url": "https://github.com/Leymo0/ThorCraft/releases/tag/build-9",
+        "date": "2026-10-21"
+      }
     },
     {
       "id": "zomboidds",
@@ -813,7 +819,13 @@
       "games": [
         "project-zomboid"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-26",
+      "latestRelease": {
+        "tag": "v1.5.1",
+        "url": "https://github.com/Space001000/ZomboidDS/releases/tag/v1.5.1",
+        "date": "2026-10-26"
+      }
     },
     {
       "id": "pokeemerald-ds",
@@ -825,7 +837,13 @@
       "games": [
         "pokemon-emerald"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-14",
+      "latestRelease": {
+        "tag": "v0.6.0",
+        "url": "https://github.com/Goldoire/pokeemerald-dualscreen/releases/tag/v0.6.0",
+        "date": "2026-10-13"
+      }
     },
     {
       "id": "wiids",
@@ -839,7 +857,13 @@
         "new-super-mario-bros-wii",
         "super-mario-sunshine"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-30",
+      "latestRelease": {
+        "tag": "v1.1.2",
+        "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.1.2",
+        "date": "2026-10-30"
+      }
     },
     {
       "id": "dao-duo",
@@ -851,7 +875,13 @@
       "games": [
         "dragon-age-origins"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "v0.2.1-alpha",
+        "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.1-alpha",
+        "date": "2026-11-08"
+      }
     },
     {
       "id": "grand-theft-companion",
@@ -864,7 +894,13 @@
         "grand-theft-auto-iv",
         "grand-theft-auto-v"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-04",
+      "latestRelease": {
+        "tag": "v1.1.0",
+        "url": "https://github.com/BrianJr03/GrandTheftCompanion/releases/tag/v1.1.0",
+        "date": "2026-11-04"
+      }
     },
     {
       "id": "sa-companion",
@@ -876,7 +912,13 @@
       "games": [
         "grand-theft-auto-san-andreas"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-04",
+      "latestRelease": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/Gamersmood/SA-Companion/releases/tag/v1.0.0",
+        "date": "2026-11-04"
+      }
     },
     {
       "id": "hunters-recomp",
@@ -888,7 +930,13 @@
       "games": [
         "metroid-prime-hunters"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-09-06",
+      "latestRelease": {
+        "tag": "v0.2.5",
+        "url": "https://github.com/aabrole/HuntersRecomp/releases/tag/v0.2.5",
+        "date": "2026-09-06"
+      }
     },
     {
       "id": "rerac-android",
@@ -900,7 +948,13 @@
       "games": [
         "ratchet-and-clank"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-22",
+      "latestRelease": {
+        "tag": "v1.1",
+        "url": "https://github.com/HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-/releases/tag/v1.1",
+        "date": "2026-10-22"
+      }
     },
     {
       "id": "pt-android",
@@ -912,7 +966,13 @@
       "games": [
         "p-t"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-12",
+      "latestRelease": {
+        "tag": "android-v0.2.6",
+        "url": "https://github.com/StoneColdOS/pt-pc/releases/tag/android-v0.2.6",
+        "date": "2026-10-12"
+      }
     },
     {
       "id": "am2r-autopatcher",
@@ -924,7 +984,13 @@
       "games": [
         "am2r"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-01",
+      "latestRelease": {
+        "tag": "v1.5.5.14",
+        "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android/releases/tag/v1.5.5.14",
+        "date": "2026-11-01"
+      }
     },
     {
       "id": "sephiria-companion",
@@ -936,7 +1002,13 @@
       "games": [
         "sephiria"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-17",
+      "latestRelease": {
+        "tag": "v0.4.2",
+        "url": "https://github.com/SibiryakovSA/SephiriaCompanion/releases/tag/v0.4.2",
+        "date": "2026-10-17"
+      }
     },
     {
       "id": "delta-touch",
@@ -961,7 +1033,13 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-01",
+      "latestRelease": {
+        "tag": "v0.3.0",
+        "url": "https://github.com/erikvanhoolst/minecraft-companion/releases/tag/v0.3.0",
+        "date": "2026-10-07"
+      }
     },
     {
       "id": "starship-android",
@@ -973,7 +1051,13 @@
       "games": [
         "star-fox-64"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-08-04",
+      "latestRelease": {
+        "tag": "v2.0.0",
+        "url": "https://github.com/izzy2lost/Starship/releases/tag/v2.0.0",
+        "date": "2026-08-04"
+      }
     },
     {
       "id": "xash3d-fwgs",
@@ -985,7 +1069,13 @@
       "games": [
         "half-life"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-11-06",
+      "latestRelease": {
+        "tag": "continuous",
+        "url": "https://github.com/FWGS/xash3d-fwgs/releases/tag/continuous",
+        "date": "2026-11-06"
+      }
     },
     {
       "id": "porthub-catalog",
@@ -995,7 +1085,8 @@
       "repo": "orev7s/porthub-catalog",
       "description": "JSON-Feed (games.json, laut README 1239 Einträge) mit Android-Ports, Decomps, Recomps und Engine-Reimplementierungen; nur Links, keine Spieldaten. Einträge aus mehreren Drittquellen zusammengeführt – vor Übernahme Upstream prüfen.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-31"
     },
     {
       "id": "porthub",
@@ -1005,7 +1096,8 @@
       "repo": "orev7s/porthub",
       "description": "Android-App (Kotlin/Compose) zum Durchsuchen des PortHub-Katalogs; frühes Stadium, noch keine Releases.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-31"
     },
     {
       "id": "android-ports-master",
@@ -1015,7 +1107,8 @@
       "repo": "keika-sy/android-ports-master",
       "description": "Katalog und Dashboard nativer Android-Ports (laut README 866 Einträge zu 702 Spielen) als CSV/JSON; keine Spieldaten.",
       "games": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "pushedAt": "2026-10-24"
     }
   ]
 }

@@ -1,6 +1,158 @@
 {
   "leads": [
     {
+      "url": "https://github.com/zander2k1/groovy-openmw",
+      "title": "zander2k1/groovy-openmw (Fork von OpenMW/openmw)",
+      "excerpt": "Groovy openmw",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/stascake/ayn-ship-eta",
+      "title": "stascake/ayn-ship-eta",
+      "excerpt": "Unofficial AYN Thor / Odin 3 ship date estimator based on the shipment dashboard history",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/gevky/DuoDash",
+      "title": "gevky/DuoDash",
+      "excerpt": "Control center for Android handhelds and the Retroid Dual Screen, with saved display profiles for TVs, glasses and add-on screens.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/Unpiloted0852/DashCam",
+      "title": "Unpiloted0852/DashCam",
+      "excerpt": "Dual-camera Android dashcam with GPS/speed/altitude stamp, far-focus lock, loop recording and self-update",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/infosave2007/cmf",
+      "title": "infosave2007/cmf",
+      "excerpt": "One backbone, many specialists. CMF is a self-describing, memory-mappable single-file format and a dependency-free runtime for quantized LLMs — zero-copy execution on CPU or GPU (Vulkan · Metal · DX12) that overlays task-specialized skills onto one shared model, with no per-model duplication.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/beastspirit2005/Digital-Rakshak",
+      "title": "beastspirit2005/Digital-Rakshak",
+      "excerpt": "An AI-powered Cyber Threat Intelligence Platform featuring a topological multi-agent swarm, spatial threat mapping, Neo4j crime syndicate clustering, and a local air-gapped PyTorch framework for secure offline currency & cyber investigation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/daftAI2026/awesome-jev",
+      "title": "daftAI2026/awesome-jev",
+      "excerpt": "Curated TypeSafe Jev / System One GitHub projects, open-source alternatives, and Jev news",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/gmilano/education-kb",
+      "title": "gmilano/education-kb",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/smp971/nokia-6300-android81",
+      "title": "smp971/nokia-6300-android81",
+      "excerpt": "Experimental Android 8.1 Go bring-up for Nokia 6300 4G TA-1286: sources, build scripts and diagnostics",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/balch/orphic-fm-app",
+      "title": "balch/orphic-fm-app",
+      "excerpt": "An 12-oscillator synthesizer built with Kotlin Multiplatform, targeting Desktop and Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/everett6/piquant-live-optimized",
+      "title": "everett6/piquant-live-optimized",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/sseengal/idleRPG",
+      "title": "sseengal/idleRPG",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/aandujar98/xora",
+      "title": "aandujar98/xora",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/tjorim/daynest",
+      "title": "tjorim/daynest",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/automateyournetwork/netclaw",
+      "title": "automateyournetwork/netclaw",
+      "excerpt": "An AI agent that claws through your network",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/joakimeriksson/fm1-dock",
+      "title": "joakimeriksson/fm1-dock",
+      "excerpt": "One FM-1 firmware, installed once: synths as modules in flash slots, deployed over MIDI (based on Dinghy, GPL-3.0)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/timerloggedout-spec/termux-monorepo",
+      "title": "timerloggedout-spec/termux-monorepo",
+      "excerpt": "Engineering 🧫 🥼 Sciences 🔭 🧪 Applied Research",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/FranciscoArias1974/mi-boveda-segura",
+      "title": "FranciscoArias1974/mi-boveda-segura",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/nordstjernen-web/nordstjernen-sol-browser",
+      "title": "nordstjernen-web/nordstjernen-sol-browser",
+      "excerpt": "Nordstjernen Sol web browser. A open source web browser with dual GPL 3+ or NSL license, written from scratch in 2026.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-08"
+    },
+    {
       "url": "https://www.reddit.com/r/SBCGaming/comments/1xk8j1o/retroforge_a_free_opensource_android_front_end/",
       "title": "RetroForge: a free, open-source Android front end I've been building (beta)",
       "excerpt": "",
@@ -5238,8 +5390,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-08T19:30:37Z",
-    "newLeads": 215,
-    "newEvents": 12
+    "lastRun": "2026-11-08T20:05:36Z",
+    "newLeads": 19,
+    "newEvents": 15
   }
 }

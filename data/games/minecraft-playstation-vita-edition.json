@@ -6,5 +6,9 @@
     "PlayStation Vita"
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/93/4J_Studios.svg/960px-4J_Studios.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "https://en.wikipedia.org/wiki/Minecraft_legacy_console_editions"
+  }
 }

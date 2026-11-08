@@ -6,5 +6,41 @@
     "PC"
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22300/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/22300/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006107.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006108.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006109.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006110.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006111.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22300/0000006112.1920x1080.jpg?t=1732208474",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22300/"
+    }
+  ]
 }

@@ -2,6 +2,159 @@
   "entries": [
     {
       "date": "2026-11-08",
+      "type": "release",
+      "text": "Xash3D FWGS continuous (Vorabversion) veröffentlicht.",
+      "project": "xash3d-fwgs",
+      "games": [
+        "half-life"
+      ],
+      "url": "https://github.com/FWGS/xash3d-fwgs/releases/tag/continuous"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Starship (Android, izzy2lost) v2.0.0 veröffentlicht.",
+      "project": "starship-android",
+      "games": [
+        "star-fox-64"
+      ],
+      "url": "https://github.com/izzy2lost/Starship/releases/tag/v2.0.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Minecraft Companion (Eden Duo) v0.3.0 veröffentlicht.",
+      "project": "minecraft-eden-companion",
+      "games": [
+        "minecraft"
+      ],
+      "url": "https://github.com/erikvanhoolst/minecraft-companion/releases/tag/v0.3.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Sephiria Companion v0.4.2 veröffentlicht.",
+      "project": "sephiria-companion",
+      "games": [
+        "sephiria"
+      ],
+      "url": "https://github.com/SibiryakovSA/SephiriaCompanion/releases/tag/v0.4.2"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "AM2R Autopatcher für Android v1.5.5.14 veröffentlicht.",
+      "project": "am2r-autopatcher",
+      "games": [
+        "am2r"
+      ],
+      "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android/releases/tag/v1.5.5.14"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "P.T. Android (pt-pc) android-v0.2.6 (Vorabversion) veröffentlicht.",
+      "project": "pt-android",
+      "games": [
+        "p-t"
+      ],
+      "url": "https://github.com/StoneColdOS/pt-pc/releases/tag/android-v0.2.6"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "ReRAC Android + Thor Dual Screen Mod v1.1 veröffentlicht.",
+      "project": "rerac-android",
+      "games": [
+        "ratchet-and-clank"
+      ],
+      "url": "https://github.com/HighDrexler/rerac-Android-APK-and-Ayn-Thor-Dual-Screen-Mod-Beta-/releases/tag/v1.1"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Hunters Recomp v0.2.5 veröffentlicht.",
+      "project": "hunters-recomp",
+      "games": [
+        "metroid-prime-hunters"
+      ],
+      "url": "https://github.com/aabrole/HuntersRecomp/releases/tag/v0.2.5"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "SA-Companion v1.0.0 veröffentlicht.",
+      "project": "sa-companion",
+      "games": [
+        "grand-theft-auto-san-andreas"
+      ],
+      "url": "https://github.com/Gamersmood/SA-Companion/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Grand Theft Companion v1.1.0 veröffentlicht.",
+      "project": "grand-theft-companion",
+      "games": [
+        "grand-theft-auto-iv",
+        "grand-theft-auto-v"
+      ],
+      "url": "https://github.com/BrianJr03/GrandTheftCompanion/releases/tag/v1.1.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "DAO-Duo (Dragon Age: Origins Recomp Android) v0.2.1-alpha (Vorabversion) veröffentlicht.",
+      "project": "dao-duo",
+      "games": [
+        "dragon-age-origins"
+      ],
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.1-alpha"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "WiiDS v1.1.2 (Vorabversion) veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.1.2"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "Pokémon Emerald Dual Screen v0.6.0 veröffentlicht.",
+      "project": "pokeemerald-ds",
+      "games": [
+        "pokemon-emerald"
+      ],
+      "url": "https://github.com/Goldoire/pokeemerald-dualscreen/releases/tag/v0.6.0"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "ZomboidDS v1.5.1 veröffentlicht.",
+      "project": "zomboidds",
+      "games": [
+        "project-zomboid"
+      ],
+      "url": "https://github.com/Space001000/ZomboidDS/releases/tag/v1.5.1"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "release",
+      "text": "ThorCraft build-9 veröffentlicht.",
+      "project": "thorcraft",
+      "games": [
+        "minecraft"
+      ],
+      "url": "https://github.com/Leymo0/ThorCraft/releases/tag/build-9"
+    },
+    {
+      "date": "2026-11-08",
       "type": "route-added",
       "by": "agent",
       "text": "Neuer Spielweg: Delta Touch (GZDoom, PrBoom+ u. a.) mit eigener DOOM.WAD (KI-Fund)",
