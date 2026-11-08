@@ -6,6 +6,7 @@ on:
       - 'src/**'
       - 'scripts/build.py'
       - 'data/**'
+      - '.github/workflows/snapshot-html.yml'
   workflow_dispatch:
 permissions:
   contents: write
