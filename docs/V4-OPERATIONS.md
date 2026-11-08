@@ -13,7 +13,7 @@ This is an experimental *source discovery system*, not a catalogue of proven com
 
 GitHub Actions works for private repositories subject to your plan's Actions limits. A private GitHub Pages site may require paid plan access. For an offline test, run the **Checks** workflow and download the `handheld-atlas-preview` ZIP artifact. Extract it and serve it with `python3 -m http.server 8765 -d dist`, then open `http://localhost:8765`.
 
-For Pages, configure Settings → Pages → Source → GitHub Actions, then run **Deploy PWA to GitHub Pages**. For a non-public test, do not switch your repository visibility to public just to use Pages.
+For Pages, configure Settings → Pages → Source → GitHub Actions, add Actions **repository variable** `ATLAS_ENABLE_PAGES` set to `true`, then run **Deploy PWA to GitHub Pages**. The deploy job is intentionally skipped until that variable is enabled, so private preview tests have no misleading red Pages runs. For a non-public test, do not switch your repository visibility to public just to use Pages.
 
 ## Scheduled runs / manually focusing on any game
 
