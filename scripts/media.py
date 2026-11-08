@@ -181,7 +181,7 @@ def fill_steam(fetch=get, pause=0.7):
 def wikipedia_cover(title, fetch=get):
     """Both spellings in one request; Wikimedia rate-limits bursts (HTTP 429)."""
     q = urllib.parse.urlencode({'action': 'query', 'titles': f'{title} (video game)|{title}', 'prop': 'pageimages|description',
-                                'piprop': 'thumbnail', 'pithumbsize': 600, 'redirects': 1, 'format': 'json',
+                                'piprop': 'thumbnail', 'pithumbsize': 600, 'pilicense': 'any', 'redirects': 1, 'format': 'json',
                                 'formatversion': 2, 'maxlag': 5})
     res = fetch('https://en.wikipedia.org/w/api.php?' + q, as_json=True)
     pages = sorted(res.get('query', {}).get('pages', []), key=lambda p: '(video game)' not in p.get('title', ''))
