@@ -1,6 +1,878 @@
 {
   "schemaVersion": 1,
-  "updatedAt": null,
+  "updatedAt": "2026-11-08T17:04:26Z",
   "notice": "Covers and original screenshots from metadata sources. Publisher game artwork rights are NOT public domain. Always label sources. No per-device screenshots implied.",
-  "games": {}
+  "games": {
+    "balatro": {
+      "title": "Balatro",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/2379780/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_3be65a7dd3be072d567e11883d208861a7e959fa.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_e32ac94d7d1d6be7dd015d78f2b52aeb4cc282ed.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_b8455573ec1fd2c9412f22bd8df05f2d8027a95b.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_075cb45cbfa97d8139fb11f21667d6e35f908640.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2379780/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Balatro",
+      "reviewedAt": "2026-11-08T17:04:22Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "baldur-s-gate-3": {
+      "title": "Baldur's Gate 3",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/1086940/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_c73bc54415178c07fef85f54ee26621728c77504.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_73d93bea842b93914d966622104dcb8c0f42972b.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_cf936d31061b58e98e0c646aee00e6030c410cda.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_b6a6ee6e046426d08ceea7a4506a1b5f44181543.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_6b8faba0f6831a406ce015648958da9612d14dbb.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_8fc5eba770b4a1639b31666908bdd2bbc1aa2ae4.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1086940/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Baldur's Gate 3",
+      "reviewedAt": "2026-11-08T17:04:22Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "celeste": {
+      "title": "Celeste",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/504230/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_1ad297c2044cdcf450ee83e56350cafb590da755.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_03bfe6bd5ddac7f747c8d2aa1a4f82cfd53c6dcb.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_4b0f0222341b64a37114033aca9994551f27c161.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_1012b11ad364ad6c138a25a654108de28de56c5f.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_832ef0f27c3d6efdaa4b5d1cc896dce0999bc9e8.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/ss_1098b655a622720cfd549b104736a4eca8948100.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/504230/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Celeste",
+      "reviewedAt": "2026-11-08T17:04:22Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "cuphead": {
+      "title": "Cuphead",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/268910/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_e3096a5555cb77d88db165c83d5ef3a24af1354a.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_615455299355eaf552c638c7ea5b24a8b46e02dd.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_483fb089be0093beeef03525276803a9ca4f66a1.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_48477e4a865827aa0be6a44f00944d8d2a3e5eb9.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_380296effbf1073bbedfd480e50cf246eb542b66.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_aefad3850c3bc04000cbe0d620bea6807e0a0331.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/268910/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Cuphead",
+      "reviewedAt": "2026-11-08T17:04:23Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "cyberpunk-2077": {
+      "title": "Cyberpunk 2077",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/1091500/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/900f9bda156599fcd235f08ffb64667f9baa1afe/ss_900f9bda156599fcd235f08ffb64667f9baa1afe.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc/ss_f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0ed9487e305983d60646ba163a3d8970efb6b347/ss_0ed9487e305983d60646ba163a3d8970efb6b347.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_0e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f39ac45fd0d29c687b0c822b704f93a0764ce3e0/ss_f39ac45fd0d29c687b0c822b704f93a0764ce3e0.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1091500/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Cyberpunk 2077",
+      "reviewedAt": "2026-11-08T17:04:23Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "doom-3": {
+      "title": "DOOM 3",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/9050/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/9050/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002388.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002387.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002383.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002384.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002385.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9050/0000002386.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/9050/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "DOOM 3",
+      "reviewedAt": "2026-11-08T17:04:23Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "doom-ii": {
+      "title": "DOOM II",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/2300/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002380.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2300/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002379.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2300/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002378.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2300/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002381.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2300/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002382.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/2300/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "DOOM II",
+      "reviewedAt": "2026-11-08T17:04:24Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "factorio": {
+      "title": "Factorio",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/427520/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_36e4d8e5540805f5ed492d24d784ed9ba661752b.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_171f398a8e347fad650a9c1b6c3b77c612781510.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_0bf814493f247b6baa093511b46c352cf9e98435.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_2533e54b0bd90a29adbedb60108ed277536ad445.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_192864c00fc38b5ef97b97ca7fa655a9aed7c0da.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_e301bde0fc0e996ba93e92639cd49dd90ae47b36.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/427520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Factorio",
+      "reviewedAt": "2026-11-08T17:04:24Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "fallout-4": {
+      "title": "Fallout 4",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377160/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/377160/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_f7861bd71e6c0c218d8ff69fb1c626aec0d187cf.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_910437ac708aed7c028f6e43a6224c633d086b0a.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_f649b8e57749f380cca225db5074edbb1e06d7f5.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_c310f858e6a7b02ffa21db984afb0dd1b24c1423.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_5e2d136759e0ff4e0d74940fffc9c64e8cdcd833.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/ss_c6b798424a93617b4b825aea3bcd9547c0b0a5ce.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/377160/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Fallout 4",
+      "reviewedAt": "2026-11-08T17:04:24Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "fallout-new-vegas": {
+      "title": "Fallout: New Vegas",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/22380/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/22380/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_62f8d0b006935ff6de7fe276f713e7d15e579bc9.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_ec8a28942fcb5cb15718f949ab81124932a5084d.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_f703adcb9aa1d718a39288adf7d2e1b4dc0e568a.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_e05e3697347c076d3382188bcf883339cf6144d5.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_e430a2c8a841d4bc32bd8207223a91e3dbe0cdea.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/ss_7cf86a5e4c98db502ca36444d883f94c4147f5d2.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/22380/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Fallout: New Vegas",
+      "reviewedAt": "2026-11-08T17:04:25Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "hades": {
+      "title": "Hades",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/1145360/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_68300459a8c3daacb2ec687adcdbf4442fcc4f47.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_bcb499a0dd001f4101823f99ec5094d2872ba6ee.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_8e07e477fa7ff2f88c8984bc89b9652a655da0e9.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_34e6660705cfe47d2b2f95189c37f7cb77f75ca6.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1145360/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Hades",
+      "reviewedAt": "2026-11-08T17:04:25Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "half-life": {
+      "title": "Half-Life",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/70/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002354.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002342.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002344.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002345.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002352.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/70/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Half-Life",
+      "reviewedAt": "2026-11-08T17:04:25Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "half-life-2": {
+      "title": "Half-Life 2",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/220/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_47b4105b396de408cb8b6b4f358c69e5e2a62dae.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_0e499071a60a20b24149ad65a8edb769250f2921.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ffb00abd45012680e4f209355ec81f961b6dd1fb.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_b822a29b3804e05ab9517cac99a5d978d109a32b.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_a2aeefb3ad34c46af5c381ff03ac0973892f5530.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/220/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Half-Life 2",
+      "reviewedAt": "2026-11-08T17:04:25Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "hollow-knight": {
+      "title": "Hollow Knight",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/367520/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_62e10cf506d461e11e050457b08aa0e2a1c078d0.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_bd76bd88bc5334ee56ae3d5f0d8dec4455e8e3b8.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_33a645903d6dd9beec39f272a3daf57174a6cc26.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/367520/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Hollow Knight",
+      "reviewedAt": "2026-11-08T17:04:25Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    },
+    "minecraft-dungeons": {
+      "title": "Minecraft Dungeons",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672970/library_600x900_2x.jpg",
+        "portrait": true,
+        "caption": "Offizielle Steam-Bibliotheksgrafik",
+        "sourceUrl": "https://store.steampowered.com/app/1672970/",
+        "rights": "publisher-artwork",
+        "type": "game-cover"
+      },
+      "screenshots": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/ss_46ee31494b5d144d5ef6670cb5a1564abbc26fab.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1672970/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/ss_73b488e696e3ae45f5d0a5750de524c231dab8a2.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1672970/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/ss_9cb3efba6636610ec78eddd550147ed5ee7be3a0.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1672970/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/ss_52883e4263c8f8bca14236118ab62c0f70f2c8d0.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1672970/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/ss_65f1edd2c869ba7bb98da64f263ec1a8b591d645.1920x1080.jpg",
+          "caption": "Originalspiel · offizielles Steam-Store-Bild",
+          "sourceUrl": "https://store.steampowered.com/app/1672970/",
+          "rights": "publisher-artwork",
+          "type": "original-game"
+        }
+      ],
+      "provenance": "steam-store",
+      "verifiedName": "Minecraft Dungeons",
+      "reviewedAt": "2026-11-08T17:04:26Z",
+      "notice": "Spiel-Artwork ist nicht gemeinfrei; nur Verweis auf externen Anbieter."
+    }
+  }
 }
