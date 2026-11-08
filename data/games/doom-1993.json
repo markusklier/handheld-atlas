@@ -3,7 +3,9 @@
   "title": "DOOM (1993)",
   "franchise": "Doom",
   "platforms": [
-    "PC"
+    "PC",
+    "PlayStation",
+    "Android"
   ],
   "genre": "Ego-Shooter",
   "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
@@ -44,6 +46,64 @@
         {
           "label": "Quelle: PC Gamer",
           "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
+        }
+      ]
+    },
+    {
+      "id": "ultimate",
+      "name": "The Ultimate DOOM",
+      "type": "rerelease",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1995,
+      "traits": [
+        "mods"
+      ],
+      "note": "Erweitert das Original um die vierte Episode „Thy Flesh Consumed“ mit neun zusätzlichen Levels. Die passende Wahl für die vollständige klassische DOOM-I-Kampagne und als Datenbasis für Source-Ports.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/707/the-ultimate-doom/"
+        }
+      ]
+    },
+    {
+      "id": "psx",
+      "name": "DOOM (PlayStation)",
+      "type": "port",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1995,
+      "traits": [
+        "controller"
+      ],
+      "note": "Die Konsolenfassung setzt auf Aubrey Hodges’ unheimliche Ambient-Musik und überarbeitete Levels. Interessant als atmosphärisch eigenständige Alternative zur PC-Fassung, nicht bloß als Ersatz für diese.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.shacknews.com/article/117322/terraform-the-making-of-doom-64"
+        }
+      ]
+    },
+    {
+      "id": "android-2019",
+      "name": "DOOM – offizielle Android-Fassung",
+      "type": "android",
+      "platforms": [
+        "Android"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "note": "Bethesdas eigenständige Kauf-App enthält auch „Thy Flesh Consumed“ und benötigt keine separat bereitgestellte WAD. Sie ist weiterhin im Google Play Store gelistet; die dort genannten Änderungen betreffen die Kompatibilität mit modernem Android.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM"
         }
       ]
     }
@@ -102,6 +162,283 @@
       "release": "pc",
       "reports": [],
       "performance": []
+    },
+    {
+      "id": "ai-uzdoom-mit-echter-dual-screen-automap",
+      "name": "UZDoom mit echter Dual-Screen-Automap",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom; Android-Fork von andreyvelsk",
+      "projects": [
+        "andreyvelsk-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "native-arm",
+        "two-screens"
+      ],
+      "dualScreen": "Oben erscheint die Spielansicht ohne klassische Statusleiste; unten rendert die Engine gleichzeitig ihre echte Automap und Statusleiste. Der Fork wurde ausdrücklich für den AYN Thor gebaut und getestet.",
+      "requires": [
+        "Eigene DOOM.WAD aus der registrierten PC-Fassung oder The Ultimate DOOM",
+        "Für die gleichzeitige Kartenanzeige ein Android-Gerät mit zweitem Display"
+      ],
+      "benefit": "Nutzt beide Thor-Displays sinnvoll, ohne die Action zum Kartenlesen zu unterbrechen; die Karte stammt direkt aus der Engine und ist keine externe Nachbildung. ([github.com](https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases))",
+      "caveat": "Separater Community-Fork, kein Bestandteil von Delta Touch. Seine veröffentlichten Builds enthalten nur UZDoom; für den echten Controller muss das virtuelle Controller-Overlay abgeschaltet werden.",
+      "steps": [
+        "Den Android-Build aus den Releases des Forks installieren.",
+        "Die eigene DOOM.WAD auf das Gerät kopieren und ihren vollständigen Pfad unter „WAD file path“ eintragen.",
+        "Für die Thor-Steuerung die Bildschirmsteuerung deaktivieren und die Tasten im Spiel konfigurieren.",
+        "Mit aktivem zweiten Display „Launch game“ wählen; die Engine erkennt den zusätzlichen Bildschirm."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://preview.redd.it/43gg7bjmv2ih1.png?width=1188&format=png&auto=webp&s=6dac063f7d7f46e5fedbc18dc7fe520b4be4cf94",
+          "caption": "Dual-Screen-Handheld mit DOOM-Episodenmenü und Logos",
+          "source": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+          "credit": "andreyvelsk/com.mobilerpgpack.phone",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://preview.redd.it/cr4qeyuov2ih1.png?width=1111&format=png&auto=webp&s=4a3fd5a899ac977224e684e52c7a656cd2a776df",
+          "caption": "DOOM auf dem Thor: oben Spiel, unten Automap und Statusleiste",
+          "source": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+          "credit": "andreyvelsk/com.mobilerpgpack.phone",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/great_way_to_play_doom_on/",
+          "device": "AYN Thor",
+          "summary": "Der Spieler zeigt den Dual-Screen-Fork mit Live-Automap unten und verwendet zusätzlich WadFusion zur gemeinsamen Auswahl seiner offiziellen Kampagnen.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-bethesdas-offizielle-android-app",
+      "name": "Bethesdas offizielle Android-App",
+      "kind": "native",
+      "release": "android-2019",
+      "runtime": "Offizielle DOOM-App von Bethesda",
+      "projects": [
+        "doom-bethesda-softworks"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Kauf beziehungsweise vorhandene Google-Play-Lizenz der offiziellen DOOM-App",
+        "Ein vom Play Store als kompatibel eingestuftes Android-Gerät"
+      ],
+      "benefit": "Direkter Einstieg ohne WAD-Import: Das Spiel einschließlich vierter Episode ist bereits enthalten. ([play.google.com](https://play.google.com/store/apps/details?id=com.bethsoft.DOOM))",
+      "caveat": "Die Store-Freigabe muss auf dem konkreten Handheld geprüft werden. Ein Nutzer mit Pixel 7 Pro meldet Probleme beim Schießen mit einem 8BitDo-Controller; eine fehlerfreie Thor-Belegung ist damit nicht belegt.",
+      "steps": [
+        "Die offizielle Bethesda-App im Google Play Store auf dem Handheld aufrufen.",
+        "Bei Gerätekompatibilität kaufen beziehungsweise installieren.",
+        "Controller-Erkennung und insbesondere die Feuer-Taste vor dem längeren Spielen prüfen."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
+          "device": "Google Pixel 7 Pro mit 8BitDo-Gamepad",
+          "summary": "Eine verifizierte Rezension vom 8. Mai 2025 beschreibt grundsätzlich funktionierendes Spielen, aber eine fehlende beziehungsweise nicht funktionierende Feuer-Belegung am verwendeten Gamepad.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-psydoom-uber-classic-core-engines-hub",
+      "name": "PsyDoom über Classic Core / Engines Hub",
+      "kind": "source-port",
+      "release": "psx",
+      "runtime": "PsyDoom im Android-Launcher von sandstranger",
+      "projects": [
+        "classic-core-engines-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PlayStation-Ausgabe von DOOM",
+        "Selbst erstelltes Disc-Abbild mit zusammengehörigen CUE- und BIN-Dateien"
+      ],
+      "benefit": "Spielt die eigenständige PS1-Fassung über einen dafür entwickelten Port statt über einen allgemeinen PlayStation-Emulator; auf dem Retroid Pocket 5 werden Bild und Steuerung ausdrücklich positiv beschrieben. ([reddit.com](https://www.reddit.com/r/retroid/comments/1peijq0/tested_more_android_ports_on_rp5/?utm_source=openai))",
+      "caveat": "Die PC-WAD genügt nicht. Der Android-Port nennt Vulkan beziehungsweise einen älteren GLES-Renderer und warnt vor Leistungsproblemen auf Mali/PowerVR; ein eigener Thor-Test ist nicht belegt.",
+      "steps": [
+        "Den Android-Launcher aus dem Projekt installieren und PsyDoom auswählen.",
+        "Das eigene CUE/BIN-Abbild gemeinsam auf den Handheld kopieren und die CUE-Datei auswählen.",
+        "Für den physischen Controller das Bildschirm-Overlay im Launcher deaktivieren.",
+        "Renderer und Controller-Belegung prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/sandstranger/com.mobilerpgpack.phone"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/retroid/comments/1peijq0/tested_more_android_ports_on_rp5/",
+          "device": "Retroid Pocket 5",
+          "summary": "Der Tester berichtet, dass PsyDoom im damaligen Engines-Hub-Build gut aussieht und sich gut steuert; benötigt wird das eigene PSX-Abbild im CUE/BIN-Format.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-idtech4a-mit-uzdoom",
+      "name": "idTech4A++ mit UZDoom",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom in idTech4A++",
+      "projects": [
+        "idtech4a"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "mods",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene DOOM.WAD aus der PC-Fassung oder The Ultimate DOOM",
+        "Für zusätzliche Mods deren separat bezogene Dateien"
+      ],
+      "benefit": "Kostenloser, quelloffener zusätzlicher Android-Spielweg für das Original und moderne Mods; neuere Builds verwenden UZDoom anstelle des früher enthaltenen GZDoom. ([f-droid.org](https://f-droid.org/packages/com.karin.idTech4Amm/?utm_source=openai))",
+      "caveat": "Nicht mit einem DOOM-3-Spielweg verwechseln: Für DOOM von 1993 muss UZDoom gewählt werden. Ältere Anleitungen nennen noch GZDoom; außerdem dokumentiert der Issue-Tracker Grafikprobleme mit einer älteren GZDoom-Konfiguration auf Snapdragon Gen 2.",
+      "steps": [
+        "idTech4A++ über das Projekt oder F-Droid installieren.",
+        "Die eigene WAD in das konfigurierte Spieleverzeichnis kopieren.",
+        "Im Spielwähler UZDoom auswählen und die WAD als IWAD angeben.",
+        "Optionale Mods einzeln hinzufügen und zunächst ohne zusätzliche Grafikpakete testen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://f-droid.org/packages/com.karin.idTech4Amm/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/glKarin/com.n0n3m4.diii4a/issues/533",
+          "device": "Android-Gerät mit Snapdragon Gen 2; Modell nicht angegeben",
+          "summary": "Der Fehlerbericht dokumentiert den Start von DOOM.WAD mit mehreren Mods im früher enthaltenen GZDoom und meldet Grafikprobleme, ist aber kein Nachweis eines Fehlers im heutigen UZDoom-Build.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ai-doom-doom-ii-uber-winlator",
+      "name": "DOOM + DOOM II über Winlator",
+      "kind": "pc-runtime",
+      "release": "doom-doom-ii-2024",
+      "runtime": "Winlator mit Wine und Box64",
+      "projects": [
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Windows-Ausgabe von DOOM + DOOM II",
+        "Zugriff auf deren installierte PC-Spieldateien"
+      ],
+      "benefit": "Ein spielspezifischer Odin-2-Bericht bestätigt den Start der eigentlichen Neuauflage nach dem Kopieren des installierten Steam-Spielordners. ([reddit.com](https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/))",
+      "caveat": "Der Bericht ist versionsabhängig und kein aktueller Thor-Kompletttest: Genannt werden Menüfehler mit Winlator 9 und bessere Ergebnisse mit einer damaligen 7-glibc-Konfiguration; die Controller-Kompatibilität von DOOM wird nicht separat bestätigt.",
+      "steps": [
+        "Winlator aus dem offiziellen Projekt installieren.",
+        "Die eigene Windows-Ausgabe am PC installieren und den vollständigen Spielordner auf den Handheld übertragen.",
+        "Einen Winlator-Container anlegen und die Spiel-EXE darin starten.",
+        "Menüs, Sound und Eingaben prüfen, bevor weitere Anpassungen vorgenommen werden."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/",
+          "device": "AYN Odin 2",
+          "summary": "Der Nutzer meldet DOOM + DOOM II als direkt lauffähig und nennt später Unterschiede zwischen Winlator-Versionen, ohne einen vollständigen Test aller Funktionen zu liefern.",
+          "date": "2026-11-08"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
   "mods": [
@@ -127,6 +464,71 @@
       "verification": "ai-unverified",
       "release": [
         "pc"
+      ]
+    },
+    {
+      "id": "sigil-ii",
+      "name": "SIGIL II",
+      "category": "content",
+      "url": "https://www.romerogames.com/games/sigil2-tapdh",
+      "edition": "PC-WAD über einen kompatiblen Source-Port",
+      "description": "John Romeros Fortsetzung von SIGIL enthält neun Einzelspieler- und neun Deathmatch-Levels. Die kostenlose Ausgabe benötigt eigene registrierte DOOM-Spieldaten; der hochwertige THORR-Soundtrack gehört zur kostenpflichtigen Variante.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "ultimate"
+      ]
+    },
+    {
+      "id": "beautiful-doom",
+      "name": "Beautiful Doom",
+      "category": "graphics",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "edition": "GZDoom-Mod; nicht für Chocolate Doom oder PrBoom+",
+      "description": "Überarbeitet Animationen, Effekte und Klang, ohne zwingend die ursprüngliche Spielbalance zu verändern. Für Android einen passenden GZDoom-Spielweg verwenden und die Engine-Anforderungen der jeweiligen Mod-Version beachten.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "ultimate"
+      ]
+    },
+    {
+      "id": "voxel-doom",
+      "name": "Voxel Doom",
+      "category": "graphics",
+      "url": "https://www.moddb.com/addons/voxel-doom",
+      "edition": "Voxel Doom v1.0 für GZDoom",
+      "description": "Ersetzt unter anderem die DOOM-I-Monster und Gegenstände durch dreidimensionale Voxelmodelle. Als Grafikmod für einen geeigneten GZDoom-Spielweg laden, nicht als eigenständige Spielfassung.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "ultimate"
+      ]
+    },
+    {
+      "id": "doom-neural-upscale-2x",
+      "name": "Doom Neural Upscale 2X",
+      "category": "graphics",
+      "url": "https://www.moddb.com/downloads/doom-neural-upscale-2x",
+      "edition": "Textur- und Spritepaket für einen kompatiblen modernen Source-Port",
+      "description": "Hidfans Paket vergrößert Texturen und Sprites auf die doppelte Auflösung und versucht dabei, den Pixel-Art-Eindruck zu erhalten. Es ist ein optionales Grafikpaket, kein FPS- oder Leistungs-Patch.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "ultimate"
+      ]
+    },
+    {
+      "id": "nightfright-widescreen-statusbars",
+      "name": "NightFright Widescreen Statusbars",
+      "category": "widescreen-fps",
+      "url": "https://github.com/NightFright2k19/doom_widehud",
+      "edition": "Passende DOOM-HUD-Datei für einen kompatiblen Source-Port",
+      "description": "Erweitert die klassische Statusleiste für Breitbilddarstellung, statt sie auf dem Handheld nur zu strecken. Das Paket verändert die HUD-Grafik und enthält keinen allgemeinen FPS-Patch.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "ultimate"
       ]
     }
   ],

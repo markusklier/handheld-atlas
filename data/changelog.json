@@ -4,6 +4,116 @@
       "date": "2026-11-08",
       "type": "screenshot-added",
       "by": "ai-research",
+      "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Ultimate DOOM (KI-Recherche)",
+      "url": "https://www.mobygames.com/game/707/the-ultimate-doom/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM (PlayStation) (KI-Recherche)",
+      "url": "https://www.shacknews.com/article/117322/terraform-the-making-of-doom-64",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM – offizielle Android-Fassung (KI-Recherche)",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: UZDoom mit echter Dual-Screen-Automap (Original (PC, 1993), KI-Recherche)",
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Bethesdas offizielle Android-App (DOOM – offizielle Android-Fassung, KI-Recherche)",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PsyDoom über Classic Core / Engines Hub (DOOM (PlayStation), KI-Recherche)",
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: idTech4A++ mit UZDoom (Original (PC, 1993), KI-Recherche)",
+      "url": "https://f-droid.org/packages/com.karin.idTech4Amm/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: DOOM + DOOM II über Winlator (DOOM + DOOM II (2024), KI-Recherche)",
+      "url": "https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: SIGIL II (KI-Recherche)",
+      "url": "https://www.romerogames.com/games/sigil2-tapdh",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Voxel Doom (KI-Recherche)",
+      "url": "https://www.moddb.com/addons/voxel-doom",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Doom Neural Upscale 2X (KI-Recherche)",
+      "url": "https://www.moddb.com/downloads/doom-neural-upscale-2x",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: NightFright Widescreen Statusbars (KI-Recherche)",
+      "url": "https://github.com/NightFright2k19/doom_widehud",
+      "date": "2026-11-08",
+      "by": "ai-research",
+      "game": "doom-1993"
+    },
+    {
+      "date": "2026-11-08",
+      "type": "screenshot-added",
+      "by": "ai-research",
       "text": "KI-Bildprüfung: 16 Screenshots bestätigt, 1 unpassende entfernt"
     },
     {

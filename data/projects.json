@@ -1234,7 +1234,8 @@
       "repo": "brunodev85/winlator",
       "description": "Windows-Programme und PC-Spiele auf Android über Wine und Box64.",
       "games": [
-        "the-elder-scrolls-v-skyrim"
+        "the-elder-scrolls-v-skyrim",
+        "doom-1993"
       ],
       "checkedAt": "2026-11-08",
       "pushedAt": "2026-11-02",
@@ -1326,6 +1327,54 @@
       "description": "",
       "games": [
         "the-elder-scrolls-v-skyrim"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "andreyvelsk-com-mobilerpgpack-phone",
+      "name": "andreyvelsk/com.mobilerpgpack.phone",
+      "kind": "port",
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone",
+      "repo": "andreyvelsk/com.mobilerpgpack.phone",
+      "description": "",
+      "games": [
+        "doom-1993"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "doom-bethesda-softworks",
+      "name": "DOOM – Bethesda Softworks",
+      "kind": "official",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
+      "repo": null,
+      "description": "",
+      "games": [
+        "doom-1993"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "classic-core-engines-com-mobilerpgpack-phone",
+      "name": "Classic Core Engines / com.mobilerpgpack.phone",
+      "kind": "port",
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+      "repo": "sandstranger/com.mobilerpgpack.phone",
+      "description": "",
+      "games": [
+        "doom-1993"
+      ],
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "idtech4a",
+      "name": "idTech4A++",
+      "kind": "port",
+      "url": "https://github.com/glKarin/com.n0n3m4.diii4a",
+      "repo": "glKarin/com.n0n3m4.diii4a",
+      "description": "",
+      "games": [
+        "doom-1993"
       ],
       "checkedAt": "2026-11-08"
     }
