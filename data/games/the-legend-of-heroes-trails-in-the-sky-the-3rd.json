@@ -5,6 +5,16 @@
   "platforms": [
     "PSP"
   ],
+  "versions": [
+    {
+      "id": "psp",
+      "name": "PSP",
+      "type": "original",
+      "platforms": [
+        "PSP"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

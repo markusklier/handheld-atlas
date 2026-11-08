@@ -5,10 +5,20 @@
   "platforms": [
     "Dreamcast"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/0/05/MetropolisStreetRacerBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Metropolis_Street_Racer"
-  }
+  },
+  "versions": [
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "original",
+      "platforms": [
+        "Dreamcast"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

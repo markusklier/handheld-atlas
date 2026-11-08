@@ -5,6 +5,16 @@
   "platforms": [
     "Nintendo Switch"
   ],
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

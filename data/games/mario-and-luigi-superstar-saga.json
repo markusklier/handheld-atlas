@@ -5,10 +5,20 @@
   "platforms": [
     "Game Boy Advance"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/6/63/MarioAndLuigiSuperstarSagaGBACoverArtUS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Mario_%26_Luigi%3A_Superstar_Saga"
-  }
+  },
+  "versions": [
+    {
+      "id": "game-boy-advance",
+      "name": "Game Boy Advance",
+      "type": "original",
+      "platforms": [
+        "Game Boy Advance"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

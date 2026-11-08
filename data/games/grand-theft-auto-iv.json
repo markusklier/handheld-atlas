@@ -9,6 +9,36 @@
   ],
   "genre": "Action",
   "summary": "PC-Fassung über Windows-Laufzeiten auf Android, mit Dual-Screen-Companion für den Thor.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Grand_Theft_Auto_IV_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_IV"
+  },
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "release",
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360",
+      "type": "release",
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "gta4-gtc",
@@ -57,12 +87,11 @@
           "url": "https://github.com/BrianJr03/GrandTheftCompanion"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Grand_Theft_Auto_IV_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_IV"
-  }
+  "updatedAt": "2026-11-08"
 }

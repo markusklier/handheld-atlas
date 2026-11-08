@@ -5,6 +5,16 @@
   "platforms": [
     "Nintendo 3DS"
   ],
+  "versions": [
+    {
+      "id": "nintendo-3ds",
+      "name": "Nintendo 3DS",
+      "type": "original",
+      "platforms": [
+        "Nintendo 3DS"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

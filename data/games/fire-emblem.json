@@ -5,8 +5,6 @@
   "platforms": [
     "Game Boy Advance"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Fire%20Emblem%20%28Europe%29%20%28En%2CEs%2CIt%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "game-boy-advance",
+      "name": "Game Boy Advance",
+      "type": "original",
+      "platforms": [
+        "Game Boy Advance"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

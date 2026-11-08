@@ -7,72 +7,6 @@
   ],
   "genre": "Action-Rollenspiel",
   "summary": "Ein bewusst offener Vergleich: zwei PC-Laufzeitumgebungen, aber noch kein belastbarer Thor-Benchmark.",
-  "routes": [
-    {
-      "id": "cp-gamenative",
-      "name": "GameNative (Prüfkandidat)",
-      "kind": "pc-runtime",
-      "edition": "PC / Store-Ausgabe prüfen",
-      "runtime": "GameNative",
-      "projects": [
-        "gamenative"
-      ],
-      "targets": [
-        "android"
-      ],
-      "features": [],
-      "dualScreen": null,
-      "requires": [
-        "Eigene PC-Lizenz",
-        "Passendes Gerät, Runtime und Treiber",
-        "Konkreter Spieltest steht aus"
-      ],
-      "benefit": "Eine mögliche PC-Laufzeitumgebung zur Untersuchung.",
-      "caveat": "Nur die Runtime ist belegt. Startbarkeit, FPS und beste Store-Ausgabe von Cyberpunk sind hier UNGETESTET. Keine Kaufempfehlung.",
-      "steps": [],
-      "version": null,
-      "effort": "advanced",
-      "status": "experimental",
-      "verification": "documented",
-      "testedOn": [],
-      "screenshots": [],
-      "links": [],
-      "checkedAt": "2026-11-08"
-    },
-    {
-      "id": "cp-droiddeck",
-      "name": "DroidDeck (Prüfkandidat)",
-      "kind": "pc-runtime",
-      "edition": "PC / Store-Ausgabe prüfen",
-      "runtime": "DroidDeck",
-      "projects": [
-        "droiddeck"
-      ],
-      "targets": [
-        "android"
-      ],
-      "features": [],
-      "dualScreen": null,
-      "requires": [
-        "Eigene PC-Lizenz",
-        "Unterstützte Adreno-Hardware laut Projekt",
-        "Linux-Runtime und ausreichend Speicher",
-        "Konkreter Spieltest steht aus"
-      ],
-      "benefit": "Alternative PC-Umgebung auf Android; als Kandidat vergleichbar.",
-      "caveat": "Keine Aussage, dass Cyberpunk auf deinem Gerät läuft. Keine belegte Performance-Rangfolge gegenüber GameNative.",
-      "steps": [],
-      "version": null,
-      "effort": "advanced",
-      "status": "experimental",
-      "verification": "documented",
-      "testedOn": [],
-      "screenshots": [],
-      "links": [],
-      "checkedAt": "2026-11-08"
-    }
-  ],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/1091500/"
@@ -108,5 +42,87 @@
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/1091500/"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "cp-gamenative",
+      "name": "GameNative (Prüfkandidat)",
+      "kind": "pc-runtime",
+      "edition": "PC / Store-Ausgabe prüfen",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz",
+        "Passendes Gerät, Runtime und Treiber",
+        "Konkreter Spieltest steht aus"
+      ],
+      "benefit": "Eine mögliche PC-Laufzeitumgebung zur Untersuchung.",
+      "caveat": "Nur die Runtime ist belegt. Startbarkeit, FPS und beste Store-Ausgabe von Cyberpunk sind hier UNGETESTET. Keine Kaufempfehlung.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
+    },
+    {
+      "id": "cp-droiddeck",
+      "name": "DroidDeck (Prüfkandidat)",
+      "kind": "pc-runtime",
+      "edition": "PC / Store-Ausgabe prüfen",
+      "runtime": "DroidDeck",
+      "projects": [
+        "droiddeck"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz",
+        "Unterstützte Adreno-Hardware laut Projekt",
+        "Linux-Runtime und ausreichend Speicher",
+        "Konkreter Spieltest steht aus"
+      ],
+      "benefit": "Alternative PC-Umgebung auf Android; als Kandidat vergleichbar.",
+      "caveat": "Keine Aussage, dass Cyberpunk auf deinem Gerät läuft. Keine belegte Performance-Rangfolge gegenüber GameNative.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
+    }
+  ],
+  "updatedAt": "2026-11-08"
 }

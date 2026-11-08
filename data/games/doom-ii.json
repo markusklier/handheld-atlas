@@ -5,6 +5,80 @@
   "platforms": [
     "PC"
   ],
+  "genre": "Ego-Shooter",
+  "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2300/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002380.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002379.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002378.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002381.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2300/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002382.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2300/"
+    }
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "Original (PC, 1994)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1994,
+      "traits": [
+        "mods"
+      ],
+      "note": "Die klassischen WAD-Spieldaten. Grundlage für Source-Ports wie Delta Touch und für die riesige Mod-Szene (z. B. Brutal Doom)."
+    },
+    {
+      "id": "doom-doom-ii-2024",
+      "name": "DOOM + DOOM II (2024)",
+      "type": "rerelease",
+      "year": 2024,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "crossplay",
+        "mods",
+        "upscaling"
+      ],
+      "note": "Neuauflage von id Software und Nightdive (KEX-Engine): Crossplay-Deathmatch und -Koop für bis zu 16 Spieler, Mods direkt im Spiel, 4K und die neue Episode „Legacy of Rust“.",
+      "links": [
+        {
+          "label": "Quelle: PC Gamer",
+          "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
+        }
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "d2-delta-touch",
@@ -55,43 +129,12 @@
           "url": "https://www.doomworld.com/forum/topic/106799-delta-touch-on-android/?page=10"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300/library_600x900_2x.jpg",
-    "source": "https://store.steampowered.com/app/2300/"
-  },
-  "screenshots": [
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002380.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2300/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002379.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2300/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002378.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2300/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002381.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2300/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2300/0000002382.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2300/"
-    }
-  ],
-  "genre": "Ego-Shooter",
-  "summary": "Auf Android über Source-Ports wie GZDoom oder PrBoom+ mit eigenen WADs spielbar – samt Megawads und Gameplay-Mods.",
   "mods": [
     {
       "id": "brutal-doom",
@@ -111,5 +154,6 @@
       "description": "Megawad von Joshua O'Sullivan u. a. (2018), ausgezeichnet bei den Cacowards 2019. MBF-kompatibel; mitgelieferte Demos brauchen einen Boom-kompatiblen Port.",
       "verification": "ai-unverified"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-08"
 }

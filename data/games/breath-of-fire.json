@@ -5,8 +5,6 @@
   "platforms": [
     "SNES"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Breath%20of%20Fire%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "snes",
+      "name": "SNES",
+      "type": "original",
+      "platforms": [
+        "SNES"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

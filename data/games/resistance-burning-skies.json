@@ -5,10 +5,20 @@
   "platforms": [
     "PlayStation Vita"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/7/79/Resistance_Burning_Skies_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Resistance%3A_Burning_Skies"
-  }
+  },
+  "versions": [
+    {
+      "id": "playstation-vita",
+      "name": "PlayStation Vita",
+      "type": "original",
+      "platforms": [
+        "PlayStation Vita"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

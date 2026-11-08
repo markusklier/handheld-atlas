@@ -5,8 +5,6 @@
   "platforms": [
     "PlayStation"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Silent%20Hill%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

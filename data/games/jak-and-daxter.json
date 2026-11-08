@@ -5,8 +5,6 @@
   "platforms": [
     "PlayStation 2"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Jak%20and%20Daxter%20-%20The%20Lost%20Frontier%20%28USA%29%20%28En%2CFr%2CEs%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

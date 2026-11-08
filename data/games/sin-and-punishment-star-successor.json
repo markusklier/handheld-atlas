@@ -5,6 +5,16 @@
   "platforms": [
     "Wii"
   ],
+  "versions": [
+    {
+      "id": "wii",
+      "name": "Wii",
+      "type": "original",
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

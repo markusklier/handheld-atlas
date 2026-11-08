@@ -5,6 +5,16 @@
   "platforms": [
     "PC"
   ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

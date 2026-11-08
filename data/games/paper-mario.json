@@ -5,8 +5,6 @@
   "platforms": [
     "Nintendo 64"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Paper%20Mario%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-64",
+      "name": "Nintendo 64",
+      "type": "original",
+      "platforms": [
+        "Nintendo 64"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

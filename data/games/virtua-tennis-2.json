@@ -5,8 +5,6 @@
   "platforms": [
     "Dreamcast"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Virtua%20Tennis%202%20-%20Sega%20Professional%20Tennis%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%29.png",
     "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "original",
+      "platforms": [
+        "Dreamcast"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

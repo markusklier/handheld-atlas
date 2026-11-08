@@ -5,8 +5,6 @@
   "platforms": [
     "Sega Mega Drive"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Comix%20Zone%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "sega-mega-drive",
+      "name": "Sega Mega Drive",
+      "type": "original",
+      "platforms": [
+        "Sega Mega Drive"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

@@ -5,6 +5,20 @@
   "platforms": [
     "PlayStation 2"
   ],
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b6/RaCbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Ratchet_%26_Clank_%282002_video_game%29"
+  },
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "rac-rerac-android",
@@ -46,12 +60,11 @@
           "url": "https://github.com/re-rac/rerac"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "playstation-2",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/b/b6/RaCbox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Ratchet_%26_Clank_%282002_video_game%29"
-  }
+  "updatedAt": "2026-11-08"
 }

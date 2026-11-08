@@ -5,10 +5,20 @@
   "platforms": [
     "PlayStation Vita"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Hotline_Miami_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Hotline_Miami"
-  }
+  },
+  "versions": [
+    {
+      "id": "playstation-vita",
+      "name": "PlayStation Vita",
+      "type": "original",
+      "platforms": [
+        "PlayStation Vita"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

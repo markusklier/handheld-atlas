@@ -5,8 +5,6 @@
   "platforms": [
     "Nintendo 3DS"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Fire%20Emblem%20Echoes%20-%20Shadows%20of%20Valentia%20%28USA%29%20%28En%2CFr%2CEs%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-3ds",
+      "name": "Nintendo 3DS",
+      "type": "original",
+      "platforms": [
+        "Nintendo 3DS"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

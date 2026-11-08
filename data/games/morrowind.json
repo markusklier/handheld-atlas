@@ -7,6 +7,20 @@
   ],
   "genre": "Rollenspiel",
   "summary": "Dieselben Spieldaten, unterschiedliche Engines: Dual-Screen auf Android oder OpenMW am Linux-Handheld.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/53/MorrowindCOVER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
+  },
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "mw-ds",
@@ -49,7 +63,10 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mw-openmw",
@@ -82,7 +99,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
   "mods": [
@@ -132,9 +152,5 @@
       "verification": "documented"
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/5/53/MorrowindCOVER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
-  }
+  "updatedAt": "2026-11-08"
 }

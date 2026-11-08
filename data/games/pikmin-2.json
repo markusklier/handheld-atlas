@@ -5,8 +5,6 @@
   "platforms": [
     "Nintendo GameCube"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Pikmin%202%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube",
+      "type": "original",
+      "platforms": [
+        "Nintendo GameCube"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

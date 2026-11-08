@@ -5,8 +5,6 @@
   "platforms": [
     "Nintendo 3DS"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Professor%20Layton%20and%20the%20Miracle%20Mask%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-3ds",
+      "name": "Nintendo 3DS",
+      "type": "original",
+      "platforms": [
+        "Nintendo 3DS"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

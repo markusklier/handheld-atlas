@@ -5,6 +5,16 @@
   "platforms": [
     "PlayStation 2"
   ],
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

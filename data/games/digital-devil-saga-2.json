@@ -5,10 +5,20 @@
   "platforms": [
     "PlayStation 2"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Shin_Megami_Tensei_-_Digital_Devil_Saga_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Shin_Megami_Tensei%3A_Digital_Devil_Saga"
-  }
+  },
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

@@ -5,6 +5,16 @@
   "platforms": [
     "Game Boy Advance"
   ],
+  "versions": [
+    {
+      "id": "game-boy-advance",
+      "name": "Game Boy Advance",
+      "type": "original",
+      "platforms": [
+        "Game Boy Advance"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

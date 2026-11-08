@@ -6,8 +6,6 @@
     "Nintendo Switch",
     "PC"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/367520/"
@@ -43,5 +41,25 @@
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/367520/"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

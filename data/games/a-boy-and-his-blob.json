@@ -5,11 +5,21 @@
   "platforms": [
     "Wii"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/A%20Boy%20and%20His%20Blob%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
   },
-  "screenshots": []
+  "screenshots": [],
+  "versions": [
+    {
+      "id": "wii",
+      "name": "Wii",
+      "type": "original",
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

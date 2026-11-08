@@ -5,10 +5,20 @@
   "platforms": [
     "Nintendo Switch"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Pikmin_icon_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Pikmin_4"
-  }
+  },
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

@@ -3,10 +3,9 @@
   "title": "Tomb Raider",
   "franchise": "Tomb Raider",
   "platforms": [
-    "PlayStation"
+    "PlayStation",
+    "PC"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
@@ -22,5 +21,53 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation (1996)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1996
+    },
+    {
+      "id": "pc-dos",
+      "name": "PC (MS-DOS, 1996)",
+      "type": "release",
+      "year": 1996,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "remastered",
+      "name": "Tomb Raider I–III Remastered (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch",
+        "Android"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "note": "Teil I–III in einer Sammlung von Aspyr, Grafik zwischen Original und Neufassung umschaltbar. Für Android seit dem 12. März 2026 erhältlich.",
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08",
+  "summary": "Das PlayStation-Original per Emulation oder die Remastered-Sammlung, die es inzwischen auch als offizielle Android-Fassung gibt."
 }

@@ -4,10 +4,45 @@
   "franchise": "Minecraft",
   "platforms": [
     "PC",
-    "Android"
+    "Android",
+    "Nintendo Switch"
   ],
   "genre": "Sandbox",
   "summary": "Minecraft Bedrock, verschiedene Java-Launcher sowie mehrere voneinander unabhängige Dual-Screen-Mods: ExoJosh, Abacus und DroidBridge. Versionen und Modloader unbedingt unterscheiden.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "Java Edition (PC)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2011,
+      "traits": [
+        "mods"
+      ],
+      "note": "Die Fassung mit dem größten Mod-Ökosystem (Fabric, Forge). Auf Android über Java-Launcher; Basis der meisten Dual-Screen-Mods."
+    },
+    {
+      "id": "android",
+      "name": "Bedrock Edition (Android)",
+      "type": "release",
+      "platforms": [
+        "Android"
+      ],
+      "year": 2011,
+      "note": "Offizielle App aus dem Play Store, früher „Pocket Edition“. Java-Mods laufen hier nicht."
+    },
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch (Bedrock)",
+      "type": "port",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Per Switch-Emulation mit Companion für den zweiten Bildschirm."
+    }
+  ],
   "routes": [
     {
       "id": "mc-bedrock",
@@ -41,7 +76,10 @@
           "url": "https://www.minecraft.net/en-us/download"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "android",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-java",
@@ -74,7 +112,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-exojosh",
@@ -119,7 +160,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-zalith",
@@ -155,7 +199,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-abacus",
@@ -196,7 +243,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-droidbridge",
@@ -240,7 +290,10 @@
           "url": "https://play.google.com/store/apps/details?id=ca.dnamobile.droidbridgelauncher"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-droidbridge-dualhud",
@@ -289,7 +342,10 @@
           "url": "https://www.curseforge.com/minecraft/mc-mods/dual-screen"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-thorcraft",
@@ -340,7 +396,10 @@
           "url": "https://github.com/Leymo0/ThorCraft"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "mc-eden-companion",
@@ -410,7 +469,10 @@
           "url": "https://github.com/erikvanhoolst/minecraft-companion"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-switch",
+      "reports": [],
+      "performance": []
     }
   ],
   "mods": [

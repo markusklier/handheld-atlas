@@ -62,6 +62,7 @@ def validate(db=None):
     err = errors.append
     kinds, features = set(meta['kinds']), set(meta['features'])
     verif, effort, targets = set(meta['verification']), set(meta['effort']), set(meta['targets'])
+    version_types = set(meta.get('versionTypes', {}))
 
     def url_ok(u, where):
         if not isinstance(u, str) or not u.startswith('https://'):
@@ -105,6 +106,29 @@ def validate(db=None):
             url_ok(g['cover'].get('url'), f'{where}/cover')
         for s in g.get('screenshots', []):
             url_ok(s.get('url'), f'{where}/screenshots')
+        version_ids = set()
+        for v in g.get('versions', []):
+            vw = f"{where}/versions/{v.get('id')}"
+            if not ID_RE.match(v.get('id', '')):
+                err(f'{vw}: ungültige id')
+            if v.get('id') in version_ids:
+                err(f'{vw}: doppelte Fassung')
+            version_ids.add(v.get('id'))
+            if not v.get('name'):
+                err(f'{vw}: name fehlt')
+            if v.get('type') not in version_types:
+                err(f"{vw}: type {v.get('type')!r} nicht in {sorted(version_types)}")
+            if not isinstance(v.get('platforms'), list) or not v['platforms']:
+                err(f'{vw}: platforms (Liste) fehlt')
+            if 'year' in v and not (isinstance(v['year'], int) and 1970 < v['year'] < 2100):
+                err(f'{vw}: year muss eine Jahreszahl sein')
+            for t in v.get('traits', []):
+                if t not in features:
+                    err(f'{vw}: trait {t!r} unbekannt (meta.json features)')
+            for l in v.get('links', []):
+                url_ok(l.get('url'), f'{vw}/links')
+        if g.get('routes') and not version_ids:
+            err(f'{where}: Spiel mit Spielwegen braucht mindestens eine Fassung (versions)')
         route_ids = set()
         for r in g.get('routes', []):
             rw = f"{where}/routes/{r.get('id')}"
@@ -134,10 +158,20 @@ def validate(db=None):
                     err(f'{rw}: Projekt {p!r} fehlt in projects.json')
             if not r.get('projects') and not r.get('links'):
                 err(f'{rw}: braucht mindestens ein Projekt oder einen Link als Quelle')
+            if r.get('release') not in version_ids:
+                err(f"{rw}: release {r.get('release')!r} ist keine Fassung dieses Spiels ({sorted(version_ids)})")
             for s in r.get('screenshots', []):
                 url_ok(s.get('url'), f'{rw}/screenshots')
             for l in r.get('links', []):
                 url_ok(l.get('url'), f'{rw}/links')
+            for rep in r.get('reports', []):
+                url_ok(rep.get('url'), f'{rw}/reports')
+                if not rep.get('summary'):
+                    err(f'{rw}/reports: summary fehlt')
+            for perf in r.get('performance') or []:
+                if not perf.get('device') or not perf.get('result'):
+                    err(f'{rw}/performance: device und result sind Pflicht')
+                url_ok(perf.get('source'), f'{rw}/performance')
             if r.get('checkedAt') and not DATE_RE.match(r['checkedAt']):
                 err(f'{rw}: checkedAt muss YYYY-MM-DD sein')
         for m in g.get('mods', []):

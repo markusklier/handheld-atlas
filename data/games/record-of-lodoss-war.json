@@ -5,8 +5,6 @@
   "platforms": [
     "Dreamcast"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Record%20of%20Lodoss%20War%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "original",
+      "platforms": [
+        "Dreamcast"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

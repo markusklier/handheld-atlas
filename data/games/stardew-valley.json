@@ -8,6 +8,60 @@
   ],
   "genre": "Simulation / Sandbox",
   "summary": "Quellprojekt dokumentiert Web-Companion für einen zweiten Bildschirm. Kein Atlas-Gerätetest.",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/413150/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_d836f0a5b0447fb6a2bdb0a6ac5f954949d3c41e.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_10628b4a811c0a925a1433d4323f78c7017dbbe4.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_6422d297347258086b389e3d5d9c0e0c698312e4.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/413150/"
+    }
+  ],
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "stardew-valley-abacus",
@@ -47,44 +101,11 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg",
-    "source": "https://store.steampowered.com/app/413150/"
-  },
-  "screenshots": [
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_9ac899fe2cda15d48b0549bba77ef8c4a090a71c.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_4fa0866709ede3753fdf2745349b528d5e8c4054.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_d836f0a5b0447fb6a2bdb0a6ac5f954949d3c41e.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_10628b4a811c0a925a1433d4323f78c7017dbbe4.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_6422d297347258086b389e3d5d9c0e0c698312e4.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/413150/"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

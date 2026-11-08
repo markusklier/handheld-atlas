@@ -5,6 +5,16 @@
   "platforms": [
     "Sega Mega Drive"
   ],
+  "versions": [
+    {
+      "id": "sega-mega-drive",
+      "name": "Sega Mega Drive",
+      "type": "original",
+      "platforms": [
+        "Sega Mega Drive"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

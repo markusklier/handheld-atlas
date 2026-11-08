@@ -5,6 +5,49 @@
   "platforms": [
     "PC"
   ],
+  "genre": "Ego-Shooter",
+  "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "Original (PC, 1993)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1993,
+      "traits": [
+        "mods"
+      ],
+      "note": "Die klassischen WAD-Spieldaten. Grundlage für Source-Ports wie Delta Touch und für die riesige Mod-Szene (z. B. Brutal Doom)."
+    },
+    {
+      "id": "doom-doom-ii-2024",
+      "name": "DOOM + DOOM II (2024)",
+      "type": "rerelease",
+      "year": 2024,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "crossplay",
+        "mods",
+        "upscaling"
+      ],
+      "note": "Neuauflage von id Software und Nightdive (KEX-Engine): Crossplay-Deathmatch und -Koop für bis zu 16 Spieler, Mods direkt im Spiel, 4K und die neue Episode „Legacy of Rust“.",
+      "links": [
+        {
+          "label": "Quelle: PC Gamer",
+          "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
+        }
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "d1-delta-touch",
@@ -55,12 +98,12 @@
           "url": "https://www.doomworld.com/forum/topic/106799-delta-touch-on-android/?page=10"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "genre": "Ego-Shooter",
-  "summary": "Auf Android über Source-Ports wie GZDoom oder PrBoom+ mit eigenen WADs spielbar – inklusive großer Mod-Szene.",
   "mods": [
     {
       "id": "brutal-doom",
@@ -80,5 +123,6 @@
       "description": "Inoffizielle fünfte Episode von John Romero (2019, kostenlos): 9 Einzelspieler-Level. Für Ports ohne Episode-5-Unterstützung gibt es eine Kompatibilitätsdatei, die Episode 3 ersetzt.",
       "verification": "ai-unverified"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-08"
 }

@@ -5,10 +5,20 @@
   "platforms": [
     "PlayStation Vita"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/b/b8/Next_Hatsune_Miku_Project_DIVA.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Hatsune_Miku%3A_Project_Diva_F"
-  }
+  },
+  "versions": [
+    {
+      "id": "playstation-vita",
+      "name": "PlayStation Vita",
+      "type": "original",
+      "platforms": [
+        "PlayStation Vita"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

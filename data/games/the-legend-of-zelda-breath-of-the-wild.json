@@ -6,6 +6,16 @@
     "Nintendo Switch"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "eden-the-legend-of-zelda-breath-of-the-wild",
@@ -66,7 +76,10 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-switch",
+      "reports": [],
+      "performance": []
     }
   ],
   "updatedAt": "2026-11-08"

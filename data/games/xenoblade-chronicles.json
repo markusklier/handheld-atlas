@@ -5,8 +5,6 @@
   "platforms": [
     "Wii"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Xenoblade%20Chronicles%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "wii",
+      "name": "Wii",
+      "type": "original",
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

@@ -7,6 +7,32 @@
   ],
   "genre": "Rollenspiel",
   "summary": "Ein Pokémon-spezifischer Companion kann mehr anzeigen als ein allgemeiner GBA-Emulator.",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+    }
+  ],
+  "versions": [
+    {
+      "id": "game-boy-advance",
+      "name": "Game Boy Advance",
+      "type": "original",
+      "platforms": [
+        "Game Boy Advance"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "emerald-pokedaisy",
@@ -39,7 +65,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "game-boy-advance",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "emerald-mgba",
@@ -72,7 +101,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "game-boy-advance",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "emerald-decomp-ds",
@@ -119,24 +151,11 @@
           "url": "https://github.com/Goldoire/pokeemerald-dualscreen"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "game-boy-advance",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
-    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
-  },
-  "screenshots": [
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
-      "caption": "Originalspiel",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Pokemon%20-%20Smaragd-Edition%20%28Germany%29.png",
-      "caption": "Titelbild",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

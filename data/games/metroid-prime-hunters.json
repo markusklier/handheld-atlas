@@ -5,6 +5,32 @@
   "platforms": [
     "Nintendo DS"
   ],
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+    }
+  ],
+  "versions": [
+    {
+      "id": "nintendo-ds",
+      "name": "Nintendo DS",
+      "type": "original",
+      "platforms": [
+        "Nintendo DS"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "mph-hunters-recomp",
@@ -51,24 +77,11 @@
           "url": "https://github.com/aabrole/HuntersRecomp"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-ds",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
-    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
-  },
-  "screenshots": [
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
-      "caption": "Originalspiel",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Metroid%20Prime%20-%20Hunters%20%28USA%29.png",
-      "caption": "Titelbild",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

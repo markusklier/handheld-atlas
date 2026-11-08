@@ -3,7 +3,94 @@
   "title": "Grand Theft Auto: San Andreas",
   "franchise": "Grand Theft Auto",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "Android",
+    "PC",
+    "Xbox"
+  ],
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ],
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2004)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "year": 2004
+    },
+    {
+      "id": "pc",
+      "name": "PC (2005)",
+      "type": "port",
+      "year": 2005,
+      "platforms": [
+        "PC"
+      ],
+      "traits": [
+        "mods"
+      ],
+      "note": "Basis der großen PC-Mod-Szene. Auf Android nur über eine PC-Laufzeitumgebung spielbar."
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2005)",
+      "type": "port",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android (2013)",
+      "type": "android",
+      "platforms": [
+        "Android"
+      ],
+      "year": 2013,
+      "note": "Offizielle Mobile-Fassung von Rockstar Games. Der Dual-Screen-Companion setzt die 32-Bit-Variante dieser Fassung voraus."
+    },
+    {
+      "id": "definitive-edition",
+      "name": "The Definitive Edition (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch",
+        "Android"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "note": "Remaster der GTA-Trilogie. Auf Android zunächst über Netflix Games; seit dem Netflix-Abzug am 12. Dezember 2025 als eigenständiger Kauf erhältlich.",
+      "links": [
+        {
+          "label": "Quelle: What’s on Netflix",
+          "url": "https://www.whats-on-netflix.com/leaving-soon/grand-theft-auto-san-andreas-set-to-leave-netflix-games/"
+        }
+      ]
+    }
   ],
   "routes": [
     {
@@ -45,24 +132,12 @@
           "url": "https://github.com/Gamersmood/SA-Companion"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "android",
+      "reports": [],
+      "performance": []
     }
   ],
   "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
-    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
-  },
-  "screenshots": [
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
-      "caption": "Originalspiel",
-      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
-      "caption": "Titelbild",
-      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
-    }
-  ]
+  "summary": "Vier Fassungen mit sehr unterschiedlichen Stärken: PS2-Original per Emulation, PC-Fassung mit Mods, die offizielle Android-App (mit Dual-Screen-Companion) und die Definitive Edition."
 }

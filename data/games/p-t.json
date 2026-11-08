@@ -7,6 +7,20 @@
   ],
   "genre": "Horror",
   "summary": "Spielbarer Teaser zu Silent Hills; inoffizieller nativer Port für Adreno-Handhelds mit Uhr-Anzeige auf dem zweiten Bildschirm.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/a/a8/P.T._cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/P.T._%28video_game%29"
+  },
+  "versions": [
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "original",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "pt-android-port",
@@ -46,12 +60,11 @@
           "url": "https://github.com/StoneColdOS/pt-pc"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "playstation-4",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/a/a8/P.T._cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/P.T._%28video_game%29"
-  }
+  "updatedAt": "2026-11-08"
 }

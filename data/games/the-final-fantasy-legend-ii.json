@@ -5,6 +5,16 @@
   "platforms": [
     "Game Boy / Game Boy Color"
   ],
+  "versions": [
+    {
+      "id": "game-boy-game-boy-color",
+      "name": "Game Boy / Game Boy Color",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ]
+    }
+  ],
   "routes": [],
   "updatedAt": "2026-11-08"
 }

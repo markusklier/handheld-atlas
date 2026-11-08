@@ -20,7 +20,13 @@
     "widescreen": "Widescreen",
     "mods": "Mod-Unterstützung",
     "controller": "Controller dokumentiert",
-    "fps-cap": "FPS-Limit wählbar"
+    "fps-cap": "FPS-Limit wählbar",
+    "upscaling": "Höhere Auflösung",
+    "high-fps": "Hohe Bildrate",
+    "crossplay": "Crossplay",
+    "online": "Online-Modus",
+    "touch": "Touch-Steuerung",
+    "native-arm": "Läuft nativ (ARM)"
   },
   "verification": {
     "thor-tested": "Auf dem AYN Thor getestet",
@@ -60,5 +66,15 @@
       "dualScreen": true
     }
   ],
-  "repo": "markusklier/handheld-atlas"
+  "repo": "markusklier/handheld-atlas",
+  "versionTypes": {
+    "original": "Original",
+    "port": "Portierung",
+    "android": "Offizielle Android-Fassung",
+    "remaster": "Remaster",
+    "remake": "Remake",
+    "rerelease": "Neuauflage",
+    "collection": "Sammlung",
+    "release": "Veröffentlichung"
+  }
 }

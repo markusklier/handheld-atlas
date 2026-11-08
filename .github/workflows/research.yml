@@ -1,0 +1,82 @@
+name: KI-Recherche
+# OpenAI (Websuche) recherchiert Fassungen, Spielwege, Mods und Erfahrungsberichte und schreibt sie direkt in data/.
+# Start: Knopf "Run workflow" mit Spiel-ID · neues Issue mit Label "recherche" (Button in der App) · wöchentlich.
+# Braucht das Repository-Secret OPENAI_API_KEY; optional die Variable OPENAI_MODEL.
+on:
+  workflow_dispatch:
+    inputs:
+      game:
+        description: 'Spiel-ID, z. B. grand-theft-auto-san-andreas (leer = automatisch auswählen)'
+        required: false
+        type: string
+      count:
+        description: 'Wie viele Spiele automatisch, wenn keine ID angegeben ist'
+        required: false
+        default: '3'
+        type: string
+  issues:
+    types: [opened, labeled]
+  schedule:
+    - cron: '43 18 * * 3'
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+jobs:
+  research:
+    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'recherche')
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Recherche
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          GAME: ${{ inputs.game }}
+          COUNT: ${{ inputs.count || '3' }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          RESEARCH_REPORT: ${{ runner.temp }}/report.md
+        run: |
+          if [ "${{ github.event_name }}" = "issues" ]; then
+            python scripts/ai_research.py --issue-body "$ISSUE_BODY" --issue-title "$ISSUE_TITLE"
+          elif [ -n "$GAME" ]; then
+            python scripts/ai_research.py --game "$GAME"
+          else
+            python scripts/ai_research.py --batch "$COUNT"
+          fi
+      - run: python scripts/atlas.py format && python scripts/atlas.py validate
+      - id: commit
+        run: |
+          if git diff --quiet data; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "atlas-ki-recherche"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "data: KI-Recherche $(date -u +%F)"
+          git pull --rebase origin main || { git rebase --abort; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 1; }
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Ergebnis im Issue melden
+        if: github.event_name == 'issues' && always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          report="${{ runner.temp }}/report.md"
+          [ -f "$report" ] || echo "Die Recherche ist fehlgeschlagen oder es ist kein OPENAI_API_KEY hinterlegt." > "$report"
+          printf '%s\n\n%s\n' "KI-Recherche abgeschlossen. Neue Einträge sind als *KI-Fund, ungeprüft* markiert und erscheinen nach dem Deploy in der App." "$(cat "$report")" > "${{ runner.temp }}/comment.md"
+          gh issue comment ${{ github.event.issue.number }} --body-file "${{ runner.temp }}/comment.md"
+          if [ "${{ steps.commit.outcome }}" = "success" ]; then gh issue close ${{ github.event.issue.number }}; fi
+  deploy:
+    needs: research
+    if: needs.research.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml

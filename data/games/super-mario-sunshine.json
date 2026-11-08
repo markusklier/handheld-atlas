@@ -5,6 +5,32 @@
   "platforms": [
     "Nintendo GameCube"
   ],
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Super%20Mario%20Sunshine%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Super%20Mario%20Sunshine%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Super%20Mario%20Sunshine%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    }
+  ],
+  "versions": [
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube",
+      "type": "original",
+      "platforms": [
+        "Nintendo GameCube"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "sms-wiids",
@@ -49,24 +75,11 @@
           "url": "https://github.com/Maddex712/WiiDS"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-gamecube",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Super%20Mario%20Sunshine%20%28USA%29.png",
-    "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
-  },
-  "screenshots": [
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Super%20Mario%20Sunshine%20%28USA%29.png",
-      "caption": "Originalspiel",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Super%20Mario%20Sunshine%20%28USA%29.png",
-      "caption": "Titelbild",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

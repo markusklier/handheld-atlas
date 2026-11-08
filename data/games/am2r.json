@@ -7,6 +7,16 @@
   ],
   "genre": "Action-Adventure",
   "summary": "Fan-Remake von Metroid II; der Android-Autopatcher baut eine native APK mit Live-Karte auf dem zweiten Bildschirm.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "am2r-android-ds",
@@ -45,7 +55,10 @@
           "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
   "updatedAt": "2026-11-08"

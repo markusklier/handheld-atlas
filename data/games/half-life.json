@@ -5,6 +5,54 @@
   "platforms": [
     "PC"
   ],
+  "genre": "Ego-Shooter",
+  "summary": "Mit Xash3D FWGS läuft die Steam-Fassung nativ auf Android – eigene Spieldaten vorausgesetzt.",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/70/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002354.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002342.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002344.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002345.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002352.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/70/"
+    }
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "hl-xash3d-fwgs",
@@ -47,46 +95,11 @@
           "url": "https://github.com/FWGS/xash3d-fwgs"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900_2x.jpg",
-    "source": "https://store.steampowered.com/app/70/"
-  },
-  "screenshots": [
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002354.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002342.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002344.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002345.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002352.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/70/"
-    }
-  ],
-  "genre": "Ego-Shooter",
-  "summary": "Mit Xash3D FWGS läuft die Steam-Fassung nativ auf Android – eigene Spieldaten vorausgesetzt."
+  "updatedAt": "2026-11-08"
 }

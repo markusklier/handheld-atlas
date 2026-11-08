@@ -4,10 +4,53 @@
   "franchise": "Chrono",
   "platforms": [
     "SNES",
-    "Nintendo DS"
+    "Nintendo DS",
+    "Android"
   ],
   "genre": "Rollenspiel",
   "summary": "DS-Edition, SNES-Original und Android-Spiel mit Companion sind drei verschiedene Wege, kein gemeinsamer Mod.",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Chrono%20Trigger%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Chrono%20Trigger%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ],
+  "versions": [
+    {
+      "id": "snes",
+      "name": "SNES",
+      "type": "original",
+      "platforms": [
+        "SNES"
+      ]
+    },
+    {
+      "id": "nintendo-ds",
+      "name": "Nintendo DS",
+      "type": "release",
+      "platforms": [
+        "Nintendo DS"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "android",
+      "platforms": [
+        "Android"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "chrono-duo",
@@ -63,7 +106,10 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "android",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "chrono-ds",
@@ -95,7 +141,10 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-ds",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "chrono-snes",
@@ -128,24 +177,11 @@
       "testedOn": [],
       "screenshots": [],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "snes",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Chrono%20Trigger%20%28USA%29.png",
-    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
-  },
-  "screenshots": [
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Chrono%20Trigger%20%28USA%29.png",
-      "caption": "Originalspiel",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
-    },
-    {
-      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Chrono%20Trigger%20%28USA%29.png",
-      "caption": "Titelbild",
-      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

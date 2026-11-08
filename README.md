@@ -2,9 +2,11 @@
 
 **Ein Spiel. Alle Wege, es zu spielen.** Spielzentrierte Discovery für Android-Handhelds, gebaut für den **AYN Thor**.
 
-Du suchst ein Spiel, zum Beispiel *Super Metroid*, und siehst nebeneinander, wie es auf dem Handheld läuft:
-klassische Emulation, RetroArch-Fork mit Karte auf dem zweiten Bildschirm, nativer Port, Mods, jeweils mit
-Screenshots der Variante, Voraussetzungen, Projektlinks und dem neuesten Release.
+Du suchst ein Spiel, zum Beispiel *GTA San Andreas*, und siehst zuerst die **Fassungen** (PS2-Original, PC,
+offizielle Android-App, Definitive Edition) und darunter je Fassung die **Spielwege** auf deinem Gerät: Emulator,
+nativer Port, App, Dual-Screen-Mod – mit Screenshots, Voraussetzungen, Erfahrungsberichten und dem neuesten Release.
+Oben schlägt Atlas die drei Wege vor, die du dir für dein Gerät zuerst ansehen solltest, und begründet die Reihenfolge;
+der Reiter „Vergleich“ stellt alle Wege nebeneinander (Dual Screen, Bild, Mods, Aufwand, Prüfstufe, Berichte, Performance).
 
 - **701 Spiele** in Franchises sortiert, davon 41 mit 60 dokumentierten Spielwegen und 542 mit Cover und Originalscreenshots
 - **Filter**: Dual Screen · Native Ports · Emulation · Mods · Thor-getestet · KI-Funde · Plattform
@@ -17,6 +19,7 @@ Screenshots der Variante, Voraussetzungen, Projektlinks und dem neuesten Release
 |---|---|---|
 | **Watcher** (`scripts/watch.py`, GitHub Action, ohne KI) | täglich | neue Releases/Archivierung aller bekannten Projekte → Reiter „Neu“; neue Kandidaten aus GitHub-Suche, aktiven Forks, Modrinth und Reddit → `data/inbox.json`; fehlende Cover/Screenshots (libretro-thumbnails, Steam, Wikipedia) und Screenshots je Spielweg aus den READMEs der Projekte |
 | **Pflege-Agent** (Claude, geplante Aufgabe) | wöchentlich | sortiert die Inbox in Spiele ein, erweitert die Spieleliste um Spiele mit echten Wegen, prüft README-Bilder visuell, ergänzt fehlende Spielweg-Screenshots, korrigiert Franchises; Ablauf in [`CLAUDE.md`](CLAUDE.md) |
+| **KI-Recherche** (`scripts/ai_research.py`, GitHub Action, OpenAI) | sofort bei „Recherche anfordern“, per Knopf mit Spiel-ID, wöchentlich 3 Spiele | Fassungen, Spielwege, Mods und Erfahrungsberichte mit Websuche; nur belegte Angaben, Piraterie-Seiten gesperrt, Ergebnis muss `validate` bestehen. Braucht das Secret `OPENAI_API_KEY` |
 | **Du** | wann du willst | „Recherche anfordern“ im Spiel (legt ein GitHub-Issue an, der Agent arbeitet es zuerst ab) oder Claude sagen: „Spielweg X läuft auf dem Thor“ |
 
 Alles landet direkt auf `main` und ist nach dem automatischen Deploy in der App. Jeder Spielweg trägt eine Prüfstufe:
@@ -45,6 +48,7 @@ scripts/atlas.py     validate · build · stats · format
 scripts/watch.py     Watcher
 scripts/covers.py    Cover/Screenshots aus libretro-thumbnails
 scripts/media.py     Spielweg-Screenshots (Projekt-READMEs), Steam, Wikipedia
+scripts/ai_research.py  KI-Recherche je Spiel (OpenAI Responses API mit Websuche)
 ```
 
 ```sh

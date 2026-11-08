@@ -22,7 +22,21 @@ app/                   die Web-App (lädt dist/data.json)
 scripts/atlas.py       validate | build | stats | format
 scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
+scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
+scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
 ```
+
+### Grundidee: Spiel → Fassungen → Spielwege
+- **Fassung** (`versions[]`) = welche Version des Spiels: Original, Portierung, offizielle Android-Fassung, Remaster,
+  Remake, Neuauflage, Sammlung – jeweils mit Plattformen, Jahr und Eigenschaften (`traits`, z. B. Crossplay, Mods).
+- **Spielweg** (`routes[]`) = womit man **eine** Fassung auf dem Gerät spielt; `release` verweist auf die Fassung.
+  Ein Decomp/Recomp/Source-Port gehört zu der Fassung, deren Spieldaten er braucht (Zelda64Recomp → N64-Fassung).
+- Allgemeine Emulatoren je Plattform (`platforms.json`) zeigt die App automatisch unter jeder Fassung an – nicht
+  als Spielweg eintragen, außer es gibt spielspezifische Belege (Patches, Einstellungen, Kompatibilitätsberichte).
+- Ist eine Fassung offiziell für Android erschienen, steht `"Android"` in ihren `platforms`; die App zeigt dann
+  „Offizielle Android-App“. Einen Spielweg dafür nur anlegen, wenn es Details gibt (Play-Store-Link, Controller, Dual Screen).
+- Die App empfiehlt pro Gerät die ersten drei Wege (Prüfstufe, Dual Screen, nativ, Aufwand, Berichte). Gute Daten in
+  `reports` und `performance` verbessern die Empfehlung direkt.
 
 ### Spiel (`data/games/<id>.json`)
 ```json
@@ -35,6 +49,9 @@ scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
   "summary": "1–2 Sätze: was ist auf Android besonders?",
   "cover": {"url": "https://…", "source": "https://…"},
   "screenshots": [{"url": "https://…", "caption": "Originalspiel", "source": "https://…"}],
+  "versions": [{"id": "snes", "name": "SNES (1994)", "type": "original", "year": 1994, "platforms": ["SNES"],
+                "traits": ["widescreen"], "note": "1–2 Sätze, was diese Fassung auszeichnet",
+                "links": [{"label": "Quelle", "url": "https://…"}]}],   // type: meta.json versionTypes
   "routes": [ … ],                  // Spielwege, siehe unten
   "mods": [{"id": "brutal-doom", "name": "…", "category": "gameplay", "url": "https://…",
             "edition": "…", "description": "…", "verification": "ai-unverified"}],
@@ -47,6 +64,7 @@ scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 {
   "id": "sm-metroidarch",                 // eindeutig im Spiel
   "name": "MetroidArch",
+  "release": "snes",                      // Pflicht: id der Fassung, die dieser Weg spielt
   "kind": "emulator-mod",                 // meta.json kinds
   "edition": "SNES", "runtime": "RetroArch-Fork / bsnes-hd",
   "projects": ["metroidarch-new"],        // ids aus projects.json (Pflicht: Projekt ODER links)
@@ -63,6 +81,9 @@ scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
   "testedOn": [],
   "screenshots": [{"url": "https://…", "caption": "…", "source": "README-URL", "credit": "Projektname", "check": "source-verified"}],
   "links": [{"label": "Google Play", "url": "https://…"}],
+  "reports": [{"url": "https://reddit.com/…", "device": "AYN Thor", "summary": "1 Satz", "date": "YYYY-MM-DD"}],
+  "performance": [{"device": "AYN Thor", "result": "z. B. stabile 60 FPS in 2× Auflösung", "settings": "…",
+                   "source": "https://…", "date": "YYYY-MM-DD"}],   // nur mit Quelle, nie schätzen
   "checkedAt": "YYYY-MM-DD"
 }
 ```
@@ -83,7 +104,11 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
 
 1. **Vorbereiten**
    `git pull --rebase` · `python3 scripts/atlas.py stats`
-2. **Rechercheanfragen** (höchste Priorität)
+2. **Rechercheanfragen und KI-Recherche nachprüfen** (höchste Priorität)
+   Neue Issues mit Label `recherche` bearbeitet sofort die GitHub Action „KI-Recherche“ (OpenAI) und schließt sie.
+   Deine Aufgabe: Changelog-Einträge mit `"by": "ai-research"` seit deinem letzten Lauf durchgehen, die Quellen öffnen,
+   Falsches korrigieren oder entfernen, Fassungen zusammenführen, Texte glätten, Screenshots ergänzen.
+   Noch offene Issues (z. B. wenn die Action fehlschlug):
    `gh api "repos/markusklier/handheld-atlas/issues?labels=recherche&state=open"` – im Body steht `game: <id>`.
    Spiel recherchieren (Schritt 4), danach Issue mit kurzer Zusammenfassung kommentieren und schließen:
    `gh api -X POST repos/markusklier/handheld-atlas/issues/<n>/comments -f body="…"` und
@@ -101,6 +126,9 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
 4. **Spiele recherchieren** (3–5 Spiele pro Lauf)
    Reihenfolge: Rechercheanfragen → kuratierte Spiele mit Lücken (kein Cover, Spielwege ohne Screenshots) →
    bekannte Index-Spiele ohne Spielwege (große Franchises zuerst) → Spiele, die in Leads oft vorkommen.
+   Zuerst die **Fassungen** vervollständigen (Original, Ports, Android, Remaster/Remake mit Jahr), dann je Fassung die Wege.
+   Erfahrungsberichte (`reports`) und belegte Performance-Angaben (`performance`) für den Thor bzw. vergleichbare
+   Geräte (Odin 2, Retroid Pocket 5) aktiv suchen – das ist die Grundlage für die Empfehlung in der App.
    Suche gezielt: „<Spiel> android port“, „<Spiel> dual screen“, „<Spiel> AYN Thor“, „<Spiel> decomp/recomp android“,
    Mods für Android-taugliche Fassungen. Quellen: GitHub, offizielle Projektseiten, Google Play, r/SBCGaming, r/AYN,
    r/EmulationOnAndroid, EmuReady, PortMaster, GAFT. Pro Spiel nur Wege, die es **wirklich** gibt.

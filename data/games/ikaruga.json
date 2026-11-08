@@ -6,8 +6,6 @@
     "Nintendo GameCube",
     "Dreamcast"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Ikaruga%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
@@ -23,5 +21,25 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube",
+      "type": "original",
+      "platforms": [
+        "Nintendo GameCube"
+      ]
+    },
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "release",
+      "platforms": [
+        "Dreamcast"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

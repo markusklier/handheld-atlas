@@ -221,7 +221,7 @@ def mark_tried(state, source, gid):
     state.setdefault(source, {})[gid] = date.today().isoformat()
 
 
-def fill_wikipedia(fetch=get, pause=1.0, limit=80):
+def fill_wikipedia(fetch=get, pause=1.0, limit=250):
     added = tried = 0
     state = load_state()
     for f in sorted((DATA / 'games').glob('*.json')):

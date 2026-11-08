@@ -3,10 +3,65 @@
   "title": "Balatro",
   "franchise": "Balatro",
   "platforms": [
-    "PC"
+    "PC",
+    "Android"
   ],
   "genre": "Kartenspiel",
   "summary": "Offizielle Mobilversion oder ein Dual-Screen-Umbau deiner PC-Kopie: die Lizenz und Dateiformate unterscheiden sich.",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2379780/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_3be65a7dd3be072d567e11883d208861a7e959fa.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_e32ac94d7d1d6be7dd015d78f2b52aeb4cc282ed.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_b8455573ec1fd2c9412f22bd8df05f2d8027a95b.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_075cb45cbfa97d8139fb11f21667d6e35f908640.1920x1080.jpg",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2379780/"
+    }
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "android",
+      "platforms": [
+        "Android"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "balatro-dual",
@@ -70,7 +125,10 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "pc",
+      "reports": [],
+      "performance": []
     },
     {
       "id": "balatro-native",
@@ -104,44 +162,11 @@
           "url": "https://www.playbalatro.com/"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "android",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_600x900_2x.jpg",
-    "source": "https://store.steampowered.com/app/2379780/"
-  },
-  "screenshots": [
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/96208723dbedef49d71bf1b0a74aee1689018c50/ss_96208723dbedef49d71bf1b0a74aee1689018c50.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_4862112e5030f74a5818cd4c31347d699ac5adf3.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_3be65a7dd3be072d567e11883d208861a7e959fa.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_e32ac94d7d1d6be7dd015d78f2b52aeb4cc282ed.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_b8455573ec1fd2c9412f22bd8df05f2d8027a95b.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    },
-    {
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/ss_075cb45cbfa97d8139fb11f21667d6e35f908640.1920x1080.jpg",
-      "caption": "Originalspiel",
-      "source": "https://store.steampowered.com/app/2379780/"
-    }
-  ]
+  "updatedAt": "2026-11-08"
 }

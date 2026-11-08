@@ -29,12 +29,14 @@ const EMU_KINDS = new Set(['emulation', 'emulator-mod']);
 const FILTERS = [
   { id: 'dual', label: 'Dual Screen', icon: 'dual', test: (g) => g._dual },
   { id: 'routes', label: 'Mit Spielwegen', icon: 'play', test: (g) => g.routes.length > 0 },
-  { id: 'native', label: 'Native Ports', icon: 'chip', test: (g) => g.routes.some((r) => NATIVE_KINDS.has(r.kind)) },
+  { id: 'android', label: 'Android offiziell', icon: 'check', test: (g) => (g.versions || []).some((v) => v.platforms.includes('Android')) },
+  { id: 'native', label: 'Native Ports', icon: 'chip', test: (g) => g.routes.some((r) => NATIVE_KINDS.has(r.kind)) || (g.versions || []).some((v) => v.platforms.includes('Android')) },
   { id: 'emu', label: 'Emulation', icon: 'gamepad', test: (g) => g.routes.some((r) => EMU_KINDS.has(r.kind)) || g._platformOptions > 0 },
   { id: 'mods', label: 'Mods', icon: 'wrench', test: (g) => g.mods.length > 0 || g.routes.some((r) => r.features?.includes('mods')) },
   { id: 'tested', label: 'Thor-getestet', icon: 'check', test: (g) => g.routes.some((r) => r.verification === 'thor-tested') },
   { id: 'ai', label: 'KI-Funde', icon: 'ai', test: (g) => g._ai },
 ];
+const F = (id) => FILTERS.find((f) => f.id === id).test;
 const TABS = [
   { id: 'discover', href: '#/', label: 'Entdecken', icon: 'compass' },
   { id: 'franchises', href: '#/franchises', label: 'Franchises', icon: 'layers' },
@@ -124,7 +126,7 @@ function previewSlides(g) {
 
 function cardHTML(g) {
   const ways = g.routes.length
-    ? `<b>${g.routes.length} ${g.routes.length === 1 ? 'Spielweg' : 'Spielwege'}</b> · ${esc(g.platforms[0] || '')}`
+    ? `<b>${g.routes.length} ${g.routes.length === 1 ? 'Spielweg' : 'Spielwege'}</b> · ${(g.versions || []).length > 1 ? `${g.versions.length} Fassungen` : esc(g.platforms[0] || '')}`
     : `${esc(g.platforms.join(', '))}${g._platformOptions ? ' · Emulation' : ''}`;
   const h = hue(g.franchise || g.title);
   const backdrop = g.screenshots.find((s) => s.caption !== 'Titelbild') || g.screenshots[0];
@@ -242,8 +244,9 @@ function viewDiscover() {
     const recent = DB.changelog.flatMap((e) => [e.game, ...(e.games || [])]).filter(Boolean);
     const recentGames = [...new Set(recent)].map((id) => DB.byId.get(id)).filter((g) => g && g.routes.length);
     html += shelf('Dual Screen auf dem Thor', DB.games.filter((g) => g._dual).sort(byScore), '#/filter/dual');
-    html += shelf('Native Ports, Decomps &amp; Recomps', curated.filter(FILTERS[2].test).sort(byScore), '#/filter/native');
-    html += shelf('Mit Mods', DB.games.filter(FILTERS[4].test).sort(byScore), '#/filter/mods');
+    html += shelf('Native Ports, Decomps &amp; Recomps', curated.filter(F('native')).sort(byScore), '#/filter/native');
+    html += shelf('Offiziell für Android erschienen', DB.games.filter(F('android')).sort(byScore), '#/filter/android');
+    html += shelf('Mit Mods', DB.games.filter(F('mods')).sort(byScore), '#/filter/mods');
     if (recentGames.length) html += shelf('Zuletzt aktualisiert', recentGames, '#/neu');
     if (DB.games.some((g) => g._ai)) html += shelf('Neue KI-Funde', DB.games.filter((g) => g._ai), '#/filter/ai');
   }
@@ -254,51 +257,168 @@ function viewDiscover() {
   return html;
 }
 
-function platformOptionsFor(g) {
-  return g.platforms.flatMap((p) => (DB.platforms[p] || []).map((o) => ({ ...o, platform: p })));
+/* ---------- versions ("Fassungen") and ways to play them ---------- */
+const NATIVE = new Set(['native', 'native-mod', 'decomp', 'recomp', 'source-port']);
+const VERIF_SCORE = { 'thor-tested': 50, community: 30, documented: 18, 'ai-unverified': 8 };
+
+function versionsOf(g) {
+  if (g.versions?.length) return g.versions;
+  return g.platforms.map((p, i) => ({ id: 'p' + i, name: p, type: i ? 'release' : 'original', platforms: [p] }));
+}
+
+/* Every way to play the game: game-specific routes, official Android apps, generic platform emulators. */
+function waysFor(g) {
+  const versions = versionsOf(g);
+  const ways = [];
+  for (const v of versions) {
+    const own = g.routes.filter((r) => r.release === v.id || (!r.release && v === versions[0]));
+    for (const r of own) ways.push({ key: 'r:' + r.id, type: 'route', r, v, name: r.name, kind: r.kind, features: [...(r.features || [])] });
+    if (v.platforms.includes('Android') && !own.some((r) => r.kind === 'native')) {
+      ways.push({ key: 'o:' + v.id, type: 'official', v, name: 'Offizielle Android-App', kind: 'native', features: [...(v.traits || [])] });
+    }
+    // an official Android release makes emulating its other platforms pointless noise
+    if (v.platforms.includes('Android')) continue;
+    const seen = new Set(own.flatMap((r) => r.projects || []));
+    // multi-platform re-releases: only the primary (first) platform, otherwise every console emulator shows up
+    for (const p of v.platforms.slice(0, 1)) for (const o of DB.platforms[p] || []) {
+      if (seen.has(o.project)) continue;
+      seen.add(o.project);
+      ways.push({ key: `g:${v.id}:${o.project}`, type: 'generic', o, v, name: o.name, kind: o.kind, features: [], targets: o.targets });
+    }
+  }
+  for (const w of ways) Object.assign(w, rate(w));
+  return ways;
+}
+
+/* Transparent ranking for the selected device. Every point comes with a visible reason. */
+function rate(w) {
+  const reasons = [];
+  const r = w.r;
+  const targets = r?.targets || w.targets || ['android'];
+  if (device().target && !targets.includes(device().target)) return { score: -999, reasons, fits: false };
+  let score = w.type === 'route' ? VERIF_SCORE[r.verification] ?? 8 : w.type === 'official' ? 22 : 5;
+  if (w.type === 'route' && r.verification === 'thor-tested') reasons.push(['check', 'Auf dem Thor getestet']);
+  if (w.type === 'route' && r.verification === 'community') reasons.push(['gamepad', 'Erfahrungsberichte']);
+  if (w.type === 'official') reasons.push(['check', 'Offiziell für Android']);
+  if (w.features.includes('dual-screen')) { score += device().dualScreen ? 25 : 4; reasons.push(['dual', 'Dual Screen']); }
+  if (NATIVE.has(w.kind) || w.type === 'official') { score += 12; reasons.push(['chip', 'Läuft nativ']); }
+  for (const [f, txt] of [['widescreen', 'Widescreen'], ['high-fps', 'Hohe Bildrate'], ['upscaling', 'Höhere Auflösung'], ['crossplay', 'Crossplay']]) {
+    if (w.features.includes(f)) { score += 4; reasons.push(['spark', txt]); }
+  }
+  if (w.features.includes('mods')) { score += 3; reasons.push(['wrench', 'Mods']); }
+  if (w.type === 'generic') reasons.push(['info', 'Allgemein, ungeprüft']);
+  const effort = r?.effort || (w.type === 'generic' ? 'guided' : 'easy');
+  score += { easy: 6, guided: 2, advanced: 0, experimental: -6 }[effort] ?? 0;
+  if (r?.status === 'archived') { score -= 40; reasons.push(['alert', 'Archiviert']); }
+  if (r?.status === 'experimental') { score -= 6; reasons.push(['alert', 'Experimentell']); }
+  const reports = r?.reports?.length || 0;
+  if (reports) score += Math.min(reports * 3, 15);
+  return { score, reasons, fits: true, effort, reports, perf: r?.performance?.length || 0 };
+}
+
+function wayTag(w) {
+  if (w.type === 'route') return verifTag(w.r.verification);
+  if (w.type === 'official') return `<span class="tag v-documented">${icon('check')}Offizielle App</span>`;
+  return `<span class="tag">${icon('info')}Allgemein</span>`;
+}
+
+function wayBody(g, w) {
+  if (w.type === 'route') return routeHTML(g, w.r);
+  if (w.type === 'official') {
+    return `<article class="route"><p>${esc(w.v.name)} ist offiziell für Android erschienen: kaufen und installieren über den Play Store, keine Emulation nötig.</p>
+      ${(w.v.links || []).length ? `<div class="row">${w.v.links.map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
+      <p class="faint">Controller- und Zweitbildschirm-Unterstützung sind für diese Fassung noch nicht eingetragen.</p></article>`;
+  }
+  return `<article class="route"><p class="muted">${esc(w.o.note)}</p><p class="faint">Allgemeiner Emulator für ${esc(w.v.platforms.join(', '))}. Ob ${esc(g.title)} darin gut läuft, ist noch nicht spielspezifisch geprüft.</p>${projectLine(DB.projects[w.o.project])}</article>`;
+}
+
+const wayId = (key) => 'w-' + key.replace(/[^a-z0-9-]/gi, '_');
+
+function wayRow(g, w, open) {
+  const dual = w.features.includes('dual-screen');
+  const mini = w.reasons.filter(([ic]) => ic === 'spark' || ic === 'wrench' || ic === 'chip').map(([, t]) => `<span class="tag">${esc(t)}</span>`).join('');
+  return `<details class="way${w.type === 'generic' ? ' generic' : ''}" id="${wayId(w.key)}" ${open ? 'open' : ''}>
+    <summary><span class="way-name">${esc(w.name)}<small>${esc(label('kinds', w.kind))}${w.r?.runtime ? ' · ' + esc(w.r.runtime) : ''}</small></span>
+      <span class="way-tags">${dual ? `<span class="tag dual">${icon('dual')}Dual</span>` : ''}${mini}${wayTag(w)}</span></summary>
+    ${wayBody(g, w)}</details>`;
+}
+
+function versionCard(g, v, ways) {
+  const meta = [label('versionTypes', v.type), v.year].filter(Boolean).join(' · ');
+  const android = v.platforms.includes('Android');
+  const shown = state.dualOnly ? ways.filter((w) => w.features.includes('dual-screen')) : ways;
+  const plats = v.platforms.length > 1 || v.platforms[0] !== v.name ? ' · ' + esc(v.platforms.join(', ')) : '';
+  return `<section class="version" id="v-${esc(v.id)}">
+    <div class="version-head"><div><h3>${esc(v.name)}</h3><div class="sub">${esc(meta)}${plats}</div></div>
+      <div class="row">${android ? `<span class="tag v-documented">${icon('check')}Android offiziell</span>` : ''}${(v.traits || []).map((t) => `<span class="tag">${esc(label('features', t))}</span>`).join('')}</div></div>
+    ${v.note ? `<p class="muted">${esc(v.note)}</p>` : ''}
+    ${shown.length ? `<div class="ways">${shown.map((w) => wayRow(g, w, state.openWay === w.key)).join('')}</div>`
+      : `<p class="faint">${ways.length ? 'Kein Dual-Screen-Weg für diese Fassung.' : 'Für diese Fassung ist auf Android noch kein Weg bekannt.'}</p>`}
+    ${(v.links || []).length ? `<div class="row">${v.links.map((l) => `<a class="link" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
+  </section>`;
+}
+
+function compareTable(g, ways) {
+  const yes = (b, txt = 'ja') => b ? `<span class="yes">${icon('check')}${txt}</span>` : '<span class="no">–</span>';
+  const pic = (w) => ['widescreen', 'upscaling', 'high-fps'].filter((f) => w.features.includes(f)).map((f) => label('features', f)).join(', ');
+  const ART = { emulation: 'emuliert', 'emulator-mod': 'emuliert + Mod', companion: 'mit Companion', java: 'Java-Laufzeit', 'pc-runtime': 'PC-Laufzeit' };
+  const art = (w) => NATIVE.has(w.kind) || w.type === 'official' ? 'nativ' : ART[w.kind] || label('kinds', w.kind);
+  return `<p class="muted" style="margin:14px 0 8px">Alle Wege nebeneinander, sortiert wie die Empfehlung. Performance-Messungen und Erfahrungsberichte füllen sich nach und nach.</p>
+  <div class="table-wrap"><table class="compare"><thead><tr><th>Weg</th><th>Fassung</th><th>Art</th><th>Dual Screen</th><th>Bild</th><th>Mods</th><th>Aufwand</th><th>Prüfstufe</th><th>Berichte</th><th>Performance</th></tr></thead><tbody>
+  ${ways.map((w) => `<tr><td><button class="linkish" data-open="${esc(w.key)}">${esc(w.name)}</button></td><td>${esc(w.v.name)}</td><td>${art(w)}</td>
+    <td>${yes(w.features.includes('dual-screen'))}</td><td>${pic(w) ? esc(pic(w)) : '<span class="no">–</span>'}</td>
+    <td>${yes(w.features.includes('mods'))}</td><td>${esc(label('effort', w.effort))}</td><td>${wayTag(w)}</td>
+    <td>${w.reports || '<span class="no">–</span>'}</td><td>${w.perf ? `${w.perf} Messung(en)` : '<span class="no">noch keine</span>'}</td></tr>`).join('')}
+  </tbody></table></div>`;
+}
+
+function recommendation(g, ways) {
+  const top = ways.filter((w) => w.fits && w.r?.status !== 'archived').slice(0, 3);
+  if (!top.length) return '';
+  return `<section class="section reco"><div class="section-head"><h2>Für ${esc(device().name || 'dein Gerät')} zuerst ansehen</h2>
+      <span class="faint">Reihenfolge aus Prüfstufe, Dual Screen, nativ oder emuliert und Aufwand – keine Messung</span></div>
+    <div class="reco-grid">${top.map((w, i) => `<button class="reco-card" data-open="${esc(w.key)}">
+      <span class="rank">${i + 1}</span><span class="reco-main"><b>${esc(w.name)}</b><small>${esc(w.v.name)}</small>
+      <span class="reasons">${w.reasons.slice(0, 4).map(([ic, t]) => `<span class="tag${ic === 'dual' ? ' dual' : ''}">${icon(ic)}${esc(t)}</span>`).join('')}</span></span></button>`).join('')}</div></section>`;
 }
 
 function viewGame(id) {
   const g = DB.byId.get(id);
   if (!g) return `<div class="empty">Spiel nicht gefunden. <a class="link" href="#/">Zur Übersicht</a></div>`;
-  const tab = state.gameTab || 'routes';
-  const fits = g.routes.filter(routeFits);
-  const other = g.routes.filter((r) => !routeFits(r));
-  const plat = platformOptionsFor(g);
+  const tab = state.gameTab || 'versions';
+  const versions = versionsOf(g);
+  const ways = waysFor(g).sort((a, b) => b.score - a.score);
+  const fitting = ways.filter((w) => w.fits);
+  const hidden = ways.length - fitting.length;
   const fav = state.favs.has(g.id);
-  const tabs = [['routes', 'Spielwege', g.routes.length], ['mods', 'Mods', g.mods.length], ['platform', 'Emulation allgemein', plat.length]]
-    .filter(([k, , n]) => n > 0 || k === 'routes');
+  const tabs = [['versions', 'Fassungen', versions.length], ['compare', 'Vergleich', fitting.length], ['mods', 'Mods', g.mods.length]]
+    .filter(([k, , n]) => n > 0 || k === 'versions');
+  const best = (v) => Math.max(-998, ...fitting.filter((w) => w.v === v).map((w) => w.score));
   let body = '';
-  if (tab === 'routes') {
-    const dualOnly = state.dualOnly && g._dual;
-    const shown = dualOnly ? fits.filter((r) => r.features?.includes('dual-screen')) : fits;
-    body = g.routes.length === 0
-      ? `<div class="panel" style="margin-top:14px"><h3>Noch keine spielspezifischen Spielwege</h3><p class="muted">Für ${esc(g.title)} ist noch nichts dokumentiert. ${plat.length ? 'Unter „Emulation allgemein“ stehen die üblichen Emulatoren für die Originalplattform.' : ''} Der Pflege-Agent recherchiert Spiele nach und nach.</p></div>`
-      : `${g._dual ? `<div class="row" style="margin-top:14px"><button class="chip" id="dualOnly" aria-pressed="${!!dualOnly}">${icon('dual')}Nur Dual Screen</button></div>` : ''}
-         <div class="routes">${shown.map((r) => routeHTML(g, r)).join('')}</div>
-         ${other.length ? `<details class="section"><summary class="muted">${other.length} Spielweg(e) für andere Plattformen</summary><div class="routes">${other.map((r) => routeHTML(g, r)).join('')}</div></details>` : ''}`;
-  } else if (tab === 'mods') {
+  if (tab === 'versions') {
+    const order = [...versions].sort((a, b) => best(b) - best(a));
+    body = `<p class="explain"><b>Fassung</b> = welche Version des Spiels (z. B. PS2-Original, PC-Fassung, Android-App, Remaster). <b>Spielweg</b> = womit du sie auf deinem Gerät spielst (Emulator, nativer Port, App, Mod).</p>
+      ${g._dual ? `<div class="row" style="margin-top:10px"><button class="chip" id="dualOnly" aria-pressed="${!!state.dualOnly}">${icon('dual')}Nur Dual Screen</button></div>` : ''}
+      <div class="versions">${order.map((v) => versionCard(g, v, fitting.filter((w) => w.v === v))).join('')}</div>
+      ${hidden ? `<p class="faint section">${hidden} Weg(e) nur für andere Plattformen als ${esc(device().name)} ausgeblendet (Info → Gerät).</p>` : ''}`;
+  } else if (tab === 'compare') {
+    body = compareTable(g, fitting);
+  } else {
     body = `<div class="mods">${g.mods.map((m) => `<div class="mod"><div class="row" style="justify-content:space-between"><h3>${esc(m.name)}</h3>${verifTag(m.verification || 'documented')}</div>
       <div class="row">${m.category ? `<span class="tag">${esc(m.category)}</span>` : ''}${m.edition ? `<span class="tag">${esc(m.edition)}</span>` : ''}</div>
       <p class="muted" style="margin:0">${esc(m.description)}</p>${shotsHTML(m.screenshots, 'm:' + m.id)}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
-  } else {
-    body = `<p class="muted" style="margin:14px 0 0">Allgemeine Emulatoren für die Originalplattform. Ob ${esc(g.title)} darin gut läuft, ist nicht spielspezifisch geprüft.</p>
-      <div class="routes">${plat.map((o) => {
-        const p = DB.projects[o.project] || {};
-        return `<article class="route"><div class="route-head"><div><h3>${esc(o.name)}</h3><div class="sub">${esc(o.platform)} · ${esc(label('kinds', o.kind))}</div></div><span class="tag">Plattform-Option</span></div>
-          <p class="muted">${esc(o.note)}</p>${projectLine(p)}</article>`;
-      }).join('')}</div>`;
   }
   return `<a class="btn back" href="#/" data-back>${icon('back')}Zurück</a>
     <div class="hero">${coverHTML(g, { badges: false })}<div class="meta">
       <a class="franchise" href="#/franchise/${encodeURIComponent(g.franchise)}">${esc(g.franchise)}</a>
       <h1>${esc(g.title)}</h1>
-      <div class="row">${g.platforms.map((p) => `<span class="tag">${esc(p)}</span>`).join('')}${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
+      <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
       <div class="row"><button class="btn ${fav ? 'on' : ''}" id="fav">${icon('bookmark')}${fav ? 'Gemerkt' : 'Merken'}</button>
-      ${DB.meta.repo ? `<a class="btn" href="https://github.com/${esc(DB.meta.repo)}/issues/new?labels=recherche&title=${encodeURIComponent('Recherche: ' + g.title)}&body=${encodeURIComponent('game: ' + g.id + '\n\nWas soll der Agent prüfen? (optional)')}" target="_blank" rel="noopener">${icon('ai')}Recherche anfordern</a>` : ''}
+      ${DB.meta.repo ? `<a class="btn" href="https://github.com/${esc(DB.meta.repo)}/issues/new?labels=recherche&title=${encodeURIComponent('Recherche: ' + g.title)}&body=${encodeURIComponent('game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)')}" target="_blank" rel="noopener">${icon('ai')}Recherche anfordern</a>` : ''}
       ${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
     </div></div>
+    ${recommendation(g, fitting)}
     ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>Originalspiel</h2></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
     <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>`;
 }
@@ -399,7 +519,7 @@ function viewNews() {
     </div>
     ${[...days.entries()].map(([d, es]) => `<div class="log-day"><h3>${fmtDate(d)}</h3>${es.map((e) => {
       const games = [e.game, ...(e.games || [])].filter(Boolean).map((id) => DB.byId.get(id)).filter(Boolean);
-      const ai = e.by === 'agent';
+      const ai = e.by === 'agent' || e.by === 'ai-research';
       return `<div class="log"><div class="ico ${esc(e.type)}${ai ? ' ai' : ''}">${icon(ai ? 'ai' : ic[e.type] || 'info')}</div><div>
         <div>${esc(e.text)}</div>
         <div class="faint">${games.slice(0, 6).map((g) => `<a href="#/spiel/${esc(g.id)}">${esc(g.title)}</a>`).join(' · ')}${e.url ? ` ${games.length ? '· ' : ''}<a href="${esc(e.url)}" target="_blank" rel="noopener">Quelle</a>` : ''}</div>
@@ -435,7 +555,7 @@ function route() {
   const [, a = '', ...rest] = hash.split('/');
   const b = decodeURIComponent(rest.join('/'));
   let html, tab = 'discover';
-  if (a === 'spiel') { if (state.lastGame !== b) { state.gameTab = 'routes'; state.dualOnly = false; } state.lastGame = b; html = viewGame(b); tab = null; }
+  if (a === 'spiel') { if (state.lastGame !== b) { state.gameTab = 'versions'; state.dualOnly = false; state.openWay = null; } state.lastGame = b; html = viewGame(b); tab = null; }
   else if (a === 'franchises') { html = viewFranchises(); tab = 'franchises'; }
   else if (a === 'franchise') { html = viewFranchise(b); tab = 'franchises'; }
   else if (a === 'projekte') { html = viewProjects(); tab = 'projects'; }
@@ -492,6 +612,13 @@ document.addEventListener('click', (e) => {
   if (arrow) { e.preventDefault(); e.stopPropagation(); stepPreview(arrow.closest('.card'), +arrow.dataset.slide); return; }
   const t = e.target.closest('button, a');
   if (!t) return;
+  if (t.dataset.open) {
+    e.preventDefault();
+    state.openWay = t.dataset.open; state.gameTab = 'versions'; route();
+    const el = document.getElementById(wayId(t.dataset.open));
+    if (el) { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); el.querySelector('summary')?.focus({ preventScroll: true }); }
+    return;
+  }
   if (t.dataset.chip) { state.chips.has(t.dataset.chip) ? state.chips.delete(t.dataset.chip) : state.chips.add(t.dataset.chip); state.limit = PAGE; rerender(); restoreFocus(`[data-chip="${t.dataset.chip}"]`); }
   else if (t.id === 'reset') { state.chips.clear(); state.platform = ''; state.q = ''; $('#q').value = ''; rerender(); }
   else if (t.id === 'more') { state.limit += PAGE; rerender(); restoreFocus('#more'); }

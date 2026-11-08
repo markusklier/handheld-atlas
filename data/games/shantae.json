@@ -5,8 +5,6 @@
   "platforms": [
     "Game Boy / Game Boy Color"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Shantae%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "game-boy-game-boy-color",
+      "name": "Game Boy / Game Boy Color",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

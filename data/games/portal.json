@@ -5,8 +5,6 @@
   "platforms": [
     "PC"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/400/"
@@ -42,5 +40,17 @@
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/400/"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

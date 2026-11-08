@@ -6,8 +6,6 @@
     "PlayStation 2",
     "Wii"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Okami%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
@@ -23,5 +21,25 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Wii",
+      "type": "release",
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

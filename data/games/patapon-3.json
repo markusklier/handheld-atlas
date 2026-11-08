@@ -5,8 +5,6 @@
   "platforms": [
     "PSP"
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Patapon%203%20%28USA%29%20%28En%2CFr%2CEs%2CPt%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
@@ -22,5 +20,17 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
     }
-  ]
+  ],
+  "versions": [
+    {
+      "id": "psp",
+      "name": "PSP",
+      "type": "original",
+      "platforms": [
+        "PSP"
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-08"
 }

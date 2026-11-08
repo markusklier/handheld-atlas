@@ -7,6 +7,20 @@
   ],
   "genre": "Action-Adventure",
   "summary": "Eine zusätzliche Live-Karte entsteht hier durch einen Emulator-Fork und ein versionsgebundenes Companion-Paket.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Metroid_Dread"
+  },
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "dread-eden",
@@ -63,12 +77,11 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-switch",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Metroid_Dread"
-  }
+  "updatedAt": "2026-11-08"
 }

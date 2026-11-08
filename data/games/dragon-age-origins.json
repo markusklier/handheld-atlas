@@ -9,6 +9,36 @@
   ],
   "genre": "Rollenspiel",
   "summary": "Xbox-360-Fassung als statische Recompilation für Android mit Companion-Deck auf dem zweiten Bildschirm.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Dragon_Age%3A_Origins"
+  },
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "release",
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360",
+      "type": "release",
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
   "routes": [
     {
       "id": "dao-recomp-duo",
@@ -56,12 +86,11 @@
           "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo"
         }
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-08",
+      "release": "xbox-360",
+      "reports": [],
+      "performance": []
     }
   ],
-  "updatedAt": "2026-11-08",
-  "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Dragon_Age%3A_Origins"
-  }
+  "updatedAt": "2026-11-08"
 }
