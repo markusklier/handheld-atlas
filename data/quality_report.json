@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T15:50:33Z",
+  "generatedAt": "2026-11-08T16:36:49Z",
   "catalogGames": 41,
   "watchlistOnlyGames": 333,
   "gamesWithPictures": 26,
@@ -44,7 +44,7 @@
       "routesWithVersionRequirements": 4,
       "monitoredOriginalRepos": 6,
       "pendingResearchCandidates": 39,
-      "lastDeepResearchAt": "2026-11-08T15:49:41Z",
+      "lastDeepResearchAt": "2026-11-08T16:36:36Z",
       "researchMode": "live",
       "coverageAssertion": "unknown; targeted searches cannot prove all variants were found"
     },

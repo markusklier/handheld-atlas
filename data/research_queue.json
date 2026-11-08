@@ -30,7 +30,7 @@
       "notTested": true,
       "rights": "External project: check licence, media permissions and publisher terms.",
       "firstSeenAt": "2026-11-08T02:56:50Z",
-      "lastSeenAt": "2026-11-08T15:49:41Z"
+      "lastSeenAt": "2026-11-08T16:36:36Z"
     },
     {
       "id": "6b3c2e45a0309c599fb8",
@@ -195,7 +195,7 @@
       "notTested": true,
       "rights": "External project: check licence, media permissions and publisher terms.",
       "firstSeenAt": "2026-11-08T02:56:50Z",
-      "lastSeenAt": "2026-11-08T15:49:41Z"
+      "lastSeenAt": "2026-11-08T16:36:36Z"
     },
     {
       "id": "b761e38c55bb4a9208e0",
@@ -1222,7 +1222,11 @@
       "rights": "External project: check licence, media permissions and publisher terms.",
       "discoveryMode": "live",
       "firstSeenAt": "2026-11-08T15:17:11Z",
-      "lastSeenAt": "2026-11-08T15:49:41Z"
+      "lastSeenAt": "2026-11-08T16:36:36Z",
+      "mediaScan": {
+        "checkedAt": "2026-11-08T16:36:47Z",
+        "result": "no-gallery-found"
+      }
     },
     {
       "id": "3c05476065129b604425",
@@ -1363,12 +1367,29 @@
       "versionsMentioned": [],
       "loadersMentioned": [],
       "evidence": [],
-      "mediaCandidates": [],
+      "mediaCandidates": [
+        {
+          "url": "https://raw.githubusercontent.com/DankMiimer/minecraft-bedrock-handheld-port/main/portmaster/minecraftbedrock/screenshot.png",
+          "caption": "screenshot",
+          "sourceUrl": "https://github.com/DankMiimer/minecraft-bedrock-handheld-port/blob/main/portmaster/minecraftbedrock/screenshot.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DankMiimer/minecraft-bedrock-handheld-port/main/screenshot.png",
+          "caption": "screenshot",
+          "sourceUrl": "https://github.com/DankMiimer/minecraft-bedrock-handheld-port/blob/main/screenshot.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        }
+      ],
       "notTested": true,
       "rights": "External project: check licence, media permissions and publisher terms.",
       "discoveryMode": "live",
       "firstSeenAt": "2026-11-08T15:17:11Z",
-      "lastSeenAt": "2026-11-08T15:49:41Z"
+      "lastSeenAt": "2026-11-08T16:36:36Z",
+      "mediaScan": {
+        "checkedAt": "2026-11-08T16:36:47Z",
+        "result": "source-gallery"
+      }
     },
     {
       "id": "79313ccfca78826ca066",
@@ -1386,12 +1407,53 @@
       "versionsMentioned": [],
       "loadersMentioned": [],
       "evidence": [],
-      "mediaCandidates": [],
+      "mediaCandidates": [
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/day-clock.png",
+          "caption": "day-clock",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/day-clock.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/inventory-with-items.png",
+          "caption": "inventory-with-items",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/inventory-with-items.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/item-details-armor.png",
+          "caption": "item-details-armor",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/item-details-armor.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/item-details-block.png",
+          "caption": "item-details-block",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/item-details-block.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/item-details-enchanted.png",
+          "caption": "item-details-enchanted",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/item-details-enchanted.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/main/assets/screenshots/item-details-game.png",
+          "caption": "item-details-game",
+          "sourceUrl": "https://github.com/erikvanhoolst/minecraft-companion/blob/main/assets/screenshots/item-details-game.png",
+          "reviewStatus": "needs-context-and-rights-review"
+        }
+      ],
       "notTested": true,
       "rights": "External project: check licence, media permissions and publisher terms.",
       "discoveryMode": "live",
       "firstSeenAt": "2026-11-08T15:17:11Z",
-      "lastSeenAt": "2026-11-08T15:49:41Z"
+      "lastSeenAt": "2026-11-08T16:36:36Z",
+      "mediaScan": {
+        "checkedAt": "2026-11-08T16:36:47Z",
+        "result": "source-gallery"
+      }
     }
   ],
   "runs": [
@@ -1493,9 +1555,27 @@
       "result": "partial",
       "mode": "live",
       "note": "Search coverage is bounded, not proof of absence or compatibility. Fixture results are synthetic tests, not live findings."
+    },
+    {
+      "gameId": "minecraft",
+      "title": "Minecraft",
+      "checkedAt": "2026-11-08T16:36:36Z",
+      "providerHits": {
+        "github": 6,
+        "modrinth": 0,
+        "curseforge": 0,
+        "community-lead": 0
+      },
+      "errors": [],
+      "skipped": [
+        "curseforge: budget reached"
+      ],
+      "result": "partial",
+      "mode": "live",
+      "note": "Search coverage is bounded, not proof of absence or compatibility. Fixture results are synthetic tests, not live findings."
     }
   ],
-  "researchedAt": "2026-11-08T15:49:41Z",
+  "researchedAt": "2026-11-08T16:36:36Z",
   "warning": "Automated discovery is incomplete. Every route, version claim, screenshot and compatibility conclusion requires original-source review.",
   "lastMode": "live"
 }
