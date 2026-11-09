@@ -1,6 +1,118 @@
 {
   "leads": [
     {
+      "url": "https://github.com/enjoyerofslop/droidplay-core",
+      "title": "enjoyerofslop/droidplay-core",
+      "excerpt": "DroidPlay Core: Nintendo Switch and Switch 2 games running natively on Android, replayed on Vulkan (nxnative with an Android port). The engine behind DroidPlay. Bring your own game. Formerly droidnative.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/freeKC/Immuch360",
+      "title": "freeKC/Immuch360",
+      "excerpt": "Your media. Any screen. Every perspective. Free, open source app for your photos and videos, flat and immersive (panoramas, 360°, 3D, VR180), from your device, a NAS, Plex or an Immich server, no account. Android, iOS, Android TV, Meta Quest; Windows, Linux and macOS previews; LG webOS test build. ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Mona-Shores-FTC-Robotics/biobuzz",
+      "title": "Mona-Shores-FTC-Robotics/biobuzz",
+      "excerpt": "Mona Shores FTC - Code for 26-27 season",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/vuminh-coder/XPEnglishXPVoca",
+      "title": "vuminh-coder/XPEnglishXPVoca",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/antdroidx/Football-Sim-Engine",
+      "title": "antdroidx/Football-Sim-Engine",
+      "excerpt": "Modern version of College Football Coach: Career Edition. Base originalversion was coded in Java. New version will use AI to help move things along faster.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/townie/awesome-system-one",
+      "title": "townie/awesome-system-one",
+      "excerpt": "Curated list related to System One",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/nikakvo/wg-shield-arm64",
+      "title": "nikakvo/wg-shield-arm64",
+      "excerpt": "Always-on kernel WireGuard for Android without an app — kill switch, IPv4/IPv6, one switch per tunnel, WebUI. SukiSU / KernelSU / Magisk module, arm64.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hy300leosquizz-ctrl/ZeroFG",
+      "title": "hy300leosquizz-ctrl/ZeroFG",
+      "excerpt": "Open-source, platform-agnostic Vulkan frame generation engine focused on mobile implementations. Experimental V1 POC.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Taha4727/PhoneMic",
+      "title": "Taha4727/PhoneMic",
+      "excerpt": "PM",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port",
+      "title": "rayishere0/Project-IGI-Android-Port",
+      "excerpt": "A ground-up, high-performance native Android port of the classic tactical stealth first-person shooter **Project I.G.I.: I'm Going In** (2000). ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/manojkumar-code295/Plant_Disease_Rover_AI",
+      "title": "manojkumar-code295/Plant_Disease_Rover_AI",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/GeneralKnowledge/ixOS",
+      "title": "GeneralKnowledge/ixOS",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mwijay12/bongofoodie",
+      "title": "mwijay12/bongofoodie",
+      "excerpt": "Food ordering app & delivery web platform for East Africa.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/greywolf1499/opds_plus.koplugin",
+      "title": "greywolf1499/opds_plus.koplugin",
+      "excerpt": "Enhanced OPDS catalog browser for KOReader with visual cover display, grid/list views, and extensive customization options",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/empy94/jiva-thor",
       "title": "empy94/jiva-thor",
       "excerpt": "Application expérimentale Jiva à double écran pour Android",
@@ -6287,118 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/YuutaTsubasa/ChaotixRecompiled",
-      "title": "Knuckles' Chaotix",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
-      "title": "New Super Mario Bros. Wii",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Waterdish/zelda3-android",
-      "title": "The Legend of Zelda: A Link to the Past (zelda3 Android)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Waterdish/Shipwright-Android",
-      "title": "Ocarina of Time (Ship of Harkinian)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Velaron/cs16-client",
-      "title": "Counter-Strike 1.6",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/VDavid003/sm64-port-android-base",
-      "title": "Super Mario 64",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/UNDERdecoded/Gen2Recomped",
-      "title": "Pokémon Gold, Silver and Crystal (Gen2Recomped)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/TwilitRealm/dusklight",
-      "title": "The Legend of Zelda: Twilight Princess (Dusklight)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Try/OpenGothic",
-      "title": "Gothic II",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Thor-Wayfinder/thor-wayfinder",
-      "title": "Thor Wayfinder 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ThatGuyMcd/Rocket-R",
-      "title": "Rocket: Robot on Wheels",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ThatGuyMcd/DKR-R",
-      "title": "Diddy Kong Racing",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/TeamGDB/Yakumo",
-      "title": "Monster Hunter Portable 3rd HD Ver.",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/TGP482/XboxXBERecomp",
-      "title": "XboxXBERecomp",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:31:50Z",
-    "newLeads": 15,
+    "lastRun": "2026-11-09T16:37:33Z",
+    "newLeads": 14,
     "newEvents": 0
   },
   "aiResearch": {

@@ -17,6 +17,72 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2b3d8687-7996-4aa5-a506-cf5e78a71344",
+          "device": "AYN Odin 2",
+          "emulator": "Vita3K",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "stable 30fps",
+          "votes": 1,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "Vita3K Android Release 12",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "3",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cbc855bb-341f-4f13-aa22-5068093f08aa",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Vita3K",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Firmware: 3.74 / Drivers: Turnip 22 Hot Fix / Upscale: FSR / Internal Resolution Upscaling: x2 (1980x1088) Screenshot available.",
+          "votes": 3,
+          "date": "2026-01-06",
+          "settings": {
+            "Emulator Version": "0.2.1 (3875-789b78d8)",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "1",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True",
+            "Game Version": "1.00",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9a2edd55-f0d4-4054-84ae-31583114029f",
+          "device": "AYN Thor Max",
+          "emulator": "Vita3K",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "GPU DRIVER : Turnip_mrpurple_T30-toasted Jeu qui tourne à 30 fps stable. Quelques artefacts graphiques qui ne pertubent pas le gameplay.",
+          "votes": 0,
+          "date": "2026-09-15"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c9476bd7-0110-4c78-8ef9-587e1b320bc4"
+        }
       ]
     }
   ],

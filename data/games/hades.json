@@ -49,6 +49,146 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/705ebe5e-5f22-4158-82f6-4ef21b46e0e0",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "80hrs played. Zero issues.",
+          "votes": 5,
+          "date": "2026-03-01",
+          "settings": {
+            "Emulator Version": "0.2.0-rc1",
+            "Driver Version": "Default System Driver",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/325d945f-a95d-44ff-bfe9-cdbb7c6fe1cc",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "v1.0.38233",
+          "votes": 5,
+          "date": "2025-12-05",
+          "settings": {
+            "Emulator Version": "0.0.4-rc3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/51d97460-9ceb-4631-9206-251b04fe56d0",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game runs perfectly with Mesa Turnip Driver v25.2.0-R8-Auto 1x (720p/1080p) Docked Mode (Emulated via toggle switch) *When running* **AMD FidelityFX - Super Resolution** *Change the Audio output engine to* **Cubeb**",
+          "votes": 2,
+          "date": "2025-08-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c0e50bbe-8ec7-43ee-bff0-a2f15e138c90",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "It's just perfect! maybe there is a way to improve displayed graphics. there is much more juice in the console. My playtime 30min so far",
+          "votes": 1,
+          "date": "2026-06-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/199dad3b-5fea-41cf-96e9-8c70f4a1a6e3",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game runs perfectly with Mesa Turnip Driver v25.2.0-R8-Auto 1x (720p/1080p) Docked Mode (Emulated via toggle switch) *When running* **AMD FidelityFX - Super Resolution** *Change the Audio output engine to* **Cubeb**",
+          "votes": 1,
+          "date": "2025-07-20",
+          "settings": {
+            "Emulator Version": "Build c7431bd",
+            "Driver Version": "Mesa Turnip Driver v25.2.0-R8-Auto",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f90d492e-a29c-4bb0-ab39-04547a7fd7b8",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays really well, handheld mode, couple of tiny dips, not really noticeable but run on stock settings for best results",
+          "votes": 1,
+          "date": "2025-06-12"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/50bc8dcc-1a13-4c3d-9baf-cb7b4e643131",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Great out of the box. Using Turnip T26 originally. Updated to T28 and works even better.",
+          "votes": 0,
+          "date": "2026-05-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b7d97aea-83bc-4be6-be7e-14b67aea96dd",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Works good",
+          "votes": 0,
+          "date": "2025-09-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/8f356d85-4eee-4fbd-9bc1-36c136e749ba"
+        }
       ]
     },
     {
@@ -57,6 +197,182 @@
       "type": "release",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/218dda02-ffe7-483c-ac93-08401cf84bb5",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "The game runs perfectly fine with a stable 60 FPS, stability wise it seems great with no crashes, i don't know about very long (2hr+) sessions as i only play in small sessions, usually one or two runs max. With steam cli",
+          "votes": 6,
+          "date": "2025-11-11",
+          "settings": {
+            "Emulator Version": "v5.1.0",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton9.0-arm64x-3",
+            "Translation Parameters": "Compatibility",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R8",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/25f98748-08b9-4694-a3b6-013c8f078a70",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Make sure Use Legacy DRM is on.",
+          "votes": 3,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.9.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "async-1.10.3"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e910b3d4-fd12-475d-a5f7-79ae708d5c81",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Stable 60fps, no noticeable drops or freezing. 720p resolution, fullscreen, v-sync on in the game settings",
+          "votes": 3,
+          "date": "2026-02-02",
+          "settings": {
+            "Emulator Version": "5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8f207893-0162-4ea2-bce1-67d5da62d224",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "got constant 120 fps at 80 degrees max in 1920 x 1025. No data on battery life though since I only play short session. (FG repack)",
+          "votes": 3,
+          "date": "2025-12-21"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d6654633-1ae0-4a02-8763-4cf760974c76",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Around 80-100fps Capped at 60 by default, but I recommend to unlock it to 120 and use the 120fps screen mode, so in case of framedrops, are less painful/noticable. (See Environment Variables)",
+          "votes": 2,
+          "date": "2025-11-15",
+          "settings": {
+            "Emulator Version": "0.5.1",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync",
+            "Audio Driver": "PulseAudio",
+            "Environment Variables": "#For 120fps:\nDXVK_FRAME_RATE = 120",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Compatibility",
+            "Startup Selection": "Essential (Load only essential services)",
+            "Resolution (Screen Size)": "1920x1080"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0464f16b-2cf3-433f-abb7-9c39705a89e4",
+          "device": "Samsung Galaxy Tab S9",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-10-13"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/83b3f981-697d-45e9-86aa-0bb1c381bf4b",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-07-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b5f4d6aa-9762-4a03-b8df-81b95ba1ecea",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-05"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5099a4f6-ca64-43a2-adf1-448ab8124a32",
+          "device": "AYN Odin 2 Mini Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-11-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9eac322c-c351-418a-ac8b-22a86a08a556",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Played through the first ~15 minutes of the game at 1920x1080 and got consistent 60fps (not perfect frame pacing) the whole time. I tried editing the container to 120fps and hung out in the 90s most of the time it felt b",
+          "votes": 4,
+          "date": "2025-09-16"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9ae45eb2-858f-4fec-8fda-6d41b5a69e39"
+        }
       ]
     }
   ],

@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dd8365de-aed9-4002-9ec9-fcb725fb6fdd",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Perfect 60fps in all Areas",
+          "votes": 1,
+          "date": "2025-06-28",
+          "settings": {
+            "Emulator Version": "V2.0",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c7f36a8b-8d8b-4fc1-a8f8-9f25a639798c"
+        }
       ]
     }
   ],

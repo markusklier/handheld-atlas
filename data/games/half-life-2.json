@@ -49,7 +49,39 @@
       "platforms": [
         "PC"
       ],
-      "year": 2004
+      "year": 2004,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d925bc70-248b-4638-b7f3-8abc876f8572",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "FLASH WARNING Has a problem with the lighting in certain areas of chapter 1, mostly any area that's lit up with sunlight. It will cause flashing during those parts and probably persists through the rest of the game. The ",
+          "votes": 0,
+          "date": "2026-08-23",
+          "settings": {
+            "Emulator Version": "1.1.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Vortek (Universal)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/89cf7540-e0b9-4fc0-ab7a-8b7edcd35a8a"
+        }
+      ]
     },
     {
       "id": "macintosh-2010",
