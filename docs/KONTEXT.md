@@ -9,8 +9,8 @@
   Öffentlich erst, wenn sich Atlas inkl. Setup-Assistent im Alltag bewährt („vom leeren Handheld schnell ins Spiel“).
 - Name: Es gibt bereits **HandheldAtlas.com** (x86-PC-Handhelds, Einstellungen/Benchmarks). Vor einer Veröffentlichung umbenennen.
 - Anspruch: verlässlich aktuell, jedes Spiel auffindbar, Fassungen vollständig (Archiv), viele Bilder – Dual Screen zuerst.
-- **Möglichst wenig Handarbeit.** Manuelle Schritte (z. B. Bild-Links einfügen, Reddit-App) werden nicht genutzt →
-  Lösungen müssen automatisch laufen.
+- **Möglichst wenig Handarbeit.** Manuelle Schritte (z. B. Bild-Links einfügen) werden nicht genutzt →
+  Lösungen müssen automatisch laufen. Qualität hat trotzdem Vorrang: Lücken werden zurückgestellt, nicht hingenommen.
 - Alle Texte in der App Deutsch mit Umlauten. Keine Piraterie-Links, keine echten Hersteller-Logos.
 
 ## Kosten
@@ -35,11 +35,17 @@
 Hinweis: Die zeitgesteuerten GitHub-Läufe starteten erst verzögert; Markus hat die Cron-Zeilen selbst editiert
 (Minute 22/16). Die Modusauswahl in `research.yml` vergleicht den Cron-String – bei Änderungen beide Stellen anpassen.
 
-## Bewusst verworfen / bekannte Grenzen
+## Bekannte Grenzen und zurückgestellte Themen
 
-- Reddit ist aus GitHub Actions gesperrt (403); eine Reddit-API-App ist mit normalem Konto praktisch nicht zu bekommen.
-  Reddit-Bilder kommen nur, wenn die KI-Websuche die Bildadresse nennt. → später anders lösen (z. B. über die eigene App
-  auf dem Gerät, die Reddit normal laden kann).
+- **Reddit-Bilder: zurückgestellt, nicht verworfen.** Markus will langfristig Top-Qualität, gerade Dual-Screen-Bilder
+  aus Autoren-Beiträgen. Problem: Reddit sperrt Abrufe aus GitHub Actions (403), eine Reddit-API-App gibt es mit normalem
+  Konto praktisch nicht. Manuelles Einfügen von Bild-Links fällt weg (wird nicht genutzt). Optionen, in dieser Reihenfolge prüfen:
+  1. **Auf dem Gerät laden:** Die App (Web-App jetzt, später die native App) holt verlinkte Reddit-Beiträge direkt vom
+     Handheld (normale Internetverbindung, nicht gesperrt), zeigt die Bilder sofort und meldet die Bildadressen
+     automatisch zurück in die Datenbank. Vorher prüfen, ob Reddit dem Browser den Abruf erlaubt (CORS).
+  2. **Eigener Runner zu Hause:** GitHub-Actions-Runner auf einem Rechner/Raspberry Pi im Heimnetz für die Bildsuche.
+  3. **Reddit-API-Zugang** später erneut beantragen (Responsible Builder Policy, privater nicht-kommerzieller Zweck).
+  Bis dahin: Reddit-Bilder nur, wenn die KI-Websuche die Bildadresse nennt; YouTube/GitHub/Artikel decken den Rest ab.
 - MobyGames, GameFAQs, minecraft.net u. ä. blocken Server-Abrufe. CurseForge braucht einen genehmigten Schlüssel.
 - KI findet Seiten zuverlässig, Bild-URLs kaum → Bilder werden aus gefundenen Seiten extrahiert (`scripts/images.py`).
 
