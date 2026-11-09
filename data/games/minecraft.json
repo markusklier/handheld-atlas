@@ -660,6 +660,7 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Minecraft",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Screenshot_from_the_Minecraft_Nether.png",
-    "source": "https://en.wikipedia.org/wiki/Minecraft"
+    "source": "https://en.wikipedia.org/wiki/Minecraft",
+    "fallback": true
   }
 }

@@ -37,6 +37,7 @@
   "genre": "action role-playing game",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Muramasa_The_Demon_Blade.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Muramasa%3A_The_Demon_Blade"
+    "source": "https://en.wikipedia.org/wiki/Muramasa%3A_The_Demon_Blade",
+    "fallback": true
   }
 }

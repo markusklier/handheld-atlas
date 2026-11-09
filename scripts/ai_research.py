@@ -1238,7 +1238,8 @@ def images_basic(game_ids, log=print):
     only = set(game_ids)
     for name, fn in (('libretro', lambda: covers.main(only=only)), ('README', lambda: media.fill_route_shots(only=only)),
                      ('Steam', lambda: media.fill_steam(pause=0.3, only=only)),
-                     ('Wikipedia', lambda: media.fill_wikipedia(pause=0.5, only=only))):
+                     ('Wikipedia', lambda: media.fill_wikipedia(pause=0.5, only=only)),
+                     ('Website', lambda: media.fill_website_covers(only=only))):
         try:
             fn()
         except Exception as e:  # noqa: BLE001 – one source failing must not stop the others

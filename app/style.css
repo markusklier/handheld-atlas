@@ -430,3 +430,10 @@ details.generic-group[open] > summary { margin-bottom: 6px; }
 .tag.research-aging svg { color: var(--ai); }
 .tag.research-news, .tag.research-old { border-color: color-mix(in srgb, var(--warn) 55%, transparent); }
 .tag.research-news svg, .tag.research-old svg { color: var(--warn); }
+
+/* cover: blurred backdrop instead of the title placeholder once the picture has loaded */
+.cover.ok .ph { opacity: 0; }
+.cover.ok::before { content: ''; position: absolute; inset: -24px; background: var(--img) center / cover no-repeat; filter: blur(20px) brightness(.5) saturate(1.2); }
+.cover.ok img { z-index: 1; }
+.cover .badges { z-index: 2; }
+.req-run[hidden] { display: none; }

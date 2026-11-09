@@ -113,7 +113,8 @@ function coverHTML(g, { badges = true } = {}) {
   // no cover yet: show the first picture we have (original game, then a way) instead of an empty tile
   const src = g.cover?.url || g.screenshots.find((x) => x.caption !== 'Titelbild')?.url || g.screenshots[0]?.url
     || g.routes.flatMap((r) => r.screenshots || [])[0]?.url;
-  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
+  // loaded → the title placeholder disappears and a blurred copy fills the free space around box art of any shape
+  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok');this.parentNode.style.setProperty('--img','url(&quot;'+this.src+'&quot;)')" onerror="this.remove()">` : '';
   let b = '';
   if (badges) {
     if (g._dual) b += `<span class="tag dual">${icon('dual')}Dual</span>`;

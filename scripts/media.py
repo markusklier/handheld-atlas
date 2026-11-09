@@ -287,7 +287,7 @@ def article_cover(article, fetch=get):
         return box[0]['url'], article
     # digital-only games often have no box art: a picture of the game from the article is still better than nothing
     shots = [x for x in files if not re.search(r'logo|wordmark|icon|\.svg|developer|founder|portrait|photo', x['url'], re.I)]
-    return (shots[0]['url'], article) if shots else (None, None)
+    return (shots[0]['url'], article + '#fallback') if shots else (None, None)
 
 
 def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
@@ -318,11 +318,48 @@ def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
         if pause:
             time.sleep(pause)
         if url:
-            g['cover'] = {'url': url, 'source': source}
+            g['cover'] = {'url': url, 'source': source.replace('#fallback', '')}
+            if source.endswith('#fallback'):
+                g['cover']['fallback'] = True    # only a picture from the article – replaced as soon as real art turns up
             write(f, g)
             added += 1
     write(DATA / 'media_state.json', state)
     print(f'media.py: {added} Cover aus Wikipedia ergänzt ({tried} versucht)')
+    return added
+
+
+def fill_website_covers(fetch=get, only=None, limit=100):
+    """Official key art: og:image of the game's official website (Wikidata P856) for games without a real cover.
+    Marked check 'ai' – the image check confirms it before it counts."""
+    import images
+    state, added, tried = load_state(), 0, 0
+    for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
+        g = read(f)
+        cov = g.get('cover') or {}
+        if not g.get('website') or (cov and not cov.get('fallback')) or tried >= limit:
+            continue
+        if only is None and recently_tried(state, 'website', g['id'], days=14):
+            continue
+        tried += 1
+        mark_tried(state, 'website', g['id'])
+        try:
+            page = images.get(g['website'])
+        except Exception as e:  # noqa: BLE001
+            log(f'! Website {g["title"]}: {str(e)[:80]}')
+            continue
+        head = page[:page.find('<body')] if '<body' in page else page[:30000]
+        m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
+            re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
+        url = urllib.parse.urljoin(g['website'], m.group(1).replace('&amp;', '&')) if m else None
+        if not url or not url.startswith('https://') or re.search(r'logo|favicon|\.svg', url, re.I):
+            continue
+        g['cover'] = {'url': url, 'source': g['website'], 'check': 'ai'}
+        write(f, g)
+        added += 1
+    write(DATA / 'media_state.json', state)
+    print(f'media.py: {added} Cover von offiziellen Spieleseiten ({tried} versucht)')
     return added
 
 
@@ -334,3 +371,4 @@ if __name__ == '__main__':
         fill_steam()
     if '--wikipedia' in args:
         fill_wikipedia()
+        fill_website_covers()
