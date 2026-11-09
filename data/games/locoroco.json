@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8a93585e-1aa7-4d6b-9c6a-7345c21a6ea1",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "***TO ALL USERS:*** **PLEASE DO NOT LEAVE AN EMPTY LISTING FOR OTHERS TO FILL. IF YOU CREATE A LISTING, PLEASE FILL THAT LISTING. <—** *If you see this message, this listing was left empty by the original creator.* This ",
+          "votes": 2,
+          "date": "2025-09-20",
+          "settings": {
+            "Emulator Version": "1.19.3",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "8",
+            "Antialiasing (MSAA)": "Off",
+            "VSync": "True",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/efa3de77-6d7b-4ee0-8085-fe6ea3220513",
+          "device": "AYN Thor Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "1.20.4",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "1",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/48393106-8e3c-4ae3-8f3b-1d33296b6f00"
+        }
       ]
     }
   ],

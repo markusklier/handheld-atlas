@@ -1,6 +1,46 @@
 {
   "leads": [
     {
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+      "title": "YuutaTsubasa/Free-Riders-Recompiled",
+      "excerpt": "Unofficial static recompilation of Sonic Free Riders for Windows, Linux and Android, with controller/keyboard support, custom VRM avatars, and Kinect v1, Kinect v2 (experimental) and webcam motion controls on Windows.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/smatkovi/pro1x-maemo-leste",
+      "title": "smatkovi/pro1x-maemo-leste",
+      "excerpt": "Maemo Leste als zweiter Booteintrag (Slot B) auf dem F(x)tec Pro1X neben Sailfish OS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/boredace/Gnoseis-Windows",
+      "title": "boredace/Gnoseis-Windows",
+      "excerpt": "Gnoseis is an Windows-native local CRM application that can be also used as an all-purpose knowledge manager.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Yogesh-Kumar-Mallik-dev/CampusManagement",
+      "title": "Yogesh-Kumar-Mallik-dev/CampusManagement",
+      "excerpt": "A resilient, multiplatform Campus Operating System",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/CarlosCosta07-s/NIVORA",
+      "title": "CarlosCosta07-s/NIVORA",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/JuanVillegas95/RotaLock",
       "title": "JuanVillegas95/RotaLock",
       "excerpt": "",
@@ -6359,46 +6399,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/cinderbox-ds/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/chronoduo/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/bluejay/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/bloodborne-thor-companion/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/better-dual-screen-assistant/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:44:30Z",
-    "newLeads": 17,
+    "lastRun": "2026-11-09T16:50:40Z",
+    "newLeads": 5,
     "newEvents": 0
   },
   "aiResearch": {

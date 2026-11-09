@@ -3,6 +3,30 @@
     {
       "date": "2026-11-09",
       "type": "route-updated",
+      "game": "locoroco",
+      "text": "2 Community-Berichte von EmuReady für LocoRoco (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "locoroco-2",
+      "text": "1 Community-Berichte von EmuReady für LocoRoco 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "littlebigplanet-ps-vita",
+      "text": "1 Community-Berichte von EmuReady für LittleBigPlanet PS Vita (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "kirby-planet-robobot",
+      "text": "3 Community-Berichte von EmuReady für Kirby: Planet Robobot (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
       "game": "kirby-and-the-forgotten-land",
       "text": "11 Community-Berichte von EmuReady für Kirby and the Forgotten Land (Geräte mit dem Chip des AYN Thor)"
     },

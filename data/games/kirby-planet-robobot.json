@@ -28,6 +28,74 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5afb3558-9c11-4b77-a578-25c0469930c2",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Stutters like hell UNLESS you use these options. Then it runs perfectly!! Use Vulkan and Asynchronous Shader Compilation.",
+          "votes": 3,
+          "date": "2026-04-03",
+          "settings": {
+            "Emulator Version": "2125",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e6ee2c8d-7b7c-497c-8ab3-5aa80dec8213",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "The game runs perfectly Some stuttering on the first level, but after shader compilation it worked flawlessly",
+          "votes": 2,
+          "date": "2026-07-30",
+          "settings": {
+            "Emulator Version": "Azahar Plus 2126.0-A",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "3",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c9b99555-2d20-4229-8da7-b89e0a99bbb0",
+          "device": "AYN Thor Base",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-04-01"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3aad3772-2716-49ab-83ac-fbc4c10927d4"
+        }
       ]
     }
   ],
