@@ -778,7 +778,9 @@ def images_from_posts(posts, have, limit, token, model, log=print):
                                  'Beitrag stehen, nichts erfinden. caption: kurz auf Deutsch, was zu sehen ist.\n' + '\n'.join(posts)}, token)
     rejected, out = rejected_images(), []
     import images
-    for im in output_json(resp).get('images', []):
+    answer = output_json(resp).get('images', [])
+    log(f"    KI nennt aus den Beiträgen: {[im.get('url', '')[:70] for im in answer]}")
+    for im in answer:
         url = __import__('html').unescape(im.get('url') or '')
         if len(out) >= limit or not POST_IMAGE_HOSTS.match(url) or url in rejected or im.get('post') not in posts:
             continue
@@ -1234,8 +1236,9 @@ def main():
     if args.queue:
         lines.append(f'- Warteschlange: noch {left} Spiele')
     if USAGE['calls']:
+        de = lambda n: f'{n:,}'.replace(',', '.')
         lines.append(f"- OpenAI-Verbrauch dieses Laufs: {USAGE['calls']} Anfragen, {USAGE['searches']} Websuchen, "
-                     f"{USAGE['input']:,} Eingabe- und {USAGE['output']:,} Ausgabe-Tokens".replace(',', '.'))
+                     f"{de(USAGE['input'])} Eingabe- und {de(USAGE['output'])} Ausgabe-Tokens")
     report = '\n'.join(lines) or 'Kein Spiel ausgewählt.'
     print(report)
     if os.environ.get('GITHUB_STEP_SUMMARY'):
