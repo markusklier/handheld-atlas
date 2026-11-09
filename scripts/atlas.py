@@ -337,6 +337,15 @@ def repair():
         if g.get('cover') and bad(g['cover']):
             g.pop('cover')
             removed += 1
+        from images import same_image                     # lazy: images → media → atlas
+        for holder in [g, *g.get('routes', []), *g.get('mods', [])]:
+            if holder.get('screenshots'):
+                keep = []
+                for x in holder['screenshots']:
+                    if not any(same_image(x['url'], k['url']) for k in keep):
+                        keep.append(x)
+                removed += len(holder['screenshots']) - len(keep)
+                holder['screenshots'] = keep
         g['platforms'] = canon_platforms(g.get('platforms'))
         for v in g.get('versions', []):
             v['platforms'] = canon_platforms(v.get('platforms'))

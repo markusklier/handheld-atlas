@@ -228,20 +228,6 @@
           "check": "ai-verified"
         },
         {
-          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/menu-principal.png",
-          "caption": "Hauptmenü von CTR Mobile auf Portugiesisch",
-          "source": "https://github.com/ThiagoAciole/ctr-mobile",
-          "credit": "CTR Mobile",
-          "check": "ai-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/corrida-controles-toque.png",
-          "caption": "Crash Team Racing mit eingeblendeter Touch-Steuerung",
-          "source": "https://github.com/ThiagoAciole/ctr-mobile",
-          "credit": "CTR Mobile",
-          "check": "ai-verified"
-        },
-        {
           "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/selecao-copa.png",
           "caption": "Cup-Auswahl mit vier Cups in Crash Team Racing",
           "source": "https://github.com/ThiagoAciole/ctr-mobile",
