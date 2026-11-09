@@ -62,8 +62,9 @@ def ask(game, item, shot, kind, token, model):
     elif kind == 'cover':
         variant = "Packungsgrafik/Cover oder offizielles Key-Art des Spiels (showsVariant = yes, wenn es ein Cover ist; kind dann 'promo' nur bei Werbebannern mit Preis/Text)"
     else:
-        variant = f"Szene aus dem Originalspiel ({', '.join(game.get('platforms', [])[:4])})"
-    text = (f"Prüfe dieses Bild für den Spielekatalog „Handheld Atlas“. Spiel: „{game['title']}“. Erwartet: {variant}. "
+        variant = (f"Spielszene aus „{game['title']}“ – egal welche Fassung (Original, Remaster, Portierung); "
+                   "captionDe nennt bei erkennbar neuer Grafik die Fassung, z. B. „Remaster: …“")
+    text =(f"Prüfe dieses Bild für den Spielekatalog „Handheld Atlas“. Spiel: „{game['title']}“. Erwartet: {variant}. "
             f"Bisherige Bildunterschrift: „{shot.get('caption', '')}“. Beantworte: zeigt es dieses Spiel, zeigt es genau diese "
             "Variante/diesen Mod, welche Art Bild ist es, sind zwei Bildschirme (Dual Screen) zu sehen? captionDe: kurze, "
             "sachliche deutsche Bildunterschrift (max. 60 Zeichen), was zu sehen ist.")
@@ -89,6 +90,8 @@ def decide(verdict, shot, kind='route'):
     """Mutates shot; returns 'keep', 'drop' or 'unclear'."""
     if kind == 'cover':   # box art is "promo"-like by nature; only the game match matters
         verdict = dict(verdict, kind='gameplay' if verdict['kind'] == 'promo' else verdict['kind'])
+    if kind == 'game':    # original-game gallery: any edition of the game helps ("what is this game?")
+        verdict = dict(verdict, showsVariant='yes' if verdict['showsGame'] == 'yes' else verdict['showsVariant'])
     if verdict['kind'] in ('logo', 'promo', 'diagram') or verdict['showsGame'] == 'no' or verdict['showsVariant'] == 'no':
         return 'drop'
     if verdict['showsGame'] == 'yes' and verdict['showsVariant'] in ('yes', 'unclear'):

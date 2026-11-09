@@ -760,7 +760,7 @@ def collect(pages, have, limit, log=print, fetch=None, fetch_json=None):
             if len(out) >= limit:
                 return out
             url = sh['url']
-            if url in have or url in rejected or not ok_url(url) or any(x['url'] == url for x in out):
+            if url in rejected or not ok_url(url) or any(images.same_image(url, x) for x in list(have) + [o['url'] for o in out]):
                 continue
             if '/maxresdefault.jpg' in url and not _reachable(url):
                 url = url.replace('/maxresdefault.jpg', '/hqdefault.jpg')        # older/low-res videos
@@ -798,8 +798,8 @@ def route_candidates(g, r, token, model, log=print):
                 "auf denen BEIDE Bildschirme des Geräts (z. B. AYN Thor, Ayaneo Flip DS, Dual-Screen-Handheld) zu sehen sind.") if dual else ''
         pages = ask_pages(f"""Finde bis zu 6 Seiten, auf denen man sieht, wie „{g['title']}“ über den Weg „{r['name']}“
 ({r.get('runtime') or r.get('kind')}) auf einem Android-Gerät oder Handheld aussieht.{wish}
-Gute Seiten: YouTube-Videos oder Shorts, Reddit-Beiträge mit Bild/Video (r/SBCGaming, r/AYN, r/EmulationOnAndroid …),
-GitHub-README oder Release-Seiten, Projekt- oder Store-Seiten (Google Play), Artikel mit Screenshots. Projekt: {where or '–'}.
+Gute Seiten: YouTube-Videos oder Shorts (am besten), GitHub-README oder Release-Seiten, Projekt- oder Store-Seiten
+(Google Play), Artikel und Blogbeiträge mit Screenshots. Reddit nur, wenn es nichts anderes gibt (oft nicht abrufbar). Projekt: {where or '–'}.
 url = genau die Seite, die du über die Websuche geöffnet hast; shows = was darauf zu sehen ist (kurz, deutsch).""", token, model)
         found += collect(pages, have | {x['url'] for x in found}, room - len(found), log)
     cap = r['name'] + (' (Dual Screen)' if dual else '')
@@ -858,6 +858,13 @@ def game_candidates(g, token, model, log=print):
     src = (g.get('cover') or {}).get('source', '')
     if '.wikipedia.org/wiki/' in src:
         pages.append(src)
+    else:                                     # find the article even if the cover came from elsewhere
+        try:
+            _, wiki = media.wikipedia_cover(g['title'], images.get)
+            if wiki:
+                pages.append(wiki)
+        except Exception as e:  # noqa: BLE001
+            log(f'    ! Wikipedia {g["title"]}: {e}')
     if 'PC' in g.get('platforms', []):
         try:
             appid = media.steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), images.get)
@@ -869,9 +876,9 @@ def game_candidates(g, token, model, log=print):
     if token and len(found) < 3:
         vers = '; '.join(f"{v['name']} ({', '.join(v['platforms'][:3])})" for v in g.get('versions', [])[:8])
         ai = ask_pages(f"""Finde bis zu 6 Seiten mit echten Spielszenen (Screenshots oder Gameplay-Video) von „{g['title']}“
-(Fassungen: {vers or ', '.join(g.get('platforms', []))}). Gute Seiten: offizielle Shop-Seiten (Steam, Google Play, Nintendo,
-PlayStation Store), der Wikipedia-Artikel, MobyGames-Screenshot-Seiten, YouTube-Gameplay-Videos (Longplay, Trailer),
-offizielle Herstellerseite. url = genau die Seite, die du über die Websuche geöffnet hast; shows = was zu sehen ist.""", token, model)
+(Fassungen: {vers or ', '.join(g.get('platforms', []))}). Gute Seiten: YouTube-Gameplay-Videos (Longplay, Trailer – je Fassung eins),
+offizielle Shop-Seiten (Steam, Google Play), der Wikipedia-Artikel, offizielle Herstellerseite, Testberichte mit Screenshots.
+Keine MobyGames-, GameFAQs- oder Reddit-Seiten (für uns nicht abrufbar). url = genau die Seite, die du über die Websuche geöffnet hast; shows = was zu sehen ist.""", token, model)
         found += collect(ai, have | {x['url'] for x in found}, room - len(found), log)
     return [{'url': x['url'], 'caption': clean(x.get('caption') or 'Originalspiel', 80) or 'Originalspiel',
              'source': x['source'], 'check': 'ai'} for x in found]

@@ -115,7 +115,7 @@ def from_wikipedia(url, fetch=get):
         if info.get('mime') not in ('image/png', 'image/jpeg', 'image/webp') or SKIP.search(name) or info.get('width', 0) < 250:
             continue
         cap = re.sub(r'^(File|Datei):|\.\w+$', '', name).replace('_', ' ')
-        out.append(shot(info['url'], url, cap))
+        out.append(shot(info['url'].split('?')[0], url, cap))
     return out
 
 
@@ -140,9 +140,13 @@ def from_reddit(url, fetch=get):
 
 def from_html(url, fetch=get):
     page = fetch(url)
-    found = re.findall(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)(?::src)?["\'][^>]+content=["\']([^"\']+)', page, re.I)
-    found += re.findall(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', page, re.I)
-    for m in re.finditer(r'<img\b[^>]*>', page, re.I):
+    head = page[:page.find('<body')] if '<body' in page else page[:20000]
+    # only the article itself – sidebars and "related posts" show other games
+    m = re.search(r'<article\b.*?</article>', page, re.S | re.I) or re.search(r'<main\b.*?</main>', page, re.S | re.I)
+    body = m.group(0) if m else page
+    found = re.findall(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)(?::src)?["\'][^>]+content=["\']([^"\']+)', head, re.I)
+    found += re.findall(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
+    for m in re.finditer(r'<img\b[^>]*>', body, re.I):
         tag = m.group(0)
         src = re.search(r'\b(?:data-src|src)=["\']([^"\']+)', tag)
         w = re.search(r'\bwidth=["\']?(\d+)', tag)
@@ -154,6 +158,14 @@ def from_html(url, fetch=get):
         if u.startswith('https://') and IMG_EXT.search(u) and not SKIP.search(u):
             out.append(u)
     return [shot(u, url) for u in list(dict.fromkeys(out))[:6]]
+
+
+def same_image(a, b):
+    """raw.githubusercontent …/HEAD/x.png = …/main/x.png; Wikimedia URLs differ only in tracking parameters."""
+    def k(u):
+        u = (u or '').split('?')[0] if 'wikimedia.org' in (u or '') else (u or '')
+        return re.sub(r'^(https://raw\.githubusercontent\.com/[^/]+/[^/]+)/[^/]+/', r'\1/@/', u)
+    return k(a) == k(b)
 
 
 def images_from_page(url, fetch=get, fetch_json=None, log=print):

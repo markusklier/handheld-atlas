@@ -43,6 +43,14 @@ class PageImagesTest(unittest.TestCase):
         got = images.images_from_page('https://play.google.com/store/apps/details?id=x', fetch=lambda u, as_json=False: html)
         self.assertEqual([x['url'] for x in got], [f'https://play-lh.googleusercontent.com/{i}=w1280-h720' for i in ids[2:]])
 
+    def test_article_only_and_same_image(self):
+        page = ('<html><head><meta property="og:image" content="https://b.example/hero.jpg"></head><body>'
+                '<aside><img src="https://b.example/other-game.jpg"></aside><article><img src="https://b.example/ctr-dual.webp"></article></body>')
+        got = images.images_from_page('https://b.example/post', fetch=lambda u, as_json=False: page)
+        self.assertEqual([x['url'] for x in got], ['https://b.example/hero.jpg', 'https://b.example/ctr-dual.webp'])
+        self.assertTrue(images.same_image('https://raw.githubusercontent.com/a/b/HEAD/s/x.png', 'https://raw.githubusercontent.com/a/b/main/s/x.png'))
+        self.assertTrue(images.same_image('https://upload.wikimedia.org/c.png?utm_source=x', 'https://upload.wikimedia.org/c.png'))
+
     def test_unreadable_page_yields_nothing(self):
         def boom(u, as_json=False):
             raise OSError('403')
