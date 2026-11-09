@@ -4,6 +4,308 @@
       "date": "2026-11-09",
       "type": "screenshot-added",
       "by": "ai-research",
+      "text": "KI-Bildprüfung: 1 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: DOOM 64 – Neuauflage (2020) (KI-Recherche)",
+      "url": "https://www.esrb.org/ratings/36902/doom-64/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Delta Touch mit DOOM64EX+ (DOOM 64 – Neuauflage (2020), KI-Recherche)",
+      "url": "https://github.com/atsb/Doom64EX-Plus",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Engines Hub mit Doom64 EX Plus (DOOM 64 – Neuauflage (2020), KI-Recherche)",
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: DOOM 64 CE über Delta Touch (DOOM 64 – Neuauflage (2020), KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce/downloads/doom-64-ce-400-full-download",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PC-Neuauflage über DroidDeck (DOOM 64 – Neuauflage (2020), KI-Recherche)",
+      "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.6.9",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: DOOM 64: Complete Edition (KI-Recherche)",
+      "url": "https://github.com/azamorapl/doom64-complete-edition",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: DOOM 64 XE (KI-Recherche)",
+      "url": "https://github.com/Immorpher/doom64xe",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: DOOM 64 EX+ Enhanced (KI-Recherche)",
+      "url": "https://github.com/Styd051/DOOM64-EX-Plus-Enhanced",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Upscaled Textures Addon (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/upscale-addon",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: The UnMaking für DOOM 64 CE (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/the-unmaking",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Rumble Pak (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/rumble-pak-a-selection-of-community-made-maps",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Beta 64 für DOOM 64 CE (KI-Recherche)",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/beta64-for-doom-64-knee-deep-in-the-dead",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "doom-64"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: PlayStation (1996) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Final_Doom",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Überarbeitete id-Anthology-Fassung (1996) (KI-Recherche)",
+      "url": "https://www.pcgamingwiki.com/wiki/Final_Doom",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Final Doom in DOOM Classic Complete (2012) (KI-Recherche)",
+      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Offizielle Add-ons für DOOM / DOOM II (2020) (KI-Recherche)",
+      "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Final Doom in DOOM + DOOM II (2024) (KI-Recherche)",
+      "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Final Doom in The DOOM Collection (2026) (KI-Recherche)",
+      "url": "https://www.gamespress.com/de/Evercade-Announces-The-DOOM-Collection-Cartridge-and-Limited-Edition-E",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: UZDoom mit echter Dual-Screen-Automap (PC (1996), KI-Recherche)",
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Delta Touch mit GZDoom oder klassischem Source-Port (PC (1996), KI-Recherche)",
+      "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Offizielle Android-App mit Final-Doom-Add-ons (Offizielle Add-ons für DOOM / DOOM II (2020), KI-Recherche)",
+      "url": "https://toucharcade.com/2020/01/09/doom-ii-update-out-now-60-fps-romero-sigil-level-select-cheats-add-ons-final-doom-bethesda-net-account-ios-android/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PlayStation-Fassung über PsyDoom für Android (PlayStation (1996), KI-Recherche)",
+      "url": "https://github.com/BodbDearg/PsyDoom/blob/master/README.md",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TNT MAP31 – offizieller Schlüssel-Fix (KI-Recherche)",
+      "url": "https://www.doomworld.com/idgames/themes/TeamTNT/finaldoom/tnt31fix",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: WidePix (KI-Recherche)",
+      "url": "https://github.com/nashmuhandes/WidePix",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: WadFusion (KI-Recherche)",
+      "url": "https://github.com/Owlet7/wadfusion",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Plutonia MIDI Pack (KI-Recherche)",
+      "url": "https://www.jamespaddockmusic.com/doom/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "final-doom"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Final Doom – PlayStation-Fassung (KI-Recherche)",
+      "url": "https://www.videogamemanual.com/ps1/Final%20Doom%20%28USA%29.pdf",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Master Levels in Doom 3: Resurrection of Evil (KI-Recherche)",
+      "url": "https://investor.activisionblizzard.com/static-files/0c675c65-17af-41eb-bf3a-501a062a8beb",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Master Levels in Doom Classic Complete (KI-Recherche)",
+      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Master Levels in DOOM + DOOM II (KI-Recherche)",
+      "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Master Levels in The DOOM Collection (KI-Recherche)",
+      "url": "https://evercadia.co.uk/manuals/carts/89/The_Doom_Collection.pdf",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: UZDoom-Dual-Screen-Fork mit WadFusion (PC (1995), KI-Recherche)",
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: WadFusion (KI-Recherche)",
+      "url": "https://github.com/Owlet7/wadfusion",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: WadSmoosh (KI-Recherche)",
+      "url": "https://jp.itch.io/wadsmoosh",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Works of the Masters (KI-Recherche)",
+      "url": "https://jp.itch.io/deluxe-master-levels",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: WadSmoosh MIDI Pack (KI-Recherche)",
+      "url": "https://github.com/liPillON/wadsmoosh_midi_pack",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
       "text": "KI-Bildprüfung: 7 Screenshots bestätigt, 15 unpassende entfernt"
     },
     {

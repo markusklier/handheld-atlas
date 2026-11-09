@@ -3,7 +3,12 @@
   "title": "Doom 64",
   "franchise": "Doom",
   "platforms": [
-    "Nintendo 64"
+    "Nintendo 64",
+    "Windows",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "Xbox One",
+    "Google Stadia"
   ],
   "versions": [
     {
@@ -14,10 +19,333 @@
         "Nintendo 64"
       ],
       "year": 1997
+    },
+    {
+      "id": "remaster-2020",
+      "name": "DOOM 64 – Neuauflage (2020)",
+      "type": "remaster",
+      "platforms": [
+        "Windows",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "Xbox One",
+        "Google Stadia"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Nightdives überarbeitete Fassung ergänzt unter anderem Breitbilddarstellung und die zusätzliche Kampagne „The Lost Levels“; ihre PC-Daten werden von modernen Android-Source-Ports verwendet. Die ebenfalls erschienene Stadia-Veröffentlichung ist seit der Abschaltung des Dienstes am 18. Januar 2023 nicht mehr spielbar.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.esrb.org/ratings/36902/doom-64/"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "mods": [],
+  "routes": [
+    {
+      "id": "ai-delta-touch-mit-doom64ex",
+      "name": "Delta Touch mit DOOM64EX+",
+      "kind": "source-port",
+      "release": "remaster-2020",
+      "runtime": "Delta Touch / DOOM64EX+",
+      "projects": [
+        "delta-touch"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Delta Touch",
+        "Eigene PC-Ausgabe der DOOM-64-Neuauflage und deren Spieldaten"
+      ],
+      "benefit": "Direkter Android-Source-Port statt Konsolen- oder Windows-Emulation, mit frei konfigurierbarer Touch-Steuerung und vollständiger Gamepad-Unterstützung. EX+ unterstützt die Remaster-Daten, „The Lost Levels“ und benutzerdefinierte Karten.",
+      "caveat": "Keine offizielle Android-Veröffentlichung des Spiels. EX+ erwartet die Remaster-IWAD, nicht die aus einem N64-Abbild erzeugten Daten älterer EX-Versionen; der ursprüngliche EX+-Upstream wurde am 5. November 2025 abgeschlossen und archiviert, während Delta Touch weiterhin aktualisiert wird.",
+      "steps": [
+        "Delta Touch aus Google Play installieren.",
+        "Die Daten der eigenen PC-Neuauflage auf das Handheld übertragen und im Datenbereich der App bereitstellen.",
+        "In Delta Touch DOOM64EX+ auswählen und den Datenpfad einrichten.",
+        "Die eingebauten Controller-Tasten konfigurieren und zunächst ohne zusätzliche Mods testen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/atsb/Doom64EX-Plus"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1lah8qt/doom_64_running_at_30_fps_instead_of_60/",
+          "device": "Poco X6 Pro",
+          "summary": "Ein Nutzer zeigt DOOM 64 in Delta Touch, berichtet jedoch über eine begrenzte Bildrate; der Beitrag ist kein Leistungsnachweis für den Thor.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-engines-hub-mit-doom64-ex-plus",
+      "name": "Engines Hub mit Doom64 EX Plus",
+      "kind": "source-port",
+      "release": "remaster-2020",
+      "runtime": "com.mobilerpgpack.phone / Doom64 EX Plus",
+      "projects": [
+        "classic-core-engines-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Steam-Ausgabe der DOOM-64-Neuauflage und deren Spieldaten",
+        "Android-Port aus den offiziellen Projekt-Releases"
+      ],
+      "benefit": "Alternative Android-Implementierung von EX+; das Projekt führt zusätzlich EX+ Enhanced als integrierte Engine-Grundlage auf und unterstützt physische Controller sowie Touch-Eingaben.",
+      "caveat": "Für einen physischen Controller muss das Bildschirm-Controller-Overlay im Launcher abgeschaltet werden. Die SDL-Kompatibilitätsschicht wird vom Projekt ausdrücklich als nicht offiziell durch SDL auf Android unterstützt beschrieben; ein Thor-spezifischer Spieltest liegt nicht vor.",
+      "steps": [
+        "Eine passende Android-Ausgabe aus den GitHub-Releases des Projekts installieren.",
+        "Die Daten der eigenen Steam-Neuauflage auf das Handheld kopieren.",
+        "Doom64 EX Plus im Launcher auswählen und die Spieldaten zuweisen.",
+        "Das Bildschirm-Controller-Overlay deaktivieren und die Hardware-Steuerung prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/sandstranger/com.mobilerpgpack.phone"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-doom-64-ce-uber-delta-touch",
+      "name": "DOOM 64 CE über Delta Touch",
+      "kind": "native-mod",
+      "release": "remaster-2020",
+      "runtime": "Delta Touch / UZDoom; ältere CE-Ausgaben über GZDoom",
+      "projects": [
+        "doom-ce"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Delta Touch",
+        "Eigene PC-Neuauflage von DOOM 64 aus Steam, GOG oder Epic Games",
+        "DOOM 64 CE",
+        "Für den vorgesehenen Installationsweg ein PC zum Ausführen des mitgelieferten Daten-Patchers"
+      ],
+      "benefit": "Modulare Neuinterpretation mit originalnahen Einstellungen oder optionalen PBR-Materialien, Partikeleffekten und verbesserten Sounds. Dazu kommen eigens konvertierte Community-Kampagnen; CE 4.0.0 setzt auf UZDoom.",
+      "caveat": "Die DOOM64.WAD muss zuerst mit dem CE-Installer in eine passende DOOM64.IWAD umgewandelt werden. CE 4.0.0 benötigt mindestens UZDoom 5.0.0; ältere Android-Anleitungen mit GZDoom betreffen frühere CE-Versionen, und beim Wechsel auf 4.0.0 müssen Patcher und Kartenpakete erneut aktualisiert werden.",
+      "steps": [
+        "DOOM 64 CE von der Projektseite beziehen und am PC entpacken.",
+        "doom64-install.bat mit den Daten der eigenen PC-Neuauflage ausführen.",
+        "Die erzeugte IWAD und die zugehörigen CE-Dateien in die passenden Daten- und Mod-Verzeichnisse von Delta Touch übertragen.",
+        "Für CE 4.0.0 eine kompatible UZDoom-Version wählen; gegebenenfalls die IPK3 nach der belegten Delta-Touch-Methode als PK3 laden.",
+        "Zunächst ohne optionale Grafikpakete starten und Erweiterungen anschließend einzeln hinzufügen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://media.moddb.com/images/mods/1/50/49374/Screenshot_Doom64CE_20251029_132748.png",
+          "caption": "DOOM-64-Spielszene mit Pistole und Gegnern",
+          "source": "https://www.moddb.com/mods/doom-ce/downloads/doom-64-ce-400-full-download",
+          "credit": "DOOM CE",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.moddb.com/mods/doom-ce/downloads/doom-64-ce-400-full-download"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom64/comments/1o00hoy/",
+          "device": "Android-Gerät, Modell nicht genannt",
+          "summary": "Ein Kommentator berichtet, DOOM 64 CE unter GZDoom auf Android zu spielen; der Erfahrungsbericht betrifft die ältere GZDoom-basierte CE-Generation.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.reddit.com/r/DoomMods/comments/1bhhitj/",
+          "device": "Android-Gerät mit Delta Touch, Modell nicht genannt",
+          "summary": "Der Beitrag beschreibt einen konkreten Ladeweg mit erzeugter DOOM64.IWAD und einer von IPK3 zu PK3 umbenannten CE-Datei.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-pc-neuauflage-uber-droiddeck",
+      "name": "PC-Neuauflage über DroidDeck",
+      "kind": "pc-runtime",
+      "release": "remaster-2020",
+      "runtime": "DroidDeck / Windows-Kompatibilitätslaufzeit",
+      "projects": [
+        "droiddeck"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Ausgabe von DOOM 64 beziehungsweise entsprechender Zugriff über den unterstützten PC-Store",
+        "DroidDeck und dessen Laufzeitkomponenten"
+      ],
+      "benefit": "Führt die eigentliche PC-Neuauflage statt einer Source-Port-Umsetzung aus. Ein spielspezifischer Fix in DroidDeck 0.6.9 behebt ausdrücklich den Start von DOOM 64 aus der Xbox-PC-Integration.",
+      "caveat": "Experimentelle Alternative mit mehr Einrichtung als beim Source-Port; der konkrete Beleg betrifft einen Startpfadfehler der Xbox-PC-Fassung, nicht eine Thor-Leistungsmessung. Die allgemeinen Zweitbildschirm-Funktionen von DroidDeck sind kein DOOM-64-Mod mit ausgelagerter Automap.",
+      "steps": [
+        "DroidDeck aus dem offiziellen GitHub-Projekt installieren und die Laufzeit einrichten.",
+        "Die eigene PC-Ausgabe über die unterstützte Store-Integration installieren.",
+        "Mindestens eine Ausgabe mit dem in 0.6.9 enthaltenen DOOM-64-Startpfadfix verwenden.",
+        "Controller-Zuordnung und Darstellung im Spiel prüfen."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.6.9"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "doom-64-complete-edition",
+      "name": "DOOM 64: Complete Edition",
+      "category": "qol",
+      "url": "https://github.com/azamorapl/doom64-complete-edition",
+      "edition": "Inoffizieller N64-ROM-Hack; nicht mit DOOM 64 CE für UZDoom verwechseln",
+      "description": "Überträgt Funktionen der Neuauflage ins N64-Spiel: „The Lost Levels“, den Bonuslevel „Panic“, Filteroptionen, verbesserte Speicher- und Lademenüs sowie Automap-Statistiken. Für den vollständigen Funktionsumfang werden zusätzlich Ressourcen der eigenen PC-Neuauflage benötigt; kein belegter Android-spezifischer Kompatibilitätstest.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-64"
+      ]
+    },
+    {
+      "id": "doom-64-xe",
+      "name": "DOOM 64 XE",
+      "category": "qol",
+      "url": "https://github.com/Immorpher/doom64xe",
+      "edition": "Inoffizielle N64 Expanded Edition",
+      "description": "Verbindet Reverse Engineering, Erweiterungen der N64-Complete-Edition und Optimierungen anderer N64-Projekte zu einer moddingfreundlichen Fassung mit Komfortfunktionen. Der dokumentierte Eigenbau benötigt das eigene USA-1.0-Abbild und für zusätzliche Remaster-Inhalte auch dessen PC-Daten; USA 1.1 wird vom Extraktor nicht unterstützt.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-64"
+      ]
+    },
+    {
+      "id": "doom-64-ex-enhanced",
+      "name": "DOOM 64 EX+ Enhanced",
+      "category": "gameplay",
+      "url": "https://github.com/Styd051/DOOM64-EX-Plus-Enhanced",
+      "edition": "Eigener EX+-Engine-Fork; im Android-Projekt com.mobilerpgpack.phone aufgeführt",
+      "description": "Ergänzt zusätzliche beziehungsweise ursprünglich verworfene Gegner, überarbeitete Sprites und Waffenanimationen, Fehlerkorrekturen und einen weiteren Schwierigkeitsgrad. Kein gewöhnliches WAD für jeden Port: Die Engine-Erweiterungen benötigen den passenden Enhanced-Fork.",
+      "verification": "ai-unverified",
+      "release": [
+        "remaster-2020"
+      ]
+    },
+    {
+      "id": "upscaled-textures-addon",
+      "name": "Upscaled Textures Addon",
+      "category": "graphics",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/upscale-addon",
+      "edition": "Nur über DOOM 64 CE, nicht direkt in der unveränderten KEX-Neuauflage",
+      "description": "Optionales Paket mit zweifach KI-hochskalierten Texturen und passenden Paketen für zusätzliche Kampagnen. Die Archive werden neben dem CE-Hauptmod abgelegt; nicht benötigte Kartenpaket-Upgrades lassen sich zum Platzsparen weglassen.",
+      "verification": "ai-unverified",
+      "release": [
+        "remaster-2020"
+      ]
+    },
+    {
+      "id": "the-unmaking-fur-doom-64-ce",
+      "name": "The UnMaking für DOOM 64 CE",
+      "category": "content",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/the-unmaking",
+      "edition": "CE-Konvertierung; aktuelle Ausgabe benötigt DOOM 64 CE ab 4.0.0",
+      "description": "Für CE konvertiertes Kartenpaket von scwiba, ursprünglich für DOOM 64 EX und die Neuauflage entwickelt. Auf Android über den CE-Weg laden; diese konkrete Konvertierung ist kein direktes KEX- oder EX+-Paket.",
+      "verification": "ai-unverified",
+      "release": [
+        "remaster-2020"
+      ]
+    },
+    {
+      "id": "rumble-pak",
+      "name": "Rumble Pak",
+      "category": "content",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/rumble-pak-a-selection-of-community-made-maps",
+      "edition": "CE-Konvertierung; aktuelle Ausgabe benötigt DOOM 64 CE ab 4.0.0",
+      "description": "Auswahl von Community-Karten, die ursprünglich für DOOM 64 EX entstanden und für CE umgesetzt wurden. Trotz des Namens ein Kartenpaket, keine Erweiterung für Controller-Vibration.",
+      "verification": "ai-unverified",
+      "release": [
+        "remaster-2020"
+      ]
+    },
+    {
+      "id": "beta-64-fur-doom-64-ce",
+      "name": "Beta 64 für DOOM 64 CE",
+      "category": "content",
+      "url": "https://www.moddb.com/mods/doom-ce/addons/beta64-for-doom-64-knee-deep-in-the-dead",
+      "edition": "CE-Konvertierung; aktuelle Ausgabe benötigt DOOM 64 CE ab 4.0.0",
+      "description": "Umsetzung von Antnees ursprünglich für DOOM 64 EX entwickeltem Kartenpaket für DOOM 64 CE. Über den Android-CE-Weg nutzbar; beim Versionswechsel müssen Hauptmod und Kartenpaket zusammenpassen.",
+      "verification": "ai-unverified",
+      "release": [
+        "remaster-2020"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Doom%2064%20%28USA%29.png",
@@ -46,5 +374,6 @@
       "source": "https://www.mobygames.com/game/5195/doom-64/screenshots/n64/177391/",
       "check": "ai-verified"
     }
-  ]
+  ],
+  "summary": "Für Android-Handhelds ist Delta Touch mit DOOM64EX+ und den Daten der PC-Neuauflage der naheliegende Weg; DOOM 64 CE bietet alternativ zuschaltbare Grafikverbesserungen und zusätzliche Kartenpakete. Ein spielspezifischer Android-Dual-Screen-Weg mit ausgelagerter Live-Karte ist nicht belegt."
 }

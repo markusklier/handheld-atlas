@@ -220,7 +220,8 @@
       "repo": "Droid-Deck/DroidDeck",
       "description": "DroidDeck brings the SteamOS experience to Android",
       "games": [
-        "cyberpunk-2077"
+        "cyberpunk-2077",
+        "doom-64"
       ],
       "checkedAt": "2026-11-08",
       "latestRelease": {
@@ -1023,7 +1024,9 @@
       "description": "Kostenpflichtige Android-App von Open Touch Gaming mit mehreren Doom-Source-Ports (u. a. GZDoom, LZDoom, Zandronum, Chocolate Doom, Crispy Doom, PrBoom+, Doom Retro) und Unterstützung für eigene WADs/PK3-Mods.",
       "games": [
         "doom-1993",
-        "doom-ii"
+        "doom-ii",
+        "final-doom",
+        "doom-64"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1341,7 +1344,9 @@
       "description": "",
       "games": [
         "doom-1993",
-        "doom-ii"
+        "doom-ii",
+        "master-levels-for-doom-ii",
+        "final-doom"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1366,7 +1371,9 @@
       "description": "",
       "games": [
         "doom-1993",
-        "doom-ii"
+        "doom-ii",
+        "final-doom",
+        "doom-64"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1731,6 +1738,30 @@
         "mighty-doom"
       ],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "doom-ii-fur-android",
+      "name": "DOOM II für Android",
+      "kind": "official",
+      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII",
+      "repo": null,
+      "description": "",
+      "games": [
+        "final-doom"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "doom-ce",
+      "name": "DOOM CE",
+      "kind": "mod",
+      "url": "https://www.moddb.com/mods/doom-ce",
+      "repo": null,
+      "description": "",
+      "games": [
+        "doom-64"
+      ],
+      "checkedAt": "2026-11-09"
     }
   ]
 }

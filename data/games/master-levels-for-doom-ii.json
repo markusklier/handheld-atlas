@@ -3,7 +3,16 @@
   "title": "Master Levels for Doom II",
   "franchise": "Doom",
   "platforms": [
-    "PC"
+    "PC",
+    "PlayStation",
+    "Xbox",
+    "PlayStation 3",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series X|S",
+    "Nintendo Switch",
+    "Evercade"
   ],
   "versions": [
     {
@@ -14,14 +23,227 @@
         "PC"
       ],
       "year": 1995
+    },
+    {
+      "id": "psx-1996",
+      "name": "Final Doom – PlayStation-Fassung",
+      "type": "port",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1996,
+      "traits": [
+        "controller"
+      ],
+      "note": "Enthält eine Auswahl von 13 Master Levels statt der vollständigen PC-Erweiterung. Damit eine eigenständige historische Konsolenadaption und keine vollständige Umsetzung des Originals.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.videogamemanual.com/ps1/Final%20Doom%20%28USA%29.pdf"
+        }
+      ]
+    },
+    {
+      "id": "xbox-2005",
+      "name": "Master Levels in Doom 3: Resurrection of Evil",
+      "type": "port",
+      "platforms": [
+        "Xbox"
+      ],
+      "year": 2005,
+      "traits": [
+        "controller"
+      ],
+      "note": "Als klassischer Bonusinhalt der Xbox-Ausgabe von Resurrection of Evil veröffentlicht; nicht mit der PC-Erweiterung zu Doom 3 oder der späteren BFG Edition gleichzusetzen. Die Master Levels sind hier als Konsolenkampagne zusammengestellt.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://investor.activisionblizzard.com/static-files/0c675c65-17af-41eb-bf3a-501a062a8beb"
+        }
+      ]
+    },
+    {
+      "id": "ps3-2012",
+      "name": "Master Levels in Doom Classic Complete",
+      "type": "port",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
+      "note": "Die vollständigen Master Levels wurden für diese PS3-Veröffentlichung als zusammenhängende Episode umgesetzt. Deshalb trotz Veröffentlichung innerhalb einer Sammlung eine relevante eigene Portierung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024",
+      "name": "Master Levels in DOOM + DOOM II",
+      "type": "remaster",
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series X|S",
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
+      "note": "Überarbeitete Veröffentlichung mit enthaltenen Master Levels, plattformübergreifendem Mehrspieler, Mod-Browser und modernisierter Darstellung. Eine offizielle Android-Ausgabe dieser Neuauflage ist nicht ausgewiesen; sie ist von der mobilen Jubiläumsfassung zu unterscheiden.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "evercade-2026",
+      "name": "Master Levels in The DOOM Collection",
+      "type": "port",
+      "platforms": [
+        "Evercade"
+      ],
+      "year": 2026,
+      "traits": [
+        "controller"
+      ],
+      "note": "Die Evercade-Umsetzung ordnet die ursprünglich einzeln gestarteten Master Levels zu einer durchgehend spielbaren Kampagne. Die Veröffentlichung erfolgte als Teil der DOOM-Cartridge im Oktober 2026.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://evercadia.co.uk/manuals/carts/89/The_Doom_Collection.pdf"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "mods": [],
+  "routes": [
+    {
+      "id": "ai-uzdoom-dual-screen-fork-mit-wadfusion",
+      "name": "UZDoom-Dual-Screen-Fork mit WadFusion",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom für Android, Fork von andreyvelsk",
+      "projects": [
+        "andreyvelsk-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods"
+      ],
+      "dualScreen": "Der Port rendert die echte Engine-Automap und Statusleiste live auf dem unteren Display; das obere Display zeigt das Spiel bildschirmfüllend.",
+      "requires": [
+        "Eigene DOOM2.WAD und die 20 originalen Master-Levels-WADs",
+        "Für die Zusammenstellung mit WadFusion einen Windows-, macOS- oder Linux-Rechner",
+        "AYN Thor oder ein anderes unterstütztes Android-Gerät mit zweitem Display"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Gezielt für den AYN Thor gebaut und getestet; die Karte bleibt sichtbar, ohne die Spielansicht zu verdecken.",
+      "caveat": "Community-Fork statt offizieller Android-Port. Der Bericht belegt Thor-Betrieb mit WadFusion, aber keinen vollständigen Master-Levels-Durchlauf; WadFusion verlangt UZDoom oder LZDoom.",
+      "steps": [
+        "Den Dual-Screen-Fork über dessen GitHub-Releases installieren.",
+        "Die eigenen WADs am Rechner mit WadFusion zu doom_fusion.ipk3 zusammenstellen.",
+        "Die erzeugte Datei auf den Thor übertragen und im UZDoom-Launcher auswählen.",
+        "Für die physischen Controller die eingeblendete Touch-Steuerung deaktivieren und die Master-Levels-Episode starten."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/great_way_to_play_doom_on/",
+          "device": "AYN Thor",
+          "summary": "Der Nutzer zeigt den UZDoom-Fork mit Live-Karte unten und verwendet WadFusion zur Zusammenstellung der offiziellen Doom-Inhalte.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "wadfusion",
+      "name": "WadFusion",
+      "category": "qol",
+      "url": "https://github.com/Owlet7/wadfusion",
+      "edition": "Eigene Spieldaten unter UZDoom oder LZDoom",
+      "description": "Erzeugt aus eigenen WADs eine gemeinsame IPK3 mit Episodenauswahl. Unterstützt sowohl die 20 ursprünglichen Master-Levels-WADs als auch masterlevels.wad der KEX-Neuauflage; für den Thor-Dual-Screen-Weg besonders passend.",
+      "verification": "ai-unverified",
+      "release": [
+        "kex-2024",
+        "pc"
+      ]
+    },
+    {
+      "id": "wadsmoosh",
+      "name": "WadSmoosh",
+      "category": "qol",
+      "url": "https://jp.itch.io/wadsmoosh",
+      "edition": "Original-WADs unter GZDoom",
+      "description": "Fasst eigene Doom-Spieldaten einschließlich der Master Levels zu doom_complete.pk3 mit Episodenauswahl zusammen. Die Vorbereitung erfolgt am Rechner; das Ergebnis lässt sich mit GZDoom in Delta Touch nutzen. Die Entwicklung wurde am 10. August 2024 beendet.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "works-of-the-masters",
+      "name": "Works of the Masters",
+      "category": "content",
+      "url": "https://jp.itch.io/deluxe-master-levels",
+      "edition": "GZDoom mit WadSmoosh",
+      "description": "Inoffizielle Deluxe-Zusammenstellung mit 42 Karten in fünf Episoden, die zusätzliche Arbeiten der ursprünglichen Autoren einordnet. Benötigt eigene Daten von Ultimate Doom, Doom II und den Master Levels sowie eine WadSmoosh-Zusammenstellung; keine kommerziellen Spieldaten enthalten und nicht mit WadFusion gleichzusetzen.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "wadsmoosh-midi-pack",
+      "name": "WadSmoosh MIDI Pack",
+      "category": "other",
+      "url": "https://github.com/liPillON/wadsmoosh_midi_pack",
+      "edition": "Originales WadSmoosh mit Xaser-Kartenreihenfolge",
+      "description": "Bindet Community-MIDI-Pakete in eine WadSmoosh-Zusammenstellung ein. Erwartet unter anderem die Master Levels in Xaser-Reihenfolge; bei PSN-Reihenfolge sind Anpassungen an MAPINFO erforderlich.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/2/29/Doom_II_-_Hell_on_Earth_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_II"
   },
-  "screenshots": []
+  "screenshots": [],
+  "summary": "Auf dem AYN Thor ist der UZDoom-Dual-Screen-Fork besonders interessant: Er zeigt die Live-Automap samt Statusleiste unten und das Spiel bildschirmfüllend oben."
 }

@@ -3,7 +3,22 @@
   "title": "Final Doom",
   "franchise": "Doom",
   "platforms": [
-    "PC"
+    "PC",
+    "PC (MS-DOS, Windows)",
+    "Macintosh",
+    "PlayStation",
+    "PC (MS-DOS)",
+    "PlayStation 3",
+    "PC (Windows)",
+    "PlayStation 4",
+    "Xbox One",
+    "Nintendo Switch",
+    "Android",
+    "iOS",
+    "PlayStation 5",
+    "Xbox Series X|S",
+    "Evercade",
+    "HyperMegaTech! Super Pocket"
   ],
   "versions": [
     {
@@ -11,17 +26,438 @@
       "name": "PC (1996)",
       "type": "original",
       "platforms": [
-        "PC"
+        "PC",
+        "PC (MS-DOS, Windows)",
+        "Macintosh"
       ],
-      "year": 1996
+      "year": 1996,
+      "note": "Ergänzung der Erstplattformen: Final Doom erschien 1996 auch für Macintosh. Die Computerfassung enthält TNT: Evilution und The Plutonia Experiment mit jeweils 32 Karten und ist die Datengrundlage für Android-Source-Ports.",
+      "traits": [
+        "mods"
+      ]
+    },
+    {
+      "id": "ps1",
+      "name": "PlayStation (1996)",
+      "type": "port",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1996,
+      "traits": [
+        "controller"
+      ],
+      "note": "Eigenständige Konsolenumsetzung mit 30 ausgewählten Karten aus Final Doom und Master Levels for Doom II statt der vollständigen PC-Kampagnen. Aubrey Hodges’ düsterer Ambient-Soundtrack und die veränderte Präsentation machen sie zu einer eigenständigen Alternative.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Final_Doom"
+        }
+      ]
+    },
+    {
+      "id": "anthology",
+      "name": "Überarbeitete id-Anthology-Fassung (1996)",
+      "type": "rerelease",
+      "platforms": [
+        "PC (MS-DOS)"
+      ],
+      "year": 1996,
+      "traits": [
+        "mods"
+      ],
+      "note": "Ein Teil der id-Anthology-Auflage enthält tatsächlich überarbeitete Spieldaten und eine korrigierte Engine, darunter den fehlenden gelben Schlüssel in TNT MAP31 sowie Teleporter- und Himmelskorrekturen. Deshalb mehr als eine reine Sammelbox; diese Variante wurde später auch von GOG verwendet.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.pcgamingwiki.com/wiki/Final_Doom"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "name": "Final Doom in DOOM Classic Complete (2012)",
+      "type": "port",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle PS3-Umsetzung der vollständigen Computer-Kampagnen innerhalb von DOOM Classic Complete, nicht bloß die gekürzte PlayStation-Fassung. Die Sammlung erschien am 20. November 2012 in Nordamerika.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/"
+        }
+      ]
+    },
+    {
+      "id": "unity-2020",
+      "name": "Offizielle Add-ons für DOOM / DOOM II (2020)",
+      "type": "rerelease",
+      "platforms": [
+        "PC (Windows)",
+        "PlayStation 4",
+        "Xbox One",
+        "Nintendo Switch",
+        "Android",
+        "iOS"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "note": "Seit dem 9. Januar 2020 sind beide Final-Doom-Kampagnen kostenlose Add-ons der offiziellen DOOM- und DOOM-II-Neuauflagen; eine separate Android-App namens Final Doom gibt es hierbei nicht. Die Neuauflage bietet Schnellspeichern, Levelauswahl und überarbeitete Anzeigeoptionen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024",
+      "name": "Final Doom in DOOM + DOOM II (2024)",
+      "type": "remaster",
+      "platforms": [
+        "PC (Windows)",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series X|S",
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
+      "note": "Die am 8. August 2024 erschienene erweiterte Neuauflage enthält beide Kampagnen direkt und ergänzt unter anderem plattformübergreifenden Koop und Deathmatch sowie einen Mod-Browser. Keine offizielle Android-Ausgabe dieses Remasters; die mobilen Unity-Apps sind davon zu unterscheiden.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "evercade-2026",
+      "name": "Final Doom in The DOOM Collection (2026)",
+      "type": "port",
+      "platforms": [
+        "Evercade",
+        "HyperMegaTech! Super Pocket"
+      ],
+      "year": 2026,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Die am 30. Oktober 2026 veröffentlichte native Evercade-Umsetzung enthält TNT und Plutonia mit Breitbilddarstellung, anpassbarer Steuerung und drei Soundtrack-Mischungen. Exklusive Spielmodifikatoren wie Turbo Monsters und Vampire Mode unterscheiden sie von einer bloßen Wiederveröffentlichung der Originaldaten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gamespress.com/de/Evercade-Announces-The-DOOM-Collection-Cartridge-and-Limited-Edition-E"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "mods": [],
+  "routes": [
+    {
+      "id": "ai-uzdoom-mit-echter-dual-screen-automap",
+      "name": "UZDoom mit echter Dual-Screen-Automap",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "UZDoom im Android-Dual-Screen-Fork von andreyvelsk",
+      "projects": [
+        "andreyvelsk-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "native-arm",
+        "widescreen"
+      ],
+      "dualScreen": "Oben läuft die Spielansicht ohne Statusleiste, unten rendert die Engine ihre echte Live-Automap samt Statusleiste. Keine separate Begleit-App und keine statische Kartenansicht.",
+      "requires": [
+        "Eigene legal erworbene TNT.WAD und/oder PLUTONIA.WAD",
+        "APK aus den Releases des Dual-Screen-Forks"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Speziell für den AYN Thor gebaut und getestet; Karte, Gesundheit und Munition bleiben sichtbar, ohne die Spielansicht zu verdecken.",
+      "caveat": "Inoffizieller Fork, dessen Dual-Screen-Erweiterung nur UZDoom umfasst. Für den physischen Controller müssen die eingeblendeten Touch-Bedienelemente deaktiviert werden; die PC-Kampagnen benötigen weiterhin eigene Spieldaten.",
+      "steps": [
+        "Die Android-APK aus den Releases von andreyvelsk installieren.",
+        "Eigene TNT.WAD und PLUTONIA.WAD auf das Gerät kopieren und die gewünschte IWAD im UZDoom-Launcher auswählen.",
+        "Touch-Steuerungsoverlay für die Verwendung des Thor-Controllers deaktivieren und Tasten konfigurieren.",
+        "Auf dem Thor starten; der Port verwendet das zweite physische Display für Automap und Statusleiste."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/great_way_to_play_doom_on/",
+          "device": "AYN Thor",
+          "summary": "Ein Nutzer zeigt den UZDoom-Fork mit Live-Karte auf dem unteren Display und verwendet WadFusion für die Zusammenführung seiner offiziellen WADs; kein separater Leistungstest beider Final-Doom-Kampagnen.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-delta-touch-mit-gzdoom-oder-klassischem-source-port",
+      "name": "Delta Touch mit GZDoom oder klassischem Source-Port",
+      "kind": "source-port",
+      "release": "pc",
+      "runtime": "Delta Touch",
+      "projects": [
+        "delta-touch"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Delta Touch",
+        "Eigene legal erworbene TNT.WAD und/oder PLUTONIA.WAD"
+      ],
+      "benefit": "Eine Android-Oberfläche für mehrere Doom-Engines: GZDoom für umfangreiche Mods oder beispielsweise Chocolate Doom für eine originalnähere Darstellung. Touch- und vollständige Gamepad-Steuerung sind integriert.",
+      "caveat": "Kostenpflichtige Engine-Sammlung ohne kommerzielle Spieldaten. Mods müssen zur gewählten Engine passen; eine integrierte Ausgabe der Automap auf das zweite Thor-Display ist für diesen Weg nicht belegt.",
+      "steps": [
+        "Delta Touch aus Google Play installieren.",
+        "Die eigenen Final-Doom-IWADs in den von der App gewählten Datenordner kopieren.",
+        "TNT oder Plutonia und anschließend die gewünschte Engine auswählen.",
+        "Controller einrichten; zusätzliche WAD- oder PK3-Mods über die Mod-Auswahl laden."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/fdz7am/",
+          "device": "Android; Modell nicht genannt",
+          "summary": "Der Erfahrungs- und Anleitungsbeitrag nennt Final Doom ausdrücklich als über Delta Touch und Zandronum online spielbar und erläutert passende Mod-Ladereihenfolgen.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.reddit.com/r/OdinHandheld/comments/1dxhrxl",
+          "device": "AYN Odin 2",
+          "summary": "Der Nutzer demonstriert Delta Touch mit Brutal Doom Platinum auf Doom-II-Karten; ein Beleg für den Mod-Weg auf Odin 2, nicht für einen vollständigen Final-Doom-Durchlauf.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-offizielle-android-app-mit-final-doom-add-ons",
+      "name": "Offizielle Android-App mit Final-Doom-Add-ons",
+      "kind": "native",
+      "release": "unity-2020",
+      "runtime": "DOOM oder DOOM II von Bethesda",
+      "projects": [
+        "doom-ii-fur-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Gekaufte offizielle Android-App DOOM oder DOOM II",
+        "Bethesda.net-Konto und Internetzugang für den Add-on-Download"
+      ],
+      "benefit": "Offizieller Android-Weg ohne das manuelle Übertragen von PC-IWADs: TNT: Evilution und The Plutonia Experiment werden innerhalb der App als kostenlose Add-ons ausgewählt.",
+      "caveat": "Nicht mit dem KEX-Remaster DOOM + DOOM II verwechseln. Der Zugang zu den Zusatzkampagnen hängt vom Add-on-Download ab; eine zweite Displayausgabe ist nicht belegt.",
+      "steps": [
+        "Die offizielle Bethesda-App DOOM oder DOOM II über Google Play installieren.",
+        "Im Hauptmenü Add-ons öffnen und gegebenenfalls bei Bethesda.net anmelden.",
+        "TNT: Evilution und The Plutonia Experiment herunterladen.",
+        "Die gewünschte Kampagne aktivieren und die Controller-Steuerung einrichten."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://toucharcade.com/2020/01/09/doom-ii-update-out-now-60-fps-romero-sigil-level-select-cheats-add-ons-final-doom-bethesda-net-account-ios-android/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://play.google.com/store/apps/details/DOOM_II?hl=en_US&id=com.bethsoft.DOOMII",
+          "device": "Android mit Xbox-One-Controller; Modell nicht genannt",
+          "summary": "Eine verifizierte Rezension vom 19. Februar 2023 beschreibt funktionierende direkte Controller-Anbindung ohne Zusatz-App; sie prüft nicht ausdrücklich die Final-Doom-Add-ons.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-playstation-fassung-uber-psydoom-fur-android",
+      "name": "PlayStation-Fassung über PsyDoom für Android",
+      "kind": "source-port",
+      "release": "ps1",
+      "runtime": "PsyDoom im Android-Port von sandstranger",
+      "projects": [
+        "classic-core-engines-com-mobilerpgpack-phone"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "high-fps",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PlayStation-Ausgabe von Final Doom",
+        "Selbst erstelltes Disc-Abbild mit zusammengehörigen BIN- und CUE-Dateien",
+        "Android-Port von PsyDoom"
+      ],
+      "benefit": "Bewahrt den besonderen PlayStation-Look und Ambient-Soundtrack, ergänzt aber die Darstellungs- und Steuerungsoptionen von PsyDoom statt lediglich einen allgemeinen PS1-Emulator zu verwenden.",
+      "caveat": "Benötigt die PlayStation-Spieldaten, nicht TNT.WAD oder PLUTONIA.WAD. Der Android-Port nennt Vulkan-Unterstützung als Voraussetzung für den entsprechenden Renderer und warnt vor GPU-Stalls auf Mali und PowerVR; ein Thor-spezifischer Final-Doom-Test liegt hier nicht vor.",
+      "steps": [
+        "Den Android-Port von sandstranger installieren und PsyDoom auswählen.",
+        "Das eigene BIN/CUE-Abbild auf das Gerät kopieren und die CUE-Datei im Launcher angeben.",
+        "Für den Thor-Controller das Touch-Overlay deaktivieren und die Tasten konfigurieren.",
+        "Breitbilddarstellung und weitere PsyDoom-Optionen nach Wunsch einstellen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/BodbDearg/PsyDoom/blob/master/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "tnt-map31-offizieller-schlussel-fix",
+      "name": "TNT MAP31 – offizieller Schlüssel-Fix",
+      "category": "fixes",
+      "url": "https://www.doomworld.com/idgames/themes/TeamTNT/finaldoom/tnt31fix",
+      "edition": "TNT: Evilution; ursprüngliche, ungepatchte IWAD",
+      "description": "TNT31.WAD korrigiert den im Einzelspieler fehlenden gelben Schlüssel in Pharaoh. Als zusätzliche WAD nach TNT.WAD laden; bei bereits korrigierten Spieldaten ist dieser Patch nicht erforderlich.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "widepix",
+      "name": "WidePix",
+      "category": "widescreen-fps",
+      "url": "https://github.com/nashmuhandes/WidePix",
+      "edition": "GZDoom-kompatible Source-Ports",
+      "description": "Erweiterte Bildschirmgrafiken für Breitbilddarstellung bis 21:9, passend zur Verwendung der klassischen Spieldaten in modernen Source-Ports. In neueren GZDoom-Versionen sind entsprechende WidePix-Ressourcen bereits enthalten; kein separater FPS-Patch.",
+      "verification": "ai-unverified",
+      "release": [
+        "anthology",
+        "pc"
+      ]
+    },
+    {
+      "id": "beautiful-doom",
+      "name": "Beautiful Doom",
+      "category": "graphics",
+      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
+      "edition": "GZDoom in Delta Touch; nicht die offizielle Unity-App",
+      "description": "Umfangreiche optische Aufwertung mit flüssigeren Animationen, verbesserten Sprites, Partikeleffekten und physikbasierten Gore-Effekten. Als Zusatzmod zur ausgewählten Final-Doom-IWAD laden; die Mod-Version muss zur verwendeten GZDoom-Version passen.",
+      "verification": "ai-unverified",
+      "release": [
+        "anthology",
+        "pc"
+      ]
+    },
+    {
+      "id": "wadfusion",
+      "name": "WadFusion",
+      "category": "qol",
+      "url": "https://github.com/Owlet7/wadfusion",
+      "edition": "UZDoom oder LZDoom",
+      "description": "Führt selbst bereitgestellte offizielle Doom-Spieldaten einschließlich TNT und Plutonia zu einer IPK3 mit separaten Episodeneinträgen zusammen. Praktisch für den Thor-Dual-Screen-Port; die aktuelle Dokumentation verlangt UZDoom oder LZDoom und schließt andere Engines ausdrücklich aus.",
+      "verification": "ai-unverified",
+      "release": [
+        "anthology",
+        "pc"
+      ]
+    },
+    {
+      "id": "plutonia-midi-pack",
+      "name": "Plutonia MIDI Pack",
+      "category": "other",
+      "url": "https://www.jamespaddockmusic.com/doom/",
+      "edition": "The Plutonia Experiment in einem MIDI-kompatiblen Source-Port",
+      "description": "Community-Soundtrack von Jimmy und weiteren Komponisten mit 35 Titeln für Plutonia. Ersetzt die wiederverwendete Originalmusik; besonders für einen erneuten Durchlauf interessant und laut beiliegender Dokumentation für PrBoom-, MBF- und ZDoom-kompatible Ports geeignet.",
+      "verification": "ai-unverified",
+      "release": [
+        "anthology",
+        "pc"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/0/02/Final_Doom_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Final_Doom"
   },
-  "screenshots": []
+  "screenshots": [],
+  "summary": "Auf dem Thor ist der UZDoom-Dual-Screen-Port besonders interessant: Er verlegt Live-Automap und Statusleiste auf das untere Display. Delta Touch ist die vielseitige Alternative für beide PC-Kampagnen und Mods; dafür benötigst du eigene TNT.WAD und PLUTONIA.WAD."
 }

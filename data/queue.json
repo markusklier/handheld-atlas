@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "master-levels-for-doom-ii",
-      "reason": "Reihe Doom",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "final-doom",
-      "reason": "Reihe Doom",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "doom-64",
-      "reason": "Reihe Doom",
-      "added": "2026-11-09"
-    },
-    {
       "game": "doom-rpg",
       "reason": "Reihe Doom",
       "added": "2026-11-09"
