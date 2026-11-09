@@ -5,7 +5,18 @@
   "platforms": [
     "PlayStation",
     "PC",
-    "Dreamcast"
+    "Dreamcast",
+    "Mac OS Classic",
+    "Mac OS X",
+    "PlayStation 3",
+    "PSP",
+    "PlayStation Vita",
+    "PlayStation TV",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series"
   ],
   "versions": [
     {
@@ -22,8 +33,13 @@
       "name": "PC",
       "type": "release",
       "platforms": [
-        "PC"
-      ]
+        "PC",
+        "PlayStation",
+        "Dreamcast"
+      ],
+      "year": 2000,
+      "note": "Korrektur zur bisherigen Aufteilung: Die drei Erstplattformen gehören zu einer gemeinsamen Originalfassung von 2000. Die Windows-Ausgabe ist für klassische PC-Mods interessant und enthielt zusätzlich den Tomb Raider Level Editor.",
+      "traits": []
     },
     {
       "id": "dreamcast",
@@ -32,10 +48,252 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "mac-2001",
+      "name": "Macintosh (2001)",
+      "type": "port",
+      "platforms": [
+        "Mac OS Classic",
+        "Mac OS X"
+      ],
+      "year": 2001,
+      "note": "Offizieller Macintosh-Port von Westlake Interactive und Aspyr mit Level Editor und Unterstützung für klassisches Mac OS sowie Mac OS X. Eine historische Alternative, aber kein belegter zusätzlicher Android-Spielweg.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.macworld.com/article/162007/tomb-2.html"
+        }
+      ]
+    },
+    {
+      "id": "psone-classic-2011",
+      "name": "PSone Classic (2011)",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 3",
+        "PSP",
+        "PlayStation Vita",
+        "PlayStation TV"
+      ],
+      "year": 2011,
+      "traits": [
+        "controller"
+      ],
+      "note": "Digitale, emulierte Wiederveröffentlichung der PlayStation-Ausgabe, zunächst 2011 für PS3 und PSP und später auch auf Vita beziehungsweise PlayStation TV nutzbar. Kein Remaster und keine eigenständige PSP-Neuentwicklung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://psdeals.net/ae-store/game/767044/tomb-raider-chronicles"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2025",
+      "name": "Chronicles in Tomb Raider IV–VI Remastered (2025)",
+      "type": "remaster",
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Überarbeitete Grafik mit Umschaltung zur klassischen Darstellung, klassische oder moderne Steuerung und Fotomodus. Die Sammlung enthält eine tatsächlich überarbeitete Chronicles-Fassung und ist deshalb mehr als eine unveränderte Sammelbox.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://crystaldynamics.com/projects/tomb-raider-iv-vi-remastered/"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "mods": [],
+  "routes": [
+    {
+      "id": "ai-chronicles-remastered-uber-winlator",
+      "name": "Chronicles Remastered über Winlator",
+      "kind": "pc-runtime",
+      "release": "remastered-2025",
+      "runtime": "Winlator; konkret dokumentiert mit Winlator Frost 9.0 v1.2",
+      "projects": [
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Windows-Version von Tomb Raider IV–VI Remastered",
+        "Installierte Spieldateien der PC-Fassung"
+      ],
+      "benefit": "Ein Android-Testvideo zeigt ausdrücklich Chronicles-Gameplay ab 11:38 und dokumentiert die verwendete Laufzeitkonfiguration.",
+      "caveat": "Der konkrete Test stammt vom POCO F6, nicht vom AYN Thor. Die dokumentierte Frost-Konfiguration ist ein Ausgangspunkt und keine garantierte Empfehlung für aktuelle Winlator-Versionen oder den Snapdragon 8 Gen 2.",
+      "steps": [
+        "Winlator aus dem offiziellen Projekt installieren und die eigene PC-Spielinstallation bereitstellen.",
+        "Einen Container anlegen und die ausführbare Datei der Sammlung starten.",
+        "Als dokumentierte Vergleichskonfiguration nennt das Video Wine 9.2, Turnip 25.0.0 R8, DXVK 2.5.3, Box64 0.3.3 und das Performance-Preset.",
+        "Chronicles auswählen und Controllerbelegung sowie Darstellung auf dem eigenen Gerät prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.youtube.com/watch?v=JSJFj3iRKfE"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.youtube.com/watch?v=JSJFj3iRKfE",
+          "device": "POCO F6, Snapdragon 8s Gen 3, 12 GB RAM",
+          "summary": "IKGaming zeigt die Einstellungen sowie Chronicles-Zwischensequenz und anschließendes Gameplay mit Winlator Frost 9.0 v1.2.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-pc-remaster-uber-gamenative",
+      "name": "PC-Remaster über GameNative",
+      "kind": "pc-runtime",
+      "release": "remastered-2025",
+      "runtime": "GameNative",
+      "projects": [
+        "gamenative"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Lizenz von Tomb Raider IV–VI Remastered; im Erfahrungsbericht wird Steam verwendet",
+        "Zugang zum zugehörigen Spielekonto"
+      ],
+      "benefit": "GameNative installiert und startet die eigene PC-Fassung lokal auf Android; ein Nutzer berichtet ausdrücklich von einem gut laufenden Wechsel von Switch-Emulation zu GameNative.",
+      "caveat": "Der positive Kommentar betrifft die Sammlung insgesamt und nennt weder das konkrete Gerät noch Chronicles-spezifische Einstellungen. Er ist kein vollständiger Durchspieltest und keine gesicherte Thor-Kompatibilitätszusage.",
+      "steps": [
+        "GameNative aus dem offiziellen GitHub-Projekt installieren.",
+        "Mit dem eigenen Steam-Konto anmelden und Tomb Raider IV–VI Remastered installieren.",
+        "Die Sammlung starten, Chronicles auswählen und zunächst die automatisch angebotene Konfiguration verwenden.",
+        "Controller und Grafikdarstellung prüfen, bevor zusätzliche Mods installiert werden."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.reddit.com/r/EdenEmulator/comments/1ntfgkq/tomb_raider_ivvi_remastered_on_retroid_pocket_5/"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EdenEmulator/comments/1ntfgkq/tomb_raider_ivvi_remastered_on_retroid_pocket_5/",
+          "device": "Android-Gerät; Modell im positiven Kommentar nicht genannt",
+          "summary": "Ein Kommentator kaufte nach Problemen mit der Switch-Emulation die Steam-Fassung und berichtet, dass sie über GameNative gut läuft.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "the-tomb5-project-von-troye",
+      "name": "The tomb5 project von Troye",
+      "category": "fixes",
+      "url": "https://github.com/Trxyebeep/TOMB5",
+      "edition": "Windows-Original; CD, Steam und GOG",
+      "description": "Decompilierungsbasierter PC-Patch mit zahlreichen Fehlerkorrekturen, korrekter FOV-Berechnung, optional flüssigeren Bewegungsabläufen und wiederhergestellten Zwischensequenzen. Die Installation ist für CD sowie Steam/GOG dokumentiert; kein eigenständiger nativer Android-Port und kein belegter Android-Test dieser Mod-Kombination.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "peixotos-tomb-raider-to-chronicles-patches-and-mod-tools",
+      "name": "Peixoto’s Tomb Raider to Chronicles Patches and Mod Tools",
+      "category": "widescreen-fps",
+      "url": "https://core-design.com/community_tr2patchmodtool.html",
+      "edition": "Windows-Original, nicht Remastered",
+      "description": "Patchsammlung mit Unterstützung bis einschließlich Chronicles für Breitbilddarstellung, XInput-Controller und Textur-Modding. Die Projektübersicht beschreibt mehrere Funktionen anhand von Tomb Raider II; ihre vollständige Verfügbarkeit in Chronicles und das Zusammenspiel mit Android-PC-Laufzeiten nicht pauschal voraussetzen.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "tomb-raider-mouse-helper",
+      "name": "Tomb Raider Mouse Helper",
+      "category": "controls",
+      "url": "https://core-design.com/community_trmousehelper.html",
+      "edition": "Windows-Original",
+      "description": "Ospreys Hintergrundwerkzeug unterstützt ausdrücklich Chronicles und übersetzt Mausbewegungen in Tastendrücke; zusätzlich bietet es WASD-Bewegung und Mausaktionen. Kein echter moderner Analog-Kameramodus; ein Betrieb innerhalb einer Android-PC-Laufzeit ist nicht gesondert belegt.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "seamless-textures-for-tomb-raider-chronicles",
+      "name": "Seamless textures for Tomb Raider Chronicles",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/99",
+      "edition": "PC-Remaster",
+      "description": "Entfernt sichtbare Texturübergänge in Chronicles. Die nach Patch 1 überarbeitete Mod enthält nur noch fünf Texturen, weil viele ursprüngliche Korrekturen bereits offiziell übernommen wurden; vor dem Überschreiben Dateien sichern.",
+      "verification": "ai-unverified",
+      "release": [
+        "remastered-2025"
+      ]
+    },
+    {
+      "id": "tr-ivvi-remastered-definitive-patch",
+      "name": "TR IV–VI Remastered Definitive Patch",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/296?tab=files",
+      "edition": "PC-Remaster; Mod-Ausgabe mit Patch-2-Unterstützung",
+      "description": "Umfangreiches Grafikpaket mit höher aufgelösten Texturen und Änderungen an ausführbaren Dateien. Andere Texturmods sind wegen des geänderten Texturformats beziehungsweise der Texturgröße nicht unmittelbar kompatibel; Installation sichern und Android-Lauffähigkeit der modifizierten Fassung separat prüfen.",
+      "verification": "ai-unverified",
+      "release": [
+        "remastered-2025"
+      ]
+    },
+    {
+      "id": "trc-saveedit",
+      "name": "TRC-SaveEdit",
+      "category": "other",
+      "url": "https://github.com/JulianOzelRose/TRC-SaveEdit",
+      "edition": "Windows-Original; laut Autor mit Steam-, CD- und Multi-Patch-Ausgaben getestet",
+      "description": "Separater Spielstandeditor für Inventar, Munition, Medipacks und weitere Speicherwerte. Sinnvoll zur Vorbereitung eigener PC-Spielstände; keine Android-App und kein belegter Android-Laufzeittest.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20Chronicles%20%28USA%29.png",
@@ -52,5 +310,6 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
     }
-  ]
+  ],
+  "summary": "Auf dem Android-Handheld ist besonders Chronicles aus Tomb Raider IV–VI Remastered interessant: Für Winlator gibt es einen direkten Gameplay-Beleg, für GameNative einen positiven Nutzerbericht."
 }

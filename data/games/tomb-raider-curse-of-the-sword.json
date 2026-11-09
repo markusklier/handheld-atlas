@@ -13,11 +13,26 @@
       "platforms": [
         "Game Boy / Game Boy Color"
       ],
-      "year": 2001
+      "year": 2001,
+      "note": "Game-Boy-Color-exklusives 2D-Abenteuer mit bewusst ausgeführten Kletter-, Sprung- und Kampfbewegungen. Keine Fassung für den ursprünglichen monochromen Game Boy; weitere offiziell veröffentlichte Portierungen, Remakes oder Neuauflagen sind nicht belegt.",
+      "traits": []
     }
   ],
   "routes": [],
-  "mods": [],
+  "mods": [
+    {
+      "id": "franzosische-fanubersetzung-von-yodajfm",
+      "name": "Französische Fanübersetzung von Yodajfm",
+      "category": "translation",
+      "url": "https://traf.romhack.org/?p=patchs&pid=1605",
+      "edition": "Originalfassung USA/Europa",
+      "description": "Französische Übersetzung, Version 1.0 vom 19. Dezember 2024; der Projektstand wird mit 95 % angegeben. Benötigt einen eigenen Dump der USA-/Europa-Fassung mit CRC32 02C1035A und einen Patch-Anwender; keine eigenständige Android-App.",
+      "verification": "ai-unverified",
+      "release": [
+        "game-boy-game-boy-color"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
@@ -34,5 +49,6 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
     }
-  ]
+  ],
+  "summary": "Für Android-Handhelds ist das seitlich dargestellte Abenteuer als Game-Boy-Color-Original interessant; die bisherige Plattformangabe „Game Boy / Game Boy Color“ ist auf „Game Boy Color“ zu korrigieren."
 }

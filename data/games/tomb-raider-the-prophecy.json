@@ -17,10 +17,24 @@
     }
   ],
   "routes": [],
-  "mods": [],
+  "mods": [
+    {
+      "id": "brasilianisch-portugiesische-ubersetzung-tradu-games-br",
+      "name": "Brasilianisch-portugiesische Übersetzung – Tradu Games BR",
+      "category": "translation",
+      "url": "https://romhackers.org/traducoes/portatil/game-boy-advance/tomb-raider-the-prophecy-tradu-games-br/",
+      "edition": "GBA; dokumentiert unter anderem für die US-Fassung AL9E mit CRC32 556F40FA",
+      "description": "Fanübersetzung von Satan / Tradu Games BR mit übersetzten Dialogen und Gegenständen sowie akzentuierten Schriftzeichen. Nach dem Patchen eines eigenen, passenden Spieldumps muss im Spiel „english“ ausgewählt werden. Das Archiv weist auf Tippfehler, sprachliche Fehler und teilweise wörtliche Übersetzungen hin; die ursprüngliche Projektseite ist nicht mehr erreichbar.",
+      "verification": "ai-unverified",
+      "release": [
+        "game-boy-advance"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/Tomb_Raider_-_The_Prophecy.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_The_Prophecy"
-  }
+  },
+  "summary": "Für den Handheld ist The Prophecy als eigenständiges, isometrisches Tomb-Raider-Abenteuer interessant: Erkundung, Sprünge und Rätsel stehen im Mittelpunkt. Ein zusätzlicher Android-Port oder spielspezifischer Dual-Screen-Weg ist nicht belegt."
 }

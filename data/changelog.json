@@ -1,6 +1,110 @@
 {
   "entries": [
     {
+      "type": "mod-added",
+      "text": "Neuer Mod: Brasilianisch-portugiesische Übersetzung – Tradu Games BR (KI-Recherche)",
+      "url": "https://romhackers.org/traducoes/portatil/game-boy-advance/tomb-raider-the-prophecy-tradu-games-br/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-prophecy"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Französische Fanübersetzung von Yodajfm (KI-Recherche)",
+      "url": "https://traf.romhack.org/?p=patchs&pid=1605",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-curse-of-the-sword"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Macintosh (2001) (KI-Recherche)",
+      "url": "https://www.macworld.com/article/162007/tomb-2.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: PSone Classic (2011) (KI-Recherche)",
+      "url": "https://psdeals.net/ae-store/game/767044/tomb-raider-chronicles",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Chronicles in Tomb Raider IV–VI Remastered (2025) (KI-Recherche)",
+      "url": "https://crystaldynamics.com/projects/tomb-raider-iv-vi-remastered/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Chronicles Remastered über Winlator (Chronicles in Tomb Raider IV–VI Remastered (2025), KI-Recherche)",
+      "url": "https://www.youtube.com/watch?v=JSJFj3iRKfE",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PC-Remaster über GameNative (Chronicles in Tomb Raider IV–VI Remastered (2025), KI-Recherche)",
+      "url": "https://www.reddit.com/r/EdenEmulator/comments/1ntfgkq/tomb_raider_ivvi_remastered_on_retroid_pocket_5/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: The tomb5 project von Troye (KI-Recherche)",
+      "url": "https://github.com/Trxyebeep/TOMB5",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Peixoto’s Tomb Raider to Chronicles Patches and Mod Tools (KI-Recherche)",
+      "url": "https://core-design.com/community_tr2patchmodtool.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Tomb Raider Mouse Helper (KI-Recherche)",
+      "url": "https://core-design.com/community_trmousehelper.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Seamless textures for Tomb Raider Chronicles (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/99",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TR IV–VI Remastered Definitive Patch (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/296?tab=files",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TRC-SaveEdit (KI-Recherche)",
+      "url": "https://github.com/JulianOzelRose/TRC-SaveEdit",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles"
+    },
+    {
       "type": "route-updated",
       "text": "Neue Fassung: The Lost Artefact in Tomb Raider I–III Remastered (2024) (KI-Recherche)",
       "url": "https://www.crystaldynamics.com/blog/2023/09/14/aspyr-crystal-dynamics-reveal-tomb-raider-i-iii-remastered-starring-lara-croft-coming-to-pc-consoles-feb-14-2024/",
