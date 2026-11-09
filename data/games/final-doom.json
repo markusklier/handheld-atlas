@@ -259,7 +259,43 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://play-lh.googleusercontent.com/uAgOPwfLNLl0dplx_keAzToXnEkZ-n6CaF-a3t6BxOZyz6rFJGf5sULoRMS8gcjWa51kavUD96eJWODwig9PTw=w1280-h720",
+          "caption": "Google Play",
+          "source": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+          "credit": "play.google.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/PDT3DGzB6LVpSyZ2dPsVciz1G5iLaWSyrsRKeVQKPBbD-c_oV3AMm8BjioI7qz86zSKNAFiGyNJRRmNm-YeuL7o=w1280-h720",
+          "caption": "Google Play",
+          "source": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+          "credit": "play.google.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/jhBkpupb6d_yRGmm8FYJARjbU4_zy5Avm3bJGuzrrAiJqcpT7KfSSrgc4RhoFCa7HmMWnR15R1tTTo_ccTdy=w1280-h720",
+          "caption": "Google Play",
+          "source": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+          "credit": "play.google.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/5GgHTUAn4jW2OC_svwUd92r8R-Lqi1uizX4fke_miKZfyUDMu0xpKVto25cjjvhCxM-gy2kkDYbx1bkHST7D=w1280-h720",
+          "caption": "Google Play",
+          "source": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+          "credit": "play.google.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/i0RR4CSPmgWXZdwZAqi0S89Pq88RbWZMMbzgGw8JTbJWegNmp2IWVl3ttQ8M0MOxFmQrGuNOl6c_pQ3z3-0KGA=w1280-h720",
+          "caption": "Google Play",
+          "source": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
+          "credit": "play.google.com",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -371,7 +407,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://img.youtube.com/vi/0miyRHptfeA/0.jpg",
+          "caption": "Alt text",
+          "source": "https://github.com/BodbDearg/PsyDoom/blob/master/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -454,6 +498,23 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/0/02/Final_Doom_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Final_Doom"
   },
-  "screenshots": [],
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Final%20Doom%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Final%20Doom%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://images.launchbox-app.com/r2_9b73e0dc-bf1a-4880-a756-d7064fe87bf5.jpg",
+      "caption": "Originalspiel",
+      "source": "https://gamesdb.launchbox-app.com/games/images/18604-final-doom",
+      "check": "ai-unclear"
+    }
+  ],
   "summary": "Auf dem Thor ist der UZDoom-Dual-Screen-Port besonders interessant: Er verlegt Live-Automap und Statusleiste auf das untere Display. Delta Touch ist die vielseitige Alternative für beide PC-Kampagnen und Mods; dafür benötigst du eigene TNT.WAD und PLUTONIA.WAD."
 }
