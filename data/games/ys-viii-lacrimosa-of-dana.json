@@ -12,6 +12,37 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "year": 2016
+    },
+    {
+      "id": "playstation-4-2017",
+      "name": "PlayStation 4 (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q24861824"
+        }
+      ]
+    },
+    {
+      "id": "pc-2018",
+      "name": "PC (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q24861824"
+        }
       ]
     }
   ],
@@ -20,5 +51,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/b/b5/Ys_VIII_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Ys_VIII%3A_Lacrimosa_of_Dana"
-  }
+  },
+  "wikidata": "Q24861824",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ys_VIII%3A_Lacrimosa_of_Dana",
+  "genre": "action role-playing game"
 }

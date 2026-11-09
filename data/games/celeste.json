@@ -48,9 +48,206 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2018,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0697120c-8388-4b06-b5ee-707164e76791",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2025-11-07",
+          "settings": {
+            "Emulator Version": "v0.5.1",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "1920x1080",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1bf835ca-bd0d-4d87-b6b9-a69b29147d6b",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Portal is in Xbox input mode and Standard power mode. Use SDL API for controls. Game is capped to 60 FPS and runs perfectly. Steam cloud saves work.",
+          "votes": 3,
+          "date": "2025-08-12",
+          "settings": {
+            "Emulator Version": "v0.3.0",
+            "Graphics Driver": "Vortek (Universal)",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.4-gplasync",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Essential (Load only essential services)",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8a4be8d2-3867-40d2-95d3-662398de9d39",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Perfect compatibility when on the beta-1.3.3.0 branch. Some lighting issues (especially in the mirror level) when on the default branch.",
+          "votes": 2,
+          "date": "2026-05-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/43498b06-be35-4717-90ec-e08364975b5f",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at 60fps, no issues (gamehub lite not gamehub)",
+          "votes": 2,
+          "date": "2025-12-11",
+          "settings": {
+            "Emulator Version": "V5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c73d26f3-6ee1-49ec-a7a8-61e65e173d22",
+          "device": "AYN Thor Base",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No lag at all. Works like a charm.",
+          "votes": 1,
+          "date": "2026-03-31"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c65669d8-8070-450d-9b40-df978f5c0f00",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs flawlessly in 60fps on default config. Only tested in 720p",
+          "votes": 1,
+          "date": "2025-11-11",
+          "settings": {
+            "Emulator Version": "v5.0.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b7e8a93f-25e3-4c79-a152-e1349a380f48",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "VRAM: 4GB",
+          "votes": 0,
+          "date": "2025-12-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/450e457f-aa70-4983-882c-6ab01a1d5633",
+          "device": "Samsung Galaxy Tab S9",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs smoothly at 60fps and pairs well with an Xbox Controller. Encountered a strange bug where the game would crash when crouching on the first moving platform at the start of the game. Seems to be fine other than that. ",
+          "votes": 0,
+          "date": "2025-11-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7ce6840c-a85a-40f4-9530-90633cee9b8e",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-11-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/83be545e-4995-49a7-9d97-3b3dcb3488f4",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "GameNative",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-09-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7a448f80-7734-4bf2-b647-084cfb49d23f"
+        }
+      ]
+    },
+    {
+      "id": "linux-2018",
+      "name": "Linux, Macintosh, PlayStation 4 (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "Linux",
+        "Macintosh",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q28451532"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q28451532",
+  "wikipedia": "https://en.wikipedia.org/wiki/Celeste_%28video_game%29",
+  "genre": "platform game"
 }

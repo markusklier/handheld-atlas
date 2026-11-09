@@ -12,6 +12,38 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "playstation-3-2014",
+      "name": "PlayStation 3 (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q29600626"
+        }
+      ]
+    },
+    {
+      "id": "pc-2018",
+      "name": "PC, PlayStation 4 (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "PC",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q29600626"
+        }
       ]
     }
   ],
@@ -20,5 +52,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/81/Trails_of_Cold_Steel_II_Steam_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_of_Cold_Steel_II"
-  }
+  },
+  "wikidata": "Q29600626",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_of_Cold_Steel_II",
+  "genre": "role-playing video game"
 }

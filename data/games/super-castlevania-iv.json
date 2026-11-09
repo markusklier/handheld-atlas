@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1991
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q389254",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Castlevania_IV",
+  "genre": "platform game"
 }

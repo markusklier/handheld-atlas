@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q5419651",
+  "wikipedia": "https://en.wikipedia.org/wiki/Excitebots%3A_Trick_Racing",
+  "genre": "racing video game"
 }

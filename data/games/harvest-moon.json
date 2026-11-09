@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1996
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q7146181",
+  "wikipedia": "https://en.wikipedia.org/wiki/Harvest_Moon_%28video_game%29",
+  "genre": "simulation video game"
 }

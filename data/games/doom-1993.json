@@ -243,6 +243,51 @@
           "url": "https://gamefaqs.gamespot.com/pc/479521-doom-anthology/data"
         }
       ]
+    },
+    {
+      "id": "atari-jaguar-1994",
+      "name": "Atari Jaguar (1994)",
+      "type": "port",
+      "year": 1994,
+      "platforms": [
+        "Atari Jaguar"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q189784"
+        }
+      ]
+    },
+    {
+      "id": "snes-1995",
+      "name": "SNES (1995)",
+      "type": "port",
+      "year": 1995,
+      "platforms": [
+        "SNES"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q189784"
+        }
+      ]
+    },
+    {
+      "id": "3do-1996",
+      "name": "3DO (1996)",
+      "type": "port",
+      "year": 1996,
+      "platforms": [
+        "3DO"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q189784"
+        }
+      ]
     }
   ],
   "routes": [
@@ -713,5 +758,11 @@
     }
   ],
   "updatedAt": "2026-11-09",
-  "screenshots": []
+  "screenshots": [],
+  "wikidata": "Q189784",
+  "wikipedia": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29"
+  }
 }

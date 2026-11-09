@@ -13,6 +13,51 @@
       "platforms": [
         "PlayStation Vita"
       ]
+    },
+    {
+      "id": "pc-2008",
+      "name": "PC (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2700296"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2013",
+      "name": "PlayStation 3 (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2700296"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2014",
+      "name": "PlayStation 4 (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2700296"
+        }
+      ]
     }
   ],
   "routes": [],
@@ -20,5 +65,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/5/5b/Spelunky.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Spelunky"
-  }
+  },
+  "wikidata": "Q2700296",
+  "wikipedia": "https://en.wikipedia.org/wiki/Spelunky",
+  "genre": "action-adventure game"
 }

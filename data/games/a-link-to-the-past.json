@@ -31,7 +31,8 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1991
     },
     {
       "id": "a-link-to-the-past-four-swords-gba",
@@ -41,6 +42,51 @@
         "Game Boy Advance"
       ],
       "year": 2002
+    },
+    {
+      "id": "wii-2006",
+      "name": "Wii (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q370055"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q370055"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2016",
+      "name": "Nintendo 3DS (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q370055"
+        }
+      ]
     }
   ],
   "routes": [
@@ -117,5 +163,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q370055",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_A_Link_to_the_Past"
 }

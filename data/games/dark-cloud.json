@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9a17cf80-d0f5-4d74-a945-05cdf59243e5",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "ARMSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Playing on 3x resolution upscale. Runs at a solid 60FPS with the MrPurple T30 driver.",
+          "votes": 0,
+          "date": "2026-10-06",
+          "settings": {
+            "Emulator Version": "2.8.1",
+            "Custom FPS Limit": "60",
+            "Aspect Ratio": "16:9",
+            "Fast Boot": "True",
+            "Renderer": "Vulkan",
+            "Upscale": "1",
+            "Texture Filtering": "PS2 (default)",
+            "Interlace Mode": "Automatic",
+            "Texture Preloading": "Full",
+            "Blending Accuracy": "Basic"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/fd0b15d1-5d15-49af-8488-6cbbbe4e74ad"
+        }
       ]
     }
   ],

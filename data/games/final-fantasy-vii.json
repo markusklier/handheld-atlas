@@ -29,8 +29,56 @@
       "platforms": [
         "PlayStation"
       ]
+    },
+    {
+      "id": "pc-1998",
+      "name": "PC (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q214232"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2015",
+      "name": "PlayStation 4 (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q214232"
+        }
+      ]
+    },
+    {
+      "id": "android-2016",
+      "name": "Android (2016)",
+      "type": "android",
+      "year": 2016,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q214232"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q214232",
+  "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
+  "genre": "role-playing video game"
 }

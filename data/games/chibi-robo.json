@@ -28,6 +28,61 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4bac4ca8-da0b-43c2-863c-9fe9d7939b13",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ce6c74b4-70e7-424e-82f2-d6d8bd165960",
+          "device": "AYN Thor Pro",
+          "emulator": "Dolphin",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Played with a wide-screen hack (not perfect as all UI elements are still 4:3) See the wiki : https://wiki.dolphin-emu.org/index.php?title=Chibi-Robo!_(GC) Also the FPS counter says 59.4 but I'm not sure I'm really playin",
+          "votes": 0,
+          "date": "2026-06-08",
+          "settings": {
+            "Emulator Version": "2603a",
+            "Driver Version": "Turnip Areno Driver T28-toasted",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "2",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Hybrid Ubershaders",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "4",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/aacb0b49-e29a-4f38-9441-5d022ec14f88"
+        }
       ]
     },
     {

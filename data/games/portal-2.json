@@ -48,9 +48,30 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2011
+    },
+    {
+      "id": "linux-2011",
+      "name": "Linux, Macintosh, PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Linux",
+        "Macintosh",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q279446"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q279446",
+  "wikipedia": "https://en.wikipedia.org/wiki/Portal_2",
+  "genre": "puzzle video game"
 }

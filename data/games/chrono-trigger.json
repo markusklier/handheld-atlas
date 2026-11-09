@@ -32,7 +32,8 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1995
     },
     {
       "id": "nintendo-ds",
@@ -69,7 +70,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/0fdf6560-cb69-4877-8743-fd5c2df59e7b"
         }
-      ]
+      ],
+      "year": 2008
     },
     {
       "id": "android",
@@ -77,6 +79,37 @@
       "type": "android",
       "platforms": [
         "Android"
+      ],
+      "year": 2011
+    },
+    {
+      "id": "wii-2011",
+      "name": "Wii (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q761815"
+        }
+      ]
+    },
+    {
+      "id": "pc-2018",
+      "name": "PC (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q761815"
+        }
       ]
     }
   ],
@@ -217,5 +250,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q761815",
+  "wikipedia": "https://en.wikipedia.org/wiki/Chrono_Trigger"
 }

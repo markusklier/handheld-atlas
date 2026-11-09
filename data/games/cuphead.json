@@ -49,7 +49,63 @@
       "platforms": [
         "PC"
       ],
-      "year": 2017
+      "year": 2017,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a706276b-cddc-4e67-8012-97f620fda963",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Installed and launched via Steam. Game runs perfectly at 120 FPS locked, though a lot of animations in game are capped to 60 FPS. To cap the in-game FPS to 60, go to **Options > Visual** and set **VSync** to **OFF**. In ",
+          "votes": 4,
+          "date": "2025-08-12",
+          "settings": {
+            "Winlator Fork": "cmod_glibc",
+            "Emulator Version": "13.1.1",
+            "Controller Support": "True",
+            "Wine Version": "proton-9.0-x86_64",
+            "Turnip Driver Version ": "[MrPurple666/purple-turnip] turnip_mrpurple_T21-AYANEO.adpkg",
+            "Graphics Driver": "Wrapper-v2",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.6.2-1-gplasync-1\nEnable Async = ON\nFrame Rate = 120",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Performance"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/97423ec2-d5e3-4c0f-98fd-5b00372a26c9",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Perfectly playable at 1080p - 120fps",
+          "votes": 1,
+          "date": "2025-12-27",
+          "settings": {
+            "Emulator Version": "5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1920 x 1080",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/346bce6e-eaed-40be-aadd-e57089323c2e"
+        }
+      ]
     },
     {
       "id": "macintosh-2018",

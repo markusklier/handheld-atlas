@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "year": 2004
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1196801"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1196801",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pikmin_2",
+  "genre": "real-time strategy"
 }

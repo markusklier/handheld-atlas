@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1991
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q911226",
+  "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_IV",
+  "genre": "role-playing video game"
 }

@@ -28,9 +28,86 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/48341de6-61ce-47a1-936b-8dfd4b727f83",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bc1f7b34-793d-4f90-a8b3-7811e450b26a",
+          "device": "AYN Thor Pro",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.1-8969-g611bb8fb4",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "5",
+            "Texture Filtering": "Nearest-Neighbor",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/82d8467d-ea62-477f-a71f-16ab0108f9b0",
+          "device": "OnePlus 12R",
+          "emulator": "Lemuroid",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Crash Bandicoot (Europe)** Used Lemuroid from F-Droid Emulator Settings: - HD Mode is enabled at Max quality - Prefer low-latency audio is enabled - Direct game load is enabled Core Settings: - Dynamic recompiler is di",
+          "votes": 0,
+          "date": "2025-12-26",
+          "settings": {
+            "Emulator Version": "1.16.2",
+            "Video Driver": "Vulkan",
+            "Video Scale": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/81cd4d0a-d04b-4c2f-a2d3-8bb07e7610c7"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q719176",
+  "wikipedia": "https://en.wikipedia.org/wiki/Crash_Bandicoot_%28video_game%29",
+  "genre": "3D platform game"
 }

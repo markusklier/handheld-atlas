@@ -29,8 +29,27 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "arcade-1998",
+      "name": "arcade, arcade video game machine (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "arcade",
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1060715"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1060715",
+  "wikipedia": "https://en.wikipedia.org/wiki/Soulcalibur_%28video_game%29",
+  "genre": "3D fighting game"
 }

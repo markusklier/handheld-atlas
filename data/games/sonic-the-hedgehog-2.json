@@ -28,9 +28,44 @@
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
+      ],
+      "year": 1992
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q35627"
+        }
+      ]
+    },
+    {
+      "id": "android-2013",
+      "name": "Android, Windows Mobile (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Android",
+        "Windows Mobile"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q35627"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q35627",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_2",
+  "genre": "2D platform game"
 }

@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1996
+    },
+    {
+      "id": "wii-2008",
+      "name": "Wii (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1063119"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1063119"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1063119",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_RPG",
+  "genre": "action role-playing game"
 }

@@ -59,5 +59,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/b/be/World_of_Warcraft_Forever_logo.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/World_of_Warcraft%3A_Forever"
-  }
+  },
+  "wikidata": "Q141440705",
+  "wikipedia": "https://en.wikipedia.org/wiki/World_of_Warcraft%3A_Forever",
+  "genre": "massively multiplayer online role-playing game"
 }

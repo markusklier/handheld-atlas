@@ -28,9 +28,58 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1994
+    },
+    {
+      "id": "wii-u-2013",
+      "name": "Wii U (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2529000"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2016",
+      "name": "Nintendo 3DS (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2529000"
+        }
+      ]
+    },
+    {
+      "id": "super-nes-classic-edition-2017",
+      "name": "Super NES Classic Edition (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
+        "Super NES Classic Edition"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2529000"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2529000",
+  "wikipedia": "https://en.wikipedia.org/wiki/EarthBound",
+  "genre": "role-playing video game"
 }

@@ -18,7 +18,8 @@
       "type": "original",
       "platforms": [
         "PC"
-      ]
+      ],
+      "year": 2002
     }
   ],
   "routes": [
@@ -169,5 +170,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q718448",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
 }

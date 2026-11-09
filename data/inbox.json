@@ -1,6 +1,134 @@
 {
   "leads": [
     {
+      "url": "https://github.com/lsulibraries/palefire",
+      "title": "lsulibraries/palefire",
+      "excerpt": "Custom Drupal 11 theme; successor to origami",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/rwrife/delve",
+      "title": "rwrife/delve",
+      "excerpt": "Local-first iPhone fixed-dungeon puzzle crawler: explore a handcrafted tomb, decipher a vague quest, experiment with order-of-operations, and keep a private clue journal — no accounts, no cloud, no ads.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/storytold/craft-anything",
+      "title": "storytold/craft-anything",
+      "excerpt": "Craft Anything: understand how any software works, and craft your own.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/VaibhavBhagat665/nextalk",
+      "title": "VaibhavBhagat665/nextalk",
+      "excerpt": "Real-time team chat with AI summaries, HD video calls, E2E-encrypted DMs and community servers, built with Next.js, Socket.io & WebRTC.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ayush068/ayupay-app",
+      "title": "ayush068/ayupay-app",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/breathtaker-adi/LogStay",
+      "title": "breathtaker-adi/LogStay",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/PppP01/SolStream-Studio",
+      "title": "PppP01/SolStream-Studio",
+      "excerpt": "Ultra-lightweight , 100% no-root, zero-ad Android broadcast studio for 90–185 Hz mobile gaming. Streams 360p–4K60 (0.5–100 Mbps) HW HEVC/H.264/AV1, OpenGL ES 3.0 filters, 15-stage 32-bit float SOL LUXE voice + Native C 48kHz RNNoise, 250% 3D game audio, 9:16 Shorts & YT/Twitch/Kick simulcast.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/CesarDKK/badminton-score-counter",
+      "title": "CesarDKK/badminton-score-counter",
+      "excerpt": "Badminton score counter",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Yomiamy/flutter_inspector_kit",
+      "title": "Yomiamy/flutter_inspector_kit",
+      "excerpt": "A multi-inspector tool integration",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ReeseArch64/dotfiles",
+      "title": "ReeseArch64/dotfiles",
+      "excerpt": "my dotfiles configuration for the arch linux with noctalia shell.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/joshal7/49ers",
+      "title": "joshal7/49ers",
+      "excerpt": "49ers news, analysis and more",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mahirgul/AiPBX",
+      "title": "mahirgul/AiPBX",
+      "excerpt": "Open-source IP PBX & unified communications: Asterisk 22 web portal, WebRTC softphone, chat, fax, call center, Android & iOS apps — https://aipbx.bid",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/eeyung1/Eric_tracker",
+      "title": "eeyung1/Eric_tracker",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/menessmaat-stack/bambai-99",
+      "title": "menessmaat-stack/bambai-99",
+      "excerpt": "BAMBAI 99: Streets of Mumbai — top-down retro action game in a real, OpenStreetMap-baked Mumbai",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/lucky-edgelord/Lilith-Learning-Lab",
+      "title": "lucky-edgelord/Lilith-Learning-Lab",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/muthuselvamm472-pythonstack/nandhini-stationery",
+      "title": "muthuselvamm472-pythonstack/nandhini-stationery",
+      "excerpt": "Nandhini Stationery - Smart Loyalty, Rewards & Digital Member Pass Platform",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/timschneeb/awesome-shizuku",
       "title": "timschneeb/awesome-shizuku",
       "excerpt": "Curated list of awesome Android apps making use of Shizuku",
@@ -6271,134 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/FulGerNet/halo-ce-android",
-      "title": "Halo: Combat Evolved (Android)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/FatalDecomp/ROLLER",
-      "title": "Whiplash / Fatal Racing",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Eukaryot/sonic3air",
-      "title": "Sonic 3 & Knuckles (Sonic 3 A.I.R.)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EmuLnk/emulnk",
-      "title": "EmuLnk",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Ekyso/StS2-Launcher",
-      "title": "Slay the Spire 2 (StS2-Launcher)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Ekyso/Cinderbox",
-      "title": "Stardew Valley",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Edwin2929/sma3-recomp-android",
-      "title": "Super Mario Advance 3: Yoshi's Island",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EasyRPG/Player",
-      "title": "RPG Maker 2000/2003 (EasyRPG)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EXL/Spout",
-      "title": "Spout",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EXL/KenLab3d",
-      "title": "Ken's Labyrinth",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EXL/Gish",
-      "title": "Gish",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Dr3amyBerry/callofrecomp",
-      "title": "Call of Duty 1.5",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/DoutorRaposo/moonpearl",
-      "title": "The Legend of Zelda: A Link to the Past (moonpearl)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/DifferentNet/barony-android-port",
-      "title": "Barony",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Darkaxt/DualScreenDex",
-      "title": "DualDex 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Darhkfox/BusterBustsLoose",
-      "title": "Tiny Toon Adventures: Buster Busts Loose!",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T15:07:58Z",
-    "newLeads": 18,
+    "lastRun": "2026-11-09T15:13:30Z",
+    "newLeads": 16,
     "newEvents": 0
   },
   "aiResearch": {

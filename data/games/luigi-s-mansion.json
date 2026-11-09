@@ -29,7 +29,8 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
-      ]
+      ],
+      "year": 2001
     },
     {
       "id": "luigi-s-mansion-nintendo-3ds",
@@ -42,5 +43,8 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q984029",
+  "wikipedia": "https://en.wikipedia.org/wiki/Luigi%27s_Mansion",
+  "genre": "action-adventure game"
 }

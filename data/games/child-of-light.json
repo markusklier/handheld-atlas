@@ -46,8 +46,17 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q16319370"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/531fbb02-15a0-423c-bd1d-f232bef2acb3"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/44a5c9de-3d4a-462d-8fd1-64596cdf5dd3"
         }
-      ]
+      ],
+      "reports": []
     }
   ],
   "routes": [],

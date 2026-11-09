@@ -74,5 +74,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/83/VA-11_HALL-A_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/VA-11_Hall-A"
-  }
+  },
+  "wikidata": "Q24574609",
+  "wikipedia": "https://en.wikipedia.org/wiki/VA-11_Hall-A",
+  "genre": "simulation video game"
 }

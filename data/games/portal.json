@@ -48,9 +48,58 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2007
+    },
+    {
+      "id": "playstation-3-2007",
+      "name": "PlayStation 3 (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q274897"
+        }
+      ]
+    },
+    {
+      "id": "macintosh-2010",
+      "name": "Macintosh (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q274897"
+        }
+      ]
+    },
+    {
+      "id": "linux-2013",
+      "name": "Linux (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Linux"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q274897"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q274897",
+  "wikipedia": "https://en.wikipedia.org/wiki/Portal_%28video_game%29",
+  "genre": "puzzle video game"
 }

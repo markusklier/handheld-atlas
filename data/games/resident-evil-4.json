@@ -37,9 +37,28 @@
       "type": "release",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "year": 2005
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q275950"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q275950",
+  "wikipedia": "https://en.wikipedia.org/wiki/Resident_Evil_4",
+  "genre": "action-adventure game"
 }

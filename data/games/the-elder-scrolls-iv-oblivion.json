@@ -12,6 +12,37 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2006
+    },
+    {
+      "id": "mobile-phone-2006",
+      "name": "mobile phone (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "mobile phone"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q49607"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2007",
+      "name": "PlayStation 3 (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q49607"
+        }
       ]
     }
   ],
@@ -20,5 +51,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_IV%3A_Oblivion"
-  }
+  },
+  "wikidata": "Q49607",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_IV%3A_Oblivion",
+  "genre": "role-playing video game"
 }

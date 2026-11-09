@@ -28,6 +28,50 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2e1fe07b-e16d-4739-9c1f-edf37188efb4",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-06-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bd7a54fb-4b42-45ee-9a79-31c5f23f5e2c",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No issues scaled to 1080p",
+          "votes": 0,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "most recent",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "1",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9ccfce0e-1ede-4697-9c6f-0609c8e4034e"
+        }
       ]
     }
   ],

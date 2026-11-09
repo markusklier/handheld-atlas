@@ -24,7 +24,8 @@
       "type": "release",
       "platforms": [
         "Android"
-      ]
+      ],
+      "year": 2015
     },
     {
       "id": "windows-phone",
@@ -32,7 +33,8 @@
       "type": "release",
       "platforms": [
         "Windows Phone"
-      ]
+      ],
+      "year": 2015
     },
     {
       "id": "pc",
@@ -40,6 +42,22 @@
       "type": "release",
       "platforms": [
         "PC"
+      ]
+    },
+    {
+      "id": "playstation-4-2016",
+      "name": "PlayStation 4, PlayStation Vita (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q20895586"
+        }
       ]
     }
   ],
@@ -81,5 +99,8 @@
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/540840/"
     }
-  ]
+  ],
+  "wikidata": "Q20895586",
+  "wikipedia": "https://en.wikipedia.org/wiki/Lara_Croft_Go",
+  "genre": "puzzle video game"
 }

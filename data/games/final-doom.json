@@ -530,5 +530,8 @@
       "check": "ai-verified"
     }
   ],
-  "summary": "Auf dem Thor ist der UZDoom-Dual-Screen-Port besonders interessant: Er verlegt Live-Automap und Statusleiste auf das untere Display. Delta Touch ist die vielseitige Alternative für beide PC-Kampagnen und Mods; dafür benötigst du eigene TNT.WAD und PLUTONIA.WAD."
+  "summary": "Auf dem Thor ist der UZDoom-Dual-Screen-Port besonders interessant: Er verlegt Live-Automap und Statusleiste auf das untere Display. Delta Touch ist die vielseitige Alternative für beide PC-Kampagnen und Mods; dafür benötigst du eigene TNT.WAD und PLUTONIA.WAD.",
+  "wikidata": "Q1088780",
+  "wikipedia": "https://en.wikipedia.org/wiki/Final_Doom",
+  "genre": "first-person shooter"
 }

@@ -29,8 +29,26 @@
       "platforms": [
         "PSP"
       ]
+    },
+    {
+      "id": "snes-1995",
+      "name": "SNES (1995)",
+      "type": "port",
+      "year": 1995,
+      "platforms": [
+        "SNES"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1413485"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1413485",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tactics_Ogre",
+  "genre": "tactical role-playing game"
 }

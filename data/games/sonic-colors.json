@@ -17,9 +17,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2010
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q151614",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Colors",
+  "genre": "platform game"
 }

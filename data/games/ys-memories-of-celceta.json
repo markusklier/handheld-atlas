@@ -20,5 +20,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Ys%2C_Memories_of_Celceta_Steam_artwork.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Ys%3A_Memories_of_Celceta"
-  }
+  },
+  "wikidata": "Q8059668",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ys%3A_Memories_of_Celceta",
+  "genre": "action role-playing game"
 }

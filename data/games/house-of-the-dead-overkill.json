@@ -16,9 +16,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q265889",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_House_of_the_Dead%3A_Overkill",
+  "genre": "shoot 'em up"
 }

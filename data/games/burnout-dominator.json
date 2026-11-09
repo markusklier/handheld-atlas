@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "PSP"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q578147",
+  "wikipedia": "https://en.wikipedia.org/wiki/Burnout_Dominator",
+  "genre": "racing video game"
 }
