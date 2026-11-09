@@ -1,6 +1,126 @@
 {
   "leads": [
     {
+      "url": "https://github.com/empy94/jiva-thor",
+      "title": "empy94/jiva-thor",
+      "excerpt": "Application expérimentale Jiva à double écran pour Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/retroforge-linux/os-build",
+      "title": "retroforge-linux/os-build",
+      "excerpt": "RetroForge: retro-emulation OS for Snapdragon handhelds",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hamdanra/uptown-func",
+      "title": "hamdanra/uptown-func",
+      "excerpt": "natHacks 2026 Team Repo",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/aitutor5566-maker/STUDYAI",
+      "title": "aitutor5566-maker/STUDYAI",
+      "excerpt": "STUDYAI — Complete AI-Powered Educational Learning Ecosystem with Flutter, Three.js 3D WebGL Labs, Socratic AI Tutor, Adaptive Games, and 40-Mark Weekly Examinations",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/magnusclarkson-star/aviation-ground-school-academy",
+      "title": "magnusclarkson-star/aviation-ground-school-academy",
+      "excerpt": "Aviators App",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/RadioBahrain/player",
+      "title": "RadioBahrain/player",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/TahirMansuri/ThinkCode-Lab",
+      "title": "TahirMansuri/ThinkCode-Lab",
+      "excerpt": "⚡ High-performance, 100% offline multi-language code playground & mobile IDE for students. Python 3.12 with interactive runtime stdin, Oracle-compatible SQL with live schemas, JavaScript, HTML/CSS Web Preview, and Linux Shell. Built with Vite, WebAssembly, and Capacitor for Web & Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/codeja3/NutriVault",
+      "title": "codeja3/NutriVault",
+      "excerpt": "Local personal and family nutrition tracker",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/CODING-PBL-GEU/FocusSense",
+      "title": "CODING-PBL-GEU/FocusSense",
+      "excerpt": "A context aware Android system for digital distraction detection and adaptive intervention",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Allen73737/NOTtEodo",
+      "title": "Allen73737/NOTtEodo",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/superiorlu/AITreasureBox",
+      "title": "superiorlu/AITreasureBox",
+      "excerpt": "🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/marcjwrigg/armoryhub-selfhost-install",
+      "title": "marcjwrigg/armoryhub-selfhost-install",
+      "excerpt": "Install configuration for self-hosted ArmoryHub. Config only — the application image is private.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mrvishalg2004/HealthChain--Blockchain-Integrated-Healthcare-Records-Management-Software-main",
+      "title": "mrvishalg2004/HealthChain--Blockchain-Integrated-Healthcare-Records-Management-Software-main",
+      "excerpt": "An enterprise-grade, privacy-first Electronic Health Record (EHR) platform. Features off-chain encrypted MongoDB storage, Ethereum smart contract SHA-256 integrity anchoring, and granular patient-governed time-bound consent. Built with Next.js 14, Node.js, Express, Solidity, and Web3.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/splikaa/4Rent",
+      "title": "splikaa/4Rent",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/CM-Studio77/mpvx",
+      "title": "CM-Studio77/mpvx",
+      "excerpt": "The Next-Generation Media Player for Android featuring an intelligent Dual-Engine architecture (Auto mpv-first fallback to Media3), 10-Tab Floating Liquid Glass Pill Dock, Cinema HUD, Anime4K GLSL Shaders, and multi-protocol streaming (SMB, WebDAV, Torrent, Jellyfin).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://www.reddit.com/r/SBCGaming/comments/1xrvyer/who_needs_an_ayn_thor_if_you_can_run_native_3ds/",
       "title": "Who needs an AYN Thor if you can run native 3DS Games on your RG DS Plus?",
       "excerpt": "",
@@ -6279,126 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SubmitGame/awesome-decomp-games",
-      "title": "awesome-decomp-games",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Strrationalism/CPyMO",
-      "title": "Visual novels (CPyMO)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SlickAmogus/silent-hill-decomp",
-      "title": "Silent Hill",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Sebastrion/awesome-unofficial-pc-ports",
-      "title": "awesome-unofficial-pc-ports",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SansNope/UnleashedRecomp-Android",
-      "title": "Sonic Unleashed",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SanGraphic/Apotris-Android",
-      "title": "Apotris",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Sampreeth004/nfs-carbon-recomp",
-      "title": "Need for Speed: Carbon (Sampreeth004)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SSunnKing/ZeldaWWHDRecompAndroid---ENHANCED",
-      "title": "The Legend of Zelda: The Wind Waker HD (Enhanced)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port",
-      "title": "Pikmin and Pikmin 2 (Open Nectar)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/SHOEGAZEssb/ooa-godot",
-      "title": "The Legend of Zelda: Oracle of Ages (Godot)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RohanBhattacharyya/oSBM",
-      "title": "Starbound (OpenStarbound Mobile)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ReflectionHLE/ReflectionHLE",
-      "title": "Wolfenstein 3D, Keen and Catacomb (ReflectionHLE)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RanggaCasper/ShaolinMonks-Android",
-      "title": "Mortal Kombat: Shaolin Monks",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RanggaCasper/Black-Android",
-      "title": "Black (Xbox)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RSDKModding/RSDKv5-Decompilation",
-      "title": "Sonic Mania (Retro Engine v5)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:24:26Z",
-    "newLeads": 14,
+    "lastRun": "2026-11-09T16:31:50Z",
+    "newLeads": 15,
     "newEvents": 0
   },
   "aiResearch": {

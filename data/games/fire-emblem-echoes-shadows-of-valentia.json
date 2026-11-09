@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3899ba36-a6df-4adb-9b2b-2ad7fb1813f1",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Wanted to share how I am able to play Fire Emblem Echoes on my Ayn Thor Max model. So far I am already in Act 4 so I can confidently say it run smooth Game performance: -Smooth with seldom crash but there are some minor ",
+          "votes": 0,
+          "date": "2026-10-06",
+          "settings": {
+            "Emulator Version": "2126.1.2-vanilla",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c2773e76-bf28-420f-aa15-a89f2c070054"
+        }
       ]
     }
   ],

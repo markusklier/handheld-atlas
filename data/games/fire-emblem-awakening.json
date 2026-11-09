@@ -28,6 +28,77 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6ae1b806-61b8-4e8f-91d3-65819b494424",
+          "device": "AYN Thor Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "You need custom drivers + vulkan for this to be playable. Default drivers are a disaster the slowdown is unplayable during fights on the animations. This compination made everything run super smooth. The first time you w",
+          "votes": 6,
+          "date": "2025-11-01",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "[KIMCHI Turnip]  v25.3.0 - Revision 11|||Turnip_v25.3.0_R11.zip",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e6b76b3e-a140-45a4-bbd8-ca9f96068bf8",
+          "device": "OnePlus 11",
+          "emulator": "Citra",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60 fps cheat on 3x resolution",
+          "votes": 2,
+          "date": "2025-06-17",
+          "settings": {
+            "Emulator Version": "608383e",
+            "Graphics API": "Vulkan",
+            "Resolution Factor": "3",
+            "Texture Filter": "None",
+            "Texture Sampling": "Game Controlled",
+            "Layout Option": "Default",
+            "Use Hardware Shader": "True",
+            "Use Shader JIT": "True",
+            "Use VSync": "True",
+            "Use Disk Shader Cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/53f8c91c-9dda-4701-8913-0c46a8c46951",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-06-23",
+          "settings": {
+            "Emulator Version": "2122"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f9dcdb85-e017-4754-9a6d-7ec25de9af38"
+        }
       ]
     }
   ],

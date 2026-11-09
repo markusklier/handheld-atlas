@@ -28,6 +28,122 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/13930303-64eb-41da-b11e-9f567cc7b6d1",
+          "device": "AYN Thor Lite",
+          "emulator": "AetherSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Even at 2.5x 1080p it runs great",
+          "votes": 1,
+          "date": "2026-08-16",
+          "settings": {
+            "Emulator Version": "V2.2",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Upscale Multiplier": "0.9",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "50",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/edceca63-d86f-4700-9c58-0e8800342f4f",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-10-16",
+          "settings": {
+            "Emulator Version": "2.1-3668",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "1.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6e10d9f2-db4b-423a-bd4e-9211598941db",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Officially ported from the Ryan Retro Compatibility List: https://ryanretro.com**",
+          "votes": 1,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "2.0-4248",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "3",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fc70b73a-cb92-4f11-8c88-c772e22f05bd",
+          "device": "AYN Thor Pro",
+          "emulator": "ARMSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Flawless experience right out of the box. Everything at defaults and 2x upscale.",
+          "votes": 0,
+          "date": "2026-08-24",
+          "settings": {
+            "Emulator Version": "2.6.6.8.2",
+            "Custom FPS Limit": "60",
+            "Aspect Ratio": "16:9",
+            "Fast Boot": "True",
+            "Renderer": "Auto",
+            "Upscale": "2",
+            "Texture Filtering": "PS2 (default)",
+            "Interlace Mode": "Automatic",
+            "Texture Preloading": "Full",
+            "Blending Accuracy": "Basic"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/488c5122-f90d-447c-9783-dbe40805f1d0",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs at 60fps or higher in most areas aside from the snow areas upscaled to 1080p. Small fps drop in heavy snow area in the beginning but once your past that its perfect upscaled. Widescreen patch enabled Save states wor",
+          "votes": 2,
+          "date": "2025-12-26"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/36daad07-993c-4615-965e-2e60f13845ff"
+        }
       ]
     }
   ],

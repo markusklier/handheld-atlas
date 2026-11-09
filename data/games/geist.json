@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ed771fd0-932c-422f-9f6c-b8f345ef7513",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Dolphin",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Dual Core MUST be DISABLED, otherwise crashes will occur. Slowdowns will be present, but nothing that renders it unplayable. 3x Resolution Upscaling",
+          "votes": 0,
+          "date": "2025-10-11",
+          "settings": {
+            "Emulator Version": "2506a",
+            "Emulator Fork": "Main",
+            "Driver Version": "Default",
+            "Graphics Backend": "Vulkan",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "8x MSAA",
+            "Anisotropic Filtering": "100",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3a219625-7bde-4510-8b09-a009dd874fce"
+        }
       ]
     }
   ],
