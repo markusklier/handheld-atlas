@@ -2010,6 +2010,78 @@
         "shantae"
       ],
       "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "eden-2-2",
+      "name": "Eden",
+      "kind": "emulator",
+      "url": "https://eden-emu.dev/",
+      "repo": null,
+      "description": "",
+      "games": [
+        "metroid-prime-4-beyond"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "supermetroiddecomp",
+      "name": "SuperMetroidDecomp",
+      "kind": "port",
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+      "repo": "MrJackSpade/SuperMetroidDecomp",
+      "description": "",
+      "games": [
+        "super-metroid"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "metroid-prime-unbound-metroidprimeport",
+      "name": "Metroid Prime Unbound / MetroidPrimePort",
+      "kind": "port",
+      "url": "https://github.com/Odrannnn/MetroidPrimePort",
+      "repo": "Odrannnn/MetroidPrimePort",
+      "description": "",
+      "games": [
+        "metroid-prime"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "primehack-android",
+      "name": "PrimeHack-Android",
+      "kind": "mod",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android",
+      "repo": "Starlightbotanist/PrimeHack-Android",
+      "description": "",
+      "games": [
+        "metroid-prime"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "primerecomp",
+      "name": "PrimeRecomp",
+      "kind": "port",
+      "url": "https://github.com/gminustwo/primerecomp",
+      "repo": "gminustwo/primerecomp",
+      "description": "",
+      "games": [
+        "metroid-prime"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "mp-checklist",
+      "name": "MP Checklist",
+      "kind": "companion",
+      "url": "https://play.google.com/store/apps/details?id=com.stifdev.mpchecklist",
+      "repo": null,
+      "description": "",
+      "games": [
+        "metroid-prime"
+      ],
+      "checkedAt": "2026-11-09"
     }
   ]
 }

@@ -1,228 +1,17 @@
 {
   "leads": [
     {
-      "url": "https://github.com/Mantequilla-Soft/snapievideoplayer",
-      "title": "Mantequilla-Soft/snapievideoplayer",
-      "excerpt": "html5 video player for the 3Speak Platform",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Riaan007/farm-netwatch",
-      "title": "Riaan007/farm-netwatch",
-      "excerpt": "Dockerised network scanner + dashboard for Raspberry Pi: discovery, identification, uptime history, ntfy alerts, VPN, and Uptime Kuma integration.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/jppferreira/Mockup-Studio",
-      "title": "jppferreira/Mockup-Studio",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/petrosvassiliou/euroleague-courtside",
-      "title": "petrosvassiliou/euroleague-courtside",
-      "excerpt": "EuroLeague Courtside – Native Kotlin & Jetpack Compose (Material 3 Adaptive) Basketball App for Googlebook OS, Tablets, Foldables & Smartphones",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/enhansome/enhansome-terminals",
-      "title": "enhansome/enhansome-terminals",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/olafkfreund/nixarchy",
-      "title": "olafkfreund/nixarchy",
-      "excerpt": "Omarchy 4.x vendored for NixOS — the upstream tree packaged as a derivation, not reimplemented in Nix",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Ferdiansyah42/Tugas_akhir-TA",
-      "title": "Ferdiansyah42/Tugas_akhir-TA",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/smatkovi/pro1x-maemo-leste",
-      "title": "smatkovi/pro1x-maemo-leste",
-      "excerpt": "Maemo Leste als zweiter Booteintrag (Slot B) auf dem F(x)tec Pro1X neben Sailfish OS",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/boredace/Gnoseis-Windows",
-      "title": "boredace/Gnoseis-Windows",
-      "excerpt": "Gnoseis is an Windows-native local CRM application that can be also used as an all-purpose knowledge manager.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Yogesh-Kumar-Mallik-dev/CampusManagement",
-      "title": "Yogesh-Kumar-Mallik-dev/CampusManagement",
-      "excerpt": "A resilient, multiplatform Campus Operating System",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/CarlosCosta07-s/NIVORA",
-      "title": "CarlosCosta07-s/NIVORA",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/JuanVillegas95/RotaLock",
-      "title": "JuanVillegas95/RotaLock",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/gmh5225/awesome-game-security",
-      "title": "gmh5225/awesome-game-security",
-      "excerpt": "awesome game security [Welcome to PR]",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Yoram-Jacobs/DressAppV1",
-      "title": "Yoram-Jacobs/DressAppV1",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Siddhanthkjain2005/jj",
-      "title": "Siddhanthkjain2005/jj",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/desginus/rincore",
-      "title": "desginus/rincore",
-      "excerpt": "RinCore - Fork of RikkaHub with modifications",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/sebiny12p/Rachet_and_Clank_Railfinity",
-      "title": "sebiny12p/Rachet_and_Clank_Railfinity",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/PatchDev-AM2ARM/AM2ARM",
       "title": "PatchDev-AM2ARM/AM2ARM",
       "excerpt": "Arm64 based port of AM2R 1.5.5",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/kzahel/tilefun",
-      "title": "kzahel/tilefun",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/ymmiah/AutoMotoAI",
-      "title": "ymmiah/AutoMotoAI",
-      "excerpt": "Your AI cousin — an agent that actually does the work.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/0xyzone/7sdkamkaj",
-      "title": "0xyzone/7sdkamkaj",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/JFLibrary/JFLib",
-      "title": "JFLibrary/JFLib",
-      "excerpt": "A Rust GUI library in no_std: Windows, Linux and Android natively, macOS and iOS through the browser",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/opencrabs/opencrabs",
-      "title": "opencrabs/opencrabs",
-      "excerpt": "The all-in-one AI agent. Build mobile apps, frontend, backend, manages files, deep research, schedule tasks and events. Self-improving, self-healing, fully autonomous. TUI, CLI and Daemon. Connect to your favorite channels. Zero Telemetry.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Crlyzd/Cathet",
-      "title": "Crlyzd/Cathet",
-      "excerpt": "Replace your shitty Windows Notepad with this lmao",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/ansar7787/vowl-app",
-      "title": "ansar7787/vowl-app",
-      "excerpt": "Vowl: The ultimate AI-powered English mastery adventure. 60,000+ interactive quests across 100+ gamified modules and a specialized Kids Zone. Built with Flutter & Firebase, featuring an immersive glassmorphic UI and real-time AI tutoring powered by Gemini.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/110kc3/japan-deal-watcher",
-      "title": "110kc3/japan-deal-watcher",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/jasonvelasquez1410/sanctuary-voice",
-      "title": "jasonvelasquez1410/sanctuary-voice",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/gabriel-07a/lan-mouse-custom",
-      "title": "gabriel-07a/lan-mouse-custom",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "game-way",
+        "what": "ARM64 Port von AM2R 1.5.5",
+        "date": "2026-11-09"
+      }
     },
     {
       "url": "https://github.com/enjoyerofslop/droidplay-core",
@@ -230,15 +19,12 @@
       "excerpt": "DroidPlay Core: Nintendo Switch and Switch 2 games running natively on Android, replayed on Vulkan (nxnative with an Android port). The engine behind DroidPlay. Bring your own game. Formerly droidnative.",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/freeKC/Immuch360",
-      "title": "freeKC/Immuch360",
-      "excerpt": "Your media. Any screen. Every perspective. Free, open source app for your photos and videos, flat and immersive (panoramas, 360°, 3D, VR180), from your device, a NAS, Plex or an Immich server, no account. Android, iOS, Android TV, Meta Quest; Windows, Linux and macOS previews; LG webOS test build. ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "tool",
+        "what": "Switch Laufzeit für Android mit Vulkan",
+        "date": "2026-11-09"
+      }
     },
     {
       "url": "https://github.com/Mona-Shores-FTC-Robotics/biobuzz",
@@ -6156,7 +5942,35 @@
     "https://github.com/rookiejj/briefick",
     "https://github.com/Jhay-EL/Walkman-Studio",
     "https://github.com/haoruilee/awesome-agent-native-services",
-    "https://github.com/colletes/samurai-edge-demake"
+    "https://github.com/colletes/samurai-edge-demake",
+    "https://github.com/Mantequilla-Soft/snapievideoplayer",
+    "https://github.com/Riaan007/farm-netwatch",
+    "https://github.com/jppferreira/Mockup-Studio",
+    "https://github.com/petrosvassiliou/euroleague-courtside",
+    "https://github.com/enhansome/enhansome-terminals",
+    "https://github.com/olafkfreund/nixarchy",
+    "https://github.com/Ferdiansyah42/Tugas_akhir-TA",
+    "https://github.com/smatkovi/pro1x-maemo-leste",
+    "https://github.com/boredace/Gnoseis-Windows",
+    "https://github.com/Yogesh-Kumar-Mallik-dev/CampusManagement",
+    "https://github.com/CarlosCosta07-s/NIVORA",
+    "https://github.com/JuanVillegas95/RotaLock",
+    "https://github.com/gmh5225/awesome-game-security",
+    "https://github.com/Yoram-Jacobs/DressAppV1",
+    "https://github.com/Siddhanthkjain2005/jj",
+    "https://github.com/desginus/rincore",
+    "https://github.com/sebiny12p/Rachet_and_Clank_Railfinity",
+    "https://github.com/kzahel/tilefun",
+    "https://github.com/ymmiah/AutoMotoAI",
+    "https://github.com/0xyzone/7sdkamkaj",
+    "https://github.com/JFLibrary/JFLib",
+    "https://github.com/opencrabs/opencrabs",
+    "https://github.com/Crlyzd/Cathet",
+    "https://github.com/ansar7787/vowl-app",
+    "https://github.com/110kc3/japan-deal-watcher",
+    "https://github.com/jasonvelasquez1410/sanctuary-voice",
+    "https://github.com/gabriel-07a/lan-mouse-custom",
+    "https://github.com/freeKC/Immuch360"
   ],
   "agent": {
     "lastRun": "2026-11-09T19:45:32Z",
@@ -6187,7 +6001,10 @@
     "tomb-raider-the-lost-artefact": "2026-11-09",
     "tomb-raider-chronicles": "2026-11-09",
     "tomb-raider-curse-of-the-sword": "2026-11-09",
-    "tomb-raider-the-prophecy": "2026-11-09"
+    "tomb-raider-the-prophecy": "2026-11-09",
+    "metroid-prime-4-beyond": "2026-11-09",
+    "super-metroid": "2026-11-09",
+    "metroid-prime": "2026-11-09"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",
@@ -6409,11 +6226,11 @@
   },
   "usage": {
     "2026-11": {
-      "runs": 2,
-      "calls": 37,
-      "input": 141316,
-      "output": 2739,
-      "searches": 2,
+      "runs": 3,
+      "calls": 41,
+      "input": 436257,
+      "output": 20300,
+      "searches": 35,
       "byKind": {
         "reihe": {
           "calls": 1,
@@ -6426,8 +6243,17 @@
           "input": 123722,
           "output": 2009,
           "searches": 0
+        },
+        "warteschlange": {
+          "calls": 4,
+          "input": 294941,
+          "output": 17561,
+          "searches": 33
         }
       }
     }
+  },
+  "queueDay": {
+    "2026-11-09": 3
   }
 }

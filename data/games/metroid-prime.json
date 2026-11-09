@@ -4,7 +4,9 @@
   "franchise": "Metroid",
   "platforms": [
     "Nintendo GameCube",
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Wii",
+    "Wii U"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Metroid%20Prime%20%28USA%29.png",
@@ -61,6 +63,10 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/09794409-c829-4128-8a61-ca702b8d2406"
         }
+      ],
+      "note": "Ergänzung: Regionalfassungen und Disc-Revisionen unterscheiden sich unter anderem bei Fehlerbehebungen, Logbuchtexten und möglichen Sequenzbrüchen; die PAL-Fassung enthält zusätzliche Anpassungen. Diese Unterschiede gehören zur Originalfassung und rechtfertigen keine separate Remastered-Fassung für GameCube.",
+      "traits": [
+        "controller"
       ]
     },
     {
@@ -70,7 +76,12 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "year": 2023
+      "year": 2023,
+      "note": "Überarbeitete Grafik und Audio sowie moderne Dual-Stick-Steuerung unterscheiden das Remaster vom Original. Datenkorrektur: „metroid-prime-remastered-2“ ist eine Dublette mit falscher GameCube-Zuordnung und sollte mit diesem Eintrag zusammengeführt beziehungsweise gelöscht werden; das Remaster erschien für Nintendo Switch.",
+      "traits": [
+        "controller",
+        "widescreen"
+      ]
     },
     {
       "id": "wii-2009",
@@ -85,6 +96,11 @@
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q1765733"
         }
+      ],
+      "note": "Präzisierung des vorhandenen Wii-Eintrags: Die japanische Einzelveröffentlichung erschien am 19. Februar 2009 und ersetzt die GameCube-Steuerung durch Wii Remote und Nunchuk. Außerhalb Japans wurde die überarbeitete Wii-Fassung innerhalb von Metroid Prime: Trilogy veröffentlicht.",
+      "traits": [
+        "controller",
+        "widescreen"
       ]
     },
     {
@@ -101,11 +117,326 @@
           "url": "https://www.wikidata.org/wiki/Q116734030"
         }
       ]
+    },
+    {
+      "id": "trilogy-2009",
+      "name": "Metroid Prime: Trilogy",
+      "type": "collection",
+      "platforms": [
+        "Wii",
+        "Wii U"
+      ],
+      "year": 2009,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Keine unveränderte Sammelbox: Prime erhält Wii-Zielsteuerung, Breitbildunterstützung und ein gemeinsames Bonus-System mit den anderen Spielen. Die Wii-U-Downloadveröffentlichung vom 29. Januar 2015 enthält dieselbe Wii-Sammlung und ist keine eigenständige HD- oder Dual-Screen-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html"
+        }
+      ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "ai-metroid-prime-unbound-nativer-android-port",
+      "name": "Metroid Prime Unbound – nativer Android-Port",
+      "kind": "decomp",
+      "release": "nintendo-gamecube",
+      "runtime": "MetroidPrimePort / Metroid Prime Unbound, Android ARM64",
+      "projects": [
+        "metroid-prime-unbound-metroidprimeport"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "high-fps",
+        "mods",
+        "native-arm",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Disc-Dump: GameCube USA 1.00, 1.01 oder 1.02 beziehungsweise PAL.",
+        "Alternativ unterstützt derselbe Port Metroid Prime aus einer eigenen USA- oder PAL-Trilogy-Disc.",
+        "Ein kompatibles ARM64-Android-Gerät; Spielinhalte sind nicht enthalten."
+      ],
+      "benefit": "Läuft ohne GameCube-Emulator und ergänzt Dual-Stick-Kamera, Touchsteuerung, Breitbild, frei einstellbare Bildrate sowie zahlreiche Komfortoptionen.",
+      "caveat": "Unterstützte Regionen beachten: Der japanische GameCube-Dump wird nicht aufgeführt. Der optionale Remastered-Grafikimport ist ausdrücklich sehr experimentell; der RP5-Erfahrungsbericht ist kein vollständiger Durchspielnachweis und keine Thor-Leistungsgarantie.",
+      "steps": [
+        "Die Android-ARM64-APK aus den Releases des Projekts installieren.",
+        "Beim ersten Start den eigenen unterstützten Disc-Dump im Android-Dateidialog auswählen.",
+        "Mit Start und Zurück das Einstellungsmenü öffnen und Controllerbelegung, Seitenverhältnis sowie Renderauflösung anpassen.",
+        "Zunächst ohne experimentellen Remastered-Import testen."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Odrannnn/MetroidPrimePort"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/AndroidNativePorts/comments/1wz3khy/metriod_prime_android_source_port/",
+          "device": "Retroid Pocket 5",
+          "summary": "Ein Nutzer bestätigt im Kommentarbereich, dass der native Port auf seinem Retroid Pocket 5 gut funktioniert; konkrete Einstellungen oder ein vollständiger Spieldurchlauf werden nicht genannt.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-primehack-android-trilogy-mit-dual-stick-steuerung",
+      "name": "PrimeHack Android – Trilogy mit Dual-Stick-Steuerung",
+      "kind": "emulator-mod",
+      "release": "trilogy-2009",
+      "runtime": "PrimeHack Android, Community-Fork von Dolphin",
+      "projects": [
+        "primehack-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump von Metroid Prime: Trilogy für Wii.",
+        "Kompatibles 64-Bit-Android-Gerät und Controller.",
+        "PrimeHack-spezifische Controllerbelegung beziehungsweise ein angepasstes Geräteprofil."
+      ],
+      "benefit": "Spielspezifischer Dolphin-Fork: Die Kamera wird mit dem rechten Stick wie in einem modernen Shooter gesteuert, statt nur einen emulierten Wii-Zeiger zu bewegen. Android-Handheld-Nutzer zeigen den Weg einschließlich HD-Texturen.",
+      "caveat": "Die Android-Version ist ein Community-Build ohne offiziellen Android-Support des PrimeHack-Teams. Geräteprofile müssen angepasst werden; Erfahrungsberichte können andere Community-Kompilate als die verlinkte APK verwenden.",
+      "steps": [
+        "Die APK aus den Releases von PrimeHack-Android installieren.",
+        "Den eigenen Trilogy-Dump als Spielverzeichnis hinzufügen.",
+        "Die PrimeHack-spezifische Metroid-Steuerung konfigurieren und Controllerprofil an die Gerätenamen des Handhelds anpassen.",
+        "Optional passende Texturpakete installieren und benutzerdefinierte Texturen aktivieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/android_version_of_primehack_dolphin_fork_metroid/",
+          "device": "Retroid Pocket 5",
+          "summary": "Der Verfasser zeigt PrimeHack Android mit dreifacher interner Auflösung und HD-Texturpaket auf dem RP5; die Installation sei einfach, die Controllerkonfiguration dagegen aufwendig gewesen.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JT3V1i0mf4Y",
+          "device": "AYN Thor",
+          "summary": "Das Video demonstriert die Einrichtung von PrimeHack Android und einen Metroid-Prime-Trilogy-Praxistest auf dem AYN Thor.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-primerecomp-experimentelle-android-rekompilierung-des-rem",
+      "name": "PrimeRecomp – experimentelle Android-Rekompilierung des Remasters",
+      "kind": "recomp",
+      "release": "metroid-prime-remastered",
+      "runtime": "PrimeRecomp Android ARM64 / Vulkan",
+      "projects": [
+        "primerecomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump von Metroid Prime Remastered für Switch, Version 1.0.0 ohne Updates.",
+        "Computer zum Erzeugen der Android-Spielcodebibliothek aus den eigenen exefs-Daten.",
+        "ARM64-Android mit Vulkan 1.3, laut Projektdokumentation praktisch Android 13 oder neuer.",
+        "Controller; Android-Touchsteuerung ist noch nicht vorhanden."
+      ],
+      "benefit": "Eigenständiger nativer Ansatz für die Switch-Remastered-Fassung statt Switch-Emulation; eine Android-Test-APK wird offiziell vom Projekt bereitgestellt.",
+      "caveat": "Nur für Experimente: Die Projektfreigabe bestätigt bislang lediglich den Titelbildschirm im Android-Emulator, keinen erfolgreichen Thor-Spieldurchlauf. Die APK allein genügt nicht, weil der Spielcode am Computer erzeugt und zusammen mit den Spieldaten übertragen werden muss.",
+      "steps": [
+        "Die Android-Test-APK aus den PrimeRecomp-Releases beziehen.",
+        "Nach docs/android.md die Android-Spielcodebibliothek primegame.so aus dem eigenen Dump am Computer erzeugen.",
+        "APK, Bibliothek und exefs-/romfs-Daten mit dem dokumentierten Deploy-Skript auf das Gerät übertragen.",
+        "Mit Controller testen und bei Startproblemen primerecomp.log auswerten."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/start_screen.jpg",
+          "caption": "The PrimeRecomp start screen",
+          "source": "https://github.com/gminustwo/primerecomp",
+          "credit": "PrimeRecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/landing_site.jpg",
+          "caption": "Samus at the Landing Site on Tallon IV",
+          "source": "https://github.com/gminustwo/primerecomp",
+          "credit": "PrimeRecomp",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/gminustwo/primerecomp/blob/main/docs/android.md"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/gminustwo/primerecomp/issues/20",
+          "device": "POCO F5, Android 15",
+          "summary": "Der Tester meldet Startfehler der frühen Android-Version; spätere Logs zeigen außerdem eine fehlende, separat am Computer zu erzeugende Spielcodebibliothek und belegen damit keinen erfolgreichen Spielbetrieb.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-mp-checklist-manuelle-zweitbildschirm-begleitung",
+      "name": "MP Checklist – manuelle Zweitbildschirm-Begleitung",
+      "kind": "companion",
+      "release": "metroid-prime-remastered",
+      "runtime": "Separate Android-App aus Google Play",
+      "projects": [
+        "mp-checklist"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch"
+      ],
+      "dualScreen": "Separate Sammel-Checkliste, die sich als Begleit-App auf dem unteren Display verwenden lässt; Einträge werden manuell abgehakt, ohne Verbindung zu Spiel oder Emulator.",
+      "requires": [
+        "Eine separat laufende spielbare Fassung von Metroid Prime.",
+        "MP Checklist aus Google Play.",
+        "Für gleichzeitige Anzeige auf dem Thor: getrennte App-Platzierung auf den beiden Displays."
+      ],
+      "dualScreenType": "info",
+      "benefit": "Verfolgt Sammelgegenstände nach Region und Gegenstandstyp und unterstützt die Suche nach fehlenden Items auf dem Weg zu 100 Prozent.",
+      "caveat": "Keine Live-Karte, keine automatische Inventarsynchronisation und kein eigener Spielweg. Eine ausdrückliche Thor-Erprobung ist nicht belegt; die Zweitbildschirm-Nutzung ist eine manuelle Anordnung zweier Apps. Die App enthält Werbung und In-App-Käufe.",
+      "steps": [
+        "MP Checklist aus Google Play installieren.",
+        "Die Begleit-App auf dem unteren Display und den gewählten Spielweg auf dem oberen Display öffnen.",
+        "Region oder Gegenstandstyp auswählen und gefundene Items von Hand markieren."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://play.google.com/store/apps/details?id=com.stifdev.mpchecklist&pli=1"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Metroid/comments/11h1ooa/i_built_a_little_mobile_app_to_help_me_get_all/",
+          "device": "Mobilgerät nicht genannt; Spiel auf Nintendo Switch",
+          "summary": "Der Entwickler beschreibt die eigene Nutzung der Checkliste bis zu 100 Prozent eingesammelten Items; Nutzer bestätigen den Nutzen der Liste und Notizfunktion.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
   "updatedAt": "2026-11-09",
   "wikidata": "Q1765733",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime",
-  "genre": "first-person shooter"
+  "genre": "first-person shooter",
+  "mods": [
+    {
+      "id": "metroid-prime-trilogy-hd-interface-textures",
+      "name": "Metroid Prime Trilogy – HD Interface Textures",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "edition": "Wii-Trilogy über Dolphin beziehungsweise PrimeHack Android",
+      "description": "Das HD-Interface-Paket von Terg500 ersetzt niedrig aufgelöste HUD- und Menüelemente. Die Android-Anleitung dokumentiert die Installation und bietet auch angepasste Tastenanzeigen; diese müssen zur eigenen Belegung passen.",
+      "verification": "ai-unverified",
+      "release": [
+        "trilogy-2009"
+      ]
+    },
+    {
+      "id": "another-metroid-prime-1-2-3-or-trilogy-hd-texture-pack",
+      "name": "Another Metroid Prime 1, 2, 3 or Trilogy HD Texture Pack",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-another-metroid-prime-1-2-3-or-trilogy-hd-texture-pack-ai",
+      "edition": "Zum jeweiligen Spiel und zur Region passende Dolphin-Texturpaketvariante",
+      "description": "KI-hochskalierte Texturen für die klassischen Prime-Veröffentlichungen. Die Nutzung zusammen mit PrimeHack Android wird im Handheld-Leitfaden behandelt; bei Kombination mit einem Interface-Paket auf überschneidende Texturen achten.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube",
+        "trilogy-2009"
+      ]
+    },
+    {
+      "id": "remastered-asset-import-fur-metroid-prime-unbound",
+      "name": "Remastered-Asset-Import für Metroid Prime Unbound",
+      "category": "graphics",
+      "url": "https://github.com/Odrannnn/MetroidPrimePort/blob/port/docs/MODS.md",
+      "edition": "Nur MetroidPrimePort / Unbound; kein gewöhnlicher Dolphin-Mod",
+      "description": "Importiert Modelle, Texturen und weitere Grafikbestandteile aus dem eigenen Switch-Remaster-Dump; zusätzlich werden eigene prod.keys benötigt. Ausdrücklich sehr experimentell: Grafikfehler, Abstürze und hoher Speicherbedarf sind möglich, und der Android-Import wird noch nicht als auf echter Hardware erprobt beschrieben.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube",
+        "trilogy-2009"
+      ]
+    },
+    {
+      "id": "randovania-metroid-prime-randomizer",
+      "name": "Randovania – Metroid Prime Randomizer",
+      "category": "gameplay",
+      "url": "https://randovania.org/games/prime1/",
+      "edition": "GameCube; erzeugte modifizierte Disc für Dolphin",
+      "description": "Mischt Items einschließlich Artefakten sowie optional Aufzüge, Startpositionen und Türschlösser neu. Laut Projekt wird jede GameCube-Veröffentlichung unterstützt; zur Wiedergabe ist unter anderem Dolphin vorgesehen, ein nativer Android-Generator wird hier nicht behauptet.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube"
+      ]
+    }
+  ],
+  "summary": "Für Controller-Handhelds sind der native Android-Port Metroid Prime Unbound und die Wii-Trilogy mit PrimeHack besonders interessant: Beide ergänzen moderne Dual-Stick-Steuerung."
 }

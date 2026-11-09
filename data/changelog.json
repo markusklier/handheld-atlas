@@ -1,6 +1,230 @@
 {
   "entries": [
     {
+      "type": "route-updated",
+      "text": "Neue Fassung: Metroid Prime: Trilogy (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Metroid Prime Unbound – nativer Android-Port (Nintendo GameCube, KI-Recherche)",
+      "url": "https://github.com/Odrannnn/MetroidPrimePort",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PrimeHack Android – Trilogy mit Dual-Stick-Steuerung (Metroid Prime: Trilogy, KI-Recherche)",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PrimeRecomp – experimentelle Android-Rekompilierung des Remasters (Metroid Prime Remastered (2023), KI-Recherche)",
+      "url": "https://github.com/gminustwo/primerecomp/blob/main/docs/android.md",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: MP Checklist – manuelle Zweitbildschirm-Begleitung (Metroid Prime Remastered (2023), KI-Recherche)",
+      "url": "https://play.google.com/store/apps/details?id=com.stifdev.mpchecklist&pli=1",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Metroid Prime Trilogy – HD Interface Textures (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Another Metroid Prime 1, 2, 3 or Trilogy HD Texture Pack (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-another-metroid-prime-1-2-3-or-trilogy-hd-texture-pack-ai",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Remastered-Asset-Import für Metroid Prime Unbound (KI-Recherche)",
+      "url": "https://github.com/Odrannnn/MetroidPrimePort/blob/port/docs/MODS.md",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Randovania – Metroid Prime Randomizer (KI-Recherche)",
+      "url": "https://randovania.org/games/prime1/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Wii U Virtual Console (2013) (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Super-Metroid-279613.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: New Nintendo 3DS Virtual Console (2016) (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Super-Metroid-279613.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Super NES Classic Edition (2017) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Super_NES_Classic_Edition",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Nintendo Switch Online / Nintendo Classics (2019) (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Super Metroid SP: Samus Aran’s Ultimate Arsenal! (2022) (KI-Recherche)",
+      "url": "https://omegametroid.com/super-metroid-sp-edition-added-to-nintendo-switch-online/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: SuperMetroidDecomp: nativer C#-Android-Port (SNES (1994), KI-Recherche)",
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Super Metroid Redux (KI-Recherche)",
+      "url": "https://github.com/ShadowOne333/Super-Metroid-Redux",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Project Base (KI-Recherche)",
+      "url": "https://www.begrimed.com/pb/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Super Metroid: Subversion (KI-Recherche)",
+      "url": "https://github.com/amoebaOfDoom/subversion",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Hyper Metroid SUPER (KI-Recherche)",
+      "url": "https://metroidconstruction.com/hack.php?id=823",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Super Metroid Map Rando (KI-Recherche)",
+      "url": "https://maprando.com/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Aktualisiert: MetroidArch – Version v1.5.0 (2026-10-03), Hinweis (KI-Recherche)",
+      "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.5.0",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Aktualisiert: MetroidArch – Hinweis (KI-Recherche)",
+      "url": "https://raw.githubusercontent.com/Raekwon1603/RetroArch/metroidarch-dual-screen/README.md",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Aktualisiert: Super Metroid Android (alt) – Hinweis (KI-Recherche)",
+      "url": "https://github.com/Raekwon1603/super_metroid-android",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "super-metroid"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Original (2025) (KI-Recherche)",
+      "url": "https://www.nintendo.com/ph/news/article/5cO1ScZizXa224ZCA5J9Yg",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Nintendo Switch 2 Edition (KI-Recherche)",
+      "url": "https://www.nintendo.com/us/store/products/metroid-prime-4-beyond-nintendo-switch-2-edition-121491/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Switch-Fassung mit Eden und spielspezifischen Fehlerkorrekturen (Original (2025), KI-Recherche)",
+      "url": "https://git.eden-emu.dev/eden-emu/eden/releases",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Fl4sh: Dynamic-FPS-Patches (KI-Recherche)",
+      "url": "https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Kledd: Scan-safe 1080p-Patch (KI-Recherche)",
+      "url": "https://git.eden-emu.dev/melos555/eden-kledd-backup",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond"
+    },
+    {
       "date": "2026-11-09",
       "type": "game-added",
       "by": "agent",

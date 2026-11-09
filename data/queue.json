@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "metroid-prime-4-beyond",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "super-metroid",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-prime",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
       "game": "metroid-prime-2-echoes",
       "reason": "Reihe Metroid",
       "added": "2026-11-09"

@@ -3,7 +3,16 @@
   "title": "Super Metroid",
   "franchise": "Metroid",
   "platforms": [
-    "SNES"
+    "SNES",
+    "Wii U",
+    "New Nintendo 3DS",
+    "New Nintendo 3DS XL",
+    "New Nintendo 2DS XL",
+    "Super NES Classic Edition",
+    "Nintendo Classic Mini: Super Nintendo Entertainment System",
+    "Nintendo Classic Mini: Super Famicom",
+    "Nintendo Switch",
+    "Nintendo Switch 2"
   ],
   "genre": "Action-Adventure",
   "summary": "Original-Emulation oder eine Karte auf dem zweiten Display? Hier werden die Unterschiede sichtbar.",
@@ -47,6 +56,107 @@
           "url": "https://www.wikidata.org/wiki/Q1194825"
         }
       ]
+    },
+    {
+      "id": "wiiu-2013",
+      "name": "Wii U Virtual Console (2013)",
+      "type": "rerelease",
+      "platforms": [
+        "Wii U"
+      ],
+      "year": 2013,
+      "traits": [
+        "controller"
+      ],
+      "note": "Emulierte Wiederveröffentlichung mit Unterstützung für Off-TV Play auf dem GamePad. Keine eigenständige zweite Spielansicht oder Live-Karte.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Super-Metroid-279613.html"
+        }
+      ]
+    },
+    {
+      "id": "new3ds-2016",
+      "name": "New Nintendo 3DS Virtual Console (2016)",
+      "type": "rerelease",
+      "platforms": [
+        "New Nintendo 3DS",
+        "New Nintendo 3DS XL",
+        "New Nintendo 2DS XL"
+      ],
+      "year": 2016,
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle portable Virtual-Console-Veröffentlichung für die New-Modellfamilie, nicht für den ursprünglichen Nintendo 3DS. Die europäische Veröffentlichung ist ausschließlich auf Englisch verfügbar.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Super-Metroid-279613.html"
+        }
+      ]
+    },
+    {
+      "id": "classic-2017",
+      "name": "Super NES Classic Edition (2017)",
+      "type": "rerelease",
+      "platforms": [
+        "Super NES Classic Edition",
+        "Nintendo Classic Mini: Super Nintendo Entertainment System",
+        "Nintendo Classic Mini: Super Famicom"
+      ],
+      "year": 2017,
+      "traits": [
+        "controller"
+      ],
+      "note": "Vorinstallierte Wiederveröffentlichung auf Nintendos Mini-Konsole mit zusätzlichen Speicherpunkten und Rückspulfunktion. Inhaltlich kein Remake oder Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Super_NES_Classic_Edition"
+        }
+      ]
+    },
+    {
+      "id": "nso-2019",
+      "name": "Nintendo Switch Online / Nintendo Classics (2019)",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch",
+        "Nintendo Switch 2"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller"
+      ],
+      "note": "SNES-Wiederveröffentlichung im kostenpflichtigen Nintendo-Switch-Online-Abo mit jederzeitigen Speicherpunkten und Rückspulen. Dieselbe Bibliothek ist auch auf Nintendo Switch 2 zugänglich; keine neue Grafikfassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+        }
+      ]
+    },
+    {
+      "id": "nso-sp-2022",
+      "name": "Super Metroid SP: Samus Aran’s Ultimate Arsenal! (2022)",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch",
+        "Nintendo Switch 2"
+      ],
+      "year": 2022,
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle SP-Variante innerhalb der SNES-Abo-App, veröffentlicht im Februar 2022. Sie startet mit einem vorbereiteten Spielstand samt voller Gesundheit und sämtlichen Erweiterungen statt mit einem normalen neuen Spiel.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://omegametroid.com/super-metroid-sp-edition-added-to-nintendo-switch-online/"
+        }
+      ]
     }
   ],
   "routes": [
@@ -74,9 +184,9 @@
         "MetroidArch, Branch metroidarch-dual-screen"
       ],
       "benefit": "Dual-Screen-Ansicht und Widescreen in einem spezialisierten RetroArch-Fork.",
-      "caveat": "Kein nativer Recomp. Der alte APK-Port wurde abgelöst; Spielstände vor einem Wechsel sichern. Vorabversion v1.0.2-debug2 behebt einen Ladehänger bei ROMs über Android-Speicherzugriff (SAF); dafür den Core „bsnes-hd (MetroidArch)“ verwenden, nicht bsnes-hd aus dem Online-Updater.",
+      "caveat": "Kein nativer Recomp. Der alte APK-Port wurde abgelöst; Spielstände vor einem Wechsel sichern. Vorabversion v1.0.2-debug2 behebt einen Ladehänger bei ROMs über Android-Speicherzugriff (SAF); dafür den Core „bsnes-hd (MetroidArch)“ verwenden, nicht bsnes-hd aus dem Online-Updater. Stand 2026-11: Die neuere Veröffentlichung behebt das Laden der Widescreen-BSO-Datei über Androids Dateiauswahl sowie RetroAchievements-Hashfehler und ersetzt damit den bisher verzeichneten Debug-Build. Stand 2026-11: Wichtige Einschränkung: Bei Redux funktioniert die Munitionsauswahl per Touch nicht; außerdem muss die ROM unkomprimiert vorliegen, da ZIP-Dateien die Live-Karte und Item-Dekodierung verhindern.",
       "steps": [],
-      "version": "Branch metroidarch-dual-screen; Vorabversion v1.0.2-debug2 (Okt. 2026)",
+      "version": "v1.5.0 (2026-10-03)",
       "effort": "guided",
       "status": "active",
       "verification": "documented",
@@ -131,7 +241,7 @@
           "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2"
         }
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "release": "snes",
       "reports": [],
       "performance": [],
@@ -194,7 +304,7 @@
         "Super Metroid (Japan, USA) (En,Ja)-ROM"
       ],
       "benefit": "Früherer Dual-Screen-Ansatz bleibt als Vergleich sichtbar.",
-      "caveat": "Archiviert; das Projekt verweist auf MetroidArch. Nicht als Neueinstieg empfohlen.",
+      "caveat": "Archiviert; das Projekt verweist auf MetroidArch. Nicht als Neueinstieg empfohlen. Stand 2026-11: Der Autor hat die Entwicklung ausdrücklich zugunsten von MetroidArch eingestellt; die alte App bleibt verfügbar, ihre verbliebenen Probleme werden dort aber nicht mehr bearbeitet.",
       "steps": [],
       "version": null,
       "effort": "guided",
@@ -246,14 +356,172 @@
         }
       ],
       "links": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "release": "snes",
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "id": "ai-supermetroiddecomp-nativer-c-android-port",
+      "name": "SuperMetroidDecomp: nativer C#-Android-Port",
+      "kind": "decomp",
+      "release": "snes",
+      "runtime": "Eigenständige Android-ARM64-App auf Basis einer C#-Übersetzung",
+      "projects": [
+        "supermetroiddecomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener unveränderter Super-Metroid-ROM-Dump, Japan/USA NTSC v1.0, als SMC oder SFC",
+        "Android-ARM64-Gerät mit Android 8.0 oder neuer",
+        "Frühere offizielle Projekt-APK, beispielsweise aus Release v0.8.0"
+      ],
+      "benefit": "Eigenständiger Android-Spielweg ohne RetroArch mit Controllerbelegung, Speicherständen und Diagnosewerkzeugen; der ROM-Import extrahiert die benötigten Audiodaten selbst.",
+      "caveat": "Die Android-Entwicklung ruht laut aktueller README bis zur Bereitstellung durch den Godot-Port; neuere Veröffentlichungen sollen keine APK enthalten. Frühere APKs sind Testfassungen; PAL-ROMs, andere Revisionen, ZIPs und gepatchte ROMs werden nicht unterstützt.",
+      "steps": [
+        "Auf der offiziellen Release-Seite eine frühere Veröffentlichung mit SuperMetroid-android-arm64.apk auswählen.",
+        "APK installieren und in der App Choose ROM öffnen.",
+        "Den eigenen unterstützten ROM-Dump auswählen und die Extraktion abwarten.",
+        "Controllerbelegung bei Bedarf über Back/Mode und Testing tools anpassen; vor Updates Spielstände sichern."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/title-screen.png",
+          "caption": "Super Metroid title screen",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/opening-cinematic.png",
+          "caption": "Opening cinematic",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-arrival.png",
+          "caption": "Samus arriving at Ceres Station",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-ridley.png",
+          "caption": "Ridley battle at Ceres Station",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-escape.png",
+          "caption": "Ceres escape sequence",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/draygon-grapple-kill.png",
+          "caption": "Defeating Draygon through the electrified Grapple Beam conduit",
+          "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
+          "credit": "SuperMetroidDecomp",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/MrJackSpade/SuperMetroidDecomp"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/MrJackSpade/SuperMetroidDecomp/blob/main/csharp/ANDROID-TESTING.md",
+          "device": "Retroid Pocket Classic",
+          "summary": "Der Entwickler dokumentiert reale Gerätetests vom 8. September 2026 mit Controllerbedienung, Audio, Speicherständen und Hintergrundwechseln, grenzt die kurzen Testläufe aber ausdrücklich von einer vollständigen Langzeitvalidierung ab.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "wikidata": "Q1194825",
-  "wikipedia": "https://en.wikipedia.org/wiki/Super_Metroid"
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Metroid",
+  "mods": [
+    {
+      "id": "super-metroid-redux",
+      "name": "Super Metroid Redux",
+      "category": "qol",
+      "url": "https://github.com/ShadowOne333/Super-Metroid-Redux",
+      "edition": "Japan/USA-ROM; eigenständiger ROM-Hack",
+      "description": "Umfangreiche Komfortüberarbeitung mit GBA-näherer Steuerung, schnellerem Spielfluss, überarbeiteter Karte und Fehlerkorrekturen. Für SNES-Emulation geeignet; MetroidArch unterstützt Redux, allerdings nicht dessen Munitionsauswahl per Touch.",
+      "verification": "ai-unverified",
+      "release": [
+        "snes"
+      ]
+    },
+    {
+      "id": "project-base",
+      "name": "Project Base",
+      "category": "gameplay",
+      "url": "https://www.begrimed.com/pb/",
+      "edition": "Project Base 0.8.4.2; verschiedene Varianten",
+      "description": "Überarbeitet Bewegung, Leveldetails, Grafik und zusätzliche Mechaniken bei ungefähr ursprünglichem Schwierigkeitsgrad. Die Vanilla-Variante lässt Engine und Bewegung unverändert und ändert nur die Karte; der Autor nennt Snes9x und bsnes ausdrücklich als unterstützt.",
+      "verification": "ai-unverified",
+      "release": [
+        "snes"
+      ]
+    },
+    {
+      "id": "super-metroid-subversion",
+      "name": "Super Metroid: Subversion",
+      "category": "content",
+      "url": "https://github.com/amoebaOfDoom/subversion",
+      "edition": "Eigenständiger Super-Metroid-ROM-Hack",
+      "description": "Neue Erkundungskampagne statt einer bloßen Komfortüberarbeitung des Originalspiels. In normaler SNES-Emulation verwenden; die Redux-Kompatibilität von MetroidArch ist keine Zusage für diesen Hack.",
+      "verification": "ai-unverified",
+      "release": [
+        "snes"
+      ]
+    },
+    {
+      "id": "hyper-metroid-super",
+      "name": "Hyper Metroid SUPER",
+      "category": "content",
+      "url": "https://metroidconstruction.com/hack.php?id=823",
+      "edition": "Überarbeitung von Hyper Metroid",
+      "description": "Eigenständige Total Conversion und überarbeitete Alternative zu Hyper Metroid. Als gepatchte SNES-Fassung ein zusätzlicher Spielinhalt, keine offiziell veröffentlichte Edition.",
+      "verification": "ai-unverified",
+      "release": [
+        "snes"
+      ]
+    },
+    {
+      "id": "super-metroid-map-rando",
+      "name": "Super Metroid Map Rando",
+      "category": "gameplay",
+      "url": "https://maprando.com/",
+      "edition": "Randomizer für die SNES-Fassung",
+      "description": "Ordnet die Verbindungen zwischen vorhandenen Räumen neu und erzeugt dadurch neue Erkundungswelten. Den erzeugten Hack in SNES-Emulation spielen; keine belegte Zusage für die Live-Karte von MetroidArch.",
+      "verification": "ai-unverified",
+      "release": [
+        "snes"
+      ]
+    }
+  ]
 }

@@ -2,10 +2,145 @@
   "id": "metroid-prime-4-beyond",
   "title": "Metroid Prime 4: Beyond",
   "franchise": "Metroid",
-  "platforms": [],
-  "versions": [],
-  "routes": [],
-  "mods": [],
+  "platforms": [
+    "Nintendo Switch",
+    "Nintendo Switch 2"
+  ],
+  "versions": [
+    {
+      "id": "original-2025",
+      "name": "Original (2025)",
+      "type": "original",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller"
+      ],
+      "note": "Am 4. Dezember 2025 erschienen. Für Android ist diese Fassung relevant, weil konkrete Eden-Erfahrungsberichte und Emulator-Patches vorliegen; die Switch-2-Erweiterungen gehören nicht zur Originalfassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/ph/news/article/5cO1ScZizXa224ZCA5J9Yg"
+        }
+      ]
+    },
+    {
+      "id": "switch2-2025",
+      "name": "Nintendo Switch 2 Edition",
+      "type": "release",
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "high-fps"
+      ],
+      "note": "Ebenfalls am 4. Dezember 2025 erschienen, mit höherer Auflösung, verbesserten Bildraten und Ladezeiten sowie optionaler Joy-Con-2-Maussteuerung. Als eigene Ausgabe oder über das Upgrade Pack zur Switch-Fassung erhältlich; kein belegter Android-Spielweg für diese Edition.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/us/store/products/metroid-prime-4-beyond-nintendo-switch-2-edition-121491/"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-switch-fassung-mit-eden-und-spielspezifischen-fehlerkorre",
+      "name": "Switch-Fassung mit Eden und spielspezifischen Fehlerkorrekturen",
+      "kind": "emulation",
+      "release": "original-2025",
+      "runtime": "Eden für Android",
+      "projects": [
+        "eden-2-2"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Nintendo-Switch-Fassung von Metroid Prime 4: Beyond und selbst ausgelesene Spieldaten",
+        "Eigene Konsolenschlüssel und gegebenenfalls erforderliche Systemdaten",
+        "Für die aufgeführten Mods das Spielupdate 1.1.0"
+      ],
+      "benefit": "Konkreter Android-Weg mit spielbezogenen Korrekturen: Eden dokumentiert Verbesserungen an Grafik und Audio von Metroid Prime 4. Erfahrungsberichte liegen auch für den AYN Thor und Odin 2 Pro vor.",
+      "caveat": "Nicht als zuverlässig durchspielbar einstufen: Berichte nennen desynchronisierte Zwischensequenzen, Grafikfehler und Probleme beim Erreichen von Volt Forge. Die ältere Empfehlung Eden PR 3142 mit Turnip 26.0.0 R6 ist ein historischer Teststand, keine allgemeine Garantie für aktuelle Builds oder den Thor.",
+      "steps": [
+        "Eden für Android ausschließlich über die offizielle Projektseite installieren.",
+        "Die eigenen Konsolenschlüssel und selbst ausgelesenen Spieldaten einrichten; für Mods das passende Update 1.1.0 installieren.",
+        "Zunächst ohne Mods testen und die verwendete Eden- und Treiberversion notieren.",
+        "Als dokumentierten historischen Vergleich den Erfahrungsbericht zu PR 3142 und Turnip 26.0.0 R6 heranziehen; nach Treiberwechseln bei Grafikproblemen den Shadercache neu aufbauen.",
+        "Optionale Patches einzeln aktivieren und besonders Scanner, Morph Ball, Zwischensequenzen und Gebietswechsel prüfen."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://git.eden-emu.dev/eden-emu/eden/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/yuzu/comments/1re9vn0/is_metroid_prime_4_worth_it_on_emulator_right_now/",
+          "device": "AYN Thor, Snapdragon 8 Gen 2",
+          "summary": "Ein Thor-Nutzer berichtet von schwankender, für ihn spielbarer Bildrate, aber stark desynchronisierten Zwischensequenzen; die konkrete Emulatorversion bleibt offen.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1v97r34/metroid_prime_4_beyond_en_ayn_odin_2_pro_eden/",
+          "device": "AYN Odin 2 Pro",
+          "summary": "Der Beitrag zeigt einen Eden-Spieltest; ein Kommentar warnt jedoch vor Problemen beim weiteren Fortschritt beziehungsweise beim Betreten von Volt Forge.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1putemc/metroid_prime_4_beyond_android_60_fps_1080p/",
+          "device": "Honor GT, 16 GB RAM",
+          "summary": "Der Autor nennt Eden PR 3142 und Turnip 26.0.0 R6 und berichtet von ungefähr zwei Stunden ohne Absturz, während andere Nutzer weiterhin Lade- und Absturzprobleme melden.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "fl4sh-dynamic-fps-patches",
+      "name": "Fl4sh: Dynamic-FPS-Patches",
+      "category": "widescreen-fps",
+      "url": "https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods",
+      "edition": "Switch, Update 1.1.0; Titel-ID 010019A01E2F2000",
+      "description": "Dynamische Patches für 120 beziehungsweise 240 FPS im Emulator. Das sind Zielwerte des Mods, keine zugesicherte Android-Leistung; für den Thor ist daraus keine entsprechende Bildrate ableitbar.",
+      "verification": "ai-unverified",
+      "release": [
+        "original-2025"
+      ]
+    },
+    {
+      "id": "kledd-scan-safe-1080p-patch",
+      "name": "Kledd: Scan-safe 1080p-Patch",
+      "category": "fixes",
+      "url": "https://git.eden-emu.dev/melos555/eden-kledd-backup",
+      "edition": "Switch, ausschließlich Update 1.1.0",
+      "description": "Abwandlung von Fl4shs 1080p-Patch, die den Scanpuffer auf der nativen Größe belässt; der separate ZL-Scan-Cheat soll deaktiviert bleiben. Das Paket enthält zusätzlich den unveränderten dynamischen 120-FPS-Mod; Android-Kompatibilität ist nicht separat nachgewiesen, und die veröffentlichten Emulator-Fork-Builds richten sich an Windows und Linux.",
+      "verification": "ai-unverified",
+      "release": [
+        "original-2025"
+      ]
+    }
+  ],
   "updatedAt": "2026-11-09",
   "tier": "basis",
   "wikidata": "Q30749509",
@@ -15,5 +150,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/4/48/Metroid_Prime_4_Beyond_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Metroid_Prime_4%3A_Beyond"
   },
-  "website": "https://www.nintendo.com/jp/games/switch2/bgw5a/"
+  "website": "https://www.nintendo.com/jp/games/switch2/bgw5a/",
+  "summary": "Auf dem AYN Thor ist die Switch-Originalfassung über Eden interessant, allerdings mit gemeldeten Grafikfehlern, Rucklern und teils problematischem Spielfortschritt; eine zuverlässig durchspielbare Erfahrung ist nicht belegt. Ein spielspezifischer Dual-Screen-Weg ist nicht nachgewiesen."
 }
