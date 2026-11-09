@@ -17,6 +17,86 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a3c6a21c-860e-4773-bee8-8403baddb1b5",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/44b3d2c5-b2c7-4a40-a1b0-612e2749eaf9",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7df92673-fc58-4675-9b39-12a5a577d0b1",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Standard settings - Slight glitch on buildings and walls but nothing truly affecting gameplay (currently at beginning)",
+          "votes": 0,
+          "date": "2026-09-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cd05dcaf-e219-476d-8e00-dbcb1f26eb3c",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs well, locked 30fps in most areas are shader caching...had some weird graphical glitching in first gym fight (camera looked blurred and out of focus)... wasnt like that for any other battles",
+          "votes": 0,
+          "date": "2026-02-20"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b93d9b54-e7ab-4e79-9c9c-096ddf59e689"
+        }
       ]
     }
   ],

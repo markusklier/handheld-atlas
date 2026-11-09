@@ -48,9 +48,43 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2004
+    },
+    {
+      "id": "macintosh-2010",
+      "name": "Macintosh (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q193581"
+        }
+      ]
+    },
+    {
+      "id": "linux-2013",
+      "name": "Linux (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Linux"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q193581"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q193581",
+  "wikipedia": "https://en.wikipedia.org/wiki/Half-Life_2",
+  "genre": "first-person shooter"
 }

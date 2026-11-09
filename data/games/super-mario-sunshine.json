@@ -28,6 +28,73 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5cc51270-89a5-4b6e-91c3-93df8ea3214a",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b37628b9-c1da-4dde-bb2d-5cac4d3b6c93",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Using Dolphin MMJR2 VBI and Super Mario Eclipse mod. Widescreen works great, but 60 fps mode causes major slowdowns in some areas. Default 30 fps mode is stable with no slowdowns.",
+          "votes": 1,
+          "date": "2026-01-24",
+          "settings": {
+            "Emulator Version": "2407-1",
+            "Emulator Fork": "MMJR2 VBI",
+            "Driver Version": "N/A",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "3",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7cc9a317-56ab-4ebe-a5d9-4bc4b90cb000",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "4K: https://old.reddit.com/r/OdinHandheld/comments/1f7k578/super_mario_sunshine_with_4k_textures_at_4x/ this is for the base version of the game If you want an enhanced experience: https://www.emuready.com/listings/b3762",
+          "votes": 0,
+          "date": "2026-05-14"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e8622e82-0296-4cc0-8275-d1a93814aaad"
+        }
       ]
     }
   ],

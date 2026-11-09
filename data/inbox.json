@@ -1,6 +1,142 @@
 {
   "leads": [
     {
+      "url": "https://github.com/0sour/bili-duo",
+      "title": "0sour/bili-duo",
+      "excerpt": "双屏 B 站客户端：上屏只放视频，下屏 Presentation 承载完整 UI（Retroid Pocket Duo / AYN Thor）",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/HorrisEllis/Nexus",
+      "title": "HorrisEllis/Nexus",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/madewarabhishek966529-wq/StyleMirror",
+      "title": "madewarabhishek966529-wq/StyleMirror",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mppjuro/PQChat.DHT",
+      "title": "mppjuro/PQChat.DHT",
+      "excerpt": "PQChat.DHT project is a fully decentralized, censorship-resistant, and metadata-protecting mobile messenger for Android that utilizes the public BitTorrent Mainline DHT network (BEP 44) as ephemeral buffer storage",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/gunticit/xebuonho",
+      "title": "gunticit/xebuonho",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/suwandhital/fundmanager",
+      "title": "suwandhital/fundmanager",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/genius-frank/SKANIPAY",
+      "title": "genius-frank/SKANIPAY",
+      "excerpt": "OCR based Mpesa payment scanner app built with Flutter and Dart",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/lennona34-glitch/MyCompiler",
+      "title": "lennona34-glitch/MyCompiler",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ToftMalone/All-Radio-Tools",
+      "title": "ToftMalone/All-Radio-Tools",
+      "excerpt": "All-in-one Android toolkit for everything that transmits around you: Wi-Fi, Bluetooth, mobile network, GNSS and HackRF SDR. No ads, no tracking.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/technopradyumn/bloomi",
+      "title": "technopradyumn/bloomi",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Aristvodolaz/serbian_lng",
+      "title": "Aristvodolaz/serbian_lng",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/longseespace/mac-black-friday",
+      "title": "longseespace/mac-black-friday",
+      "excerpt": "Hand-picked Black Friday and Cyber Monday deals on Mac, iPhone and iPad apps. Add yours with a pull request.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/PRVTPRO/Amnezia-Web-Panel",
+      "title": "PRVTPRO/Amnezia-Web-Panel",
+      "excerpt": "A modern, high-performance web interface for managing AmneziaWG, Classic WireGuard, Xray (XTLS-Reality), Telemt (Telegram MTProxy), Cloudflare WARP, AmneziaDNS, AdGuard Home, SOCKS5, NGINX + Let's Encrypt and exit nodes (entry ≠ egress) services on remote Ubuntu servers — from a single dashboard",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sahil24raj/SR24plus-engineering-toolkit",
+      "title": "sahil24raj/SR24plus-engineering-toolkit",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/bashirahmad00047-create/BashLock-cloud",
+      "title": "bashirahmad00047-create/BashLock-cloud",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/binaural-dev/docker-odoo",
+      "title": "binaural-dev/docker-odoo",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Anusmrith/screentime-pet",
+      "title": "Anusmrith/screentime-pet",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://www.reddit.com/r/SBCGaming/comments/1xrdx29/looking_for_handheld/",
       "title": "Looking for handheld",
       "excerpt": "",
@@ -6182,9 +6318,9 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T14:16:43Z",
-    "newLeads": 54,
-    "newEvents": 30
+    "lastRun": "2026-11-09T14:25:39Z",
+    "newLeads": 17,
+    "newEvents": 0
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

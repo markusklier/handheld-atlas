@@ -50,6 +50,38 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8bc0dd65-c658-4380-a197-709eb1e3e670",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Initial loading from the main menu is quite slow, but performance is smooth afterwards.",
+          "votes": 0,
+          "date": "2026-08-03",
+          "settings": {
+            "Emulator Version": "v1.1.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3ee97548-dc87-42d0-b503-75c36082bd6a"
+        }
       ]
     }
   ],

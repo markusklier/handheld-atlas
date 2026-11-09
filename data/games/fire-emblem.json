@@ -29,8 +29,26 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q150180"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q150180",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fire_Emblem%3A_The_Blazing_Blade",
+  "genre": "tactical role-playing game"
 }

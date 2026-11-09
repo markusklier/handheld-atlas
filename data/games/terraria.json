@@ -50,6 +50,38 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a6b6f538-28c4-4b8d-a30c-f7a3f20bd0c7",
+          "device": "Samsung Galaxy Z Flip5",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "It takes a few minutes to start It has glitches in menú Trying diferente fex has more impact imo than any other think Runs between 30 fps, you get more fps in the surface, lower fps in the ground GN 0.8.0 gives you more ",
+          "votes": 3,
+          "date": "2026-03-22",
+          "settings": {
+            "Emulator Version": "0.8.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/56800dd4-11f2-4c9e-bdfc-262494ff4af5"
+        }
       ]
     }
   ],

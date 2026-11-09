@@ -182,6 +182,36 @@
           "url": "https://www.whats-on-netflix.com/leaving-soon/grand-theft-auto-san-andreas-set-to-leave-netflix-games/"
         }
       ]
+    },
+    {
+      "id": "macintosh-2010",
+      "name": "Macintosh (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q83265"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2012",
+      "name": "PlayStation 3 (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q83265"
+        }
+      ]
     }
   ],
   "routes": [
@@ -240,5 +270,8 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "summary": "Vier Fassungen mit sehr unterschiedlichen Stärken: PS2-Original per Emulation, PC-Fassung mit Mods, die offizielle Android-App (mit Dual-Screen-Companion) und die Definitive Edition."
+  "summary": "Vier Fassungen mit sehr unterschiedlichen Stärken: PS2-Original per Emulation, PC-Fassung mit Mods, die offizielle Android-App (mit Dual-Screen-Companion) und die Definitive Edition.",
+  "wikidata": "Q83265",
+  "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto%3A_San_Andreas",
+  "genre": "action-adventure game"
 }

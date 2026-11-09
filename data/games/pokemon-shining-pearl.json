@@ -17,6 +17,98 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/697e2ebb-76c3-499e-b17a-302160583f7d",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/69693a28-399c-4af9-8959-44a445ec952f",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/892713ab-31ea-44bb-a1fc-584488891df8",
+          "device": "AYN Thor Pro",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS with vulkan graphics",
+          "votes": 1,
+          "date": "2025-11-17",
+          "settings": {
+            "Emulator Version": "4491abc",
+            "Driver Version": "[KIMCHI Turnip] Mesa Turnip driver v25.0.0 - Revision 3|||turnip_v25.0.0_R3.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1280x720",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/63d87b48-0c2b-4ad8-9f7c-43d3b28575ea",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game works good, solid 30fps",
+          "votes": 1,
+          "date": "2025-09-16"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/04de4938-81ea-4fb8-8dbb-17711ac2c49a"
+        }
       ]
     }
   ],

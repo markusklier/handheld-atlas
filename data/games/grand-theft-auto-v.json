@@ -244,7 +244,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/28a3c772-dbd8-468a-bfa4-7dae41f470bf"
         }
-      ]
+      ],
+      "year": 2013
     },
     {
       "id": "xbox-360",
@@ -258,6 +259,36 @@
         {
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/f94eff35-1039-4b18-b140-654325c35b55"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2014",
+      "name": "PlayStation 4 (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17452"
+        }
+      ]
+    },
+    {
+      "id": "xbox-series-2022",
+      "name": "Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17452"
         }
       ]
     }
@@ -352,5 +383,7 @@
       "dualScreenType": "companion"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q17452",
+  "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
 }

@@ -13,6 +13,146 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5a4eb09d-c78b-4cdb-8f81-033aba575d1a",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "you have to use the mod \"Disable DOF-BLUR v1.0.2\" to remove the blur that the game has, the game remains stable at 30 FPS",
+          "votes": 4,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "0.0.2",
+            "Driver Version": "MESA TURNIP DRIVER V25.2.0-R5 (AUTO)",
+            "Accuracy Level": "Normal",
+            "Extended Dynamic State": "2",
+            "Resolution": "720P",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cf91e013-31fd-4973-bc2c-bf6dbda1abb5",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Plays at 60fps most of the time, however with semi-frequent stutters. In my opinion it is more than playable, but not quite perfect. Mesa turnip driver v26, and mr. purple t23 drivers also work.",
+          "votes": 7,
+          "date": "2026-02-05",
+          "settings": {
+            "Emulator Version": "v0.1.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/eb984683-e391-4c0e-89e0-cd74dee7f19e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "With this setup, you should be able to play at 30fps in TV Mode, almost everywhere (and 60fps for cutscenes). Chaos zones don't appear during cutscenes, and I haven't found a way to fix that. Don't forget to set GPU prec",
+          "votes": 5,
+          "date": "2025-09-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a47fd09e-a1c7-4fb0-94f3-14970adf8028",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "There is a graphical error in the game, make sure to check \"Fix Bloom Effects\"",
+          "votes": 0,
+          "date": "2026-06-25"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/75a7e373-e828-40e3-bafb-514b552f06b9",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Quick Settings>Turbo Speed>ON Default Settings with following changes SYSTEM .Docked Mode OFF .Synchronize Core Speed ON .Custom CPU Ticks ON (21000) GRAPHICS .Optimized Vertex Buffers ON .Fix Bloom Effects ON .Use Async",
+          "votes": 0,
+          "date": "2026-04-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/81fd6b78-e50a-4213-b6b6-9413b5c9dccc",
+          "device": "AYN Thor Pro",
+          "emulator": "Kenji-NX",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Prerendered cutscenes play but visuals are frozen. Game will likely crash after the first prerendered cutscene but trying again will let you continue playing as normal. Playing with some mods (Disable DOF-BLUR, Reduced B",
+          "votes": 0,
+          "date": "2026-05-15",
+          "settings": {
+            "Emulator Version": "2.1.0-pr.2",
+            "Game Version": "1.0.2",
+            "VSync": "Switch",
+            "DRAM Size": "6GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "Memory Manager Mode": "Host Unchecked (fastest, unsafe)",
+            "Shader Cache": "True",
+            "Resolution Scale": "0.75x (540p/810p)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bf72be8d-1859-4ffe-a33e-aa8cb5ae8aca",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Can load up but blurry",
+          "votes": 3,
+          "date": "2026-04-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/48cc2c8a-7e3b-4bbf-b17e-40e06a43f790",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "​I am experiencing persistent blur in the game despite installing mods. While I was able to fix the intro loading issue, I suspect a compatibility conflict, as the 1.1.0 update may not match the mod packages compatibilit",
+          "votes": 0,
+          "date": "2026-01-15"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/47c1a611-0285-42bc-ae32-d7c4fdf269f3"
+        }
       ]
     }
   ],

@@ -54,5 +54,6 @@
   "routes": [],
   "updatedAt": "2026-11-08",
   "wikipedia": "https://en.wikipedia.org/wiki/Factorio",
-  "genre": "survival game"
+  "genre": "survival game",
+  "wikidata": "Q16972008"
 }

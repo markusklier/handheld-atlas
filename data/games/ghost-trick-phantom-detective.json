@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "year": 2010
+    },
+    {
+      "id": "pc-2023",
+      "name": "PC (2023)",
+      "type": "port",
+      "year": 2023,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2629796"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2629796",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ghost_Trick%3A_Phantom_Detective",
+  "genre": "adventure video game"
 }

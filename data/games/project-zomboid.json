@@ -48,6 +48,31 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ac237258-da7d-4002-8541-b462b53ef06d",
+          "device": "AYN Thor Max",
+          "emulator": "DroidDeck",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-10-23",
+          "settings": {
+            "Emulator Version": "Any",
+            "Store": "Steam",
+            "Average FPS": "0"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/62178e9b-8aba-4799-83b1-c7d8546b5c75"
+        }
       ]
     }
   ],

@@ -16,9 +16,33 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "android-2015",
+      "name": "Android, Linux, Macintosh u. a. (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Android",
+        "Linux",
+        "Macintosh",
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16267674"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q16267674",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hotline_Miami_2%3A_Wrong_Number",
+  "genre": "action game"
 }

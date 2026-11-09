@@ -29,6 +29,37 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/647a5048-f487-4475-85e3-80e2b9a88dc7",
+          "device": "AYN Odin 2",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "solid 30 fps (for more stable fps activate the hyrule speed hack)",
+          "votes": 2,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "latest version",
+            "Graphics Backend": "Vulkan",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Internal Resolution": "3",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3f377988-b52c-4fe8-8198-0c76f356ade1"
+        }
       ]
     },
     {
@@ -37,6 +68,13 @@
       "type": "release",
       "platforms": [
         "Wii"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/88598db1-4f59-4997-a979-9d2d7e97ab80"
+        }
       ]
     },
     {

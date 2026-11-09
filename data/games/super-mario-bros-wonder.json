@@ -13,6 +13,206 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/eb210ca6-c686-4d3a-a096-47e612c8a474",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works like a charm.",
+          "votes": 8,
+          "date": "2025-12-20",
+          "settings": {
+            "Emulator Version": "Eden-28107-Android-Replace.apk",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 6|||Turnip_v26.0.0_R6.zip",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "Immediate (Off)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/768de20a-2d92-49ff-ae89-266e503ece96",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I used some of Eden Veil's settings to ensure smoother performance in docked mods. 60fps most of the time, except of course during shader calculations. Activate in Eden Veil: RAII (ON) VRAM Mode: Aggressive Ignore CPU In",
+          "votes": 7,
+          "date": "2025-09-05",
+          "settings": {
+            "Emulator Version": "0.0.3 RC3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T21-AYANEO.adpkg|||turnip_mrpurple_T21-AYANE",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/47ebee5a-34b6-4d73-97b7-8406047a14b7",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Turn on the setting to force maximum clock speed. The first time you play each stage, there might be some slight stuttering due to shader loading, but it shouldn't be too noticeable.",
+          "votes": 4,
+          "date": "2026-04-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/467e5aef-39ab-4555-b973-1e1a9dfac66f",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No flaws, minor fps drops for shaders.",
+          "votes": 2,
+          "date": "2026-07-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/070a7c78-1c39-4345-bc77-8068307f3d61",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays just like the console. FPS quickly dips to 58 occasionally when shaders are compiling, but there is no noticeable affect on the fluidity, and it jumps right back up to 60fps.",
+          "votes": 2,
+          "date": "2026-04-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b0c524be-2d83-438b-b00d-d598806b0ade",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "30",
+          "votes": 1,
+          "date": "2025-11-09"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7644ce1c-e340-4572-97f3-93771a5bc5be",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Notes This game runs perfectly with Mesa Turnip driver v25.3.0-R1 1x (720p/1080p) Docked Mode (Emulated via toggle switch) When running **AMD FidelityFX - Super Resolution** Change the Audio output engine to **Cubeb** *(",
+          "votes": 1,
+          "date": "2025-08-21"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a7fe0ff8-c9f5-4b76-a689-97e505c6ea9b",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game runs perfectly with Mesa Turnip driver v25.3.0-R1 1x (720p/1080p) Docked Mode (Emulated via toggle switch) *When running* **AMD FidelityFX - Super Resolution** *Change the Audio output engine to* **Cubeb** *(if",
+          "votes": 1,
+          "date": "2025-07-25",
+          "settings": {
+            "Emulator Version": "Build c7431bd",
+            "Driver Version": "[K11MCH1/AdrenoToolsDrivers] v25.3.0 - Revision 1",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7ae281aa-4697-4204-8788-feeda4999c82",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs pretty good, fps might drop but its because of the throttle, by far i had more performance with Qualcomm driver 840,use the base settings",
+          "votes": 0,
+          "date": "2026-04-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f1c1a4eb-8eb4-47dd-b537-c00ee31b8086",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs flawlessly on Samsung S23 Ultra",
+          "votes": 0,
+          "date": "2026-02-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1fcf7046-4c4f-4de4-95e6-82c9c4edbef2",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-01-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/27bf52a3-d94a-46b0-939c-9d3210ff386f",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs flawlessly with Mesa Turnip Driver V25.2.0-R2 through R7. Played in single and multiplayer mode with 0 issues. **Officially ported from the Ryan Retro Compatibility List: https://ryanretro.com**",
+          "votes": 0,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "0.7",
+            "Driver Version": "[KIMCHI Turnip] v25.2.0 - Revision 14|||Turnip_v25.2.0_R14.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/85a9d4ea-8118-435c-b149-b84adda1c9dc"
+        }
       ]
     }
   ],

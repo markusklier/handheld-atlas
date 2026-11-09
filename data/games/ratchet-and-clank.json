@@ -16,6 +16,62 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fb64f7d1-6eec-431a-b013-63c0cc388b2e",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Widescreen Hack applied",
+          "votes": 3,
+          "date": "2025-12-01",
+          "settings": {
+            "Emulator Version": "2.2b-4248",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "1.7",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "50-60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/140484e9-de5e-449c-a2e2-1373105f6f40",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game runs and looks great. I have the Anisotropic Filtering set to 4x. The only issues I have run into is slight frame drops when encountering a larger group of enemies, an enemy that uses fire/high demanding assets,",
+          "votes": 0,
+          "date": "2026-03-26",
+          "settings": {
+            "Emulator Version": "Java Version:15210 v1.5-4248 release Native Version:NetherSX2 v2.2n-4248 (Patche",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "EE Cycle Rate (Underclocking)": "130% (1)"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/65b48452-05a4-44db-8bb1-a6bc49824181"
+        }
       ]
     }
   ],

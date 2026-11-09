@@ -50,6 +50,23 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 1998
+    },
+    {
+      "id": "linux-2013",
+      "name": "Linux, Macintosh (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Linux",
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q279744"
+        }
       ]
     }
   ],
@@ -101,5 +118,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q279744",
+  "wikipedia": "https://en.wikipedia.org/wiki/Half-Life_%28video_game%29"
 }

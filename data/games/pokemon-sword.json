@@ -17,6 +17,146 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4d46cfce-ecda-4ac5-8102-109169cbe9ce",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 4,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/892a86e0-b020-4d6b-89e2-4890f4b9dbd0",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game runs at a steady 30FPS with occasional small dips and rare graphical glitches. Tried increasing resolution to 1080p/1620p and framerate dipped to 25FPS. I haven't tested in larger areas to see if there's any dips, b",
+          "votes": 3,
+          "date": "2026-03-15",
+          "settings": {
+            "Emulator Version": "0.2.0-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8baf4f83-7d5f-40ec-901c-1fb496b4f26a",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-05-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bef4015b-1c9b-4f7e-be17-59d62dafda1d",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs perfectly on base game Divine Sword works perfectly too",
+          "votes": 0,
+          "date": "2026-04-19"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dc283104-c9aa-49ee-9b2e-1948c76fa8e2",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-02-10"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/10f128e5-6334-4390-8e59-ebb5bc46d898",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-02-05"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/00513f23-ae03-4f57-95d3-a50c2dd343a0",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "30 FPS. Some slight stuttering, but it is not noticeable once VSync is set to Immediate (Off)",
+          "votes": 1,
+          "date": "2026-04-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2b0a1ea0-43f4-4b6a-92aa-f929a500603b",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game runs smoothly, stable at 30 fps if you put accuracy level at normal. However, you will find some sort of lighting issue(glowing on and off) on the characters on the overworld sometimes. To fix this, you need to ",
+          "votes": 0,
+          "date": "2025-08-25"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/529dc639-775c-45f3-80b3-1d8151504871",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Even after changing settings, there's a graphics bug on the ground when you choose your first three Pokémon, and it doesn't change even after switching to driver t26. I've forced the GPU to its maximum clock speed.",
+          "votes": 0,
+          "date": "2026-06-03"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/94eae586-465b-4923-a4bc-03cc48be6dfd"
+        }
       ]
     }
   ],

@@ -29,8 +29,41 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "nintendo-3ds-2011",
+      "name": "Nintendo 3DS (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q150169"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q150169"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q150169",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fire_Emblem%3A_The_Sacred_Stones",
+  "genre": "tactical role-playing game"
 }

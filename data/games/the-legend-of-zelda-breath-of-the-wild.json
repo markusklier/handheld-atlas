@@ -13,6 +13,206 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1e928b3e-cd96-4865-8b64-b7b7922bb12b",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "To fix the bug in the sanctuaries and also in the white water, you have to use a mod fix that I will make available in the link below, you also have to use the Mr Purple T19 driver, the game remains perfect at 30 FPS wit",
+          "votes": 16,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "0.0.2",
+            "Driver Version": "TURNIP ADRENO DRIVER 25.1.0 DEVEL-UNIFIED - T19",
+            "Accuracy Level": "Normal",
+            "Extended Dynamic State": "2",
+            "Resolution": "720P",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9093947b-5d93-4195-8b15-e9d91d2437ac",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I'm deliberately staying at 720p + FSR (80%). Plus these settings in Eden Veil: RAII (ON) Speed ​​GPU Time (ON) VRAM Mode: Aggressive Ignore CPU Validation: (ON) LRU Cache (ON) With this setup, I have a solid 30 fps cons",
+          "votes": 9,
+          "date": "2025-09-04",
+          "settings": {
+            "Emulator Version": "0.0.3 RC3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T21-AYANEO.adpkg|||turnip_mrpurple_T21-AYANE",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b4bfa6ac-b035-4dbf-80bf-6088e29556a5",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I have only played the start so I'm not sure about graphical bugs later on but I got it working at a locked 30fps docked mode once shaders were cached. Using a medium underclock in cluster tune, temperatures range from 6",
+          "votes": 7,
+          "date": "2026-08-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d3be6fca-8930-4f5e-bfdd-b5152447424d",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game completed. only a couple of issues. Sometimes water shader looks white but I found that any driver with vulkan 1.3.274 fixes that issue. In adition I used BOTW NX Optimizer mod to get 60fps but you will need to disa",
+          "votes": 7,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "0.7",
+            "Driver Version": "[KIMCHI Turnip] v25.2.0 - Revision 14|||Turnip_v25.2.0_R14.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b667c708-4f16-438e-b731-e34bf40dd404",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Important Note: - Leave all settings at their default values except for the driver. - Use **Undocked** mode. The game runs at full speed (30 FPS) approximately 90% of the time, which I consider essentially perfect. **Und",
+          "votes": 4,
+          "date": "2026-09-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fc7cd88b-7bd5-4fa4-a1e7-6ad544c0edeb",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This took me a lot of effort but I got it to run perfectly. No milky water. No shrine ghosting. 60fps mod (runs around 30-50) this is the best I can get the game to run. Running Eden Nightly. Lot of settings are not avai",
+          "votes": 1,
+          "date": "2026-10-30"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e09260af-f333-43a8-89b0-5bf9ff7d54f0",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Took me a while to figure this one out. Once I updated the game to 1.6.0 and got the [StevenMXZ] Turnip v26.3.0-R6 driver the game ran amazing with the Ultracam 60fps mod. Other drivers created the lakes to be a milky wh",
+          "votes": 1,
+          "date": "2026-10-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6cfb30ac-9ef9-4db3-a5d3-677c73028e40",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Hey que tener en cuenta que se debe usar el NX optimizer para desbloquear los FPS y llegar a los 40 - 45 FPS",
+          "votes": 1,
+          "date": "2026-01-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2e7b9dfe-5a20-4a8e-9c34-c459940819c0",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Run at 30 fps",
+          "votes": 1,
+          "date": "2025-11-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1d021541-1eca-4073-afd4-076fad71c3bb",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Update 1.6.0 really helped this game run with better frame rates. Barely any drops in framerates and game runs as it does on the Switch. **Officially ported from the Ryan Retro Compatibility List: https://ryanretro.com**",
+          "votes": 1,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "0.7",
+            "Driver Version": "[KIMCHI Turnip] v25.2.0 - Revision 14|||Turnip_v25.2.0_R14.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/07c992d4-c233-4947-8d8a-4e84ed8fb235",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Every now and then, you need to clear the shader cache because if it goes over 30k, the game wont launch. (I had to clear it about three times during my entire playthrough.) Everything else worked perfectly with the defa",
+          "votes": 0,
+          "date": "2026-07-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3b4e0eeb-0b27-49c0-a787-217decf80ce3",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "These settings would also work for other devices using the Snapdragon 8 gen 2 with at least 12GB of RAM. RAM usage ranges from around 9GB-11GB. Average frame rate is around 34-40 fps with no drops below 30 fps including ",
+          "votes": 8,
+          "date": "2026-04-02"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/14667b78-3225-499a-96da-95f30f72adda"
+        }
       ]
     }
   ],

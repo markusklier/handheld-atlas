@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1997
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1202713",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kirby%27s_Dream_Land_3",
+  "genre": "platform game"
 }

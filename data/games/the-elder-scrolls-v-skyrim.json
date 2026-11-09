@@ -64,6 +64,17 @@
       "note": "Korrektur des bisherigen PC-Eintrags: Das Original erschien gleichzeitig auch für Xbox 360 und PlayStation 3. Die klassische PC-Fassung ist von der späteren Special Edition zu unterscheiden.",
       "traits": [
         "controller"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a4ebddc2-e58f-43c7-af37-06b4c8e1b4c9"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/97a9b386-8a74-41c0-937f-02b911917636"
+        }
       ]
     },
     {
@@ -128,6 +139,36 @@
         {
           "label": "Quelle",
           "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Elder-Scrolls-V-Skyrim--1177455.html"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9fc85a91-78a1-466f-9467-5ee5bc838c69"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f7932348-1faf-4504-84d3-ee61a0c46332",
+          "device": "RedMagic 8S Pro",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "60",
+          "votes": 0,
+          "date": "2025-11-23",
+          "settings": {
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "On Load",
+            "Audio output engine": "Auto"
+          }
         }
       ]
     },

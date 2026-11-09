@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1995
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q6143748",
+  "wikipedia": "https://en.wikipedia.org/wiki/Lufia_II%3A_Rise_of_the_Sinistrals",
+  "genre": "role-playing video game"
 }

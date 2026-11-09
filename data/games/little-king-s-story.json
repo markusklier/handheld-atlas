@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "year": 2009
+    },
+    {
+      "id": "playstation-vita-2012",
+      "name": "PlayStation Vita (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2706689"
+        }
+      ]
+    },
+    {
+      "id": "pc-2016",
+      "name": "PC (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2706689"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2706689",
+  "wikipedia": "https://en.wikipedia.org/wiki/Little_King%27s_Story",
+  "genre": "role-playing video game"
 }

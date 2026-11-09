@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2010
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1361363",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kirby%27s_Epic_Yarn",
+  "genre": "platform game"
 }

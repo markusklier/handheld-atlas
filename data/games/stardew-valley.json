@@ -51,6 +51,62 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1e673aa2-d3e2-4cf9-8084-112c7c058d5d",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "v1.5.4.2",
+          "votes": 1,
+          "date": "2025-12-05",
+          "settings": {
+            "Emulator Version": "0.0.4-rc3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/543a5288-49bb-40d8-b3dc-7813beefd8a8",
+          "device": "AYN Odin 2",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS, no drops, perfectly smooth. Have not tried other/older drivers, but this is perfect.",
+          "votes": 0,
+          "date": "2025-07-27",
+          "settings": {
+            "Emulator Version": "Latest Build",
+            "Driver Version": "[MrPurple666/purple-turnip] turnip_mrpurple-T21-toasted.adpkg",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9d5e4eb3-1a90-49a6-95dc-c428d07cb0e3"
+        }
       ]
     },
     {
@@ -59,6 +115,170 @@
       "type": "release",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e1d0721b-3d45-4919-9c8b-86f5697bbe7a",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "The config settings don't seem to matter much, what needs to work for the game to boot are 3 things: Wine Mono installed Test DirectX works (in open container start menu under ) Override for the icu library is applied. W",
+          "votes": 18,
+          "date": "2026-01-02",
+          "settings": {
+            "Emulator Version": "0.6.1",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync",
+            "Audio Driver": "PulseAudio",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Normal (Load all services)",
+            "Resolution (Screen Size)": "1920*1080",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bb02c091-2ac3-4f12-82e9-87d6d2b288e0",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**The game need configuration. ** 1. Click 3 dots -> Open Container -> start -> System Tools -> Instal Wine Mono (wait for it to download and instal) 2. start -> System Tools -> Wine Configuration -> Libraries tab -> cli",
+          "votes": 7,
+          "date": "2026-02-21",
+          "settings": {
+            "Emulator Version": "v0.7.2",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.4-gplasync",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "DXVK Version -> 2.4.1-gplasync -> Max Device memory 4096MB",
+            "Audio Driver": "PulseAudio",
+            "Environment Variables": "Graphics driver: turnip26.0.0_R8\nProton-10.0-arm64ec-2",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Resolution (Screen Size)": "1920x1080"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bea412f7-0186-4de0-a733-01bdc44323ba",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-11-07",
+          "settings": {
+            "Emulator Version": "v5.0.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "wine10.0-x64-2",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f41511c5-d1fd-4b97-b223-0051a2e3b49f",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-05-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/99ea4f75-fcea-4b7c-92ce-150608bea874",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Set video memory size to 4096MB. Vanilla runs fine and easily at 1080p. To run with mods, run the game inside GameNative once, then download [SMAPI](https://www.nexusmods.com/stardewvalley/mods/2400) for Windows. Unzip t",
+          "votes": 3,
+          "date": "2025-11-22"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1ed8d9c1-8e75-4f37-bfc0-a3f100065a0e",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs good no issues. Default settings once changed to Vortek (Universal) driver",
+          "votes": 2,
+          "date": "2025-11-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/084f2c93-b9e4-43dd-a281-ae90621c34de",
+          "device": "Nubia Z50 Ultra",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Actually used the Nubia Z70 Ultra but it wouldn't show in the dropdown. Click 3 dots -> Open Container -> start -> System Tools -> Install Wine Mono (wait for it to download and install) start -> System Tools -> Wine Con",
+          "votes": 1,
+          "date": "2026-03-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c3a64558-b01f-475e-a12c-10a3e193197d",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No issues",
+          "votes": 0,
+          "date": "2026-09-12",
+          "settings": {
+            "Emulator Version": "6.2.1",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1920*1080",
+            "Compatibility Layer": "proton11.0-arm64x",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/be50ccf5-d569-4290-9f4d-20ed58de4e96",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-10"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/6d0dff78-b5fe-47db-82de-69f7260ddb14"
+        }
       ]
     }
   ],

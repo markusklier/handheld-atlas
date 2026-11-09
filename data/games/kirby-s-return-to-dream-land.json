@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2011
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1370609",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kirby%27s_Return_to_Dream_Land",
+  "genre": "platform game"
 }
