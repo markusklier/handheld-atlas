@@ -23,6 +23,8 @@ scripts/atlas.py       validate | build | stats | format
 scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
+scripts/images.py      Bilder aus Seiten holen (YouTube-Vorschaubild, GitHub, Steam, Google Play, Wikipedia, Artikel)
+scripts/push.sh        Commit + Push der Workflows; gitsync.py führt JSON-Konflikte paralleler Läufe zusammen
 scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
 scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai → ai-verified, ai-unclear oder entfernt)
 scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
@@ -160,6 +162,9 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    Mods für Android-taugliche Fassungen. Quellen: GitHub, offizielle Projektseiten, Google Play, r/SBCGaming, r/AYN,
    r/EmulationOnAndroid, EmuReady, PortMaster, GAFT. Pro Spiel nur Wege, die es **wirklich** gibt.
 5. **Screenshots je Spielweg** (wichtig: die App zeigt sie in der Kachel-Vorschau, Dual-Screen-Bilder zuerst)
+   „Bilder suchen“ (Issue `images: <id>` oder `images: <id>/<weg-id>`): erst libretro/Steam/Wikipedia/READMEs, dann
+   nennt die KI **Seiten** (Videos, Artikel, Store-Seiten), aus denen `scripts/images.py` die Bilder holt – Bild-URLs
+   selbst findet die Websuche kaum. Reddit, MobyGames und GameFAQs sind aus GitHub Actions nicht abrufbar.
    Der Watcher holt automatisch Bilder aus dem README spielbezogener Projekte (`scripts/media.py`) und markiert sie
    mit `check: "readme"`. Deine Aufgabe pro Lauf:
    Prüfstufen der Bilder: `readme`/`ai` = ungeprüft · `ai-verified` = von der KI-Bildprüfung bestätigt ·
