@@ -8,6 +8,9 @@ Deshalb: nur Belegtes eintragen, KI-Funde immer als `ai-unverified` markieren, u
 
 Alle Texte, die in der App erscheinen, sind **Deutsch mit echten Umlauten** (ä ö ü ß, nicht ae/oe/ue).
 
+**Neu in einer Session?** Zuerst `docs/KONTEXT.md` lesen: Entscheidungen von Markus (privat, Budget, was verworfen
+wurde) und der Plan für den Setup-Assistenten als eigene Android-App.
+
 ## Aufbau
 
 ```
