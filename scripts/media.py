@@ -156,12 +156,13 @@ def fill_route_shots(fetch=get, fetch_json=None, only=None):
 
 # ---------------- 2. Steam (PC games) ----------------
 def steam_lookup(title, fetch=get):
-    res = fetch('https://store.steampowered.com/api/storesearch/?' + urllib.parse.urlencode(
-        {'term': title, 'cc': 'de', 'l': 'german'}), as_json=True)
     want = norm(title)
-    for item in res.get('items', []):
-        if norm(item.get('name')) == want:
-            return item['id']
+    for cc in ('de', 'us'):             # some games are not sold in Germany (or only under another store region)
+        res = fetch('https://store.steampowered.com/api/storesearch/?' + urllib.parse.urlencode(
+            {'term': title, 'cc': cc, 'l': 'english'}), as_json=True)
+        for item in res.get('items', []):
+            if norm(item.get('name')) == want:
+                return item['id']
     return None
 
 

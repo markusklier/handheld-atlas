@@ -92,6 +92,8 @@ def decide(verdict, shot, kind='route'):
         verdict = dict(verdict, kind='gameplay' if verdict['kind'] == 'promo' else verdict['kind'])
     if kind == 'game':    # original-game gallery: any edition of the game helps ("what is this game?")
         verdict = dict(verdict, showsVariant='yes' if verdict['showsGame'] == 'yes' else verdict['showsVariant'])
+    if verdict['kind'] == 'promo' and verdict['showsGame'] == 'yes' and verdict['showsVariant'] == 'yes':
+        verdict = dict(verdict, kind='gameplay')   # video thumbnails with title text still show the real thing
     if verdict['kind'] in ('logo', 'promo', 'diagram') or verdict['showsGame'] == 'no' or verdict['showsVariant'] == 'no':
         return 'drop'
     if verdict['showsGame'] == 'yes' and verdict['showsVariant'] in ('yes', 'unclear'):
