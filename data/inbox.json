@@ -1,6 +1,126 @@
 {
   "leads": [
     {
+      "url": "https://github.com/HUEVOMAN77/RedU",
+      "title": "HUEVOMAN77/RedU",
+      "excerpt": "RedU: New Super Mario Bros. U recompilado de forma nativa para Android. Un fork de nsmbu-recomp (MPL-2.0) mejorado para teléfonos. Sin código, imágenes ni datos del juego de Nintendo.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/CutWire-Studios/Drift",
+      "title": "CutWire-Studios/Drift",
+      "excerpt": "Drift is a free, open-source, beginner-friendly desktop video editor built with Qt 6 and FFmpeg.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/imamimam13/ninjaRadio",
+      "title": "imamimam13/ninjaRadio",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/asindusajith/JayPharma",
+      "title": "asindusajith/JayPharma",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/At30c/ShitStockModOrSomething",
+      "title": "At30c/ShitStockModOrSomething",
+      "excerpt": "Device-focused fork of salvogiangri/UN1CA for S20+ and related Samsung ports",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mkmehmood/Keyboard-",
+      "title": "mkmehmood/Keyboard-",
+      "excerpt": "New",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/astanabesta/Grain",
+      "title": "astanabesta/Grain",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/zevbuild/zevsafe",
+      "title": "zevbuild/zevsafe",
+      "excerpt": "Zevsafe lets you encrypt and decrypt your files and store the encrypted .zev files on any cloud provider. Your data stays private, because the provider can’t see what’s inside a .zev file. You can view and encrypt your files easily from any web browser.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/grzott/flare-engine",
+      "title": "grzott/flare-engine",
+      "excerpt": "Modular 2D engine for React Native + Web: animation, gamification, interactive UI and games. TypeScript on Skia (native) and CanvasKit WASM (web), shipped as @flare-engine/* packages.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/N2K02/PCL",
+      "title": "N2K02/PCL",
+      "excerpt": "Phone call companion app",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mustafaras/belief_emergence",
+      "title": "mustafaras/belief_emergence",
+      "excerpt": "Reproducible research repository for the “Belief Emergence” study: data ingestion and harmonization, panel dataset construction, analysis and reporting scripts, derived metrics and figures, and the LaTeX manuscript sources. Includes a Vite + TypeScript interface and automation utilities.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jiarong0423/payguard-ai",
+      "title": "jiarong0423/payguard-ai",
+      "excerpt": "TradeGlot (formerly PayGuard AI): translating international shipping rules and merchant records for PayPal dispute evidence. Rules first, a person approves, PayPal decides.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Debmmiv/softdrinks-inventory-system",
+      "title": "Debmmiv/softdrinks-inventory-system",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Xposed-Modules-Repo/io.github.expirt.storageredirect",
+      "title": "Xposed-Modules-Repo/io.github.expirt.storageredirect",
+      "excerpt": "Storage Redirect is an Xposed/LSPatch module that lets you choose exactly where apps save their files, folders, and data. Instead of apps cluttering your phone with random folders, you can automatically redirect them to any custom folder you prefer.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Mogiti-Joy/Isnad.media",
+      "title": "Mogiti-Joy/Isnad.media",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/lsulibraries/palefire",
       "title": "lsulibraries/palefire",
       "excerpt": "Custom Drupal 11 theme; successor to origami",
@@ -6279,126 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Lordingard/SacredStonesRecomp",
-      "title": "Fire Emblem: The Sacred Stones",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Link4Electronics/Carpocalypse2",
-      "title": "Carmageddon 2",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/LBALab/lba2-classic-community",
-      "title": "Little Big Adventure 2",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Kymie131/openportsgames",
-      "title": "openportsgames",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Keriew/augustus",
-      "title": "Caesar III (Augustus)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/KaikoClanworth1/wwe-svr2011-pc",
-      "title": "WWE SmackDown vs. Raw 2011",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc",
-      "title": "Buffy the Vampire Slayer: Chaos Bleeds",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed",
-      "title": "Jet Set Radio Future",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Jorge262007/FFTARecomp",
-      "title": "Final Fantasy Tactics Advance",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/JRickey/BattleShip",
-      "title": "Super Smash Bros. (N64)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/HarbourMasters/Ghostship",
-      "title": "Super Mario 64 (Ghostship)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
-      "title": "The Legend of Zelda: The Wind Waker HD (GreenNaugahyde)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Gabrick75/fh2-recompiled",
-      "title": "Forza Horizon 2",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/GABRIELNNK/Bigodao",
-      "title": "Wario Land: Super Mario Land 3",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/FulGerNet/rePOP",
-      "title": "Prince of Persia: The Sands of Time (Xbox)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T15:13:30Z",
-    "newLeads": 16,
+    "lastRun": "2026-11-09T15:24:49Z",
+    "newLeads": 15,
     "newEvents": 0
   },
   "aiResearch": {
