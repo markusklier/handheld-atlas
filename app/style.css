@@ -402,3 +402,27 @@ details.generic-group[open] > summary { margin-bottom: 6px; }
 .dual-way .desc { color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .dual-way .tags { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
 @media (max-width: 520px) { .dual-shot { display: none; } }
+
+/* data state of a game */
+.datapanel > summary { list-style: none; cursor: pointer; }
+.datapanel > summary::-webkit-details-marker { display: none; }
+.datapanel .meter { max-width: 520px; margin: 0; }
+.datapanel.lvl-wenig .meter i { background: linear-gradient(90deg, var(--warn) var(--v), var(--surface-3) var(--v)); }
+.datapanel.lvl-teils .meter i { background: linear-gradient(90deg, var(--ai) var(--v), var(--surface-3) var(--v)); }
+.checklist { list-style: none; padding: 0; margin: 12px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 6px 14px; font-size: 13.5px; }
+.checklist li { display: flex; gap: 7px; align-items: center; color: var(--muted); }
+.checklist li svg { width: 15px; height: 15px; flex: none; }
+.checklist li.ok svg { color: var(--accent); }
+.checklist li.part svg { color: var(--ai); }
+.checklist li.miss svg { color: var(--warn); }
+.req-run { color: var(--ai); display: flex; gap: 6px; align-items: center; }
+.req-run svg { width: 15px; height: 15px; }
+.card i.explored { display: block; height: 3px; border-radius: 2px; margin-top: 6px; max-width: 120px;
+  background: linear-gradient(90deg, var(--accent) var(--v), var(--surface-3) var(--v)); opacity: .8; }
+.card i.explored.lvl-teils { background: linear-gradient(90deg, var(--ai) var(--v), var(--surface-3) var(--v)); }
+.card i.explored.lvl-wenig { background: linear-gradient(90deg, var(--warn) var(--v), var(--surface-3) var(--v)); }
+#req-pill { position: fixed; z-index: 55; right: 16px; bottom: 16px; max-width: min(92vw, 460px); display: flex; gap: 8px; align-items: center;
+  background: var(--surface-3); border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; font-size: 13px; box-shadow: 0 8px 30px rgba(0,0,0,.45); }
+#req-pill svg { width: 15px; height: 15px; color: var(--ai); flex: none; animation: spin 2.4s linear infinite; }
+#req-pill span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.link.small { font-size: 12.5px; display: inline-flex; gap: 4px; align-items: center; } .link.small svg { width: 13px; height: 13px; }

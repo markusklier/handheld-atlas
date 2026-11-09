@@ -4,19 +4,16 @@
   "franchise": "Doom",
   "platforms": [
     "PC",
-    "PC (MS-DOS, Windows)",
     "Macintosh",
     "PlayStation",
-    "PC (MS-DOS)",
     "PlayStation 3",
-    "PC (Windows)",
     "PlayStation 4",
     "Xbox One",
     "Nintendo Switch",
     "Android",
     "iOS",
     "PlayStation 5",
-    "Xbox Series X|S",
+    "Xbox Series",
     "Evercade",
     "HyperMegaTech! Super Pocket"
   ],
@@ -27,7 +24,6 @@
       "type": "original",
       "platforms": [
         "PC",
-        "PC (MS-DOS, Windows)",
         "Macintosh"
       ],
       "year": 1996,
@@ -60,7 +56,7 @@
       "name": "Überarbeitete id-Anthology-Fassung (1996)",
       "type": "rerelease",
       "platforms": [
-        "PC (MS-DOS)"
+        "PC"
       ],
       "year": 1996,
       "traits": [
@@ -98,7 +94,7 @@
       "name": "Offizielle Add-ons für DOOM / DOOM II (2020)",
       "type": "rerelease",
       "platforms": [
-        "PC (Windows)",
+        "PC",
         "PlayStation 4",
         "Xbox One",
         "Nintendo Switch",
@@ -123,11 +119,11 @@
       "name": "Final Doom in DOOM + DOOM II (2024)",
       "type": "remaster",
       "platforms": [
-        "PC (Windows)",
+        "PC",
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
-        "Xbox Series X|S",
+        "Xbox Series",
         "Nintendo Switch"
       ],
       "year": 2024,

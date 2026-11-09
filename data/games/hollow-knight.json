@@ -5,15 +5,13 @@
   "platforms": [
     "Nintendo Switch",
     "PC",
-    "PC (Windows)",
-    "macOS",
+    "Macintosh",
     "Linux",
     "PlayStation 4",
     "Xbox One",
-    "PC (Microsoft Store)",
     "Nintendo Switch 2",
     "PlayStation 5",
-    "Xbox Series X|S"
+    "Xbox Series"
   ],
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
@@ -71,8 +69,7 @@
       "type": "release",
       "platforms": [
         "PC",
-        "PC (Windows)",
-        "macOS",
+        "Macintosh",
         "Linux"
       ],
       "year": 2017,
@@ -90,7 +87,7 @@
       "platforms": [
         "PlayStation 4",
         "Xbox One",
-        "PC (Microsoft Store)"
+        "PC"
       ],
       "year": 2018,
       "traits": [
@@ -111,7 +108,7 @@
       "platforms": [
         "Nintendo Switch 2",
         "PlayStation 5",
-        "Xbox Series X|S"
+        "Xbox Series"
       ],
       "year": 2026,
       "traits": [

@@ -6,7 +6,7 @@
     "PC",
     "PlayStation 4",
     "Xbox One",
-    "Stadia"
+    "Google Stadia"
   ],
   "versions": [
     {
@@ -39,7 +39,7 @@
       "name": "Stadia",
       "type": "release",
       "platforms": [
-        "Stadia"
+        "Google Stadia"
       ]
     }
   ],

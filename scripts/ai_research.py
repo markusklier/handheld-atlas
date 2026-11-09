@@ -721,99 +721,180 @@ def routes_without_shots(limit):
     return [(gid, rid) for _, gid, rid in sorted(found)[:limit]]
 
 
-def find_screenshots(game_id, route_id, token, model, log=print):
-    path = DATA / 'games' / f'{game_id}.json'
-    g = read(path)
-    r = next(x for x in g['routes'] if x['id'] == route_id)
-    projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
-    proj = [projects[p] for p in r.get('projects', []) if p in projects]
-    where = ', '.join(p['url'] for p in proj) or ', '.join(l['url'] for l in r.get('links', []))
-    dual = f" Der zweite Bildschirm zeigt: {r.get('dualScreen')}. Bevorzuge Bilder, auf denen beide Bildschirme zu sehen sind." \
-        if 'dual-screen' in r.get('features', []) else ''
+PAGES_FORMAT = {'type': 'json_schema', 'name': 'atlas_image_pages', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['pages'], 'properties': {'pages': {
+        'type': 'array', 'items': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'shows'],
+                                   'properties': {'url': {'type': 'string'}, 'shows': {'type': 'string'}}}}}}}
+MAX_SHOTS = 6
+reachable = None    # image URL check; set lazily (tests replace it)
+
+
+def _reachable(url):
+    global reachable
+    if reachable is None:
+        from ai_vision import reachable_image
+        reachable = reachable_image
+    return reachable(url)
+
+
+def rejected_images():
+    return set((read(DATA / 'media_state.json') if (DATA / 'media_state.json').exists() else {}).get('rejectedImages', []))
+
+
+def ask_pages(text, token, model):
+    """The model names pages (videos, posts, READMEs, store pages) – it finds those reliably, unlike image URLs."""
     resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
-                        'text': {'format': SHOTS_FORMAT}, 'max_output_tokens': 4000,
-                        'input': f"""Finde bis zu 4 direkte Bild-URLs (png/jpg/webp/gif, https), die „{g['title']}“ über den Weg
-„{r['name']}“ ({r.get('runtime') or r['kind']}) auf einem Android-Gerät zeigen.{dual} Suche auf der Projektseite, in README und
-Release-Notes ({where}), in Beiträgen des Autors (Reddit, Foren) und in Videos-Thumbnails nur, wenn sie das Spiel zeigen.
-Keine Logos, Icons, Werbegrafiken, Stockfotos. Nur echte Bild-URLs, die in der Quelle eingebunden sind; caption auf Deutsch."""}, token)
+                        'text': {'format': PAGES_FORMAT}, 'max_output_tokens': 3000, 'input': text}, token)
     data, sources = output_json(resp), searched_urls(resp)
-    shots = []
-    for sh in data.get('screenshots', [])[:4]:
-        if ok_url(sh.get('url')) and IMG.search(sh['url']) and ok_url(sh.get('sourceUrl'), sources):
-            shots.append({'url': sh['url'], 'caption': (sh.get('caption') or 'Screenshot')[:80], 'source': sh['sourceUrl'],
-                          'credit': proj[0]['name'] if proj else '', 'check': 'ai'})
-    rejected = set((read(DATA / 'media_state.json') if (DATA / 'media_state.json').exists() else {}).get('rejectedImages', []))
-    shots = [s for s in shots if s['url'] not in rejected]
+    return [p['url'] for p in data.get('pages', [])[:8] if ok_url(p.get('url'), sources)]
+
+
+def collect(pages, have, limit, log=print, fetch=None, fetch_json=None):
+    """Pictures from the pages, in page order; dead links, rejected and known pictures are skipped."""
+    import images
+    fetch = fetch or images.get
+    rejected, out = rejected_images(), []
+    for page in dict.fromkeys(pages):
+        for sh in images.images_from_page(page, fetch, fetch_json, log):
+            if len(out) >= limit:
+                return out
+            url = sh['url']
+            if url in have or url in rejected or not ok_url(url) or any(x['url'] == url for x in out):
+                continue
+            if '/maxresdefault.jpg' in url and not _reachable(url):
+                url = url.replace('/maxresdefault.jpg', '/hqdefault.jpg')        # older/low-res videos
+            if not _reachable(url):
+                continue
+            out.append(dict(sh, url=url))
+    return out
+
+
+def route_pages(g, r, projects):
+    """Pages that certainly belong to this way: its project pages and links (no AI needed)."""
+    pages = []
+    for pid in r.get('projects', []):
+        p = projects.get(pid) or {}
+        if p.get('kind') in ('emulator', 'directory', 'data-source', 'runtime') or len(p.get('games', [])) > 3:
+            continue              # a generic emulator page says nothing about this game
+        pages.append(p.get('url'))
+    pages += [l['url'] for l in r.get('links', [])]
+    return [x for x in pages if x and x.startswith('https://')]
+
+
+def route_candidates(g, r, token, model, log=print):
+    """Pictures for one way: known project pages first, then pages the AI found (videos, posts, articles)."""
+    projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
+    have = {x['url'] for x in r.get('screenshots', [])}
+    room = MAX_SHOTS - len(have)
+    if room <= 0:
+        return []
+    found = collect(route_pages(g, r, projects), have, room, log)
+    dual = 'dual-screen' in r.get('features', []) or 'two-screens' in r.get('features', [])
+    if token and len(found) < (3 if dual else 2):
+        proj = [projects[p] for p in r.get('projects', []) if p in projects]
+        where = ', '.join(p['url'] for p in proj) or ', '.join(l['url'] for l in r.get('links', []))
+        wish = (f" Wichtig: Der zweite Bildschirm zeigt {r.get('dualScreen') or 'Zusatzinhalte'} – bevorzuge Videos und Fotos, "
+                "auf denen BEIDE Bildschirme des Geräts (z. B. AYN Thor, Ayaneo Flip DS, Dual-Screen-Handheld) zu sehen sind.") if dual else ''
+        pages = ask_pages(f"""Finde bis zu 6 Seiten, auf denen man sieht, wie „{g['title']}“ über den Weg „{r['name']}“
+({r.get('runtime') or r.get('kind')}) auf einem Android-Gerät oder Handheld aussieht.{wish}
+Gute Seiten: YouTube-Videos oder Shorts, Reddit-Beiträge mit Bild/Video (r/SBCGaming, r/AYN, r/EmulationOnAndroid …),
+GitHub-README oder Release-Seiten, Projekt- oder Store-Seiten (Google Play), Artikel mit Screenshots. Projekt: {where or '–'}.
+url = genau die Seite, die du über die Websuche geöffnet hast; shows = was darauf zu sehen ist (kurz, deutsch).""", token, model)
+        found += collect(pages, have | {x['url'] for x in found}, room - len(found), log)
+    cap = r['name'] + (' (Dual Screen)' if dual else '')
+    return [{'url': x['url'], 'caption': clean(x.get('caption') or cap, 80) or cap, 'source': x['source'],
+             'credit': x['source'].split('/')[2].replace('www.', ''), 'check': 'ai'} for x in found]
+
+
+def apply_route_shots(game_id, route_id, shots, log=print):
+    path = DATA / 'games' / f'{game_id}.json'
+    g = read(path)
+    r = next((x for x in g['routes'] if x['id'] == route_id), None)
+    if r is None:
+        return 0
     inbox = read(DATA / 'inbox.json')
     inbox.setdefault('shotSearch', {})[f'{game_id}/{route_id}'] = TODAY
     write(DATA / 'inbox.json', inbox)
     before = list(r.get('screenshots', []))
     have = {x['url'] for x in before}
     shots = [x for x in shots if x['url'] not in have]
-    if shots:
-        r['screenshots'] = (before + shots)[:6]
+    if not shots:
+        log(f'  {game_id}/{route_id}: keine neuen Bilder')
+        return 0
+    r['screenshots'] = (before + shots)[:MAX_SHOTS]
+    write(path, g)
+    if __import__('atlas').validate():
+        r['screenshots'] = before
         write(path, g)
-        if __import__('atlas').validate():
-            r['screenshots'] = before
-            write(path, g)
-            return 0
-        cl = read(DATA / 'changelog.json')
-        cl['entries'].insert(0, {'date': TODAY, 'type': 'screenshot-added', 'by': 'ai-research', 'game': game_id,
-                                 'text': f"{len(shots)} Screenshots für {r['name']} gefunden (KI, Prüfung folgt)", 'url': shots[0]['source']})
-        write(DATA / 'changelog.json', cl)
+        return 0
+    cl = read(DATA / 'changelog.json')
+    cl['entries'].insert(0, {'date': TODAY, 'type': 'screenshot-added', 'by': 'ai-research', 'game': game_id,
+                             'text': f"{len(shots)} Bilder für {r['name']} gefunden (Prüfung folgt)", 'url': shots[0]['source']})
+    write(DATA / 'changelog.json', cl)
     log(f'  {game_id}/{route_id}: {len(shots)} Bilder')
     return len(shots)
 
 
-GAME_IMAGES_FORMAT = {'type': 'json_schema', 'name': 'atlas_game_images', 'strict': True, 'schema': {
-    'type': 'object', 'additionalProperties': False, 'required': ['cover', 'screenshots'], 'properties': {
-        'cover': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'sourceUrl'],
-                  'properties': {'url': {'type': 'string'}, 'sourceUrl': {'type': 'string'}}},
-        'screenshots': SHOTS_FORMAT['schema']['properties']['screenshots']}}}
+def find_screenshots(game_id, route_id, token, model, log=print):
+    g = read(DATA / 'games' / f'{game_id}.json')
+    r = next(x for x in g['routes'] if x['id'] == route_id)
+    return apply_route_shots(game_id, route_id, route_candidates(g, r, token, model, log), log)
 
 
 def original_shots(g):
     return [x for x in g.get('screenshots', []) if x.get('caption') != 'Titelbild']
 
 
+def game_candidates(g, token, model, log=print):
+    """Original-game pictures: Wikipedia article and Steam first (no AI), then store pages/videos the AI finds."""
+    import images
+    import media
+    have = {x['url'] for x in g.get('screenshots', [])} | {(g.get('cover') or {}).get('url')}
+    room = MAX_SHOTS - len(original_shots(g))
+    if room <= 0:
+        return []
+    pages = []
+    src = (g.get('cover') or {}).get('source', '')
+    if '.wikipedia.org/wiki/' in src:
+        pages.append(src)
+    if 'PC' in g.get('platforms', []):
+        try:
+            appid = media.steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), images.get)
+            if appid:
+                pages.append(f'https://store.steampowered.com/app/{appid}/')
+        except Exception as e:  # noqa: BLE001
+            log(f'    ! Steam {g["title"]}: {e}')
+    found = collect(pages, have, room, log)
+    if token and len(found) < 3:
+        vers = '; '.join(f"{v['name']} ({', '.join(v['platforms'][:3])})" for v in g.get('versions', [])[:8])
+        ai = ask_pages(f"""Finde bis zu 6 Seiten mit echten Spielszenen (Screenshots oder Gameplay-Video) von „{g['title']}“
+(Fassungen: {vers or ', '.join(g.get('platforms', []))}). Gute Seiten: offizielle Shop-Seiten (Steam, Google Play, Nintendo,
+PlayStation Store), der Wikipedia-Artikel, MobyGames-Screenshot-Seiten, YouTube-Gameplay-Videos (Longplay, Trailer),
+offizielle Herstellerseite. url = genau die Seite, die du über die Websuche geöffnet hast; shows = was zu sehen ist.""", token, model)
+        found += collect(ai, have | {x['url'] for x in found}, room - len(found), log)
+    return [{'url': x['url'], 'caption': clean(x.get('caption') or 'Originalspiel', 80) or 'Originalspiel',
+             'source': x['source'], 'check': 'ai'} for x in found]
+
+
 def find_game_images(game_id, token, model, log=print):
-    """Cover and screenshots of the original game from official sources (store pages, Wikipedia/Commons, publisher)."""
     path = DATA / 'games' / f'{game_id}.json'
     g = read(path)
-    need_cover = not g.get('cover')
-    vers = '; '.join(f"{v['name']} ({', '.join(v['platforms'])})" for v in g.get('versions', [])[:8])
-    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
-                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
-                        'text': {'format': GAME_IMAGES_FORMAT}, 'max_output_tokens': 4000,
-                        'input': f"""Finde Bilder für das Spiel „{g['title']}“ (Fassungen: {vers or ', '.join(g.get('platforms', []))}).
-{'cover: direkte Bild-URL der Packungsgrafik oder des offiziellen Key-Arts (Hochformat bevorzugt).' if need_cover else 'cover: url = "" (schon vorhanden).'}
-screenshots: bis zu 4 direkte Bild-URLs mit echten Spielszenen (keine Logos, Menüs, Fan-Art, Wallpaper, Stockfotos).
-Quellen: offizielle Shop-Seiten (Steam, Nintendo, PlayStation, Xbox, Google Play), Wikipedia/Wikimedia Commons,
-Seite des Herstellers, MobyGames. Nur https-URLs von png/jpg/webp, die genau so in der Quelle eingebunden sind;
-sourceUrl = die Seite, auf der das Bild eingebunden ist. caption auf Deutsch, kurz (z. B. „Kampf im ersten Level“)."""}, token)
-    data, sources = output_json(resp), searched_urls(resp)
-    rejected = set((read(DATA / 'media_state.json') if (DATA / 'media_state.json').exists() else {}).get('rejectedImages', []))
-    good = lambda u, src: ok_url(u) and IMG.search(u) and u not in rejected and ok_url(src, sources)
-    before = json.dumps(g)
-    cov = data.get('cover') or {}
-    if need_cover and good(cov.get('url'), cov.get('sourceUrl')):
-        g['cover'] = {'url': cov['url'], 'source': cov['sourceUrl'], 'check': 'ai'}
+    new = game_candidates(g, token, model, log)
+    g = read(path)
     have = {x['url'] for x in g.get('screenshots', [])}
-    new = [{'url': x['url'], 'caption': clean(x.get('caption') or 'Originalspiel', 80), 'source': x['sourceUrl'], 'check': 'ai'}
-           for x in data.get('screenshots', [])[:4] if good(x.get('url'), x.get('sourceUrl')) and x['url'] not in have]
-    g['screenshots'] = g.get('screenshots', []) + new
-    if json.dumps(g) == before:
-        log(f'  {game_id}: keine passenden Originalbilder gefunden')
+    new = [x for x in new if x['url'] not in have]
+    if not new:
+        log(f'  {game_id}: keine neuen Originalbilder gefunden')
         return 0
+    before = path.read_text(encoding='utf-8')
+    g['screenshots'] = g.get('screenshots', []) + new
     write(path, g)
     if __import__('atlas').validate():
         path.write_text(before, encoding='utf-8')
-        write(path, read(path))
         return 0
-    n = len(new) + (1 if g.get('cover', {}).get('check') == 'ai' and need_cover else 0)
-    log(f'  {game_id}: {n} Originalbilder/Cover (KI, Prüfung folgt)' if n else f'  {game_id}: keine passenden Originalbilder gefunden')
-    return n
+    log(f'  {game_id}: {len(new)} Originalbilder (Prüfung folgt)')
+    return len(new)
 
 
 def images_basic(game_ids, log=print):
@@ -830,31 +911,55 @@ def images_basic(game_ids, log=print):
             log(f'  ! Bilder {name}: {type(e).__name__}: {str(e)[:120]}')
 
 
-def request_images(game_ids, token, model, log=print, max_routes=16):
-    """Owner asked for pictures (button in the app): free sources, then AI search for whatever is still missing."""
+def request_images(game_ids, token, model, log=print, max_routes=16, routes=None):
+    """Owner asked for pictures (button in the app). Free sources first, then the page search for whatever is still
+    thin – original game and every way with fewer than 3 pictures (dual screen first). Searches run in parallel."""
+    from concurrent.futures import ThreadPoolExecutor
     images_basic(game_ids, log)
     stats = {'games': 0, 'routes': 0}
-    budget = max_routes
+    tasks = []
     for gid in game_ids:
         g = read(DATA / 'games' / f'{gid}.json')
-        if not token:
-            continue
-        if not g.get('cover') or len(original_shots(g)) < 2:
-            try:
-                stats['games'] += find_game_images(gid, token, model, log)
-            except Exception as e:  # noqa: BLE001
-                log(f'  ! {gid}: {type(e).__name__}: {str(e)[:120]}')
-        # dual-screen ways first, then everything with fewer than two pictures
-        todo = sorted((r for r in g.get('routes', []) if len(r.get('screenshots', [])) < 2),
-                      key=lambda r: ('dual-screen' not in r.get('features', []) and 'two-screens' not in r.get('features', [])))
-        for r in todo:
-            if budget <= 0:
-                break
-            budget -= 1
-            try:
-                stats['routes'] += find_screenshots(gid, r['id'], token, model, log)
-            except Exception as e:  # noqa: BLE001
-                log(f"  ! {gid}/{r['id']}: {type(e).__name__}: {str(e)[:120]}")
+        if routes is None and len(original_shots(g)) < 3:
+            tasks.append(('game', gid, None))
+        todo = [r for r in g.get('routes', []) if (routes is not None and r['id'] in routes)
+                or (routes is None and len(r.get('screenshots', [])) < 3)]
+        todo.sort(key=lambda r: not ({'dual-screen', 'two-screens'} & set(r.get('features', []))))
+        tasks += [('route', gid, r['id']) for r in todo]
+    tasks = [t for t in tasks if t[0] == 'game'] + [t for t in tasks if t[0] == 'route'][:max_routes]
+
+    def run(task):
+        kind, gid, rid = task
+        g = read(DATA / 'games' / f'{gid}.json')
+        try:
+            if kind == 'game':
+                return task, game_candidates(g, token, model, log)
+            r = next(x for x in g['routes'] if x['id'] == rid)
+            return task, route_candidates(g, r, token, model, log)
+        except Exception as e:  # noqa: BLE001
+            log(f'  ! {gid}/{rid or "original"}: {type(e).__name__}: {str(e)[:120]}')
+            return task, []
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        results = list(pool.map(run, tasks))
+    for (kind, gid, rid), shots in results:        # writing stays sequential
+        if kind == 'game':
+            path = DATA / 'games' / f'{gid}.json'
+            g = read(path)
+            have = {x['url'] for x in g.get('screenshots', [])}
+            new = [x for x in shots if x['url'] not in have]
+            if new:
+                g['screenshots'] = g.get('screenshots', []) + new
+                write(path, g)
+                if __import__('atlas').validate():
+                    g['screenshots'] = [x for x in g['screenshots'] if x not in new]
+                    write(path, g)
+                else:
+                    stats['games'] += len(new)
+                    log(f'  {gid}: {len(new)} Originalbilder (Prüfung folgt)')
+            else:
+                log(f'  {gid}: keine neuen Originalbilder')
+        else:
+            stats['routes'] += apply_route_shots(gid, rid, shots, log)
     inbox = read(DATA / 'inbox.json')
     for gid in game_ids:
         inbox.setdefault('imageRequests', {})[gid] = TODAY
@@ -913,6 +1018,7 @@ def main():
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     jobs = []   # (kind, value, focus)
     images = []   # game ids whose pictures were requested
+    image_routes = None
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
@@ -929,6 +1035,8 @@ def main():
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
         if 'images' in val:
             images = [x.strip() for x in val['images'].split(',') if x.strip()]
+            if len(images) == 1 and '/' in images[0]:          # one way only: "images: game/route"
+                images, image_routes = [images[0].split('/')[0]], [images[0].split('/', 1)[1]]
         elif 'images-franchise' in val:
             images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
         elif 'game' in val and payload:
@@ -969,10 +1077,10 @@ def main():
     if images:
         images = [gid for gid in images if (DATA / 'games' / f'{gid}.json').exists()]
         print(f"Bilder angefordert: {', '.join(images)}")
-        st = request_images(images, token, model)
-        lines.append(f"- Bilder für {len(images)} Spiel(e) gesucht: {st['games']} Cover/Originalbilder und {st['routes']} "
-                     "Spielweg-Bilder per KI gefunden (dazu Cover und Bilder aus libretro-thumbnails, Steam, Wikipedia und "
-                     "Projekt-READMEs). Die KI-Bildprüfung läuft direkt danach.")
+        st = request_images(images, token, model, routes=image_routes)
+        lines.append(f"- Bilder für {', '.join(images)}{' / ' + image_routes[0] if image_routes else ''}: {st['games']} Originalbilder "
+                     f"und {st['routes']} Spielweg-Bilder neu (aus Wikipedia, Steam, Google Play, YouTube, Reddit, GitHub, "
+                     "Projektseiten; dazu libretro-thumbnails). Die KI-Bildprüfung sortiert danach Unpassendes aus.")
     researched = set()
     for kind, value, extra in jobs:
         try:

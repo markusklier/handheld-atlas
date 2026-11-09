@@ -27,6 +27,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/watch.py
+      - name: libretro-thumbnails listings from cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/libretro
+          key: libretro-${{ github.run_id }}
+          restore-keys: libretro-
       - name: Fill missing covers (libretro-thumbnails)
         continue-on-error: true
         run: python scripts/covers.py
@@ -45,15 +51,9 @@ jobs:
       - run: python scripts/atlas.py validate
       - id: commit
         run: |
-          if git diff --quiet data; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git config user.name "atlas-watcher"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "data: Watcher $(date -u +%F)"
-          # the maintenance agent may have pushed meanwhile; on a conflict skip today, tomorrow's run catches up
-          git pull --rebase origin main || { git rebase --abort; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; }
-          git push
-          echo "changed=true" >> "$GITHUB_OUTPUT"
+          bash scripts/push.sh "data: Watcher $(date -u +%F)"
   deploy:
     needs: watch
     if: needs.watch.outputs.changed == 'true'

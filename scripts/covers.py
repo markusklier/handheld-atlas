@@ -62,8 +62,12 @@ def listing(repo):
             continue
         if SKIP.search(name):
             continue
-        base = norm(name[:-4].split(' (')[0])
+        stem = name[:-4].split(' (')[0]
+        base = norm(stem)
         keys = {base, re.sub(r' version$', '', base)}
+        acro = re.match(r'^([A-Z0-9]{2,5}) - (.+)$', stem)       # "CTR - Crash Team Racing" also as "crash team racing"
+        if acro:
+            keys.add(norm(acro.group(2)))
         for key in keys:
             index.setdefault(key, {}).setdefault(folder, []).append(name)
     return index
@@ -100,7 +104,9 @@ def main(force=False, only=None):
             continue
         g = read(f)
         has_libretro = 'libretro-thumbnails' in (g.get('cover') or {}).get('url', '')
-        if g.get('cover') and not (force and has_libretro):
+        has_snaps = any('libretro-thumbnails' in x['url'] for x in g.get('screenshots', []))
+        # normally only games without cover; on request (only=…) also games that still lack original screenshots
+        if g.get('cover') and not (force and has_libretro) and not (only is not None and not has_snaps):
             continue
         repos = [r for plat in g.get('platforms', []) for r in REPOS.get(plat, [])]
         for repo in repos:
@@ -121,7 +127,8 @@ def main(force=False, only=None):
         if best:
             _, repo, hit = best
             source = f'https://github.com/libretro-thumbnails/{repo}'
-            g['cover'] = {'url': url(repo, 'Named_Boxarts', pick(hit['Named_Boxarts'])), 'source': source}
+            if not g.get('cover') or has_libretro:
+                g['cover'] = {'url': url(repo, 'Named_Boxarts', pick(hit['Named_Boxarts'])), 'source': source}
             shots = [s for s in g.get('screenshots', []) if 'libretro-thumbnails' not in s['url']]
             for folder, caption in (('Named_Snaps', 'Originalspiel'), ('Named_Titles', 'Titelbild')):
                 if hit.get(folder):

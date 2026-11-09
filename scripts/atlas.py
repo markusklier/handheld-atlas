@@ -33,6 +33,26 @@ CHANGELOG_TYPES = {'system', 'release', 'route-added', 'route-updated', 'game-ad
                    'project-added', 'screenshot-added', 'verified', 'removed'}
 
 
+PLATFORM_ALIASES = {
+    'PC (Windows)': 'PC', 'PC (MS-DOS)': 'PC', 'PC (MS-DOS, Windows)': 'PC', 'MS-DOS': 'PC', 'DOS': 'PC', 'Windows': 'PC',
+    'PC (Microsoft Store)': 'PC', 'PC / SteamVR': 'PC', 'Microsoft Windows': 'PC', 'Steam': 'PC',
+    'Mac': 'Macintosh', 'macOS': 'Macintosh', 'Mac OS': 'Macintosh', 'Classic Mac OS': 'Macintosh',
+    'Xbox Series X|S': 'Xbox Series', 'Xbox Series X/S': 'Xbox Series', 'Xbox Series X': 'Xbox Series',
+    'GameCube': 'Nintendo GameCube', 'Stadia': 'Google Stadia', 'PlayStation 4 / PlayStation VR': 'PlayStation 4',
+    'PS1': 'PlayStation', 'PSX': 'PlayStation', 'PlayStation 1': 'PlayStation', 'PS2': 'PlayStation 2', 'PS3': 'PlayStation 3',
+    'PS4': 'PlayStation 4', 'PS5': 'PlayStation 5', 'PS Vita': 'PlayStation Vita', 'Switch': 'Nintendo Switch',
+    'Nintendo Entertainment System': 'NES', 'Super Nintendo': 'SNES', 'Super NES': 'SNES', 'N64': 'Nintendo 64',
+    'Sega Genesis': 'Sega Mega Drive', 'Mega Drive': 'Sega Mega Drive', 'Genesis': 'Sega Mega Drive', 'Sega Dreamcast': 'Dreamcast',
+    'Game Boy': 'Game Boy / Game Boy Color', 'Game Boy Color': 'Game Boy / Game Boy Color', 'GBA': 'Game Boy Advance',
+    '3DS': 'Nintendo 3DS', 'NDS': 'Nintendo DS', 'DS': 'Nintendo DS', 'iPhone': 'iOS', 'iPadOS': 'iOS',
+}
+
+
+def canon_platforms(plats):
+    """Canonical platform names (the AI writes "PC (MS-DOS)", "Xbox Series X|S" …), without duplicates."""
+    return list(dict.fromkeys(PLATFORM_ALIASES.get((p or '').strip(), (p or '').strip()) for p in plats or [] if (p or '').strip()))
+
+
 def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))
 
@@ -317,6 +337,9 @@ def repair():
         if g.get('cover') and bad(g['cover']):
             g.pop('cover')
             removed += 1
+        g['platforms'] = canon_platforms(g.get('platforms'))
+        for v in g.get('versions', []):
+            v['platforms'] = canon_platforms(v.get('platforms'))
         for holder in [g, *g.get('versions', []), *g.get('routes', []), *g.get('mods', [])]:
             for key in ('summary', 'note', 'dualScreen', 'benefit', 'caveat', 'description'):
                 if isinstance(holder.get(key), str) and MD_CITE.search(holder[key]):

@@ -9,11 +9,9 @@
     "PlayStation 3",
     "PlayStation 4",
     "Xbox One",
-    "PlayStation 4 / PlayStation VR",
-    "PC / SteamVR",
     "Amazon Alexa",
     "PlayStation 5",
-    "Xbox Series X|S",
+    "Xbox Series",
     "Nintendo Switch 2"
   ],
   "cover": {
@@ -99,7 +97,7 @@
         "PlayStation 4",
         "Xbox One",
         "PlayStation 5",
-        "Xbox Series X|S"
+        "Xbox Series"
       ],
       "year": 2021,
       "traits": [
@@ -179,8 +177,8 @@
       "name": "Skyrim VR",
       "type": "port",
       "platforms": [
-        "PlayStation 4 / PlayStation VR",
-        "PC / SteamVR"
+        "PlayStation 4",
+        "PC"
       ],
       "year": 2017,
       "traits": [
@@ -216,7 +214,7 @@
       "type": "port",
       "platforms": [
         "PlayStation 5",
-        "Xbox Series X|S"
+        "Xbox Series"
       ],
       "year": 2021,
       "traits": [

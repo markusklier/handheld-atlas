@@ -153,7 +153,8 @@ function cardHTML(g) {
       ${slides > 1 ? `<span class="nav prev" data-slide="-1" aria-hidden="true">${icon('back')}</span><span class="nav next" data-slide="1" aria-hidden="true">${icon('back')}</span>` : ''}
       ${slides ? `<span class="shots">${icon('compass')}${slides}</span>` : ''}
     </div>
-    <div><div class="t">${esc(g.title)}</div><div class="s">${ways}</div></div></a>`;
+    <div><div class="t">${esc(g.title)}</div><div class="s">${ways}</div>
+      <i class="explored lvl-${completeness(g).level}" style="--v:${completeness(g).pct}%" title="Datenstand: ${LEVEL_LABEL[completeness(g).level]} (${completeness(g).pct} %)"></i></div></a>`;
 }
 
 /* ---- card slideshow (mouse hover, gamepad/keyboard focus, arrows) ---- */
@@ -336,6 +337,7 @@ function filterGames() {
     },
     title: (a, b) => a.title.localeCompare(b.title, 'de'),
     updated: (a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || '') || b._score - a._score,
+    explored: (a, b) => completeness(a).pct - completeness(b).pct || b._score - a._score,
   };
   return list.sort(sorters[state.sort] || sorters.relevance);
 }
@@ -350,7 +352,7 @@ function viewDiscover() {
     <div class="filters" role="group" aria-label="Filter">
       ${FILTERS.map((f) => `<button class="chip" data-chip="${f.id}" aria-pressed="${state.chips.has(f.id)}">${icon(f.icon)}${f.label}</button>`).join('')}
       <select class="chip" id="platform" aria-label="Plattform"><option value="">Alle Plattformen</option>${DB.allPlatforms.map((p) => `<option ${p === state.platform ? 'selected' : ''}>${esc(p)}</option>`).join('')}</select>
-      <select class="chip" id="sort" aria-label="Sortierung">${[['relevance', 'Relevanz'], ['title', 'A–Z'], ['updated', 'Zuletzt aktualisiert']].map(([v, l]) => `<option value="${v}" ${v === state.sort ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      <select class="chip" id="sort" aria-label="Sortierung">${[['relevance', 'Relevanz'], ['title', 'A–Z'], ['updated', 'Zuletzt aktualisiert'], ['explored', 'Wenig erkundet zuerst']].map(([v, l]) => `<option value="${v}" ${v === state.sort ? 'selected' : ''}>${l}</option>`).join('')}</select>
       ${filtering ? '<button class="chip" id="reset">Zurücksetzen</button>' : ''}
     </div>`;
   if (!filtering) {
@@ -636,15 +638,14 @@ function viewGame(id) {
       <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
       <div class="row"><button class="btn ${fav ? 'on' : ''}" id="fav">${icon('bookmark')}${fav ? 'Gemerkt' : 'Merken'}</button>
-      <button class="btn" data-analyze="${esc(g.id)}">${icon('ai')}Sofortanalyse</button>
-      ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Recherche anfordern</a>` : ''}
-      </div><div class="row">${researchStatus(g)}${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
-      ${imageStatus(g)}
+      <button class="btn" data-analyze="${esc(g.id)}" title="Sofort auf diesem Gerät mit deinem OpenAI-Schlüssel">${icon('ai')}Sofortanalyse</button>
+      </div><div class="row">${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
     </div></div>
+    ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>So sieht das Spiel aus</h2><span class="faint">Originalspiel</span></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
+    ${dataPanel(g)}
     ${analysisPanel(g.id)}
     ${recommendation(g, fitting)}
     ${dualBox(g, fitting)}
-    ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>Originalspiel</h2></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
     <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>`;
 }
 
@@ -666,6 +667,7 @@ function routeHTML(g, r) {
     ${r.features?.includes('dual-screen') ? `<div class="dualbox">${icon('dual')}<span>Zweiter Bildschirm: ${esc(r.dualScreen || 'unterstützt')}</span></div>` : ''}
     ${feats ? `<div class="row">${feats}</div>` : ''}
     ${shotsHTML(r.screenshots, 'r:' + r.id)}
+    ${wayImageButton(g, r)}
     <div class="cols">
       ${r.benefit ? `<div><h4>Vorteil</h4><p>${esc(r.benefit)}</p></div>` : ''}
       ${r.caveat ? `<div><h4>Beachten</h4><p class="warn">${esc(r.caveat)}</p></div>` : ''}
@@ -950,19 +952,139 @@ const isDual = (w) => w.features.includes('dual-screen') || w.features.includes(
 const dualLabel = (w) => label('dualScreenTypes', w.r?.dualScreenType || (w.features.includes('two-screens') ? 'native' : 'integrated'));
 
 const isDualRoute = (r) => (r.features || []).some((f) => f === 'dual-screen' || f === 'two-screens');
-function imageStatus(g) {
+
+/* How well explored is a game? Transparent checklist – each point says what is missing and what helps. */
+function completeness(g) {
   const orig = g.screenshots.filter((s) => s.caption !== 'Titelbild').length;
-  const withShot = g.routes.filter((r) => (r.screenshots || []).length).length;
-  const dual = g.routes.filter(isDualRoute);
-  const dualShot = dual.filter((r) => (r.screenshots || []).length).length;
-  const missing = !g.cover || orig < 2 || withShot < g.routes.length;
-  const ok = (b) => (b ? '✓' : '✗');
-  const parts = [`Cover ${ok(g.cover)}`, `${orig} ${orig === 1 ? 'Originalbild' : 'Originalbilder'}`,
-    g.routes.length ? `Spielwege mit Bild ${withShot}/${g.routes.length}` : '', dual.length ? `davon Dual Screen ${dualShot}/${dual.length}` : ''].filter(Boolean);
-  const req = DB.imageRequests[g.id];
-  return `<div class="row imgstat"><span class="faint">${icon('image')} ${parts.join(' · ')}${req ? ` · zuletzt gesucht ${fmtDate(req)}` : ''}</span>
-    ${DB.meta.repo ? `<a class="btn small${missing ? ' primary' : ''}" href="${esc(issueUrl('Bilder: ' + g.title, 'images: ' + g.id))}" target="_blank" rel="noopener"
-      title="Sucht Cover, Originalbilder und Bilder für jeden Spielweg (Dual Screen zuerst); nach etwa 3–5 Minuten in der App">${icon('image')}Bilder suchen</a>` : ''}</div>`;
+  const routes = g.routes;
+  const shotRatio = routes.length ? routes.filter((r) => (r.screenshots || []).length).length / routes.length : 0;
+  const dual = routes.filter(isDualRoute);
+  const dualShots = dual.filter((r) => (r.screenshots || []).length).length;
+  const vers = g.versions || [];
+  const researched = DB.researched?.[g.id];
+  const reports = vers.some((v) => (v.reports || []).length) || routes.some((r) => (r.reports || []).length);
+  const items = [
+    { ok: !!researched, part: 0, w: 3, label: researched ? `Tiefenrecherche ${fmtDate(researched)}` : 'Noch nicht tiefenrecherchiert', fix: 'research' },
+    { ok: !!g.cover, w: 1, label: g.cover ? 'Cover' : 'Kein Cover', fix: 'images' },
+    { ok: orig >= 3, part: Math.min(orig, 3) / 3, w: 2, label: `${orig} ${orig === 1 ? 'Originalbild' : 'Originalbilder'}`, fix: 'images' },
+    { ok: vers.length > 1 && vers.filter((v) => v.year).length >= vers.length / 2, part: vers.length > 1 ? 0.5 : 0, w: 1,
+      label: `${vers.length} ${vers.length === 1 ? 'Fassung' : 'Fassungen'}${vers.filter((v) => v.year).length ? `, ${vers.filter((v) => v.year).length} mit Jahr` : ''}`, fix: 'research' },
+    { ok: routes.length > 0, w: 2, label: routes.length ? `${routes.length} ${routes.length === 1 ? 'Spielweg' : 'Spielwege'}` : 'Keine eigenen Spielwege (nur allgemeine Emulatoren)', fix: 'research' },
+  ];
+  if (routes.length) items.push({ ok: shotRatio >= 0.8, part: shotRatio, w: 2, label: `Spielwege mit Bild ${routes.filter((r) => (r.screenshots || []).length).length}/${routes.length}`, fix: 'images' });
+  if (dual.length) items.push({ ok: dualShots === dual.length, part: dualShots / dual.length, w: 2, label: `Dual Screen mit Bild ${dualShots}/${dual.length}`, fix: 'images' });
+  items.push({ ok: reports, w: 1, label: reports ? 'Erfahrungsberichte vorhanden' : 'Keine Erfahrungsberichte', fix: null });
+  const total = items.reduce((n, i) => n + i.w, 0);
+  const got = items.reduce((n, i) => n + i.w * (i.ok ? 1 : i.part || 0), 0);
+  const pct = Math.round((got / total) * 100);
+  return { pct, items, level: pct >= 75 ? 'gut' : pct >= 45 ? 'teils' : 'wenig' };
+}
+const LEVEL_LABEL = { gut: 'Gut erkundet', teils: 'Teilweise erkundet', wenig: 'Wenig erkundet' };
+
+function dataPanel(g) {
+  const c = completeness(g);
+  const req = pendingFor(g.id);
+  const needImages = c.items.some((i) => !i.ok && i.fix === 'images');
+  const needResearch = c.items.some((i) => !i.ok && i.fix === 'research');
+  const imgReq = DB.imageRequests[g.id];
+  const btn = (kind, primary) => !DB.meta.repo ? '' : kind === 'images'
+    ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Bilder: ' + g.title, 'images: ' + g.id))}" target="_blank" rel="noopener" title="Cover, Originalbilder und Bilder für jeden Spielweg (Dual Screen zuerst)">${icon('image')}Bilder suchen</a>`
+    : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Tiefenrecherche anfordern</a>`;
+  return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' ? ' open' : ''}>
+    <summary><span class="meter"><span>Datenstand: <b>${LEVEL_LABEL[c.level]}</b></span><b>${c.pct} %</b><i style="--v:${c.pct}%"></i></span></summary>
+    <ul class="checklist">${c.items.map((i) => `<li class="${i.ok ? 'ok' : i.part ? 'part' : 'miss'}">${icon(i.ok ? 'check' : 'alert')}${esc(i.label)}</li>`).join('')}</ul>
+    <p class="req-run" data-req-game="${esc(g.id)}"${req ? '' : ' hidden'}>${icon('spark')} <span>${esc(req?.label || '')}</span></p>
+    <div class="row">${btn('research', needResearch && !needImages)}${btn('images', needImages)}
+      ${researchStatus(g)}${imgReq ? `<span class="faint">Bilder zuletzt gesucht ${fmtDate(imgReq)}</span>` : ''}</div>
+    <p class="faint">Tiefenrecherche = Fassungen, Spielwege, Mods und Berichte (3–5 Min.). Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
+  </details>`;
+}
+
+function wayImageButton(g, r) {
+  if (!DB.meta.repo) return '';
+  const n = (r.screenshots || []).length;
+  const dual = isDualRoute(r);
+  if (n >= 4 && !dual) return '';
+  const label = n ? (dual ? 'Mehr Dual-Screen-Bilder suchen' : 'Mehr Bilder suchen') : (dual ? 'Wie sieht das aus? Dual-Screen-Bilder suchen' : 'Bilder für diesen Weg suchen');
+  return `<div class="row"><a class="btn small${n ? '' : ' primary'}" href="${esc(issueUrl(`Bilder: ${g.title} – ${r.name}`, `images: ${g.id}/${r.id}`))}" target="_blank" rel="noopener"
+    title="Sucht Videos, Beiträge und Projektseiten, die genau diesen Weg zeigen">${icon('image')}${label}</a>${n ? '' : '<span class="faint">Noch kein Bild für diesen Weg.</span>'}</div>`;
+}
+
+/* ---------- requests (GitHub issues) the user started from this device: live status ---------- */
+const REQ_KEY = 'requests';
+const requests = () => store.get(REQ_KEY, []).filter((r) => Date.now() - r.at < 3 * 3600e3);
+function pendingFor(gameId) {
+  const r = requests().find((x) => x.game === gameId && x.state !== 'done');
+  if (!r) return null;
+  const min = Math.max(1, Math.round((Date.now() - r.at) / 60000));
+  return { ...r, label: r.state === 'open' ? `${r.title} läuft seit ${min} Min. …` : r.state === 'closed' ? `${r.title} ist fertig – die App wird gerade aktualisiert …` : `${r.title}: warte, bis das Issue auf GitHub abgeschickt ist …` };
+}
+document.addEventListener('click', (e) => {
+  const a = e.target.closest?.('a[href*="/issues/new?"]');
+  if (!a) return;
+  const u = new URL(a.href);
+  const body = u.searchParams.get('body') || '';
+  const m = /^(?:game|images|new-game):\s*([^\n/]+)/m.exec(body);
+  const list = requests().filter((r) => r.title !== u.searchParams.get('title'));
+  list.unshift({ title: u.searchParams.get('title'), game: m ? m[1].trim() : null, at: Date.now(), state: 'new' });
+  store.set(REQ_KEY, list.slice(0, 12));
+  toast(`Anfrage vorbereitet – bitte auf GitHub „Create“ tippen. Atlas zeigt hier, wenn sie läuft und fertig ist.`);
+  scheduleRequestPoll(20000);
+});
+let reqTimer = null, reqEtag = null, reqCache = null;
+function scheduleRequestPoll(ms = 75000) {
+  clearTimeout(reqTimer);
+  if (!DB.meta.repo || !requests().some((r) => r.state !== 'done')) { renderRequestPill(); return; }
+  reqTimer = setTimeout(pollRequests, ms);
+  renderRequestPill();
+}
+async function pollRequests() {
+  if (document.hidden) { scheduleRequestPoll(); return; }
+  try {
+    // ETag: unchanged answers (304) do not count against GitHub's limit for anonymous requests
+    const res = await fetch(`https://api.github.com/repos/${DB.meta.repo}/issues?labels=recherche&state=all&sort=created&direction=desc&per_page=30`,
+      { headers: reqEtag ? { 'If-None-Match': reqEtag } : {} });
+    if (res.status === 200) { reqEtag = res.headers.get('ETag'); reqCache = await res.json(); }
+    const issues = reqCache || [];
+    const list = requests();
+    let finished = false;
+    for (const r of list) {
+      if (r.state === 'done') continue;
+      const is = issues.find((i) => i.title === r.title && new Date(i.created_at).getTime() >= r.at - 120000);
+      if (!is) { if (Date.now() - r.at > 20 * 60000) r.state = 'done'; continue; }     // never submitted
+      r.url = is.html_url;
+      if (is.state === 'open') r.state = 'open';
+      else if (r.state !== 'closed') { r.state = 'closed'; r.closedAt = Date.now(); finished = true; }
+      if (r.state === 'closed' && Date.now() - (r.closedAt || 0) > 8 * 60000) r.state = 'done';
+    }
+    store.set(REQ_KEY, list);
+    if (list.some((r) => r.state === 'closed')) await waitForData(finished);
+  } catch { /* offline – try again later */ }
+  scheduleRequestPoll(requests().some((r) => r.state === 'closed') ? 25000 : 75000);
+}
+async function waitForData(justFinished) {
+  try {
+    const v = await (await fetch('version.json', { cache: 'no-store' })).json();
+    if (state.version && v.version !== state.version) {
+      const list = requests().map((r) => (r.state === 'closed' ? { ...r, state: 'done' } : r));
+      store.set(REQ_KEY, list);
+      toast(`Deine Anfrage ist fertig – neue Daten sind da. <button class="btn primary" onclick="location.reload()">Jetzt laden</button>`, 0);
+    } else if (justFinished) toast('Anfrage fertig – die App wird gerade neu veröffentlicht (etwa 1 Minute).');
+  } catch { /* ignore */ }
+}
+function renderRequestPill() {
+  for (const el of document.querySelectorAll('[data-req-game]')) {       // status line in the open game page
+    const req = pendingFor(el.dataset.reqGame);
+    el.hidden = !req;
+    if (req) el.querySelector('span').textContent = req.label;
+  }
+  let pill = document.getElementById('req-pill');
+  const open = requests().filter((r) => r.state !== 'done');
+  if (!open.length) { pill?.remove(); return; }
+  if (!pill) { pill = document.createElement('div'); pill.id = 'req-pill'; document.body.appendChild(pill); }
+  const word = { new: 'wartet auf Abschicken', open: 'läuft', closed: 'fertig, wird veröffentlicht' };
+  pill.innerHTML = `${icon('spark')}<span>${open.length === 1 ? esc(open[0].title) + ' – ' + word[open[0].state] : `${open.length} Anfragen: ` + open.map((r) => word[r.state]).join(', ')}</span>`
+    + (open[0].url ? `<a class="link" href="${esc(open[0].url)}" target="_blank" rel="noopener">Details</a>` : '');
 }
 
 function researchStatus(g) {
@@ -978,7 +1100,8 @@ function dualBox(g, ways) {
   if (!dual.length) return '';
   return `<section class="section"><div class="section-head"><h2>${icon('dual')} Dual Screen für dieses Spiel</h2><span class="faint">${dual.length} ${dual.length === 1 ? 'Möglichkeit' : 'Möglichkeiten'}</span></div>
     <div class="table-wrap"><table class="compare dual-table"><thead><tr><th>Weg</th><th>Fassung</th><th>Integration</th><th>Zweiter Bildschirm</th><th>Prüfstufe</th></tr></thead><tbody>
-    ${dual.map((w) => `<tr><td><button class="linkish" data-open="${esc(w.key)}">${esc(w.name)}</button>${w.r?.status === 'archived' ? ' <span class="tag archived">archiviert</span>' : ''}</td>
+    ${dual.map((w) => `<tr><td><button class="linkish" data-open="${esc(w.key)}">${esc(w.name)}</button>${w.r?.status === 'archived' ? ' <span class="tag archived">archiviert</span>' : ''}
+      ${w.r && !(w.r.screenshots || []).length && DB.meta.repo ? `<br><a class="link small" href="${esc(issueUrl(`Bilder: ${g.title} – ${w.r.name}`, `images: ${g.id}/${w.r.id}`))}" target="_blank" rel="noopener">${icon('image')}Kein Bild – suchen</a>` : ''}</td>
       <td>${esc(w.v.name)}</td><td><span class="tag dual">${esc(dualLabel(w))}</span></td><td>${esc(w.r?.dualScreen || '–')}</td><td>${wayTag(w)}</td></tr>`).join('')}
     </tbody></table></div>
     <p class="faint">Im Spiel integriert = das Spiel oder der Port zeichnet selbst live auf den zweiten Bildschirm · Companion-App = separate Begleit-App · Zusatzinfos = statische Karte/Infos.</p></section>`;
@@ -1333,6 +1456,7 @@ async function init() {
     closeLightbox(); route();
   });
   route();
+  scheduleRequestPoll(3000);
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.ATLAS_EMBEDDED) navigator.serviceWorker.register('sw.js').catch(() => {});
   document.addEventListener('visibilitychange', () => { if (!document.hidden) checkUpdate(false); });
   if (navigator.getGamepads && [...navigator.getGamepads()].some(Boolean)) { pads.running = true; requestAnimationFrame(pollPads); }

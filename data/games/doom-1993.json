@@ -11,10 +11,9 @@
     "Xbox One",
     "Xbox Series",
     "Nintendo Switch",
-    "Mac",
+    "Macintosh",
     "iOS",
-    "PlayStation 3",
-    "Xbox Series X/S"
+    "PlayStation 3"
   ],
   "genre": "Ego-Shooter",
   "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
@@ -123,7 +122,7 @@
       "year": 1996,
       "platforms": [
         "PC",
-        "Mac"
+        "Macintosh"
       ],
       "links": [
         {
@@ -236,7 +235,7 @@
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
-        "Xbox Series X/S"
+        "Xbox Series"
       ],
       "links": [
         {

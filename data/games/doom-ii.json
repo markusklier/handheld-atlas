@@ -7,7 +7,6 @@
     "Macintosh",
     "NEC PC-98",
     "PlayStation",
-    "PC (Windows)",
     "Sega Saturn",
     "Acorn RISC OS",
     "Game Boy Advance",
@@ -149,7 +148,7 @@
       "name": "DOOM II für Windows 95 / Doom95 (1996)",
       "type": "port",
       "platforms": [
-        "PC (Windows)"
+        "PC"
       ],
       "year": 1996,
       "traits": [
@@ -283,7 +282,7 @@
       "name": "DOOM II in DOOM 3: BFG Edition (2012)",
       "type": "rerelease",
       "platforms": [
-        "PC (Windows)",
+        "PC",
         "PlayStation 3",
         "Xbox 360",
         "Android (NVIDIA SHIELD)"

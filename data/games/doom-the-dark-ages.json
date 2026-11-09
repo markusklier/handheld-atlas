@@ -5,7 +5,7 @@
   "platforms": [
     "PC",
     "PlayStation 5",
-    "Xbox Series X/S"
+    "Xbox Series"
   ],
   "versions": [
     {
@@ -30,7 +30,7 @@
       "name": "Xbox Series X/S",
       "type": "release",
       "platforms": [
-        "Xbox Series X/S"
+        "Xbox Series"
       ]
     }
   ],

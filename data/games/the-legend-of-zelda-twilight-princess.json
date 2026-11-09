@@ -4,8 +4,7 @@
   "franchise": "The Legend of Zelda",
   "platforms": [
     "Nintendo GameCube",
-    "Wii",
-    "GameCube"
+    "Wii"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Twilight%20Princess%20%28USA%29.png",
@@ -45,7 +44,7 @@
       "name": "GameCube",
       "type": "release",
       "platforms": [
-        "GameCube"
+        "Nintendo GameCube"
       ]
     }
   ],

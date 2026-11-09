@@ -141,27 +141,64 @@ class ModesTest(unittest.TestCase):
 
 
 class ScreenshotSearchTest(ModesTest):
-    def test_dual_screen_routes_first_and_only_sourced_images(self):
+    PAGES = {
+        'https://reddit.com/r/AYN/comments/z': [{'url': 'https://i.redd.it/thor.jpg', 'source': 'https://reddit.com/r/AYN/comments/z', 'caption': 'Beide Bildschirme'}],
+        'https://www.youtube.com/watch?v=abcdefghijk': [{'url': 'https://i.ytimg.com/vi/abcdefghijk/maxresdefault.jpg',
+                                                          'source': 'https://www.youtube.com/watch?v=abcdefghijk', 'caption': 'Video-Vorschaubild'}],
+        'https://not-searched.example/': [{'url': 'https://cdn.example.com/x.png', 'source': 'https://not-searched.example/', 'caption': ''}],
+    }
+
+    def setUp(self):
+        super().setUp()
+        import images
+        self._orig = (images.images_from_page, ai_research.reachable, ai_research.call_openai)
+        images.images_from_page = lambda url, *a, **k: self.PAGES.get(url, [])
+        ai_research.reachable = lambda url: 'maxresdefault' not in url      # low-res video: fall back to hqdefault
+
+    def tearDown(self):
+        import images
+        images.images_from_page, ai_research.reachable, ai_research.call_openai = self._orig
+        super().tearDown()
+
+    def test_dual_screen_routes_first_and_pictures_come_from_found_pages(self):
         todo = ai_research.routes_without_shots(50)
         games = {gid: atlas.read(atlas.DATA / 'games' / f'{gid}.json') for gid, _ in todo}
         dual = ['dual-screen' in next(r for r in games[g]['routes'] if r['id'] == rid).get('features', []) for g, rid in todo]
         self.assertEqual(dual, sorted(dual, reverse=True))          # all dual-screen ways come first
         gid, rid = todo[0]
-        resp = fake_response({'screenshots': [
-            {'url': 'https://i.redd.it/thor.jpg', 'caption': 'Beide Bildschirme', 'sourceUrl': 'https://reddit.com/r/AYN/comments/z'},
-            {'url': 'https://example.com/logo.svg', 'caption': 'Logo', 'sourceUrl': 'https://reddit.com/r/AYN/comments/z'},
-            {'url': 'https://cdn.example.com/x.png', 'caption': 'x', 'sourceUrl': 'https://not-searched.example/'}]},
-            ['https://reddit.com/r/AYN/comments/z'])
-        original = ai_research.call_openai
-        ai_research.call_openai = lambda payload, token: resp
-        try:
-            n = ai_research.find_screenshots(gid, rid, 'key', 'model', log=lambda *a: None)
-        finally:
-            ai_research.call_openai = original
-        self.assertEqual(n, 1)
-        route = next(r for r in atlas.read(atlas.DATA / 'games' / f'{gid}.json')['routes'] if r['id'] == rid)
-        self.assertEqual([(s['url'], s['check']) for s in route['screenshots']], [('https://i.redd.it/thor.jpg', 'ai')])
+        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        r = next(x for x in g['routes'] if x['id'] == rid)
+        r['links'], r['projects'] = [{'label': 'Video', 'url': 'https://www.youtube.com/watch?v=abcdefghijk'}], []
+        atlas.write(atlas.DATA / 'games' / f'{gid}.json', g)
+        ai_research.call_openai = lambda payload, token: fake_response({'pages': [
+            {'url': 'https://reddit.com/r/AYN/comments/z', 'shows': 'Beide Bildschirme'},
+            {'url': 'https://not-searched.example/', 'shows': 'x'}]}, ['https://reddit.com/r/AYN/comments/z'])
+        n = ai_research.find_screenshots(gid, rid, 'key', 'model', log=lambda *a: None)
+        route = next(x for x in atlas.read(atlas.DATA / 'games' / f'{gid}.json')['routes'] if x['id'] == rid)
+        self.assertEqual(n, 2)
+        self.assertEqual([(x['url'], x['check']) for x in route['screenshots']],
+                         [('https://i.ytimg.com/vi/abcdefghijk/hqdefault.jpg', 'ai'), ('https://i.redd.it/thor.jpg', 'ai')])
         self.assertNotIn((gid, rid), ai_research.routes_without_shots(50))   # not searched again this month
+        self.assertEqual(atlas.validate(), [])
+
+    def test_request_for_one_way_only(self):
+        gid = 'crash-team-racing'
+        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        rid = g['routes'][0]['id']
+        g['routes'][0]['links'], g['routes'][0]['projects'] = [{'label': 'Post', 'url': 'https://reddit.com/r/AYN/comments/z'}], []
+        g['routes'][0]['screenshots'] = []
+        atlas.write(atlas.DATA / 'games' / f'{gid}.json', g)
+        basic = ai_research.images_basic
+        ai_research.images_basic = lambda ids, log=print: None
+        ai_research.call_openai = lambda payload, token: fake_response({'pages': []}, [])
+        try:
+            st = ai_research.request_images([gid], 'key', 'model', log=lambda *a: None, routes=[rid])
+        finally:
+            ai_research.images_basic = basic
+        g2 = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        self.assertEqual(st, {'games': 0, 'routes': 1})
+        self.assertEqual(g2['routes'][0]['screenshots'][0]['url'], 'https://i.redd.it/thor.jpg')
+        self.assertEqual(g2['screenshots'], g['screenshots'])           # original pictures untouched
         self.assertEqual(atlas.validate(), [])
 
 
@@ -248,23 +285,25 @@ class FranchiseAndImagesTest(ModesTest):
         self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'zz-raid-2013')         # new games researched first
         self.assertEqual(atlas.validate(), [])
 
-    def test_image_request_adds_checked_later_original_images(self):
+    def test_image_request_finds_original_pictures_on_pages(self):
+        import images
         gid = 'zz-raid'
-        resp = fake_response({'cover': {'url': 'https://upload.wikimedia.org/zz.jpg', 'sourceUrl': 'https://en.wikipedia.org/wiki/ZZ'},
-                              'screenshots': [{'url': 'https://shared.steamstatic.com/ss_1.jpg', 'caption': 'Erster Level', 'sourceUrl': 'https://store.steampowered.com/app/1/'},
-                                              {'url': 'https://elsewhere.example/x.jpg', 'caption': 'x', 'sourceUrl': 'https://elsewhere.example/'}]},
-                             ['https://en.wikipedia.org/wiki/ZZ', 'https://store.steampowered.com/app/1/'])
-        original, basic = ai_research.call_openai, ai_research.images_basic
-        ai_research.call_openai = lambda payload, token: resp
+        pages = {'https://store.steampowered.com/app/1/': [{'url': 'https://shared.steamstatic.com/ss_1.jpg', 'source': 'https://store.steampowered.com/app/1/', 'caption': 'Originalspiel'}],
+                 'https://elsewhere.example/': [{'url': 'https://elsewhere.example/x.jpg', 'source': 'https://elsewhere.example/', 'caption': ''}]}
+        orig = (ai_research.call_openai, ai_research.images_basic, images.images_from_page, ai_research.reachable)
+        ai_research.call_openai = lambda payload, token: fake_response({'pages': [
+            {'url': 'https://store.steampowered.com/app/1/', 'shows': 'Spielszenen'}, {'url': 'https://elsewhere.example/', 'shows': 'x'}]},
+            ['https://store.steampowered.com/app/1/'])
         ai_research.images_basic = lambda ids, log=print: None          # no network in tests
+        images.images_from_page = lambda url, *a, **k: pages.get(url, [])
+        ai_research.reachable = lambda url: True
         try:
             st = ai_research.request_images([gid], 'key', 'model', log=lambda *a: None)
         finally:
-            ai_research.call_openai, ai_research.images_basic = original, basic
+            ai_research.call_openai, ai_research.images_basic, images.images_from_page, ai_research.reachable = orig
         g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
-        self.assertEqual(st['games'], 2)
-        self.assertEqual((g['cover']['url'], g['cover']['check']), ('https://upload.wikimedia.org/zz.jpg', 'ai'))
-        self.assertEqual([s['url'] for s in g['screenshots']], ['https://shared.steamstatic.com/ss_1.jpg'])
+        self.assertEqual(st['games'], 1)
+        self.assertEqual([(x['url'], x['check']) for x in g['screenshots']], [('https://shared.steamstatic.com/ss_1.jpg', 'ai')])
         self.assertIn(gid, atlas.read(atlas.DATA / 'inbox.json')['imageRequests'])
         self.assertEqual(atlas.validate(), [])
 

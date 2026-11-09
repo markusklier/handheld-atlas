@@ -4,7 +4,7 @@
   "franchise": "Doom",
   "platforms": [
     "Nintendo 64",
-    "Windows",
+    "PC",
     "Nintendo Switch",
     "PlayStation 4",
     "Xbox One",
@@ -25,7 +25,7 @@
       "name": "DOOM 64 – Neuauflage (2020)",
       "type": "remaster",
       "platforms": [
-        "Windows",
+        "PC",
         "Nintendo Switch",
         "PlayStation 4",
         "Xbox One",
