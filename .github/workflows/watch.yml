@@ -3,7 +3,7 @@ name: Watcher
 # missing covers and screenshots (libretro-thumbnails, project READMEs, Steam, Wikipedia). Commits straight to main and redeploys the app.
 on:
   schedule:
-    - cron: '17 5 * * *'
+    - cron: '16 5 * * *'
   workflow_dispatch:
 permissions:
   contents: write
