@@ -501,11 +501,12 @@ Plattformnamen wenn möglich aus dieser Liste: {', '.join(known_platforms)}, son
             if any(title_key(v['name']).startswith(title_key(title)) or (v.get('year') == item.get('year') and
                    v.get('type') == item.get('versionType')) for v in g.get('versions', [])):
                 continue
-            vid = slug(title)[:40]
+            plats = [p for p in item.get('platforms', [])[:8] if p]
+            vid = slug(title if title_key(title) != title_key(g['title']) else f"{'-'.join(plats[:2])}-{item['year']}")[:40]
             while any(v['id'] == vid for v in g.get('versions', [])):
                 vid += '-2'
-            plats = [p for p in item.get('platforms', [])[:8] if p]
-            g.setdefault('versions', []).append({'id': vid, 'name': f"{title} ({item['year']})", 'type': item.get('versionType') or 'rerelease',
+            vname = title if title_key(title) != title_key(g['title']) else ', '.join(plats or ['Fassung'])   # "DOOM 3" → "Xbox"
+            g.setdefault('versions', []).append({'id': vid, 'name': f"{vname} ({item['year']})", 'type': item.get('versionType') or 'rerelease',
                                                  'year': item['year'], 'platforms': plats or g.get('platforms', [])[:1],
                                                  'links': [{'label': 'Quelle', 'url': item['sourceUrl']}]})
             g['platforms'] += [p for p in plats if p not in g['platforms']]

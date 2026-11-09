@@ -206,50 +206,54 @@ class QueueAndDualScanTest(ModesTest):
 
 
 class FranchiseAndImagesTest(ModesTest):
+    def setUp(self):
+        super().setUp()
+        quiet = lambda *a: None
+        ai_research.create_game('ZZ Raid', ['PlayStation'], 'ZZ Raid', 1996, log=quiet)
+        ai_research.create_game('ZZ Raid II', ['PC'], 'ZZ Raid', 1997, log=quiet)
+
     def test_find_game_respects_reboots_and_subtitles(self):
-        self.assertEqual(ai_research.find_game('Doom II: Hell on Earth', 1994), 'doom-ii')       # same game, subtitle
-        self.assertIsNone(ai_research.find_game('DOOM', 2016))                                   # reboot ≠ DOOM (1993)
-        self.assertIsNone(ai_research.find_game('Tomb Raider', 2013))                            # reboot ≠ Tomb Raider (1996)
-        self.assertEqual(ai_research.find_game('Tomb Raider', 1996), 'tomb-raider')
-        gid, created = ai_research.create_game('Tomb Raider', ['PC'], 'Tomb Raider', 2013, log=lambda *a: None)
+        self.assertEqual(ai_research.find_game('ZZ Raid II: The Dagger', 1997), 'zz-raid-ii')     # same game, subtitle
+        self.assertIsNone(ai_research.find_game('ZZ Raid', 2013))                                # reboot ≠ 1996 game
+        self.assertEqual(ai_research.find_game('ZZ Raid', 1996), 'zz-raid')
+        gid, created = ai_research.create_game('ZZ Raid', ['PC'], 'ZZ Raid', 2013, log=lambda *a: None)
         self.assertTrue(created)
-        self.assertEqual(atlas.read(atlas.DATA / 'games' / f'{gid}.json')['title'], 'Tomb Raider (2013)')
+        self.assertEqual(atlas.read(atlas.DATA / 'games' / f'{gid}.json')['title'], 'ZZ Raid (2013)')
 
     def test_franchise_relations(self):
+        src = 'https://en.wikipedia.org/wiki/ZZ_Raid'
         resp = fake_response({'games': [
-            {'title': 'Doom II: Hell on Earth', 'year': 1994, 'platforms': ['PC'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_II',
+            {'title': 'ZZ Raid II: The Dagger', 'year': 1997, 'platforms': ['PC'], 'sourceUrl': src,
              'relation': 'new', 'atlasId': '', 'versionType': 'original'},                    # model says new, dedupe catches it
-            {'title': 'DOOM', 'year': 2016, 'platforms': ['PC', 'PlayStation 4'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_(2016_video_game)',
+            {'title': 'ZZ Raid', 'year': 2013, 'platforms': ['PC', 'PlayStation 3'], 'sourceUrl': src + '_(2013)',
              'relation': 'new', 'atlasId': '', 'versionType': 'original'},
-            {'title': 'DOOM 64 (Remaster)', 'year': 2020, 'platforms': ['PC'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_64',
-             'relation': 'version', 'atlasId': 'doom-3', 'versionType': 'remaster'},
-            {'title': 'Fake Doom', 'year': 2019, 'platforms': ['PC'], 'sourceUrl': 'https://made-up.example/x',
-             'relation': 'new', 'atlasId': '', 'versionType': 'original'}]},
-            ['https://en.wikipedia.org/wiki/Doom_(franchise)'])
+            {'title': 'ZZ Raid Remastered', 'year': 2024, 'platforms': ['PC'], 'sourceUrl': src,
+             'relation': 'version', 'atlasId': 'zz-raid', 'versionType': 'remaster'},
+            {'title': 'ZZ Raid II', 'year': 2001, 'platforms': ['Xbox'], 'sourceUrl': src,
+             'relation': 'version', 'atlasId': 'zz-raid-ii', 'versionType': 'port'},          # same title → named by platform
+            {'title': 'Fake Raid', 'year': 2019, 'platforms': ['PC'], 'sourceUrl': 'https://made-up.example/x',
+             'relation': 'new', 'atlasId': '', 'versionType': 'original'}]}, [src])
         original = ai_research.call_openai
         ai_research.call_openai = lambda payload, token: resp
         try:
-            ai_research.research_franchise('Doom', 'key', 'model', log=lambda *a: None)
+            ai_research.research_franchise('ZZ Raid', 'key', 'model', log=lambda *a: None)
         finally:
             ai_research.call_openai = original
-        rep = atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['Doom']
-        self.assertEqual(rep['added'], ['doom-2016'])
-        self.assertEqual([x['title'] for x in rep['skipped']], ['Fake Doom'])
-        self.assertTrue(any(v['type'] == 'remaster' for v in atlas.read(atlas.DATA / 'games' / 'doom-3.json')['versions']))
-        self.assertFalse((atlas.DATA / 'games' / 'doom-ii-hell-on-earth.json').exists())
-        self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'doom-2016')            # new games researched first
+        rep = atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['ZZ Raid']
+        self.assertEqual(rep['added'], ['zz-raid-2013'])
+        self.assertEqual([x['title'] for x in rep['skipped']], ['Fake Raid'])
+        v = atlas.read(atlas.DATA / 'games' / 'zz-raid.json')['versions'][-1]
+        self.assertEqual((v['name'], v['type'], v['year']), ('ZZ Raid Remastered (2024)', 'remaster', 2024))
+        self.assertEqual(atlas.read(atlas.DATA / 'games' / 'zz-raid-ii.json')['versions'][-1]['name'], 'Xbox (2001)')
+        self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'zz-raid-2013')         # new games researched first
         self.assertEqual(atlas.validate(), [])
 
     def test_image_request_adds_checked_later_original_images(self):
-        gid = 'doom-3'
-        resp = fake_response({'cover': {'url': 'https://upload.wikimedia.org/doom3.jpg', 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_3'},
-                              'screenshots': [{'url': 'https://shared.steamstatic.com/ss_1.jpg', 'caption': 'Marsbasis', 'sourceUrl': 'https://store.steampowered.com/app/9050/'},
+        gid = 'zz-raid'
+        resp = fake_response({'cover': {'url': 'https://upload.wikimedia.org/zz.jpg', 'sourceUrl': 'https://en.wikipedia.org/wiki/ZZ'},
+                              'screenshots': [{'url': 'https://shared.steamstatic.com/ss_1.jpg', 'caption': 'Erster Level', 'sourceUrl': 'https://store.steampowered.com/app/1/'},
                                               {'url': 'https://elsewhere.example/x.jpg', 'caption': 'x', 'sourceUrl': 'https://elsewhere.example/'}]},
-                             ['https://en.wikipedia.org/wiki/Doom_3', 'https://store.steampowered.com/app/9050/'])
-        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
-        g.pop('cover', None)
-        g['screenshots'] = []
-        atlas.write(atlas.DATA / 'games' / f'{gid}.json', g)
+                             ['https://en.wikipedia.org/wiki/ZZ', 'https://store.steampowered.com/app/1/'])
         original, basic = ai_research.call_openai, ai_research.images_basic
         ai_research.call_openai = lambda payload, token: resp
         ai_research.images_basic = lambda ids, log=print: None          # no network in tests
@@ -259,7 +263,7 @@ class FranchiseAndImagesTest(ModesTest):
             ai_research.call_openai, ai_research.images_basic = original, basic
         g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
         self.assertEqual(st['games'], 2)
-        self.assertEqual((g['cover']['url'], g['cover']['check']), ('https://upload.wikimedia.org/doom3.jpg', 'ai'))
+        self.assertEqual((g['cover']['url'], g['cover']['check']), ('https://upload.wikimedia.org/zz.jpg', 'ai'))
         self.assertEqual([s['url'] for s in g['screenshots']], ['https://shared.steamstatic.com/ss_1.jpg'])
         self.assertIn(gid, atlas.read(atlas.DATA / 'inbox.json')['imageRequests'])
         self.assertEqual(atlas.validate(), [])

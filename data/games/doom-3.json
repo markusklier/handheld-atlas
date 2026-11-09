@@ -55,8 +55,8 @@
       ]
     },
     {
-      "id": "doom-3",
-      "name": "DOOM 3 (2005)",
+      "id": "xbox-2005",
+      "name": "Xbox-Portierung (2005)",
       "type": "port",
       "year": 2005,
       "platforms": [
