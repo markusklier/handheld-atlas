@@ -128,12 +128,21 @@ außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Ein
 """ + RULES
 
 
+USAGE = {'calls': 0, 'input': 0, 'output': 0, 'searches': 0}   # printed at the end of every run (cost overview)
+
+
 def call_openai(payload, token):
     body = json.dumps({**payload, 'store': False}, ensure_ascii=False).encode()
     req = urllib.request.Request(API, data=body, method='POST', headers={
         'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json', 'User-Agent': 'HandheldAtlas/1.1'})
     with urllib.request.urlopen(req, timeout=300) as r:
-        return json.loads(r.read().decode())
+        resp = json.loads(r.read().decode())
+    u = resp.get('usage') or {}
+    USAGE['calls'] += 1
+    USAGE['input'] += u.get('input_tokens', 0)
+    USAGE['output'] += u.get('output_tokens', 0)
+    USAGE['searches'] += sum(1 for o in resp.get('output', []) if o.get('type') == 'web_search_call')
+    return resp
 
 
 def output_json(resp):
@@ -743,6 +752,7 @@ def rejected_images():
 
 def ask_pages(text, token, model):
     """The model names pages (videos, posts, READMEs, store pages) – it finds those reliably, unlike image URLs."""
+    model = os.environ.get('OPENAI_IMAGES_MODEL') or model     # page search needs no big model; set a cheaper one here
     resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
                         'text': {'format': PAGES_FORMAT}, 'max_output_tokens': 3000, 'input': text}, token)
@@ -1144,6 +1154,9 @@ def main():
     left = len(queue_load()['jobs'])
     if args.queue:
         lines.append(f'- Warteschlange: noch {left} Spiele')
+    if USAGE['calls']:
+        lines.append(f"- OpenAI-Verbrauch dieses Laufs: {USAGE['calls']} Anfragen, {USAGE['searches']} Websuchen, "
+                     f"{USAGE['input']:,} Eingabe- und {USAGE['output']:,} Ausgabe-Tokens".replace(',', '.'))
     report = '\n'.join(lines) or 'Kein Spiel ausgewählt.'
     print(report)
     if os.environ.get('GITHUB_STEP_SUMMARY'):

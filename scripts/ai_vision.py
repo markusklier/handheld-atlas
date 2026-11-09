@@ -176,7 +176,9 @@ def main():
     if problems:
         print('Validierung fehlgeschlagen:', problems[:3])
         return 1
-    print(f"ai_vision.py: {stats['keep']} bestätigt, {stats['drop']} entfernt, {stats['unclear']} unklar, {stats['error']} nicht ladbar")
+    from ai_research import USAGE
+    print(f"ai_vision.py: {stats['keep']} bestätigt, {stats['drop']} entfernt, {stats['unclear']} unklar, {stats['error']} nicht ladbar"
+          f" · OpenAI: {USAGE['calls']} Anfragen, {USAGE['input']:,} Eingabe-/{USAGE['output']:,} Ausgabe-Tokens ({model})")
     if touched:
         cl = read(DATA / 'changelog.json')
         cl['entries'].insert(0, {'date': date.today().isoformat(), 'type': 'screenshot-added', 'by': 'ai-research',

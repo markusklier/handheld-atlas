@@ -91,6 +91,9 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           RESEARCH_REPORT: ${{ runner.temp }}/report.md
           GITHUB_TOKEN: ${{ github.token }}   # README/release images (media.py)
+          OPENAI_IMAGES_MODEL: ${{ vars.OPENAI_IMAGES_MODEL }}   # optional: cheaper model for the image page search
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}       # optional: Reddit blocks GitHub servers without a token
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: |
           MODE="${{ inputs.mode }}"
           if [ "$MODE" = "bildpruefung" ]; then
@@ -122,6 +125,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_VISION_MODEL: ${{ vars.OPENAI_VISION_MODEL }}   # optional: cheaper model for the image check
         run: python scripts/ai_vision.py --limit 40
       - run: python scripts/franchises.py --fix && python scripts/atlas.py repair && python scripts/atlas.py format && python scripts/atlas.py validate
       - id: commit

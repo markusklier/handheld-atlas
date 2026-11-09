@@ -15,8 +15,10 @@ this module pulls the pictures out of each page deterministically:
 
 Every picture keeps the page it came from as `source`; ai_vision.py checks each one before it counts as verified.
 """
+import base64
 import html
 import json
+import os
 import re
 import sys
 import urllib.parse
@@ -124,10 +126,38 @@ def from_wikipedia(url, fetch=get):
     return out
 
 
+_reddit_token = None
+
+
+def reddit_token():
+    """App-only OAuth token (free Reddit "script" app; secrets REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET).
+    Reddit blocks anonymous requests from data centres such as GitHub Actions – with a token oauth.reddit.com answers."""
+    global _reddit_token
+    cid, secret = os.environ.get('REDDIT_CLIENT_ID'), os.environ.get('REDDIT_CLIENT_SECRET')
+    if _reddit_token is None and cid and secret:
+        req = urllib.request.Request('https://www.reddit.com/api/v1/access_token', data=b'grant_type=client_credentials',
+                                     headers={'User-Agent': 'android:handheld-atlas:1.3 (by /u/handheld-atlas)',
+                                              'Authorization': 'Basic ' + base64.b64encode(f'{cid}:{secret}'.encode()).decode()})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                _reddit_token = json.loads(r.read().decode()).get('access_token') or ''
+        except Exception:  # noqa: BLE001
+            _reddit_token = ''
+    return _reddit_token or None
+
+
 def from_reddit(url, fetch=get):
-    if not re.search(r'reddit\.com/r/[^/]+/comments/', url):
+    m = re.search(r'reddit\.com/r/([^/]+)/comments/([a-z0-9]+)', url)
+    if not m:
         return []
-    data = fetch(url.split('?')[0].rstrip('/') + '.json?raw_json=1', as_json=True)
+    token = reddit_token()
+    if token and fetch is get:
+        req = urllib.request.Request(f'https://oauth.reddit.com/comments/{m.group(2)}?raw_json=1&limit=1', headers={
+            'User-Agent': 'android:handheld-atlas:1.3 (by /u/handheld-atlas)', 'Authorization': 'Bearer ' + token})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.loads(r.read().decode())
+    else:
+        data = fetch(url.split('?')[0].rstrip('/') + '.json?raw_json=1', as_json=True)
     post = data[0]['data']['children'][0]['data']
     out = []
     target = post.get('url_overridden_by_dest') or ''
@@ -140,6 +170,11 @@ def from_reddit(url, fetch=get):
     for img in (post.get('preview') or {}).get('images', []):
         if img.get('source', {}).get('url'):
             out.append(html.unescape(img['source']['url']))
+    video = ((post.get('secure_media') or {}).get('reddit_video') or {})
+    if not out and video:          # video posts: the preview frame
+        thumb = post.get('thumbnail') or ''
+        if thumb.startswith('https://'):
+            out.append(thumb)
     return [shot(u, url, (post.get('title') or '')[:80]) for u in dict.fromkeys(out)]
 
 
