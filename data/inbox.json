@@ -1,6 +1,150 @@
 {
   "leads": [
     {
+      "url": "https://github.com/timschneeb/awesome-shizuku",
+      "title": "timschneeb/awesome-shizuku",
+      "excerpt": "Curated list of awesome Android apps making use of Shizuku",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/timschneeb/changelog-awesome-shizuku",
+      "title": "timschneeb/changelog-awesome-shizuku",
+      "excerpt": "Automatically generated changelogs for the awesome-shizuku list",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Muhammad-Huzaifa02/cms",
+      "title": "Muhammad-Huzaifa02/cms",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ReduanNurLabid/SondeshX",
+      "title": "ReduanNurLabid/SondeshX",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/element-hq/matrix-rust-rtc",
+      "title": "element-hq/matrix-rust-rtc",
+      "excerpt": "A Rust implementation of a Matrix RTC (Real-Time Communication) client SDK.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Shaik-Abdul-Sammed/EduFLowAI",
+      "title": "Shaik-Abdul-Sammed/EduFLowAI",
+      "excerpt": "EduFlow AI is an autonomous institutional automation operating system engineered specifically for Indian colleges and universities. Powered by a specialized multi-LLM engine, EduFlow AI eliminates administrative bottlenecks through five streaming autonomous AI Officers, turnkey accreditation analysis (NAAC/NBA)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/anandgonaboyina/smart_desk_controller",
+      "title": "anandgonaboyina/smart_desk_controller",
+      "excerpt": "BLE-only smart desk controller: ESP32-S3 firmware (C++, PlatformIO, NimBLE) + offline-first Next.js PWA over Web Bluetooth. Controls mains relays, 8 WS2812B LEDs with mic music sync, schedules, timers, Away mode & USB HID PC unlock. Animated face UI, feature switches, demo mode, no cloud. Full-stack IoT, built with AI assistance.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/inaniby/Aster",
+      "title": "inaniby/Aster",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "title": "hesreallyhim/awesome-claude-code",
+      "excerpt": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Sceyo/Watch-Cebu",
+      "title": "Sceyo/Watch-Cebu",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hoilc/scoop-lemon",
+      "title": "hoilc/scoop-lemon",
+      "excerpt": "🍋Yet Another Personal Bucket for Scoop",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/staude/amiscara-agents",
+      "title": "staude/amiscara-agents",
+      "excerpt": "Rust core for a graphical herdr remote on iPad, iPhone, Mac and Windows",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/cien121/weave",
+      "title": "cien121/weave",
+      "excerpt": "2Pm — Android proxy client, Kotlin + Compose, single-core Xray. Aurora Night design.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/RedviolinAI/BIOBUZZ_2026-27",
+      "title": "RedviolinAI/BIOBUZZ_2026-27",
+      "excerpt": "FTC Team 27501 Biobuzz 2026-27 robot code",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ivanfrias/aegis-tac",
+      "title": "ivanfrias/aegis-tac",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/MyNameIsGlooboo/uMessage",
+      "title": "MyNameIsGlooboo/uMessage",
+      "excerpt": "uMessage: a free, offline SMS and MMS app for Android that keeps spam out of your inbox.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/swipswaps/opencode-deepseek-jev",
+      "title": "swipswaps/opencode-deepseek-jev",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/m5ham3ds/RAVEN23",
+      "title": "m5ham3ds/RAVEN23",
+      "excerpt": "Sulo",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/RFSVIEIRA/RetroFe_VLC",
       "title": "RFSVIEIRA/RetroFe_VLC",
       "excerpt": "",
@@ -6255,150 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ClickingMaster/ssrecomp",
-      "title": "Pokémon SoulSilver",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ChupathingyCE/chupathingyce",
-      "title": "Halo: Combat Evolved (Chupathingy)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ChimeraGaming/PixelNavigator",
-      "title": "Pixel Navigator 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ChimeraGaming/FanmakePokemonMaps_Android",
-      "title": "Fanmake Pokémon Maps",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Cesarus85/Tiberian-Dawn-for-Android-and-Meta-Quest",
-      "title": "Command & Conquer: Tiberian Dawn (Android and Quest)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/CNTianQi233/th06-sdl2",
-      "title": "Touhou 6: The Embodiment of Scarlet Devil",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ButterscotchRunner/Butterscotch",
-      "title": "GameMaker games (Butterscotch)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Buku313/Skate3-Mobile",
-      "title": "Skate 3",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/BelmanteGu/SuperMarioWonderRecomp",
-      "title": "Super Mario Bros. Wonder",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/BelmanteGu/CelesteAndroid",
-      "title": "Celeste",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/AverageConsumer/kanto-gear",
-      "title": "Kanto Gear 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "dual-list",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Andiweli/Unreal-Android",
-      "title": "Unreal",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Andiweli/UT99-Android",
-      "title": "Unreal Tournament 99",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Andiweli/OpenMW-Android",
-      "title": "Morrowind (OpenMW)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Andiweli/HaloCE-Android-AAOS",
-      "title": "Halo: Combat Evolved (Android and AAOS)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/AlisterT/openjazz",
-      "title": "Jazz Jackrabbit",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/999sian/tmc",
-      "title": "The Legend of Zelda: The Minish Cap (Project Picori)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/999sian/melee-pc",
-      "title": "Super Smash Bros. Melee",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T14:58:30Z",
-    "newLeads": 14,
+    "lastRun": "2026-11-09T15:07:58Z",
+    "newLeads": 18,
     "newEvents": 0
   },
   "aiResearch": {

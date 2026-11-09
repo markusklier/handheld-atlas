@@ -28,6 +28,61 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/616de60e-da63-4fcd-8d01-547503e9b8b9",
+          "device": "AYN Thor Max",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at stable 60 and 120 fps.",
+          "votes": 3,
+          "date": "2026-06-09",
+          "settings": {
+            "Emulator Version": "v2.2n",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "PS2"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4c0b52d3-744a-4893-af0f-14882db766f3",
+          "device": "AYN Odin 2",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "To fix the game blur you need to go to the game properties and activate: Manual hardware fixes, go to the option \"skip draw(start)” and set the value to 3, in the option \"skipdraw(end)” set the value to 2. Also activate ",
+          "votes": 3,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "2.0 v3668",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "3",
+            "Upscale Multiplier": "3",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0211a865-ea0e-48c0-92e0-0c8c118a1a7a"
+        }
       ]
     },
     {
@@ -43,8 +98,13 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q822849"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/705ff95c-c316-431c-a90d-6edb4ef7335b"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "android-2016",

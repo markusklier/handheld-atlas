@@ -28,6 +28,37 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2293976f-c6e6-414b-9d41-0186ae989028",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "AetherSX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Slowdown present at times but is inherent in the game code iteself due to poor optimization. Running at 1080P resolution and can upscale up to 4k on my tv with dock.",
+          "votes": 1,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "2.0 patched",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "4",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/37d19bc9-313c-4303-a566-2c06b8c91a3f"
+        }
       ]
     }
   ],
