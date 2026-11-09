@@ -48,6 +48,12 @@ scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im W
   `native` (Original hatte zwei Bildschirme; dann Feature `two-screens` statt `dual-screen`).
 - **Fassungen vollständig** (Archiv-Anspruch): alle offiziellen Veröffentlichungen, gleiche Veröffentlichung auf mehreren
   Plattformen = eine Fassung mit mehreren Plattformen. Die App klappt Fassungen ohne Weg automatisch ein.
+- **Ein Spiel, viele Fassungen – keine Dubletten**: Remaster, gleichnamige Remakes, Neuauflagen, Portierungen und
+  Sammlungen sind **Fassungen** des Originalspiels (Ocarina of Time 3D → `the-legend-of-zelda-ocarina-of-time`,
+  „DOOM + DOOM II“ 2024 → Fassung bei `doom-1993` und `doom-ii`). Eigene Spiele sind nur eigenständige Titel und Reboots;
+  gleichnamige Reboots bekommen das Jahr in den Titel („DOOM (2016)“, „Tomb Raider (2013)“). Dubletten zusammenführen mit
+  `python3 scripts/atlas.py merge <dublette> <hauptspiel> --type remake --year 2011 --name "…"` (verschiebt Fassungen,
+  Wege, Mods, Bilder und alle Verweise; `--same` = wirklich dasselbe Spiel unter anderem Namen).
 - **Warteschlange** `data/queue.json`: Spiele, die Markus per Reihen-Analyse oder Dual-Screen-Suchlauf angefordert hat;
   die Action „KI-Recherche“ arbeitet sie alle 2 Stunden ab (3 Spiele). Du kannst Spiele vorne einreihen, aber nicht löschen.
 - **Reihe (`franchise`)** = die Spielereihe, nicht das Universum: Luigi's Mansion, Paper Mario, Mario Party, Mario & Luigi
@@ -126,7 +132,8 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    Neue Issues mit Label `recherche` bearbeitet sofort die GitHub Action „KI-Recherche“ (OpenAI) und schließt sie.
    Deine Aufgabe: Changelog-Einträge mit `"by": "ai-research"` seit deinem letzten Lauf durchgehen, die Quellen öffnen,
    Falsches korrigieren oder entfernen, Fassungen zusammenführen, Texte glätten, Screenshots ergänzen.
-   Issues können auch `new-game: <Titel>`, `franchise: <Reihe>`, `version: <id>` oder ein ```json-Ergebnis einer
+   Issues können auch `new-game: <Titel>`, `franchise: <Reihe>`, `version: <id>`, `images: <id>` (Bilder suchen),
+   `images-franchise: <Reihe>`, `dual-scan: ja` oder ein ```json-Ergebnis einer
    Sofortanalyse aus der App enthalten – das übernimmt die Action ohne neue KI-Anfrage. Prüfe solche Einträge besonders.
    Noch offene Issues (z. B. wenn die Action fehlschlug):
    `gh api "repos/markusklier/handheld-atlas/issues?labels=recherche&state=open"` – im Body steht `game: <id>`.

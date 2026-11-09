@@ -1,11 +1,6 @@
 {
   "jobs": [
     {
-      "game": "doom-doom-ii",
-      "reason": "Reihe Doom",
-      "added": "2026-11-08"
-    },
-    {
       "game": "doom-the-dark-ages",
       "reason": "Reihe Doom",
       "added": "2026-11-08"
@@ -36,7 +31,7 @@
       "added": "2026-11-08"
     },
     {
-      "game": "the-legend-of-zelda-the-wind-waker-hd",
+      "game": "the-legend-of-zelda-the-wind-waker",
       "reason": "Dual-Screen-Suchlauf",
       "added": "2026-11-08"
     },

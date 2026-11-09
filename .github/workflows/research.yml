@@ -11,7 +11,7 @@ on:
         default: recherche
         options: [recherche, dualscreen, warteschlange, bilder, bildpruefung]
       game:
-        description: 'Spiel-ID, z. B. grand-theft-auto-san-andreas (leer = automatisch auswählen)'
+        description: 'Spiel-ID, z. B. grand-theft-auto-san-andreas (leer = automatisch; bei „bilder“: Bilder genau dieses Spiels)'
         required: false
         type: string
       version:
@@ -84,10 +84,13 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           RESEARCH_REPORT: ${{ runner.temp }}/report.md
+          GITHUB_TOKEN: ${{ github.token }}   # README/release images (media.py)
         run: |
           MODE="${{ inputs.mode }}"
           if [ "$MODE" = "bildpruefung" ]; then
             echo "Nur Bildprüfung."
+          elif [ "$MODE" = "bilder" ] && [ -n "$GAME" ]; then
+            python scripts/ai_research.py --images "$GAME"
           elif [ "$MODE" = "bilder" ]; then
             python scripts/ai_research.py --screenshots "${COUNT:-15}"
           elif [ "$MODE" = "dualscreen" ] || [ "${{ github.event.schedule }}" = "17 19 * * 0" ]; then

@@ -204,7 +204,7 @@
       "date": "2026-11-08",
       "type": "game-added",
       "by": "ai-research",
-      "game": "doom-ii-hell-on-earth",
+      "game": "doom-ii",
       "text": "Neues Spiel aus der Reihe Doom: Doom II: Hell on Earth (KI-Recherche)",
       "url": "https://en.wikipedia.org/wiki/Doom_II"
     },
@@ -220,7 +220,7 @@
       "date": "2026-11-08",
       "type": "game-added",
       "by": "ai-research",
-      "game": "doom-doom-ii",
+      "game": "doom-1993",
       "text": "Neues Spiel aus der Reihe Doom: Doom + Doom II (KI-Recherche)",
       "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
     },
@@ -610,7 +610,7 @@
       "date": "2026-11-08",
       "type": "route-added",
       "by": "ai-research",
-      "game": "the-legend-of-zelda-the-wind-waker-hd",
+      "game": "the-legend-of-zelda-the-wind-waker",
       "text": "Dual Screen: ZeldaWWHDRecomp für The Legend of Zelda: The Wind Waker HD (Suchlauf)",
       "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
     },
@@ -1141,7 +1141,7 @@
     {
       "date": "2026-11-08",
       "type": "route-updated",
-      "game": "diablo-iii-eternal-collection",
+      "game": "diablo-iii",
       "text": "7 Community-Berichte von EmuReady für Diablo III: Eternal Collection (Geräte mit dem Chip des AYN Thor)"
     },
     {

@@ -3,7 +3,8 @@
   "title": "Metroid Prime",
   "franchise": "Metroid",
   "platforms": [
-    "Nintendo GameCube"
+    "Nintendo GameCube",
+    "Nintendo Switch"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Metroid%20Prime%20%28USA%29.png",
@@ -29,8 +30,17 @@
       "platforms": [
         "Nintendo GameCube"
       ]
+    },
+    {
+      "id": "metroid-prime-remastered",
+      "name": "Metroid Prime Remastered (2023)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2023
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

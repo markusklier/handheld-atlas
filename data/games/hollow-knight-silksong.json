@@ -31,7 +31,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Bedienbare Umsetzung des Spielmenüs auf Bildschirm 2: Karte anzeigen, Gegenstände verwenden und Crest wechseln. Nativer arm64-Port mit optionaler Steam-Anbindung für eigene Spieldateien und Cloud-Spielstände; öffentliche Builds seit mindestens August 2026. ([github.com](https://github.com/jakobkhansen/SilksongAndroid))",
+      "dualScreen": "Bedienbare Umsetzung des Spielmenüs auf Bildschirm 2: Karte anzeigen, Gegenstände verwenden und Crest wechseln. Nativer arm64-Port mit optionaler Steam-Anbindung für eigene Spieldateien und Cloud-Spielstände; öffentliche Builds seit mindestens August 2026.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

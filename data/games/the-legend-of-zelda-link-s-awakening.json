@@ -3,17 +3,28 @@
   "title": "The Legend of Zelda: Link's Awakening",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Game Boy / Game Boy Color"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
-      "type": "original",
+      "name": "Remake für Nintendo Switch (2019)",
+      "type": "remake",
       "platforms": [
         "Nintendo Switch"
-      ]
+      ],
+      "year": 2019
+    },
+    {
+      "id": "link-s-awakening-dx",
+      "name": "Link's Awakening DX (1998)",
+      "type": "rerelease",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "year": 1998
     }
   ],
   "routes": [
@@ -83,9 +94,21 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c1/Link%27s_Awakening.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Link%27s_Awakening"
-  }
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+      "caption": "Originalspiel · DX (Game Boy Color)",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20Link%27s%20Awakening%20DX%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29%20%28GB%20Compatible%29.png",
+      "caption": "Titelbild · DX (Game Boy Color)",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    }
+  ]
 }

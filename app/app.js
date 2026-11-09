@@ -66,6 +66,8 @@ function index(data) {
   DB.researched = data.researched || {};
   DB.queue = data.queue || [];
   DB.dualScan = data.dualScan || {};
+  DB.franchiseScan = data.franchiseScan || {};
+  DB.imageRequests = data.imageRequests || {};
   DB.games = data.games.map((g) => {
     g.routes = g.routes || [];
     g.mods = g.mods || [];
@@ -78,6 +80,9 @@ function index(data) {
       ...g.routes.flatMap((r) => [r.name, r.runtime, ...(r.projects || []).map((p) => DB.projects[p]?.name)]),
       ...g.mods.map((m) => m.name)].join(' '));
     g._score = g.routes.length * 10 + (g._dual ? 25 : 0) + g.mods.length * 3 + (g.cover ? 2 : 0);
+    const ty = /\((\d{4})\)/.exec(g.title);
+    const ys = (g.versions || []).filter((v) => v.year && v.type === 'original').map((v) => v.year);
+    g._year = ty ? +ty[1] : ys.length ? Math.min(...ys) : null;
     return g;
   });
   DB.byId = new Map(DB.games.map((g) => [g.id, g]));
@@ -193,16 +198,37 @@ document.addEventListener('mouseout', (e) => { const c = e.target.closest?.('.ca
 document.addEventListener('focusin', (e) => { const c = e.target.closest?.('.card'); if (c) startPreview(c); else stopPreview(); });
 
 const gridHTML = (games) => games.length ? `<div class="grid">${games.map(cardHTML).join('')}</div>`
-  : `<div class="empty">${state.q.trim().length > 2 ? `„${esc(state.q.trim())}“ ist noch nicht in Atlas – siehe Online-Index unten.` : 'Nichts gefunden.'}</div>`;
+  : `<div class="empty">${state.q.trim().length > 2 ? `„${esc(state.q.trim())}“ ist noch nicht in Atlas – siehe unten.` : 'Nichts gefunden.'}</div>`;
 
-/* ---------- online index: Wikipedia's game articles, queried live from this device when Atlas has little ---------- */
+/* ---------- online index: Wikipedia's game articles, queried live from this device ---------- */
 const onlineCache = new Map();
-const titleKey = (t) => norm(t).replace(/\(.*?\)/g, '').replace(/[^a-z0-9]/g, '');
-function onlineIndexSection(q, localCount) {
-  if (q.length < 3 || localCount >= 6) return '';
-  return `<section class="section" id="online-index" data-q="${esc(q)}"><div class="section-head"><h2>${icon('search')} Im Online-Index</h2>
-    <span class="faint">Spiele aus Wikipedia, die Atlas noch nicht kennt – mit einem Klick recherchieren lassen</span></div>
+const titleKey = (t) => norm(t).replace(/\(.*?\)/g, '').replace(/^the\s+/, '').replace(/[^a-z0-9]/g, '');
+function onlineIndexSection(q) {
+  if (q.length < 3) return '';
+  return `<section class="section" id="online-index" data-q="${esc(q)}"><div class="section-head"><h2>${icon('search')} Noch nicht in Atlas</h2>
+    <span class="faint">Treffer aus Wikipedia – mit einem Klick recherchieren lassen</span></div>
     <div class="list"><div class="empty">Suche läuft …</div></div></section>`;
+}
+async function wikiQuery(params) {
+  const url = 'https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', prop: 'pageimages|description', piprop: 'thumbnail',
+    pithumbsize: '160', pilicense: 'any', format: 'json', formatversion: '2', origin: '*', ...params });
+  const data = await (await fetch(url)).json();
+  return (data.query?.pages || []).sort((a, b) => a.index - b.index);
+}
+const GAME_DESC = /video game|computer game|mobile game|game series|video game series|franchise|role-playing game|shooter|platform game|simulation game|strategy game|adventure game|racing game|fighting game/i;
+/* Local game that a Wikipedia article is about: same title AND (if Wikipedia disambiguates by year) the same year.
+   "Tomb Raider (2013 video game)" is not our Tomb Raider (1996). */
+function localMatch(it) {
+  const key = titleKey(it.title);
+  let maybe = null;
+  for (const g of DB.games) {
+    if (titleKey(g.title) !== key) continue;
+    if (!it.year || !g._year || Math.abs(g._year - it.year) <= 1) {
+      if (!it.year || g._year) return { game: g, sure: true };
+      maybe = maybe || g;   // our entry has no year yet – could be the same game
+    }
+  }
+  return maybe ? { game: maybe, sure: false } : null;
 }
 async function fillOnlineIndex() {
   const sec = document.getElementById('online-index');
@@ -210,15 +236,23 @@ async function fillOnlineIndex() {
   const q = sec.dataset.q;
   let items = onlineCache.get(q);
   if (!items) {
+    await new Promise((r) => setTimeout(r, 450));            // typing: only ask Wikipedia once the query settles
+    if (!document.body.contains(sec) || sec.dataset.q !== q) return;
     try {
-      const url = 'https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', generator: 'search', gsrsearch: `${q} video game`,
-        gsrlimit: '10', prop: 'pageimages|description', piprop: 'thumbnail', pithumbsize: '160', pilicense: 'any',
-        format: 'json', formatversion: '2', origin: '*' });
-      const data = await (await fetch(url)).json();
-      items = (data.query?.pages || []).sort((a, b) => a.index - b.index)
-        .filter((p) => /game|series/i.test(p.description || ''))
-        .map((p) => ({ title: p.title.replace(/ \((\d{4} )?video game\)$/, ''), desc: p.description, thumb: p.thumbnail?.source,
-          series: /series|franchise/i.test(p.description || ''), url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(p.title.replace(/ /g, '_')) }));
+      const [prefix, search, plain] = await Promise.all([
+        wikiQuery({ generator: 'prefixsearch', gpssearch: q, gpslimit: '15' }),
+        wikiQuery({ generator: 'search', gsrsearch: `${q} video game`, gsrlimit: '20' }),
+        wikiQuery({ generator: 'search', gsrsearch: q, gsrlimit: '10' })]);
+      const seen = new Set();
+      items = [...prefix, ...search, ...plain].filter((p) => GAME_DESC.test(p.description || '') && !seen.has(p.title) && seen.add(p.title))
+        .map((p) => {
+          const m = / \((?:(\d{4}) )?(?:video game|game|franchise|series|video game series)\)$/.exec(p.title);
+          const dy = /\b(19[7-9]\d|20[0-4]\d)\b/.exec(p.description || '');
+          return { title: m ? p.title.slice(0, m.index) : p.title, year: m?.[1] ? +m[1] : null, descYear: dy ? +dy[1] : null,
+            desc: p.description, thumb: p.thumbnail?.source,
+            series: /series|franchise/i.test(p.description || '') && !/^\d{4} /.test(p.description || ''),
+            url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(p.title.replace(/ /g, '_')) };
+        });
       onlineCache.set(q, items);
     } catch {
       items = null;
@@ -227,19 +261,48 @@ async function fillOnlineIndex() {
   if (!document.body.contains(sec)) return;
   const list = sec.querySelector('.list');
   if (!items) { list.innerHTML = '<div class="empty">Online-Index gerade nicht erreichbar.</div>'; return; }
-  if (!items.length) { list.innerHTML = '<div class="empty">Auch online nichts gefunden.</div>'; return; }
-  const local = new Map(DB.games.map((g) => [titleKey(g.title), g]));
-  list.innerHTML = items.map((it) => {
-    const known = local.get(titleKey(it.title));
-    const actions = known ? `<a class="btn" href="#/spiel/${esc(known.id)}">In Atlas öffnen</a>`
-      : it.series ? `${DB.meta.repo ? `<a class="btn primary" href="${esc(issueUrl('Reihe: ' + it.title, 'franchise: ' + it.title))}" target="_blank" rel="noopener">${icon('layers')}Ganze Reihe aufnehmen</a>` : ''}`
-      : `<a class="btn primary" href="#/neu-spiel/${encodeURIComponent(it.title)}">${icon('ai')}Sofortanalyse</a>
-         ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl('Recherche: ' + it.title, 'new-game: ' + it.title))}" target="_blank" rel="noopener">${icon('spark')}Aufnehmen (3–5 Min.)</a>` : ''}`;
-    return `<div class="item online">${it.thumb ? `<img src="${esc(it.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="mini"></span>`}
-      <div class="grow"><div class="title">${esc(it.title)}${known ? ' <span class="tag v-documented">in Atlas</span>' : ''}</div>
-      <div class="desc">${esc(it.desc)} · <a class="link" href="${esc(it.url)}" target="_blank" rel="noopener">Wikipedia</a></div></div>
-      <div class="row">${actions}</div></div>`;
+  const issue = (title, body) => DB.meta.repo ? esc(issueUrl(title, body)) : '';
+  let inAtlas = 0;
+  const rows = items.map((it) => {
+    if (it.series) {
+      const fr = DB.franchises.find((f) => titleKey(f.name) === titleKey(it.title));
+      if (fr) { inAtlas++; return ''; }       // shown above as series
+      return `<div class="item online">${it.thumb ? `<img src="${esc(it.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span class="mini"></span>'}
+        <div class="grow"><div class="title">${esc(it.title)} <span class="tag">${icon('layers')}Reihe</span></div>
+        <div class="desc">${esc(it.desc)} · <a class="link" href="${esc(it.url)}" target="_blank" rel="noopener">Wikipedia</a></div></div>
+        <div class="row">${DB.meta.repo ? `<a class="btn primary" href="${issue('Reihe: ' + it.title, 'franchise: ' + it.title)}" target="_blank" rel="noopener">${icon('layers')}Ganze Reihe aufnehmen</a>` : ''}</div></div>`;
+    }
+    const year = it.year || it.descYear;
+    const hit = localMatch({ title: it.title, year });
+    if (hit?.sure) { inAtlas++; return ''; }
+    // a same-named older game exists → the new entry keeps its year in the title ("Tomb Raider (2013)")
+    const named = DB.games.some((g) => titleKey(g.title) === titleKey(it.title)) && year ? `${it.title} (${year})` : it.title;
+    return `<div class="item online">${it.thumb ? `<img src="${esc(it.thumb)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span class="mini"></span>'}
+      <div class="grow"><div class="title">${esc(named)}</div>
+      <div class="desc">${esc(it.desc)} · <a class="link" href="${esc(it.url)}" target="_blank" rel="noopener">Wikipedia</a>
+        ${hit ? ` · vielleicht schon in Atlas als <a class="link" href="#/spiel/${esc(hit.game.id)}">${esc(hit.game.title)}</a>` : ''}</div></div>
+      <div class="row"><a class="btn primary" href="#/neu-spiel/${encodeURIComponent(named)}">${icon('ai')}Sofortanalyse</a>
+        ${DB.meta.repo ? `<a class="btn" href="${issue('Recherche: ' + named, 'new-game: ' + named)}" target="_blank" rel="noopener">${icon('spark')}Aufnehmen (3–5 Min.)</a>` : ''}</div></div>`;
   }).join('');
+  list.innerHTML = rows || `<div class="empty">${inAtlas ? 'Alle Treffer sind schon in Atlas.' : 'Auch online nichts gefunden.'}</div>`;
+  if (rows && inAtlas) list.insertAdjacentHTML('beforeend', `<p class="faint">${inAtlas} weitere Treffer sind schon in Atlas (oben).</p>`);
+}
+
+/* Series whose name matches the search – shown above the single games */
+function franchiseHits(q) {
+  const k = titleKey(q);
+  if (k.length < 3) return [];
+  return DB.franchises.filter((f) => f.games.length > 1 && (titleKey(f.name).includes(k) || k.includes(titleKey(f.name))))
+    .sort((a, b) => (titleKey(b.name) === k) - (titleKey(a.name) === k) || b.games.length - a.games.length).slice(0, 4);
+}
+function franchiseRow(f) {
+  const c = franchiseCoverage(f);
+  const covers = [...f.games.filter((g) => g.cover), ...f.games.filter((g) => !g.cover)].slice(0, 4);
+  return `<a class="item fr-hit" href="#/franchise/${encodeURIComponent(f.name)}">
+    <div class="thumbs">${covers.map((g) => g.cover ? `<img src="${esc(g.cover.url)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="mini" style="background:hsl(${hue(f.name)} 30% 22%)"></span>`).join('')}</div>
+    <div class="grow"><div class="title">${icon('layers')} ${esc(f.name)} <span class="faint">· Reihe</span></div>
+    <div class="desc">${f.games.length} Spiele${f.routes ? ` · ${f.routes} Spielwege` : ''}${f.dual ? ' · Dual Screen' : ''} · ${c.done}/${c.total} tiefenrecherchiert</div></div>
+    <span class="btn">Reihe öffnen</span></a>`;
 }
 
 function verifTag(v) {
@@ -303,10 +366,12 @@ function viewDiscover() {
     if (DB.games.some((g) => g._ai)) html += shelf('Neue KI-Funde', DB.games.filter((g) => g._ai), '#/filter/ai');
   }
   const list = filterGames();
-  html += `<section class="section"><div class="result-head"><h2>${filtering ? 'Ergebnisse' : 'Alle Spiele'}</h2><span class="faint">${list.length} Spiele</span></div>
+  const frs = state.q.trim() ? franchiseHits(state.q.trim()) : [];
+  if (frs.length) html += `<section class="section"><div class="section-head"><h2>${icon('layers')} Reihen</h2></div><div class="list">${frs.map(franchiseRow).join('')}</div></section>`;
+  html += `<section class="section"><div class="result-head"><h2>${filtering ? (frs.length ? 'Einzelne Spiele' : 'Ergebnisse') : 'Alle Spiele'}</h2><span class="faint">${list.length} Spiele</span></div>
     ${gridHTML(list.slice(0, state.limit))}
     ${list.length > state.limit ? `<div class="more"><button class="btn" id="more">Mehr laden (${list.length - state.limit} weitere)</button></div>` : ''}</section>
-    ${onlineIndexSection(state.q.trim(), list.length)}`;
+    ${onlineIndexSection(state.q.trim())}`;
   return html;
 }
 
@@ -574,6 +639,7 @@ function viewGame(id) {
       <button class="btn" data-analyze="${esc(g.id)}">${icon('ai')}Sofortanalyse</button>
       ${DB.meta.repo ? `<a class="btn" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Recherche anfordern</a>` : ''}
       </div><div class="row">${researchStatus(g)}${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
+      ${imageStatus(g)}
     </div></div>
     ${analysisPanel(g.id)}
     ${recommendation(g, fitting)}
@@ -636,7 +702,14 @@ function viewFranchise(name) {
     <p class="muted">${f.games.length} Spiele${f.routes ? ` · ${f.routes} dokumentierte Spielwege` : ''}</p>
     <div class="panel section coverage"><div class="meter"><span>Tiefenrecherchiert</span><b>${c.done} von ${c.total}${c.queued ? ` · ${c.queued} in der Warteschlange` : ''}</b><i style="--v:${Math.round((c.done / c.total) * 100)}%"></i></div>
       <p class="muted">Fehlen Spiele oder Fassungen? Die Reihen-Analyse legt fehlende Spiele an und recherchiert danach jedes Spiel einzeln in der Tiefe (die ersten sofort, der Rest alle 2 Stunden).</p>
-      ${DB.meta.repo ? `<a class="btn primary" href="${esc(issueUrl('Reihe: ' + f.name, 'franchise: ' + f.name))}" target="_blank" rel="noopener">${icon('layers')}Reihe vervollständigen &amp; recherchieren</a>` : ''}</div>
+      ${(() => {
+        const scan = DB.franchiseScan[f.name];
+        if (!scan) return '<p class="faint">Für diese Reihe lief noch keine Reihen-Analyse – ob Spiele fehlen, ist also noch offen.</p>';
+        return `<p class="faint">Letzte Reihen-Analyse ${fmtDate(scan.date)}: ${scan.listed} Titel gefunden, ${scan.added.length} neu aufgenommen, ${scan.versions.length} als Fassung eingeordnet${scan.skipped.length ? `, ${scan.skipped.length} ohne Beleg übersprungen (${esc(scan.skipped.map((x) => x.title).join(', '))})` : ''}.</p>`;
+      })()}
+      <div class="row">${DB.meta.repo ? `<a class="btn primary" href="${esc(issueUrl('Reihe: ' + f.name, 'franchise: ' + f.name))}" target="_blank" rel="noopener">${icon('layers')}Reihe vervollständigen &amp; recherchieren</a>
+        <a class="btn" href="${esc(issueUrl('Bilder: Reihe ' + f.name, 'images-franchise: ' + f.name))}" target="_blank" rel="noopener" title="Cover, Originalbilder und Spielweg-Bilder für bis zu 25 Spiele der Reihe">${icon('image')}Bilder für die Reihe suchen</a>` : ''}
+        <span class="faint">${f.games.filter((g) => g.cover).length}/${f.games.length} mit Cover</span></div></div>
     <div class="section">${gridHTML(f.games)}</div>`;
 }
 
@@ -876,6 +949,22 @@ function viewNewGame(title) {
 const isDual = (w) => w.features.includes('dual-screen') || w.features.includes('two-screens');
 const dualLabel = (w) => label('dualScreenTypes', w.r?.dualScreenType || (w.features.includes('two-screens') ? 'native' : 'integrated'));
 
+const isDualRoute = (r) => (r.features || []).some((f) => f === 'dual-screen' || f === 'two-screens');
+function imageStatus(g) {
+  const orig = g.screenshots.filter((s) => s.caption !== 'Titelbild').length;
+  const withShot = g.routes.filter((r) => (r.screenshots || []).length).length;
+  const dual = g.routes.filter(isDualRoute);
+  const dualShot = dual.filter((r) => (r.screenshots || []).length).length;
+  const missing = !g.cover || orig < 2 || withShot < g.routes.length;
+  const ok = (b) => (b ? '✓' : '✗');
+  const parts = [`Cover ${ok(g.cover)}`, `${orig} ${orig === 1 ? 'Originalbild' : 'Originalbilder'}`,
+    g.routes.length ? `Spielwege mit Bild ${withShot}/${g.routes.length}` : '', dual.length ? `davon Dual Screen ${dualShot}/${dual.length}` : ''].filter(Boolean);
+  const req = DB.imageRequests[g.id];
+  return `<div class="row imgstat"><span class="faint">${icon('image')} ${parts.join(' · ')}${req ? ` · zuletzt gesucht ${fmtDate(req)}` : ''}</span>
+    ${DB.meta.repo ? `<a class="btn small${missing ? ' primary' : ''}" href="${esc(issueUrl('Bilder: ' + g.title, 'images: ' + g.id))}" target="_blank" rel="noopener"
+      title="Sucht Cover, Originalbilder und Bilder für jeden Spielweg (Dual Screen zuerst); nach etwa 3–5 Minuten in der App">${icon('image')}Bilder suchen</a>` : ''}</div>`;
+}
+
 function researchStatus(g) {
   const qi = (DB.queue || []).findIndex((j) => j.game === g.id);
   if (qi >= 0) return `<span class="tag v-ai-unverified">${icon('ai')}In der Warteschlange (Platz ${qi + 1})</span>`;
@@ -895,36 +984,80 @@ function dualBox(g, ways) {
     <p class="faint">Im Spiel integriert = das Spiel oder der Port zeichnet selbst live auf den zweiten Bildschirm · Companion-App = separate Begleit-App · Zusatzinfos = statische Karte/Infos.</p></section>`;
 }
 
+/* Dual Screen tab: one card per game (cover + all its dual-screen ways as sub-rows).
+   DS/3DS/Wii U games count too – their original had two screens, every emulator for them uses both. */
+const NATIVE_DUAL = ['Nintendo DS', 'Nintendo 3DS', 'Wii U'];
+const dualType = (w) => w.r?.dualScreenType || (w.features.includes('two-screens') ? 'native' : 'integrated');
+function dualEntries() {
+  return DB.games.map((g) => {
+    const ways = waysFor(g).filter((w) => w.fits);
+    const dual = ways.filter(isDual);
+    const nativePlat = g.platforms.find((p) => NATIVE_DUAL.includes(p));
+    // the emulators of the two-screen original (melonDS, Azahar …), best rated first
+    const emus = nativePlat ? ways.filter((w) => !isDual(w) && w.v.platforms.includes(nativePlat)).sort((a, b) => b.score - a.score) : [];
+    if (!dual.length && !nativePlat) return null;
+    const types = new Set(dual.map(dualType));
+    if (nativePlat) types.add('native');
+    const score = Math.max(...dual.map((w) => w.score + 40), ...emus.map((w) => w.score), -999);
+    const newest = dual.map((w) => w.r?.checkedAt || '').sort().pop() || '';
+    return { g, dual, emus, nativePlat, types, score, newest };
+  }).filter(Boolean);
+}
+function dualCard(e, sel) {
+  const { g } = e;
+  const dual = e.dual.filter((w) => !sel || dualType(w) === sel || (sel === 'native' && dualType(w) === 'native'));
+  const shot = e.dual.flatMap((w) => w.r?.screenshots || []).find((x) => x.dual) || e.dual.flatMap((w) => w.r?.screenshots || [])[0];
+  const rows = dual.sort((a, b) => b.score - a.score).map((w) => `<a class="dual-way" href="#/spiel/${esc(g.id)}" data-goto-way="${esc(w.key)}">
+      <div class="grow"><div class="name">${esc(w.name)} <span class="faint">· ${esc(w.v.name)}</span></div>
+        <div class="desc">${esc(w.r?.dualScreen || 'Zweiter Bildschirm unterstützt')}</div></div>
+      <div class="tags"><span class="tag dual">${esc(dualLabel(w))}</span>${wayTag(w)}${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe)}</span>` : ''}</div></a>`);
+  if (e.nativePlat && (!sel || sel === 'native')) {
+    const emu = e.emus[0];
+    rows.push(`<a class="dual-way" href="#/spiel/${esc(g.id)}"${emu ? ` data-goto-way="${esc(emu.key)}"` : ''}>
+      <div class="grow"><div class="name">${esc(e.nativePlat)}-Original <span class="faint">· ${emu ? esc(e.emus.slice(0, 3).map((w) => w.name).join(', ')) : 'Emulator folgt'}</span></div>
+        <div class="desc">Das Spiel nutzt beide Bildschirme von Haus aus – der Emulator legt sie auf beide Displays.</div></div>
+      <div class="tags"><span class="tag dual">${esc(label('dualScreenTypes', 'native'))}</span>${emu?.best ? `<span class="rating ${RANK_CLASS(emu.best.rank)}">${esc(emu.best.ratingDe)}</span>` : ''}</div></a>`);
+  }
+  return `<article class="dual-card">
+    <a class="dual-head" href="#/spiel/${esc(g.id)}">
+      <span class="dual-cover">${g.cover ? `<img src="${esc(g.cover.url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}<span class="ph" style="--h:${hue(g.franchise || g.title)}">${esc(g.title)}</span></span>
+      <span class="grow"><span class="title">${esc(g.title)}</span>
+        <span class="faint">${esc(g.franchise !== g.title ? g.franchise + ' · ' : '')}${esc(g.platforms.slice(0, 3).join(', '))}</span>
+        <span class="faint">${e.dual.length ? `${e.dual.length} Dual-Screen-${e.dual.length === 1 ? 'Weg' : 'Wege'}` : 'Original mit zwei Bildschirmen'}</span></span>
+      ${shot ? `<img class="dual-shot" src="${esc(shot.url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
+    </a>
+    <div class="dual-ways">${rows.join('')}</div></article>`;
+}
 function viewDual() {
   const types = DB.meta.dualScreenTypes || {};
-  const all = DB.games.filter((g) => g._dual || g.routes.some((r) => (r.features || []).includes('two-screens')))
-    .flatMap((g) => waysFor(g).filter((w) => w.fits && isDual(w)).map((w) => ({ g, w })));
   const sel = state.dualType || '';
-  const sort = state.dualSort || 'new';
-  const list = all.filter(({ w }) => !sel || (w.r?.dualScreenType || 'integrated') === sel)
-    .sort(sort === 'az' ? (a, b) => a.g.title.localeCompare(b.g.title, 'de')
-      : sort === 'best' ? (a, b) => b.w.score - a.w.score
-        : (a, b) => (b.w.r?.checkedAt || '').localeCompare(a.w.r?.checkedAt || '') || a.g.title.localeCompare(b.g.title, 'de'));
-  const count = (t) => all.filter(({ w }) => (w.r?.dualScreenType || 'integrated') === t).length;
+  const sort = state.dualSort || 'best';
+  const q = norm(state.q.trim());
+  const all = dualEntries().filter((e) => !q || q.split(/\s+/).every((t) => e.g._search.includes(t)));
+  const list = all.filter((e) => !sel || e.types.has(sel));
+  const cmp = sort === 'az' ? (a, b) => a.g.title.localeCompare(b.g.title, 'de')
+    : sort === 'new' ? (a, b) => b.newest.localeCompare(a.newest) || b.score - a.score
+      : (a, b) => b.score - a.score || a.g.title.localeCompare(b.g.title, 'de');
+  const withWays = list.filter((e) => e.dual.length && (!sel || e.dual.some((w) => dualType(w) === sel))).sort(cmp);
+  const nativeOnly = list.filter((e) => !withWays.includes(e)).sort(cmp);
+  const count = (t) => all.filter((e) => e.types.has(t)).length;
   const scan = DB.dualScan || {};
+  const limit = state.dualLimit || 40;
+  const section = (title, items, note) => items.length ? `<section class="section"><div class="section-head"><h2>${title}</h2><span class="faint">${items.length} Spiele</span></div>
+    ${note ? `<p class="faint">${note}</p>` : ''}<div class="dual-grid">${items.slice(0, limit).map((e) => dualCard(e, sel)).join('')}</div>
+    ${items.length > limit ? `<div class="more"><button class="btn" data-duallimit="${limit + 40}">Mehr laden (${items.length - limit} weitere)</button></div>` : ''}</section>` : '';
   return `<h1>Dual Screen</h1>
-    <p class="muted">Alle Wege, die den zweiten Bildschirm nutzen – ${all.length} Wege für ${new Set(all.map(({ g }) => g.id)).size} Spiele.
+    <p class="muted">Was auf dem zweiten Bildschirm geht – ${all.length} Spiele${q ? ` für „${esc(state.q.trim())}“` : ''}.
       ${scan.lastRun ? `Letzter Dual-Screen-Suchlauf: ${fmtDate(scan.lastRun)} (${scan.found} neu).` : 'Der Dual-Screen-Suchlauf läuft wöchentlich.'}</p>
     <div class="filters">
-      <button class="chip" data-dualtype="" aria-pressed="${!sel}">Alle</button>
+      <button class="chip" data-dualtype="" aria-pressed="${!sel}">Alle <span class="faint">${all.length}</span></button>
       ${Object.entries(types).map(([k, l]) => `<button class="chip" data-dualtype="${k}" aria-pressed="${sel === k}">${esc(l)} <span class="faint">${count(k)}</span></button>`).join('')}
-      <select class="chip" id="dualsort" aria-label="Sortierung">${[['new', 'Neueste'], ['best', 'Empfehlung'], ['az', 'A–Z']].map(([v, l]) => `<option value="${v}" ${v === sort ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      <select class="chip" id="dualsort" aria-label="Sortierung">${[['best', 'Empfehlung'], ['new', 'Neueste'], ['az', 'A–Z']].map(([v, l]) => `<option value="${v}" ${v === sort ? 'selected' : ''}>${l}</option>`).join('')}</select>
       ${DB.meta.repo ? `<a class="chip" href="${esc(issueUrl('Dual-Screen-Suchlauf', 'dual-scan: ja'))}" target="_blank" rel="noopener">${icon('ai')}Suchlauf jetzt starten</a>` : ''}
     </div>
-    <div class="list section">${list.map(({ g, w }) => {
-      const shot = w.r?.screenshots?.[0]?.url || g.cover?.url;
-      return `<a class="item dual-item" href="#/spiel/${esc(g.id)}" data-goto-way="${esc(w.key)}">
-        ${shot ? `<img src="${esc(shot)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="mini"></span>'}
-        <div class="grow"><div class="title">${esc(g.title)} <span class="faint">· ${esc(w.name)}</span></div>
-          <div class="desc">${esc(w.r?.dualScreen || 'Zweiter Bildschirm unterstützt')}</div>
-          <div class="row" style="margin-top:4px"><span class="tag dual">${icon('dual')}${esc(dualLabel(w))}</span><span class="tag">${esc(w.v.name)}</span>${wayTag(w)}
-          ${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe)}</span>` : ''}</div></div></a>`;
-    }).join('') || '<div class="empty">Keine Treffer.</div>'}</div>`;
+    ${section(`${icon('dual')} Mit Dual-Screen-Mod, Port oder Companion`, withWays, sel ? '' : 'Spiele, deren Port, Mod oder Begleit-App den zweiten Bildschirm nutzt. Unterpunkte = die einzelnen Wege.')}
+    ${section(`${icon('handheld')} Original mit zwei Bildschirmen`, nativeOnly, 'DS-, 3DS- und Wii-U-Spiele: der Emulator legt beide Bildschirme auf die zwei Displays.')}
+    ${!withWays.length && !nativeOnly.length ? '<div class="empty">Keine Treffer.</div>' : ''}`;
 }
 
 function franchiseCoverage(f) {
@@ -1011,7 +1144,8 @@ document.addEventListener('click', (e) => {
   if (arrow) { e.preventDefault(); e.stopPropagation(); stepPreview(arrow.closest('.card'), +arrow.dataset.slide); return; }
   const t = e.target.closest('button, a');
   if (!t) return;
-  if (t.dataset.dualtype !== undefined) { e.preventDefault(); state.dualType = t.dataset.dualtype; route(); restoreFocus(`[data-dualtype="${t.dataset.dualtype}"]`); return; }
+  if (t.dataset.dualtype !== undefined) { e.preventDefault(); state.dualType = t.dataset.dualtype; state.dualLimit = 40; route(); restoreFocus(`[data-dualtype="${t.dataset.dualtype}"]`); return; }
+  if (t.dataset.duallimit) { e.preventDefault(); state.dualLimit = +t.dataset.duallimit; const y = window.scrollY; route(); window.scrollTo(0, y); return; }
   if (t.dataset.gotoWay) { state.pendingWay = t.dataset.gotoWay; }
   if (t.dataset.analyze) {
     e.preventDefault();
@@ -1069,12 +1203,12 @@ document.addEventListener('input', (e) => {
   qTimer = setTimeout(() => {
     state.q = e.target.value; state.limit = PAGE;
     const h = location.hash.replace(/^#/, '') || '/';
-    if (h === '/' || h.startsWith('/franchises') || h.startsWith('/projekte')) rerenderList(h);
+    if (h === '/' || h.startsWith('/franchises') || h.startsWith('/projekte') || h.startsWith('/dual')) rerenderList(h);
     else location.hash = '#/';
   }, 120);
 });
 function rerenderList(h) {
-  const v = h.startsWith('/franchises') ? viewFranchises : h.startsWith('/projekte') ? viewProjects : viewDiscover;
+  const v = h.startsWith('/franchises') ? viewFranchises : h.startsWith('/projekte') ? viewProjects : h.startsWith('/dual') ? viewDual : viewDiscover;
   $('#view').innerHTML = v();
   fillOnlineIndex();
 }

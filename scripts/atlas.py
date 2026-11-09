@@ -5,7 +5,9 @@
     python3 scripts/atlas.py build        # validate, then write dist/ (app + data.json + offline HTML)
     python3 scripts/atlas.py stats        # quick overview of the database
     python3 scripts/atlas.py format       # rewrite all data files with canonical formatting
-    python3 scripts/atlas.py repair       # drop entries with non-https URLs (runs before validate in workflows)
+    python3 scripts/atlas.py repair       # drop non-https entries, strip markdown citations (runs before validate in workflows)
+    python3 scripts/atlas.py merge SRC INTO [--type remake] [--year 2011] [--name "…"] [--same]
+                                          # duplicate game SRC becomes a version of INTO (routes, mods, images move along)
 
 Standard library only (Python 3.10+).
 """
@@ -234,6 +236,8 @@ def bundle(db):
         'queue': [{'game': j['game'], 'reason': j.get('reason', '')} for j in
                   (read(DATA / 'queue.json')['jobs'] if (DATA / 'queue.json').exists() else [])],
         'dualScan': db['inbox'].get('dualScan', {}),
+        'franchiseScan': db['inbox'].get('franchiseScan', {}),
+        'imageRequests': db['inbox'].get('imageRequests', {}),
         'agent': db['inbox'].get('agent', {}),
     }
 
@@ -313,9 +317,108 @@ def repair():
         if g.get('cover') and bad(g['cover']):
             g.pop('cover')
             removed += 1
+        for holder in [g, *g.get('versions', []), *g.get('routes', []), *g.get('mods', [])]:
+            for key in ('summary', 'note', 'dualScreen', 'benefit', 'caveat', 'description'):
+                if isinstance(holder.get(key), str) and MD_CITE.search(holder[key]):
+                    holder[key] = MD_CITE.sub('', holder[key]).strip()
+                    removed += 1
         if json.dumps(g) != before:
             write(f, g)
     print(f'repair: {removed} ungültige Einträge entfernt')
+
+
+MD_CITE = re.compile(r'\s*\(\[[^\]]*\]\([^)]*\)\)')   # " ([site.com](https://…))" citation markers from the model
+
+
+def merge(src_id, into_id, vtype=None, year=None, name=None, same=False):
+    """Fold the duplicate game SRC into INTO: its versions become versions of INTO (or, with same=True, are mapped onto
+    INTO's versions with the same platforms), routes/mods/screenshots move along, every reference is rewritten."""
+    src_path, into_path = DATA / 'games' / f'{src_id}.json', DATA / 'games' / f'{into_id}.json'
+    src, into = read(src_path), read(into_path)
+    vmap = {}
+    for v in src.get('versions', []):
+        twin = next((t for t in into.get('versions', []) if set(t['platforms']) == set(v['platforms'])), None) if same else None
+        if twin:
+            vmap[v['id']] = twin['id']
+            continue
+        nv = dict(v)
+        base = re.sub(r'[^a-z0-9]+', '-', (name or src['title']).lower()).strip('-')[:40] or v['id']
+        nv['id'] = base if len(src['versions']) == 1 else f"{base}-{v['id']}"
+        while any(t['id'] == nv['id'] for t in into.get('versions', [])):
+            nv['id'] += '-2'
+        if v.get('type') == 'original' or vtype:
+            nv['type'] = vtype or 'port'
+        if year and not nv.get('year'):
+            nv['year'] = year
+        label = name or src['title']
+        if len(src['versions']) > 1:
+            label += f" – {', '.join(v['platforms'])}"
+        nv['name'] = f"{label} ({nv['year']})" if nv.get('year') and str(nv['year']) not in label else label
+        into.setdefault('versions', []).append(nv)
+        vmap[v['id']] = nv['id']
+    ids = {r['id'] for r in into.get('routes', [])}
+    for r in src.get('routes', []):
+        r = dict(r, release=vmap.get(r.get('release'), r.get('release')))
+        while r['id'] in ids:
+            r['id'] += '-2'
+        ids.add(r['id'])
+        into.setdefault('routes', []).append(r)
+    mids = {m['id'] for m in into.get('mods', [])}
+    for m in src.get('mods', []):
+        if m['id'] in mids:
+            continue
+        into.setdefault('mods', []).append(dict(m, release=[vmap.get(x, x) for x in m.get('release', [])]))
+    have = {s['url'] for s in into.get('screenshots', [])}
+    moved = [dict(s, caption=f"{s.get('caption') or 'Originalspiel'} · {name or src['title']}") if not same else s
+             for s in src.get('screenshots', []) if s['url'] not in have]
+    into['screenshots'] = into.get('screenshots', []) + (moved if not same or len(have) < 2 else [])
+    if not into.get('cover') and src.get('cover'):
+        into['cover'] = src['cover']
+    into['platforms'] = into.get('platforms', []) + [p for p in src.get('platforms', []) if p not in into.get('platforms', [])]
+    into['updatedAt'] = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    write(into_path, into)
+    src_path.unlink()
+    # references elsewhere
+    cl = read(DATA / 'changelog.json')
+    for e in cl['entries']:
+        if e.get('game') == src_id:
+            e['game'] = into_id
+        if src_id in e.get('games', []):
+            e['games'] = list(dict.fromkeys(into_id if x == src_id else x for x in e['games']))
+    write(DATA / 'changelog.json', cl)
+    pj = read(DATA / 'projects.json')
+    for p in pj['projects']:
+        if src_id in p.get('games', []):
+            p['games'] = list(dict.fromkeys(into_id if x == src_id else x for x in p['games']))
+    write(DATA / 'projects.json', pj)
+    inbox = read(DATA / 'inbox.json')
+    for key in ('aiResearch',):
+        inbox.get(key, {}).pop(src_id, None)
+    inbox['shotSearch'] = {k: v for k, v in inbox.get('shotSearch', {}).items() if not k.startswith(src_id + '/')}
+    for lead in inbox.get('leads', []):
+        if lead.get('game') == src_id:
+            lead['game'] = into_id
+    write(DATA / 'inbox.json', inbox)
+    qp = DATA / 'queue.json'
+    if qp.exists():
+        q = read(qp)
+        seen, jobs = set(), []
+        for j in q['jobs']:
+            if j['game'] == src_id and into_id in inbox.get('aiResearch', {}):
+                continue        # the surviving game was researched already
+            j = dict(j, game=into_id if j['game'] == src_id else j['game'])
+            if j['game'] not in seen:
+                seen.add(j['game'])
+                jobs.append(j)
+        q['jobs'] = jobs
+        write(qp, q)
+    for state_name in ('emuready_state.json',):
+        sp = DATA / state_name
+        if sp.exists():
+            st = read(sp)
+            st.get('games', {}).pop(src_id, None)
+            write(sp, st)
+    print(f'merge: {src_id} → {into_id} ({len(vmap)} Fassungen, {len(src.get("routes", []))} Spielwege)')
 
 
 def fmt():
@@ -332,4 +435,13 @@ if __name__ == '__main__':
         problems = validate()
         print('\n'.join(problems) or 'OK – keine Fehler')
         sys.exit(1 if problems else 0)
+    if cmd == 'merge':
+        import argparse
+        ap = argparse.ArgumentParser(prog='atlas.py merge')
+        ap.add_argument('src'), ap.add_argument('into')
+        ap.add_argument('--type'), ap.add_argument('--year', type=int), ap.add_argument('--name')
+        ap.add_argument('--same', action='store_true', help='gleiches Spiel: Fassungen mit gleichen Plattformen zusammenlegen')
+        a = ap.parse_args(sys.argv[2:])
+        merge(a.src, a.into, a.type, a.year, a.name, a.same)
+        sys.exit(0)
     {'build': build, 'stats': stats, 'format': fmt, 'repair': repair}.get(cmd, lambda: sys.exit(__doc__))()

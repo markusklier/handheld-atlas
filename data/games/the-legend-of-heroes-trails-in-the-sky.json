@@ -3,7 +3,8 @@
   "title": "The Legend of Heroes: Trails in the Sky",
   "franchise": "Trails",
   "platforms": [
-    "PSP"
+    "PSP",
+    "PlayStation Vita"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Legend%20of%20Heroes%2C%20The%20-%20Trails%20in%20the%20Sky%20%28USA%29.png",
@@ -24,8 +25,17 @@
       "platforms": [
         "PSP"
       ]
+    },
+    {
+      "id": "trails-in-the-sky-fc-evolution",
+      "name": "Trails in the Sky FC Evolution (2015)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "year": 2015
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

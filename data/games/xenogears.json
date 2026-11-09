@@ -47,7 +47,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Live-Gruppenwerte, Ausrüstung von Piloten und Gears, Inventar, Gold und Spielzeit; aus der Spielgeometrie erzeugte Raumkarten mit Position, Ausgängen, Schätzen und Etagen. Dazu Kampfinformationen und optionale Wegführung. Liest RetroArch Nightly über Network Commands; Veröffentlichungen vom Oktober 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Nihilspire/Xenogears-Link/main/README.md))",
+      "dualScreen": "Live-Gruppenwerte, Ausrüstung von Piloten und Gears, Inventar, Gold und Spielzeit; aus der Spielgeometrie erzeugte Raumkarten mit Position, Ausgängen, Schätzen und Etagen. Dazu Kampfinformationen und optionale Wegführung. Liest RetroArch Nightly über Network Commands; Veröffentlichungen vom Oktober 2026.",
       "dualScreenType": "companion",
       "requires": [],
       "benefit": "",

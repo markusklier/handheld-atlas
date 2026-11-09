@@ -31,7 +31,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Live-Begleitseite mit Gegenständen, Ereignissen, Status und Walkthrough-Leser; die Informationen stammen aus dem laufenden Spielspeicher, nicht aus einem statischen Overlay. Android-Recomp für die US-Fassung; erste Veröffentlichung am 12. September 2026. ([github.com](https://github.com/igawa6/Tomba2RecompDS))",
+      "dualScreen": "Live-Begleitseite mit Gegenständen, Ereignissen, Status und Walkthrough-Leser; die Informationen stammen aus dem laufenden Spielspeicher, nicht aus einem statischen Overlay. Android-Recomp für die US-Fassung; erste Veröffentlichung am 12. September 2026.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

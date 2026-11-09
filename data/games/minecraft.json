@@ -5,7 +5,9 @@
   "platforms": [
     "PC",
     "Android",
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Nintendo 3DS",
+    "PlayStation Vita"
   ],
   "genre": "Sandbox",
   "summary": "Minecraft Bedrock, verschiedene Java-Launcher sowie mehrere voneinander unabhängige Dual-Screen-Mods: ExoJosh, Abacus und DroidBridge. Versionen und Modloader unbedingt unterscheiden.",
@@ -41,6 +43,24 @@
         "Nintendo Switch"
       ],
       "note": "Per Switch-Emulation mit Companion für den zweiten Bildschirm."
+    },
+    {
+      "id": "new-nintendo-3ds-edition",
+      "name": "New Nintendo 3DS Edition (2017)",
+      "type": "port",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "year": 2017
+    },
+    {
+      "id": "playstation-vita-edition",
+      "name": "PlayStation Vita Edition (2014)",
+      "type": "port",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "year": 2014
     }
   ],
   "routes": [
@@ -559,5 +579,6 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09",
+  "screenshots": []
 }

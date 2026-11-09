@@ -3,7 +3,8 @@
   "title": "The Legend of Zelda: A Link to the Past",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "SNES"
+    "SNES",
+    "Game Boy Advance"
   ],
   "genre": "Action-Adventure",
   "summary": "Die SNES-ROM kann als Grundlage für Emulation oder einen Android-Port mit eigener Oberfläche dienen.",
@@ -31,6 +32,15 @@
       "platforms": [
         "SNES"
       ]
+    },
+    {
+      "id": "a-link-to-the-past-four-swords-gba",
+      "name": "A Link to the Past & Four Swords (GBA) (2002)",
+      "type": "port",
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "year": 2002
     }
   ],
   "routes": [
@@ -107,5 +117,5 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

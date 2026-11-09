@@ -46,12 +46,23 @@ def candidates():
             for s in m.get('screenshots', []):
                 if s.get('check') in TO_CHECK:
                     yield f, g, m, s, 'mod'
+        for s in g.get('screenshots', []):          # original-game pictures found by the AI image search
+            if s.get('check') in TO_CHECK:
+                yield f, g, g, s, 'game'
+        if (g.get('cover') or {}).get('check') in TO_CHECK:
+            yield f, g, g, g['cover'], 'cover'
 
 
 def ask(game, item, shot, kind, token, model):
-    variant = (f"Spielweg „{item['name']}“ ({item.get('kind')}, {item.get('runtime') or ''})"
-               + (f"; zweiter Bildschirm soll zeigen: {item.get('dualScreen')}" if 'dual-screen' in item.get('features', []) else '')
-               if kind == 'route' else f"Mod „{item['name']}“ ({item.get('category')})")
+    if kind == 'route':
+        variant = (f"Spielweg „{item['name']}“ ({item.get('kind')}, {item.get('runtime') or ''})"
+                   + (f"; zweiter Bildschirm soll zeigen: {item.get('dualScreen')}" if 'dual-screen' in item.get('features', []) else ''))
+    elif kind == 'mod':
+        variant = f"Mod „{item['name']}“ ({item.get('category')})"
+    elif kind == 'cover':
+        variant = "Packungsgrafik/Cover oder offizielles Key-Art des Spiels (showsVariant = yes, wenn es ein Cover ist; kind dann 'promo' nur bei Werbebannern mit Preis/Text)"
+    else:
+        variant = f"Szene aus dem Originalspiel ({', '.join(game.get('platforms', [])[:4])})"
     text = (f"Prüfe dieses Bild für den Spielekatalog „Handheld Atlas“. Spiel: „{game['title']}“. Erwartet: {variant}. "
             f"Bisherige Bildunterschrift: „{shot.get('caption', '')}“. Beantworte: zeigt es dieses Spiel, zeigt es genau diese "
             "Variante/diesen Mod, welche Art Bild ist es, sind zwei Bildschirme (Dual Screen) zu sehen? captionDe: kurze, "
@@ -74,13 +85,15 @@ def reachable_image(url):
         return False
 
 
-def decide(verdict, shot):
+def decide(verdict, shot, kind='route'):
     """Mutates shot; returns 'keep', 'drop' or 'unclear'."""
+    if kind == 'cover':   # box art is "promo"-like by nature; only the game match matters
+        verdict = dict(verdict, kind='gameplay' if verdict['kind'] == 'promo' else verdict['kind'])
     if verdict['kind'] in ('logo', 'promo', 'diagram') or verdict['showsGame'] == 'no' or verdict['showsVariant'] == 'no':
         return 'drop'
     if verdict['showsGame'] == 'yes' and verdict['showsVariant'] in ('yes', 'unclear'):
         shot['check'] = 'ai-verified'
-        if verdict.get('captionDe'):
+        if verdict.get('captionDe') and kind != 'cover':
             shot['caption'] = verdict['captionDe'][:80]
         if verdict.get('dualScreenVisible'):
             shot['dual'] = True
@@ -110,19 +123,31 @@ def main():
             break
         g = touched.get(f, g)
         # re-resolve item/shot inside the (possibly already modified) game object
-        coll = g['routes'] if kind == 'route' else g['mods']
-        item = next(x for x in coll if x['id'] == item['id'])
-        shot = next((s for s in item.get('screenshots', []) if s['url'] == shot['url']), None)
+        if kind in ('game', 'cover'):
+            item = g
+        else:
+            coll = g['routes'] if kind == 'route' else g['mods']
+            item = next(x for x in coll if x['id'] == item['id'])
+        if kind == 'cover':
+            shot = g.get('cover') if (g.get('cover') or {}).get('url') == shot['url'] else None
+        else:
+            shot = next((s for s in item.get('screenshots', []) if s['url'] == shot['url']), None)
         if not shot:
             continue
+
+        def remove():
+            if kind == 'cover':
+                g.pop('cover', None)
+            else:
+                item['screenshots'] = [x for x in item['screenshots'] if x['url'] != shot['url']]
+            rejected.add(shot['url'])   # media.py / the AI must not re-add it tomorrow
         if not check_link(shot['url']):
             stats['drop'] += 1
-            item['screenshots'] = [x for x in item['screenshots'] if x['url'] != shot['url']]
-            rejected.add(shot['url'])
+            remove()
             touched[f] = g
             continue
         try:
-            result = decide(ask(g, item, shot, kind, token, model), shot)
+            result = decide(ask(g, item, shot, kind, token, model), shot, kind)
         except Exception as e:  # noqa: BLE001 – unreachable image etc.
             print(f"! {g['id']}/{item['id']}: {type(e).__name__}: {str(e)[:120]}", file=sys.stderr)
             shot['check'] = 'ai-unclear'
@@ -131,10 +156,9 @@ def main():
             continue
         stats[result] += 1
         if result == 'drop':
-            item['screenshots'] = [s for s in item['screenshots'] if s['url'] != shot['url']]
-            rejected.add(shot['url'])   # media.py must not re-add it from the README tomorrow
-        # dual-screen pictures first, then verified ones
-        item['screenshots'].sort(key=lambda s: (not s.get('dual'), s.get('check') != 'ai-verified'))
+            remove()
+        if kind in ('route', 'mod'):   # dual-screen pictures first, then verified ones
+            item['screenshots'].sort(key=lambda s: (not s.get('dual'), s.get('check') != 'ai-verified'))
         touched[f] = g
     for f, g in touched.items():
         write(f, g)

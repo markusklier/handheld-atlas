@@ -373,3 +373,32 @@ details.generic-group[open] > summary { margin-bottom: 6px; }
 .dual-item img, .dual-item .mini { width: 96px; height: 60px; object-fit: cover; border-radius: 9px; background: var(--surface-3); flex: none; }
 .dual-table { min-width: 680px; }
 .coverage .meter { max-width: 520px; }
+
+/* search: series above single games */
+.fr-hit { align-items: center; }
+.fr-hit .thumbs img, .fr-hit .thumbs .mini { width: 46px; height: 62px; }
+.fr-hit .title svg { width: 16px; height: 16px; vertical-align: -2px; }
+.imgstat { margin-top: 2px; align-items: center; }
+.imgstat svg { width: 14px; height: 14px; vertical-align: -2px; }
+
+/* dual screen tab: one card per game, ways as sub-rows */
+.dual-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 430px), 1fr)); gap: 12px; }
+.dual-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.dual-head { display: flex; gap: 12px; padding: 12px; align-items: center; color: inherit; text-decoration: none; }
+.dual-head:hover, .dual-head:focus-visible { background: var(--surface-2); }
+.dual-head .grow { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.dual-head .title { font-weight: 650; font-size: 15.5px; }
+.dual-cover { position: relative; width: 54px; height: 72px; flex: none; border-radius: 8px; overflow: hidden; background: var(--surface-3); }
+.dual-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.dual-cover .ph { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; font-size: 9px; line-height: 1.15; padding: 3px;
+  background: linear-gradient(160deg, hsl(var(--h) 35% 22%), hsl(calc(var(--h) + 40) 30% 11%)); color: hsl(var(--h) 70% 88%); overflow: hidden; }
+.dual-shot { width: 112px; height: 63px; object-fit: cover; border-radius: 9px; flex: none; margin-left: auto; background: var(--surface-3); }
+.dual-ways { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.dual-way { display: flex; gap: 10px; padding: 9px 12px 9px 16px; color: inherit; text-decoration: none; align-items: flex-start; flex-wrap: wrap; border-left: 3px solid transparent; }
+.dual-way + .dual-way { border-top: 1px solid var(--line); }
+.dual-way:hover, .dual-way:focus-visible { background: var(--surface-2); border-left-color: var(--accent); }
+.dual-way .grow { flex: 1 1 220px; min-width: 0; }
+.dual-way .name { font-weight: 600; font-size: 14px; }
+.dual-way .desc { color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.dual-way .tags { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
+@media (max-width: 520px) { .dual-shot { display: none; } }

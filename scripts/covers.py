@@ -92,10 +92,12 @@ def url(repo, folder, name):
             + urllib.parse.quote(name))
 
 
-def main(force=False):
+def main(force=False, only=None):
     indexes = {}
     filled = 0
     for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
         g = read(f)
         has_libretro = 'libretro-thumbnails' in (g.get('cover') or {}).get('url', '')
         if g.get('cover') and not (force and has_libretro):
@@ -128,6 +130,7 @@ def main(force=False):
             write(f, g)
             filled += 1
     print(f'covers.py: {filled} Spiele mit Cover/Screenshots ergänzt')
+    return filled
 
 
 if __name__ == '__main__':

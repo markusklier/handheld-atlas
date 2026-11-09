@@ -3,7 +3,8 @@
   "title": "The Legend of Zelda: Majora's Mask",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo 64"
+    "Nintendo 64",
+    "Nintendo 3DS"
   ],
   "genre": "Action-Adventure",
   "summary": "Decomp-Port für Android, Recomp für Desktop und klassischer N64-Emulator bleiben getrennte Optionen.",
@@ -21,6 +22,16 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%20%28USA%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%203D%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel · Majora's Mask 3D",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%203D%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild · Majora's Mask 3D",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
     }
   ],
   "versions": [
@@ -31,6 +42,15 @@
       "platforms": [
         "Nintendo 64"
       ]
+    },
+    {
+      "id": "majora-s-mask-3d",
+      "name": "Majora's Mask 3D (2015)",
+      "type": "remake",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "year": 2015
     }
   ],
   "routes": [
@@ -140,5 +160,5 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

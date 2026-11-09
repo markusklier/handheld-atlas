@@ -382,20 +382,46 @@ def research(game_id, token, model, log=print, focus=None):
     return apply(game_id, g, prj, entries, log)
 
 
-def find_game(title):
-    want = re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode().lower())
+def title_key(title):
+    t = re.sub(r'\(.*?\)', '', unicodedata.normalize('NFKD', title or '').encode('ascii', 'ignore').decode().lower())
+    return re.sub(r'^the', '', re.sub(r'[^a-z0-9]', '', t))
+
+
+def game_year(g):
+    m = re.search(r'\((\d{4})\)', g.get('title', ''))
+    if m:
+        return int(m.group(1))
+    years = [v['year'] for v in g.get('versions', []) if v.get('year') and v.get('type') == 'original'] or \
+            [v['year'] for v in g.get('versions', []) if v.get('year')]
+    return min(years) if years else None
+
+
+def find_game(title, year=None):
+    """Atlas id of this game or None. With a year, a same-named game from another year (reboot: Tomb Raider 2013,
+    DOOM 2016) is NOT a match, while a subtitle variant from the same year is (Doom II: Hell on Earth = DOOM II)."""
+    want, base = title_key(title), title_key(re.split(r':| - ', title or '')[0])
+    m = re.search(r'\((\d{4})\)', title or '')
+    year = year or (int(m.group(1)) if m else None)
+    subtitle_hit = None
     for f in (DATA / 'games').glob('*.json'):
         g = read(f)
-        if re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', g['title']).encode('ascii', 'ignore').decode().lower()) == want:
+        key = title_key(g['title'])
+        gy = game_year(g)
+        close = not year or not gy or abs(gy - year) <= 1
+        if key == want and close:
             return g['id']
-    return None
+        if year and gy and abs(gy - year) <= 1 and key and (key == base or title_key(re.split(r':| - ', g['title'])[0]) == want):
+            subtitle_hit = g['id']
+    return subtitle_hit
 
 
 def create_game(title, platforms=(), franchise=None, year=None, log=print):
     """Skeleton for a game Atlas does not know yet; returns its id (existing id if the title is known)."""
-    existing = find_game(title)
+    existing = find_game(title, year)
     if existing:
         return existing, False
+    if year and find_game(title) and not re.search(r'\(\d{4}\)', title):
+        title = f'{title} ({year})'          # same name as an older game: reboot gets its year in the title
     gid = slug(title)
     while (DATA / 'games' / f'{gid}.json').exists():
         gid += '-2'
@@ -408,44 +434,113 @@ def create_game(title, platforms=(), franchise=None, year=None, log=print):
     return gid, True
 
 
-FRANCHISE_FORMAT = {'type': 'json_schema', 'name': 'atlas_franchise', 'strict': True, 'schema': {
-    'type': 'object', 'additionalProperties': False, 'required': ['games'], 'properties': {'games': {'type': 'array', 'items': {
-        'type': 'object', 'additionalProperties': False, 'required': ['title', 'year', 'platforms', 'sourceUrl'],
-        'properties': {'title': {'type': 'string'}, 'year': {'type': 'integer'}, 'platforms': {'type': 'array', 'items': {'type': 'string'}},
-                       'sourceUrl': {'type': 'string'}}}}}}}
+def franchise_format():
+    vtypes = sorted(read(DATA / 'meta.json')['versionTypes'])
+    return {'type': 'json_schema', 'name': 'atlas_franchise', 'strict': True, 'schema': {
+        'type': 'object', 'additionalProperties': False, 'required': ['games'], 'properties': {'games': {'type': 'array', 'items': {
+            'type': 'object', 'additionalProperties': False,
+            'required': ['title', 'year', 'platforms', 'sourceUrl', 'relation', 'atlasId', 'versionType'],
+            'properties': {'title': {'type': 'string'}, 'year': {'type': 'integer'},
+                           'platforms': {'type': 'array', 'items': {'type': 'string'}}, 'sourceUrl': {'type': 'string'},
+                           'relation': {'type': 'string', 'enum': ['new', 'existing', 'version']},
+                           'atlasId': {'type': 'string'}, 'versionType': {'type': 'string', 'enum': vtypes}}}}}}}
+
+
+def source_ok(url, sources):
+    """Franchise lists: the URL itself was returned by the search, or at least its site was (list articles are
+    often cited by sub-page)."""
+    if ok_url(url, sources):
+        return True
+    host = lambda u: re.sub(r'^www\.', '', (re.match(r'https://([^/]+)', u or '') or [None, ''])[1].lower())
+    return bool(ok_url(url) and sources and host(url) in {host(x) for x in sources})
 
 
 def research_franchise(name, token, model, log=print):
-    """List the games of a series and create the missing ones (deep research then happens per game)."""
+    """List the games of a series; create missing games, add re-releases/remasters/compilations as versions of the
+    game they belong to, then queue every game of the series for deep research."""
     known_platforms = sorted(read(DATA / 'platforms.json')['platforms'])
-    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
+    nk = title_key(name)
+    known = [g for g in (read(f) for f in (DATA / 'games').glob('*.json'))
+             if g.get('franchise') == name or (len(nk) > 3 and title_key(g['title']).startswith(nk))]
+    known = sorted(known, key=lambda g: (g.get('franchise') != name, g['title']))[:120]
+    known_txt = '\n'.join(f"- {g['id']} | {g['title']} | {game_year(g) or '?'}" for g in known) or '- (noch keine)'
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'high'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required',
-                        'reasoning': {'effort': 'low'}, 'text': {'format': FRANCHISE_FORMAT}, 'max_output_tokens': 8000,
-                        'input': f"""Liste die veröffentlichten Hauptspiele, Remakes und wichtigen Ableger der Spielereihe „{name}“
-(höchstens 30), jeweils Originaltitel (englisch), Erscheinungsjahr der Erstveröffentlichung, Plattformen der Erstveröffentlichung
-und eine Quelle. Plattformnamen wenn möglich aus dieser Liste: {', '.join(known_platforms)}, sonst üblicher Name
-(z. B. "PlayStation 4", "Xbox One", "Android"). Keine angekündigten Spiele."""}, token)
+                        'reasoning': {'effort': 'medium'}, 'text': {'format': franchise_format()}, 'max_output_tokens': 12000,
+                        'input': f"""Liste ALLE veröffentlichten Spiele der Spielereihe „{name}“ vollständig (höchstens 45): Hauptteile,
+Ableger, Mobile-Spiele, Reboots, Remakes, Remaster, Neuauflagen und Sammlungen. Je Eintrag: Originaltitel (englisch),
+Jahr der Erstveröffentlichung, Plattformen der Erstveröffentlichung, eine Quelle (am besten die Wikipedia-Liste der Reihe
+oder der Artikel des Spiels, die du über die Websuche geöffnet hast). Keine angekündigten Spiele.
+
+Atlas kennt bereits (id | Titel | Jahr):
+{known_txt}
+
+relation + atlasId:
+- "existing": dasselbe Spiel steht schon oben (auch unter anderem Namen, z. B. "Doom II: Hell on Earth" = "DOOM II") → atlasId = dessen id.
+- "version": Remaster, Remake mit gleichem Namen, Neuauflage, Portierung oder Sammlung eines Spiels oben
+  (z. B. "Tomb Raider: Anniversary" → tomb-raider, "DOOM + DOOM II" (2024) → doom-1993) → atlasId = id des Spiels,
+  zu dem es als Fassung gehört; versionType passend (remaster/remake/rerelease/port/collection).
+- "new": eigenständiges Spiel, das oben fehlt; atlasId = "". Reboots mit gleichem Namen sind eigene Spiele: Titel mit
+  Jahr, z. B. "DOOM (2016)", "Tomb Raider (2013)". versionType = "original".
+Plattformnamen wenn möglich aus dieser Liste: {', '.join(known_platforms)}, sonst üblicher Name (z. B. "PlayStation 4")."""}, token)
     data, sources = output_json(resp), searched_urls(resp)
-    entries = []
-    for item in data.get('games', [])[:30]:
-        if not item.get('title') or not ok_url(item.get('sourceUrl'), sources) or item.get('year', 0) > int(TODAY[:4]):
+    ids = {g['id'] for g in known}
+    entries, report = [], {'date': TODAY, 'listed': len(data.get('games', [])), 'added': [], 'versions': [], 'skipped': []}
+    for item in data.get('games', [])[:45]:
+        title = (item.get('title') or '').strip()
+        why = ('kein Titel' if not title else 'Quelle nicht aus der Websuche' if not source_ok(item.get('sourceUrl'), sources)
+               else 'noch nicht erschienen' if item.get('year', 0) > int(TODAY[:4]) else None)
+        if why:
+            report['skipped'].append({'title': title, 'reason': why})
+            log(f'  übersprungen ({why}): {title}')
             continue
-        gid, created = create_game(item['title'], item.get('platforms', [])[:6], name, item.get('year') or None, log)
+        target = item.get('atlasId') if item.get('atlasId') in ids else None
+        if item.get('relation') == 'version' and target:
+            path = DATA / 'games' / f'{target}.json'
+            g = read(path)
+            if any(title_key(v['name']).startswith(title_key(title)) or (v.get('year') == item.get('year') and
+                   v.get('type') == item.get('versionType')) for v in g.get('versions', [])):
+                continue
+            vid = slug(title)[:40]
+            while any(v['id'] == vid for v in g.get('versions', [])):
+                vid += '-2'
+            plats = [p for p in item.get('platforms', [])[:8] if p]
+            g.setdefault('versions', []).append({'id': vid, 'name': f"{title} ({item['year']})", 'type': item.get('versionType') or 'rerelease',
+                                                 'year': item['year'], 'platforms': plats or g.get('platforms', [])[:1],
+                                                 'links': [{'label': 'Quelle', 'url': item['sourceUrl']}]})
+            g['platforms'] += [p for p in plats if p not in g['platforms']]
+            write(path, g)
+            report['versions'].append(f'{target}: {title}')
+            entries.append({'date': TODAY, 'type': 'route-updated', 'by': 'ai-research', 'game': target,
+                            'text': f"Neue Fassung aus der Reihen-Analyse: {title} ({item['year']})", 'url': item['sourceUrl']})
+            continue
+        if item.get('relation') == 'existing' and target:
+            continue
+        gid, created = create_game(title, item.get('platforms', [])[:6], name, item.get('year') or None, log)
         if created:
+            ids.add(gid)
+            report['added'].append(gid)
             entries.append({'date': TODAY, 'type': 'game-added', 'by': 'ai-research', 'game': gid,
-                            'text': f"Neues Spiel aus der Reihe {name}: {item['title']} (KI-Recherche)", 'url': item['sourceUrl']})
+                            'text': f"Neues Spiel aus der Reihe {name}: {title} (KI-Recherche)", 'url': item['sourceUrl']})
     if entries:
         problems = __import__('atlas').validate()
         if problems:
             for e in entries:
-                (DATA / 'games' / f"{e['game']}.json").unlink(missing_ok=True)
+                if e['type'] == 'game-added':
+                    (DATA / 'games' / f"{e['game']}.json").unlink(missing_ok=True)
             log(f'  NICHT übernommen: {problems[:3]}')
             return []
         cl = read(DATA / 'changelog.json')
         cl['entries'][0:0] = entries
         write(DATA / 'changelog.json', cl)
-    # deep research for every game of the series that has not been researched yet
-    queued = queue_add([g['id'] for g in franchise_games(name)], f'Reihe {name}', front=True)
+    inbox = read(DATA / 'inbox.json')
+    inbox.setdefault('franchiseScan', {})[name] = report
+    write(DATA / 'inbox.json', inbox)
+    log(f"  Reihe {name}: {report['listed']} Titel gelistet, {len(report['added'])} neu, {len(report['versions'])} Fassungen, "
+        f"{len(report['skipped'])} übersprungen")
+    # deep research for every game of the series that has not been researched yet (new ones first)
+    order = report['added'] + [g['id'] for g in franchise_games(name) if g['id'] not in report['added']]
+    queued = queue_add(order, f'Reihe {name}', front=True)
     log(f'  {queued} Spiele der Reihe in die Warteschlange gestellt')
     return entries
 
@@ -567,7 +662,7 @@ Je Projekt und Spiel ein Eintrag (unterstützt ein Projekt mehrere Spiele, mehre
             while any(x['id'] == pid for x in projects['projects']):
                 pid += '-2'
             p = {'id': pid, 'name': item['name'], 'kind': PROJECT_KIND.get(item['kind'], 'mod'), 'url': purl,
-                 'repo': m.group(1) if m else None, 'description': item.get('dualScreen', ''), 'games': [], 'checkedAt': TODAY}
+                 'repo': m.group(1) if m else None, 'description': clean(item.get('dualScreen', ''), 300), 'games': [], 'checkedAt': TODAY}
             projects['projects'].append(p)
         if gid not in p['games']:
             p['games'].append(gid)
@@ -577,7 +672,7 @@ Je Projekt und Spiel ein Eintrag (unterstützt ein Projekt mehrere Spiele, mehre
         g.setdefault('routes', []).append({
             'id': rid, 'name': item['name'], 'kind': item['kind'], 'release': version['id'], 'runtime': None, 'projects': [p['id']],
             'targets': ['android'], 'features': ['two-screens'] if item['dualScreenType'] == 'native' else ['dual-screen'],
-            'dualScreen': item.get('dualScreen') or None, 'dualScreenType': item['dualScreenType'], 'requires': [], 'benefit': '',
+            'dualScreen': clean(item.get('dualScreen'), 300) or None, 'dualScreenType': item['dualScreenType'], 'requires': [], 'benefit': '',
             'caveat': 'Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.', 'steps': [], 'version': None,
             'effort': 'guided', 'status': 'active', 'verification': 'ai-unverified', 'testedOn': [], 'screenshots': [],
             'links': [{'label': 'Quelle', 'url': item['sourceUrl']}], 'reports': [], 'performance': [], 'checkedAt': TODAY})
@@ -652,11 +747,14 @@ Keine Logos, Icons, Werbegrafiken, Stockfotos. Nur echte Bild-URLs, die in der Q
     inbox = read(DATA / 'inbox.json')
     inbox.setdefault('shotSearch', {})[f'{game_id}/{route_id}'] = TODAY
     write(DATA / 'inbox.json', inbox)
+    before = list(r.get('screenshots', []))
+    have = {x['url'] for x in before}
+    shots = [x for x in shots if x['url'] not in have]
     if shots:
-        r['screenshots'] = shots
+        r['screenshots'] = (before + shots)[:6]
         write(path, g)
         if __import__('atlas').validate():
-            r['screenshots'] = []
+            r['screenshots'] = before
             write(path, g)
             return 0
         cl = read(DATA / 'changelog.json')
@@ -665,6 +763,102 @@ Keine Logos, Icons, Werbegrafiken, Stockfotos. Nur echte Bild-URLs, die in der Q
         write(DATA / 'changelog.json', cl)
     log(f'  {game_id}/{route_id}: {len(shots)} Bilder')
     return len(shots)
+
+
+GAME_IMAGES_FORMAT = {'type': 'json_schema', 'name': 'atlas_game_images', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['cover', 'screenshots'], 'properties': {
+        'cover': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'sourceUrl'],
+                  'properties': {'url': {'type': 'string'}, 'sourceUrl': {'type': 'string'}}},
+        'screenshots': SHOTS_FORMAT['schema']['properties']['screenshots']}}}
+
+
+def original_shots(g):
+    return [x for x in g.get('screenshots', []) if x.get('caption') != 'Titelbild']
+
+
+def find_game_images(game_id, token, model, log=print):
+    """Cover and screenshots of the original game from official sources (store pages, Wikipedia/Commons, publisher)."""
+    path = DATA / 'games' / f'{game_id}.json'
+    g = read(path)
+    need_cover = not g.get('cover')
+    vers = '; '.join(f"{v['name']} ({', '.join(v['platforms'])})" for v in g.get('versions', [])[:8])
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium'}],
+                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
+                        'text': {'format': GAME_IMAGES_FORMAT}, 'max_output_tokens': 4000,
+                        'input': f"""Finde Bilder für das Spiel „{g['title']}“ (Fassungen: {vers or ', '.join(g.get('platforms', []))}).
+{'cover: direkte Bild-URL der Packungsgrafik oder des offiziellen Key-Arts (Hochformat bevorzugt).' if need_cover else 'cover: url = "" (schon vorhanden).'}
+screenshots: bis zu 4 direkte Bild-URLs mit echten Spielszenen (keine Logos, Menüs, Fan-Art, Wallpaper, Stockfotos).
+Quellen: offizielle Shop-Seiten (Steam, Nintendo, PlayStation, Xbox, Google Play), Wikipedia/Wikimedia Commons,
+Seite des Herstellers, MobyGames. Nur https-URLs von png/jpg/webp, die genau so in der Quelle eingebunden sind;
+sourceUrl = die Seite, auf der das Bild eingebunden ist. caption auf Deutsch, kurz (z. B. „Kampf im ersten Level“)."""}, token)
+    data, sources = output_json(resp), searched_urls(resp)
+    rejected = set((read(DATA / 'media_state.json') if (DATA / 'media_state.json').exists() else {}).get('rejectedImages', []))
+    good = lambda u, src: ok_url(u) and IMG.search(u) and u not in rejected and ok_url(src, sources)
+    before = json.dumps(g)
+    cov = data.get('cover') or {}
+    if need_cover and good(cov.get('url'), cov.get('sourceUrl')):
+        g['cover'] = {'url': cov['url'], 'source': cov['sourceUrl'], 'check': 'ai'}
+    have = {x['url'] for x in g.get('screenshots', [])}
+    new = [{'url': x['url'], 'caption': clean(x.get('caption') or 'Originalspiel', 80), 'source': x['sourceUrl'], 'check': 'ai'}
+           for x in data.get('screenshots', [])[:4] if good(x.get('url'), x.get('sourceUrl')) and x['url'] not in have]
+    g['screenshots'] = g.get('screenshots', []) + new
+    if json.dumps(g) == before:
+        log(f'  {game_id}: keine passenden Originalbilder gefunden')
+        return 0
+    write(path, g)
+    if __import__('atlas').validate():
+        path.write_text(before, encoding='utf-8')
+        write(path, read(path))
+        return 0
+    n = len(new) + (1 if g.get('cover', {}).get('check') == 'ai' and need_cover else 0)
+    log(f'  {game_id}: {n} Originalbilder/Cover (KI, Prüfung folgt)')
+    return n
+
+
+def images_basic(game_ids, log=print):
+    """Free sources first (no AI): libretro-thumbnails, project READMEs/releases, Steam, Wikipedia."""
+    import covers
+    import media
+    only = set(game_ids)
+    for name, fn in (('libretro', lambda: covers.main(only=only)), ('README', lambda: media.fill_route_shots(only=only)),
+                     ('Steam', lambda: media.fill_steam(pause=0.3, only=only)),
+                     ('Wikipedia', lambda: media.fill_wikipedia(pause=0.5, only=only))):
+        try:
+            fn()
+        except Exception as e:  # noqa: BLE001 – one source failing must not stop the others
+            log(f'  ! Bilder {name}: {type(e).__name__}: {str(e)[:120]}')
+
+
+def request_images(game_ids, token, model, log=print, max_routes=16):
+    """Owner asked for pictures (button in the app): free sources, then AI search for whatever is still missing."""
+    images_basic(game_ids, log)
+    stats = {'games': 0, 'routes': 0}
+    budget = max_routes
+    for gid in game_ids:
+        g = read(DATA / 'games' / f'{gid}.json')
+        if not token:
+            continue
+        if not g.get('cover') or len(original_shots(g)) < 2:
+            try:
+                stats['games'] += find_game_images(gid, token, model, log)
+            except Exception as e:  # noqa: BLE001
+                log(f'  ! {gid}: {type(e).__name__}: {str(e)[:120]}')
+        # dual-screen ways first, then everything with fewer than two pictures
+        todo = sorted((r for r in g.get('routes', []) if len(r.get('screenshots', [])) < 2),
+                      key=lambda r: ('dual-screen' not in r.get('features', []) and 'two-screens' not in r.get('features', [])))
+        for r in todo:
+            if budget <= 0:
+                break
+            budget -= 1
+            try:
+                stats['routes'] += find_screenshots(gid, r['id'], token, model, log)
+            except Exception as e:  # noqa: BLE001
+                log(f"  ! {gid}/{r['id']}: {type(e).__name__}: {str(e)[:120]}")
+    inbox = read(DATA / 'inbox.json')
+    for gid in game_ids:
+        inbox.setdefault('imageRequests', {})[gid] = TODAY
+    write(DATA / 'inbox.json', inbox)
+    return stats
 
 
 def from_app_result(game_id, result, log=print):
@@ -708,6 +902,7 @@ def main():
     ap.add_argument('--screenshots', type=int, default=0, help='Bilder für N Spielwege ohne Screenshot suchen')
     ap.add_argument('--queue', type=int, default=0, help='N Spiele aus der Warteschlange recherchieren')
     ap.add_argument('--dual-scan', action='store_true', help='Dual-Screen-Suchlauf über alle Quellen')
+    ap.add_argument('--images', help='Bilder für diese Spiele suchen (ids, durch Komma getrennt)')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
     app_payload = '```json' in (args.issue_body or '')
@@ -716,37 +911,26 @@ def main():
         return 0
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     jobs = []   # (kind, value, focus)
-    if args.dual_scan:
-        try:
-            found = dual_scan(token, model)
-            print(f'Dual-Screen-Suchlauf: {len(found)} neue Wege' + (': ' + '; '.join(e['text'] for e in found) if found else ''))
-            Path(os.environ.get('RESEARCH_REPORT', '/tmp/atlas-research.md')).write_text(
-                f'Dual-Screen-Suchlauf: {len(found)} neue Wege\n' + '\n'.join('- ' + e['text'] for e in found) + '\n', encoding='utf-8')
-        except Exception as e:  # noqa: BLE001
-            print(f'! Dual-Screen-Suchlauf: {type(e).__name__}: {str(e)[:200]}')
-        args.queue = max(args.queue, 3)
-    if args.screenshots:
-        total = 0
-        for gid, rid in routes_without_shots(args.screenshots):
-            try:
-                total += find_screenshots(gid, rid, token, model)
-            except Exception as e:  # noqa: BLE001
-                print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
-        print(f'Bildersuche: {total} Screenshots gefunden')
-        if not (args.game or args.batch or args.issue_body or args.new_game or args.franchise or args.queue):
-            return 0
+    images = []   # game ids whose pictures were requested
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
         jobs = [('new', args.new_game, None)]
     elif args.franchise:
         jobs = [('franchise', args.franchise, None)]
+    elif args.images:
+        images = [x.strip() for x in args.images.split(',') if x.strip()]
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
-        m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in ('game', 'version', 'new-game', 'franchise', 'dual-scan')}
+        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise')
+        m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
-        if 'game' in val and payload:
+        if 'images' in val:
+            images = [x.strip() for x in val['images'].split(',') if x.strip()]
+        elif 'images-franchise' in val:
+            images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
+        elif 'game' in val and payload:
             jobs = [('app', val['game'], json.loads(payload.group(1)))]
         elif 'new-game' in val and payload:
             jobs = [('newapp', val['new-game'], json.loads(payload.group(1)))]
@@ -766,12 +950,40 @@ def main():
     elif args.batch:
         jobs = [('game', gid, None) for gid in pick_games(args.batch)]
     lines = []
+    if args.dual_scan:
+        try:
+            found = dual_scan(token, model)
+            lines.append(f'- Dual-Screen-Suchlauf: {len(found)} neue Wege' + ''.join('\n  - ' + e['text'] for e in found))
+        except Exception as e:  # noqa: BLE001
+            lines.append(f'- Dual-Screen-Suchlauf: Fehler – {type(e).__name__}: {str(e)[:200]}')
+        args.queue = max(args.queue, 3)
+    if args.screenshots:
+        total = 0
+        for gid, rid in routes_without_shots(args.screenshots):
+            try:
+                total += find_screenshots(gid, rid, token, model)
+            except Exception as e:  # noqa: BLE001
+                print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
+        lines.append(f'- Bildersuche: {total} Screenshots für Spielwege gefunden')
+    if images:
+        images = [gid for gid in images if (DATA / 'games' / f'{gid}.json').exists()]
+        print(f"Bilder angefordert: {', '.join(images)}")
+        st = request_images(images, token, model)
+        lines.append(f"- Bilder für {len(images)} Spiel(e) gesucht: {st['games']} Cover/Originalbilder und {st['routes']} "
+                     "Spielweg-Bilder per KI gefunden (dazu Cover und Bilder aus libretro-thumbnails, Steam, Wikipedia und "
+                     "Projekt-READMEs). Die KI-Bildprüfung läuft direkt danach.")
+    researched = set()
     for kind, value, extra in jobs:
         try:
             if kind == 'franchise':
                 print(f'Reihe: {value} ({model})')
                 entries = research_franchise(value, token, model)
-                lines.append(f'- Reihe **{value}**: ' + (f'{len(entries)} neue Spiele angelegt: ' + ', '.join(e["game"] for e in entries) if entries else 'keine neuen Spiele'))
+                rep = read(DATA / 'inbox.json').get('franchiseScan', {}).get(value, {})
+                lines.append(f"- Reihe **{value}**: {rep.get('listed', 0)} Titel gefunden, {len(rep.get('added', []))} neue Spiele"
+                             + (f" ({', '.join(rep['added'])})" if rep.get('added') else '')
+                             + f", {len(rep.get('versions', []))} Fassungen ergänzt"
+                             + (f"; übersprungen: {', '.join(x['title'] + ' (' + x['reason'] + ')' for x in rep['skipped'])}" if rep.get('skipped') else ''))
+                researched.update(rep.get('added', []))
                 continue
             if kind in ('new', 'newapp'):
                 value, created = create_game(value)
@@ -795,14 +1007,20 @@ def main():
         except Exception as e:  # noqa: BLE001 – one failing job must not stop the batch
             lines.append(f'- `{value}`: Fehler – {type(e).__name__}: {str(e)[:200]}')
             continue
+        researched.add(value)
         lines.append(f'- **{value}**: ' + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
     for job in (queue_pop(args.queue) if args.queue else []):
         try:
             print(f"Warteschlange: {job['game']} ({job['reason']})")
             entries = research(job['game'], token, model)
+            researched.add(job['game'])
             lines.append(f"- **{job['game']}** ({job['reason']}): " + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
         except Exception as e:  # noqa: BLE001
             lines.append(f"- `{job['game']}`: Fehler – {type(e).__name__}: {str(e)[:200]}")
+    # new or freshly researched games get covers/pictures from the free sources right away, not only tomorrow
+    researched = sorted(g for g in researched if g and (DATA / 'games' / f'{g}.json').exists())
+    if researched:
+        images_basic(researched)
     left = len(queue_load()['jobs'])
     if args.queue:
         lines.append(f'- Warteschlange: noch {left} Spiele')

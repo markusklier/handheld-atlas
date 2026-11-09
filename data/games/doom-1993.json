@@ -5,7 +5,12 @@
   "platforms": [
     "PC",
     "PlayStation",
-    "Android"
+    "Android",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series",
+    "Nintendo Switch"
   ],
   "genre": "Ego-Shooter",
   "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
@@ -532,5 +537,6 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09",
+  "screenshots": []
 }

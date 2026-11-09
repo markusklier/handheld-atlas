@@ -3,7 +3,8 @@
   "title": "Sonic Adventure 2",
   "franchise": "Sonic the Hedgehog",
   "platforms": [
-    "Dreamcast"
+    "Dreamcast",
+    "Nintendo GameCube"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Sonic%20Adventure%202%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
@@ -19,6 +20,16 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Sonic%20Adventure%202%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Sonic%20Adventure%202%20-%20Battle%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+      "caption": "Originalspiel · Battle (GameCube)",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Sonic%20Adventure%202%20-%20Battle%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+      "caption": "Titelbild · Battle (GameCube)",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
     }
   ],
   "versions": [
@@ -29,8 +40,17 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "sonic-adventure-2-battle",
+      "name": "Sonic Adventure 2: Battle (2001)",
+      "type": "port",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "year": 2001
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

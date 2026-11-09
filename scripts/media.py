@@ -111,13 +111,15 @@ def release_images(repo, fetch_json=None):
     return out
 
 
-def fill_route_shots(fetch=get, fetch_json=None):
+def fill_route_shots(fetch=get, fetch_json=None, only=None):
     """New README/release-note images for game-specific projects; also tops up routes that already have pictures.
     Images rejected by ai_vision.py (media_state.json → rejectedImages) never come back."""
     projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
     rejected = set(load_state().get('rejectedImages', []))
     cache, added = {}, 0
     for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
         g = read(f)
         changed = False
         for r in g.get('routes', []):
@@ -163,12 +165,15 @@ def steam_lookup(title, fetch=get):
     return None
 
 
-def fill_steam(fetch=get, pause=0.7):
+def fill_steam(fetch=get, pause=0.7, only=None):
     added = 0
     state = load_state()
     for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
         g = read(f)
-        if 'PC' not in g.get('platforms', []) or g.get('cover') or recently_tried(state, 'steam', g['id']):
+        wanted = not g.get('cover') or (only is not None and not g.get('screenshots'))   # on request: screenshots too
+        if 'PC' not in g.get('platforms', []) or not wanted or (only is None and recently_tried(state, 'steam', g['id'])):
             continue
         mark_tried(state, 'steam', g['id'])
         write(DATA / 'media_state.json', state)
@@ -191,7 +196,7 @@ def fill_steam(fetch=get, pause=0.7):
             urllib.request.urlopen(urllib.request.Request(cover, method='HEAD', headers={'User-Agent': UA}), timeout=15)
         except Exception:  # noqa: BLE001 – older games have no library art; header image is landscape but better than nothing
             cover = data.get('header_image')
-        if cover:
+        if cover and not g.get('cover'):
             g['cover'] = {'url': cover, 'source': store}
         shots = [{'url': s['path_full'], 'caption': 'Originalspiel', 'source': store} for s in data.get('screenshots', [])[:6]]
         if shots and not g.get('screenshots'):
@@ -246,12 +251,14 @@ def mark_tried(state, source, gid):
     state.setdefault(source, {})[gid] = date.today().isoformat()
 
 
-def fill_wikipedia(fetch=get, pause=1.0, limit=250):
+def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
     added = tried = 0
     state = load_state()
     for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
         g = read(f)
-        if g.get('cover') or tried >= limit or recently_tried(state, 'wikipedia', g['id']):
+        if g.get('cover') or tried >= limit or (only is None and recently_tried(state, 'wikipedia', g['id'])):
             continue
         tried += 1
         mark_tried(state, 'wikipedia', g['id'])

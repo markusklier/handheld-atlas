@@ -65,7 +65,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Touch-Minimap und Dungeonkarte mit Verschieben und Zoom, Herzen, Rubine, Inventar und Gegenstandsausrüstung einschließlich zusätzlicher Touch-Slots. Wahlweise Wii-U- oder 3DS-artiges Layout. Android-Fork von Dusklight; im September 2026 erschien die neue 2.0-basierte Linie. ([github.com](https://github.com/igawa6/dusklight))",
+      "dualScreen": "Touch-Minimap und Dungeonkarte mit Verschieben und Zoom, Herzen, Rubine, Inventar und Gegenstandsausrüstung einschließlich zusätzlicher Touch-Slots. Wahlweise Wii-U- oder 3DS-artiges Layout. Android-Fork von Dusklight; im September 2026 erschien die neue 2.0-basierte Linie.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

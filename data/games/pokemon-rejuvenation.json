@@ -31,7 +31,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten sowie Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken einschließlich AP und Effektivität. Android-Player auf mkxp-z-Basis; automatischer Vorab-Build vom 8. November 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/Enecchii/rejuv-dual/main/README.md))",
+      "dualScreen": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten sowie Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken einschließlich AP und Effektivität. Android-Player auf mkxp-z-Basis; automatischer Vorab-Build vom 8. November 2026.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

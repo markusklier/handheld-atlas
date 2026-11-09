@@ -3,7 +3,8 @@
   "title": "Final Fantasy Tactics",
   "franchise": "Final Fantasy",
   "platforms": [
-    "PlayStation"
+    "PlayStation",
+    "PSP"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Fantasy%20Tactics%20%28USA%29.png",
@@ -19,6 +20,16 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Final%20Fantasy%20Tactics%20%28USA%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Final%20Fantasy%20Tactics%20-%20The%20War%20of%20the%20Lions%20%28USA%29.png",
+      "caption": "Originalspiel · The War of the Lions",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Final%20Fantasy%20Tactics%20-%20The%20War%20of%20the%20Lions%20%28USA%29.png",
+      "caption": "Titelbild · The War of the Lions",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
     }
   ],
   "versions": [
@@ -29,8 +40,17 @@
       "platforms": [
         "PlayStation"
       ]
+    },
+    {
+      "id": "the-war-of-the-lions",
+      "name": "The War of the Lions (2007)",
+      "type": "port",
+      "platforms": [
+        "PSP"
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09"
 }

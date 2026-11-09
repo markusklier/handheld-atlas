@@ -205,6 +205,66 @@ class QueueAndDualScanTest(ModesTest):
         self.assertEqual(atlas.validate(), [])
 
 
+class FranchiseAndImagesTest(ModesTest):
+    def test_find_game_respects_reboots_and_subtitles(self):
+        self.assertEqual(ai_research.find_game('Doom II: Hell on Earth', 1994), 'doom-ii')       # same game, subtitle
+        self.assertIsNone(ai_research.find_game('DOOM', 2016))                                   # reboot ≠ DOOM (1993)
+        self.assertIsNone(ai_research.find_game('Tomb Raider', 2013))                            # reboot ≠ Tomb Raider (1996)
+        self.assertEqual(ai_research.find_game('Tomb Raider', 1996), 'tomb-raider')
+        gid, created = ai_research.create_game('Tomb Raider', ['PC'], 'Tomb Raider', 2013, log=lambda *a: None)
+        self.assertTrue(created)
+        self.assertEqual(atlas.read(atlas.DATA / 'games' / f'{gid}.json')['title'], 'Tomb Raider (2013)')
+
+    def test_franchise_relations(self):
+        resp = fake_response({'games': [
+            {'title': 'Doom II: Hell on Earth', 'year': 1994, 'platforms': ['PC'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_II',
+             'relation': 'new', 'atlasId': '', 'versionType': 'original'},                    # model says new, dedupe catches it
+            {'title': 'DOOM', 'year': 2016, 'platforms': ['PC', 'PlayStation 4'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_(2016_video_game)',
+             'relation': 'new', 'atlasId': '', 'versionType': 'original'},
+            {'title': 'DOOM 64 (Remaster)', 'year': 2020, 'platforms': ['PC'], 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_64',
+             'relation': 'version', 'atlasId': 'doom-3', 'versionType': 'remaster'},
+            {'title': 'Fake Doom', 'year': 2019, 'platforms': ['PC'], 'sourceUrl': 'https://made-up.example/x',
+             'relation': 'new', 'atlasId': '', 'versionType': 'original'}]},
+            ['https://en.wikipedia.org/wiki/Doom_(franchise)'])
+        original = ai_research.call_openai
+        ai_research.call_openai = lambda payload, token: resp
+        try:
+            ai_research.research_franchise('Doom', 'key', 'model', log=lambda *a: None)
+        finally:
+            ai_research.call_openai = original
+        rep = atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['Doom']
+        self.assertEqual(rep['added'], ['doom-2016'])
+        self.assertEqual([x['title'] for x in rep['skipped']], ['Fake Doom'])
+        self.assertTrue(any(v['type'] == 'remaster' for v in atlas.read(atlas.DATA / 'games' / 'doom-3.json')['versions']))
+        self.assertFalse((atlas.DATA / 'games' / 'doom-ii-hell-on-earth.json').exists())
+        self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'doom-2016')            # new games researched first
+        self.assertEqual(atlas.validate(), [])
+
+    def test_image_request_adds_checked_later_original_images(self):
+        gid = 'doom-3'
+        resp = fake_response({'cover': {'url': 'https://upload.wikimedia.org/doom3.jpg', 'sourceUrl': 'https://en.wikipedia.org/wiki/Doom_3'},
+                              'screenshots': [{'url': 'https://shared.steamstatic.com/ss_1.jpg', 'caption': 'Marsbasis', 'sourceUrl': 'https://store.steampowered.com/app/9050/'},
+                                              {'url': 'https://elsewhere.example/x.jpg', 'caption': 'x', 'sourceUrl': 'https://elsewhere.example/'}]},
+                             ['https://en.wikipedia.org/wiki/Doom_3', 'https://store.steampowered.com/app/9050/'])
+        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        g.pop('cover', None)
+        g['screenshots'] = []
+        atlas.write(atlas.DATA / 'games' / f'{gid}.json', g)
+        original, basic = ai_research.call_openai, ai_research.images_basic
+        ai_research.call_openai = lambda payload, token: resp
+        ai_research.images_basic = lambda ids, log=print: None          # no network in tests
+        try:
+            st = ai_research.request_images([gid], 'key', 'model', log=lambda *a: None)
+        finally:
+            ai_research.call_openai, ai_research.images_basic = original, basic
+        g = atlas.read(atlas.DATA / 'games' / f'{gid}.json')
+        self.assertEqual(st['games'], 2)
+        self.assertEqual((g['cover']['url'], g['cover']['check']), ('https://upload.wikimedia.org/doom3.jpg', 'ai'))
+        self.assertEqual([s['url'] for s in g['screenshots']], ['https://shared.steamstatic.com/ss_1.jpg'])
+        self.assertIn(gid, atlas.read(atlas.DATA / 'inbox.json')['imageRequests'])
+        self.assertEqual(atlas.validate(), [])
+
+
 class CleanTest(unittest.TestCase):
     def test_strips_citations_and_cuts_at_sentence(self):
         t = 'Für den Thor interessant. ([store.steampowered.com](https://store.steampowered.com/app/1)) Siehe [Wiki](https://x.org/a) dazu.'

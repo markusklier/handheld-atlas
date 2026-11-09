@@ -3,7 +3,8 @@
   "title": "The Legend of Zelda: The Wind Waker",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo GameCube"
+    "Nintendo GameCube",
+    "Wii U"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20The%20Wind%20Waker%20%28USA%29.png",
@@ -29,8 +30,55 @@
       "platforms": [
         "Nintendo GameCube"
       ]
+    },
+    {
+      "id": "the-wind-waker-hd",
+      "name": "The Wind Waker HD (2013)",
+      "type": "remaster",
+      "platforms": [
+        "Wii U"
+      ],
+      "year": 2013
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08"
+  "routes": [
+    {
+      "id": "ds-zeldawwhdrecomp",
+      "name": "ZeldaWWHDRecomp",
+      "kind": "recomp",
+      "release": "the-wind-waker-hd",
+      "runtime": null,
+      "projects": [
+        "zeldawwhdrecomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "two-screens"
+      ],
+      "dualScreen": "Separater Wii-U-GamePad-Ausgang für Karte, Gegenstände und Menüs einschließlich Touch-Eingabe, während das TV-Bild auf dem Hauptdisplay bleibt. Android-Dual-Display-Implementierung vorhanden; die Geräteprüfliste kennzeichnet reale Dual-Screen-Hardwaretests jedoch ausdrücklich als ausstehend. Deshalb als experimentell einordnen, nicht als bestätigte Thor-Kompatibilität.",
+      "dualScreenType": "native",
+      "requires": [],
+      "benefit": "",
+      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "updatedAt": "2026-11-09"
 }

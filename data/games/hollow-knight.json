@@ -143,7 +143,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Live-HUD mit Masken, Seele und Geo; Touch-Karte mit Position, Zoom und Markierungen sowie Inventar und Amulette. Auch Dialoge und Fundmeldungen werden unten ausgegeben. Benötigt die eigene Steam-/GOG-Fassung; erste Veröffentlichung am 22. August 2026. ([raw.githubusercontent.com](https://raw.githubusercontent.com/igawa6/dualsouls/main/README.md))",
+      "dualScreen": "Live-HUD mit Masken, Seele und Geo; Touch-Karte mit Position, Zoom und Markierungen sowie Inventar und Amulette. Auch Dialoge und Fundmeldungen werden unten ausgegeben. Benötigt die eigene Steam-/GOG-Fassung; erste Veröffentlichung am 22. August 2026.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

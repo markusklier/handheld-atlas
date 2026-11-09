@@ -31,7 +31,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Controllerorientierte Begleitoberfläche mit Zaubern und Radialmenüs, Taschen sowie Welt- und Innenraumkarten. Karten zeigen unter anderem Quests, beobachtete NPCs und Ressourcen. Für WoW Forever auf dem Thor; alternativ PC-Streaming mit Companion unten. Erste öffentliche Version am 13. Oktober 2026. ([github.com](https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0))",
+      "dualScreen": "Controllerorientierte Begleitoberfläche mit Zaubern und Radialmenüs, Taschen sowie Welt- und Innenraumkarten. Karten zeigen unter anderem Quests, beobachtete NPCs und Ressourcen. Für WoW Forever auf dem Thor; alternativ PC-Streaming mit Companion unten. Erste öffentliche Version am 13. Oktober 2026.",
       "dualScreenType": "companion",
       "requires": [],
       "benefit": "",

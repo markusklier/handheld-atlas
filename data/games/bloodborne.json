@@ -109,7 +109,7 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Integrierte Touch-Begleitung mit Live-Spielerwerten, Inventar und optionaler Gegenstandsbenutzung, Spielmenü, Trophäen, Notizen und Leistungsdaten. Die Hunter's-Atlas-Karte des zugrunde liegenden Ports bleibt nutzbar. Experimenteller Fork; benötigt eigene Bloodborne-1.09-Dateien. ([github.com](https://github.com/emerytech/Bloodborne-Android))",
+      "dualScreen": "Integrierte Touch-Begleitung mit Live-Spielerwerten, Inventar und optionaler Gegenstandsbenutzung, Spielmenü, Trophäen, Notizen und Leistungsdaten. Die Hunter's-Atlas-Karte des zugrunde liegenden Ports bleibt nutzbar. Experimenteller Fork; benötigt eigene Bloodborne-1.09-Dateien.",
       "dualScreenType": "integrated",
       "requires": [],
       "benefit": "",

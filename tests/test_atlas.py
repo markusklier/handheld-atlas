@@ -123,3 +123,31 @@ class FranchiseTest(unittest.TestCase):
         games = [{'id': 'a', 'title': "Luigi's Mansion", 'franchise': 'Super Mario'},
                  {'id': 'b', 'title': 'Super Mario 64', 'franchise': 'Super Mario'}]
         self.assertEqual([(g['id'], new) for g, _, new, _ in franchises.suggest(games)], [('a', "Luigi's Mansion")])
+
+
+class MergeTest(unittest.TestCase):
+    def setUp(self):
+        import shutil
+        import tempfile
+        self.tmp = Path(tempfile.mkdtemp())
+        shutil.copytree(atlas.DATA, self.tmp / 'data')
+        self.orig, atlas.DATA = atlas.DATA, self.tmp / 'data'
+
+    def tearDown(self):
+        import shutil
+        atlas.DATA = self.orig
+        shutil.rmtree(self.tmp)
+
+    def test_duplicate_becomes_version_with_routes(self):
+        src = {'id': 'zz-dupe-hd', 'title': 'ZZ Dupe HD', 'franchise': 'ZZ', 'platforms': ['Wii U'],
+               'versions': [{'id': 'wii-u', 'name': 'Wii U', 'type': 'original', 'platforms': ['Wii U']}],
+               'routes': [{'id': 'r1', 'name': 'Recomp', 'kind': 'recomp', 'release': 'wii-u', 'targets': ['android'],
+                           'features': [], 'verification': 'ai-unverified', 'links': [{'label': 'x', 'url': 'https://example.org'}]}]}
+        atlas.write(atlas.DATA / 'games' / 'zz-dupe-hd.json', src)
+        atlas.merge('zz-dupe-hd', 'doom-3', 'remaster', 2013, 'Dupe HD')
+        g = atlas.read(atlas.DATA / 'games' / 'doom-3.json')
+        v = next(v for v in g['versions'] if v['name'] == 'Dupe HD (2013)')
+        self.assertEqual((v['type'], v['platforms']), ('remaster', ['Wii U']))
+        self.assertEqual(next(r for r in g['routes'] if r['name'] == 'Recomp')['release'], v['id'])
+        self.assertFalse((atlas.DATA / 'games' / 'zz-dupe-hd.json').exists())
+        self.assertEqual(atlas.validate(), [])
