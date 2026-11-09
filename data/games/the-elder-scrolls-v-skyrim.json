@@ -309,6 +309,38 @@
           "credit": "SkyrimSE-DualScreen auf dem Thor",
           "check": "ai-verified",
           "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/HEAD/docs/screenshots/quests.png",
+          "caption": "Skyrim oben, Questübersicht auf dem unteren Bildschirm",
+          "source": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+          "credit": "github.com",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/HEAD/docs/screenshots/items.png",
+          "caption": "Skyrim oben, Inventar auf dem unteren Bildschirm",
+          "source": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+          "credit": "github.com",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/HEAD/docs/screenshots/magic.png",
+          "caption": "Skyrim oben, Magiemenü auf dem unteren Bildschirm",
+          "source": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+          "credit": "github.com",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/plus-cloud/SkyrimSE-DualScreen/main/docs/screenshots/character.png",
+          "caption": "Skyrim oben, Charakterwerte und Karte unten",
+          "source": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+          "credit": "github.com",
+          "check": "ai-verified",
+          "dual": true
         }
       ],
       "links": [
@@ -553,6 +585,13 @@
           "source": "https://github.com/igortiburcio/skyrim_androidborn",
           "credit": "Skyrim Androidborn",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igortiburcio/skyrim_androidborn/HEAD/images/androidborn-settings.jpg",
+          "caption": "Graphics settings",
+          "source": "https://github.com/igortiburcio/skyrim_androidborn",
+          "credit": "Skyrim Androidborn",
+          "check": "ai-unclear"
         }
       ],
       "links": [
@@ -611,7 +650,24 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://steamdeckhq.com/wp-content/uploads/2026/05/SkyrimWebMonitorStock1.webp",
+          "caption": "Skyrim am Monitor, Kartenansicht auf einem Handheld",
+          "source": "https://steamdeckhq.com/news/skyrims-wii-u-plugin-looks-perfect-on-steam-deck/",
+          "credit": "steamdeckhq.com",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://steamdeckhq.com/wp-content/uploads/2026/05/SkyrimWebMonitorStock1-1024x576.webp",
+          "caption": "Skyrim am Monitor, Karte auf einem Handheld",
+          "source": "https://steamdeckhq.com/news/skyrims-wii-u-plugin-looks-perfect-on-steam-deck/",
+          "credit": "steamdeckhq.com",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -864,7 +920,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.ytimg.com/vi/np1grtjFDdQ/maxresdefault.jpg",
+          "caption": "Skyrim-Spielszene mit Touch-Steuerung und Eden-Logo",
+          "source": "https://www.youtube.com/watch?v=np1grtjFDdQ",
+          "credit": "youtube.com",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

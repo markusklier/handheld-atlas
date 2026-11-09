@@ -353,7 +353,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://cdn.toucharcade.com/wp-content/uploads/2020/01/175EB5D1-7039-4B7E-857D-8482AD35EE01.png",
+          "caption": "Offizielle Android-App mit Final-Doom-Add-ons",
+          "source": "https://toucharcade.com/2020/01/09/doom-ii-update-out-now-60-fps-romero-sigil-level-select-cheats-add-ons-final-doom-bethesda-net-account-ios-android/",
+          "credit": "toucharcade.com",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -514,6 +522,12 @@
       "caption": "Originalspiel",
       "source": "https://gamesdb.launchbox-app.com/games/images/18604-final-doom",
       "check": "ai-unclear"
+    },
+    {
+      "url": "https://everca.de/images/upload/1-doom-screenshot-evercade-1416.jpg",
+      "caption": "Egoperspektive mit Pistole in einem düsteren Technikraum",
+      "source": "https://everca.de/hc-11-the-doom-collection-t-746-1",
+      "check": "ai-verified"
     }
   ],
   "summary": "Auf dem Thor ist der UZDoom-Dual-Screen-Port besonders interessant: Er verlegt Live-Automap und Statusleiste auf das untere Display. Delta Touch ist die vielseitige Alternative für beide PC-Kampagnen und Mods; dafür benötigst du eigene TNT.WAD und PLUTONIA.WAD."

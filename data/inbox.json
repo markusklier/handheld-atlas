@@ -5805,7 +5805,16 @@
     "final-doom/ai-uzdoom-mit-echter-dual-screen-automap": "2026-11-09",
     "final-doom/ai-delta-touch-mit-gzdoom-oder-klassischem-source-port": "2026-11-09",
     "final-doom/ai-offizielle-android-app-mit-final-doom-add-ons": "2026-11-09",
-    "final-doom/ai-playstation-fassung-uber-psydoom-fur-android": "2026-11-09"
+    "final-doom/ai-playstation-fassung-uber-psydoom-fur-android": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-skyrimse-dualscreen-auf-dem-thor": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-skyrimwebmonitor-als-separater-zweitbildschirm-companion": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-skyrim-se-mit-profmags-dualscreen-launcher": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-ayn-dual-screen-fur-skyrim-se-experimenteller-browser-com": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-special-edition-uber-gamenative": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-special-edition-uber-winlator": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-special-edition-uber-gamehub-mit-dokumentiertem-odin-2-pr": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-legendary-edition-uber-gamehub-mit-android-handheld-modpr": "2026-11-09",
+    "the-elder-scrolls-v-skyrim/ai-switch-fassung-uber-eden-mit-skyrim-erfahrungsberichten": "2026-11-09"
   },
   "dualScanSeen": [
     "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
@@ -5901,6 +5910,7 @@
     "mighty-doom": "2026-11-09",
     "crash-team-racing": "2026-11-09",
     "tomb-raider": "2026-11-09",
-    "tomb-raider-ii": "2026-11-09"
+    "tomb-raider-ii": "2026-11-09",
+    "the-elder-scrolls-v-skyrim": "2026-11-09"
   }
 }
