@@ -760,7 +760,36 @@ def ask_pages(text, token, model):
     return [p['url'] for p in data.get('pages', [])[:8] if ok_url(p.get('url'), sources)]
 
 
-def collect(pages, have, limit, log=print, fetch=None, fetch_json=None):
+POST_IMAGE_HOSTS = re.compile(r'^https://(i\.redd\.it|preview\.redd\.it|external-preview\.redd\.it|i\.imgur\.com|i\.ytimg\.com)/')
+POST_IMAGES_FORMAT = {'type': 'json_schema', 'name': 'atlas_post_images', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['images'], 'properties': {'images': {
+        'type': 'array', 'items': {'type': 'object', 'additionalProperties': False, 'required': ['url', 'post', 'caption'],
+                                   'properties': {'url': {'type': 'string'}, 'post': {'type': 'string'}, 'caption': {'type': 'string'}}}}}}}
+
+
+def images_from_posts(posts, have, limit, token, model, log=print):
+    """OpenAI's web search can still read Reddit: ask it for the image addresses inside the posts we could not open."""
+    model = os.environ.get('OPENAI_IMAGES_MODEL') or model
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'low'}],
+                        'include': ['web_search_call.action.sources'], 'tool_choice': 'required', 'reasoning': {'effort': 'low'},
+                        'text': {'format': POST_IMAGES_FORMAT}, 'max_output_tokens': 2000,
+                        'input': 'Öffne diese Reddit-Beiträge und gib die direkten Adressen der darin gezeigten Bilder bzw. '
+                                 'Video-Vorschaubilder an (i.redd.it, preview.redd.it, i.imgur.com) – nur Adressen, die wirklich im '
+                                 'Beitrag stehen, nichts erfinden. caption: kurz auf Deutsch, was zu sehen ist.\n' + '\n'.join(posts)}, token)
+    rejected, out = rejected_images(), []
+    import images
+    for im in output_json(resp).get('images', []):
+        url = __import__('html').unescape(im.get('url') or '')
+        if len(out) >= limit or not POST_IMAGE_HOSTS.match(url) or url in rejected or im.get('post') not in posts:
+            continue
+        if any(images.same_image(url, x) for x in list(have) + [o['url'] for o in out]) or not _reachable(url):
+            continue
+        out.append({'url': url, 'source': im['post'], 'caption': im.get('caption') or ''})
+    log(f'    Reddit über die KI-Websuche → {len(out)} Bilder')
+    return out
+
+
+def collect(pages, have, limit, log=print, fetch=None, fetch_json=None, blocked=None):
     """Pictures from the pages, in page order; dead links, rejected and known pictures are skipped."""
     import images
     fetch = fetch or images.get
@@ -768,6 +797,8 @@ def collect(pages, have, limit, log=print, fetch=None, fetch_json=None):
     for page in dict.fromkeys(pages):
         got = images.images_from_page(page, fetch, fetch_json, log)
         log(f'    {page[:100]} → {len(got)} Bilder')
+        if not got and 'reddit.com/r/' in page and blocked is not None:
+            blocked.append(page)          # Reddit blocks GitHub's servers – read later via the AI web search
         for sh in got:
             if len(out) >= limit:
                 return out
@@ -801,7 +832,8 @@ def route_candidates(g, r, token, model, log=print):
     room = MAX_SHOTS - len(have)
     if room <= 0:
         return []
-    found = collect(route_pages(g, r, projects), have, room, log)
+    blocked = []
+    found = collect(route_pages(g, r, projects), have, room, log, blocked=blocked)
     dual = 'dual-screen' in r.get('features', []) or 'two-screens' in r.get('features', [])
     if token and len(found) < (3 if dual else 2):
         proj = [projects[p] for p in r.get('projects', []) if p in projects]
@@ -810,16 +842,22 @@ def route_candidates(g, r, token, model, log=print):
                 "auf denen BEIDE Bildschirme des Geräts (z. B. AYN Thor, Ayaneo Flip DS, Dual-Screen-Handheld) zu sehen sind.") if dual else ''
         pages = ask_pages(f"""Finde bis zu 6 Seiten, auf denen man sieht, wie „{g['title']}“ über den Weg „{r['name']}“
 ({r.get('runtime') or r.get('kind')}) auf einem Android-Gerät oder Handheld aussieht.{wish}
-Gute Seiten: YouTube-Videos oder Shorts (am besten), GitHub-README oder Release-Seiten, Projekt- oder Store-Seiten
-(Google Play), Artikel und Blogbeiträge mit Screenshots. Reddit nur, wenn es nichts anderes gibt (oft nicht abrufbar). Projekt: {where or '–'}.
+Gute Seiten: YouTube-Videos oder Shorts, Reddit-Beiträge mit Fotos (oft vom Autor selbst), GitHub-README oder
+Release-Seiten, Projekt- oder Store-Seiten (Google Play), Artikel und Blogbeiträge mit Screenshots. Projekt: {where or '–'}.
 url = genau die Seite, die du über die Websuche geöffnet hast; shows = was darauf zu sehen ist (kurz, deutsch).""", token, model)
-        found += collect(pages, have | {x['url'] for x in found}, room - len(found), log)
+        found += collect(pages, have | {x['url'] for x in found}, room - len(found), log, blocked=blocked)
+    posts = list(dict.fromkeys(blocked))
+    if token and posts and len(found) < room:
+        try:
+            found += images_from_posts(posts[:4], have | {x['url'] for x in found}, room - len(found), token, model, log)
+        except Exception as e:  # noqa: BLE001
+            log(f'    ! Reddit über KI: {type(e).__name__}: {str(e)[:100]}')
     cap = r['name'] + (' (Dual Screen)' if dual else '')
     return [{'url': x['url'], 'caption': clean(x.get('caption') or cap, 80) or cap, 'source': x['source'],
              'credit': x['source'].split('/')[2].replace('www.', ''), 'check': 'ai'} for x in found]
 
 
-def apply_route_shots(game_id, route_id, shots, log=print):
+def apply_route_shots(game_id, route_id, shots, log=print, front=False):
     path = DATA / 'games' / f'{game_id}.json'
     g = read(path)
     r = next((x for x in g['routes'] if x['id'] == route_id), None)
@@ -834,7 +872,7 @@ def apply_route_shots(game_id, route_id, shots, log=print):
     if not shots:
         log(f'  {game_id}/{route_id}: keine neuen Bilder')
         return 0
-    r['screenshots'] = (before + shots)[:MAX_SHOTS]
+    r['screenshots'] = (shots + before if front else before + shots)[:MAX_SHOTS]   # pasted by the owner: first
     write(path, g)
     if __import__('atlas').validate():
         r['screenshots'] = before
@@ -916,6 +954,37 @@ def find_game_images(game_id, token, model, log=print):
         return 0
     log(f'  {game_id}: {len(new)} Originalbilder (Prüfung folgt)')
     return len(new)
+
+
+def add_image(target, url, token=None, model=None, log=print):
+    """Owner pasted a picture or a page (Reddit post, video, article) in the app for a game or one way."""
+    import images
+    gid, _, rid = target.strip().partition('/')
+    url = url.strip().strip('<>')
+    if not ok_url(url) or not (DATA / 'games' / f'{gid}.json').exists():
+        return 0
+    g = read(DATA / 'games' / f'{gid}.json')
+    holder = next((r for r in g['routes'] if r['id'] == rid), None) if rid else g
+    if holder is None:
+        return 0
+    have = {x['url'] for x in holder.get('screenshots', [])}
+    if images.IMG_EXT.search(url) or POST_IMAGE_HOSTS.match(url):
+        found = [{'url': url, 'source': url, 'caption': ''}] if _reachable(url) else []
+    else:
+        blocked = []
+        found = collect([url], have, 4, log, blocked=blocked)
+        if blocked and token:
+            found += images_from_posts(blocked, have | {x['url'] for x in found}, 4 - len(found), token, model, log)
+    cap = (holder.get('name') if rid else 'Originalspiel') or 'Screenshot'
+    shots = [{'url': x['url'], 'caption': clean(x.get('caption') or cap, 80) or cap, 'source': x['source'],
+              'credit': x['source'].split('/')[2].replace('www.', ''), 'check': 'ai'} for x in found if x['url'] not in have]
+    if not shots:
+        return 0
+    if rid:
+        return apply_route_shots(gid, rid, shots, log, front=True)
+    g['screenshots'] = g.get('screenshots', []) + shots
+    write(DATA / 'games' / f'{gid}.json', g)
+    return len(shots)
 
 
 def images_basic(game_ids, log=print):
@@ -1040,6 +1109,7 @@ def main():
     jobs = []   # (kind, value, focus)
     images = []   # game ids whose pictures were requested
     image_routes = None
+    added_image = None   # (game[/way], url) pasted by the owner in the app
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
@@ -1050,11 +1120,13 @@ def main():
         images = [x.strip() for x in args.images.split(',') if x.strip()]
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
-        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise')
+        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url')
         m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
-        if 'images' in val:
+        if 'add-image' in val and 'url' in val:
+            added_image = (val['add-image'], val['url'])
+        elif 'images' in val:
             images = [x.strip() for x in val['images'].split(',') if x.strip()]
         elif 'images-franchise' in val:
             images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
@@ -1093,6 +1165,13 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
         lines.append(f'- Bildersuche: {total} Screenshots für Spielwege gefunden')
+    if added_image:
+        try:
+            n = add_image(*added_image, token=token, model=model)
+            lines.append(f'- Bild hinzugefügt für {added_image[0]}: {n} Bild(er) aus {added_image[1]}' if n
+                         else f'- {added_image[1]}: kein passendes Bild gefunden (Seite nicht lesbar oder schon vorhanden)')
+        except Exception as e:  # noqa: BLE001
+            lines.append(f'- Bild für {added_image[0]}: Fehler – {type(e).__name__}: {str(e)[:150]}')
     if len(images) == 1 and '/' in images[0]:          # one way only: "game/route" (button at a way, or --images)
         images, image_routes = [images[0].split('/')[0]], [images[0].split('/', 1)[1]]
     if images:

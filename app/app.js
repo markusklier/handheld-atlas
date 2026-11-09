@@ -995,6 +995,7 @@ function dataPanel(g) {
     <ul class="checklist">${c.items.map((i) => `<li class="${i.ok ? 'ok' : i.part ? 'part' : 'miss'}">${icon(i.ok ? 'check' : 'alert')}${esc(i.label)}</li>`).join('')}</ul>
     <p class="req-run" data-req-game="${esc(g.id)}"${req ? '' : ' hidden'}>${icon('spark')} <span>${esc(req?.label || '')}</span></p>
     <div class="row">${btn('research', needResearch && !needImages)}${btn('images', needImages)}
+      ${DB.meta.repo ? `<button class="btn small" data-addimage="${esc(g.id)}" data-title="${esc(g.title)}" title="Link zu einem Bild, Video oder Artikel einfügen">${icon('ext')}Bild-Link einfügen</button>` : ''}
       ${researchStatus(g)}${imgReq ? `<span class="faint">Bilder zuletzt gesucht ${fmtDate(imgReq)}</span>` : ''}</div>
     <p class="faint">Tiefenrecherche = Fassungen, Spielwege, Mods und Berichte (3–5 Min.). Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
   </details>`;
@@ -1007,7 +1008,9 @@ function wayImageButton(g, r) {
   if (n >= 4 && !dual) return '';
   const label = n ? (dual ? 'Mehr Dual-Screen-Bilder suchen' : 'Mehr Bilder suchen') : (dual ? 'Wie sieht das aus? Dual-Screen-Bilder suchen' : 'Bilder für diesen Weg suchen');
   return `<div class="row"><a class="btn small${n ? '' : ' primary'}" href="${esc(issueUrl(`Bilder: ${g.title} – ${r.name}`, `images: ${g.id}/${r.id}`))}" target="_blank" rel="noopener"
-    title="Sucht Videos, Beiträge und Projektseiten, die genau diesen Weg zeigen">${icon('image')}${label}</a>${n ? '' : '<span class="faint">Noch kein Bild für diesen Weg.</span>'}</div>`;
+    title="Sucht Videos, Beiträge und Projektseiten, die genau diesen Weg zeigen">${icon('image')}${label}</a>
+    <button class="btn small" data-addimage="${esc(g.id)}/${esc(r.id)}" data-title="${esc(g.title + ' – ' + r.name)}" title="Link zu einem Reddit-Beitrag, Video oder Bild einfügen">${icon('ext')}Bild-Link einfügen</button>
+    ${n ? '' : '<span class="faint">Noch kein Bild für diesen Weg.</span>'}</div>`;
 }
 
 /* ---------- requests (GitHub issues) the user started from this device: live status ---------- */
@@ -1019,6 +1022,19 @@ function pendingFor(gameId) {
   const min = Math.max(1, Math.round((Date.now() - r.at) / 60000));
   return { ...r, label: r.state === 'open' ? `${r.title} läuft seit ${min} Min. …` : r.state === 'closed' ? `${r.title} ist fertig – die App wird gerade aktualisiert …` : `${r.title}: warte, bis das Issue auf GitHub abgeschickt ist …` };
 }
+document.addEventListener('click', (e) => {
+  const b = e.target.closest?.('[data-addimage]');
+  if (!b) return;
+  e.preventDefault();
+  const url = (prompt('Link einfügen: Reddit-Beitrag, YouTube-Video, Artikel oder direkt die Bildadresse', '') || '').trim();
+  if (!/^https:\/\//.test(url)) { if (url) toast('Bitte einen Link mit https:// einfügen.'); return; }
+  const title = `Bild: ${b.dataset.title}`;
+  window.open(issueUrl(title, `add-image: ${b.dataset.addimage}\nurl: ${url}`), '_blank', 'noopener');
+  const list = requests().filter((r) => r.title !== title);
+  list.unshift({ title, game: b.dataset.addimage.split('/')[0], at: Date.now(), state: 'new' });
+  store.set(REQ_KEY, list.slice(0, 12));
+  scheduleRequestPoll(20000);
+});
 document.addEventListener('click', (e) => {
   const a = e.target.closest?.('a[href*="/issues/new?"]');
   if (!a) return;

@@ -202,6 +202,22 @@ class ScreenshotSearchTest(ModesTest):
         self.assertEqual(atlas.validate(), [])
 
 
+class AddImageTest(ScreenshotSearchTest):
+    def test_pasted_reddit_post_is_read_through_the_ai(self):
+        post = 'https://www.reddit.com/r/AynThor/comments/abc/minecraft_dual/'
+        ai_research.call_openai = lambda payload, token: fake_response({'images': [
+            {'url': 'https://preview.redd.it/thor-dual.jpeg?width=640&amp;s=1', 'post': post, 'caption': 'Inventar unten'},
+            {'url': 'https://evil.example/x.jpg', 'post': post, 'caption': 'x'}]}, [post])
+        gid = 'minecraft'
+        rid = atlas.read(atlas.DATA / 'games' / 'minecraft.json')['routes'][0]['id']
+        n = ai_research.add_image(f'{gid}/{rid}', post, token='key', model='m', log=lambda *a: None)
+        route = next(r for r in atlas.read(atlas.DATA / 'games' / 'minecraft.json')['routes'] if r['id'] == rid)
+        self.assertEqual(n, 1)
+        self.assertEqual((route['screenshots'][-1]['url'], route['screenshots'][-1]['source']),
+                         ('https://preview.redd.it/thor-dual.jpeg?width=640&s=1', post))
+        self.assertEqual(atlas.validate(), [])
+
+
 class QueueAndDualScanTest(ModesTest):
     def test_franchise_queues_unresearched_games_and_queue_pops(self):
         n = ai_research.queue_add(['doom-1993', 'doom-ii', 'doom-ii'], 'Reihe Doom')
