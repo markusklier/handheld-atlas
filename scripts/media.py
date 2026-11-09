@@ -361,6 +361,7 @@ def fill_website_covers(fetch=get, only=None, limit=100):
             m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
                 re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
             cand = urllib.parse.urljoin(pg, m.group(1).replace('&amp;', '&')) if m else None
+            log(f"  Cover-Suche {g['id']}: {pg[:60]} → {len(page)} Zeichen, Bild: {(cand or 'keins')[:100]}")
             if cand and cand.startswith('https://') and not re.search(r'logo|favicon|\.svg', cand, re.I):
                 if 'play-lh.googleusercontent.com' in cand:
                     cand = re.sub(r'=[^/]*$', '', cand) + '=w1280-h640'     # feature graphic in a usable size
