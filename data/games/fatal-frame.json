@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8760c85c-8514-4d45-aaf2-07d6bc9c0515",
+          "device": "AYN Thor Base",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Standard performance mode, quiet fan profile. Increased EE Cycle Rate didn't affect gameplay in my case, but it did prevent occasional slowdowns. I also set audio to async mix",
+          "votes": 0,
+          "date": "2026-10-04",
+          "settings": {
+            "Emulator Version": "NetherSX2-Turnip v0.7 (2.2n)",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "4",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "1.2"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0b9b09b7-6ea8-4955-a6e0-b9f83595a110"
+        }
       ]
     }
   ],

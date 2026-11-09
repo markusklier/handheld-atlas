@@ -28,6 +28,82 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2a53fb1b-9c06-40f9-be77-027823f66ab3",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8c8a61c0-20a4-42ca-b4d4-e5c2236ebb3d",
+          "device": "AYN Thor Base",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-08",
+          "settings": {
+            "Emulator Version": "0.1-8969-g61bb8fb4 (#8442)",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "5",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1c9c5452-eb0e-4306-bc38-ee22410d566b",
+          "device": "AYN Thor Max",
+          "emulator": "RetroArch",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs at 60FPS with Vulcan and 4x Upscaling",
+          "votes": 0,
+          "date": "2026-03-28",
+          "settings": {
+            "Emulator Version": "1.22.2",
+            "Core": "Swanstation",
+            "Video Driver": "Vulkan",
+            "Video Scale": "4",
+            "VSync": "True",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e44badd3-0868-4c47-91d4-785f1772c39a"
+        }
       ]
     }
   ],
@@ -35,5 +111,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q474573",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_IX",
-  "genre": "role-playing video game"
+  "genre": "role-playing video game",
+  "website": "https://finalfantasy-ix.square-enix-games.com/en-us/home/"
 }

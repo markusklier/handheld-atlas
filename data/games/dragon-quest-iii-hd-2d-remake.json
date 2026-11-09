@@ -144,8 +144,9 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Dragon_Quest_III_HD-2D_Remake",
   "genre": "turn-based role-playing game",
   "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/b/b8/Dragon_Warrior_III.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Dragon_Quest_III_HD-2D_Remake",
-    "fallback": true
-  }
+    "url": "https://www.dragonquest.jp/roto-trilogy/dq3/_common/img/sns_dq3.png?250527",
+    "source": "https://www.dragonquest.jp/roto-trilogy/dq3/",
+    "check": "ai"
+  },
+  "website": "https://www.dragonquest.jp/roto-trilogy/dq3/"
 }

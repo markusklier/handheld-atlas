@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5ffd8567-3780-471a-aaea-872815e95aa4",
+          "device": "AYN Thor Pro",
+          "emulator": "ARMSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "≈5W - Upscaled textures pack you can get from the emulator menu + 2x upscaler for all missing textures - Retroarch shaders for SMAA (less blurry than built-in FXAA) - 16:9 patch - ClusterTune Large underclock (sometimes ",
+          "votes": 0,
+          "date": "2026-10-12",
+          "settings": {
+            "Emulator Version": "2.8.2",
+            "Custom FPS Limit": "30",
+            "Aspect Ratio": "16:9",
+            "Fast Boot": "True",
+            "Renderer": "Vulkan",
+            "Upscale": "2",
+            "Texture Filtering": "PS2 (default)",
+            "Interlace Mode": "Automatic",
+            "Texture Preloading": "Full",
+            "Blending Accuracy": "High"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2387b728-6265-4ba1-95ed-865864977cd2"
+        }
       ]
     }
   ],

@@ -28,6 +28,13 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/36928aa3-7f15-4f5f-88ac-763d637dd79c"
+        }
       ]
     },
     {
@@ -42,6 +49,60 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q214232"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d409f0cb-a509-4538-9b32-93189cacf5b4"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6ba7aeaf-b274-4497-adbb-169dfa7aeb25",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "When you start a game and get the keyboard prompt. You open the keyboard and hit X and your good to go with the contorller. Remeber videos are low fps but the game is high fps",
+          "votes": 2,
+          "date": "2026-04-17",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/50c5009d-1401-4d1c-8d45-a8121ddcd7eb",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Change executable path to FF7_Launcher.exe. Turn on Unpack Files. Remap all controls to presets in the launcher (substitute Switch and Target for any of your choice). Cloud saves do not work, just like the regular Steam ",
+          "votes": 0,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.9.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[KIMCHI Turnip]  v25.3.0 - Revision 11|||Turnip_v25.3.0_R11.zip",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "async-1.10.3"
+          }
         }
       ]
     },
@@ -80,5 +141,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q214232",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
-  "genre": "role-playing video game"
+  "genre": "role-playing video game",
+  "website": "https://finalfantasyviipc.square-enix-games.com/en"
 }

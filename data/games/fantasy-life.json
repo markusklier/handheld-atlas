@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a38ba77b-84a7-4ea5-b500-4d7ffb029826",
+          "device": "AYN Thor Pro",
+          "emulator": "Citra",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "runs perfectly with default citra settings. I played from start to finish. works great with the HD texture pack.",
+          "votes": 0,
+          "date": "2026-09-19",
+          "settings": {
+            "Emulator Version": "20251112",
+            "Graphics API": "OpenGL",
+            "Resolution Factor": "1",
+            "Texture Filter": "None",
+            "Texture Sampling": "Game Controlled",
+            "Layout Option": "Default",
+            "Use Hardware Shader": "True",
+            "Use Shader JIT": "True",
+            "Use VSync": "True",
+            "Use Disk Shader Cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/64979933-dd88-4bfe-8f6f-5511ab8b94f8",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs perfectly, low temps not much else to say.",
+          "votes": 0,
+          "date": "2026-08-02",
+          "settings": {
+            "Emulator Version": "2126",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "3",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "xBRZ",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2ec4b857-756f-405d-9f2a-ab885a503f76"
+        }
       ]
     }
   ],
@@ -35,5 +91,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q2945348",
   "wikipedia": "https://en.wikipedia.org/wiki/Fantasy_Life",
-  "genre": "role-playing video game"
+  "genre": "role-playing video game",
+  "website": "https://fantasylife.nintendo.com"
 }

@@ -1,6 +1,118 @@
 {
   "leads": [
     {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrvyer/who_needs_an_ayn_thor_if_you_can_run_native_3ds/",
+      "title": "Who needs an AYN Thor if you can run native 3DS Games on your RG DS Plus?",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+      "title": "MikeSemicolonD/RogueSquadron64Recomp",
+      "excerpt": "A fully playable (AI assisted) static recompilation of Star Wars: Rogue Squadron on N64 for Windows 10, Linux, MacOS & Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/shuuri-labs/pocknix-os",
+      "title": "shuuri-labs/pocknix-os",
+      "excerpt": "Self-contained Arch Linux ARM distro for the Retroid & AYN handhelds (SM8250 & SM8550): switchable Steam (gamescope) and Plasma Mobile sessions, on a ROCKNIX-based kernel.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hm-aktaruzzaman-mukdho/Orphion",
+      "title": "hm-aktaruzzaman-mukdho/Orphion",
+      "excerpt": "An universal wireless earphones Control Panel utility for PC",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/progressive-chat/progressive-chat",
+      "title": "progressive-chat/progressive-chat",
+      "excerpt": "progressive-chat: agentic LLM client for coding on a phone. Material Design 3, app code all in C++26",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/griffinkrutherford/coherascent-labs-website",
+      "title": "griffinkrutherford/coherascent-labs-website",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/denislinnik948-lgtm/doberega",
+      "title": "denislinnik948-lgtm/doberega",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/PawanKatwe/LiveSubtitlesApp",
+      "title": "PawanKatwe/LiveSubtitlesApp",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ewceniza9009/zeroenclave",
+      "title": "ewceniza9009/zeroenclave",
+      "excerpt": "ZeroEnclave: Standalone, local-first, zero-knowledge password manager, encrypted media vault & cross-device sync enclave.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/chrisgrabinski/scummvm-duo",
+      "title": "chrisgrabinski/scummvm-duo",
+      "excerpt": "ScummVM fork with support for dual screen Android devices",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/renderedrealminc-cosmic/helium-tv-browser",
+      "title": "renderedrealminc-cosmic/helium-tv-browser",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sysgrok/matter-peek",
+      "title": "sysgrok/matter-peek",
+      "excerpt": "Matter health and diagnostics",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Sekyleky/Zakuroishi",
+      "title": "Sekyleky/Zakuroishi",
+      "excerpt": "Experimental 3DS emulator for Android handhelds like the AYN Thor and other dual-screen devices. Games run as ahead-of-time recompiled native code (Zakuro fork): Vulkan, HD texture packs, frame generation, mods.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Aztech-Lab/OTSR",
+      "title": "Aztech-Lab/OTSR",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/DenzoNL/open-freestyle-bmx",
       "title": "DenzoNL/open-freestyle-bmx",
       "excerpt": "A native, open-source port of the 2000 PC BMX classic: fully rewritten in C, verified against the original, 64-bit, SDL3. Windows and Android, any resolution and frame rate. Requires your own copy of the game.",
@@ -6287,118 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation",
-      "title": "Sonic the Hedgehog 1 and 2 (Retro Engine v4)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RSDKModding/RSDKv3-Decompilation",
-      "title": "Sonic CD (Retro Engine v3)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Pyrdacor/freeserf.net",
-      "title": "The Settlers",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Pyrdacor/Ambermoon.net",
-      "title": "Ambermoon",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/PauloUbirajara/asuras-wrath-recomp",
-      "title": "Asura's Wrath",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/OpenRCT2/OpenRCT2",
-      "title": "RollerCoaster Tycoon 2 (OpenRCT2)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/OpenPort-Labs/mw2-android",
-      "title": "Call of Duty: Modern Warfare 2",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/OpenPort-Labs/Galaxy-Android",
-      "title": "Super Mario Galaxy",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/OpenEnroth/OpenEnroth",
-      "title": "Might and Magic VI-VIII",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/OpenCommunityEdition/OpenCE",
-      "title": "Halo: Combat Evolved (OpenCE)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Odrannnn/MetroidPrimePort",
-      "title": "Metroid Prime",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
-      "title": "The Legend of Zelda: The Wind Waker HD (Plus)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Nycolazs/LASRecomp-Android-Plus",
-      "title": "Link's Awakening (Switch)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Nycolazs/EoWRecomp",
-      "title": "Echoes of Wisdom",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T15:29:50Z",
-    "newLeads": 10,
+    "lastRun": "2026-11-09T16:24:26Z",
+    "newLeads": 14,
     "newEvents": 0
   },
   "aiResearch": {

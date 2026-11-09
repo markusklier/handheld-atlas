@@ -29,7 +29,38 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2009
+      "year": 2009,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f9de29d5-ae2d-42fc-8286-b3fd27c149a9",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Dolphin",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Booted this up with using both the controls on the ODIN 2 and a Wiimote with the dolphin bar hooked up to my dock. Worked great both ways!",
+          "votes": 0,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "2505a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "100",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/11d61d1c-573f-446e-817d-6fcca9ca5cf4"
+        }
+      ]
     }
   ],
   "routes": [],

@@ -48,6 +48,211 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9923f28c-6770-487c-9bd3-a52cc041f8d3",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 4,
+          "date": "2026-04-13",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/78c5c842-5a1c-441e-8999-1d4b9de80190",
+          "device": "Sony Xperia 1 V",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I got the game from gog, I am using the medium built in preset. outdoors is about 30-40 fps (with some dips to high 20's. ie: 27+) , indoors is around 40-60 fps. It should be noted however performance could possibly be i",
+          "votes": 1,
+          "date": "2025-12-08",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9f418d9c-16ef-4c3e-955a-515e92b16c13",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Plays almost perfectly. Some FPS drops during heavier fights (e.g. Ghost Town Gunfight) and occasional audio crackling when many gunshots play at once. Graphics set to the Medium preset. Additional GameNative settings: -",
+          "votes": 8,
+          "date": "2026-02-20",
+          "settings": {
+            "Emulator Version": "0.72",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "async-1.10.3",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Essential (Load only essential services)",
+            "Resolution (Screen Size)": "1280x720",
+            "Game Version": "Fallout: New Vegas Ultimate Edition GOG"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8fe32580-35bc-40d4-ab15-df81045a8265",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The launcher is the first thing to open, I just click \"Play\" without adjusting any other settings.",
+          "votes": 4,
+          "date": "2026-03-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/739d40eb-cdd2-46df-b2b1-00b6f18e885b",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "I wanted to play on game native. Finally got it with a few tweaks.",
+          "votes": 2,
+          "date": "2026-05-06",
+          "settings": {
+            "Emulator Version": "v0.9.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 8 + super beta 8xx support|||turnip_a8xx.zip",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e6b17dcd-37f2-4015-8ca5-7ba35e222f83",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Got Tale of Two Wastelands working! I set everything up on my PC first by following the [Best of Times](https://thebestoftimes.moddinglinked.com/intro.html) guide. After the final steps, I added 7zip File Manager as a pr",
+          "votes": 2,
+          "date": "2026-03-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a8937b34-61c7-42cc-b1e0-3985e50041be",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Installed 4GB patch. Translation parameters to stop 90% of random crashes and slow down during fighting. Tso enabled, X87 reduced precision, multi block, maxinst 5000, SmallTSCScale, MemspyTSO, Half BarrierTSO, Volatilem",
+          "votes": 2,
+          "date": "2025-11-30"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/817474f4-9ef1-4658-b9c4-2b17eb1ccf4d",
+          "device": "AYN Thor Max",
+          "emulator": "DroidDeck",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Default DroidDeck settings. Medium texture settings in-game. 40-60fps.",
+          "votes": 1,
+          "date": "2026-10-23",
+          "settings": {
+            "Emulator Version": "0.6.0",
+            "Store": "Steam",
+            "Average FPS": "50"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8d9ed739-776b-430c-8c57-4e14b7534fe3",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game will get stuck on loading screens here and there but that's mostly fallout new vegas and less to do with the emulator. The game generally runs perfect except for extreme frame drops during combat when there are ",
+          "votes": 1,
+          "date": "2026-03-03"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/36e0f0ee-5477-49d5-b3b9-3f9aa1ca24b3",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "GameHub",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "FPS dips when loading certain areas but fixes after couple seconds. Also need to download beth_registry.cmd from GOG website to launch",
+          "votes": 1,
+          "date": "2026-01-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/da720372-5c13-43d8-b6ed-b5b620699c78",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Will run at 60fps but slows down too often, so cap at 30 and its a lot less noticeable, highly recommend 4gb patch to help with crashes. The game plays well, but does crash - particularly in Freeside and the Strip otherw",
+          "votes": 1,
+          "date": "2025-11-10"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e1704dfc-5cdb-44af-8e38-945d4a3ab143",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "This is for the gog unmodded version of the game. This is a stable 30 fps, as I limit the DXVK_FRAME_RATE to 30 in the environment variables. FPS does dip during fights. If you want better performance I would look at the",
+          "votes": 0,
+          "date": "2026-04-05"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/559d0cab-4e7d-4c3c-be05-76927e0cea71"
+        }
       ]
     }
   ],
@@ -55,5 +260,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q753749",
   "wikipedia": "https://en.wikipedia.org/wiki/Fallout%3A_New_Vegas",
-  "genre": "action role-playing game"
+  "genre": "action role-playing game",
+  "website": "https://fallout.bethesda.net/games/fallout-new-vegas"
 }
