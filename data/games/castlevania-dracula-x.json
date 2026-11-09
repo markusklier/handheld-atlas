@@ -29,8 +29,26 @@
       "platforms": [
         "SNES"
       ]
+    },
+    {
+      "id": "wii-2008",
+      "name": "Wii (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2421908"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2421908",
+  "wikipedia": "https://en.wikipedia.org/wiki/Castlevania%3A_Rondo_of_Blood",
+  "genre": "platform game"
 }

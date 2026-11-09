@@ -32,5 +32,8 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/f/f6/Doom_II_RPG_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_II_RPG"
   },
-  "screenshots": []
+  "screenshots": [],
+  "wikidata": "Q909016",
+  "wikipedia": "https://en.wikipedia.org/wiki/Doom_II_RPG",
+  "genre": "role-playing video game"
 }

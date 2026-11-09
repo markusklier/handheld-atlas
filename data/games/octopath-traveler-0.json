@@ -17,6 +17,158 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/98eccf32-1a6e-4d96-8c94-993c40811de8",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "At first I thought it was just \"OK\" performance. But I remembered I was only testing the base 1.0 game to see if it would run. Make sure to update the game version and get the latest product keys and firmware. Performanc",
+          "votes": 4,
+          "date": "2025-12-07",
+          "settings": {
+            "Emulator Version": "0.0.4-rc1-standard",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 5|||Turnip_v26.0.0_R5.zip",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7cb0bc3a-8f8c-484d-833a-60862ca18e29",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Framedrops & mini-freeze.",
+          "votes": 1,
+          "date": "2026-04-04",
+          "settings": {
+            "Game Version": "1.0.4 [v262144]",
+            "Average FPS": "30",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Extended Dynamic State": "3",
+            "Provoking Vertex": "True",
+            "Descriptor Indexing": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d5d3709d-d648-4452-90e6-ec8dda4626cd",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Some framedrops & mini-freeze.",
+          "votes": 1,
+          "date": "2026-04-04",
+          "settings": {
+            "Emulator Version": "2026.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8e97df5d-a8a6-4f31-8049-4ff9fcd4418f",
+          "device": "AYN Thor Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "I only had to download the newest Mr Purple Turnip drivers. Without them I had graphical issues on the system drivers. I tried low accuracy for potentially more performance but had lighting issues. On 1080p docked mode I",
+          "votes": 1,
+          "date": "2025-12-07",
+          "settings": {
+            "Emulator Version": "0.11.0",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2595d5b3-af56-472b-a445-3d33332faebd",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Make sure you're using Citron 0.11.0 and that you've set the \"Software Keyboard Applet mode\" option in Citron's \"Applets on Android\" settings to HLE. Otherwise, you won't have access to the virtual keyboard to enter info",
+          "votes": 1,
+          "date": "2025-12-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3a9feb75-47c9-47e3-949f-9e06e58b9586",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs at a steady 30fps Ive only tested to the first fight where I would get a red screen during the fight but after some tweaks it seems I got rid of it I have emulate bgr565 enabled also use asynchronous shaders turn of",
+          "votes": 0,
+          "date": "2026-09-21"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/68544710-7ee1-4ec4-9a49-46ba6b92270c",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "Kenji-NX 2.05 (and earlier) does not support 20.x.x games.",
+          "votes": 1,
+          "date": "2025-12-04",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "Turnip T21 Ayaneo",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/898d2610-26df-49ee-acaa-cb064e0b8f5e"
+        }
       ]
     }
   ],

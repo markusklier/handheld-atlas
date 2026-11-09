@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
+      ],
+      "year": 2000
+    },
+    {
+      "id": "q48263-2009",
+      "name": "Q48263 (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Q48263"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q806598"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q806598",
+  "wikipedia": "https://en.wikipedia.org/wiki/Banjo-Tooie",
+  "genre": "platform game"
 }

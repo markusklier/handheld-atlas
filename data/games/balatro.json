@@ -251,7 +251,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/b06d6375-6641-4573-9851-a3b5ecfc63c5"
         }
-      ]
+      ],
+      "year": 2024
     },
     {
       "id": "android",
@@ -259,6 +260,45 @@
       "type": "android",
       "platforms": [
         "Android"
+      ],
+      "year": 2024
+    },
+    {
+      "id": "macintosh-2024",
+      "name": "Macintosh, PlayStation 4, Q13361286 u. a. (2024)",
+      "type": "port",
+      "year": 2024,
+      "platforms": [
+        "Macintosh",
+        "PlayStation 4",
+        "Q13361286",
+        "Q19610114",
+        "Q20965967",
+        "Q48493",
+        "Q63184502",
+        "Q64350339",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q124357469"
+        }
+      ]
+    },
+    {
+      "id": "q122761124-2026",
+      "name": "Q122761124 (2026)",
+      "type": "port",
+      "year": 2026,
+      "platforms": [
+        "Q122761124"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q124357469"
+        }
       ]
     }
   ],
@@ -373,5 +413,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q124357469",
+  "wikipedia": "https://en.wikipedia.org/wiki/Balatro"
 }

@@ -18,7 +18,14 @@
       "platforms": [
         "Nintendo 64"
       ],
-      "year": 1997
+      "year": 1997,
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ef2724b1-5c4c-4c3e-9cbb-954a178250b2"
+        }
+      ]
     },
     {
       "id": "remaster-2020",
@@ -41,6 +48,40 @@
         {
           "label": "Quelle",
           "url": "https://www.esrb.org/ratings/36902/doom-64/"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/74f6547f-b32a-4677-928b-d50e2876407e"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/98caac8a-440e-416e-b713-57c2e9e1d424"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/abe70e26-2d94-4fae-b5e3-0e0dcd0a37a6",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Portal is in Xbox input mode and Performance power mode. Enable DirectInput API and set to XInput Mapper mode to make the controller work. For best performance, set in-game Video Settings to: * Graphics API: DirectX 11 *",
+          "votes": 2,
+          "date": "2025-07-13",
+          "settings": {
+            "Emulator Version": "v0.2.18",
+            "Graphics Driver": "Turnip (Adreno) 25.2.0",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.6.1-gplasync",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Exec Arguments": "-skipmovies"
+          }
         }
       ]
     }
@@ -375,5 +416,8 @@
       "check": "ai-verified"
     }
   ],
-  "summary": "Für Android-Handhelds ist Delta Touch mit DOOM64EX+ und den Daten der PC-Neuauflage der naheliegende Weg; DOOM 64 CE bietet alternativ zuschaltbare Grafikverbesserungen und zusätzliche Kartenpakete. Ein spielspezifischer Android-Dual-Screen-Weg mit ausgelagerter Live-Karte ist nicht belegt."
+  "summary": "Für Android-Handhelds ist Delta Touch mit DOOM64EX+ und den Daten der PC-Neuauflage der naheliegende Weg; DOOM 64 CE bietet alternativ zuschaltbare Grafikverbesserungen und zusätzliche Kartenpakete. Ein spielspezifischer Android-Dual-Screen-Weg mit ausgelagerter Live-Karte ist nicht belegt.",
+  "wikidata": "Q1071278",
+  "wikipedia": "https://en.wikipedia.org/wiki/Doom_64",
+  "genre": "first-person shooter"
 }

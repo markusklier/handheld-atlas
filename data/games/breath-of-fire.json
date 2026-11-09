@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1993
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2532658",
+  "wikipedia": "https://en.wikipedia.org/wiki/Breath_of_Fire_%28video_game%29",
+  "genre": "role-playing video game"
 }

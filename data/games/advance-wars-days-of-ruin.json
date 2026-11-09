@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "year": 2008
+    },
+    {
+      "id": "nintendo-3ds-2013",
+      "name": "Nintendo 3DS (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2734928"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2734928",
+  "wikipedia": "https://en.wikipedia.org/wiki/Advance_Wars%3A_Days_of_Ruin",
+  "genre": "turn-based tactics"
 }

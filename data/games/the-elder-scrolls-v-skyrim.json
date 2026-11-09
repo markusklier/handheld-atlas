@@ -523,6 +523,13 @@
           "source": "https://github.com/ttom795/Skyrim_Android",
           "credit": "Skyrim_Android",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://img.youtube.com/vi/FxGzgauZbgU/hqdefault.jpg",
+          "caption": "Watch the video",
+          "source": "https://github.com/ttom795/Skyrim_Android",
+          "credit": "Skyrim_Android",
+          "check": "readme"
         }
       ],
       "links": [

@@ -24,8 +24,42 @@
       "platforms": [
         "PSP"
       ]
+    },
+    {
+      "id": "arcade-video-game-machine-2010",
+      "name": "arcade video game machine (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q112669290"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2011",
+      "name": "Nintendo 3DS, PlayStation 3, Q48263 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Nintendo 3DS",
+        "PlayStation 3",
+        "Q48263"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q112669290"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q112669290",
+  "wikipedia": "https://en.wikipedia.org/wiki/BlazBlue%3A_Continuum_Shift_II"
 }

@@ -69,6 +69,13 @@
           "source": "https://github.com/aabrole/HuntersRecomp",
           "credit": "Hunters Recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/aabrole/HuntersRecomp/HEAD/docs/media/hero-thor.png",
+          "caption": "Metroid Prime Hunters running on the AYN Thor",
+          "source": "https://github.com/aabrole/HuntersRecomp",
+          "credit": "Hunters Recomp",
+          "check": "readme"
         }
       ],
       "links": [

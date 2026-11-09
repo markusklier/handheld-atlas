@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1992
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1368099",
+  "wikipedia": "https://en.wikipedia.org/wiki/Contra_III%3A_The_Alien_Wars",
+  "genre": "action game"
 }

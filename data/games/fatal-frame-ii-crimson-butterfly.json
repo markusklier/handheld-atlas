@@ -29,8 +29,41 @@
       "platforms": [
         "PlayStation 2"
       ]
+    },
+    {
+      "id": "q10680-2003",
+      "name": "Q10680 (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "Q10680"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2289776"
+        }
+      ]
+    },
+    {
+      "id": "q132020-2004",
+      "name": "Q132020 (2004)",
+      "type": "port",
+      "year": 2004,
+      "platforms": [
+        "Q132020"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2289776"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2289776",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fatal_Frame_II%3A_Crimson_Butterfly",
+  "genre": "survival horror"
 }

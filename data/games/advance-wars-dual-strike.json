@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "year": 2005
+    },
+    {
+      "id": "wii-u-2016",
+      "name": "Wii U (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2340376"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2340376",
+  "wikipedia": "https://en.wikipedia.org/wiki/Advance_Wars%3A_Dual_Strike",
+  "genre": "turn-based tactics"
 }

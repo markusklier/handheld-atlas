@@ -28,9 +28,88 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1994
+    },
+    {
+      "id": "game-boy-game-boy-color-2000",
+      "name": "Game Boy / Game Boy Color (2000)",
+      "type": "port",
+      "year": 2000,
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q518987"
+        }
+      ]
+    },
+    {
+      "id": "q188642-2003",
+      "name": "Q188642 (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "Q188642"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q518987"
+        }
+      ]
+    },
+    {
+      "id": "wii-2006",
+      "name": "Wii (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q518987"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q518987"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2016",
+      "name": "Nintendo 3DS (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q518987"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q518987",
+  "wikipedia": "https://en.wikipedia.org/wiki/Donkey_Kong_Country",
+  "genre": "2D platform game"
 }

@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2632387",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dead_Space%3A_Extraction",
+  "genre": "shoot 'em up"
 }

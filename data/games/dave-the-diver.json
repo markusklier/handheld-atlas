@@ -158,6 +158,85 @@
           "url": "https://www.emuready.com/games/4dd33cb8-d5c2-4a7b-9644-eff906ffc489"
         }
       ]
+    },
+    {
+      "id": "pc-2022",
+      "name": "PC (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q114995908"
+        }
+      ]
+    },
+    {
+      "id": "macintosh-2023",
+      "name": "Macintosh, Q19610114 (2023)",
+      "type": "port",
+      "year": 2023,
+      "platforms": [
+        "Macintosh",
+        "Q19610114"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q114995908"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2024",
+      "name": "PlayStation 4, Q63184502 (2024)",
+      "type": "port",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 4",
+        "Q63184502"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q114995908"
+        }
+      ]
+    },
+    {
+      "id": "q122761124-2025",
+      "name": "Q122761124, Xbox Series (2025)",
+      "type": "port",
+      "year": 2025,
+      "platforms": [
+        "Q122761124",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q114995908"
+        }
+      ]
+    },
+    {
+      "id": "android-2026",
+      "name": "Android, Q48493 (2026)",
+      "type": "port",
+      "year": 2026,
+      "platforms": [
+        "Android",
+        "Q48493"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q114995908"
+        }
+      ]
     }
   ],
   "routes": [
@@ -205,5 +284,8 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q114995908",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dave_the_Diver",
+  "genre": "adventure video game"
 }

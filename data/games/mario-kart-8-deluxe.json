@@ -13,6 +13,182 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d4060891-99c3-41ad-83d2-53ba47bd624e",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 12,
+          "date": "2025-10-30",
+          "settings": {
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Aggressive",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "On Load",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/04158b18-1d84-4380-b378-05b1c7e38141",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 11,
+          "date": "2025-06-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/279ccafa-d2f7-4226-bf09-7be815124ea9",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 9,
+          "date": "2025-08-30"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/899440b1-1841-4872-90bc-86e4479d2c55",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Console in \"Performance\" mode. 55-60 FPS. Using latest MK8 update, which seems to improve performance quite a bit. Only tested on first track. * Graphics -> Accuracy level set to \"Performance\" * Eden's Veil -> Vertex Inp",
+          "votes": 8,
+          "date": "2025-12-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fb62415e-08be-4415-8c1f-5abc748d26f1",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Installed MK8 and installed latest updated which is 3.0.5 (you can find around the web buzzheavierdotcom/l2qfcoblzipa) hopefully im allowed to post this here if not let me know and i will remove installed and works perfe",
+          "votes": 6,
+          "date": "2026-01-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2b7edd33-69c5-42ee-82c5-1768d60a91f9",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 6,
+          "date": "2025-12-05"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef895080-087a-4cb2-aa79-fcf811ab1288",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Latest version 3.0.5 and DLC working great. Average around 60FPS with latest T24 Mr Purple Turnip and default settings. Tested the first five 50CC Cups and had zero issues, played perfectly!",
+          "votes": 5,
+          "date": "2026-02-27"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/854740f9-c379-424b-ac15-02b3e4a2a5ca",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-10-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3fe659d6-20c1-4a35-ac47-c874da518d44",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-10-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef4d2514-905a-4717-90a2-012925464be2",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at DOCKED MODE, full speed, adding a cooler (FX5 LITE for Gamesir X5 LITE controller) for sustainable performance.",
+          "votes": 4,
+          "date": "2026-02-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/465b6c95-0441-4613-9dc2-f54b396ec936",
+          "device": "AYN Thor Base",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Ghjbv",
+          "votes": 4,
+          "date": "2026-02-11",
+          "settings": {
+            "Emulator Version": "Citron",
+            "Driver Version": "Default System Driver",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/800dc051-6772-4465-b15a-d7737b1e4e21",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 4,
+          "date": "2025-11-22"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/956f477b-4f44-4ae7-a002-e9d2b514eaa1"
+        }
       ]
     }
   ],

@@ -17,9 +17,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q4655600",
+  "wikipedia": "https://en.wikipedia.org/wiki/A_Boy_and_His_Blob",
+  "genre": "puzzle video game"
 }

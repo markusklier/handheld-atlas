@@ -120,7 +120,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/panel.gif",
+          "caption": "The lower screen companion's Kit tab updating live while the game runs on the up",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/kit.png",
+          "caption": "THE HUNTER: Vitality and Stamina, Blood Echoes, Blood Vials, Quicksilver, the ca",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/gameplay.png",
+          "caption": "Bloodborne running on the upper screen with the on game FPS overlay",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/status.png",
+          "caption": "Live Status readout: FPS with a rolling average and 1% low, CPU, RAM, battery, S",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/tune.png",
+          "caption": "The Tune tab: the on game HUD toggle and the Smooth 60 / Balanced 40 / Fidelity ",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/menu.png",
+          "caption": "The in game menu mirrored onto the lower touchscreen",
+          "source": "https://github.com/emerytech/Bloodborne-Android",
+          "credit": "Bloodborne · Thor Companion",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -259,5 +302,12 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "summary": "Auf dem AYN Thor ist die inoffizielle ARM64-Rekompilierung mit Hunter’s Atlas als Live-Karte interessant; der Thor-Companion-Fork ergänzt ein integriertes Touch-Panel mit Live-Inventar."
+  "summary": "Auf dem AYN Thor ist die inoffizielle ARM64-Rekompilierung mit Hunter’s Atlas als Live-Karte interessant; der Thor-Companion-Fork ergänzt ein integriertes Touch-Panel mit Live-Inventar.",
+  "wikidata": "Q17154554",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bloodborne",
+  "genre": "action role-playing game",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/6/68/Bloodborne_Cover_Wallpaper.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Bloodborne"
+  }
 }

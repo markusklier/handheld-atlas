@@ -133,7 +133,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/today.png",
+          "caption": "Today",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/gifts.png",
+          "caption": "Gifts",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/bag.png",
+          "caption": "Bag",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/craft.png",
+          "caption": "Craft",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/aim.png",
+          "caption": "Aim",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hung-eggie-do-covergo/stardew-thor-dual-screen/HEAD/docs/screenshots/chest.png",
+          "caption": "Chest",
+          "source": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen",
+          "credit": "Thor Dual Screen",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

@@ -10,7 +10,7 @@
       "games": [
         "majoras-mask"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.1.2P1",
         "url": "https://github.com/Waterdish/2ship2harkinian-Android/releases/tag/v1.1.2P1",
@@ -30,7 +30,7 @@
         "stardew-valley",
         "terraria"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v2026.09.01c",
         "url": "https://github.com/Abacus1829/ayn-dual-screen/releases/tag/v2026.09.01c",
@@ -48,7 +48,7 @@
       "games": [
         "a-link-to-the-past"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v2.0",
         "url": "https://github.com/samyost1/zelda3-android/releases/tag/v2.0",
@@ -66,7 +66,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "1.1.7",
         "url": "https://github.com/AngelAuraMC/Amethyst-Android/releases/tag/1.1.7",
@@ -82,7 +82,7 @@
       "repo": "azahar-emu/azahar",
       "description": "An open-source 3DS emulator project based on Citra.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-06",
       "latestRelease": {
         "tag": "2127.0-rc2",
@@ -100,7 +100,7 @@
       "games": [
         "balatro"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.0",
         "url": "https://github.com/rosbean/balatro-dualscreen/releases/tag/v1.0",
@@ -130,7 +130,7 @@
       "games": [
         "banjo-kazooie"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "android-v0.1.2",
         "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.2",
@@ -148,7 +148,7 @@
       "games": [
         "chrono-trigger"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v0.7",
         "url": "https://github.com/kalenjohnson/chrono-duo/releases/tag/v0.7",
@@ -223,13 +223,13 @@
         "cyberpunk-2077",
         "doom-64"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "0.7.0",
         "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.7.0",
         "date": "2026-11-08"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "dual-list",
@@ -239,7 +239,7 @@
       "repo": "codm2000/Dual-Screen-Games",
       "description": "Collection of dual screen games and apps for Android handhelds like the Ayn Thor",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-05"
     },
     {
@@ -250,7 +250,7 @@
       "repo": "stenzek/duckstation",
       "description": "Fast PlayStation 1 emulator for x86-64/AArch32/AArch64/RV64",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-08",
       "latestRelease": {
         "tag": "preview",
@@ -297,7 +297,7 @@
         "minecraft",
         "crash-team-racing"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.3.5",
         "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.5",
@@ -342,13 +342,13 @@
         "pokemon-shield",
         "cult-of-the-lamb"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
-        "tag": "fire-emblem-three-houses-1.0.2",
-        "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/fire-emblem-three-houses-1.0.2",
-        "date": "2026-11-08"
+        "tag": "echoes-of-wisdom-1.0.1",
+        "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/echoes-of-wisdom-1.0.1",
+        "date": "2026-11-09"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "emuready",
@@ -370,7 +370,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.0.1",
         "url": "https://github.com/exojosh/AynThorSecondScreen/releases/tag/v1.0.1",
@@ -388,7 +388,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-08-09"
     },
     {
@@ -399,8 +399,8 @@
       "repo": "flyinghead/flycast",
       "description": "Flycast is a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator",
       "games": [],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v2.7",
         "url": "https://github.com/flyinghead/flycast/releases/tag/v2.7",
@@ -415,8 +415,8 @@
       "repo": "andreyvelsk/GAFT",
       "description": "A curated collection of games and apps that truly shine on the AYN Thor dual-screen handheld console",
       "games": [],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "gamenative",
@@ -434,13 +434,13 @@
         "hollow-knight",
         "tomb-raider-chronicles"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.4.0",
         "url": "https://github.com/utkarshdalal/GameNative/releases/tag/v1.4.0",
         "date": "2026-11-05"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "igdb",
@@ -462,13 +462,13 @@
       "games": [
         "chrono-trigger"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "nightly-release",
         "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/nightly-release",
         "date": "2023-07-28"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "metroidarch",
@@ -480,7 +480,7 @@
       "games": [
         "super-metroid"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.2",
         "url": "https://github.com/Raekwon1603/super_metroid-android/releases/tag/v1.2",
@@ -499,7 +499,7 @@
       "games": [
         "super-metroid"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "branch": "metroidarch-dual-screen",
       "pushedAt": "2026-10-03",
       "latestRelease": {
@@ -543,7 +543,7 @@
       "games": [
         "minish-cap"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.2",
         "url": "https://github.com/samyost1/tmc-android/releases/tag/v1.2",
@@ -592,7 +592,7 @@
       "repo": "abduznik/awesome-android-native-ports",
       "description": "A curated list of native Android ports of PC and console games: source ports, decompilations and static recompilations",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-21"
     },
     {
@@ -603,7 +603,7 @@
       "repo": "Trixarian/NetherSX2-patch",
       "description": "Continuation of NetherSX2 based on AetherSX2 4248",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-09-22",
       "latestRelease": {
         "tag": "2.2n",
@@ -631,13 +631,13 @@
       "games": [
         "morrowind"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "openmw-52-rc1",
         "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-52-rc1",
         "date": "2026-11-01"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "openmw-ds",
@@ -649,7 +649,7 @@
       "games": [
         "morrowind"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.4.0",
         "url": "https://github.com/Josh-Daniels/OpenMW-DS/releases/tag/v1.4.0",
@@ -667,13 +667,13 @@
       "games": [
         "pokemon-emerald"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.4.0",
         "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.4.0",
         "date": "2026-11-03"
       },
-      "pushedAt": "2026-11-08"
+      "pushedAt": "2026-11-09"
     },
     {
       "id": "portmaster",
@@ -703,8 +703,8 @@
       "repo": "kalasyan/recompa",
       "description": "Geplante Datenquelle (noch nicht angebunden).",
       "games": [],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v0.4.1",
         "url": "https://github.com/kalasyan/recompa/releases/tag/v0.4.1",
@@ -743,7 +743,7 @@
       "repo": "Vita3K/Vita3K-Android",
       "description": "Public releases and CI for the Vita3K Android app",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2025-02-22",
       "latestRelease": {
         "tag": "v12",
@@ -771,7 +771,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "2.8.2",
         "url": "https://github.com/ZalithLauncher/ZalithLauncher2/releases/tag/2.8.2",
@@ -789,7 +789,7 @@
       "games": [
         "majoras-mask"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "latestRelease": {
         "tag": "v1.2.2",
         "url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2",
@@ -807,7 +807,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-21",
       "latestRelease": {
         "tag": "build-9",
@@ -825,7 +825,7 @@
       "games": [
         "project-zomboid"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-26",
       "latestRelease": {
         "tag": "v1.5.1",
@@ -843,7 +843,7 @@
       "games": [
         "pokemon-emerald"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-14",
       "latestRelease": {
         "tag": "v0.6.0",
@@ -863,12 +863,12 @@
         "new-super-mario-bros-wii",
         "super-mario-sunshine"
       ],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-10-30",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
-        "tag": "v1.1.2",
-        "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.1.2",
-        "date": "2026-10-30"
+        "tag": "v1.2.0",
+        "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0",
+        "date": "2026-11-09"
       }
     },
     {
@@ -881,12 +881,12 @@
       "games": [
         "dragon-age-origins"
       ],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
-        "tag": "v0.2.1-alpha",
-        "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.1-alpha",
-        "date": "2026-11-08"
+        "tag": "v0.2.2-alpha",
+        "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.2-alpha",
+        "date": "2026-11-09"
       }
     },
     {
@@ -900,7 +900,7 @@
         "grand-theft-auto-iv",
         "grand-theft-auto-v"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-04",
       "latestRelease": {
         "tag": "v1.1.0",
@@ -918,7 +918,7 @@
       "games": [
         "grand-theft-auto-san-andreas"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-04",
       "latestRelease": {
         "tag": "v1.0.0",
@@ -936,7 +936,7 @@
       "games": [
         "metroid-prime-hunters"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-09-06",
       "latestRelease": {
         "tag": "v0.2.5",
@@ -954,7 +954,7 @@
       "games": [
         "ratchet-and-clank"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-22",
       "latestRelease": {
         "tag": "v1.1",
@@ -972,7 +972,7 @@
       "games": [
         "p-t"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-12",
       "latestRelease": {
         "tag": "android-v0.2.6",
@@ -990,11 +990,11 @@
       "games": [
         "am2r"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-01",
       "latestRelease": {
         "tag": "v1.5.5.14",
-        "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android/releases/tag/v1.5.5.14",
+        "url": "https://github.com/PatchDev-AM2ARM/AM2R-Autopatcher-Android/releases/tag/v1.5.5.14",
         "date": "2026-11-01"
       }
     },
@@ -1008,7 +1008,7 @@
       "games": [
         "sephiria"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-17",
       "latestRelease": {
         "tag": "v0.4.2",
@@ -1041,7 +1041,7 @@
       "games": [
         "minecraft"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-01",
       "latestRelease": {
         "tag": "v0.3.0",
@@ -1059,7 +1059,7 @@
       "games": [
         "star-fox-64"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-08-04",
       "latestRelease": {
         "tag": "v2.0.0",
@@ -1077,7 +1077,7 @@
       "games": [
         "half-life"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-06",
       "latestRelease": {
         "tag": "continuous",
@@ -1093,7 +1093,7 @@
       "repo": "orev7s/porthub-catalog",
       "description": "JSON-Feed (games.json, laut README 1239 Einträge) mit Android-Ports, Decomps, Recomps und Engine-Reimplementierungen; nur Links, keine Spieldaten. Einträge aus mehreren Drittquellen zusammengeführt – vor Übernahme Upstream prüfen.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-31"
     },
     {
@@ -1104,7 +1104,7 @@
       "repo": "orev7s/porthub",
       "description": "Android-App (Kotlin/Compose) zum Durchsuchen des PortHub-Katalogs; frühes Stadium, noch keine Releases.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-31"
     },
     {
@@ -1115,7 +1115,7 @@
       "repo": "keika-sy/android-ports-master",
       "description": "Katalog und Dashboard nativer Android-Ports (laut README 866 Einträge zu 702 Spielen) als CSV/JSON; keine Spieldaten.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-24"
     },
     {
@@ -1141,7 +1141,7 @@
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-07-26",
       "latestRelease": {
         "tag": "latest",
@@ -1171,8 +1171,8 @@
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-10-21",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
         "tag": "ios",
         "url": "https://github.com/Checkm8Croft/TRX/releases/tag/ios",
@@ -1189,8 +1189,8 @@
       "games": [
         "tomb-raider"
       ],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
         "tag": "continous",
         "url": "https://github.com/EKA2L1/EKA2L1/releases/tag/continous",
@@ -1207,7 +1207,7 @@
       "games": [
         "grand-theft-auto-iv"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-27",
       "latestRelease": {
         "tag": "v0.5.9.3",
@@ -1225,12 +1225,12 @@
       "games": [
         "grand-theft-auto-iv"
       ],
-      "checkedAt": "2026-11-08",
-      "pushedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
       "latestRelease": {
-        "tag": "0.9.24-xhyn-layer-test1",
-        "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-layer-test1",
-        "date": "2026-11-08"
+        "tag": "0.9.24-xhyn-base-english-test2",
+        "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-base-english-test2",
+        "date": "2026-11-09"
       }
     },
     {
@@ -1247,7 +1247,7 @@
         "tomb-raider-the-lost-artefact",
         "tomb-raider-chronicles"
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-11-02",
       "latestRelease": {
         "tag": "v11.2.0",
@@ -1273,7 +1273,7 @@
       "repo": "rfandango/XenDroid",
       "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia Edge; empfohlen ab Snapdragon 8 Gen 2 mit Turnip-Treiber.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-08-20",
       "latestRelease": {
         "tag": "XenDroid-c4f6863",
@@ -1289,7 +1289,7 @@
       "repo": "aenu1/ax360e",
       "description": "Experimenteller Xbox-360-Emulator für Android auf Basis von Xenia.",
       "games": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "pushedAt": "2026-10-28"
     },
     {
@@ -1298,11 +1298,17 @@
       "kind": "runtime",
       "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
       "repo": "Plus-Cloud/SkyrimSE-DualScreen",
-      "description": "",
+      "description": "Skyrim Special Edition on the AYN Thor, as one app: play your own Steam copy on the top screen, with a live dual-screen companion on the bottom. Map, compass, quests, inventory, magic and quick slots, plus an in-app Nexus mod manager. Built on GameNative.",
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-06",
+      "latestRelease": {
+        "tag": "v1.0.2",
+        "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.2",
+        "date": "2026-11-06"
+      }
     },
     {
       "id": "skyrim-android",
@@ -1310,11 +1316,17 @@
       "kind": "port",
       "url": "https://github.com/ttom795/Skyrim_Android",
       "repo": "ttom795/Skyrim_Android",
-      "description": "",
+      "description": "A static recompilation of Skyrim (2011) for Android devices.",
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-06",
+      "latestRelease": {
+        "tag": "0.30.15",
+        "url": "https://github.com/ttom795/Skyrim_Android/releases/tag/0.30.15",
+        "date": "2026-11-06"
+      }
     },
     {
       "id": "skyrim-androidborn",
@@ -1326,7 +1338,13 @@
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "v0.2.4",
+        "url": "https://github.com/igortiburcio/skyrim_androidborn/releases/tag/v0.2.4",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "skyrimwebmonitor-skyrimwebsocket",
@@ -1334,11 +1352,17 @@
       "kind": "companion",
       "url": "https://github.com/andreyvelsk/SkyrimWebMonitor",
       "repo": "andreyvelsk/SkyrimWebMonitor",
-      "description": "",
+      "description": "Skyrim companion app. Working with WS game server",
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-10-28",
+      "latestRelease": {
+        "tag": "v0.1.17",
+        "url": "https://github.com/andreyvelsk/SkyrimWebMonitor/releases/tag/v0.1.17",
+        "date": "2026-10-04"
+      }
     },
     {
       "id": "andreyvelsk-com-mobilerpgpack-phone",
@@ -1346,14 +1370,20 @@
       "kind": "port",
       "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone",
       "repo": "andreyvelsk/com.mobilerpgpack.phone",
-      "description": "",
+      "description": "Android port of UZDoom, with second screen support",
       "games": [
         "doom-1993",
         "doom-ii",
         "master-levels-for-doom-ii",
         "final-doom"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-06-10",
+      "latestRelease": {
+        "tag": "2.9.1-ds.1.0.2",
+        "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases/tag/2.9.1-ds.1.0.2",
+        "date": "2026-06-10"
+      }
     },
     {
       "id": "doom-bethesda-softworks",
@@ -1373,14 +1403,20 @@
       "kind": "port",
       "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
       "repo": "sandstranger/com.mobilerpgpack.phone",
-      "description": "",
+      "description": "Doom, Wolfenstein RPG series, Doom64 EX+, PsyDoom, UZDoom, Perfect Dark, Arx Libertatis,  FTEQW (quake 1, quake2, quake 3, hexen 2), Widelands, Vanilla-Conquer (C&C Tiberiawn Dawn and C&C Red Alert), Classic-RBDOOM-3-BFG (Doom 3 BFG Edition)  Android ports",
       "games": [
         "doom-1993",
         "doom-ii",
         "final-doom",
         "doom-64"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "3.5.11",
+        "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/3.5.11",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "idtech4a",
@@ -1388,11 +1424,17 @@
       "kind": "port",
       "url": "https://github.com/glKarin/com.n0n3m4.diii4a",
       "repo": "glKarin/com.n0n3m4.diii4a",
-      "description": "",
+      "description": "DOOM III/Quake 4/Prey(2006)/ETQW GLES on Android/Windows/Linux, DOOM 3 BFG/The Dark Mod/RTCW/Quake 1 2 3/GZDOOM/ETW/RealRTCW/OpenJK/Skin Deep/Quadrilateral Cowboy/Icarus Starship Command Simulator on Android",
       "games": [
         "doom-1993"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-06",
+      "latestRelease": {
+        "tag": "v1.1.0harmattan73",
+        "url": "https://github.com/glKarin/com.n0n3m4.diii4a/releases/tag/v1.1.0harmattan73",
+        "date": "2026-09-30"
+      }
     },
     {
       "id": "dualscreen-launcher",
@@ -1400,11 +1442,17 @@
       "kind": "runtime",
       "url": "https://github.com/JoeCorrell/DualScreen-Launcher",
       "repo": "JoeCorrell/DualScreen-Launcher",
-      "description": "",
+      "description": "Official DualScreen Launcher APK downloads only. Source is maintained privately.",
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-09-10",
+      "latestRelease": {
+        "tag": "v1.6.22",
+        "url": "https://github.com/JoeCorrell/DualScreen-Launcher/releases/tag/v1.6.22",
+        "date": "2026-09-10"
+      }
     },
     {
       "id": "ayn-dual-screen-skyrim-special-edition",
@@ -1412,11 +1460,17 @@
       "kind": "companion",
       "url": "https://github.com/Abacus1829/ayn-dual-screen/tree/main/skyrimse",
       "repo": "Abacus1829/ayn-dual-screen",
-      "description": "",
+      "description": "Second-screen companion for the AYN Thor and any browser: a live, touchable map/inventory/status UI served by a mod running inside your game. Android app plus mods for Stardew Valley, Terraria and Minecraft.",
       "games": [
         "the-elder-scrolls-v-skyrim"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-09-01",
+      "latestRelease": {
+        "tag": "v2026.09.01c",
+        "url": "https://github.com/Abacus1829/ayn-dual-screen/releases/tag/v2026.09.01c",
+        "date": "2026-09-01"
+      }
     },
     {
       "id": "gamehub",
@@ -1464,7 +1518,13 @@
       "games": [
         "pokemon-rejuvenation"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "latest",
+        "url": "https://github.com/Enecchii/rejuv-dual/releases/tag/latest",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "xenogears-link",
@@ -1476,7 +1536,13 @@
       "games": [
         "xenogears"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "Release-2",
+        "url": "https://github.com/Nihilspire/Xenogears-Link/releases/tag/Release-2",
+        "date": "2026-10-18"
+      }
     },
     {
       "id": "ds-forever",
@@ -1488,7 +1554,13 @@
       "games": [
         "world-of-warcraft-forever"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "v1.0.18",
+        "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.18",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "gba-ds",
@@ -1502,7 +1574,13 @@
         "metroid-zero-mission",
         "castlevania-aria-of-sorrow"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "v1.4.12",
+        "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.4.12",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "thor-dual-screen",
@@ -1514,7 +1592,13 @@
       "games": [
         "stardew-valley"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-10-22",
+      "latestRelease": {
+        "tag": "v0.5.2",
+        "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen/releases/tag/v0.5.2",
+        "date": "2026-10-22"
+      }
     },
     {
       "id": "bloodborne-thor-companion",
@@ -1526,7 +1610,13 @@
       "games": [
         "bloodborne"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-02",
+      "latestRelease": {
+        "tag": "thor-v0.23.0-preview.1",
+        "url": "https://github.com/emerytech/Bloodborne-Android/releases/tag/thor-v0.23.0-preview.1",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "tomba2recompds",
@@ -1538,7 +1628,13 @@
       "games": [
         "tomba-2-the-evil-swine-return"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-09-11",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/igawa6/Tomba2RecompDS/releases/tag/v0.1.0",
+        "date": "2026-09-12"
+      }
     },
     {
       "id": "silksong-android",
@@ -1550,7 +1646,13 @@
       "games": [
         "hollow-knight-silksong"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "v2.0.0",
+        "url": "https://github.com/jakobkhansen/SilksongAndroid/releases/tag/v2.0.0",
+        "date": "2026-09-25"
+      }
     },
     {
       "id": "hk-dual-souls",
@@ -1562,7 +1664,13 @@
       "games": [
         "hollow-knight"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-08-23",
+      "latestRelease": {
+        "tag": "1.0.3",
+        "url": "https://github.com/igawa6/dualsouls/releases/tag/1.0.3",
+        "date": "2026-08-23"
+      }
     },
     {
       "id": "dusklight-dual-screen",
@@ -1574,7 +1682,13 @@
       "games": [
         "the-legend-of-zelda-twilight-princess"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-10-06",
+      "latestRelease": {
+        "tag": "v2.0.3-ds-3.0.3",
+        "url": "https://github.com/igawa6/dusklight/releases/tag/v2.0.3-ds-3.0.3",
+        "date": "2026-10-06"
+      }
     },
     {
       "id": "ctr-ds",
@@ -1586,7 +1700,13 @@
       "games": [
         "crash-team-racing"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-08-30",
+      "latestRelease": {
+        "tag": "v0.1.0",
+        "url": "https://github.com/igawa6/ctr-native-android/releases/tag/v0.1.0",
+        "date": "2026-08-30"
+      }
     },
     {
       "id": "metroid-dual-metroid-link",
@@ -1598,7 +1718,8 @@
       "games": [
         "metroid"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-08"
     },
     {
       "id": "zeldawwhdrecomp",
@@ -1610,7 +1731,13 @@
       "games": [
         "the-legend-of-zelda-the-wind-waker"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-09",
+      "latestRelease": {
+        "tag": "devel-build",
+        "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/devel-build",
+        "date": "2026-11-09"
+      }
     },
     {
       "id": "ducvd89-bloodborne-android",
@@ -1618,11 +1745,17 @@
       "kind": "port",
       "url": "https://github.com/ducvd89/Bloodborne-Android",
       "repo": "ducvd89/Bloodborne-Android",
-      "description": "",
+      "description": "Bloodborne for Android: GSR2/FSR 3.1 + LSFG, on-screen controller. Tested on Snapdragon 8 Gen 2 and 8 Elite.",
       "games": [
         "bloodborne"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-08",
+      "latestRelease": {
+        "tag": "android-2.2.1",
+        "url": "https://github.com/ducvd89/Bloodborne-Android/releases/tag/android-2.2.1",
+        "date": "2026-11-08"
+      }
     },
     {
       "id": "ctr-native-android",
@@ -1630,11 +1763,17 @@
       "kind": "port",
       "url": "https://github.com/Simon358/ctr-native-android",
       "repo": "Simon358/ctr-native-android",
-      "description": "",
+      "description": "A Crash Team Racing Decompilation Project - Port on Android",
       "games": [
         "crash-team-racing"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-07-26",
+      "latestRelease": {
+        "tag": "Android-Build4",
+        "url": "https://github.com/Simon358/ctr-native-android/releases/tag/Android-Build4",
+        "date": "2026-07-26"
+      }
     },
     {
       "id": "ctr-mobile",
@@ -1646,7 +1785,13 @@
       "games": [
         "crash-team-racing"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-10-30",
+      "latestRelease": {
+        "tag": "v0.1.0-beta.7.1",
+        "url": "https://github.com/ThiagoAciole/ctr-mobile/releases/tag/v0.1.0-beta.7.1",
+        "date": "2026-10-23"
+      }
     },
     {
       "id": "ctr-60-fps-widescreen",
@@ -1670,7 +1815,8 @@
       "games": [
         "hollow-knight"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-05-01"
     },
     {
       "id": "hollowknightandroid",
@@ -1678,11 +1824,17 @@
       "kind": "official",
       "url": "https://github.com/Darkaxt/HollowKnightAndroid",
       "repo": "Darkaxt/HollowKnightAndroid",
-      "description": "",
+      "description": "Hollow Knight: Silksong Dual-Screen Android port (+Steam integration)",
       "games": [
         "hollow-knight"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-11-05",
+      "latestRelease": {
+        "tag": "v1.0.3",
+        "url": "https://github.com/Darkaxt/HollowKnightAndroid/releases/tag/v1.0.3",
+        "date": "2026-09-01"
+      }
     },
     {
       "id": "winlator-ludashi-plus",
@@ -1690,11 +1842,17 @@
       "kind": "runtime",
       "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus",
       "repo": "TripleJ160/Winlator-Ludashi-Plus",
-      "description": "",
+      "description": "Android application for running Windows applications with Wine and Box86/Box64",
       "games": [
         "hollow-knight"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-06-06",
+      "latestRelease": {
+        "tag": "3.1-plus",
+        "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus/releases/tag/3.1-plus",
+        "date": "2026-06-06"
+      }
     },
     {
       "id": "gzdoom-android-2026-freedoom-for-android",
@@ -1706,7 +1864,8 @@
       "games": [
         "doom-ii"
       ],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09",
+      "pushedAt": "2026-06-30"
     },
     {
       "id": "mighty-doom",

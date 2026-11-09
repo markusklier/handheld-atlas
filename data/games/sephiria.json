@@ -100,6 +100,34 @@
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/hud.png",
+          "caption": "HUD",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/map.png",
+          "caption": "Floor map",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/backpack.png",
+          "caption": "Backpack",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/combos.png",
+          "caption": "Combos",
+          "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
+          "credit": "Sephiria Companion",
+          "check": "readme"
         }
       ],
       "links": [

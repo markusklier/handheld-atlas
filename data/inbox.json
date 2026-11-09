@@ -1,6 +1,438 @@
 {
   "leads": [
     {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrdx29/looking_for_handheld/",
+      "title": "Looking for handheld",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrlbj7/why_do_so_many_capable_ds_clamshells_feature_an/",
+      "title": "Why do so many capable DS clamshells feature an OLED bottom screen?",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrlls0/retroid_pocket_nova_vs_r6_for_pocketability/",
+      "title": "Retroid pocket nova vs R6 for pocketability?",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrrn1p/any_dualscreen_handhelds_with_a_resistive_bottom/",
+      "title": "Any dual-screen handhelds with a RESISTIVE bottom touchscreen?",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://modrinth.com/mod/e4all",
+      "title": "e4all",
+      "excerpt": "The e4mc fork that lets anyone join your LAN world from anywhere, even with offline accounts. Supports Simple Voice Chat, Android, and more!",
+      "game": null,
+      "source": "modrinth",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ktososdaleto-debug/NeuroRich-Games-Android-Ports",
+      "title": "ktososdaleto-debug/NeuroRich-Games-Android-Ports",
+      "excerpt": "Android ports of legendary games, recreated in Claude Opus 5.5 by NeuroRich.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/thebabyhippo303/nimbus-recompilation-project",
+      "title": "thebabyhippo303/nimbus-recompilation-project",
+      "excerpt": "The Nimbus Recompilation Project (TNRP): nine native DBZ ports across GameCube, GBA, PSP and PS2 (Infinite World) with Linux/Windows/Android crossplay. Release distros only.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jp244btc/vs-smb-recomp",
+      "title": "jp244btc/vs-smb-recomp",
+      "excerpt": "VS. Super Mario Bros. (arcade) as a native Windows, Linux, Steam Deck and Android program by static recompilation; bring your own dump",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Ihor-Ihorevych/JuicedRecomp",
+      "title": "Ihor-Ihorevych/JuicedRecomp",
+      "excerpt": "Juiced Xbox => Android Recomp",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/chinghaolai/Recommendation-paper-daily",
+      "title": "chinghaolai/Recommendation-paper-daily",
+      "excerpt": "RecSys paper collection",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mserman90/meshtastic-sozluk",
+      "title": "mserman90/meshtastic-sozluk",
+      "excerpt": "Meshtastic Turkce-Ingilizce Ansiklopedik Yazilim ve Donanim Terimleri Sozlugu (Wikipedia Formatinda)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/uhom1/sm",
+      "title": "uhom1/sm",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/wh000wh000/awesome-jev-live",
+      "title": "wh000wh000/awesome-jev-live",
+      "excerpt": "Awesome Jev — evidence-graded index of TypeSafe System One: SDKs, MCP tools, agents, apps and open models. 20 languages, rebuilt every 2 hours.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/nmbboy/Full-Chain-Sentinel-System",
+      "title": "nmbboy/Full-Chain-Sentinel-System",
+      "excerpt": "全链哨兵，是集Web 渗透、安卓 App 安全测试、iOS APP安全测试、攻防批量打点、自动化应急响应、开源漏洞监测为一体的网络安全 Agent，用于安全服务交付自动化辅助，禁止用于非法用途。",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/dmxzxy/DroidBridge",
+      "title": "dmxzxy/DroidBridge",
+      "excerpt": "DroidBridge",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Alexgg1014/The-Legend-of-Zelda-Twilight-Princess-Alek-s-Ultimate-NX-Edition",
+      "title": "Alexgg1014/The-Legend-of-Zelda-Twilight-Princess-Alek-s-Ultimate-NX-Edition",
+      "excerpt": "Unofficial Nintendo Switch homebrew port of Dusklight (Twilight Princess).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/StrayDragon/awesome-stars",
+      "title": "StrayDragon/awesome-stars",
+      "excerpt": "✨🌟✨  my stars list, thx for  https://github.com/maguowei/starred 😘",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Deep-pdf/IoT_Micro",
+      "title": "Deep-pdf/IoT_Micro",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+      "title": "Nihilspire/Shantae-Dual-Screen-Mods",
+      "excerpt": "A collection of ai-assisted dual screen mods for use with the USA release of Shantae GBC.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ZallaxDev/emerald-3ds",
+      "title": "ZallaxDev/emerald-3ds",
+      "excerpt": "Native Pokémon Emerald port for Nintendo 3DS, featuring dual-screen gameplay, stereoscopic 3D, and a fully 3D world.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ARMSX2/ARMSX1",
+      "title": "ARMSX2/ARMSX1",
+      "excerpt": "New PS1 Emulator from the Founders of ARMSX2 ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/stormpanda/better-dual-screen-assistant",
+      "title": "stormpanda/better-dual-screen-assistant",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/bayshier/awesome-decomp-games-zh",
+      "title": "bayshier/awesome-decomp-games-zh",
+      "excerpt": "Awesome Decomp Games 非官方中文版 · 2118 个经典游戏反编译/重编译项目评分榜（1829 款游戏）· 由生成器中文化，可跟随上游每日刷新 · 数据 CC0 / 代码 MIT",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sirbedtime/ThorWow",
+      "title": "sirbedtime/ThorWow",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mkaflowski/AmbiAnalog",
+      "title": "mkaflowski/AmbiAnalog",
+      "excerpt": "AmbiAnalog gives you ambilight effect and per game led profile for analogs on android consoles like Ayn Thor.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/chunma-san/awesome-toolbox",
+      "title": "chunma-san/awesome-toolbox",
+      "excerpt": "A categorized collection of apps, self-hosted services, developer tools and gaming utilities, with a searchable web catalog.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/zeranemesis/picanative",
+      "title": "zeranemesis/picanative",
+      "excerpt": "Moteur de rendu natif PICA200 (Vulkan) pour les ports PC et Android de jeux 3DS décompilés",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/nikalbazu24/Diptico-frontend",
+      "title": "nikalbazu24/Diptico-frontend",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Nightshadow-code/ThorStation",
+      "title": "Nightshadow-code/ThorStation",
+      "excerpt": "A single-page website for the AYN Thor handheld featuring curated apps, custom operating systems, dual-screen layouts, and community submissions.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/dvandenburgh/steamling",
+      "title": "dvandenburgh/steamling",
+      "excerpt": "Steamling is an Arch Linux ARM gaming OS that makes Snapdragon handhelds work like a Steam Deck: turn it on and you’re in Steam, with x86 games running through FEX and a full KDE desktop when you want it.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sreevarshan-xenoz/Pocketdesk",
+      "title": "sreevarshan-xenoz/Pocketdesk",
+      "excerpt": "Pocketdesk — your desktop from your phone. Low-latency remote desktop for Linux (Wayland-native) and Windows, with KDE Connect features, over LAN, Tailscale or iroh. Pure Rust server + native Android app; no port forwarding.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ramordcommunity/ramordcast",
+      "title": "ramordcommunity/ramordcast",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/JorreFog/BananaLinux",
+      "title": "JorreFog/BananaLinux",
+      "excerpt": "A light Linux for the Anbernic RG DS and RG DS Plus: boots to its own menu in seconds, two DS emulators straight onto both screens, RetroArch, and an App Store.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/indecenti/NucleoOs",
+      "title": "indecenti/NucleoOs",
+      "excerpt": "Web-native OS for the M5Stack Cardputer (ESP32-S3): native firmware + a desktop-class browser shell, offline AI assistant (ANIMA), bilingual voice, games, a security lab, OTA.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ministripemulihan/book",
+      "title": "ministripemulihan/book",
+      "excerpt": "book",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/renbtg-cloud/animation-ideation---raw-reasoning",
+      "title": "renbtg-cloud/animation-ideation---raw-reasoning",
+      "excerpt": "Initial animation concept for cinema, streaming series - physical theaters, Neflix, Youtube , whatever. ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ejluv143/ExamSIC",
+      "title": "ejluv143/ExamSIC",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/MVMK1903/SCRIPT.DESK",
+      "title": "MVMK1903/SCRIPT.DESK",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/tejasec/CueLM",
+      "title": "tejasec/CueLM",
+      "excerpt": "Turn lecture audio into actionable tasks, key concepts, exam hints, and auto-synced Gemini Notebooks & Calendar.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/coryj627/slate",
+      "title": "coryj627/slate",
+      "excerpt": "Yet Another Notes App",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/prachizala/Pulsesync",
+      "title": "prachizala/Pulsesync",
+      "excerpt": "Real-time offline-first emergency & field operations dispatch engine with Flutter, FastAPI, WebSockets, and Redis geospatial radar.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/BohaniLucas/AssetBridge",
+      "title": "BohaniLucas/AssetBridge",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/gustlarsen/HowPredictableYouAre",
+      "title": "gustlarsen/HowPredictableYouAre",
+      "excerpt": "HowPredictableYouAre APP",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/element-hq/element-x-android",
+      "title": "element-hq/element-x-android",
+      "excerpt": "Android Matrix messenger application using the Matrix Rust Sdk and Jetpack Compose",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Rishisharma029/CleanTV-Home",
+      "title": "Rishisharma029/CleanTV-Home",
+      "excerpt": "Apple TV-inspired clean, ad-free, high-performance home launcher & 1-click debloater for Android TV, Google TV, and Realme TV",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jaywcjlove/awesome-mac",
+      "title": "jaywcjlove/awesome-mac",
+      "excerpt": " This project is dedicated to collecting high-quality macOS software and organizing them systematically by different categories for easy search and use.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/harrydbarnes/lika-lens",
+      "title": "harrydbarnes/lika-lens",
+      "excerpt": "Your camera, like a lens.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/everyoneexe/XHide",
+      "title": "everyoneexe/XHide",
+      "excerpt": "System-level multi-user launcher icon hider for Xposed / LSPosed / Vector (Android 11–17)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/losebird/dsh-plugin-market",
+      "title": "losebird/dsh-plugin-market",
+      "excerpt": "DeepSeek Harness plugins market｜DSH 插件市场",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ovrrup/a2gy",
+      "title": "ovrrup/a2gy",
+      "excerpt": "Sovereign cross-platform Flutter client and middleman for Google Antigravity with zero-mock live model discovery and direct OAuth 2.0 PKCE",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/pranav11-072/drivesafeai_apk",
+      "title": "pranav11-072/drivesafeai_apk",
+      "excerpt": "drivesafeai_apk",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jaywcjlove/awesome-swift-macos-apps",
+      "title": "jaywcjlove/awesome-swift-macos-apps",
+      "excerpt": "A curated collection of open-source macOS applications built with Swift",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/imranbeyan162-collab/tracker",
+      "title": "imranbeyan162-collab/tracker",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Linoleic/MultiRoute",
+      "title": "Linoleic/MultiRoute",
+      "excerpt": "An LSPosed module that gives every app its own network channel.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://www.reddit.com/r/SBCGaming/comments/1xr98no/inlay_v13_is_out_my_controller_keyboard_for/",
       "title": "Inlay v1.3 is out. My controller keyboard for Android got a split layout, plus a bunch more.",
       "excerpt": "",
@@ -5750,9 +6182,9 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-08T21:59:08Z",
-    "newLeads": 28,
-    "newEvents": 7
+    "lastRun": "2026-11-09T14:16:43Z",
+    "newLeads": 54,
+    "newEvents": 30
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

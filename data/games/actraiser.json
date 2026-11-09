@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1990
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q343033"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q343033",
+  "wikipedia": "https://en.wikipedia.org/wiki/ActRaiser",
+  "genre": "2D platform game"
 }

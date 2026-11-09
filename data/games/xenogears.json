@@ -58,7 +58,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/f401463c-e72a-44fc-9a49-605e8019cd35",
+          "caption": "2D mini map   guide line Blackmoon Forest",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/6eb74105-5073-4423-87f6-63796c363872",
+          "caption": "3D map   route line Bledavik",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/6ab4e812-e4c6-406a-90ef-c3445406fb55",
+          "caption": "Battle   Shakhan Guards with turn order",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/64333183-bb86-4ca0-8744-1e2c37a51913",
+          "caption": "Boss card   Hecht live",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/db1fd0f1-dfe5-4bbc-a974-0c87a5cbfc9e",
+          "caption": "Disc 1 complete summary",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/e8783fc2-9330-4539-bf6c-20ae43ae3607",
+          "caption": "EYE mode   route line Bledavik",
+          "source": "https://github.com/Nihilspire/Xenogears-Link",
+          "credit": "Xenogears-Link",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

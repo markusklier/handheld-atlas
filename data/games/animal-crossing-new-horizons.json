@@ -206,6 +206,36 @@
           "url": "https://www.emuready.com/games/0eafb7d9-da35-43a4-93b0-e977522c51ae"
         }
       ]
+    },
+    {
+      "id": "q19610114-2020",
+      "name": "Q19610114 (2020)",
+      "type": "port",
+      "year": 2020,
+      "platforms": [
+        "Q19610114"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q64566657"
+        }
+      ]
+    },
+    {
+      "id": "q122761124-2026",
+      "name": "Q122761124 (2026)",
+      "type": "port",
+      "year": 2026,
+      "platforms": [
+        "Q122761124"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q64566657"
+        }
+      ]
     }
   ],
   "routes": [
@@ -275,5 +305,8 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q64566657",
+  "wikipedia": "https://en.wikipedia.org/wiki/Animal_Crossing%3A_New_Horizons",
+  "genre": "life simulation game"
 }

@@ -1,6 +1,393 @@
 {
   "entries": [
     {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "persona-5-royal",
+      "text": "12 Community-Berichte von EmuReady für Persona 5 Royal (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "persona-3-portable",
+      "text": "1 Community-Berichte von EmuReady für Persona 3 Portable (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "octopath-traveler-0",
+      "text": "7 Community-Berichte von EmuReady für Octopath Traveler 0 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "new-super-mario-bros-wii",
+      "text": "2 Community-Berichte von EmuReady für New Super Mario Bros. Wii (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "minecraft",
+      "text": "3 Community-Berichte von EmuReady für Minecraft (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "metroid-dread",
+      "text": "11 Community-Berichte von EmuReady für Metroid Dread (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "mario-kart-8-deluxe",
+      "text": "12 Community-Berichte von EmuReady für Mario Kart 8 Deluxe (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "hollow-knight",
+      "text": "15 Community-Berichte von EmuReady für Hollow Knight (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "hollow-knight-silksong",
+      "text": "8 Community-Berichte von EmuReady für Hollow Knight: Silksong (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "doom-64",
+      "text": "4 Community-Berichte von EmuReady für Doom 64 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "crash-team-racing",
+      "text": "1 Community-Berichte von EmuReady für Crash Team Racing (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Winlator-Ludashi-Plus 3.1-plus veröffentlicht.",
+      "project": "winlator-ludashi-plus",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/TripleJ160/Winlator-Ludashi-Plus/releases/tag/3.1-plus"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "HollowKnightAndroid v1.0.3 veröffentlicht.",
+      "project": "hollowknightandroid",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid/releases/tag/v1.0.3"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "CTR Mobile v0.1.0-beta.7.1 veröffentlicht.",
+      "project": "ctr-mobile",
+      "games": [
+        "crash-team-racing"
+      ],
+      "url": "https://github.com/ThiagoAciole/ctr-mobile/releases/tag/v0.1.0-beta.7.1"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "CTR Native Android Android-Build4 veröffentlicht.",
+      "project": "ctr-native-android",
+      "games": [
+        "crash-team-racing"
+      ],
+      "url": "https://github.com/Simon358/ctr-native-android/releases/tag/Android-Build4"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "ducvd89/Bloodborne-Android android-2.2.1 veröffentlicht.",
+      "project": "ducvd89-bloodborne-android",
+      "games": [
+        "bloodborne"
+      ],
+      "url": "https://github.com/ducvd89/Bloodborne-Android/releases/tag/android-2.2.1"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "ZeldaWWHDRecomp devel-build (Vorabversion) veröffentlicht.",
+      "project": "zeldawwhdrecomp",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker"
+      ],
+      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/devel-build"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "CTR-DS v0.1.0 veröffentlicht.",
+      "project": "ctr-ds",
+      "games": [
+        "crash-team-racing"
+      ],
+      "url": "https://github.com/igawa6/ctr-native-android/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Dusklight Dual Screen v2.0.3-ds-3.0.3 veröffentlicht.",
+      "project": "dusklight-dual-screen",
+      "games": [
+        "the-legend-of-zelda-twilight-princess"
+      ],
+      "url": "https://github.com/igawa6/dusklight/releases/tag/v2.0.3-ds-3.0.3"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "HK: Dual Souls 1.0.3 veröffentlicht.",
+      "project": "hk-dual-souls",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/igawa6/dualsouls/releases/tag/1.0.3"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Silksong Android v2.0.0 veröffentlicht.",
+      "project": "silksong-android",
+      "games": [
+        "hollow-knight-silksong"
+      ],
+      "url": "https://github.com/jakobkhansen/SilksongAndroid/releases/tag/v2.0.0"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Tomba2RecompDS v0.1.0 veröffentlicht.",
+      "project": "tomba2recompds",
+      "games": [
+        "tomba-2-the-evil-swine-return"
+      ],
+      "url": "https://github.com/igawa6/Tomba2RecompDS/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Bloodborne · Thor Companion thor-v0.23.0-preview.1 veröffentlicht.",
+      "project": "bloodborne-thor-companion",
+      "games": [
+        "bloodborne"
+      ],
+      "url": "https://github.com/emerytech/Bloodborne-Android/releases/tag/thor-v0.23.0-preview.1"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Thor Dual Screen v0.5.2 veröffentlicht.",
+      "project": "thor-dual-screen",
+      "games": [
+        "stardew-valley"
+      ],
+      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen/releases/tag/v0.5.2"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "GBA DS v1.4.12 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.4.12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "DS Forever v1.0.18 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.18"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Xenogears-Link Release-2 veröffentlicht.",
+      "project": "xenogears-link",
+      "games": [
+        "xenogears"
+      ],
+      "url": "https://github.com/Nihilspire/Xenogears-Link/releases/tag/Release-2"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Rejuv Dual latest (Vorabversion) veröffentlicht.",
+      "project": "rejuv-dual",
+      "games": [
+        "pokemon-rejuvenation"
+      ],
+      "url": "https://github.com/Enecchii/rejuv-dual/releases/tag/latest"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Ayn Dual Screen – Skyrim Special Edition v2026.09.01c veröffentlicht.",
+      "project": "ayn-dual-screen-skyrim-special-edition",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Abacus1829/ayn-dual-screen/releases/tag/v2026.09.01c"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "DualScreen Launcher v1.6.22 veröffentlicht.",
+      "project": "dualscreen-launcher",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/JoeCorrell/DualScreen-Launcher/releases/tag/v1.6.22"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "idTech4A++ v1.1.0harmattan73 veröffentlicht.",
+      "project": "idtech4a",
+      "games": [
+        "doom-1993"
+      ],
+      "url": "https://github.com/glKarin/com.n0n3m4.diii4a/releases/tag/v1.1.0harmattan73"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 3.5.11 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/3.5.11"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "andreyvelsk/com.mobilerpgpack.phone 2.9.1-ds.1.0.2 veröffentlicht.",
+      "project": "andreyvelsk-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "master-levels-for-doom-ii",
+        "final-doom"
+      ],
+      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases/tag/2.9.1-ds.1.0.2"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "SkyrimWebMonitor / SkyrimWebSocket v0.1.17 veröffentlicht.",
+      "project": "skyrimwebmonitor-skyrimwebsocket",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/andreyvelsk/SkyrimWebMonitor/releases/tag/v0.1.17"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Skyrim Androidborn v0.2.4 veröffentlicht.",
+      "project": "skyrim-androidborn",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/igortiburcio/skyrim_androidborn/releases/tag/v0.2.4"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Skyrim_Android 0.30.15 (Vorabversion) veröffentlicht.",
+      "project": "skyrim-android",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/ttom795/Skyrim_Android/releases/tag/0.30.15"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "SkyrimSE-DualScreen v1.0.2 veröffentlicht.",
+      "project": "skyrimse-dualscreen",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.2"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "XHYN IV 0.9.24-xhyn-base-english-test2 (Vorabversion) veröffentlicht.",
+      "project": "xhyn-iv",
+      "games": [
+        "grand-theft-auto-iv"
+      ],
+      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-base-english-test2"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "DAO-Duo (Dragon Age: Origins Recomp Android) v0.2.2-alpha (Vorabversion) veröffentlicht.",
+      "project": "dao-duo",
+      "games": [
+        "dragon-age-origins"
+      ],
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.2-alpha"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "WiiDS v1.2.0 veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "release",
+      "text": "Eden Duo Companions echoes-of-wisdom-1.0.1 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "the-legend-of-zelda-link-s-awakening",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-afterbirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/echoes-of-wisdom-1.0.1"
+    },
+    {
       "type": "mod-added",
       "text": "Neuer Mod: Brasilianisch-portugiesische Übersetzung – Tradu Games BR (KI-Recherche)",
       "url": "https://romhackers.org/traducoes/portatil/game-boy-advance/tomb-raider-the-prophecy-tradu-games-br/",

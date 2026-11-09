@@ -61,6 +61,122 @@
       "note": "Seit dem 12. Juni 2018 erhältlich. Zum Start waren Hidden Dreams, The Grimm Troupe und Lifeblood enthalten; gegenüber der PC-Fassung bietet dieser Konsolenport keinen Zugang zum PC-Mod-Ökosystem.",
       "traits": [
         "controller"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ac9176a2-280f-4293-909c-463555314a17",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-09-04",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T30-toasted.adpkg|||turnip_mrpurple_T30-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d3c7c2ad-2e58-4801-8584-ca408b0e3c1e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d296e6a4-86b0-4793-9565-b57f5a665796",
+          "device": "Motorola Edge+ (2023)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-11-21",
+          "settings": {
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "On Load",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/24dacedb-a03c-4962-aa7e-2fbdec0dd3a1",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-09-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d67d9c7d-c6d1-4345-b7c9-865f41ca6de5",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Videos are slow, and 2D images flicker. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1bb680ff-d24f-4bb8-9cd7-ea20806389f1"
+        }
       ]
     },
     {
@@ -78,6 +194,182 @@
         "controller",
         "mods",
         "widescreen"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/030b953d-3048-4b60-84d2-5ed416f7a3b9",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-02-10",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R8",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-proton-3.0b"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/44cd4603-a475-4d84-a2ba-e07c2304a26a",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-07-05",
+          "settings": {
+            "Emulator Version": "v5.1.8",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4fddfafa-339b-461b-a2ac-be0ee44f8180",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Loads of different compatibility options work for this game, I am sure there are better ones. This one works perfectly on my S23 Ultra in the early game (didn't get too far into the game)",
+          "votes": 1,
+          "date": "2025-11-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b246eb52-f9c5-43e2-9808-d39b0583dc22",
+          "device": "AYN Odin 2 Mini Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Setting the wine version to 10.0.4-arm64ec-1 specifically fixed the missing cutscenes at the start of the game, where i was getting a black screen with audio before. This game can be easily optimized for power efficiency",
+          "votes": 0,
+          "date": "2026-08-09",
+          "settings": {
+            "Emulator Version": "v1.1.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Exec Arguments": "\n",
+            "Resolution (Screen Size)": "1280x720",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "DX Wrapper": "DXVK"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6b0c9385-a8ad-4530-8549-a9d005a2bb31",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No issues.",
+          "votes": 0,
+          "date": "2026-07-14",
+          "settings": {
+            "Emulator Version": "1.1.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[StevenMXZ] Turnip v26.2.0-R8|||Turnip_v26.2.0-R8.zip",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.7.1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/169b3646-097f-44a9-b5d1-7181b177b1b4",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at stable 60 and 120fps.",
+          "votes": 0,
+          "date": "2026-06-09"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9c085e25-9720-4aaa-a36f-a8d1e6cd326d",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f156f2e2-85af-452b-8414-a02b44408f1e",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Had major texture issues when trying to use proton 10 and 11. Works perfectly on proton 9.",
+          "votes": 0,
+          "date": "2026-05-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8091d45f-8acc-47ae-a530-9429d891bfc2",
+          "device": "AYN Odin 2",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "With these setting, although it took between 2-5 minutes to load up, the game manage to be playable. At the beginning when going through a loading screen to slows down but as you play, the loading screen time reduces.",
+          "votes": 1,
+          "date": "2026-04-21"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7e966cfe-01b3-45bc-8777-f91855da665d",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "GameNative",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-09-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/fdcea87b-192e-4a03-a502-9b97c684a8fa"
+        }
       ]
     },
     {
@@ -263,7 +555,22 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/ui-source/steamgriddb/hollow-knight-grid-287022.webp",
+          "caption": "Hollow Knight artwork",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/ui-source/steamgriddb/silksong-grid-325379.webp",
+          "caption": "Silksong artwork",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

@@ -13,6 +13,194 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1cec68b1-6956-475c-b81b-7bf2ed35439a",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Tweaked a bit but plays amazingly",
+          "votes": 5,
+          "date": "2026-07-01",
+          "settings": {
+            "Emulator Version": "Nightly (2068b5d452-master)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f2468440-f35f-498c-8cc8-fd384f79d7a2",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 4,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/653176ee-712d-4576-bf8c-b3043a429c7d",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "game runs perfectly fine",
+          "votes": 2,
+          "date": "2026-09-12"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8dcf6cec-2e3c-4324-a31e-1c3d2970b075",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-05-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b5d0a809-2d82-4e7e-8bb7-fb719afa0718",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-12-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0b286cb7-a6ef-4abc-a549-68616ab9a49c",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Latest version and drivers let me play this perfectly without adjusting any other settings.",
+          "votes": 2,
+          "date": "2025-12-17"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/34898eb8-bf2a-42f1-89fa-c743f933222d",
+          "device": "Xiaomi Poco F6 Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "No graphics glitches. Just set the CPU Backend to Dynamic. Dont use any 60 FPS mod if you dint want to have graphical glitches",
+          "votes": 0,
+          "date": "2026-01-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f5bcfeeb-4525-4ce1-b9e5-941cd3e51d26",
+          "device": "OnePlus 12R",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Might update later but plays perfectly",
+          "votes": 0,
+          "date": "2025-08-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f3be4b42-c828-4a7f-8340-338854e18d74",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "RECIEN HOY JUGUE, estuve 1 hora buscandl en reddit, google y youtube y creo que lo que soluciono el problema de parpadeos por fallo de actualizacion del UI fue añadir en @Freedreno: FED_DEV_FEATURES Y valir de variable:e",
+          "votes": 2,
+          "date": "2026-06-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a7985740-46e4-4fee-ab87-2665a00c3bbd",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Used Turnip Driver 23, most recent version causes graphical bugs.",
+          "votes": 2,
+          "date": "2026-02-24"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1d138e53-ea67-4ae6-be2e-401d0f6e3c27",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Skyline",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Still occasionally (though significantly less than other emulators) has a crash. Playing for multiple hour sessions, device sleeps / unloading is etc. Device sleeps / return will increase likelihood of graphical issues /",
+          "votes": 2,
+          "date": "2025-06-28",
+          "settings": {
+            "Emulator Version": "72",
+            "API": "Vulkan",
+            "Resolution Scale": "100",
+            "Anti-Aliasing": "None",
+            "VSync Mode": "FIFO (On)",
+            "Async GPU Emulation": "True",
+            "Async Shader Compilation": "True",
+            "CPU Accuracy": "Auto",
+            "Multicore CPU Emulation": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2254e686-88ab-4f2f-8ca4-d9180114ec36",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "40-60 FPS with uncapped Mod Slight flickering, if it bothers you can up accuracy level to high while sacrificing high framerates",
+          "votes": 1,
+          "date": "2025-12-17"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/6a916fc6-9fec-43cd-bbde-59e88a100cd5"
+        }
       ]
     }
   ],

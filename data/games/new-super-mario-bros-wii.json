@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3018c7b2-c093-4b7e-b5f4-8b441c239209",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS at 3x resolution. Game will frequently crash when screen recording if the system driver is used. This issue was fixed by switching to the purple turnip T26 driver.",
+          "votes": 1,
+          "date": "2026-04-07",
+          "settings": {
+            "Emulator Version": "2603a",
+            "Driver Version": "turnip_mrpurple_T26-toasted",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "3",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9f0f47c0-34c8-41dd-8ad7-c7f4193bd0ee",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Using Newer Super Mario Bros. Wii. Performance is perfect with no slowdowns.",
+          "votes": 0,
+          "date": "2026-01-24",
+          "settings": {
+            "Emulator Version": "2512",
+            "Driver Version": "Turnip Adreno Driver T22 hotfix",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "3",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "Skip EFB Access from CPU": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/614f65ed-46db-4055-906c-f5e6a566a9ab"
+        }
       ]
     }
   ],
@@ -67,6 +123,41 @@
           "source": "https://github.com/Maddex712/WiiDS",
           "credit": "WiiDS",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/mkw-retro-rewind-peach-circuit.jpg",
+          "caption": "Retro Rewind Peach Circuit racing on the AYN Thor",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-save-manager.png",
+          "caption": "WiiDS 1.1 nightly review: save backup, export and restore controls above, select",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-dolphin-import.png",
+          "caption": "WiiDS 1.1 dev17: Dolphin import guidance for NSMB above, matching save profile b",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-trackpad-controls.png",
+          "caption": "WiiDS 1.1 dev19 Galaxy Controls: lower screen Trackpad and native camera guidanc",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-galaxy-picture.png",
+          "caption": "WiiDS 1.1 dev17 Galaxy Picture settings: Original, Smooth and Smooth plus glow c",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
         }
       ],
       "links": [

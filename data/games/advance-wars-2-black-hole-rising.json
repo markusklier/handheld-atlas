@@ -29,8 +29,41 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "q188642-2003",
+      "name": "Q188642 (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "Q188642"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2569478"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2569478"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2569478",
+  "wikipedia": "https://en.wikipedia.org/wiki/Advance_Wars_2%3A_Black_Hole_Rising",
+  "genre": "turn-based tactics"
 }

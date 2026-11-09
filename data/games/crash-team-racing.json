@@ -20,6 +20,38 @@
       "note": "Das ursprüngliche Kart-Rennspiel von Naughty Dog mit Abenteuer-, Zeitfahren- und Mehrspielermodi. Diese Fassung bildet die Grundlage der Android-Fanports und der meisten klassischen CTR-Mods.",
       "traits": [
         "controller"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c7ff3f7d-70ca-41fe-8517-e13c315e5284",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/41a0af93-40f6-4815-b0ae-788de9b59404"
+        }
       ]
     },
     {
@@ -504,5 +536,8 @@
       "source": "https://www.nintendolife.com/reviews/nintendo-switch/crash_team_racing_nitro-fueled",
       "check": "ai-verified"
     }
-  ]
+  ],
+  "wikidata": "Q834872",
+  "wikipedia": "https://en.wikipedia.org/wiki/Crash_Team_Racing",
+  "genre": "kart racing game"
 }

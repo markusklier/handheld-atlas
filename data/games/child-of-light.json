@@ -28,9 +28,33 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "pc-2014",
+      "name": "PC, PlayStation 3, PlayStation 4 u. a. (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4",
+        "Q13361286",
+        "Q48263",
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16319370"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q16319370",
+  "wikipedia": "https://en.wikipedia.org/wiki/Child_of_Light",
+  "genre": "platform game"
 }

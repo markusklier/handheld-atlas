@@ -18,6 +18,218 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/39028761-14d0-4307-82da-ddd66eea9ce6",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-11-04",
+          "settings": {
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "On Load",
+            "Game Version": "1.0.0",
+            "Average FPS": "30",
+            "Emulator Version": "0.0.4-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/26272e50-ff77-4812-8d51-465be6c1464c",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Driver: Mesa Turnip driver v24.3.0 - Revision 9v2 (used to avoid freeze during intro/cutscene) Use reactive flushing",
+          "votes": 3,
+          "date": "2025-08-28",
+          "settings": {
+            "Emulator Version": "0.0.3 RC3",
+            "Driver Version": "[KIMCHI Turnip] Mesa Turnip driver v24.3.0 - Revision 9v2|||turnip_v24.3.0_R9v2.",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a091f31e-9794-4cf5-a91c-a0d8395a5887",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-04-24"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/76f472d4-cdfa-45fc-b927-dbff56c56e71",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game runs flawlessly with Mesa Turnip Driver V25.2.0-R2. Attempted with revision 5 and 7 and ran into crashes during game beginning cut scene. **Officially ported from the Ryan Retro Compatibility List: https://ryanretro",
+          "votes": 2,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "0.7",
+            "Driver Version": "[KIMCHI Turnip] v25.2.0 - Revision 14|||Turnip_v25.2.0_R14.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dc0961ec-026b-4003-b78c-ac2469d7e70d",
+          "device": "AYN Odin 2",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Smooth 60 FPS MrPurple Turnip T20",
+          "votes": 2,
+          "date": "2025-06-22",
+          "settings": {
+            "Emulator Version": "51800e249",
+            "Driver Version": "MrPurple Turnip T20",
+            "Accuracy Level": "Normal",
+            "Resolution": "Handheld",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ec49e7de-c40e-4451-941a-8265dd0aaad5",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Driver: \"Mesa Turnip driver v24.3.0 - Revision 9v2\" used to avoid freeze during intro/cutscene. I played for over 40 minutes, no issues to report. Screenshot available.",
+          "votes": 1,
+          "date": "2025-12-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b3349ef6-2758-4e07-a293-7e0606186cbf",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Sumi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Driver: Mesa Turnip driver v24.3.0 - Revision 9v2 (used to avoid freeze during intro/cutscene) Use reactive flushing to avoid GFX bugs on some background.",
+          "votes": 1,
+          "date": "2025-10-04",
+          "settings": {
+            "Emulator Version": "9.4.0",
+            "Driver Version": "[KIMCHI Turnip] Mesa Turnip driver v24.3.0 - Revision 9v2|||turnip_v24.3.0_R9v2.",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO Relaxed",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef7e352f-d96b-4358-b2c9-1f11d70caf60",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at a solid 60FPS, no problems whatsosever.",
+          "votes": 0,
+          "date": "2026-10-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f80ff850-05d8-40f8-8054-a31aae68b9db",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfectly on my 12GB Retroid Pocket 6. Very very very rare lag spikes. MrPurple T23 Drivers",
+          "votes": 0,
+          "date": "2026-07-19"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e52ff518-5392-4a33-aae3-78463d6c657c",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Mr. Purple T28 turnip drivers work for me",
+          "votes": 1,
+          "date": "2026-06-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b36d6f74-65ae-4810-a884-350290e36006",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "A few minor 3D bugs. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-12",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/dd25d371-00de-41ec-9c37-7b42e69e57ed"
+        }
       ]
     }
   ],

@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1990
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1198491",
+  "wikipedia": "https://en.wikipedia.org/wiki/F-Zero_%28video_game%29",
+  "genre": "futuristic racing game"
 }

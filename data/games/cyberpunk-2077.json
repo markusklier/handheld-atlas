@@ -118,6 +118,54 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/520c4854-c386-4dbd-8585-de03841aa0dd"
         }
+      ],
+      "year": 2020
+    },
+    {
+      "id": "playstation-4-2020",
+      "name": "PlayStation 4, Q13361286 (2020)",
+      "type": "port",
+      "year": 2020,
+      "platforms": [
+        "PlayStation 4",
+        "Q13361286"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3182559"
+        }
+      ]
+    },
+    {
+      "id": "q63184502-2022",
+      "name": "Q63184502, Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "Q63184502",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3182559"
+        }
+      ]
+    },
+    {
+      "id": "macintosh-2025",
+      "name": "Macintosh (2025)",
+      "type": "port",
+      "year": 2025,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3182559"
+        }
       ]
     }
   ],
@@ -192,5 +240,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3182559",
+  "wikipedia": "https://en.wikipedia.org/wiki/Cyberpunk_2077"
 }

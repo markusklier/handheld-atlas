@@ -29,8 +29,59 @@
       "platforms": [
         "PlayStation 2"
       ]
+    },
+    {
+      "id": "q10680-2006",
+      "name": "Q10680 (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "Q10680"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q822849"
+        }
+      ]
+    },
+    {
+      "id": "pc-2008",
+      "name": "PC, Q48263, Wii (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "PC",
+        "Q48263",
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q822849"
+        }
+      ]
+    },
+    {
+      "id": "android-2016",
+      "name": "Android, Q48493 (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Android",
+        "Q48493"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q822849"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q822849",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bully_%28video_game%29",
+  "genre": "action-adventure game"
 }

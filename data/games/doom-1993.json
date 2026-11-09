@@ -510,7 +510,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_classic_doom3.png",
+          "caption": "Classic DOOM",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake4_awakening.jpg",
+          "caption": "Quake 4: Awakening",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quadrilateral_cowboy.jpg",
+          "caption": "Quadrilateral Cowboy",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_doom3bfg.jpg",
+          "caption": "DOOM 3 BFG",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_icarus.jpg",
+          "caption": "Icarus Starship Command Simulator",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake_iii_arena.jpg",
+          "caption": "Quake III : Arena",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

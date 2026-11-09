@@ -16,9 +16,58 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2000
+    },
+    {
+      "id": "macintosh-2000",
+      "name": "Macintosh (2000)",
+      "type": "port",
+      "year": 2000,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q644793"
+        }
+      ]
+    },
+    {
+      "id": "q10680-2002",
+      "name": "Q10680 (2002)",
+      "type": "port",
+      "year": 2002,
+      "platforms": [
+        "Q10680"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q644793"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2012",
+      "name": "PlayStation 3 (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q644793"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q644793",
+  "wikipedia": "https://en.wikipedia.org/wiki/Deus_Ex_%28video_game%29",
+  "genre": "action role-playing game"
 }
