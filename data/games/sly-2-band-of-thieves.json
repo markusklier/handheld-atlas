@@ -29,8 +29,41 @@
       "platforms": [
         "PlayStation 2"
       ]
+    },
+    {
+      "id": "playstation-3-2010",
+      "name": "PlayStation 3 (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1584849"
+        }
+      ]
+    },
+    {
+      "id": "playstation-vita-2014",
+      "name": "PlayStation Vita (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1584849"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1584849",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sly_2%3A_Band_of_Thieves",
+  "genre": "platform game"
 }

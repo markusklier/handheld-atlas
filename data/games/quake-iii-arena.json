@@ -47,5 +47,8 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q726545",
+  "wikipedia": "https://en.wikipedia.org/wiki/Quake_III_Arena",
+  "genre": "first-person shooter"
 }

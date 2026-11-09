@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
-      ]
+      ],
+      "year": 1996
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q216995",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_64",
+  "genre": "3D platform game"
 }

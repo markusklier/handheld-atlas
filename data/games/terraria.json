@@ -83,6 +83,71 @@
           "url": "https://www.emuready.com/games/56800dd4-11f2-4c9e-bdfc-262494ff4af5"
         }
       ]
+    },
+    {
+      "id": "android-2013",
+      "name": "Android, PlayStation 3, PlayStation Vita (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Android",
+        "PlayStation 3",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2014",
+      "name": "PlayStation 4, Windows Phone (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 4",
+        "Windows Phone"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "linux-2015",
+      "name": "Linux, Macintosh, Nintendo 3DS (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Linux",
+        "Macintosh",
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2016",
+      "name": "Wii U (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
     }
   ],
   "routes": [
@@ -131,5 +196,7 @@
       "dualScreenType": "companion"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q332697",
+  "wikipedia": "https://en.wikipedia.org/wiki/Terraria"
 }

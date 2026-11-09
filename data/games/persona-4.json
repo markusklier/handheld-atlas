@@ -29,8 +29,41 @@
       "platforms": [
         "PlayStation 2"
       ]
+    },
+    {
+      "id": "playstation-vita-2012",
+      "name": "PlayStation Vita (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q568609"
+        }
+      ]
+    },
+    {
+      "id": "xbox-series-2022",
+      "name": "Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q568609"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q568609",
+  "wikipedia": "https://en.wikipedia.org/wiki/Persona_4",
+  "genre": "role-playing video game"
 }

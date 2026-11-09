@@ -287,5 +287,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Breath_of_the_Wild"
-  }
+  },
+  "wikidata": "Q17185964",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Breath_of_the_Wild",
+  "genre": "action-adventure game"
 }

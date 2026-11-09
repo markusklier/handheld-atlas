@@ -2,6 +2,48 @@
   "entries": [
     {
       "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "baten-kaitos-eternal-wings-and-the-lost-ocean",
+      "text": "1 Community-Berichte von EmuReady für Baten Kaitos: Eternal Wings and the Lost Ocean (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "baldur-s-gate-3",
+      "text": "2 Community-Berichte von EmuReady für Baldur's Gate 3 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "ape-escape",
+      "text": "1 Community-Berichte von EmuReady für Ape Escape (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "ace-combat-5-the-unsung-war",
+      "text": "2 Community-Berichte von EmuReady für Ace Combat 5: The Unsung War (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "xenogears",
+      "text": "1 Community-Berichte von EmuReady für Xenogears (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "tomba-2-the-evil-swine-return",
+      "text": "1 Community-Berichte von EmuReady für Tomba! 2: The Evil Swine Return (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "game": "tomb-raider",
+      "text": "2 Community-Berichte von EmuReady für Tomb Raider (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-09",
       "type": "screenshot-added",
       "by": "ai-research",
       "text": "KI-Bildprüfung: 14 Screenshots bestätigt, 23 unpassende entfernt"

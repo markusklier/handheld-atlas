@@ -20,5 +20,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/86/Unit-13-ps-vita-box-art.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Unit_13"
-  }
+  },
+  "wikidata": "Q652377",
+  "wikipedia": "https://en.wikipedia.org/wiki/Unit_13",
+  "genre": "third-person shooter"
 }

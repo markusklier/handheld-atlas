@@ -263,5 +263,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
-  }
+  },
+  "wikidata": "Q28234671",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey",
+  "genre": "3D platform game"
 }

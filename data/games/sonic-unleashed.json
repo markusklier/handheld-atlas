@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2008
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1150928",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Unleashed",
+  "genre": "platform game"
 }

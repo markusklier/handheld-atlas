@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
-      ]
+      ],
+      "year": 2002
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2292272",
+  "wikipedia": "https://en.wikipedia.org/wiki/Skies_of_Arcadia",
+  "genre": "role-playing video game"
 }

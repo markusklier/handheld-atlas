@@ -28,9 +28,45 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "year": 2002
+    },
+    {
+      "id": "wii-2008",
+      "name": "Wii (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1056069"
+        }
+      ]
+    },
+    {
+      "id": "pc-2016",
+      "name": "PC, PlayStation 3, PlayStation 4 (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1056069"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1056069",
+  "wikipedia": "https://en.wikipedia.org/wiki/Resident_Evil_Zero",
+  "genre": "survival horror"
 }

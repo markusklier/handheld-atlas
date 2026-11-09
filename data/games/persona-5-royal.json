@@ -202,6 +202,37 @@
           "url": "https://www.emuready.com/games/6a916fc6-9fec-43cd-bbde-59e88a100cd5"
         }
       ]
+    },
+    {
+      "id": "playstation-4-2020",
+      "name": "PlayStation 4 (2020)",
+      "type": "port",
+      "year": 2020,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q63385672"
+        }
+      ]
+    },
+    {
+      "id": "pc-2022",
+      "name": "PC, Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "PC",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q63385672"
+        }
+      ]
     }
   ],
   "routes": [
@@ -271,5 +302,12 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q63385672",
+  "wikipedia": "https://en.wikipedia.org/wiki/Persona_5_Royal",
+  "genre": "role-playing video game",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Persona_5_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Persona_5_Royal"
+  }
 }

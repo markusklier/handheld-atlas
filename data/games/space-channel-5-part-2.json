@@ -29,8 +29,27 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "pc-2011",
+      "name": "PC, PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "PC",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q20669585"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q20669585",
+  "wikipedia": "https://en.wikipedia.org/wiki/Space_Channel_5%3A_Part_2",
+  "genre": "rhythm game"
 }

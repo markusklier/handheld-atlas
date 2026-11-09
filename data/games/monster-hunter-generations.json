@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
-      ]
+      ],
+      "year": 2015
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q20856979",
+  "wikipedia": "https://en.wikipedia.org/wiki/Monster_Hunter_Generations",
+  "genre": "action role-playing game"
 }

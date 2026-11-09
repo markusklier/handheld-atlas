@@ -12,6 +12,38 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/adbe6b40-40bf-4c43-a2bd-82eb128147bf",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/23437802-2e8d-460a-898e-590c1b60e23c"
+        }
       ]
     }
   ],
@@ -71,5 +103,8 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
     }
-  ]
+  ],
+  "wikidata": "Q13479278",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomba%21_2%3A_The_Evil_Swine_Return",
+  "genre": "platform game"
 }

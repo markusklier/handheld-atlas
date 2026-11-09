@@ -172,6 +172,13 @@
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_moves_top.png",
+          "caption": "Wild battle while choosing a move",
+          "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
+          "credit": "Pokémon Emerald Dual Screen",
+          "check": "readme"
         }
       ],
       "links": [

@@ -23,6 +23,36 @@
         "PlayStation Vita"
       ],
       "year": 2015
+    },
+    {
+      "id": "pc-2006",
+      "name": "PC (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16259392"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2013",
+      "name": "PlayStation 3 (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16259392"
+        }
+      ]
     }
   ],
   "routes": [],
@@ -31,5 +61,8 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/0/08/Trails_in_the_Sky_SC_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_in_the_Sky_SC"
   },
-  "screenshots": []
+  "screenshots": [],
+  "wikidata": "Q16259392",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_in_the_Sky_SC",
+  "genre": "role-playing video game"
 }

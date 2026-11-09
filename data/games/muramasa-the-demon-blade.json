@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3180245",
+  "wikipedia": "https://en.wikipedia.org/wiki/Muramasa%3A_The_Demon_Blade",
+  "genre": "action role-playing game"
 }

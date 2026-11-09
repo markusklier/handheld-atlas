@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "year": 2001
+    },
+    {
+      "id": "arcade-video-game-machine-2001",
+      "name": "arcade video game machine (2001)",
+      "type": "port",
+      "year": 2001,
+      "platforms": [
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q289882"
+        }
+      ]
+    },
+    {
+      "id": "nokia-n-gage-2003",
+      "name": "Nokia N-Gage (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "Nokia N-Gage"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q289882"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q289882",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Monkey_Ball_%28video_game%29",
+  "genre": "3D platform game"
 }

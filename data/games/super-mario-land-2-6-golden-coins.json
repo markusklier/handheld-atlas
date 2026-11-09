@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Game Boy / Game Boy Color"
-      ]
+      ],
+      "year": 1992
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q596392",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Land_2%3A_6_Golden_Coins",
+  "genre": "2D platform game"
 }

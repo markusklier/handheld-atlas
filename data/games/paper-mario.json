@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
+      ],
+      "year": 2000
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q149998"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q149998"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q149998",
+  "wikipedia": "https://en.wikipedia.org/wiki/Paper_Mario_%28video_game%29",
+  "genre": "role-playing video game"
 }

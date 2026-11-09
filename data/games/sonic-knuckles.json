@@ -12,6 +12,23 @@
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
+      ],
+      "year": 1994
+    },
+    {
+      "id": "playstation-3-2009",
+      "name": "PlayStation 3, Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "PlayStation 3",
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q40177"
+        }
       ]
     }
   ],
@@ -20,5 +37,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/d/d3/Sonic_%26_Knuckles_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Sonic_%26_Knuckles"
-  }
+  },
+  "wikidata": "Q40177",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_%26_Knuckles",
+  "genre": "platform game"
 }

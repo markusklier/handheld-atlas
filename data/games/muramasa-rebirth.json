@@ -13,8 +13,30 @@
       "platforms": [
         "PlayStation Vita"
       ]
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3180245"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3180245",
+  "wikipedia": "https://en.wikipedia.org/wiki/Muramasa%3A_The_Demon_Blade",
+  "genre": "action role-playing game",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Muramasa_The_Demon_Blade.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Muramasa%3A_The_Demon_Blade"
+  }
 }

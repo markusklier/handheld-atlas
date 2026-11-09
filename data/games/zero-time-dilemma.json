@@ -12,6 +12,53 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "year": 2016
+    },
+    {
+      "id": "nintendo-3ds-2016",
+      "name": "Nintendo 3DS, PC (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Nintendo 3DS",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15845307"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2017",
+      "name": "PlayStation 4 (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15845307"
+        }
+      ]
+    },
+    {
+      "id": "xbox-series-2022",
+      "name": "Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15845307"
+        }
       ]
     }
   ],
@@ -20,5 +67,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/6/6b/Zero_Time_Dilemma.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Zero_Time_Dilemma"
-  }
+  },
+  "wikidata": "Q15845307",
+  "wikipedia": "https://en.wikipedia.org/wiki/Zero_Time_Dilemma",
+  "genre": "adventure video game"
 }

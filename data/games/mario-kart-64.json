@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
+      ],
+      "year": 1996
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1046604"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2016",
+      "name": "Wii U (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1046604"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1046604",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mario_Kart_64",
+  "genre": "kart racing game"
 }

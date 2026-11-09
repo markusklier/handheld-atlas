@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1993
+    },
+    {
+      "id": "wii-2010",
+      "name": "Wii (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1058903"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1058903",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_All-Stars",
+  "genre": "platform game"
 }

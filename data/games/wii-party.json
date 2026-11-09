@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2010
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1200921",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wii_Party",
+  "genre": "party video game"
 }

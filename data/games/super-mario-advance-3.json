@@ -29,8 +29,40 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "nintendo-3ds-2011",
+      "name": "Nintendo 3DS (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9383518"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q9383518"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q9383518",
+  "wikipedia": "https://en.wikipedia.org/wiki/Yoshi%27s_Island%3A_Super_Mario_Advance_3"
 }

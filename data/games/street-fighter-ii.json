@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1992
+    },
+    {
+      "id": "wii-2006",
+      "name": "Wii (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1133204"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1133204",
+  "wikipedia": "https://en.wikipedia.org/wiki/Street_Fighter_II",
+  "genre": "2D fighting game"
 }

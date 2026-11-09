@@ -60,7 +60,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/3f377988-b52c-4fe8-8198-0c76f356ade1"
         }
-      ]
+      ],
+      "year": 2006
     },
     {
       "id": "wii",
@@ -75,7 +76,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/88598db1-4f59-4997-a979-9d2d7e97ab80"
         }
-      ]
+      ],
+      "year": 2006
     },
     {
       "id": "gamecube",
@@ -83,6 +85,21 @@
       "type": "release",
       "platforms": [
         "Nintendo GameCube"
+      ]
+    },
+    {
+      "id": "nvidia-shield-tv-2017",
+      "name": "Nvidia Shield TV (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
+        "Nvidia Shield TV"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q735613"
+        }
       ]
     }
   ],
@@ -125,5 +142,8 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q735613",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Twilight_Princess",
+  "genre": "action-adventure game"
 }

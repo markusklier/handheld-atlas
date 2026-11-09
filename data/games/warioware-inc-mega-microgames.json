@@ -13,6 +13,36 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "nintendo-3ds-2011",
+      "name": "Nintendo 3DS (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1195267"
+        }
+      ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1195267"
+        }
+      ]
     }
   ],
   "routes": [],
@@ -20,5 +50,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/84/Warioware1box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/WarioWare%2C_Inc.%3A_Mega_Microgames%21"
-  }
+  },
+  "wikidata": "Q1195267",
+  "wikipedia": "https://en.wikipedia.org/wiki/WarioWare%2C_Inc.%3A_Mega_Microgames%21",
+  "genre": "minigame collection"
 }

@@ -29,8 +29,26 @@
       "platforms": [
         "Sega Mega Drive"
       ]
+    },
+    {
+      "id": "snes-1995",
+      "name": "SNES (1995)",
+      "type": "port",
+      "year": 1995,
+      "platforms": [
+        "SNES"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3312023"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3312023",
+  "wikipedia": "https://en.wikipedia.org/wiki/Micro_Machines_2%3A_Turbo_Tournament",
+  "genre": "racing video game"
 }

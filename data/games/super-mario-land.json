@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Game Boy / Game Boy Color"
-      ]
+      ],
+      "year": 1989
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q647249",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Land",
+  "genre": "2D platform game"
 }

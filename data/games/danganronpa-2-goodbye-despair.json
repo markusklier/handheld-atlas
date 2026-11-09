@@ -19,5 +19,9 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q11313768",
   "wikipedia": "https://en.wikipedia.org/wiki/Danganronpa_2%3A_Goodbye_Despair",
-  "genre": "school anime and manga"
+  "genre": "school anime and manga",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/07/Super_Danganronpa_2_Cover_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Danganronpa_2%3A_Goodbye_Despair"
+  }
 }

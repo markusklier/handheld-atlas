@@ -95,7 +95,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/e8622e82-0296-4cc0-8275-d1a93814aaad"
         }
-      ]
+      ],
+      "year": 2002
     }
   ],
   "routes": [
@@ -184,5 +185,8 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q639955",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Sunshine",
+  "genre": "3D platform game"
 }

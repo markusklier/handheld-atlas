@@ -16,5 +16,12 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q5931905",
+  "wikipedia": "https://en.wikipedia.org/wiki/Zero_Escape%3A_Virtue%27s_Last_Reward",
+  "genre": "adventure video game",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e3/Virtue%27s_Last_Reward_3DS_Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Zero_Escape%3A_Virtue%27s_Last_Reward"
+  }
 }

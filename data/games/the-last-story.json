@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2011
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1780896",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Last_Story",
+  "genre": "role-playing video game"
 }

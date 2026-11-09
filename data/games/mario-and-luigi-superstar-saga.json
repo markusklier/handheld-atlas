@@ -17,8 +17,26 @@
       "platforms": [
         "Game Boy Advance"
       ]
+    },
+    {
+      "id": "wii-u-2014",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1797550"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1797550",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mario_%26_Luigi%3A_Superstar_Saga",
+  "genre": "role-playing video game"
 }

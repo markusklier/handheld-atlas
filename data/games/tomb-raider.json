@@ -74,7 +74,39 @@
       "platforms": [
         "PlayStation"
       ],
-      "year": 1996
+      "year": 1996,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b687bd51-c268-465a-819e-27248bb1ce51",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/78ffb026-d05e-4e74-b8c0-dc8635846c48"
+        }
+      ]
     },
     {
       "id": "pc-dos",
@@ -83,6 +115,38 @@
       "year": 1996,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ae70a041-42bd-4136-9640-a0f53383e82e",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "TRANSLATION PARAMS: SAFE FLAGS = 2 STRONGMEM = 2 FASTNAN = ON FASTROUND = ON X87DOUBLE = OFF BIGBLOCK = 2 CALLRET = OFF WAIT = OFF ALIGNEDATOMICS = OFF WEAKBARRIER = 0 AVX = OFF FORWARD = 1024 TSOMODE = SLOWEST X87MODE =",
+          "votes": 2,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "4.1.1",
+            "Compatibility Layer": "proton9.0-x64-2",
+            "GPU Driver": "turnip_25.2.0_R5_mem",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "dxvk-v2.6.1-async\nvkd3d-proton-2.14.1",
+            "Audio Driver": "PulseAudio",
+            "Environment Variables": "DXVK_STATE_CACHE=1",
+            "Translation Parameters": "Other/Custom",
+            "CPU Translator": "box64-0.35",
+            "Game Resolution": "1280x720"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2c68c699-5eb1-44ad-969d-5dd7a6c42918"
+        }
       ]
     },
     {
@@ -760,5 +824,8 @@
         "anniversary"
       ]
     }
-  ]
+  ],
+  "wikidata": "Q317620",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider_%281996_video_game%29",
+  "genre": "action-adventure game"
 }

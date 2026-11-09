@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/630b4b55-8840-476f-9c78-cd823a082781",
+          "device": "Retroid Pocket 6",
+          "emulator": "ARMSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfectly with turnip_mrpurple_T26-toasted. Some stuttering on scenes changing from 2D to 3D, otherwise spot on emulation.",
+          "votes": 0,
+          "date": "2026-03-14",
+          "settings": {
+            "Emulator Version": "1.0.6",
+            "Custom FPS Limit": "60",
+            "Aspect Ratio": "16:9",
+            "Fast Boot": "True",
+            "Renderer": "Auto",
+            "Upscale": "3",
+            "Texture Filtering": "PS2 (default)",
+            "Interlace Mode": "Automatic",
+            "Texture Preloading": "Full",
+            "Blending Accuracy": "Basic"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9e66de19-01f8-47c6-83d2-a25beb09feb7",
+          "device": "AYN Thor Max",
+          "emulator": "AetherSX2",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "I tried the game using Vulkan and openGL at 1080p resolution and 720p. Vulkan gave me on average 65% performance and open gl 75-80% Lowering the resolution increased performance by 10%",
+          "votes": 0,
+          "date": "2026-04-14",
+          "settings": {
+            "Emulator Version": "Stable build",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4198361b-0383-4b59-9324-f2fd3a402d5d"
+        }
       ]
     }
   ],

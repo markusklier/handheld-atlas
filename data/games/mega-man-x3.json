@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1995
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2744116",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mega_Man_X3",
+  "genre": "action game"
 }

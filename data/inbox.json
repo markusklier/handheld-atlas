@@ -1,6 +1,118 @@
 {
   "leads": [
     {
+      "url": "https://github.com/RFSVIEIRA/RetroFe_VLC",
+      "title": "RFSVIEIRA/RetroFe_VLC",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/scottsart1/Pit-box",
+      "title": "scottsart1/Pit-box",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Hannankhan203/Orvix",
+      "title": "Hannankhan203/Orvix",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Ziad-Gamal12/In_Egypt",
+      "title": "Ziad-Gamal12/In_Egypt",
+      "excerpt": "this flutter app is an upgrade version of my first application In Egypt (Egypt travel) ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/duragritvitrified/DuragritVirtrifiedAdmin",
+      "title": "duragritvitrified/DuragritVirtrifiedAdmin",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/theforeveriris/simple-voice-tools-for-trans",
+      "title": "theforeveriris/simple-voice-tools-for-trans",
+      "excerpt": "跨性别嗓音检测和训练工具：Web Audio API 驱动的基频/共振峰/能量分析与训练追踪",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/VISHNUGATTU/BioSyncAI",
+      "title": "VISHNUGATTU/BioSyncAI",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/PostWorkCulture/1v1",
+      "title": "PostWorkCulture/1v1",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/amajorai/awesome-ryu",
+      "title": "amajorai/awesome-ryu",
+      "excerpt": "A curated list of awesome things built with and around Ryu: the open platform for agent orchestration and human collaboration.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/dalroot/hermes-droid",
+      "title": "dalroot/hermes-droid",
+      "excerpt": "Autonomous physical testbed & mobile QA companion for Hermes Agent — wireless APK deployments, Logcat diagnostics & UI inspection",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/mayursingh24/MyDukaan",
+      "title": "mayursingh24/MyDukaan",
+      "excerpt": "Built during a Hackathon, MyDukaan is a smart business management platform designed for local shops in India. It simplifies billing, inventory, analytics, customer management, and daily operations through a modern digital dashboard — helping small businesses grow smarter, faster, and digitally.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/tharunsai2307/BLACKOUT",
+      "title": "tharunsai2307/BLACKOUT",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/pavan-firmware/EH-Master-Repo",
+      "title": "pavan-firmware/EH-Master-Repo",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/plodroid/game",
+      "title": "plodroid/game",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/0sour/bili-duo",
       "title": "0sour/bili-duo",
       "excerpt": "双屏 B 站客户端：上屏只放视频，下屏 Presentation 承载完整 UI（Retroid Pocket Duo / AYN Thor）",
@@ -6318,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T14:25:39Z",
-    "newLeads": 17,
+    "lastRun": "2026-11-09T14:58:30Z",
+    "newLeads": 14,
     "newEvents": 0
   },
   "aiResearch": {

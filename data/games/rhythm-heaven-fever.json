@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "year": 2011
+    },
+    {
+      "id": "wii-u-2016",
+      "name": "Wii U (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2705651"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2705651",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rhythm_Heaven_Fever",
+  "genre": "rhythm game"
 }

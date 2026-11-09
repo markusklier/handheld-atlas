@@ -28,7 +28,8 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2008
     }
   ],
   "routes": [
@@ -76,6 +77,34 @@
           "source": "https://github.com/Maddex712/WiiDS",
           "credit": "WiiDS",
           "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-cocoon-shortcut.png",
+          "caption": "WiiDS 1.1 Thor polish capture: Retro Rewind disc above and its selected Cocoon s",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-galaxy-attack-colors.png",
+          "caption": "WiiDS 1.1 dev28 Kaizo Castle Gardens attack: colored Toads and Mario above, the ",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-upper.png",
+          "caption": "Super Mario Galaxy in WiiDS 1.1 dev28: Luigi in Gateway Galaxy on the Thor upper",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-lower.png",
+          "caption": "Super Mario Galaxy lower screen: textured 3D Gateway Galaxy planet with Luigi",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
         }
       ],
       "links": [
@@ -91,5 +120,8 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q838707",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mario_Kart_Wii",
+  "genre": "kart racing game"
 }

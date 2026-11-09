@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Game Boy / Game Boy Color"
+      ],
+      "year": 2002
+    },
+    {
+      "id": "nintendo-3ds-2013",
+      "name": "Nintendo 3DS (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7489029"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2023",
+      "name": "PlayStation 4 (2023)",
+      "type": "port",
+      "year": 2023,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q7489029"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q7489029",
+  "wikipedia": "https://en.wikipedia.org/wiki/Shantae_%28video_game%29",
+  "genre": "Metroidvania"
 }

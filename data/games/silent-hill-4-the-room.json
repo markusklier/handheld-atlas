@@ -29,8 +29,26 @@
       "platforms": [
         "PlayStation 2"
       ]
+    },
+    {
+      "id": "pc-2004",
+      "name": "PC (2004)",
+      "type": "port",
+      "year": 2004,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q613124"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q613124",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_4%3A_The_Room",
+  "genre": "psychological horror fiction"
 }

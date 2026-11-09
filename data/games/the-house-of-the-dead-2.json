@@ -29,8 +29,41 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "arcade-video-game-machine-1998",
+      "name": "arcade video game machine (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2584289"
+        }
+      ]
+    },
+    {
+      "id": "pc-2001",
+      "name": "PC (2001)",
+      "type": "port",
+      "year": 2001,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2584289"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2584289",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_House_of_the_Dead_2",
+  "genre": "shoot 'em up"
 }

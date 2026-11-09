@@ -37,9 +37,13 @@
       "type": "release",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2008
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q385184",
+  "wikipedia": "https://en.wikipedia.org/wiki/%C5%8Ckami",
+  "genre": "action-adventure game"
 }

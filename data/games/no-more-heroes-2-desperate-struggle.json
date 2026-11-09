@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2010
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q951568",
+  "wikipedia": "https://en.wikipedia.org/wiki/No_More_Heroes_2%3A_Desperate_Struggle",
+  "genre": "action-adventure game"
 }

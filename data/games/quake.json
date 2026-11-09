@@ -48,9 +48,59 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 1996
+    },
+    {
+      "id": "linux-1996",
+      "name": "Linux (1996)",
+      "type": "port",
+      "year": 1996,
+      "platforms": [
+        "Linux"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q217423"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-64-1998",
+      "name": "Nintendo 64 (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "Nintendo 64"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q217423"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2021",
+      "name": "PlayStation 4, Xbox Series (2021)",
+      "type": "port",
+      "year": 2021,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q217423"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q217423",
+  "wikipedia": "https://en.wikipedia.org/wiki/Quake_%28video_game%29",
+  "genre": "first-person shooter"
 }

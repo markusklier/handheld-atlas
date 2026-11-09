@@ -12,6 +12,37 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "playstation-4-2015",
+      "name": "PlayStation 4 (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4267401"
+        }
+      ]
+    },
+    {
+      "id": "xbox-series-2021",
+      "name": "Xbox Series (2021)",
+      "type": "port",
+      "year": 2021,
+      "platforms": [
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4267401"
+        }
       ]
     }
   ],
@@ -20,5 +51,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Witcher_3%3A_Wild_Hunt"
-  }
+  },
+  "wikidata": "Q4267401",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Witcher_3%3A_Wild_Hunt",
+  "genre": "action role-playing game"
 }

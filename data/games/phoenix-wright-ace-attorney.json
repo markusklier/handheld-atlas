@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "year": 2005
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1322480"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2014",
+      "name": "Nintendo 3DS (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1322480"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1322480",
+  "wikipedia": "https://en.wikipedia.org/wiki/Phoenix_Wright%3A_Ace_Attorney",
+  "genre": "adventure video game"
 }

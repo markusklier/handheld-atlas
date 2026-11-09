@@ -48,6 +48,62 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ea1d9655-594e-44d8-a8c8-783fdf6ac56d",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Use the recommended config on GameNative. I had an error message when the game launches. If you click on any options from the window, the games crashes. But if you click on the game, the error window goes in the backgrou",
+          "votes": 3,
+          "date": "2026-03-23",
+          "settings": {
+            "Emulator Version": "0.8.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "960x540 or 1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.7"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3e2bdf77-bcc7-4f48-bafe-a760620f2ce3",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "5 fps. miracle it even boots. Took a long time though",
+          "votes": 1,
+          "date": "2025-11-11",
+          "settings": {
+            "Emulator Version": "v5.1.0",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Compatibility",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2be69c20-3637-476e-90ce-30994e8fe282"
+        }
       ]
     }
   ],

@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2454500",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_and_the_Black_Knight",
+  "genre": "adventure video game"
 }

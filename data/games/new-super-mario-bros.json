@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
-      ]
+      ],
+      "year": 2006
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q301555",
+  "wikipedia": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros.",
+  "genre": "platform game"
 }

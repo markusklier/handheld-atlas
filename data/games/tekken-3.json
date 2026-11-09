@@ -29,8 +29,26 @@
       "platforms": [
         "PlayStation"
       ]
+    },
+    {
+      "id": "arcade-video-game-machine-1996",
+      "name": "arcade video game machine (1996)",
+      "type": "port",
+      "year": 1996,
+      "platforms": [
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1062106"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1062106",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tekken_3",
+  "genre": "3D fighting game"
 }

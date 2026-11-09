@@ -12,7 +12,8 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
@@ -20,5 +21,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/1/12/Zack_%26_Wiki_-_Quest_for_Barbaros%27_Treasure_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Zack_%26_Wiki%3A_Quest_for_Barbaros%27_Treasure"
-  }
+  },
+  "wikidata": "Q1328243",
+  "wikipedia": "https://en.wikipedia.org/wiki/Zack_%26_Wiki%3A_Quest_for_Barbaros%27_Treasure",
+  "genre": "puzzle video game"
 }

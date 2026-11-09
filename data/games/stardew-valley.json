@@ -279,6 +279,54 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/6d0dff78-b5fe-47db-82de-69f7260ddb14"
         }
+      ],
+      "year": 2016
+    },
+    {
+      "id": "linux-2016",
+      "name": "Linux, Macintosh, PlayStation 4 (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Linux",
+        "Macintosh",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23013817"
+        }
+      ]
+    },
+    {
+      "id": "playstation-vita-2018",
+      "name": "PlayStation Vita (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23013817"
+        }
+      ]
+    },
+    {
+      "id": "android-2019",
+      "name": "Android (2019)",
+      "type": "android",
+      "year": 2019,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q23013817"
+        }
       ]
     }
   ],
@@ -408,5 +456,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q23013817",
+  "wikipedia": "https://en.wikipedia.org/wiki/Stardew_Valley"
 }

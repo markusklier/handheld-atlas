@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2009
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1135241",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wii_Sports_Resort",
+  "genre": "sports video game"
 }

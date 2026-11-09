@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1992
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1061560",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Kart",
+  "genre": "kart racing game"
 }

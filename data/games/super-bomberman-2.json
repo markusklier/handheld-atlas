@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "SNES"
-      ]
+      ],
+      "year": 1994
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3129978",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Bomberman_2",
+  "genre": "action game"
 }

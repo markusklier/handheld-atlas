@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cfccafe3-d7b0-49c1-8c4d-e6a264435faf",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f24590fa-d4f1-4826-b639-6b2bd7235831"
+        }
       ]
     }
   ],
@@ -113,5 +145,8 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q583360",
+  "wikipedia": "https://en.wikipedia.org/wiki/Xenogears",
+  "genre": "role-playing video game"
 }

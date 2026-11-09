@@ -34,8 +34,41 @@
         "PlayStation Vita"
       ],
       "year": 2015
+    },
+    {
+      "id": "pc-2004",
+      "name": "PC (2004)",
+      "type": "port",
+      "year": 2004,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q843143"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2012",
+      "name": "PlayStation 3 (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q843143"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q843143",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_in_the_Sky",
+  "genre": "role-playing video game"
 }

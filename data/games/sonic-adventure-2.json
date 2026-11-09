@@ -49,8 +49,26 @@
         "Nintendo GameCube"
       ],
       "year": 2001
+    },
+    {
+      "id": "pc-2012",
+      "name": "PC (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1070984"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q1070984",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Adventure_2",
+  "genre": "platform game"
 }

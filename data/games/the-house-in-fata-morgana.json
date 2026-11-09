@@ -20,5 +20,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/The_House_in_Fata_Morgana_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_House_in_Fata_Morgana"
-  }
+  },
+  "wikidata": "Q22129090",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_House_in_Fata_Morgana",
+  "genre": "visual novel"
 }

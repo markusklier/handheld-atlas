@@ -29,8 +29,26 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "nintendo-gamecube-2002",
+      "name": "Nintendo GameCube (2002)",
+      "type": "port",
+      "year": 2002,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2292272"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2292272",
+  "wikipedia": "https://en.wikipedia.org/wiki/Skies_of_Arcadia",
+  "genre": "role-playing video game"
 }

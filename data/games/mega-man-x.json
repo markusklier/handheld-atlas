@@ -28,9 +28,28 @@
       "type": "original",
       "platforms": [
         "SNES"
+      ],
+      "year": 1993
+    },
+    {
+      "id": "wii-2011",
+      "name": "Wii (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1196400"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1196400",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mega_Man_X_%28video_game%29",
+  "genre": "action game"
 }

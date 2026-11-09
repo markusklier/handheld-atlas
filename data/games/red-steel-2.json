@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2010
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1207061",
+  "wikipedia": "https://en.wikipedia.org/wiki/Red_Steel_2",
+  "genre": "first-person shooter"
 }

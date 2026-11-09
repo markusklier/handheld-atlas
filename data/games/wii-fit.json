@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q840121",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wii_Fit",
+  "genre": "fitness video game"
 }

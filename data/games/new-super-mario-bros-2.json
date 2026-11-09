@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
-      ]
+      ],
+      "year": 2012
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q558621",
+  "wikipedia": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros._2",
+  "genre": "platform game"
 }

@@ -16,9 +16,28 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "year": 2005
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1797666"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1797666",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mario_%26_Luigi%3A_Partners_in_Time",
+  "genre": "role-playing video game"
 }

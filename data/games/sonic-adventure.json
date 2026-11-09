@@ -29,8 +29,42 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "nintendo-gamecube-2003",
+      "name": "Nintendo GameCube, PC (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "Nintendo GameCube",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1069059"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2010",
+      "name": "PlayStation 3 (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1069059"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1069059",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Adventure",
+  "genre": "platform game"
 }

@@ -17,8 +17,26 @@
       "platforms": [
         "PlayStation Vita"
       ]
+    },
+    {
+      "id": "wii-2011",
+      "name": "Wii (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q606894"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q606894",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rayman_Origins",
+  "genre": "2D platform game"
 }

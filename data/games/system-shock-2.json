@@ -12,6 +12,37 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 1999
+    },
+    {
+      "id": "macintosh-2013",
+      "name": "Macintosh (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1371495"
+        }
+      ]
+    },
+    {
+      "id": "linux-2014",
+      "name": "Linux (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Linux"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1371495"
+        }
       ]
     }
   ],
@@ -20,5 +51,8 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Systemshock2box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/System_Shock_2"
-  }
+  },
+  "wikidata": "Q1371495",
+  "wikipedia": "https://en.wikipedia.org/wiki/System_Shock_2",
+  "genre": "action game"
 }

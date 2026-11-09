@@ -39,7 +39,8 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
-      ]
+      ],
+      "year": 1998
     },
     {
       "id": "ocarina-of-time-3d",
@@ -49,8 +50,57 @@
         "Nintendo 3DS"
       ],
       "year": 2011
+    },
+    {
+      "id": "nintendo-gamecube-2002",
+      "name": "Nintendo GameCube (2002)",
+      "type": "port",
+      "year": 2002,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q213911"
+        }
+      ]
+    },
+    {
+      "id": "ique-player-2003",
+      "name": "iQue Player (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "iQue Player"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q213911"
+        }
+      ]
+    },
+    {
+      "id": "virtual-console-2007",
+      "name": "Virtual Console, Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Virtual Console",
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q213911"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q213911",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Ocarina_of_Time",
+  "genre": "action-adventure game"
 }

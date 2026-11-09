@@ -29,8 +29,41 @@
       "platforms": [
         "Dreamcast"
       ]
+    },
+    {
+      "id": "arcade-video-game-machine-1999",
+      "name": "arcade video game machine (1999)",
+      "type": "port",
+      "year": 1999,
+      "platforms": [
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3141916"
+        }
+      ]
+    },
+    {
+      "id": "pc-2000",
+      "name": "PC (2000)",
+      "type": "port",
+      "year": 2000,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q3141916"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q3141916",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Typing_of_the_Dead",
+  "genre": "action-adventure game"
 }

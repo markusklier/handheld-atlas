@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1416303",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_World_Ends_with_You",
+  "genre": "role-playing video game"
 }

@@ -28,9 +28,43 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "year": 2007
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q170489"
+        }
+      ]
+    },
+    {
+      "id": "nvidia-shield-tv-2018",
+      "name": "Nvidia Shield TV (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
+        "Nvidia Shield TV"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q170489"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q170489",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Galaxy",
+  "genre": "3D platform game"
 }

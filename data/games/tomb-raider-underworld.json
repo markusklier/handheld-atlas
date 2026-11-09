@@ -26,7 +26,8 @@
       "type": "release",
       "platforms": [
         "PlayStation 3"
-      ]
+      ],
+      "year": 2009
     },
     {
       "id": "xbox-360",
@@ -42,7 +43,8 @@
       "type": "release",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2008
     },
     {
       "id": "nintendo-ds",
@@ -79,5 +81,8 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
     }
-  ]
+  ],
+  "wikidata": "Q915860",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_Underworld",
+  "genre": "action-adventure game"
 }

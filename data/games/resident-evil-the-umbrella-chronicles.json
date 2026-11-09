@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1053024",
+  "wikipedia": "https://en.wikipedia.org/wiki/Resident_Evil%3A_The_Umbrella_Chronicles",
+  "genre": "shoot 'em up"
 }

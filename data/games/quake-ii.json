@@ -52,5 +52,8 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q737103",
+  "wikipedia": "https://en.wikipedia.org/wiki/Quake_II",
+  "genre": "first-person shooter"
 }

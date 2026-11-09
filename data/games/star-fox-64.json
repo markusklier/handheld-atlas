@@ -30,6 +30,37 @@
       "type": "original",
       "platforms": [
         "Nintendo 64"
+      ],
+      "year": 1997
+    },
+    {
+      "id": "ique-player-2003",
+      "name": "iQue Player (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "iQue Player"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1141963"
+        }
+      ]
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1141963"
+        }
       ]
     }
   ],
@@ -83,5 +114,7 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1141963",
+  "wikipedia": "https://en.wikipedia.org/wiki/Star_Fox_64"
 }

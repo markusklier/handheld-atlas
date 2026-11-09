@@ -48,9 +48,74 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "macintosh-2015",
+      "name": "Macintosh (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21039924"
+        }
+      ]
+    },
+    {
+      "id": "linux-2016",
+      "name": "Linux (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
+        "Linux"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21039924"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2017",
+      "name": "PlayStation 4, PlayStation Vita (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21039924"
+        }
+      ]
+    },
+    {
+      "id": "xbox-series-2021",
+      "name": "Xbox Series (2021)",
+      "type": "port",
+      "year": 2021,
+      "platforms": [
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21039924"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q21039924",
+  "wikipedia": "https://en.wikipedia.org/wiki/Undertale",
+  "genre": "role-playing video game"
 }

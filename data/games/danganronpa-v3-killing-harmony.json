@@ -19,5 +19,9 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q20972506",
   "wikipedia": "https://en.wikipedia.org/wiki/Danganronpa_V3%3A_Killing_Harmony",
-  "genre": "adventure video game"
+  "genre": "adventure video game",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5b/New_Danganronpa_V3_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Danganronpa_V3%3A_Killing_Harmony"
+  }
 }
