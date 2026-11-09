@@ -812,7 +812,7 @@ sourceUrl = die Seite, auf der das Bild eingebunden ist. caption auf Deutsch, ku
         write(path, read(path))
         return 0
     n = len(new) + (1 if g.get('cover', {}).get('check') == 'ai' and need_cover else 0)
-    log(f'  {game_id}: {n} Originalbilder/Cover (KI, Prüfung folgt)')
+    log(f'  {game_id}: {n} Originalbilder/Cover (KI, Prüfung folgt)' if n else f'  {game_id}: keine passenden Originalbilder gefunden')
     return n
 
 

@@ -210,16 +210,25 @@ def fill_steam(fetch=get, pause=0.7, only=None):
 # ---------------- 3. Wikipedia cover fallback ----------------
 def wikipedia_cover(title, fetch=get):
     """Both spellings in one request; Wikimedia rate-limits bursts (HTTP 429)."""
-    q = urllib.parse.urlencode({'action': 'query', 'titles': f'{title} (video game)|{title}', 'prop': 'pageimages|description',
+    m = re.match(r'^(.*) \((\d{4})\)$', title)          # "DOOM (1993)" -> "DOOM (1993 video game)"
+    base, year = (m.group(1), m.group(2)) if m else (title, None)
+    names = [base] + ([' '.join(w.capitalize() if w.isupper() and len(w) > 2 else w for w in base.split())]
+                      if any(w.isupper() and len(w) > 2 for w in base.split()) else [])   # "DOOM" → also "Doom"
+    names = list(dict.fromkeys(names))
+    titles = '|'.join([f'{n} ({year} video game)' for n in names] + [f'{n} (video game)' for n in names] + names) if year \
+        else '|'.join([f'{n} (video game)' for n in names] + names)
+    q = urllib.parse.urlencode({'action': 'query', 'titles': titles, 'prop': 'pageimages|description',
                                 'piprop': 'thumbnail', 'pithumbsize': 600, 'pilicense': 'any', 'redirects': 1, 'format': 'json',
                                 'formatversion': 2, 'maxlag': 5})
     res = fetch('https://en.wikipedia.org/w/api.php?' + q, as_json=True)
-    pages = sorted(res.get('query', {}).get('pages', []), key=lambda p: '(video game)' not in p.get('title', ''))
+    pages = sorted(res.get('query', {}).get('pages', []), key=lambda p: ('video game)' not in p.get('title', ''), year not in p.get('title', '') if year else 0))
     for page in pages:
         desc = (page.get('description') or '').lower()
+        if year and year not in desc and year not in page.get('title', ''):
+            continue                                  # another game of the same name
         thumb = (page.get('thumbnail') or {}).get('source')
         if thumb and 'game' in desc and 'series' not in desc and not page.get('missing') \
-                and not re.search(r'\.svg', thumb, re.I) and same_edition(title, page['title']):
+                and not re.search(r'\.svg', thumb, re.I) and same_edition(base, page['title']):
             return thumb, 'https://en.wikipedia.org/wiki/' + urllib.parse.quote(page['title'].replace(' ', '_'))
     return None, None
 
