@@ -110,7 +110,10 @@ function coverHTML(g, { badges = true } = {}) {
   const h = hue(g.franchise || g.title);
   const ph = `<div class="ph" style="background:linear-gradient(160deg,hsl(${h} 35% 22%),hsl(${(h + 40) % 360} 30% 11%));color:hsl(${h} 70% 88%)">${esc(g.title)}<small>${esc(g.platforms[0] || '')}</small></div>`;
   const portrait = g.cover?.url?.includes('steamstatic') ? ' portrait' : '';
-  const img = g.cover ? `<img src="${esc(g.cover.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
+  // no cover yet: show the first picture we have (original game, then a way) instead of an empty tile
+  const src = g.cover?.url || g.screenshots.find((x) => x.caption !== 'Titelbild')?.url || g.screenshots[0]?.url
+    || g.routes.flatMap((r) => r.screenshots || [])[0]?.url;
+  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
   let b = '';
   if (badges) {
     if (g._dual) b += `<span class="tag dual">${icon('dual')}Dual</span>`;

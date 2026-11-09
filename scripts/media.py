@@ -261,6 +261,24 @@ def mark_tried(state, source, gid):
     state.setdefault(source, {})[gid] = date.today().isoformat()
 
 
+def article_cover(article, fetch=get):
+    """Cover of a known Wikipedia article: its lead image, else a file named like box art in the article."""
+    m = re.match(r'https://([a-z]+)\.wikipedia\.org/wiki/([^#?]+)', article or '')
+    if not m:
+        return None, None
+    lang, title = m.group(1), urllib.parse.unquote(m.group(2)).replace('_', ' ')
+    q = urllib.parse.urlencode({'action': 'query', 'titles': title, 'prop': 'pageimages', 'piprop': 'thumbnail|name',
+                                'pithumbsize': 600, 'pilicense': 'any', 'redirects': 1, 'format': 'json', 'formatversion': 2})
+    pages = fetch(f'https://{lang}.wikipedia.org/w/api.php?{q}', as_json=True).get('query', {}).get('pages', [])
+    thumb = ((pages[0] if pages else {}).get('thumbnail') or {}).get('source')
+    if thumb and not re.search(r'\.svg', thumb, re.I) and not re.search(r'logo|wordmark', thumb, re.I):
+        return thumb, article
+    import images                                   # lead image is a logo: look for box art among the article's files
+    files = images.from_wikipedia(article, fetch)
+    box = [x for x in files if re.search(r'cover|box|packshot|key.?art|front', x['url'], re.I)]
+    return (box[0]['url'], article) if box else (None, None)
+
+
 def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
     added = tried = 0
     state = load_state()
@@ -268,14 +286,18 @@ def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
         if only is not None and f.stem not in only:
             continue
         g = read(f)
-        if g.get('cover') or tried >= limit or (only is None and recently_tried(state, 'wikipedia', g['id'])):
+        # missing covers are retried weekly; a newly known Wikipedia article (from Wikidata) is tried at once
+        key = 'wikipedia' if not g.get('wikipedia') else 'wikipedia-article'
+        if g.get('cover') or tried >= limit or (only is None and recently_tried(state, key, g['id'], days=7)):
             continue
         tried += 1
-        mark_tried(state, 'wikipedia', g['id'])
+        mark_tried(state, key, g['id'])
         url = None
         for attempt in range(2):
             try:
-                url, source = wikipedia_cover(g['title'], fetch)
+                url, source = article_cover(g['wikipedia'], fetch) if g.get('wikipedia') else (None, None)
+                if not url:
+                    url, source = wikipedia_cover(g['title'], fetch)
                 break
             except Exception as e:  # noqa: BLE001
                 if '429' in str(e) and attempt == 0:

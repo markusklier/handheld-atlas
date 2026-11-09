@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '16 5 * * *'
   workflow_dispatch:
+    inputs:
+      wikidata:
+        description: 'Wie viele Spiele mit Wikidata abgleichen (sonst 150)'
+        required: false
+        default: '150'
 permissions:
   contents: write
   pages: write
@@ -29,7 +34,7 @@ jobs:
         run: python scripts/watch.py
       - name: Wikidata – years, platforms, versions, official Android releases (free, 150 games a day)
         continue-on-error: true
-        run: python scripts/wikidata.py --enrich 150
+        run: python scripts/wikidata.py --enrich ${{ inputs.wikidata || '150' }}
       - name: libretro-thumbnails listings from cache
         uses: actions/cache@v4
         with:
