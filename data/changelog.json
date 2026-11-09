@@ -1,6 +1,486 @@
 {
   "entries": [
     {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Lost Artefact in Tomb Raider I–III Remastered (2024) (KI-Recherche)",
+      "url": "https://www.crystaldynamics.com/blog/2023/09/14/aspyr-crystal-dynamics-reveal-tomb-raider-i-iii-remastered-starring-lara-croft-coming-to-pc-consoles-feb-14-2024/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Remastered – Android-, iOS- und Switch-2-Portierung (2026) (KI-Recherche)",
+      "url": "https://www.tombraider.com/news/video-games/tomb-raider-i-iii-remastered-challenge-mode-patch-is-live",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Offizielle Android-App: Tomb Raider I–III Remastered (Remastered – Android-, iOS- und Switch-2-Portierung (2026), KI-Recherche)",
+      "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Windows-Remaster über Winlator (The Lost Artefact in Tomb Raider I–III Remastered (2024), KI-Recherche)",
+      "url": "https://www.youtube.com/watch?v=b4CIKIb4l3Q",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TRX – Tomb Raider I–III: Community Edition (KI-Recherche)",
+      "url": "https://github.com/LostArtefacts/TRX",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Sardoc – The Lost Artefact Levels Patch (KI-Recherche)",
+      "url": "https://core-design.com/community_tr3withoutcrystals.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Times Exclusive (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: PSone Classics (KI-Recherche)",
+      "url": "https://blog.playstation.com/2009/10/15/playstation-store-update-107/",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: The Last Revelation – Tomb Raider IV–VI Remastered (KI-Recherche)",
+      "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PC-Remaster über Winlator (The Last Revelation – Tomb Raider IV–VI Remastered, KI-Recherche)",
+      "url": "https://www.youtube.com/watch?v=rouqjKaLUjY",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TOMB4 von Troye (KI-Recherche)",
+      "url": "https://github.com/Trxyebeep/TOMB4",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Tomb Raider 2–5 Widescreen Patch (KI-Recherche)",
+      "url": "https://github.com/kurlyak/widescreen-patch-tomb-raider-2345",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Tomb Raider IV: The Last Revelation HD (KI-Recherche)",
+      "url": "https://core-design.com/community_tr4thelastrevelationhd.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TR IV–VI Remastered Definitive Patch (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/296",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Tomb Raider 4 Blurred Textures Fix (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/162",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TR4–TR5 Volume Adjusted SFX (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/5",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Macintosh-Portierung (1999) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_III",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Tomb Raider III: The Lost Artefact (2000) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_III",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: PSone Classic (2009) (KI-Recherche)",
+      "url": "https://www.tombraiders.net/stella/introduction.html",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Evercade – Tomb Raider Collection 1 (2024) (KI-Recherche)",
+      "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: tomb3 (KI-Recherche)",
+      "url": "https://github.com/Trxyebeep/tomb3",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: TR Rando (KI-Recherche)",
+      "url": "https://github.com/LostArtefacts/TR-Rando",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Tomb Raider I–III Remastered Gold Edition (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogyremastered/mods/945",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Texture fixes (KI-Recherche)",
+      "url": "https://www.nexusmods.com/tombraidertrilogyremastered/mods/709",
+      "date": "2026-11-09",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-iii-adventures-of-lara-croft",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider III: Adventures of Lara Croft (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_III"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-last-revelation",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Last Revelation (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_The_Last_Revelation"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-lost-artefact",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Lost Artefact (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-chronicles",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Chronicles (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Chronicles"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-curse-of-the-sword",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Curse of the Sword (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-prophecy",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Prophecy (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Apocalypse Episode 1: The Eye of Osiris (KI-Recherche)",
+      "url": "https://www.virtuallara.com/tomb-raider-tv-games.html"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-angel-of-darkness",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Angel of Darkness (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_The_Angel_of_Darkness"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-osiris-codex",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Osiris Codex (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-apocalypse-episode-2-the-shadow-falls",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Apocalypse Episode 2: The Shadow Falls (KI-Recherche)",
+      "url": "https://www.virtuallara.com/tomb-raider-tv-games.html"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-apocalypse-episode-3-the-last-midnight",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Apocalypse Episode 3: The Last Midnight (KI-Recherche)",
+      "url": "https://www.virtuallara.com/tomb-raider-tv-games.html"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-quest-for-cinnabar",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Quest for Cinnabar (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-elixir-of-life",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Elixir of Life (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-temple-of-anubis",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Temple of Anubis (KI-Recherche)",
+      "url": "https://www.virtuallara.com/tomb-raider-tv-games.html"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-legend",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Legend (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Legend"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-puzzle-paradox",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Puzzle Paradox (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-s-poker-party",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft's Poker Party (KI-Recherche)",
+      "url": "https://www.tombraiderchronicles.com/games/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-reckoning",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Reckoning (KI-Recherche)",
+      "url": "https://www.virtuallara.com/tomb-raider-tv-games.html"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-the-action-adventure",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: The Action Adventure (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-underworld",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Underworld (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Underworld"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-and-the-guardian-of-light",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft and the Guardian of Light (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Lara_Croft_and_the_Guardian_of_Light"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "tomb-raider",
+      "text": "Neue Fassung aus der Reihen-Analyse: The Tomb Raider Trilogy (2011)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-2013",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider (2013) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_(2013_video_game)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-reflections",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft: Reflections (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-and-the-temple-of-osiris",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft and the Temple of Osiris (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-relic-run",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft: Relic Run (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Lara_Croft:_Relic_Run"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "lara-croft-go",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Lara Croft GO (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Lara_Croft_Go"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "rise-of-the-tomb-raider",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Rise of the Tomb Raider (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Rise_of_the_Tomb_Raider"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "shadow-of-the-tomb-raider",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Shadow of the Tomb Raider (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Shadow_of_the_Tomb_Raider"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-definitive-survivor-trilogy",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Definitive Survivor Trilogy (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-reloaded",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider Reloaded (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_Reloaded"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "the-lara-croft-collection",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: The Lara Croft Collection (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Lara_Croft_and_the_Guardian_of_Light"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "tomb-raider",
+      "text": "Neue Fassung aus der Reihen-Analyse: Tomb Raider Collection 1 (2024)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-ivvi-remastered",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider IV–VI Remastered (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "tomb-raider-collection-2",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider Collection 2 (KI-Recherche)",
+      "url": "https://www.tombraiderchronicles.com/games/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "tomb-raider",
+      "text": "Neue Fassung aus der Reihen-Analyse: Tomb Raider I–VI Remastered (2025)",
+      "url": "https://www.tombraider.com/products/games/tomb-raider-i-vi-remastered"
+    },
+    {
       "date": "2026-11-09",
       "type": "screenshot-added",
       "by": "ai-research",

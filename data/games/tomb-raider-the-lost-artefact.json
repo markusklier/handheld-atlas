@@ -1,0 +1,235 @@
+{
+  "id": "tomb-raider-the-lost-artefact",
+  "title": "Tomb Raider: The Lost Artefact",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PC",
+    "Macintosh",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series",
+    "Nintendo Switch",
+    "Android",
+    "iOS",
+    "Nintendo Switch 2"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2000)",
+      "type": "original",
+      "platforms": [
+        "PC",
+        "Macintosh"
+      ],
+      "year": 2000,
+      "note": "Die bisher getrennten PC- und Mac-Einträge gehören zur ursprünglichen Veröffentlichung von 2000. Eigenständige Erweiterung zu Tomb Raider III mit sechs zusätzlichen Levels; interessant für das unveränderte klassische Spielerlebnis.",
+      "traits": []
+    },
+    {
+      "id": "mac-os",
+      "name": "Mac OS",
+      "type": "release",
+      "platforms": [
+        "Macintosh"
+      ]
+    },
+    {
+      "id": "remastered-2024",
+      "name": "The Lost Artefact in Tomb Raider I–III Remastered (2024)",
+      "type": "remaster",
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Enthält die überarbeitete Erweiterung mit umschaltbarer Original- und Remaster-Grafik. Die Veröffentlichung vom 14. Februar 2024 machte The Lost Artefact erstmals offiziell auf Konsolen verfügbar.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.crystaldynamics.com/blog/2023/09/14/aspyr-crystal-dynamics-reveal-tomb-raider-i-iii-remastered-starring-lara-croft-coming-to-pc-consoles-feb-14-2024/"
+        }
+      ]
+    },
+    {
+      "id": "remastered-port-2026",
+      "name": "Remastered – Android-, iOS- und Switch-2-Portierung (2026)",
+      "type": "port",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Nintendo Switch 2"
+      ],
+      "year": 2026,
+      "traits": [
+        "controller",
+        "touch",
+        "widescreen"
+      ],
+      "note": "Am 12. März 2026 erschienene Portierungen des Remasters, einschließlich The Lost Artefact und Challenge Mode. Android und iOS besitzen eine angepasste mobile Oberfläche; die vollständigen Inhalte werden nach dem kostenlosen Probespiel freigeschaltet.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/video-games/tomb-raider-i-iii-remastered-challenge-mode-patch-is-live"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-offizielle-android-app-tomb-raider-iiii-remastered",
+      "name": "Offizielle Android-App: Tomb Raider I–III Remastered",
+      "kind": "native",
+      "release": "remastered-port-2026",
+      "runtime": "Offizielle Android-App von Aspyr",
+      "projects": [
+        "tomb-raider-iiii-remastered-aspyr"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Ein für die App freigeschaltetes Android-Gerät mit Google Play",
+        "Kauf beziehungsweise Freischaltung der vollständigen Android-Inhalte; das kostenlose Probespiel umfasst nicht die vollständige Erweiterung"
+      ],
+      "benefit": "Direkter Android-Weg ohne Windows-Laufzeit oder Konsolenemulation. Enthält The Lost Artefact sowie umschaltbare Grafik, moderne oder klassische Steuerung und Fotomodus.",
+      "caveat": "Kein belastbarer Erfahrungsbericht speziell zur Erweiterung auf AYN Thor gefunden. Frühere Android-Probleme mit Controllern, Abstürzen und Menüs wurden mehrfach nachgebessert; eine aktuelle App-Version verwenden. Keine belegte Aufteilung von Spiel und Inventar auf zwei Displays.",
+      "steps": [
+        "Die offizielle App von Aspyr über Google Play installieren.",
+        "Mit dem kostenlosen Probespiel zunächst Controller-Erkennung und Darstellung auf dem Handheld prüfen.",
+        "Die vollständigen Inhalte freischalten und herunterladen.",
+        "Tomb Raider III auswählen und im Spielpass-Menü unter „New Game“ die Erweiterung „The Lost Artefact“ beziehungsweise „The Lost Artifact“ starten."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/TombRaider/comments/1whvoxe/thoughts_on_the_mobile_port_of_tr_remastered/",
+          "device": "Samsung Galaxy S23 FE",
+          "summary": "Ein Nutzer beschreibt die Android-Remaster insgesamt als gut laufend, erwähnt aber auch gelegentliche Gameplay-Fehler und Abstürze; kein gesonderter Test von The Lost Artefact.",
+          "date": "2026-11-09"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "device": "Android-Gerät, Modell nicht genannt",
+          "summary": "Eine Rezension vom 23. März 2026 berichtet über Eingabeverzögerungen mit Controller und schwarze Bildschirme; spätere offizielle Updates enthalten entsprechende Controller- und Stabilitätskorrekturen.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-windows-remaster-uber-winlator",
+      "name": "Windows-Remaster über Winlator",
+      "kind": "pc-runtime",
+      "release": "remastered-2024",
+      "runtime": "Winlator mit Wine und Box86/Box64",
+      "projects": [
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Windows-Fassung von Tomb Raider I–III Remastered",
+        "Lokal verfügbare, rechtmäßig bezogene Windows-Spieldateien",
+        "Winlator"
+      ],
+      "benefit": "Nutzt die bereits gekaufte Windows-Fassung einschließlich der Erweiterung und ermöglicht grundsätzlich deren PC-Modifikationen. Ein gerätespezifisches Video demonstriert alle drei Hauptspiele des Pakets unter Winlator.",
+      "caveat": "Der Beleg zeigt Tomb Raider III, aber keinen vollständigen Durchlauf von The Lost Artefact. Getestet wurde Winlator 6.1 auf einem Google Pixel 4a, nicht auf dem Thor; die dort verwendeten Einstellungen sind deshalb nur ein Ausgangspunkt und keine Thor-Empfehlung.",
+      "steps": [
+        "Winlator aus dem offiziellen Projekt installieren.",
+        "Die eigene Windows-Installation des Remasters auf den Handheld übertragen.",
+        "Einen Container einrichten; das belegte Testvideo verwendet Turnip, DXVK und 800 × 600.",
+        "Die Windows-Spielanwendung starten und die Controller-Eingaben prüfen.",
+        "Tomb Raider III und anschließend dessen Erweiterung im Spielpass-Menü auswählen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.youtube.com/watch?v=b4CIKIb4l3Q"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.youtube.com/watch?v=b4CIKIb4l3Q",
+          "device": "Google Pixel 4a, Snapdragon 730G, 6 GB RAM",
+          "summary": "Das Video demonstriert Tomb Raider I, II und III Remastered mit Winlator 6.1, Turnip und DXVK; die Erweiterung wird nicht separat vorgeführt.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "trx-tomb-raider-iiii-community-edition",
+      "name": "TRX – Tomb Raider I–III: Community Edition",
+      "category": "qol",
+      "url": "https://github.com/LostArtefacts/TRX",
+      "edition": "Originale PC-Spieldaten von The Lost Artefact",
+      "description": "Alternative Open-Source-Engine mit Controller-Unterstützung, anpassbarer Steuerung, Widescreen und zahlreichen Fehlerkorrekturen. The Lost Artefact wird ausdrücklich als „tr3-la“ unterstützt; das Hauptprojekt bietet jedoch nur Windows-, Linux- und macOS-Unterstützung und ist kein bestätigter nativer Android-Spielweg.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "sardoc-the-lost-artefact-levels-patch",
+      "name": "Sardoc – The Lost Artefact Levels Patch",
+      "category": "fixes",
+      "url": "https://core-design.com/community_tr3withoutcrystals.html",
+      "edition": "Originale Windows-Fassung; separaten The-Lost-Artefact-Patch verwenden",
+      "description": "Korrigiert unter anderem fehlende Nasentexturen, blaue Texturfehler an Laras geholsterten Pistolen in Highland Fling und Shakespeare Cliff sowie weitere Modell- und Texturfehler. Nicht für das Remaster bestimmt; die separat aufgeführten Änderungen des Hauptspiels Tomb Raider III gelten nicht automatisch für die Erweiterung.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-09",
+  "summary": "Für Android-Handhelds ist die offizielle Android-Portierung von Tomb Raider I–III Remastered besonders interessant: Sie enthält The Lost Artefact und unterstützt Controller.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Tomb_Raider_III.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Tomb_Raider_III"
+  }
+}

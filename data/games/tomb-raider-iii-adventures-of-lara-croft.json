@@ -1,0 +1,176 @@
+{
+  "id": "tomb-raider-iii-adventures-of-lara-croft",
+  "title": "Tomb Raider III: Adventures of Lara Croft",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PlayStation",
+    "PC",
+    "Mac OS (Classic)",
+    "PlayStation 3",
+    "PSP",
+    "PlayStation Vita",
+    "Evercade",
+    "Super Pocket"
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation (1998)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1998
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "year": 1998,
+      "note": "Korrektur der bisherigen Aufteilung: PC und PlayStation gehören zur selben Originalveröffentlichung von 1998. Die Windows-Umsetzung bietet leicht verbesserte Grafik; The Lost Artefact gehört noch nicht zum Hauptspiel.",
+      "traits": []
+    },
+    {
+      "id": "mac-1999",
+      "name": "Macintosh-Portierung (1999)",
+      "type": "port",
+      "platforms": [
+        "Mac OS (Classic)"
+      ],
+      "year": 1999,
+      "note": "Offizielle Umsetzung von Westlake Interactive, veröffentlicht von Aspyr. Archivwürdige Macintosh-Fassung des Hauptspiels, kein Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider_III"
+        }
+      ]
+    },
+    {
+      "id": "lost-artefact-2000",
+      "name": "Tomb Raider III: The Lost Artefact (2000)",
+      "type": "release",
+      "platforms": [
+        "PC",
+        "Mac OS (Classic)"
+      ],
+      "year": 2000,
+      "note": "Eigenständig spielbare Erweiterung mit sechs neuen Levels, keine bloße Neuverpackung des Hauptspiels. Im späteren Remaster ist sie enthalten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider_III"
+        }
+      ]
+    },
+    {
+      "id": "psone-classic-2009",
+      "name": "PSone Classic (2009)",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 3",
+        "PSP",
+        "PlayStation Vita"
+      ],
+      "year": 2009,
+      "traits": [
+        "controller"
+      ],
+      "note": "Digitale Wiederveröffentlichung der PlayStation-Fassung: zunächst 2009 in Nordamerika, 2011 auch in Europa. Keine neue Grafik oder zusätzliche Kampagne.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraiders.net/stella/introduction.html"
+        }
+      ]
+    },
+    {
+      "id": "evercade-2024",
+      "name": "Evercade – Tomb Raider Collection 1 (2024)",
+      "type": "rerelease",
+      "platforms": [
+        "Evercade",
+        "Super Pocket"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle Veröffentlichung auf einer zusätzlichen Hardwarefamilie, erschienen am 30. August 2024. Enthält die ursprüngliche Konsolenfassung von Tomb Raider III, nicht das Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [
+    {
+      "id": "tomb3",
+      "name": "tomb3",
+      "category": "fixes",
+      "url": "https://github.com/Trxyebeep/tomb3",
+      "edition": "Windows-Original und Windows-Ausgabe von The Lost Artifact",
+      "description": "Decompilation mit zahlreichen Fehlerkorrekturen, skalierbarer Oberfläche und optionalen PlayStation-Effekten; unterstützt auch The Lost Artifact. Kein nativer Android-Port und kein belegter Thor-Kompatibilitätsnachweis.",
+      "verification": "ai-unverified",
+      "release": [
+        "lost-artefact-2000",
+        "pc"
+      ]
+    },
+    {
+      "id": "tr-rando",
+      "name": "TR Rando",
+      "category": "gameplay",
+      "url": "https://github.com/LostArtefacts/TR-Rando",
+      "edition": "Windows-Original und Windows-Remaster; keine bestätigte Unterstützung der Android-App",
+      "description": "Randomisiert unter anderem Gegenstände, Geheimnisse, Gegner, Outfits und Levelreihenfolge; der Funktionsumfang unterscheidet sich zwischen Original und Remaster. Die Einrichtung erfolgt an einer sauberen PC-Installation; für das klassische TR3 empfiehlt das Projekt tomb3.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "tomb-raider-iiii-remastered-gold-edition",
+      "name": "Tomb Raider I–III Remastered Gold Edition",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/tombraidertrilogyremastered/mods/945",
+      "edition": "Windows-Remaster; inoffizieller Mod, keine offizielle Gold-Edition",
+      "description": "Umfangreiche Überarbeitung mit höher aufgelösten Texturen, verbesserten Modellen, Soundeffekten und FMVs sowie wiederhergestellten blauen Menüs in TR3. Für die PC-Laufzeit interessant; Android-/Thor-Leistung und Verträglichkeit mit späteren Spielupdates sind nicht bestätigt.",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "texture-fixes",
+      "name": "Texture fixes",
+      "category": "fixes",
+      "url": "https://www.nexusmods.com/tombraidertrilogyremastered/mods/709",
+      "edition": "Windows-Remaster",
+      "description": "AlineShenons Texturkorrekturen betreffen in TR3 die Frankreich-Poster von Joan of Arc und Knave. Die DDS-Dateien ersetzen Texturen im Verzeichnis 3/TEX; vorher sichern und die Kompatibilität mit dem installierten Patchstand prüfen.",
+      "verification": "ai-unverified"
+    }
+  ],
+  "updatedAt": "2026-11-09",
+  "summary": "Für den Thor ist die offizielle Android-Portierung von Tomb Raider I–III Remastered besonders interessant: Sie enthält auch The Lost Artifact und lässt sich zunächst kostenlos anspielen. Die Windows-Fassung über Winlator ist vor allem für Besitzer der PC-Version und für Mods eine Alternative.",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20III%20-%20Adventures%20of%20Lara%20Croft%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
+}

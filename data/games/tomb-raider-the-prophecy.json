@@ -1,0 +1,26 @@
+{
+  "id": "tomb-raider-the-prophecy",
+  "title": "Tomb Raider: The Prophecy",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "versions": [
+    {
+      "id": "game-boy-advance",
+      "name": "Game Boy Advance (2002)",
+      "type": "original",
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "year": 2002
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/Tomb_Raider_-_The_Prophecy.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_The_Prophecy"
+  }
+}

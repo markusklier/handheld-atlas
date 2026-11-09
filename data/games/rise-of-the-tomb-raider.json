@@ -1,0 +1,35 @@
+{
+  "id": "rise-of-the-tomb-raider",
+  "title": "Rise of the Tomb Raider",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Xbox 360",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2015)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/29/Rise_of_the_Tomb_Raider.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Rise_of_the_Tomb_Raider"
+  }
+}

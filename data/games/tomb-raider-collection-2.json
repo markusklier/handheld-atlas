@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-collection-2",
+  "title": "Tomb Raider Collection 2",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Evercade"
+  ],
+  "versions": [
+    {
+      "id": "evercade",
+      "name": "Evercade (2025)",
+      "type": "original",
+      "platforms": [
+        "Evercade"
+      ],
+      "year": 2025
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

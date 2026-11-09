@@ -1,0 +1,250 @@
+{
+  "id": "tomb-raider-the-last-revelation",
+  "title": "Tomb Raider: The Last Revelation",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PlayStation",
+    "PC",
+    "PlayStation 3",
+    "PSP",
+    "PlayStation Vita",
+    "PlayStation TV",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series",
+    "Nintendo Switch"
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation (1999)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 1999
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "times-exclusive",
+      "name": "The Times Exclusive",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1999,
+      "note": "Separat veröffentlichter offizieller Bonuslevel in Zusammenarbeit mit der britischen Zeitung The Times, kein vollständiges alternatives Hauptspiel. Später auch im Remaster und in eigens konvertierter Form auf Evercade enthalten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+        }
+      ]
+    },
+    {
+      "id": "psone-classics",
+      "name": "PSone Classics",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 3",
+        "PSP",
+        "PlayStation Vita",
+        "PlayStation TV"
+      ],
+      "year": 2009,
+      "traits": [
+        "controller"
+      ],
+      "note": "Digitale Wiederveröffentlichung des PlayStation-Originals, zunächst 2009 für PS3 und PSP. Später auch auf Vita und PlayStation TV unterstützt; kein Remaster.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2009/10/15/playstation-store-update-107/"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2025",
+      "name": "The Last Revelation – Tomb Raider IV–VI Remastered",
+      "type": "remaster",
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "note": "Überarbeitete Grafik mit jederzeit umschaltbarer Originaldarstellung, moderner oder klassischer Steuerung, Fotomodus und Komfortverbesserungen. Enthält auch The Times Exclusive; keine eigenständige offizielle Android-Veröffentlichung dieser Sammlung belegt.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-pc-remaster-uber-winlator",
+      "name": "PC-Remaster über Winlator",
+      "kind": "pc-runtime",
+      "release": "remastered-2025",
+      "runtime": "Winlator; Android-Spielbericht mit Version 10.1",
+      "projects": [
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Windows-Ausgabe von Tomb Raider IV–VI Remastered",
+        "Lokal verfügbare, regulär installierte Spieldateien; eine DRM-freie Ausgabe erleichtert die Einrichtung"
+      ],
+      "benefit": "Ein Android-Tutorial dokumentiert Einrichtung und Gameplay der Remaster-Sammlung mit Winlator 10.1. Dieser Weg eröffnet die überarbeitete Grafik, moderne Steuerung und die PC-Modauswahl ohne eine offizielle Android-Portierung.",
+      "caveat": "Der dokumentierte Test stammt nicht vom AYN Thor und belegt keinen vollständigen Durchlauf von The Last Revelation. Treiber- und Containerwahl bleiben geräteabhängig; eine integrierte Dual-Screen-Funktion ist nicht belegt.",
+      "steps": [
+        "Winlator aus dem offiziellen Projekt installieren und einen Windows-Container anlegen.",
+        "Die eigene PC-Installation der Remaster-Sammlung für den Container zugänglich machen.",
+        "Das Spiel starten und die Handheld-Tasten als Gamepad konfigurieren.",
+        "Bei Darstellungs- oder Leistungsproblemen zunächst eine niedrige Auflösung testen; der dokumentierte Test empfiehlt 854 × 480 als Ausgangspunkt."
+      ],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.youtube.com/watch?v=rouqjKaLUjY"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.youtube.com/watch?v=rouqjKaLUjY",
+          "device": "Xiaomi Pad 7, Snapdragon 7+ Gen 3, 8 GB RAM",
+          "summary": "Das Video vom 17. Juli 2025 zeigt die Remaster-Sammlung unter Winlator 10.1 samt Einrichtung und empfiehlt bei Problemen eine reduzierte Containerauflösung.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [
+    {
+      "id": "tomb4-von-troye",
+      "name": "TOMB4 von Troye",
+      "category": "fixes",
+      "url": "https://github.com/Trxyebeep/TOMB4",
+      "edition": "Klassische Windows-Fassung; separater ausführbarer Build für The Times Exclusive",
+      "description": "Decompilation mit zahlreichen Fehlerkorrekturen, korrekter Breitbild-FOV-Berechnung, verbesserten Schatten, optionalen Gegneranzeigen und Komfortfunktionen. Kein nativer Android-Port; für Android wäre zusätzlich eine Windows-Laufzeit nötig, deren Zusammenspiel mit diesem Mod hier nicht bestätigt ist. Hauptspiel und Times-Level dürfen laut Anleitung nicht dieselbe modifizierte EXE verwenden.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc",
+        "times-exclusive"
+      ]
+    },
+    {
+      "id": "tomb-raider-25-widescreen-patch",
+      "name": "Tomb Raider 2–5 Widescreen Patch",
+      "category": "widescreen-fps",
+      "url": "https://github.com/kurlyak/widescreen-patch-tomb-raider-2345",
+      "edition": "Klassische Windows-Fassung, nicht Remastered",
+      "description": "Ed Kurlyaks Patcher korrigiert Seitenverhältnis und Sichtfeld und ermöglicht Anpassungen der Kameradistanz. Eine Alternative für die unveränderte klassische PC-EXE; nicht unbesehen mit dem bereits Breitbild unterstützenden TOMB4 kombinieren.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "tomb-raider-iv-the-last-revelation-hd",
+      "name": "Tomb Raider IV: The Last Revelation HD",
+      "category": "graphics",
+      "url": "https://core-design.com/community_tr4thelastrevelationhd.html",
+      "edition": "Klassische Windows-Fassung",
+      "description": "Mod von annl mit detaillierterem Lara-Modell sowie überarbeiteten Waffen und Gegenständen aus der TRLE-Community. Enthält außerdem ein optionales Skript zur Levelauswahl; eine funktionierende eigene Festplatteninstallation wird vorausgesetzt, Android-Kompatibilität ist nicht gesondert bestätigt.",
+      "verification": "ai-unverified",
+      "release": [
+        "pc"
+      ]
+    },
+    {
+      "id": "tr-ivvi-remastered-definitive-patch",
+      "name": "TR IV–VI Remastered Definitive Patch",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/296",
+      "edition": "Windows-Remaster, Variante für offiziellen Patch 2",
+      "description": "Umfangreiche Überarbeitung von merychxrry mit hochskalierten Texturen im Format 1024 × 1024. Benötigt eine angepasste EXE; gewöhnliche Texturmods sind laut Autor nicht ohne Weiteres damit kompatibel. Keine gesonderte Winlator-Leistungsprüfung belegt.",
+      "verification": "ai-unverified",
+      "release": [
+        "remastered-2025"
+      ]
+    },
+    {
+      "id": "tomb-raider-4-blurred-textures-fix",
+      "name": "Tomb Raider 4 Blurred Textures Fix",
+      "category": "graphics",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/162",
+      "edition": "Windows-Remaster; Kompatibilität mit Patch 2 vom Autor geprüft",
+      "description": "Motorboys Mod verbessert unscharfe Umgebungstexturen mithilfe von KI-Hochskalierung. Die Dateien werden in die eigene Spielinstallation übernommen; vor dem Überschreiben Sicherungen anlegen und nicht ungeprüft mit dem Definitive Patch mischen.",
+      "verification": "ai-unverified",
+      "release": [
+        "remastered-2025"
+      ]
+    },
+    {
+      "id": "tr4tr5-volume-adjusted-sfx",
+      "name": "TR4–TR5 Volume Adjusted SFX",
+      "category": "fixes",
+      "url": "https://www.nexusmods.com/tombraidertrilogy2remastered/mods/5",
+      "edition": "Windows-Remaster; passende Patch-2-Dateien verfügbar",
+      "description": "Erhöht die als zu leise empfundenen Soundeffekte und gleicht ihre Lautstärke stärker an die Originalspiele an. Bei Installation die zur eigenen Spielversion passende Variante wählen.",
+      "verification": "ai-unverified",
+      "release": [
+        "remastered-2025"
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-09",
+  "summary": "Für Android-Handhelds sind die grafisch aufgewertete Dreamcast-Portierung über Flycast und das PC-Remaster über Winlator interessant. Das Remaster bietet modernisierte Steuerung und den Times-Bonuslevel; ein spielspezifischer Dual-Screen-Weg ist nicht belegt.",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
+}

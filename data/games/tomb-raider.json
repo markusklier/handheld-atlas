@@ -15,7 +15,10 @@
     "Xbox Series",
     "PlayStation 2",
     "PSP",
-    "Wii"
+    "Wii",
+    "Evercade",
+    "Nintendo Switch",
+    "Xbox One"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
@@ -236,6 +239,56 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        }
+      ]
+    },
+    {
+      "id": "the-tomb-raider-trilogy",
+      "name": "The Tomb Raider Trilogy (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+        }
+      ]
+    },
+    {
+      "id": "tomb-raider-collection-1",
+      "name": "Tomb Raider Collection 1 (2024)",
+      "type": "collection",
+      "year": 2024,
+      "platforms": [
+        "Evercade"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+        }
+      ]
+    },
+    {
+      "id": "tomb-raider-ivi-remastered",
+      "name": "Tomb Raider I–VI Remastered (2025)",
+      "type": "collection",
+      "year": 2025,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/products/games/tomb-raider-i-vi-remastered"
         }
       ]
     }

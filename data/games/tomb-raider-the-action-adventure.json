@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-the-action-adventure",
+  "title": "Tomb Raider: The Action Adventure",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "DVD player"
+  ],
+  "versions": [
+    {
+      "id": "dvd-player",
+      "name": "DVD player (2006)",
+      "type": "original",
+      "platforms": [
+        "DVD player"
+      ],
+      "year": 2006
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

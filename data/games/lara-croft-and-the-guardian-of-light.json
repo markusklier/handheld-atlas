@@ -1,0 +1,85 @@
+{
+  "id": "lara-croft-and-the-guardian-of-light",
+  "title": "Lara Croft and the Guardian of Light",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3",
+    "PC",
+    "iOS"
+  ],
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2010
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "release",
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "type": "release",
+      "platforms": [
+        "iOS"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/35130/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/35130/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_c0ff3a060875058112a1d84f491d096cc00ca8ae.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_5928c8e728d29beb34bbd0075d9ed1be1b0eae3a.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_4058f0cd75bd499185ad9d01b6da12ce0e02135f.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_e52e43ea1f20508e95159f2927d7b3a73f3690cb.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_a165a9dfd65a64302be262b558bce313cacb6d1a.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35130/ss_9df74e5bea4b4daa555e46e527a3ce26ccb4d28b.1920x1080.jpg?t=1729009567",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/35130/"
+    }
+  ]
+}

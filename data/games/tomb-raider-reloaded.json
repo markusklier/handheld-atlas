@@ -1,0 +1,35 @@
+{
+  "id": "tomb-raider-reloaded",
+  "title": "Tomb Raider Reloaded",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2023)",
+      "type": "original",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2023
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "release",
+      "platforms": [
+        "Android"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/06/TombRaiderReloaded_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Tomb_Raider_Reloaded"
+  }
+}

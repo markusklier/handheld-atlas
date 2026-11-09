@@ -1,0 +1,85 @@
+{
+  "id": "lara-croft-go",
+  "title": "Lara Croft GO",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "iOS",
+    "Android",
+    "Windows Phone",
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2015)",
+      "type": "original",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "release",
+      "platforms": [
+        "Android"
+      ]
+    },
+    {
+      "id": "windows-phone",
+      "name": "Windows Phone",
+      "type": "release",
+      "platforms": [
+        "Windows Phone"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/540840/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/540840/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_b71f023f7a3131b8a6c844e9e29b4fdef9fcdd31.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_5f2e1109c57439a61eb77c34a6090a1f95844dc6.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_25ecba61a41d2ae7def9da20d4cba36318659563.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_3e61ceb60ab5a31ddd09126f97e5cd3bab6deda3.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_b9769517a1aae11aa36f01a13765cf02c1c0af31.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/540840/ss_a7213c66667649e668d7b88298fcc0e2f63de884.1920x1080.jpg?t=1731697927",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/540840/"
+    }
+  ]
+}

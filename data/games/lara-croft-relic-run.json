@@ -1,0 +1,44 @@
+{
+  "id": "lara-croft-relic-run",
+  "title": "Lara Croft: Relic Run",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "iOS",
+    "Android",
+    "Windows Phone"
+  ],
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2015)",
+      "type": "original",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2015
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "release",
+      "platforms": [
+        "Android"
+      ]
+    },
+    {
+      "id": "windows-phone",
+      "name": "Windows Phone",
+      "type": "release",
+      "platforms": [
+        "Windows Phone"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Lara_Croft_Relic_Run_Icon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Lara_Croft%3A_Relic_Run"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "tomb-raider-definitive-survivor-trilogy",
+  "title": "Tomb Raider: Definitive Survivor Trilogy",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4 (2021)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "year": 2021
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

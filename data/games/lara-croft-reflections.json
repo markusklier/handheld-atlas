@@ -1,0 +1,22 @@
+{
+  "id": "lara-croft-reflections",
+  "title": "Lara Croft: Reflections",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "iOS"
+  ],
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2013)",
+      "type": "original",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2013
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

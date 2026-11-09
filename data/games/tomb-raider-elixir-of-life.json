@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-elixir-of-life",
+  "title": "Tomb Raider: Elixir of Life",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Java ME"
+  ],
+  "versions": [
+    {
+      "id": "java-me",
+      "name": "Java ME (2004)",
+      "type": "original",
+      "platforms": [
+        "Java ME"
+      ],
+      "year": 2004
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

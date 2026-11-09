@@ -1,0 +1,76 @@
+{
+  "id": "lara-croft-and-the-temple-of-osiris",
+  "title": "Lara Croft and the Temple of Osiris",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2014)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289690/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/289690/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_638b4abfdfc8bb17a46de95f1e26fbdad63464b5.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_1ede475a844521f19930c7a095d894b3a7f0b988.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_6aa1aec43aaeabaddadc46087d16fc46dacb7c2c.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_365714a0f76d8eb4b6c99bc964fbc1c3f7e81728.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_05baae1756d01d0f87588205425678dc07540498.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289690/ss_b58025a0c05e03360d814df2048bb65b5fe9643a.1920x1080.jpg?t=1729011550",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/289690/"
+    }
+  ]
+}

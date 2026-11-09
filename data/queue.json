@@ -1,6 +1,161 @@
 {
   "jobs": [
     {
+      "game": "tomb-raider-chronicles",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-curse-of-the-sword",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-prophecy",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-angel-of-darkness",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-osiris-codex",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-apocalypse-episode-2-the-shadow-falls",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-apocalypse-episode-3-the-last-midnight",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-quest-for-cinnabar",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-elixir-of-life",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-temple-of-anubis",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-legend",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-puzzle-paradox",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-s-poker-party",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-reckoning",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-the-action-adventure",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-underworld",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-and-the-guardian-of-light",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-2013",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-reflections",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-and-the-temple-of-osiris",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-relic-run",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "lara-croft-go",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "rise-of-the-tomb-raider",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "shadow-of-the-tomb-raider",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-definitive-survivor-trilogy",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-reloaded",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "the-lara-croft-collection",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-ivvi-remastered",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-collection-2",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "tomb-raider-ii",
+      "reason": "Reihe Tomb Raider",
+      "added": "2026-11-09"
+    },
+    {
       "game": "doom-rpg",
       "reason": "Reihe Doom",
       "added": "2026-11-09"

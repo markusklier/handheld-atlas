@@ -1,0 +1,44 @@
+{
+  "id": "shadow-of-the-tomb-raider",
+  "title": "Shadow of the Tomb Raider",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2018)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2018
+    },
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Shadow_of_the_Tomb_Raider_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Shadow_of_the_Tomb_Raider"
+  }
+}

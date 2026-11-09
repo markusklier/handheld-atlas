@@ -1,0 +1,71 @@
+{
+  "id": "tomb-raider-ivvi-remastered",
+  "title": "Tomb Raider IV–VI Remastered",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PC",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2025)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2025
+    },
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch",
+      "type": "release",
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    },
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    },
+    {
+      "id": "playstation-5",
+      "name": "PlayStation 5",
+      "type": "release",
+      "platforms": [
+        "PlayStation 5"
+      ]
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    },
+    {
+      "id": "xbox-series-x-s",
+      "name": "Xbox Series X/S",
+      "type": "release",
+      "platforms": [
+        "Xbox Series"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Tomb_Raider_IV%E2%80%93VI_Remastered.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Tomb_Raider_IV%E2%80%93VI_Remastered"
+  }
+}

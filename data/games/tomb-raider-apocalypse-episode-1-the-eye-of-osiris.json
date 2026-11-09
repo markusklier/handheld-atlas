@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
+  "title": "Tomb Raider: Apocalypse Episode 1: The Eye of Osiris",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Sky Gamestar"
+  ],
+  "versions": [
+    {
+      "id": "sky-gamestar",
+      "name": "Sky Gamestar (2002)",
+      "type": "original",
+      "platforms": [
+        "Sky Gamestar"
+      ],
+      "year": 2002
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "tomb-raider-2013",
+  "title": "Tomb Raider (2013)",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2013)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2013
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "release",
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360",
+      "type": "release",
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/TombRaider2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Tomb_Raider_%282013_video_game%29"
+  }
+}

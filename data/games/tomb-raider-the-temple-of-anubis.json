@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-the-temple-of-anubis",
+  "title": "Tomb Raider: The Temple of Anubis",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Sky Gamestar"
+  ],
+  "versions": [
+    {
+      "id": "sky-gamestar",
+      "name": "Sky Gamestar (2004)",
+      "type": "original",
+      "platforms": [
+        "Sky Gamestar"
+      ],
+      "year": 2004
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

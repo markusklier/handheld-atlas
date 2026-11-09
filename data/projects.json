@@ -1125,7 +1125,8 @@
       "repo": null,
       "description": "",
       "games": [
-        "tomb-raider"
+        "tomb-raider",
+        "tomb-raider-the-lost-artefact"
       ],
       "checkedAt": "2026-11-08"
     },
@@ -1240,7 +1241,9 @@
       "description": "Windows-Programme und PC-Spiele auf Android über Wine und Box64.",
       "games": [
         "the-elder-scrolls-v-skyrim",
-        "doom-1993"
+        "doom-1993",
+        "tomb-raider-the-last-revelation",
+        "tomb-raider-the-lost-artefact"
       ],
       "checkedAt": "2026-11-08",
       "pushedAt": "2026-11-02",

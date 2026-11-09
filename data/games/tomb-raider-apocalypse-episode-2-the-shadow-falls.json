@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-apocalypse-episode-2-the-shadow-falls",
+  "title": "Tomb Raider: Apocalypse Episode 2: The Shadow Falls",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Sky Gamestar"
+  ],
+  "versions": [
+    {
+      "id": "sky-gamestar",
+      "name": "Sky Gamestar (2003)",
+      "type": "original",
+      "platforms": [
+        "Sky Gamestar"
+      ],
+      "year": 2003
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

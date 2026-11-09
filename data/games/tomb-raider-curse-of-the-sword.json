@@ -1,0 +1,38 @@
+{
+  "id": "tomb-raider-curse-of-the-sword",
+  "title": "Tomb Raider: Curse of the Sword",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "versions": [
+    {
+      "id": "game-boy-game-boy-color",
+      "name": "Game Boy / Game Boy Color (2001)",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "year": 2001
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    }
+  ]
+}

@@ -5766,7 +5766,10 @@
     "mighty-doom": "2026-11-08",
     "master-levels-for-doom-ii": "2026-11-09",
     "final-doom": "2026-11-09",
-    "doom-64": "2026-11-09"
+    "doom-64": "2026-11-09",
+    "tomb-raider-iii-adventures-of-lara-croft": "2026-11-09",
+    "tomb-raider-the-last-revelation": "2026-11-09",
+    "tomb-raider-the-lost-artefact": "2026-11-09"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",
@@ -5889,6 +5892,51 @@
         "doom-3: Doom 3: VR Edition",
         "doom-1993: DOOM: The Classics Collection",
         "doom-1993: DOOM Anthology"
+      ],
+      "skipped": []
+    },
+    "Tomb Raider": {
+      "date": "2026-11-09",
+      "listed": 45,
+      "added": [
+        "tomb-raider-iii-adventures-of-lara-croft",
+        "tomb-raider-the-last-revelation",
+        "tomb-raider-the-lost-artefact",
+        "tomb-raider-chronicles",
+        "tomb-raider-curse-of-the-sword",
+        "tomb-raider-the-prophecy",
+        "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
+        "tomb-raider-the-angel-of-darkness",
+        "tomb-raider-the-osiris-codex",
+        "tomb-raider-apocalypse-episode-2-the-shadow-falls",
+        "tomb-raider-apocalypse-episode-3-the-last-midnight",
+        "tomb-raider-quest-for-cinnabar",
+        "tomb-raider-elixir-of-life",
+        "tomb-raider-the-temple-of-anubis",
+        "tomb-raider-legend",
+        "tomb-raider-puzzle-paradox",
+        "lara-croft-s-poker-party",
+        "tomb-raider-the-reckoning",
+        "tomb-raider-the-action-adventure",
+        "tomb-raider-underworld",
+        "lara-croft-and-the-guardian-of-light",
+        "tomb-raider-2013",
+        "lara-croft-reflections",
+        "lara-croft-and-the-temple-of-osiris",
+        "lara-croft-relic-run",
+        "lara-croft-go",
+        "rise-of-the-tomb-raider",
+        "shadow-of-the-tomb-raider",
+        "tomb-raider-definitive-survivor-trilogy",
+        "tomb-raider-reloaded",
+        "the-lara-croft-collection",
+        "tomb-raider-ivvi-remastered",
+        "tomb-raider-collection-2"
+      ],
+      "versions": [
+        "tomb-raider: The Tomb Raider Trilogy",
+        "tomb-raider: Tomb Raider Collection 1",
+        "tomb-raider: Tomb Raider I–VI Remastered"
       ],
       "skipped": []
     }

@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-puzzle-paradox",
+  "title": "Tomb Raider: Puzzle Paradox",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Java ME"
+  ],
+  "versions": [
+    {
+      "id": "java-me",
+      "name": "Java ME (2006)",
+      "type": "original",
+      "platforms": [
+        "Java ME"
+      ],
+      "year": 2006
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

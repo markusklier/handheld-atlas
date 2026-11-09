@@ -1,0 +1,56 @@
+{
+  "id": "tomb-raider-chronicles",
+  "title": "Tomb Raider: Chronicles",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "PlayStation",
+    "PC",
+    "Dreamcast"
+  ],
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation (2000)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "year": 2000
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "release",
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "release",
+      "platforms": [
+        "Dreamcast"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20Chronicles%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tomb%20Raider%20Chronicles%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20Chronicles%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
+}

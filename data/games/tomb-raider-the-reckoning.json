@@ -1,0 +1,22 @@
+{
+  "id": "tomb-raider-the-reckoning",
+  "title": "Tomb Raider: The Reckoning",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Bell ExpressVu"
+  ],
+  "versions": [
+    {
+      "id": "bell-expressvu",
+      "name": "Bell ExpressVu (2006)",
+      "type": "original",
+      "platforms": [
+        "Bell ExpressVu"
+      ],
+      "year": 2006
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}
