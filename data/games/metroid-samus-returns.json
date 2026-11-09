@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4773a743-0f6b-4da0-bd21-5886a8d9f203",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "### Setup #### Game Metroid Samus Returns #### Emulator `azahar-2124.3-android-vanilla.apk` installed with `Obtanium` ### Gameplay Notes 60 FPS with some micro stutters. The colors are far more vibrant than on real 2DS X",
+          "votes": 1,
+          "date": "2026-02-28",
+          "settings": {
+            "Emulator Version": "2124.3-vanilla",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2df7b4c7-9001-4bb7-b3ef-37dcf0c2a4d1"
+        }
       ]
     }
   ],

@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/06c606b3-5600-4565-82a6-98173af95b31",
+          "device": "AYN Thor Pro",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-12-03",
+          "settings": {
+            "Emulator Version": "1.19.3",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "4",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c25d0c68-cacb-4022-96d4-d7b7a13a0cae",
+          "device": "AYN Thor Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "1.20.4",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "1",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a2fdbe52-204b-48d0-92fa-b56a04e520a6"
+        }
       ]
     }
   ],

@@ -28,6 +28,60 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d617ac10-84e0-472d-ad32-c3e7aa7998f0",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/21b8f965-f0c2-4f0f-afcd-b6a83ddf2d53",
+          "device": "AYN Thor Pro",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game Fully Completed Game plays Perfect all the way through Cutscenes are broken with a widescreen hack unfortunately",
+          "votes": 1,
+          "date": "2025-11-29",
+          "settings": {
+            "Emulator Version": "Dolphin 2509",
+            "Graphics Backend": "OpenGL",
+            "Internal Resolution": "3",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1bb0b535-ac18-420d-adbc-3fcd623b015d"
+        }
       ]
     }
   ],

@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/675d6051-1413-49be-a42d-4e3a393e2278",
+          "device": "AYN Thor Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "1.20.4",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "1",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b3df8a8f-99f1-4354-9560-5e208ae2a929"
+        }
       ]
     }
   ],

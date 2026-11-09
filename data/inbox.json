@@ -1,6 +1,126 @@
 {
   "leads": [
     {
+      "url": "https://github.com/jantursky/crease",
+      "title": "jantursky/crease",
+      "excerpt": "Hinge angle and fold-aware layouts for Compose Multiplatform, on Android foldables and iPhone Duo",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/devakashkumar/PROCUREPILOT",
+      "title": "devakashkumar/PROCUREPILOT",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/dmaidon/Lyracist",
+      "title": "dmaidon/Lyracist",
+      "excerpt": "Full featured karaoke hosting application and associated apps.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/SakshamSriAI/Project-ASCEND",
+      "title": "SakshamSriAI/Project-ASCEND",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ToanMobile/agent-workbench",
+      "title": "ToanMobile/agent-workbench",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/wawanwfs/WFS-StoryBoost",
+      "title": "wawanwfs/WFS-StoryBoost",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/DevEslam1/pulsr",
+      "title": "DevEslam1/pulsr",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ZachCThomas/FTC-2027-2026",
+      "title": "ZachCThomas/FTC-2027-2026",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/drsharma994-rgb/hardgate-main",
+      "title": "drsharma994-rgb/hardgate-main",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/cphillippe/Silver-dollar-city",
+      "title": "cphillippe/Silver-dollar-city",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/nitishhappy/trading-journal",
+      "title": "nitishhappy/trading-journal",
+      "excerpt": "Trading journal app using claude",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/hcfcollins/HCFlow",
+      "title": "hcfcollins/HCFlow",
+      "excerpt": "The app that follows the flow of hc",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/kitnipanz/7xdash-companion",
+      "title": "kitnipanz/7xdash-companion",
+      "excerpt": "7xDash head unit app for Zeekr (dashcam, shortcuts, HUD) in the Zeekr OS 7 style",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/balakamal/hrms-tracker",
+      "title": "balakamal/hrms-tracker",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/kakaed3000/nexredmi-xnul",
+      "title": "kakaed3000/nexredmi-xnul",
+      "excerpt": "iOS 16 on Redmi 9C (angelica/MT6765) - XNU bring-up (standalone mirror)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/sudosilo/sudosilo",
       "title": "sudosilo/sudosilo",
       "excerpt": "",
@@ -6279,126 +6399,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/mhp3rd-companion/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/metroid-prime-hunters/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/megingiard/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/kanto-gear/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/jesty-thor-fix/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/how-to/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/harvest-moon/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/grand-theft-companion/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/golden-eye/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/gba-duo/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/gba-ds/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/ffxii-thor-companion/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/fallout-4/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/fallout-2-ce-mobile-dual-screen/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/emulnk/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:56:26Z",
-    "newLeads": 14,
+    "lastRun": "2026-11-09T17:02:50Z",
+    "newLeads": 15,
     "newEvents": 0
   },
   "aiResearch": {

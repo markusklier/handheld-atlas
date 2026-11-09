@@ -29,7 +29,38 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2004
+      "year": 2004,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/00be88b6-b358-4338-a9bc-210daea4e318",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1a855727-7e93-4be7-a03f-dee9025f917e"
+        }
+      ]
     },
     {
       "id": "wii-2009",
