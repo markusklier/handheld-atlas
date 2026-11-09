@@ -244,7 +244,43 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://play-lh.googleusercontent.com/4Mtyj6PDk5rKRJf2sRhgoAbBGrpZt4PTokfEn3gnBpq7FmEDwEECI9rtoVmiDS7UbL-g8ShKo-V3fajUTshzwQ=w1280-h720",
+          "caption": "Lara Croft springt zwischen steinernen Ruinen.",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/TJT5-fYedTETc2mzEHE4SaQ9gh6rI_KIjSyvlXtJG8g-kt7XtFZ5ezRXTG_ed7qcqBXDHu7FCMg-TMLexCLo=w1280-h720",
+          "caption": "Lara Croft springt durch eine ägyptische Tempelanlage.",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/XOFWoRgblPJhg-8L7V-Y5uXxYX-l-NaRaQ5zxbPrJBKxbCkxACMb-VKYLPIBE3n0ElY2tsSkAUDnM7M1gJGUMQ=w1280-h720",
+          "caption": "Lara Croft vor einem Zahnradmechanismus in einer Ruine",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/H0obdHfFM_9vqBgru8UAVsPBPfQalgBRI6W4aTEGMbfA6XNMLLJmGvtFW_lkg-cQALwYwmRNg2HS-mQChO30Xg=w1280-h720",
+          "caption": "Lara Croft mit Pistolen vor einem Wolf in einer Ruine",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/DlZ6OFkOTDKkcTeRfRC-R0Hj5dDV1rz0r4yB6-GU5hmP_ltvoaJ982Co3t8FsRTofaKWBmC9JzYQCNnw5dy8tqo=w1280-h720",
+          "caption": "Lara Croft springt mit einem Quad über eine Schlucht.",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -296,7 +332,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.ytimg.com/vi/do-0CL7wYjc/maxresdefault.jpg",
+          "caption": "Lara Croft auf einer Hängebrücke mit Touch-Steuerung",
+          "source": "https://www.youtube.com/watch?v=do-0CL7wYjc",
+          "credit": "youtube.com",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -354,6 +398,13 @@
           "caption": "Tomb Raider auf Samsung-Smartphone mit MOGA-Controller",
           "source": "https://www.tomb-of-ash.com/play-the-original-tomb-raider-on-android-with/",
           "credit": "Tomb Raider I – Square Enix",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://media.pocketgamer.com/artwork/na-mdt/tomb-raider-iphone-04.jpg",
+          "caption": "Lara Croft mit gezogenen Pistolen in einer Höhle",
+          "source": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/",
+          "credit": "pocketgamer.com",
           "check": "ai-verified"
         }
       ],
@@ -537,7 +588,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.ytimg.com/vi/umYBFZZoe6g/maxresdefault.jpg",
+          "caption": "Lara Croft mit zwei Pistolen in einer steinernen Ruine",
+          "source": "https://www.youtube.com/watch?v=umYBFZZoe6g",
+          "credit": "youtube.com",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
