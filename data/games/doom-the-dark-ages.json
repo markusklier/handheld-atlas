@@ -15,7 +15,39 @@
       "platforms": [
         "PC"
       ],
-      "year": 2025
+      "year": 2025,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/755796bf-98c0-4633-bcb0-c9752a54078b",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-04-27",
+          "settings": {
+            "Emulator Version": "v3.4.1 (Bannerhub)",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "wine10.0-x64-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.2.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-proton-2.14.1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/48be9d8b-bc0d-42ba-8b0a-953790a8cf93"
+        }
+      ]
     },
     {
       "id": "playstation-5",

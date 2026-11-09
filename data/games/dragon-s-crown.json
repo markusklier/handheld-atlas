@@ -16,6 +16,36 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0dc7db55-850a-495e-8654-4746d397057f",
+          "device": "Retroid Pocket 6",
+          "emulator": "Vita3K",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-03-25",
+          "settings": {
+            "Emulator Version": "0.2.1 3936",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "1",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/5fdcd26c-f5e8-408b-aeb4-2b271f7f8526"
+        }
       ]
     }
   ],

@@ -74,5 +74,9 @@
       "source": "https://store.steampowered.com/app/379720/",
       "check": "ai-verified"
     }
-  ]
+  ],
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379720/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/379720/"
+  }
 }

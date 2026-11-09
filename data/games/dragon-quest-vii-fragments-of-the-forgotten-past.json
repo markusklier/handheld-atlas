@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8067f41f-6d05-4c93-982e-b1e0394a4c74",
+          "device": "AYN Thor Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "It feels like I'm playing a modern remaster of the game. I have put 10 hours so far. Plays perfect even default no need to have custom drivers (but helps for other games)",
+          "votes": 1,
+          "date": "2025-11-01",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "[KIMCHI Turnip]  v25.3.0 - Revision 11|||Turnip_v25.3.0_R11.zip",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/23c7b70b-ca5a-4e33-aa67-b31e2ac36c62"
+        }
       ]
     }
   ],

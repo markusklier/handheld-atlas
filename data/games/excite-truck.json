@@ -29,7 +29,38 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2006
+      "year": 2006,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/83d37710-a9c2-4e04-891b-1b72d34675f6",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Dolphin",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Game will get to the first screen then soft lock. Unable to figure out why despite several adjustments. This game is also known to emulate horribly for some reason, so that could play a part as well.",
+          "votes": 1,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "2506a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/548536af-fd39-4044-9103-6ab2dae0e3b4"
+        }
+      ]
     }
   ],
   "routes": [],

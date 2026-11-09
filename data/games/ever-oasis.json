@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3fe66827-da84-4b4e-ac7a-a835a0934293",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "use the USA version, do not use the europe version (it has a weird screen artifact filter always applied and cant use the 60fps cheat). also apply the 1.1 version update",
+          "votes": 0,
+          "date": "2025-11-09",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7e330b33-3e27-47a8-9029-bfe544a289e5"
+        }
       ]
     }
   ],

@@ -1,6 +1,86 @@
 {
   "leads": [
     {
+      "url": "https://github.com/DenzoNL/open-freestyle-bmx",
+      "title": "DenzoNL/open-freestyle-bmx",
+      "excerpt": "A native, open-source port of the 2000 PC BMX classic: fully rewritten in C, verified against the original, 64-bit, SDL3. Windows and Android, any resolution and frame rate. Requires your own copy of the game.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/albertmartorell1975/android-ai-workflow-foundation",
+      "title": "albertmartorell1975/android-ai-workflow-foundation",
+      "excerpt": "Foundational AI-assisted workflow for Android projects. Standardizes Clean Architecture, SOLID principles, and Human-in-the-loop governance.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ejhay26/Location-based-Emergency-Response-App-for-SINE-MDRRMO",
+      "title": "ejhay26/Location-based-Emergency-Response-App-for-SINE-MDRRMO",
+      "excerpt": "A capstone Project app",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Piyush-Fr/mypodpro",
+      "title": "Piyush-Fr/mypodpro",
+      "excerpt": "Lossless Streaming & Retro iPod Music Player with 3D Cover Flow, Neon DB & BetterAuth",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/viswakpullepu/OmniDucky",
+      "title": "viswakpullepu/OmniDucky",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/THETECHYSASQUATCH/new-obd2-tool",
+      "title": "THETECHYSASQUATCH/new-obd2-tool",
+      "excerpt": "Trying to a make free alternative for DIYers",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/borjarus/langua-linker",
+      "title": "borjarus/langua-linker",
+      "excerpt": "A language learning app based on memory techniques.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sxtufs/elfparser",
+      "title": "sxtufs/elfparser",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/fumetsunoyami/yami-android",
+      "title": "fumetsunoyami/yami-android",
+      "excerpt": "fork of https://github.com/ClassicOldSong/moonlight-android, more new tool and work better for exynos device",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/AbdurazaaqMohammed/MP-Manager",
+      "title": "AbdurazaaqMohammed/MP-Manager",
+      "excerpt": "Dual pane Android file manager with focus on APKs",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/HUEVOMAN77/RedU",
       "title": "HUEVOMAN77/RedU",
       "excerpt": "RedU: New Super Mario Bros. U recompilado de forma nativa para Android. Un fork de nsmbu-recomp (MPL-2.0) mejorado para teléfonos. Sin código, imágenes ni datos del juego de Nintendo.",
@@ -6319,86 +6399,6 @@
       "game": null,
       "source": "native-ports",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Nyaldee/Ports-Launcher",
-      "title": "Ports Launcher",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/N64Recomp/N64Recomp",
-      "title": "N64: Recompiled",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/N64Recomp/N64ModernRuntime",
-      "title": "N64ModernRuntime",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ModinMobileSTS/Sts2MobileLauncher",
-      "title": "Slay the Spire 2 (Mobile Launcher)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
-      "title": "Star Wars: Rogue Squadron",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/MatyMeatBoy/ReKHCoM",
-      "title": "Kingdom Hearts: Chain of Memories",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Matteo842/CrashBandicoot-Launcher",
-      "title": "Crash Bandicoot",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
-      "title": "Naruto Shippuden: Ultimate Ninja Storm Generations",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Masterllgod/naruto-storm-3-full-burst-port-nativo",
-      "title": "Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Masterllgod/naruto-rise-of-a-ninja-port-nativo",
-      "title": "Naruto: Rise of a Ninja",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T15:24:49Z",
-    "newLeads": 15,
+    "lastRun": "2026-11-09T15:29:50Z",
+    "newLeads": 10,
     "newEvents": 0
   },
   "aiResearch": {
