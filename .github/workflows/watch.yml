@@ -27,6 +27,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/watch.py
+      - name: Wikidata – years, platforms, versions, official Android releases (free, 150 games a day)
+        continue-on-error: true
+        run: python scripts/wikidata.py --enrich 150
       - name: libretro-thumbnails listings from cache
         uses: actions/cache@v4
         with:

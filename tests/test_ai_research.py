@@ -218,6 +218,65 @@ class AddImageTest(ScreenshotSearchTest):
         self.assertEqual(atlas.validate(), [])
 
 
+class KeepCurrentTest(ModesTest):
+    def test_leads_are_sorted_into_queue_and_rejected(self):
+        inbox = atlas.read(atlas.DATA / 'inbox.json')
+        inbox['leads'] = [{'url': 'https://github.com/x/crash-dual', 'title': 'CTR dual screen fork', 'excerpt': '', 'game': None},
+                          {'url': 'https://github.com/x/gtk-theme', 'title': 'gtk theme', 'excerpt': '', 'game': None},
+                          {'url': 'https://github.com/x/emu', 'title': 'new emulator', 'excerpt': '', 'game': None}]
+        atlas.write(atlas.DATA / 'inbox.json', inbox)
+        ai_research.call_openai = lambda payload, token: fake_response({'leads': [
+            {'n': 0, 'verdict': 'game-way', 'game': 'Crash Team Racing', 'what': 'Dual-Screen-Fork'},
+            {'n': 1, 'verdict': 'irrelevant', 'game': '', 'what': 'Desktop-Theme'},
+            {'n': 2, 'verdict': 'tool', 'game': '', 'what': 'Emulator'}]}, [])
+        n = ai_research.triage_leads(30, 'key', 'm', log=lambda *a: None)
+        inbox = atlas.read(atlas.DATA / 'inbox.json')
+        self.assertEqual(n, 3)
+        self.assertIn('https://github.com/x/gtk-theme', inbox['rejected'])
+        self.assertEqual([l['url'] for l in inbox['leads']], ['https://github.com/x/crash-dual', 'https://github.com/x/emu'])
+        job = next(j for j in ai_research.queue_load()['jobs'] if j['game'] == 'crash-team-racing')
+        self.assertEqual(job['hint'], 'https://github.com/x/crash-dual')
+        self.assertEqual(ai_research.triage_leads(30, 'key', 'm', log=lambda *a: None), 0)     # each find only once
+
+    def test_release_of_a_project_queues_an_update(self):
+        inbox = atlas.read(atlas.DATA / 'inbox.json')
+        g = atlas.read(atlas.DATA / 'games' / 'crash-team-racing.json')
+        pid = next(p for r in g['routes'] for p in r.get('projects', []))
+        inbox.setdefault('aiResearch', {})['crash-team-racing'] = '2026-01-01'
+        atlas.write(atlas.DATA / 'inbox.json', inbox)
+        cl = atlas.read(atlas.DATA / 'changelog.json')
+        cl['entries'].insert(0, {'date': '2026-10-01', 'type': 'release', 'text': 'v2 veröffentlicht.', 'project': pid, 'url': 'https://example.org'})
+        atlas.write(atlas.DATA / 'changelog.json', cl)
+        q = ai_research.queue_load()
+        q['jobs'] = [j for j in q['jobs'] if j['game'] != 'crash-team-racing']
+        atlas.write(atlas.DATA / 'queue.json', q)
+        ai_research.queue_rechecks(50, log=lambda *a: None)
+        job = next(j for j in ai_research.queue_load()['jobs'] if j['game'] == 'crash-team-racing')
+        self.assertEqual(job['kind'], 'update')
+
+    def test_corrections_respect_human_checks(self):
+        g = atlas.read(atlas.DATA / 'games' / 'crash-team-racing.json')
+        r1, r2 = g['routes'][0], g['routes'][1]
+        r2['verification'] = 'thor-tested'
+        src = 'https://github.com/example/notes'
+        result = {'versions': [], 'routes': [], 'mods': [], 'summary': '', 'series': '', 'corrections': [
+            {'routeId': r1['id'], 'status': 'archived', 'version': 'v3.0', 'note': 'Nachfolger ist X.', 'sourceUrl': src},
+            {'routeId': r2['id'], 'status': 'archived', 'version': '', 'note': '', 'sourceUrl': src}]}
+        g2, _, entries = ai_research.merge(g, atlas.read(atlas.DATA / 'projects.json'), result, [src], lambda *a: None)
+        a, b = g2['routes'][0], g2['routes'][1]
+        self.assertEqual((a['status'], a['version']), ('archived', 'v3.0'))
+        self.assertIn('Nachfolger ist X.', a['caveat'])
+        self.assertEqual(b.get('status'), r2.get('status'))                    # thor-tested stays untouched
+        self.assertEqual(len(entries), 1)
+
+    def test_usage_is_recorded_per_month(self):
+        ai_research.USAGE.update(calls=2, input=1000, output=200, searches=3)
+        ai_research.record_usage('bilder')
+        m = atlas.read(atlas.DATA / 'inbox.json')['usage'][ai_research.TODAY[:7]]
+        self.assertEqual((m['calls'], m['byKind']['bilder']['searches']), (2, 3))
+        self.assertEqual(ai_research.USAGE['calls'], 0)
+
+
 class QueueAndDualScanTest(ModesTest):
     def test_franchise_queues_unresearched_games_and_queue_pops(self):
         n = ai_research.queue_add(['doom-1993', 'doom-ii', 'doom-ii'], 'Reihe Doom')
@@ -286,19 +345,25 @@ class FranchiseAndImagesTest(ModesTest):
              'relation': 'version', 'atlasId': 'zz-raid-ii', 'versionType': 'port'},          # same title → named by platform
             {'title': 'Fake Raid', 'year': 2019, 'platforms': ['PC'], 'sourceUrl': 'https://made-up.example/x',
              'relation': 'new', 'atlasId': '', 'versionType': 'original'}]}, [src])
-        original = ai_research.call_openai
-        ai_research.call_openai = lambda payload, token: resp
+        import wikidata
+        triage = fake_response({'games': [{'id': 'zz-raid-2013', 'worth': 'high', 'why': 'Reboot, PC-Fassung'},
+                                          {'id': 'zz-raid', 'worth': 'low', 'why': 'nur Emulation'}]}, [])
+        original, wd = ai_research.call_openai, wikidata.complete_series
+        ai_research.call_openai = lambda payload, token: triage if payload['text']['format']['name'] == 'atlas_triage' else resp
+        wikidata.complete_series = lambda name, log=print: {'members': 0}          # no Wikidata series → AI listing
         try:
             ai_research.research_franchise('ZZ Raid', 'key', 'model', log=lambda *a: None)
         finally:
-            ai_research.call_openai = original
+            ai_research.call_openai, wikidata.complete_series = original, wd
         rep = atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['ZZ Raid']
         self.assertEqual(rep['added'], ['zz-raid-2013'])
         self.assertEqual([x['title'] for x in rep['skipped']], ['Fake Raid'])
         v = atlas.read(atlas.DATA / 'games' / 'zz-raid.json')['versions'][-1]
         self.assertEqual((v['name'], v['type'], v['year']), ('ZZ Raid Remastered (2024)', 'remaster', 2024))
         self.assertEqual(atlas.read(atlas.DATA / 'games' / 'zz-raid-ii.json')['versions'][-1]['name'], 'Xbox (2001)')
-        self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'zz-raid-2013')         # new games researched first
+        self.assertEqual(ai_research.queue_load()['jobs'][0]['game'], 'zz-raid-2013')         # worth it → queued first
+        self.assertNotIn('zz-raid', [j['game'] for j in ai_research.queue_load()['jobs']])  # low → base profile only
+        self.assertEqual((rep['source'], atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['ZZ Raid']['queued']), ('ki', 1))
         self.assertEqual(atlas.validate(), [])
 
     def test_image_request_finds_original_pictures_on_pages(self):

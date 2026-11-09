@@ -92,6 +92,12 @@ jobs:
           RESEARCH_REPORT: ${{ runner.temp }}/report.md
           GITHUB_TOKEN: ${{ github.token }}   # README/release images (media.py)
           OPENAI_IMAGES_MODEL: ${{ vars.OPENAI_IMAGES_MODEL }}   # optional: cheaper model for the image page search
+          OPENAI_TRIAGE_MODEL: ${{ vars.OPENAI_TRIAGE_MODEL }}   # optional: cheaper model for sorting finds and series
+          MAX_QUEUE_PER_DAY: ${{ vars.MAX_QUEUE_PER_DAY }}       # deep researches from the queue per day (default 12)
+          OPENAI_MONTHLY_BUDGET: ${{ vars.OPENAI_MONTHLY_BUDGET }} # optional, needs the price variables below
+          OPENAI_PRICE_IN: ${{ vars.OPENAI_PRICE_IN }}           # price per 1M input tokens
+          OPENAI_PRICE_OUT: ${{ vars.OPENAI_PRICE_OUT }}         # price per 1M output tokens
+          OPENAI_PRICE_SEARCH: ${{ vars.OPENAI_PRICE_SEARCH }}   # price per 1000 web searches
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}       # optional: Reddit blocks GitHub servers without a token
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
         run: |
@@ -105,7 +111,7 @@ jobs:
           elif [ "$MODE" = "dualscreen" ] || [ "${{ github.event.schedule }}" = "17 19 * * 0" ]; then
             python scripts/ai_research.py --dual-scan
           elif [ "$MODE" = "warteschlange" ] || [ "${{ github.event.schedule }}" = "22 */2 * * *" ]; then
-            python scripts/ai_research.py --queue "${COUNT:-3}"
+            python scripts/ai_research.py --queue "${COUNT:-3}" --rechecks 1 --leads 30
           elif [ "${{ github.event_name }}" = "schedule" ]; then
             python scripts/ai_research.py --batch 3 --screenshots 10
           elif [ "${{ github.event_name }}" = "issues" ]; then
@@ -126,6 +132,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           OPENAI_VISION_MODEL: ${{ vars.OPENAI_VISION_MODEL }}   # optional: cheaper model for the image check
+          OPENAI_PRICE_IN: ${{ vars.OPENAI_PRICE_IN }}
+          OPENAI_PRICE_OUT: ${{ vars.OPENAI_PRICE_OUT }}
+          OPENAI_PRICE_SEARCH: ${{ vars.OPENAI_PRICE_SEARCH }}
         run: python scripts/ai_vision.py --limit 40
       - run: python scripts/franchises.py --fix && python scripts/atlas.py repair && python scripts/atlas.py format && python scripts/atlas.py validate
       - id: commit

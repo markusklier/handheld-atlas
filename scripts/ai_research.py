@@ -17,7 +17,7 @@ import re
 import sys
 import unicodedata
 import urllib.request
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -70,6 +70,8 @@ def schema(meta):
                            'reports': arr(obj({'url': s(), 'device': s(), 'summary': s()}))})),
         'mods': arr(obj({'name': s(), 'url': s(), 'category': mod_cats, 'versionKeys': arr(s()), 'edition': s(),
                          'description': s(), 'sourceUrl': s()})),
+        'corrections': arr(obj({'routeId': s(), 'status': {'type': 'string', 'enum': ['unchanged', 'active', 'experimental', 'archived']},
+                                'version': s(), 'note': s(), 'sourceUrl': s()})),
     })}
 
 
@@ -97,7 +99,10 @@ RULES = """Finde mit der Websuche:
    Projektseite, Beitrag des Autors) – bei Dual-Screen-Wegen bevorzugt Bilder mit beiden Bildschirmen.
 3. mods: bekannte Mods für Android-taugliche Fassungen, auch Grafik/Texturen, Shader/ReShade, Widescreen-/FPS-Patches,
    Fehlerbehebungen, Übersetzungen. category passend wählen; versionKeys = Fassungen, mit denen der Mod funktioniert.
-4. series: die Spielereihe, unter der das Spiel erscheint (z. B. "Luigi's Mansion", nicht "Super Mario"); "" wenn Einzeltitel.
+4. corrections: nur für bekannte Wege (routeId aus „Bereits bekannt“), wenn eine Quelle zeigt, dass sich etwas geändert
+   hat: Projekt eingestellt/archiviert oder ersetzt (status archived, note nennt den Nachfolger), neue Version (version,
+   z. B. "v2.3 (2026-10)"), wichtige neue Einschränkung oder behobenes Problem (note, 1 Satz). Sonst [].
+5. series: die Spielereihe, unter der das Spiel erscheint (z. B. "Luigi's Mansion", nicht "Super Mario"); "" wenn Einzeltitel.
 
 summary: 1–2 Sätze für Spieler (welche Fassung/welcher Weg ist auf dem Handheld interessant), kein Rechercheprotokoll.
 
@@ -106,10 +111,12 @@ Keine Links zu ROMs, ISOs, Spieldaten, APK-Spiegeln oder Piraterie. Alle Texte a
 year = 0, wenn unbekannt. Leere Felder als "" bzw. []."""
 
 
-def prompt(game, platforms, focus=None):
+def prompt(game, platforms, focus=None, since=None):
     known = {
         'versions': [{'key': v['id'], 'name': v['name'], 'platforms': v['platforms'], 'year': v.get('year')} for v in game.get('versions', [])],
-        'routes': [{'name': r['name'], 'version': r.get('release'), 'kind': r['kind']} for r in game.get('routes', [])],
+        'routes': [{'routeId': r['id'], 'name': r['name'], 'version': r.get('release'), 'kind': r['kind'],
+                    'status': r.get('status'), 'projectVersion': r.get('version'),
+                    'links': [l['url'] for l in r.get('links', [])][:2]} for r in game.get('routes', [])],
         'mods': [m['name'] for m in game.get('mods', [])],
     }
     focus_text = ''
@@ -118,6 +125,10 @@ def prompt(game, platforms, focus=None):
         if v:
             focus_text = (f"\nSCHWERPUNKT: Fassung „{v['name']}“ (key {v['id']}, {', '.join(v['platforms'])}). Suche vor allem Wege, "
                           f"Erfahrungsberichte, Einstellungen und Mods für genau diese Fassung auf dem AYN Thor.\n")
+    if since:
+        focus_text += (f"\nÄNDERUNGSRECHERCHE: Die letzte Tiefenrecherche war am {since}. Suche nur, was SEITDEM neu ist oder sich "
+                       "geändert hat: neue Releases/Versionen der bekannten Projekte, eingestellte oder ersetzte Projekte "
+                       "(corrections), neue Wege, Mods, Fassungen und neue Erfahrungsberichte. Bekanntes nicht wiederholen.\n")
     return f"""Du recherchierst für „Handheld Atlas“, einen spielzentrierten Katalog für Android-Handhelds
 (Referenzgerät AYN Thor: Snapdragon 8 Gen 2, zwei Displays, Controller). Spiel: „{game['title']}“ ({', '.join(game.get('platforms', [])) or 'Plattformen unbekannt'}).
 {focus_text}
@@ -129,6 +140,50 @@ außer es gibt spielspezifische Belege (Kompatibilität, Patches, empfohlene Ein
 
 
 USAGE = {'calls': 0, 'input': 0, 'output': 0, 'searches': 0}   # printed at the end of every run (cost overview)
+
+
+def month_usage():
+    return read(DATA / 'inbox.json').get('usage', {}).get(TODAY[:7], {})
+
+
+def estimate(u):
+    """Cost estimate in the currency of the price variables (per 1M tokens / per 1000 searches); None without prices."""
+    try:
+        pin, pout = float(os.environ['OPENAI_PRICE_IN']), float(os.environ['OPENAI_PRICE_OUT'])
+    except (KeyError, ValueError):
+        return None
+    psearch = float(os.environ.get('OPENAI_PRICE_SEARCH') or 0)
+    return round(u.get('input', 0) / 1e6 * pin + u.get('output', 0) / 1e6 * pout + u.get('searches', 0) / 1000 * psearch, 2)
+
+
+def over_budget():
+    """True when the month's estimated cost reached OPENAI_MONTHLY_BUDGET – automatic jobs pause, requests still run."""
+    try:
+        budget = float(os.environ['OPENAI_MONTHLY_BUDGET'])
+    except (KeyError, ValueError):
+        return False
+    cost = estimate(month_usage())
+    return cost is not None and cost >= budget
+
+
+def record_usage(kind='recherche'):
+    """Add this run's OpenAI usage to inbox.usage[YYYY-MM] (shown in the app under Info)."""
+    if not USAGE['calls']:
+        return
+    inbox = read(DATA / 'inbox.json')
+    m = inbox.setdefault('usage', {}).setdefault(TODAY[:7], {'runs': 0, 'calls': 0, 'input': 0, 'output': 0, 'searches': 0, 'byKind': {}})
+    m['runs'] += 1
+    for k in ('calls', 'input', 'output', 'searches'):
+        m[k] = m.get(k, 0) + USAGE[k]
+    bk = m.setdefault('byKind', {}).setdefault(kind, {'calls': 0, 'input': 0, 'output': 0, 'searches': 0})
+    for k in ('calls', 'input', 'output', 'searches'):
+        bk[k] += USAGE[k]
+    cost = estimate(m)
+    if cost is not None:
+        m['estimate'] = cost
+    write(DATA / 'inbox.json', inbox)
+    for k in USAGE:
+        USAGE[k] = 0
 
 
 def call_openai(payload, token):
@@ -353,6 +408,28 @@ def merge(game, projects, result, sources, log):
         have_mods.add(norm_url(nm['url']))
         entries.append({'type': 'mod-added', 'text': f"Neuer Mod: {nm['name']} (KI-Recherche)", 'url': nm['url']})
 
+    for c in result.get('corrections', []):
+        r = next((x for x in g.get('routes', []) if x['id'] == c.get('routeId')), None)
+        if r is None or not ok_url(c.get('sourceUrl'), sources):
+            continue
+        if r.get('verification') in ('thor-tested', 'community') or r.get('testedOn'):
+            log(f"  Korrektur übersprungen (von Markus/Community geprüft): {r['name']}")
+            continue
+        changed = []
+        if c.get('status') in ('active', 'experimental', 'archived') and c['status'] != r.get('status'):
+            r['status'] = c['status']
+            changed.append({'archived': 'eingestellt/archiviert', 'active': 'wieder aktiv', 'experimental': 'experimentell'}[c['status']])
+        if c.get('version') and c['version'] != r.get('version'):
+            r['version'] = clean(c['version'], 60)
+            changed.append(f"Version {r['version']}")
+        note = clean(c.get('note'), 240)
+        if note and note not in (r.get('caveat') or ''):
+            r['caveat'] = ((r.get('caveat') or '') + f" Stand {TODAY[:7]}: {note}").strip()
+            changed.append('Hinweis')
+        if changed:
+            r['checkedAt'] = TODAY
+            entries.append({'type': 'route-updated', 'text': f"Aktualisiert: {r['name']} – {', '.join(changed)} (KI-Recherche)",
+                            'url': c['sourceUrl']})
     series = (result.get('series') or '').strip()
     if series and (g.get('franchise') in (None, '', g['title'])) and len(series) < 80:
         g['franchise'] = series
@@ -378,14 +455,17 @@ def pick_games(n):
     return [g['id'] for g in sorted(games, key=key)[:n]]
 
 
-def research(game_id, token, model, log=print, focus=None):
+def research(game_id, token, model, log=print, focus=None, update=False, hint=None):
+    """Deep research of one game. update=True: only what changed since the last deep research (smaller, cheaper)."""
     path = DATA / 'games' / f'{game_id}.json'
     game, projects, meta = read(path), read(DATA / 'projects.json'), read(DATA / 'meta.json')
     platforms = read(DATA / 'platforms.json')['platforms']
-    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'high'}],
+    since = read(DATA / 'inbox.json').get('aiResearch', {}).get(game_id) if update else None
+    resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium' if since else 'high'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required',
                         'reasoning': {'effort': 'medium'}, 'text': {'format': schema(meta)},
-                        'input': prompt(game, platforms, focus), 'max_output_tokens': 16000}, token)
+                        'input': prompt(game, platforms, focus, since) + (f"\n\nNEUER FUND (prüfen und, wenn echt, als Weg/Mod aufnehmen): {hint}" if hint else ''),
+                        'max_output_tokens': 16000}, token)
     result = output_json(resp)
     g, prj, entries = merge(game, projects, result, searched_urls(resp), log)
     return apply(game_id, g, prj, entries, log)
@@ -464,9 +544,81 @@ def source_ok(url, sources):
     return bool(ok_url(url) and sources and host(url) in {host(x) for x in sources})
 
 
+TRIAGE_FORMAT = {'type': 'json_schema', 'name': 'atlas_triage', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['games'], 'properties': {'games': {
+        'type': 'array', 'items': {'type': 'object', 'additionalProperties': False, 'required': ['id', 'worth', 'why'],
+                                   'properties': {'id': {'type': 'string'}, 'worth': {'type': 'string', 'enum': ['high', 'medium', 'low']},
+                                                  'why': {'type': 'string'}}}}}}}
+
+
+def triage(games, token, model, log=print):
+    """One cheap call for a whole list: which games have more on Android than "a generic emulator exists"?
+    Only those get the (expensive) deep research; the rest keep their free base profile until someone asks."""
+    lines = '\n'.join(f"- {g['id']} | {g['title']} | {game_year(g) or '?'} | {', '.join(g.get('platforms', [])[:5])}" for g in games)
+    resp = call_openai({'model': os.environ.get('OPENAI_TRIAGE_MODEL') or model,
+                        'tools': [{'type': 'web_search', 'search_context_size': 'low'}], 'reasoning': {'effort': 'low'},
+                        'text': {'format': TRIAGE_FORMAT}, 'max_output_tokens': 6000,
+                        'input': f"""Für einen Spielekatalog für Android-Handhelds (AYN Thor, zwei Bildschirme): Bewerte je Spiel, ob sich
+eine Tiefenrecherche lohnt. high = es gibt (wahrscheinlich) eine offizielle Android-Fassung, einen nativen Port, Decomp/Recomp,
+Source-Port, eine Dual-Screen-Mod oder es ist ein bekanntes PC-Spiel für GameNative/Winlator; außerdem sehr bekannte Spiele.
+medium = gut emulierbar und beliebt, Mods/Texturpakete wahrscheinlich. low = obskur, nur allgemeine Emulation, Mobile-Spiel,
+das nicht mehr erhältlich ist. why: 3–8 Wörter.
+{lines}"""}, token)
+    out = {x['id']: x for x in output_json(resp).get('games', []) if x.get('id')}
+    log(f"  Auswahl: {sum(1 for x in out.values() if x['worth'] == 'high')} hoch, "
+        f"{sum(1 for x in out.values() if x['worth'] == 'medium')} mittel, {sum(1 for x in out.values() if x['worth'] == 'low')} niedrig")
+    return out
+
+
 def research_franchise(name, token, model, log=print):
-    """List the games of a series; create missing games, add re-releases/remasters/compilations as versions of the
-    game they belong to, then queue every game of the series for deep research."""
+    """Complete a series: Wikidata first (free); the AI only lists games when Wikidata has no series. Then one cheap
+    triage call picks the games worth a deep research – only those go into the queue, the rest keep the free base profile."""
+    try:
+        import wikidata
+        wd = wikidata.complete_series(name, log=log)
+    except Exception as e:  # noqa: BLE001
+        log(f'  ! Wikidata: {type(e).__name__}: {str(e)[:150]}')
+        wd = {'members': 0}
+    if wd.get('members', 0) >= 2:
+        report = {'date': TODAY, 'source': 'wikidata', 'listed': wd['members'], 'added': wd['added'],
+                  'versions': wd['versions'], 'skipped': wd['skipped']}
+        entries = [{'date': TODAY, 'type': 'game-added', 'by': 'ai-research', 'game': gid,
+                    'text': f"Neues Spiel aus der Reihe {name} (Wikidata)", 'url': f"https://www.wikidata.org/wiki/{wd['series']}"}
+                   for gid in wd['added']]
+        if entries:
+            cl = read(DATA / 'changelog.json')
+            cl['entries'][0:0] = entries
+            write(DATA / 'changelog.json', cl)
+    else:
+        entries = _franchise_ai_listing(name, token, model, log)
+        report = read(DATA / 'inbox.json').get('franchiseScan', {}).get(name, {'date': TODAY, 'listed': 0, 'added': [],
+                                                                               'versions': [], 'skipped': []})
+        report['source'] = 'ki'
+    # deep research only where it pays off
+    done = read(DATA / 'inbox.json').get('aiResearch', {})
+    todo = [g for g in franchise_games(name) if g['id'] not in done]
+    picked = []
+    if todo and token:
+        try:
+            verdict = triage(todo, token, model, log)
+            rank = {'high': 0, 'medium': 1}
+            picked = sorted((g['id'] for g in todo if verdict.get(g['id'], {}).get('worth') in rank),
+                            key=lambda gid: (rank[verdict[gid]['worth']], gid not in report.get('added', [])))
+        except Exception as e:  # noqa: BLE001
+            log(f'  ! Auswahl: {type(e).__name__}: {str(e)[:150]} – alle Spiele werden vorgemerkt')
+            picked = [g['id'] for g in todo]
+    report['queued'] = queue_add(picked, f'Reihe {name}', front=True)
+    report['basic'] = len(todo) - len(picked)
+    inbox = read(DATA / 'inbox.json')
+    inbox.setdefault('franchiseScan', {})[name] = report
+    write(DATA / 'inbox.json', inbox)
+    log(f"  {report['queued']} Spiele zur Tiefenrecherche vorgemerkt, {report['basic']} bleiben beim Basisprofil")
+    return entries
+
+
+def _franchise_ai_listing(name, token, model, log=print):
+    """Fallback without a Wikidata series: the AI lists the games; missing games are created,
+    re-releases/remasters/compilations become versions of the game they belong to."""
     known_platforms = sorted(read(DATA / 'platforms.json')['platforms'])
     nk = title_key(name)
     known = [g for g in (read(f) for f in (DATA / 'games').glob('*.json'))
@@ -548,10 +700,6 @@ Plattformnamen wenn möglich aus dieser Liste: {', '.join(known_platforms)}, son
     write(DATA / 'inbox.json', inbox)
     log(f"  Reihe {name}: {report['listed']} Titel gelistet, {len(report['added'])} neu, {len(report['versions'])} Fassungen, "
         f"{len(report['skipped'])} übersprungen")
-    # deep research for every game of the series that has not been researched yet (new ones first)
-    order = report['added'] + [g['id'] for g in franchise_games(name) if g['id'] not in report['added']]
-    queued = queue_add(order, f'Reihe {name}', front=True)
-    log(f'  {queued} Spiele der Reihe in die Warteschlange gestellt')
     return entries
 
 
@@ -567,15 +715,16 @@ def queue_load():
     return read(path) if path.exists() else {'jobs': []}
 
 
-def queue_add(game_ids, reason, front=False):
+def queue_add(game_ids, reason, front=False, kind='research'):
+    """kind 'research' = first deep research (skipped if done already); 'update' = changes since the last one."""
     q = queue_load()
     done = read(DATA / 'inbox.json').get('aiResearch', {})
     known = {j['game'] for j in q['jobs']}
     new = []
     for gid in game_ids:
-        if gid not in known and gid not in done:
+        if gid not in known and (kind == 'update') == (gid in done):
             known.add(gid)
-            new.append({'game': gid, 'reason': reason, 'added': TODAY})
+            new.append({'game': gid, 'reason': reason, 'added': TODAY, **({'kind': 'update'} if kind == 'update' else {})})
     q['jobs'] = (new + q['jobs']) if front else (q['jobs'] + new)
     write(DATA / 'queue.json', q)
     return len(new)
@@ -586,6 +735,97 @@ def queue_pop(n):
     jobs, q['jobs'] = q['jobs'][:n], q['jobs'][n:]
     write(DATA / 'queue.json', q)
     return jobs
+
+
+def events_since(game, since, changelog, projects):
+    """Release events of the game's projects and other changes after `since` (shown in the app as "seitdem neu")."""
+    pids = {pid for r in game.get('routes', []) for pid in r.get('projects', [])}
+    return [e for e in changelog if e.get('date', '') > since and
+            ((e.get('type') == 'release' and e.get('project') in pids) or (e.get('game') == game['id'] and e.get('by') in (None, 'agent')))]
+
+
+def queue_rechecks(limit=3, min_age=21, log=print):
+    """Researched games whose projects published something since: queue a cheap update research (event-driven).
+    Without events a game is re-checked only after 180 days."""
+    done = read(DATA / 'inbox.json').get('aiResearch', {})
+    cl = read(DATA / 'changelog.json')['entries']
+    projects = read(DATA / 'projects.json')['projects']
+    today = date.fromisoformat(TODAY)
+    picks = []
+    for gid, d in done.items():
+        path = DATA / 'games' / f'{gid}.json'
+        if not path.exists():
+            continue
+        age = (today - date.fromisoformat(d)).days
+        ev = events_since(read(path), d, cl, projects)
+        if (ev and age >= min_age) or age >= 180:
+            picks.append((-len(ev), d, gid, ev))
+    picks.sort()
+    added = 0
+    for _, d, gid, ev in picks[:limit]:
+        added += queue_add([gid], f"{len(ev)} Neuigkeit(en) seit {d}" if ev else f'Nachprüfung (Stand {d})', kind='update')
+    if added:
+        log(f'Nachprüfung: {added} Spiel(e) für eine Änderungsrecherche vorgemerkt')
+    return added
+
+
+LEADS_FORMAT = {'type': 'json_schema', 'name': 'atlas_leads', 'strict': True, 'schema': {
+    'type': 'object', 'additionalProperties': False, 'required': ['leads'], 'properties': {'leads': {
+        'type': 'array', 'items': {'type': 'object', 'additionalProperties': False,
+                                   'required': ['n', 'verdict', 'game', 'what'],
+                                   'properties': {'n': {'type': 'integer'},
+                                                  'verdict': {'type': 'string', 'enum': ['game-way', 'tool', 'directory', 'irrelevant']},
+                                                  'game': {'type': 'string'}, 'what': {'type': 'string'}}}}}}}
+
+
+def triage_leads(n=30, token=None, model=None, log=print):
+    """Pre-sort the watcher's raw finds with one cheap call (no web search): ways for a specific game go to that
+    game's (update) research with the find as hint, junk goes to `rejected`, tools/directories stay for the agent."""
+    inbox = read(DATA / 'inbox.json')
+    todo = [l for l in inbox.get('leads', []) if not l.get('triage')][:n]
+    if not todo or not token:
+        return 0
+    lines = '\n'.join(f"{i}. {l['url']} | {l.get('title', '')[:120]} | {l.get('excerpt', '')[:160]}" for i, l in enumerate(todo))
+    resp = call_openai({'model': os.environ.get('OPENAI_TRIAGE_MODEL') or model, 'reasoning': {'effort': 'low'},
+                        'text': {'format': LEADS_FORMAT}, 'max_output_tokens': 6000,
+                        'input': f"""Sortiere Funde für einen Spielekatalog für Android-Handhelds (AYN Thor, Dual Screen).
+game-way = Port, Decomp/Recomp, Source-Port, Dual-Screen-Mod, Companion, Mod oder Patch für EIN bestimmtes Spiel
+(game = englischer Originaltitel). tool = Emulator, Launcher, Werkzeug, Treiber, Frontend (game = ""). directory = Liste
+oder Katalog von Ports/Spielen. irrelevant = kein Bezug zu Spielen auf Android-/Linux-Handhelds, Desktop-only, leer,
+Piraterie-Verdacht. what: 3–8 Wörter auf Deutsch. Jede Zeile genau einmal, n = Zeilennummer.
+{lines}"""}, token)
+    verdicts = {x['n']: x for x in output_json(resp).get('leads', []) if isinstance(x.get('n'), int)}
+    stats = {'game-way': 0, 'tool': 0, 'directory': 0, 'irrelevant': 0}
+    rejected = inbox.setdefault('rejected', [])
+    keep = []
+    for i, lead in enumerate(todo):
+        v = verdicts.get(i)
+        if not v:
+            continue
+        stats[v['verdict']] += 1
+        lead['triage'] = {'verdict': v['verdict'], 'what': clean(v.get('what'), 80), 'date': TODAY}
+        if v['verdict'] == 'irrelevant':
+            rejected.append(lead['url'])
+            continue
+        if v['verdict'] == 'game-way' and v.get('game'):
+            gid = find_game(v['game'])
+            if gid:
+                lead['game'] = gid
+                keep.append((gid, lead))
+    inbox['leads'] = [l for l in inbox['leads'] if l['url'] not in set(rejected)]
+    write(DATA / 'inbox.json', inbox)
+    # finds for games we know: research with the find as hint (update if researched already)
+    done = read(DATA / 'inbox.json').get('aiResearch', {})
+    q = queue_load()
+    for gid, lead in keep:
+        if any(j['game'] == gid for j in q['jobs']):
+            continue
+        q['jobs'].append({'game': gid, 'reason': f"Neuer Fund: {lead['triage']['what']}", 'added': TODAY,
+                          'hint': lead['url'], **({'kind': 'update'} if gid in done else {})})
+    write(DATA / 'queue.json', q)
+    log(f"Funde vorsortiert: {stats['game-way']} zu Spielen ({len(keep)} bekannte Spiele vorgemerkt), {stats['tool']} Werkzeuge, "
+        f"{stats['directory']} Verzeichnisse, {stats['irrelevant']} verworfen")
+    return sum(stats.values())
 
 
 def franchise_games(name):
@@ -908,7 +1148,9 @@ def game_candidates(g, token, model, log=print):
         return []
     pages = []
     src = (g.get('cover') or {}).get('source', '')
-    if '.wikipedia.org/wiki/' in src:
+    if g.get('wikipedia'):
+        pages.append(g['wikipedia'])
+    elif '.wikipedia.org/wiki/' in src:
         pages.append(src)
     else:                                     # find the article even if the cover came from elsewhere
         try:
@@ -1101,6 +1343,8 @@ def main():
     ap.add_argument('--queue', type=int, default=0, help='N Spiele aus der Warteschlange recherchieren')
     ap.add_argument('--dual-scan', action='store_true', help='Dual-Screen-Suchlauf über alle Quellen')
     ap.add_argument('--images', help='Bilder für diese Spiele suchen (ids, durch Komma getrennt)')
+    ap.add_argument('--leads', type=int, default=0, help='so viele Watcher-Funde vorsortieren')
+    ap.add_argument('--rechecks', type=int, default=0, help='so viele Spiele mit Neuigkeiten zur Änderungsrecherche vormerken')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
     app_payload = '```json' in (args.issue_body or '')
@@ -1122,7 +1366,7 @@ def main():
         images = [x.strip() for x in args.images.split(',') if x.strip()]
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
-        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url')
+        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url', 'update')
         m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
@@ -1132,6 +1376,8 @@ def main():
             images = [x.strip() for x in val['images'].split(',') if x.strip()]
         elif 'images-franchise' in val:
             images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
+        elif 'update' in val:
+            jobs = [('update', val['update'], None)]
         elif 'game' in val and payload:
             jobs = [('app', val['game'], json.loads(payload.group(1)))]
         elif 'new-game' in val and payload:
@@ -1149,7 +1395,7 @@ def main():
             title = re.sub(r'^recherche:\s*', '', args.issue_title, flags=re.I).strip()
             gid = find_game(title) if title else None
             jobs = [('game', gid, None)] if gid else ([('new', title, None)] if title else [])
-    elif args.batch:
+    elif args.batch and not over_budget():
         jobs = [('game', gid, None) for gid in pick_games(args.batch)]
     lines = []
     if args.dual_scan:
@@ -1193,7 +1439,9 @@ def main():
                 lines.append(f"- Reihe **{value}**: {rep.get('listed', 0)} Titel gefunden, {len(rep.get('added', []))} neue Spiele"
                              + (f" ({', '.join(rep['added'])})" if rep.get('added') else '')
                              + f", {len(rep.get('versions', []))} Fassungen ergänzt"
-                             + (f"; übersprungen: {', '.join(x['title'] + ' (' + x['reason'] + ')' for x in rep['skipped'])}" if rep.get('skipped') else ''))
+                             + f" (Quelle: {'Wikidata' if rep.get('source') == 'wikidata' else 'KI-Websuche'})"
+                             + f"; {rep.get('queued', 0)} zur Tiefenrecherche vorgemerkt, {rep.get('basic', 0)} behalten das Basisprofil"
+                             + (f"; übersprungen: {', '.join(x['title'] + ' (' + x['reason'] + ')' for x in rep['skipped'][:15])}" if rep.get('skipped') else ''))
                 researched.update(rep.get('added', []))
                 continue
             if kind in ('new', 'newapp'):
@@ -1207,8 +1455,8 @@ def main():
                 print(f'Übernahme der Sofortanalyse: {value}')
                 entries = from_app_result(value, extra)
             else:
-                print(f'Recherche: {value} ({model})' + (f', Fassung {extra}' if extra else ''))
-                entries = research(value, token, model, focus=extra)
+                print(f"{'Änderungsrecherche' if kind == 'update' else 'Recherche'}: {value} ({model})" + (f', Fassung {extra}' if extra else ''))
+                entries = research(value, token, model, focus=extra, update=kind == 'update' and value in read(DATA / 'inbox.json').get('aiResearch', {}))
             if kind in ('new', 'newapp') and not entries:
                 g = read(DATA / 'games' / f'{value}.json')
                 if not g.get('versions') and not g.get('routes'):
@@ -1220,10 +1468,27 @@ def main():
             continue
         researched.add(value)
         lines.append(f'- **{value}**: ' + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
+    if args.queue and args.rechecks:
+        queue_rechecks(args.rechecks)
+    if args.leads and not over_budget():
+        try:
+            triage_leads(args.leads, token, model)
+        except Exception as e:  # noqa: BLE001
+            lines.append(f'- Funde vorsortieren: Fehler – {type(e).__name__}: {str(e)[:150]}')
+    if args.queue:
+        inbox = read(DATA / 'inbox.json')
+        today_n = inbox.get('queueDay', {}).get(TODAY, 0)
+        cap = int(os.environ.get('MAX_QUEUE_PER_DAY') or 12)
+        allowed = 0 if over_budget() else max(0, min(args.queue, cap - today_n))
+        if allowed < args.queue:
+            lines.append(f'- Warteschlange: heute schon {today_n} von {cap} Spielen' + (' – Monatsbudget erreicht' if over_budget() else ''))
+        args.queue = allowed
+        inbox['queueDay'] = {TODAY: today_n + allowed}
+        write(DATA / 'inbox.json', inbox)
     for job in (queue_pop(args.queue) if args.queue else []):
         try:
             print(f"Warteschlange: {job['game']} ({job['reason']})")
-            entries = research(job['game'], token, model)
+            entries = research(job['game'], token, model, update=job.get('kind') == 'update', hint=job.get('hint'))
             researched.add(job['game'])
             lines.append(f"- **{job['game']}** ({job['reason']}): " + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
         except Exception as e:  # noqa: BLE001
@@ -1239,6 +1504,9 @@ def main():
         de = lambda n: f'{n:,}'.replace(',', '.')
         lines.append(f"- OpenAI-Verbrauch dieses Laufs: {USAGE['calls']} Anfragen, {USAGE['searches']} Websuchen, "
                      f"{de(USAGE['input'])} Eingabe- und {de(USAGE['output'])} Ausgabe-Tokens")
+    kind = ('bilder' if images or added_image or args.screenshots else 'reihe' if any(j[0] == 'franchise' for j in jobs)
+            else 'dualscreen' if args.dual_scan else 'warteschlange' if args.queue and not jobs else 'recherche')
+    record_usage(kind)
     report = '\n'.join(lines) or 'Kein Spiel ausgewählt.'
     print(report)
     if os.environ.get('GITHUB_STEP_SUMMARY'):

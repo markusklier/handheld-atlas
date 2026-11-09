@@ -426,3 +426,7 @@ details.generic-group[open] > summary { margin-bottom: 6px; }
 #req-pill svg { width: 15px; height: 15px; color: var(--ai); flex: none; animation: spin 2.4s linear infinite; }
 #req-pill span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .link.small { font-size: 12.5px; display: inline-flex; gap: 4px; align-items: center; } .link.small svg { width: 13px; height: 13px; }
+.tag.research-fresh svg { color: var(--accent); }
+.tag.research-aging svg { color: var(--ai); }
+.tag.research-news, .tag.research-old { border-color: color-mix(in srgb, var(--warn) 55%, transparent); }
+.tag.research-news svg, .tag.research-old svg { color: var(--warn); }

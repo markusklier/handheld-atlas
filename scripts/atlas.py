@@ -258,6 +258,8 @@ def bundle(db):
         'dualScan': db['inbox'].get('dualScan', {}),
         'franchiseScan': db['inbox'].get('franchiseScan', {}),
         'imageRequests': db['inbox'].get('imageRequests', {}),
+        'usage': db['inbox'].get('usage', {}),
+        'queueDay': db['inbox'].get('queueDay', {}),
         'agent': db['inbox'].get('agent', {}),
     }
 

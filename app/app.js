@@ -68,6 +68,7 @@ function index(data) {
   DB.dualScan = data.dualScan || {};
   DB.franchiseScan = data.franchiseScan || {};
   DB.imageRequests = data.imageRequests || {};
+  DB.usage = data.usage || {};
   DB.games = data.games.map((g) => {
     g.routes = g.routes || [];
     g.mods = g.mods || [];
@@ -364,6 +365,9 @@ function viewDiscover() {
     html += shelf('Native Ports, Decomps &amp; Recomps', curated.filter(F('native')).sort(byScore), '#/filter/native');
     html += shelf('Offiziell für Android erschienen', DB.games.filter(F('android')).sort(byScore), '#/filter/android');
     html += shelf('Mit Mods', DB.games.filter(F('mods')).sort(byScore), '#/filter/mods');
+    const cutoff = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+    const newWays = [...new Set(DB.changelog.filter((e) => e.type === 'route-added' && e.date >= cutoff).map((e) => e.game))].map((id) => DB.byId.get(id)).filter(Boolean);
+    html += shelf('Neu spielbar (letzte 30 Tage)', newWays, '#/neu');
     if (recentGames.length) html += shelf('Zuletzt aktualisiert', recentGames, '#/neu');
     if (DB.games.some((g) => g._ai)) html += shelf('Neue KI-Funde', DB.games.filter((g) => g._ai), '#/filter/ai');
   }
@@ -639,14 +643,17 @@ function viewGame(id) {
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
       <div class="row"><button class="btn ${fav ? 'on' : ''}" id="fav">${icon('bookmark')}${fav ? 'Gemerkt' : 'Merken'}</button>
       <button class="btn" data-analyze="${esc(g.id)}" title="Sofort auf diesem Gerät mit deinem OpenAI-Schlüssel">${icon('ai')}Sofortanalyse</button>
-      </div><div class="row">${g.routes.length ? `<span class="faint">Stand ${fmtDate(g.updatedAt)}</span>` : ''}</div>
+      </div><div class="row">${researchStatus(g)}${g.updatedAt ? `<span class="faint">zuletzt geändert ${fmtDate(g.updatedAt)}</span>` : ''}
+        ${g.wikipedia ? `<a class="link small" href="${esc(g.wikipedia)}" target="_blank" rel="noopener">Wikipedia ${icon('ext')}</a>` : ''}
+        ${g.wikidata ? `<a class="link small" href="https://www.wikidata.org/wiki/${esc(g.wikidata)}" target="_blank" rel="noopener">Wikidata ${icon('ext')}</a>` : ''}</div>
     </div></div>
     ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>So sieht das Spiel aus</h2><span class="faint">Originalspiel</span></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
     ${dataPanel(g)}
     ${analysisPanel(g.id)}
     ${recommendation(g, fitting)}
     ${dualBox(g, fitting)}
-    <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>`;
+    <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>
+    ${relatedSections(g)}`;
 }
 
 function projectLine(p) {
@@ -707,7 +714,7 @@ function viewFranchise(name) {
       ${(() => {
         const scan = DB.franchiseScan[f.name];
         if (!scan) return '<p class="faint">Für diese Reihe lief noch keine Reihen-Analyse – ob Spiele fehlen, ist also noch offen.</p>';
-        return `<p class="faint">Letzte Reihen-Analyse ${fmtDate(scan.date)}: ${scan.listed} Titel gefunden, ${scan.added.length} neu aufgenommen, ${scan.versions.length} als Fassung eingeordnet${scan.skipped.length ? `, ${scan.skipped.length} ohne Beleg übersprungen (${esc(scan.skipped.map((x) => x.title).join(', '))})` : ''}.</p>`;
+        return `<p class="faint">Letzte Reihen-Analyse ${fmtDate(scan.date)} (${scan.source === 'wikidata' ? 'Wikidata' : 'KI-Websuche'}): ${scan.listed} Titel gefunden, ${scan.added.length} neu aufgenommen, ${scan.versions.length} als Fassung eingeordnet${scan.queued != null ? `, ${scan.queued} zur Tiefenrecherche vorgemerkt, ${scan.basic} behalten das Basisprofil` : ''}${scan.skipped.length ? `; übersprungen: ${esc(scan.skipped.slice(0, 12).map((x) => x.title).join(', '))}${scan.skipped.length > 12 ? ' …' : ''}` : ''}.</p>`;
       })()}
       <div class="row">${DB.meta.repo ? `<a class="btn primary" href="${esc(issueUrl('Reihe: ' + f.name, 'franchise: ' + f.name))}" target="_blank" rel="noopener">${icon('layers')}Reihe vervollständigen &amp; recherchieren</a>
         <a class="btn" href="${esc(issueUrl('Bilder: Reihe ' + f.name, 'images-franchise: ' + f.name))}" target="_blank" rel="noopener" title="Cover, Originalbilder und Spielweg-Bilder für bis zu 25 Spiele der Reihe">${icon('image')}Bilder für die Reihe suchen</a>` : ''}
@@ -794,6 +801,20 @@ function qualityPanel() {
       ${versions.filter((v) => (v.reports || []).length).length} Fassungen mit Community-Berichten · ${DB.inboxCount} unsortierte Funde</p></div>`;
 }
 
+function usagePanel() {
+  const months = Object.keys(DB.usage || {}).sort().reverse();
+  if (!months.length) return '';
+  const m = DB.usage[months[0]];
+  const n = (x) => (x || 0).toLocaleString('de-DE');
+  const KIND = { recherche: 'Tiefenrecherche', warteschlange: 'Warteschlange', reihe: 'Reihen-Analyse', bilder: 'Bilder', bildpruefung: 'Bildprüfung', dualscreen: 'Dual-Screen-Suchlauf' };
+  const kinds = Object.entries(m.byKind || {}).sort((a, b) => (b[1].input + b[1].output * 4) - (a[1].input + a[1].output * 4));
+  return `<div class="panel"><h3>${icon('ai')} KI-Verbrauch ${esc(months[0])}</h3>
+    <p class="muted">${n(m.runs)} Läufe · ${n(m.calls)} Anfragen · ${n(m.searches)} Websuchen · ${n(m.input)} Eingabe- / ${n(m.output)} Ausgabe-Tokens${m.estimate != null ? ` · geschätzt <b>${m.estimate.toLocaleString('de-DE', { minimumFractionDigits: 2 })}</b>` : ''}</p>
+    <div class="table-wrap"><table class="compare"><thead><tr><th>Bereich</th><th>Anfragen</th><th>Websuchen</th><th>Tokens (ein/aus)</th></tr></thead><tbody>
+    ${kinds.map(([k, v]) => `<tr><td>${esc(KIND[k] || k)}</td><td>${n(v.calls)}</td><td>${n(v.searches)}</td><td>${n(v.input)} / ${n(v.output)}</td></tr>`).join('')}</tbody></table></div>
+    <p class="faint">Warteschlange: ${(DB.queue || []).length} Spiele, höchstens ${DB.meta.maxQueuePerDay || 12} pro Tag. Eine Euro-Schätzung erscheint, wenn im Repo die Preis-Variablen gesetzt sind.</p></div>`;
+}
+
 function viewInfo() {
   return `<h1>Info</h1>
   <div class="panels section">
@@ -805,6 +826,7 @@ function viewInfo() {
       <label class="field">API-Schlüssel<input id="ai-key" type="password" autocomplete="off" placeholder="sk-…" value="${esc(aiKey())}"></label>
       <label class="field">Modell<input id="ai-model" type="text" autocomplete="off" placeholder="${esc(DB.research?.model || '')}" value="${esc(store.get('openaiModel', ''))}"></label>
       <div class="row"><button class="btn primary" id="ai-save">Speichern</button>${aiKey() ? '<button class="btn" id="ai-clear">Löschen</button>' : ''}</div></div>
+    ${usagePanel()}
     ${qualityPanel()}
     <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche.</p></div>
     <div class="panel"><h3>Daten</h3><p class="muted">Stand ${fmtDate(DB.builtAt)}. ${DB.games.length} Spiele, ${Object.keys(DB.projects).length} Projekte. Die App holt sich neue Daten selbst, sobald sie online geöffnet wird.</p>
@@ -964,7 +986,10 @@ function completeness(g) {
   const researched = DB.researched?.[g.id];
   const reports = vers.some((v) => (v.reports || []).length) || routes.some((r) => (r.reports || []).length);
   const items = [
-    { ok: !!researched, part: 0, w: 3, label: researched ? `Tiefenrecherche ${fmtDate(researched)}` : 'Noch nicht tiefenrecherchiert', fix: 'research' },
+    (() => { const ri = researchInfo(g);
+      return { ok: ri.state === 'fresh' || ri.state === 'aging', part: ri.state === 'news' || ri.state === 'old' ? 0.6 : 0, w: 3, fix: researched ? 'update' : 'research',
+        label: !researched ? (g.wikidata ? 'Nur Basisprofil (Wikidata), keine Tiefenrecherche' : 'Noch nicht tiefenrecherchiert')
+          : `Tiefenrecherche ${fmtDate(researched)}${ri.events.length ? ` – seitdem ${ri.events.length} Neuigkeit(en)` : ri.state === 'old' ? ' – älter als 6 Monate' : ''}` }; })(),
     { ok: !!g.cover, w: 1, label: g.cover ? 'Cover' : 'Kein Cover', fix: 'images' },
     { ok: orig >= 3, part: Math.min(orig, 3) / 3, w: 2, label: `${orig} ${orig === 1 ? 'Originalbild' : 'Originalbilder'}`, fix: 'images' },
     { ok: vers.length > 1 && vers.filter((v) => v.year).length >= vers.length / 2, part: vers.length > 1 ? 0.5 : 0, w: 1,
@@ -986,18 +1011,21 @@ function dataPanel(g) {
   const req = pendingFor(g.id);
   const needImages = c.items.some((i) => !i.ok && i.fix === 'images');
   const needResearch = c.items.some((i) => !i.ok && i.fix === 'research');
+  const needUpdate = c.items.some((i) => !i.ok && i.fix === 'update');
   const imgReq = DB.imageRequests[g.id];
   const btn = (kind, primary) => !DB.meta.repo ? '' : kind === 'images'
     ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Bilder: ' + g.title, 'images: ' + g.id))}" target="_blank" rel="noopener" title="Cover, Originalbilder und Bilder für jeden Spielweg (Dual Screen zuerst)">${icon('image')}Bilder suchen</a>`
-    : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Tiefenrecherche anfordern</a>`;
+    : kind === 'update'
+      ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Aktualisieren: ' + g.title, 'update: ' + g.id))}" target="_blank" rel="noopener" title="Sucht nur, was sich seit der letzten Tiefenrecherche geändert hat – günstiger als eine neue Tiefenrecherche">${icon('spark')}Aktualisieren</a>`
+      : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Tiefenrecherche anfordern</a>`;
   return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' ? ' open' : ''}>
     <summary><span class="meter"><span>Datenstand: <b>${LEVEL_LABEL[c.level]}</b></span><b>${c.pct} %</b><i style="--v:${c.pct}%"></i></span></summary>
     <ul class="checklist">${c.items.map((i) => `<li class="${i.ok ? 'ok' : i.part ? 'part' : 'miss'}">${icon(i.ok ? 'check' : 'alert')}${esc(i.label)}</li>`).join('')}</ul>
     <p class="req-run" data-req-game="${esc(g.id)}"${req ? '' : ' hidden'}>${icon('spark')} <span>${esc(req?.label || '')}</span></p>
-    <div class="row">${btn('research', needResearch && !needImages)}${btn('images', needImages)}
+    <div class="row">${DB.researched?.[g.id] ? btn('update', needUpdate) : btn('research', needResearch && !needImages)}${btn('images', needImages)}
       ${DB.meta.repo ? `<button class="btn small" data-addimage="${esc(g.id)}" data-title="${esc(g.title)}" title="Link zu einem Bild, Video oder Artikel einfügen">${icon('ext')}Bild-Link einfügen</button>` : ''}
-      ${researchStatus(g)}${imgReq ? `<span class="faint">Bilder zuletzt gesucht ${fmtDate(imgReq)}</span>` : ''}</div>
-    <p class="faint">Tiefenrecherche = Fassungen, Spielwege, Mods und Berichte (3–5 Min.). Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
+      ${imgReq ? `<span class="faint">Bilder zuletzt gesucht ${fmtDate(imgReq)}</span>` : ''}</div>
+    <p class="faint">Tiefenrecherche = Fassungen, Spielwege, Mods und Berichte (3–5 Min.). Aktualisieren = nur Änderungen seit der letzten Recherche (neue Versionen, eingestellte Projekte, neue Wege). Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
   </details>`;
 }
 
@@ -1103,12 +1131,43 @@ function renderRequestPill() {
     + (open[0].url ? `<a class="link" href="${esc(open[0].url)}" target="_blank" rel="noopener">Details</a>` : '');
 }
 
-function researchStatus(g) {
-  const qi = (DB.queue || []).findIndex((j) => j.game === g.id);
-  if (qi >= 0) return `<span class="tag v-ai-unverified">${icon('ai')}In der Warteschlange (Platz ${qi + 1})</span>`;
+const daysSince = (d) => Math.floor((Date.now() - new Date(d + 'T00:00:00Z').getTime()) / 86400000);
+/* What happened to this game since its deep research: releases of its projects, maintenance changes. */
+function eventsSince(g, since) {
+  const pids = new Set(g.routes.flatMap((r) => r.projects || []));
+  return DB.changelog.filter((e) => e.date > since && ((e.type === 'release' && pids.has(e.project)) || (e.game === g.id && e.by !== 'ai-research')));
+}
+/* Discovery: games of the same system / similar games, best explored first */
+function relatedSections(g) {
+  const sys = g.platforms[0];
+  const others = DB.games.filter((x) => x.id !== g.id);
+  const rank = (a, b) => b._score - a._score || completeness(b).pct - completeness(a).pct;
+  const sameSystem = sys ? others.filter((x) => x.platforms[0] === sys && x.franchise !== g.franchise).sort(rank) : [];
+  const words = (x) => new Set(norm(x.genre || '').split(/[^a-z0-9]+/).filter((w) => w.length > 3));
+  const gw = words(g);
+  const similar = gw.size ? others.filter((x) => x.franchise !== g.franchise && [...words(x)].some((w) => gw.has(w))
+    && x.platforms.some((p) => g.platforms.includes(p))).sort(rank) : [];
+  const shelf = (title, list, href) => list.length ? `<section class="section"><div class="section-head"><h2>${title}</h2>${href ? `<a href="${href}">Alle</a>` : ''}</div><div class="shelf">${list.slice(0, 14).map(cardHTML).join('')}</div></section>` : '';
+  return shelf(`Ähnliche Spiele${g.genre ? ` · ${esc(g.genre)}` : ''}`, similar)
+    + shelf(`Mehr für ${esc(sys || '')}`, sameSystem, sys ? `#/plattform/${encodeURIComponent(sys)}` : '');
+}
+
+function researchInfo(g) {
   const d = DB.researched?.[g.id];
-  return d ? `<span class="tag">${icon('check')}Tiefenrecherche ${fmtDate(d)}</span>`
-    : `<span class="tag">${icon('info')}Noch nicht tiefenrecherchiert</span>`;
+  const qi = (DB.queue || []).findIndex((j) => j.game === g.id);
+  const job = qi >= 0 ? DB.queue[qi] : null;
+  if (!d) return { state: 'none', d, job, qi, events: [], age: null };
+  const age = daysSince(d);
+  const events = eventsSince(g, d);
+  return { state: age > 180 ? 'old' : events.length ? 'news' : age > 60 ? 'aging' : 'fresh', d, age, events, job, qi };
+}
+function researchStatus(g) {
+  const ri = researchInfo(g);
+  if (ri.job) return `<span class="tag v-ai-unverified">${icon('ai')}${ri.job.kind === 'update' ? 'Aktualisierung' : 'Tiefenrecherche'} in der Warteschlange (Platz ${ri.qi + 1})</span>`;
+  if (ri.state === 'none') return `<span class="tag">${icon('info')}${g.wikidata ? 'Basisprofil (Wikidata) – noch nicht tiefenrecherchiert' : 'Noch nicht tiefenrecherchiert'}</span>`;
+  const when = ri.age === 0 ? 'heute' : ri.age === 1 ? 'gestern' : `vor ${ri.age} Tagen`;
+  const label = { fresh: 'aktuell', aging: 'etwas älter', news: `seitdem ${ri.events.length} ${ri.events.length === 1 ? 'Neuigkeit' : 'Neuigkeiten'}`, old: 'veraltet' }[ri.state];
+  return `<span class="tag research-${ri.state}" title="${esc(ri.events.map((e) => fmtDate(e.date) + ': ' + e.text).join('\n'))}">${icon(ri.state === 'fresh' ? 'check' : 'alert')}Tiefenrecherche ${when} · ${label}</span>`;
 }
 
 function dualBox(g, ways) {
@@ -1228,6 +1287,7 @@ function route() {
   else if (a === 'merkliste') { html = viewFavs(); tab = 'favs'; }
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
   else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
+  else if (a === 'plattform') { state.chips = new Set(); state.platform = decodeURIComponent(b || ''); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);

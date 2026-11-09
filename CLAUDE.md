@@ -25,6 +25,7 @@ scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
 scripts/images.py      Bilder aus Seiten holen (YouTube-Vorschaubild, GitHub, Steam, Google Play, Wikipedia, Artikel)
 scripts/push.sh        Commit + Push der Workflows; gitsync.py führt JSON-Konflikte paralleler Läufe zusammen
+scripts/wikidata.py    Stufe 0/1 (kostenlos): Jahre, Plattformen, Fassungen, Genre, offizielle Android-Fassung, ganze Reihen
 scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
 scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai → ai-verified, ai-unclear oder entfernt)
 scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
@@ -56,6 +57,16 @@ scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im W
   gleichnamige Reboots bekommen das Jahr in den Titel („DOOM (2016)“, „Tomb Raider (2013)“). Dubletten zusammenführen mit
   `python3 scripts/atlas.py merge <dublette> <hauptspiel> --type remake --year 2011 --name "…"` (verschiebt Fassungen,
   Wege, Mods, Bilder und alle Verweise; `--same` = wirklich dasselbe Spiel unter anderem Namen).
+- **Stufenmodell** (KI-Geld nur, wo es nötig ist): Stufe 0/1 = Wikidata-Basisprofil (`wikidata`, `wikipedia`, Fassungen
+  mit Jahren; Watcher täglich 150 Spiele, kostenlos) → Stufe 2 = Tiefenrecherche (KI) nur auf Anfrage oder wenn die
+  Reihen-Auswahl (`triage`) ein Spiel für lohnend hält → Aktualisieren (`update: <id>`) = nur Änderungen seit der letzten
+  Recherche, inkl. belegter Korrekturen bekannter Wege (`corrections`: Status, Version, Hinweis; nie bei thor-tested/community).
+  Nachprüfung ist ereignisgesteuert: neue Releases eines Projekts → Änderungsrecherche des Spiels (max. 1 pro Lauf);
+  ohne Ereignis erst nach 180 Tagen. Die Warteschlange arbeitet höchstens `MAX_QUEUE_PER_DAY` (Standard 12) Spiele am Tag ab;
+  der Verbrauch steht in `inbox.json` → `usage` und in der App unter Info.
+- **Funde vorsortieren**: Jeder Warteschlangen-Lauf sortiert 30 Watcher-Funde mit einem günstigen KI-Aufruf
+  (`lead.triage`): Wege zu bekannten Spielen → Warteschlange mit dem Fund als Hinweis, Unsinn → `rejected`,
+  Werkzeuge/Verzeichnisse bleiben für dich in `leads` (Schritt 3).
 - **Warteschlange** `data/queue.json`: Spiele, die Markus per Reihen-Analyse oder Dual-Screen-Suchlauf angefordert hat;
   die Action „KI-Recherche“ arbeitet sie alle 2 Stunden ab (3 Spiele). Du kannst Spiele vorne einreihen, aber nicht löschen.
 - **Reihe (`franchise`)** = die Spielereihe, nicht das Universum: Luigi's Mansion, Paper Mario, Mario Party, Mario & Luigi
