@@ -343,12 +343,16 @@ def fill_website_covers(fetch=get, only=None, limit=100):
         if only is None and recently_tried(state, 'website', g['id'], days=14):
             continue
         tried += 1
+        page = None
+        for browser in (False, True):      # some publisher sites only answer browsers; the tags are in the first KB
+            try:
+                page = images.get(g['website'], timeout=40, limit=400_000, browser=browser)
+                break
+            except Exception as e:  # noqa: BLE001
+                log(f'! Website {g["title"]}: {str(e)[:80]}')
+        if page is None:
+            continue                       # not marked as tried: next run tries again
         mark_tried(state, 'website', g['id'])
-        try:
-            page = images.get(g['website'])
-        except Exception as e:  # noqa: BLE001
-            log(f'! Website {g["title"]}: {str(e)[:80]}')
-            continue
         head = page[:page.find('<body')] if '<body' in page else page[:30000]
         m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
             re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)

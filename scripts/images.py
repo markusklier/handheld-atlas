@@ -34,10 +34,13 @@ SKIP = re.compile(r'logo|icon|favicon|avatar|sprite|badge|banner-ad|placeholder|
                   r'wordmark|\.svg|pixel\.gif|tracking|1x1', re.I)
 
 
-def get(url, as_json=False, timeout=20):
-    req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept-Language': 'en,de;q=0.8'})
+def get(url, as_json=False, timeout=20, limit=3_000_000, browser=False):
+    ua = ('Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Mobile Safari/537.36'
+          if browser else UA)
+    req = urllib.request.Request(url, headers={'User-Agent': ua, 'Accept-Language': 'en,de;q=0.8',
+                                               'Accept': 'text/html,application/xhtml+xml,*/*;q=0.8'})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        body = r.read(3_000_000).decode('utf-8', 'replace')
+        body = r.read(limit).decode('utf-8', 'replace')
     return json.loads(body) if as_json else body
 
 
