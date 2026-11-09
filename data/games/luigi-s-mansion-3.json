@@ -16,6 +16,194 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e845875f-7349-49a1-b6ad-2a62edb0f304",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "With These settings you will get a constant 30 FPS on Luigi's Mansion 3. THIS CONFIG IS MADE FOR THE AYN ODIN 2 (Base, Pro, Max) Eden's Veil: GPU Extensions: Provoking Vertex = On Descriptor Indexing = On Sample Shading ",
+          "votes": 6,
+          "date": "2025-08-16",
+          "settings": {
+            "Emulator Version": "0.0.3-rc2",
+            "Driver Version": "[MrPurple666/purple-turnip] turnip_mrpurple-T21-toasted.adpkg",
+            "Accuracy Level": "Normal",
+            "Resolution": "1X (720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/84e17e81-e474-414d-9173-d8c3edc451a6",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game requires you to use the \"disable-dynamic-resolution\" mod to keep the 30 FPS stable.",
+          "votes": 6,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "0.0.2",
+            "Driver Version": "MESA TURNIP DRIVER V25.2.0-R5 (AUTO)",
+            "Accuracy Level": "Normal",
+            "Extended Dynamic State": "2",
+            "Resolution": "720P",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "FXAA",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/90d615c0-7372-4bfb-9f55-e07be361dc89",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game is really demanding in the lobby area, but once you pass that, the frame rate is more stable at 30/60fps I am playing the game with 3 mods from https://github.com/ADEMOLA200/Switch-Emulator-Mod-Database I have t",
+          "votes": 1,
+          "date": "2026-08-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cfe548bf-3a35-4ebe-8c7e-140f0b006096",
+          "device": "RedMagic 8 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "runs at 58 fps in some parts without graphical errors",
+          "votes": 1,
+          "date": "2026-07-24"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/43bedfc0-6f4f-4226-b1bb-502c9bd912d3",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Playing with 60 FPS Mod & Disable Dynamic Resolution Mod found from https://github.com/yuzu-mirror/yuzu-mod-archive , in most areas getting a full 60 fps but it does drop down sometimes. Also using Mesa Turnip Driver v26",
+          "votes": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef330f05-b746-4f5e-a3b2-0b7c0cbc7a47",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "- The 3D rendering is messed up during shader creation. Otherwise, it's surprisingly smooth, based on what I've tested. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-11",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d7e2dfe5-01ec-4156-9521-f2135f732af3",
+          "device": "AYN Thor Pro",
+          "emulator": "Citron",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "High performance mode. Still drops to 20 fps, even lower and slows down, audio crackling.",
+          "votes": 2,
+          "date": "2025-11-15",
+          "settings": {
+            "Emulator Version": "0.11",
+            "Driver Version": "[KIMCHI Turnip]  v25.3.0 - Revision 6|||Turnip_v25.3.0_R6.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "540p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8d8fd58f-12d8-4d3d-93bc-88dda0618f00",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "- Use driver 819.2 (T22h = crash) - The sound is a bit choppy. - Low FPS - The 3D has glitches Screenshots available",
+          "votes": 1,
+          "date": "2026-01-11",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/65ee3b39-284d-4662-8ff6-4625d834e6cc",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Just like with other models, changing any settings doesn't seem to improve its performance at the moment.",
+          "votes": 0,
+          "date": "2026-04-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dc8b9ea2-8832-4521-a829-0f3983ed374e",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Intro",
+          "ratingDe": "Nur Intro/Menü",
+          "rank": 6,
+          "summary": "Crashes on menu",
+          "votes": 3,
+          "date": "2025-11-04"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d9144e1f-a2b9-4bdf-a580-7a8fefab7167"
+        }
       ]
     }
   ],

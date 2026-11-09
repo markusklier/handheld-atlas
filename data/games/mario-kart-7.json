@@ -28,6 +28,86 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0c6d0671-0a2a-4a56-b57b-72c37223c65e",
+          "device": "AYN Thor Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-11-26",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1a9283da-f1bb-4b78-b4f3-80375626bd18",
+          "device": "AYN Thor Max",
+          "emulator": "Citra",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Stable 60FPS at 4x resolution.",
+          "votes": 1,
+          "date": "2026-04-05",
+          "settings": {
+            "Emulator Version": "CITRA_MMJ_20251112",
+            "Graphics API": "Vulkan",
+            "Resolution Factor": "4",
+            "Texture Filter": "None",
+            "Texture Sampling": "Game Controlled",
+            "Layout Option": "Default",
+            "Use Hardware Shader": "True",
+            "Use Shader JIT": "True",
+            "Use VSync": "True",
+            "Use Disk Shader Cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/62336869-7482-4cb8-a236-c70c54bff6fe",
+          "device": "AYN Thor Pro",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Everything works great. The game runs at 3x native resolution (720p) and 4x native resolution (960p). No bugs encountered, and performance is stable.",
+          "votes": 0,
+          "date": "2026-10-10",
+          "settings": {
+            "Emulator Version": "2126.1.2-vanilla",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b2b0d19f-8bb9-4f7f-8175-291a8616b298"
+        }
       ]
     }
   ],

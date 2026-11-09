@@ -28,6 +28,98 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ee4964db-75a3-468c-a374-af9f24f3ebae",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Make sure to read this (set delay to 7500) so you can play it for real the max FPs is 30 thought it was sixty but I used this emulator on my phone and it maxed out at thirty and felt about the same all you need to know I",
+          "votes": 4,
+          "date": "2026-03-15",
+          "settings": {
+            "Emulator Version": "2124.3-vanilla",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "native",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Delay Game Render Thread": "100"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9aedddb3-c5ac-458d-b6bf-0a5598a71be7",
+          "device": "AYN Thor Pro",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs perfect only in cinematics and new bedrooms lows the fps",
+          "votes": 3,
+          "date": "2026-07-03",
+          "settings": {
+            "Emulator Version": "2125.1-B",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "2",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Delay Game Render Thread": "100"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/16d00c23-5643-4fdc-8468-d1f61087dbdc",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "So far, its the best way of playing it. The game runs at 60 FPS, though it has some drops. Examples: when loading a new location or at cut scenes. Make sure to turn on Simulate 3DS GPU Timings in Debug. This single setti",
+          "votes": 0,
+          "date": "2026-08-13"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/600ecdd8-6731-4146-b0f9-f3f39050233b",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Runs decently playable make sure to delay game render thread at 7500 I set my CPU clock speed to 400% this game should be good for most versions of the aynthor like the pro version",
+          "votes": 2,
+          "date": "2026-03-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/775307b3-8f93-4999-a227-ab8c67c8e34e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Azahar",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Takes a long time to calculate the shaders, makes the console heat up a lot, very low FPS at times (15fps...), in short unplayable.",
+          "votes": 2,
+          "date": "2025-10-06"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/30c8cdd0-c68d-4068-aae3-11e7fdee2fb0"
+        }
       ]
     }
   ],

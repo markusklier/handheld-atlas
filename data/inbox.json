@@ -1,6 +1,118 @@
 {
   "leads": [
     {
+      "url": "https://github.com/sudosilo/sudosilo",
+      "title": "sudosilo/sudosilo",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/soyboitech/beacons",
+      "title": "soyboitech/beacons",
+      "excerpt": "counter surveillance firmware for esp32 boards, plus native ios and android apps. passively detects nearby alpr cameras, drones, body cams, smart glasses and bluetooth trackers.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/FutureForward-Robotics/Firestorm-2026-Public",
+      "title": "FutureForward-Robotics/Firestorm-2026-Public",
+      "excerpt": "Public Mirror of Firestorms 2026 Robot Code",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/rookiejj/briefick",
+      "title": "rookiejj/briefick",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Jhay-EL/Walkman-Studio",
+      "title": "Jhay-EL/Walkman-Studio",
+      "excerpt": "The native Apple Silicon music and library manager for Sony Walkman digital audio players.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/haoruilee/awesome-agent-native-services",
+      "title": "haoruilee/awesome-agent-native-services",
+      "excerpt": "A curated list of agent-native services and infrastructure for AI agents: email, browsers, memory, sandboxes, payments, and MCP tools. Includes selection criteria and onboarding guides.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Mantequilla-Soft/snapievideoplayer",
+      "title": "Mantequilla-Soft/snapievideoplayer",
+      "excerpt": "html5 video player for the 3Speak Platform",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Riaan007/farm-netwatch",
+      "title": "Riaan007/farm-netwatch",
+      "excerpt": "Dockerised network scanner + dashboard for Raspberry Pi: discovery, identification, uptime history, ntfy alerts, VPN, and Uptime Kuma integration.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jppferreira/Mockup-Studio",
+      "title": "jppferreira/Mockup-Studio",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/petrosvassiliou/euroleague-courtside",
+      "title": "petrosvassiliou/euroleague-courtside",
+      "excerpt": "EuroLeague Courtside – Native Kotlin & Jetpack Compose (Material 3 Adaptive) Basketball App for Googlebook OS, Tablets, Foldables & Smartphones",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/enhansome/enhansome-terminals",
+      "title": "enhansome/enhansome-terminals",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/colletes/samurai-edge-demake",
+      "title": "colletes/samurai-edge-demake",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/olafkfreund/nixarchy",
+      "title": "olafkfreund/nixarchy",
+      "excerpt": "Omarchy 4.x vendored for NixOS — the upstream tree packaged as a derivation, not reimplemented in Nix",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Ferdiansyah42/Tugas_akhir-TA",
+      "title": "Ferdiansyah42/Tugas_akhir-TA",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
       "title": "YuutaTsubasa/Free-Riders-Recompiled",
       "excerpt": "Unofficial static recompilation of Sonic Free Riders for Windows, Linux and Android, with controller/keyboard support, custom VRM avatars, and Kinect v1, Kinect v2 (experimental) and webcam motion controls on Windows.",
@@ -6287,118 +6399,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/eden-duo/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/eden-ds/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/dusklight/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/dualsouls/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/dualscreendex/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/dualscreen-launcher/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/ds-forever/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/dragon-age-origins-recomp-android-duo/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/doom/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/donkey-kong-64-recompiled-android-ds/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/digimon-world-2003/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/delphis/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/ctr/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/civilization-6/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:50:40Z",
-    "newLeads": 5,
+    "lastRun": "2026-11-09T16:56:26Z",
+    "newLeads": 14,
     "newEvents": 0
   },
   "aiResearch": {
