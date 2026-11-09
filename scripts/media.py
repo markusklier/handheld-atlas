@@ -267,10 +267,13 @@ def article_cover(article, fetch=get):
     if not m:
         return None, None
     lang, title = m.group(1), urllib.parse.unquote(m.group(2)).replace('_', ' ')
-    q = urllib.parse.urlencode({'action': 'query', 'titles': title, 'prop': 'pageimages', 'piprop': 'thumbnail|name',
+    q = urllib.parse.urlencode({'action': 'query', 'titles': title, 'prop': 'pageimages|description', 'piprop': 'thumbnail|name',
                                 'pithumbsize': 600, 'pilicense': 'any', 'redirects': 1, 'format': 'json', 'formatversion': 2})
     pages = fetch(f'https://{lang}.wikipedia.org/w/api.php?{q}', as_json=True).get('query', {}).get('pages', [])
-    thumb = ((pages[0] if pages else {}).get('thumbnail') or {}).get('source')
+    page = pages[0] if pages else {}
+    if 'game' not in (page.get('description') or '').lower():
+        return None, None                           # not (or no longer) a video game article
+    thumb = (page.get('thumbnail') or {}).get('source')
     if thumb and not re.search(r'\.svg', thumb, re.I) and not re.search(r'logo|wordmark', thumb, re.I):
         return thumb, article
     import images                                   # lead image is a logo: look for box art among the article's files

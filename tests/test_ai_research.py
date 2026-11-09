@@ -270,10 +270,12 @@ class KeepCurrentTest(ModesTest):
         self.assertEqual(len(entries), 1)
 
     def test_usage_is_recorded_per_month(self):
+        before = atlas.read(atlas.DATA / 'inbox.json').get('usage', {}).get(ai_research.TODAY[:7], {})
+        b_calls, b_search = before.get('calls', 0), before.get('byKind', {}).get('bilder', {}).get('searches', 0)
         ai_research.USAGE.update(calls=2, input=1000, output=200, searches=3)
         ai_research.record_usage('bilder')
         m = atlas.read(atlas.DATA / 'inbox.json')['usage'][ai_research.TODAY[:7]]
-        self.assertEqual((m['calls'], m['byKind']['bilder']['searches']), (2, 3))
+        self.assertEqual((m['calls'] - b_calls, m['byKind']['bilder']['searches'] - b_search), (2, 3))
         self.assertEqual(ai_research.USAGE['calls'], 0)
 
 
