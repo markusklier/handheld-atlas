@@ -31,5 +31,19 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Doom_RPG_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_RPG"
-  }
+  },
+  "screenshots": [
+    {
+      "url": "https://cdn.mobygames.com/screenshots/3032976-doom-rpg-j2me-fighting-a-cacodemon-with-the-plasma-gun.png",
+      "caption": "Plasmaangriff auf einen Cacodemon in einem Korridor",
+      "source": "https://www.mobygames.com/game/22804/doom-rpg/screenshots/j2me/167725/",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://cdn.mobygames.com/screenshots/2220085-doom-rpg-j2me-fighting-multiple-difficult-enemies.png",
+      "caption": "Doom RPG: Kampf gegen mehrere Gegner",
+      "source": "https://www.mobygames.com/game/22804/doom-rpg/screenshots/j2me/167728/",
+      "check": "ai-verified"
+    }
+  ]
 }

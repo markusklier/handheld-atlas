@@ -33,6 +33,18 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Doom%2064%20%28USA%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    },
+    {
+      "url": "https://cdn.mobygames.com/screenshots/15820316-doom-64-nintendo-64-the-chainsaw-is-now-a-double-chainsaw-here-i.png",
+      "caption": "Mit der Doppelkettensäge gegen einen Imp",
+      "source": "https://www.mobygames.com/game/5195/doom-64/screenshots/n64/177395/",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://cdn.mobygames.com/screenshots/15643682-doom-64-nintendo-64-doom-64-has-some-cool-lighting-effects-that-.png",
+      "caption": "Dämon in einem Metallkorridor, Pistole im Vordergrund",
+      "source": "https://www.mobygames.com/game/5195/doom-64/screenshots/n64/177391/",
+      "check": "ai-verified"
     }
   ]
 }

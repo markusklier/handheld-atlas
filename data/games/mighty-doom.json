@@ -194,5 +194,10 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "summary": "Die offizielle App ist seit der Serverabschaltung am 7. August 2024 nicht mehr spielbar. Für Android ist das inoffizielle Projekt Mighty Resurrection interessant; es benötigt weiterhin einen Community-Server und ist nicht speziell für den AYN Thor oder zwei Displays bestätigt."
+  "summary": "Die offizielle App ist seit der Serverabschaltung am 7. August 2024 nicht mehr spielbar. Für Android ist das inoffizielle Projekt Mighty Resurrection interessant; es benötigt weiterhin einen Community-Server und ist nicht speziell für den AYN Thor oder zwei Displays bestätigt.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d1/Mighty_Doom_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mighty_Doom"
+  },
+  "screenshots": []
 }

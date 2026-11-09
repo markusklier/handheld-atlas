@@ -511,7 +511,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/04-gameplay.png",
+          "caption": "DOOM II mit HUD und eingeblendeter Touch-Steuerung",
+          "source": "https://github.com/manuelsiuro/GZDoom-Android-2026",
+          "credit": "GZDoom-Android-2026 / Freedoom for Android",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

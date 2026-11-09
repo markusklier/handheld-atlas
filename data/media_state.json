@@ -17,7 +17,7 @@
     "digital-devil-saga-2": "2026-11-08",
     "dissidia-012-final-fantasy": "2026-11-08",
     "donkey-kong-1994": "2026-11-08",
-    "doom-1993": "2026-11-08",
+    "doom-1993": "2026-11-09",
     "dragon-age-origins": "2026-11-08",
     "dragon-quest-builders": "2026-11-08",
     "dragon-quest-iii-hd-2d-remake": "2026-11-08",
@@ -137,14 +137,15 @@
     "doom-resurrection": "2026-11-09",
     "doom-rpg": "2026-11-09",
     "final-doom": "2026-11-09",
-    "master-levels-for-doom-ii": "2026-11-09"
+    "master-levels-for-doom-ii": "2026-11-09",
+    "mighty-doom": "2026-11-09"
   },
   "steam": {
     "am2r": "2026-11-08",
     "deus-ex": "2026-11-08",
     "diablo-ii": "2026-11-08",
     "diablo-iii": "2026-11-08",
-    "doom-1993": "2026-11-08",
+    "doom-1993": "2026-11-09",
     "dragon-age-origins": "2026-11-08",
     "grand-theft-auto-iv": "2026-11-08",
     "grand-theft-auto-v": "2026-11-08",
@@ -157,14 +158,30 @@
     "doom-eternal": "2026-11-09",
     "doom-vfr": "2026-11-09",
     "final-doom": "2026-11-09",
-    "master-levels-for-doom-ii": "2026-11-09"
+    "master-levels-for-doom-ii": "2026-11-09",
+    "doom-the-dark-ages": "2026-11-09"
   },
   "rejectedImages": [
+    "https://cdn.mobygames.com/promos/10695669-mighty-doom-screenshot.jpg",
+    "https://cdn.mobygames.com/promos/10695672-mighty-doom-screenshot.jpg",
     "https://external-preview.redd.it/crash-team-racing-ps1-dual-screen-v0-aXp3b3VlMmpoam1oMUjvGVLn7vTdVSAo-jLZJ1cwNqpe5TQ_t_cCKRp1Gbgq.png?auto=webp&crop=smart&format=pjpg&s=ddaf7c2d30513314266707bc12f53d785d5de6e9&width=640",
+    "https://external-preview.redd.it/mighty-doom-resurrection-server-working-v0-Y3JqY2tuMDF5cThmMR0SG1_WBS-5Cb3HsgeMmlV55sykhKKBsPyK1n9QUDpR.png?auto=webp&crop=smart&format=pjpg&s=2bdc0f476a823f84d0de3ef25ff3d7f3d7490fac&width=640",
     "https://github.com/samyost1/tmc-android/releases/download/v1.0/showcase.png",
+    "https://preview.redd.it/doom-1-2-running-natively-on-retroid-pocket-2s-v0-nel5rz6vltwe1.png?auto=webp&crop=smart&s=0676c7b24a62a6500980340ecf3bd311317aafa5&width=640",
+    "https://preview.redd.it/fusion-tutorial-bug-is-there-any-way-to-report-bugs-v0-idruuhg72qpa1.png?auto=webp&crop=smart&s=c18b008af13ff943675c45eaa3f0290a86be1bfc&width=640",
     "https://preview.redd.it/hollow-knight-dual-souls-unofficial-dual-screen-android-v0-12gegdb4fukh1.png?auto=webp&crop=smart&s=0530b7e4f3e606bc47570fb9fcdeeaba7abe9106&width=640",
     "https://preview.redd.it/release-skyrimse-dualscreen-1-0-skyrim-se-with-a-dual-v0-gpd4btjsjxzh1.png?auto=webp&crop=smart&s=5882f8dbe2b3de295115d360370e4760c85f035a&width=640",
+    "https://preview.redd.it/something-that-was-never-seen-before-on-mighty-doom-v0-jmhugkn3wauh1.jpg?auto=webp&crop=smart&s=7c618ce1f41a617472a82bde622f6c41773b1cd1&width=640",
     "https://raw.githubusercontent.com/Zelda64Recomp/Zelda64Recomp/HEAD/docs/deck_gyro_1.jpg",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_doom3_bathroom.png",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_doom3_roe.png",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_doom3_the_lost_mission.png",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_etqw.jpg",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_prey.png",
+    "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake4.png",
+    "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/01-launcher.png",
+    "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/02-browse.png",
+    "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/03-editor.png",
     "https://raw.githubusercontent.com/samyost1/zelda3-android/HEAD/showcase.png",
     "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png"
   ]

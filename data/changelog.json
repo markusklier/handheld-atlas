@@ -2,6 +2,44 @@
   "entries": [
     {
       "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 7 Screenshots bestätigt, 15 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "mighty-doom",
+      "text": "1 Screenshots für Mighty DOOM Server – eigenes Backend gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/MightyDoom/comments/1litbsb/mighty_doom_resurrection_server_working/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "mighty-doom",
+      "text": "1 Screenshots für Mighty Resurrection – gehosteter Community-Server gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom/comments/1x11e2e/something_that_was_never_seen_before_on_mighty/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "mighty-doom",
+      "text": "1 Screenshots für Offizielle Android-App – eingestellt gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/MightyDoom/comments/120rhcq/fusion_tutorial_bug_is_there_any_way_to_report/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "doom-ii",
+      "text": "1 Screenshots für Delta Touch (GZDoom, PrBoom+ u. a.) gefunden (KI, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/retroid/comments/1k6ykrr/doom_1_2_running_natively_on_retroid_pocket_2s/"
+    },
+    {
+      "date": "2026-11-09",
       "type": "game-added",
       "by": "ai-research",
       "game": "master-levels-for-doom-ii",

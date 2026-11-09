@@ -22,5 +22,19 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Doom_Resurrection_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_Resurrection"
-  }
+  },
+  "screenshots": [
+    {
+      "url": "https://cdn.mobygames.com/screenshots/16063771-doom-resurrection-iphone-if-a-fat-zombie-gets-a-hold-of-you-youv.png",
+      "caption": "Ein Zombie greift den Spieler; Schütteln wird gefordert.",
+      "source": "https://www.mobygames.com/game/44338/doom-resurrection/screenshots/iphone/409325/",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://cdn.mobygames.com/screenshots/4733201-doom-resurrection-iphone-meet-sam-the-flying-turret-that-is-tota.jpg",
+      "caption": "Begegnung mit der fliegenden Drohne Sam",
+      "source": "https://www.mobygames.com/game/44338/doom-resurrection/screenshots/iphone/413477/",
+      "check": "ai-verified"
+    }
+  ]
 }

@@ -5780,7 +5780,17 @@
     "p-t/pt-android-port": "2026-11-08",
     "project-zomboid/pz-zomboidds": "2026-11-08",
     "ratchet-and-clank/rac-rerac-android": "2026-11-08",
-    "a-link-to-the-past/alttp-snes": "2026-11-08"
+    "a-link-to-the-past/alttp-snes": "2026-11-08",
+    "doom-1993/d1-delta-touch": "2026-11-09",
+    "doom-1993/ai-bethesdas-offizielle-android-app": "2026-11-09",
+    "doom-1993/ai-psydoom-uber-classic-core-engines-hub": "2026-11-09",
+    "doom-1993/ai-doom-doom-ii-uber-winlator": "2026-11-09",
+    "doom-ii/ai-uzdoom-mit-echter-zweitbildschirm-automap": "2026-11-09",
+    "doom-ii/d2-delta-touch": "2026-11-09",
+    "doom-ii/ai-psydoom-fur-android-playstation-doom-ii-kampagne": "2026-11-09",
+    "mighty-doom/ai-offizielle-android-app-eingestellt": "2026-11-09",
+    "mighty-doom/ai-mighty-resurrection-gehosteter-community-server": "2026-11-09",
+    "mighty-doom/ai-mighty-doom-server-eigenes-backend": "2026-11-09"
   },
   "dualScanSeen": [
     "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
@@ -5858,5 +5868,21 @@
       ],
       "skipped": []
     }
+  },
+  "imageRequests": {
+    "doom-1993": "2026-11-09",
+    "doom-2016": "2026-11-09",
+    "doom-3": "2026-11-09",
+    "doom-64": "2026-11-09",
+    "doom-eternal": "2026-11-09",
+    "doom-ii": "2026-11-09",
+    "doom-ii-rpg": "2026-11-09",
+    "doom-resurrection": "2026-11-09",
+    "doom-rpg": "2026-11-09",
+    "doom-the-dark-ages": "2026-11-09",
+    "doom-vfr": "2026-11-09",
+    "final-doom": "2026-11-09",
+    "master-levels-for-doom-ii": "2026-11-09",
+    "mighty-doom": "2026-11-09"
   }
 }
