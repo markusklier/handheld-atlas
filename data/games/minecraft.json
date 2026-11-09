@@ -663,5 +663,6 @@
     "source": "https://en.wikipedia.org/wiki/Minecraft",
     "fallback": true
   },
-  "website": "https://minecraft.net"
+  "website": "https://minecraft.net",
+  "playStore": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe"
 }
