@@ -138,7 +138,8 @@
     "doom-rpg": "2026-11-09",
     "final-doom": "2026-11-09",
     "master-levels-for-doom-ii": "2026-11-09",
-    "mighty-doom": "2026-11-09"
+    "mighty-doom": "2026-11-09",
+    "crash-team-racing": "2026-11-09"
   },
   "steam": {
     "am2r": "2026-11-08",
@@ -183,6 +184,9 @@
     "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/02-browse.png",
     "https://raw.githubusercontent.com/manuelsiuro/GZDoom-Android-2026/HEAD/images/03-editor.png",
     "https://raw.githubusercontent.com/samyost1/zelda3-android/HEAD/showcase.png",
-    "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png"
+    "https://raw.githubusercontent.com/vaduur/LibertyRecompAndroid/HEAD/docs/android/images/banner_android_v4.png",
+    "https://www.activision.com/content/dam/atvi/Crash/crash-touchui/ctr/gallery-assets/Screenshot-1.jpg",
+    "https://www.activision.com/content/dam/atvi/Crash/crash-touchui/ctr/gallery-assets/Screenshot-2.jpg",
+    "https://www.activision.com/content/dam/atvi/Crash/crash-touchui/ctr/gallery-assets/Screenshot-3.jpg"
   ]
 }

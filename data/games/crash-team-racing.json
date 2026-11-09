@@ -218,6 +218,34 @@
           "source": "https://github.com/ThiagoAciole/ctr-mobile/blob/main/README_ANDROID.md",
           "credit": "CTR Mobile",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/menu-principal.png",
+          "caption": "Hauptmenü von CTR Mobile auf Portugiesisch",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/corrida-controles-toque.png",
+          "caption": "Crash Team Racing mit eingeblendeter Touch-Steuerung",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/selecao-copa.png",
+          "caption": "Cup-Auswahl mit vier Cups in Crash Team Racing",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ThiagoAciole/ctr-mobile/HEAD/screenshots/selecao-pista.png",
+          "caption": "Streckenauswahl mit Vorschau der Crash-Bucht",
+          "source": "https://github.com/ThiagoAciole/ctr-mobile",
+          "credit": "CTR Mobile",
+          "check": "ai-verified"
         }
       ],
       "links": [
@@ -428,5 +456,10 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "summary": "Auf dem AYN Thor ist der inoffizielle Android-Port CTR-DS besonders interessant: Das Rennen bleibt oben, während HUD und Live-Streckenkarte unten erscheinen."
+  "summary": "Auf dem AYN Thor ist der inoffizielle Android-Port CTR-DS besonders interessant: Das Rennen bleibt oben, während HUD und Live-Streckenkarte unten erscheinen.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/CrashTeamRacingNACover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Crash_Team_Racing"
+  },
+  "screenshots": []
 }

@@ -5793,7 +5793,10 @@
     "doom-ii/ai-psydoom-fur-android-playstation-doom-ii-kampagne": "2026-11-09",
     "mighty-doom/ai-offizielle-android-app-eingestellt": "2026-11-09",
     "mighty-doom/ai-mighty-resurrection-gehosteter-community-server": "2026-11-09",
-    "mighty-doom/ai-mighty-doom-server-eigenes-backend": "2026-11-09"
+    "mighty-doom/ai-mighty-doom-server-eigenes-backend": "2026-11-09",
+    "crash-team-racing/ds-ctr-ds": "2026-11-09",
+    "crash-team-racing/ai-ctr-native-android": "2026-11-09",
+    "crash-team-racing/ai-playstation-mit-60-fps-widescreen-patch": "2026-11-09"
   },
   "dualScanSeen": [
     "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
@@ -5886,6 +5889,7 @@
     "doom-vfr": "2026-11-09",
     "final-doom": "2026-11-09",
     "master-levels-for-doom-ii": "2026-11-09",
-    "mighty-doom": "2026-11-09"
+    "mighty-doom": "2026-11-09",
+    "crash-team-racing": "2026-11-09"
   }
 }
