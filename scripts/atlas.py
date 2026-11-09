@@ -261,7 +261,14 @@ def bundle(db):
         'usage': db['inbox'].get('usage', {}),
         'queueDay': db['inbox'].get('queueDay', {}),
         'agent': db['inbox'].get('agent', {}),
+        'reddit': reddit_pending(db['games']),
     }
+
+
+def reddit_pending(games):
+    """Reddit-Beiträge, deren Bilder der Handheld abholen soll (docs/REDDIT.md)."""
+    import reddit  # local import: reddit imports this module
+    return reddit.pending([{k: v for k, v in g.items() if not k.startswith('_')} for g in games])
 
 
 def research_spec(meta):

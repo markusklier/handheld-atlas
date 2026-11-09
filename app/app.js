@@ -16,7 +16,7 @@ const fmtDate = (d) => {
   return isNaN(dt) ? d : dt.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
 };
 
-const DB = { games: [], byId: new Map(), projects: {}, platforms: {}, meta: {}, changelog: [], franchises: [] };
+const DB = { games: [], byId: new Map(), projects: {}, platforms: {}, meta: {}, changelog: [], franchises: [], reddit: [] };
 const state = {
   q: '', chips: new Set(), platform: '', sort: 'relevance', limit: 48,
   device: store.get('device', 'thor'),
@@ -69,6 +69,7 @@ function index(data) {
   DB.franchiseScan = data.franchiseScan || {};
   DB.imageRequests = data.imageRequests || {};
   DB.usage = data.usage || {};
+  DB.reddit = data.reddit || [];
   DB.games = data.games.map((g) => {
     g.routes = g.routes || [];
     g.mods = g.mods || [];
@@ -96,6 +97,7 @@ function index(data) {
     name, games: games.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title)),
     routes: games.reduce((n, g) => n + g.routes.length, 0), dual: games.some((g) => g._dual),
   })).sort((a, b) => (b.routes > 0) - (a.routes > 0) || b.games.length - a.games.length || a.name.localeCompare(b.name));
+  redditMerge();
   DB.allPlatforms = [...new Set(DB.games.flatMap((g) => g.platforms))].sort((a, b) => a.localeCompare(b, 'de'));
 }
 
@@ -320,7 +322,8 @@ function shotsHTML(shots, group) {
   if (!shots?.length) return '';
   return `<div class="gallery">${shots.map((s, i) => {
     const pixel = s.url.includes('libretro-thumbnails') ? ' pixel' : '';
-    return `<button class="shot${pixel}" data-lightbox="${esc(group)}" data-i="${i}" aria-label="Bild vergrößern: ${esc(s.caption || '')}"><img src="${esc(s.url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.shot').remove()">${s.caption ? `<figcaption>${esc(s.caption)}</figcaption>` : ''}</button>`;
+    const src = fullSrc(s.url);
+    return `<button class="shot${pixel}${s._device ? ' dev' : ''}" data-lightbox="${esc(group)}" data-i="${i}" aria-label="Bild vergrößern: ${esc(s.caption || '')}"><img src="${esc(src)}"${src !== s.url ? ` data-fb="${esc(s.url)}"` : ''} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="atlasImgErr(this)">${s._device ? '<span class="dev-tag">Reddit · vom Gerät</span>' : ''}${s.caption ? `<figcaption>${esc(s.caption)}</figcaption>` : ''}</button>`;
   }).join('')}</div>`;
 }
 
@@ -419,7 +422,7 @@ function modsView(g) {
     <div class="mods">${shown.map((m) => `<div class="mod"><div class="row" style="justify-content:space-between"><h3>${esc(m.name)}</h3>${verifTag(m.verification || 'documented')}</div>
       <div class="row"><span class="tag">${icon('wrench')}${esc(label('modCategories', m.category || 'other'))}</span>
         ${(m.release || []).length ? `<span class="faint">Funktioniert mit:</span>${m.release.map((id) => `<button class="tag linkish" data-open-version="${esc(id)}">${esc(vname(id))}</button>`).join('')}` : (m.edition ? `<span class="faint">${esc(m.edition)}</span>` : '')}</div>
-      <p class="muted" style="margin:0">${esc(m.description)}</p>${shotsHTML(m.screenshots, 'm:' + m.id)}<a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
+      <p class="muted" style="margin:0">${esc(m.description)}</p><div data-shots="m:${esc(m.id)}">${shotsHTML(m.screenshots, 'm:' + m.id)}</div><a class="link" href="${esc(m.url)}" target="_blank" rel="noopener">Zum Mod ${icon('ext')}</a></div>`).join('')}</div>`;
 }
 
 /* ---------- versions ("Fassungen") and ways to play them ---------- */
@@ -652,7 +655,7 @@ function viewGame(id) {
         ${g.wikipedia ? `<a class="link small" href="${esc(g.wikipedia)}" target="_blank" rel="noopener">Wikipedia ${icon('ext')}</a>` : ''}
         ${g.wikidata ? `<a class="link small" href="https://www.wikidata.org/wiki/${esc(g.wikidata)}" target="_blank" rel="noopener">Wikidata ${icon('ext')}</a>` : ''}</div>
     </div></div>
-    ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>So sieht das Spiel aus</h2><span class="faint">Originalspiel</span></div>${shotsHTML(g.screenshots, 'game')}</section>` : ''}
+    ${g.screenshots.length ? `<section class="section"><div class="section-head"><h2>So sieht das Spiel aus</h2><span class="faint">Originalspiel</span></div><div data-shots="game">${shotsHTML(g.screenshots, 'game')}</div></section>` : ''}
     ${dataPanel(g)}
     ${analysisPanel(g.id)}
     ${recommendation(g, fitting)}
@@ -678,7 +681,8 @@ function routeHTML(g, r) {
     ${r.verification === 'ai-unverified' ? `<div class="note-ai">${icon('ai')}<span>Vom Pflege-Agenten gefunden und aus der Projektquelle zusammengefasst, aber noch auf keinem Gerät geprüft.</span></div>` : ''}
     ${r.features?.includes('dual-screen') ? `<div class="dualbox">${icon('dual')}<span>Zweiter Bildschirm: ${esc(r.dualScreen || 'unterstützt')}</span></div>` : ''}
     ${feats ? `<div class="row">${feats}</div>` : ''}
-    ${shotsHTML(r.screenshots, 'r:' + r.id)}
+    <div data-shots="r:${esc(r.id)}">${shotsHTML(r.screenshots, 'r:' + r.id)}</div>
+    ${redditBox(g, r)}
     ${wayImageButton(g, r)}
     <div class="cols">
       ${r.benefit ? `<div><h4>Vorteil</h4><p>${esc(r.benefit)}</p></div>` : ''}
@@ -831,6 +835,7 @@ function viewInfo() {
       <label class="field">API-Schlüssel<input id="ai-key" type="password" autocomplete="off" placeholder="sk-…" value="${esc(aiKey())}"></label>
       <label class="field">Modell<input id="ai-model" type="text" autocomplete="off" placeholder="${esc(DB.research?.model || '')}" value="${esc(store.get('openaiModel', ''))}"></label>
       <div class="row"><button class="btn primary" id="ai-save">Speichern</button>${aiKey() ? '<button class="btn" id="ai-clear">Löschen</button>' : ''}</div></div>
+    ${redditPanel()}
     ${usagePanel()}
     ${qualityPanel()}
     <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche.</p></div>
@@ -1136,6 +1141,305 @@ function renderRequestPill() {
     + (open[0].url ? `<a class="link" href="${esc(open[0].url)}" target="_blank" rel="noopener">Details</a>` : '');
 }
 
+/* ---------- Reddit-Quelle: Bilder aus Reddit-Beiträgen, geladen vom Gerät (docs/REDDIT.md) ----------
+   Reddit beantwortet seit Mai 2026 nur noch angemeldete Abrufe; GitHub Actions sind gesperrt. Deshalb holt der Handheld
+   die Beiträge der Abholliste (DB.reddit, vom Build erzeugt) selbst, zeigt die Bilder sofort und meldet sie per Issue
+   („reddit-images:“ + JSON) zurück; die Action „KI-Recherche“ übernimmt sie ohne KI, die Bildprüfung folgt.
+   Abrufwege, in dieser Reihenfolge: 1. native Atlas-App (window.AtlasNative.redditFetch, mit Reddit-Anmeldung)
+   2. direkt aus dem Browser (klappt nur, wenn Reddit dem Browser antwortet – wird getestet und gemerkt). */
+const RD_IMG_HOST = /^https:\/\/(i\.redd\.it|preview\.redd\.it|external-preview\.redd\.it|i\.imgur\.com)\//;
+const rdState = { running: false, last: null };
+function redditPostId(url) {
+  try {
+    const u = new URL(url);
+    if (u.hostname === 'redd.it') return (/^\/([a-z0-9]{4,12})\/?$/i.exec(u.pathname) || [])[1]?.toLowerCase() || null;
+    if (!/(^|\.)reddit\.com$/.test(u.hostname)) return null;
+    return (/^\/(?:r\/[A-Za-z0-9_]+\/)?comments\/([a-z0-9]{4,12})(?:\/|$)/i.exec(u.pathname) || [])[1]?.toLowerCase() || null;
+  } catch { return null; }
+}
+const redditMediaId = (url) => (/^https:\/\/(?:i|preview)\.redd\.it\/(?:[^/?]*-v0-)?([a-z0-9]{8,20})\.(?:jpe?g|png|webp|gif)/i.exec(url || '') || [])[1]?.toLowerCase() || null;
+/* verkleinerte Vorschau (preview.redd.it …?width=640) → Original auf i.redd.it; die Vorschau bleibt Ersatz (data-fb) */
+const fullSrc = (url) => {
+  const m = /^https:\/\/preview\.redd\.it\/(?:[^/?]*-v0-)?([a-z0-9]{8,20})\.(jpe?g|png|gif)(?:\?|$)/i.exec(url || '');
+  return m ? `https://i.redd.it/${m[1]}.${m[2]}` : url;
+};
+window.atlasImgErr = (img) => {
+  if (img.dataset.fb) { img.src = img.dataset.fb; delete img.dataset.fb; } else img.closest('.shot')?.remove();
+};
+
+/** Post-JSON von Reddit → {title, author, gone, images:[{url, fallback, w, h}]} (Galerie in Originalreihenfolge). */
+function redditParse(listing) {
+  let p = listing?.[0]?.data?.children?.[0]?.data;
+  if (!p) return null;
+  const gone = !!p.removed_by_category || p.author === '[deleted]';
+  if (p.crosspost_parent_list?.[0]) p = { ...p.crosspost_parent_list[0], title: p.title, author: p.author };
+  const out = [];
+  const add = (url, w, h, fallback) => {
+    url = String(url || '').replace(/&amp;/g, '&');
+    fallback = fallback ? String(fallback).replace(/&amp;/g, '&') : null;
+    if (!RD_IMG_HOST.test(url) || out.some((o) => o.url === url || (redditMediaId(url) && redditMediaId(o.url) === redditMediaId(url)))) return;
+    out.push({ url, fallback: fallback && fallback !== url ? fallback : null, w: w || null, h: h || null });
+  };
+  const meta = p.media_metadata || {};
+  const order = p.gallery_data?.items?.map((i) => i.media_id) || Object.keys(meta);
+  for (const id of order) {
+    const m = meta[id];
+    if (!m || (m.status && m.status !== 'valid') || (m.e && m.e !== 'Image')) continue;
+    const ext = { 'image/jpg': 'jpg', 'image/jpeg': 'jpg', 'image/png': 'png', 'image/gif': 'gif' }[m.m];
+    add(ext ? `https://i.redd.it/${id}.${ext}` : m.s?.u, m.s?.x, m.s?.y, m.s?.u);
+  }
+  const src = p.preview?.images?.[0]?.source;
+  if (/^https:\/\/i\.redd\.it\//.test(p.url_overridden_by_dest || '')) add(p.url_overridden_by_dest, src?.width, src?.height, src?.url);
+  else if (/^https:\/\/i\.imgur\.com\/\w+\.(jpe?g|png)$/i.test(p.url_overridden_by_dest || '')) add(p.url_overridden_by_dest, src?.width, src?.height);
+  if (!out.length && src?.url && (p.is_video || p.post_hint === 'image' || p.post_hint === 'hosted:video')) add(src.url, src.width, src.height);
+  return { title: String(p.title || '').slice(0, 120), author: p.author && p.author !== '[deleted]' ? p.author : '', gone, images: out.slice(0, 10) };
+}
+
+/* Brücke zur nativen App: AtlasNative.redditFetch(reqId, jsonUrl) → App ruft atlasNative.resolve(reqId, status, body) */
+const nativeWait = new Map();
+let nativeSeq = 0;
+window.atlasNative = Object.assign(window.atlasNative || {}, {
+  resolve(id, status, body) { const w = nativeWait.get(String(id)); if (w) { nativeWait.delete(String(id)); w(+status, body); } },
+});
+const hasNative = () => typeof window.AtlasNative?.redditFetch === 'function';
+function nativeFetch(url) {
+  return new Promise((resolve, reject) => {
+    const id = String(++nativeSeq);
+    const t = setTimeout(() => { nativeWait.delete(id); reject(new Error('Zeitüberschreitung')); }, 25000);
+    nativeWait.set(id, (status, body) => {
+      clearTimeout(t);
+      if (status >= 200 && status < 300) { try { resolve(JSON.parse(body)); } catch { reject(new Error('Antwort ist kein JSON')); } }
+      else reject(Object.assign(new Error('HTTP ' + status), { status }));
+    });
+    try { window.AtlasNative.redditFetch(id, url); } catch (e) { clearTimeout(t); nativeWait.delete(id); reject(e); }
+  });
+}
+
+const PROBE_TTL = 24 * 3600e3;
+const redditProbe = () => store.get('redditProbe', null);   // {mode: 'direct'|'direct-cred'|'blocked', at, detail}
+function redditMethod() {
+  if (hasNative()) return 'native';
+  const p = redditProbe();
+  if (!p) return 'untested';
+  if (p.mode === 'blocked' && Date.now() - p.at > PROBE_TTL) return 'untested';
+  return p.mode;
+}
+const METHOD_LABEL = {
+  native: 'Atlas-App mit deiner Reddit-Anmeldung', direct: 'direkt aus dem Browser', 'direct-cred': 'direkt aus dem Browser (mit Reddit-Anmeldung)',
+  blocked: 'aus dem Browser gesperrt', untested: 'noch nicht getestet',
+};
+
+/** Einen Beitrag laden. Ergebnis: Eintrag wie im Cache {at, status: ok|no-images|gone|failed, title, author, images, method}. */
+async function redditGet(post) {
+  const jsonUrl = `https://www.reddit.com/comments/${post.id}/.json?raw_json=1&limit=1`;
+  let data = null, method = redditMethod(), detail = '';
+  if (method === 'native') {
+    try { data = await nativeFetch(jsonUrl); } catch (e) {
+      if (e.status === 404) return { at: Date.now(), status: 'gone', method };
+      return { at: Date.now(), status: 'failed', method, detail: e.message };
+    }
+  } else {
+    if (method === 'blocked') return null;
+    const tries = method === 'direct-cred' ? ['include'] : method === 'direct' ? ['omit'] : ['omit', 'include'];
+    for (const cred of tries) {
+      try {
+        const res = await fetch(jsonUrl, { credentials: cred, cache: 'no-store', referrerPolicy: 'no-referrer' });
+        if (res.ok) { data = await res.json(); method = cred === 'include' ? 'direct-cred' : 'direct'; break; }
+        if (res.status === 404) return { at: Date.now(), status: 'gone', method: cred === 'include' ? 'direct-cred' : 'direct' };
+        detail = 'Reddit antwortet ' + res.status;
+      } catch { detail = navigator.onLine ? 'Reddit erlaubt dem Browser den Abruf nicht (CORS/Sperre)' : 'offline'; }
+    }
+    if (!data) {
+      if (navigator.onLine) store.set('redditProbe', { mode: 'blocked', at: Date.now(), detail });
+      return null;
+    }
+    store.set('redditProbe', { mode: method, at: Date.now(), detail: '' });
+  }
+  const p = redditParse(data);
+  if (!p) return { at: Date.now(), status: 'failed', method, detail: 'Unbekanntes Antwortformat' };
+  if (p.gone && !p.images.length) return { at: Date.now(), status: 'gone', method };
+  const images = [];
+  for (const im of p.images) {            // nur Bilder melden, die auf dem Gerät wirklich laden (mit echter Größe)
+    const ok = await imageSize(im.url) || (im.fallback && await imageSize(im.fallback));
+    if (ok) images.push({ url: ok.url, w: ok.w, h: ok.h });
+  }
+  return { at: Date.now(), status: images.length ? 'ok' : 'no-images', method, title: p.title, author: p.author, images };
+}
+function imageSize(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const t = setTimeout(() => resolve(null), 12000);
+    img.referrerPolicy = 'no-referrer';
+    img.onload = () => { clearTimeout(t); resolve(img.naturalWidth >= 200 ? { url, w: img.naturalWidth, h: img.naturalHeight } : null); };
+    img.onerror = () => { clearTimeout(t); resolve(null); };
+    img.src = url;
+  });
+}
+
+const rdCache = () => store.get('redditCache', {});
+function rdRemember(id, entry) {
+  const c = rdCache();
+  c[id] = entry;
+  const keys = Object.keys(c).sort((a, b) => c[b].at - c[a].at);
+  store.set('redditCache', Object.fromEntries(keys.slice(0, 400).map((k) => [k, c[k]])));
+  if (entry.status !== 'failed' || (entry.fails || 0) >= 2) {   // einzelne Aussetzer nicht melden
+    const post = DB.reddit.find((p) => p.id === id);
+    const out = store.get('redditOutbox', []).filter((o) => o.id !== id);
+    out.push({ id, post: post?.url, status: entry.status, title: entry.title, author: entry.author, images: entry.images || [] });
+    store.set('redditOutbox', out);
+  }
+}
+const rdOutbox = () => store.get('redditOutbox', []).filter((o) => DB.reddit.some((p) => p.id === o.id));
+const rdDue = (p) => { const c = rdCache()[p.id]; return !c || (c.status === 'failed' && Date.now() - c.at > 6 * 3600e3); };
+
+function rdHolder(target) {
+  const [gid, rest] = target.split('/');
+  const g = DB.byId.get(gid);
+  if (!g || !rest) return g;
+  return rest.startsWith('mod:') ? g.mods.find((m) => m.id === rest.slice(4)) : g.routes.find((r) => r.id === rest);
+}
+/** Geladene, noch nicht übernommene Reddit-Bilder in die Galerien einblenden (nur im Speicher, markiert _device). */
+function redditMerge() {
+  const cache = rdCache();
+  let n = 0;
+  for (const p of DB.reddit) {
+    const c = cache[p.id];
+    if (c?.status !== 'ok') continue;
+    for (const t of p.targets) {
+      const h = rdHolder(t);
+      if (!h) continue;
+      h.screenshots = h.screenshots || [];
+      for (const im of c.images) {
+        const mid = redditMediaId(im.url);
+        if (h.screenshots.some((s) => s.url === im.url || (mid && redditMediaId(s.url) === mid)) || h.screenshots.length >= 8) continue;
+        h.screenshots.push({ url: im.url, caption: c.title || h.name || '', source: p.url, credit: `Reddit${c.author ? ' · u/' + c.author : ''} · vom Gerät geladen`, _device: true });
+        n += 1;
+      }
+    }
+  }
+  return n;
+}
+function rdRefreshGalleries() {
+  const g = DB.byId.get(state.lastGame);
+  if (!g) return;
+  for (const el of document.querySelectorAll('[data-shots]')) {
+    const key = el.dataset.shots;
+    const h = key === 'game' ? g : key.startsWith('m:') ? g.mods.find((m) => 'm:' + m.id === key) : g.routes.find((r) => 'r:' + r.id === key);
+    if (h?.screenshots?.length) el.innerHTML = shotsHTML(h.screenshots, key);
+  }
+  for (const el of document.querySelectorAll('[data-reddit-pending]')) {
+    const r = g.routes.find((x) => x.id === el.dataset.redditPending);
+    if (r) el.outerHTML = redditBox(g, r) || '<div hidden></div>';
+  }
+}
+
+/** Abholliste abarbeiten: erst die Beiträge des offenen Spiels, dann der Rest (Dual Screen zuerst), sanft getaktet. */
+async function redditSync({ game = null, max = 12, report = true } = {}) {
+  if (rdState.running || !DB.reddit.length || !navigator.onLine || redditMethod() === 'blocked') return;
+  rdState.running = true;
+  let loaded = 0;
+  try {
+    const list = DB.reddit.filter(rdDue).sort((a, b) => (game ? (b.targets.some((t) => t.split('/')[0] === game) - a.targets.some((t) => t.split('/')[0] === game)) : 0));
+    for (const p of list.slice(0, max)) {
+      const entry = await redditGet(p);
+      if (!entry) break;                                  // Browser gesperrt: nicht weiter anfragen
+      if (entry.status === 'failed') entry.fails = (rdCache()[p.id]?.fails || 0) + 1;
+      rdRemember(p.id, entry);
+      loaded += 1;
+      if (entry.status === 'ok' && redditMerge() && state.lastGame && p.targets.some((t) => t.startsWith(state.lastGame + '/') || t === state.lastGame)) rdRefreshGalleries();
+      await new Promise((r) => setTimeout(r, 1500));      // höflich: höchstens ein Beitrag alle 1,5 s
+    }
+  } finally { rdState.running = false; rdState.last = Date.now(); }
+  if (location.hash.startsWith('#/spiel/')) rdRefreshGalleries();
+  if (location.hash.startsWith('#/info')) route();
+  if (report && loaded) redditReport(false);
+}
+
+const ghToken = () => store.get('githubToken', '');
+function redditPayload(items) {
+  return { kind: 'reddit-images', device: device().name || 'Handheld', method: redditMethod(), at: new Date().toISOString(),
+    posts: items.map((o) => ({ post: o.post, status: o.status, title: o.title || '', author: o.author || '', images: o.images || [] })) };
+}
+function redditIssue(items) {
+  const n = items.length;
+  const imgs = items.reduce((s, o) => s + (o.images?.length || 0), 0);
+  return { title: `Reddit-Bilder vom Gerät: ${n} ${n === 1 ? 'Beitrag' : 'Beiträge'}, ${imgs} Bilder (${new Date().toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })})`,
+    body: `reddit-images: ${n}\n\nAutomatische Rückmeldung von Handheld Atlas (${device().name || 'Handheld'}): Bilder aus Reddit-Beiträgen, `
+      + `direkt auf dem Gerät geladen. Die Action übernimmt sie ohne KI; die KI-Bildprüfung sieht sie danach an (docs/REDDIT.md).\n\n`
+      + '```json\n' + JSON.stringify(redditPayload(items)) + '\n```\n' };
+}
+/** Ergebnisse zurückmelden: mit GitHub-Schlüssel automatisch per API, sonst (manuell) als vorbereitetes Issue. */
+async function redditReport(manual) {
+  const items = rdOutbox().slice(0, 25);
+  if (!items.length) { if (manual) toast('Keine neuen Reddit-Ergebnisse zum Zurückmelden.'); return; }
+  const { title, body } = redditIssue(items);
+  const done = () => {
+    store.set('redditOutbox', store.get('redditOutbox', []).filter((o) => !items.some((i) => i.id === o.id)));
+    const list = requests().filter((r) => r.title !== title);
+    list.unshift({ title, game: null, at: Date.now(), state: 'new' });
+    store.set(REQ_KEY, list.slice(0, 12));
+    scheduleRequestPoll(20000);
+  };
+  if (!ghToken()) {
+    if (manual) { window.open(issueUrl(title, body), '_blank', 'noopener'); done(); }
+    return;
+  }
+  try {
+    const res = await fetch(`https://api.github.com/repos/${DB.meta.repo}/issues`, {
+      method: 'POST', headers: { Authorization: 'Bearer ' + ghToken(), Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title, body, labels: ['recherche'] }),
+    });
+    if (!res.ok) throw new Error('GitHub antwortet ' + res.status + (res.status === 401 || res.status === 403 ? ' – Schlüssel prüfen (Issues: Lesen und Schreiben)' : ''));
+    done();
+    toast(`${items.length} Reddit-Ergebnis(se) an Atlas gemeldet – die Bilder sind in wenigen Minuten für alle Geräte in der Datenbank.`);
+  } catch (e) { if (manual) toast(esc(e.message)); store.set('redditReportError', { at: Date.now(), detail: e.message }); }
+}
+
+/* Kasten unter der Galerie eines Spielwegs: Reddit-Beiträge, deren Bilder noch nicht in Atlas sind. */
+function redditBox(g, r) {
+  const posts = DB.reddit.filter((p) => p.targets.includes(`${g.id}/${r.id}`));
+  if (!posts.length) return '';
+  const cache = rdCache();
+  const open = posts.filter((p) => cache[p.id]?.status !== 'ok');
+  if (!open.length) return '';
+  const method = redditMethod();
+  const busy = rdState.running && method !== 'blocked';
+  const embeds = open.slice(0, 3).map((p, i) => {
+    const sub = (/\/r\/([A-Za-z0-9_]+)\//.exec(p.url) || [])[1];
+    return sub ? `<button class="btn small" data-reddit-embed="${esc(sub)}/${esc(p.id)}">${icon('image')}Reddit-Beitrag ${open.length > 1 ? i + 1 + ' ' : ''}hier anzeigen</button>` : '';
+  }).join('');
+  return `<div class="reddit-box" data-reddit-pending="${esc(r.id)}">
+    <p class="faint">${icon('image')} ${open.length} Reddit-${open.length === 1 ? 'Beitrag' : 'Beiträge'} zu diesem Weg ${busy ? 'werden gerade auf diesem Gerät geladen …'
+      : method === 'blocked' ? '– der Browser darf Reddit nicht direkt lesen. Ansehen geht trotzdem:' : 'warten auf das Laden über dieses Gerät.'}</p>
+    <div class="row">${embeds}${open.slice(0, 3).map((p, i) => `<a class="btn small" href="${esc(p.url)}" target="_blank" rel="noopener">Auf Reddit${open.length > 1 ? ' ' + (i + 1) : ''} ${icon('ext')}</a>`).join('')}</div>
+    <div class="reddit-embeds"></div></div>`;
+}
+
+function redditPanel() {
+  if (!DB.meta.repo) return '';
+  const method = redditMethod();
+  const probe = redditProbe();
+  const cache = rdCache();
+  const open = DB.reddit.filter((p) => cache[p.id]?.status !== 'ok' && cache[p.id]?.status !== 'gone' && cache[p.id]?.status !== 'no-images');
+  const dual = open.filter((p) => p.dual).length;
+  const loaded = DB.reddit.filter((p) => cache[p.id]?.status === 'ok').length;
+  const out = rdOutbox();
+  const err = store.get('redditReportError', null);
+  return `<div class="panel"><h3>${icon('image')} Reddit-Bilder vom Gerät</h3>
+    <p class="muted">Reddit sperrt Server (auch GitHub). Atlas lädt die Bilder verlinkter Reddit-Beiträge deshalb direkt auf diesem Gerät, zeigt sie sofort und meldet sie zurück in die Datenbank – Dual-Screen-Wege zuerst.</p>
+    <ul class="checklist">
+      <li class="${method === 'native' || method.startsWith('direct') ? 'ok' : method === 'blocked' ? 'miss' : 'part'}">${icon(method === 'blocked' ? 'alert' : 'check')}Abruf: ${esc(METHOD_LABEL[method])}${probe?.at ? ` (Test ${fmtDate(new Date(probe.at).toISOString())})` : ''}${method === 'blocked' && probe?.detail ? ' – ' + esc(probe.detail) : ''}</li>
+      <li class="${open.length ? 'part' : 'ok'}">${icon(open.length ? 'alert' : 'check')}${open.length} ${open.length === 1 ? 'Beitrag' : 'Beiträge'} auf der Abholliste${dual ? `, davon ${dual} Dual Screen` : ''}; ${loaded} hier geladen</li>
+      <li class="${out.length ? 'part' : 'ok'}">${icon(out.length ? 'alert' : 'check')}${out.length ? `${out.length} Ergebnis(se) warten auf Rückmeldung` : 'Alles zurückgemeldet'}${err && out.length ? ' – letzter Fehler: ' + esc(err.detail) : ''}</li>
+    </ul>
+    ${method === 'blocked' ? '<p class="faint">Seit Mai 2026 antwortet Reddit nur noch angemeldeten Nutzern, und eine Webseite darf deine Reddit-Anmeldung nicht mitbenutzen. Vollautomatisch klappt es mit der kommenden Atlas-App (Reddit-Anmeldung in der App). Bis dahin: Beiträge über „hier anzeigen“ am Spielweg ansehen. Atlas testet den Browser-Weg einmal am Tag neu.</p>' : ''}
+    <label class="field">GitHub-Schlüssel für die automatische Rückmeldung<input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…" value="${esc(ghToken())}"></label>
+    <p class="faint">Fein abgestufter Schlüssel nur für ${esc(DB.meta.repo)}, Berechtigung „Issues: Lesen und Schreiben“. Bleibt auf diesem Gerät und geht nur an api.github.com.</p>
+    <div class="row"><button class="btn primary" id="gh-save">Speichern</button>${ghToken() ? '<button class="btn" id="gh-clear">Löschen</button>' : ''}
+      <button class="btn" id="rd-sync"${open.length ? '' : ' disabled'}>${icon('spark')}${method === 'blocked' ? 'Erneut testen' : 'Jetzt laden'}</button>
+      ${out.length ? `<button class="btn" id="rd-report">${icon('ext')}${ghToken() ? 'Jetzt zurückmelden' : 'Als Issue senden'}</button>` : ''}</div></div>`;
+}
+
 const daysSince = (d) => Math.floor((Date.now() - new Date(d + 'T00:00:00Z').getTime()) / 86400000);
 /* What happened to this game since its deep research: releases of its projects, maintenance changes. */
 function eventsSince(g, since) {
@@ -1300,6 +1604,7 @@ function route() {
   stopPreview();
   $('#view').innerHTML = html;
   fillOnlineIndex();
+  if (a === 'spiel' && DB.reddit.some((p) => rdDue(p) && p.targets.some((t) => t.split('/')[0] === b))) setTimeout(() => redditSync({ game: b, max: 6 }), 600);
   if (state.scrollToWay) {
     state.scrollToWay = false;
     requestAnimationFrame(() => document.getElementById(wayId(state.openWay))?.scrollIntoView({ block: 'center' }));
@@ -1331,7 +1636,8 @@ function openLightbox(group, i) {
     const s = shots[(k + shots.length) % shots.length];
     lb.dataset.i = (k + shots.length) % shots.length;
     const pixel = s.url.includes('libretro-thumbnails') ? 'pixel' : '';
-    lb.innerHTML = `<img class="${pixel}" src="${esc(s.url)}" alt="${esc(s.caption || '')}" referrerpolicy="no-referrer">
+    const src = fullSrc(s.url);
+    lb.innerHTML = `<img class="${pixel}" src="${esc(src)}"${src !== s.url ? ` data-fb="${esc(s.url)}" onerror="if(this.dataset.fb){this.src=this.dataset.fb;delete this.dataset.fb}"` : ''} alt="${esc(s.caption || '')}" referrerpolicy="no-referrer">
       <div class="bar"><span>${esc(s.caption || '')}${s.credit ? ' · ' + esc(s.credit) : ''}</span>
       ${shots.length > 1 ? `<button class="btn" data-lb="-1">${icon('back')}</button><span>${+lb.dataset.i + 1} / ${shots.length}</span><button class="btn" data-lb="1" style="transform:scaleX(-1)">${icon('back')}</button>` : ''}
       ${s.source ? `<a class="btn" href="${esc(s.source)}" target="_blank" rel="noopener">Quelle ${icon('ext')}</a>` : ''}<button class="btn primary" data-lb="close">Schließen</button></div>`;
@@ -1371,6 +1677,32 @@ document.addEventListener('click', (e) => {
     toast(aiKey() ? 'Schlüssel gespeichert (nur auf diesem Gerät).' : 'Kein Schlüssel eingetragen.'); route(); return;
   }
   if (t.id === 'ai-clear') { store.set('openaiKey', ''); toast('Schlüssel gelöscht.'); route(); return; }
+  if (t.id === 'gh-save') {
+    store.set('githubToken', $('#gh-token').value.trim());
+    toast(ghToken() ? 'GitHub-Schlüssel gespeichert (nur auf diesem Gerät). Reddit-Ergebnisse werden ab jetzt automatisch gemeldet.' : 'Kein Schlüssel eingetragen.');
+    route(); if (ghToken()) redditReport(false); return;
+  }
+  if (t.id === 'gh-clear') { store.set('githubToken', ''); toast('GitHub-Schlüssel gelöscht.'); route(); return; }
+  if (t.id === 'rd-sync') {
+    e.preventDefault();
+    if (redditMethod() === 'blocked') store.set('redditProbe', null);
+    toast('Lade Reddit-Beiträge auf diesem Gerät …');
+    redditSync({ max: 25 }).then(() => { route(); toast(`Reddit: ${METHOD_LABEL[redditMethod()]}.`); });
+    return;
+  }
+  if (t.id === 'rd-report') { e.preventDefault(); redditReport(true).then(() => route()); return; }
+  if (t.dataset.redditEmbed) {
+    e.preventDefault();
+    const [sub, id] = t.dataset.redditEmbed.split('/');
+    const box = t.closest('.reddit-box')?.querySelector('.reddit-embeds');
+    if (box && !box.querySelector(`[data-embed="${id}"]`)) {
+      box.insertAdjacentHTML('beforeend', `<iframe data-embed="${esc(id)}" class="reddit-embed" loading="lazy" title="Reddit-Beitrag"
+        src="https://embed.reddit.com/r/${encodeURIComponent(sub)}/comments/${encodeURIComponent(id)}/?embed=true&amp;theme=dark&amp;showmedia=true&amp;showmore=false"
+        sandbox="allow-scripts allow-same-origin allow-popups" referrerpolicy="no-referrer"></iframe>`);
+    }
+    t.remove();
+    return;
+  }
   if (t.dataset.open) {
     e.preventDefault();
     state.openWay = t.dataset.open; state.gameTab = 'versions'; route();
@@ -1538,6 +1870,8 @@ async function init() {
   });
   route();
   scheduleRequestPoll(3000);
+  setTimeout(() => redditSync({ max: 12 }), 5000);   // Reddit-Abholliste im Hintergrund (docs/REDDIT.md)
+  window.addEventListener('online', () => redditReport(false));
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.ATLAS_EMBEDDED) navigator.serviceWorker.register('sw.js').catch(() => {});
   document.addEventListener('visibilitychange', () => { if (!document.hidden) checkUpdate(false); });
   if (navigator.getGamepads && [...navigator.getGamepads()].some(Boolean)) { pads.running = true; requestAnimationFrame(pollPads); }

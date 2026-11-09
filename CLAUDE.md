@@ -27,10 +27,11 @@ scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
 scripts/images.py      Bilder aus Seiten holen (YouTube-Vorschaubild, GitHub, Steam, Google Play, Wikipedia, Artikel)
+scripts/reddit.py      Reddit-Quelle: Abholliste für den Handheld + Rückmeldung übernehmen (`reddit-images:`), siehe docs/REDDIT.md
 scripts/push.sh        Commit + Push der Workflows; gitsync.py führt JSON-Konflikte paralleler Läufe zusammen
 scripts/wikidata.py    Stufe 0/1 (kostenlos): Jahre, Plattformen, Fassungen, Genre, offizielle Android-Fassung, ganze Reihen
 scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
-scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai → ai-verified, ai-unclear oder entfernt)
+scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai/reddit → ai-verified, ai-unclear oder entfernt)
 scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
 scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im Watcher)
 ```
@@ -178,10 +179,13 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
 5. **Screenshots je Spielweg** (wichtig: die App zeigt sie in der Kachel-Vorschau, Dual-Screen-Bilder zuerst)
    „Bilder suchen“ (Issue `images: <id>` oder `images: <id>/<weg-id>`): erst libretro/Steam/Wikipedia/READMEs, dann
    nennt die KI **Seiten** (Videos, Artikel, Store-Seiten), aus denen `scripts/images.py` die Bilder holt – Bild-URLs
-   selbst findet die Websuche kaum. Reddit, MobyGames und GameFAQs sind aus GitHub Actions nicht abrufbar.
+   selbst findet die Websuche kaum. MobyGames und GameFAQs sind aus GitHub Actions nicht abrufbar.
+   **Reddit** lädt der Handheld selbst ([`docs/REDDIT.md`](docs/REDDIT.md)): Jeder Reddit-Link in `links`, `reports` oder
+   als Bild-`source` kommt automatisch auf die Abholliste – einen guten Reddit-Beitrag des Autors als Link am Spielweg
+   eintragen genügt, die Bilder folgen. Issues mit `reddit-images:` kommen vom Gerät; nicht von Hand anlegen.
    Der Watcher holt automatisch Bilder aus dem README spielbezogener Projekte (`scripts/media.py`) und markiert sie
    mit `check: "readme"`. Deine Aufgabe pro Lauf:
-   Prüfstufen der Bilder: `readme`/`ai` = ungeprüft · `ai-verified` = von der KI-Bildprüfung bestätigt ·
+   Prüfstufen der Bilder: `readme`/`ai`/`reddit` = ungeprüft (`reddit` = vom Handheld aus einem Reddit-Beitrag) · `ai-verified` = von der KI-Bildprüfung bestätigt ·
    `ai-unclear` = KI unsicher → **deine Aufgabe** · `source-verified` = genau so in der Quelle eingebunden.
    - **Bis zu 10 Bilder mit `check: "ai-unclear"` oder `"readme"` prüfen:** Bild herunterladen (`curl -sL <url> -o /tmp/x.png`) und mit
      dem Read-Tool ansehen. Zeigt es dieses Spiel in dieser Variante (z. B. zweiter Bildschirm)? → `check: "source-verified"`,

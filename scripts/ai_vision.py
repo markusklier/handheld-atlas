@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """KI-Bildprüfung für Spielweg- und Mod-Screenshots (OpenAI, Bild-Eingabe).
 
-Prüft Bilder mit check "readme" (vom Watcher aus Projekt-READMEs) oder "ai" (von der KI-Recherche gefunden):
+Prüft Bilder mit check "readme" (vom Watcher aus Projekt-READMEs), "ai" (von der KI-Recherche gefunden)
+oder "reddit" (vom Handheld aus Reddit-Beiträgen geladen, docs/REDDIT.md):
   - zeigt es dieses Spiel?  - zeigt es diese Variante (z. B. zweiter Bildschirm bei Dual-Screen-Wegen)?
   - ist es Logo / Werbegrafik / Menü eines anderen Spiels?
 Ergebnis: passt → check "ai-verified" + deutsche Bildunterschrift; passt nicht → Bild entfernt;
@@ -31,7 +32,7 @@ FORMAT = {'type': 'json_schema', 'name': 'atlas_image_check', 'strict': True, 's
         'dualScreenVisible': {'type': 'boolean'},
         'captionDe': {'type': 'string'},
     }}}
-TO_CHECK = {'readme', 'ai'}
+TO_CHECK = {'readme', 'ai', 'reddit'}   # reddit = vom Handheld aus Reddit-Beiträgen geladen
 check_link = None   # set in main(); tests replace it
 
 

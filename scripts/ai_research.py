@@ -1089,6 +1089,8 @@ Release-Seiten, Projekt- oder Store-Seiten (Google Play), Artikel und Blogbeitr�
 url = genau die Seite, die du über die Websuche geöffnet hast; shows = was darauf zu sehen ist (kurz, deutsch).""", token, model)
         found += collect(pages, have | {x['url'] for x in found}, room - len(found), log, blocked=blocked)
     posts = list(dict.fromkeys(blocked))
+    if posts:                             # the handheld opens them later (Reddit-Quelle, docs/REDDIT.md)
+        __import__('reddit').remember(posts, f"{g['id']}/{r['id']}")
     if token and posts and len(found) < room:
         try:
             found += images_from_posts(posts[:4], have | {x['url'] for x in found}, room - len(found), token, model, log)
@@ -1217,6 +1219,8 @@ def add_image(target, url, token=None, model=None, log=print):
     else:
         blocked = []
         found = collect([url], have, 4, log, blocked=blocked)
+        if blocked:
+            __import__('reddit').remember(blocked, target.strip())
         if blocked and token:
             found += images_from_posts(blocked, have | {x['url'] for x in found}, 4 - len(found), token, model, log)
     cap = (holder.get('name') if rid else 'Originalspiel') or 'Screenshot'
@@ -1357,6 +1361,7 @@ def main():
     images = []   # game ids whose pictures were requested
     image_routes = None
     added_image = None   # (game[/way], url) pasted by the owner in the app
+    reddit_report = None   # JSON from the handheld: images of Reddit posts (docs/REDDIT.md)
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
@@ -1367,11 +1372,14 @@ def main():
         images = [x.strip() for x in args.images.split(',') if x.strip()]
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
-        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url', 'update')
+        keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url', 'update',
+                'reddit-images')
         m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
-        if 'add-image' in val and 'url' in val:
+        if 'reddit-images' in val and payload:   # pictures the handheld read from Reddit posts (no AI needed)
+            reddit_report = json.loads(payload.group(1))
+        elif 'add-image' in val and 'url' in val:
             added_image = (val['add-image'], val['url'])
         elif 'images' in val:
             images = [x.strip() for x in val['images'].split(',') if x.strip()]
@@ -1414,6 +1422,12 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
         lines.append(f'- Bildersuche: {total} Screenshots für Spielwege gefunden')
+    if reddit_report:
+        try:
+            got = __import__('reddit').apply(reddit_report, log=lambda *_: None)
+            lines.append('- Reddit-Bilder vom Gerät übernommen (KI-Bildprüfung folgt):\n' + '\n'.join('  ' + x for x in got))
+        except Exception as e:  # noqa: BLE001
+            lines.append(f'- Reddit-Bilder vom Gerät: Fehler – {type(e).__name__}: {str(e)[:150]}')
     if added_image:
         try:
             n = add_image(*added_image, token=token, model=model)

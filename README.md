@@ -20,6 +20,7 @@ der Reiter „Vergleich“ stellt alle Wege nebeneinander (Dual Screen, Bild, Mo
 | **Watcher** (`scripts/watch.py`, GitHub Action, ohne KI) | täglich | neue Releases/Archivierung aller bekannten Projekte → Reiter „Neu“; neue Kandidaten aus GitHub-Suche, aktiven Forks, Modrinth und Reddit → `data/inbox.json`; fehlende Cover/Screenshots (libretro-thumbnails, Steam, Wikipedia) und Screenshots je Spielweg aus den READMEs der Projekte |
 | **Pflege-Agent** (Claude, geplante Aufgabe) | wöchentlich | sortiert die Inbox in Spiele ein, erweitert die Spieleliste um Spiele mit echten Wegen, prüft README-Bilder visuell, ergänzt fehlende Spielweg-Screenshots, korrigiert Franchises; Ablauf in [`CLAUDE.md`](CLAUDE.md) |
 | **KI-Recherche** (`scripts/ai_research.py`, GitHub Action, OpenAI) | sofort bei „Recherche anfordern“, per Knopf mit Spiel-ID, wöchentlich 3 Spiele | Fassungen, Spielwege, Mods und Erfahrungsberichte mit Websuche; nur belegte Angaben, Piraterie-Seiten gesperrt, Ergebnis muss `validate` bestehen. Braucht das Secret `OPENAI_API_KEY` |
+| **Dein Handheld** (Web-App, später native App) | bei jedem Start | lädt Bilder aus verlinkten Reddit-Beiträgen, die Server nicht lesen dürfen (Dual Screen zuerst), zeigt sie sofort und meldet sie per Issue zurück – Einrichtung und Grenzen in [`docs/REDDIT.md`](docs/REDDIT.md) |
 | **Du** | wann du willst | Im Spiel „Recherche anfordern“ oder „Bilder suchen“, in der Reihe „Reihe vervollständigen“ oder „Bilder für die Reihe suchen“, im Dual-Screen-Reiter „Suchlauf jetzt starten“ (jeweils ein GitHub-Issue, das die KI-Recherche sofort abarbeitet) – oder Claude sagen: „Spielweg X läuft auf dem Thor“ |
 
 Alles landet direkt auf `main` und ist nach dem automatischen Deploy in der App. Jeder Spielweg trägt eine Prüfstufe:
@@ -49,6 +50,7 @@ scripts/watch.py     Watcher
 scripts/covers.py    Cover/Screenshots aus libretro-thumbnails
 scripts/media.py     Spielweg-Screenshots (Projekt-READMEs), Steam, Wikipedia
 scripts/ai_research.py  KI-Recherche je Spiel (OpenAI Responses API mit Websuche)
+scripts/reddit.py    Reddit-Quelle: Abholliste für den Handheld, Rückmeldungen übernehmen
 ```
 
 ```sh

@@ -37,15 +37,21 @@ Hinweis: Die zeitgesteuerten GitHub-Läufe starteten erst verzögert; Markus hat
 
 ## Bekannte Grenzen und zurückgestellte Themen
 
-- **Reddit-Bilder: zurückgestellt, nicht verworfen.** Markus will langfristig Top-Qualität, gerade Dual-Screen-Bilder
-  aus Autoren-Beiträgen. Problem: Reddit sperrt Abrufe aus GitHub Actions (403), eine Reddit-API-App gibt es mit normalem
-  Konto praktisch nicht. Manuelles Einfügen von Bild-Links fällt weg (wird nicht genutzt). Optionen, in dieser Reihenfolge prüfen:
-  1. **Auf dem Gerät laden:** Die App (Web-App jetzt, später die native App) holt verlinkte Reddit-Beiträge direkt vom
-     Handheld (normale Internetverbindung, nicht gesperrt), zeigt die Bilder sofort und meldet die Bildadressen
-     automatisch zurück in die Datenbank. Vorher prüfen, ob Reddit dem Browser den Abruf erlaubt (CORS).
-  2. **Eigener Runner zu Hause:** GitHub-Actions-Runner auf einem Rechner/Raspberry Pi im Heimnetz für die Bildsuche.
-  3. **Reddit-API-Zugang** später erneut beantragen (Responsible Builder Policy, privater nicht-kommerzieller Zweck).
-  Bis dahin: Reddit-Bilder nur, wenn die KI-Websuche die Bildadresse nennt; YouTube/GitHub/Artikel decken den Rest ab.
+- **Reddit-Bilder: Stufe 1 umgesetzt (9.11.) – Laden auf dem Gerät.** Details, Datenformat und Vertrag für die native
+  App: [`docs/REDDIT.md`](REDDIT.md). Kurz: Der Build schreibt eine Abholliste (Reddit-Beiträge aus den Spieldaten und
+  solche, die die KI-Bildersuche fand, aber nicht öffnen konnte; Dual Screen zuerst) in `data.json`. Die App lädt sie auf
+  dem Handheld, zeigt die Bilder sofort und meldet sie mit einem GitHub-Schlüssel (Info, nur „Issues“) automatisch als
+  Issue `reddit-images:` zurück; die Action übernimmt sie ohne KI (`scripts/reddit.py`), die KI-Bildprüfung folgt.
+  Gespeicherte Reddit-Vorschaubilder zeigt die App als Original (`i.redd.it`) mit Rückfall.
+  Lage bei Reddit (Stand 9.11.2026): nicht angemeldete `.json`-Abrufe seit Ende Mai 2026 abgeschaltet, auch privat;
+  neue API-Anträge seit 31.10.2026 geschlossen (Option „API-Zugang beantragen“ entfällt); RSS endet 13.11.2026.
+  Folge: Im Browser wird der direkte Abruf sehr wahrscheinlich gesperrt sein (die Web-App darf die Reddit-Anmeldung
+  nicht mitbenutzen) – das zeigt Info → „Reddit-Bilder vom Gerät“ nach dem ersten Start. Dann gilt:
+  1. **Native App** mit Reddit-Anmeldung im WebView = die dauerhafte Lösung; die Web-App nutzt sie automatisch, sobald
+     `window.AtlasNative.redditFetch` existiert (in den Setup-Assistenten einplanen, kleiner Baustein).
+  2. Bis dahin: Reddit-Einbettung am Spielweg („hier anzeigen“) zum Ansehen; KI-Websuche liest weiter Bildadressen,
+     soweit sie kann.
+  3. Eigener Runner zu Hause bleibt Plan B (bräuchte ebenfalls eine Reddit-Anmeldung).
 - MobyGames, GameFAQs, minecraft.net u. ä. blocken Server-Abrufe. CurseForge braucht einen genehmigten Schlüssel.
 - KI findet Seiten zuverlässig, Bild-URLs kaum → Bilder werden aus gefundenen Seiten extrahiert (`scripts/images.py`).
 
@@ -72,7 +78,8 @@ Konzept (aus der Planung vom 9.11.):
   Emulatoren ein; niemand verbindet Spiel → Fassung → Weg → Gerät → geprüftes Setup. Markt klein, aber zahlungsbereit
   (Patreon, Spenden, Affiliate).
 
-Reihenfolge-Vorschlag: Rezept-Datenmodell + Beispielrezepte (CTR-DS, Skyrim über GameNative, ein DS-Spiel) →
+Erster kleiner Baustein der App: Reddit-Brücke (`AtlasNative.redditFetch`, docs/REDDIT.md) – macht die Reddit-Bilder
+vollautomatisch. Danach: Rezept-Datenmodell + Beispielrezepte (CTR-DS, Skyrim über GameNative, ein DS-Spiel) →
 KI füllt Rezepte für die bestempfohlenen Wege → App-Prototyp (Gerät/Apps erkennen, installieren, prüfen, starten).
 
 ## Offene Punkte

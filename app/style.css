@@ -226,6 +226,15 @@ select.chip { padding-right: 10px; appearance: auto; }
 .route p { margin: 0; }
 .route .warn { color: #ffc9b6; }
 .route .gallery { grid-auto-columns: minmax(180px, 240px); }
+/* Reddit-Quelle: vom Gerät geladene Bilder, Beiträge zum Ansehen */
+.shot .dev-tag { position: absolute; top: 7px; left: 7px; font-size: 11px; font-weight: 650; padding: 2px 7px; border-radius: 6px; background: rgba(10, 13, 12, .78); color: var(--accent); }
+.reddit-box { display: grid; gap: 8px; margin: 2px 0 10px; }
+.reddit-box p { margin: 0; display: flex; gap: 6px; align-items: center; }
+.reddit-box p svg { width: 16px; height: 16px; flex: none; }
+.reddit-embeds { display: grid; gap: 10px; }
+.reddit-embeds:empty { display: none; }
+.reddit-embed { width: 100%; max-width: 640px; height: 480px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); }
+.btn[disabled] { opacity: .5; pointer-events: none; }
 .projects-line { display: flex; flex-direction: column; gap: 6px; }
 .proj { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); flex-wrap: wrap; }
 .proj .name { font-weight: 650; }
