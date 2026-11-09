@@ -479,6 +479,30 @@
       "caption": "Crash fährt ein Kartrennen auf einer Tempelstrecke.",
       "source": "https://en.wikipedia.org/wiki/Crash_Team_Racing",
       "check": "ai-verified"
+    },
+    {
+      "url": "https://i.ytimg.com/vi/6bWNrO4fI0o/hqdefault.jpg",
+      "caption": "Crash Team Racing: PlayStation-Cover mit Crash und Pokal",
+      "source": "https://www.youtube.com/watch?v=6bWNrO4fI0o",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://images.nintendolife.com/e854715c783e9/1280x720.jpg",
+      "caption": "Remaster: Crash, Coco und Cortex in Karts (Werbemotiv)",
+      "source": "https://www.nintendolife.com/reviews/nintendo-switch/crash_team_racing_nitro-fueled",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://images.nintendolife.com/screenshots/97415/900x.jpg",
+      "caption": "Remaster: Kartrennen auf einer Unterwasserstrecke",
+      "source": "https://www.nintendolife.com/reviews/nintendo-switch/crash_team_racing_nitro-fueled",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://images.nintendolife.com/screenshots/97416/900x.jpg",
+      "caption": "Remaster: Crash fährt ein Kartrennen in Nitro-Fueled.",
+      "source": "https://www.nintendolife.com/reviews/nintendo-switch/crash_team_racing_nitro-fueled",
+      "check": "ai-verified"
     }
   ]
 }

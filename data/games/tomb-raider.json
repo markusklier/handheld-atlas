@@ -37,6 +37,30 @@
       "caption": "Anniversary: Lara klettert an einer Tempelwand.",
       "source": "https://en.wikipedia.org/wiki/Tomb_Raider",
       "check": "ai-verified"
+    },
+    {
+      "url": "https://www.sega-saturn.net/tombraidercover.jpg",
+      "caption": "Cover von Tomb Raider für Sega Saturn",
+      "source": "https://www.sega-saturn.net/games/tombraider.php",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://raidingtheglobe.com/images/games/tr1.jpg",
+      "caption": "Lara Croft mit Pistolen vor ägyptischen Hieroglyphen",
+      "source": "https://raidingtheglobe.com/gallery/core-design/tomb-raider-1/unfinished-business",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://raidingtheglobe.com/images/com_osgallery/gal-7/thumbnail_masonry/horizontal/tr1g-screenshot0103F652CA-B6C3-60CB-4F9A-A4733FAAB5B8.jpg",
+      "caption": "Lara Croft in einer überfluteten Tempelruine",
+      "source": "https://raidingtheglobe.com/gallery/core-design/tomb-raider-1/unfinished-business",
+      "check": "ai-verified"
+    },
+    {
+      "url": "https://raidingtheglobe.com/images/com_osgallery/gal-7/thumbnail_masonry/horizontal/tr1g-screenshot023D48A778-8376-D37F-7210-0061B6FEC22F.jpg",
+      "caption": "Lara Croft in einer ägyptischen Tempelanlage",
+      "source": "https://raidingtheglobe.com/gallery/core-design/tomb-raider-1/unfinished-business",
+      "check": "ai-verified"
     }
   ],
   "versions": [
