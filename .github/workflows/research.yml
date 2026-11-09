@@ -104,7 +104,7 @@ jobs:
             python scripts/ai_research.py --screenshots "${COUNT:-15}"
           elif [ "$MODE" = "dualscreen" ] || [ "${{ github.event.schedule }}" = "17 19 * * 0" ]; then
             python scripts/ai_research.py --dual-scan
-          elif [ "$MODE" = "warteschlange" ] || [ "${{ github.event.schedule }}" = "23 */2 * * *" ]; then
+          elif [ "$MODE" = "warteschlange" ] || [ "${{ github.event.schedule }}" = "22 */2 * * *" ]; then
             python scripts/ai_research.py --queue "${COUNT:-3}"
           elif [ "${{ github.event_name }}" = "schedule" ]; then
             python scripts/ai_research.py --batch 3 --screenshots 10
@@ -120,7 +120,7 @@ jobs:
             python scripts/ai_research.py --batch "$COUNT"
           fi
       - name: KI-Bildprüfung neuer Screenshots
-        if: steps.guard.outputs.skip != 'true' && github.event.schedule != '23 */2 * * *'
+        if: steps.guard.outputs.skip != 'true' && github.event.schedule != '22 */2 * * *'
         continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
