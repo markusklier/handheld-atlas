@@ -2,6 +2,92 @@
   "entries": [
     {
       "date": "2026-11-09",
+      "type": "game-added",
+      "by": "agent",
+      "game": "sonic-free-riders",
+      "text": "Neues Spiel: Sonic Free Riders mit Spielweg Free Riders Recompiled (native Xbox-360-Rekompilierung, KI-Fund)",
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "agent",
+      "game": "new-super-mario-bros-u",
+      "text": "Neues Spiel: New Super Mario Bros. U mit Spielwegen nsmbu-recomp und RedU (native Rekompilierung, KI-Fund)",
+      "url": "https://github.com/nsmbu-recomp/nsmbu-recomp"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "agent",
+      "game": "star-wars-rogue-squadron",
+      "text": "Neues Spiel: Star Wars: Rogue Squadron mit Spielweg Rogue Squadron 64 Recompiled (KI-Fund)",
+      "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "agent",
+      "game": "project-igi-im-going-in",
+      "text": "Neues Spiel: Project I.G.I. mit nativem Android-Port (KI-Fund)",
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dave-mirra-freestyle-bmx",
+      "text": "Neues Spiel: Dave Mirra Freestyle BMX mit Spielweg Open Freestyle BMX (KI-Fund)",
+      "url": "https://github.com/DenzoNL/open-freestyle-bmx"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-added",
+      "by": "agent",
+      "game": "shantae",
+      "text": "Neuer Spielweg: Shantae Dual / Shantae Link – Live-Karte und Items auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-added",
+      "by": "agent",
+      "game": "tomb-raider-iii-adventures-of-lara-croft",
+      "text": "Neue Fassung Tomb Raider I–III Remastered und Spielweg offizielle Android-App ergänzt (KI-Fund)",
+      "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "tomb-raider-the-angel-of-darkness",
+      "text": "Neue Fassung: The Angel of Darkness in Tomb Raider IV–VI Remastered (2025)",
+      "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "removed",
+      "by": "agent",
+      "game": "tomb-raider-the-last-revelation",
+      "text": "Sammlungen als Fassungen zusammengeführt: Tomb Raider IV–VI Remastered, The Lara Croft Collection und Definitive Survivor Trilogy sind keine eigenen Spiele mehr"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "grand-theft-auto-iv",
+      "text": "LibertyRecompAndroid: Projekt laut README pausiert, Hinweis auf Fork XHYN IV ergänzt",
+      "url": "https://github.com/vaduur/LibertyRecompAndroid"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "minecraft",
+      "text": "3 unklare Spielweg-Bilder geprüft und bestätigt (GTA IV, Minecraft, Skyrim)"
+    },
+    {
+      "date": "2026-11-09",
       "type": "route-updated",
       "game": "odin-sphere-leifthrasir",
       "text": "1 Community-Berichte von EmuReady für Odin Sphere Leifthrasir (Geräte mit dem Chip des AYN Thor)"
@@ -1659,7 +1745,7 @@
       "date": "2026-11-09",
       "type": "game-added",
       "by": "ai-research",
-      "game": "tomb-raider-definitive-survivor-trilogy",
+      "game": "shadow-of-the-tomb-raider",
       "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider: Definitive Survivor Trilogy (KI-Recherche)",
       "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
     },
@@ -1675,7 +1761,7 @@
       "date": "2026-11-09",
       "type": "game-added",
       "by": "ai-research",
-      "game": "the-lara-croft-collection",
+      "game": "lara-croft-and-the-guardian-of-light",
       "text": "Neues Spiel aus der Reihe Tomb Raider: The Lara Croft Collection (KI-Recherche)",
       "url": "https://en.wikipedia.org/wiki/Lara_Croft_and_the_Guardian_of_Light"
     },
@@ -1691,7 +1777,7 @@
       "date": "2026-11-09",
       "type": "game-added",
       "by": "ai-research",
-      "game": "tomb-raider-ivvi-remastered",
+      "game": "tomb-raider-the-last-revelation",
       "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider IV–VI Remastered (KI-Recherche)",
       "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
     },

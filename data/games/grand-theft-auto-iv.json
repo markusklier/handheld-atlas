@@ -242,10 +242,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/weapon-wheel.png",
-          "caption": "GTC",
+          "caption": "Waffenrad zum Antippen auf dem zweiten Bildschirm",
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/blips-iv.png",
@@ -307,7 +307,7 @@
         "Etwa 15 GB freier Speicher für die Installation; 8 GB RAM empfohlen"
       ],
       "benefit": "Führt die rekompilierte Xbox-360-Fassung direkt auf ARM64 aus, ohne Windows-Laufzeit. Der Entwickler dokumentiert gespielte frühe Missionen, freies Fahren und persistente Spielstände auf dem Retroid Pocket 5.",
-      "caveat": "Experimentell: gelegentliche Abstürze und fehlende einzelne Lichteffekte sind bekannt; Episoden und Online-Mehrspieler sind auf Android ungetestet. Nur die US-Disc ist verifiziert, das PAL-Update 0.0.8.6 wird abgewiesen.",
+      "caveat": "Laut README pausiert (keine Updates mehr); der Autor verweist auf Forks wie XHYN IV. Experimentell: gelegentliche Abstürze und fehlende einzelne Lichteffekte sind bekannt; Episoden und Online-Mehrspieler sind auf Android ungetestet. Nur die US-Disc ist verifiziert, das PAL-Update 0.0.8.6 wird abgewiesen.",
       "steps": [
         "Die Android-App aus den offiziellen Projekt-Releases installieren.",
         "Im Launcher den eigenen US-Disc-Dump und das passende Title Update 8 auswählen.",
@@ -363,7 +363,7 @@
         }
       ],
       "performance": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "ai-xhyn-iv-bedienungsorientierter-libertyrecompandroid-fork",

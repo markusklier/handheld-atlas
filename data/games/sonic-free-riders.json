@@ -1,0 +1,100 @@
+{
+  "id": "sonic-free-riders",
+  "title": "Sonic Free Riders",
+  "franchise": "Sonic the Hedgehog",
+  "platforms": [
+    "Xbox 360"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Kinect-Rennspiel, das per statischer Rekompilierung nativ auf Android läuft – mit Controller statt Kinect.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Rennspiel nur für Kinect; das Original hat keine Controller-Steuerung.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sonic_Free_Riders"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-free-riders-recompiled",
+      "name": "Free Riders Recompiled",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360 (USA/Europa)",
+      "runtime": "Statische Rekompilierung (XenonRecomp) mit Vulkan",
+      "projects": [
+        "free-riders-recompiled"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "mods",
+        "online"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigenes Disc-Image der Xbox-360-Fassung (USA/Europa)",
+        "Android 9+ (arm64), Vulkan 1.1, ca. 2 GB freier Speicher"
+      ],
+      "benefit": "Kinect wird emuliert: Controller oder Touch-Steuerung mit Neigungslenkung ersetzen die Körperbewegung. Online-Rennen über den Projektserver mit Windows, Linux und Android.",
+      "caveat": "Work in Progress: Menüs, Freies Rennen und Grand-Prix-Start laufen, vieles ist noch ungetestet. Für Android 10+ das APK „android10-arm64“ wählen.",
+      "steps": [
+        "APK aus den GitHub-Releases installieren (Android 10+: android10-arm64.apk).",
+        "Im Launcher das eigene Disc-Image (.iso) wählen; die Spieldaten werden kopiert.",
+        "„Start game“ drücken."
+      ],
+      "version": "v0.10.5",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/launcher.png",
+          "caption": "Launcher von Free Riders Recompiled",
+          "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+          "credit": "Free Riders Recompiled",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Rennen ca. 56 FPS, an der Startlinie 60 FPS (laut Entwickler, v0.6.9)",
+          "settings": "Android-10+-APK",
+          "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.6.9",
+          "date": "2026-11-09"
+        }
+      ],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

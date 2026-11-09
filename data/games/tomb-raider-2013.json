@@ -32,6 +32,23 @@
       "platforms": [
         "Xbox 360"
       ]
+    },
+    {
+      "id": "tomb-raider-definitive-survivor-trilogy",
+      "name": "Tomb Raider: Definitive Survivor Trilogy (2021)",
+      "type": "collection",
+      "year": 2021,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "note": "Sammlung der Survivor-Trilogie (Tomb Raider, Rise, Shadow) mit allen Erweiterungen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
+        }
+      ]
     }
   ],
   "routes": [],

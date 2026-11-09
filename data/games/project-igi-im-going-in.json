@@ -1,0 +1,72 @@
+{
+  "id": "project-igi-im-going-in",
+  "title": "Project I.G.I.: I’m Going In",
+  "franchise": "Project I.G.I.",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Taktik-Shooter",
+  "summary": "PC-Stealth-Shooter von 2000 als nativer Android-Port – mit eigenen PC-Spieldaten.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2000)",
+      "type": "original",
+      "year": 2000,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [
+        "APK installieren.",
+        "Den eigenen PC-Spielordner auf das Gerät kopieren.",
+        "Im Launcher „SELECT GAME FOLDER“ wählen."
+      ],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rayishere0/Project-IGI-Android-Port"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-project-igi-android-port",
+      "name": "Project IGI Android Port",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC",
+      "runtime": ".NET-Engine mit Vulkan 1.1",
+      "projects": [
+        "project-igi-android-port"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "mods"
+      ],
+      "requires": [
+        "Eigene PC-Fassung (kompletter Spielordner)",
+        "Android 7+ (arm64)"
+      ],
+      "benefit": "Läuft ohne Emulation oder Windows-Laufzeit; Controller blendet die Touch-Steuerung automatisch aus. Texturen/Sounds per Ordner-Pack austauschbar.",
+      "caveat": "Standardmäßig auf 30 FPS begrenzt. Junges Einzelprojekt, kaum Erfahrungsberichte.",
+      "effort": "guided",
+      "status": "experimental"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

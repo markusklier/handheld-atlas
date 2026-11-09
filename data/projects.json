@@ -1926,6 +1926,90 @@
         "doom-64"
       ],
       "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "free-riders-recompiled",
+      "name": "Free Riders Recompiled",
+      "kind": "port",
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+      "repo": "YuutaTsubasa/Free-Riders-Recompiled",
+      "description": "Inoffizielle statische Rekompilierung der Xbox-360-Fassung von Sonic Free Riders für Windows, Linux, macOS und Android.",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "rogue-squadron-64-recompiled",
+      "name": "Rogue Squadron 64 Recompiled",
+      "kind": "port",
+      "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+      "repo": "MikeSemicolonD/RogueSquadron64Recomp",
+      "description": "Statische Rekompilierung von Star Wars: Rogue Squadron (N64) mit N64Recomp und angepasstem RT64; Windows, Linux, macOS und Android.",
+      "games": [
+        "star-wars-rogue-squadron"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "nsmbu-recomp",
+      "name": "nsmbu-recomp",
+      "kind": "port",
+      "url": "https://github.com/nsmbu-recomp/nsmbu-recomp",
+      "repo": "nsmbu-recomp/nsmbu-recomp",
+      "description": "Native Rekompilierung von New Super Mario Bros. U für Windows, macOS, Linux, Android und iOS.",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "redu",
+      "name": "RedU",
+      "kind": "port",
+      "url": "https://github.com/HUEVOMAN77/RedU",
+      "repo": "HUEVOMAN77/RedU",
+      "description": "Android-Fork von nsmbu-recomp (spanische Oberfläche, Android 10+).",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "project-igi-android-port",
+      "name": "Project IGI Android Port",
+      "kind": "port",
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port",
+      "repo": "rayishere0/Project-IGI-Android-Port",
+      "description": "Nativer Android-Port von Project I.G.I.: I’m Going In mit Vulkan und Controller-Unterstützung.",
+      "games": [
+        "project-igi-im-going-in"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "open-freestyle-bmx",
+      "name": "Open Freestyle BMX",
+      "kind": "port",
+      "url": "https://github.com/DenzoNL/open-freestyle-bmx",
+      "repo": "DenzoNL/open-freestyle-bmx",
+      "description": "Quelloffene Neuimplementierung von Dave Mirra Freestyle BMX (PC) für Windows und Android.",
+      "games": [
+        "dave-mirra-freestyle-bmx"
+      ],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "shantae-dual",
+      "name": "Shantae Dual",
+      "kind": "mod",
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+      "repo": "Nihilspire/Shantae-Dual-Screen-Mods",
+      "description": "Dual-Screen-Begleitbildschirm „Shantae Link“ für Shantae (GBC): Live-Karte, Items, Tänze, Hinweise; als Android-App mit Emulator oder als Begleiter zu RetroArch.",
+      "games": [
+        "shantae"
+      ],
+      "checkedAt": "2026-11-09"
     }
   ]
 }

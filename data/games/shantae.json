@@ -62,8 +62,67 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": "Live-Karte aus den Leveldaten, Items zum Antippen, Tänze, Bestiarium, Tag-/Nacht-Uhr und Fortschrittshinweise.",
+      "steps": [],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/wide-view-dual-screen.webp",
+          "caption": "Spiel oben, Live-Karte mit Items auf dem unteren Bildschirm",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/map-golem-mine.png",
+          "caption": "Karte der Golem-Mine im Begleitbildschirm",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-shantae-dual",
+      "name": "Shantae Dual / Shantae Link",
+      "release": "game-boy-game-boy-color",
+      "kind": "emulator-mod",
+      "edition": "Game Boy Color (USA)",
+      "runtime": "Eigene Android-App mit Emulator; alternativ Shantae Link neben RetroArch (Gambatte/mGBA)",
+      "projects": [
+        "shantae-dual"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "widescreen"
+      ],
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene Shantae-ROM (USA, CRC32 E994B59B)"
+      ],
+      "benefit": "WIDE VIEW zeichnet die Welt über den Game-Boy-Rand hinaus live weiter; Shantae Link allein erhält RetroAchievements über RetroArch.",
+      "caveat": "KI-gestützt entwickeltes Fanprojekt; nur die US-Fassung wird unterstützt.",
+      "effort": "easy",
+      "status": "active"
+    }
+  ],
+  "updatedAt": "2026-11-09",
   "wikidata": "Q7489029",
   "wikipedia": "https://en.wikipedia.org/wiki/Shantae_%28video_game%29",
   "genre": "Metroidvania"

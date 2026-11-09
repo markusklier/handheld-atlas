@@ -23,6 +23,33 @@
       "platforms": [
         "PC"
       ]
+    },
+    {
+      "id": "remastered-2025",
+      "name": "The Angel of Darkness – Tomb Raider IV–VI Remastered",
+      "type": "remaster",
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "note": "Teil der Sammlung Tomb Raider IV–VI Remastered (Aspyr, 14. Februar 2025) mit umschaltbarer Originalgrafik und modernisierter Steuerung; keine offizielle Android-Fassung belegt.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
     }
   ],
   "routes": [],

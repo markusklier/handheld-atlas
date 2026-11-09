@@ -1,0 +1,85 @@
+{
+  "id": "dave-mirra-freestyle-bmx",
+  "title": "Dave Mirra Freestyle BMX",
+  "franchise": "Dave Mirra Freestyle BMX",
+  "platforms": [
+    "PlayStation",
+    "PC"
+  ],
+  "genre": "Sport",
+  "summary": "BMX-Klassiker, dessen PC-Fassung als quelloffener nativer Port auf Android läuft – laut Projekt auf dem AYN Thor getestet.",
+  "versions": [
+    {
+      "id": "playstation",
+      "name": "PlayStation (2000)",
+      "type": "original",
+      "year": 2000,
+      "platforms": [
+        "PlayStation"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "port",
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/handheld-1080p.jpg",
+          "caption": "In 1920×1080 (Auflösung des AYN Thor)",
+          "source": "https://github.com/DenzoNL/open-freestyle-bmx",
+          "credit": "Open Freestyle BMX",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/DenzoNL/open-freestyle-bmx"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-open-freestyle-bmx",
+      "name": "Open Freestyle BMX",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC",
+      "runtime": "Eigene C-Neuimplementierung (SDL3, Vulkan)",
+      "projects": [
+        "open-freestyle-bmx"
+      ],
+      "features": [
+        "native-arm",
+        "widescreen",
+        "high-fps",
+        "controller"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von Dave Mirra Freestyle BMX",
+        "Android 8+ (arm64) mit Vulkan"
+      ],
+      "benefit": "Beliebige Auflösung und Bildrate inkl. Breitbild; laut README auf dem AYN Thor in 1920×1080 getestet.",
+      "caveat": "Laut README ist die erste Veröffentlichung noch in Vorbereitung – vor dem Ausprobieren die Releases-Seite prüfen.",
+      "effort": "guided",
+      "status": "experimental"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

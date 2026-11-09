@@ -1,0 +1,89 @@
+{
+  "id": "star-wars-rogue-squadron",
+  "title": "Star Wars: Rogue Squadron",
+  "franchise": "Star Wars",
+  "platforms": [
+    "Nintendo 64",
+    "PC"
+  ],
+  "genre": "Action/Flugsimulation",
+  "summary": "Factor 5s N64-Klassiker als native Rekompilierung mit Breitbild, hoher Auflösung und Touch-Steuerung für Android.",
+  "versions": [
+    {
+      "id": "n64",
+      "name": "Nintendo 64 (1998)",
+      "type": "original",
+      "year": 1998,
+      "platforms": [
+        "Nintendo 64"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture1.png",
+          "caption": "X-Wing gegen AT-STs auf Hoth (PC-Build)",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-rogue-squadron-64-recompiled",
+      "name": "Rogue Squadron 64 Recompiled",
+      "release": "n64",
+      "kind": "recomp",
+      "edition": "N64 (USA v1.0)",
+      "runtime": "N64Recomp + RT64-Fork (Vulkan)",
+      "projects": [
+        "rogue-squadron-64-recompiled"
+      ],
+      "features": [
+        "native-arm",
+        "widescreen",
+        "upscaling",
+        "touch",
+        "controller",
+        "mods"
+      ],
+      "requires": [
+        "Eigene ROM von Star Wars: Rogue Squadron (USA v1.0)",
+        "Android 9+ (arm64) mit Vulkan 1.1",
+        "PC mit Android Studio/NDK zum Selbstbauen der APK"
+      ],
+      "benefit": "Breitbild mit erweitertem Sichtfeld, hohe Auflösungen, bis zu 8× Sichtweite und Bildinterpolation; Touch-Steuerung mit optionaler Gyro-Unterstützung.",
+      "caveat": "Laut README stark KI-gestützt entwickelt. Für Android gibt es laut README keine fertige APK – sie muss selbst gebaut werden (Release-Build verwenden). Stellenweise Ruckler (~20 FPS) durch die CPU-Last des Spiels.",
+      "effort": "advanced",
+      "status": "experimental"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

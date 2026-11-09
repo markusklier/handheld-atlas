@@ -6,7 +6,8 @@
     "Xbox 360",
     "PlayStation 3",
     "PC",
-    "iOS"
+    "iOS",
+    "Nintendo Switch"
   ],
   "versions": [
     {
@@ -41,6 +42,15 @@
       "platforms": [
         "iOS"
       ]
+    },
+    {
+      "id": "the-lara-croft-collection",
+      "name": "The Lara Croft Collection (2023)",
+      "type": "collection",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2023
     }
   ],
   "routes": [],

@@ -32,6 +32,22 @@
       "platforms": [
         "Xbox One"
       ]
+    },
+    {
+      "id": "the-lara-croft-collection",
+      "name": "The Lara Croft Collection (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Switch-Sammlung mit Guardian of Light und Temple of Osiris.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Lara_Croft_and_the_Temple_of_Osiris"
+        }
+      ]
     }
   ],
   "routes": [],

@@ -1,0 +1,123 @@
+{
+  "id": "new-super-mario-bros-u",
+  "title": "New Super Mario Bros. U",
+  "franchise": "Super Mario",
+  "platforms": [
+    "Wii U"
+  ],
+  "genre": "Jump ’n’ Run",
+  "summary": "Wii-U-Jump-’n’-Run, das als native Rekompilierung direkt auf Android läuft – ohne Emulator.",
+  "versions": [
+    {
+      "id": "wii-u",
+      "name": "Wii U (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "Wii U"
+      ]
+    },
+    {
+      "id": "deluxe-2019",
+      "name": "New Super Mario Bros. U Deluxe (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Enthält New Super Luigi U."
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/nsmbu-recomp/nsmbu-recomp"
+        },
+        {
+          "label": "Android-Anleitung",
+          "url": "https://github.com/nsmbu-recomp/nsmbu-recomp/blob/HEAD/docs/user/android/README.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-nsmbu-recomp",
+      "name": "nsmbu-recomp (Android)",
+      "release": "wii-u",
+      "kind": "recomp",
+      "edition": "Wii U",
+      "runtime": "Native Rekompilierung mit Vulkan",
+      "projects": [
+        "nsmbu-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "high-fps",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Wii-U-Kopie von New Super Mario Bros. U (Disc-Image oder Cemu-Archiv)"
+      ],
+      "benefit": "Kein Emulator: Spielcode wird für ARM rekompiliert. Höhere Bildraten, Speicherstände und Cemu-Levelpacks als Mods.",
+      "caveat": "Hohe Bildraten werden auf Android bei Hitze automatisch pausiert.",
+      "effort": "guided",
+      "status": "active"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HUEVOMAN77/RedU"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09",
+      "id": "ai-redu",
+      "name": "RedU (Android-Fork)",
+      "release": "wii-u",
+      "kind": "recomp",
+      "edition": "Wii U",
+      "runtime": "Fork von nsmbu-recomp, Vulkan",
+      "projects": [
+        "redu"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "high-fps"
+      ],
+      "requires": [
+        "Eigene Wii-U-Kopie von New Super Mario Bros. U",
+        "Android 10+ (arm64)"
+      ],
+      "benefit": "Auf Smartphones zugeschnittener Fork: läuft ab Android 10, Bildratenmodi von 30 bis 240 FPS.",
+      "caveat": "Oberfläche auf Spanisch; Referenzgerät ist ein Snapdragon-778G-Smartphone, kein Handheld.",
+      "effort": "guided",
+      "status": "active"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

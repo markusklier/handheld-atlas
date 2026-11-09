@@ -32,6 +32,17 @@
       "platforms": [
         "Xbox One"
       ]
+    },
+    {
+      "id": "tomb-raider-definitive-survivor-trilogy",
+      "name": "Tomb Raider: Definitive Survivor Trilogy (2021)",
+      "type": "collection",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2021,
+      "note": "Sammlung der Survivor-Trilogie (Tomb Raider, Rise, Shadow) mit allen Erweiterungen."
     }
   ],
   "routes": [],
@@ -44,5 +55,6 @@
   "wikidata": "Q50562677",
   "wikipedia": "https://en.wikipedia.org/wiki/Shadow_of_the_Tomb_Raider",
   "genre": "adventure video game",
-  "website": "https://www.tombraider.com/"
+  "website": "https://www.tombraider.com/",
+  "screenshots": []
 }

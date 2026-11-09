@@ -1,246 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://github.com/CornelioDev/keitora",
-      "title": "CornelioDev/keitora",
-      "excerpt": "A Pomodoro timer that actually keeps you focused: blocks distracting websites and apps, with a strict mode you can't turn off.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/AnDev2804/DClare",
-      "title": "AnDev2804/DClare",
-      "excerpt": "Native Android fiscal tracking & tax calendar app. 100% Jetpack Compose, Material 3, Clean Architecture, MVVM (UDF), Custom Canvas, and live public API integration.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Snk-B/BC250-Cockpit-Pro",
-      "title": "Snk-B/BC250-Cockpit-Pro",
-      "excerpt": "Industrial telemetry daemon, animated vector HUD & standalone PWA mobile cockpit for the AMD BC-250 (Sony PS5 Oberon APU) on Linux.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/JuanenRac/JuanenRac",
-      "title": "JuanenRac/JuanenRac",
-      "excerpt": "Main Github account",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/dhawan9898/cine-stream",
-      "title": "dhawan9898/cine-stream",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/LuisAlejandro544/Grabador-de-pantalla-definitivo",
-      "title": "LuisAlejandro544/Grabador-de-pantalla-definitivo",
-      "excerpt": "XD",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/KyeAnderson/Spicy-Ketchup-BIOBUZZ",
-      "title": "KyeAnderson/Spicy-Ketchup-BIOBUZZ",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/pikipiki/heroes3-goonks-and-magic",
-      "title": "pikipiki/heroes3-goonks-and-magic",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/photoandmoto/photoandmoto",
-      "title": "photoandmoto/photoandmoto",
-      "excerpt": "Photo & Moto website - Motorsport history photos and stories",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/jantursky/crease",
-      "title": "jantursky/crease",
-      "excerpt": "Hinge angle and fold-aware layouts for Compose Multiplatform, on Android foldables and iPhone Duo",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/devakashkumar/PROCUREPILOT",
-      "title": "devakashkumar/PROCUREPILOT",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/dmaidon/Lyracist",
-      "title": "dmaidon/Lyracist",
-      "excerpt": "Full featured karaoke hosting application and associated apps.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/SakshamSriAI/Project-ASCEND",
-      "title": "SakshamSriAI/Project-ASCEND",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/ToanMobile/agent-workbench",
-      "title": "ToanMobile/agent-workbench",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/wawanwfs/WFS-StoryBoost",
-      "title": "wawanwfs/WFS-StoryBoost",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/DevEslam1/pulsr",
-      "title": "DevEslam1/pulsr",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/ZachCThomas/FTC-2027-2026",
-      "title": "ZachCThomas/FTC-2027-2026",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/drsharma994-rgb/hardgate-main",
-      "title": "drsharma994-rgb/hardgate-main",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/cphillippe/Silver-dollar-city",
-      "title": "cphillippe/Silver-dollar-city",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/nitishhappy/trading-journal",
-      "title": "nitishhappy/trading-journal",
-      "excerpt": "Trading journal app using claude",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/hcfcollins/HCFlow",
-      "title": "hcfcollins/HCFlow",
-      "excerpt": "The app that follows the flow of hc",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/kitnipanz/7xdash-companion",
-      "title": "kitnipanz/7xdash-companion",
-      "excerpt": "7xDash head unit app for Zeekr (dashcam, shortcuts, HUD) in the Zeekr OS 7 style",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/balakamal/hrms-tracker",
-      "title": "balakamal/hrms-tracker",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/kakaed3000/nexredmi-xnul",
-      "title": "kakaed3000/nexredmi-xnul",
-      "excerpt": "iOS 16 on Redmi 9C (angelica/MT6765) - XNU bring-up (standalone mirror)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/sudosilo/sudosilo",
-      "title": "sudosilo/sudosilo",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/soyboitech/beacons",
-      "title": "soyboitech/beacons",
-      "excerpt": "counter surveillance firmware for esp32 boards, plus native ios and android apps. passively detects nearby alpr cameras, drones, body cams, smart glasses and bluetooth trackers.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/FutureForward-Robotics/Firestorm-2026-Public",
-      "title": "FutureForward-Robotics/Firestorm-2026-Public",
-      "excerpt": "Public Mirror of Firestorms 2026 Robot Code",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/rookiejj/briefick",
-      "title": "rookiejj/briefick",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Jhay-EL/Walkman-Studio",
-      "title": "Jhay-EL/Walkman-Studio",
-      "excerpt": "The native Apple Silicon music and library manager for Sony Walkman digital audio players.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/haoruilee/awesome-agent-native-services",
-      "title": "haoruilee/awesome-agent-native-services",
-      "excerpt": "A curated list of agent-native services and infrastructure for AI agents: email, browsers, memory, sandboxes, payments, and MCP tools. Includes selection criteria and onboarding guides.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/Mantequilla-Soft/snapievideoplayer",
       "title": "Mantequilla-Soft/snapievideoplayer",
       "excerpt": "html5 video player for the 3Speak Platform",
@@ -281,14 +41,6 @@
       "foundAt": "2026-11-09"
     },
     {
-      "url": "https://github.com/colletes/samurai-edge-demake",
-      "title": "colletes/samurai-edge-demake",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/olafkfreund/nixarchy",
       "title": "olafkfreund/nixarchy",
       "excerpt": "Omarchy 4.x vendored for NixOS — the upstream tree packaged as a derivation, not reimplemented in Nix",
@@ -300,14 +52,6 @@
       "url": "https://github.com/Ferdiansyah42/Tugas_akhir-TA",
       "title": "Ferdiansyah42/Tugas_akhir-TA",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
-      "title": "YuutaTsubasa/Free-Riders-Recompiled",
-      "excerpt": "Unofficial static recompilation of Sonic Free Riders for Windows, Linux and Android, with controller/keyboard support, custom VRM avatars, and Kinect v1, Kinect v2 (experimental) and webcam motion controls on Windows.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-09"
@@ -553,14 +297,6 @@
       "foundAt": "2026-11-09"
     },
     {
-      "url": "https://github.com/rayishere0/Project-IGI-Android-Port",
-      "title": "rayishere0/Project-IGI-Android-Port",
-      "excerpt": "A ground-up, high-performance native Android port of the classic tactical stealth first-person shooter **Project I.G.I.: I'm Going In** (2000). ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/manojkumar-code295/Plant_Disease_Rover_AI",
       "title": "manojkumar-code295/Plant_Disease_Rover_AI",
       "excerpt": "",
@@ -721,14 +457,6 @@
       "foundAt": "2026-11-09"
     },
     {
-      "url": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
-      "title": "MikeSemicolonD/RogueSquadron64Recomp",
-      "excerpt": "A fully playable (AI assisted) static recompilation of Star Wars: Rogue Squadron on N64 for Windows 10, Linux, MacOS & Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/shuuri-labs/pocknix-os",
       "title": "shuuri-labs/pocknix-os",
       "excerpt": "Self-contained Arch Linux ARM distro for the Retroid & AYN handhelds (SM8250 & SM8550): switchable Steam (gamescope) and Plasma Mobile sessions, on a ROCKNIX-based kernel.",
@@ -825,14 +553,6 @@
       "foundAt": "2026-11-09"
     },
     {
-      "url": "https://github.com/DenzoNL/open-freestyle-bmx",
-      "title": "DenzoNL/open-freestyle-bmx",
-      "excerpt": "A native, open-source port of the 2000 PC BMX classic: fully rewritten in C, verified against the original, 64-bit, SDL3. Windows and Android, any resolution and frame rate. Requires your own copy of the game.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/albertmartorell1975/android-ai-workflow-foundation",
       "title": "albertmartorell1975/android-ai-workflow-foundation",
       "excerpt": "Foundational AI-assisted workflow for Android projects. Standardizes Clean Architecture, SOLID principles, and Human-in-the-loop governance.",
@@ -900,14 +620,6 @@
       "url": "https://github.com/AbdurazaaqMohammed/MP-Manager",
       "title": "AbdurazaaqMohammed/MP-Manager",
       "excerpt": "Dual pane Android file manager with focus on APKs",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/HUEVOMAN77/RedU",
-      "title": "HUEVOMAN77/RedU",
-      "excerpt": "RedU: New Super Mario Bros. U recompilado de forma nativa para Android. Un fork de nsmbu-recomp (MPL-2.0) mejorado para teléfonos. Sin código, imágenes ni datos del juego de Nintendo.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-09"
@@ -1684,14 +1396,6 @@
       "url": "https://github.com/Deep-pdf/IoT_Micro",
       "title": "Deep-pdf/IoT_Micro",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
-      "title": "Nihilspire/Shantae-Dual-Screen-Mods",
-      "excerpt": "A collection of ai-assisted dual screen mods for use with the USA release of Shantae GBC.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-09"
@@ -6421,13 +6125,44 @@
     "https://www.reddit.com/r/SBCGaming/comments/1xqc3kx/recommendations_for_a_gift_for_my_boyfriend/",
     "https://www.reddit.com/r/SBCGaming/comments/1xqm9mx/dual_screens_problems/",
     "https://www.reddit.com/r/SBCGaming/comments/1xqnv5z/is_it_really_worth_the_form_factor_to_get_an_ayn/",
-    "https://github.com/sandstranger/com.mobilerpgpack.phone"
+    "https://github.com/sandstranger/com.mobilerpgpack.phone",
+    "https://github.com/CornelioDev/keitora",
+    "https://github.com/AnDev2804/DClare",
+    "https://github.com/Snk-B/BC250-Cockpit-Pro",
+    "https://github.com/JuanenRac/JuanenRac",
+    "https://github.com/dhawan9898/cine-stream",
+    "https://github.com/LuisAlejandro544/Grabador-de-pantalla-definitivo",
+    "https://github.com/KyeAnderson/Spicy-Ketchup-BIOBUZZ",
+    "https://github.com/pikipiki/heroes3-goonks-and-magic",
+    "https://github.com/photoandmoto/photoandmoto",
+    "https://github.com/jantursky/crease",
+    "https://github.com/devakashkumar/PROCUREPILOT",
+    "https://github.com/dmaidon/Lyracist",
+    "https://github.com/SakshamSriAI/Project-ASCEND",
+    "https://github.com/ToanMobile/agent-workbench",
+    "https://github.com/wawanwfs/WFS-StoryBoost",
+    "https://github.com/DevEslam1/pulsr",
+    "https://github.com/ZachCThomas/FTC-2027-2026",
+    "https://github.com/drsharma994-rgb/hardgate-main",
+    "https://github.com/cphillippe/Silver-dollar-city",
+    "https://github.com/nitishhappy/trading-journal",
+    "https://github.com/hcfcollins/HCFlow",
+    "https://github.com/kitnipanz/7xdash-companion",
+    "https://github.com/balakamal/hrms-tracker",
+    "https://github.com/kakaed3000/nexredmi-xnul",
+    "https://github.com/sudosilo/sudosilo",
+    "https://github.com/soyboitech/beacons",
+    "https://github.com/FutureForward-Robotics/Firestorm-2026-Public",
+    "https://github.com/rookiejj/briefick",
+    "https://github.com/Jhay-EL/Walkman-Studio",
+    "https://github.com/haoruilee/awesome-agent-native-services",
+    "https://github.com/colletes/samurai-edge-demake"
   ],
   "agent": {
-    "lastRun": "2026-11-08T19:51:56Z",
-    "summary": "Doom und Doom II mit Delta-Touch-Spielweg und Mods-Bereich (Brutal Doom, SIGIL, Eviternity), neue Wege für Star Fox 64 (Starship Android), Half-Life (Xash3D FWGS) und Minecraft (Eden-Duo-Companion), MetroidArch-Vorabversion nachgetragen, 3 Port-Kataloge aufgenommen, 25 Franchise-Korrekturen; Modrinth, Steam und Reddit waren nicht erreichbar, GitHub zeitweise gedrosselt, daher nur 5 Leads bearbeitet; Switch-Cover offen (keine verlässliche frei verlinkbare Quelle).",
-    "processed": 5,
-    "rejected": 1
+    "lastRun": "2026-11-09T19:45:32Z",
+    "summary": "5 neue Spiele mit nativen Wegen (Sonic Free Riders, New Super Mario Bros. U, Rogue Squadron, Project I.G.I., Dave Mirra BMX), Shantae-Dual-Screen-Weg, TR-III-Remaster mit Android-App, 3 Tomb-Raider-Sammlungen als Fassungen zusammengeführt, 23 Franchise-Korrekturen, 3 Bilder bestätigt; 37 Leads bearbeitet (30 verworfen). KI-Recherche-Einträge stichprobenartig geprüft: alle 33 genannten GitHub-Repos existieren. Reddit, Google Play, Steam und Wikipedia aus der Sitzung nicht erreichbar, daher 15 unklare Bilder offen.",
+    "processed": 37,
+    "rejected": 30
   },
   "watcher": {
     "lastRun": "2026-11-09T17:08:24Z",

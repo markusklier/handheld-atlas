@@ -636,10 +636,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/igortiburcio/skyrim_androidborn/HEAD/images/androidborn-settings.jpg",
-          "caption": "Graphics settings",
+          "caption": "Grafikeinstellungen im Androidborn-Launcher",
           "source": "https://github.com/igortiburcio/skyrim_androidborn",
           "credit": "Skyrim Androidborn",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

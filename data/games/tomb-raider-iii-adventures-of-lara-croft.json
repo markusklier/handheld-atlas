@@ -107,9 +107,94 @@
           "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today"
         }
       ]
+    },
+    {
+      "id": "remastered",
+      "name": "Tomb Raider I–III Remastered (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series",
+        "Nintendo Switch",
+        "Android"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "note": "Teil I–III in einer Sammlung von Aspyr (inkl. The Lost Artefact), Grafik zwischen Original und Neufassung umschaltbar. Für Android seit dem 12. März 2026 erhältlich.",
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "ai-iiii-remastered-als-offizielle-android-app",
+      "name": "I–III Remastered als offizielle Android-App",
+      "kind": "native",
+      "release": "remastered",
+      "runtime": "Offizielle Aspyr-Android-App",
+      "projects": [
+        "tomb-raider-iiii-remastered-aspyr"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Android-Freischaltung der Vollversion über den offiziellen Store; zum Ausprobieren genügt die kostenlose Demo"
+      ],
+      "benefit": "Direkter Android-Weg ohne Emulator und ohne Übertragen eigener PC-Spieldaten; Teil III ist in der Sammlung enthalten.",
+      "caveat": "Die Demo ersetzt nicht den Kauf der Vollversion. Aspyrs Patch vom 6. Oktober 2026 behebt unter anderem Controller-Ausfälle nach dem Minimieren; deshalb vor dem Test aktualisieren.",
+      "steps": [
+        "Die offizielle App mit der Paket-ID com.aspyr.trm aus Google Play installieren.",
+        "Zunächst die angebotenen ersten Levels mit den Thor-Controllern testen.",
+        "Bei zufriedenstellender Funktion die Vollversion innerhalb der App freischalten."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://play-lh.googleusercontent.com/4Mtyj6PDk5rKRJf2sRhgoAbBGrpZt4PTokfEn3gnBpq7FmEDwEECI9rtoVmiDS7UbL-g8ShKo-V3fajUTshzwQ=w1280-h720",
+          "caption": "Tomb Raider I–III Remastered (Google-Play-Bild)",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://play-lh.googleusercontent.com/TJT5-fYedTETc2mzEHE4SaQ9gh6rI_KIjSyvlXtJG8g-kt7XtFZ5ezRXTG_ed7qcqBXDHu7FCMg-TMLexCLo=w1280-h720",
+          "caption": "Tomb Raider I–III Remastered (Google-Play-Bild)",
+          "source": "https://play.google.com/store/apps/details?id=com.aspyr.trm",
+          "credit": "play.google.com",
+          "check": "ai-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
   "mods": [
     {
       "id": "tomb3",

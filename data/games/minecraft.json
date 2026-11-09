@@ -597,10 +597,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/erikvanhoolst/minecraft-companion/HEAD/assets/screenshots/waypoints.png",
-          "caption": "Waypoints with a selected destination, direction arrow and distance",
+          "caption": "Wegpunkte mit Richtungspfeil und Entfernung im Begleitbildschirm",
           "source": "https://github.com/erikvanhoolst/minecraft-companion",
           "credit": "Minecraft Companion (Eden Duo)",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [
