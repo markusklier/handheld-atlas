@@ -1042,8 +1042,6 @@ def main():
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
         if 'images' in val:
             images = [x.strip() for x in val['images'].split(',') if x.strip()]
-            if len(images) == 1 and '/' in images[0]:          # one way only: "images: game/route"
-                images, image_routes = [images[0].split('/')[0]], [images[0].split('/', 1)[1]]
         elif 'images-franchise' in val:
             images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
         elif 'game' in val and payload:
@@ -1081,6 +1079,8 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
         lines.append(f'- Bildersuche: {total} Screenshots für Spielwege gefunden')
+    if len(images) == 1 and '/' in images[0]:          # one way only: "game/route" (button at a way, or --images)
+        images, image_routes = [images[0].split('/')[0]], [images[0].split('/', 1)[1]]
     if images:
         images = [gid for gid in images if (DATA / 'games' / f'{gid}.json').exists()]
         print(f"Bilder angefordert: {', '.join(images)}")
