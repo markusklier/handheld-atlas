@@ -5796,7 +5796,12 @@
     "mighty-doom/ai-mighty-doom-server-eigenes-backend": "2026-11-09",
     "crash-team-racing/ds-ctr-ds": "2026-11-09",
     "crash-team-racing/ai-ctr-native-android": "2026-11-09",
-    "crash-team-racing/ai-playstation-mit-60-fps-widescreen-patch": "2026-11-09"
+    "crash-team-racing/ai-playstation-mit-60-fps-widescreen-patch": "2026-11-09",
+    "tomb-raider/ai-iiii-remastered-als-offizielle-android-app": "2026-11-09",
+    "tomb-raider/ai-openlara-mit-eigenen-original-spieldaten": "2026-11-09",
+    "tomb-raider/ai-historische-offizielle-android-app-aus-eigenem-kaufkonto": "2026-11-09",
+    "tomb-raider/ai-pc-remaster-uber-gamenative-mit-manuellem-exe-start": "2026-11-09",
+    "tomb-raider/ai-n-gage-portierung-uber-eka2l1": "2026-11-09"
   },
   "dualScanSeen": [
     "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
@@ -5890,6 +5895,8 @@
     "final-doom": "2026-11-09",
     "master-levels-for-doom-ii": "2026-11-09",
     "mighty-doom": "2026-11-09",
-    "crash-team-racing": "2026-11-09"
+    "crash-team-racing": "2026-11-09",
+    "tomb-raider": "2026-11-09",
+    "tomb-raider-ii": "2026-11-09"
   }
 }

@@ -348,7 +348,15 @@
       "status": "archived",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://64.media.tumblr.com/55fa5acb7b64afbedeebfd613ac2e649/tumblr_inline_nm6o4p4Wh21rwngbp_540.jpg",
+          "caption": "Tomb Raider auf Samsung-Smartphone mit MOGA-Controller",
+          "source": "https://www.tomb-of-ash.com/play-the-original-tomb-raider-on-android-with/",
+          "credit": "Tomb Raider I – Square Enix",
+          "check": "ai-verified"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
