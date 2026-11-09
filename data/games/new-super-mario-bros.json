@@ -29,7 +29,36 @@
       "platforms": [
         "Nintendo DS"
       ],
-      "year": 2006
+      "year": 2006,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d324fec7-ce32-4078-a359-69a3b121ddfc",
+          "device": "AYN Thor Pro",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.6.1",
+            "Renderer": "OpenGL",
+            "Resolution Scale": "5",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "Audio Interpolation": "Linear"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3a7b84e4-3e15-4e5c-b7fb-78c0aafaba58"
+        }
+      ]
     }
   ],
   "routes": [],

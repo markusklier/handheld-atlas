@@ -28,6 +28,50 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1cf60270-50b4-4ad6-89dc-d1f10ac36eb3",
+          "device": "AYN Odin 2",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfect on stock settings, Can definitely upscale to at least X4 - ( 1080p )",
+          "votes": 2,
+          "date": "2025-06-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4e0e3c97-2aa6-4f4b-b9e1-3e7cb5ca4ae1",
+          "device": "AYN Thor Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-03",
+          "settings": {
+            "Emulator Version": "1.20.4",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "1",
+            "Antialiasing (MSAA)": "Off",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True",
+            "Fast Memory": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ddc51d04-824f-45e9-b2b4-08b950a3ea39"
+        }
       ]
     }
   ],

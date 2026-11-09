@@ -659,9 +659,9 @@
   "wikidata": "Q49740",
   "wikipedia": "https://en.wikipedia.org/wiki/Minecraft",
   "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Screenshot_from_the_Minecraft_Nether.png",
-    "source": "https://en.wikipedia.org/wiki/Minecraft",
-    "fallback": true
+    "url": "https://play-lh.googleusercontent.com/tI4StRSPVhpGJH5R013naszLUawOjao1ya8FvyaNO7XY_cJFHFqo1EFaEJv_7zz3rRJ5lEpLiw14ZqQLCOYc=w1280-h640",
+    "source": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe",
+    "check": "ai"
   },
   "website": "https://minecraft.net",
   "playStore": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe"

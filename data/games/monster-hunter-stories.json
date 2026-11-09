@@ -29,7 +29,14 @@
       "platforms": [
         "Nintendo 3DS"
       ],
-      "year": 2016
+      "year": 2016,
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/15b0677c-8ec6-4a43-8757-97ec7246f109"
+        }
+      ]
     },
     {
       "id": "android-2017",
@@ -59,6 +66,60 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q26157961"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a34a8248-eda9-4608-8f33-cedf6ccecee4"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1808e9cc-41dc-48e6-9f66-9ea9f8a58b66",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-02-24",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1920 x 1025",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/81c6a206-e123-4fb1-878a-2ffdd55e2dc5",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Downloaded this game so not steam version. No cloud saves. Dont have option to select steam version. Runs great. Constant 60 frames with a few dips to high 50s. Perfectly playable.",
+          "votes": 1,
+          "date": "2025-12-09",
+          "settings": {
+            "Emulator Version": "5.3.1",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_V25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
         }
       ]
     }

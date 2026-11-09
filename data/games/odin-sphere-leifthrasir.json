@@ -12,6 +12,36 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ccd3f808-e069-474a-86ab-1e43164769f4",
+          "device": "AYN Thor Max",
+          "emulator": "Vita3K",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs great. Cutscenes have sound, framerate is pretty stable.",
+          "votes": 1,
+          "date": "2026-02-03",
+          "settings": {
+            "Emulator Version": "3912",
+            "Backend Renderer": "OpenGL",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "1",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f2f85324-e3e5-4b38-b9fe-9fe828e3bcec"
+        }
       ]
     }
   ],

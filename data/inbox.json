@@ -1,6 +1,78 @@
 {
   "leads": [
     {
+      "url": "https://github.com/CornelioDev/keitora",
+      "title": "CornelioDev/keitora",
+      "excerpt": "A Pomodoro timer that actually keeps you focused: blocks distracting websites and apps, with a strict mode you can't turn off.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/AnDev2804/DClare",
+      "title": "AnDev2804/DClare",
+      "excerpt": "Native Android fiscal tracking & tax calendar app. 100% Jetpack Compose, Material 3, Clean Architecture, MVVM (UDF), Custom Canvas, and live public API integration.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Snk-B/BC250-Cockpit-Pro",
+      "title": "Snk-B/BC250-Cockpit-Pro",
+      "excerpt": "Industrial telemetry daemon, animated vector HUD & standalone PWA mobile cockpit for the AMD BC-250 (Sony PS5 Oberon APU) on Linux.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/JuanenRac/JuanenRac",
+      "title": "JuanenRac/JuanenRac",
+      "excerpt": "Main Github account",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/dhawan9898/cine-stream",
+      "title": "dhawan9898/cine-stream",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/LuisAlejandro544/Grabador-de-pantalla-definitivo",
+      "title": "LuisAlejandro544/Grabador-de-pantalla-definitivo",
+      "excerpt": "XD",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/KyeAnderson/Spicy-Ketchup-BIOBUZZ",
+      "title": "KyeAnderson/Spicy-Ketchup-BIOBUZZ",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/pikipiki/heroes3-goonks-and-magic",
+      "title": "pikipiki/heroes3-goonks-and-magic",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/photoandmoto/photoandmoto",
+      "title": "photoandmoto/photoandmoto",
+      "excerpt": "Photo & Moto website - Motorsport history photos and stories",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/jantursky/crease",
       "title": "jantursky/crease",
       "excerpt": "Hinge angle and fold-aware layouts for Compose Multiplatform, on Android foldables and iPhone Duo",
@@ -6327,78 +6399,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/pokemmo-companion/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/pokedaisy/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/pixel-navigator/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/pixel-guide/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/padport/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/openfusion-pocket/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/multishot/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/morrowind/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/minecraft/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T17:02:50Z",
-    "newLeads": 15,
+    "lastRun": "2026-11-09T17:08:24Z",
+    "newLeads": 9,
     "newEvents": 0
   },
   "aiResearch": {

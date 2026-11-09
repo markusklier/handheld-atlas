@@ -43,6 +43,38 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/00270abc-6be6-4fad-a978-dc375fc9df63",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-03-22",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12",
+            "DXVK Version": "dxvk-2.3.1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/05e6e140-833b-41d8-8ee1-7c29c564500a"
+        }
       ]
     }
   ],

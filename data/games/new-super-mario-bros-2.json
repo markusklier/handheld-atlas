@@ -29,7 +29,63 @@
       "platforms": [
         "Nintendo 3DS"
       ],
-      "year": 2012
+      "year": 2012,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0f7a622e-8022-44bc-93f2-d6ea320472d2",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "If your having a controller issue with this game specfic. Change your graphics api to vulkan and then make sure your controller on the thor is set to standard. Afterwards go to contorller and tell it to auto map and foll",
+          "votes": 2,
+          "date": "2026-04-24",
+          "settings": {
+            "Emulator Version": "2125.1.1",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "OpenGLES",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "native",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1603a0a0-f88a-4493-b410-36477afeece5",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "60FPS with occasional micro stutters. Very slight input delay compared to the new 2DS XL",
+          "votes": 2,
+          "date": "2026-04-07",
+          "settings": {
+            "Emulator Version": "2125.0.1-vanilla",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/70492f72-f765-4342-8f24-4147e86a0321"
+        }
+      ]
     }
   ],
   "routes": [],

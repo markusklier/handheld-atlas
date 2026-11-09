@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6a4e1ff6-344b-409d-8ab1-4aaf259de5cf",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "You can play online on pretendo network with 3DS players, just need to dump files from your actual 3DS. Azahar runs at a locked 60FPS compared to 30-50fps as seen on N3DSXL model. I play at 3x resolution but you can easi",
+          "votes": 3,
+          "date": "2025-12-28",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Enable Async Shader Compilation": "True",
+            "Internal Resolution": "3",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/45fece06-17b5-456f-8508-cc5360ee6714"
+        }
       ]
     }
   ],

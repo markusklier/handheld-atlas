@@ -12,6 +12,60 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f1bc7590-2a24-4a08-9c7c-f317c248fe5e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Vita3K",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Firmware: 3.74 / Drivers: Turnip 22 Hot Fix / Upscale: FSR / Internal Resolution Upscaling: x2 (1980x1088) Screenshot available.",
+          "votes": 1,
+          "date": "2026-01-06",
+          "settings": {
+            "Emulator Version": "0.2.1 (3875-789b78d8)",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "1",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True",
+            "Game Version": "1.06",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9322e4b1-e869-4908-ac5f-9d7538c9e44f",
+          "device": "AYN Thor Max",
+          "emulator": "Vita3K",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Didn't need to change any settings, run great at a stable framerate.",
+          "votes": 0,
+          "date": "2026-02-03",
+          "settings": {
+            "Emulator Version": "3912",
+            "Backend Renderer": "OpenGL",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "1",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/02fd0f14-20c3-4cc6-a484-8047bc3d3e5c"
+        }
       ]
     },
     {
