@@ -328,46 +328,33 @@
       "testedOn": [],
       "screenshots": [
         {
+          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/screenshot_v.png",
+          "caption": "GTA V mit Companion-HUD und Radioauswahl",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/weapon-wheel.png",
+          "caption": "Waffenrad von Grand Theft Companion V mit Assault SMG",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/map-v.png",
+          "caption": "Gespiegelte GTA-V-Minikarte mit GPS-Route",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "ai-verified"
+        },
+        {
           "url": "https://github.com/BrianJr03/GrandTheftCompanion/raw/main/assets/screenshot_v.png",
           "caption": "GTA V oben, Companion-HUD unten",
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/screenshot.png",
-          "caption": "GTA IV on the Thor",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/screenshot_v.png",
-          "caption": "GTA V on the Thor",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/weapon-wheel.png",
-          "caption": "GTC",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/map-iv.png",
-          "caption": "GTA IV minimap mirrored on the Thor",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/map-v.png",
-          "caption": "GTA V minimap mirrored on the Thor",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "readme"
         }
       ],
       "links": [

@@ -1,0 +1,18 @@
+{
+  "id": "metroid-prime-4-beyond",
+  "title": "Metroid Prime 4: Beyond",
+  "franchise": "Metroid",
+  "platforms": [],
+  "versions": [],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "tier": "basis",
+  "wikidata": "Q30749509",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_4%3A_Beyond",
+  "genre": "Metroidvania",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/48/Metroid_Prime_4_Beyond_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Metroid_Prime_4%3A_Beyond"
+  }
+}

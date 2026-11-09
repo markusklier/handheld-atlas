@@ -28,9 +28,13 @@
       "type": "original",
       "platforms": [
         "Wii"
-      ]
+      ],
+      "year": 2007
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1987193",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_3%3A_Corruption",
+  "genre": "first-person shooter"
 }

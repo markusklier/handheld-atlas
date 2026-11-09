@@ -28,9 +28,27 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "year": 2009
+    },
+    {
+      "id": "wii-u-2015",
+      "name": "Wii U (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2539933"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q2539933",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime%3A_Trilogy"
 }

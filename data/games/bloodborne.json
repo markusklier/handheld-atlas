@@ -123,45 +123,45 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/panel.gif",
-          "caption": "The lower screen companion's Kit tab updating live while the game runs on the up",
+          "caption": "Touch-Begleitung mit Spielerwerten, Inventar und Leistung",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/kit.png",
-          "caption": "THE HUNTER: Vitality and Stamina, Blood Echoes, Blood Vials, Quicksilver, the ca",
+          "caption": "Begleitoberfläche mit Spielerwerten und Inventar",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/gameplay.png",
-          "caption": "Bloodborne running on the upper screen with the on game FPS overlay",
+          "caption": "Bloodborne-Spielszene mit FPS-Anzeige",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/status.png",
-          "caption": "Live Status readout: FPS with a rolling average and 1% low, CPU, RAM, battery, S",
+          "caption": "Thor-Begleitmenü mit Leistungsdaten und FPS-Verlauf",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/tune.png",
-          "caption": "The Tune tab: the on game HUD toggle and the Smooth 60 / Balanced 40 / Fidelity ",
+          "caption": "Tune-Menü des Thor Companion mit HUD- und Grafikoptionen",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/emerytech/Bloodborne-Android/HEAD/docs/readme/menu.png",
-          "caption": "The in game menu mirrored onto the lower touchscreen",
+          "caption": "Spielmenü der Thor-Touch-Begleitung für Bloodborne",
           "source": "https://github.com/emerytech/Bloodborne-Android",
           "credit": "Bloodborne · Thor Companion",
-          "check": "readme"
+          "check": "ai-verified"
         }
       ],
       "links": [

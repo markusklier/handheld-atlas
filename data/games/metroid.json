@@ -12,6 +12,23 @@
       "type": "original",
       "platforms": [
         "NES"
+      ],
+      "year": 1986
+    },
+    {
+      "id": "famicom-disk-system-1986",
+      "name": "Famicom Disk System, arcade video game machine (1986)",
+      "type": "port",
+      "year": 1986,
+      "platforms": [
+        "Famicom Disk System",
+        "arcade video game machine"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2530723"
+        }
       ]
     }
   ],
@@ -71,5 +88,8 @@
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
     }
-  ]
+  ],
+  "wikidata": "Q2530723",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_%28video_game%29",
+  "genre": "Metroidvania"
 }

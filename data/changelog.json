@@ -2,6 +2,44 @@
   "entries": [
     {
       "date": "2026-11-09",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 14 Screenshots bestätigt, 23 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "metroid-prime-pinball",
+      "text": "Neues Spiel aus der Reihe Metroid (Wikidata)",
+      "url": "https://www.wikidata.org/wiki/Q12397"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "metroid-other-m",
+      "text": "Neues Spiel aus der Reihe Metroid (Wikidata)",
+      "url": "https://www.wikidata.org/wiki/Q12397"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "metroid-prime-federation-force",
+      "text": "Neues Spiel aus der Reihe Metroid (Wikidata)",
+      "url": "https://www.wikidata.org/wiki/Q12397"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "metroid-prime-4-beyond",
+      "text": "Neues Spiel aus der Reihe Metroid (Wikidata)",
+      "url": "https://www.wikidata.org/wiki/Q12397"
+    },
+    {
+      "date": "2026-11-09",
       "type": "route-updated",
       "game": "the-legend-of-zelda-twilight-princess",
       "text": "1 Community-Berichte von EmuReady für The Legend of Zelda: Twilight Princess (Geräte mit dem Chip des AYN Thor)"

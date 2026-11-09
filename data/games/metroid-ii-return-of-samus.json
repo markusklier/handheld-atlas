@@ -29,8 +29,26 @@
       "platforms": [
         "Game Boy / Game Boy Color"
       ]
+    },
+    {
+      "id": "q26963045",
+      "name": "Q26963045 (2016)",
+      "type": "rerelease",
+      "year": 2016,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q26963045"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q2471454",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_II%3A_Return_of_Samus",
+  "genre": "Metroidvania"
 }

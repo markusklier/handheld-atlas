@@ -29,7 +29,8 @@
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
-      ]
+      ],
+      "year": 2002
     },
     {
       "id": "metroid-prime-remastered",
@@ -39,8 +40,41 @@
         "Nintendo Switch"
       ],
       "year": 2023
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1765733"
+        }
+      ]
+    },
+    {
+      "id": "metroid-prime-remastered-2",
+      "name": "Metroid Prime Remastered (2023)",
+      "type": "remaster",
+      "year": 2023,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q116734030"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q1765733",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime",
+  "genre": "first-person shooter"
 }

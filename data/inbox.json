@@ -6510,6 +6510,33 @@
         "tomb-raider: Tomb Raider I–VI Remastered"
       ],
       "skipped": []
+    },
+    "Metroid": {
+      "date": "2026-11-09",
+      "source": "wikidata",
+      "listed": 20,
+      "added": [
+        "metroid-prime-pinball",
+        "metroid-other-m",
+        "metroid-prime-federation-force",
+        "metroid-prime-4-beyond"
+      ],
+      "versions": [
+        "metroid-ii-return-of-samus: Q26963045",
+        "metroid-prime: Metroid Prime Remastered"
+      ],
+      "skipped": [
+        {
+          "title": "Q141391458",
+          "reason": "nicht erschienen"
+        },
+        {
+          "title": "Metroid 64",
+          "reason": "Erweiterung/DLC/kein eigenes Spiel"
+        }
+      ],
+      "queued": 16,
+      "basic": 0
     }
   },
   "imageRequests": {
@@ -6532,5 +6559,28 @@
     "tomb-raider-ii": "2026-11-09",
     "the-elder-scrolls-v-skyrim": "2026-11-09",
     "minecraft": "2026-11-09"
+  },
+  "usage": {
+    "2026-11": {
+      "runs": 2,
+      "calls": 37,
+      "input": 141316,
+      "output": 2739,
+      "searches": 2,
+      "byKind": {
+        "reihe": {
+          "calls": 1,
+          "input": 17594,
+          "output": 730,
+          "searches": 2
+        },
+        "bildpruefung": {
+          "calls": 36,
+          "input": 123722,
+          "output": 2009,
+          "searches": 0
+        }
+      }
+    }
   }
 }

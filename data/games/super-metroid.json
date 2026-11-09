@@ -32,6 +32,21 @@
         "SNES"
       ],
       "year": 1994
+    },
+    {
+      "id": "wii-2007",
+      "name": "Wii (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1194825"
+        }
+      ]
     }
   ],
   "routes": [
@@ -238,5 +253,7 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-08",
+  "wikidata": "Q1194825",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Metroid"
 }

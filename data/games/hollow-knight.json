@@ -555,22 +555,7 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/ui-source/steamgriddb/hollow-knight-grid-287022.webp",
-          "caption": "Hollow Knight artwork",
-          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
-          "credit": "HollowKnightAndroid",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/ui-source/steamgriddb/silksong-grid-325379.webp",
-          "caption": "Silksong artwork",
-          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
-          "credit": "HollowKnightAndroid",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [
         {
           "label": "Quelle",

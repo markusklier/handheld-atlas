@@ -73,18 +73,19 @@
       "testedOn": [],
       "screenshots": [
         {
+          "url": "https://raw.githubusercontent.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/HEAD/docs/images/thor-both-screens.jpg",
+          "caption": "Dragon Age: Origins mit Party-Deck auf dem Zweitbildschirm",
+          "source": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
+          "credit": "DAO-Duo (Dragon Age: Origins Recomp Android)",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
           "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/raw/main/docs/images/thor-both-screens.jpg",
           "caption": "Beide Bildschirme auf dem AYN Thor",
           "source": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
           "credit": "DAO-Duo",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/HEAD/docs/images/thor-both-screens.jpg",
-          "caption": "The game on the AYN Thor's two screens: Orzammar's Royal Palace with the Dwarf N",
-          "source": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo",
-          "credit": "DAO-Duo (Dragon Age: Origins Recomp Android)",
-          "check": "readme"
         }
       ],
       "links": [

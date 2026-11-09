@@ -1,6 +1,86 @@
 {
   "jobs": [
     {
+      "game": "metroid-prime-4-beyond",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "super-metroid",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-2-echoes",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-3-corruption",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-trilogy",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "am2r",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-dread",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-fusion",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-hunters",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-samus-returns",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-zero-mission",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-other-m",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-pinball",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-prime-federation-force",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "metroid-ii-return-of-samus",
+      "reason": "Reihe Metroid",
+      "added": "2026-11-09"
+    },
+    {
       "game": "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
       "reason": "Reihe Tomb Raider",
       "added": "2026-11-09"
