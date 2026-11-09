@@ -47,21 +47,6 @@
       ]
     },
     {
-      "id": "q188642-2003",
-      "name": "Q188642 (2003)",
-      "type": "port",
-      "year": 2003,
-      "platforms": [
-        "Q188642"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q518987"
-        }
-      ]
-    },
-    {
       "id": "wii-2006",
       "name": "Wii (2006)",
       "type": "port",
@@ -109,7 +94,6 @@
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q518987",
   "wikipedia": "https://en.wikipedia.org/wiki/Donkey_Kong_Country",
   "genre": "2D platform game"
 }

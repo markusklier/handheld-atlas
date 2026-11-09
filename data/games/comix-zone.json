@@ -32,21 +32,6 @@
       "year": 1995
     },
     {
-      "id": "q188642-2002",
-      "name": "Q188642 (2002)",
-      "type": "port",
-      "year": 2002,
-      "platforms": [
-        "Q188642"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q1114985"
-        }
-      ]
-    },
-    {
       "id": "wii-shop-channel-2007",
       "name": "Wii Shop Channel (2007)",
       "type": "port",
@@ -64,7 +49,6 @@
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q1114985",
   "wikipedia": "https://en.wikipedia.org/wiki/Comix_Zone",
   "genre": "beat 'em up"
 }

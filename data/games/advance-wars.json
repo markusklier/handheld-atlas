@@ -31,21 +31,6 @@
       ]
     },
     {
-      "id": "q188642-2001",
-      "name": "Q188642 (2001)",
-      "type": "port",
-      "year": 2001,
-      "platforms": [
-        "Q188642"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q953229"
-        }
-      ]
-    },
-    {
       "id": "wii-u-2014",
       "name": "Wii U (2014)",
       "type": "port",
@@ -63,7 +48,6 @@
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q953229",
   "wikipedia": "https://en.wikipedia.org/wiki/Advance_Wars",
   "genre": "turn-based tactics"
 }

@@ -34,26 +34,10 @@
           "url": "https://www.wikidata.org/wiki/Q20679959"
         }
       ]
-    },
-    {
-      "id": "q19610114-2018",
-      "name": "Q19610114 (2018)",
-      "type": "port",
-      "year": 2018,
-      "platforms": [
-        "Q19610114"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q20679959"
-        }
-      ]
     }
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q20679959",
   "wikipedia": "https://en.wikipedia.org/wiki/Dragon_Quest_Builders",
   "genre": "action role-playing game"
 }

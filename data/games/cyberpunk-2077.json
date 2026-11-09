@@ -123,12 +123,11 @@
     },
     {
       "id": "playstation-4-2020",
-      "name": "PlayStation 4, Q13361286 (2020)",
+      "name": "PlayStation 4 (2020)",
       "type": "port",
       "year": 2020,
       "platforms": [
-        "PlayStation 4",
-        "Q13361286"
+        "PlayStation 4"
       ],
       "links": [
         {
@@ -139,11 +138,10 @@
     },
     {
       "id": "q63184502-2022",
-      "name": "Q63184502, Xbox Series (2022)",
+      "name": "Xbox Series (2022)",
       "type": "port",
       "year": 2022,
       "platforms": [
-        "Q63184502",
         "Xbox Series"
       ],
       "links": [
@@ -241,6 +239,5 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q3182559",
   "wikipedia": "https://en.wikipedia.org/wiki/Cyberpunk_2077"
 }

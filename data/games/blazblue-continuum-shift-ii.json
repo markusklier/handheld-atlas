@@ -42,13 +42,12 @@
     },
     {
       "id": "nintendo-3ds-2011",
-      "name": "Nintendo 3DS, PlayStation 3, Q48263 (2011)",
+      "name": "Nintendo 3DS, PlayStation 3 (2011)",
       "type": "port",
       "year": 2011,
       "platforms": [
         "Nintendo 3DS",
-        "PlayStation 3",
-        "Q48263"
+        "PlayStation 3"
       ],
       "links": [
         {
@@ -60,6 +59,5 @@
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q112669290",
   "wikipedia": "https://en.wikipedia.org/wiki/BlazBlue%3A_Continuum_Shift_II"
 }

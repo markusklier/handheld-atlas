@@ -52,42 +52,12 @@
       "year": 2017
     },
     {
-      "id": "q13361286-2017",
-      "name": "Q13361286 (2017)",
-      "type": "port",
-      "year": 2017,
-      "platforms": [
-        "Q13361286"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q18149495"
-        }
-      ]
-    },
-    {
       "id": "macintosh-2018",
       "name": "Macintosh (2018)",
       "type": "port",
       "year": 2018,
       "platforms": [
         "Macintosh"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q18149495"
-        }
-      ]
-    },
-    {
-      "id": "q19610114-2019",
-      "name": "Q19610114 (2019)",
-      "type": "port",
-      "year": 2019,
-      "platforms": [
-        "Q19610114"
       ],
       "links": [
         {
@@ -114,7 +84,6 @@
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q18149495",
   "wikipedia": "https://en.wikipedia.org/wiki/Cuphead",
   "genre": "platform game"
 }

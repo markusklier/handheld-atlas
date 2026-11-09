@@ -155,7 +155,7 @@ def facts(ent, labels):
 
 
 def map_platform(label):
-    if not label:
+    if not label or re.fullmatch(r'Q\d+', label):
         return None
     name = PLATFORMS.get(label, label)
     return atlas.canon_platforms([name])[0] if name else None
@@ -181,9 +181,22 @@ class Labels:
         self.fetch = fetch
 
     def resolve(self, ids):
-        missing = [i for i in ids if i not in self.cache]
+        missing = [i for i in ids if not self.cache.get(i) or re.fullmatch(r'Q\d+', self.cache[i])]
         for qid_, ent in entities(missing, self.fetch, props='labels').items():
-            self.cache[qid_] = label_of(ent) or qid_
+            lab = label_of(ent)
+            if lab:
+                self.cache[qid_] = lab
+        rest = [i for i in missing if not self.cache.get(i) or re.fullmatch(r'Q\d+', self.cache[i])]
+        for i in range(0, len(rest), 60):          # API answered without label (seen for big items): ask SPARQL
+            values = ' '.join(f'wd:{q}' for q in rest[i:i + 60])
+            for r in sparql(f"""SELECT ?i ?l WHERE {{ VALUES ?i {{ {values} }} ?i rdfs:label ?l .
+  FILTER(LANG(?l) = "en" || LANG(?l) = "de") }}""", self.fetch):
+                q = qid(r['i'])
+                if r.get('l') and (not self.cache.get(q) or re.fullmatch(r'Q\d+', self.cache[q]) or r.get('l').isascii()):
+                    self.cache[q] = r['l']
+        for i in rest:
+            if re.fullmatch(r'Q\d+', self.cache.get(i) or ''):
+                self.cache.pop(i, None)            # never store an id as label; retried next run
         return self.cache
 
 

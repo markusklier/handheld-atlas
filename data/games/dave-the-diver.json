@@ -176,12 +176,11 @@
     },
     {
       "id": "macintosh-2023",
-      "name": "Macintosh, Q19610114 (2023)",
+      "name": "Macintosh (2023)",
       "type": "port",
       "year": 2023,
       "platforms": [
-        "Macintosh",
-        "Q19610114"
+        "Macintosh"
       ],
       "links": [
         {
@@ -192,12 +191,11 @@
     },
     {
       "id": "playstation-4-2024",
-      "name": "PlayStation 4, Q63184502 (2024)",
+      "name": "PlayStation 4 (2024)",
       "type": "port",
       "year": 2024,
       "platforms": [
-        "PlayStation 4",
-        "Q63184502"
+        "PlayStation 4"
       ],
       "links": [
         {
@@ -208,11 +206,10 @@
     },
     {
       "id": "q122761124-2025",
-      "name": "Q122761124, Xbox Series (2025)",
+      "name": "Xbox Series (2025)",
       "type": "port",
       "year": 2025,
       "platforms": [
-        "Q122761124",
         "Xbox Series"
       ],
       "links": [
@@ -224,12 +221,11 @@
     },
     {
       "id": "android-2026",
-      "name": "Android, Q48493 (2026)",
+      "name": "Android (2026)",
       "type": "port",
       "year": 2026,
       "platforms": [
-        "Android",
-        "Q48493"
+        "Android"
       ],
       "links": [
         {
@@ -285,7 +281,6 @@
     }
   ],
   "updatedAt": "2026-11-08",
-  "wikidata": "Q114995908",
   "wikipedia": "https://en.wikipedia.org/wiki/Dave_the_Diver",
   "genre": "adventure video game"
 }
