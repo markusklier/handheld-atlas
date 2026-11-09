@@ -350,14 +350,14 @@ def fill_website_covers(fetch=get, only=None, limit=100):
             page = None
             for browser in (False, True):  # some publisher sites only answer browsers; the tags are in the first KB
                 try:
-                    page = images.get(pg, timeout=40, limit=400_000, browser=browser)
+                    page = images.get(pg, timeout=40, limit=2_000_000 if 'play.google' in pg else 400_000, browser=browser)
                     break
                 except Exception as e:  # noqa: BLE001
                     log(f'! Website {g["title"]}: {str(e)[:80]}')
             if page is None:
                 continue
             reached = True
-            head = page[:page.find('<body')] if '<body' in page else page[:60000]
+            head = page[:page.find('<body')] if '<body' in page else page    # Play pages: huge head
             m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
                 re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
             cand = urllib.parse.urljoin(pg, m.group(1).replace('&amp;', '&')) if m else None
