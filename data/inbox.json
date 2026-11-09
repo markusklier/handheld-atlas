@@ -5827,5 +5827,36 @@
   "dualScan": {
     "lastRun": "2026-11-08",
     "found": 13
+  },
+  "franchiseScan": {
+    "Doom": {
+      "date": "2026-11-09",
+      "listed": 45,
+      "added": [
+        "master-levels-for-doom-ii",
+        "final-doom",
+        "doom-64",
+        "doom-rpg",
+        "doom-resurrection",
+        "doom-ii-rpg",
+        "doom-2016",
+        "doom-vfr",
+        "doom-eternal"
+      ],
+      "versions": [
+        "doom-1993: id Anthology",
+        "doom-1993: The Depths of Doom Trilogy",
+        "doom-1993: DOOM: Collector's Edition",
+        "doom-3: DOOM 3",
+        "doom-1993: Doom Classic",
+        "doom-3: Doom 3: BFG Edition",
+        "doom-1993: Doom Classic Complete",
+        "doom-1993: DOOM Slayers Collection",
+        "doom-3: Doom 3: VR Edition",
+        "doom-1993: DOOM: The Classics Collection",
+        "doom-1993: DOOM Anthology"
+      ],
+      "skipped": []
+    }
   }
 }

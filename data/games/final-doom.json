@@ -1,0 +1,26 @@
+{
+  "id": "final-doom",
+  "title": "Final Doom",
+  "franchise": "Doom",
+  "platforms": [
+    "PC"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1996)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1996
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/02/Final_Doom_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Final_Doom"
+  }
+}

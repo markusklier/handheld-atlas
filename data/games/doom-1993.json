@@ -10,7 +10,11 @@
     "PlayStation 5",
     "Xbox One",
     "Xbox Series",
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Mac",
+    "iOS",
+    "PlayStation 3",
+    "Xbox Series X/S"
   ],
   "genre": "Ego-Shooter",
   "summary": "Original-Spieldaten mit Source-Port und Mods auf Android oder die Neuauflage von 2024 mit Crossplay und eingebautem Mod-Browser.",
@@ -109,6 +113,135 @@
         {
           "label": "Quelle",
           "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM"
+        }
+      ]
+    },
+    {
+      "id": "id-anthology",
+      "name": "id Anthology (1996)",
+      "type": "collection",
+      "year": 1996,
+      "platforms": [
+        "PC",
+        "Mac"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gamespot.com/reviews/id-anthology-review/1900-2535421/"
+        }
+      ]
+    },
+    {
+      "id": "the-depths-of-doom-trilogy",
+      "name": "The Depths of Doom Trilogy (1997)",
+      "type": "collection",
+      "year": 1997,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/5147/the-depths-of-doom-trilogy/"
+        }
+      ]
+    },
+    {
+      "id": "doom-collector-s-edition",
+      "name": "DOOM: Collector's Edition (2001)",
+      "type": "collection",
+      "year": 2001,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://gamefaqs.gamespot.com/pc/924560-doom-collectors-edition/data"
+        }
+      ]
+    },
+    {
+      "id": "doom-classic",
+      "name": "Doom Classic (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
+        }
+      ]
+    },
+    {
+      "id": "doom-classic-complete",
+      "name": "Doom Classic Complete (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "PC",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/59222/doom-classic-complete/"
+        }
+      ]
+    },
+    {
+      "id": "doom-slayers-collection",
+      "name": "DOOM Slayers Collection (2019)",
+      "type": "collection",
+      "year": 2019,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://gamefaqs.gamespot.com/ps4/278964-doom-slayers-collection/data"
+        }
+      ]
+    },
+    {
+      "id": "doom-the-classics-collection",
+      "name": "DOOM: The Classics Collection (2021)",
+      "type": "collection",
+      "year": 2021,
+      "platforms": [
+        "Nintendo Switch",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.mobygames.com/game/181768/doom-the-classics-collection/releases/"
+        }
+      ]
+    },
+    {
+      "id": "doom-anthology",
+      "name": "DOOM Anthology (2024)",
+      "type": "collection",
+      "year": 2024,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series X/S"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://gamefaqs.gamespot.com/pc/479521-doom-anthology/data"
         }
       ]
     }

@@ -1,0 +1,35 @@
+{
+  "id": "doom-rpg",
+  "title": "Doom RPG",
+  "franchise": "Doom",
+  "platforms": [
+    "Java ME",
+    "BREW"
+  ],
+  "versions": [
+    {
+      "id": "java-me",
+      "name": "Java ME (2005)",
+      "type": "original",
+      "platforms": [
+        "Java ME"
+      ],
+      "year": 2005
+    },
+    {
+      "id": "brew",
+      "name": "BREW",
+      "type": "release",
+      "platforms": [
+        "BREW"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Doom_RPG_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Doom_RPG"
+  }
+}

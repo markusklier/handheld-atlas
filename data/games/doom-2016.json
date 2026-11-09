@@ -1,0 +1,40 @@
+{
+  "id": "doom-2016",
+  "title": "DOOM (2016)",
+  "franchise": "Doom",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2016)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2016
+    },
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    },
+    {
+      "id": "xbox-one",
+      "name": "Xbox One",
+      "type": "release",
+      "platforms": [
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09"
+}

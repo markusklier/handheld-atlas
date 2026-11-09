@@ -3,7 +3,11 @@
   "title": "DOOM 3",
   "franchise": "Doom",
   "platforms": [
-    "PC"
+    "PC",
+    "Xbox",
+    "PlayStation 3",
+    "Xbox 360",
+    "PlayStation 4"
   ],
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/9050/library_600x900_2x.jpg",
@@ -48,6 +52,53 @@
       "type": "original",
       "platforms": [
         "PC"
+      ]
+    },
+    {
+      "id": "doom-3",
+      "name": "DOOM 3 (2005)",
+      "type": "port",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "doom-3-bfg-edition",
+      "name": "Doom 3: BFG Edition (2012)",
+      "type": "remaster",
+      "year": 2012,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "doom-3-vr-edition",
+      "name": "Doom 3: VR Edition (2021)",
+      "type": "port",
+      "year": 2021,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+        }
       ]
     }
   ],

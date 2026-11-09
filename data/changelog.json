@@ -1,6 +1,166 @@
 {
   "entries": [
     {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "master-levels-for-doom-ii",
+      "text": "Neues Spiel aus der Reihe Doom: Master Levels for Doom II (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_II"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "final-doom",
+      "text": "Neues Spiel aus der Reihe Doom: Final Doom (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Final_Doom"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: id Anthology (1996)",
+      "url": "https://www.gamespot.com/reviews/id-anthology-review/1900-2535421/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-64",
+      "text": "Neues Spiel aus der Reihe Doom: Doom 64 (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_64"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: The Depths of Doom Trilogy (1997)",
+      "url": "https://www.mobygames.com/game/5147/the-depths-of-doom-trilogy/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: DOOM: Collector's Edition (2001)",
+      "url": "https://gamefaqs.gamespot.com/pc/924560-doom-collectors-edition/data"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-3",
+      "text": "Neue Fassung aus der Reihen-Analyse: DOOM 3 (2005)",
+      "url": "https://en.wikipedia.org/wiki/Doom_3"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-rpg",
+      "text": "Neues Spiel aus der Reihe Doom: Doom RPG (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-resurrection",
+      "text": "Neues Spiel aus der Reihe Doom: Doom Resurrection (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: Doom Classic (2009)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-ii-rpg",
+      "text": "Neues Spiel aus der Reihe Doom: Doom II RPG (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-3",
+      "text": "Neue Fassung aus der Reihen-Analyse: Doom 3: BFG Edition (2012)",
+      "url": "https://en.wikipedia.org/wiki/Doom_3"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: Doom Classic Complete (2012)",
+      "url": "https://www.mobygames.com/game/59222/doom-classic-complete/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-2016",
+      "text": "Neues Spiel aus der Reihe Doom: DOOM (2016) (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-vfr",
+      "text": "Neues Spiel aus der Reihe Doom: Doom VFR (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: DOOM Slayers Collection (2019)",
+      "url": "https://gamefaqs.gamespot.com/ps4/278964-doom-slayers-collection/data"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "game-added",
+      "by": "ai-research",
+      "game": "doom-eternal",
+      "text": "Neues Spiel aus der Reihe Doom: Doom Eternal (KI-Recherche)",
+      "url": "https://en.wikipedia.org/wiki/Doom_Eternal"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-3",
+      "text": "Neue Fassung aus der Reihen-Analyse: Doom 3: VR Edition (2021)",
+      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: DOOM: The Classics Collection (2021)",
+      "url": "https://www.mobygames.com/game/181768/doom-the-classics-collection/releases/"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "route-updated",
+      "by": "ai-research",
+      "game": "doom-1993",
+      "text": "Neue Fassung aus der Reihen-Analyse: DOOM Anthology (2024)",
+      "url": "https://gamefaqs.gamespot.com/pc/479521-doom-anthology/data"
+    },
+    {
       "type": "route-added",
       "text": "Neuer Spielweg: Offizielle Android-App – eingestellt (Android (2021), KI-Recherche)",
       "url": "https://help.bethesda.net/app/answers/detail/a_id/59032/~/where-can-i-download-mighty-doom%3F",

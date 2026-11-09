@@ -1,0 +1,35 @@
+{
+  "id": "doom-ii-rpg",
+  "title": "Doom II RPG",
+  "franchise": "Doom",
+  "platforms": [
+    "Java ME",
+    "BlackBerry OS"
+  ],
+  "versions": [
+    {
+      "id": "java-me",
+      "name": "Java ME (2009)",
+      "type": "original",
+      "platforms": [
+        "Java ME"
+      ],
+      "year": 2009
+    },
+    {
+      "id": "blackberry-os",
+      "name": "BlackBerry OS",
+      "type": "release",
+      "platforms": [
+        "BlackBerry OS"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f6/Doom_II_RPG_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Doom_II_RPG"
+  }
+}

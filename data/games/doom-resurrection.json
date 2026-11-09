@@ -1,0 +1,26 @@
+{
+  "id": "doom-resurrection",
+  "title": "Doom Resurrection",
+  "franchise": "Doom",
+  "platforms": [
+    "iOS"
+  ],
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2009)",
+      "type": "original",
+      "platforms": [
+        "iOS"
+      ],
+      "year": 2009
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Doom_Resurrection_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Doom_Resurrection"
+  }
+}

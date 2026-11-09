@@ -1,0 +1,67 @@
+{
+  "id": "doom-vfr",
+  "title": "Doom VFR",
+  "franchise": "Doom",
+  "platforms": [
+    "PC",
+    "PlayStation 4"
+  ],
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2017)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2017
+    },
+    {
+      "id": "playstation-4",
+      "name": "PlayStation 4",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4"
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-09",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/650000/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/650000/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_7107649a36cbc8e76a1d2b82bb5eb50f6e6b3bd8.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_ac4e10dbbfc3554d53f78f0c4b73cd856ad5d764.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_8988ba5f61cfaec788f3a8d81f475e4efa93464b.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_d19d726bb14af6c476861defcb5a1f8e01cd58e1.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_d8c0e71b54322d7d3803f3325196bd7cc21a290c.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/650000/ss_c108159b1edf21e1772148f19de83ccc7c527979.1920x1080.jpg?t=1569613157",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/650000/"
+    }
+  ]
+}

@@ -1,6 +1,51 @@
 {
   "jobs": [
     {
+      "game": "master-levels-for-doom-ii",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "final-doom",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-64",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-rpg",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-resurrection",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-ii-rpg",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-2016",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-vfr",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
+      "game": "doom-eternal",
+      "reason": "Reihe Doom",
+      "added": "2026-11-09"
+    },
+    {
       "game": "doom-the-dark-ages",
       "reason": "Reihe Doom",
       "added": "2026-11-08"
