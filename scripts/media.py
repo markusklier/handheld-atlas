@@ -181,7 +181,7 @@ def fill_steam(fetch=get, pause=0.7, only=None):
         if pause:
             time.sleep(pause)
         try:
-            appid = steam_lookup(g['title'], fetch)
+            appid = steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), fetch)
             if not appid:
                 continue
             details = fetch(f'https://store.steampowered.com/api/appdetails?appids={appid}&l=german', as_json=True)
@@ -191,6 +191,10 @@ def fill_steam(fetch=get, pause=0.7, only=None):
         data = (details.get(str(appid)) or {}).get('data') or {}
         if not data:
             continue
+        ty = re.search(r'\((\d{4})\)$', g['title'])
+        sy = re.search(r'(19|20)\d\d', (data.get('release_date') or {}).get('date') or '')
+        if ty and sy and abs(int(sy.group(0)) - int(ty.group(1))) > 1:
+            continue                     # "DOOM (1993)" must not get the Steam page of DOOM (2016)
         store = f'https://store.steampowered.com/app/{appid}/'
         cover = f'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/{appid}/library_600x900_2x.jpg'
         try:
@@ -279,7 +283,11 @@ def article_cover(article, fetch=get):
     import images                                   # lead image is a logo: look for box art among the article's files
     files = images.from_wikipedia(article, fetch)
     box = [x for x in files if re.search(r'cover|box|packshot|key.?art|front', x['url'], re.I)]
-    return (box[0]['url'], article) if box else (None, None)
+    if box:
+        return box[0]['url'], article
+    # digital-only games often have no box art: a picture of the game from the article is still better than nothing
+    shots = [x for x in files if not re.search(r'logo|wordmark|icon|\.svg|developer|founder|portrait|photo', x['url'], re.I)]
+    return (shots[0]['url'], article) if shots else (None, None)
 
 
 def fill_wikipedia(fetch=get, pause=1.0, limit=250, only=None):
