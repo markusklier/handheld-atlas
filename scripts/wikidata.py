@@ -320,6 +320,30 @@ def lookup(games, fetch=http):
     return found
 
 
+def via_wikipedia(g, fetch=http):
+    """Wikidata id through the English Wikipedia article ("Title (YEAR video game)", "Title (video game)", "Title")."""
+    year = atlas_year(g)
+    names = []
+    for t in title_variants(g['title']):
+        names += ([f'{t} ({year} video game)'] if year else []) + [f'{t} (video game)', t]
+    q = urllib.parse.urlencode({'action': 'query', 'titles': '|'.join(dict.fromkeys(names))[:1500], 'prop': 'pageprops|description',
+                                'ppprop': 'wikibase_item', 'redirects': 1, 'format': 'json', 'formatversion': 2})
+    pages = (fetch(f'https://en.wikipedia.org/w/api.php?{q}').get('query') or {}).get('pages') or []
+    order = {n.lower(): i for i, n in enumerate(dict.fromkeys(names))}
+    best = None
+    for p in pages:
+        desc = (p.get('description') or '').lower()
+        item = (p.get('pageprops') or {}).get('wikibase_item')
+        if not item or p.get('missing') or 'game' not in desc or 'series' in desc or 'franchise' in desc:
+            continue
+        if year and str(year) not in desc and str(year) not in p.get('title', '') and not (str(year - 1) in desc or str(year + 1) in desc):
+            continue
+        rank = order.get(p.get('title', '').lower(), 99)
+        if best is None or rank < best[0]:
+            best = (rank, item)
+    return best[1] if best else None
+
+
 def choose(g, candidates):
     year = atlas_year(g)
     cands = list(dict.fromkeys(candidates))
@@ -359,6 +383,11 @@ def enrich(limit=150, fetch=http, log=print, only=None):
     for g in games:
         tried[g['id']] = TODAY
         q = g.get('wikidata') or choose(g, found.get(g['id'], []))
+        if not q:
+            try:
+                q = via_wikipedia(g, fetch)      # label differs ("DOOM" vs "Doom (1993 video game)") → ask Wikipedia
+            except Exception as e:  # noqa: BLE001
+                log(f"  ! Wikipedia {g['title']}: {str(e)[:80]}")
         if q:
             chosen[g['id']] = q
     ents = entities(list(chosen.values()), fetch)

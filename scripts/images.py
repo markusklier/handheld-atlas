@@ -107,7 +107,7 @@ def from_wikipedia(url, fetch=get):
         return []
     lang, title = m.group(1), urllib.parse.unquote(m.group(2))
     api = f'https://{lang}.wikipedia.org/w/api.php?' + urllib.parse.urlencode({
-        'action': 'query', 'titles': title, 'generator': 'images', 'gimlimit': 20, 'prop': 'imageinfo',
+        'action': 'query', 'titles': title, 'generator': 'images', 'gimlimit': 'max', 'prop': 'imageinfo',
         'iiprop': 'url|size|mime', 'redirects': 1, 'format': 'json', 'formatversion': 2})
     pages = (fetch(api, as_json=True).get('query') or {}).get('pages') or []
     out = []
