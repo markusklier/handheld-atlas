@@ -24,5 +24,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Danganronpaboxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Danganronpa%3A_Trigger_Happy_Havoc"
   },
-  "website": "https://www.nisamerica.com/danganronpa/"
+  "website": "https://www.nisamerica.com/danganronpa/",
+  "playStore": "https://play.google.com/store/apps/details?id=jp.co.spike_chunsoft.DR1"
 }

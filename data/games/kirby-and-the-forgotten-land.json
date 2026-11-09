@@ -16,6 +16,218 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3e315d92-fd3a-4e62-9c9b-89601f98b985",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 7,
+          "date": "2025-11-02",
+          "settings": {
+            "Emulator Version": "0.0.4-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/870d2aa8-0283-4cdd-8f41-7e194a514eaf",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2026-05-11",
+          "settings": {
+            "Emulator Version": "0.2.0-rc2",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/409ac0f1-dbbc-4355-8edf-2e9e57caa5aa",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-08-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/cd960569-3a8d-425d-b940-377dfa6708e5",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Driver: Apex Ultimate v2. Sync memory operations: off Using eden duo (light testing at the beginning map) Buffer history: on Asynchronous shaders: test to see if they work on or not Optimized vertex buffers: on",
+          "votes": 1,
+          "date": "2026-11-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/14c7713f-de67-4a06-80d3-b711f3694b35",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Nothing to report, everything seems fine from what I've tested. Between 25 and 30 fps, that's why I only set it to \"Great\". Of course, it would take hours of gameplay to be sure there are no bugs. Screenshot available.",
+          "votes": 2,
+          "date": "2025-12-01",
+          "settings": {
+            "Emulator Version": "0.10.0",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T21-AYANEO.adpkg|||turnip_mrpurple_T21-AYANE",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO Relaxed",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/10232a22-ad40-4912-adb0-9f305f6e1f62",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Setting the frame pacing mode to 30FPS makes it stable. There's occasional stuttering during shader loading, but it's not noticeable. If there are any more perfect settings, please let me know.",
+          "votes": 0,
+          "date": "2026-04-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3d999c30-65ba-49e3-972c-7fb6f658e5bc",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "The game would boot into a black screen when I had the 1.1 patch installed. Go into add-ons for the game and turn off the patch, just play the 1.0 version and it should begin to boot. The game would crash at the intro vi",
+          "votes": 0,
+          "date": "2026-02-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a58a21e3-13ec-4b13-8e80-cf026f4dabde",
+          "device": "AYN Odin 2",
+          "emulator": "Sudachi",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "performance can fluctuate, still very playable",
+          "votes": 0,
+          "date": "2025-06-16",
+          "settings": {
+            "Emulator Version": "Latest",
+            "Driver Version": "24.2.0 R22",
+            "Accuracy Level": "Normal",
+            "Resolution": "720p",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2d765b43-2dba-406d-a698-70998fb58f65",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "the game itself runs at fullspeed on the standard performance profile but for some reason the game will freeze at the part in the intro where Kirby lowers the bridge with the car and after that the game will immediately ",
+          "votes": 1,
+          "date": "2026-03-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a51ba8c6-7458-4d00-9578-74cb6f474739",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "The video stutters, the game as low FPS, and it finish in crash. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1f2d8c15-8c82-4e26-92db-aa60bb195229",
+          "device": "AYN Thor Base",
+          "emulator": "Citron",
+          "rating": "Intro",
+          "ratingDe": "Nur Intro/Menü",
+          "rank": 6,
+          "summary": "The intro plays perfectly on the first run with default settings. After the initial cutscene with the car, it crashes repeatedly on launch, even after adjusting many of the settings.",
+          "votes": 2,
+          "date": "2025-11-14",
+          "settings": {
+            "Emulator Version": "v0.10.0",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "0.5",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/192c6e83-5ff6-4f50-9b70-76dccffa71f4"
+        }
       ]
     }
   ],

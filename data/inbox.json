@@ -1,6 +1,142 @@
 {
   "leads": [
     {
+      "url": "https://github.com/JuanVillegas95/RotaLock",
+      "title": "JuanVillegas95/RotaLock",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/gmh5225/awesome-game-security",
+      "title": "gmh5225/awesome-game-security",
+      "excerpt": "awesome game security [Welcome to PR]",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Yoram-Jacobs/DressAppV1",
+      "title": "Yoram-Jacobs/DressAppV1",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Siddhanthkjain2005/jj",
+      "title": "Siddhanthkjain2005/jj",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/desginus/rincore",
+      "title": "desginus/rincore",
+      "excerpt": "RinCore - Fork of RikkaHub with modifications",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/sebiny12p/Rachet_and_Clank_Railfinity",
+      "title": "sebiny12p/Rachet_and_Clank_Railfinity",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/PatchDev-AM2ARM/AM2ARM",
+      "title": "PatchDev-AM2ARM/AM2ARM",
+      "excerpt": "Arm64 based port of AM2R 1.5.5",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/kzahel/tilefun",
+      "title": "kzahel/tilefun",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ymmiah/AutoMotoAI",
+      "title": "ymmiah/AutoMotoAI",
+      "excerpt": "Your AI cousin — an agent that actually does the work.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/0xyzone/7sdkamkaj",
+      "title": "0xyzone/7sdkamkaj",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/JFLibrary/JFLib",
+      "title": "JFLibrary/JFLib",
+      "excerpt": "A Rust GUI library in no_std: Windows, Linux and Android natively, macOS and iOS through the browser",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/opencrabs/opencrabs",
+      "title": "opencrabs/opencrabs",
+      "excerpt": "The all-in-one AI agent. Build mobile apps, frontend, backend, manages files, deep research, schedule tasks and events. Self-improving, self-healing, fully autonomous. TUI, CLI and Daemon. Connect to your favorite channels. Zero Telemetry.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/Crlyzd/Cathet",
+      "title": "Crlyzd/Cathet",
+      "excerpt": "Replace your shitty Windows Notepad with this lmao",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/ansar7787/vowl-app",
+      "title": "ansar7787/vowl-app",
+      "excerpt": "Vowl: The ultimate AI-powered English mastery adventure. 60,000+ interactive quests across 100+ gamified modules and a specialized Kids Zone. Built with Flutter & Firebase, featuring an immersive glassmorphic UI and real-time AI tutoring powered by Gemini.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/110kc3/japan-deal-watcher",
+      "title": "110kc3/japan-deal-watcher",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/jasonvelasquez1410/sanctuary-voice",
+      "title": "jasonvelasquez1410/sanctuary-voice",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
+      "url": "https://github.com/gabriel-07a/lan-mouse-custom",
+      "title": "gabriel-07a/lan-mouse-custom",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-09"
+    },
+    {
       "url": "https://github.com/enjoyerofslop/droidplay-core",
       "title": "enjoyerofslop/droidplay-core",
       "excerpt": "DroidPlay Core: Nintendo Switch and Switch 2 games running natively on Android, replayed on Vulkan (nxnative with an Android port). The engine behind DroidPlay. Bring your own game. Formerly droidnative.",
@@ -6263,142 +6399,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/banjo-kazooie/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/balatro/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/ayn-thor-wow-launcher/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/armadalive/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andrewnakas/skate3-android",
-      "title": "Skate 3 (Android shell)",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/alondero/automobililamborghini-recomp",
-      "title": "Automobili Lamborghini",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/alondero/aerogauge-recomp",
-      "title": "AeroGauge",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/alexbatalov/fallout2-ce",
-      "title": "Fallout 2",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/alexbatalov/fallout1-ce",
-      "title": "Fallout",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/alanwoolley/CorsixTH-Android",
-      "title": "Theme Hospital",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/adamkulik/pocket-wormhole",
-      "title": "FTL: Faster Than Light",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/abduznik/awesome-x360-recomps",
-      "title": "awesome-x360-recomps",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/abduznik/ZumaPortable",
-      "title": "Zuma Deluxe",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/aarcangeli/Serious-Sam-Android",
-      "title": "Serious Sam: The Second Encounter",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android",
-      "title": "Need for Speed III: Hot Pursuit",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ZinexDa/sonic-r-android",
-      "title": "Sonic R",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
-      "title": "Sonic Free Riders",
-      "excerpt": "",
-      "game": null,
-      "source": "native-ports",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6430,8 +6430,8 @@
     "rejected": 1
   },
   "watcher": {
-    "lastRun": "2026-11-09T16:37:33Z",
-    "newLeads": 14,
+    "lastRun": "2026-11-09T16:44:30Z",
+    "newLeads": 17,
     "newEvents": 0
   },
   "aiResearch": {

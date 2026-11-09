@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8fe2ae49-5160-4373-b020-f77158f3c494",
+          "device": "AYN Thor Max",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Tried to run the game on vulkan as it is generally preferred but the shadows get messed up. Some Ps2 emulation guides recommend using x8 upscale multiplier for every game, do not go above x3 this will cause the fps to ta",
+          "votes": 0,
+          "date": "2026-03-03",
+          "settings": {
+            "Emulator Version": "v1.5-4248-g3a6307d69",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "3",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bd5ea2f3-0150-454f-8cbb-be2fa61b068a",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Jak 2 had a few frame drops here and there, sometimes dipping into the low 50s when cruising around certain parts of Haven City. Still, it ran surprisingly well for a phone with no active cooling. I’m sure the framerate ",
+          "votes": 0,
+          "date": "2025-10-10",
+          "settings": {
+            "Emulator Version": "v2.1-3668",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "50-60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/595b068c-d7cf-4b3b-8711-9f6acf9aa180"
+        }
       ]
     }
   ],

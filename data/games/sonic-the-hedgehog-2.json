@@ -67,5 +67,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q35627",
   "wikipedia": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_2",
-  "genre": "2D platform game"
+  "genre": "2D platform game",
+  "playStore": "https://play.google.com/store/apps/details?id=com.sega.sonic2"
 }

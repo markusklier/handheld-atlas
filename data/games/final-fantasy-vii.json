@@ -142,5 +142,6 @@
   "wikidata": "Q214232",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
   "genre": "role-playing video game",
-  "website": "https://finalfantasyviipc.square-enix-games.com/en"
+  "website": "https://finalfantasyviipc.square-enix-games.com/en",
+  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.FFVII"
 }

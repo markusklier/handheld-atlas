@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a9df8091-e120-445f-9ac4-59816010a1f5",
+          "device": "Xiaomi 13",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Some lags and frame drops",
+          "votes": 1,
+          "date": "2025-06-17",
+          "settings": {
+            "Emulator Version": "Latest",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "4",
+            "Upscale Multiplier": "4",
+            "Multi-threaded VU": "True",
+            "Enable Speed Hacks": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d8cd32cd-5ee7-4c4d-b166-fed93bc72e36"
+        }
       ]
     }
   ],

@@ -72,5 +72,6 @@
   "summary": "Das PlayStation-Original per Emulation oder die Remastered-Sammlung, die es inzwischen auch als offizielle Android-Fassung gibt.",
   "wikidata": "Q816451",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider_II",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "playStore": "https://play.google.com/store/apps/details?id=com.squareenix.tombraider2classic"
 }

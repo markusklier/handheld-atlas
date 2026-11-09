@@ -764,5 +764,6 @@
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29"
-  }
+  },
+  "playStore": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM"
 }

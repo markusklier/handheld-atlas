@@ -55,5 +55,6 @@
   "updatedAt": "2026-11-09",
   "wikidata": "Q591378",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_Tactics",
-  "genre": "tactical role-playing game"
+  "genre": "tactical role-playing game",
+  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.FFT_en2"
 }

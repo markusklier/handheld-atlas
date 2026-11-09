@@ -36,6 +36,58 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q16267674"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b24ea2d5-7cea-400a-96b7-03b8465ea80a"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef3d2fa3-085a-4b9e-8675-e6a3933ace89",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs perfectly with default settings. There shouldn't be any issues at all, but changing Translation Parameters always help. (Particularly \"Performance\")",
+          "votes": 0,
+          "date": "2026-05-09",
+          "settings": {
+            "Emulator Version": "v5.1.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3fa556f5-91c0-4c57-b4a3-04983dfab627",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Winlator",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-06-18",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "10",
+            "Graphics Driver": "Turnip",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "PulseAudio",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "720p"
+          }
         }
       ]
     }
@@ -44,5 +96,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q16267674",
   "wikipedia": "https://en.wikipedia.org/wiki/Hotline_Miami_2%3A_Wrong_Number",
-  "genre": "action game"
+  "genre": "action game",
+  "playStore": "https://play.google.com/store/apps/details?id=com.devolver.hlm2"
 }

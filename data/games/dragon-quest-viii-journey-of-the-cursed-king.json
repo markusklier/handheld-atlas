@@ -44,5 +44,6 @@
   "updatedAt": "2026-11-09",
   "wikidata": "Q1948338",
   "wikipedia": "https://en.wikipedia.org/wiki/Dragon_Quest_VIII",
-  "genre": "role-playing video game"
+  "genre": "role-playing video game",
+  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.dq8"
 }

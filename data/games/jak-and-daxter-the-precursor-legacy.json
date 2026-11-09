@@ -28,6 +28,86 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0437dda0-712a-48e0-a827-42cf9b9410ec",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Graphical issues such as flickering water will persist if using Vulkan as a renderer. Switching to Software renderer fixes this issue at the cost of rendering the game at its PS2 native resolution. This is a known issue ",
+          "votes": 4,
+          "date": "2025-12-03",
+          "settings": {
+            "Emulator Version": "2.2b-4248",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8182efb8-aa46-4121-b347-4f10f887d5a6",
+          "device": "AYN Thor Base",
+          "emulator": "AetherSX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Mostly perfect, a few slowdowns in specific parts of precursor basin and in the citadel. Otherwise perfect 50fps all the time. Was able to 100% the game with no crashes and no gamebreaking bugs (a bit of flashing on the ",
+          "votes": 1,
+          "date": "2026-01-13",
+          "settings": {
+            "Emulator Version": "NetherSX2 Classic ",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "Europe (PAL)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "50"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a171e88a-5536-4625-979a-89840165a309",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "NethersX2",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game ran well for the most part, with only a few dips when the caching shaders.",
+          "votes": 1,
+          "date": "2025-10-09",
+          "settings": {
+            "Emulator Version": "v2.1-3668",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/8f80f866-b465-4f72-8337-c0db6a487d92"
+        }
       ]
     }
   ],
