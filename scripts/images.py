@@ -115,6 +115,11 @@ def from_wikipedia(url, fetch=get):
         if info.get('mime') not in ('image/png', 'image/jpeg', 'image/webp') or SKIP.search(name) or info.get('width', 0) < 250:
             continue
         cap = re.sub(r'^(File|Datei):|\.\w+$', '', name).replace('_', ' ')
+        # articles also show developers, places, other games: keep files named after the game or screenshots
+        words = {w for w in re.findall(r'[a-z0-9]{4,}', title.lower().replace('_', ' ')) if w not in ('video', 'game')}
+        flat = re.sub(r'[^a-z0-9]', '', name.lower())
+        if not (any(w in flat for w in words) or re.search(r'screen|gameplay|ingame|in-game|level|cover|box', name, re.I)):
+            continue
         out.append(shot(info['url'].split('?')[0], url, cap))
     return out
 

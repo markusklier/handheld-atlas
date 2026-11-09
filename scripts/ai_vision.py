@@ -150,7 +150,8 @@ def main():
             touched[f] = g
             continue
         try:
-            result = decide(ask(g, item, shot, kind, token, model), shot, kind)
+            verdict = ask(g, item, shot, kind, token, model)
+            result = decide(verdict, shot, kind)
         except Exception as e:  # noqa: BLE001 – unreachable image etc.
             print(f"! {g['id']}/{item['id']}: {type(e).__name__}: {str(e)[:120]}", file=sys.stderr)
             shot['check'] = 'ai-unclear'
@@ -158,6 +159,8 @@ def main():
             touched[f] = g
             continue
         stats[result] += 1
+        print(f"  {result:7} {g['id']}/{item.get('id') if kind in ('route', 'mod') else kind} "
+              f"[Spiel {verdict['showsGame']}, Variante {verdict['showsVariant']}, {verdict['kind']}]: {shot['url'][:90]}", file=sys.stderr)
         if result == 'drop':
             remove()
         if kind in ('route', 'mod'):   # dual-screen pictures first, then verified ones

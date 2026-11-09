@@ -756,7 +756,9 @@ def collect(pages, have, limit, log=print, fetch=None, fetch_json=None):
     fetch = fetch or images.get
     rejected, out = rejected_images(), []
     for page in dict.fromkeys(pages):
-        for sh in images.images_from_page(page, fetch, fetch_json, log):
+        got = images.images_from_page(page, fetch, fetch_json, log)
+        log(f'    {page[:100]} → {len(got)} Bilder')
+        for sh in got:
             if len(out) >= limit:
                 return out
             url = sh['url']
@@ -870,6 +872,8 @@ def game_candidates(g, token, model, log=print):
             appid = media.steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), images.get)
             if appid:
                 pages.append(f'https://store.steampowered.com/app/{appid}/')
+            else:
+                log(f'    Steam: kein exakter Treffer für {g["title"]}')
         except Exception as e:  # noqa: BLE001
             log(f'    ! Steam {g["title"]}: {e}')
     found = collect(pages, have, room, log)
