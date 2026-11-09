@@ -31,6 +31,12 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20%28USA%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/25/TR_Anniversary_gameplay.jpg",
+      "caption": "Anniversary: Lara klettert an einer Tempelwand.",
+      "source": "https://en.wikipedia.org/wiki/Tomb_Raider",
+      "check": "ai-verified"
     }
   ],
   "versions": [
@@ -339,6 +345,20 @@
           "source": "https://www.youtube.com/watch?v=do-0CL7wYjc",
           "credit": "youtube.com",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://www.langweiledich.net/wp-content/uploads/2017/04/Tomb-Raider-1-Browsergame.jpg",
+          "caption": "OpenLara mit eigenen Original-Spieldaten",
+          "source": "https://www.langweiledich.net/spielt-tomb-raider-1-in-eurem-browser/",
+          "credit": "langweiledich.net",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://www.langweiledich.net/wp-content/uploads/2017/04/Tomb-Raider-1-Browsergame_2.jpg",
+          "caption": "OpenLara mit eigenen Original-Spieldaten",
+          "source": "https://www.langweiledich.net/spielt-tomb-raider-1-in-eurem-browser/",
+          "credit": "langweiledich.net",
+          "check": "ai-unclear"
         }
       ],
       "links": [
@@ -405,6 +425,20 @@
           "caption": "Lara Croft mit gezogenen Pistolen in einer Höhle",
           "source": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/",
           "credit": "pocketgamer.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/2NMUBObtvqY/hqdefault.jpg",
+          "caption": "Tomb-Raider-Titelmenü mit Lara Croft",
+          "source": "https://www.youtube.com/watch?v=2NMUBObtvqY",
+          "credit": "youtube.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://phandroid.com/wp-content/uploads/2015/04/Lara-Croft-vs-original-Tomb-Raider.jpg",
+          "caption": "Lara Croft im Vergleich: klassisches und modernes Modell",
+          "source": "https://phandroid.com/2015/04/01/the-original-tomb-raider-officially-arrives-on-android-only-99-cents-on-google-play/",
+          "credit": "phandroid.com",
           "check": "ai-verified"
         }
       ],
@@ -593,6 +627,13 @@
           "url": "https://i.ytimg.com/vi/umYBFZZoe6g/maxresdefault.jpg",
           "caption": "Lara Croft mit zwei Pistolen in einer steinernen Ruine",
           "source": "https://www.youtube.com/watch?v=umYBFZZoe6g",
+          "credit": "youtube.com",
+          "check": "ai-verified"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/ERewpveXA8s/hqdefault.jpg",
+          "caption": "Lara Croft vor einem Höhleneingang im Schnee",
+          "source": "https://www.youtube.com/watch?v=ERewpveXA8s",
           "credit": "youtube.com",
           "check": "ai-verified"
         }
