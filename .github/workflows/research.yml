@@ -36,7 +36,7 @@ on:
   schedule:
     - cron: '43 18 * * 3'      # weekly: 3 games + screenshots + image check
     - cron: '17 19 * * 0'      # weekly: dual-screen scan
-    - cron: '23 */2 * * *'     # every 2 h: work through the research queue (no cost when empty)
+    - cron: '22 */2 * * *'     # every 2 h: work through the research queue (no cost when empty)
 permissions:
   contents: write
   issues: write
