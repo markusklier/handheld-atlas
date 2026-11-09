@@ -5801,7 +5801,11 @@
     "tomb-raider/ai-openlara-mit-eigenen-original-spieldaten": "2026-11-09",
     "tomb-raider/ai-historische-offizielle-android-app-aus-eigenem-kaufkonto": "2026-11-09",
     "tomb-raider/ai-pc-remaster-uber-gamenative-mit-manuellem-exe-start": "2026-11-09",
-    "tomb-raider/ai-n-gage-portierung-uber-eka2l1": "2026-11-09"
+    "tomb-raider/ai-n-gage-portierung-uber-eka2l1": "2026-11-09",
+    "final-doom/ai-uzdoom-mit-echter-dual-screen-automap": "2026-11-09",
+    "final-doom/ai-delta-touch-mit-gzdoom-oder-klassischem-source-port": "2026-11-09",
+    "final-doom/ai-offizielle-android-app-mit-final-doom-add-ons": "2026-11-09",
+    "final-doom/ai-playstation-fassung-uber-psydoom-fur-android": "2026-11-09"
   },
   "dualScanSeen": [
     "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
