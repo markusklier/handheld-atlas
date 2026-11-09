@@ -151,7 +151,9 @@ def facts(ent, labels):
             'kinds': [labels.get(k) or k for k in claim_ids(ent, 'P31')],
             'genre': genres[0] if genres else None, 'series': claim_ids(ent, 'P179'),
             'basedOn': claim_ids(ent, 'P144'), 'parts': claim_ids(ent, 'P527'),
-            'enwiki': wiki('enwiki', 'en'), 'dewiki': wiki('dewiki', 'de'), 'website': website(ent)}
+            'enwiki': wiki('enwiki', 'en'), 'dewiki': wiki('dewiki', 'de'), 'website': website(ent),
+            'playId': next((c['mainsnak']['datavalue']['value'] for c in (ent.get('claims') or {}).get('P3418', [])
+                            if isinstance(((c.get('mainsnak') or {}).get('datavalue') or {}).get('value'), str)), None)}
 
 
 def website(ent):
@@ -241,6 +243,8 @@ def enrich_game(g, f):
         g['wikidata'] = f['qid']
     if f.get('website') and not g.get('website'):
         g['website'] = f['website']
+    if f.get('playId') and not g.get('playStore') and re.fullmatch(r'[\w.]+', f['playId']):
+        g['playStore'] = f"https://play.google.com/store/apps/details?id={f['playId']}"   # official Android app
     if f.get('enwiki') and not g.get('wikipedia'):
         g['wikipedia'] = f['enwiki']
     if f.get('genre') and not g.get('genre'):
@@ -386,7 +390,7 @@ def enrich(limit=150, fetch=http, log=print, only=None):
             continue
         if not g.get('wikidata') and tried.get(g['id'], '') < cutoff:
             games.append(g)
-        elif g.get('wikidata') and state.setdefault('factsVersion', {}).get(g['id'], 1) < 2:
+        elif g.get('wikidata') and state.setdefault('factsVersion', {}).get(g['id'], 1) < 3:
             games.append(g)                   # matched before the website field existed: refresh once
     games = games[:limit]
     if not games:
@@ -411,7 +415,7 @@ def enrich(limit=150, fetch=http, log=print, only=None):
         if not q or q not in ents:
             continue
         f = facts(ents[q], labels)
-        state.setdefault('factsVersion', {})[g['id']] = 2
+        state.setdefault('factsVersion', {})[g['id']] = 3
         before = json.dumps(g, sort_keys=True)
         changes = enrich_game(g, f)
         if json.dumps(g, sort_keys=True) != before:

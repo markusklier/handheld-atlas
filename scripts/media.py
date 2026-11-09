@@ -338,28 +338,39 @@ def fill_website_covers(fetch=get, only=None, limit=100):
             continue
         g = read(f)
         cov = g.get('cover') or {}
-        if not g.get('website') or (cov and not cov.get('fallback')) or tried >= limit:
+        pages = [p for p in (g.get('website'), g.get('playStore')) if p]
+        if not pages or (cov and not cov.get('fallback')) or tried >= limit:
             continue
         if only is None and recently_tried(state, 'website', g['id'], days=14):
             continue
         tried += 1
-        page = None
-        for browser in (False, True):      # some publisher sites only answer browsers; the tags are in the first KB
-            try:
-                page = images.get(g['website'], timeout=40, limit=400_000, browser=browser)
+        url = source = None
+        reached = False
+        for pg in pages:                    # official website first, then the Google Play listing (feature graphic)
+            page = None
+            for browser in (False, True):  # some publisher sites only answer browsers; the tags are in the first KB
+                try:
+                    page = images.get(pg, timeout=40, limit=400_000, browser=browser)
+                    break
+                except Exception as e:  # noqa: BLE001
+                    log(f'! Website {g["title"]}: {str(e)[:80]}')
+            if page is None:
+                continue
+            reached = True
+            head = page[:page.find('<body')] if '<body' in page else page[:60000]
+            m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
+                re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
+            cand = urllib.parse.urljoin(pg, m.group(1).replace('&amp;', '&')) if m else None
+            if cand and cand.startswith('https://') and not re.search(r'logo|favicon|\.svg', cand, re.I):
+                if 'play-lh.googleusercontent.com' in cand:
+                    cand = re.sub(r'=[^/]*$', '', cand) + '=w1280-h640'     # feature graphic in a usable size
+                url, source = cand, pg
                 break
-            except Exception as e:  # noqa: BLE001
-                log(f'! Website {g["title"]}: {str(e)[:80]}')
-        if page is None:
-            continue                       # not marked as tried: next run tries again
-        mark_tried(state, 'website', g['id'])
-        head = page[:page.find('<body')] if '<body' in page else page[:30000]
-        m = re.search(r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)', head, re.I) or \
-            re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)', head, re.I)
-        url = urllib.parse.urljoin(g['website'], m.group(1).replace('&amp;', '&')) if m else None
-        if not url or not url.startswith('https://') or re.search(r'logo|favicon|\.svg', url, re.I):
+        if reached:
+            mark_tried(state, 'website', g['id'])   # unreachable sites are tried again tomorrow
+        if not url:
             continue
-        g['cover'] = {'url': url, 'source': g['website'], 'check': 'ai'}
+        g['cover'] = {'url': url, 'source': source, 'check': 'ai'}
         write(f, g)
         added += 1
     write(DATA / 'media_state.json', state)

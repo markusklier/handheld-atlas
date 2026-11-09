@@ -439,7 +439,8 @@ function waysFor(g) {
     const own = g.routes.filter((r) => r.release === v.id || (!r.release && v === versions[0]));
     for (const r of own) ways.push({ key: 'r:' + r.id, type: 'route', r, v, name: r.name, kind: r.kind, features: [...(r.features || [])] });
     if (v.platforms.includes('Android') && !own.some((r) => r.kind === 'native')) {
-      ways.push({ key: 'o:' + v.id, type: 'official', v, name: 'Offizielle Android-App', kind: 'native', features: [...(v.traits || [])] });
+      ways.push({ key: 'o:' + v.id, type: 'official', v, name: 'Offizielle Android-App', kind: 'native', features: [...(v.traits || [])],
+        link: g.playStore || null });
     }
     // an official Android release makes emulating its other platforms pointless noise
     if (v.platforms.includes('Android')) continue;
@@ -543,7 +544,7 @@ function wayBody(g, w) {
   }
   if (w.type === 'official') {
     return `<article class="route"><p>${esc(w.v.name)} ist offiziell für Android erschienen: kaufen und installieren über den Play Store, keine Emulation nötig.</p>
-      ${(w.v.links || []).length ? `<div class="row">${w.v.links.map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
+      ${(w.v.links || []).length || w.link ? `<div class="row">${w.link ? `<a class="btn primary" href="${esc(w.link)}" target="_blank" rel="noopener">Google Play ${icon('ext')}</a>` : ''}${(w.v.links || []).map((l) => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
       <p class="faint">Controller- und Zweitbildschirm-Unterstützung sind für diese Fassung noch nicht eingetragen.</p>${extra}</article>`;
   }
   return `<article class="route"><p class="muted">${esc(w.o.note)}</p><p class="faint">Allgemeiner Emulator für ${esc(w.v.platforms.join(', '))}. ${(w.community || []).length ? '' : `Ob ${esc(g.title)} darin gut läuft, ist noch nicht spielspezifisch geprüft.`}</p>${extra}${projectLine(DB.projects[w.o.project])}</article>`;
