@@ -2,6 +2,12 @@
   "entries": [
     {
       "date": "2026-11-10",
+      "type": "system",
+      "text": "Neu: Atlas-App mit Setup-Assistent für den AYN Thor Max (Vorabversion, auf dem Gerät noch ungetestet). Jeder Spielweg hat jetzt „Einrichten“: Apps installieren, Startkonfiguration aus Berichten, Messfahrt, Feintuning. Installation unter Info → Atlas-App.",
+      "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/SETUP.md"
+    },
+    {
+      "date": "2026-11-10",
       "type": "route-updated",
       "game": "persona-4-golden",
       "text": "1 Community-Berichte von EmuReady für Persona 4 Golden (Geräte mit dem Chip des AYN Thor)"
