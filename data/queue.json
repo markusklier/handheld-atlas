@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "am2r",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-dread",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-fusion",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
       "game": "metroid-prime-hunters",
       "reason": "Reihe Metroid",
       "added": "2026-11-09"
