@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Atlas" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/atlas_bg</item>
+        <item name="android:statusBarColor">@color/atlas_bg</item>
+        <item name="android:navigationBarColor">@color/atlas_bg</item>
+        <item name="android:colorAccent">@color/atlas_accent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

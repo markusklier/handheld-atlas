@@ -1,0 +1,57 @@
+name: Android-App
+# Baut die Atlas-App (android/) und veröffentlicht die APK als Release „Handheld Atlas App“.
+# Installation und Updates: docs/SETUP.md (APK aus dem neuesten Release oder über Obtainium).
+on:
+  push:
+    branches: [main, setup-assistent]
+    paths: ['android/**', '.github/workflows/android.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - name: APK bauen
+        working-directory: android
+        env:
+          KEYSTORE_B64: ${{ secrets.ATLAS_KEYSTORE_B64 }}
+          ATLAS_KEYSTORE_PASSWORD: ${{ secrets.ATLAS_KEYSTORE_PASSWORD }}
+        run: |
+          export JAVA_HOME="${JAVA_HOME_17_X64:-${JAVA_HOME_21_X64:-$JAVA_HOME}}"
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/atlas.keystore"
+            export ATLAS_KEYSTORE="$RUNNER_TEMP/atlas.keystore"
+          else
+            unset ATLAS_KEYSTORE_PASSWORD
+          fi
+          chmod +x gradlew
+          set -o pipefail
+          ./gradlew --no-daemon --console=plain -PbuildNumber=${{ github.run_number }} :app:assembleRelease 2>&1 | tee "$RUNNER_TEMP/build.log"
+          cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/handheld-atlas.apk"
+      - name: Fehler zusammenfassen
+        if: failure()
+        run: |
+          grep -n -E "^e: |error:|FAILED|What went wrong|Could not|Unresolved|Exception" "$RUNNER_TEMP/build.log" | head -60 | while IFS= read -r line; do
+            echo "::error::${line}"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: handheld-atlas-apk
+          path: ${{ runner.temp }}/handheld-atlas.apk
+          retention-days: 14
+      - name: Release veröffentlichen
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="app-v0.1.${{ github.run_number }}"
+          gh release create "$TAG" "$RUNNER_TEMP/handheld-atlas.apk" \
+            --title "Handheld Atlas App 0.1.${{ github.run_number }}" \
+            --notes "Atlas als App für den AYN Thor Max: Entdecken auf zwei Bildschirmen und Setup-Assistent (Installieren, Starten, Messfahrt). Vorabversion – Installation und Hinweise: docs/SETUP.md" \
+            --latest
