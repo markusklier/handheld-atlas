@@ -1,6 +1,134 @@
 {
   "entries": [
     {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PrimeHack-Android mit Handheld-Controllerprofil (Wii, KI-Recherche)",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-trilogy"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Warm_Path – Odin-/Retroid-Controllerprofile (KI-Recherche)",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/Controller_config_files",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-trilogy"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Warm_Path – Retroid/Odin Button Prompts (KI-Recherche)",
+      "url": "https://www.reddit.com/r/retroid/comments/1oq9ldc/primehack_metroid_prime_trilogy_with_proper_fps/",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-trilogy"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Metroid Prime: Trilogy (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: PrimeHack Android: Trilogy mit Dual-Stick-Steuerung (Metroid Prime: Trilogy, KI-Recherche)",
+      "url": "https://github.com/shiiion/dolphin/wiki/Controllers-&-GamePads",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Metroid Prime 1,2,3 and Trilogy HD Texture Pack (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Metroid Prime Trilogy – HD Interface Textures (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Corruptovania (KI-Recherche)",
+      "url": "https://github.com/Schwork-Corruption/corruptovania",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: MP3Update (KI-Recherche)",
+      "url": "https://github.com/MrMiguel211/MP3Update",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-3-corruption"
+    },
+    {
+      "type": "route-updated",
+      "text": "Neue Fassung: Metroid Prime: Trilogy – Wii-U-Download (KI-Recherche)",
+      "url": "https://www.nintendo.com/en-za/News/2015/January/Weekly-download-news-952465.html",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: Echoes Unbound – nativer Android-Port (Nintendo GameCube, KI-Recherche)",
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/releases",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "route-added",
+      "text": "Neuer Spielweg: GameCube-Fassung mit EchoesWidescreenHUD und 16:9-Code (Nintendo GameCube, KI-Recherche)",
+      "url": "https://github.com/Nystrata/EchoesWidescreenHUD",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: EchoesWidescreenHUD (KI-Recherche)",
+      "url": "https://github.com/Nystrata/EchoesWidescreenHUD",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Metroid Prime Trilogy – HD Interface Textures (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Metroid Prime 1, 2, 3 and Trilogy HD Texture Pack (KI-Recherche)",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
+      "type": "mod-added",
+      "text": "Neuer Mod: Echoes Unbound – integrierte Anzugfarben und Texturpaket-Import (KI-Recherche)",
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/blob/port/docs/MODS.md",
+      "date": "2026-11-10",
+      "by": "ai-research",
+      "game": "metroid-prime-2-echoes"
+    },
+    {
       "type": "route-updated",
       "text": "Neue Fassung: Metroid Prime: Trilogy (KI-Recherche)",
       "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html",

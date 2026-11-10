@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "metroid-prime-2-echoes",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-prime-3-corruption",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-prime-trilogy",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
       "game": "am2r",
       "reason": "Reihe Metroid",
       "added": "2026-11-09"

@@ -3,7 +3,8 @@
   "title": "Metroid Prime 2: Echoes",
   "franchise": "Metroid",
   "platforms": [
-    "Nintendo GameCube"
+    "Nintendo GameCube",
+    "Wii U"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Metroid%20Prime%202%20-%20Echoes%20%28USA%29.png",
@@ -75,12 +76,193 @@
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q2089035"
         }
+      ],
+      "note": "Präzisierung der bekannten Wii-Fassung: Die japanische Einzelveröffentlichung erschien am 11. Juni 2009 mit Wii-Remote-/Nunchuk-Steuerung und Breitbildunterstützung. Sie ist von der internationalen Veröffentlichung innerhalb von Metroid Prime: Trilogy zu unterscheiden.",
+      "traits": [
+        "controller",
+        "widescreen"
+      ]
+    },
+    {
+      "id": "trilogy-wiiu-2015",
+      "name": "Metroid Prime: Trilogy – Wii-U-Download",
+      "type": "rerelease",
+      "platforms": [
+        "Wii U"
+      ],
+      "year": 2015,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "note": "Archivwürdige digitale Neuveröffentlichung der Wii-Trilogy im Wii-U-eShop, keine eigenständige HD-Neubearbeitung von Echoes.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-za/News/2015/January/Weekly-download-news-952465.html"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "ai-echoes-unbound-nativer-android-port",
+      "name": "Echoes Unbound – nativer Android-Port",
+      "kind": "decomp",
+      "release": "nintendo-gamecube",
+      "runtime": "Native ARM64-Android-App auf Basis von PrimeDecomp und Aurora/SDL3/WebGPU",
+      "projects": [
+        "echoes-unbound-metroidprime2port"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "high-fps",
+        "mods",
+        "native-arm",
+        "touch",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Spielkopie und selbst erstelltes Disc-Abbild: GameCube USA G2ME01 oder PAL G2MP01; alternativ wird Metroid Prime: Trilogy USA R3ME01 beziehungsweise PAL R3MP01 unterstützt",
+        "ARM64-Android-Gerät"
+      ],
+      "benefit": "Läuft ohne GameCube-Emulation und bietet Twin-Stick-Zielen, Gyro-Steuerung, ein breitbildgerechtes HUD, überspringbare Zwischensequenzen und Bildinterpolation für höhere Bildraten. Besonders interessant für die integrierten Controller eines Android-Handhelds.",
+      "caveat": "Inoffizieller früher Port, kein offizielles Android-Release und keine belegte Thor-Leistungsgarantie. Die geprüfte Veröffentlichung v0.14.0 vom 9. November 2026 bezeichnet sich ausdrücklich als frühe Version; Spielinhalte werden nicht mitgeliefert.",
+      "steps": [
+        "Die ARM64-Android-APK aus den Releases des Projektentwicklers installieren.",
+        "Beim ersten Start das eigene unterstützte Disc-Abbild im Dateidialog auswählen; die App kopiert es in ihren Speicher.",
+        "Das Einstellungsmenü über Start + Back öffnen und Controllerbelegung sowie Twin-Stick-Zielen konfigurieren.",
+        "Optional Renderauflösung, Breitbild-HUD, Bildinterpolation und Zwischensequenz-Überspringen anpassen.",
+        "Bei Grafikproblemen die dokumentierten Android-Grafikoptionen prüfen; das Projekt unterstützt auch importierbare Vulkan-Treiber."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Odrannnn/MetroidPrime2Port/releases"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "id": "ai-gamecube-fassung-mit-echoeswidescreenhud-und-16-9-code",
+      "name": "GameCube-Fassung mit EchoesWidescreenHUD und 16:9-Code",
+      "kind": "emulator-mod",
+      "release": "nintendo-gamecube",
+      "runtime": "Dolphin für Android mit gepatchtem Spielabbild und regionspassendem Gecko-Code",
+      "projects": [
+        "echoeswidescreenhud"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene GameCube-Spielkopie und selbst erstelltes Disc-Abbild: USA G2ME01 oder PAL G2MP01",
+        "Rechner beziehungsweise passende Werkzeuge zum Anwenden des HUD-Patches",
+        "Dolphin für Android"
+      ],
+      "benefit": "Erweitert das GameCube-Spiel um ein an 16:9 angepasstes Visor- und Morph-Ball-HUD, statt die ursprüngliche Oberfläche nur zu strecken. Damit bleibt die ursprüngliche GameCube-Fassung eine attraktive Breitbildoption.",
+      "caveat": "PAL-Unterstützung ist experimentell; japanische und koreanische Fassungen werden nicht unterstützt. Bei Verwendung des dokumentierten Gecko-Codes muss Dolphins allgemeiner Widescreen Hack ausgeschaltet bleiben; Mehrspieler-Anpassungen sind nicht vorgesehen.",
+      "steps": [
+        "Den HUD-Patch aus dem Projekt herunterladen.",
+        "Eine Kopie des eigenen Abbilds nach Projektanleitung mit dem HUD-Mod patchen.",
+        "Das gepatchte Abbild in Dolphin für Android laden.",
+        "16:9 erzwingen und den zur Spielregion passenden Gecko-Code aus dem README aktivieren.",
+        "Dolphins allgemeinen Widescreen Hack bei Nutzung dieses Codes deaktivieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/Nystrata/EchoesWidescreenHUD"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/DolphinEmulator/comments/1ee1533/widescreen_hud_mod_for_metroid_prime_2_echoes/",
+          "device": "Nicht angegeben; Dolphin und PrimeHack",
+          "summary": "Der Mod-Autor demonstriert das angepasste HUD und beschreibt einen kurzen PrimeHack-Test; der Beitrag ist kein gerätespezifischer Android-Leistungstest.",
+          "date": "2026-11-10"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "updatedAt": "2026-11-10",
   "wikidata": "Q2089035",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_2%3A_Echoes",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "mods": [
+    {
+      "id": "echoeswidescreenhud",
+      "name": "EchoesWidescreenHUD",
+      "category": "widescreen-fps",
+      "url": "https://github.com/Nystrata/EchoesWidescreenHUD",
+      "edition": "GameCube USA; PAL experimentell",
+      "description": "Passt Visorrahmen und HUD an erzwungenes 16:9 an. Muss mit einer geeigneten Breitbildmethode kombiniert werden; die Wii-Fassungen benötigen diesen HUD-Patch nicht.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube"
+      ]
+    },
+    {
+      "id": "metroid-prime-trilogy-hd-interface-textures",
+      "name": "Metroid Prime Trilogy – HD Interface Textures",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "edition": "Passende GameCube- beziehungsweise Trilogy-Texturordner",
+      "description": "Terg500s höher aufgelöste Interface-Texturen verbessern HUD und Menüs. Das Echoes-Breitbildprojekt verwendet Teile dieses Pakets in seinen Beispielbildern; der Android-PrimeHack-Leitfaden beschreibt den Import des R3M-Ordners für Trilogy.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube"
+      ]
+    },
+    {
+      "id": "metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "name": "Metroid Prime 1, 2, 3 and Trilogy HD Texture Pack",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "edition": "Trilogy-Paket für Dolphin beziehungsweise PrimeHack",
+      "description": "Höher aufgelöste Umgebungstexturen als Ergänzung zum separaten Interface-Paket. Der Android-Einrichtungsleitfaden beschreibt die Verwendung mit PrimeHack; auf Handhelds sollte die zusätzliche Speicherbelastung berücksichtigt werden.",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "echoes-unbound-integrierte-anzugfarben-und-texturpaket-impor",
+      "name": "Echoes Unbound – integrierte Anzugfarben und Texturpaket-Import",
+      "category": "graphics",
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/blob/port/docs/MODS.md",
+      "edition": "Nur im nativen Echoes-Unbound-Port",
+      "description": "Der native Port kann Farben von Varia-, Dark- und Light-Suit verändern und externe Texturordner unter Android importieren. Einige Modelle in Zwischensequenzen und Pausemenüs behalten laut Dokumentation ihre Originalfarben.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-gamecube"
+      ]
+    }
+  ],
+  "summary": "Für moderne Handheld-Steuerung sind der noch experimentelle native Android-Port Echoes Unbound und die Wii-Trilogy-Fassung mit PrimeHack interessant."
 }

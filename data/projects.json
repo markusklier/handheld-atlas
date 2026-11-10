@@ -2055,7 +2055,9 @@
       "repo": "Starlightbotanist/PrimeHack-Android",
       "description": "",
       "games": [
-        "metroid-prime"
+        "metroid-prime",
+        "metroid-prime-3-corruption",
+        "metroid-prime-trilogy"
       ],
       "checkedAt": "2026-11-09"
     },
@@ -2082,6 +2084,30 @@
         "metroid-prime"
       ],
       "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "echoes-unbound-metroidprime2port",
+      "name": "Echoes Unbound / MetroidPrime2Port",
+      "kind": "port",
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port",
+      "repo": "Odrannnn/MetroidPrime2Port",
+      "description": "",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "checkedAt": "2026-11-10"
+    },
+    {
+      "id": "echoeswidescreenhud",
+      "name": "EchoesWidescreenHUD",
+      "kind": "mod",
+      "url": "https://github.com/Nystrata/EchoesWidescreenHUD",
+      "repo": "Nystrata/EchoesWidescreenHUD",
+      "description": "",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "checkedAt": "2026-11-10"
     }
   ]
 }

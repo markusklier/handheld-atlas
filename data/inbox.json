@@ -27,44 +27,17 @@
       }
     },
     {
-      "url": "https://github.com/Mona-Shores-FTC-Robotics/biobuzz",
-      "title": "Mona-Shores-FTC-Robotics/biobuzz",
-      "excerpt": "Mona Shores FTC - Code for 26-27 season",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/vuminh-coder/XPEnglishXPVoca",
-      "title": "vuminh-coder/XPEnglishXPVoca",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
       "url": "https://github.com/antdroidx/Football-Sim-Engine",
       "title": "antdroidx/Football-Sim-Engine",
       "excerpt": "Modern version of College Football Coach: Career Edition. Base originalversion was coded in Java. New version will use AI to help move things along faster.",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/townie/awesome-system-one",
-      "title": "townie/awesome-system-one",
-      "excerpt": "Curated list related to System One",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/nikakvo/wg-shield-arm64",
-      "title": "nikakvo/wg-shield-arm64",
-      "excerpt": "Always-on kernel WireGuard for Android without an app — kill switch, IPv4/IPv6, one switch per tunnel, WebUI. SukiSU / KernelSU / Magisk module, arm64.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "game-way",
+        "what": "Modernisierte Fassung der Football Managementsimulation",
+        "date": "2026-11-10"
+      }
     },
     {
       "url": "https://github.com/hy300leosquizz-ctrl/ZeroFG",
@@ -72,55 +45,12 @@
       "excerpt": "Open-source, platform-agnostic Vulkan frame generation engine focused on mobile implementations. Experimental V1 POC.",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Taha4727/PhoneMic",
-      "title": "Taha4727/PhoneMic",
-      "excerpt": "PM",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/manojkumar-code295/Plant_Disease_Rover_AI",
-      "title": "manojkumar-code295/Plant_Disease_Rover_AI",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/GeneralKnowledge/ixOS",
-      "title": "GeneralKnowledge/ixOS",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/mwijay12/bongofoodie",
-      "title": "mwijay12/bongofoodie",
-      "excerpt": "Food ordering app & delivery web platform for East Africa.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/greywolf1499/opds_plus.koplugin",
-      "title": "greywolf1499/opds_plus.koplugin",
-      "excerpt": "Enhanced OPDS catalog browser for KOReader with visual cover display, grid/list views, and extensive customization options",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/empy94/jiva-thor",
-      "title": "empy94/jiva-thor",
-      "excerpt": "Application expérimentale Jiva à double écran pour Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "tool",
+        "what": "Experimentelle Vulkan Zwischenbildgenerierung für Mobilgeräte",
+        "date": "2026-11-10"
+      }
     },
     {
       "url": "https://github.com/retroforge-linux/os-build",
@@ -128,119 +58,12 @@
       "excerpt": "RetroForge: retro-emulation OS for Snapdragon handhelds",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/hamdanra/uptown-func",
-      "title": "hamdanra/uptown-func",
-      "excerpt": "natHacks 2026 Team Repo",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/aitutor5566-maker/STUDYAI",
-      "title": "aitutor5566-maker/STUDYAI",
-      "excerpt": "STUDYAI — Complete AI-Powered Educational Learning Ecosystem with Flutter, Three.js 3D WebGL Labs, Socratic AI Tutor, Adaptive Games, and 40-Mark Weekly Examinations",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/magnusclarkson-star/aviation-ground-school-academy",
-      "title": "magnusclarkson-star/aviation-ground-school-academy",
-      "excerpt": "Aviators App",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/RadioBahrain/player",
-      "title": "RadioBahrain/player",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/TahirMansuri/ThinkCode-Lab",
-      "title": "TahirMansuri/ThinkCode-Lab",
-      "excerpt": "⚡ High-performance, 100% offline multi-language code playground & mobile IDE for students. Python 3.12 with interactive runtime stdin, Oracle-compatible SQL with live schemas, JavaScript, HTML/CSS Web Preview, and Linux Shell. Built with Vite, WebAssembly, and Capacitor for Web & Android.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/codeja3/NutriVault",
-      "title": "codeja3/NutriVault",
-      "excerpt": "Local personal and family nutrition tracker",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/CODING-PBL-GEU/FocusSense",
-      "title": "CODING-PBL-GEU/FocusSense",
-      "excerpt": "A context aware Android system for digital distraction detection and adaptive intervention",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/Allen73737/NOTtEodo",
-      "title": "Allen73737/NOTtEodo",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/superiorlu/AITreasureBox",
-      "title": "superiorlu/AITreasureBox",
-      "excerpt": "🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/marcjwrigg/armoryhub-selfhost-install",
-      "title": "marcjwrigg/armoryhub-selfhost-install",
-      "excerpt": "Install configuration for self-hosted ArmoryHub. Config only — the application image is private.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/mrvishalg2004/HealthChain--Blockchain-Integrated-Healthcare-Records-Management-Software-main",
-      "title": "mrvishalg2004/HealthChain--Blockchain-Integrated-Healthcare-Records-Management-Software-main",
-      "excerpt": "An enterprise-grade, privacy-first Electronic Health Record (EHR) platform. Features off-chain encrypted MongoDB storage, Ethereum smart contract SHA-256 integrity anchoring, and granular patient-governed time-bound consent. Built with Next.js 14, Node.js, Express, Solidity, and Web3.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/splikaa/4Rent",
-      "title": "splikaa/4Rent",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/CM-Studio77/mpvx",
-      "title": "CM-Studio77/mpvx",
-      "excerpt": "The Next-Generation Media Player for Android featuring an intelligent Dual-Engine architecture (Auto mpv-first fallback to Media3), 10-Tab Floating Liquid Glass Pill Dock, Cinema HUD, Anime4K GLSL Shaders, and multi-protocol streaming (SMB, WebDAV, Torrent, Jellyfin).",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://www.reddit.com/r/SBCGaming/comments/1xrvyer/who_needs_an_ayn_thor_if_you_can_run_native_3ds/",
-      "title": "Who needs an AYN Thor if you can run native 3DS Games on your RG DS Plus?",
-      "excerpt": "",
-      "game": null,
-      "source": "rss",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "tool",
+        "what": "Retro Emulationsbetriebssystem für Snapdragon Handhelds",
+        "date": "2026-11-10"
+      }
     },
     {
       "url": "https://github.com/shuuri-labs/pocknix-os",
@@ -248,23 +71,12 @@
       "excerpt": "Self-contained Arch Linux ARM distro for the Retroid & AYN handhelds (SM8250 & SM8550): switchable Steam (gamescope) and Plasma Mobile sessions, on a ROCKNIX-based kernel.",
       "game": null,
       "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/hm-aktaruzzaman-mukdho/Orphion",
-      "title": "hm-aktaruzzaman-mukdho/Orphion",
-      "excerpt": "An universal wireless earphones Control Panel utility for PC",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
-    },
-    {
-      "url": "https://github.com/progressive-chat/progressive-chat",
-      "title": "progressive-chat/progressive-chat",
-      "excerpt": "progressive-chat: agentic LLM client for coding on a phone. Material Design 3, app code all in C++26",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-09"
+      "foundAt": "2026-11-09",
+      "triage": {
+        "verdict": "tool",
+        "what": "Arch Linux Distribution für Retroid und AYN",
+        "date": "2026-11-10"
+      }
     },
     {
       "url": "https://github.com/griffinkrutherford/coherascent-labs-website",
@@ -5970,7 +5782,33 @@
     "https://github.com/110kc3/japan-deal-watcher",
     "https://github.com/jasonvelasquez1410/sanctuary-voice",
     "https://github.com/gabriel-07a/lan-mouse-custom",
-    "https://github.com/freeKC/Immuch360"
+    "https://github.com/freeKC/Immuch360",
+    "https://github.com/Mona-Shores-FTC-Robotics/biobuzz",
+    "https://github.com/vuminh-coder/XPEnglishXPVoca",
+    "https://github.com/townie/awesome-system-one",
+    "https://github.com/nikakvo/wg-shield-arm64",
+    "https://github.com/Taha4727/PhoneMic",
+    "https://github.com/manojkumar-code295/Plant_Disease_Rover_AI",
+    "https://github.com/GeneralKnowledge/ixOS",
+    "https://github.com/mwijay12/bongofoodie",
+    "https://github.com/greywolf1499/opds_plus.koplugin",
+    "https://github.com/empy94/jiva-thor",
+    "https://github.com/hamdanra/uptown-func",
+    "https://github.com/aitutor5566-maker/STUDYAI",
+    "https://github.com/magnusclarkson-star/aviation-ground-school-academy",
+    "https://github.com/RadioBahrain/player",
+    "https://github.com/TahirMansuri/ThinkCode-Lab",
+    "https://github.com/codeja3/NutriVault",
+    "https://github.com/CODING-PBL-GEU/FocusSense",
+    "https://github.com/Allen73737/NOTtEodo",
+    "https://github.com/superiorlu/AITreasureBox",
+    "https://github.com/marcjwrigg/armoryhub-selfhost-install",
+    "https://github.com/mrvishalg2004/HealthChain--Blockchain-Integrated-Healthcare-Records-Management-Software-main",
+    "https://github.com/splikaa/4Rent",
+    "https://github.com/CM-Studio77/mpvx",
+    "https://www.reddit.com/r/SBCGaming/comments/1xrvyer/who_needs_an_ayn_thor_if_you_can_run_native_3ds/",
+    "https://github.com/hm-aktaruzzaman-mukdho/Orphion",
+    "https://github.com/progressive-chat/progressive-chat"
   ],
   "agent": {
     "lastRun": "2026-11-09T19:45:32Z",
@@ -6004,7 +5842,10 @@
     "tomb-raider-the-prophecy": "2026-11-09",
     "metroid-prime-4-beyond": "2026-11-09",
     "super-metroid": "2026-11-09",
-    "metroid-prime": "2026-11-09"
+    "metroid-prime": "2026-11-09",
+    "metroid-prime-2-echoes": "2026-11-10",
+    "metroid-prime-3-corruption": "2026-11-10",
+    "metroid-prime-trilogy": "2026-11-10"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",
@@ -6226,11 +6067,11 @@
   },
   "usage": {
     "2026-11": {
-      "runs": 3,
-      "calls": 41,
-      "input": 436257,
-      "output": 20300,
-      "searches": 35,
+      "runs": 4,
+      "calls": 45,
+      "input": 720950,
+      "output": 35907,
+      "searches": 68,
       "byKind": {
         "reihe": {
           "calls": 1,
@@ -6245,15 +6086,15 @@
           "searches": 0
         },
         "warteschlange": {
-          "calls": 4,
-          "input": 294941,
-          "output": 17561,
-          "searches": 33
+          "calls": 8,
+          "input": 579634,
+          "output": 33168,
+          "searches": 66
         }
       }
     }
   },
   "queueDay": {
-    "2026-11-09": 3
+    "2026-11-10": 3
   }
 }

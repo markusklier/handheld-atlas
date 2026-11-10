@@ -3,7 +3,8 @@
   "title": "Metroid Prime 3: Corruption",
   "franchise": "Metroid",
   "platforms": [
-    "Wii"
+    "Wii",
+    "Wii U"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Metroid%20Prime%203_%20Corruption%20%28USA%29.png",
@@ -30,11 +31,141 @@
         "Wii"
       ],
       "year": 2007
+    },
+    {
+      "id": "trilogy",
+      "name": "Metroid Prime: Trilogy",
+      "type": "collection",
+      "platforms": [
+        "Wii",
+        "Wii U"
+      ],
+      "year": 2009,
+      "traits": [
+        "widescreen"
+      ],
+      "note": "Überarbeitete Corruption-Fassung innerhalb der Trilogie, unter anderem mit verändertem Bonusmenü, versetzten Logbucheinträgen und Fehlerkorrekturen; keine bloß unveränderte Sammelbox. 2015 auch als Wii-Download auf Wii U erschienen, nicht als eigenständiger HD-Port.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "ai-primehack-android-trilogy-mit-dual-stick-steuerung",
+      "name": "PrimeHack Android: Trilogy mit Dual-Stick-Steuerung",
+      "kind": "emulator-mod",
+      "release": "trilogy",
+      "runtime": "PrimeHack Android, Community-Build von Starlightbotanist",
+      "projects": [
+        "primehack-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Metroid-Prime-Trilogy-Spielkopie und selbst erstellter Dump",
+        "64-Bit-Android-Gerät mit OpenGL ES 3.0 oder höher",
+        "Eingerichtetes Controller-Profil"
+      ],
+      "benefit": "Spielspezifischer Dolphin-Fork mit moderner Stick-Steuerung statt bloßer Nachbildung des Wii-Zeigers; Prime 3 berücksichtigt zusätzlich Grapple Lasso und Bewegungsinteraktionen.",
+      "caveat": "Android wird von der Community gebaut, nicht vom PrimeHack-Kernteam unterstützt. Ältere Debug-Builds zeigten bei Prime 3 auffällige Farbabstufungen; ein Nutzer meldet mit dem Starlightbotanist-Build eine Verbesserung, aber keinen belegten vollständigen Durchlauf auf dem Thor.",
+      "steps": [
+        "Android-Build aus den Releases des verlinkten Quellprojekts installieren.",
+        "Eigenen Trilogy-Dump zur Spielebibliothek hinzufügen.",
+        "Controller-Profil aus dem Projekt übernehmen oder selbst einrichten und den Metroid-Controller-Modus verwenden.",
+        "Bei Prime 3 insbesondere Grapple Lasso, Visorwechsel und Bewegungsinteraktionen prüfen.",
+        "Optionale Texturpakete erst nach einem erfolgreichen Funktionstest aktivieren."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/shiiion/dolphin/wiki/Controllers-&-GamePads"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1qhgjhz/could_someone_else_using_primehack_on_android/",
+          "device": "AYN Odin 2 Portal Pro",
+          "summary": "Prime 3 zeigte im älteren PrimeHack-Debug-Build deutliches Color-Banding gegenüber Dolphin; nach einem Test des vom Fork-Autor bereitgestellten Android-Builds meldet der Nutzer eine Verbesserung.",
+          "date": "2026-11-10"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-10"
+    }
+  ],
+  "updatedAt": "2026-11-10",
   "wikidata": "Q1987193",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_3%3A_Corruption",
-  "genre": "first-person shooter"
+  "genre": "first-person shooter",
+  "mods": [
+    {
+      "id": "metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "name": "Metroid Prime 1,2,3 and Trilogy HD Texture Pack",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-1-2-3-and-trilogy-hd-texture-pack",
+      "edition": "Separates MP3-Paket oder Trilogy-Paket",
+      "description": "Gigapixel-AI-Hochskalierung der Spieltexturen, einschließlich Schriften; laut Autor zwischen Einzelspiel und Trilogy austauschbar. Über Dolphins beziehungsweise PrimeHacks Custom-Textures-Funktion nutzbar; das vollständige Vorladen ist sehr speicherintensiv.",
+      "verification": "ai-unverified",
+      "release": [
+        "trilogy",
+        "wii"
+      ]
+    },
+    {
+      "id": "metroid-prime-trilogy-hd-interface-textures",
+      "name": "Metroid Prime Trilogy – HD Interface Textures",
+      "category": "graphics",
+      "url": "https://forums.dolphin-emu.org/Thread-metroid-prime-trilogy-hd-interface-textures-v-1-7-may-01-2021",
+      "edition": "Version 1.7; PAL und NTSC",
+      "description": "Handgezeichnete Ersatztexturen für unscharfe HUD- und Menüelemente; ausdrücklich mit dem eigenständigen Prime 3 und Trilogy kompatibel. Enthält außerdem optionale kleine Fadenkreuze für PrimeHack.",
+      "verification": "ai-unverified",
+      "release": [
+        "trilogy",
+        "wii"
+      ]
+    },
+    {
+      "id": "corruptovania",
+      "name": "Corruptovania",
+      "category": "gameplay",
+      "url": "https://github.com/Schwork-Corruption/corruptovania",
+      "edition": "Eigenständiges Prime 3, NTSC-U oder PAL; nicht Trilogy",
+      "description": "Randomisiert Fundorte, Startausrüstung und Startposition. Den eigenen Dump am Desktop patchen und das exportierte Spiel anschließend in Dolphin verwenden; Trilogy und NKit-Eingaben werden nicht unterstützt, PrimeHack erhält keinen offiziellen Randomizer-Support.",
+      "verification": "ai-unverified",
+      "release": [
+        "wii"
+      ]
+    },
+    {
+      "id": "mp3update",
+      "name": "MP3Update",
+      "category": "qol",
+      "url": "https://github.com/MrMiguel211/MP3Update",
+      "edition": "Für Corruption Randomizer; in Corruptovania integriert",
+      "description": "Optionale Komfort- und Fehlerkorrekturen für Randomizer-Durchläufe, darunter Abbrechen einer Flugzielwahl, Hilfsmenü gegen Softlocks, entfernte Zwischensequenzen und Absturzkorrekturen. In Corruptovania unter Game Modifications → Quality of Life → Enable MP3Update aktivierbar.",
+      "verification": "ai-unverified",
+      "release": [
+        "wii"
+      ]
+    }
+  ],
+  "summary": "Für klassische Stick-Steuerung ist die Trilogy-Fassung mit dem inoffiziellen PrimeHack-Android-Build interessant. Auf dem Thor bietet Delphis alternativ spielspezifische Dolphin-Steuerprofile und eine Tastenübersicht auf dem unteren Display – allerdings keine ausgelagerte Spielkarte."
 }
