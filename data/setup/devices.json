@@ -1,0 +1,54 @@
+{
+  "devices": [
+    {
+      "id": "ayn-thor-max",
+      "name": "AYN Thor Max",
+      "metaDevice": "thor",
+      "supported": true,
+      "chipClass": "sd8gen2",
+      "soc": "Snapdragon 8 Gen 2",
+      "gpu": "Adreno 740",
+      "ramGb": 16,
+      "storageGb": 1024,
+      "android": "13",
+      "displays": [
+        {
+          "role": "main",
+          "inches": 6.0,
+          "width": 1920,
+          "height": 1080,
+          "hz": 120,
+          "note": "oben, AMOLED – hier laufen die Spiele"
+        },
+        {
+          "role": "companion",
+          "inches": 3.92,
+          "width": 1240,
+          "height": 1080,
+          "note": "unten – Atlas-Listen, Checkliste und Live-Werte"
+        }
+      ],
+      "match": {
+        "socModels": [
+          "SM8550",
+          "QCS8550",
+          "QCM8550"
+        ],
+        "minRamGb": 14,
+        "minDisplays": 2
+      },
+      "reportNames": [
+        "AYN Thor Max"
+      ],
+      "familyReportNames": [
+        "AYN Thor Pro",
+        "AYN Thor"
+      ],
+      "note": "Einziges unterstütztes Gerät der ersten Fassung. Berichte von Thor Pro/Base und anderen Geräten mit Snapdragon 8 Gen 2 (Odin 2, Retroid Pocket 6) zählen als Startpunkt, nicht als Messung.",
+      "sources": [
+        "https://www.notebookcheck.net/AYN-Thor-dual-screen-handheld-begins-shipping-but-only-the-Snapdragon-8-Gen-2-version.1138344.0.html",
+        "https://kennethreitz.org/essays/2026-07-18-teaching_cannoli_which_screen_is_home"
+      ]
+    }
+  ]
+}

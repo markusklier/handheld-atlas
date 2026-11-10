@@ -234,6 +234,7 @@ def validate(db=None):
             err(f"changelog.json: Spiel {e['game']!r} existiert nicht")
     for lead in db['inbox'].get('leads', []):
         url_ok(lead.get('url'), 'inbox.json')
+    errors += __import__('setup').validate(db)   # local import: setup imports this module
     return errors
 
 
@@ -262,6 +263,7 @@ def bundle(db):
         'queueDay': db['inbox'].get('queueDay', {}),
         'agent': db['inbox'].get('agent', {}),
         'reddit': reddit_pending(db['games']),
+        'setup': __import__('setup').bundle(),   # Setup-Assistent (docs/SETUP.md)
     }
 
 
@@ -296,9 +298,10 @@ def build():
     # Offline single-file version: same app with data embedded, for sideloading without internet.
     html = (DIST / 'index.html').read_text(encoding='utf-8')
     css = (DIST / 'style.css').read_text(encoding='utf-8')
-    js = (DIST / 'app.js').read_text(encoding='utf-8')
+    js = (DIST / 'app.js').read_text(encoding='utf-8') + '\n' + (DIST / 'setup.js').read_text(encoding='utf-8')
     embedded = data_json.replace('</', '<\\/')
     offline = (html.replace('<link rel="stylesheet" href="style.css">', f'<style>{css}</style>')
+                   .replace('<script src="setup.js" defer></script>', '')
                    .replace('<script src="app.js" defer></script>',
                             f'<script>window.ATLAS_EMBEDDED={embedded};</script><script>{js}</script>')
                    .replace('<link rel="manifest" href="manifest.webmanifest">', ''))

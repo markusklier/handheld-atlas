@@ -9,7 +9,7 @@ Deshalb: nur Belegtes eintragen, KI-Funde immer als `ai-unverified` markieren, u
 Alle Texte, die in der App erscheinen, sind **Deutsch mit echten Umlauten** (ä ö ü ß, nicht ae/oe/ue).
 
 **Neu in einer Session?** Zuerst `docs/KONTEXT.md` lesen: Entscheidungen von Markus (privat, Budget, was verworfen
-wurde) und der Plan für den Setup-Assistenten als eigene Android-App.
+wurde). Für die Atlas-App und den Setup-Assistenten: `docs/SETUP.md`.
 
 ## Aufbau
 
@@ -22,12 +22,16 @@ data/changelog.json    Einträge für den Reiter „Neu“ (neueste zuerst)
 data/meta.json         erlaubte Werte: kinds, features, verification, effort, targets, devices
 data/watch.json        Suchanfragen/Feeds des Watchers – darfst du erweitern
 app/                   die Web-App (lädt dist/data.json)
+app/setup.js           Setup-Assistent in der Oberfläche (Einrichten, Messfahrt, Feintuning, zwei Bildschirme) – docs/SETUP.md
+android/               Atlas-App (Kotlin, WebView + native Brücke); die Action „Android-App“ baut und veröffentlicht die APK
+data/setup/            Setup-Daten: devices, apps (handverlesen!), policy, runs/<spiel>.json (Messfahrten), selftest, learned
 scripts/atlas.py       validate | build | stats | format
 scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
 scripts/images.py      Bilder aus Seiten holen (YouTube-Vorschaubild, GitHub, Steam, Google Play, Wikipedia, Artikel)
 scripts/reddit.py      Reddit-Quelle: Abholliste für den Handheld + Rückmeldung übernehmen (`reddit-images:`), siehe docs/REDDIT.md
+scripts/setup.py       Setup-Daten prüfen/bündeln, Rückmeldungen vom Gerät übernehmen (`setup-report:`), siehe docs/SETUP.md
 scripts/push.sh        Commit + Push der Workflows; gitsync.py führt JSON-Konflikte paralleler Läufe zusammen
 scripts/wikidata.py    Stufe 0/1 (kostenlos): Jahre, Plattformen, Fassungen, Genre, offizielle Android-Fassung, ganze Reihen
 scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Recherche“), schreibt "by": "ai-research"
@@ -218,6 +222,20 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    Commit `data: Agent YYYY-MM-DD – <Kurzfassung>`, dann `git pull --rebase` und `git push` auf `main`.
    Bei Rebase-Konflikten in `changelog.json`/`inbox.json`: beide Seiten behalten (Watcher-Einträge nicht verwerfen).
    Der Push löst den Pages-Deploy aus – die App auf dem Thor hat die Änderungen beim nächsten Öffnen.
+
+## Setup-Assistent (docs/SETUP.md)
+
+- `data/setup/runs/<spiel>.json` sind **Messfahrten vom Gerät** (Issue `setup-report:`). Nicht von Hand anlegen oder
+  verändern, keine Werte schätzen. Eine Messfahrt macht einen Weg nicht automatisch `thor-tested` – das bleibt
+  Markus' ausdrücklicher Aussage vorbehalten.
+- `data/setup/apps.json` ist handverlesen: neue App nur mit belegtem Paketnamen und offizieller Quelle
+  (GitHub-Repo des Projekts, Google Play, Projektseite). Die App installiert daraus; Fehler hier landen auf dem Gerät.
+- `data/setup/selftest.json` zeigt, was die App auf dem Thor wirklich kann (`python3 scripts/setup.py`). Vor Arbeiten
+  an `android/` lesen.
+- Gute Einstellungen für ein Spiel gehören als Bericht mit Quelle in die Daten (EmuReady füllt `versions[].reports`
+  automatisch); der Assistent nimmt sie als Startkonfiguration.
+- Änderungen an `android/` bauen eine neue APK und ein Release (Action „Android-App“). Erst auf einem Branch pushen
+  (der Build läuft auch dort), nach `main` nur, wenn er grün ist.
 
 ## Regeln
 

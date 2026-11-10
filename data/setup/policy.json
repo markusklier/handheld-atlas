@@ -1,0 +1,37 @@
+{
+  "measure": {
+    "seconds": 150,
+    "minSeconds": 40
+  },
+  "target": {
+    "reachedAvg": 0.97,
+    "reachedLow1": 0.85,
+    "hardwareLimit": 0.85
+  },
+  "stop": {
+    "maxRounds": 6,
+    "minGainFps": 3,
+    "minGainPct": 5,
+    "flatRounds": 2
+  },
+  "thermal": {
+    "skinWarnC": 45,
+    "throttleStatus": 3
+  },
+  "budget": {
+    "warnEur": 5,
+    "stopEur": 10
+  },
+  "rules": [
+    "Der Nutzer wählt den Spielweg. Der Assistent richtet jeden gewählten Weg ein, auch wenn ein anderer empfohlen wird, und sagt offen, wenn Berichte gegen diesen Weg sprechen.",
+    "Ziel ist das Originaltempo des Spiels (meist 30 oder 60 Bilder pro Sekunde, PAL 25/50). Mehr nur mit belegtem Patch und wenn der Nutzer es will.",
+    "Reihenfolge: erst Abstürze und Grafikfehler beseitigen, dann gleichmäßige Bildzeiten, erst danach höhere Auflösung und Extras.",
+    "Pro Runde genau eine Änderung (oder ein zusammengehöriges Paar), damit die Wirkung messbar bleibt. Nach jeder Änderung neu messen.",
+    "Aufhören, wenn das Ziel erreicht ist: Durchschnitt ab 97 % und 1 %-Low ab 85 % der Zielrate. Dann höchstens eine Runde für mehr Bildqualität.",
+    "Aufhören, wenn zwei Runden in Folge weniger als 3 Bilder pro Sekunde bzw. 5 % bringen, spätestens nach 6 Runden.",
+    "Hardware-Grenze anerkennen: Bleibt der Durchschnitt trotz der wirksamsten Hebel (niedrigere Auflösung, Treiber, Renderer) unter 85 % des Ziels, das Ziel auf die nächste stabile Stufe senken (z. B. festes 30er-Limit bei 35 gemessenen Bildern) statt weiter zu optimieren – und einen besseren Weg nennen, falls es einen gibt.",
+    "Hitze zählt: Drosselt das Gerät oder wird das Gehäuse über 45 °C warm, ist die Einstellung nicht alltagstauglich.",
+    "Nichts erfinden: Einstellungen nur vorschlagen, die es in dieser App gibt; Quelle nennen, wenn der Vorschlag aus einem Bericht stammt.",
+    "Kosten im Blick: ab 5 € pro Spielweg hinweisen, bei 10 € anhalten, bis der Nutzer ausdrücklich weitermachen will."
+  ]
+}

@@ -70,6 +70,7 @@ abstract class AtlasWebActivity : Activity() {
             WebViewCompat.addWebMessageListener(web, "AtlasBridge", setOf(BuildConfig.WEB_ORIGIN), b)
         }
         Screens.register(this)
+        Screens.emitOthers(this, "screens", null)   // the other window learns that there are two now
         Shell.init()
         web.loadUrl(BuildConfig.WEB_URL + "?" + query())
     }
@@ -132,6 +133,7 @@ abstract class AtlasWebActivity : Activity() {
 
     override fun onDestroy() {
         Screens.unregister(this)
+        Screens.emitAll("screens", null)
         web.destroy()
         super.onDestroy()
     }

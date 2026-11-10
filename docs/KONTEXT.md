@@ -47,40 +47,40 @@ Hinweis: Die zeitgesteuerten GitHub-Läufe starteten erst verzögert; Markus hat
   neue API-Anträge seit 31.10.2026 geschlossen (Option „API-Zugang beantragen“ entfällt); RSS endet 13.11.2026.
   Folge: Im Browser wird der direkte Abruf sehr wahrscheinlich gesperrt sein (die Web-App darf die Reddit-Anmeldung
   nicht mitbenutzen) – das zeigt Info → „Reddit-Bilder vom Gerät“ nach dem ersten Start. Dann gilt:
-  1. **Native App** mit Reddit-Anmeldung im WebView = die dauerhafte Lösung; die Web-App nutzt sie automatisch, sobald
-     `window.AtlasNative.redditFetch` existiert (in den Setup-Assistenten einplanen, kleiner Baustein).
-  2. Bis dahin: Reddit-Einbettung am Spielweg („hier anzeigen“) zum Ansehen; KI-Websuche liest weiter Bildadressen,
+  1. **Atlas-App** (seit 10.11., `docs/SETUP.md`): einmal in der App bei Reddit anmelden, dann liest sie die Beiträge
+     mit dieser Anmeldung – die dauerhafte Lösung. Auf dem Thor noch ungetestet.
+  2. Im Browser: Reddit-Einbettung am Spielweg („hier anzeigen“) zum Ansehen; KI-Websuche liest weiter Bildadressen,
      soweit sie kann.
   3. Eigener Runner zu Hause bleibt Plan B (bräuchte ebenfalls eine Reddit-Anmeldung).
 - MobyGames, GameFAQs, minecraft.net u. ä. blocken Server-Abrufe. CurseForge braucht einen genehmigten Schlüssel.
 - KI findet Seiten zuverlässig, Bild-URLs kaum → Bilder werden aus gefundenen Seiten extrahiert (`scripts/images.py`).
 
-## Nächstes großes Thema: Setup-Assistent als eigene Android-App
+## Atlas-App mit Setup-Assistent (erste Fassung 10.11.2026)
 
-Entscheidung: **eigene native App** (Kotlin), damit möglichst viel automatisch bzw. KI-gestützt geht. Atlas (Web) bleibt
-Entdecken + Datenbank; die App nutzt dieselbe `data.json`.
+Alles Wichtige steht in [`docs/SETUP.md`](SETUP.md): was die App kann und was noch nicht, Installation, Aufbau,
+Brücke, Datenformate, Sicherheit, nächste Schritte. Kurzfassung:
 
-Konzept (aus der Planung vom 9.11.):
-- **Setup-Rezept je Spielweg und Chip-Klasse** (nicht je Gerät: Thor, Odin 2, Retroid Pocket 5 teilen sich viel):
-  Schritte vom Typ App installieren (Play/Obtainium/GitHub-Release), eigene Dateien bereitstellen (nur prüfen, nie
-  besorgen; Prüfsummen), Einstellungen (Wert + Menüpfad + Quelle), Konfigurationsdatei, Mods, Android-/Geräteeinstellung,
-  Starten (Intent). Jeder Schritt mit Quelle und Prüfstufe. Rezepte erzeugt/aktualisiert die KI im Hintergrund, einmal
-  pro Weg, nicht pro Nutzer; EmuReady-Berichte liefern oft schon Einstellungen.
-- **App kann:** installierte Apps/Versionen erkennen, APKs installieren/aktualisieren (Nutzer bestätigt), Ordner per SAF
-  wählen, Spieldateien per Prüfsumme prüfen, Konfigs ablegen, wo Emulatoren aus Nutzerordnern lesen, Spiele per Intent
-  starten; optional Shizuku. Grenzen: keine fremden `Android/data`-Ordner, keine Spieldateien, Play-Store-Richtlinien
-  (Verteilung über GitHub/Obtainium).
-- **KI in der App:** Fehlersuche mit Rezept + Geräteinfos als Kontext; fehlende Rezepte erzeugen (Ergebnis zurück in die DB).
-  Keine KI, die selbstständig installiert.
-- **Rückmeldung „Läuft es?“** nach jedem Setup → Erfahrungsberichte je Chip-Klasse → bessere Empfehlung (das ist der
-  eigentliche Vorsprung gegenüber EmuReady/EmuDeck/ES-DE/Obtainium).
-- Marktbild (Recherche 9.11.): EmuDeck für Android (Beta, nur Patreon, emulatorzentriert, Thor unterstützt) richtet
-  Emulatoren ein; niemand verbindet Spiel → Fassung → Weg → Gerät → geprüftes Setup. Markt klein, aber zahlungsbereit
-  (Patreon, Spenden, Affiliate).
+- **Eine App** (`android/`, Kotlin): zeigt die Atlas-Oberfläche in einem WebView und gibt ihr über die Brücke
+  `AtlasBridge` die Fähigkeiten, die eine Webseite nicht hat. Der Assistent selbst ist `app/setup.js` – eine
+  Oberfläche für Browser (Checkliste) und App (installieren, starten, messen).
+- **Zwei Bildschirme:** großes Display = Spielseite, kleines = Listen, Wege, Checkliste, Live-Werte.
+- **Ablauf je Spielweg:** Gerät → App(s) installieren → eigene Dateien → Startkonfiguration aus Berichten →
+  Messfahrt → Auswertung → Feintuning (KI oder nächste Konfiguration) → Rückmeldung in `data/setup/runs/`.
+- **Nur AYN Thor Max** in der ersten Fassung. APK-Build und Release per GitHub Action; Vorab-Schlüssel im Repo.
+- **Auf dem Thor ungetestet.** Der Selbsttest der App meldet zurück, was auf dem Gerät wirklich geht
+  (`data/setup/selftest.json`) – den zuerst lesen, bevor an Messung, Start ins Spiel oder Konfigurationsdateien
+  weitergebaut wird.
 
-Erster kleiner Baustein der App: Reddit-Brücke (`AtlasNative.redditFetch`, docs/REDDIT.md) – macht die Reddit-Bilder
-vollautomatisch. Danach: Rezept-Datenmodell + Beispielrezepte (CTR-DS, Skyrim über GameNative, ein DS-Spiel) →
-KI füllt Rezepte für die bestempfohlenen Wege → App-Prototyp (Gerät/Apps erkennen, installieren, prüfen, starten).
+Entscheidungen von Markus (10.11.): Einzelrezepte je Spiel sind wichtig; der Nutzer wählt den Weg, der Assistent
+versucht auch nicht empfohlene Wege; Shizuku ja, ADB vom Mac nur für Notfälle; KI darf für das beste Ergebnis Geld
+kosten, über 5–10 € je Spielinstallation ist nicht mehr im Verhältnis; nicht verrennen (nicht wegen 3 FPS optimieren,
+nicht 60 erzwingen, wenn die Hardware 35 hergibt). Die frühere Festlegung „keine KI, die selbstständig installiert“
+gilt nicht mehr: Die KI soll so viel wie möglich selbst erledigen – innerhalb fester Werkzeuge (docs/SETUP.md →
+Sicherheit), nie ROMs besorgen, nie kaufen.
+
+Marktbild (Recherche 9.11.): EmuDeck für Android (Beta, nur Patreon, emulatorzentriert, Thor unterstützt) richtet
+Emulatoren ein; GameNative sammelt Bewertungen und wendet bekannte Konfigurationen an; niemand verbindet
+Spiel → Fassung → Weg → Gerät → gemessenes Setup.
 
 ## Offene Punkte
 

@@ -1362,6 +1362,7 @@ def main():
     image_routes = None
     added_image = None   # (game[/way], url) pasted by the owner in the app
     reddit_report = None   # JSON from the handheld: images of Reddit posts (docs/REDDIT.md)
+    setup_report = None    # JSON from the handheld: measured runs, self-test (docs/SETUP.md)
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
@@ -1373,11 +1374,13 @@ def main():
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
         keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url', 'update',
-                'reddit-images')
+                'reddit-images', 'setup-report')
         m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
-        if 'reddit-images' in val and payload:   # pictures the handheld read from Reddit posts (no AI needed)
+        if 'setup-report' in val and payload:    # Messfahrten/Selbsttest vom Gerät (docs/SETUP.md, no AI needed)
+            setup_report = json.loads(payload.group(1))
+        elif 'reddit-images' in val and payload:   # pictures the handheld read from Reddit posts (no AI needed)
             reddit_report = json.loads(payload.group(1))
         elif 'add-image' in val and 'url' in val:
             added_image = (val['add-image'], val['url'])
@@ -1422,6 +1425,12 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f'! {gid}/{rid}: {type(e).__name__}: {str(e)[:150]}')
         lines.append(f'- Bildersuche: {total} Screenshots für Spielwege gefunden')
+    if setup_report:
+        try:
+            got = __import__('setup').apply(setup_report, log=lambda *_: None)
+            lines.append('- Rückmeldung des Setup-Assistenten übernommen:\n' + '\n'.join('  ' + x for x in got))
+        except Exception as e:  # noqa: BLE001
+            lines.append(f'- Setup-Rückmeldung: Fehler – {type(e).__name__}: {str(e)[:150]}')
     if reddit_report:
         try:
             got = __import__('reddit').apply(reddit_report, log=lambda *_: None)

@@ -67,7 +67,7 @@ python3 scripts/reddit.py apply x.json  # eine Rückmeldung lokal übernehmen
 
 - Beim Start (nach 5 s) arbeitet Atlas bis zu 12 Beiträge der Abholliste ab; beim Öffnen eines Spiels zuerst dessen Beiträge.
 - Abrufwege, in dieser Reihenfolge:
-  1. **Native Atlas-App** – wenn `window.AtlasNative.redditFetch` existiert (Vertrag unten). Die App nutzt die
+  1. **Atlas-App** – über die Brücke `redditFetch` (Abschnitt „In der Atlas-App“). Die App nutzt die
      Reddit-Anmeldung des Nutzers; das ist der Weg, der dauerhaft funktioniert.
   2. **Direkt aus dem Browser** – `https://www.reddit.com/comments/<id>/.json?raw_json=1`, erst ohne, dann mit
      Cookies. Das Ergebnis wird gemerkt (`atlas.redditProbe`). Ist der Abruf gesperrt, versucht Atlas es erst nach
@@ -126,36 +126,20 @@ reddit-images: 2
   Bildunterschrift und Dual-Screen-Bilder nach vorn, unklar → `ai-unclear` (Pflege-Agent), passt nicht → entfernt;
 - Changelog `screenshot-added` mit `"by": "device"`.
 
-## Vertrag für die native Atlas-App (Kotlin)
+## In der Atlas-App
 
-Die Web-App läuft in der nativen App in einem WebView. Die App stellt ein JavaScript-Interface `AtlasNative` bereit:
+Seit dem 10.11.2026 gibt es die App (`android/`, siehe [`docs/SETUP.md`](SETUP.md)). Dort läuft Reddit so:
 
-```kotlin
-class AtlasBridge(private val web: WebView, private val http: OkHttpClient) {
-    @JavascriptInterface
-    fun redditFetch(requestId: String, url: String) {
-        // nur https://www.reddit.com/comments/<id>/.json?raw_json=1&limit=1 zulassen
-        require(Regex("""^https://www\.reddit\.com/comments/[a-z0-9]{4,12}/\.json\?raw_json=1&limit=1$""").matches(url))
-        val cookies = CookieManager.getInstance().getCookie("https://www.reddit.com") ?: ""
-        // Abruf im Hintergrund mit der Reddit-Anmeldung des Nutzers (Cookies aus dem Login-WebView)
-        http.newCall(Request.Builder().url(url).header("Cookie", cookies).build()).enqueue(object : Callback {
-            override fun onResponse(call: Call, response: Response) { response.use { reply(requestId, it.code, it.body?.string() ?: "") } }
-            override fun onFailure(call: Call, e: IOException) { reply(requestId, 0, "") }
-        })
-    }
-    private fun reply(id: String, status: Int, body: String) {
-        web.post { web.evaluateJavascript("atlasNative.resolve(${JSONObject.quote(id)}, $status, ${JSONObject.quote(body)})", null) }
-    }
-}
-// web.addJavascriptInterface(AtlasBridge(web, http), "AtlasNative")
-```
-
-- Anmeldung: einmal `https://www.reddit.com/login` in einem WebView der App öffnen; die Cookies landen im
-  `CookieManager` und gelten für alle späteren Abrufe. Kein Passwort in Atlas speichern.
-- Antwort: `atlasNative.resolve(requestId, httpStatus, body)`; 404 → Beitrag gilt als gelöscht, alles außer 2xx als
-  Fehlversuch. Zeitlimit auf JS-Seite: 25 s.
-- Sobald `AtlasNative.redditFetch` existiert, nimmt die Web-App automatisch diesen Weg (Info zeigt
-  „Atlas-App mit deiner Reddit-Anmeldung“).
+- **Anmelden:** Info → „Reddit-Bilder vom Gerät“ → „Bei Reddit anmelden“ öffnet `reddit.com/login` in einem Fenster
+  der App. Benutzername und Passwort verwenden – die Google-Anmeldung funktioniert in App-Fenstern nicht. Atlas
+  sieht das Passwort nicht; in der App bleiben nur Reddits Cookies.
+- **Abruf:** Die Seite ruft `native.call('redditFetch', {url})`. Die App öffnet die `.json`-Adresse des Beitrags in
+  einem unsichtbaren Browserfenster – also genau so, wie es dein Browser mit deiner Anmeldung täte – und gibt
+  `{status, body}` zurück (`android/…/Reddit.kt`). Erlaubt ist nur
+  `https://www.reddit.com/comments/<id>/.json?raw_json=1&limit=1`.
+- Antwortet Reddit mit einer Anmelde- oder Sperrseite statt JSON, gilt das als 403: Atlas hört auf, meldet den
+  Beitrag **nicht** als Fehlversuch und bittet um erneute Anmeldung.
+- Ohne Anmeldung fragt die App Reddit gar nicht erst an (Info zeigt „noch nicht bei Reddit angemeldet“).
 
 ## Regeln
 

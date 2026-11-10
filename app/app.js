@@ -10,13 +10,46 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('atlas.' + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem('atlas.' + k, JSON.stringify(v)); } catch { /* private mode */ } },
 };
+/* Atlas-App (android/): die Seite läuft dort in einem WebView und bekommt „AtlasBridge“ (docs/SETUP.md).
+   native.call('info') → Promise; native.on('measure', fn) für Ereignisse. Im Browser ist native.available false. */
+const native = (() => {
+  const bridge = window.AtlasBridge;
+  const waiting = new Map();
+  const listeners = new Map();
+  let seq = 0;
+  if (bridge) {
+    bridge.onmessage = (e) => {
+      let m; try { m = JSON.parse(e.data); } catch { return; }
+      if (m.event) { for (const fn of listeners.get(m.event) || []) { try { fn(m.data); } catch (err) { console.error(err); } } return; }
+      const w = waiting.get(m.id);
+      if (!w) return;
+      waiting.delete(m.id); clearTimeout(w.timer);
+      m.ok ? w.resolve(m.result) : w.reject(new Error(m.error || 'Fehler in der App'));
+    };
+  }
+  return {
+    available: !!bridge,
+    screen: new URLSearchParams(location.search).get('screen') === 'companion' ? 'companion' : 'main',
+    call(method, params = {}, timeout = 30000) {
+      if (!bridge) return Promise.reject(new Error('Nur in der Atlas-App möglich'));
+      return new Promise((resolve, reject) => {
+        const id = String(++seq);
+        const timer = setTimeout(() => { waiting.delete(id); reject(new Error('Die App antwortet nicht')); }, timeout);
+        waiting.set(id, { resolve, reject, timer });
+        bridge.postMessage(JSON.stringify({ id, method, params }));
+      });
+    },
+    on(event, fn) { if (!listeners.has(event)) listeners.set(event, []); listeners.get(event).push(fn); },
+  };
+})();
+
 const fmtDate = (d) => {
   if (!d) return '';
   const dt = new Date(d.length === 10 ? d + 'T12:00:00Z' : d);
   return isNaN(dt) ? d : dt.toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
 };
 
-const DB = { games: [], byId: new Map(), projects: {}, platforms: {}, meta: {}, changelog: [], franchises: [], reddit: [] };
+const DB = { games: [], byId: new Map(), projects: {}, platforms: {}, meta: {}, changelog: [], franchises: [], reddit: [], setup: { devices: [], apps: [], policy: {}, runs: {}, learned: {} } };
 const state = {
   q: '', chips: new Set(), platform: '', sort: 'relevance', limit: 48,
   device: store.get('device', 'thor'),
@@ -70,6 +103,7 @@ function index(data) {
   DB.imageRequests = data.imageRequests || {};
   DB.usage = data.usage || {};
   DB.reddit = data.reddit || [];
+  DB.setup = data.setup || { devices: [], apps: [], policy: {}, runs: {}, learned: {} };
   DB.games = data.games.map((g) => {
     g.routes = g.routes || [];
     g.mods = g.mods || [];
@@ -560,8 +594,8 @@ function wayRow(g, w, open) {
   const mini = w.reasons.filter(([ic]) => ic === 'spark' || ic === 'wrench' || ic === 'chip').map(([, t]) => `<span class="tag">${esc(t)}</span>`).join('');
   return `<details class="way${w.type === 'generic' ? ' generic' : ''}" id="${wayId(w.key)}" ${open ? 'open' : ''}>
     <summary><span class="way-name">${esc(w.name)}<small>${esc(label('kinds', w.kind))}${w.r?.runtime ? ' · ' + esc(w.r.runtime) : ''}</small></span>
-      <span class="way-tags">${dual || w.features.includes('two-screens') ? `<span class="tag dual">${icon('dual')}${esc(dualLabel(w))}</span>` : ''}${mini}${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)} · ${w.community.length}</span>` : ''}${wayTag(w)}</span></summary>
-    ${wayBody(g, w)}</details>`;
+      <span class="way-tags">${dual || w.features.includes('two-screens') ? `<span class="tag dual">${icon('dual')}${esc(dualLabel(w))}</span>` : ''}${mini}${typeof setupBadge === 'function' ? setupBadge(g, w) : ''}${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)} · ${w.community.length}</span>` : ''}${wayTag(w)}</span></summary>
+    ${typeof setupBar === 'function' ? setupBar(g, w) : ''}${wayBody(g, w)}</details>`;
 }
 
 function versionCard(g, v, ways) {
@@ -835,6 +869,7 @@ function viewInfo() {
       <label class="field">API-Schlüssel<input id="ai-key" type="password" autocomplete="off" placeholder="sk-…" value="${esc(aiKey())}"></label>
       <label class="field">Modell<input id="ai-model" type="text" autocomplete="off" placeholder="${esc(DB.research?.model || '')}" value="${esc(store.get('openaiModel', ''))}"></label>
       <div class="row"><button class="btn primary" id="ai-save">Speichern</button>${aiKey() ? '<button class="btn" id="ai-clear">Löschen</button>' : ''}</div></div>
+    ${typeof setupPanel === 'function' ? setupPanel() : ''}
     ${redditPanel()}
     ${usagePanel()}
     ${qualityPanel()}
@@ -842,7 +877,7 @@ function viewInfo() {
     <div class="panel"><h3>Daten</h3><p class="muted">Stand ${fmtDate(DB.builtAt)}. ${DB.games.length} Spiele, ${Object.keys(DB.projects).length} Projekte. Die App holt sich neue Daten selbst, sobald sie online geöffnet wird.</p>
       <div class="row"><button class="btn" id="update">Nach Updates suchen</button>${window.ATLAS_EMBEDDED ? '' : '<a class="btn" href="Handheld-Atlas-offline.html" download>Offline-Version laden</a>'}</div></div>
   </div>
-  <p class="faint section">Atlas installiert und startet keine Spiele und enthält keine ROMs, APKs oder Spieldaten. Alle Projekte gehören ihren Urhebern; Bilder sind verlinkt und stammen aus den angegebenen Quellen (u. a. libretro-thumbnails, Steam, Projekt-Repositories).</p>`;
+  <p class="faint section">Atlas enthält keine ROMs, BIOS-Dateien, APKs oder Spieldaten. Die Atlas-App installiert Apps nur aus den Quellen der Projekte (GitHub-Releases, Google Play) und nur nach deiner Bestätigung; im Browser installiert Atlas nichts. Alle Projekte gehören ihren Urhebern; Bilder sind verlinkt und stammen aus den angegebenen Quellen (u. a. libretro-thumbnails, Steam, Projekt-Repositories).</p>`;
 }
 
 /* ---------------- instant analysis (OpenAI, straight from this device) ----------------
@@ -1145,7 +1180,7 @@ function renderRequestPill() {
    Reddit beantwortet seit Mai 2026 nur noch angemeldete Abrufe; GitHub Actions sind gesperrt. Deshalb holt der Handheld
    die Beiträge der Abholliste (DB.reddit, vom Build erzeugt) selbst, zeigt die Bilder sofort und meldet sie per Issue
    („reddit-images:“ + JSON) zurück; die Action „KI-Recherche“ übernimmt sie ohne KI, die Bildprüfung folgt.
-   Abrufwege, in dieser Reihenfolge: 1. native Atlas-App (window.AtlasNative.redditFetch, mit Reddit-Anmeldung)
+   Abrufwege, in dieser Reihenfolge: 1. Atlas-App (native „redditFetch“, mit Reddit-Anmeldung in der App)
    2. direkt aus dem Browser (klappt nur, wenn Reddit dem Browser antwortet – wird getestet und gemerkt). */
 const RD_IMG_HOST = /^https:\/\/(i\.redd\.it|preview\.redd\.it|external-preview\.redd\.it|i\.imgur\.com)\//;
 const rdState = { running: false, last: null };
@@ -1195,37 +1230,25 @@ function redditParse(listing) {
   return { title: String(p.title || '').slice(0, 120), author: p.author && p.author !== '[deleted]' ? p.author : '', gone, images: out.slice(0, 10) };
 }
 
-/* Brücke zur nativen App: AtlasNative.redditFetch(reqId, jsonUrl) → App ruft atlasNative.resolve(reqId, status, body) */
-const nativeWait = new Map();
-let nativeSeq = 0;
-window.atlasNative = Object.assign(window.atlasNative || {}, {
-  resolve(id, status, body) { const w = nativeWait.get(String(id)); if (w) { nativeWait.delete(String(id)); w(+status, body); } },
-});
-const hasNative = () => typeof window.AtlasNative?.redditFetch === 'function';
-function nativeFetch(url) {
-  return new Promise((resolve, reject) => {
-    const id = String(++nativeSeq);
-    const t = setTimeout(() => { nativeWait.delete(id); reject(new Error('Zeitüberschreitung')); }, 25000);
-    nativeWait.set(id, (status, body) => {
-      clearTimeout(t);
-      if (status >= 200 && status < 300) { try { resolve(JSON.parse(body)); } catch { reject(new Error('Antwort ist kein JSON')); } }
-      else reject(Object.assign(new Error('HTTP ' + status), { status }));
-    });
-    try { window.AtlasNative.redditFetch(id, url); } catch (e) { clearTimeout(t); nativeWait.delete(id); reject(e); }
-  });
+/* In der Atlas-App liest ein unsichtbares Browserfenster den Beitrag mit deiner Reddit-Anmeldung (native „redditFetch“). */
+const hasNative = () => native.available;
+async function nativeFetch(url) {
+  const res = await native.call('redditFetch', { url }, 40000);
+  if (res.status >= 200 && res.status < 300) { try { return JSON.parse(res.body); } catch { throw new Error('Antwort ist kein JSON'); } }
+  throw Object.assign(new Error(res.status ? 'HTTP ' + res.status : 'Zeitüberschreitung'), { status: res.status });
 }
 
 const PROBE_TTL = 24 * 3600e3;
 const redditProbe = () => store.get('redditProbe', null);   // {mode: 'direct'|'direct-cred'|'blocked', at, detail}
 function redditMethod() {
-  if (hasNative()) return 'native';
+  if (hasNative()) return store.get('redditLogin', false) ? 'native' : 'native-login';
   const p = redditProbe();
   if (!p) return 'untested';
   if (p.mode === 'blocked' && Date.now() - p.at > PROBE_TTL) return 'untested';
   return p.mode;
 }
 const METHOD_LABEL = {
-  native: 'Atlas-App mit deiner Reddit-Anmeldung', direct: 'direkt aus dem Browser', 'direct-cred': 'direkt aus dem Browser (mit Reddit-Anmeldung)',
+  native: 'Atlas-App mit deiner Reddit-Anmeldung', 'native-login': 'Atlas-App – noch nicht bei Reddit angemeldet', direct: 'direkt aus dem Browser', 'direct-cred': 'direkt aus dem Browser (mit Reddit-Anmeldung)',
   blocked: 'aus dem Browser gesperrt', untested: 'noch nicht getestet',
 };
 
@@ -1236,6 +1259,7 @@ async function redditGet(post) {
   if (method === 'native') {
     try { data = await nativeFetch(jsonUrl); } catch (e) {
       if (e.status === 404) return { at: Date.now(), status: 'gone', method };
+      if (e.status === 403 || e.status === 401) { store.set('redditLogin', false); return null; }   // Anmeldung fehlt oder abgelaufen: nicht als Fehlversuch melden
       return { at: Date.now(), status: 'failed', method, detail: e.message };
     }
   } else {
@@ -1335,7 +1359,7 @@ function rdRefreshGalleries() {
 
 /** Abholliste abarbeiten: erst die Beiträge des offenen Spiels, dann der Rest (Dual Screen zuerst), sanft getaktet. */
 async function redditSync({ game = null, max = 12, report = true } = {}) {
-  if (rdState.running || !DB.reddit.length || !navigator.onLine || redditMethod() === 'blocked') return;
+  if (rdState.running || !DB.reddit.length || !navigator.onLine || redditMethod() === 'blocked' || redditMethod() === 'native-login') return;
   rdState.running = true;
   let loaded = 0;
   try {
@@ -1432,7 +1456,9 @@ function redditPanel() {
       <li class="${open.length ? 'part' : 'ok'}">${icon(open.length ? 'alert' : 'check')}${open.length} ${open.length === 1 ? 'Beitrag' : 'Beiträge'} auf der Abholliste${dual ? `, davon ${dual} Dual Screen` : ''}; ${loaded} hier geladen</li>
       <li class="${out.length ? 'part' : 'ok'}">${icon(out.length ? 'alert' : 'check')}${out.length ? `${out.length} Ergebnis(se) warten auf Rückmeldung` : 'Alles zurückgemeldet'}${err && out.length ? ' – letzter Fehler: ' + esc(err.detail) : ''}</li>
     </ul>
-    ${method === 'blocked' ? '<p class="faint">Seit Mai 2026 antwortet Reddit nur noch angemeldeten Nutzern, und eine Webseite darf deine Reddit-Anmeldung nicht mitbenutzen. Vollautomatisch klappt es mit der kommenden Atlas-App (Reddit-Anmeldung in der App). Bis dahin: Beiträge über „hier anzeigen“ am Spielweg ansehen. Atlas testet den Browser-Weg einmal am Tag neu.</p>' : ''}
+    ${method === 'blocked' ? '<p class="faint">Seit Mai 2026 antwortet Reddit nur noch angemeldeten Nutzern, und eine Webseite darf deine Reddit-Anmeldung nicht mitbenutzen. Vollautomatisch klappt es in der Atlas-App (Info → Atlas-App): dort meldest du dich einmal bei Reddit an. Im Browser: Beiträge über „hier anzeigen“ am Spielweg ansehen. Atlas testet den Browser-Weg einmal am Tag neu.</p>' : ''}
+    ${native.available ? `<p class="faint">${method === 'native' ? 'Du bist in der App bei Reddit angemeldet.' : 'Melde dich einmal in der App bei Reddit an (Benutzername und Passwort; die Google-Anmeldung funktioniert in App-Fenstern nicht). Atlas sieht dein Passwort nicht.'}</p>
+      <div class="row"><button class="btn${method === 'native' ? '' : ' primary'}" data-su="reddit-login">${method === 'native' ? 'Reddit-Anmeldung öffnen' : 'Bei Reddit anmelden'}</button></div>` : ''}
     <label class="field">GitHub-Schlüssel für die automatische Rückmeldung<input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…" value="${esc(ghToken())}"></label>
     <p class="faint">Fein abgestufter Schlüssel nur für ${esc(DB.meta.repo)}, Berechtigung „Issues: Lesen und Schreiben“. Bleibt auf diesem Gerät und geht nur an api.github.com.</p>
     <div class="row"><button class="btn primary" id="gh-save">Speichern</button>${ghToken() ? '<button class="btn" id="gh-clear">Löschen</button>' : ''}
@@ -1596,6 +1622,8 @@ function route() {
   else if (a === 'merkliste') { html = viewFavs(); tab = 'favs'; }
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
   else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
+  else if (a === 'einrichten' && typeof viewSetup === 'function') { html = viewSetup(b); tab = null; }
+  else if (a === 'wege' && typeof viewWays === 'function') { html = viewWays(b); tab = null; }
   else if (a === 'plattform') { state.chips = new Set(); state.platform = decodeURIComponent(b || ''); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
@@ -1869,6 +1897,7 @@ async function init() {
     closeLightbox(); route();
   });
   route();
+  if (typeof suReady === 'function') suReady();   // Setup-Assistent (setup.js)
   scheduleRequestPoll(3000);
   setTimeout(() => redditSync({ max: 12 }), 5000);   // Reddit-Abholliste im Hintergrund (docs/REDDIT.md)
   window.addEventListener('online', () => redditReport(false));

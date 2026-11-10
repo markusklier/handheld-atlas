@@ -1,0 +1,417 @@
+{
+  "note": "Apps, die der Setup-Assistent kennt. Paketnamen aus dem Obtainium Emulation Pack (gemeinfrei). Quellen sind handverlesen: die KI-Recherche schreibt hier nicht hinein.",
+  "packageSource": "https://github.com/RJNY/Obtainium-Emulation-Pack",
+  "apps": [
+    {
+      "id": "shizuku",
+      "name": "Shizuku",
+      "kind": "tool",
+      "packages": [
+        "moe.shizuku.privileged.api"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "RikkaApps/Shizuku"
+      },
+      "note": "Gibt Atlas Shell-Rechte ohne Root: lautlos installieren, Bildrate messen, Einstellungen schreiben. Muss nach jedem Neustart des Geräts einmal gestartet werden (WLAN-Debugging)."
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "kind": "emulator",
+      "packages": [
+        "dev.eden.eden_emulator",
+        "dev.eden.eden_nightly"
+      ],
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "reportNames": [
+        "Eden"
+      ],
+      "source": {
+        "type": "page",
+        "url": "https://eden-emu.dev/"
+      }
+    },
+    {
+      "id": "eden-duo",
+      "name": "Eden Duo",
+      "kind": "emulator",
+      "packages": [],
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "projects": [
+        "eden"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "igawa6/eden-duo"
+      },
+      "note": "Dual-Screen-Fork von Eden. Paketname wird beim ersten Installieren erkannt."
+    },
+    {
+      "id": "citron",
+      "name": "Citron",
+      "kind": "emulator",
+      "packages": [
+        "org.citron.citron_emu"
+      ],
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "reportNames": [
+        "Citron"
+      ]
+    },
+    {
+      "id": "gamenative",
+      "name": "GameNative",
+      "kind": "runtime",
+      "packages": [
+        "app.gamenative"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "projects": [
+        "gamenative"
+      ],
+      "reportNames": [
+        "GameNative"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "utkarshdalal/GameNative"
+      }
+    },
+    {
+      "id": "gamehub-lite",
+      "name": "GameHub Lite",
+      "kind": "runtime",
+      "packages": [
+        "gamehub.lite"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "reportNames": [
+        "GameHub"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "Producdevity/gamehub-lite"
+      },
+      "note": "EmuReady-Berichte nennen „GameHub“; Atlas richtet die quelloffene Lite-Fassung ein."
+    },
+    {
+      "id": "winlator",
+      "name": "Winlator",
+      "kind": "runtime",
+      "packages": [
+        "com.winlator"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "projects": [
+        "winlator"
+      ],
+      "reportNames": [
+        "Winlator"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "brunodev85/winlator"
+      }
+    },
+    {
+      "id": "droiddeck",
+      "name": "DroidDeck",
+      "kind": "runtime",
+      "packages": [
+        "com.droiddeck.launcher"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "projects": [
+        "droiddeck"
+      ],
+      "reportNames": [
+        "DroidDeck"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "Droid-Deck/DroidDeck"
+      }
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "kind": "emulator",
+      "packages": [
+        "org.ppsspp.ppsspp",
+        "org.ppsspp.ppssppgold"
+      ],
+      "platforms": [
+        "PSP"
+      ],
+      "projects": [
+        "ppsspp"
+      ],
+      "reportNames": [
+        "PPSSPP"
+      ],
+      "source": {
+        "type": "play",
+        "id": "org.ppsspp.ppsspp"
+      }
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "kind": "emulator",
+      "packages": [
+        "org.dolphinemu.dolphinemu"
+      ],
+      "platforms": [
+        "Nintendo GameCube",
+        "Wii"
+      ],
+      "projects": [
+        "dolphin"
+      ],
+      "reportNames": [
+        "Dolphin"
+      ],
+      "source": {
+        "type": "play",
+        "id": "org.dolphinemu.dolphinemu"
+      }
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar",
+      "kind": "emulator",
+      "packages": [
+        "org.azahar_emu.azahar"
+      ],
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "projects": [
+        "azahar"
+      ],
+      "reportNames": [
+        "Azahar"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "azahar-emu/azahar"
+      }
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "kind": "emulator",
+      "packages": [
+        "com.github.stenzek.duckstation"
+      ],
+      "platforms": [
+        "PlayStation"
+      ],
+      "projects": [
+        "duckstation"
+      ],
+      "reportNames": [
+        "DuckStation"
+      ],
+      "source": {
+        "type": "play",
+        "id": "com.github.stenzek.duckstation"
+      }
+    },
+    {
+      "id": "nethersx2",
+      "name": "NetherSX2",
+      "kind": "emulator",
+      "packages": [
+        "xyz.aethersx2.android"
+      ],
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "projects": [
+        "nethersx2"
+      ],
+      "reportNames": [
+        "NethersX2",
+        "NetherSX2",
+        "AetherSX2"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "Trixarian/NetherSX2-patch"
+      }
+    },
+    {
+      "id": "armsx2",
+      "name": "ARMSX2",
+      "kind": "emulator",
+      "packages": [
+        "com.armsx2",
+        "com.armsx2.nightly"
+      ],
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "reportNames": [
+        "ARMSX2"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "ARMSX2/ARMSX2"
+      }
+    },
+    {
+      "id": "vita3k",
+      "name": "Vita3K",
+      "kind": "emulator",
+      "packages": [
+        "org.vita3k.emulator"
+      ],
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "projects": [
+        "vita3k"
+      ],
+      "reportNames": [
+        "Vita3K"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "Vita3K/Vita3K-Android"
+      }
+    },
+    {
+      "id": "melonds",
+      "name": "melonDS",
+      "kind": "emulator",
+      "packages": [
+        "me.magnum.melonds",
+        "me.magnum.melonds.nightly"
+      ],
+      "platforms": [
+        "Nintendo DS"
+      ],
+      "projects": [
+        "melonds"
+      ],
+      "reportNames": [
+        "melonDS"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "rafaelvcaetano/melonDS-android"
+      }
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "kind": "emulator",
+      "packages": [
+        "com.flycast.emulator"
+      ],
+      "platforms": [
+        "Dreamcast"
+      ],
+      "projects": [
+        "flycast"
+      ],
+      "reportNames": [
+        "Flycast"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "flyinghead/flycast"
+      }
+    },
+    {
+      "id": "cemu",
+      "name": "Cemu",
+      "kind": "emulator",
+      "packages": [
+        "info.cemu.cemu"
+      ],
+      "platforms": [
+        "Wii U"
+      ],
+      "reportNames": [
+        "Cemu"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "SSimco/Cemu"
+      }
+    },
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "kind": "emulator",
+      "packages": [
+        "com.retroarch.aarch64",
+        "com.retroarch"
+      ],
+      "projects": [
+        "retroarch",
+        "mgba"
+      ],
+      "reportNames": [
+        "RetroArch"
+      ],
+      "source": {
+        "type": "play",
+        "id": "com.retroarch"
+      }
+    },
+    {
+      "id": "x1-box",
+      "name": "X1 BOX",
+      "kind": "emulator",
+      "packages": [
+        "com.izzy2lost.x1box"
+      ],
+      "platforms": [
+        "Xbox"
+      ],
+      "projects": [
+        "x1-box"
+      ],
+      "source": {
+        "type": "play",
+        "id": "com.izzy2lost.x1box"
+      }
+    },
+    {
+      "id": "xendroid",
+      "name": "XenDroid",
+      "kind": "emulator",
+      "packages": [
+        "xendroid.compose"
+      ],
+      "platforms": [
+        "Xbox 360"
+      ],
+      "projects": [
+        "xendroid"
+      ],
+      "source": {
+        "type": "github",
+        "repo": "rfandango/XenDroid"
+      }
+    }
+  ]
+}
