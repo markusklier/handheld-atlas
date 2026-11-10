@@ -45,6 +45,41 @@
           "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
           "credit": "Rogue Squadron 64 Recompiled",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture2.png",
+          "caption": "Recomp screenshot",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture3.png",
+          "caption": "Recomp screenshot",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture4.png",
+          "caption": "Recomp screenshot",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture5.png",
+          "caption": "Recomp screenshot",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/MikeSemicolonD/RogueSquadron64Recomp/HEAD/screenshots/Capture6.png",
+          "caption": "Recomp screenshot",
+          "source": "https://github.com/MikeSemicolonD/RogueSquadron64Recomp",
+          "credit": "Rogue Squadron 64 Recompiled",
+          "check": "readme"
         }
       ],
       "links": [
@@ -85,5 +120,18 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q54297",
+  "wikipedia": "https://en.wikipedia.org/wiki/Star_Wars%3A_Rogue_Squadron",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Star%20Wars%20-%20Rogue%20Squadron%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Star%20Wars%20-%20Rogue%20Squadron%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+    }
+  ]
 }

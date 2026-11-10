@@ -18,7 +18,37 @@
       "platforms": [
         "PlayStation Vita"
       ],
-      "year": 2012
+      "year": 2012,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/226ab4ec-8fc8-418f-ac9a-31c185d341e0",
+          "device": "AYN Odin 2",
+          "emulator": "Vita3K",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "stable 30fps",
+          "votes": 2,
+          "date": "2025-06-19",
+          "settings": {
+            "Emulator Version": "Vita3K Android Release 12",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "3",
+            "Anisotropic Filtering": "1x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b90e8abb-d528-4dc6-8616-e77853993778"
+        }
+      ]
     },
     {
       "id": "xbox-series-2022",

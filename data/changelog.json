@@ -1,6 +1,241 @@
 {
   "entries": [
     {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "persona-4-golden",
+      "text": "1 Community-Berichte von EmuReady für Persona 4 Golden (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "patapon",
+      "text": "1 Community-Berichte von EmuReady für Patapon (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "patapon-3",
+      "text": "1 Community-Berichte von EmuReady für Patapon 3 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "patapon-2",
+      "text": "1 Community-Berichte von EmuReady für Patapon 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "parasite-eve",
+      "text": "1 Community-Berichte von EmuReady für Parasite Eve (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "parasite-eve-ii",
+      "text": "1 Community-Berichte von EmuReady für Parasite Eve II (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "paper-mario",
+      "text": "1 Community-Berichte von EmuReady für Paper Mario (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "paper-mario-the-thousand-year-door",
+      "text": "1 Community-Berichte von EmuReady für Paper Mario: The Thousand-Year Door (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "tomb-raider-iii-adventures-of-lara-croft",
+      "text": "1 Community-Berichte von EmuReady für Tomb Raider III: Adventures of Lara Croft (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "route-updated",
+      "game": "new-super-mario-bros-u",
+      "text": "1 Community-Berichte von EmuReady für New Super Mario Bros. U (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "EchoesWidescreenHUD v20240515-0 veröffentlicht.",
+      "project": "echoeswidescreenhud",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "url": "https://github.com/Nystrata/EchoesWidescreenHUD/releases/tag/v20240515-0"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Echoes Unbound / MetroidPrime2Port v0.14.0 veröffentlicht.",
+      "project": "echoes-unbound-metroidprime2port",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.14.0"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "PrimeRecomp v0.0.9 veröffentlicht.",
+      "project": "primerecomp",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.0.9"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "PrimeHack-Android v1.0.9a veröffentlicht.",
+      "project": "primehack-android",
+      "games": [
+        "metroid-prime",
+        "metroid-prime-3-corruption",
+        "metroid-prime-trilogy"
+      ],
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Metroid Prime Unbound / MetroidPrimePort v0.44.0 veröffentlicht.",
+      "project": "metroid-prime-unbound-metroidprimeport",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.44.0"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "SuperMetroidDecomp v0.8.0 veröffentlicht.",
+      "project": "supermetroiddecomp",
+      "games": [
+        "super-metroid"
+      ],
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp/releases/tag/v0.8.0"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Shantae Dual V0.45 veröffentlicht.",
+      "project": "shantae-dual",
+      "games": [
+        "shantae"
+      ],
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods/releases/tag/V0.45"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Open Freestyle BMX v0.1.0 veröffentlicht.",
+      "project": "open-freestyle-bmx",
+      "games": [
+        "dave-mirra-freestyle-bmx"
+      ],
+      "url": "https://github.com/DenzoNL/open-freestyle-bmx/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Project IGI Android Port Features_Bug_Fixes veröffentlicht.",
+      "project": "project-igi-android-port",
+      "games": [
+        "project-igi-im-going-in"
+      ],
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port/releases/tag/Features_Bug_Fixes"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "RedU v1.0.5 veröffentlicht.",
+      "project": "redu",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "url": "https://github.com/HUEVOMAN77/RedU/releases/tag/v1.0.5"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "nsmbu-recomp v0.9.1 veröffentlicht.",
+      "project": "nsmbu-recomp",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "url": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/tag/v0.9.1"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.52 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.52"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Silksong Android v2.0.1 veröffentlicht.",
+      "project": "silksong-android",
+      "games": [
+        "hollow-knight-silksong"
+      ],
+      "url": "https://github.com/jakobkhansen/SilksongAndroid/releases/tag/v2.0.1"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "DS Forever v1.0.21 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.21"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "Xenogears-Link v2.0.0.23 veröffentlicht.",
+      "project": "xenogears-link",
+      "games": [
+        "xenogears"
+      ],
+      "url": "https://github.com/Nihilspire/Xenogears-Link/releases/tag/v2.0.0.23"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "WiiDS v1.2.3 veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "release",
+      "text": "DroidDeck 0.7.1 veröffentlicht.",
+      "project": "droiddeck",
+      "games": [
+        "cyberpunk-2077",
+        "doom-64"
+      ],
+      "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.7.1"
+    },
+    {
       "type": "route-added",
       "text": "Neuer Spielweg: PrimeHack-Android mit Handheld-Controllerprofil (Wii, KI-Recherche)",
       "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a",

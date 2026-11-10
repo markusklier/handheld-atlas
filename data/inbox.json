@@ -1,6 +1,510 @@
 {
   "leads": [
     {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xs0nf3/thor_vs_duo_with_aliexpress_1111_deals/",
+      "title": "Thor VS Duo with Aliexpress 11.11 deals",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xs3qfo/do_i_need_to_worry_about_43_gaming_on_an_oled_169/",
+      "title": "Do I need to worry about 4:3 gaming on an OLED 16:9 handheld?",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xsf6n6/gkd_mini_plus_black/",
+      "title": "GKD Mini Plus Black",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xsh2yq/device_minimalism_onexplayer_3_and_the_ayn_thor/",
+      "title": "Device Minimalism (Onexplayer 3 and the Ayn Thor)",
+      "excerpt": "",
+      "game": null,
+      "source": "rss",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://modrinth.com/mod/android-optimizer",
+      "title": "Android Optimizer",
+      "excerpt": "Boost Minecraft Java on Android.",
+      "game": null,
+      "source": "modrinth",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/maksidze/T5Bridge",
+      "title": "maksidze/T5Bridge (Fork von OpenMW/openmw)",
+      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Frostie77/BlastDroid",
+      "title": "Frostie77/BlastDroid",
+      "excerpt": "A Native Android port of the classic N64 demolition game Blast Corps 64.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/jake-r-r-w/crash_bash_decomp",
+      "title": "jake-r-r-w/crash_bash_decomp",
+      "excerpt": "A vibe decomp of crash bash, disk 2 disk. also windows, Linux and Android port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/rhemfur/CaptainToadRecomp",
+      "title": "rhemfur/CaptainToadRecomp",
+      "excerpt": "Captain Toad Wii U EUR static recompilation prototype for Android ARM64. Not playable yet; bring your own game dump.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/xutonghe0-ux/gu-native",
+      "title": "xutonghe0-ux/gu-native",
+      "excerpt": "MHGU recomp Android fork - direct ENet lobby multiplayer, trilingual UI with Chinese default, Shizuku log capture. No game code, ROMs or keys; bring your own legal copy.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/teclilla18/sonic-riders-recomp",
+      "title": "teclilla18/sonic-riders-recomp",
+      "excerpt": "Native port of Sonic Riders (GameCube) via static recompilation for Windows, Linux / Steam Deck, Nintendo Switch, Android and iPhone / iPad. Easy launchers build it from your own disc image; contains no game data.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/YuutaTsubasa/ChaotixRecompiled",
+      "title": "YuutaTsubasa/ChaotixRecompiled",
+      "excerpt": "Static recompilation of the Sega 32X game Knuckles' Chaotix into native C++ (Windows/Linux/macOS/Android), with true widescreen. Bring your own ROM; no game data included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Yannis100/vita-port-skill",
+      "title": "Yannis100/vita-port-skill",
+      "excerpt": "Agent skill for porting games and engines to the PS Vita (VPK homebrew): VitaSDK, vitaGL, Android .so loader, static recomp, API emulation",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/ilhamnih12/Disney-Tarzan-recomp-android",
+      "title": "ilhamnih12/Disney-Tarzan-recomp-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/WINDROID-EMU/RECOMP-ZELDA-3DS-ANDROID",
+      "title": "WINDROID-EMU/RECOMP-ZELDA-3DS-ANDROID",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/KMODs-dev/Dragon-Ball-Z-Infinity-World-Recomp-ARM64",
+      "title": "KMODs-dev/Dragon-Ball-Z-Infinity-World-Recomp-ARM64",
+      "excerpt": "A port of Dragon Ball Z Infinity World for Android phones with ARM64.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/YuzeHao2023/daily-arxiv-ai4economy",
+      "title": "YuzeHao2023/daily-arxiv-ai4economy",
+      "excerpt": "🎓Automatically Update AI4Economy Papers Daily using Github Actions",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/YuzeHao2023/daily-arxiv-ai4chem",
+      "title": "YuzeHao2023/daily-arxiv-ai4chem",
+      "excerpt": "🎓Automatically Update AI4Chem Papers Daily using Github Actions",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/theneao/CV-SAR-Seg-arxiv-daily",
+      "title": "theneao/CV-SAR-Seg-arxiv-daily",
+      "excerpt": "CV领域 个人关注方向 每日arxiv文章更新",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/biliboobrian/romCloud",
+      "title": "biliboobrian/romCloud",
+      "excerpt": "Frontend Android de rétro-gaming inspiré de Daijishou, dont la bibliothèque de jeux se trouve sur un serveur distant : l'application affiche la liste des jeux de chaque système, télécharge une ROM à la demande, puis la lance dans l'émulateur choisi.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/collegeming/xring-o3-droidspaces-package",
+      "title": "collegeming/xring-o3-droidspaces-package",
+      "excerpt": "XRING-O3 Mali / Droidspaces reproduction kit: patches, host payload, package CI",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/OTPR26/Ocarina-ReTuned",
+      "title": "OTPR26/Ocarina-ReTuned",
+      "excerpt": "OOT3D, recompiled for Windows, Mac, Linux, Android, iOS and Apple TV. A substantially modified TriAevum fork with the Ocarina ReFramed single-screen HUD, HD dialogue fonts and controller-friendly menus.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/yangyws/awesome-stars",
+      "title": "yangyws/awesome-stars",
+      "excerpt": "🌟 @yangyws 的 GitHub 標記星號開源專案分類索引庫 (自動同步)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/ChimeraGaming/FanmakePokemonMaps_Android",
+      "title": "ChimeraGaming/FanmakePokemonMaps_Android",
+      "excerpt": "A live map database built for the AYN Thor (JoiPlay).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/joshbirnholz/dual-screen",
+      "title": "joshbirnholz/dual-screen",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/touying-typ/touying",
+      "title": "touying-typ/touying",
+      "excerpt": "Touying is a powerful package for creating presentation slides in Typst.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/RamazanKara/Rubylight",
+      "title": "RamazanKara/Rubylight",
+      "excerpt": "Free, open-source game-streaming host for Windows PCs with AMD Radeon or NVIDIA graphics. Play your PC games on your TV, phone, handheld, laptop or in a web browser: low latency, HDR, a virtual display sized for each device, per-game settings, couch co-op and USB forwarding. Works with Moonlight, Artemis and Nightjar.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/zneko-org/zneko-launcher",
+      "title": "zneko-org/zneko-launcher",
+      "excerpt": "A simple, powerful way to manage, discover, and play games across Android devices.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/yusuftrn/FlipThor",
+      "title": "yusuftrn/FlipThor",
+      "excerpt": "Rapid Cross-Screen App-Swapping Tool for the AYN Thor",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/pocket-nexus/omarchy-pocket",
+      "title": "pocket-nexus/omarchy-pocket",
+      "excerpt": "Omarchy Pocket: Omarchy's CLI, config and services under a PocketJS shell on the Anbernic RG DS Plus",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/SubmitGame/awesome-decomp-games",
+      "title": "SubmitGame/awesome-decomp-games",
+      "excerpt": "Rated, auto-refreshed list of decompiled, recompiled & reverse-engineered games: decomps, static recomps, source ports, engine remakes, browser ports.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/DucOps/sundial-sts2",
+      "title": "DucOps/sundial-sts2",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/bhuiyah/ff7-recomp-android",
+      "title": "bhuiyah/ff7-recomp-android",
+      "excerpt": "FINAL FANTASY VII (PC) statically recompiled to native ARM64 Android, with an FFNx renderer and a 7th Heaven-style mod launcher. No game files included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Apps2Samsung/tizen-community-packages",
+      "title": "Apps2Samsung/tizen-community-packages",
+      "excerpt": "Community-curated bundles of Tizen applications. All-in-one releases for easy installation on your Tizen devices.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/maakyuo/-.-.-.-",
+      "title": "maakyuo/-.-.-.-",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/mtklein/thorhud",
+      "title": "mtklein/thorhud",
+      "excerpt": "Bottom-screen performance dashboard for the AYN Thor on Armada OS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/kvse/dsr-native",
+      "title": "kvse/dsr-native",
+      "excerpt": "Static Recompilation of Dark Souls Remastered for Nintendo Switch on Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/enhansome/fucking-enhansome-privacy",
+      "title": "enhansome/fucking-enhansome-privacy",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/picccassso/ReplayMac",
+      "title": "picccassso/ReplayMac",
+      "excerpt": "macOS menu bar instant-replay clipper, basically ShadowPlay for your Mac.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/LLCOOLT/paper-cut",
+      "title": "LLCOOLT/paper-cut",
+      "excerpt": "Paper Cut: A native port of Paper Mario: The Thousand-Year Door to Windows, macOS, Linux, iOS and Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Dysprohol/duobeam",
+      "title": "Dysprohol/duobeam",
+      "excerpt": "Stream both screens of a dual-screen Android handheld (AYN Thor) to a Samsung Tizen or Android TV over Wi-Fi",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/callmetimo/nota2",
+      "title": "callmetimo/nota2",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/RamazanKara/nightjar",
+      "title": "RamazanKara/nightjar",
+      "excerpt": "Play your PC games on your phone, handheld, Android TV, Fire TV, Windows or Linux. Free and open source, no accounts, no ads: low latency, HDR, any controller, and your Steam, Epic, GOG, Xbox and other games in one console-style library. Works with Rubylight, Sunshine, Apollo, Vibepollo and other Moonlight hosts.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/NelsonGan/ricecal",
+      "title": "NelsonGan/ricecal",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Dling11/MH4-ULTIMATE",
+      "title": "Dling11/MH4-ULTIMATE",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Correia-jpv/fucking-awesome-privacy",
+      "title": "Correia-jpv/fucking-awesome-privacy",
+      "excerpt": "Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS. With repository stars⭐ and forks🍴",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/kilolonion/agent-vscreen",
+      "title": "kilolonion/agent-vscreen",
+      "excerpt": "A background virtual screen for any Android AI agent: it operates apps on an invisible display while you keep using your phone. CLI / MCP / HTTP, Shizuku, no root. 给任何手机 agent 用的后台副屏。",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Solven190/Xbox-original-",
+      "title": "Solven190/Xbox-original-",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/adelost/circlekit",
+      "title": "adelost/circlekit",
+      "excerpt": "Shared adaptive Android UI and release foundations for v1d apps",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/ARCSERVERZ1/Aura-Android-v1",
+      "title": "ARCSERVERZ1/Aura-Android-v1",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/R2deetwo/PracticeProVEGA",
+      "title": "R2deetwo/PracticeProVEGA",
+      "excerpt": "LegalTech for Nigerian Law Firms",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Shahrukhalid/nexonic-download-manager",
+      "title": "Shahrukhalid/nexonic-download-manager",
+      "excerpt": "Free, open-source download manager for Mac and Windows (IDM alternative): 32-connection downloads, pause/resume, scheduler, queues, batch, site grabber, video download button, Chrome & Firefox extensions.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/tracedraw/tracedraw",
+      "title": "tracedraw/tracedraw",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/aashikhameed/music-player-app",
+      "title": "aashikhameed/music-player-app",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/carissadarmafissaleha/narra-notch",
+      "title": "carissadarmafissaleha/narra-notch",
+      "excerpt": "Notch For Windows",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/lllusivecoat/Pkmngame",
+      "title": "lllusivecoat/Pkmngame",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/PranavCM24032/PykachuGo_v3.4",
+      "title": "PranavCM24032/PykachuGo_v3.4",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/billkhiz-bit/london-flight-path-map",
+      "title": "billkhiz-bit/london-flight-path-map",
+      "excerpt": "Interactive geospatial tool for assessing aircraft noise and liveability factors across London boroughs",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/sky-45/wifi-nerf-mapper",
+      "title": "sky-45/wifi-nerf-mapper",
+      "excerpt": "Background Multi-Modal RF & Inertial Data Collection System on Android for Wi-Fi Indoor Environment Mapping & NeRF Reconstruction",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/montionugera/ps-skills",
+      "title": "montionugera/ps-skills",
+      "excerpt": "Personal Claude Code skills (ps-*): ps-commu-explain + ps-release-workflow. Tested, CI, one-command install.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/Manju5555/CUSTOM-FIRE-LAUNCHER-with-CLAUD",
+      "title": "Manju5555/CUSTOM-FIRE-LAUNCHER-with-CLAUD",
+      "excerpt": "CUSTOM FIRE LAUNCHER with CLAUD - Custom ad-free Amazon Fire TV Home Screen Launcher (FIRE TV CUSTOM HS VER1)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/tong0619453646-dev/awesome-kling-4.0-prompts",
+      "title": "tong0619453646-dev/awesome-kling-4.0-prompts",
+      "excerpt": "133 Kling 4.0 prompts with their result videos, in English, 简体中文, 繁體中文 and 한국어. Copy one or run it on APIKO's Kling 4.0 API.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
+      "url": "https://github.com/maravento/uhm",
+      "title": "maravento/uhm",
+      "excerpt": "UniFi Host Manager",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-10"
+    },
+    {
       "url": "https://github.com/PatchDev-AM2ARM/AM2ARM",
       "title": "PatchDev-AM2ARM/AM2ARM",
       "excerpt": "Arm64 based port of AM2R 1.5.5",
@@ -5817,9 +6321,9 @@
     "rejected": 30
   },
   "watcher": {
-    "lastRun": "2026-11-09T17:08:24Z",
-    "newLeads": 9,
-    "newEvents": 0
+    "lastRun": "2026-11-10T13:30:58Z",
+    "newLeads": 63,
+    "newEvents": 17
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

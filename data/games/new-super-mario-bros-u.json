@@ -15,6 +15,38 @@
       "year": 2012,
       "platforms": [
         "Wii U"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a9d0cdc8-e1ac-4aa0-b04a-9c01fd3cb94b",
+          "device": "OnePlus 12R",
+          "emulator": "Cemu",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Boost Rush mode is unplayable. The game crashes after selecting a course pack**",
+          "votes": 0,
+          "date": "2025-12-29",
+          "settings": {
+            "Emulator Version": "0.3",
+            "Driver Version": "Default System Driver",
+            "Resolution": "1920x1080",
+            "Graphics API": "Vulkan (Recommended)",
+            "VSync": "Off",
+            "Async Shader Compiler": "True",
+            "GPU Buffer Cache Accuracy": "Medium (Default)",
+            "Console Region": "Auto (Default)",
+            "Upscale Filter": "Bilinear",
+            "Audio API (PC)": "N/A"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/97a27507-bbea-4f80-b49a-7ba2c6e606e8"
+        }
       ]
     },
     {
@@ -119,5 +151,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q1506526",
+  "wikipedia": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros._U",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/03/New_Super_Mario_Bros._U_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros._U"
+  }
 }

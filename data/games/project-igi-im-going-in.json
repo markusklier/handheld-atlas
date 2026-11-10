@@ -32,7 +32,50 @@
       "version": null,
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/95963bea-95a6-4048-8d92-259b3e301c6c",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/a9c8947b-e84b-4117-8ffa-7a4a4b921a35",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/f71b2569-e8b2-46a6-80f7-5355e62ac1c4",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/f56ae050-50dd-4537-8c10-57dea78125b5",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/b5f55f4d-2e06-47e6-8934-d98b2ca77c4b",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/c1884a07-a8da-473c-ae34-66bdb1913515",
+          "caption": "Image",
+          "source": "https://github.com/rayishere0/Project-IGI-Android-Port",
+          "credit": "Project IGI Android Port",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -68,5 +111,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q2323444",
+  "wikipedia": "https://en.wikipedia.org/wiki/Project_I.G.I.",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/fe/Project_I.G.I._I%27m_Going_In_%28cover%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Project_I.G.I."
+  }
 }

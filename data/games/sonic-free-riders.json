@@ -70,6 +70,27 @@
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/camera-input-skeleton.png",
+          "caption": "Camera controlled gameplay alongside the live skeleton debug window",
+          "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+          "credit": "Free Riders Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/custom-vrm-gameplay.png",
+          "caption": "A custom VRM model riding an Extreme Gear during a race",
+          "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+          "credit": "Free Riders Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/online-3-devices.png",
+          "caption": "Three devices in the same online race",
+          "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+          "credit": "Free Riders Recompiled",
+          "check": "readme"
         }
       ],
       "links": [
@@ -96,5 +117,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q2072189",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Free_Riders",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/3f/Sonic_Free_Riders_Box_Artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Sonic_Free_Riders"
+  }
 }

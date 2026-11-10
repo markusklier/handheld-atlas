@@ -86,6 +86,34 @@
           "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
           "credit": "Shantae Dual",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/wide-view-on-off.webp",
+          "caption": "WIDE VIEW on and off",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/wide-view-3ds.png",
+          "caption": "WIDE VIEW on the 3DS top screen",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/shantae-tab.png",
+          "caption": "Shantae tab",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/dance-list.png",
+          "caption": "Dance list with auto dance",
+          "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
+          "credit": "Shantae Dual",
+          "check": "readme"
         }
       ],
       "links": [

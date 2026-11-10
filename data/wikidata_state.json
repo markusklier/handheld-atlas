@@ -742,7 +742,12 @@
     "metroid-samus-returns": "2026-11-09",
     "metroid-zero-mission": "2026-11-09",
     "metroid": "2026-11-09",
-    "super-metroid": "2026-11-09"
+    "super-metroid": "2026-11-09",
+    "dave-mirra-freestyle-bmx": "2026-11-10",
+    "new-super-mario-bros-u": "2026-11-10",
+    "project-igi-im-going-in": "2026-11-10",
+    "sonic-free-riders": "2026-11-10",
+    "star-wars-rogue-squadron": "2026-11-10"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1682,6 +1687,11 @@
     "ys-viii-lacrimosa-of-dana": 3,
     "zack-wiki-quest-for-barbaros-treasure": 3,
     "zero-escape-virtue-s-last-reward": 3,
-    "zero-time-dilemma": 3
+    "zero-time-dilemma": 3,
+    "dave-mirra-freestyle-bmx": 3,
+    "new-super-mario-bros-u": 3,
+    "project-igi-im-going-in": 3,
+    "sonic-free-riders": 3,
+    "star-wars-rogue-squadron": 3
   }
 }

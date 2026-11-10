@@ -44,6 +44,27 @@
           "source": "https://github.com/DenzoNL/open-freestyle-bmx",
           "credit": "Open Freestyle BMX",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-tabletop.jpg",
+          "caption": "A tabletop at Woodward, 3440x1440",
+          "source": "https://github.com/DenzoNL/open-freestyle-bmx",
+          "credit": "Open Freestyle BMX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-cancan.jpg",
+          "caption": "A can can to fast plant on a 21:9 screen",
+          "source": "https://github.com/DenzoNL/open-freestyle-bmx",
+          "credit": "Open Freestyle BMX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-menu.jpg",
+          "caption": "The level select at 21:9, with the blurred sides",
+          "source": "https://github.com/DenzoNL/open-freestyle-bmx",
+          "credit": "Open Freestyle BMX",
+          "check": "readme"
         }
       ],
       "links": [
@@ -81,5 +102,23 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-09"
+  "updatedAt": "2026-11-09",
+  "wikidata": "Q5229396",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dave_Mirra_Freestyle_BMX_%28video_game%29",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Dave%20Mirra%20Freestyle%20BMX%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Dave%20Mirra%20Freestyle%20BMX%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Dave%20Mirra%20Freestyle%20BMX%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
 }

@@ -29,7 +29,33 @@
       "platforms": [
         "Nintendo 64"
       ],
-      "year": 2000
+      "year": 2000,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/05adfc08-ad3d-4e76-9bb8-ce10f8538219",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "RetroArch",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfectly, even with HD texture packs loaded",
+          "votes": 0,
+          "date": "2025-06-24",
+          "settings": {
+            "Emulator Version": "Mupen64plus",
+            "Video Driver": "OpenGL",
+            "Video Scale": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/630edf01-e55d-4af6-bc53-8fb62bd4ca67"
+        }
+      ]
     },
     {
       "id": "wii-2007",

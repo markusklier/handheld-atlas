@@ -20,7 +20,39 @@
       "platforms": [
         "PlayStation"
       ],
-      "year": 1998
+      "year": 1998,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/362d5f8f-0af1-4da4-9518-410b9ce1cd6c",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3fd0594f-6441-4d94-9a7a-40dd11882b6f"
+        }
+      ]
     },
     {
       "id": "pc",
@@ -32,7 +64,14 @@
       ],
       "year": 1998,
       "note": "Korrektur der bisherigen Aufteilung: PC und PlayStation gehören zur selben Originalveröffentlichung von 1998. Die Windows-Umsetzung bietet leicht verbesserte Grafik; The Lost Artefact gehört noch nicht zum Hauptspiel.",
-      "traits": []
+      "traits": [],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ca42afdc-f38a-4766-84df-58ad02ca0db3"
+        }
+      ]
     },
     {
       "id": "mac-1999",
