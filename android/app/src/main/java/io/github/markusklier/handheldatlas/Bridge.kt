@@ -27,7 +27,9 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
     private val main = Handler(Looper.getMainLooper())
 
     override fun onPostMessage(view: WebView, message: WebMessageCompat, sourceOrigin: Uri, isMainFrame: Boolean, replyProxy: JavaScriptReplyProxy) {
-        if (!isMainFrame || !(view.url ?: "").startsWith(BuildConfig.WEB_URL)) return
+        // only the Atlas page itself (the listener is already limited to its origin)
+        val page = try { view.url ?: "" } catch (e: Throwable) { BuildConfig.WEB_URL }
+        if (!isMainFrame || sourceOrigin.toString().trimEnd('/') != BuildConfig.WEB_ORIGIN || !page.startsWith(BuildConfig.WEB_URL)) return
         proxy = replyProxy
         val request = try {
             JSONObject(message.data ?: return)
