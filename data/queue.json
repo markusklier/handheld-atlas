@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "metroid-prime-hunters",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-samus-returns",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "metroid-zero-mission",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
       "game": "metroid-other-m",
       "reason": "Reihe Metroid",
       "added": "2026-11-09"
