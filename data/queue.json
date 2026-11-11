@@ -1,21 +1,6 @@
 {
   "jobs": [
     {
-      "game": "metroid-ii-return-of-samus",
-      "reason": "Reihe Metroid",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "tomb-raider-apocalypse-episode-1-the-eye-of-osiris",
-      "reason": "Reihe Tomb Raider",
-      "added": "2026-11-09"
-    },
-    {
-      "game": "tomb-raider-the-angel-of-darkness",
-      "reason": "Reihe Tomb Raider",
-      "added": "2026-11-09"
-    },
-    {
       "game": "tomb-raider-the-osiris-codex",
       "reason": "Reihe Tomb Raider",
       "added": "2026-11-09"
