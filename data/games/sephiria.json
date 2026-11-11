@@ -138,7 +138,7 @@
           "caption": "HUD",
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/map.png",
@@ -152,14 +152,14 @@
           "caption": "Backpack",
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/combos.png",
           "caption": "Combos",
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [

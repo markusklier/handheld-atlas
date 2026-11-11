@@ -319,7 +319,7 @@
           "caption": "The PrimeRecomp start screen",
           "source": "https://github.com/gminustwo/primerecomp",
           "credit": "PrimeRecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/landing_site.jpg",

@@ -53,14 +53,14 @@
           "caption": "Storymodus",
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto Broken Bond Android Port",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/android-controls.png",
           "caption": "Bildschirm-Steuerung auf Android",
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto Broken Bond Android Port",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "reports": [],

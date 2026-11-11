@@ -42,7 +42,7 @@
           "caption": "Android-Launcher mit Datenprüfung und Leistungsprofilen",
           "source": "https://github.com/aoxzh/bayo3-recomp",
           "credit": "Bayonetta 3 Recomp",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "reports": [],

@@ -76,21 +76,21 @@
           "caption": "Camera controlled gameplay alongside the live skeleton debug window",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/custom-vrm-gameplay.png",
           "caption": "A custom VRM model riding an Extreme Gear during a race",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/online-3-devices.png",
           "caption": "Three devices in the same online race",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [

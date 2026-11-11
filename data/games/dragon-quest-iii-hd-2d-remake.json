@@ -146,7 +146,7 @@
   "cover": {
     "url": "https://www.dragonquest.jp/roto-trilogy/dq3/_common/img/sns_dq3.png?250527",
     "source": "https://www.dragonquest.jp/roto-trilogy/dq3/",
-    "check": "ai"
+    "check": "ai-unclear"
   },
   "website": "https://www.dragonquest.jp/roto-trilogy/dq3/"
 }

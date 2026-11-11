@@ -150,7 +150,7 @@
           "caption": "Widescreen gameplay in Littleroot Town",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_map_bottom.png",
@@ -164,21 +164,21 @@
           "caption": "A wild Pokémon battle",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_battle_bottom.png",
           "caption": "Fight, bag, run and Pokémon buttons on the touch screen",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_moves_top.png",
           "caption": "Wild battle while choosing a move",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [

@@ -2,6 +2,12 @@
   "entries": [
     {
       "date": "2026-11-11",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 1 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-11",
       "type": "system",
       "text": "Neu: Zwei Bildschirme mit Stöbern oben und Bühne unten (große Vorschau, Spielseite, Einrichten; Tauschen per Knopf), Emulator-Wahl im Setup-Assistenten mit markierter Empfehlung, Remakes als eigene Spiele, Tiefenrecherche immer anforderbar mit Wunschtext, Recherche wahlweise über API oder Abo.",
       "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/SETUP.md"

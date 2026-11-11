@@ -4,10 +4,16 @@
   "aboSchedule": "montags und donnerstags um 20:38",
   "changed": "2026-11-11",
   "status": {
-    "ok": true,
-    "reason": "",
-    "at": ""
+    "ok": false,
+    "reason": "OpenAI-Guthaben aufgebraucht",
+    "at": "2026-11-11T22:12Z"
   },
-  "handovers": [],
+  "handovers": [
+    {
+      "title": "Aktualisieren: DOOM (1993)",
+      "reason": "OpenAI-Guthaben aufgebraucht",
+      "at": "2026-11-11T22:12Z"
+    }
+  ],
   "note": "Wo recherchiert wird (docs/RECHERCHE.md). backend: \"api\" = die Action „KI-Recherche“ mit OpenAI, \"abo\" = die geplante Claude-Aufgabe (Pflegelauf). fallback \"abo\": ist die API nicht nutzbar (kein Schlüssel, Monatsbudget, Guthaben leer), gehen Anfragen automatisch an die Abo-Aufgabe. Umschalten: Issue mit „research-backend: api|abo“ (Knopf unter Info) – nicht von Hand ändern."
 }
