@@ -16,6 +16,134 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4d2fe0c2-4272-445f-a0c7-0c32b12a139d",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 6,
+          "date": "2025-11-04",
+          "settings": {
+            "Emulator Version": "0.0.4-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4e2ad1f0-18bf-4fac-9fc3-27d1bffcd2d4",
+          "device": "AYN Thor Pro",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2025-11-24",
+          "settings": {
+            "Emulator Version": "4491abc",
+            "Driver Version": "[KIMCHI Turnip] Mesa Turnip driver v25.0.0 - Revision 3|||turnip_v25.0.0_R3.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1280x720",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7f67a7ba-8158-4aa0-8f69-8de49f2e2495",
+          "device": "AYN Odin 2 Mini Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Hi guys ! It looks like I finally found a solution for the \"HDR\" issues (textures appearing slightly burnt in sunny environnements / completely black, in dark environments)... I used the \"Mesa Turnip driver v20.0.0 - R6\"",
+          "votes": 2,
+          "date": "2025-12-13",
+          "settings": {
+            "Emulator Version": "0.0.4-rc3",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 6|||Turnip_v26.0.0_R6.zip",
+            "Limit Speed": "True",
+            "Accuracy Level": "Extreme (Slow)",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/aff9e284-00d9-4d1a-9e9d-3c3d277a028b",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "T28 turnip driver gave me glitched graphics as seen in the video I lowered it to T26 and everything was fine",
+          "votes": 0,
+          "date": "2026-05-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8c73b082-0140-45f0-a91d-a3cae79d1f8f",
+          "device": "AYN Odin 2 Mini Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Disable RAII and Release Fences Early. Set DMA Level to High. If the graphics has overly bright bloom: - Wait for a safe point (usually when a new level loads) - Close the game (end the emulation) - Kill the emulator - R",
+          "votes": 2,
+          "date": "2025-10-18"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e28a441c-a60a-4dc9-b480-eaa4ce722a04",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Sudachi",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Notes ***TO ALL USERS*** PLEASE DO NOT LEAVE AN EMPTY LISTING FOR OTHERS TO FILL. IF YOU CREATE A LISTING, PLEASE FILL THAT LISTING. <— *If you see this message, this listing was left empty by the original creator* This ",
+          "votes": 1,
+          "date": "2025-07-15",
+          "settings": {
+            "Emulator Version": "Build c7431bd",
+            "Driver Version": "Mesa Turnip Driver v25.2.0-R8-Auto",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "ScaleForce",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/8ba7aa0f-fd0f-45a2-8b8b-9d95b08af9ca"
+        }
       ]
     }
   ],

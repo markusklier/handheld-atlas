@@ -1,6 +1,137 @@
 {
   "entries": [
     {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "game": "pokemon-legends-arceus",
+      "text": "12 Community-Berichte von EmuReady für Pokémon Legends: Arceus (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "game": "pokemon-black",
+      "text": "1 Community-Berichte von EmuReady für Pokémon Black (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "game": "pikmin",
+      "text": "2 Community-Berichte von EmuReady für Pikmin (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "game": "pikmin-4",
+      "text": "6 Community-Berichte von EmuReady für Pikmin 4 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "game": "pikmin-2",
+      "text": "2 Community-Berichte von EmuReady für Pikmin 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Echoes Unbound / MetroidPrime2Port v0.15.0 veröffentlicht.",
+      "project": "echoes-unbound-metroidprime2port",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.15.0"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Metroid Prime Unbound / MetroidPrimePort v0.45.0 veröffentlicht.",
+      "project": "metroid-prime-unbound-metroidprimeport",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.45.0"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.55 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.55"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "DS Forever v1.0.24 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.24"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 3.6.0 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/3.6.0"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "SkyrimSE-DualScreen v1.0.3 veröffentlicht.",
+      "project": "skyrimse-dualscreen",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.3"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Recompa v0.4.2 veröffentlicht.",
+      "project": "recompa",
+      "url": "https://github.com/kalasyan/recompa/releases/tag/v0.4.2"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "PokeDaisy v1.5.0.1 veröffentlicht.",
+      "project": "pokedaisy",
+      "games": [
+        "pokemon-emerald"
+      ],
+      "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.5.0.1"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "release",
+      "text": "Eden Duo v1.3.5.1 veröffentlicht.",
+      "project": "eden",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "the-legend-of-zelda-link-s-awakening",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-afterbirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake"
+      ],
+      "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.5.1"
+    },
+    {
       "date": "2026-11-10",
       "type": "system",
       "text": "Neu: Atlas-App mit Setup-Assistent für den AYN Thor Max (Vorabversion, auf dem Gerät noch ungetestet). Jeder Spielweg hat jetzt „Einrichten“: Apps installieren, Startkonfiguration aus Berichten, Messfahrt, Feintuning. Installation unter Info → Atlas-App.",

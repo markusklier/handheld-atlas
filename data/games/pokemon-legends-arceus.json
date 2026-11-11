@@ -16,6 +16,66 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4f0b8435-e914-4877-b66a-97666d0f7989",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2025-06-17",
+          "settings": {
+            "Emulator Version": "0.0.02-pre-alpha",
+            "Driver Version": "Mesa turnip driver v25.0.0 R8",
+            "Accuracy Level": "Normal",
+            "Resolution": "1X(720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8b0494c7-27c8-40db-b930-88f035d3cb3d",
+          "device": "AYN Odin 2",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Running with Arceus Plus mod. However, the with the mod the game may drop to 0 FPS and freeze before certain boss fights (Lilligant, for example). If that happens just deactivate the mod and reload. Reactivate mod after ",
+          "votes": 2,
+          "date": "2025-06-23",
+          "settings": {
+            "Emulator Version": "1.0.15",
+            "Driver Version": "Mesa Turnip v25.1.0 Revision 5",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720p/1080p)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/034f9142-baa8-450c-89a6-6622513d02fb"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/09d51ed2-fa0c-422f-a0ce-86b15b71e916"
+        }
       ]
     }
   ],

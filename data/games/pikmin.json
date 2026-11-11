@@ -29,7 +29,61 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2001
+      "year": 2001,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/da280bd3-222b-4e8d-b502-b250c391583b",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2e5782d4-cd6c-4a3a-a712-4028f45e3aa6",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Played full story mode and challenges without issues nor lag.",
+          "votes": 1,
+          "date": "2026-02-11",
+          "settings": {
+            "Emulator Version": "2512",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "4",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "8x MSAA",
+            "Anisotropic Filtering": "16",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f6b0258c-8e01-4de7-94d2-2cb6b1302ca7"
+        }
+      ]
     },
     {
       "id": "wii-2008",

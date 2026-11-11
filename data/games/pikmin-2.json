@@ -29,7 +29,61 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2004
+      "year": 2004,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/384ccf32-a7d6-4eaf-a759-54dd640ef2ce",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a746d2ea-7821-41a4-a9cd-763e622bc2d3",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Played full story mode and challenges without issues with a 60fps hack and 16:9 hack",
+          "votes": 0,
+          "date": "2026-02-11",
+          "settings": {
+            "Emulator Version": "2512",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "3",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "8x MSAA",
+            "Anisotropic Filtering": "16",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d5847c2b-4465-4e30-b7e2-4e3cda169626"
+        }
+      ]
     },
     {
       "id": "wii-2009",

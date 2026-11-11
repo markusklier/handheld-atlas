@@ -28,6 +28,36 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6386346b-4bb9-4ef6-b98a-f9586799633f",
+          "device": "AYN Thor Max",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "### Setup #### Game Pokemon Black #### Emulator `MelonDualDS-0.6.0.apk` (dual-screen fork) installed with `Obtanium` ### Gameplay Notes Stable 60FPS ### Settings No special settings required. Tested with 5x native (1280x",
+          "votes": 4,
+          "date": "2026-03-12",
+          "settings": {
+            "Emulator Version": "0.6.0",
+            "Renderer": "OpenGL",
+            "Resolution Scale": "5",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "Audio Interpolation": "None",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2c422ec1-8f65-412a-8f79-674d13eacb66"
+        }
       ]
     }
   ],
