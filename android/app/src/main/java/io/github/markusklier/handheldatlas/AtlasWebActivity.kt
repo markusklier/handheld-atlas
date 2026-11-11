@@ -8,6 +8,8 @@ import android.content.res.Configuration
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.MotionEvent
 import android.view.ViewGroup
 import android.webkit.CookieManager
 import android.webkit.WebChromeClient
@@ -100,6 +102,13 @@ abstract class AtlasWebActivity : Activity() {
         }
     }
 
+    // controller: one press → one window (InputRouter)
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean =
+        InputRouter.onKey(this, event) || super.dispatchKeyEvent(event)
+
+    override fun dispatchGenericMotionEvent(ev: MotionEvent): Boolean =
+        InputRouter.onMotion(this, ev) || super.dispatchGenericMotionEvent(ev)
+
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) {
@@ -137,6 +146,7 @@ abstract class AtlasWebActivity : Activity() {
 
     override fun onDestroy() {
         Screens.unregister(this)
+        InputRouter.forget(this)
         Screens.emitAll("screens", null)
         web.destroy()
         super.onDestroy()

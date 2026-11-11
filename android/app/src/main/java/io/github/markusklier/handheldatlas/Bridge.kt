@@ -75,6 +75,9 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
         "second" -> second(p.optBoolean("open", true))
         "relay" -> { Screens.emitOthers(act, "relay", p); true }
         "focusOther" -> focusOther()
+        "inputReady" -> { InputRouter.setReady(act); InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
+        "setRole" -> { InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
+        "setInput" -> { InputRouter.setTarget(p.optString("role", "browse")); JSONObject().put("target", InputRouter.target) }
         "measureStart" -> {
             if (Build.VERSION.SDK_INT >= 33) act.runOnUiThread { act.requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 7) }
             MeasureService.start(act, p.getString("package"), p.optString("label", p.getString("package")), p.optInt("seconds", 180),
