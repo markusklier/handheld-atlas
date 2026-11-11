@@ -115,15 +115,15 @@
       "features": [
         "dual-screen"
       ],
-      "dualScreen": "Episodenführer und Gebietsinfos",
+      "dualScreen": "Vergrößerte Gebietskarte mit Mario-Markierung, Postkarte, Episoden-Shines und Zähler",
       "requires": [
         "Eigene Super-Mario-Sunshine-Disc als Dump (USA GMSE01 Rev 0)",
         "AYN Thor"
       ],
       "benefit": "Nativer Port statt Dolphin-Emulation; Episodenführer auf dem unteren Display.",
-      "caveat": "Öffentliche Beta (0.9.0); nur exakt diese Disc-Version. Nur auf dem Thor vorgesehen.",
+      "caveat": "Nur exakt diese Disc-Version (USA GMSE01 Rev 0); nur für den Thor vorgesehen. Super Mario Eclipse 1.1.0 lässt sich mit dem offiziellen xdelta-Patch des Eclipse-Teams als eigenes Profil einrichten.",
       "steps": [],
-      "version": null,
+      "version": "WiiDS 1.2.3 (10.11.2026)",
       "effort": "guided",
       "status": "experimental",
       "verification": "ai-unverified",
@@ -176,16 +176,20 @@
         {
           "label": "GitHub",
           "url": "https://github.com/Maddex712/WiiDS"
+        },
+        {
+          "label": "Release 1.2.3",
+          "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
         }
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-11",
       "release": "nintendo-gamecube",
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q639955",
   "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Sunshine",
   "genre": "3D platform game"

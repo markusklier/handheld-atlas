@@ -1,0 +1,82 @@
+{
+  "id": "bayonetta-3",
+  "title": "Bayonetta 3",
+  "franchise": "Bayonetta",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "Action",
+  "summary": "Neben der Switch-Emulation gibt es eine quelloffene native Rekompilierung für Android – allerdings ohne fertige Downloads: Man baut sie selbst aus den eigenen Spieldaten.",
+  "versions": [
+    {
+      "id": "switch",
+      "name": "Nintendo Switch (2022)",
+      "type": "original",
+      "year": 2022,
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/android-touch-controls.jpg",
+          "caption": "Titelbild mit Android-Touch-Steuerung",
+          "source": "https://github.com/aoxzh/bayo3-recomp",
+          "credit": "Bayonetta 3 Recomp",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/launcher-android.jpg",
+          "caption": "Android-Launcher mit Datenprüfung und Leistungsprofilen",
+          "source": "https://github.com/aoxzh/bayo3-recomp",
+          "credit": "Bayonetta 3 Recomp",
+          "check": "readme"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "bayo3-recomp-android",
+      "name": "Bayonetta 3 Recomp – native Android-Rekompilierung",
+      "release": "switch",
+      "kind": "recomp",
+      "edition": "Switch, Version 1.2.0",
+      "runtime": "Statische ARM→C++-Rekompilierung, Horizon/NVN-Laufzeit, Vulkan 1.3",
+      "projects": [
+        "bayo3-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene ExeFS und RomFS von Bayonetta 3 in Version 1.2.0 (Build bricht bei anderer Version ab)",
+        "Android 10+ (arm64) mit Vulkan-1.3-GPU",
+        "PC mit Build-Werkzeugen – es gibt keine fertigen APKs"
+      ],
+      "benefit": "Kein Emulator: Spielcode und Shader werden vorab übersetzt, daher keine Shader-Ruckler beim Betreten neuer Bereiche. Android-Launcher mit Leistungsprofilen, Controller und Touch-Layout im Joy-Con-Stil.",
+      "caveat": "Sehr junges Projekt (seit November 2026); laut README spielbar, ein kompletter Durchlauf ist aber nicht bestätigt und der Übergang nach dem Prolog hat ein Ladeproblem. Die Android-APK muss selbst aus den eigenen Spieldaten gebaut werden. Leistungsangaben des Projekts stammen von einem Snapdragon 8 Elite, nicht vom Thor.",
+      "effort": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/aoxzh/bayo3-recomp"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}

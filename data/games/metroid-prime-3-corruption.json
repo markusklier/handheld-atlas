@@ -49,6 +49,10 @@
         {
           "label": "Quelle",
           "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2539933"
         }
       ]
     }
@@ -97,6 +101,10 @@
         {
           "label": "Quelle",
           "url": "https://github.com/shiiion/dolphin/wiki/Controllers-&-GamePads"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases"
         }
       ],
       "reports": [
@@ -111,7 +119,7 @@
       "checkedAt": "2026-11-10"
     }
   ],
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q1987193",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_3%3A_Corruption",
   "genre": "first-person shooter",

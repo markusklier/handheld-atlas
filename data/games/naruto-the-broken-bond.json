@@ -1,0 +1,104 @@
+{
+  "id": "naruto-the-broken-bond",
+  "title": "Naruto: The Broken Bond",
+  "franchise": "Naruto",
+  "platforms": [
+    "Xbox 360"
+  ],
+  "genre": "Action-Adventure / Kampfspiel",
+  "summary": "Das Xbox-360-Abenteuer läuft als inoffizielle statische Rekompilierung nativ auf Android – mit Controller-Unterstützung für Handhelds und Vulkan-Renderer.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [
+        "APK aus den GitHub-Releases des Projekts installieren.",
+        "Im Launcher das eigene ISO auswählen (es wird an Ort und Stelle gelesen, nicht kopiert).",
+        "Mit Back + Start lassen sich die PC-Optionen öffnen."
+      ],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/fight-kakashi-itachi.jpg",
+          "caption": "Kampf Kakashi gegen Itachi mit 59-FPS-Anzeige",
+          "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+          "credit": "Naruto Broken Bond Android Port",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/fight-kyuubi.jpg",
+          "caption": "Kampfszene am Wasser mit 30-FPS-Anzeige",
+          "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+          "credit": "Naruto Broken Bond Android Port",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/story.jpg",
+          "caption": "Storymodus",
+          "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+          "credit": "Naruto Broken Bond Android Port",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/android-controls.png",
+          "caption": "Bildschirm-Steuerung auf Android",
+          "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+          "credit": "Naruto Broken Bond Android Port",
+          "check": "readme"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "naruto-rexglue-port",
+      "name": "Naruto: The Broken Bond – nativer Android-Port",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360",
+      "runtime": "Statische Rekompilierung (ReXGlue SDK) mit Vulkan-Renderer",
+      "projects": [
+        "naruto-broken-bond-android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Disc von Naruto: The Broken Bond (als selbst erstelltes ISO, ca. 7 GB)",
+        "Android 10+ (arm64), Snapdragon mit Adreno 6xx oder neuer, Vulkan 1.1",
+        "6 GB RAM empfohlen"
+      ],
+      "benefit": "Kein Emulator: Kämpfe laufen laut Projekt mit 60 FPS, der Storymodus mit den originalen 30 FPS (60 mit Bildinterpolation auf neueren Snapdragon-Chips). Bluetooth-/USB-Controller und eingebaute Handheld-Steuerung werden als Spieler 1 erkannt.",
+      "caveat": "Beta, laut Autor nur auf wenigen Geräten getestet; Abstürze, Grafikfehler und Ruckler möglich. Mali- und PowerVR-GPUs werden noch nicht unterstützt. APK nur aus den offiziellen GitHub-Releases beziehen – der Autor warnt vor Re-Uploads.",
+      "effort": "guided",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port/releases"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}

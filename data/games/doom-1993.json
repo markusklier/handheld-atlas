@@ -555,50 +555,7 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_skin_deep.jpg",
-          "caption": "Quake III : Team Arena",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_urt.jpg",
-          "caption": "Urban Terror",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake2.jpg",
-          "caption": "Quake II",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_the_dark_mod.jpg",
-          "caption": "The Dark Mod",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake1.jpg",
-          "caption": "Quake I",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_return_to_castle_wolfenstein.jpg",
-          "caption": "Return to Castle Wolfenstein",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [
         {
           "label": "Quelle",

@@ -273,7 +273,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",
@@ -320,7 +320,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",
@@ -861,7 +861,10 @@
       "games": [
         "mario-kart-wii",
         "new-super-mario-bros-wii",
-        "super-mario-sunshine"
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
       ],
       "checkedAt": "2026-11-11",
       "pushedAt": "2026-11-10",
@@ -2106,7 +2109,7 @@
       "games": [
         "metroid-prime",
         "metroid-prime-3-corruption",
-        "metroid-prime-trilogy"
+        "metroid-prime-2-echoes"
       ],
       "checkedAt": "2026-11-11",
       "pushedAt": "2026-10-04",
@@ -2181,6 +2184,78 @@
         "url": "https://github.com/Nystrata/EchoesWidescreenHUD/releases/tag/v20240515-0",
         "date": "2024-05-15"
       }
+    },
+    {
+      "id": "naruto-broken-bond-android",
+      "name": "Naruto: The Broken Bond Android Port",
+      "kind": "port",
+      "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+      "repo": "1nsec/Naruto-The-Broken-Bond-Android-Port",
+      "description": "Inoffizieller nativer Android-Port von Naruto: The Broken Bond (Xbox 360), statisch rekompiliert mit dem ReXGlue SDK, Vulkan-Renderer.",
+      "games": [
+        "naruto-the-broken-bond"
+      ],
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "godhand-recompiled-android",
+      "name": "God Hand Recompiled (Android)",
+      "kind": "port",
+      "url": "https://github.com/Ptraaah/godhand-recompiled-android",
+      "repo": "Ptraaah/godhand-recompiled-android",
+      "description": "Android-Port von God Hand (PS2) auf Basis der God-Hand-Rekompilierung: Spielcode vorab nach ARM64 übersetzt, Renderer über PCSX2-Grafikkern (Vulkan).",
+      "games": [
+        "god-hand"
+      ],
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "bayo3-recomp",
+      "name": "Bayonetta 3 Recomp",
+      "kind": "port",
+      "url": "https://github.com/aoxzh/bayo3-recomp",
+      "repo": "aoxzh/bayo3-recomp",
+      "description": "Statischer Recompiler mit Horizon/NVN-Laufzeit und Vulkan-Backend: Bayonetta 3 (Switch 1.2.0) nativ auf Windows, Linux/Steam Deck und Android.",
+      "games": [
+        "bayonetta-3"
+      ],
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "gears-recomp",
+      "name": "GearsRecomp",
+      "kind": "port",
+      "url": "https://github.com/Jauidev/GearsRecomp",
+      "repo": "Jauidev/GearsRecomp",
+      "description": "Inoffizieller Port von Gears of War (Xbox 360) nach Android und PC per statischer Rekompilierung mit nativem Vulkan-Renderer.",
+      "games": [
+        "gears-of-war"
+      ],
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "gears3-recomp",
+      "name": "Gears3Recomp",
+      "kind": "port",
+      "url": "https://github.com/Jauidev/Gears3Recomp",
+      "repo": "Jauidev/Gears3Recomp",
+      "description": "Inoffizieller Port von Gears of War 3 (Xbox 360) nach Android und PC per statischer Rekompilierung mit nativem Vulkan-Renderer.",
+      "games": [
+        "gears-of-war-3"
+      ],
+      "checkedAt": "2026-11-11"
+    },
+    {
+      "id": "newdark-android",
+      "name": "NewDarkAndroid",
+      "kind": "port",
+      "url": "https://github.com/thekojac304/NewDarkAndroid",
+      "repo": "thekojac304/NewDarkAndroid",
+      "description": "Inoffizieller Android-Port von System Shock 2 (NewDark 2.48) mit Touch-Steuerung, Radialmenüs, Launcher und SCP-Unterstützung; nur Quellcode.",
+      "games": [
+        "system-shock-2"
+      ],
+      "checkedAt": "2026-11-11"
     }
   ]
 }

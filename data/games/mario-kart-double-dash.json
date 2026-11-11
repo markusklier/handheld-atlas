@@ -86,8 +86,56 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "kind": "recomp",
+      "projects": [
+        "wiids"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "steps": [],
+      "version": "WiiDS 1.2.3",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "dualScreenType": "integrated",
+      "id": "mkdd-wiids",
+      "name": "WiiDS – Mario Kart: Double Dash!!",
+      "release": "nintendo-gamecube",
+      "edition": "USA (GM4E01 Rev 0), optional Double Dash!! Plus 3.3",
+      "runtime": "WiiDS (native GameCube-Rekompilierung)",
+      "dualScreen": "Streckenkarte mit Live-Positionen, Rangliste und Zeiten",
+      "requires": [
+        "Eigene Mario-Kart-Double-Dash-Disc als Dump (USA GM4E01 Revision 0)",
+        "AYN Thor mit beiden Bildschirmen, Android 11 oder neuer",
+        "Für Double Dash!! Plus: das NTSC-xdelta-Patch 3.3 des Mod-Autors"
+      ],
+      "benefit": "Native Rekompilierung statt Dolphin mit Rennkarte auf dem unteren Bildschirm; die Fan-Erweiterung Double Dash!! Plus läuft als eigenes Profil mit eigener Memory Card.",
+      "caveat": "Neu seit WiiDS 1.2; spielspezifische Einschränkungen sind im README noch nicht dokumentiert. Nur für den Thor gedacht.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Maddex712/WiiDS"
+        },
+        {
+          "label": "WiiDS 1.2",
+          "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11",
   "wikidata": "Q5721431",
   "wikipedia": "https://en.wikipedia.org/wiki/Mario_Kart%3A_Double_Dash",
   "genre": "kart racing game"

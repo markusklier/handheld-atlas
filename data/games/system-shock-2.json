@@ -1,7 +1,7 @@
 {
   "id": "system-shock-2",
   "title": "System Shock 2",
-  "franchise": "System Shock 2",
+  "franchise": "System Shock",
   "platforms": [
     "PC"
   ],
@@ -44,10 +44,83 @@
           "url": "https://www.wikidata.org/wiki/Q1371495"
         }
       ]
+    },
+    {
+      "id": "remaster-2025",
+      "name": "25th Anniversary Remaster (2025)",
+      "type": "remaster",
+      "year": 2025,
+      "platforms": [
+        "PC",
+        "PlayStation 5",
+        "PlayStation 4",
+        "Xbox Series",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
+      "note": "Nightdive-Remaster mit eigener Engine; PC am 26. Juni 2025, Konsolen am 10. Juli 2025.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.rpgsite.net/news/17838-system-shock-2-25th-anniversary-remaster-console-release-date-switch-ps5-ps4-xbox"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": "v0.1.0-beta.1",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/thekojac304/NewDarkAndroid/HEAD/docs/images/launcher.png",
+          "caption": "Android-Launcher von NewDark SS2 mit SCP-Installation",
+          "source": "https://github.com/thekojac304/NewDarkAndroid",
+          "credit": "NewDarkAndroid",
+          "check": "source-verified"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "newdark-android",
+      "name": "NewDarkAndroid – Android-Port (NewDark 2.48)",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "PC (GOG/Steam mit NewDark 2.48)",
+      "runtime": "Statische Rekompilierung der SS2.exe nach C, OpenGL ES 2.0",
+      "projects": [
+        "newdark-android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "mods"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von GOG oder Steam mit NewDark-2.48-SS2.exe (exakte Prüfsumme)",
+        "Selbst bauen: PC mit Python 3, JDK 17, Android SDK/NDK – es gibt noch keine APK",
+        "Android 8.0+ (arm64)"
+      ],
+      "benefit": "Touch-Steuerung mit Radialmenüs, eigener Launcher und Unterstützung für den System Shock 2 Community Patch (SCP).",
+      "caveat": "Quellcode-Beta (v0.1.0-beta.1) ohne fertige APK; nur auf einem Galaxy S26 Ultra getestet. Gamepads werden laut README nicht unterstützt, nur Touch sowie Tastatur und Maus – für den Thor daher nur eingeschränkt geeignet. Das 25th Anniversary Remaster funktioniert nicht.",
+      "effort": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/thekojac304/NewDarkAndroid"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Systemshock2box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/System_Shock_2"
@@ -55,5 +128,6 @@
   "wikidata": "Q1371495",
   "wikipedia": "https://en.wikipedia.org/wiki/System_Shock_2",
   "genre": "action game",
-  "website": "https://irrationalgames.ghoststorygames.com/studio/projects/system-shock-2/"
+  "website": "https://irrationalgames.ghoststorygames.com/studio/projects/system-shock-2/",
+  "summary": "Auf Android gibt es einen frühen, selbst zu bauenden NewDark-Port mit Touch-Steuerung; Gamepads unterstützt er noch nicht."
 }

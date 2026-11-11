@@ -32,8 +32,56 @@
       "year": 2008
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "kind": "recomp",
+      "projects": [
+        "wiids"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "mods"
+      ],
+      "steps": [],
+      "version": "WiiDS 1.2.3",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "dualScreenType": "integrated",
+      "id": "ssbb-wiids",
+      "name": "WiiDS – Super Smash Bros. Brawl",
+      "release": "wii",
+      "edition": "USA (RSBE01 Rev 2), optional Project+",
+      "runtime": "WiiDS (native Wii-Rekompilierung)",
+      "dualScreen": "Match-Informationen, Bestände und Battle Records",
+      "requires": [
+        "Eigene Super-Smash-Bros.-Brawl-Disc als Dump (USA RSBE01 Revision 2)",
+        "AYN Thor mit beiden Bildschirmen, Android 11 oder neuer",
+        "Für Project+: eigenes Project+-SD-Image und Codes"
+      ],
+      "benefit": "Native Rekompilierung statt Dolphin; Brawl und die Community-Mod Project+ laufen als getrennte Profile mit eigenen Einstellungen und Spielständen.",
+      "caveat": "Neu seit WiiDS 1.2; spielspezifische Einschränkungen sind im README noch nicht dokumentiert. Nur für den Thor gedacht.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Maddex712/WiiDS"
+        },
+        {
+          "label": "WiiDS 1.2",
+          "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11",
   "wikidata": "Q843131",
   "wikipedia": "https://en.wikipedia.org/wiki/Super_Smash_Bros._Brawl",
   "genre": "platform fighter"

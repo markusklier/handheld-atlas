@@ -128,7 +128,7 @@
         },
         {
           "url": "https://github.com/SibiryakovSA/SephiriaCompanion/raw/codex/initial-import/docs/screenshots/map.png",
-          "caption": "Companion: Etagenkarte",
+          "caption": "Etagenkarte in der Companion-App auf dem zweiten Bildschirm",
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
           "check": "source-verified"
@@ -142,10 +142,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/map.png",
-          "caption": "Floor map",
+          "caption": "Etagenkarte in der Companion-App auf dem zweiten Bildschirm",
           "source": "https://github.com/SibiryakovSA/SephiriaCompanion",
           "credit": "Sephiria Companion",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/SibiryakovSA/SephiriaCompanion/HEAD/docs/screenshots/backpack.png",

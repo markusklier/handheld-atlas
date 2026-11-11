@@ -60,10 +60,109 @@
           "url": "https://www.wikidata.org/wiki/Q170489"
         }
       ]
+    },
+    {
+      "id": "3d-all-stars-2020",
+      "name": "Super Mario 3D All-Stars (2020)",
+      "type": "collection",
+      "year": 2020,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Zeitlich begrenzt verkaufte Sammlung mit Super Mario 64, Sunshine und Galaxy; Galaxy in HD mit angepasster Steuerung."
+    },
+    {
+      "id": "galaxy-1-2-switch-2025",
+      "name": "Super Mario Galaxy + Super Mario Galaxy 2 (2025)",
+      "type": "collection",
+      "year": 2025,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Switch-Sammlung beider Galaxy-Spiele, erschienen im Oktober 2025.",
+      "links": [
+        {
+          "label": "Nintendo Life",
+          "url": "https://www.nintendolife.com/news/2025/09/super-mario-galaxy-1-and-2-bundle-confirmed-for-switch-launching-october"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "kind": "recomp",
+      "projects": [
+        "wiids"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "steps": [
+        "WiiDS-APK aus den GitHub-Releases auf dem Thor installieren.",
+        "Unter Optionen → Your games den eigenen Galaxy-Dump importieren.",
+        "„Set up Galaxy“ ausführen; WiiDS erzeugt die Grafiken für den unteren Bildschirm."
+      ],
+      "version": "WiiDS 1.2.3",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-lower.png",
+          "caption": "Unterer Bildschirm: texturierter 3D-Planet der Gateway Galaxy mit Positionsmarke",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-upper.png",
+          "caption": "Luigi in der Gateway Galaxy auf dem oberen Bildschirm des Thor",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-trackpad-controls.png",
+          "caption": "Trackpad-Steuerung auf dem unteren Bildschirm",
+          "source": "https://github.com/Maddex712/WiiDS",
+          "credit": "WiiDS",
+          "check": "readme"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "dualScreenType": "integrated",
+      "id": "smg-wiids",
+      "name": "WiiDS – Super Mario Galaxy",
+      "release": "wii",
+      "edition": "USA (RMGE01 Rev 0), optional Kaizo Mario Galaxy Rebalanced 2.1",
+      "runtime": "WiiDS (nativer Galaxy-Android-/Petari-Port)",
+      "dualScreen": "Live-Zähler und texturierter 3D-Planet mit Spielermarkierung; flache Karte der Schlossgärten; Trackpad zum Zeigen",
+      "requires": [
+        "Eigene Super-Mario-Galaxy-Disc als sauberer Dump (USA RMGE01 Revision 0)",
+        "AYN Thor mit beiden Bildschirmen, Android 12L oder neuer (API 32+)"
+      ],
+      "benefit": "Nativer Port statt Dolphin: Der untere Bildschirm dient als Live-Karte und relatives Trackpad für den Wii-Zeiger; Setup erzeugt die Karten-Grafiken aus der eigenen Disc. Optional die Challenge-Mod Kaizo Mario Galaxy Rebalanced als eigenes Profil.",
+      "caveat": "Laut README bestanden die 1.1-Entwicklerbuilds nur begrenzte Prüfungen auf dem Thor (Spielstand laden, Zeigen, Kamera, Standby); keine Garantie für alle Level. Nur für den Thor gedacht.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Maddex712/WiiDS"
+        },
+        {
+          "label": "Galaxy-Setup",
+          "url": "https://github.com/Maddex712/WiiDS/blob/main/docs/release/GALAXY-SETUP.md"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11",
   "wikidata": "Q170489",
   "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_Galaxy",
   "genre": "3D platform game",

@@ -125,9 +125,9 @@
         "AYN Thor"
       ],
       "benefit": "Nativer Port statt Emulation; Star Coins und Fortschritt auf dem unteren Display.",
-      "caveat": "Öffentliche Beta (0.9.0); nur exakt diese Disc-Version. Nur auf dem Thor vorgesehen.",
+      "caveat": "Nur exakt diese Disc-Version (USA SMNE01 Rev 1); nur für den Thor vorgesehen. Das Fan-Levelpaket MSMBWii: Just a Little Adventure ist als eigenes Profil enthalten.",
       "steps": [],
-      "version": null,
+      "version": "WiiDS 1.2.3 (10.11.2026)",
       "effort": "guided",
       "status": "experimental",
       "verification": "ai-unverified",
@@ -139,57 +139,26 @@
           "source": "https://github.com/Maddex712/WiiDS",
           "credit": "WiiDS",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-galaxy-picture.png",
-          "caption": "WiiDS 1.1 dev17 Galaxy Picture settings: Original, Smooth and Smooth plus glow c",
-          "source": "https://github.com/Maddex712/WiiDS",
-          "credit": "WiiDS",
-          "check": "ai-unclear"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-cocoon-shortcut.png",
-          "caption": "WiiDS 1.1 Thor polish capture: Retro Rewind disc above and its selected Cocoon s",
-          "source": "https://github.com/Maddex712/WiiDS",
-          "credit": "WiiDS",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-galaxy-attack-colors.png",
-          "caption": "WiiDS 1.1 dev28 Kaizo Castle Gardens attack: colored Toads and Mario above, the ",
-          "source": "https://github.com/Maddex712/WiiDS",
-          "credit": "WiiDS",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-upper.png",
-          "caption": "Super Mario Galaxy in WiiDS 1.1 dev28: Luigi in Gateway Galaxy on the Thor upper",
-          "source": "https://github.com/Maddex712/WiiDS",
-          "credit": "WiiDS",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/galaxy-1.1-dev28-gateway-lower.png",
-          "caption": "Super Mario Galaxy lower screen: textured 3D Gateway Galaxy planet with Luigi",
-          "source": "https://github.com/Maddex712/WiiDS",
-          "credit": "WiiDS",
-          "check": "readme"
         }
       ],
       "links": [
         {
           "label": "GitHub",
           "url": "https://github.com/Maddex712/WiiDS"
+        },
+        {
+          "label": "Release 1.2.3",
+          "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
         }
       ],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-11",
       "release": "wii",
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q170410",
   "wikipedia": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros._Wii",
   "genre": "platform game"

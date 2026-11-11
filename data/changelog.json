@@ -2,6 +2,155 @@
   "entries": [
     {
       "date": "2026-11-11",
+      "type": "route-added",
+      "by": "agent",
+      "game": "super-mario-galaxy",
+      "text": "Neuer Spielweg: WiiDS – Super Mario Galaxy mit Live-Karte auf dem unteren Bildschirm (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-added",
+      "by": "agent",
+      "game": "mario-kart-double-dash",
+      "text": "Neuer Spielweg: WiiDS – Double Dash!! mit Streckenkarte auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-added",
+      "by": "agent",
+      "game": "super-smash-bros-brawl",
+      "text": "Neuer Spielweg: WiiDS – Brawl und Project+ mit Match-Infos auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.0"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "super-mario-sunshine",
+      "text": "Aktualisiert: WiiDS auf Version 1.2.3, Hinweise zu Super Mario Eclipse",
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "mario-kart-wii",
+      "text": "Aktualisiert: WiiDS auf Version 1.2.3, Retro Rewind; fremde Galaxy-Bilder entfernt",
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "new-super-mario-bros-wii",
+      "text": "Aktualisiert: WiiDS auf Version 1.2.3, MSMBWii-Profil; fremde Galaxy-Bilder entfernt",
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.3"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "game-added",
+      "by": "agent",
+      "game": "naruto-the-broken-bond",
+      "text": "Neues Spiel: Naruto: The Broken Bond mit nativem Android-Port (Xbox-360-Rekompilierung, KI-Fund)",
+      "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "game-added",
+      "by": "agent",
+      "game": "god-hand",
+      "text": "Neues Spiel: God Hand mit nativer Android-Rekompilierung (PS2, experimentell, KI-Fund)",
+      "url": "https://github.com/Ptraaah/godhand-recompiled-android"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "game-added",
+      "by": "agent",
+      "game": "bayonetta-3",
+      "text": "Neues Spiel: Bayonetta 3 mit nativer Rekompilierung zum Selbstbauen (experimentell, KI-Fund)",
+      "url": "https://github.com/aoxzh/bayo3-recomp"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "game-added",
+      "by": "agent",
+      "game": "gears-of-war",
+      "text": "Neues Spiel: Gears of War mit nativem Android-Port GearsRecomp (experimentell, KI-Fund)",
+      "url": "https://github.com/Jauidev/GearsRecomp"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "game-added",
+      "by": "agent",
+      "game": "gears-of-war-3",
+      "text": "Neues Spiel: Gears of War 3 mit nativem Android-Port Gears3Recomp (experimentell, KI-Fund)",
+      "url": "https://github.com/Jauidev/Gears3Recomp"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-added",
+      "by": "agent",
+      "game": "system-shock-2",
+      "text": "Neuer Spielweg: NewDarkAndroid – Android-Port mit Touch-Steuerung (Quellcode-Beta, KI-Fund)",
+      "url": "https://github.com/thekojac304/NewDarkAndroid"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-added",
+      "by": "agent",
+      "game": "metroid-prime-2-echoes",
+      "text": "Neuer Spielweg: PrimeHack-Android für Echoes (Trilogy-Fassung, KI-Fund)",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "removed",
+      "by": "agent",
+      "game": "metroid-prime",
+      "text": "Dublette „Metroid Prime Trilogy“ zusammengeführt: Sammlung ist jetzt Fassung von Prime 1–3; falsche GameCube-Fassung des Remasters entfernt",
+      "url": "https://www.wikidata.org/wiki/Q2539933"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "removed",
+      "by": "agent",
+      "game": "the-binding-of-isaac-rebirth",
+      "text": "Dublette „Afterbirth+“ als Switch-Fassung in The Binding of Isaac: Rebirth zusammengeführt"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "removed",
+      "by": "agent",
+      "game": "doom-1993",
+      "text": "6 Bilder anderer Spiele (Quake, Wolfenstein u. a.) vom idTech4A-Weg entfernt"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "grand-theft-auto-v",
+      "text": "7 Bilder geprüft und bestätigt (GTA IV/V, Emerald, Sephiria, Metroid Prime, Mario Kart Wii); vertauschte GTA-Bilder entfernt"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "system-shock-2",
+      "text": "Neue Fassung: 25th Anniversary Remaster (2025); Reihe auf „System Shock“ korrigiert",
+      "url": "https://www.rpgsite.net/news/17838-system-shock-2-25th-anniversary-remaster-console-release-date-switch-ps5-ps4-xbox"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "super-mario-galaxy",
+      "text": "Neue Fassungen: Super Mario 3D All-Stars (2020) und Galaxy + Galaxy 2 (2025)",
+      "url": "https://www.nintendolife.com/news/2025/09/super-mario-galaxy-1-and-2-bundle-confirmed-for-switch-launching-october"
+    },
+    {
+      "date": "2026-11-11",
       "type": "route-updated",
       "game": "pokemon-legends-arceus",
       "text": "12 Community-Berichte von EmuReady für Pokémon Legends: Arceus (Geräte mit dem Chip des AYN Thor)"
@@ -123,7 +272,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",
@@ -234,8 +383,7 @@
       "project": "primehack-android",
       "games": [
         "metroid-prime",
-        "metroid-prime-3-corruption",
-        "metroid-prime-trilogy"
+        "metroid-prime-3-corruption"
       ],
       "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a"
     },
@@ -378,7 +526,7 @@
       "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a",
       "date": "2026-11-10",
       "by": "ai-research",
-      "game": "metroid-prime-trilogy"
+      "game": "metroid-prime"
     },
     {
       "type": "mod-added",
@@ -386,7 +534,7 @@
       "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/Controller_config_files",
       "date": "2026-11-10",
       "by": "ai-research",
-      "game": "metroid-prime-trilogy"
+      "game": "metroid-prime"
     },
     {
       "type": "mod-added",
@@ -394,7 +542,7 @@
       "url": "https://www.reddit.com/r/retroid/comments/1oq9ldc/primehack_metroid_prime_trilogy_with_proper_fps/",
       "date": "2026-11-10",
       "by": "ai-research",
-      "game": "metroid-prime-trilogy"
+      "game": "metroid-prime"
     },
     {
       "type": "route-updated",
@@ -1929,7 +2077,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",
@@ -5213,7 +5361,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",
@@ -5234,7 +5382,7 @@
         "super-mario-bros-wonder",
         "animal-crossing-new-horizons",
         "fire-emblem-three-houses",
-        "the-binding-of-isaac-afterbirth",
+        "the-binding-of-isaac-rebirth",
         "pokemon-brilliant-diamond",
         "pokemon-shining-pearl",
         "crash-team-racing-nitro-fueled",

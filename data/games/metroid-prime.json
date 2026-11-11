@@ -77,10 +77,16 @@
         "Nintendo Switch"
       ],
       "year": 2023,
-      "note": "Überarbeitete Grafik und Audio sowie moderne Dual-Stick-Steuerung unterscheiden das Remaster vom Original. Datenkorrektur: „metroid-prime-remastered-2“ ist eine Dublette mit falscher GameCube-Zuordnung und sollte mit diesem Eintrag zusammengeführt beziehungsweise gelöscht werden; das Remaster erschien für Nintendo Switch.",
+      "note": "Überarbeitete Grafik und Audio sowie moderne Dual-Stick-Steuerung unterscheiden das Remaster vom Original.",
       "traits": [
         "controller",
         "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q116734030"
+        }
       ]
     },
     {
@@ -104,21 +110,6 @@
       ]
     },
     {
-      "id": "metroid-prime-remastered-2",
-      "name": "Metroid Prime Remastered (2023)",
-      "type": "remaster",
-      "year": 2023,
-      "platforms": [
-        "Nintendo GameCube"
-      ],
-      "links": [
-        {
-          "label": "Wikidata",
-          "url": "https://www.wikidata.org/wiki/Q116734030"
-        }
-      ]
-    },
-    {
       "id": "trilogy-2009",
       "name": "Metroid Prime: Trilogy",
       "type": "collection",
@@ -136,6 +127,10 @@
         {
           "label": "Quelle",
           "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2539933"
         }
       ]
     }
@@ -203,7 +198,7 @@
       "name": "PrimeHack Android – Trilogy mit Dual-Stick-Steuerung",
       "kind": "emulator-mod",
       "release": "trilogy-2009",
-      "runtime": "PrimeHack Android, Community-Fork von Dolphin",
+      "runtime": "PrimeHack-Android, Community-Build von Starlightbotanist (v1.0.9a)",
       "projects": [
         "primehack-android"
       ],
@@ -218,17 +213,18 @@
       ],
       "dualScreen": null,
       "requires": [
-        "Eigener Dump von Metroid Prime: Trilogy für Wii.",
-        "Kompatibles 64-Bit-Android-Gerät und Controller.",
-        "PrimeHack-spezifische Controllerbelegung beziehungsweise ein angepasstes Geräteprofil."
+        "Eigene Metroid-Prime-Trilogy-Disc und selbst erstellter ISO-/RVZ-Dump",
+        "64-Bit-Android-Gerät mit OpenGL ES 3.0 oder neuer",
+        "Integrierter oder externer Controller"
       ],
       "benefit": "Spielspezifischer Dolphin-Fork: Die Kamera wird mit dem rechten Stick wie in einem modernen Shooter gesteuert, statt nur einen emulierten Wii-Zeiger zu bewegen. Android-Handheld-Nutzer zeigen den Weg einschließlich HD-Texturen.",
-      "caveat": "Die Android-Version ist ein Community-Build ohne offiziellen Android-Support des PrimeHack-Teams. Geräteprofile müssen angepasst werden; Erfahrungsberichte können andere Community-Kompilate als die verlinkte APK verwenden.",
+      "caveat": "Inoffizieller Android-Build ohne Unterstützung durch das ursprüngliche PrimeHack-Team. Erfahrungsberichte nennen Controller-Ausfälle nach Morph-Ball-Wechseln sowie Abstürze; auf dem Thor ist deshalb keine durchgehend problemlose Sitzung garantiert.",
       "steps": [
-        "Die APK aus den Releases von PrimeHack-Android installieren.",
-        "Den eigenen Trilogy-Dump als Spielverzeichnis hinzufügen.",
-        "Die PrimeHack-spezifische Metroid-Steuerung konfigurieren und Controllerprofil an die Gerätenamen des Handhelds anpassen.",
-        "Optional passende Texturpakete installieren und benutzerdefinierte Texturen aktivieren."
+        "APK aus den Releases von Starlightbotanist installieren und den eigenen Trilogy-Dump hinzufügen.",
+        "Ein Controllerprofil anlegen; anschließend PrimeHack.Odin.ini beziehungsweise PrimeHack.Retroid.ini aus dem separaten Controller-Release nach Config/Profiles/Wiimote übernehmen.",
+        "Wii Remote 1 auf das passende Profil und das tatsächliche Controllergerät einstellen; beim Thor dient der Odin-kompatible Controllermodus als Ausgangspunkt.",
+        "Zunächst ohne Texturpakete Bewegung, Zielen, Karte und Morph-Ball-Wechsel prüfen.",
+        "Bei Vulkan-Grafikfehlern oder Abstürzen OpenGL ausprobieren; Auflösung und Texturen erst nach einem funktionierenden Basistest erhöhen."
       ],
       "version": null,
       "effort": "guided",
@@ -240,6 +236,10 @@
         {
           "label": "Quelle",
           "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases"
+        },
+        {
+          "label": "Release v1.0.9a",
+          "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/v1.0.9a"
         }
       ],
       "reports": [
@@ -254,6 +254,24 @@
           "device": "AYN Thor",
           "summary": "Das Video demonstriert die Einrichtung von PrimeHack Android und einen Metroid-Prime-Trilogy-Praxistest auf dem AYN Thor.",
           "date": "2026-11-09"
+        },
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1x6f95v/primehack_working_but_crashing_every_couple/",
+          "device": "AYN Thor Max",
+          "summary": "Der Nutzer konnte einen Morph-Ball-bedingten Eingabeausfall durch ein APK-Update beheben, berichtet aber weiterhin von zufälligen Abstürzen und zeitweiligem Einfrieren.",
+          "date": "2026-11-10"
+        },
+        {
+          "url": "https://www.reddit.com/r/retroid/comments/1oq9ldc/primehack_metroid_prime_trilogy_with_proper_fps/",
+          "device": "AYN Odin 2",
+          "summary": "Der Profilautor demonstriert die Einrichtung auf seinem Odin 2 mit Twin-Stick-Steuerung, angepassten Tastensymbolen und Terg500s HD-Oberfläche.",
+          "date": "2026-11-10"
+        },
+        {
+          "url": "https://www.reddit.com/r/AynThor/comments/1ve9y02/shes_done/",
+          "device": "AYN Thor",
+          "summary": "Der Besitzer nennt PrimeHack für Metroid Prime Trilogy ausdrücklich als besonders gelungenen Bestandteil seiner Thor-Einrichtung, ohne einen vollständigen Durchlauf oder Messwerte zu dokumentieren.",
+          "date": "2026-11-10"
         }
       ],
       "performance": [],
@@ -305,10 +323,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/landing_site.jpg",
-          "caption": "Samus at the Landing Site on Tallon IV",
+          "caption": "Samus am Landeplatz auf Tallon IV",
           "source": "https://github.com/gminustwo/primerecomp",
           "credit": "PrimeRecomp",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [
@@ -382,7 +400,7 @@
       "checkedAt": "2026-11-09"
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q1765733",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime",
   "genre": "first-person shooter",
@@ -435,6 +453,30 @@
       "verification": "ai-unverified",
       "release": [
         "nintendo-gamecube"
+      ]
+    },
+    {
+      "id": "warm-path-odin-retroid-controllerprofile",
+      "name": "Warm_Path – Odin-/Retroid-Controllerprofile",
+      "category": "controls",
+      "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases/tag/Controller_config_files",
+      "edition": "PrimeHack-Android",
+      "description": "Fertige INI-Profile und bebilderte Belegungsübersicht für moderne Twin-Stick-Steuerung, mit einer an Metroid Prime Remastered orientierten Belegung. Controllername und Gerätemodus müssen zum jeweiligen Handheld passen.",
+      "verification": "ai-unverified",
+      "release": [
+        "trilogy-2009"
+      ]
+    },
+    {
+      "id": "warm-path-retroid-odin-button-prompts",
+      "name": "Warm_Path – Retroid/Odin Button Prompts",
+      "category": "qol",
+      "url": "https://www.reddit.com/r/retroid/comments/1oq9ldc/primehack_metroid_prime_trilogy_with_proper_fps/",
+      "edition": "PrimeHack-Android mit zugehörigem Warm_Path-Controllerprofil",
+      "description": "Ersetzt Wii-Tastensymbole in Menüs und Tutorials durch zum Handheld-Profil passende Retroid-/Odin-Symbole. Der Autor bietet die Symbole einzeln oder zusammen mit der HD-Oberfläche an; den R3M-Ordner als benutzerdefinierte Texturen laden.",
+      "verification": "ai-unverified",
+      "release": [
+        "trilogy-2009"
       ]
     }
   ],

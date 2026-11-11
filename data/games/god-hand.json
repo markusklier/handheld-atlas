@@ -1,0 +1,69 @@
+{
+  "id": "god-hand",
+  "title": "God Hand",
+  "franchise": "God Hand",
+  "platforms": [
+    "PlayStation 2"
+  ],
+  "genre": "Beat ’em up",
+  "summary": "Clover Studios Prügel-Klassiker gibt es als inoffizielle native Android-Rekompilierung – spielbar, aber noch instabil und bislang nur mit Touch-Steuerung dokumentiert.",
+  "versions": [
+    {
+      "id": "ps2",
+      "name": "PlayStation 2 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": "v0.46-m45 (Vorabversion)",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "godhand-recompiled-android",
+      "name": "God Hand Recompiled – nativer Android-Port",
+      "release": "ps2",
+      "kind": "recomp",
+      "edition": "PS2 (US, SLUS-21503)",
+      "runtime": "Statische Rekompilierung (PS2Recomp) + PCSX2-Grafikkern über Vulkan",
+      "projects": [
+        "godhand-recompiled-android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene US-Disc von God Hand (SLUS-21503); andere Fassungen werden per Prüfsumme abgelehnt",
+        "Android-Gerät mit ARM64"
+      ],
+      "benefit": "Spielcode läuft vorab übersetzt nativ statt emuliert; drei Touch-Steuerungsvarianten (Brawler Clean, Gesture Evade, Radial Pro).",
+      "caveat": "Laut Autor spielbar, aber nicht stabil: belebte Bereiche stürzen ab, Ton wird noch verbessert, ab Stage 4 ungetestet. Referenzgerät ist ein POCO F5; Controller-Unterstützung ist in der Doku nicht erwähnt. Der aktuelle Build v0.46-m45 ist als Vorabversion markiert. Auf dem Thor bleibt die PS2-Emulation (AetherSX2/NetherSX2) vorerst der robustere Weg.",
+      "effort": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Ptraaah/godhand-recompiled-android"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Ptraaah/godhand-recompiled-android/releases"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}

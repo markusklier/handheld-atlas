@@ -1,0 +1,97 @@
+{
+  "id": "gears-of-war",
+  "title": "Gears of War",
+  "franchise": "Gears of War",
+  "platforms": [
+    "Xbox 360",
+    "PC"
+  ],
+  "genre": "Third-Person-Shooter",
+  "summary": "Die Xbox-360-Fassung gibt es als frühe inoffizielle native Android-Rekompilierung mit Controller-Unterstützung.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360"
+      ]
+    },
+    {
+      "id": "pc-2007",
+      "name": "PC (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "reloaded-2025",
+      "name": "Gears of War: Reloaded (2025)",
+      "type": "remaster",
+      "year": 2025,
+      "platforms": [
+        "Xbox Series",
+        "PC",
+        "PlayStation 5"
+      ],
+      "links": [
+        {
+          "label": "Xbox Wire",
+          "url": "https://news.xbox.com/en-us/2025/05/05/gears-of-war-reloaded-release-date/"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "gears-recomp-android",
+      "name": "GearsRecomp – nativer Android-Port",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360",
+      "runtime": "Statische Rekompilierung (PowerPC → C++/ARM64), Vulkan",
+      "projects": [
+        "gears-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Disc von Gears of War (ISO oder extrahierter Ordner)",
+        "Android 10+ (arm64) mit Vulkan"
+      ],
+      "benefit": "Kein Emulator; läuft laut Autor mit den originalen 30 FPS. Touch und Bluetooth-/USB-Controller gleichzeitig nutzbar.",
+      "caveat": "Laut Autor nur der Anfang der Kampagne getestet und nur auf einer Mali-GPU (POCO X6 Pro); auf Adreno-Geräten wie dem Thor kann der Launcher den Mesa-Turnip-Treiber verwenden – ungetestet. Fehlende Shader werden im Hintergrund übersetzt, beim ersten Besuch eines Bereichs sind Ruckler möglich.",
+      "effort": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Jauidev/GearsRecomp"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Jauidev/GearsRecomp/releases"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}

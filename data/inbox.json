@@ -1,22 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://github.com/ehharris/openmw_oblivion",
-      "title": "ehharris/openmw_oblivion (Fork von OpenMW/openmw)",
-      "excerpt": "Might add support for Oblivion, straight up vibecoded, test at your own risk",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
-      "title": "1nsec/Naruto-The-Broken-Bond-Android-Port",
-      "excerpt": "Unofficial native Android port of Naruto: The Broken Bond (Xbox 360), statically recompiled with the ReXGlue SDK and drawn with Vulkan. Fights at 60 FPS, story mode at the game's own 30 FPS (60 with frame interpolation on newer Snapdragons). For Snapdragon/Adreno devices. Developed by 1nsec.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
       "url": "https://github.com/VinTeRuS/spore-re",
       "title": "VinTeRuS/spore-re",
       "excerpt": "Native Android port of Spore via static x86 recompilation. Very early stage. No APKs or game files.",
@@ -33,14 +17,6 @@
       "foundAt": "2026-11-11"
     },
     {
-      "url": "https://github.com/thekojac304/NewDarkAndroid",
-      "title": "thekojac304/NewDarkAndroid",
-      "excerpt": "Unofficial Android port of System Shock 2 (NewDark 2.48): touchscreen controls, radial menus, launcher, SCP support. Source only; recompiles YOUR copy of the game. No game files or APKs. Not affiliated with Nightdive or Looking Glass.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
       "url": "https://github.com/phys-winner/pc_decomp_cdre",
       "title": "phys-winner/pc_decomp_cdre",
       "excerpt": "Unofficial ARM64 Android port of Crashday Redline Edition using static recompilation.",
@@ -52,38 +28,6 @@
       "url": "https://github.com/Jauidev/halo3recomp",
       "title": "Jauidev/halo3recomp",
       "excerpt": "Port no oficial de Halo 3 (Xbox 360) a Android por recompilación estática",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/aoxzh/bayo3-recomp",
-      "title": "aoxzh/bayo3-recomp",
-      "excerpt": "Bayonetta 3 PC, Steam Deck and Android native port: static ARM-to-C++ recompiler, Horizon/NVN runtime and Vulkan backend. No emulator; bring your own 1.2.0 game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Jauidev/GearsRecomp",
-      "title": "Jauidev/GearsRecomp",
-      "excerpt": "Port no oficial de Gears of War (Xbox 360) a Android y PC por recompilación estática",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Jauidev/Gears3Recomp",
-      "title": "Jauidev/Gears3Recomp",
-      "excerpt": "Port no oficial de Gears of War 3 (Xbox 360) a Android y PC por recompilación estática",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Ptraaah/godhand-recompiled-android",
-      "title": "Ptraaah/godhand-recompiled-android",
-      "excerpt": "God Hand (PS2, SLUS-21503) recompiled to native Android ARM64 - no game data, bring your own disc. Native GPU renderer running ARUS 1.0, the adaptive GS pipeline for recompiled PS2 games on mobile GPUs.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-11"
@@ -121,49 +65,9 @@
       "foundAt": "2026-11-11"
     },
     {
-      "url": "https://github.com/jasonmorganson/stars",
-      "title": "jasonmorganson/stars",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Giles-de-Streel/it-news-digest",
-      "title": "Giles-de-Streel/it-news-digest",
-      "excerpt": "Hourly IT and security news from 200+ sources, merged and ranked by how widely each story is reported, with a current-vulnerabilities section, critical CVEs from NVD, CVSS/EPSS/CISA KEV badges and topic filters",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/heyaryansingh/exec-job-radar",
-      "title": "heyaryansingh/exec-job-radar",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/monofuel/mono-retro",
-      "title": "monofuel/mono-retro",
-      "excerpt": "Native Nim launcher, hardware tests and libretro player for handhelds and Linux desktops",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
       "url": "https://github.com/MPDERPER/pokemon-legends-za-android-fps-optimizer",
       "title": "MPDERPER/pokemon-legends-za-android-fps-optimizer",
       "excerpt": "Pokémon Legends: Z-A Android optimization pack for Eden Nightly. Dynamic 60 FPS, graphics tweaks, FSR, 2× frame generation, and reduced stuttering. Tested on Snapdragon 8 Gen 2.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Mrthomaslef/ayn-thor",
-      "title": "Mrthomaslef/ayn-thor",
-      "excerpt": "AYN Thor Remote Studio — Contrôle ADB Live, Écran à distance & Synchronisation GamingSSD (Mac mini)",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-11"
@@ -177,30 +81,6 @@
       "foundAt": "2026-11-11"
     },
     {
-      "url": "https://github.com/asa07-salihg/NakamaList",
-      "title": "asa07-salihg/NakamaList",
-      "excerpt": "Unofficial MyAnimeList (MAL) client for Android. Track anime and manga, see what friends are watching and how they scored it, and browse seasonal, news, forums and clubs. Optional AniList sync. Free, ad-free, 56 languages.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/t84RT/Comprehensive-Collection-of-GitHub-Projects-for-BLE-Advertising-Beacon-Security",
-      "title": "t84RT/Comprehensive-Collection-of-GitHub-Projects-for-BLE-Advertising-Beacon-Security",
-      "excerpt": "🏷️ 小吴同学电气设计 · BLE 广播 / 信标安全 GitHub 项目超全合集",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/joungminsung/OpenPhoneUse",
-      "title": "joungminsung/OpenPhoneUse",
-      "excerpt": "Open-source Android AI agent that operates your phone like a person: reads the screen, taps, types, switches apps. Works with ChatGPT, Claude, Gemini and Grok. No PC, root or ADB.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
       "url": "https://github.com/Droidtop/droidtop",
       "title": "Droidtop/droidtop",
       "excerpt": "Turns an Android handheld into a shared desktop — Windows via Wine/Box64, Linux via containers, one merged compositor, dom0-style architecture",
@@ -209,153 +89,9 @@
       "foundAt": "2026-11-11"
     },
     {
-      "url": "https://github.com/dienstag0815/wow-forever-touch",
-      "title": "dienstag0815/wow-forever-touch",
-      "excerpt": "World of Warcraft Launcher for Android Phones and Tablets - optimized for Touch first controls and Samsung ZFold8",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/aliihjt/Android-as-ubuntu-keyboard",
-      "title": "aliihjt/Android-as-ubuntu-keyboard",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
       "url": "https://github.com/calinado/cove",
       "title": "calinado/cove",
       "excerpt": "One launcher for all your emulators, with a console-style home screen.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/northkey-dev/horu",
-      "title": "northkey-dev/horu",
-      "excerpt": "Sentence mining for Japanese learners who don't want to pause: mark anime and manga lines on your phone, get Anki cards later.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/hmsiddiki/qanuvi",
-      "title": "hmsiddiki/qanuvi",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/nicedreamzapp/nicedreamzapp",
-      "title": "nicedreamzapp/nicedreamzapp",
-      "excerpt": "Building AI tools and learning as I go: mobile computer vision, medical ML, business automation. Started with a chicken problem, ended up doing neuroscience research. Still figuring it out.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/abdulrahmanal-saeed/fakelocation",
-      "title": "abdulrahmanal-saeed/fakelocation",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/sri1642917/BiteLog-APP",
-      "title": "sri1642917/BiteLog-APP",
-      "excerpt": "Log every bite. Stay on track. Achieve your goal.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/dqhieu/black-friday-deals",
-      "title": "dqhieu/black-friday-deals",
-      "excerpt": "Discounts and deals on Black Friday and Cyber Monday for apps, saas, books, courses,...",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/enhansome/enhansome-robotic-tooling",
-      "title": "enhansome/enhansome-robotic-tooling",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/writeCasually/deepseek-harness-plugins",
-      "title": "writeCasually/deepseek-harness-plugins",
-      "excerpt": "deepseek harness plugins view",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/bdhostorg/bdsecurepay",
-      "title": "bdhostorg/bdsecurepay",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/Hiddenkillz/lightning-aa-bridge",
-      "title": "Hiddenkillz/lightning-aa-bridge",
-      "excerpt": "A Raspberry Pi between your phone and Sync 4: wireless Android Auto with a camera window, live EV energy data and more. GPLv3; read the README before cloning.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/SharmaAshish7251/nimo-save-storage",
-      "title": "SharmaAshish7251/nimo-save-storage",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/xsoftwareabdullah1-create/Working-jarvis",
-      "title": "xsoftwareabdullah1-create/Working-jarvis",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/ShakyaJU/pokepod",
-      "title": "ShakyaJU/pokepod",
-      "excerpt": "A feature-rich Flutter Pokédex and Pokémon research companion featuring interactive exploration, collection tracking, team building, evolution discovery, achievements, and daily challenges.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/sughan21/New-loyal-cards",
-      "title": "sughan21/New-loyal-cards",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/rishavp752/River-intelligence-system",
-      "title": "rishavp752/River-intelligence-system",
-      "excerpt": "IoT- and AI-Based River Water Quality Monitoring with Heavy Metal Risk Prediction and Drone-Assisted Pollution Mapping — Asansol Engineering College CSE Group 4 Prototype.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-11"
-    },
-    {
-      "url": "https://github.com/jonhoo/ur",
-      "title": "jonhoo/ur",
-      "excerpt": "A PineTime firmware for the 90s: as subtle as a retro watch, but with modern conveniences",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-11"
@@ -6536,13 +6272,40 @@
     "https://github.com/CM-Studio77/mpvx",
     "https://www.reddit.com/r/SBCGaming/comments/1xrvyer/who_needs_an_ayn_thor_if_you_can_run_native_3ds/",
     "https://github.com/hm-aktaruzzaman-mukdho/Orphion",
-    "https://github.com/progressive-chat/progressive-chat"
+    "https://github.com/progressive-chat/progressive-chat",
+    "https://github.com/ehharris/openmw_oblivion",
+    "https://github.com/jasonmorganson/stars",
+    "https://github.com/Giles-de-Streel/it-news-digest",
+    "https://github.com/heyaryansingh/exec-job-radar",
+    "https://github.com/monofuel/mono-retro",
+    "https://github.com/Mrthomaslef/ayn-thor",
+    "https://github.com/asa07-salihg/NakamaList",
+    "https://github.com/t84RT/Comprehensive-Collection-of-GitHub-Projects-for-BLE-Advertising-Beacon-Security",
+    "https://github.com/joungminsung/OpenPhoneUse",
+    "https://github.com/dienstag0815/wow-forever-touch",
+    "https://github.com/aliihjt/Android-as-ubuntu-keyboard",
+    "https://github.com/northkey-dev/horu",
+    "https://github.com/hmsiddiki/qanuvi",
+    "https://github.com/nicedreamzapp/nicedreamzapp",
+    "https://github.com/abdulrahmanal-saeed/fakelocation",
+    "https://github.com/sri1642917/BiteLog-APP",
+    "https://github.com/dqhieu/black-friday-deals",
+    "https://github.com/enhansome/enhansome-robotic-tooling",
+    "https://github.com/writeCasually/deepseek-harness-plugins",
+    "https://github.com/bdhostorg/bdsecurepay",
+    "https://github.com/Hiddenkillz/lightning-aa-bridge",
+    "https://github.com/SharmaAshish7251/nimo-save-storage",
+    "https://github.com/xsoftwareabdullah1-create/Working-jarvis",
+    "https://github.com/ShakyaJU/pokepod",
+    "https://github.com/sughan21/New-loyal-cards",
+    "https://github.com/rishavp752/River-intelligence-system",
+    "https://github.com/jonhoo/ur"
   ],
   "agent": {
-    "lastRun": "2026-11-09T19:45:32Z",
-    "summary": "5 neue Spiele mit nativen Wegen (Sonic Free Riders, New Super Mario Bros. U, Rogue Squadron, Project I.G.I., Dave Mirra BMX), Shantae-Dual-Screen-Weg, TR-III-Remaster mit Android-App, 3 Tomb-Raider-Sammlungen als Fassungen zusammengeführt, 23 Franchise-Korrekturen, 3 Bilder bestätigt; 37 Leads bearbeitet (30 verworfen). KI-Recherche-Einträge stichprobenartig geprüft: alle 33 genannten GitHub-Repos existieren. Reddit, Google Play, Steam und Wikipedia aus der Sitzung nicht erreichbar, daher 15 unklare Bilder offen.",
-    "processed": 37,
-    "rejected": 30
+    "lastRun": "2026-11-11T21:01:11Z",
+    "summary": "WiiDS-Dual-Screen-Wege für Galaxy, Double Dash und Brawl, 5 neue Spiele mit nativen Rekompilierungen (Naruto Broken Bond, God Hand, Bayonetta 3, Gears of War 1 und 3), NewDark-Port für System Shock 2; Metroid-Prime-Trilogy- und Isaac-Afterbirth+-Dubletten zusammengeführt, 17 Franchise-Korrekturen, 7 Bilder bestätigt und 17 falsch zugeordnete entfernt; 33 Leads bearbeitet (27 verworfen). Zurückgestellt (in leads belassen, zu jung/ohne Release): Halo 3, Spore, Crashday, Manhunt 2, Black Ops III, xbox-recomp-suite, Pokémon Z-A-Optimierer u. a. Issue #11 (update: doom-1993) lief gerade in der Action. Nicht erreichbar: Reddit, Google Play, YouTube, Fremdseiten-Bilder – 13 unklare Bilder offen.",
+    "processed": 33,
+    "rejected": 27
   },
   "watcher": {
     "lastRun": "2026-11-11T12:45:32Z",
@@ -6572,8 +6335,7 @@
     "super-metroid": "2026-11-09",
     "metroid-prime": "2026-11-09",
     "metroid-prime-2-echoes": "2026-11-10",
-    "metroid-prime-3-corruption": "2026-11-10",
-    "metroid-prime-trilogy": "2026-11-10"
+    "metroid-prime-3-corruption": "2026-11-10"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",

@@ -4,6 +4,7 @@
   "franchise": "Metroid",
   "platforms": [
     "Nintendo GameCube",
+    "Wii",
     "Wii U"
   ],
   "cover": {
@@ -85,21 +86,26 @@
     },
     {
       "id": "trilogy-wiiu-2015",
-      "name": "Metroid Prime: Trilogy – Wii-U-Download",
-      "type": "rerelease",
+      "name": "Metroid Prime: Trilogy (2009)",
+      "type": "collection",
       "platforms": [
+        "Wii",
         "Wii U"
       ],
-      "year": 2015,
+      "year": 2009,
       "traits": [
         "controller",
         "widescreen"
       ],
-      "note": "Archivwürdige digitale Neuveröffentlichung der Wii-Trilogy im Wii-U-eShop, keine eigenständige HD-Neubearbeitung von Echoes.",
+      "note": "Überarbeitete Echoes-Fassung mit Wii-Zielsteuerung und Breitbild innerhalb der Wii-Sammlung; am 29. Januar 2015 auch als Download im Wii-U-eShop erschienen, keine eigenständige HD-Fassung.",
       "links": [
         {
           "label": "Quelle",
           "url": "https://www.nintendo.com/en-za/News/2015/January/Weekly-download-news-952465.html"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2539933"
         }
       ]
     }
@@ -211,9 +217,65 @@
       ],
       "performance": [],
       "checkedAt": "2026-11-10"
+    },
+    {
+      "id": "ai-primehack-android-trilogy",
+      "name": "PrimeHack-Android: Trilogy mit Dual-Stick-Steuerung",
+      "kind": "emulator-mod",
+      "release": "trilogy-wiiu-2015",
+      "runtime": "PrimeHack-Android, Community-Build von Starlightbotanist; v1.0.9a",
+      "projects": [
+        "primehack-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "mods",
+        "upscaling",
+        "widescreen"
+      ],
+      "dualScreen": "Keine belegte spielspezifische Zweitbildschirm-Ausgabe; Twin-Stick-Steuerung bedeutet hier nicht Dual Screen.",
+      "requires": [
+        "Eigene Metroid-Prime-Trilogy-Disc und selbst erstellter ISO-/RVZ-Dump",
+        "64-Bit-Android-Gerät mit OpenGL ES 3.0 oder neuer",
+        "Integrierter oder externer Controller"
+      ],
+      "benefit": "Spielspezifischer Dolphin-Fork: Kamera und Zielen am rechten Stick statt emuliertem Wii-Zeiger; laut Projekt und Berichten für alle drei Spiele der Trilogy gedacht.",
+      "caveat": "Inoffizieller Android-Build ohne Unterstützung durch das ursprüngliche PrimeHack-Team. Erfahrungsberichte nennen Controller-Ausfälle nach Morph-Ball-Wechseln sowie Abstürze; auf dem Thor ist deshalb keine durchgehend problemlose Sitzung garantiert.",
+      "steps": [
+        "APK aus den Releases von Starlightbotanist installieren und den eigenen Trilogy-Dump hinzufügen.",
+        "Ein Controllerprofil anlegen; anschließend PrimeHack.Odin.ini beziehungsweise PrimeHack.Retroid.ini aus dem separaten Controller-Release nach Config/Profiles/Wiimote übernehmen.",
+        "Wii Remote 1 auf das passende Profil und das tatsächliche Controllergerät einstellen; beim Thor dient der Odin-kompatible Controllermodus als Ausgangspunkt.",
+        "Zunächst ohne Texturpakete Bewegung, Zielen, Karte und Morph-Ball-Wechsel prüfen.",
+        "Bei Vulkan-Grafikfehlern oder Abstürzen OpenGL ausprobieren; Auflösung und Texturen erst nach einem funktionierenden Basistest erhöhen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/Starlightbotanist/PrimeHack-Android/releases"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/android_version_of_primehack_dolphin_fork_metroid/",
+          "device": "Retroid Pocket 5",
+          "summary": "Der Autor zeigt PrimeHack mit dreifacher interner Auflösung und HD-Texturen; Prime 1 und 2 liefen nach seiner Einschätzung problemlos, Corruption ruckelte gelegentlich bei Kämpfen und Gebietswechseln.",
+          "date": "2026-11-10"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-11"
     }
   ],
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q2089035",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_2%3A_Echoes",
   "genre": "action-adventure game",

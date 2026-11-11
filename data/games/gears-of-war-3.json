@@ -1,0 +1,70 @@
+{
+  "id": "gears-of-war-3",
+  "title": "Gears of War 3",
+  "franchise": "Gears of War",
+  "platforms": [
+    "Xbox 360"
+  ],
+  "genre": "Third-Person-Shooter",
+  "summary": "Gears of War 3 gibt es als frühe inoffizielle native Android-Rekompilierung mit Controller-Unterstützung und Grafikoptionen zum Leistungsgewinn.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-11",
+      "id": "gears3-recomp-android",
+      "name": "Gears3Recomp – nativer Android-Port",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360",
+      "runtime": "Statische Rekompilierung (PowerPC → C++/ARM64), Vulkan",
+      "projects": [
+        "gears3-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Disc von Gears of War 3 (ISO oder extrahierter Ordner)",
+        "Android 10+ (arm64) mit Vulkan"
+      ],
+      "benefit": "Kein Emulator; 30 FPS (Spiellimit) laut Autor. Im Launcher lassen sich Echtzeitschatten und Effekte abschalten, um Leistung zu gewinnen.",
+      "caveat": "Laut Autor nur der Anfang der Kampagne getestet und nur auf einer Mali-GPU (POCO X6 Pro); auf Adreno-Geräten wie dem Thor kann der Launcher den Mesa-Turnip-Treiber verwenden – ungetestet. Fehlende Shader werden im Hintergrund übersetzt, beim ersten Besuch eines Bereichs sind Ruckler möglich.",
+      "effort": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Jauidev/Gears3Recomp"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Jauidev/Gears3Recomp/releases"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-11"
+}
