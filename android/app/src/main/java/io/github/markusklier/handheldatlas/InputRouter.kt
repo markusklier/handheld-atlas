@@ -30,9 +30,10 @@ object InputRouter {
     @Synchronized fun isReady(a: AtlasWebActivity) = ready[a] == true
     @Synchronized fun forget(a: AtlasWebActivity) { roles.remove(a); ready.remove(a) }
 
-    fun setTarget(role: String) {
+    /** [pad]: the switch came from the controller – the new window shows its focus ring right away. */
+    fun setTarget(role: String, pad: Boolean = false) {
         target = role
-        Screens.emitAll("inputTarget", JSONObject().put("role", role))
+        Screens.emitAll("inputTarget", JSONObject().put("role", role).put("pad", pad))
     }
 
     @Synchronized private fun windowFor(role: String): AtlasWebActivity? =

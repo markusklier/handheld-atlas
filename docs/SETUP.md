@@ -80,28 +80,45 @@ Das KI-Feintuning läuft auf dem Gerät mit deinem OpenAI-Schlüssel (wie die So
 Weg, App-Version, alle bisherigen Runden mit Messwerten, die Berichte anderer Nutzer, die anderen Wege und die
 Regeln – und antwortet mit genau einem nächsten Schritt (`change`, `done`, `lower-target`, `other-way`).
 
-## Zwei Bildschirme (`app/dual.js`)
+## Zwei Bildschirme (`app/dual.js`, `InputRouter.kt`)
 
-Die App öffnet auf Geräten mit zwei Bildschirmen zwei Fenster mit zwei Rollen:
+Auf Geräten mit zwei Bildschirmen öffnet die App zwei Fenster mit festen Rollen:
 
-- **Stöbern** (standardmäßig oben, größerer Bildschirm): die normale Atlas-Oberfläche – Entdecken, Suche, Reihen, Neu, Info.
-- **Bühne** (standardmäßig unten): was du gerade ansiehst.
-  - Markierst du oben ein Spiel (Steuerkreuz oder Finger), zeigt die Bühne es groß: Bilder im Wechsel (5 s, Dual-Screen-
-    Bilder zuerst), Titel, Plattformen, beste Empfehlung, „Spiel öffnen“.
-  - „Öffnen“ zeigt unten die Spielseite mit allen Wegen; oben bleibt deine Liste stehen. Der Controller wandert mit.
-  - „Einrichten“ läuft auf der Bühne; das Spiel selbst startet immer auf dem großen Bildschirm, die Checkliste mit den
-    Live-Werten der Messfahrt bleibt unten sichtbar.
-  - Zurück (B) auf der Spielseite → wieder die große Vorschau, der Controller springt zurück zum Stöbern.
-- **Tauschen** (Knopf oben rechts) dreht die Rollen um. **Select** (oder der Knopf „Stöbern“/„Bühne“) bringt den
-  Controller auf den anderen Bildschirm; der aktive Bildschirm hat oben eine leuchtende Linie, der andere ist leicht
-  abgedunkelt.
-- Reihen, Listen und Neuigkeiten, die man auf der Bühne antippt, öffnen sich oben.
-- Abschalten: Info → Atlas-App → „Zweiten Bildschirm ausschalten“.
+- **Stöbern** (standardmäßig oben, größerer Bildschirm): Entdecken, Suche, Reihen, Neu, Info. Zeigt **nie** eine Spielseite.
+- **Bühne** (standardmäßig unten): nur das Spiel – große Vorschau → Spielseite → Einrichten. Zeigt **nie** eine Liste.
+  - Markierst du oben ein Spiel mit dem Controller, erscheint es unten groß: Bilder zum Durchwischen (Dual-Screen-Bilder
+    zuerst, Wechsel alle 6 s, pausiert nach dem Anfassen), Cover, Reihe und Jahr, Plattformen, Dual-Screen-Art, beste
+    Empfehlung und **„Spiel ansehen“**. Bilder: wischen, links/rechts auf das Bild tippen, Pfeile, Punkte; mit dem
+    Controller L/R.
+  - Mit dem Finger: erstes Antippen einer Karte zeigt das Spiel unten groß, zweites Antippen öffnet die Spielseite.
+  - **A** auf einer Karte (oder „Spiel ansehen“) öffnet unten die Spielseite, oben bleibt die Liste stehen; der Controller
+    wandert mit. L/R wechselt dort die Reiter, „Einrichten“ läuft unten, das Spiel selbst startet auf dem großen Bildschirm.
+  - **B** auf der Bühne: Einrichten → Spielseite → Vorschau; von der Vorschau springt der Controller zurück zum Stöbern.
+    Die Zurück-Geste auf dem unteren Bildschirm macht dasselbe.
+  - Reihen, Listen und Neuigkeiten, die man auf der Bühne antippt, öffnen sich oben.
+- **Select** bringt den Controller auf den anderen Bildschirm, **Antippen** holt ihn dorthin, wo du tippst. Der Bildschirm
+  mit dem Controller hat oben eine leuchtende Linie, nur dort gibt es einen Fokusrahmen.
+- In der Kopfzeile (nur auf Geräten mit zwei Bildschirmen): **Tauschen** dreht die Rollen um (die Vorschau ist dann oben
+  groß, Bilder links, Infos rechts) und **Dual Screen** an/aus. Aus = ein Bildschirm wie auf jedem anderen Handheld; ein
+  offenes Spiel kommt dabei mit nach oben, Zurück führt zur Liste. Wieder an: das Spiel geht nach unten, die Liste nach oben.
+- Nach Tauschen, Aus- und Einschalten geht jede Rolle genau dort weiter, wo sie war – mit derselben Scroll-Position.
+- Geräte mit einem Bildschirm (z. B. Odin) sehen keinen Schalter; alles läuft in einem Fenster.
 
-Technik: Die Fenster sprechen über `relay` (Brücke) miteinander, `focusOther` holt das andere Fenster nach vorn (bekommt
-damit die Tasten), `windowFocus` meldet, welches Fenster den Controller hat. Die Rollen-Einstellung (`dualSwap`) teilen
-beide Fenster über localStorage. Auf dem Thor: oben Display 0 (1920×1080, ca. 730×410 CSS-Pixel), unten 1240×1080
-(ca. 470×410) – die Oberfläche ist auf diese Größen abgestimmt.
+Technik:
+- **Controller** (`InputRouter.kt`): Android schickt Tasten an das zuletzt berührte Fenster, und die Gamepad-API beider
+  WebViews sah jeden Knopf – deshalb reagierten früher beide Bildschirme. Jetzt fängt die App alle Controller-Tasten ab
+  (`dispatchKeyEvent`/`dispatchGenericMotionEvent`, Steuerkreuz, Stick mit Wiederholung) und schickt sie als Ereignis
+  `input` an **genau ein** Fenster: das mit der Rolle, die die Seite per `setInput` gewählt hat. Die Seite meldet sich mit
+  `inputReady {role}` und `setRole {role}` an; `inputTarget` sagt beiden Fenstern, wer den Controller hat. In der Seite
+  verarbeitet `padInput(key)` (app.js) alles – Router, Gamepad-API im Browser und Tastatur. Ältere App-Versionen ohne
+  Router: Gamepad-API nur im Fenster mit dem Fokus.
+- **Rollen-Wächter** (`dualGuard`, erster Schritt von `route()`): eine Seite, die nicht zur Rolle passt, geht per `relay`
+  ans andere Fenster. So gibt es nie zwei offene Spiele.
+- **Gemeinsamer Zustand** (localStorage, beide Fenster): `dualState` (wo jede Rolle steht, Scroll-Position),
+  `dualScroll` (Scroll-Position je Rolle und Seite), `dualSwap` (getauscht), `lastGame` (Spiel auf der Bühne = markierte
+  Karte oben).
+- `second {open}` öffnet/schließt das zweite Fenster und merkt sich die Wahl; `focusSelf` holt das eigene Fenster nach vorn
+  (Tastatur für die Suche). Auf dem Thor: oben Display 0 (1920×1080, ca. 730×410 CSS-Pixel), unten 1240×1080 (ca. 470×410).
 
 ## Emulator wählen
 
