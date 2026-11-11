@@ -16,6 +16,7 @@ import os
 import re
 import sys
 import unicodedata
+import urllib.error
 import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -78,7 +79,8 @@ def schema(meta):
 RULES = """Finde mit der Websuche:
 1. versions: VOLLSTÄNDIG alle offiziell erschienenen Fassungen (Atlas ist auch ein Archiv): Original mit allen
    Erstplattformen, spätere Portierungen, Editionen (z. B. Special/Anniversary/GOTY), offizielle Android-Fassungen (auch
-   eingestellte), Remaster, Remakes, Neuauflagen. Gleiche Veröffentlichung auf mehreren Plattformen = EINE Fassung mit
+   eingestellte), Remaster, Remakes (versionType "remake" – Atlas legt sie automatisch als eigenes Spiel mit Verweis
+   auf das Original an), Neuauflagen. Gleiche Veröffentlichung auf mehreren Plattformen = EINE Fassung mit
    mehreren Plattformen (z. B. "Original (2011)": PC, Xbox 360, PlayStation 3). Höchstens 15. Weglassen nur:
    angekündigte/unveröffentlichte Fassungen und reine Sammelboxen ohne Unterschied. Jeweils Plattformen, Erscheinungsjahr,
    was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde oder was anders ist).
@@ -186,12 +188,59 @@ def record_usage(kind='recherche'):
         USAGE[k] = 0
 
 
+class ApiUnavailable(Exception):
+    """OpenAI cannot be used right now (no credit, key invalid) – requests go to the subscription task (docs/RECHERCHE.md)."""
+
+
+def mode():
+    """Research mode from data/research.json: where AI research runs (api | abo) and what happens when the API fails."""
+    path = DATA / 'research.json'
+    m = read(path) if path.exists() else {}
+    return {'backend': m.get('backend', 'api'), 'fallback': m.get('fallback', 'abo'), 'aboSchedule': m.get('aboSchedule', ''), **m}
+
+
+def api_ready(token):
+    """(True, '') when this run may use OpenAI, else (False, reason in German)."""
+    m = mode()
+    if m['backend'] == 'abo':
+        return False, 'Recherche-Modus „Abo“'
+    if not token:
+        return False, 'kein OpenAI-Schlüssel hinterlegt'
+    if over_budget():
+        return False, 'Monatsbudget für die API erreicht'
+    return True, ''
+
+
+def set_api_status(ok, reason=''):
+    path = DATA / 'research.json'
+    if not path.exists():
+        return
+    m = read(path)
+    st = m.get('status') or {}
+    if st.get('ok') == ok and st.get('reason') == reason and st.get('at', '')[:10] == TODAY:
+        return
+    m['status'] = {'ok': ok, 'reason': reason, 'at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%MZ')}
+    write(path, m)
+
+
 def call_openai(payload, token):
     body = json.dumps({**payload, 'store': False}, ensure_ascii=False).encode()
     req = urllib.request.Request(API, data=body, method='POST', headers={
         'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json', 'User-Agent': 'HandheldAtlas/1.1'})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        resp = json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            resp = json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        detail = ''
+        try:
+            detail = e.read().decode(errors='replace')[:400]
+        except Exception:  # noqa: BLE001
+            pass
+        if e.code in (401, 403) or (e.code == 429 and ('insufficient_quota' in detail or 'billing' in detail)):
+            reason = 'OpenAI-Guthaben aufgebraucht' if e.code == 429 else 'OpenAI-Schlüssel ungültig'
+            set_api_status(False, reason)
+            raise ApiUnavailable(reason) from e
+        raise
     u = resp.get('usage') or {}
     USAGE['calls'] += 1
     USAGE['input'] += u.get('input_tokens', 0)
@@ -455,7 +504,45 @@ def pick_games(n):
     return [g['id'] for g in sorted(games, key=key)[:n]]
 
 
-def research(game_id, token, model, log=print, focus=None, update=False, hint=None):
+def request_note(body):
+    """Free text the user wrote into a request (everything that is not a `key: value` line or the template question)."""
+    text = re.sub(r'```.*?```', '', body or '', flags=re.S)
+    lines = [x.strip() for x in text.splitlines()]
+    keep = [x for x in lines if x and not re.match(r'^[a-z-]+:\s', x, re.I) and not x.startswith('Was soll recherchiert werden?')]
+    return ' '.join(keep)[:500]
+
+
+def handover(reason, title=''):
+    """Pass a request on to the subscription task: the workflow keeps the issue open and labels it "abo"."""
+    m = mode()
+    marker = Path(os.environ.get('RESEARCH_REPORT', '/tmp/atlas-research.md') + '.handover')
+    marker.write_text(reason + '\n', encoding='utf-8')
+    path = DATA / 'research.json'
+    if path.exists():
+        data = read(path)
+        data['handovers'] = ([{'title': title[:120], 'reason': reason, 'at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%MZ')}]
+                             + data.get('handovers', []))[:30]
+        write(path, data)
+    when = f" (nächster Lauf {m['aboSchedule']})" if m.get('aboSchedule') else ''
+    return (f'- **An die Abo-Aufgabe übergeben** – {reason}. Die Anfrage bleibt offen (Label „abo“) und wird beim nächsten '
+            f'Pflegelauf{when} erledigt.' if m.get('fallback') == 'abo' or m['backend'] == 'abo'
+            else f'- Nicht ausgeführt – {reason}. Die Anfrage bleibt offen.')
+
+
+def switch_mode(backend):
+    if backend not in ('api', 'abo'):
+        return f'- Unbekannter Recherche-Modus „{backend}“ (erlaubt: api, abo)'
+    path = DATA / 'research.json'
+    data = read(path) if path.exists() else {}
+    data['backend'] = backend
+    data['changed'] = TODAY
+    write(path, data)
+    return ('- Recherche-Modus: **API** – Anfragen erledigt ab jetzt sofort die Action mit OpenAI.' if backend == 'api'
+            else f"- Recherche-Modus: **Abo** – Anfragen erledigt ab jetzt die geplante Claude-Aufgabe ({data.get('aboSchedule', '')}); "
+                 'automatische API-Läufe pausieren.')
+
+
+def research(game_id, token, model, log=print, focus=None, update=False, hint=None, hint_kind='find'):
     """Deep research of one game. update=True: only what changed since the last deep research (smaller, cheaper)."""
     path = DATA / 'games' / f'{game_id}.json'
     game, projects, meta = read(path), read(DATA / 'projects.json'), read(DATA / 'meta.json')
@@ -464,7 +551,9 @@ def research(game_id, token, model, log=print, focus=None, update=False, hint=No
     resp = call_openai({'model': model, 'tools': [{'type': 'web_search', 'search_context_size': 'medium' if since else 'high'}],
                         'include': ['web_search_call.action.sources'], 'tool_choice': 'required',
                         'reasoning': {'effort': 'medium'}, 'text': {'format': schema(meta)},
-                        'input': prompt(game, platforms, focus, since) + (f"\n\nNEUER FUND (prüfen und, wenn echt, als Weg/Mod aufnehmen): {hint}" if hint else ''),
+                        'input': prompt(game, platforms, focus, since) + (
+                            '' if not hint else f"\n\nWUNSCH DES NUTZERS (gezielt danach suchen, z. B. fehlende Emulatoren oder Fassungen): {hint}"
+                            if hint_kind == 'wish' else f"\n\nNEUER FUND (prüfen und, wenn echt, als Weg/Mod aufnehmen): {hint}"),
                         'max_output_tokens': 16000}, token)
     result = output_json(resp)
     g, prj, entries = merge(game, projects, result, searched_urls(resp), log)
@@ -638,7 +727,8 @@ Atlas kennt bereits (id | Titel | Jahr):
 
 relation + atlasId:
 - "existing": dasselbe Spiel steht schon oben (auch unter anderem Namen, z. B. "Doom II: Hell on Earth" = "DOOM II") → atlasId = dessen id.
-- "version": Remaster, Remake mit gleichem Namen, Neuauflage, Portierung oder Sammlung eines Spiels oben
+- "version": Remaster, Remake (auch mit anderem Namen, z. B. "Ocarina of Time 3D"), Neuauflage, Portierung oder Sammlung eines Spiels oben
+  (Remakes legt Atlas danach automatisch als eigenes Spiel mit Verweis auf das Original an)
   (z. B. "Tomb Raider: Anniversary" → tomb-raider, "DOOM + DOOM II" (2024) → doom-1993) → atlasId = id des Spiels,
   zu dem es als Fassung gehört; versionType passend (remaster/remake/rerelease/port/collection).
 - "new": eigenständiges Spiel, das oben fehlt; atlasId = "". Reboots mit gleichem Namen sind eigene Spiele: Titel mit
@@ -728,6 +818,14 @@ def queue_add(game_ids, reason, front=False, kind='research'):
     q['jobs'] = (new + q['jobs']) if front else (q['jobs'] + new)
     write(DATA / 'queue.json', q)
     return len(new)
+
+
+def queue_add_front(job):
+    """Put a popped job back (OpenAI stopped working before it was done)."""
+    q = queue_load()
+    if not any(j['game'] == job['game'] for j in q['jobs']):
+        q['jobs'].insert(0, job)
+        write(DATA / 'queue.json', q)
 
 
 def queue_pop(n):
@@ -1352,17 +1450,15 @@ def main():
     ap.add_argument('--rechecks', type=int, default=0, help='so viele Spiele mit Neuigkeiten zur Änderungsrecherche vormerken')
     args = ap.parse_args()
     token = os.environ.get('OPENAI_API_KEY')
-    app_payload = '```json' in (args.issue_body or '')
-    if not token and not app_payload:
-        print('OPENAI_API_KEY fehlt – keine KI-Recherche ausgeführt.')
-        return 0
     model = os.environ.get('OPENAI_MODEL') or 'gpt-6.1-sol'
     jobs = []   # (kind, value, focus)
+    hints = {}  # game id → what the user asked for in the request (free text)
     images = []   # game ids whose pictures were requested
     image_routes = None
     added_image = None   # (game[/way], url) pasted by the owner in the app
     reddit_report = None   # JSON from the handheld: images of Reddit posts (docs/REDDIT.md)
     setup_report = None    # JSON from the handheld: measured runs, self-test (docs/SETUP.md)
+    switch_backend = None  # "api" | "abo" (docs/RECHERCHE.md)
     if args.game:
         jobs = [('game', args.game, args.version)]
     elif args.new_game:
@@ -1374,11 +1470,13 @@ def main():
     elif args.issue_body or args.issue_title:
         body = args.issue_body or ''
         keys = ('game', 'version', 'new-game', 'franchise', 'dual-scan', 'images', 'images-franchise', 'add-image', 'url', 'update',
-                'reddit-images', 'setup-report')
+                'reddit-images', 'setup-report', 'research-backend', 'hint')
         m = {k: re.search(rf'^{k}:\s*(.+)$', body, re.M | re.I) for k in keys}
         val = {k: v.group(1).strip() for k, v in m.items() if v}
         payload = re.search(r'```json\s*(\{.*?\})\s*```', body, re.S)
-        if 'setup-report' in val and payload:    # Messfahrten/Selbsttest vom Gerät (docs/SETUP.md, no AI needed)
+        if 'research-backend' in val:              # switch where research runs (button under Info, no AI needed)
+            switch_backend = val['research-backend'].lower()
+        elif 'setup-report' in val and payload:    # Messfahrten/Selbsttest vom Gerät (docs/SETUP.md, no AI needed)
             setup_report = json.loads(payload.group(1))
         elif 'reddit-images' in val and payload:   # pictures the handheld read from Reddit posts (no AI needed)
             reddit_report = json.loads(payload.group(1))
@@ -1390,12 +1488,18 @@ def main():
             images = [g['id'] for g in franchise_games(val['images-franchise'])][:25]
         elif 'update' in val:
             jobs = [('update', val['update'], None)]
+            note = request_note(body)
+            if note:
+                hints[val['update']] = note
         elif 'game' in val and payload:
             jobs = [('app', val['game'], json.loads(payload.group(1)))]
         elif 'new-game' in val and payload:
             jobs = [('newapp', val['new-game'], json.loads(payload.group(1)))]
         elif 'game' in val:
             jobs = [('game', val['game'], val.get('version'))]
+            note = request_note(body)
+            if note:
+                hints[val['game']] = note
         elif 'new-game' in val:
             jobs = [('new', val['new-game'], None)]
         elif 'franchise' in val:
@@ -1407,9 +1511,25 @@ def main():
             title = re.sub(r'^recherche:\s*', '', args.issue_title, flags=re.I).strip()
             gid = find_game(title) if title else None
             jobs = [('game', gid, None)] if gid else ([('new', title, None)] if title else [])
-    elif args.batch and not over_budget():
+    elif args.batch and not over_budget() and mode()['backend'] == 'api':
         jobs = [('game', gid, None) for gid in pick_games(args.batch)]
     lines = []
+    from_issue = bool(args.issue_body or args.issue_title)
+    if switch_backend:
+        lines.append(switch_mode(switch_backend))
+    ready, why = api_ready(token)
+    ai_jobs = [j for j in jobs if j[0] not in ('app', 'newapp')]
+    needs_ai = bool(ai_jobs or images or args.dual_scan or args.screenshots or args.queue or args.leads)
+    if needs_ai and not ready:
+        if from_issue:
+            if images:                       # free sources (libretro, Steam, Wikipedia) need no AI
+                images_basic([gid for gid in images if (DATA / 'games' / f'{gid}.json').exists()])
+            lines.append(handover(why, args.issue_title))
+        else:
+            print(f'Keine automatische KI-Arbeit: {why}.')
+        jobs = [j for j in jobs if j[0] in ('app', 'newapp')]
+        images, args.dual_scan, args.screenshots, args.queue, args.leads = [], False, 0, 0, 0
+    ai_failed = []   # reasons why OpenAI stopped working during this run
     if args.dual_scan:
         try:
             found = dual_scan(token, model)
@@ -1480,13 +1600,17 @@ def main():
                 entries = from_app_result(value, extra)
             else:
                 print(f"{'Änderungsrecherche' if kind == 'update' else 'Recherche'}: {value} ({model})" + (f', Fassung {extra}' if extra else ''))
-                entries = research(value, token, model, focus=extra, update=kind == 'update' and value in read(DATA / 'inbox.json').get('aiResearch', {}))
+                entries = research(value, token, model, focus=extra, hint=hints.get(value), hint_kind='wish',
+                                   update=kind == 'update' and value in read(DATA / 'inbox.json').get('aiResearch', {}))
             if kind in ('new', 'newapp') and not entries:
                 g = read(DATA / 'games' / f'{value}.json')
                 if not g.get('versions') and not g.get('routes'):
                     (DATA / 'games' / f'{value}.json').unlink()
                     lines.append(f'- `{value}`: nichts Belastbares gefunden, nicht aufgenommen')
                     continue
+        except ApiUnavailable as e:
+            ai_failed.append(str(e))
+            break
         except Exception as e:  # noqa: BLE001 – one failing job must not stop the batch
             lines.append(f'- `{value}`: Fehler – {type(e).__name__}: {str(e)[:200]}')
             continue
@@ -1515,6 +1639,10 @@ def main():
             entries = research(job['game'], token, model, update=job.get('kind') == 'update', hint=job.get('hint'))
             researched.add(job['game'])
             lines.append(f"- **{job['game']}** ({job['reason']}): " + ('; '.join(e['text'] for e in entries) if entries else 'nichts Neues gefunden'))
+        except ApiUnavailable as e:
+            ai_failed.append(str(e))
+            queue_add_front(job)
+            break
         except Exception as e:  # noqa: BLE001
             lines.append(f"- `{job['game']}`: Fehler – {type(e).__name__}: {str(e)[:200]}")
     # new or freshly researched games get covers/pictures from the free sources right away, not only tomorrow
@@ -1524,6 +1652,13 @@ def main():
     left = len(queue_load()['jobs'])
     if args.queue:
         lines.append(f'- Warteschlange: noch {left} Spiele')
+    if ai_failed:
+        if from_issue:
+            lines.append(handover(ai_failed[0], args.issue_title))
+        else:
+            lines.append(f'- OpenAI nicht nutzbar ({ai_failed[0]}) – automatische Arbeit pausiert, die Abo-Aufgabe übernimmt die Warteschlange.')
+    elif USAGE['calls']:
+        set_api_status(True)
     if USAGE['calls']:
         de = lambda n: f'{n:,}'.replace(',', '.')
         lines.append(f"- OpenAI-Verbrauch dieses Laufs: {USAGE['calls']} Anfragen, {USAGE['searches']} Websuchen, "

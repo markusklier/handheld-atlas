@@ -3,8 +3,7 @@
   "title": "The Legend of Zelda: Majora's Mask",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo 64",
-    "Nintendo 3DS"
+    "Nintendo 64"
   ],
   "genre": "Action-Adventure",
   "summary": "Decomp-Port für Android, Recomp für Desktop und klassischer N64-Emulator bleiben getrennte Optionen.",
@@ -42,15 +41,6 @@
       "platforms": [
         "Nintendo 64"
       ]
-    },
-    {
-      "id": "majora-s-mask-3d",
-      "name": "Majora's Mask 3D (2015)",
-      "type": "remake",
-      "platforms": [
-        "Nintendo 3DS"
-      ],
-      "year": 2015
     }
   ],
   "routes": [
@@ -160,8 +150,9 @@
       "performance": []
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q732943",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Majora%27s_Mask",
-  "website": "https://www.nintendo.co.jp/n01/n64/software/nus_p_nzsj/"
+  "website": "https://www.nintendo.co.jp/n01/n64/software/nus_p_nzsj/",
+  "mods": []
 }

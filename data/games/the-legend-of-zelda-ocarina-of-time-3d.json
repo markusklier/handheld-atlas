@@ -1,0 +1,26 @@
+{
+  "id": "the-legend-of-zelda-ocarina-of-time-3d",
+  "title": "The Legend of Zelda: Ocarina of Time 3D",
+  "franchise": "The Legend of Zelda",
+  "remakeOf": "the-legend-of-zelda-ocarina-of-time",
+  "platforms": [
+    "Nintendo 3DS"
+  ],
+  "genre": "action-adventure game",
+  "summary": "Remake von The Legend of Zelda: Ocarina of Time (2011).",
+  "versions": [
+    {
+      "id": "nintendo-3ds",
+      "name": "Ocarina of Time 3D (2011)",
+      "type": "remake",
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "year": 2011
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "screenshots": [],
+  "updatedAt": "2026-11-11"
+}

@@ -6,8 +6,11 @@
     python3 scripts/atlas.py stats        # quick overview of the database
     python3 scripts/atlas.py format       # rewrite all data files with canonical formatting
     python3 scripts/atlas.py repair       # drop non-https entries, strip markdown citations (runs before validate in workflows)
-    python3 scripts/atlas.py merge SRC INTO [--type remake] [--year 2011] [--name "…"] [--same]
+    python3 scripts/atlas.py merge SRC INTO [--type remaster] [--year 2011] [--name "…"] [--same]
                                           # duplicate game SRC becomes a version of INTO (routes, mods, images move along)
+    python3 scripts/atlas.py split GAME VERSION [--id ID] [--title "…"]
+                                          # a remake version becomes its own game with "remakeOf": GAME (repair does this
+                                          # automatically for every version of type "remake")
 
 Standard library only (Python 3.10+).
 """
@@ -119,6 +122,8 @@ def validate(db=None):
         for key in ('title', 'franchise'):
             if not isinstance(g.get(key), str) or not g[key].strip():
                 err(f'{where}: {key} fehlt')
+        if g.get('remakeOf') is not None and not isinstance(g['remakeOf'], str):
+            err(f'{where}: remakeOf muss eine Spiel-id sein')
         tkey = re.sub(r'[^a-z0-9]', '', g.get('title', '').lower())
         if tkey in titles:
             err(f'{where}: gleicher Titel wie games/{titles[tkey]} – zusammenführen')
@@ -130,6 +135,8 @@ def validate(db=None):
         for s in g.get('screenshots', []):
             url_ok(s.get('url'), f'{where}/screenshots')
         version_ids = set()
+        if not g.get('remakeOf') and len(g.get('versions', [])) > 1 and any(v.get('type') == 'remake' for v in g.get('versions', [])):
+            err(f'{where}: Remake-Fassung → eigenes Spiel (python3 scripts/atlas.py repair spaltet sie ab)')
         for v in g.get('versions', []):
             vw = f"{where}/versions/{v.get('id')}"
             if not ID_RE.match(v.get('id', '')):
@@ -215,6 +222,9 @@ def validate(db=None):
             if m.get('verification', 'documented') not in verif:
                 err(f'{mw}: verification unbekannt')
 
+    for g in db['games']:
+        if g.get('remakeOf') and (g['remakeOf'] not in game_ids or g['remakeOf'] == g['id']):
+            err(f"games/{g['_file']}: remakeOf {g['remakeOf']!r} ist kein anderes Spiel")
     for p in db['projects']:
         for gid in p.get('games', []):
             if gid not in game_ids:
@@ -234,6 +244,9 @@ def validate(db=None):
             err(f"changelog.json: Spiel {e['game']!r} existiert nicht")
     for lead in db['inbox'].get('leads', []):
         url_ok(lead.get('url'), 'inbox.json')
+    rm = read(DATA / 'research.json') if (DATA / 'research.json').exists() else {}
+    if rm.get('backend', 'api') not in ('api', 'abo') or rm.get('fallback', 'abo') not in ('abo', 'none'):
+        err('research.json: backend muss api|abo sein, fallback abo|none')
     errors += __import__('setup').validate(db)   # local import: setup imports this module
     return errors
 
@@ -253,6 +266,7 @@ def bundle(db):
         'changelog': db['changelog'][:300],
         'inboxCount': len(db['inbox'].get('leads', [])),
         'research': research_spec(db['meta']),
+        'researchMode': {k: v for k, v in (read(DATA / 'research.json') if (DATA / 'research.json').exists() else {}).items() if k != 'note'},
         'researched': db['inbox'].get('aiResearch', {}),
         'queue': [{'game': j['game'], 'reason': j.get('reason', '')} for j in
                   (read(DATA / 'queue.json')['jobs'] if (DATA / 'queue.json').exists() else [])],
@@ -298,10 +312,11 @@ def build():
     # Offline single-file version: same app with data embedded, for sideloading without internet.
     html = (DIST / 'index.html').read_text(encoding='utf-8')
     css = (DIST / 'style.css').read_text(encoding='utf-8')
-    js = (DIST / 'app.js').read_text(encoding='utf-8') + '\n' + (DIST / 'setup.js').read_text(encoding='utf-8')
+    js = '\n'.join((DIST / f).read_text(encoding='utf-8') for f in ('app.js', 'setup.js', 'dual.js'))
     embedded = data_json.replace('</', '<\\/')
     offline = (html.replace('<link rel="stylesheet" href="style.css">', f'<style>{css}</style>')
                    .replace('<script src="setup.js" defer></script>', '')
+                   .replace('<script src="dual.js" defer></script>', '')
                    .replace('<script src="app.js" defer></script>',
                             f'<script>window.ATLAS_EMBEDDED={embedded};</script><script>{js}</script>')
                    .replace('<link rel="manifest" href="manifest.webmanifest">', ''))
@@ -369,6 +384,9 @@ def repair():
         if json.dumps(g) != before:
             write(f, g)
     print(f'repair: {removed} ungültige Einträge entfernt')
+    made = split_remakes()
+    if made:
+        print(f"repair: {len(made)} Remake(s) als eigene Spiele angelegt: {', '.join(made)}")
 
 
 MD_CITE = re.compile(r'\s*\(\[[^\]]*\]\([^)]*\)\)')   # " ([site.com](https://…))" citation markers from the model
@@ -465,6 +483,82 @@ def merge(src_id, into_id, vtype=None, year=None, name=None, same=False):
     print(f'merge: {src_id} → {into_id} ({len(vmap)} Fassungen, {len(src.get("routes", []))} Spielwege)')
 
 
+def remake_title(orig, v):
+    """Title of a remake game from its version name: "Ocarina of Time 3D (2011)" → "The Legend of Zelda: Ocarina of Time 3D"."""
+    name = re.sub(r'\s*\((?:19|20)\d\d\)\s*$', '', v.get('name') or '').strip()
+    name = re.sub(r'\s*\((?:' + '|'.join(re.escape(p) for p in v.get('platforms', [])) + r')\)\s*$', '', name).strip() if v.get('platforms') else name
+    generic = not name or re.match(r'^(remake|remaster|neuauflage)\b', name, re.I) or re.search(r'\bfür\b', name)
+    year = v.get('year')
+    if generic:
+        return f"{orig['title']} ({year})" if year else f"{orig['title']} (Remake)"
+    if ':' in orig['title'] and ':' not in name:                     # keep the series prefix: "The Legend of Zelda: …"
+        prefix = orig['title'].split(':')[0]
+        if not name.lower().startswith(prefix.lower()):
+            name = f'{prefix}: {name}'
+    if re.sub(r'[^a-z0-9]', '', name.lower()) == re.sub(r'[^a-z0-9]', '', orig['title'].lower()):
+        name = f'{name} ({year})' if year else f'{name} (Remake)'      # same name as the original: year makes it unique
+    return name
+
+
+def split(game_id, version_id, new_id=None, title=None, log=print):
+    """A remake version of GAME becomes its own game with "remakeOf": GAME. Routes, mods (only used with this version)
+    and community reports move along; the original keeps everything else. Returns the new game id."""
+    path = DATA / 'games' / f'{game_id}.json'
+    g = read(path)
+    v = next((x for x in g.get('versions', []) if x['id'] == version_id), None)
+    if not v:
+        raise SystemExit(f'split: Fassung {version_id!r} gibt es in {game_id} nicht')
+    title = title or remake_title(g, v)
+    nid = new_id or re.sub(r'[^a-z0-9]+', '-', title.lower().replace("'", '')).strip('-')[:70]
+    while (DATA / 'games' / f'{nid}.json').exists():
+        nid += '-remake'
+    nv = dict(v, id=re.sub(r'[^a-z0-9]+', '-', '-'.join(v.get('platforms', [])[:1]).lower()).strip('-') or 'remake')
+    new = {'id': nid, 'title': title, 'franchise': g.get('franchise') or g['title'], 'remakeOf': game_id,
+           'platforms': list(v.get('platforms', [])), 'genre': g.get('genre', ''),
+           'summary': f"Remake von {g['title']}" + (f" ({v['year']})" if v.get('year') else '') + '.',
+           'versions': [nv],
+           'routes': [dict(r, release=nv['id']) for r in g.get('routes', []) if r.get('release') == version_id],
+           'mods': [dict(m, release=[nv['id']]) for m in g.get('mods', []) if m.get('release') == [version_id]],
+           'screenshots': [], 'updatedAt': datetime.now(timezone.utc).strftime('%Y-%m-%d')}
+    if not new['genre']:
+        new.pop('genre')
+    moved_routes = {r['id'] for r in new['routes']}
+    g['versions'] = [x for x in g['versions'] if x['id'] != version_id]
+    g['routes'] = [r for r in g.get('routes', []) if r['id'] not in moved_routes]
+    g['mods'] = [m for m in g.get('mods', []) if m.get('release') != [version_id]]
+    for m in g['mods']:                                  # mods for several versions stay with the original
+        if version_id in m.get('release', []):
+            m['release'] = [x for x in m['release'] if x != version_id]
+            new['mods'].append(dict(m, release=[nv['id']]))
+    g['platforms'] = [p for p in g.get('platforms', []) if any(p in x.get('platforms', []) for x in g['versions'])] or g.get('platforms', [])
+    g['updatedAt'] = new['updatedAt']
+    write(DATA / 'games' / f'{nid}.json', new)
+    write(path, g)
+    pj = read(DATA / 'projects.json')
+    moved_projects = {pid for r in new['routes'] for pid in (r.get('projects') or [])}
+    still = {pid for r in g['routes'] for pid in (r.get('projects') or [])}
+    for pr in pj['projects']:
+        if pr['id'] in moved_projects:
+            pr['games'] = list(dict.fromkeys([*(x for x in pr.get('games', []) if x != game_id or pr['id'] in still), nid]))
+    write(DATA / 'projects.json', pj)
+    log(f"split: {game_id}/{version_id} → {nid} „{title}“ ({len(new['routes'])} Spielwege, {len(new['mods'])} Mods)")
+    return nid
+
+
+def split_remakes(log=print):
+    """Every version of type "remake" becomes its own game (rule since 11.11.2026, docs/KONTEXT.md)."""
+    out = []
+    for f in sorted((DATA / 'games').glob('*.json')):
+        g = read(f)
+        if g.get('remakeOf'):
+            continue
+        for v in [x for x in g.get('versions', []) if x.get('type') == 'remake']:
+            if len(g['versions']) < 2:
+                break
+            out.append(split(g['id'], v['id'], log=log))
+    return out
+
+
 def fmt():
     for f in (DATA / 'games').glob('*.json'):
         write(f, read(f))
@@ -479,6 +573,13 @@ if __name__ == '__main__':
         problems = validate()
         print('\n'.join(problems) or 'OK – keine Fehler')
         sys.exit(1 if problems else 0)
+    if cmd == 'split':
+        import argparse
+        ap = argparse.ArgumentParser(prog='atlas.py split')
+        ap.add_argument('game'), ap.add_argument('version'), ap.add_argument('--id'), ap.add_argument('--title')
+        a = ap.parse_args(sys.argv[2:])
+        split(a.game, a.version, a.id, a.title)
+        sys.exit(0)
     if cmd == 'merge':
         import argparse
         ap = argparse.ArgumentParser(prog='atlas.py merge')

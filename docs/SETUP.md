@@ -80,17 +80,35 @@ Das KI-Feintuning läuft auf dem Gerät mit deinem OpenAI-Schlüssel (wie die So
 Weg, App-Version, alle bisherigen Runden mit Messwerten, die Berichte anderer Nutzer, die anderen Wege und die
 Regeln – und antwortet mit genau einem nächsten Schritt (`change`, `done`, `lower-target`, `other-way`).
 
-## Zwei Bildschirme
+## Zwei Bildschirme (`app/dual.js`)
 
-Die App öffnet auf Geräten mit zwei Bildschirmen zwei Fenster. Das Fenster auf dem **größeren** Bildschirm ist
-`main` (Spielseite, Bilder), das auf dem **kleineren** ist `companion` (Listen, Wege, Checkliste, Live-Werte).
-Auf dem Thor ist oben Display 0 (1920×1080), unten Display 4 (1240×1080).
+Die App öffnet auf Geräten mit zwei Bildschirmen zwei Fenster mit zwei Rollen:
 
-- Unten ein Spiel antippen → oben öffnet sich die Spielseite, unten die kompakte Liste der Wege.
-- „Oben zeigen“ klappt den Weg oben auf; „Einrichten“ startet den Assistenten unten.
-- Tippt man oben auf „Einrichten“, wandert der Assistent nach unten.
-- Spiele und Emulatoren startet Atlas auf dem größeren Bildschirm; die Checkliste bleibt unten sichtbar.
+- **Stöbern** (standardmäßig oben, größerer Bildschirm): die normale Atlas-Oberfläche – Entdecken, Suche, Reihen, Neu, Info.
+- **Bühne** (standardmäßig unten): was du gerade ansiehst.
+  - Markierst du oben ein Spiel (Steuerkreuz oder Finger), zeigt die Bühne es groß: Bilder im Wechsel (5 s, Dual-Screen-
+    Bilder zuerst), Titel, Plattformen, beste Empfehlung, „Spiel öffnen“.
+  - „Öffnen“ zeigt unten die Spielseite mit allen Wegen; oben bleibt deine Liste stehen. Der Controller wandert mit.
+  - „Einrichten“ läuft auf der Bühne; das Spiel selbst startet immer auf dem großen Bildschirm, die Checkliste mit den
+    Live-Werten der Messfahrt bleibt unten sichtbar.
+  - Zurück (B) auf der Spielseite → wieder die große Vorschau, der Controller springt zurück zum Stöbern.
+- **Tauschen** (Knopf oben rechts) dreht die Rollen um. **Select** (oder der Knopf „Stöbern“/„Bühne“) bringt den
+  Controller auf den anderen Bildschirm; der aktive Bildschirm hat oben eine leuchtende Linie, der andere ist leicht
+  abgedunkelt.
+- Reihen, Listen und Neuigkeiten, die man auf der Bühne antippt, öffnen sich oben.
 - Abschalten: Info → Atlas-App → „Zweiten Bildschirm ausschalten“.
+
+Technik: Die Fenster sprechen über `relay` (Brücke) miteinander, `focusOther` holt das andere Fenster nach vorn (bekommt
+damit die Tasten), `windowFocus` meldet, welches Fenster den Controller hat. Die Rollen-Einstellung (`dualSwap`) teilen
+beide Fenster über localStorage. Auf dem Thor: oben Display 0 (1920×1080, ca. 730×410 CSS-Pixel), unten 1240×1080
+(ca. 470×410) – die Oberfläche ist auf diese Größen abgestimmt.
+
+## Emulator wählen
+
+Jeder Emulator einer Fassung ist ein eigener Weg (z. B. für PC: GameNative, Winlator, GameHub, DroidDeck). Atlas sortiert
+sie nach Berichten von Geräten mit dem Thor-Chip, eigenen Messfahrten und dem, was schon installiert ist, und markiert
+den besten als „beste Wahl“. Atlas merkt sich keinen Favoriten. Im Setup-Assistenten steht oben die Emulator-Wahl:
+Empfehlung markiert, ein Tipp auf einen anderen richtet diesen ein.
 
 ## Messfahrt: was gemessen wird
 

@@ -88,3 +88,16 @@ Spiel → Fassung → Weg → Gerät → gemessenes Setup.
   für die Claude-Pflegeaufgabe.
 - 22 Spiele ohne Cover (Nischentitel); Cover mit `fallback: true` sind Notlösungen und werden bei besserer Quelle ersetzt.
 - Viele Spielwege noch ohne Bild; Originalbilder vor allem bei modernen Konsolenspielen dünn.
+
+## Entscheidungen vom 11.11.2026
+
+- **Recherche:** Standard ist die API (sofort); zentral umschaltbar auf das Abo (Info → „Wo wird recherchiert?“).
+  Ist die API nicht nutzbar, übernimmt die Abo-Aufgabe automatisch. Details: [`docs/RECHERCHE.md`](RECHERCHE.md).
+  Tiefenrecherche bleibt immer anforderbar, auch neben „Aktualisieren“; ein Wunschtext („Was fehlt dir?“) geht mit.
+- **Remakes sind eigene Spiele** mit `remakeOf`; das Original zeigt sie unten aufklappbar, der Vergleich enthält ihre
+  Wege eingeklappt. Remaster, Ports, Neuauflagen und Sammlungen bleiben Fassungen.
+- **Emulator-Wahl:** Atlas empfiehlt je Fassung den besten Emulator (Berichte vom Thor-Chip, eigene Messfahrten, schon
+  installiert) und markiert ihn. Atlas merkt sich **keinen** Favoriten; im Setup-Assistenten kann man jederzeit einen
+  anderen wählen. PC: GameNative, Winlator, GameHub (Lite), DroidDeck.
+- **Zwei Bildschirme:** oben stöbern, unten die „Bühne“ (große Vorschau → Spielseite → Einrichten); Tauschen per Knopf,
+  Select wechselt den Bildschirm. Details in [`docs/SETUP.md`](SETUP.md).

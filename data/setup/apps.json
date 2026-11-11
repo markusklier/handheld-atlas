@@ -32,7 +32,11 @@
       "source": {
         "type": "page",
         "url": "https://eden-emu.dev/"
-      }
+      },
+      "projects": [
+        "eden-2",
+        "eden-2-2"
+      ]
     },
     {
       "id": "eden-duo",
@@ -49,7 +53,10 @@
         "type": "github",
         "repo": "igawa6/eden-duo"
       },
-      "note": "Dual-Screen-Fork von Eden. Paketname wird beim ersten Installieren erkannt."
+      "note": "Dual-Screen-Fork von Eden. Paketname wird beim ersten Installieren erkannt.",
+      "reportNames": [
+        "Eden Duo"
+      ]
     },
     {
       "id": "citron",
@@ -103,7 +110,10 @@
         "type": "github",
         "repo": "Producdevity/gamehub-lite"
       },
-      "note": "EmuReady-Berichte nennen „GameHub“; Atlas richtet die quelloffene Lite-Fassung ein."
+      "note": "EmuReady-Berichte nennen „GameHub“; Atlas richtet die quelloffene Lite-Fassung ein.",
+      "projects": [
+        "gamehub"
+      ]
     },
     {
       "id": "winlator",

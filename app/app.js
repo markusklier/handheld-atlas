@@ -103,6 +103,7 @@ function index(data) {
   DB.imageRequests = data.imageRequests || {};
   DB.usage = data.usage || {};
   DB.reddit = data.reddit || [];
+  DB.researchMode = data.researchMode || {};
   DB.setup = data.setup || { devices: [], apps: [], policy: {}, runs: {}, learned: {} };
   DB.games = data.games.map((g) => {
     g.routes = g.routes || [];
@@ -214,6 +215,7 @@ function showSlide(i) {
 }
 function startPreview(card) {
   if (preview.card === card) return;
+  if (typeof dualOn === 'function' && dualOn()) return;   // two screens: the big preview runs on the stage
   stopPreview();
   const g = DB.byId.get(card.dataset.game);
   const slides = g ? previewSlides(g) : [];
@@ -221,8 +223,8 @@ function startPreview(card) {
   Object.assign(preview, { card, slides, i: 0 });
   preview.delay = setTimeout(() => {
     showSlide(0);
-    preview.timer = setInterval(() => showSlide(preview.i + 1), 1600);
-  }, 350); // don't flicker while the mouse just passes over
+    preview.timer = setInterval(() => showSlide(preview.i + 1), 4000);
+  }, 450); // don't flicker while the mouse just passes over
 }
 function stopPreview() {
   clearTimeout(preview.delay); clearInterval(preview.timer);
@@ -233,7 +235,7 @@ function stepPreview(card, d) {
   if (preview.card !== card) { startPreview(card); clearTimeout(preview.delay); showSlide(d > 0 ? 0 : -1); }
   else showSlide(preview.i + d);
   clearInterval(preview.timer);
-  preview.timer = setInterval(() => showSlide(preview.i + 1), 2600);
+  preview.timer = setInterval(() => showSlide(preview.i + 1), 5000);
 }
 document.addEventListener('mouseover', (e) => { const c = e.target.closest?.('.card'); if (c) startPreview(c); });
 document.addEventListener('mouseout', (e) => { const c = e.target.closest?.('.card'); if (c && !c.contains(e.relatedTarget)) stopPreview(); });
@@ -490,7 +492,7 @@ function waysFor(g) {
     }
     attachReports(ways.filter((w) => w.v === v), v);
   }
-  for (const w of ways) Object.assign(w, rate(w));
+  for (const w of ways) { w.g = g; Object.assign(w, rate(w)); }
   return ways;
 }
 
@@ -501,15 +503,17 @@ function attachReports(ways, v) {
   const reps = v.reports || [];
   const key = (s) => norm(s).replace(/[^a-z0-9]/g, '');
   const used = new Set();
-  for (const w of ways) {
-    const names = [w.name, w.r?.runtime, ...(w.r?.projects || []).map((p) => DB.projects[p]?.name), DB.projects[w.o?.project]?.name]
-      .filter(Boolean).map(key);
-    w.community = reps.filter((rep) => {
-      const e = key(rep.emulator);
-      const hit = e && names.some((n) => n.includes(e) || e.includes(n.slice(0, Math.max(4, e.length))));
-      if (hit) used.add(rep);
-      return hit;
-    });
+  const namesOf = (w) => [w.name, w.r?.runtime, ...(w.r?.projects || []).map((p) => DB.projects[p]?.name), DB.projects[w.o?.project]?.name]
+    .filter(Boolean).map(key);
+  for (const w of ways) w.community = [];
+  for (const rep of reps) {
+    const e = key(rep.emulator);
+    if (!e) continue;
+    const loose = ways.filter((w) => namesOf(w).some((n) => n.includes(e) || e.includes(n.slice(0, Math.max(4, e.length)))));
+    // "Eden" reports belong to the Eden way, not also to its fork "Eden Duo" – an exact name wins
+    const exact = loose.filter((w) => namesOf(w).includes(e));
+    for (const w of exact.length ? exact : loose) w.community.push(rep);
+    if (loose.length) used.add(rep);
   }
   const rest = reps.filter((rep) => !used.has(rep) && rep.emulator);
   const byEmu = new Map();
@@ -518,6 +522,11 @@ function attachReports(ways, v) {
     ways.push({ key: `c:${v.id}:${key(emu)}`, type: 'community', v, name: emu, kind: PC_RUNTIMES.test(emu) ? 'pc-runtime' : 'emulation',
       features: [], targets: ['android'], community: list });
   }
+}
+
+/* Best own measurement of a way (setup.js), with the verdict. */
+function suBestRunFor(w) {
+  return w.g ? suBestRun(w.g, w) : null;
 }
 
 /* Transparent ranking for the selected device. Every point comes with a visible reason. */
@@ -538,6 +547,14 @@ function rate(w) {
   if (w.features.includes('mods')) { score += 3; reasons.push(['wrench', 'Mods']); }
   if (w.type === 'generic' && !(w.community || []).length) reasons.push(['info', 'Allgemein, ungeprüft']);
   if (w.type === 'community') score += 4;
+  // what this device knows: own measurements, favourite emulator per platform, apps already installed
+  const run = typeof suBestRun === 'function' && w.g ? suBestRunFor(w) : null;
+  if (run) {
+    const ok = run.verdict !== 'bad' && run.verdict !== 'broken';
+    score += ok ? 22 : -20;
+    reasons.push([ok ? 'check' : 'alert', ok ? `Auf dem Thor gemessen: Ø ${run.fps.avg} FPS` : 'Auf dem Thor schlecht gelaufen']);
+  }
+  if (typeof suWayInstalled === 'function' && suWayInstalled(w)) { score += 4; reasons.push(['check', 'Schon installiert']); }
   const effort = r?.effort || (w.type === 'generic' ? 'guided' : 'easy');
   score += { easy: 6, guided: 2, advanced: 0, experimental: -6 }[effort] ?? 0;
   if (r?.status === 'archived') { score -= 40; reasons.push(['alert', 'Archiviert']); }
@@ -611,11 +628,15 @@ function versionCard(g, v, ways) {
     ${v.note ? `<p class="muted">${esc(v.note)}</p>` : ''}
     ${(() => {
       if (!shown.length) return `<p class="faint">${ways.length ? 'Kein Dual-Screen-Weg für diese Fassung.' : 'Für diese Fassung ist auf Android noch kein Weg bekannt.'}</p>`;
-      const main = shown.filter((w) => w.type !== 'generic');
-      const gen = shown.filter((w) => w.type === 'generic');
+      // emulators of the platform (generic + only known from reports) are one group: the best one is marked
+      const isEmu = (w) => w.type === 'generic' || w.type === 'community';
+      const main = shown.filter((w) => !isEmu(w));
+      const gen = shown.filter(isEmu).sort((a, b) => b.score - a.score);
       const open = gen.some((w) => w.key === state.openWay);
+      const plat = v.platforms[0];
       return `<div class="ways">${main.map((w) => wayRow(g, w, state.openWay === w.key)).join('')}
-        ${gen.length ? `<details class="generic-group" ${open || !main.length ? 'open' : ''}><summary>${icon('gamepad')}<span>Allgemeine Emulatoren: ${gen.map((w) => esc(w.name) + (w.best ? ` <span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe)}</span>` : '')).join(', ')}</span></summary>
+        ${gen.length ? `<details class="generic-group" ${open || !main.length ? 'open' : ''}><summary>${icon('gamepad')}<span>${gen.length > 1 ? `${gen.length} Emulatoren für ${esc(plat)}` : `Emulator für ${esc(plat)}`}: ${gen.map((w, i) => `${i === 0 && gen.length > 1 ? '<b>' : ''}${esc(w.name)}${i === 0 && gen.length > 1 ? '</b> <span class="tag best">beste Wahl</span>' : ''}${w.best ? ` <span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe)}</span>` : ''}`).join(' · ')}</span></summary>
+          ${gen.length > 1 ? `<p class="faint emu-why">Sortiert nach Berichten von Geräten mit dem Thor-Chip, deinen Messfahrten und dem, was schon installiert ist. Beim Einrichten kannst du jederzeit einen anderen nehmen.</p>` : ''}
           <div class="ways">${gen.map((w) => wayRow(g, w, state.openWay === w.key)).join('')}</div></details>` : ''}</div>`;
     })()}
     ${(v.links || []).length ? `<div class="row">${v.links.map((l) => `<a class="link" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}
@@ -673,6 +694,11 @@ function viewGame(id) {
       ${hidden ? `<p class="faint section">${hidden} Weg(e) nur für andere Plattformen als ${esc(device().name)} ausgeblendet (Info → Gerät).</p>` : ''}`;
   } else if (tab === 'compare') {
     body = compareTable(g, fitting);
+    const rms = remakesOf(g);
+    if (rms.length) {
+      const rw = rms.flatMap((rm) => waysFor(rm).filter((w) => w.fits).sort((a, b) => b.score - a.score).slice(0, 4).map((w) => ({ ...w, v: { ...w.v, name: rm.title } })));
+      body += `<details class="settings section"><summary>Zum Vergleich: Wege der ${rms.length === 1 ? 'Remakes' : `${rms.length} Remakes`} (${rw.length})</summary>${compareTable(g, rw).replace(/^<p class="muted"[^>]*>.*?<\/p>/s, '')}</details>`;
+    }
   } else {
     body = modsView(g);
   }
@@ -680,6 +706,7 @@ function viewGame(id) {
     <div class="hero">${coverHTML(g, { badges: false })}<div class="meta">
       <a class="franchise" href="#/franchise/${encodeURIComponent(g.franchise)}">${esc(g.franchise)}</a>
       <h1>${esc(g.title)}</h1>
+      ${g.remakeOf && DB.byId.get(g.remakeOf) ? `<a class="remake-of" href="#/spiel/${esc(g.remakeOf)}">${icon('back')}Remake von <b>${esc(DB.byId.get(g.remakeOf).title)}</b>${(() => { const y = versionsOf(DB.byId.get(g.remakeOf))[0]?.year; return y ? ' (' + y + ')' : ''; })()}</a>` : ''}
       <div class="pfs">${badges(g.platforms, 8)}</div>
       <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
@@ -695,7 +722,35 @@ function viewGame(id) {
     ${recommendation(g, fitting)}
     ${dualBox(g, fitting)}
     <section class="section"><div class="seg" role="tablist">${tabs.map(([k, l, n]) => `<button role="tab" data-gtab="${k}" aria-selected="${tab === k}">${l}<span class="n">${n}</span></button>`).join('')}</div>${body}</section>
+    ${remakesSection(g, fitting)}
     ${relatedSections(g)}`;
+}
+
+/* Remakes are games of their own (remakeOf); the original shows them compactly – what they offer, with a link. */
+const remakesOf = (g) => DB.games.filter((x) => x.remakeOf === g.id).sort((a, b) => (versionsOf(a)[0]?.year || 0) - (versionsOf(b)[0]?.year || 0));
+function remakesSection(g, ownWays) {
+  const list = remakesOf(g);
+  if (!list.length) return '';
+  const ownBest = ownWays[0];
+  return `<section class="section remakes"><div class="section-head"><h2>${icon('spark')} ${list.length === 1 ? 'Remake' : `${list.length} Remakes`}</h2>
+      <span class="faint">eigene Spiele mit eigenen Spielwegen</span></div>
+    ${list.map((rm) => {
+      const v = versionsOf(rm)[0] || {};
+      const ways = waysFor(rm).filter((w) => w.fits).sort((a, b) => b.score - a.score);
+      const top = ways.filter((w) => w.r?.status !== 'archived').slice(0, 3);
+      const dual = ways.some((w) => w.features.includes('dual-screen'));
+      const extra = [dual && !ownWays.some((w) => w.features.includes('dual-screen')) ? 'Dual Screen nur im Remake' : '',
+        ways.some((w) => NATIVE.has(w.kind) || w.type === 'official') && !ownWays.some((w) => NATIVE.has(w.kind) || w.type === 'official') ? 'nativ spielbar' : '',
+        top[0]?.best && (!ownBest?.best || top[0].best.rank < ownBest.best.rank) ? `läuft laut Berichten besser (${top[0].best.ratingDe})` : ''].filter(Boolean);
+      return `<details class="remake"><summary>
+          <a class="remake-cover" href="#/spiel/${esc(rm.id)}">${rm.cover ? `<img src="${esc(rm.cover.url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : icon('image')}</a>
+          <span class="remake-main"><b>${esc(rm.title)}</b><span class="faint">${[v.year, (rm.platforms || []).join(', ')].filter(Boolean).map(esc).join(' · ')}</span>
+            <span class="row">${dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}<span class="tag">${ways.length} ${ways.length === 1 ? 'Weg' : 'Wege'}</span>${extra.map((x) => `<span class="tag best">${esc(x)}</span>`).join('')}</span></span>
+          <span class="remake-more faint">Was es bietet</span></summary>
+        <div class="remake-body">${v.note ? `<p class="muted">${esc(v.note)}</p>` : rm.summary ? `<p class="muted">${esc(rm.summary)}</p>` : ''}
+          ${top.length ? `<div class="remake-ways">${top.map((w, i) => `<div><span class="n">${i + 1}</span><b>${esc(w.name)}</b> <span class="faint">${esc(label('kinds', w.kind))}</span>${w.best ? ` <span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)}</span>` : ''}${w.features.includes('dual-screen') ? ` <span class="tag dual">${icon('dual')}</span>` : ''}</div>`).join('')}</div>` : '<p class="faint">Noch kein Spielweg bekannt.</p>'}
+          <a class="btn primary" href="#/spiel/${esc(rm.id)}">Zum Remake ${icon('ext')}</a></div></details>`;
+    }).join('')}</section>`;
 }
 
 function projectLine(p) {
@@ -869,11 +924,12 @@ function viewInfo() {
       <label class="field">API-Schlüssel<input id="ai-key" type="password" autocomplete="off" placeholder="sk-…" value="${esc(aiKey())}"></label>
       <label class="field">Modell<input id="ai-model" type="text" autocomplete="off" placeholder="${esc(DB.research?.model || '')}" value="${esc(store.get('openaiModel', ''))}"></label>
       <div class="row"><button class="btn primary" id="ai-save">Speichern</button>${aiKey() ? '<button class="btn" id="ai-clear">Löschen</button>' : ''}</div></div>
+    ${researchPanel()}
     ${typeof setupPanel === 'function' ? setupPanel() : ''}
     ${redditPanel()}
     ${usagePanel()}
     ${qualityPanel()}
-    <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche.</p></div>
+    <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche. Mit zwei Bildschirmen: <kbd>Select</kbd> wechselt zwischen Stöbern und Bühne.</p></div>
     <div class="panel"><h3>Daten</h3><p class="muted">Stand ${fmtDate(DB.builtAt)}. ${DB.games.length} Spiele, ${Object.keys(DB.projects).length} Projekte. Die App holt sich neue Daten selbst, sobald sie online geöffnet wird.</p>
       <div class="row"><button class="btn" id="update">Nach Updates suchen</button>${window.ATLAS_EMBEDDED ? '' : '<a class="btn" href="Handheld-Atlas-offline.html" download>Offline-Version laden</a>'}</div></div>
   </div>
@@ -947,6 +1003,21 @@ function refreshAnalysis(key) {
 
 function issueUrl(title, body) {
   return `https://github.com/${DB.meta.repo}/issues/new?labels=recherche&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}
+/* Open a prepared GitHub issue. GitHub rejects very long links ("Whoops, something went wrong"): then the text goes to
+   the clipboard and the issue opens with a short note to paste it. With a GitHub key (Info) none of this is needed. */
+async function openIssue(title, body) {
+  let url = issueUrl(title, body);
+  if (url.length > 7000) {
+    let copied = false;
+    try { await navigator.clipboard.writeText(body); copied = true; } catch { /* no clipboard permission */ }
+    url = issueUrl(title, copied ? 'Der Inhalt ist in der Zwischenablage – bitte hier einfügen (lange tippen → Einfügen) und dann „Create“.'
+      : body.split('```')[0].trim() + '\n\n(zu lang für einen Link – bitte unter Info einen GitHub-Schlüssel eintragen, dann sendet Atlas direkt)');
+    toast(copied ? 'Text in die Zwischenablage kopiert – auf GitHub einfügen und „Create“ tippen. Einfacher: GitHub-Schlüssel unter Info eintragen.'
+      : 'Zu lang für einen GitHub-Link. Bitte unter Info einen GitHub-Schlüssel eintragen – dann sendet Atlas direkt.', 9000);
+  }
+  if (window.AtlasBridge) native.call('openUrl', { url }).catch(() => window.open(url, '_blank', 'noopener'));
+  else window.open(url, '_blank', 'noopener');
 }
 
 function adoptUrl(key, g, a) {
@@ -1062,15 +1133,17 @@ function dataPanel(g) {
     ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Bilder: ' + g.title, 'images: ' + g.id))}" target="_blank" rel="noopener" title="Cover, Originalbilder und Bilder für jeden Spielweg (Dual Screen zuerst)">${icon('image')}Bilder suchen</a>`
     : kind === 'update'
       ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Aktualisieren: ' + g.title, 'update: ' + g.id))}" target="_blank" rel="noopener" title="Sucht nur, was sich seit der letzten Tiefenrecherche geändert hat – günstiger als eine neue Tiefenrecherche">${icon('spark')}Aktualisieren</a>`
-      : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener">${icon('spark')}Tiefenrecherche anfordern</a>`;
-  return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' ? ' open' : ''}>
+      : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener" title="Komplett neu recherchieren: alle Fassungen, Spielwege, Emulatoren, Mods und Berichte">${icon('spark')}${DB.researched?.[g.id] ? 'Neue Tiefenrecherche' : 'Tiefenrecherche anfordern'}</a>`;
+  const stage = typeof dualRole === 'function' && dualRole() === 'stage';   // small stage screen: keep it folded
+  return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' && !stage ? ' open' : ''}>
     <summary><span class="meter"><span>Datenstand: <b>${LEVEL_LABEL[c.level]}</b></span><b>${c.pct} %</b><i style="--v:${c.pct}%"></i></span></summary>
     <ul class="checklist">${c.items.map((i) => `<li class="${i.ok ? 'ok' : i.part ? 'part' : 'miss'}">${icon(i.ok ? 'check' : 'alert')}${esc(i.label)}</li>`).join('')}</ul>
     <p class="req-run" data-req-game="${esc(g.id)}"${req ? '' : ' hidden'}>${icon('spark')} <span>${esc(req?.label || '')}</span></p>
-    <div class="row">${DB.researched?.[g.id] ? btn('update', needUpdate) : btn('research', needResearch && !needImages)}${btn('images', needImages)}
+    ${DB.meta.repo ? `<label class="field req-note">Was fehlt dir? <span class="faint">(optional – geht als Auftrag mit, z. B. „DroidDeck und GameHub fehlen“)</span><input id="req-note" type="text" autocomplete="off" placeholder="z. B. weitere Emulatoren, eine bestimmte Fassung, Dual-Screen-Mods"></label>` : ''}
+    <div class="row">${DB.researched?.[g.id] ? btn('update', needUpdate) + btn('research', false) : btn('research', needResearch && !needImages)}${btn('images', needImages)}
       ${DB.meta.repo ? `<button class="btn small" data-addimage="${esc(g.id)}" data-title="${esc(g.title)}" title="Link zu einem Bild, Video oder Artikel einfügen">${icon('ext')}Bild-Link einfügen</button>` : ''}
       ${imgReq ? `<span class="faint">Bilder zuletzt gesucht ${fmtDate(imgReq)}</span>` : ''}</div>
-    <p class="faint">Tiefenrecherche = Fassungen, Spielwege, Mods und Berichte (3–5 Min.). Aktualisieren = nur Änderungen seit der letzten Recherche (neue Versionen, eingestellte Projekte, neue Wege). Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
+    <p class="faint">${researchWhere()} Tiefenrecherche = alles neu: Fassungen, Spielwege, Emulatoren, Mods und Berichte (3–5 Min.). Aktualisieren = nur Änderungen seit der letzten Recherche (neue Versionen, eingestellte Projekte, neue Wege) – günstiger, sucht aber nicht gezielt nach Fehlendem. Bilder suchen = Cover, Originalbilder und Bilder je Spielweg aus Wikipedia, Steam, Google Play, YouTube, Reddit und Projektseiten (2–4 Min.); die KI-Bildprüfung sortiert danach Unpassendes aus.</p>
   </details>`;
 }
 
@@ -1088,12 +1161,12 @@ function wayImageButton(g, r) {
 
 /* ---------- requests (GitHub issues) the user started from this device: live status ---------- */
 const REQ_KEY = 'requests';
-const requests = () => store.get(REQ_KEY, []).filter((r) => Date.now() - r.at < 3 * 3600e3);
+const requests = () => store.get(REQ_KEY, []).filter((r) => Date.now() - r.at < (r.state === 'abo' ? 5 * 86400e3 : 3 * 3600e3));
 function pendingFor(gameId) {
   const r = requests().find((x) => x.game === gameId && x.state !== 'done');
   if (!r) return null;
   const min = Math.max(1, Math.round((Date.now() - r.at) / 60000));
-  return { ...r, label: r.state === 'open' ? `${r.title} läuft seit ${min} Min. …` : r.state === 'closed' ? `${r.title} ist fertig – die App wird gerade aktualisiert …` : `${r.title}: warte, bis das Issue auf GitHub abgeschickt ist …` };
+  return { ...r, label: r.state === 'abo' ? `${r.title}: wartet auf die Abo-Aufgabe (${DB.researchMode?.aboSchedule || 'nächster Pflegelauf'})` : r.state === 'open' ? `${r.title} läuft seit ${min} Min. (${DB.researchMode?.backend === 'abo' ? 'Abo' : 'API'}) …` : r.state === 'closed' ? `${r.title} ist fertig – die App wird gerade aktualisiert …` : `${r.title}: warte, bis das Issue auf GitHub abgeschickt ist …` };
 }
 document.addEventListener('click', (e) => {
   const b = e.target.closest?.('[data-addimage]');
@@ -1102,23 +1175,88 @@ document.addEventListener('click', (e) => {
   const url = (prompt('Link einfügen: Reddit-Beitrag, YouTube-Video, Artikel oder direkt die Bildadresse', '') || '').trim();
   if (!/^https:\/\//.test(url)) { if (url) toast('Bitte einen Link mit https:// einfügen.'); return; }
   const title = `Bild: ${b.dataset.title}`;
-  window.open(issueUrl(title, `add-image: ${b.dataset.addimage}\nurl: ${url}`), '_blank', 'noopener');
+  const body = `add-image: ${b.dataset.addimage}\nurl: ${url}`;
   const list = requests().filter((r) => r.title !== title);
   list.unshift({ title, game: b.dataset.addimage.split('/')[0], at: Date.now(), state: 'new' });
   store.set(REQ_KEY, list.slice(0, 12));
+  if (store.get('githubToken', '')) sendIssue(title, body).then(() => toast('Bild-Link gesendet – Atlas holt das Bild in wenigen Minuten.')).catch((err) => toast(esc(err.message)));
+  else window.open(issueUrl(title, body), '_blank', 'noopener');
   scheduleRequestPoll(20000);
 });
-document.addEventListener('click', (e) => {
+/* Every request button is a GitHub "new issue" link. With a GitHub key (Info) Atlas sends it right away; without one
+   GitHub opens with everything filled in and you tap "Create". */
+async function sendIssue(title, body) {
+  const res = await fetch(`https://api.github.com/repos/${DB.meta.repo}/issues`, {
+    method: 'POST', headers: { Authorization: 'Bearer ' + store.get('githubToken', ''), Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title, body, labels: ['recherche'] }) });
+  if (!res.ok) throw new Error('GitHub antwortet ' + res.status + (res.status === 401 || res.status === 403 ? ' – Schlüssel prüfen (Issues: Lesen und Schreiben)' : ''));
+  return res.json();
+}
+document.addEventListener('click', async (e) => {
   const a = e.target.closest?.('a[href*="/issues/new?"]');
   if (!a) return;
   const u = new URL(a.href);
-  const body = u.searchParams.get('body') || '';
-  const m = /^(?:game|images|new-game):\s*([^\n/]+)/m.exec(body);
-  const list = requests().filter((r) => r.title !== u.searchParams.get('title'));
-  list.unshift({ title: u.searchParams.get('title'), game: m ? m[1].trim() : null, at: Date.now(), state: 'new' });
+  const title = u.searchParams.get('title');
+  let body = u.searchParams.get('body') || '';
+  const note = document.getElementById('req-note')?.value.trim();
+  if (note && /^(game|update):/m.test(body)) body = body.replace(/\n*Was soll recherchiert werden\? \(optional\)\s*$/, '') + `\n\nWas soll recherchiert werden? (optional)\n${note}`;
+  const m = /^(?:game|images|new-game|update):\s*([^\n/]+)/m.exec(body);
+  const list = requests().filter((r) => r.title !== title);
+  list.unshift({ title, game: m ? m[1].trim() : null, at: Date.now(), state: 'new' });
   store.set(REQ_KEY, list.slice(0, 12));
-  toast(`Anfrage vorbereitet – bitte auf GitHub „Create“ tippen. Atlas zeigt hier, wenn sie läuft und fertig ist.`);
+  if (store.get('githubToken', '')) {
+    e.preventDefault();
+    try {
+      await sendIssue(title, body);
+      list[0].state = 'open';
+      store.set(REQ_KEY, list.slice(0, 12));
+      toast(`Anfrage gesendet: ${esc(title)}. ${esc(researchWhere(true))}`);
+    } catch (err) { toast(esc(err.message)); }
+  } else {
+    e.preventDefault();
+    openIssue(title, body);
+    toast('Anfrage vorbereitet – bitte auf GitHub „Create“ tippen. Ohne Umweg geht es mit einem GitHub-Schlüssel (Info).');
+  }
   scheduleRequestPoll(20000);
+});
+
+/* Where does research run right now? (data/research.json, docs/RECHERCHE.md) */
+function researchWhere(short) {
+  const m = DB.researchMode || {};
+  const apiDown = m.status && m.status.ok === false;
+  if (m.backend === 'abo') return short ? `Erledigt die Abo-Aufgabe (${m.aboSchedule || 'beim nächsten Pflegelauf'}).` : `Recherchen laufen gerade über dein Claude-Abo: die Pflegeaufgabe erledigt sie ${m.aboSchedule || 'beim nächsten Lauf'}.`;
+  if (apiDown) return short ? `API gerade nicht nutzbar (${m.status.reason}) – geht an die Abo-Aufgabe.` : `Die API ist gerade nicht nutzbar (${m.status.reason}); Anfragen gehen automatisch an die Abo-Aufgabe (${m.aboSchedule || 'nächster Pflegelauf'}).`;
+  return short ? 'Läuft gleich über die API (3–5 Min.).' : 'Recherchen laufen sofort über die API (OpenAI); ist sie nicht nutzbar, übernimmt die Abo-Aufgabe.';
+}
+function researchPanel() {
+  if (!DB.meta.repo) return '';
+  const m = DB.researchMode || {};
+  const abo = m.backend === 'abo';
+  const waiting = (reqCache || []).filter((i) => i.state === 'open' && (i.labels || []).some((l) => l.name === 'abo'));
+  const months = Object.keys(DB.usage || {}).sort().reverse();
+  const est = months.length ? DB.usage[months[0]].estimate : null;
+  return `<div class="panel"><h3>${icon('spark')} Wo wird recherchiert?</h3>
+    <div class="chips"><button class="chip" data-backend="api" aria-pressed="${!abo}">API (OpenAI)</button><button class="chip" data-backend="abo" aria-pressed="${abo}">Abo (Claude-Aufgabe)</button></div>
+    <ul class="checklist">
+      <li class="${abo ? 'part' : m.status?.ok === false ? 'miss' : 'ok'}">${icon(abo || m.status?.ok === false ? 'alert' : 'check')}${esc(researchWhere())}</li>
+      <li class="ok">${icon('info')}Abo-Aufgabe: ${esc(m.aboSchedule || 'geplant')} – erledigt offene Anfragen mit Label „abo“, prüft KI-Funde und pflegt Daten.</li>
+      ${est != null ? `<li class="ok">${icon('info')}API-Verbrauch ${esc(months[0])}: ca. ${est.toLocaleString('de-DE', { minimumFractionDigits: 2 })}</li>` : ''}
+      ${waiting.length ? `<li class="part">${icon('alert')}${waiting.length} ${waiting.length === 1 ? 'Anfrage wartet' : 'Anfragen warten'} auf die Abo-Aufgabe: ${waiting.slice(0, 4).map((i) => esc(i.title)).join(', ')}</li>` : ''}
+    </ul>
+    <label class="field">GitHub-Schlüssel ${ghToken() ? '<span class="tag v-documented">gespeichert</span>' : ''}<input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…" value="${esc(ghToken())}"></label>
+    <p class="faint">Damit gehen Anfragen, Bilder-Links und Rückmeldungen des Geräts direkt an Atlas – ohne Umweg über die GitHub-Seite. Fein abgestufter Schlüssel nur für ${esc(DB.meta.repo)}, Berechtigung „Issues: Lesen und Schreiben“. Bleibt auf diesem Gerät und geht nur an api.github.com.</p>
+    <div class="row"><button class="btn primary" id="gh-save">Speichern</button>${ghToken() ? '<button class="btn" id="gh-clear">Löschen</button>' : ''}</div>
+    <p class="faint">Kostenlos und ohne KI laufen immer: Watcher, Wikidata, EmuReady, Bilder aus libretro/Steam/Wikipedia und alle Rückmeldungen vom Gerät. Umschalten schickt eine kurze Anfrage; der neue Modus gilt nach etwa einer Minute.</p></div>`;
+}
+document.addEventListener('click', async (e) => {
+  const b = e.target.closest?.('[data-backend]');
+  if (!b || b.getAttribute('aria-pressed') === 'true') return;
+  const to = b.dataset.backend;
+  const title = `Recherche-Modus: ${to === 'abo' ? 'Abo' : 'API'}`;
+  const body = `research-backend: ${to}`;
+  if (store.get('githubToken', '')) {
+    try { await sendIssue(title, body); toast(`Umgeschaltet auf ${to === 'abo' ? 'Abo' : 'API'} – gilt in etwa einer Minute.`); } catch (err) { toast(esc(err.message)); }
+  } else window.open(issueUrl(title, body), '_blank', 'noopener');
 });
 let reqTimer = null, reqEtag = null, reqCache = null;
 function scheduleRequestPoll(ms = 75000) {
@@ -1142,7 +1280,7 @@ async function pollRequests() {
       const is = issues.find((i) => i.title === r.title && new Date(i.created_at).getTime() >= r.at - 120000);
       if (!is) { if (Date.now() - r.at > 20 * 60000) r.state = 'done'; continue; }     // never submitted
       r.url = is.html_url;
-      if (is.state === 'open') r.state = 'open';
+      if (is.state === 'open') r.state = (is.labels || []).some((l) => l.name === 'abo') ? 'abo' : 'open';
       else if (r.state !== 'closed') { r.state = 'closed'; r.closedAt = Date.now(); finished = true; }
       if (r.state === 'closed' && Date.now() - (r.closedAt || 0) > 8 * 60000) r.state = 'done';
     }
@@ -1171,7 +1309,7 @@ function renderRequestPill() {
   const open = requests().filter((r) => r.state !== 'done');
   if (!open.length) { pill?.remove(); return; }
   if (!pill) { pill = document.createElement('div'); pill.id = 'req-pill'; document.body.appendChild(pill); }
-  const word = { new: 'wartet auf Abschicken', open: 'läuft', closed: 'fertig, wird veröffentlicht' };
+  const word = { new: 'wartet auf Abschicken', open: 'läuft', abo: 'wartet auf die Abo-Aufgabe', closed: 'fertig, wird veröffentlicht' };
   pill.innerHTML = `${icon('spark')}<span>${open.length === 1 ? esc(open[0].title) + ' – ' + word[open[0].state] : `${open.length} Anfragen: ` + open.map((r) => word[r.state]).join(', ')}</span>`
     + (open[0].url ? `<a class="link" href="${esc(open[0].url)}" target="_blank" rel="noopener">Details</a>` : '');
 }
@@ -1405,7 +1543,7 @@ async function redditReport(manual) {
     scheduleRequestPoll(20000);
   };
   if (!ghToken()) {
-    if (manual) { window.open(issueUrl(title, body), '_blank', 'noopener'); done(); }
+    if (manual) { openIssue(title, body); done(); }
     return;
   }
   try {
@@ -1459,10 +1597,8 @@ function redditPanel() {
     ${method === 'blocked' ? '<p class="faint">Seit Mai 2026 antwortet Reddit nur noch angemeldeten Nutzern, und eine Webseite darf deine Reddit-Anmeldung nicht mitbenutzen. Vollautomatisch klappt es in der Atlas-App (Info → Atlas-App): dort meldest du dich einmal bei Reddit an. Im Browser: Beiträge über „hier anzeigen“ am Spielweg ansehen. Atlas testet den Browser-Weg einmal am Tag neu.</p>' : ''}
     ${native.available ? `<p class="faint">${method === 'native' ? 'Du bist in der App bei Reddit angemeldet.' : 'Melde dich einmal in der App bei Reddit an (Benutzername und Passwort; die Google-Anmeldung funktioniert in App-Fenstern nicht). Atlas sieht dein Passwort nicht.'}</p>
       <div class="row"><button class="btn${method === 'native' ? '' : ' primary'}" data-su="reddit-login">${method === 'native' ? 'Reddit-Anmeldung öffnen' : 'Bei Reddit anmelden'}</button></div>` : ''}
-    <label class="field">GitHub-Schlüssel für die automatische Rückmeldung<input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…" value="${esc(ghToken())}"></label>
-    <p class="faint">Fein abgestufter Schlüssel nur für ${esc(DB.meta.repo)}, Berechtigung „Issues: Lesen und Schreiben“. Bleibt auf diesem Gerät und geht nur an api.github.com.</p>
-    <div class="row"><button class="btn primary" id="gh-save">Speichern</button>${ghToken() ? '<button class="btn" id="gh-clear">Löschen</button>' : ''}
-      <button class="btn" id="rd-sync"${open.length ? '' : ' disabled'}>${icon('spark')}${method === 'blocked' ? 'Erneut testen' : 'Jetzt laden'}</button>
+    ${ghToken() ? '' : '<p class="faint">Für die automatische Rückmeldung den GitHub-Schlüssel unter „Wo wird recherchiert?“ eintragen.</p>'}
+    <div class="row"><button class="btn" id="rd-sync"${open.length ? '' : ' disabled'}>${icon('spark')}${method === 'blocked' ? 'Erneut testen' : 'Jetzt laden'}</button>
       ${out.length ? `<button class="btn" id="rd-report">${icon('ext')}${ghToken() ? 'Jetzt zurückmelden' : 'Als Issue senden'}</button>` : ''}</div></div>`;
 }
 
@@ -1623,7 +1759,7 @@ function route() {
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
   else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
   else if (a === 'einrichten' && typeof viewSetup === 'function') { html = viewSetup(b); tab = null; }
-  else if (a === 'wege' && typeof viewWays === 'function') { html = viewWays(b); tab = null; }
+  else if (a === 'vorschau' && typeof viewPreview === 'function') { html = viewPreview(b); tab = null; }
   else if (a === 'plattform') { state.chips = new Set(); state.platform = decodeURIComponent(b || ''); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
@@ -1815,6 +1951,7 @@ function move(dir) {
 }
 function back() {
   if (closeLightbox()) return;
+  if (typeof dualBack === 'function' && dualBack()) return;
   if (depth > 0) history.back();
   else if ((location.hash || '#/') !== '#/') location.hash = '#/';
 }
@@ -1846,7 +1983,7 @@ function pollPads() {
     const now = {
       up: pressed(12) || axis(1) < -0.6, down: pressed(13) || axis(1) > 0.6,
       left: pressed(14) || axis(0) < -0.6, right: pressed(15) || axis(0) > 0.6,
-      a: pressed(0), b: pressed(1), l: pressed(4), r: pressed(5), start: pressed(9),
+      a: pressed(0), b: pressed(1), l: pressed(4), r: pressed(5), select: pressed(8), start: pressed(9),
     };
     const edge = (k) => now[k] && !pads.prev[k];
     for (const d of ['up', 'down', 'left', 'right']) {
@@ -1857,7 +1994,8 @@ function pollPads() {
     if (edge('b')) back();
     if (edge('l')) { if (!$('#lightbox').hidden) $('#lightbox').step(-1); else switchTab(-1); }
     if (edge('r')) { if (!$('#lightbox').hidden) $('#lightbox').step(1); else switchTab(1); }
-    if (edge('start')) $('#q').focus();
+    if (edge('start')) { if (typeof dualRole === 'function' && dualRole() === 'stage') native.call('focusOther').catch(() => {}); else $('#q').focus(); }
+    if (edge('select') && typeof dualOn === 'function' && dualOn()) native.call('focusOther').catch(() => {});
     pads.prev = now;
   }
   requestAnimationFrame(pollPads);

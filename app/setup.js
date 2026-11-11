@@ -7,13 +7,15 @@
 const su = { info: null, pkgs: {}, installing: {}, live: null, busy: {}, selftest: null, release: null };
 const suPolicy = () => DB.setup.policy || {};
 const suKey = (s) => norm(s).replace(/[^a-z0-9]/g, '');
-const suSessions = () => store.get('setupSessions', {});
+let suSessCache = null;   // parsed once per change – the ranking asks for every way of every game
+const suSessions = () => (suSessCache ||= store.get('setupSessions', {}));
 const suSession = (g, w) => suSessions()[g.id + '|' + w.key] || { rounds: [], variant: 0, files: {}, configured: false, target: 'auto' };
 function suSave(g, w, s) {
   const all = suSessions();
   all[g.id + '|' + w.key] = { ...s, at: Date.now() };
   const keys = Object.keys(all).sort((a, b) => all[b].at - all[a].at).slice(0, 60);
   store.set('setupSessions', Object.fromEntries(keys.map((k) => [k, all[k]])));
+  suSessCache = null;
 }
 const suFindWay = (g, key) => waysFor(g).find((w) => w.key === key);
 const suHref = (g, w) => `#/einrichten/${encodeURIComponent(g.id)}/${encodeURIComponent(w.key)}`;
@@ -30,7 +32,7 @@ function suDetected() {
 }
 /* Gerät für Rückmeldungen: erkannt oder vom Nutzer bestätigt („Ich habe einen Thor Max“). */
 const suDeviceId = () => (suDetected() || (store.get('setupDeviceConfirmed', false) ? suProfile() : null))?.id || null;
-const suDual = () => native.available && !!su.info?.dual && !!su.info?.second;
+const suDual = () => typeof dualOn === 'function' && dualOn();
 const suShell = () => !!su.info?.shizuku?.granted;
 
 /* ---------- Apps eines Spielwegs ---------- */
@@ -60,9 +62,9 @@ function suComponents(g, w) {
       if (apps.length) comps.push({ options: apps, role: 'emulator' });
     }
   } else if (w.type === 'generic') {
-    const first = suAppOfProject(w.o.project);
-    const names = new Set((w.community || []).map((r) => suKey(r.emulator)));
-    const opts = [first, ...byName(names)].filter((a, i, l) => a && l.findIndex((x) => x.id === a.id) === i);
+    // one emulator per way – other emulators are other ways (switch at the top of the assistant)
+    const own = suAppOfProject(w.o.project);
+    const opts = own ? [own] : byName(new Set([suKey(w.name)]));
     if (opts.length) comps.push({ options: opts, role: 'emulator' });
   } else if (w.type === 'community') {
     const apps = byName(new Set([suKey(w.name)]));
@@ -96,6 +98,32 @@ async function suRefreshPackages() {
   for (const p of Object.values(suLearned())) ids.add(p);
   for (const g of DB.games) for (const v of g.versions || []) for (const l of v.links || []) { const m = /play\.google\.com\/store\/apps\/details\?id=([\w.]+)/.exec(l.url); if (m) ids.add(m[1]); }
   try { su.pkgs = Object.fromEntries(Object.entries(await native.call('packages', { ids: [...ids] })).filter(([, v]) => v)); } catch { /* app too old */ }
+}
+
+/* Emulator ways of the same version (generic platform emulators and those only known from reports), best first. */
+function suSiblings(g, w) {
+  if (w.type !== 'generic' && w.type !== 'community') return [];
+  return waysFor(g).filter((x) => x.v === w.v && x.fits && (x.type === 'generic' || x.type === 'community')).sort((a, b) => b.score - a.score);
+}
+/* Is the app of this way installed on the device? (used for the ranking in app.js) */
+function suWayInstalled(w) {
+  if (!native.available || !Object.keys(su.pkgs).length) return false;
+  const g = { routes: [] };
+  try { return suComponents(g, w).some((c) => c.options.some((a) => suInstalled(a))); } catch { return false; }
+}
+function suEmuChooser(g, w) {
+  const sib = suSiblings(g, w);
+  if (sib.length < 2) return '';
+  const best = sib[0];
+  const fact = (x) => {
+    const run = suBestRun(g, x);
+    return run ? `Ø ${run.fps.avg} FPS gemessen` : x.best ? `${x.best.ratingDe || x.best.rating} (${x.community.length})` : 'keine Berichte';
+  };
+  return `<section class="su-emu"><h3>${icon('gamepad')}Emulator</h3>
+    <p class="muted">${best.key === w.key ? `<b>${esc(w.name)}</b> ist für dieses Spiel die beste Wahl.` : `Atlas empfiehlt <b>${esc(best.name)}</b> – du richtest gerade <b>${esc(w.name)}</b> ein.`} Du kannst jederzeit wechseln, z. B. wenn ein anderer schon installiert ist.</p>
+    <div class="su-emus">${sib.map((x, i) => `<a class="su-emu-opt${x.key === w.key ? ' on' : ''}" href="${suHref(g, x)}" aria-current="${x.key === w.key}">
+      <b>${esc(x.name)}</b>${i === 0 ? '<span class="tag best">Empfehlung</span>' : ''}
+      <span class="faint">${esc(fact(x))}${suWayInstalled(x) ? ' · installiert' : ''}</span></a>`).join('')}</div></section>`;
 }
 
 /* ---------- Startkonfigurationen: Messfahrten vom Gerät, dann Berichte (Thor Max zuerst) ---------- */
@@ -347,13 +375,14 @@ function viewSetup(b) {
   }
 
   const back = `#/spiel/${encodeURIComponent(g.id)}`;
-  return `<a class="btn back" href="${back}" data-goto-way="${esc(w.key)}">${icon('back')}${suDual() && native.screen === 'companion' ? 'Wege' : 'Zum Spiel'}</a>
+  return `<a class="btn back" href="${back}" data-goto-way="${esc(w.key)}">${icon('back')}Zum Spiel</a>
     <div class="su-head"><h1>Einrichten: ${esc(w.name)}</h1>
       <p class="muted">${esc(g.title)} · ${esc(w.v.name)}${prof ? ' · für ' + esc(prof.name) : ''}</p>
       <div class="row">${wayTag(w)}${isDual(w) ? `<span class="tag dual">${icon('dual')}${esc(dualLabel(w))}</span>` : ''}${s.done ? `<span class="tag v-thor-tested">${icon('check')}eingerichtet</span>` : ''}</div></div>
     ${outlook ? `<div class="su-outlook ${outlook.level}">${icon(outlook.level === 'good' ? 'check' : 'alert')}<span>${esc(outlook.text)}</span></div>` : ''}
     ${r?.status === 'archived' ? `<div class="su-outlook bad">${icon('alert')}<span>Dieses Projekt ist archiviert. ${esc(r.caveat || '')}</span></div>` : ''}
     ${r?.caveat && r.status !== 'archived' ? `<p class="warn">${esc(r.caveat)}</p>` : ''}
+    ${suEmuChooser(g, w)}
     <div class="su-steps">
       ${suStep(++n, 'Gerät', devOk && (suShell() || !native.available) ? 'ok' : devOk ? 'part' : 'miss', devBody)}
       ${suStep(++n, comps.length > 1 ? 'Apps installieren' : 'App installieren', appsOk ? 'ok' : 'part', appsBody)}
@@ -385,7 +414,9 @@ function suRender() {
 
 /* ---------- Badge und Leiste am Spielweg (Spielseite) ---------- */
 function suBestRun(g, w) {
-  const mine = (suSessions()[g.id + '|' + w.key]?.rounds || []).filter((r) => r.result?.fps).map((r) => ({ fps: r.result.fps, mine: true }));
+  const sess = suSessions()[g.id + '|' + w.key];
+  if (!sess && !DB.setup.runs[g.id]) return null;
+  const mine = (sess?.rounds || []).filter((r) => r.result?.fps).map((r) => ({ fps: r.result.fps, verdict: r.verdict, mine: true }));
   const db = (DB.setup.runs[g.id] || []).filter((r) => r.way === w.key && r.fps);
   return [...mine, ...db].sort((a, b) => b.fps.avg - a.fps.avg)[0] || null;
 }
@@ -399,20 +430,6 @@ function setupBar(g, w) {
   const s = suSessions()[g.id + '|' + w.key];
   const text = b ? `Auf dem ${esc(suProfile()?.name || 'Gerät')} gemessen: Ø ${b.fps.avg} FPS${b.fps.low1 ? `, 1 %-Low ${b.fps.low1}` : ''}` : s?.rounds?.length ? 'Einrichtung begonnen' : 'Noch nicht auf dem Gerät gemessen';
   return `<div class="su-bar"><a class="btn primary" href="${suHref(g, w)}">${icon('play')}${s?.done ? 'Einrichtung ansehen' : s?.rounds?.length ? 'Weiter einrichten' : 'Einrichten'}</a><span class="faint">${text}</span></div>`;
-}
-
-/* ---------- Unterer Bildschirm: Wege eines Spiels kompakt ---------- */
-function viewWays(id) {
-  const g = DB.byId.get(id);
-  if (!g) return `<div class="empty">Spiel nicht gefunden. <a class="link" href="#/">Zur Übersicht</a></div>`;
-  const ways = waysFor(g).filter((w) => w.fits).sort((a, b) => b.score - a.score);
-  return `<a class="btn back" href="#/">${icon('back')}Liste</a>
-    <div class="su-head"><h1>${esc(g.title)}</h1><p class="muted">Oben siehst du das Spiel. Wähle hier einen Weg – „Einrichten“ führt dich bis ins Spiel.</p></div>
-    <div class="su-ways">${ways.map((w, i) => `<div class="su-way${i < 3 && w.r?.status !== 'archived' ? ' top' : ''}">
-      <div class="grow"><div class="row"><b>${esc(w.name)}</b>${i < 3 && w.r?.status !== 'archived' ? `<span class="tag">Empfehlung ${i + 1}</span>` : ''}</div><div class="faint">${esc(w.v.name)} · ${esc(label('kinds', w.kind))}</div>
-        <div class="row">${isDual(w) ? `<span class="tag dual">${icon('dual')}${esc(dualLabel(w))}</span>` : ''}${setupBadge(g, w)}${w.best ? `<span class="rating ${RANK_CLASS(w.best.rank)}">${esc(w.best.ratingDe || w.best.rating)}</span>` : ''}${wayTag(w)}</div></div>
-      <div class="row"><button class="btn" data-su="show-way" data-game="${esc(g.id)}" data-way="${esc(w.key)}">Oben zeigen</button>
-        <a class="btn primary" href="${suHref(g, w)}">${icon('play')}Einrichten</a></div></div>`).join('') || '<p class="faint">Für dieses Gerät ist noch kein Weg bekannt.</p>'}</div>`;
 }
 
 /* ---------- Info: Atlas-App, Shizuku, Selbsttest ---------- */
@@ -551,7 +568,7 @@ async function suReport(manual) {
   const body = `setup-report: ${n}\n\nAutomatische Rückmeldung des Setup-Assistenten (${suProfile()?.name || 'Gerät'}). Die Action übernimmt sie ohne KI (docs/SETUP.md).\n\n\`\`\`json\n${JSON.stringify(payload)}\n\`\`\`\n`;
   const done = () => { store.set('setupOutbox', []); scheduleRequestPoll(20000); suRender(); };
   if (!ghToken()) {
-    if (manual) { const url = issueUrl(title, body); native.available ? native.call('openUrl', { url }) : window.open(url, '_blank', 'noopener'); done(); }
+    if (manual) { openIssue(title, body); done(); }
     return;
   }
   try {
@@ -630,23 +647,6 @@ async function suAi(g, w) {
 }
 
 document.addEventListener('click', (e) => {
-  // zwei Bildschirme: Spiele öffnen sich oben, Einrichten läuft unten
-  if (suDual()) {
-    const a = e.target.closest('a[href]');
-    const href = a?.getAttribute('href') || '';
-    if (native.screen === 'companion' && href.startsWith('#/spiel/')) {
-      e.preventDefault(); e.stopPropagation();
-      native.call('relay', { nav: href, way: a.dataset.gotoWay || null }).catch(() => {});
-      location.hash = '#/wege/' + href.slice(8);
-      return;
-    }
-    if (native.screen === 'main' && href.startsWith('#/einrichten/')) {
-      e.preventDefault(); e.stopPropagation();
-      native.call('relay', { nav: href }).catch(() => {});
-      toast('Das Einrichten läuft auf dem unteren Bildschirm.', 3000);
-      return;
-    }
-  }
   const t = e.target.closest('[data-su]');
   if (!t) return;
   const act = t.dataset.su, ctx = suContext();
@@ -678,8 +678,6 @@ document.addEventListener('click', (e) => {
     }).catch((err) => toast(esc(err.message))).finally(() => { delete su.busy.selftest; suRender(); });
   } else if (act === 'report') {
     suReport(true);
-  } else if (act === 'show-way') {
-    native.call('relay', { nav: '#/spiel/' + encodeURIComponent(t.dataset.game), way: t.dataset.way }).catch(() => {});
   } else if (ctx) {
     const { g, w, s } = ctx;
     const comps = suComponents(g, w);
@@ -736,7 +734,7 @@ native.on('measure', (d) => {
     const res = d.result || {}, meta = res.meta || su.live?.meta;
     su.live = null;
     const g = meta && DB.byId.get(meta.game), w = g && suFindWay(g, meta.way);
-    if (w && native.screen === (suDual() ? 'companion' : 'main')) {
+    if (w && (typeof dualRole === 'function' ? dualRole() !== 'browse' : true)) {
       const s = suSession(g, w), p = s.pending || {};
       if (res.series?.length > 240) { const k = Math.ceil(res.series.length / 240); res.series = res.series.filter((_, i) => i % k === 0); }
       s.rounds.push({ at: Date.now(), variant: p.variant || { label: '' }, app: p.app, package: p.package, appVersion: p.appVersion, result: res, verdict: null });
@@ -764,24 +762,14 @@ native.on('install', (d) => {
 native.on('shizuku', (st) => { if (su.info) { su.info.shizuku = st; suRender(); } });
 native.on('reddit', (d) => { store.set('redditLogin', !!d.loggedIn); if (d.loggedIn) redditSync({ max: 12 }); suRender(); });
 native.on('resume', () => { suLoadInfo(); });
-native.on('screens', () => { suLoadInfo().then(suMainDefault); });   // zweites Fenster geöffnet oder geschlossen
-/* Zwei Bildschirme: oben das zuletzt angesehene Spiel statt derselben Liste wie unten. */
-function suMainDefault() {
-  const last = store.get('lastGame', '');
-  if (suDual() && native.screen === 'main' && (!location.hash || location.hash === '#/') && last && DB.byId.has(last)) location.hash = '#/spiel/' + encodeURIComponent(last);
-}
-native.on('relay', (d) => {
-  if (!d?.nav) return;
-  if (d.way) { state.pendingWay = d.way; }
-  if (location.hash === d.nav) { if (d.way) { state.openWay = d.way; state.pendingWay = null; state.scrollToWay = true; } route(); } else location.hash = d.nav;
-});
+native.on('screens', () => { suLoadInfo().then(() => typeof dualSetup === 'function' && dualSetup()); });   // zweites Fenster geöffnet oder geschlossen
 native.on('error', (m) => toast(esc(String(m))));
 
 async function suLoadInfo() {
   if (!native.available) return;
   try {
     su.info = await native.call('info');
-    document.body.classList.toggle('dual', suDual());
+    if (typeof dualSetup === 'function') dualSetup();
     const rs = await native.call('redditState').catch(() => null);
     if (rs) store.set('redditLogin', !!rs.loggedIn);
     await suRefreshPackages();
@@ -813,12 +801,10 @@ function suReady() {
   if (suStarted) return;
   suStarted = true;
   document.body.classList.toggle('in-app', native.available);
-  document.body.classList.add('screen-' + native.screen);
   route();
   if (!native.available) return;
   suLoadInfo().then(() => {
     if (store.get('setupOutbox', []).length) suReport(false);
-    suMainDefault();
   });
   setTimeout(suCheckRelease, 4000);
   window.addEventListener('hashchange', () => { const m = /^#\/spiel\/([^/]+)/.exec(location.hash); if (m) store.set('lastGame', decodeURIComponent(m[1])); });

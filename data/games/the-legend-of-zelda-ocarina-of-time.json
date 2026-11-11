@@ -3,8 +3,7 @@
   "title": "The Legend of Zelda: Ocarina of Time",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo 64",
-    "Nintendo 3DS"
+    "Nintendo 64"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Ocarina%20of%20Time%20%28USA%29.png",
@@ -41,15 +40,6 @@
         "Nintendo 64"
       ],
       "year": 1998
-    },
-    {
-      "id": "ocarina-of-time-3d",
-      "name": "Ocarina of Time 3D (2011)",
-      "type": "remake",
-      "platforms": [
-        "Nintendo 3DS"
-      ],
-      "year": 2011
     },
     {
       "id": "nintendo-gamecube-2002",
@@ -99,9 +89,10 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q213911",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Ocarina_of_Time",
   "genre": "action-adventure game",
-  "website": "https://www.nintendo.co.jp/n01/n64/software/zelda/index.html"
+  "website": "https://www.nintendo.co.jp/n01/n64/software/zelda/index.html",
+  "mods": []
 }

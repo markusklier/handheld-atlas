@@ -3,8 +3,7 @@
   "title": "Luigi's Mansion",
   "franchise": "Luigi's Mansion",
   "platforms": [
-    "Nintendo GameCube",
-    "Nintendo 3DS"
+    "Nintendo GameCube"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Luigi%27s%20Mansion%20%28USA%29.png",
@@ -62,27 +61,12 @@
           "url": "https://www.emuready.com/games/3d47096d-409e-4ebb-b266-5583f4d6ff13"
         }
       ]
-    },
-    {
-      "id": "luigi-s-mansion-nintendo-3ds",
-      "name": "Luigi's Mansion (Nintendo 3DS) (2018)",
-      "type": "remake",
-      "platforms": [
-        "Nintendo 3DS"
-      ],
-      "year": 2018,
-      "reports": [],
-      "links": [
-        {
-          "label": "EmuReady",
-          "url": "https://www.emuready.com/games/d0da253c-950a-4aca-80b8-7927f40c8c11"
-        }
-      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-11",
   "wikidata": "Q984029",
   "wikipedia": "https://en.wikipedia.org/wiki/Luigi%27s_Mansion",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "mods": []
 }

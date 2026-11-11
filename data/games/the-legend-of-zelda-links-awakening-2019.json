@@ -1,0 +1,244 @@
+{
+  "id": "the-legend-of-zelda-links-awakening-2019",
+  "title": "The Legend of Zelda: Link's Awakening (2019)",
+  "franchise": "The Legend of Zelda",
+  "remakeOf": "the-legend-of-zelda-link-s-awakening",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "action-adventure game",
+  "summary": "Remake von The Legend of Zelda: Link's Awakening (2019).",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Remake für Nintendo Switch (2019)",
+      "type": "remake",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2019,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a6646017-9f88-4e66-8ca6-18899f0498cc",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "50-60 fps with these settings, most often at around 57-60. The yuzu mods are mandatory, all you nedd to to to enable these are to go download the 60 fps mod and the deblur mod, unzip and create a folder for them, as long",
+          "votes": 2,
+          "date": "2026-04-16",
+          "settings": {
+            "Emulator Version": "Eden (v0.2.0-rc2)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "Immediate (Off)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0464568b-2a6a-46d3-8601-04e80e950f74",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs good with below mods Mod 1: https://gamebanana.com/mods/14847 Mod 2: https://gamebanana.com/mods/download/548097#FileInfo_1297887",
+          "votes": 9,
+          "date": "2026-01-15",
+          "settings": {
+            "Game Version": "V1.0.0",
+            "Average FPS": "60",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Dynamic (Slow)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bac63d1c-40e2-4461-b2c0-f9f03494350c",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "60FPS Mod: gamebanana.com/mods/548097 No DOF: gamebanana.com/mods/14847",
+          "votes": 3,
+          "date": "2026-03-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/22ebbe75-fbfb-42af-92ff-2087dfb5bb39",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Additionally, enable the \"Force Maximum Clock\" setting. Install and enable the 60FPS MOD and No DOF Blur MOD, referencing the AYN Thor Pro settings. I was able to confirm that the game works up to the point of drawing th",
+          "votes": 1,
+          "date": "2026-04-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bbd5a9fe-859c-4238-8c5e-f01334fff78a",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Solved Flickering Issue, can be run at 1x resolution but .75 looks great and has less slowdown due to shader building, Also use Bloom Fix on Graphics Setting to fix out of focus character in open world",
+          "votes": 1,
+          "date": "2026-04-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1d9c574b-8f35-4783-8487-b0fbed5a75ee",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Flickers, change JIT to NCE",
+          "votes": 1,
+          "date": "2026-03-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c092c2d0-f886-4e9c-9929-10de79764588",
+          "device": "AYN Thor Pro",
+          "emulator": "Kenji-NX",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Using Kenji-nx version 2.1.0-pr.1 with firmware 17.0.0 (only version I tested that installed correctly without crashing) and mr. purple t24 driver. - Shadows and water render properly and depth of field blur / tilt shift",
+          "votes": 1,
+          "date": "2026-02-28",
+          "settings": {
+            "Emulator Version": "2.1.0-pr.1",
+            "Game Version": "1.1.0",
+            "Driver Version": "turnip_mrpurple_T24-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "Memory Manager Mode": "Host Unchecked (fastest, unsafe)",
+            "Shader Cache": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fbb01296-a05d-4809-b4e0-bf024572bbf1",
+          "device": "RedMagic 8 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "**Performance** The game ran perfectly performace wise it was 60 fps locked and 50fps to 55fps when compiling shaders. I also used the \"60FPS stable V3\" mod **Graphics** There was a major geaohical issue withe the DOF bl",
+          "votes": 0,
+          "date": "2026-06-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/08836663-c69f-444d-9016-3cf576645935",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Overall, Decent Experience. Some Shader issues that show black spotting randomly through the first town. I installed the \"No DOF\" mod, and the \"Stable-60fps-v3\" mod. The DOF is mandatory otherwise you will have most the ",
+          "votes": 5,
+          "date": "2025-11-25"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7e5e58cd-ce8b-4f8b-8917-d3812ea6d262"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "eden-the-legend-of-zelda-link-s-awakening",
+      "name": "Eden Duo + Spiel-Companion",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo",
+      "projects": [
+        "eden-companions",
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen"
+      ],
+      "dualScreen": "Companion-Ansicht auf zweitem Bildschirm",
+      "requires": [
+        "Eigener rechtmäßig erworbener Spieldump mit passender Versionskennung",
+        "Spielversion 1.0.1",
+        "Eden Duo und zum Titel passendes .dsmod.zip aus dem Originalprojekt"
+      ],
+      "benefit": "Karten, Ausrüstung und Gegenstände auf dem zweiten Display.",
+      "caveat": "Nur die dokumentierten Builds werden akzeptiert. Keine Atlas-Benchmarkdaten oder eigene Gerätetests.",
+      "steps": [
+        "Originalprojekt und genaue Version abgleichen.",
+        "Eigene Spielstände und Einstellungen vorher sichern.",
+        "Passende Eden-Duo-Version verwenden und Companion über Add-ons installieren.",
+        "Mit einem eigenen Spieltest die Funktion prüfen."
+      ],
+      "version": "1.0.1",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "documented",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/links-awakening/map.png",
+          "caption": "Map",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/links-awakening/gear.png",
+          "caption": "Gear",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/links-awakening/items.png",
+          "caption": "Items",
+          "source": "https://github.com/igawa6/eden-duo-companions/blob/main/README.md",
+          "credit": "Eden Duo Companions",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "checkedAt": "2026-11-08",
+      "release": "nintendo-switch",
+      "reports": [],
+      "performance": [],
+      "dualScreenType": "integrated"
+    }
+  ],
+  "mods": [],
+  "screenshots": [],
+  "updatedAt": "2026-11-11"
+}

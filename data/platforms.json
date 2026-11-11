@@ -102,6 +102,24 @@
           "android"
         ],
         "note": "PC-Spiele über Wine/Box64 auf Android. Einstellungen (Treiber, DXVK, Box64-Preset) je Spiel sehr unterschiedlich."
+      },
+      {
+        "name": "GameHub",
+        "kind": "pc-runtime",
+        "project": "gamehub",
+        "targets": [
+          "android"
+        ],
+        "note": "PC-Spiele über Wine/Box64 mit eigener Spielebibliothek (Steam-Anbindung). Atlas richtet die quelloffene Lite-Fassung ohne Werbung und Tracking ein; die meisten EmuReady-Berichte zu PC-Spielen auf dem Thor-Chip stammen von GameHub."
+      },
+      {
+        "name": "DroidDeck",
+        "kind": "pc-runtime",
+        "project": "droiddeck",
+        "targets": [
+          "android"
+        ],
+        "note": "SteamOS-ähnliche Oberfläche für Android mit Steam-Bibliothek; startet PC-Spiele über Wine/Box64. Noch wenige Berichte, Kompatibilität je Spiel prüfen."
       }
     ],
     "Nintendo GameCube": [
@@ -185,11 +203,20 @@
       {
         "name": "Eden",
         "kind": "emulation",
+        "project": "eden-2",
+        "targets": [
+          "android"
+        ],
+        "note": "Switch-Emulation auf Android. Spielkompatibilität und Version je Titel prüfen; Treiber (Turnip) und Auflösung machen auf dem Thor oft den Unterschied."
+      },
+      {
+        "name": "Eden Duo",
+        "kind": "emulation",
         "project": "eden",
         "targets": [
           "android"
         ],
-        "note": "Switch-Emulation auf Android. Spielkompatibilität und Version je Titel prüfen."
+        "note": "Fork von Eden mit Dual-Screen-Unterstützung: zweiter Bildschirm für Companion-Apps und Zusatzansichten. Basis und Kompatibilität wie Eden."
       }
     ],
     "Xbox": [

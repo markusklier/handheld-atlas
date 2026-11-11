@@ -1,0 +1,64 @@
+{
+  "id": "tomb-raider-anniversary",
+  "title": "Tomb Raider: Anniversary",
+  "franchise": "Tomb Raider",
+  "remakeOf": "tomb-raider",
+  "platforms": [
+    "PlayStation 2",
+    "PSP",
+    "PC",
+    "Wii"
+  ],
+  "genre": "action-adventure game",
+  "summary": "Remake von Tomb Raider (2007).",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "Tomb Raider: Anniversary (2007)",
+      "type": "remake",
+      "year": 2007,
+      "platforms": [
+        "PlayStation 2",
+        "PSP",
+        "PC",
+        "Wii"
+      ],
+      "note": "Remake des ersten Teils mit neuer Engine und überarbeiteten Levels. Per PS2- oder PSP-Emulation spielbar; dafür gibt es Bildraten- und Steuerungs-Patches.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [
+    {
+      "id": "anniversary-right-analog-support",
+      "name": "Anniversary – Right Analog Support",
+      "category": "controls",
+      "url": "https://forums.ppsspp.org/showthread.php?pid=126027&tid=22787",
+      "edition": "Tomb Raider: Anniversary für PSP, ULUS-10253 / ULES-00826",
+      "description": "CWCheat-Patch von Kabuto_Kun für unabhängige Kamera- und Zielsteuerung mit dem rechten Analogstick in PPSSPP. Die spielinternen Optionen zur Achseninvertierung bleiben nutzbar. Android-tauglicher Kamerapatch, kein Vita-exklusives PRX-Plugin.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation-2"
+      ]
+    },
+    {
+      "id": "anniversary-retroachievements-60-fps-patch",
+      "name": "Anniversary – RetroAchievements-60-FPS-Patch",
+      "category": "widescreen-fps",
+      "url": "https://github.com/RetroAchievements/RAPatches/blob/main/PS2/Improvement/19341-TombRaiderAnniversary-60fps.zip",
+      "edition": "Tomb Raider: Anniversary für PS2; zur Patchanleitung passende Ausgabe",
+      "description": "Separater 60-FPS-Verbesserungspatch im RetroAchievements-Patcharchiv. Ein Android-Handheld-Bericht verlinkt ihn ausdrücklich; vor der Anwendung die benötigte Ausgangsausgabe prüfen und eine Sicherung des eigenen Dumps behalten.",
+      "verification": "ai-unverified",
+      "release": [
+        "playstation-2"
+      ]
+    }
+  ],
+  "screenshots": [],
+  "updatedAt": "2026-11-11"
+}

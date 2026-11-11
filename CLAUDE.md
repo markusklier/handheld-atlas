@@ -59,12 +59,17 @@ scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im W
   `native` (Original hatte zwei Bildschirme; dann Feature `two-screens` statt `dual-screen`).
 - **Fassungen vollständig** (Archiv-Anspruch): alle offiziellen Veröffentlichungen, gleiche Veröffentlichung auf mehreren
   Plattformen = eine Fassung mit mehreren Plattformen. Die App klappt Fassungen ohne Weg automatisch ein.
-- **Ein Spiel, viele Fassungen – keine Dubletten**: Remaster, gleichnamige Remakes, Neuauflagen, Portierungen und
-  Sammlungen sind **Fassungen** des Originalspiels (Ocarina of Time 3D → `the-legend-of-zelda-ocarina-of-time`,
-  „DOOM + DOOM II“ 2024 → Fassung bei `doom-1993` und `doom-ii`). Eigene Spiele sind nur eigenständige Titel und Reboots;
-  gleichnamige Reboots bekommen das Jahr in den Titel („DOOM (2016)“, „Tomb Raider (2013)“). Dubletten zusammenführen mit
-  `python3 scripts/atlas.py merge <dublette> <hauptspiel> --type remake --year 2011 --name "…"` (verschiebt Fassungen,
+- **Ein Spiel, viele Fassungen – keine Dubletten**: Remaster, Neuauflagen, Portierungen und Sammlungen sind
+  **Fassungen** des Originalspiels („DOOM + DOOM II“ 2024 → Fassung bei `doom-1993` und `doom-ii`, Metroid Prime
+  Remastered → Fassung bei `metroid-prime`). Dubletten zusammenführen mit
+  `python3 scripts/atlas.py merge <dublette> <hauptspiel> --type remaster --year 2011 --name "…"` (verschiebt Fassungen,
   Wege, Mods, Bilder und alle Verweise; `--same` = wirklich dasselbe Spiel unter anderem Namen).
+- **Remakes sind eigene Spiele** (Entscheidung von Markus, 11.11.2026): neu gebaute Spiele wie Ocarina of Time 3D,
+  Link's Awakening (2019), Tomb Raider: Anniversary bekommen eine eigene Datei mit `"remakeOf": "<id des Originals>"`
+  und eigenen Wegen. Das Original zeigt sie unten unter „Remakes“ (aufklappbar: was das Remake bietet), der Vergleich
+  enthält ihre Wege eingeklappt. Eine Fassung mit `type: "remake"` spaltet `python3 scripts/atlas.py repair` automatisch
+  ab (läuft in Watcher und KI-Recherche); von Hand: `python3 scripts/atlas.py split <spiel> <fassung> [--title "…"]`.
+  Reboots ohne Bezug zum Original bleiben eigene Spiele ohne `remakeOf` („DOOM (2016)“).
 - **Stufenmodell** (KI-Geld nur, wo es nötig ist): Stufe 0/1 = Wikidata-Basisprofil (`wikidata`, `wikipedia`, Fassungen
   mit Jahren; Watcher täglich 150 Spiele, kostenlos) → Stufe 2 = Tiefenrecherche (KI) nur auf Anfrage oder wenn die
   Reihen-Auswahl (`triage`) ein Spiel für lohnend hält → Aktualisieren (`update: <id>`) = nur Änderungen seit der letzten
@@ -150,6 +155,13 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
 1. **Vorbereiten**
    `git pull --rebase` · `python3 scripts/atlas.py stats`
 2. **Rechercheanfragen und KI-Recherche nachprüfen** (höchste Priorität)
+   **Recherche-Modus** (`data/research.json`, docs/RECHERCHE.md): Bei `"backend": "api"` erledigt die Action Anfragen
+   sofort mit OpenAI. Bei `"abo"` – oder wenn die API nicht nutzbar war – bleiben Anfragen offen und tragen das Label
+   **`abo`**: **die gehören dir** und kommen vor allem anderen dran (älteste zuerst, höchstens 5 pro Lauf). Im Body steht,
+   was gewünscht ist (`game:`, `update:`, `new-game:`, `franchise:`, `images:`, `dual-scan:`, freier Wunschtext wie
+   „DroidDeck fehlt“). Ergebnis eintragen, Issue kommentieren und schließen (Befehle unten). Im Modus `abo` arbeitest du
+   zusätzlich 3–5 Spiele aus `data/queue.json` ab (vorne entnehmen) und übernimmst die Bildprüfung (Schritt 5), weil
+   die automatischen API-Läufe pausieren. `research.json` nie von Hand umschalten – das macht Markus per Knopf unter Info.
    Neue Issues mit Label `recherche` bearbeitet sofort die GitHub Action „KI-Recherche“ (OpenAI) und schließt sie.
    Deine Aufgabe: Changelog-Einträge mit `"by": "ai-research"` seit deinem letzten Lauf durchgehen, die Quellen öffnen,
    Falsches korrigieren oder entfernen, Fassungen zusammenführen, Texte glätten, Screenshots ergänzen.
@@ -218,7 +230,7 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    (types: route-added, route-updated, game-added, mod-added, project-added, screenshot-added, verified, removed).
    In `inbox.json` → `"agent": {"lastRun": "<ISO-Zeit>", "summary": "1 Satz: was wurde gemacht"}`.
 9. **Prüfen und veröffentlichen**
-   `python3 scripts/atlas.py format && python3 scripts/atlas.py validate && python3 -m unittest discover -s tests`
+   `python3 scripts/atlas.py repair && python3 scripts/atlas.py format && python3 scripts/atlas.py validate && python3 -m unittest discover -s tests`
    Commit `data: Agent YYYY-MM-DD – <Kurzfassung>`, dann `git pull --rebase` und `git push` auf `main`.
    Bei Rebase-Konflikten in `changelog.json`/`inbox.json`: beide Seiten behalten (Watcher-Einträge nicht verwerfen).
    Der Push löst den Pages-Deploy aus – die App auf dem Thor hat die Änderungen beim nächsten Öffnen.

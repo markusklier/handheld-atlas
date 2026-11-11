@@ -1,7 +1,7 @@
 // Handheld Atlas service worker. __VERSION__ is replaced at build time.
 // App shell: cache-first. data.json / version.json: network-first, so the app updates itself when online.
 const CACHE = 'atlas-__VERSION__';
-const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'setup.js', 'icon.svg', 'icon-192.png', 'manifest.webmanifest'];
+const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'setup.js', 'dual.js', 'icon.svg', 'icon-192.png', 'manifest.webmanifest'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
