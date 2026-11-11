@@ -216,7 +216,7 @@ function dualFocus() {
   document.body.classList.add('kbd-nav');
   const a = document.activeElement;
   const visible = (el) => { const r = el?.getBoundingClientRect(); return r && r.width && r.bottom > 56 && r.top < innerHeight - 10; };
-  if (a && a !== document.body && visible(a) && a.closest('main, .top')) return;
+  if (a && a !== document.body && (a.closest('.top') || (visible(a) && a.closest('main')))) return;
   let el;
   if (D.role === 'browse') el = document.querySelector('.card.marked') || [...document.querySelectorAll('main .card, main a, main button')].find(visible);
   else if (location.hash.startsWith('#/vorschau/')) el = document.querySelector('[data-pv-open]') || document.querySelector('.pv-pick');
