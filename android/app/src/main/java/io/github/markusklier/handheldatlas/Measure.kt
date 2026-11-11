@@ -155,7 +155,7 @@ object FrameStats {
 /**
  * Temperatures. First "dumpsys thermalservice" (type 0 CPU, 1 GPU, 2 battery, 3 skin); devices that report nothing
  * useful there (the AYN Thor in the first self-test) are read from the kernel's thermal zones instead
- * (/sys/class/thermal/thermal_zone*/type + temp, readable with shell rights).
+ * (/sys/class/thermal/thermal_zone<n>/type and /temp, readable with shell rights).
  */
 class Thermals(private val sh: (String) -> String) {
     private val maxBy = HashMap<String, Double>()
