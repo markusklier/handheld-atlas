@@ -102,7 +102,11 @@ abstract class AtlasWebActivity : Activity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        if (hasFocus) hideBars()
+        if (hasFocus) {
+            hideBars()
+            web.requestFocus()
+        }
+        emit("windowFocus", hasFocus)   // dual screen: which window has the controller
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {

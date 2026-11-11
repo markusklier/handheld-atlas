@@ -152,25 +152,66 @@ object FrameStats {
     }
 }
 
-/** Temperatures from "dumpsys thermalservice": type 0 CPU, 1 GPU, 2 battery, 3 skin. */
+/**
+ * Temperatures. First "dumpsys thermalservice" (type 0 CPU, 1 GPU, 2 battery, 3 skin); devices that report nothing
+ * useful there (the AYN Thor in the first self-test) are read from the kernel's thermal zones instead
+ * (/sys/class/thermal/thermal_zone*/type + temp, readable with shell rights).
+ */
 class Thermals(private val sh: (String) -> String) {
-    private val maxByType = HashMap<Int, Double>()
+    private val maxBy = HashMap<String, Double>()
     private var skinFirst: Double? = null
     private var skinLast: Double? = null
     private var maxStatus = 0
     var samples = 0
         private set
+    var source = ""
+        private set
+    var raw = ""
+        private set
+
+    private fun put(kind: String, v: Double) {
+        if (v < -30 || v > 150) return
+        maxBy[kind] = max(maxBy[kind] ?: v, v)
+    }
 
     fun sample() {
-        val out = try { sh("dumpsys thermalservice") } catch (e: Exception) { return }
+        val out = try { sh(CMD) } catch (e: Exception) { return }
+        if (raw.isEmpty()) raw = out.take(1500)
+        val (hal, zones) = out.split(SPLIT).let { it[0] to it.getOrElse(1) { "" } }
         var skin: Double? = null
-        for (m in ROW.findAll(out)) {
-            val value = m.groupValues[1].toDoubleOrNull() ?: continue
-            val type = m.groupValues[2].toIntOrNull() ?: continue
-            if (value < -30 || value > 150) continue
-            maxByType[type] = max(maxByType[type] ?: value, value)
-            maxStatus = max(maxStatus, m.groupValues[3].toIntOrNull() ?: 0)
-            if (type == 3) skin = max(skin ?: value, value)
+        var found = 0
+        for (blk in BLOCK.findAll(hal)) {
+            val b = blk.value
+            val value = VALUE.find(b)?.groupValues?.get(1)?.toDoubleOrNull() ?: continue
+            val type = TYPE.find(b)?.groupValues?.get(1)?.toIntOrNull() ?: continue
+            if (value.isNaN() || value > 1000) continue
+            STATUS.find(b)?.groupValues?.get(1)?.toIntOrNull()?.let { maxStatus = max(maxStatus, it) }
+            val kind = when (type) { 0 -> "cpu"; 1 -> "gpu"; 2 -> "battery"; 3 -> "skin"; else -> null } ?: continue
+            put(kind, value)
+            found++
+            if (kind == "skin") skin = max(skin ?: value, value)
+        }
+        if (found > 0) source = "thermalservice"
+        if (found == 0 || maxBy["cpu"] == null) {
+            for (line in zones.lines()) {
+                val parts = line.trim().split(WS)
+                if (parts.size < 2) continue
+                val name = parts[0].lowercase()
+                var v = parts[1].toDoubleOrNull() ?: continue
+                if (v > 1000) v /= 1000.0
+                if (v <= 0) continue
+                val kind = when {
+                    CPU.containsMatchIn(name) -> "cpu"
+                    GPU.containsMatchIn(name) -> "gpu"
+                    SKIN.containsMatchIn(name) -> "skin"
+                    BAT.containsMatchIn(name) -> "battery"
+                    else -> null
+                } ?: continue
+                put(kind, v)
+                if (kind == "skin") skin = max(skin ?: v, v)
+                found++
+            }
+            if (found > 0 && source.isEmpty()) source = "sysfs"
         }
         if (skin != null) {
             if (skinFirst == null) skinFirst = skin
@@ -181,18 +222,30 @@ class Thermals(private val sh: (String) -> String) {
 
     fun json(): JSONObject {
         val o = JSONObject()
-        maxByType[0]?.let { o.put("cpuMax", it) }
-        maxByType[1]?.let { o.put("gpuMax", it) }
-        maxByType[2]?.let { o.put("batteryMax", it) }
-        maxByType[3]?.let { o.put("skinMax", it) }
+        maxBy["cpu"]?.let { o.put("cpuMax", it) }
+        maxBy["gpu"]?.let { o.put("gpuMax", it) }
+        maxBy["battery"]?.let { o.put("batteryMax", it) }
+        maxBy["skin"]?.let { o.put("skinMax", it) }
         skinFirst?.let { o.put("skinStart", it) }
         skinLast?.let { o.put("skinEnd", it) }
         o.put("throttleStatus", maxStatus)   // 0 none … 3 severe and above
+        if (source.isNotEmpty()) o.put("source", source)
         return o
     }
 
     companion object {
-        private val ROW = Regex("Temperature\\{mValue=([-\\d.]+), mType=(\\d+), mName=[^,]*, mStatus=(\\d+)")
+        private const val SPLIT = "===ATLAS-SYSFS==="
+        private val CMD = "dumpsys thermalservice 2>&1 | head -120; echo $SPLIT; " +
+            "for z in /sys/class/thermal/thermal_zone*; do echo \"$(cat \$z/type 2>/dev/null) $(cat \$z/temp 2>/dev/null)\"; done 2>/dev/null"
+        private val BLOCK = Regex("Temperature\\{[^}]*\\}")
+        private val VALUE = Regex("mValue=([-\\d.]+)")
+        private val TYPE = Regex("mType=(-?\\d+)")
+        private val STATUS = Regex("mStatus=(\\d+)")
+        private val WS = Regex("\\s+")
+        private val CPU = Regex("^(cpu|cpuss|apc|cpu-\\d|cpullc|cpu\\d)")
+        private val GPU = Regex("gpu")
+        private val SKIN = Regex("skin|xo-therm|quiet|sys-therm|shell|board|case|surface")
+        private val BAT = Regex("battery|bms|batt")
     }
 }
 

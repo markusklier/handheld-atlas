@@ -47,10 +47,10 @@ object SelfTest {
                 (sampler.refreshNs > 0) to "Ebene: ${sampler.layer ?: "–"} · neue Bilder: $n · Periode: ${sampler.refreshNs} ns · gewählt: $picked\n${sampler.rawSample}"
             }
             check(checks, "thermal", "Temperaturen lesen") {
-                val t = Thermals { c -> Shell.exec(c, 5000) }
+                val t = Thermals { c -> Shell.exec(c, 8000) }
                 t.sample()
                 val j = t.json()
-                (j.has("skinMax") || j.has("cpuMax")) to j.toString()
+                (j.has("skinMax") || j.has("cpuMax") || j.has("gpuMax")) to (j.toString() + "\n" + t.raw.take(900))
             }
             check(checks, "uinput", "Virtuelles Gamepad (uinput)") {
                 val out = sh("ls -l /system/bin/uinput 2>&1; uinput 2>&1 | head -3")

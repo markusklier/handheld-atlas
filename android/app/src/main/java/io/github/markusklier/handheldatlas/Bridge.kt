@@ -74,6 +74,7 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
         "shizuku" -> shizuku(p.optString("action", "state"))
         "second" -> second(p.optBoolean("open", true))
         "relay" -> { Screens.emitOthers(act, "relay", p); true }
+        "focusOther" -> focusOther()
         "measureStart" -> {
             if (Build.VERSION.SDK_INT >= 33) act.runOnUiThread { act.requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 7) }
             MeasureService.start(act, p.getString("package"), p.optString("label", p.getString("package")), p.optInt("seconds", 180),
@@ -102,6 +103,21 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
             } catch (e: Exception) {
                 try { act.startActivity(intent) } catch (e2: Exception) { emit("error", "Start fehlgeschlagen: ${e2.message}") }
             }
+        }
+        return true
+    }
+
+    /** Moves input focus (controller) to the Atlas window on the other display. */
+    private fun focusOther(): Boolean {
+        val other = Screens.all().firstOrNull { it !== act } ?: return false
+        act.runOnUiThread {
+            try {
+                val i = Intent(other, other.javaClass).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK)
+                other.startActivity(i, ActivityOptions.makeBasic().setLaunchDisplayId(Screens.displayIdOf(other)).toBundle())
+            } catch (e: Exception) {
+                // the system refused; the window still exists and can be touched
+            }
+            other.web.requestFocus()
         }
         return true
     }
