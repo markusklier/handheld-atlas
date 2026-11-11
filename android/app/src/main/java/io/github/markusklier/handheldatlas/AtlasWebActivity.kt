@@ -8,6 +8,8 @@ import android.content.res.Configuration
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.MotionEvent
 import android.view.ViewGroup
 import android.webkit.CookieManager
 import android.webkit.WebChromeClient
@@ -100,6 +102,13 @@ abstract class AtlasWebActivity : Activity() {
         }
     }
 
+    // controller: one press → one window (InputRouter)
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean =
+        InputRouter.onKey(this, event) || super.dispatchKeyEvent(event)
+
+    override fun dispatchGenericMotionEvent(ev: MotionEvent): Boolean =
+        InputRouter.onMotion(this, ev) || super.dispatchGenericMotionEvent(ev)
+
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) {
@@ -132,11 +141,14 @@ abstract class AtlasWebActivity : Activity() {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        if (web.canGoBack()) web.goBack() else moveTaskToBack(true)
+        // back gesture on the stage screen: same as B there (setup → game → preview), never the browser history
+        if (InputRouter.isReady(this) && InputRouter.roleOf(this) == "stage") emit("input", org.json.JSONObject().put("key", "back"))
+        else if (web.canGoBack()) web.goBack() else moveTaskToBack(true)
     }
 
     override fun onDestroy() {
         Screens.unregister(this)
+        InputRouter.forget(this)
         Screens.emitAll("screens", null)
         web.destroy()
         super.onDestroy()

@@ -1740,6 +1740,7 @@ const scrollMemo = new Map();
 let currentKey = '';
 
 function route() {
+  if (typeof dualGuard === 'function') dualGuard();   // zwei Bildschirme: jede Seite nur im passenden Fenster (dual.js)
   const hash = location.hash.replace(/^#/, '') || '/';
   const [, a = '', ...rest] = hash.split('/');
   const b = decodeURIComponent(rest.join('/'));
@@ -1764,18 +1765,19 @@ function route() {
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);
+  if (typeof dualLeave === 'function') dualLeave(currentKey, window.scrollY);
   currentKey = hash;
   stopPreview();
   $('#view').innerHTML = html;
   fillOnlineIndex();
   if (a === 'spiel' && DB.reddit.some((p) => rdDue(p) && p.targets.some((t) => t.split('/')[0] === b))) setTimeout(() => redditSync({ game: b, max: 6 }), 600);
+  const y = typeof dualScrollGet === 'function' ? dualScrollGet(hash) : undefined;
+  renderTabs(tab);
   if (state.scrollToWay) {
     state.scrollToWay = false;
     requestAnimationFrame(() => document.getElementById(wayId(state.openWay))?.scrollIntoView({ block: 'center' }));
-    return void renderTabs(tab);
-  }
-  renderTabs(tab);
-  window.scrollTo(0, scrollMemo.get(hash) || 0);
+  } else window.scrollTo(0, y ?? scrollMemo.get(hash) ?? 0);
+  if (typeof dualRouted === 'function') dualRouted();
 }
 
 function rerender() { const y = window.scrollY; stopPreview(); $('#view').innerHTML = viewDiscover(); window.scrollTo(0, y); fillOnlineIndex(); }
@@ -1974,9 +1976,32 @@ document.addEventListener('keydown', (e) => {
   else if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('summary')) { /* native */ }
 });
 
+/* One controller press – from the Atlas app (its router sends every button to exactly one screen),
+   from the Gamepad API in the browser, or from the keyboard. */
+function padInput(key, repeat = false) {
+  if (typeof dualInput === 'function' && dualInput(key, repeat)) return;
+  const lb = !$('#lightbox').hidden;
+  const el = document.activeElement && document.activeElement !== document.body ? document.activeElement : null;
+  if (key === 'up' || key === 'down' || key === 'left' || key === 'right') {
+    if (lb && (key === 'left' || key === 'right')) return $('#lightbox').step(key === 'left' ? -1 : 1);
+    return move(key);
+  }
+  if (repeat) return;
+  if (key === 'a') {
+    if (!el) return move('down');
+    if (el.tagName === 'SELECT') { try { el.showPicker(); } catch { el.focus(); } return; }
+    if (el.tagName === 'INPUT') return el.focus();
+    return el.click();
+  }
+  if (key === 'b' || key === 'back') { if (el?.matches('input, select')) return el.blur(); return back(); }
+  if (key === 'l' || key === 'r') { if (lb) return $('#lightbox').step(key === 'l' ? -1 : 1); return switchTab(key === 'l' ? -1 : 1); }
+  if (key === 'start') { if (native.available) native.call('focusSelf').catch(() => {}); $('#q').focus(); }
+}
+if (native.available) native.on('input', (d) => d?.key && padInput(d.key, !!d.repeat));
+
 const pads = { prev: {} };
 function pollPads() {
-  const gp = [...(navigator.getGamepads?.() || [])].find(Boolean);
+  const gp = (typeof padsAllowed !== 'function' || padsAllowed()) && [...(navigator.getGamepads?.() || [])].find(Boolean);
   if (gp) {
     const pressed = (i) => gp.buttons[i]?.pressed;
     const axis = (i) => gp.axes[i] || 0;
@@ -1987,17 +2012,12 @@ function pollPads() {
     };
     const edge = (k) => now[k] && !pads.prev[k];
     for (const d of ['up', 'down', 'left', 'right']) {
-      if (edge(d)) { pads.hold = performance.now() + 380; move(d); }
-      else if (now[d] && performance.now() > pads.hold) { pads.hold = performance.now() + 110; move(d); }
+      if (edge(d)) { pads.hold = performance.now() + 380; padInput(d); }
+      else if (now[d] && performance.now() > pads.hold) { pads.hold = performance.now() + 110; padInput(d, true); }
     }
-    if (edge('a')) document.activeElement?.click();
-    if (edge('b')) back();
-    if (edge('l')) { if (!$('#lightbox').hidden) $('#lightbox').step(-1); else switchTab(-1); }
-    if (edge('r')) { if (!$('#lightbox').hidden) $('#lightbox').step(1); else switchTab(1); }
-    if (edge('start')) { if (typeof dualRole === 'function' && dualRole() === 'stage') native.call('focusOther').catch(() => {}); else $('#q').focus(); }
-    if (edge('select') && typeof dualOn === 'function' && dualOn()) native.call('focusOther').catch(() => {});
+    for (const k of ['a', 'b', 'l', 'r', 'select', 'start']) if (edge(k)) padInput(k);
     pads.prev = now;
-  }
+  } else pads.prev = {};
   requestAnimationFrame(pollPads);
 }
 window.addEventListener('gamepadconnected', () => { if (!pads.running) { pads.running = true; requestAnimationFrame(pollPads); } });

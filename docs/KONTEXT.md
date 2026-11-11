@@ -101,3 +101,9 @@ Spiel → Fassung → Weg → Gerät → gemessenes Setup.
   anderen wählen. PC: GameNative, Winlator, GameHub (Lite), DroidDeck.
 - **Zwei Bildschirme:** oben stöbern, unten die „Bühne“ (große Vorschau → Spielseite → Einrichten); Tauschen per Knopf,
   Select wechselt den Bildschirm. Details in [`docs/SETUP.md`](SETUP.md).
+- **Zwei Bildschirme, zweite Fassung (Markus, 11.11. abends):** Der Controller steuerte beide Bildschirme, Ansichten
+  liefen auseinander, Scroll-Positionen sprangen, es ließen sich zwei Spiele öffnen → neu gebaut: Die App leitet jede
+  Taste an genau einen Bildschirm (nativ), feste Rollen mit Wächter (die Bühne zeigt nie Listen, Stöbern nie ein Spiel),
+  gemeinsamer Zustand mit Scroll-Position. Vorschau schöner (Bilder zum Wischen/Tippen + Cover), Knopf „Spiel ansehen“
+  statt „Spiel öffnen“. Schalter **Dual Screen an/aus** neben „Tauschen“; ohne zweiten Bildschirm (Odin) kein Schalter,
+  alles auf einem Bildschirm. WebView bleibt (eine Oberfläche für beide Fenster); nativ ist nur die Tastenverteilung.

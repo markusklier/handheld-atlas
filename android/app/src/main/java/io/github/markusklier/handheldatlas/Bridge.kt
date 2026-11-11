@@ -74,7 +74,11 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
         "shizuku" -> shizuku(p.optString("action", "state"))
         "second" -> second(p.optBoolean("open", true))
         "relay" -> { Screens.emitOthers(act, "relay", p); true }
-        "focusOther" -> focusOther()
+        "focusOther" -> focusWindow(Screens.all().firstOrNull { it !== act })
+        "focusSelf" -> focusWindow(act)   // e.g. before typing in the search field: the keyboard belongs to this window
+        "inputReady" -> { InputRouter.setReady(act); InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
+        "setRole" -> { InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
+        "setInput" -> { InputRouter.setTarget(p.optString("role", "browse"), p.optBoolean("pad", false)); JSONObject().put("target", InputRouter.target) }
         "measureStart" -> {
             if (Build.VERSION.SDK_INT >= 33) act.runOnUiThread { act.requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 7) }
             MeasureService.start(act, p.getString("package"), p.optString("label", p.getString("package")), p.optInt("seconds", 180),
@@ -108,16 +112,16 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
     }
 
     /** Moves input focus (controller) to the Atlas window on the other display. */
-    private fun focusOther(): Boolean {
-        val other = Screens.all().firstOrNull { it !== act } ?: return false
+    private fun focusWindow(w: AtlasWebActivity?): Boolean {
+        if (w == null) return false
         act.runOnUiThread {
-            try {
-                val i = Intent(other, other.javaClass).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK)
-                other.startActivity(i, ActivityOptions.makeBasic().setLaunchDisplayId(Screens.displayIdOf(other)).toBundle())
+            if (!w.hasWindowFocus()) try {
+                val i = Intent(w, w.javaClass).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT or Intent.FLAG_ACTIVITY_NEW_TASK)
+                w.startActivity(i, ActivityOptions.makeBasic().setLaunchDisplayId(Screens.displayIdOf(w)).toBundle())
             } catch (e: Exception) {
                 // the system refused; the window still exists and can be touched
             }
-            other.web.requestFocus()
+            w.web.requestFocus()
         }
         return true
     }
