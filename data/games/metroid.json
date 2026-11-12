@@ -59,7 +59,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-morph-ball-2d.png",
+          "caption": "Brinstar, Morph Ball room (2D)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-skree-corridor-2d.png",
+          "caption": "Brinstar, Skree corridor (2D)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-main-shaft-3d.png",
+          "caption": "Brinstar, main shaft (3D view)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-shaft-3d.png",
+          "caption": "Norfair, shaft below the elevator (3D view)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-shaft-bottom-3d.png",
+          "caption": "Norfair, shaft bottom (3D view)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-screw-attack-3d.png",
+          "caption": "Norfair, Screw Attack room (3D view)",
+          "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

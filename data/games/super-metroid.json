@@ -403,42 +403,42 @@
           "caption": "Super Metroid title screen",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/opening-cinematic.png",
           "caption": "Opening cinematic",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-arrival.png",
           "caption": "Samus arriving at Ceres Station",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-ridley.png",
           "caption": "Ridley battle at Ceres Station",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-escape.png",
           "caption": "Ceres escape sequence",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/draygon-grapple-kill.png",
           "caption": "Defeating Draygon through the electrified Grapple Beam conduit",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [

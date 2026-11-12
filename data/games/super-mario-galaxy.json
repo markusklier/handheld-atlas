@@ -131,7 +131,7 @@
           "caption": "Trackpad-Steuerung auf dem unteren Bildschirm",
           "source": "https://github.com/Maddex712/WiiDS",
           "credit": "WiiDS",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "reports": [],

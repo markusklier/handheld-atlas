@@ -58,7 +58,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/lineup.png",
+          "caption": "GBA DS on three dual screen handhelds: Metroid: Zero Mission with its map on a D",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/fusion.png",
+          "caption": "Metroid Fusion with its map",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/cotm.png",
+          "caption": "Castlevania: Circle of the Moon with its 99.8% map",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/mario-kart-race.png",
+          "caption": "Mario Kart: Super Circuit with its race HUD on the second screen",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/sma2.png",
+          "caption": "Super Mario Advance 2: Super Mario World with the island",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kyannon/gba-ds/HEAD/docs/thps2.png",
+          "caption": "Tony Hawk",
+          "source": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md",
+          "credit": "github.com",
+          "check": "ai-unclear"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

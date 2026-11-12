@@ -2,6 +2,44 @@
   "entries": [
     {
       "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "metroid-fusion",
+      "text": "6 Bilder für GBA DS gefunden (Prüfung folgt)",
+      "url": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "metroid",
+      "text": "6 Bilder für Metroid Dual / Metroid Link gefunden (Prüfung folgt)",
+      "url": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "mario-kart-double-dash",
+      "text": "6 Bilder für WiiDS – Mario Kart: Double Dash!! gefunden (Prüfung folgt)",
+      "url": "https://github.com/Maddex712/WiiDS"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "game": "castlevania-aria-of-sorrow",
+      "text": "6 Bilder für GBA DS gefunden (Prüfung folgt)",
+      "url": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md"
+    },
+    {
+      "date": "2026-11-12",
       "type": "system",
       "text": "Zwei Bildschirme neu: Ein Hauptbildschirm bedient alles, der andere zeigt Vorschau, Bilder und Live-Werte. L2/R2 blättern die Bilder, Select tauscht die Bildschirme. Dafür die Atlas-App aktualisieren (Hinweis „Installieren“ oder Info → Atlas-App).",
       "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/SETUP.md"
