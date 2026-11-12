@@ -76,6 +76,9 @@ class Bridge(private val act: AtlasWebActivity) : WebViewCompat.WebMessageListen
         "relay" -> { Screens.emitOthers(act, "relay", p); true }
         "focusOther" -> focusWindow(Screens.all().firstOrNull { it !== act })
         "focusSelf" -> focusWindow(act)   // e.g. before typing in the search field: the keyboard belongs to this window
+        // main screen / companion: the page says what this window is; controller keys go to the "primary" window
+        "input" -> { InputRouter.setReady(act); InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("role", InputRouter.roleOf(act)) }
+        "leave" -> { act.runOnUiThread { act.moveTaskToBack(true) }; true }   // back gesture on the start page
         "inputReady" -> { InputRouter.setReady(act); InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
         "setRole" -> { InputRouter.setRole(act, p.optString("role", "single")); JSONObject().put("target", InputRouter.target) }
         "setInput" -> { InputRouter.setTarget(p.optString("role", "browse"), p.optBoolean("pad", false)); JSONObject().put("target", InputRouter.target) }

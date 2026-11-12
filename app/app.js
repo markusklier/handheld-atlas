@@ -215,7 +215,7 @@ function showSlide(i) {
 }
 function startPreview(card) {
   if (preview.card === card) return;
-  if (typeof dualOn === 'function' && dualOn()) return;   // two screens: the big preview runs on the stage
+  if (typeof dualOn === 'function' && dualOn()) return;   // two screens: the big preview runs on the companion screen
   stopPreview();
   const g = DB.byId.get(card.dataset.game);
   const slides = g ? previewSlides(g) : [];
@@ -929,7 +929,7 @@ function viewInfo() {
     ${redditPanel()}
     ${usagePanel()}
     ${qualityPanel()}
-    <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche. Mit zwei Bildschirmen: <kbd>Select</kbd> wechselt zwischen Stöbern und Bühne.</p></div>
+    <div class="panel"><h3>Steuerung</h3><p class="muted">Steuerkreuz bewegt den Fokus, <kbd>A</kbd> öffnet, <kbd>B</kbd> geht zurück, <kbd>L1</kbd>/<kbd>R1</kbd> wechseln den Bereich, <kbd>Start</kbd> springt zur Suche. <kbd>L2</kbd>/<kbd>R2</kbd> blättern die Bilder. Mit zwei Bildschirmen bedienst du immer den Hauptbildschirm, der andere zeigt Vorschau und Bilder; <kbd>Select</kbd> tauscht die beiden.</p></div>
     <div class="panel"><h3>Daten</h3><p class="muted">Stand ${fmtDate(DB.builtAt)}. ${DB.games.length} Spiele, ${Object.keys(DB.projects).length} Projekte. Die App holt sich neue Daten selbst, sobald sie online geöffnet wird.</p>
       <div class="row"><button class="btn" id="update">Nach Updates suchen</button>${window.ATLAS_EMBEDDED ? '' : '<a class="btn" href="Handheld-Atlas-offline.html" download>Offline-Version laden</a>'}</div></div>
   </div>
@@ -1134,8 +1134,7 @@ function dataPanel(g) {
     : kind === 'update'
       ? `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Aktualisieren: ' + g.title, 'update: ' + g.id))}" target="_blank" rel="noopener" title="Sucht nur, was sich seit der letzten Tiefenrecherche geändert hat – günstiger als eine neue Tiefenrecherche">${icon('spark')}Aktualisieren</a>`
       : `<a class="btn small${primary ? ' primary' : ''}" href="${esc(issueUrl('Recherche: ' + g.title, 'game: ' + g.id + '\n\nWas soll recherchiert werden? (optional)'))}" target="_blank" rel="noopener" title="Komplett neu recherchieren: alle Fassungen, Spielwege, Emulatoren, Mods und Berichte">${icon('spark')}${DB.researched?.[g.id] ? 'Neue Tiefenrecherche' : 'Tiefenrecherche anfordern'}</a>`;
-  const stage = typeof dualRole === 'function' && dualRole() === 'stage';   // small stage screen: keep it folded
-  return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' && !stage ? ' open' : ''}>
+  return `<details class="panel section datapanel lvl-${c.level}"${c.level !== 'gut' ? ' open' : ''}>
     <summary><span class="meter"><span>Datenstand: <b>${LEVEL_LABEL[c.level]}</b></span><b>${c.pct} %</b><i style="--v:${c.pct}%"></i></span></summary>
     <ul class="checklist">${c.items.map((i) => `<li class="${i.ok ? 'ok' : i.part ? 'part' : 'miss'}">${icon(i.ok ? 'check' : 'alert')}${esc(i.label)}</li>`).join('')}</ul>
     <p class="req-run" data-req-game="${esc(g.id)}"${req ? '' : ' hidden'}>${icon('spark')} <span>${esc(req?.label || '')}</span></p>
@@ -1737,10 +1736,23 @@ function franchiseCoverage(f) {
 
 /* ---------------- router ---------------- */
 const scrollMemo = new Map();
+const focusMemo = new Map();
 let currentKey = '';
+let navBack = false;   // the current navigation is "back" / "forward": restore scroll position and focus
+
+/* A selector that finds the focused element again after the page was rebuilt. */
+function focusKey(el) {
+  if (!el || el === document.body || !el.closest?.('main')) return null;
+  if (el.id) return '#' + CSS.escape(el.id);
+  const href = el.getAttribute?.('href');
+  if (href) return `a[href="${CSS.escape(href)}"]${el.dataset.gotoWay ? `[data-goto-way="${CSS.escape(el.dataset.gotoWay)}"]` : ''}`;
+  const d = el.closest('details[id]');
+  if (d && el.tagName === 'SUMMARY') return '#' + CSS.escape(d.id) + ' > summary';
+  return null;
+}
 
 function route() {
-  if (typeof dualGuard === 'function') dualGuard();   // zwei Bildschirme: jede Seite nur im passenden Fenster (dual.js)
+  if (typeof dualCompanion === 'function' && dualCompanion()) return;   // zwei Bildschirme: der Begleiter zeigt nie eine eigene Seite (dual.js)
   const hash = location.hash.replace(/^#/, '') || '/';
   const [, a = '', ...rest] = hash.split('/');
   const b = decodeURIComponent(rest.join('/'));
@@ -1760,23 +1772,28 @@ function route() {
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
   else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
   else if (a === 'einrichten' && typeof viewSetup === 'function') { html = viewSetup(b); tab = null; }
-  else if (a === 'vorschau' && typeof viewPreview === 'function') { html = viewPreview(b); tab = null; }
   else if (a === 'plattform') { state.chips = new Set(); state.platform = decodeURIComponent(b || ''); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);
-  if (typeof dualLeave === 'function') dualLeave(currentKey, window.scrollY);
+  const fk = focusKey(document.activeElement);
+  if (fk) focusMemo.set(currentKey, fk);
+  // where to scroll: the same page redrawn or back/forward → where you were; a list tab → where you left it; a new page → top
+  const restore = hash === currentKey || navBack || tab !== null;
+  const refocus = navBack && hash !== currentKey && document.body.classList.contains('kbd-nav') ? focusMemo.get(hash) : null;
+  navBack = false;
   currentKey = hash;
   stopPreview();
   $('#view').innerHTML = html;
   fillOnlineIndex();
   if (a === 'spiel' && DB.reddit.some((p) => rdDue(p) && p.targets.some((t) => t.split('/')[0] === b))) setTimeout(() => redditSync({ game: b, max: 6 }), 600);
-  const y = typeof dualScrollGet === 'function' ? dualScrollGet(hash) : undefined;
+  const y = typeof dualScrollGet === 'function' ? dualScrollGet() : undefined;
   renderTabs(tab);
   if (state.scrollToWay) {
     state.scrollToWay = false;
     requestAnimationFrame(() => document.getElementById(wayId(state.openWay))?.scrollIntoView({ block: 'center' }));
-  } else window.scrollTo(0, y ?? scrollMemo.get(hash) ?? 0);
+  } else window.scrollTo(0, y ?? (restore ? scrollMemo.get(hash) : 0) ?? 0);
+  if (refocus) { let el = null; try { el = document.querySelector(refocus); } catch { /* stale */ } el?.focus({ preventScroll: true }); }   // back with the controller: the card you came from
   if (typeof dualRouted === 'function') dualRouted();
 }
 
@@ -1953,7 +1970,6 @@ function move(dir) {
 }
 function back() {
   if (closeLightbox()) return;
-  if (typeof dualBack === 'function' && dualBack()) return;
   if (depth > 0) history.back();
   else if ((location.hash || '#/') !== '#/') location.hash = '#/';
 }
@@ -1993,7 +2009,12 @@ function padInput(key, repeat = false) {
     if (el.tagName === 'INPUT') return el.focus();
     return el.click();
   }
-  if (key === 'b' || key === 'back') { if (el?.matches('input, select')) return el.blur(); return back(); }
+  if (key === 'b' || key === 'back') {
+    if (el?.matches('input, select')) return el.blur();
+    // back gesture of the system on the start page leaves Atlas; the B button never does
+    if (key === 'back' && !lb && depth === 0 && (location.hash || '#/') === '#/') return void native.call('leave').catch(() => {});
+    return back();
+  }
   if (key === 'l' || key === 'r') { if (lb) return $('#lightbox').step(key === 'l' ? -1 : 1); return switchTab(key === 'l' ? -1 : 1); }
   if (key === 'start') { if (native.available) native.call('focusSelf').catch(() => {}); $('#q').focus(); }
 }
@@ -2008,14 +2029,14 @@ function pollPads() {
     const now = {
       up: pressed(12) || axis(1) < -0.6, down: pressed(13) || axis(1) > 0.6,
       left: pressed(14) || axis(0) < -0.6, right: pressed(15) || axis(0) > 0.6,
-      a: pressed(0), b: pressed(1), l: pressed(4), r: pressed(5), select: pressed(8), start: pressed(9),
+      a: pressed(0), b: pressed(1), l: pressed(4), r: pressed(5), l2: pressed(6), r2: pressed(7), select: pressed(8), start: pressed(9),
     };
     const edge = (k) => now[k] && !pads.prev[k];
     for (const d of ['up', 'down', 'left', 'right']) {
       if (edge(d)) { pads.hold = performance.now() + 380; padInput(d); }
       else if (now[d] && performance.now() > pads.hold) { pads.hold = performance.now() + 110; padInput(d, true); }
     }
-    for (const k of ['a', 'b', 'l', 'r', 'select', 'start']) if (edge(k)) padInput(k);
+    for (const k of ['a', 'b', 'l', 'r', 'l2', 'r2', 'select', 'start']) if (edge(k)) padInput(k);
     pads.prev = now;
   } else pads.prev = {};
   requestAnimationFrame(pollPads);
@@ -2050,7 +2071,7 @@ async function init() {
   }
   history.replaceState({ d: 0 }, '');
   window.addEventListener('hashchange', () => {
-    if (typeof history.state?.d === 'number') depth = history.state.d;  // back / forward
+    if (typeof history.state?.d === 'number') { depth = history.state.d; navBack = true; }  // back / forward
     else { depth += 1; history.replaceState({ d: depth }, ''); }       // new navigation
     closeLightbox(); route();
   });

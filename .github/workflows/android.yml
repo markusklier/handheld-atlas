@@ -3,7 +3,7 @@ name: Android-App
 # Installation und Updates: docs/SETUP.md (APK aus dem neuesten Release oder über Obtainium).
 on:
   push:
-    branches: [main, 'app-*', setup-assistent]
+    branches: [main, 'app-*', 'claude/**', setup-assistent]
     paths: ['android/**', '.github/workflows/android.yml']
   workflow_dispatch:
 permissions:

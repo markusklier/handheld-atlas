@@ -734,7 +734,7 @@ native.on('measure', (d) => {
     const res = d.result || {}, meta = res.meta || su.live?.meta;
     su.live = null;
     const g = meta && DB.byId.get(meta.game), w = g && suFindWay(g, meta.way);
-    if (w && (typeof dualRole === 'function' ? dualRole() !== 'browse' : true)) {
+    if (w && (typeof dualRole === 'function' ? dualRole() !== 'companion' : true)) {   // only the main screen records the run
       const s = suSession(g, w), p = s.pending || {};
       if (res.series?.length > 240) { const k = Math.ceil(res.series.length / 240); res.series = res.series.filter((_, i) => i % k === 0); }
       s.rounds.push({ at: Date.now(), variant: p.variant || { label: '' }, app: p.app, package: p.package, appVersion: p.appVersion, result: res, verdict: null });
@@ -785,12 +785,14 @@ async function suCheckRelease() {
   try {
     const r = await fetch(`https://api.github.com/repos/${DB.meta.repo}/releases?per_page=10`, { headers: { Accept: 'application/vnd.github+json' } });
     if (!r.ok) return;
-    const rel = (await r.json()).find((x) => /^app-v/.test(x.tag_name) && (x.assets || []).some((a) => a.name === 'handheld-atlas.apk'));
+    // the newest build, not the first entry: GitHub does not list releases in version order
+    const code = (x) => +x.tag_name.split('.').pop() || 0;
+    const rel = (await r.json()).filter((x) => /^app-v/.test(x.tag_name) && (x.assets || []).some((a) => a.name === 'handheld-atlas.apk')).sort((x, y) => code(y) - code(x))[0];
     if (!rel) return;
     const a = rel.assets.find((x) => x.name === 'handheld-atlas.apk');
     const version = rel.tag_name.replace(/^app-v/, '');
-    su.release = { version, code: +version.split('.').pop(), asset: { name: a.name, size: a.size, url: a.browser_download_url } };
-    if (su.info && su.release.code > su.info.app.code) toast(`Atlas-App ${esc(version)} ist da. <a class="btn primary" href="#/info">Ansehen</a>`, 9000);
+    su.release = { version, code: code(rel), asset: { name: a.name, size: a.size, url: a.browser_download_url } };
+    if (su.info && su.release.code > su.info.app.code && (typeof dualRole !== 'function' || dualRole() !== 'companion')) toast(`Atlas-App ${esc(version)} ist da. <button class="btn primary" data-su="self-update">Installieren</button>`, 0);
     suRender();
   } catch { /* offline */ }
 }

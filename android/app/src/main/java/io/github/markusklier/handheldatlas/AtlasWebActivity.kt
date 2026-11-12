@@ -141,9 +141,9 @@ abstract class AtlasWebActivity : Activity() {
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        // back gesture on the stage screen: same as B there (setup → game → preview), never the browser history
-        if (InputRouter.isReady(this) && InputRouter.roleOf(this) == "stage") emit("input", org.json.JSONObject().put("key", "back"))
-        else if (web.canGoBack()) web.goBack() else moveTaskToBack(true)
+        // back gesture on either screen: the main screen goes back (the companion has no history of its own)
+        if (InputRouter.back(this)) return
+        if (web.canGoBack()) web.goBack() else moveTaskToBack(true)
     }
 
     override fun onDestroy() {
