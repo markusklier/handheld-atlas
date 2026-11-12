@@ -38,6 +38,7 @@ scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Re
 scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai/reddit → ai-verified, ai-unclear oder entfernt)
 scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
 scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im Watcher)
+scripts/dualsim.mjs    Zwei-Bildschirm-Simulator für app/dual.js (Bilder + Stresstest, ohne Gerät) – docs/SETUP.md
 ```
 
 ### Grundidee: Spiel → Fassungen → Spielwege
@@ -246,6 +247,8 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
   an `android/` lesen.
 - Gute Einstellungen für ein Spiel gehören als Bericht mit Quelle in die Daten (EmuReady füllt `versions[].reports`
   automatisch); der Assistent nimmt sie als Startkonfiguration.
+- Änderungen an `app/dual.js` (zwei Bildschirme): vorher und nachher `node scripts/dualsim.mjs stress` – auch mit
+  `--apk=7` und `--apk=10` (ältere Apps). Bilder zum Ansehen: `node scripts/dualsim.mjs tour`.
 - Änderungen an `android/` bauen eine neue APK und ein Release (Action „Android-App“). Erst auf einem Branch pushen
   (der Build läuft auch dort), nach `main` nur, wenn er grün ist.
 

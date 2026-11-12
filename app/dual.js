@@ -355,7 +355,7 @@ function cpBroken(img) {
   else { const c = document.querySelector('.cp-count'); if (c) c.innerHTML = `<b>1</b> / ${n}`; }
   if (!n) {
     const g = DB.byId.get(D.show?.game);
-    document.querySelector('.cp-cap')?.remove();
+    document.querySelector('.cp-capline')?.remove();
     track.innerHTML = `<figure class="cp-slide empty"><span class="ph" style="--h:${hue(g?.franchise || g?.title || '')}">${esc(g?.title || '')}</span></figure>`;
   }
   cpSync();
@@ -414,7 +414,7 @@ function cpHTML(show) {
     info = `<div class="cp-info cp-info-game">
       <div class="cp-head">
         ${g.cover && !coverOnly ? `<div class="cp-cover">${cpImg(g.cover.url)}</div>` : ''}
-        <div class="cp-text"><span class="cp-kicker">${show.v === 'setup' ? 'Einrichten' : esc(g.franchise || '')}${show.v !== 'setup' && year ? `<i> · ${year}</i>` : ''}</span>
+        <div class="cp-text"><span class="cp-kicker">${show.v === 'setup' ? 'Spielweg' : esc(g.franchise || '')}${show.v !== 'setup' && year ? `<i> · ${year}</i>` : ''}</span>
           <h1>${esc(show.v === 'setup' && way ? way.name : g.title)}</h1>
           ${show.v === 'setup' ? `<span class="cp-sub">${esc(g.title)}</span>` : ''}</div>
       </div>
@@ -428,12 +428,11 @@ function cpHTML(show) {
     <div class="cp-stage">
       <div class="cp-track">${slides.map((s, i) => `<figure class="cp-slide${coverOnly ? ' cover-only' : ''}" data-i="${i}"${s.way ? ` data-way="${esc(s.way)}"` : ''} data-cap="${esc(cap(s))}"${s.dual ? ' data-dual' : ''}>${cpImg(s.url, s.url.includes('libretro-thumbnails') ? 'pixel' : '')}</figure>`).join('')
         || `<figure class="cp-slide empty"><span class="ph" style="--h:${hue(g.franchise || g.title)}">${esc(g.title)}</span></figure>`}</div>
-      ${slides.length ? `<span class="cp-cap${slides[0].dual ? ' dual' : ''}">${cap(slides[0])}</span>` : ''}
-      ${many ? `<span class="cp-count"><b>1</b> / ${slides.length}</span>
-        <button class="cp-nav prev" data-cp-step="-1" tabindex="-1" aria-label="Vorheriges Bild">${icon('back')}</button>
+      ${many ? `<button class="cp-nav prev" data-cp-step="-1" tabindex="-1" aria-label="Vorheriges Bild">${icon('back')}</button>
         <button class="cp-nav next" data-cp-step="1" tabindex="-1" aria-label="Nächstes Bild">${icon('back')}</button>` : ''}
       <div class="cp-live" hidden></div>
     </div>
+    ${slides.length ? `<div class="cp-capline"><span class="cp-cap${slides[0].dual ? ' dual' : ''}">${cap(slides[0])}</span>${many ? `<span class="cp-count"><b>1</b> / ${slides.length}</span>` : ''}</div>` : ''}
     ${many ? `<div class="cp-strip">${slides.map((s, i) => `<button class="cp-thumb${i ? '' : ' on'}${s.dual ? ' dual' : ''}" data-cp-thumb="${i}" tabindex="-1" aria-label="Bild ${i + 1}">${cpImg(s.url, s.url.includes('libretro-thumbnails') ? 'pixel' : '')}</button>`).join('')}</div>` : ''}
     ${info}
   </section>`;

@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "date": "2026-11-12",
+      "type": "system",
+      "text": "Zwei Bildschirme neu: Ein Hauptbildschirm bedient alles, der andere zeigt Vorschau, Bilder und Live-Werte. L2/R2 blättern die Bilder, Select tauscht die Bildschirme. Dafür die Atlas-App aktualisieren (Hinweis „Installieren“ oder Info → Atlas-App).",
+      "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/SETUP.md"
+    },
+    {
       "date": "2026-11-11",
       "type": "screenshot-added",
       "by": "ai-research",

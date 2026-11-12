@@ -107,3 +107,11 @@ Spiel → Fassung → Weg → Gerät → gemessenes Setup.
   gemeinsamer Zustand mit Scroll-Position. Vorschau schöner (Bilder zum Wischen/Tippen + Cover), Knopf „Spiel ansehen“
   statt „Spiel öffnen“. Schalter **Dual Screen an/aus** neben „Tauschen“; ohne zweiten Bildschirm (Odin) kein Schalter,
   alles auf einem Bildschirm. WebView bleibt (eine Oberfläche für beide Fenster); nativ ist nur die Tastenverteilung.
+- **Zwei Bildschirme, dritte Fassung (Markus, 12.11.):** Die zweite Fassung sah auf dem Thor „fast genauso aus“, der
+  Controller steuerte weiter beide Bildschirme. Ursachen: Die Update-Prüfung bot die APK mit der Tastenverteilung nie an
+  (nahm das erste statt das neueste Release), und zwei gleichberechtigte Fenster mit eigenem Verlauf liefen auch mit
+  ihr auseinander (im Simulator nachgestellt). Neu: **ein Hauptbildschirm, der alles bedient, und ein Begleiter, der nur
+  zeigt** (Vorschau, Bilder, Live-Werte; per Touch Fernbedienung). L2/R2 blättern Bilder, Select tauscht. WebView bleibt:
+  Das Problem war nicht die Darstellung, sondern zwei Fenster mit je eigenem Zustand. Eine komplett native Oberfläche
+  ist damit nicht nötig; nativ sind Fenster und Tasten. Geprüft mit `scripts/dualsim.mjs` (Stresstest), auf dem Thor
+  noch nicht. Die echte Bildschirmdichte des Thor ist unbekannt – der Selbsttest (Info → Atlas-App) würde sie liefern.

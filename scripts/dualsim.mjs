@@ -195,6 +195,19 @@ const SCENARIOS = {
     await sleep(2500);
     await shot('getauscht-vorschau');
   },
+  /* Einrichten und Messfahrt: Live-Werte groß auf dem Begleiter */
+  async einrichten() {
+    await win.main.evaluate((g) => { location.hash = '#/spiel/' + g; }, args.games || 'super-metroid');
+    await sleep(1500);
+    const href = await win.main.evaluate(() => document.querySelector('.su-bar a[href^="#/einrichten/"]')?.getAttribute('href'));
+    if (!href) throw new Error('kein Einrichten-Knopf gefunden');
+    await win.main.evaluate((h) => { location.hash = h; }, href);
+    await sleep(2000);
+    await shot('einrichten');
+    await emitAll('measure', { state: 'running', fps: 58.6, seconds: 150, elapsed: 42, temp: { skinMax: 41 }, label: 'Super Metroid' });
+    await sleep(600);
+    await shot('messfahrt');
+  },
   /* Zufällige Bedienung (--steps=150 --seed=1): Tasten, Tippen auf dem Begleiter, Tauschen, Aus/An.
      Nach jedem Schritt muss gelten: genau ein Hauptbildschirm, der Begleiter zeigt keine eigene Seite und passt zum Hauptbildschirm. */
   async stress() {

@@ -12,7 +12,7 @@ Der eingebaute Selbsttest (unten) ist dafür da, genau das beim ersten Start her
 
 | Schritt | Stand |
 |---|---|
-| Atlas als App, auf beiden Bildschirmen (oben Spiel, unten Liste/Checkliste) | fertig, ungetestet auf dem Gerät |
+| Atlas als App, auf beiden Bildschirmen (Hauptbildschirm bedient, der andere zeigt Vorschau, Bilder, Live-Werte) | fertig, im Simulator geprüft, ungetestet auf dem Gerät |
 | Gerät erkennen (Chip, RAM, Bildschirme), installierte Apps und Versionen | fertig |
 | Apps installieren: GitHub-Release laden und installieren, mit Shizuku ohne Android-Nachfrage | fertig |
 | Play-Store-Apps, Download-Seiten | Atlas öffnet die richtige Seite, installieren musst du dort |
@@ -82,43 +82,59 @@ Regeln – und antwortet mit genau einem nächsten Schritt (`change`, `done`, `l
 
 ## Zwei Bildschirme (`app/dual.js`, `InputRouter.kt`)
 
-Auf Geräten mit zwei Bildschirmen öffnet die App zwei Fenster mit festen Rollen:
+Dritte Fassung (12.11.2026). Grundsatz: **ein Hauptbildschirm, ein Begleiter** – nie zwei gleichberechtigte Fenster.
 
-- **Stöbern** (standardmäßig oben, größerer Bildschirm): Entdecken, Suche, Reihen, Neu, Info. Zeigt **nie** eine Spielseite.
-- **Bühne** (standardmäßig unten): nur das Spiel – große Vorschau → Spielseite → Einrichten. Zeigt **nie** eine Liste.
-  - Markierst du oben ein Spiel mit dem Controller, erscheint es unten groß: Bilder zum Durchwischen (Dual-Screen-Bilder
-    zuerst, Wechsel alle 6 s, pausiert nach dem Anfassen), Cover, Reihe und Jahr, Plattformen, Dual-Screen-Art, beste
-    Empfehlung und **„Spiel ansehen“**. Bilder: wischen, links/rechts auf das Bild tippen, Pfeile, Punkte; mit dem
-    Controller L/R.
-  - Mit dem Finger: erstes Antippen einer Karte zeigt das Spiel unten groß, zweites Antippen öffnet die Spielseite.
-  - **A** auf einer Karte (oder „Spiel ansehen“) öffnet unten die Spielseite, oben bleibt die Liste stehen; der Controller
-    wandert mit. L/R wechselt dort die Reiter, „Einrichten“ läuft unten, das Spiel selbst startet auf dem großen Bildschirm.
-  - **B** auf der Bühne: Einrichten → Spielseite → Vorschau; von der Vorschau springt der Controller zurück zum Stöbern.
-    Die Zurück-Geste auf dem unteren Bildschirm macht dasselbe.
-  - Reihen, Listen und Neuigkeiten, die man auf der Bühne antippt, öffnen sich oben.
-- **Select** bringt den Controller auf den anderen Bildschirm, **Antippen** holt ihn dorthin, wo du tippst. Der Bildschirm
-  mit dem Controller hat oben eine leuchtende Linie, nur dort gibt es einen Fokusrahmen.
-- In der Kopfzeile (nur auf Geräten mit zwei Bildschirmen): **Tauschen** dreht die Rollen um (die Vorschau ist dann oben
-  groß, Bilder links, Infos rechts) und **Dual Screen** an/aus. Aus = ein Bildschirm wie auf jedem anderen Handheld; ein
-  offenes Spiel kommt dabei mit nach oben, Zurück führt zur Liste. Wieder an: das Spiel geht nach unten, die Liste nach oben.
-- Nach Tauschen, Aus- und Einschalten geht jede Rolle genau dort weiter, wo sie war – mit derselben Scroll-Position.
+- **Hauptbildschirm** (standardmäßig oben, größerer Bildschirm): die ganze App, genau wie auf einem Bildschirm.
+  **Nur hier wird bedient** – Controller, Fokus, Verlauf, Scroll-Position. Listen, Spielseite, Einrichten: alles hier.
+- **Begleiter** (standardmäßig unten): zeigt, was zum Hauptbildschirm passt, und sonst nichts.
+  - Liste oben, Spiel markiert (Controller-Fokus oder Finger auf der Karte) → **Vorschau**: Bilder groß zum Durchwischen
+    (Dual-Screen-Bilder zuerst), kleine Bilder zum Antippen, Cover, Reihe und Jahr, Plattformen, Dual-Screen-Art,
+    Empfehlung und **„Spiel ansehen“** (öffnet die Spielseite auf dem Hauptbildschirm).
+  - Spielseite oben → **Bilder**: Galerie des Spiels; der Spielweg, der oben gerade offen oder im Fokus ist, kommt
+    zuerst. Darunter die Wege als Knöpfe – antippen öffnet den Weg oben.
+  - Einrichten oben → Bilder des Weges; während einer **Messfahrt** die Live-Werte groß (FPS, Restzeit, Temperatur).
+  - Noch nichts markiert → Begrüßung mit Dual-Screen-Spielen zum Antippen.
+  - Der Begleiter hat keinen eigenen Verlauf, keinen Fokus und bekommt keine Controller-Taste. Antippen wirkt als
+    Fernbedienung. Dadurch kann es weder zwei offene Spiele noch zwei bediente Bildschirme geben.
+- **Controller:** alles wie gewohnt auf dem Hauptbildschirm; **L2/R2** blättern die Bilder des Begleiters,
+  **Select** tauscht die Bildschirme. Bilder auf dem Begleiter per Finger: wischen, aufs Bild tippen (linkes Drittel
+  zurück, sonst weiter), Pfeile, kleine Bilder. Die Bilder wechseln alle 6 s von selbst, nach dem Anfassen 25 s Pause.
+- **Tauschen** und **Dual Screen an/aus** stehen auf beiden Bildschirmen (Kopfzeile bzw. Leiste des Begleiters).
+  Getauscht ist der kleine Bildschirm der Hauptbildschirm, der große zeigt Vorschau/Bilder im Querformat (Bilder links,
+  Spiel rechts). Der neue Hauptbildschirm übernimmt Verlauf (B führt weiter zurück), Filter, Scroll-Position und Fokus.
+  Aus = ein Bildschirm wie auf jedem anderen Handheld, an derselben Stelle.
 - Geräte mit einem Bildschirm (z. B. Odin) sehen keinen Schalter; alles läuft in einem Fenster.
 
 Technik:
+- **Rollen:** `single` (ein Bildschirm), `primary`, `companion`. Die App vergibt `screen=companion` an das Fenster auf dem
+  kleinsten Display; getauscht (`dualSwap`) ist es umgekehrt. `route()` fragt zuerst `dualCompanion()` – der Begleiter
+  rendert nie eine Seite der App, sondern `cpHTML(D.show)`.
+- **Ein Zustand, eine Richtung:** Der Hauptbildschirm leitet aus Seite und Fokus ab, was der Begleiter zeigen soll
+  (`dualWant()` → `{v: 'preview'|'game'|'setup', game, way}`), und schickt es bei jeder Änderung vollständig
+  (`dualPublish`). Der Begleiter meldet sich nach dem Laden mit `hello` und bekommt den aktuellen Stand.
+- **Nachrichten** gehen doppelt (Brücke `relay` und `BroadcastChannel`, mit Kennung gegen Doppelte). Wichtig: Was das
+  andere Fenster sofort wissen muss (getauscht?, Stand des Hauptbildschirms), reist **in der Nachricht** mit –
+  `localStorage` kommt im anderen WebView verzögert an (das war ein echter Fehler beim Tauschen).
+- **Übergabe** (`savePrimary` → `takeOver`): Verlauf (`trail`, wird per `history.pushState` nachgebaut), Filter, Scroll,
+  Fokus. Bei Dual an/aus zusätzlich mit Zeitstempel (`handoff`), damit auch ein frisch geladenes Fenster übernimmt.
 - **Controller** (`InputRouter.kt`): Android schickt Tasten an das zuletzt berührte Fenster, und die Gamepad-API beider
-  WebViews sah jeden Knopf – deshalb reagierten früher beide Bildschirme. Jetzt fängt die App alle Controller-Tasten ab
-  (`dispatchKeyEvent`/`dispatchGenericMotionEvent`, Steuerkreuz, Stick mit Wiederholung) und schickt sie als Ereignis
-  `input` an **genau ein** Fenster: das mit der Rolle, die die Seite per `setInput` gewählt hat. Die Seite meldet sich mit
-  `inputReady {role}` und `setRole {role}` an; `inputTarget` sagt beiden Fenstern, wer den Controller hat. In der Seite
-  verarbeitet `padInput(key)` (app.js) alles – Router, Gamepad-API im Browser und Tastatur. Ältere App-Versionen ohne
-  Router: Gamepad-API nur im Fenster mit dem Fokus.
-- **Rollen-Wächter** (`dualGuard`, erster Schritt von `route()`): eine Seite, die nicht zur Rolle passt, geht per `relay`
-  ans andere Fenster. So gibt es nie zwei offene Spiele.
-- **Gemeinsamer Zustand** (localStorage, beide Fenster): `dualState` (wo jede Rolle steht, Scroll-Position),
-  `dualScroll` (Scroll-Position je Rolle und Seite), `dualSwap` (getauscht), `lastGame` (Spiel auf der Bühne = markierte
-  Karte oben).
+  WebViews sieht jeden Knopf – deshalb reagierten früher beide Bildschirme. Die App fängt alle Controller-Tasten ab
+  (`dispatchKeyEvent`/`dispatchGenericMotionEvent`: Steuerkreuz, Stick mit Wiederholung, L2/R2 auch als Analog-Trigger)
+  und schickt sie als Ereignis `input` an das Fenster, dessen Seite sich mit `input {role: 'primary'}` angemeldet hat.
+  Die Zurück-Geste kommt als Taste `back` beim Hauptbildschirm an (auf der Startseite: `leave`).
+  Ältere Apps: 0.1.10 kennt `inputReady`/`setInput` (wird weiter bedient), noch ältere haben keine Verteilung – dann
+  liest **nur der Hauptbildschirm** die Gamepad-API (`padsAllowed`), und Tasten, die im Begleiter-Fenster landen, reicht
+  dieser weiter. In der Seite verarbeitet `padInput(key)` (app.js) alles.
 - `second {open}` öffnet/schließt das zweite Fenster und merkt sich die Wahl; `focusSelf` holt das eigene Fenster nach vorn
-  (Tastatur für die Suche). Auf dem Thor: oben Display 0 (1920×1080, ca. 730×410 CSS-Pixel), unten 1240×1080 (ca. 470×410).
+  (Tastatur für die Suche). Thor: oben 1920×1080, unten 1240×1080; die CSS-Größe hängt von der Bildschirmdichte ab
+  (unbekannt, solange kein Selbsttest zurückkam) – das Layout ist für 413×360 bis 620×540 (unten) geprüft.
+- **Simulator** (`scripts/dualsim.mjs`): zwei Browser-Seiten in einem Profil mit nachgebauter Brücke – so lässt sich
+  Dual Screen ohne Gerät durchspielen und ansehen. `node scripts/dualsim.mjs tour|vorschau|einrichten|stress`
+  (`--density=2.25`, `--apk=7|10|11` für ältere Apps, `--seed`, `--steps`). **Vor jeder Änderung an dual.js den
+  Stresstest laufen lassen** – er prüft nach jedem Schritt: genau ein Hauptbildschirm, der Begleiter zeigt keine eigene
+  Seite und passt zum Spiel oben.
+- **Update der App:** Die Prüfung nimmt das Release mit der höchsten Nummer (GitHub listet nicht in Versionsreihenfolge;
+  bis 11.11. wurde deshalb 0.1.10 nie angeboten) und zeigt „Installieren“ direkt im Hinweis.
 
 ## Emulator wählen
 

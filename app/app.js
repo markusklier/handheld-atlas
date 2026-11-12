@@ -1292,6 +1292,7 @@ async function waitForData(justFinished) {
   try {
     const v = await (await fetch('version.json', { cache: 'no-store' })).json();
     if (state.version && v.version !== state.version) {
+      if (typeof dualRole === 'function' && dualRole() === 'companion') return location.reload();   // the companion just follows
       const list = requests().map((r) => (r.state === 'closed' ? { ...r, state: 'done' } : r));
       store.set(REQ_KEY, list);
       toast(`Deine Anfrage ist fertig – neue Daten sind da. <button class="btn primary" onclick="location.reload()">Jetzt laden</button>`, 0);
@@ -2055,6 +2056,7 @@ async function checkUpdate(manual) {
   try {
     const v = await (await fetch('version.json', { cache: 'no-store' })).json();
     if (state.version && v.version !== state.version) {
+      if (typeof dualRole === 'function' && dualRole() === 'companion') return location.reload();   // the companion just follows
       toast(`Neue Daten vom ${fmtDate(v.builtAt)} verfügbar. <button class="btn primary" onclick="location.reload()">Laden</button>`, 0);
     } else if (manual) toast('Atlas ist aktuell.');
   } catch { if (manual) toast('Keine Verbindung – du siehst den zuletzt geladenen Stand.'); }
