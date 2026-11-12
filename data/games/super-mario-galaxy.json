@@ -372,10 +372,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Maddex712/WiiDS/HEAD/docs/images/wiids-1.1-trackpad-controls.png",
-          "caption": "Trackpad-Steuerung auf dem unteren Bildschirm",
+          "caption": "Steuerungsmenü oben, unterer Bildschirm als Trackpad",
           "source": "https://github.com/Maddex712/WiiDS",
           "credit": "WiiDS",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "reports": [],

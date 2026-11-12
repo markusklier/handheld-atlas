@@ -1,0 +1,140 @@
+{
+  "id": "metal-gear-rising-revengeance",
+  "title": "Metal Gear Rising: Revengeance",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360",
+    "PC",
+    "Macintosh",
+    "Android"
+  ],
+  "genre": "Action",
+  "summary": "Die Xbox-360-Fassung läuft per statischer Rekompilierung (Zandatsu) nativ auf Android – mit eigenem ISO, laut Projekt auf dem Retroid Pocket 5 nahe 60 FPS.",
+  "versions": [
+    {
+      "id": "ps3-x360",
+      "name": "PlayStation 3 und Xbox 360 (2013)",
+      "type": "original",
+      "year": 2013,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "note": "Das Original von PlatinumGames und Konami. Die Xbox-360-Disc ist die Datenbasis für den Android-Port Zandatsu.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+        }
+      ]
+    },
+    {
+      "id": "pc-mac",
+      "name": "PC (2014) und Mac (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PC",
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+        }
+      ]
+    },
+    {
+      "id": "shield-2016",
+      "name": "NVIDIA Shield Android TV (2016)",
+      "type": "android",
+      "year": 2016,
+      "platforms": [
+        "Android"
+      ],
+      "traits": [
+        "controller"
+      ],
+      "note": "Offizielle Android-Fassung, nur für NVIDIA Shield Android TV über Google Play erschienen; auf anderen Android-Geräten nicht erhältlich.",
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/metal-gear-rising-revengeance/metal-gear-rising-revengeance-launches-on-shield-android-tv/"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "mgr-zandatsu",
+      "name": "Zandatsu – nativer Android-Port",
+      "kind": "recomp",
+      "release": "ps3-x360",
+      "edition": "Xbox 360",
+      "runtime": "Statische Rekompilierung (ReXGlue SDK); Renderer Renut (Direct3D→Vulkan, Adreno/Turnip) oder Xenia (emulierte GPU, auch Mali)",
+      "projects": [
+        "zandatsu"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Xbox-360-Disc von Metal Gear Rising: Revengeance (USA/Europa, Title ID 4B4E080A) als selbst erstelltes ISO, ca. 8 GB",
+        "Android 11+, ARM64, Vulkan 1.3; empfohlen Adreno 6xx oder neuer mit Turnip-Treiber (lädt die App selbst herunter)"
+      ],
+      "benefit": "Kein Konsolen-Emulator: Der Spielcode läuft nativ auf ARM64. Controller und anpassbare Touch-Steuerung (Blade Mode per Wischen) werden unterstützt.",
+      "caveat": "Inoffizielles, sehr junges Projekt (seit Oktober 2026). Für AYN Thor und Odin 3 nennt das Projekt noch keine Messwerte; bekannte Probleme stehen in docs/KNOWN_ISSUES.md. APK nur aus den offiziellen GitHub-Releases beziehen.",
+      "steps": [
+        "APK aus den GitHub-Releases des Projekts installieren.",
+        "In der App das eigene ISO auswählen; es wird an Ort und Stelle gelesen.",
+        "Auf Adreno-Geräten den Renderer Renut mit Turnip-Treiber verwenden."
+      ],
+      "version": "v1.2.2 (laut VGTimes, 10.11.2026)",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/dfdx047/Zandatsu"
+        },
+        {
+          "label": "Bericht: VGTimes",
+          "url": "https://vgtimes.com/gaming-news/174300-metal-gear-rising-revengeance-gets-an-unofficial-android-port.html"
+        },
+        {
+          "label": "Video: Gameplay-Test",
+          "url": "https://www.youtube.com/watch?v=fAy8uYShgsg"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Retroid Pocket 5",
+          "result": "56–58 FPS in 60 s Kampf, alle Profile",
+          "settings": "Renut, Turnip, 720p",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "date": "2026-10-24"
+        },
+        {
+          "device": "Anbernic RG Cube",
+          "result": "ca. 36–42 FPS auf Minimum/Low, darüber deutlich weniger",
+          "settings": "Xenia-Renderer (Mali-G57)",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "date": "2026-10-24"
+        }
+      ],
+      "checkedAt": "2026-11-12"
+    }
+  ],
+  "updatedAt": "2026-11-12"
+}

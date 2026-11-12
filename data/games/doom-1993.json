@@ -370,14 +370,14 @@
         "Für die gleichzeitige Kartenanzeige ein Android-Gerät mit zweitem Display"
       ],
       "benefit": "Nutzt beide Thor-Displays sinnvoll, ohne die Action zum Kartenlesen zu unterbrechen; die Karte stammt direkt aus der Engine und ist keine externe Nachbildung.",
-      "caveat": "Separater Community-Fork, kein Bestandteil von Delta Touch. Seine veröffentlichten Builds enthalten nur UZDoom; für den echten Controller muss das virtuelle Controller-Overlay abgeschaltet werden.",
+      "caveat": "Separater Community-Fork, kein Bestandteil von Delta Touch. Seine veröffentlichten Builds enthalten nur UZDoom; für den echten Controller muss das virtuelle Controller-Overlay abgeschaltet werden. Laut GAFT kann der erste Start melden, dass der Ordner „uzdoom\\config\\uzdoom“ nicht angelegt werden konnte – dann den Ordner von Hand anlegen oder unter „Paths to user folder“ einen anderen Pfad setzen.",
       "steps": [
         "Den Android-Build aus den Releases des Forks installieren.",
         "Die eigene DOOM.WAD auf das Gerät kopieren und ihren vollständigen Pfad unter „WAD file path“ eintragen.",
         "Für die Thor-Steuerung die Bildschirmsteuerung deaktivieren und die Tasten im Spiel konfigurieren.",
         "Mit aktivem zweiten Display „Launch game“ wählen; die Engine erkennt den zusätzlichen Bildschirm."
       ],
-      "version": null,
+      "version": "2.9.1-ds.1.0.2 (GitHub-Release, Juni 2026)",
       "effort": "guided",
       "status": "active",
       "verification": "ai-unverified",
@@ -404,6 +404,18 @@
         {
           "label": "Quelle",
           "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases"
+        },
+        {
+          "label": "GAFT (Games & Apps for AYN Thor)",
+          "url": "https://andreyvelsk.github.io/GAFT/project/doom/"
+        },
+        {
+          "label": "Reddit: Vorstellung des Autors (r/AynThor)",
+          "url": "https://www.reddit.com/r/AynThor/comments/1tvk122/doom_but_on_2_screens/"
+        },
+        {
+          "label": "Video",
+          "url": "https://www.youtube.com/watch?v=FAGRYqWGUQw"
         }
       ],
       "reports": [
@@ -415,7 +427,7 @@
         }
       ],
       "performance": [],
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-12",
       "dualScreenType": "integrated"
     },
     {
@@ -555,50 +567,7 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_skin_deep.jpg",
-          "caption": "Quake III : Team Arena",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_urt.jpg",
-          "caption": "Urban Terror",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake2.jpg",
-          "caption": "Quake II",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_the_dark_mod.jpg",
-          "caption": "The Dark Mod",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_quake1.jpg",
-          "caption": "Quake I",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_return_to_castle_wolfenstein.jpg",
-          "caption": "Return to Castle Wolfenstein",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [
         {
           "label": "Quelle",
@@ -757,7 +726,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-12",
   "screenshots": [],
   "wikidata": "Q189784",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29",

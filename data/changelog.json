@@ -3,6 +3,65 @@
     {
       "date": "2026-11-12",
       "type": "route-updated",
+      "by": "agent",
+      "game": "doom-1993",
+      "text": "UZDoom-Dual-Screen-Fork: Version 2.9.1-ds.1.0.2, GAFT-Eintrag, Reddit-Vorstellung des Autors, Video und Hinweis zum Ordnerfehler beim ersten Start (Issue #11)",
+      "url": "https://andreyvelsk.github.io/GAFT/project/doom/"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "removed",
+      "by": "agent",
+      "game": "doom-1993",
+      "text": "6 Bilder anderer Spiele (Quake, RTCW u. a.) vom Weg idTech4A++ entfernt"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-rising-revengeance",
+      "text": "Neues Spiel: Metal Gear Rising: Revengeance mit Fassungen (2013, PC/Mac 2014, NVIDIA Shield 2016)",
+      "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-added",
+      "by": "agent",
+      "game": "metal-gear-rising-revengeance",
+      "text": "Neuer Spielweg: Zandatsu – nativer Android-Port per Xbox-360-Rekompilierung (KI-Fund)",
+      "url": "https://github.com/dfdx047/Zandatsu"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "project-added",
+      "by": "agent",
+      "game": "metal-gear-rising-revengeance",
+      "text": "Neues Projekt: Zandatsu",
+      "url": "https://github.com/dfdx047/Zandatsu"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-added",
+      "by": "agent",
+      "game": "final-fantasy-ix",
+      "text": "Neuer Spielweg: offizielle Android-App von Square Enix; Fassungen 2016 (Android/iOS/PC) und 2019 (Switch/Xbox One) ergänzt (KI-Fund)",
+      "url": "https://www.androidcentral.com/final-fantasy-ix-android-almost-great-port"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "screenshot-added",
+      "by": "agent",
+      "text": "Bildprüfung: 8 Bilder bestätigt (u. a. Metroid Fusion, Metroid Dual, Stardew Dual Screen), 26 falsch zugeordnete entfernt (GBA DS bei Aria of Sorrow, Galaxy-/Mario-Kart-Wii-Bilder bei Double Dash und Sunshine)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "by": "agent",
+      "text": "Reihen korrigiert: Pilotwings, Wave Race, Kid Icarus, Thunder Force, Sega Rally, NFL 2K, Red Steel, Velocity, Risk of Rain, MDK, Dragon Quest Monsters, Rival Schools"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
       "game": "pokemon-scarlet",
       "text": "6 Community-Berichte von EmuReady für Pokémon Scarlet (Geräte mit dem Chip des AYN Thor)"
     },

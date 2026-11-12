@@ -3,7 +3,12 @@
   "title": "Final Fantasy IX",
   "franchise": "Final Fantasy",
   "platforms": [
-    "PlayStation"
+    "PlayStation",
+    "Android",
+    "iOS",
+    "PC",
+    "Nintendo Switch",
+    "Xbox One"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Fantasy%20IX%20%28USA%29.png",
@@ -24,7 +29,7 @@
   "versions": [
     {
       "id": "playstation",
-      "name": "PlayStation",
+      "name": "PlayStation (2000)",
       "type": "original",
       "platforms": [
         "PlayStation"
@@ -104,14 +109,105 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/e44badd3-0868-4c47-91d4-785f1772c39a"
         }
+      ],
+      "year": 2000
+    },
+    {
+      "id": "mobile-pc-2016",
+      "name": "Neuauflage für Android, iOS und PC (2016)",
+      "type": "rerelease",
+      "year": 2016,
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC"
+      ],
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "note": "Square-Enix-Fassung mit hochaufgelösten Videos und Charaktermodellen sowie „Boostern“ (u. a. höheres Tempo, Zufallskämpfe abschalten). Auf Android als eigenständige Kauf-App im Play Store.",
+      "links": [
+        {
+          "label": "Quelle: Game Informer",
+          "url": "https://www.gameinformer.com/b/news/archive/2016/02/09/playstation-1s-final-fantasy-ix-arrives-on-ios-android.aspx"
+        },
+        {
+          "label": "Test: Android Central",
+          "url": "https://www.androidcentral.com/final-fantasy-ix-android-almost-great-port"
+        }
+      ]
+    },
+    {
+      "id": "switch-xbox-2019",
+      "name": "Nintendo Switch und Xbox One (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
+        "Nintendo Switch",
+        "Xbox One"
+      ],
+      "traits": [
+        "controller"
+      ],
+      "note": "Konsolenfassung der Neuauflage mit aufgewerteten Videos und Modellen sowie Autosave.",
+      "links": [
+        {
+          "label": "Quelle: Gematsu",
+          "url": "https://gematsu.com/2019/02/final-fantasy-ix-for-xbox-one-and-switch-available-now-final-fantasy-vii-launches-march-26"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "ff9-official-android",
+      "name": "Offizielle Android-App von Square Enix",
+      "kind": "native",
+      "release": "mobile-pc-2016",
+      "runtime": "Offizielle App (com.square_enix.FFIXww.android_googleplay)",
+      "projects": [],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Kauf der App im Google Play Store",
+        "Rund 8 GB freier Speicher für Download und Installation (laut Game Informer, 2016)"
+      ],
+      "benefit": "Läuft ohne Emulator und ohne eigene Disc; HD-Videos und -Modelle sowie Booster (schneller spielen, Zufallskämpfe aus) sind eingebaut.",
+      "caveat": "Android Central (2016) lobt das Spielen mit Controller, kritisiert aber die Touch-Bedienung; das virtuelle Gamepad bleibt teils eingeblendet. Ein Test auf dem Thor ist nicht belegt; eine Zwei-Bildschirm-Funktion hat die App nicht.",
+      "steps": [],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.square_enix.FFIXww.android_googleplay"
+        },
+        {
+          "label": "Test: Android Central",
+          "url": "https://www.androidcentral.com/final-fantasy-ix-android-almost-great-port"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-12"
+    }
+  ],
+  "updatedAt": "2026-11-12",
   "wikidata": "Q474573",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_IX",
   "genre": "role-playing video game",
   "website": "https://finalfantasy-ix.square-enix-games.com/en-us/home/",
-  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.FFIXjp.android_googleplay"
+  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.FFIXjp.android_googleplay",
+  "summary": "Offiziell als Android-App mit HD-Videos und Boostern erhältlich; die PlayStation-Fassung läuft laut EmuReady auf dem Thor per DuckStation einwandfrei."
 }

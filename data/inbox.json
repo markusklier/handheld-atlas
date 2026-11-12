@@ -17,14 +17,6 @@
       "foundAt": "2026-11-12"
     },
     {
-      "url": "https://github.com/KevinXu07/RhythmAlign_Mobile",
-      "title": "KevinXu07/RhythmAlign_Mobile",
-      "excerpt": "Unofficial Android port of RhythmAlign — auto-align rhythm game handcam videos with music, export MP4 on device. Noncommercial.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
       "url": "https://github.com/almost-drowned-rat/Orta-Recompiled-Android",
       "title": "almost-drowned-rat/Orta-Recompiled-Android",
       "excerpt": "Experimental Android port of Orta Recompiled (Panzer Dragoon Orta, Xbox PAL): the game is compiled on your device from your own disc. AI assistance yes (Claude Code by Anthropic).",
@@ -97,134 +89,6 @@
       "foundAt": "2026-11-12"
     },
     {
-      "url": "https://github.com/YXX168/BodyRecomp",
-      "title": "YXX168/BodyRecomp",
-      "excerpt": "青阳 · 本地健身记录 Android App：自由组合训练积木、参考模板、饮食日记、体重围度趋势与组间计时，无需注册。",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/youngfish42/Awesome-FL",
-      "title": "youngfish42/Awesome-FL",
-      "excerpt": "Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/existye4t/erenin-yatagi",
-      "title": "existye4t/erenin-yatagi",
-      "excerpt": "Eren's Bed: A Bed Breaking Odyssey — 20 Parts, 65 Chapters of retro pixel arcade comedy simulation built with pure Vanilla JS, HTML5 Canvas & Web Audio API.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/jalberty2018/awesome-comfyui",
-      "title": "jalberty2018/awesome-comfyui",
-      "excerpt": "A collection of awesome custom nodes for ComfyUI",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/alexfduch231-prog/DroidBridge",
-      "title": "alexfduch231-prog/DroidBridge",
-      "excerpt": "Experimental AI-built Android ↔ Windows remote control, screen mirroring and file transfer. Confirmed pairing, LAN discovery, RU/EN. Contributions welcome.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/mendescotta/awesome-diablo",
-      "title": "mendescotta/awesome-diablo",
-      "excerpt": "A categorized collection of Diablo and Diablo II projects, tools, and resources.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/gil906/devpost-buildhybridai-2026-31808",
-      "title": "gil906/devpost-buildhybridai-2026-31808",
-      "excerpt": "PII-Zero: Zero-Trust Clinical & Legal Hybrid AI Airlock (#BuildHybridAI 2026 — Web + Chrome MV3 Extension + Kotlin Compose Foldable Android)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/borissmiyan/mirato",
-      "title": "borissmiyan/mirato",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/tonywei92/banana-player",
-      "title": "tonywei92/banana-player",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/esgaltur/Skaldoria",
-      "title": "esgaltur/Skaldoria",
-      "excerpt": "Markdown Presentation Creator",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/dfdx047/Zandatsu",
-      "title": "dfdx047/Zandatsu",
-      "excerpt": "A Metal Gear Solid Rising for android based on x360 static recompilation.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/adamjeonline/spajz",
-      "title": "adamjeonline/spajz",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/irmakh/rpg-play",
-      "title": "irmakh/rpg-play",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/Nova-Deck/os-build",
-      "title": "Nova-Deck/os-build",
-      "excerpt": "A Steam Deck–style gaming OS for Qualcomm Snapdragon handhelds — boots straight into Steam, with Windows games via Proton and FEX.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/MBogdanovicz/SMWC-backlog",
-      "title": "MBogdanovicz/SMWC-backlog",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/nikalbazu24/Gahvoria",
-      "title": "nikalbazu24/Gahvoria",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
       "url": "https://github.com/JulioFerrero/pocket-foundry-drivers",
       "title": "JulioFerrero/pocket-foundry-drivers",
       "excerpt": "The GPU drivers Pocket Foundry downloads, built from source by CI",
@@ -236,22 +100,6 @@
       "url": "https://github.com/Nethercap/truck-companion",
       "title": "Nethercap/truck-companion",
       "excerpt": "Free GPS and live dashboard for Euro Truck Simulator 2 and American Truck Simulator on your phone, tablet or second screen.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/mathanbne/qtmbomb",
-      "title": "mathanbne/qtmbomb",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/robinei/thor",
-      "title": "robinei/thor",
-      "excerpt": "",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-12"
@@ -273,49 +121,9 @@
       "foundAt": "2026-11-12"
     },
     {
-      "url": "https://github.com/team-litigation-lab/Case-Management-Training",
-      "title": "team-litigation-lab/Case-Management-Training",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
       "url": "https://github.com/harmssi/thor-ffix",
       "title": "harmssi/thor-ffix",
       "excerpt": "Final Fantasy IX on the AYN Thor: game on top, live deck in the game's own look on the second screen (Memoria status server + Android app, bring your own Steam copy)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/JuanenRac/HYDRA-UMC-PRODUCTION-REPORTS",
-      "title": "JuanenRac/HYDRA-UMC-PRODUCTION-REPORTS",
-      "excerpt": "Automated OEE and KPI generation for industrial plant management.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/befrvnk/nixos-config",
-      "title": "befrvnk/nixos-config",
-      "excerpt": "My NixOS configurations",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/giorgiogiudice/TUR",
-      "title": "giorgiogiudice/TUR",
-      "excerpt": "TUR — The Unified Realm. The operating system of the future: one computer, every application (Linux, Windows, Android), the P@x AI assistant, and updates that cannot break it. Pre-alpha; free for personal, noncommercial use.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-12"
-    },
-    {
-      "url": "https://github.com/hincuser/Brainz",
-      "title": "hincuser/Brainz",
-      "excerpt": "David P Brainz",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-12"
@@ -6563,13 +6371,36 @@
     "https://github.com/ShakyaJU/pokepod",
     "https://github.com/sughan21/New-loyal-cards",
     "https://github.com/rishavp752/River-intelligence-system",
-    "https://github.com/jonhoo/ur"
+    "https://github.com/jonhoo/ur",
+    "https://github.com/JuanenRac/HYDRA-UMC-PRODUCTION-REPORTS",
+    "https://github.com/KevinXu07/RhythmAlign_Mobile",
+    "https://github.com/MBogdanovicz/SMWC-backlog",
+    "https://github.com/Nova-Deck/os-build",
+    "https://github.com/YXX168/BodyRecomp",
+    "https://github.com/adamjeonline/spajz",
+    "https://github.com/alexfduch231-prog/DroidBridge",
+    "https://github.com/befrvnk/nixos-config",
+    "https://github.com/borissmiyan/mirato",
+    "https://github.com/esgaltur/Skaldoria",
+    "https://github.com/existye4t/erenin-yatagi",
+    "https://github.com/gil906/devpost-buildhybridai-2026-31808",
+    "https://github.com/giorgiogiudice/TUR",
+    "https://github.com/hincuser/Brainz",
+    "https://github.com/irmakh/rpg-play",
+    "https://github.com/jalberty2018/awesome-comfyui",
+    "https://github.com/mathanbne/qtmbomb",
+    "https://github.com/mendescotta/awesome-diablo",
+    "https://github.com/nikalbazu24/Gahvoria",
+    "https://github.com/robinei/thor",
+    "https://github.com/team-litigation-lab/Case-Management-Training",
+    "https://github.com/tonywei92/banana-player",
+    "https://github.com/youngfish42/Awesome-FL"
   ],
   "agent": {
-    "lastRun": "2026-11-11T21:01:11Z",
-    "summary": "WiiDS-Dual-Screen-Wege für Galaxy, Double Dash und Brawl, 5 neue Spiele mit nativen Rekompilierungen (Naruto Broken Bond, God Hand, Bayonetta 3, Gears of War 1 und 3), NewDark-Port für System Shock 2; Metroid-Prime-Trilogy- und Isaac-Afterbirth+-Dubletten zusammengeführt, 17 Franchise-Korrekturen, 7 Bilder bestätigt und 17 falsch zugeordnete entfernt; 33 Leads bearbeitet (27 verworfen). Zurückgestellt (in leads belassen, zu jung/ohne Release): Halo 3, Spore, Crashday, Manhunt 2, Black Ops III, xbox-recomp-suite, Pokémon Z-A-Optimierer u. a. Issue #11 (update: doom-1993) lief gerade in der Action. Nicht erreichbar: Reddit, Google Play, YouTube, Fremdseiten-Bilder – 13 unklare Bilder offen.",
-    "processed": 33,
-    "rejected": 27
+    "lastRun": "2026-11-12T19:54:28Z",
+    "summary": "Issue #11 (update: doom-1993) erledigt; neues Spiel Metal Gear Rising mit Zandatsu-Port, offizielle Android-App für Final Fantasy IX; 8 Bilder bestätigt, 26 falsch zugeordnete entfernt; 12 Reihen korrigiert; 24 Leads bearbeitet (23 verworfen). Einschränkung: GitHub-Seiten fremder Repos waren in diesem Lauf nicht abrufbar – junge Recomp-Leads (NieR, MH Rise, Xenoblade, Disco Elysium, Orta, BM64-Android, Asphalt UGT2, Sonic Heroes, VS. SMB) und thor-ffix (FF IX Dual Screen), truck-companion, thor-control, Thortemis bleiben in leads. Warteschlange nicht abgearbeitet (backend api, Guthaben leer).",
+    "processed": 24,
+    "rejected": 23
   },
   "watcher": {
     "lastRun": "2026-11-12T13:49:30Z",

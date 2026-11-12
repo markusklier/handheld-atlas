@@ -316,10 +316,10 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/start_screen.jpg",
-          "caption": "The PrimeRecomp start screen",
+          "caption": "Startbildschirm von PrimeRecomp",
           "source": "https://github.com/gminustwo/primerecomp",
           "credit": "PrimeRecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/landing_site.jpg",

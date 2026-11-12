@@ -421,10 +421,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-ridley.png",
-          "caption": "Ridley battle at Ceres Station",
+          "caption": "Kampf gegen Ridley auf der Ceres-Station",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-escape.png",

@@ -62,10 +62,11 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-morph-ball-2d.png",
-          "caption": "Brinstar, Morph Ball room (2D)",
+          "caption": "Brinstar: oben das Spiel, unten Karte, Status und nächstes Ziel",
           "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
           "credit": "github.com",
-          "check": "ai-unclear"
+          "check": "source-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-skree-corridor-2d.png",

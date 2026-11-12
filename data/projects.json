@@ -2292,6 +2292,18 @@
         "url": "https://github.com/thekojac304/NewDarkAndroid/releases/tag/v0.1.0-beta.1",
         "date": "2026-10-20"
       }
+    },
+    {
+      "id": "zandatsu",
+      "name": "Zandatsu",
+      "kind": "port",
+      "url": "https://github.com/dfdx047/Zandatsu",
+      "repo": "dfdx047/Zandatsu",
+      "description": "Inoffizieller Android-Port von Metal Gear Rising: Revengeance per statischer Rekompilierung der Xbox-360-Fassung (ReXGlue SDK); eigenes ISO nötig.",
+      "games": [
+        "metal-gear-rising-revengeance"
+      ],
+      "checkedAt": "2026-11-12"
     }
   ]
 }
