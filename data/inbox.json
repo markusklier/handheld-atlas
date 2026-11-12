@@ -1,6 +1,382 @@
 {
   "leads": [
     {
+      "url": "https://github.com/dsluo/openmw",
+      "title": "dsluo/openmw (Fork von OpenMW/openmw)",
+      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/MainUI-Android/melonDS-android-mainui",
+      "title": "MainUI-Android/melonDS-android-mainui (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/KevinXu07/RhythmAlign_Mobile",
+      "title": "KevinXu07/RhythmAlign_Mobile",
+      "excerpt": "Unofficial Android port of RhythmAlign — auto-align rhythm game handcam videos with music, export MP4 on device. Noncommercial.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/almost-drowned-rat/Orta-Recompiled-Android",
+      "title": "almost-drowned-rat/Orta-Recompiled-Android",
+      "excerpt": "Experimental Android port of Orta Recompiled (Panzer Dragoon Orta, Xbox PAL): the game is compiled on your device from your own disc. AI assistance yes (Claude Code by Anthropic).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/IamWilmar/nier-recomp",
+      "title": "IamWilmar/nier-recomp",
+      "excerpt": "Native Android port of NieR:Automata for the Retroid Pocket Flip 2. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/IamWilmar/mhrise-recomp",
+      "title": "IamWilmar/mhrise-recomp",
+      "excerpt": "Native Android port of Monster Hunter Rise for the Retroid Pocket Flip 2. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/IamWilmar/xenoblade-recomp",
+      "title": "IamWilmar/xenoblade-recomp",
+      "excerpt": "Native Android port of Xenoblade Chronicles: Definitive Edition for the Retroid Pocket Flip 2. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/IamWilmar/disco-recomp",
+      "title": "IamWilmar/disco-recomp",
+      "excerpt": "Native Android port of Disco Elysium – The Final Cut for the Retroid Pocket Flip 2. Work in progress. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/jsp244/vs-smb-recomp",
+      "title": "jsp244/vs-smb-recomp",
+      "excerpt": "VS. Super Mario Bros. (arcade) as a native Windows, Linux, Steam Deck and Android program by static recompilation; bring your own dump",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/BoroGodo120/bm64-recomp-android",
+      "title": "BoroGodo120/bm64-recomp-android",
+      "excerpt": "Bomberman 64 Recompiled - Android port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/teclilla18/sonic-heroes-recomp",
+      "title": "teclilla18/sonic-heroes-recomp",
+      "excerpt": "Sonic Heroes (GameCube) native port by static recompilation: Switch first, then PC, Android, Linux, iOS. Work in progress, no release yet. Bring your own disc.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/samsixx6/Asphalt-Urban-GT-2-Recomp",
+      "title": "samsixx6/Asphalt-Urban-GT-2-Recomp",
+      "excerpt": "Native recompilation of Asphalt: Urban GT 2 for Windows and Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/YXX168/BodyRecomp",
+      "title": "YXX168/BodyRecomp",
+      "excerpt": "青阳 · 本地健身记录 Android App：自由组合训练积木、参考模板、饮食日记、体重围度趋势与组间计时，无需注册。",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/youngfish42/Awesome-FL",
+      "title": "youngfish42/Awesome-FL",
+      "excerpt": "Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/existye4t/erenin-yatagi",
+      "title": "existye4t/erenin-yatagi",
+      "excerpt": "Eren's Bed: A Bed Breaking Odyssey — 20 Parts, 65 Chapters of retro pixel arcade comedy simulation built with pure Vanilla JS, HTML5 Canvas & Web Audio API.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/jalberty2018/awesome-comfyui",
+      "title": "jalberty2018/awesome-comfyui",
+      "excerpt": "A collection of awesome custom nodes for ComfyUI",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/alexfduch231-prog/DroidBridge",
+      "title": "alexfduch231-prog/DroidBridge",
+      "excerpt": "Experimental AI-built Android ↔ Windows remote control, screen mirroring and file transfer. Confirmed pairing, LAN discovery, RU/EN. Contributions welcome.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/mendescotta/awesome-diablo",
+      "title": "mendescotta/awesome-diablo",
+      "excerpt": "A categorized collection of Diablo and Diablo II projects, tools, and resources.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/gil906/devpost-buildhybridai-2026-31808",
+      "title": "gil906/devpost-buildhybridai-2026-31808",
+      "excerpt": "PII-Zero: Zero-Trust Clinical & Legal Hybrid AI Airlock (#BuildHybridAI 2026 — Web + Chrome MV3 Extension + Kotlin Compose Foldable Android)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/borissmiyan/mirato",
+      "title": "borissmiyan/mirato",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/tonywei92/banana-player",
+      "title": "tonywei92/banana-player",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/esgaltur/Skaldoria",
+      "title": "esgaltur/Skaldoria",
+      "excerpt": "Markdown Presentation Creator",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/dfdx047/Zandatsu",
+      "title": "dfdx047/Zandatsu",
+      "excerpt": "A Metal Gear Solid Rising for android based on x360 static recompilation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/adamjeonline/spajz",
+      "title": "adamjeonline/spajz",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/irmakh/rpg-play",
+      "title": "irmakh/rpg-play",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/Nova-Deck/os-build",
+      "title": "Nova-Deck/os-build",
+      "excerpt": "A Steam Deck–style gaming OS for Qualcomm Snapdragon handhelds — boots straight into Steam, with Windows games via Proton and FEX.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/MBogdanovicz/SMWC-backlog",
+      "title": "MBogdanovicz/SMWC-backlog",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/nikalbazu24/Gahvoria",
+      "title": "nikalbazu24/Gahvoria",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/JulioFerrero/pocket-foundry-drivers",
+      "title": "JulioFerrero/pocket-foundry-drivers",
+      "excerpt": "The GPU drivers Pocket Foundry downloads, built from source by CI",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/Nethercap/truck-companion",
+      "title": "Nethercap/truck-companion",
+      "excerpt": "Free GPS and live dashboard for Euro Truck Simulator 2 and American Truck Simulator on your phone, tablet or second screen.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/mathanbne/qtmbomb",
+      "title": "mathanbne/qtmbomb",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/robinei/thor",
+      "title": "robinei/thor",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/timklop/thor-control",
+      "title": "timklop/thor-control",
+      "excerpt": "AYN Thor system controls for LineageOS: Magisk module with root daemon, bottom-screen menu, game mode, recents and keyboard",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/aboersma1/Thortemis",
+      "title": "aboersma1/Thortemis",
+      "excerpt": "A custom fork of Artemis designed for the ayn thor to play wow forever with.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/team-litigation-lab/Case-Management-Training",
+      "title": "team-litigation-lab/Case-Management-Training",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/harmssi/thor-ffix",
+      "title": "harmssi/thor-ffix",
+      "excerpt": "Final Fantasy IX on the AYN Thor: game on top, live deck in the game's own look on the second screen (Memoria status server + Android app, bring your own Steam copy)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/JuanenRac/HYDRA-UMC-PRODUCTION-REPORTS",
+      "title": "JuanenRac/HYDRA-UMC-PRODUCTION-REPORTS",
+      "excerpt": "Automated OEE and KPI generation for industrial plant management.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/befrvnk/nixos-config",
+      "title": "befrvnk/nixos-config",
+      "excerpt": "My NixOS configurations",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/giorgiogiudice/TUR",
+      "title": "giorgiogiudice/TUR",
+      "excerpt": "TUR — The Unified Realm. The operating system of the future: one computer, every application (Linux, Windows, Android), the P@x AI assistant, and updates that cannot break it. Pre-alpha; free for personal, noncommercial use.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/hincuser/Brainz",
+      "title": "hincuser/Brainz",
+      "excerpt": "David P Brainz",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/shell-ninja/Blocker-App",
+      "title": "shell-ninja/Blocker-App",
+      "excerpt": "A free and open source android app that blocks 9357 adult urls and 62 keywords, with temper protection",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/NOI56/PostDeeMobile",
+      "title": "NOI56/PostDeeMobile",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/abahvictor360-sketch/Wordpadx",
+      "title": "abahvictor360-sketch/Wordpadx",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything",
+      "title": "AIshihzong/awesome-reverse-engineer-anything",
+      "excerpt": "Awesome REA (Reverse Engineer Anything): curated AI reverse engineering cases. What AI agents (REA, Craft Anything, Claude Code, Codex) reverse-engineered and rebuilt, open-source alternatives by app, and which ones really used REA. Unofficial, bilingual, every case checked.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/tim5wang/godex",
+      "title": "tim5wang/godex",
+      "excerpt": "AI agent workspace unifying CLI, Web, TUI, API, and IM channels with tools, memory, subagents, approvals, and audit trails.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/MorpheApp/morphe-patches",
+      "title": "MorpheApp/morphe-patches",
+      "excerpt": "Morphe Patches",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/Pepengtuta/ssmmss",
+      "title": "Pepengtuta/ssmmss",
+      "excerpt": "Smart SIM Multi-phone Messaging Sender Service",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-12"
+    },
+    {
       "url": "https://github.com/VinTeRuS/spore-re",
       "title": "VinTeRuS/spore-re",
       "excerpt": "Native Android port of Spore via static x86 recompilation. Very early stage. No APKs or game files.",
@@ -6053,118 +6429,6 @@
       "game": null,
       "source": "gaft",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/wayfinder/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/walkthor/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/totk-native/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/tomba-2/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thortranslate/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thorstream/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thornotes/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thordirstat/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-speedrunsplits/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-rts/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-ra2/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-halflife/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-edition-for-d3/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/thor-d2/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6308,9 +6572,9 @@
     "rejected": 27
   },
   "watcher": {
-    "lastRun": "2026-11-11T12:45:32Z",
-    "newLeads": 48,
-    "newEvents": 9
+    "lastRun": "2026-11-12T13:49:30Z",
+    "newLeads": 47,
+    "newEvents": 13
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

@@ -21,6 +21,23 @@
   ],
   "routes": [],
   "mods": [],
-  "screenshots": [],
-  "updatedAt": "2026-11-11"
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%203D%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%203D%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+    }
+  ],
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q18536859",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Majora%27s_Mask_3D",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Legend%20of%20Zelda%2C%20The%20-%20Majora%27s%20Mask%203D%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+  }
 }

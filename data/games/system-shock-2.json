@@ -85,6 +85,20 @@
           "source": "https://github.com/thekojac304/NewDarkAndroid",
           "credit": "NewDarkAndroid",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/thekojac304/NewDarkAndroid/HEAD/docs/images/gameplay-touch-controls.jpg",
+          "caption": "System Shock 2 running in the port on a Galaxy S26 Ultra, with the floating stic",
+          "source": "https://github.com/thekojac304/NewDarkAndroid",
+          "credit": "NewDarkAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/thekojac304/NewDarkAndroid/HEAD/docs/images/radial-weapon-menu.jpg",
+          "caption": "The radial weapon menu fanned out from the held button while walking",
+          "source": "https://github.com/thekojac304/NewDarkAndroid",
+          "credit": "NewDarkAndroid",
+          "check": "readme"
         }
       ],
       "reports": [],

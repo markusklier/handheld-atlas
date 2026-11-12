@@ -7,7 +7,8 @@
     "PlayStation 2",
     "PSP",
     "PC",
-    "Wii"
+    "Wii",
+    "mobile phone"
   ],
   "genre": "action-adventure game",
   "summary": "Remake von Tomb Raider (2007).",
@@ -28,6 +29,51 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        }
+      ]
+    },
+    {
+      "id": "mobile-phone-2007",
+      "name": "Original (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "mobile phone"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q580667"
+        }
+      ]
+    },
+    {
+      "id": "macintosh-2008",
+      "name": "Macintosh (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q580667"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3-2011",
+      "name": "PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q580667"
         }
       ]
     }
@@ -60,5 +106,11 @@
     }
   ],
   "screenshots": [],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q580667",
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_Anniversary",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Tomb%20Raider_%20Anniversary%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  }
 }

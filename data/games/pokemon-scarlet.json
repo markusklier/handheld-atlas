@@ -16,6 +16,33 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8b25c2aa-c532-4cb7-9a41-c57b3d4ce9cb",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Tweak with the Eden veil options, sometimes device might drop frames due to loading shaders and some people have reported about flashing tree's ( somehow fixed it ) - Would recommend compass mod as it fixes a couple of t",
+          "votes": 4,
+          "date": "2025-06-14",
+          "settings": {
+            "Emulator Version": "0.0.2 Alpha"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/5dfb3c7e-9ed9-4fd8-9418-1a865c0e9b25"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e0fde0ec-9f49-4cc0-8559-9f41942b3c41"
+        }
       ]
     }
   ],

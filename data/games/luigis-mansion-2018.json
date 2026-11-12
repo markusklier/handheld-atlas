@@ -29,5 +29,12 @@
   "routes": [],
   "mods": [],
   "screenshots": [],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q111597000",
+  "website": "https://www.nintendo.co.jp/3ds/bgnj/",
+  "cover": {
+    "url": "https://www.nintendo.co.jp/3ds/bgnj/sns.png",
+    "source": "https://www.nintendo.co.jp/3ds/bgnj/",
+    "check": "ai"
+  }
 }

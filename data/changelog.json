@@ -2,6 +2,180 @@
   "entries": [
     {
       "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "pokemon-scarlet",
+      "text": "6 Community-Berichte von EmuReady für Pokémon Scarlet (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "pokemon-omega-ruby",
+      "text": "1 Community-Berichte von EmuReady für Pokémon Omega Ruby (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "pokemon-mystery-dungeon-explorers-of-sky",
+      "text": "1 Community-Berichte von EmuReady für Pokémon Mystery Dungeon: Explorers of Sky (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "the-binding-of-isaac-rebirth",
+      "text": "7 Community-Berichte von EmuReady für The Binding of Isaac: Rebirth (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "super-mario-galaxy",
+      "text": "13 Community-Berichte von EmuReady für Super Mario Galaxy (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "gears-of-war",
+      "text": "1 Community-Berichte von EmuReady für Gears of War (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "route-updated",
+      "game": "bayonetta-3",
+      "text": "4 Community-Berichte von EmuReady für Bayonetta 3 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "NewDarkAndroid v0.1.0-beta.1 veröffentlicht.",
+      "project": "newdark-android",
+      "games": [
+        "system-shock-2"
+      ],
+      "url": "https://github.com/thekojac304/NewDarkAndroid/releases/tag/v0.1.0-beta.1"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "Gears3Recomp v1.1.0 veröffentlicht.",
+      "project": "gears3-recomp",
+      "games": [
+        "gears-of-war-3"
+      ],
+      "url": "https://github.com/Jauidev/Gears3Recomp/releases/tag/v1.1.0"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "GearsRecomp v1.1.1 veröffentlicht.",
+      "project": "gears-recomp",
+      "games": [
+        "gears-of-war"
+      ],
+      "url": "https://github.com/Jauidev/GearsRecomp/releases/tag/v1.1.1"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.1.2 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.1.2"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "God Hand Recompiled (Android) v0.46-m45-bootmsg (Vorabversion) veröffentlicht.",
+      "project": "godhand-recompiled-android",
+      "games": [
+        "god-hand"
+      ],
+      "url": "https://github.com/Ptraaah/godhand-recompiled-android/releases/tag/v0.46-m45-bootmsg"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "Naruto: The Broken Bond Android Port v2.5-android-beta.42 veröffentlicht.",
+      "project": "naruto-broken-bond-android",
+      "games": [
+        "naruto-the-broken-bond"
+      ],
+      "url": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port/releases/tag/v2.5-android-beta.42"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "PrimeRecomp v0.0.10 veröffentlicht.",
+      "project": "primerecomp",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.0.10"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "Project IGI Android Port 1.0.4 veröffentlicht.",
+      "project": "project-igi-android-port",
+      "games": [
+        "project-igi-im-going-in"
+      ],
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port/releases/tag/1.0.4"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.57 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.57"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "GBA DS v1.5 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "DS Forever v1.0.25 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.25"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "SkyrimSE-DualScreen v1.0.4 veröffentlicht.",
+      "project": "skyrimse-dualscreen",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.4"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "release",
+      "text": "ZomboidDS v1.6.0 veröffentlicht.",
+      "project": "zomboidds",
+      "games": [
+        "project-zomboid"
+      ],
+      "url": "https://github.com/Space001000/ZomboidDS/releases/tag/v1.6.0"
+    },
+    {
+      "date": "2026-11-12",
       "type": "screenshot-added",
       "by": "ai-research",
       "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 0 unpassende entfernt"

@@ -15,6 +15,86 @@
       "year": 2022,
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fd00581c-4299-4d7e-927f-c02054c35c7e",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Consistent 30fps at 1x resolution no lsfg. Little stutter from shader compliation Emulator: Eden Duo Docked mode: Off Driver: Turnip V38 Gpu mode: accurate Sync Memory Operations: On (but disable if you crash) Disk shade",
+          "votes": 0,
+          "date": "2026-11-08",
+          "settings": {
+            "Game Version": "1.0.0",
+            "Average FPS": "30 no lsfg",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d9964474-f964-4e45-84d4-f9290384f523",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "slight lighting bugs",
+          "votes": 0,
+          "date": "2026-07-04",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0e701679-1ca4-4043-b9dd-8e730a915d11",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Yes, it's really \"Playable\" (in 720p!)! Be careful, it's more complicated to set up than most games, I had to knit from several other configurations to find a configuration that doesn't freeze and that has enough fps to ",
+          "votes": 2,
+          "date": "2025-08-31"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/23aed330-867d-4142-98e5-718ae6a9f9f0",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "FPS dips during cutscenes really bad and gameplay is up and down. Much better performance with the new Eden emulator which fixes cutscenes stutters and makes it more playable.",
+          "votes": 1,
+          "date": "2025-06-06"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/99b56104-e18c-4578-83cb-5720fdedfca5"
+        }
       ]
     }
   ],
@@ -43,6 +123,27 @@
           "source": "https://github.com/aoxzh/bayo3-recomp",
           "credit": "Bayonetta 3 Recomp",
           "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/launcher-desktop-home.jpg",
+          "caption": "Bayonetta 3 Recomp desktop launcher on Windows: rain dark city, Bayonetta 3 word",
+          "source": "https://github.com/aoxzh/bayo3-recomp",
+          "credit": "Bayonetta 3 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/chapter8-gameplay.png",
+          "caption": "Bayonetta 3 native Windows recompilation gameplay in Chapter 8",
+          "source": "https://github.com/aoxzh/bayo3-recomp",
+          "credit": "Bayonetta 3 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/launcher-desktop-settings.jpg",
+          "caption": "Bayonetta 3 Recomp desktop launcher settings on Windows and Steam Deck",
+          "source": "https://github.com/aoxzh/bayo3-recomp",
+          "credit": "Bayonetta 3 Recomp",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -78,5 +179,12 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q44997696",
+  "website": "https://www.nintendo.co.jp/bayonetta/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Bayonetta_3",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/fe/Bayonetta_3_cover.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Bayonetta_3"
+  }
 }

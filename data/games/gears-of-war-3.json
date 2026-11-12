@@ -66,5 +66,11 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q1050833",
+  "wikipedia": "https://en.wikipedia.org/wiki/Gears_of_War_3",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/dc/Gears_of_War_3_box_artwork.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Gears_of_War_3"
+  }
 }

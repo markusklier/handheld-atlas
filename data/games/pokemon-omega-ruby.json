@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3b7876fa-da2b-4088-8053-c2b8457c5f98",
+          "device": "AYN Thor Max",
+          "emulator": "Citra",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 4,
+          "date": "2026-02-15",
+          "settings": {
+            "Emulator Version": "Citra_MMJ_20251112",
+            "Graphics API": "Vulkan",
+            "Resolution Factor": "4",
+            "Texture Filter": "None",
+            "Texture Sampling": "Game Controlled",
+            "Layout Option": "Default",
+            "Use Hardware Shader": "True",
+            "Use Shader JIT": "True",
+            "Use VSync": "True",
+            "Shaders Accurate Multiplication": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2d2b47ae-cbb4-46c9-a33f-5d9475ca70d2"
+        }
       ]
     }
   ],

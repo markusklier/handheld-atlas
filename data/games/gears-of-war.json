@@ -16,6 +16,13 @@
       "year": 2006,
       "platforms": [
         "Xbox 360"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/315ac3b5-7f42-4300-9662-2c3406c42eca"
+        }
       ]
     },
     {
@@ -25,6 +32,38 @@
       "year": 2007,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9bfbde2e-daf8-4aa7-86bf-a91987b8796a",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Note - this is the original PC release of GOW1 on Games for Windows Live, not Reloaded or Ultimate. You’ll need to bypass the launcher and in order to do that you have to overwrite an html file in “ C/users/[username]/Ap",
+          "votes": 1,
+          "date": "2026-01-12",
+          "settings": {
+            "Emulator Version": "v5.1.0",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Force Enabled",
+            "Game Resolution": "1280 x 720",
+            "Command Line": "nomoviestartup",
+            "Compatibility Layer": "wine9.5-x64-2",
+            "Translation Parameters": "Stability",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R7",
+            "Surface Format": "RGBA8"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/bce6f0bd-7da6-481f-a3c8-819bdac4b29a"
+        }
       ]
     },
     {
@@ -93,5 +132,11 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q636219",
+  "wikipedia": "https://en.wikipedia.org/wiki/Gears_of_War_%28video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Gears_of_war_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Gears_of_War_%28video_game%29"
+  }
 }

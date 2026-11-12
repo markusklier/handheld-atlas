@@ -61,6 +61,13 @@
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto Broken Bond Android Port",
           "check": "ai-unclear"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/title-screen.jpg",
+          "caption": "Title screen",
+          "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
+          "credit": "Naruto: The Broken Bond Android Port",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -100,5 +107,11 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q2633663",
+  "wikipedia": "https://en.wikipedia.org/wiki/Naruto%3A_The_Broken_Bond",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b3/Naruto_The_Broken_Bond.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Naruto%3A_The_Broken_Bond"
+  }
 }

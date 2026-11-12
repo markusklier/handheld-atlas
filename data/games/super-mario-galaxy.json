@@ -29,7 +29,39 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2007
+      "year": 2007,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c782a6e2-6e7d-4bcb-8b08-42f1c8d5f53d",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-01-27",
+          "settings": {
+            "Emulator Version": "2512",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True",
+            "Average FPS": "80"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/79de7d80-1998-489f-a74d-3a3dbf5901be"
+        }
+      ]
     },
     {
       "id": "wii-u-2015",
@@ -69,7 +101,219 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "note": "Zeitlich begrenzt verkaufte Sammlung mit Super Mario 64, Sunshine und Galaxy; Galaxy in HD mit angepasster Steuerung."
+      "note": "Zeitlich begrenzt verkaufte Sammlung mit Super Mario 64, Sunshine und Galaxy; Galaxy in HD mit angepasster Steuerung.",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ac0f50c0-45f2-4303-a7f0-98b5c509c0bb",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Perfectly playable game, stable 60fps with default settings (with asynchronous Shaders collection), sound working well, no bugs, no crashes when playing, slight drops in fps (60-50).",
+          "votes": 2,
+          "date": "2025-10-14",
+          "settings": {
+            "Emulator Version": "c7431bd",
+            "Driver Version": "Default System Driver",
+            "Accuracy Level": "Normal",
+            "Resolution": "1280x720",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Audio output engine": "Auto",
+            "GPU API": "Vulkan"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f1317fad-41f8-4ada-9fc9-3471791b1090",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Works correctly with Qualcomm 819.2 drivers, maintaining between 55 and 60 fps in-game without any special adjustments. However, be aware that the game drains the battery quickly. I completed the entire intro and the fir",
+          "votes": 8,
+          "date": "2025-11-19",
+          "settings": {
+            "Game Version": "1.2.0",
+            "Average FPS": "55",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ebe6e366-993b-4d2b-83cc-a9565af9e298",
+          "device": "AYN Thor Base",
+          "emulator": "Citron",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "I tried all of the latest custom drivers but none of them run the game higher than low 20 fps. The default Qualcomm drivers(676.53) in Citron actually gave better performance with an average 45 fps and dips from time to ",
+          "votes": 2,
+          "date": "2026-03-17",
+          "settings": {
+            "Emulator Version": "2026.02.1-77",
+            "Driver Version": "[KIMCHI Turnip] Qualcomm driver v744.12|||adreno744.12.adpkg.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "Native",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1d96f506-c72f-4ab4-ab77-4955ce5af45d",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-09-18",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/019f7957-8259-4a9e-b4a6-1b34393a5094",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Like other models, it's practically unusable.",
+          "votes": 0,
+          "date": "2026-04-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/89959c39-a5d3-4292-84e8-b707bed02304",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "runs but cant get above 15-18 FPS",
+          "votes": 0,
+          "date": "2026-02-10"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c6f9075d-dff9-43ed-abd3-885d846d39e4",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "In S23 Ultra, even after trying many configurations, drivers, etc., the game still crashes frequently, the cutscenes work but the gameplay is still around 15fps.",
+          "votes": 0,
+          "date": "2025-12-25"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/409e7e73-2317-4e23-8a57-d8b5511d9ff5",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Can’t make it to the save point after the first star. Seems perfect until heavy loading and sudden crashes throughout the first level.",
+          "votes": 3,
+          "date": "2025-11-20"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3221ed3d-7f0d-46e1-b2d7-c4079785fa71",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Crash just before the first island (at the beginning of the intro with the star) Screenshots available.",
+          "votes": 2,
+          "date": "2026-01-19",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6e429e21-9e0a-466e-84f6-75112a40d6b0",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-01-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/69d8e7ee-01aa-4891-8e3f-01edcdbd21b1",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Tried with default settings game starts but crashes after a while. Will test different settings",
+          "votes": 2,
+          "date": "2025-11-17"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/059361b0-089b-4ff1-bc06-027b7c556ddd",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Super slow even trying to save a file",
+          "votes": 0,
+          "date": "2026-09-08"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2bee0c99-5b92-4962-843d-6ab4eff0c349"
+        }
+      ]
     },
     {
       "id": "galaxy-1-2-switch-2025",

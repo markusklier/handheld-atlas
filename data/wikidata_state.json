@@ -747,7 +747,17 @@
     "new-super-mario-bros-u": "2026-11-10",
     "project-igi-im-going-in": "2026-11-10",
     "sonic-free-riders": "2026-11-10",
-    "star-wars-rogue-squadron": "2026-11-10"
+    "star-wars-rogue-squadron": "2026-11-10",
+    "bayonetta-3": "2026-11-12",
+    "gears-of-war-3": "2026-11-12",
+    "gears-of-war": "2026-11-12",
+    "god-hand": "2026-11-12",
+    "luigis-mansion-2018": "2026-11-12",
+    "naruto-the-broken-bond": "2026-11-12",
+    "the-legend-of-zelda-links-awakening-2019": "2026-11-12",
+    "the-legend-of-zelda-majoras-mask-3d": "2026-11-12",
+    "the-legend-of-zelda-ocarina-of-time-3d": "2026-11-12",
+    "tomb-raider-anniversary": "2026-11-12"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1692,6 +1702,16 @@
     "new-super-mario-bros-u": 3,
     "project-igi-im-going-in": 3,
     "sonic-free-riders": 3,
-    "star-wars-rogue-squadron": 3
+    "star-wars-rogue-squadron": 3,
+    "bayonetta-3": 3,
+    "gears-of-war-3": 3,
+    "gears-of-war": 3,
+    "god-hand": 3,
+    "luigis-mansion-2018": 3,
+    "naruto-the-broken-bond": 3,
+    "the-legend-of-zelda-links-awakening-2019": 3,
+    "the-legend-of-zelda-majoras-mask-3d": 3,
+    "the-legend-of-zelda-ocarina-of-time-3d": 3,
+    "tomb-raider-anniversary": 3
   }
 }

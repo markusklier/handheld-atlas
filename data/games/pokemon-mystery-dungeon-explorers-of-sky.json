@@ -28,6 +28,35 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8fb8e7e2-d8ab-4321-a624-e50bce0ea866",
+          "device": "AYN Thor Max",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-08-16",
+          "settings": {
+            "Emulator Version": "1.1",
+            "Renderer": "OpenGL",
+            "Resolution Scale": "1",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "Audio Interpolation": "Linear"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1eb6aa0c-4805-495e-a6ab-0472da0b819e"
+        }
       ]
     }
   ],

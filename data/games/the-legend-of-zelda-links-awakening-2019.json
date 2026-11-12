@@ -240,5 +240,12 @@
   ],
   "mods": [],
   "screenshots": [],
-  "updatedAt": "2026-11-11"
+  "updatedAt": "2026-11-11",
+  "wikidata": "Q61745904",
+  "website": "https://www.zelda.com/links-awakening",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Link%27s_Awakening_%282019_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/74/The_Legend_of_Zelda_Link%27s_Awakening_%282019_video_game%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Link%27s_Awakening_%282019_video_game%29"
+  }
 }

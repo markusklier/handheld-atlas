@@ -362,6 +362,13 @@
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/blips-iv.png",
+          "caption": "GTA IV blips panel: 22 blips with the TBoGT magenta accent, Helitour routed",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "readme"
         }
       ],
       "links": [
