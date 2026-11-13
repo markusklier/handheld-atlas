@@ -42,6 +42,96 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2a0fafee-e4d3-43ba-93be-2ce27b8c679f"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ccdac4ab-1914-478a-ad9a-9d7b7e856930",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Although it runs 60fps for the most part, frame pacing is bad. I recommend you cap fps to 50 or even 45 for a more consistent framerate. Tested on gamehub and gamehub lite",
+          "votes": 2,
+          "date": "2026-01-25",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/145179f9-4c6e-4467-a3f3-11a13c8e7a52",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "so far, out of my 5 hours played on the Odin 2 Portal i have experienced one frame drop and it was during a cutscene. Flawless gameplay in my opinion and still looks beautiful despite the lower graphic settings (mostly d",
+          "votes": 1,
+          "date": "2026-01-20",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c1826016-6039-4b45-95b6-ee4765d540ed",
+          "device": "AYN Odin 2",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Settings: Everything on Normal and OFF, to maintain frame stability of 60 FPS for most of the gameplay in the audio in pulse audio, click on the audio settings and in the performance mode you put \"none\"",
+          "votes": 0,
+          "date": "2025-06-24",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "Winlator 10.0 (Hotfix)",
+            "Wine Version": "9.2",
+            "Graphics Driver": "TURNIP (ADRENO) 25.0.0 (memory device 4096mb)",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "DXVK - 2.4.1 - UNCAPPED - 0 (NO LIMIT)",
+            "Audio Driver": "PulseAudio",
+            "Environment Variables": "DXVK_STATE_CACHE=1",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/03572551-e827-4315-8957-8bcedf9c88e1",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "performance can drop when cutting many pieces in zandatsu. in other scenes fps doesn't drop below 50-55. lowest settings+no msaa",
+          "votes": 0,
+          "date": "2026-01-01"
         }
       ]
     },
@@ -101,7 +191,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/luta.jpg",
+          "caption": "Luta no Nativo",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/luta-ceu.jpg",
+          "caption": "Luta no Nativo, controle na tela",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/titulo.jpg",
+          "caption": "Tela de título",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/menu-jogo.jpg",
+          "caption": "Menu do jogo",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/inicio.jpg",
+          "caption": "Launcher, Início",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/graficos.jpg",
+          "caption": "Launcher, Gráficos",
+          "source": "https://github.com/dfdx047/Zandatsu",
+          "credit": "Zandatsu",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -136,5 +269,45 @@
       "checkedAt": "2026-11-12"
     }
   ],
-  "updatedAt": "2026-11-12"
+  "updatedAt": "2026-11-12",
+  "wikidata": "Q930345",
+  "website": "https://www.platinumgames.com/games/metal-gear-rising-revengeance",
+  "playStore": "https://play.google.com/store/apps/details?id=com.nvidia.metalgearrisingrevengeance",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Rising%3A_Revengeance",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/235460/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/235460/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_b4578e583446d22036f7c99c04a1a98f876e3180.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_5f80ac54687e1fedd3cba4c92b01cb788b85b424.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_12d205558b019152493c2c76510745a58e6a24af.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_222d9f9e820ddd9efb83f18768f6b72734367095.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_2eba25af9b9ea1aed5e7ce1325f5720f1d79ad46.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/235460/ss_10165751e4e556406064a37de7b609c26c001715.1920x1080.jpg?t=1740076034",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/235460/"
+    }
+  ]
 }

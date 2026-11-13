@@ -49,7 +49,111 @@
       "platforms": [
         "PC"
       ],
-      "year": 2011
+      "year": 2011,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/72632801-6c60-4291-993c-5358f98be1e4",
+          "device": "AYN Thor Base",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "its just already so optimized and its a valve game from 2012 of course it runs perfectly",
+          "votes": 1,
+          "date": "2026-05-06",
+          "settings": {
+            "Emulator Version": "v0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "light",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6aba068a-c071-4563-a151-652655be03a1",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Max Graphics 720p, Smooth 60 fps. Stutters rarely. Never crashed. Unfortunately wouldn’t launch without putting steam into lightweight mode.",
+          "votes": 1,
+          "date": "2026-04-21",
+          "settings": {
+            "Emulator Version": "v5.1.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Force Enabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c2e9b800-fed1-4705-987b-4eb0c617760a",
+          "device": "Samsung Galaxy Tab S9",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game works at 110+ FPS when device is not throttled. If you want dynamic shadows type -vulkan in the environment variable section. This will decrease performance by a big margin. (Still locked 60)",
+          "votes": 0,
+          "date": "2026-06-17",
+          "settings": {
+            "Emulator Version": "6.0.8",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 800",
+            "Environment Variables": "FD_DEV_FEATURES \nenable_tp_ubwc_flag_hint=1.",
+            "Command Line": "-vulkan",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Extreme",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Any latest turnip works fine. ",
+            "Surface Format": "RGBA8"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c938ea30-66f5-4d0b-b05d-3fa33c607a74",
+          "device": "AYN Thor Base",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-05-05",
+          "settings": {
+            "Emulator Version": "v0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/33fb8d5f-2e15-4ec7-a7ad-85d457dfc26e"
+        }
+      ]
     },
     {
       "id": "linux-2011",

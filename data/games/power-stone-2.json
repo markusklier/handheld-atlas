@@ -28,6 +28,35 @@
       "type": "original",
       "platforms": [
         "Dreamcast"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7e5462a2-47b5-4fad-8a3d-2674afb91242",
+          "device": "AYN Thor Max",
+          "emulator": "Flycast",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS even with system driver",
+          "votes": 1,
+          "date": "2026-04-06",
+          "settings": {
+            "Emulator Version": "v2.6 git hash 392a459e8",
+            "Backend": "Vulkan",
+            "Resolution": "2.5",
+            "Region": "Auto",
+            "Broadcast": "Auto",
+            "Language": "English",
+            "Audio Latency": "100"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7335b1c3-e992-4d52-b712-fb4550a5c76d"
+        }
       ]
     }
   ],

@@ -28,6 +28,37 @@
       "type": "original",
       "platforms": [
         "Wii"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7f825bec-3ba5-49fe-925a-9568b9eb8cca",
+          "device": "Retroid Pocket 6",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs amazing, everything is smooth, no stuttering. However, noticeable frame drops when hitting Bald Bull's Bull Rush.",
+          "votes": 1,
+          "date": "2026-03-30",
+          "settings": {
+            "Emulator Version": "2603a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ca1b665c-3c5f-41c1-8b07-0d4e6232ef42"
+        }
       ]
     }
   ],

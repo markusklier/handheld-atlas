@@ -49,7 +49,63 @@
       "platforms": [
         "PC"
       ],
-      "year": 2007
+      "year": 2007,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ce5d346b-8cdd-417f-bd63-6a766f019f78",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Ran Perfectly on the device’s “Standard” performance mode with the fan in “smart mode.”",
+          "votes": 0,
+          "date": "2026-08-25",
+          "settings": {
+            "Emulator Version": "v1.1.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Exec Arguments": "- game portal -dxlevel 90",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "Default System Driver",
+            "DX Wrapper": "DXVK"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ab80be4c-6969-4dbb-adaa-ec72213b2f8d",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Must boot steam in lightweight mode",
+          "votes": 0,
+          "date": "2026-08-08",
+          "settings": {
+            "Emulator Version": "5.1.8",
+            "Using GameHub Lite": "True",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton9.0-arm64x-3",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v24.3.0_R5",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "none"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/da805799-604c-4edc-86dd-ee8d33c8102e"
+        }
+      ]
     },
     {
       "id": "playstation-3-2007",

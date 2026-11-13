@@ -1,6 +1,366 @@
 {
   "leads": [
     {
+      "url": "https://github.com/fractalstudio-sd/rally2-recomp-android",
+      "title": "fractalstudio-sd/rally2-recomp-android",
+      "excerpt": "Native Android port of the 1998 Model 3 arcade rally (srally2). Static recompilation + on-device ARM translation — no emulator, no game code included: bring your own ROM. Touch controls, widescreen, phone-as-controller, gamepad + vibration support.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Anas18102004/cricket-legacy",
+      "title": "Anas18102004/cricket-legacy",
+      "excerpt": "C/C++ native game engine recompilation and Android port preserving low-level memory layout, cross-compilation toolchains, and hardware acceleration.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/maxenceprrs-prog/PlatinumDroid",
+      "title": "maxenceprrs-prog/PlatinumDroid",
+      "excerpt": "Work-in-progress native Android port of a Nintendo DS RPG. Requires your own legally obtained ROM. No game assets included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/DocBobert6/RecompFrontend",
+      "title": "DocBobert6/RecompFrontend",
+      "excerpt": "Fork of jessetbh/RecompFrontend (wcw) for the WWF No Mercy Android port — Android SAF file dialogs",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/IamWilmar/castlevania-recomp",
+      "title": "IamWilmar/castlevania-recomp",
+      "excerpt": "Native Android port of Castlevania: Belmont's Curse for the Retroid Pocket Flip 2. Early version. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/DocBobert6/WWFNoMercyRecomp-Android",
+      "title": "DocBobert6/WWFNoMercyRecomp-Android",
+      "excerpt": "WWF No Mercy: Recompiled — Android port (N64Recomp + RT64/Vulkan). Fork of jessetbh/WWFNoMercyRecomp. Bring your own USA Rev 1 ROM.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/jhounson77/PokemonX-RecompAndroid",
+      "title": "jhounson77/PokemonX-RecompAndroid",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/danielsnagustin-wq/child-of-light-recomp",
+      "title": "danielsnagustin-wq/child-of-light-recomp",
+      "excerpt": "Unofficial static recompilation of Child of Light (Xbox 360) for Android — Fase 0: verificación",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/riki-rg/recompile-downhill",
+      "title": "riki-rg/recompile-downhill",
+      "excerpt": "Native Android compatibility-runtime foundation for Downhill Domination USA — user-owned ISO workflow, C++20/NDK ISO explorer, and documented path to a native reimplementation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/sikoGD/playDB-CNT",
+      "title": "sikoGD/playDB-CNT",
+      "excerpt": "Play The Duskbloods Network Test on Eglantine/Lichii: a launcher with local loopback-only servers for the online checks.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/atarasiuk/cooking_and_recipes_from_htdpapathanasiou",
+      "title": "atarasiuk/cooking_and_recipes_from_htdpapathanasiou",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/grafficmedia/vibe-cruiser-picks",
+      "title": "grafficmedia/vibe-cruiser-picks",
+      "excerpt": "Awesome vibe-coded games, experiences, art, and more",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/mjkoo/omnipack",
+      "title": "mjkoo/omnipack",
+      "excerpt": "Consolidated Obtanium packs for Android handhelds",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/dorianskyfr/BOTW-COOP-mod",
+      "title": "dorianskyfr/BOTW-COOP-mod",
+      "excerpt": "Mod coop 2 joueurs pour BOTW 1.9.0 (plugin exlaunch + relais). Aucun fichier du jeu.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Lazaer-YZY/ff13-lr-recomp",
+      "title": "Lazaer-YZY/ff13-lr-recomp",
+      "excerpt": "Static recompilation of Lightning Returns: Final Fantasy XIII (Xbox 360) for Android arm64",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/MPlanetarian/MPMixManager_v0.5-x64",
+      "title": "MPlanetarian/MPMixManager_v0.5-x64",
+      "excerpt": "MP Mix Manager 0.5 by Dreamworlds Productions (MPlanetarian)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/erpiopio/BuusFury-Thor",
+      "title": "erpiopio/BuusFury-Thor",
+      "excerpt": "Android ARM64 port of Dragon Ball Z: Buu's Fury with native dual-screen support for AYN Thor, widescreen gameplay, and a touchscreen companion interface.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/teton-dev/somniel",
+      "title": "teton-dev/somniel",
+      "excerpt": "A Port of Fire Emblem: Engage for Android Devices",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Jonlekern/Toi-meme-tu-sais",
+      "title": "Jonlekern/Toi-meme-tu-sais",
+      "excerpt": "Jeux de soirée ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/maakyuo/ThorRPG",
+      "title": "maakyuo/ThorRPG",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Skifchara/terraria-dualscreen-companion",
+      "title": "Skifchara/terraria-dualscreen-companion",
+      "excerpt": "Second-screen companion for Terraria on dual-screen Android devices (AYN Thor): live inventory, crafting, map and more on the bottom screen. Works through TL Pro. Contributions welcome.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/CesarVF212/FIIS3_DAMO_PracticaIntermedia",
+      "title": "CesarVF212/FIIS3_DAMO_PracticaIntermedia",
+      "excerpt": "Free-theme Android app with a login screen, a list of items loaded from an external API, an item detail screen, and a local database section such as favorites or a shopping cart",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/nikharbechan441/nikharbechan441",
+      "title": "nikharbechan441/nikharbechan441",
+      "excerpt": "Nikhar Bechan — Finance Specialist & Full-Stack / Fintech Automation Developer Portfolio",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/igawa6/peanuts-native",
+      "title": "igawa6/peanuts-native",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Ch4rizard-X/PMD-faith",
+      "title": "Ch4rizard-X/PMD-faith",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/caddickdaniel/cs-trainer",
+      "title": "caddickdaniel/cs-trainer",
+      "excerpt": "cs-trainer project",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/MrAnonymz/WoW-Imito",
+      "title": "MrAnonymz/WoW-Imito",
+      "excerpt": "Play WoW Vanilla, The Burning Crusade, Wrath of the Lich King and WoW Forever on Android phones, tablets and handhelds. Touch UI, controller support and optional second-screen controls. Android 12+ with ARM64 and 64-bit Android required. Forever requires 8 GB physical RAM.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/landstr0m/Encounters",
+      "title": "landstr0m/Encounters",
+      "excerpt": "Small app for tracking encounters in DnD.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/3manuel0/Tr3ack",
+      "title": "3manuel0/Tr3ack",
+      "excerpt": "A workout tracker Android app for logging strength-training sessions",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/bikash-20/NASA-SPACE-APP-CHALLANGE",
+      "title": "bikash-20/NASA-SPACE-APP-CHALLANGE",
+      "excerpt": "A mission-control-style dashboard that simulates live crew telemetry, runs a deterministic, rule-based alert engine in the browser, and uses an LLM (via OpenRouter) to write prose only — never to raise alerts. Built for the NASA Space Apps Challenge.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/pmpu4000-stack/app2000vocab",
+      "title": "pmpu4000-stack/app2000vocab",
+      "excerpt": "app2000vocab",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/erhanacunal/ferrite-ui",
+      "title": "erhanacunal/ferrite-ui",
+      "excerpt": "Custom firmware for the Nextion NX8048K070 HMI Device",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Readit4321/Salus-AI-",
+      "title": "Readit4321/Salus-AI-",
+      "excerpt": "Privacy-first multimodal AI health & food calorie assistant built with Python, Flask, and PyTorch.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/jayjung1230-dot/AetherSAGA",
+      "title": "jayjung1230-dot/AetherSAGA",
+      "excerpt": "Aether SAGA is an ultra-lightweight (~645KB), zero-bloat e-book & comic reader optimized for E-Ink devices and LCD/OLED screens. Supporting EPUB, TXT, PDF, MOBI, AZW3, CBZ, and MD, it offers instant page turns, custom typography, reading statistics, and wireless transfer. Fast, battery-friendly, and pure. Journeys through endless stories.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/nghqqa/zpocket",
+      "title": "nghqqa/zpocket",
+      "excerpt": "ZPocket — ZCode 桌面端的安卓伴侣客户端（zcode-pocket fork，自用）| Native Android companion client for the ZCode desktop coding agent",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Starlightmii/starlight-camera",
+      "title": "Starlightmii/starlight-camera",
+      "excerpt": "📷 Starlight Camera vMax — glass UI camera port for Redmi Note 10 Pro Max",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/dkhamsing/open-source-ios-apps",
+      "title": "dkhamsing/open-source-ios-apps",
+      "excerpt": ":iphone: Collaborative List of Open-Source iOS Apps",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Artfen/fishing-game",
+      "title": "Artfen/fishing-game",
+      "excerpt": "Slow Tide: a peaceful little fishing game in the browser. Row a wooden boat, find a hidden cove, fish as the sun goes down.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/AviY99/Atelier-Time",
+      "title": "AviY99/Atelier-Time",
+      "excerpt": "Timer for art modeling ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Dr-Essence/Nothing2Something",
+      "title": "Dr-Essence/Nothing2Something",
+      "excerpt": "Turning Nothing into something: an LSPosed module for Nothing Launcher & Nothing OS. Dot-matrix folders, landscape mode and more. Made with love on a CMF Phone 1 (tested on Nothing OS 4.1).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/eyasinarafat3485-gif/Hifzati-web-app",
+      "title": "eyasinarafat3485-gif/Hifzati-web-app",
+      "excerpt": "A production-ready full-stack web application designed to deliver a secure, seamless, and responsive user experience. Built with modern web technologies to showcase scalable architecture, intuitive UI/UX, and optimized performance.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/SSA-IPSaDT/tg-widgets",
+      "title": "SSA-IPSaDT/tg-widgets",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/Crster/codale",
+      "title": "Crster/codale",
+      "excerpt": "A native Windows-native GUI workbench for Claude Code. Features structured event mapping, Fluent dialog tool approvals, isolated git worktrees, ConPTY terminal drawer, built-in editor, and Bring-Your-Own-Key support.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud",
+      "title": "ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud",
+      "excerpt": "Top Dedicated Enterprise Device Cloud (Opensource)  Star if you like it! ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
+      "url": "https://github.com/abcpeak/apps-and-sites-collection",
+      "title": "abcpeak/apps-and-sites-collection",
+      "excerpt": "Welcome to the Curated List of Best Awesome Apps & Sites Collection! Apps suggestion, Websites recommendation, Websites guide.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-13"
+    },
+    {
       "url": "https://github.com/dsluo/openmw",
       "title": "dsluo/openmw (Fork von OpenMW/openmw)",
       "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
@@ -6069,174 +6429,6 @@
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/blairisme/warcraft",
-      "title": "Warcraft II",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/mstan/WarioWareTwistedRecomp",
-      "title": "WarioWare: Twisted!",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/dorakyuraduang/whitealbum2-Android",
-      "title": "WHITE ALBUM2",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/patchzyy/Wiicompiled",
-      "title": "WiiCompiled",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/jjmhalew/WoodyRE",
-      "title": "Woody Woodpecker: Escape from Buzz Buzzard Park",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/hedge-dev/XenonRecomp",
-      "title": "XenonRecomp",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Atom0131/Bori-dex",
-      "title": "🔴 Bori-dex: An authentic, open-source AI Pokédex for Android featuring on-device │ TensorFlow Lite computer vi",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/MildRain479/PokePark-Wiicompiled",
-      "title": "A native PC port of PokePark Wii: Pikachu's Adventure by static recompilation (open beta). No game data includ",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/bahuckel/EDEXO",
-      "title": "Companion app for Elite Dangerous, making smart data-based predictions for potential exobiology on a planet by",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/krishna3163/best-root-apps-for-android",
-      "title": "Curated directory of Android root apps, Magisk, KernelSU, LSPosed modules, system tools, privacy utilities, an",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/BobMoraneRetro/one4all4one-fanartstar-4testing",
-      "title": "Fanartstar – version de test non compressée",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/pugilist1956/Yu-Gi-Oh-Duel-Companion",
-      "title": "Get Yu-Gi-Oh! Duel Companion — a games accessory for Windows offering a free download. This app helps track li",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Project-Holon/eidos",
-      "title": "Native PC port of Pokemon Black and White, built on aletheia",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/kvarflow/Pcalc",
-      "title": "Pcalc short for Pokemon Calculator an app which runs on the second screen of the AYN Thor (or thats the plan)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zomboidds/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zelda-wind-waker-hd/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zelda-minish-cap/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zelda-link-to-the-past/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zeewolf-style-helicopter-game/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/zedex/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andreyvelsk/GAFT/blob/main/content/wiids/index.md",
-      "title": "index",
-      "excerpt": "",
-      "game": null,
-      "source": "gaft",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6403,9 +6595,9 @@
     "rejected": 23
   },
   "watcher": {
-    "lastRun": "2026-11-12T13:49:30Z",
-    "newLeads": 47,
-    "newEvents": 13
+    "lastRun": "2026-11-13T13:09:48Z",
+    "newLeads": 45,
+    "newEvents": 11
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

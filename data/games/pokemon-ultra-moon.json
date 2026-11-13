@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a0e99949-e3fc-4522-b203-b8817cc8ea04",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Game runs Flawlessly",
+          "votes": 5,
+          "date": "2025-09-19",
+          "settings": {
+            "Emulator Version": "2123.1",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "OpenGLES",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3732775c-8b11-4f18-a285-ee5598dfa9cd"
+        }
       ]
     }
   ],

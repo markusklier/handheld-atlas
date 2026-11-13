@@ -1,6 +1,175 @@
 {
   "entries": [
     {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "punch-out",
+      "text": "1 Community-Berichte von EmuReady für Punch-Out!! (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "prinny-can-i-really-be-the-hero",
+      "text": "1 Community-Berichte von EmuReady für Prinny: Can I Really Be the Hero? (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "prinny-2-dawn-of-operation-panties-dood",
+      "text": "1 Community-Berichte von EmuReady für Prinny 2: Dawn of Operation Panties, Dood! (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "power-stone-2",
+      "text": "1 Community-Berichte von EmuReady für Power Stone 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "portal",
+      "text": "2 Community-Berichte von EmuReady für Portal (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "portal-2",
+      "text": "4 Community-Berichte von EmuReady für Portal 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "pokemon-violet",
+      "text": "3 Community-Berichte von EmuReady für Pokémon Violet (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "pokemon-ultra-moon",
+      "text": "1 Community-Berichte von EmuReady für Pokémon Ultra Moon (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "route-updated",
+      "game": "metal-gear-rising-revengeance",
+      "text": "4 Community-Berichte von EmuReady für Metal Gear Rising: Revengeance (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Zandatsu v1.3 veröffentlicht.",
+      "project": "zandatsu",
+      "games": [
+        "metal-gear-rising-revengeance"
+      ],
+      "url": "https://github.com/dfdx047/Zandatsu/releases/tag/v1.3"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.1.5 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.1.5"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Echoes Unbound / MetroidPrime2Port v0.16.0 veröffentlicht.",
+      "project": "echoes-unbound-metroidprime2port",
+      "games": [
+        "metroid-prime-2-echoes"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.16.0"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "PrimeRecomp v0.0.11 veröffentlicht.",
+      "project": "primerecomp",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.0.11"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Metroid Prime Unbound / MetroidPrimePort v0.46.0 veröffentlicht.",
+      "project": "metroid-prime-unbound-metroidprimeport",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.46.0"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.58 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.58"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "DS Forever v1.0.29 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.29"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 3.7.0 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/3.7.0"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "SkyrimSE-DualScreen v1.0.5 veröffentlicht.",
+      "project": "skyrimse-dualscreen",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.5"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "WiiDS v1.2.4 veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.4"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "release",
+      "text": "Azahar 2127.0-rc3 (Vorabversion) veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc3"
+    },
+    {
       "date": "2026-11-12",
       "type": "route-updated",
       "by": "agent",
