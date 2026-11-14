@@ -49,7 +49,111 @@
       "platforms": [
         "PC"
       ],
-      "year": 1996
+      "year": 1996,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5babda4f-5c51-412b-a4c9-66183c19634c",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-08-18",
+          "settings": {
+            "Emulator Version": "v5.1.8",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton11.0-arm64x",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.0.0_M1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ea4107c5-371b-4030-b42c-4469f251fe8b",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Portal is in Xbox input mode and Performance power mode. Use DirectInput API for controls. By default GameNative will point to the **Winquake.exe**, but you'll want to point to the newer rerelease version that has full c",
+          "votes": 1,
+          "date": "2025-08-06",
+          "settings": {
+            "Emulator Version": "v0.3.0",
+            "Graphics Driver": "Vortek (Universal)",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.6.1-gplasync",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Exec Arguments": "-skipmovies"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/93cc1726-ad8d-4da2-970f-4b78596dcdb9",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I played through the first three levels everything ran great. Maintained a solid 120 fps with no noticeable drops. This was also tested running on external storage. In game graphics settings all at default. FPS capped at",
+          "votes": 0,
+          "date": "2026-04-20",
+          "settings": {
+            "Emulator Version": "0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Startup Selection": "Essential (Load only essential services)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.7"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/23148bb2-e30c-46e7-a7e0-976eaee78b8c",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-01-15",
+          "settings": {
+            "Emulator Version": "v5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f097b273-ad3d-4b2b-b6a4-d76856aafabf"
+        }
+      ]
     },
     {
       "id": "linux-1996",

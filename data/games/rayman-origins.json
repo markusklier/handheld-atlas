@@ -16,6 +16,58 @@
       "type": "original",
       "platforms": [
         "PlayStation Vita"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/09f4c0b8-e13e-45c9-af5c-38b08fe5575b",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Vita3K",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs smooth, no visual artifacts like on rp5. MrPurple T21 driver.",
+          "votes": 0,
+          "date": "2025-08-26",
+          "settings": {
+            "Emulator Version": "0.2.0-12",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "2",
+            "Anisotropic Filtering": "16x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2ae4fad4-5f6d-4a82-a058-1c27e61169bf",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Vita3K",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs smooth, no visual artifacts like on rp5. MrPurple T21 driver.",
+          "votes": 0,
+          "date": "2025-08-26",
+          "settings": {
+            "Emulator Version": "0.2.0-12",
+            "Backend Renderer": "Vulkan",
+            "GPU Backend": "Dynarmic",
+            "Resolution Multiplier": "2",
+            "Anisotropic Filtering": "16x",
+            "Texture Cache": "True",
+            "Shader Cache": "True",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c44863e5-ad28-4f8b-9cab-1ba37604ce2d"
+        }
       ]
     },
     {
@@ -30,8 +82,13 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q606894"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/19a4c1ff-e5cb-49af-9199-7c4bf689fe30"
         }
-      ]
+      ],
+      "reports": []
     }
   ],
   "routes": [],

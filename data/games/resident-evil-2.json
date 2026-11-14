@@ -37,6 +37,62 @@
       "type": "release",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2f1f87f2-0a00-43ac-9c75-0efc81c0fa32",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ede8b4b0-b5b6-44d5-b545-91a9f49508d3",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Smooth FPS, No stutter or performance issues. Running at 1080p with downsampling enabled for natural visuals. Disc 1 and Disc 2 work flawlessly with each other.",
+          "votes": 0,
+          "date": "2026-03-07",
+          "settings": {
+            "Emulator Version": "0.1-8969",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "5",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/658cc6fd-f14e-4947-b6d5-3c77c64ea5b7"
+        }
       ]
     }
   ],

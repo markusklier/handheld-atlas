@@ -29,6 +29,13 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/068c1583-1ade-42e1-bd06-130a938738bf"
+        }
       ]
     },
     {
@@ -38,7 +45,63 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2005
+      "year": 2005,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fe016cb0-9eed-4bbd-b540-fde7318d2880",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-08-18",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b673736a-9417-4f12-9eeb-1df8566e5248",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "2506a",
+            "Graphics Backend": "OpenGL",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Other",
+            "Anisotropic Filtering": "1",
+            "VSync": "True",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ff50ecab-5013-47b1-8eaf-02ebc9a5a25d"
+        }
+      ]
     },
     {
       "id": "wii-2007",

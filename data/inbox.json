@@ -1,6 +1,342 @@
 {
   "leads": [
     {
+      "url": "https://github.com/incident201/brutal-morrowind",
+      "title": "incident201/brutal-morrowind (Fork von OpenMW/openmw)",
+      "excerpt": "Morrowind with the melee combat of Dark Messiah of Might and Magic, built on OpenMW",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Rinto02/tekken-tag-tournament-2-Android",
+      "title": "Rinto02/tekken-tag-tournament-2-Android",
+      "excerpt": "Native Android port of Tekken Tag Tournament 2 (Xbox 360) by static recompilation. Not an emulator. Ships no game data - the installer builds the game from your own disc image and Title Update 3.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/trevermfield/Quest64-Android",
+      "title": "trevermfield/Quest64-Android",
+      "excerpt": "Unofficial Android port of Quest 64: Recompiled (patches and build scripts only, no game files)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
+      "title": "huggy12/OpenRA_Androidport-PSX-controls-",
+      "excerpt": "An unofficial Android port of OpenRA's Red Alert mod (bleed branch, commit b4d95a5, Nov 2026) with Bluetooth controller controls inspired by the PlayStation version. Built with .NET 10 and SDL2. No game files included; the freeware content downloads on first launch.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
+      "title": "JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
+      "excerpt": "An Android Port made by JC Gamer Nostalgic in Godot Engine 4.6",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+      "title": "ZloiKILLER/nfs3recompiled-android",
+      "excerpt": "Need For Speed III: Hot Pursuit recompiled PC port on Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Kapro777/itp-recomp-android",
+      "title": "Kapro777/itp-recomp-android",
+      "excerpt": "Native Android port of Five Nights at Freddy's: Into the Pit (Nintendo Switch) via static recompilation. Bring your own game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/makarovladmir/Juiced2-Android-Recomp",
+      "title": "makarovladmir/Juiced2-Android-Recomp",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/justjavac/switch-recomp",
+      "title": "justjavac/switch-recomp",
+      "excerpt": "收录 Nintendo Switch 游戏原生重编译与移植项目的导航站，覆盖 Windows、Linux、macOS、Android 与 iOS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/PabloVSouza/typex2-recomp",
+      "title": "PabloVSouza/typex2-recomp",
+      "excerpt": "Static recompilation of Taito Type X / Type X2 arcade games to native code: Android (app + RetroArch core) and macOS, with Linux and Windows in progress. Bring your own games.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/brettr7388/dmc3-thor-companion",
+      "title": "brettr7388/dmc3-thor-companion",
+      "excerpt": "Devil May Cry 3 (Switch) bottom-screen companion for Eden Duo on the AYN Thor",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/brettr7388/cuphead-thor-companion",
+      "title": "brettr7388/cuphead-thor-companion",
+      "excerpt": "Eden Duo bottom-screen companion for Cuphead on AYN Thor",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/lovelisy/LiquidBounce-Addon-DroidBridge",
+      "title": "lovelisy/LiquidBounce-Addon-DroidBridge",
+      "excerpt": "LiquidBounce 的 CEF 浏览器后端：main 分支出 jar，app 分支出 Mcef 承载 APK。",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/krishna3163/best-root-apps-for-android",
+      "title": "krishna3163/best-root-apps-for-android",
+      "excerpt": "Curated directory of Android root apps, Magisk, KernelSU, LSPosed modules, system tools, privacy utilities, and no-root Shizuku apps.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/mohammadabduljalil00-rgb/Athena-big-sis-companion",
+      "title": "mohammadabduljalil00-rgb/Athena-big-sis-companion",
+      "excerpt": "It is a dedicated esp32 and tft chatbot , which when connected to laptop via usb and grant  access will transfer itself to this page and we can interact with it anywhere",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Shraghav/StudyBuddy",
+      "title": "Shraghav/StudyBuddy",
+      "excerpt": "A full-stack mobile study companion built with React Native and FastAPI that leverages Supabase to turn your PDFs into interactive, RAG-driven AI chat sessions on the go.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/aaron4567891-prog/Orbit-Frontend",
+      "title": "aaron4567891-prog/Orbit-Frontend",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/jiggy025/jiggy-portfolio",
+      "title": "jiggy025/jiggy-portfolio",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Mat342116/Dai-MP4",
+      "title": "Mat342116/Dai-MP4",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Coupe5E/totk-android-nova",
+      "title": "Coupe5E/totk-android-nova",
+      "excerpt": "TotK Native for Android with a 4:3 mode and optional cheats.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/dodangquang/thor-instant-replay",
+      "title": "dodangquang/thor-instant-replay",
+      "excerpt": "NVIDIA ShadowPlay-style Instant Replay & Dual-Screen recorder for AYN Thor handheld console",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/BrianJr03/better-dual-screen-assistant",
+      "title": "BrianJr03/better-dual-screen-assistant",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/tarikbc/ZyperOS",
+      "title": "tarikbc/ZyperOS",
+      "excerpt": "A fast, light firmware for the GKD Pixel 2 that plays your whole retro library: forty systems, PortMaster ports, and your music, audiobooks and videos.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/dodangquang/thor-native-fg",
+      "title": "dodangquang/thor-native-fg",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/MisterAlex95/Xrecomp",
+      "title": "MisterAlex95/Xrecomp",
+      "excerpt": "game static recompilation to android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/onlyilir/MirrorDock",
+      "title": "onlyilir/MirrorDock",
+      "excerpt": "Free Windows app to see and control your Android phone: H.264 mirroring, sound, recording, clipboard sync, drag and drop. No ads, no account.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/AOcampo93/TowerDefense",
+      "title": "AOcampo93/TowerDefense",
+      "excerpt": "Alien Invaders: The Tower Defense. A mixed reality tower defense game for Meta Quest 3 built with Unity and C#.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/pluja/awesome-privacy",
+      "title": "pluja/awesome-privacy",
+      "excerpt": "Awesome Privacy - A curated list of services and alternatives that respect your privacy because PRIVACY MATTERS.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/BenAlan11/inotia4_nx",
+      "title": "BenAlan11/inotia4_nx",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Correia-jpv/fucking-android-open-project",
+      "title": "Correia-jpv/fucking-android-open-project",
+      "excerpt": "A categorized collection of Android Open Source Projects, More powerful web version. With repository stars⭐ and forks🍴",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/kevinmalinoski/intune-preflight",
+      "title": "kevinmalinoski/intune-preflight",
+      "excerpt": "Simulate an Intune endpoint and preview the exact merged policy baseline it would receive. Read-only, runs in your browser or self-hosted.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/ignitegap/Safie",
+      "title": "ignitegap/Safie",
+      "excerpt": "Safety App",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/medbrains/medbrains",
+      "title": "medbrains/medbrains",
+      "excerpt": "Open-source, AI-native hospital operating system (AGPL-3.0). Registration, OPD, wards, pharmacy, lab, radiology and billing on one patient record, with patient-safety checks built in. Runs as its own secure OS. Rust, PostgreSQL, React.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/alienware377/RootlessViPER4Android",
+      "title": "alienware377/RootlessViPER4Android",
+      "excerpt": "RootlessViPER4Android (RV4A) — ViPER4Android effects natively ported into a RootlessJamesDSP fork. Rootless or rooted, no Magisk module required. Formerly RootlessJamesDSP — ViPER4Android Edition.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/BelenosCreations/belenos-marketing-automation",
+      "title": "BelenosCreations/belenos-marketing-automation",
+      "excerpt": "BAM (Belenos Automatic Marketing) — A multi-business AI-powered marketing automation platform for content creation, fact verification, scheduling, approvals, and social media management.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/VoltiusApp/voltius",
+      "title": "VoltiusApp/voltius",
+      "excerpt": "A lightning-fast, modern, local-first SSH/SFTP/Serial client. Real-time E2EE sync, Team vaults, live sharing, plugins and more. Open-source Termius alternative for Windows, Linux, macOS & Android. Built with Rust/Tauri.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Hubg50we/opencode-apk-for-android-2",
+      "title": "Hubg50we/opencode-apk-for-android-2",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/raebaexxx/skyward-for-fuxi",
+      "title": "raebaexxx/skyward-for-fuxi",
+      "excerpt": "Skyward recovery for Xiaomi 13 (fuxi): Android 17 data decryption, maintained by RaeBaeXXX",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/RamakrishnaUX/chasing-green",
+      "title": "RamakrishnaUX/chasing-green",
+      "excerpt": "A quiet road trip around Iceland to see the northern lights",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/Kidus-yahun/past-exam-library",
+      "title": "Kidus-yahun/past-exam-library",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/yeyebbc/tb522fu-debian",
+      "title": "yeyebbc/tb522fu-debian",
+      "excerpt": "Experimental Debian 13 GNOME and mainline Linux builds for Lenovo TB522FU, preserving Android dual boot",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
+      "url": "https://github.com/www963257827/daily-oss-picks",
+      "title": "www963257827/daily-oss-picks",
+      "excerpt": "收藏每天关注更新的优质知识，方便后续查用",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-14"
+    },
+    {
       "url": "https://github.com/fractalstudio-sd/rally2-recomp-android",
       "title": "fractalstudio-sd/rally2-recomp-android",
       "excerpt": "Native Android port of the 1998 Model 3 arcade rally (srally2). Static recompilation + on-device ARM translation — no emulator, no game code included: bring your own ROM. Touch controls, widescreen, phone-as-controller, gamepad + vibration support.",
@@ -6093,342 +6429,6 @@
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rexglue/rexglue-sdk",
-      "title": "ReXGlue SDK",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/lhr0909/richman4-remastered",
-      "title": "Richman 4",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/h4mu/rott94",
-      "title": "Rise of the Triad",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/silentsudin/RoadTripAdventure-recomp",
-      "title": "Road Trip Recomp 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rt64/rt64",
-      "title": "RT64",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/libsdl-org/SDL",
-      "title": "SDL",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/kyure001/obtainium_recomp_pack",
-      "title": "Selection of recomp for the Ayn Thor",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/konovalov-aleks/reSL",
-      "title": "Shortline",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/castdrian/showdown-ds",
-      "title": "Showdown-DS",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp",
-      "title": "Skies of Arcadia Legends",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/thegreatbbd94-ux/SRB2-Android-Port",
-      "title": "Sonic Robo Blast 2",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Sonoran-Solutions/dualdex",
-      "title": "Sonoran-Solutions/dualdex",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/iscle/SpaceCadetPinball",
-      "title": "Space Cadet Pinball",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/pakompom/SpaceRangersHD_FPC",
-      "title": "Space Rangers HD: A War Apart",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/yancharkin/SpelunkyClassicHD",
-      "title": "Spelunky Classic HD",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/imjustadudegamer/VoyagerSP-Android",
-      "title": "Star Trek: Voyager - Elite Force",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/imjustadudegamer/VoyagerHM-Android",
-      "title": "Star Trek: Voyager - Elite Force Holomatch",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/n0madic/StarCraft64-recomp",
-      "title": "StarCraft 64",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/mstan/SuperMarioLand2Recomp",
-      "title": "Super Mario Land 2: 6 Golden Coins",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/dyzz/srw64-recomp",
-      "title": "Super Robot Wars 64",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/raposomiguel50/system-shock-android",
-      "title": "System Shock",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/whylurking/IsaacRecomp",
-      "title": "The Binding of Isaac",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/troyedwardsjr/z2rs",
-      "title": "The Legend of Zelda II",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/timbo722/ZLAA",
-      "title": "The Legend of Zelda: Link's Awakening (Switch) recompiled to run natively on Android",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/chrissotraidis/bluewake",
-      "title": "The Legend of Zelda: The Wind Waker",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Yusfft/Castlevania-Belmont-s-Curse-Eden-Duo-Companion",
-      "title": "This is a simple mod showing the map of the game on the second screen. More features are on the way!",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/base64E/The-Jolly-Gang-s-Misadventures-in-Africa-Android-port",
-      "title": "This is an unofficial Android port of the classic point-and-click adventure game \"The Jolly Gang's Misadventur",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-d2",
-      "title": "Thor-D2 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-halflife",
-      "title": "Thor-HalfLife 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/MPDERPER/totk-android-ultracam-ports",
-      "title": "TOTK Android UltraCam 2.7.1/3.0.0 ports with 720p optimization, Eden Nightly installation guides, compatibilit",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Zensenshi/JarnGrip",
-      "title": "Touch control pad for the AYN Thor's bottom screen: buttons, number pad, trackpad and keyboard for WoW and oth",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/maluramichael/awesome-reverse-engineer-anything",
-      "title": "Trending open projects that reverse engineered apps, games, consoles, protocols and devices, plus the tools th",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/JestyLabs/Jesty-Thor-Fix",
-      "title": "True hardware-level bottom display off, wake repair, and live CPU/display telemetry for the AYN Thor.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/andyvand/opentyrian2000",
-      "title": "Tyrian 2000",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/synthwave-pixel/ultima5",
-      "title": "Ultima V",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/exult/exult",
-      "title": "Ultima VII (Exult)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rafli6373/Black-Android",
-      "title": "Unofficial Android port and fan-made remake project of the classic FPS game BLACK",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/shendyvisual07-eng/crashwoc-android",
-      "title": "Unofficial Android port of Crash Bandicoot: The Wrath of Cortex. Requires your own legally obtained game files",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Rayan-XOO/horizon",
-      "title": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, tou",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/samilry/rimworld-android-port",
-      "title": "Unofficial Android port of RimWorld 1.7 (Waylith engine, .NET 10): Android host, PC-mod compatibility layer, t",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/RanggaCasper/MostWanted-Android",
-      "title": "Unofficial native Android port of Need for Speed: Most Wanted (Xbox Black Edition). The x86 code is statically",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Psychoghost/Vanillara_android_port",
-      "title": "Vanillara source port for android. Buy the game with link provided (not affiliate)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6595,9 +6595,9 @@
     "rejected": 23
   },
   "watcher": {
-    "lastRun": "2026-11-13T13:09:48Z",
-    "newLeads": 45,
-    "newEvents": 11
+    "lastRun": "2026-11-14T12:13:49Z",
+    "newLeads": 42,
+    "newEvents": 6
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

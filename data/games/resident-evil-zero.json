@@ -29,7 +29,38 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2002
+      "year": 2002,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/65582259-c0f0-454b-85db-15e8f4a8b95f",
+          "device": "AYN Thor Max",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "2606a",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/cf0f3a10-5ee8-4d48-9e9a-783f7f297e7c"
+        }
+      ]
     },
     {
       "id": "wii-2008",

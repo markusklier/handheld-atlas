@@ -1,6 +1,150 @@
 {
   "entries": [
     {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "return-to-castle-wolfenstein",
+      "text": "1 Community-Berichte von EmuReady für Return to Castle Wolfenstein (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "resistance-retribution",
+      "text": "1 Community-Berichte von EmuReady für Resistance: Retribution (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "resident-evil-zero",
+      "text": "1 Community-Berichte von EmuReady für Resident Evil Zero (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "resident-evil-4",
+      "text": "2 Community-Berichte von EmuReady für Resident Evil 4 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "resident-evil-2",
+      "text": "2 Community-Berichte von EmuReady für Resident Evil 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "rayman-origins",
+      "text": "2 Community-Berichte von EmuReady für Rayman Origins (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "rayman-legends",
+      "text": "1 Community-Berichte von EmuReady für Rayman Legends (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "ratchet-clank-size-matters",
+      "text": "1 Community-Berichte von EmuReady für Ratchet & Clank: Size Matters (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "ratchet-and-clank-up-your-arsenal",
+      "text": "1 Community-Berichte von EmuReady für Ratchet & Clank: Up Your Arsenal (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "ratchet-and-clank-going-commando",
+      "text": "1 Community-Berichte von EmuReady für Ratchet & Clank: Going Commando (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "route-updated",
+      "game": "quake",
+      "text": "4 Community-Berichte von EmuReady für Quake (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.7 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.7"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "Shantae Dual v0.46 veröffentlicht.",
+      "project": "shantae-dual",
+      "games": [
+        "shantae"
+      ],
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods/releases/tag/v0.46"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "GBA DS v1.5.2 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5.2"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "DS Forever v1.0.32 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.32"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "WiiDS v1.2.5 veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.2.5"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "release",
+      "text": "Eden Duo Companions echoes-of-wisdom-1.0.2 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-rebirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake",
+        "chained-echoes"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/echoes-of-wisdom-1.0.2"
+    },
+    {
       "date": "2026-11-13",
       "type": "route-updated",
       "game": "punch-out",

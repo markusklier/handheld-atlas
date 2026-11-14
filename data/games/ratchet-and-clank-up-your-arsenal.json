@@ -16,6 +16,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/138534b0-e89d-4456-b5d7-b8f60ba9725f",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Smooth 60fps with few graphical glitches. Works like a charm with the working shadows. Extra settings to consider: Tri-filtering-off Hardware download mode-disabled(ignore transfers) Widescreenhack-on",
+          "votes": 1,
+          "date": "2026-04-28",
+          "settings": {
+            "Emulator Version": "v.1.5-4248 release",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Game Version": "SCUS-97353",
+            "Average FPS": "60fps"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/206402dd-1c50-4827-b662-ea2038eb5196"
+        }
       ]
     }
   ],

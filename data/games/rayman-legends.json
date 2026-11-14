@@ -33,6 +33,44 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q2255492"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c894fec2-10e8-47da-b322-83cd06f68bf7"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e73dbe3f-65de-4df3-bd2f-ef0f8b5cfeec"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/80c1585a-0fc7-44ea-8432-d1e0e9d52cd8"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a589f74a-ea90-4990-a09a-932eee485ba5",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "First I would always recommend to run the Switch version instead. I set it to Playable bcs it has some flickering (could be fixed with a new turnip driver) and as it has a lot of necessary set up steps, and even then It ",
+          "votes": 1,
+          "date": "2026-04-15",
+          "settings": {
+            "Emulator Version": "v0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-x86_64",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.4.0"
+          }
         }
       ]
     },

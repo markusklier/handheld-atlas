@@ -48,6 +48,38 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0d078958-48b8-4b80-aa77-5f572e32ba2d",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Downloaded “RealRTCW” through gamehub, then download Return to castle Wolfenstein. The game boots perfectly even at 1920x1080, Once open, open settings to adjust the ingame resolution and enable controller support. First",
+          "votes": 0,
+          "date": "2026-02-08",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1920 x 1080",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3fd7e7d4-2d39-4c97-9642-7be511493304"
+        }
       ]
     }
   ],

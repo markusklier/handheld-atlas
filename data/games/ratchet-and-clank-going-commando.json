@@ -16,6 +16,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/56345810-3d00-4bf5-bbc5-3ed3c90310bd",
+          "device": "Retroid Pocket 6",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "It had a lot of issues on the first run. The game was lagging and the textures were broken. However, with these settings, it runs flawlessly for me. **Additionally settings:** Mipmapping --> Full (PS2 Mips)",
+          "votes": 1,
+          "date": "2026-07-24",
+          "settings": {
+            "Emulator Version": "Turnip - v2.2n-4248",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "Europe (PAL)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "v2.00"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/48310ddf-5f4f-4c69-9d9c-3306b4830c5b"
+        }
       ]
     }
   ],
