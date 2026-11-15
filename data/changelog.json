@@ -2,6 +2,12 @@
   "entries": [
     {
       "date": "2026-11-15",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-15",
       "type": "route-updated",
       "game": "shenmue",
       "text": "1 Community-Berichte von EmuReady für Shenmue (Geräte mit dem Chip des AYN Thor)"
