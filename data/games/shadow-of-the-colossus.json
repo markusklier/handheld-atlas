@@ -28,6 +28,86 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ec36e191-246a-40c7-81ef-937eedc1ffec",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2025-10-16",
+          "settings": {
+            "Emulator Version": "2.1-3668",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "100",
+            "Upscale Multiplier": "1.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "2.0"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/97fcbf8f-298c-4cb9-8476-6041f08e7aff",
+          "device": "AYN Thor Max",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "widescreen hack applied",
+          "votes": 0,
+          "date": "2026-04-28",
+          "settings": {
+            "Emulator Version": "v2.2n-4248",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "30"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dcb775b0-7e5a-460f-959e-865292e5fb2c",
+          "device": "AYN Odin 2 Mini",
+          "emulator": "AetherSX2",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Stable around 80% of time but certain boss arenas and parts of the map have heavy frame drops still very playable at 1080p",
+          "votes": 0,
+          "date": "2025-12-23",
+          "settings": {
+            "Emulator Version": "NetherSX2",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "4",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "30"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/93633584-7e87-41d0-a44f-ffcdef678b51"
+        }
       ]
     }
   ],

@@ -23,6 +23,38 @@
       "type": "original",
       "platforms": [
         "PSP"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/014604c4-7a06-40db-8ccd-ca22504aa4c7",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game works perfectly without any issue. In addition, the game is functioning flawlessly at ***8X PSP (4k).*** This game can be played on a less powerful system with a similar setting that is not as intensive. [Game ",
+          "votes": 2,
+          "date": "2025-09-28",
+          "settings": {
+            "Emulator Version": "1.19.3",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "8",
+            "Antialiasing (MSAA)": "Off",
+            "VSync": "True",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4ad4ffbd-1a8d-43ee-a026-f75231d1cdc7"
+        }
       ]
     }
   ],

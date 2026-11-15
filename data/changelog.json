@@ -1,6 +1,87 @@
 {
   "entries": [
     {
+      "date": "2026-11-15",
+      "type": "route-updated",
+      "game": "shenmue",
+      "text": "1 Community-Berichte von EmuReady für Shenmue (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "route-updated",
+      "game": "shadow-of-the-colossus",
+      "text": "3 Community-Berichte von EmuReady für Shadow of the Colossus (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "route-updated",
+      "game": "rogue-galaxy",
+      "text": "1 Community-Berichte von EmuReady für Rogue Galaxy (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "route-updated",
+      "game": "risk-of-rain-2",
+      "text": "4 Community-Berichte von EmuReady für Risk of Rain 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "route-updated",
+      "game": "ridge-racer-2",
+      "text": "1 Community-Berichte von EmuReady für Ridge Racer 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "release",
+      "text": "PrimeRecomp v0.1.0 veröffentlicht.",
+      "project": "primerecomp",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.61 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.61"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "release",
+      "text": "Skyrim Androidborn v1.0.0 veröffentlicht.",
+      "project": "skyrim-androidborn",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/igortiburcio/skyrim_androidborn/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-15",
+      "type": "release",
+      "text": "Eden Duo Companions kirbys-return-to-dream-land-deluxe-1.0.0 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-rebirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake",
+        "chained-echoes"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/kirbys-return-to-dream-land-deluxe-1.0.0"
+    },
+    {
       "date": "2026-11-14",
       "type": "route-updated",
       "game": "return-to-castle-wolfenstein",

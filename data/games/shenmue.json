@@ -28,6 +28,35 @@
       "type": "original",
       "platforms": [
         "Dreamcast"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/56e29ce9-5aa7-47e8-9975-53e102633675",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Flycast",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-08-04",
+          "settings": {
+            "Emulator Version": "most recent",
+            "Backend": "OpenGL",
+            "Resolution": "1",
+            "Region": "Auto",
+            "Broadcast": "Auto",
+            "Language": "English",
+            "Audio Latency": "100"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/102d69dd-80f1-4666-8ff8-e4312622ed57"
+        }
       ]
     }
   ],

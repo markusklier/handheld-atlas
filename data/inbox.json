@@ -1,6 +1,398 @@
 {
   "leads": [
     {
+      "url": "https://github.com/jackdiver/melonDS-android",
+      "title": "jackdiver/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "melonDS for Android with Wi-Fi local multiplayer (2-8 devices) for DS games",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/Rayan-XOO/horizon",
+      "title": "Rayan-XOO/horizon",
+      "excerpt": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, touch controls and in-app game file download.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/xmllua/tlou-remastered-android",
+      "title": "xmllua/tlou-remastered-android",
+      "excerpt": "The Last of Us Remastered Android port (FEX x86-64 translation + Vulkan). Mirror of erickmendes22/tlou-remastered-android branch tlou-ui-approval-log32-20261105 (real Android source). No game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/BelmanteGu/CelesteAndroid",
+      "title": "BelmanteGu/CelesteAndroid",
+      "excerpt": "Native Android port of Celeste (2018) running your own PC copy: .NET + FNA + SDL3, Vulkan, FMOD, launcher with game import.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/nurwed/openbgi-subahibi-android",
+      "title": "nurwed/openbgi-subahibi-android",
+      "excerpt": "Android port of OpenBGI (Ethornell/BGI engine reimplementation), patched and optimized to run Subarashiki Hibi (Wonderful Everyday). Requires your own copy of the game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/phys-winner/pc_decomp_frstp",
+      "title": "phys-winner/pc_decomp_frstp",
+      "excerpt": "Experimental Frostpunk ARM64 Android port via static recompilation, with Vulkan rendering and touch controls.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/SkibidiBoiler/Papas-Louie-Recomp",
+      "title": "SkibidiBoiler/Papas-Louie-Recomp",
+      "excerpt": "Decompilation of Papa's Louie Attack for Windows and Android ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/JeuelSosaLarocca/ios-launcher-recompile",
+      "title": "JeuelSosaLarocca/ios-launcher-recompile",
+      "excerpt": "Recompilable copy of an iOS-style Android launcher: Gradle project, DexMerge/PostCompile tooling, Spanish, light/dark icons",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/78erik/mgs5-recomp",
+      "title": "78erik/mgs5-recomp",
+      "excerpt": "Metal Gear Solid V (Xbox 360) static recompilation for ARM (Android/Switch) - research & multi-agent AI structure",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/poglyadyi/dirt2-android-arm64",
+      "title": "poglyadyi/dirt2-android-arm64",
+      "excerpt": "Colin McRae: DiRT 2 - static recompilation for Android ARM64 (Android build of XITRIX/Dirt-2-Recomp)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/dyzz/srw64-recomp",
+      "title": "dyzz/srw64-recomp",
+      "excerpt": "Unofficial native recompilation of Super Robot Wars 64 for Windows, macOS, Linux/Steam Deck, Android and Switch: Japanese, English, Simplified and Traditional Chinese, Korean, widescreen, optional HD art, mods and bug fixes. Requires your own ROM.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/SansNope/MarathonRecomp-Android",
+      "title": "SansNope/MarathonRecomp-Android",
+      "excerpt": "Unofficial Android port of MarathonRecomp, built with Anthropic's Opus 5.5 AI under human direction, device testing and debugging. Artifacts, freezes and audio issues possible. SPECIAL THANKS to everyone testing and reporting.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/mxvisor/ignition-recomp",
+      "title": "mxvisor/ignition-recomp",
+      "excerpt": "Native port of Ignition (1997, Windows) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/udarmolota/ME1Recomp",
+      "title": "udarmolota/ME1Recomp",
+      "excerpt": "Static recompilation runtime for Mass Effect (Xbox 360) on Android (XDroid360) and PC. No game code or data: the player's own copy is recompiled.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+      "title": "HolyCaonima/ra3-ios-android-win-mac-recomp",
+      "excerpt": "Red Alert 3 native recompilation for iOS, Android, Windows & macOS. Tools, runtime components and platform patches; no game assets or generated lift C. | 红警3原生重编译：公开工具、运行时组件与平台补丁，不含游戏资源和生成的 lift C。 Inspired by / 方法参考: https://github.com/elkir0/sc2-android-recomp",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/arda6401/LOST-ISLAND",
+      "title": "arda6401/LOST-ISLAND",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/prem241994/DroidBridge",
+      "title": "prem241994/DroidBridge",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/dicechaos/DiceChaosDisplay",
+      "title": "dicechaos/DiceChaosDisplay",
+      "excerpt": "A native Windows DM Studio paired with a borderless Player TV Display—engineered specifically for playing D&D and TTRPGs with real physical miniatures and real dice sitting on TV glass at locked 60 FPS.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/Meitoncz/Delos",
+      "title": "Meitoncz/Delos",
+      "excerpt": "Artemis fork for Vibepollo, updated with latest Moonlight, handheld-friendly UI",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/empy94/kaldora-thor",
+      "title": "empy94/kaldora-thor",
+      "excerpt": "Kaldora companion for the AYN Thor dual displays",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/marsdave/ScreenHop",
+      "title": "marsdave/ScreenHop",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/poggieboii78-arch/lineage-cocoon-fix",
+      "title": "poggieboii78-arch/lineage-cocoon-fix",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/iBlake94/save-snapshot",
+      "title": "iBlake94/save-snapshot",
+      "excerpt": "Save Snapshot — a personal collection of game saves with Nintendo-polished stats",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/kyure001/obtainium_recomp_pack",
+      "title": "kyure001/obtainium_recomp_pack",
+      "excerpt": "Selection of recomp for the Ayn Thor",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/kingfisherphuoc/auto-dim-wireless-screen-cast",
+      "title": "kingfisherphuoc/auto-dim-wireless-screen-cast",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/LineageOS/android_device_ayn_odin2thor",
+      "title": "LineageOS/android_device_ayn_odin2thor",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/spycat88/os-build",
+      "title": "spycat88/os-build",
+      "excerpt": "RetroForge: retro-emulation OS for Snapdragon handhelds",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/aroum/fm1-custom-fw",
+      "title": "aroum/fm1-custom-fw",
+      "excerpt": "M-VAVE FM-1 resource hub: custom firmwares directory, docs, MIDI SysEx protocol tools & firmware flasher",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/p3perLTU/TV-Launcher-CastLink",
+      "title": "p3perLTU/TV-Launcher-CastLink",
+      "excerpt": "TV Launcher + CastLink: a light Google TV home screen and encrypted low-latency screen casting (phone/PC to TV, PC to phone, iPad or Mac)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/hyylanlian/wow-forever-android",
+      "title": "hyylanlian/wow-forever-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/quantavil/awesome-omarchy-plugins",
+      "title": "quantavil/awesome-omarchy-plugins",
+      "excerpt": "Curated directory of 2,600+ open-source Omarchy plugins, widgets, and status bars with live GitHub stats",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/Alexxfromgit/DashCluster",
+      "title": "Alexxfromgit/DashCluster",
+      "excerpt": "Customizable digital instrument cluster for racing games: live Forza Horizon telemetry on your PC, phone and other screens, with a visual dashboard editor. Rust + Slint.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/aypro/ocrclip",
+      "title": "aypro/ocrclip",
+      "excerpt": "Press a button while a game is running and OCR Clip reads the Japanese text on screen, copies it to the clipboard and, if you want, looks it up in a dictionary.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/misbahcmc/pc-hardware-monitor",
+      "title": "misbahcmc/pc-hardware-monitor",
+      "excerpt": "Real-time PC hardware monitor HUD (CPU, RAM, GPU, Temp) for Android/iOS devices via Web PWA.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/Hoangxee/YTMucsicWP",
+      "title": "Hoangxee/YTMucsicWP",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/newkit/OCW",
+      "title": "newkit/OCW",
+      "excerpt": "OpenCyclingWorld",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/Javpato/real-life-battle-tower",
+      "title": "Javpato/real-life-battle-tower",
+      "excerpt": "Cozylight's fitness Battle Tower RPG: real exercise combat, procedural towers, 90 skills and mobile camera pairing.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/mondaylabsltd/vela-wallet",
+      "title": "mondaylabsltd/vela-wallet",
+      "excerpt": "A self-custodial smart wallet for EVM networks",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/zevbuild/upgrade-app-zevsafe",
+      "title": "zevbuild/upgrade-app-zevsafe",
+      "excerpt": "build by gemini",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/LeanBitLab/LeanType",
+      "title": "LeanBitLab/LeanType",
+      "excerpt": "LeanType is an Open-source keyboard, fork of HeliBoard with additional features and customisation",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/satetapongsa/ustwo-couple-app",
+      "title": "satetapongsa/ustwo-couple-app",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/aon-co-jp/open-english",
+      "title": "aon-co-jp/open-english",
+      "excerpt": "📛 Renamed → maid-cafe-english (this repo is kept permanently; links/releases/auto-update keep working) / 改名: maid-cafe-english(このリポジトリは永久に残します)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/storytold/craft-libs",
+      "title": "storytold/craft-libs",
+      "excerpt": "Rust libraries for the Craft Apps",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/gathamediaofficial-lab/AetherCall",
+      "title": "gathamediaofficial-lab/AetherCall",
+      "excerpt": "Modern, offline-first Android dialer built with Kotlin & Jetpack Compose featuring Samsung One UI & Apple iOS 18 Contact Poster UI, Carrier HD Video Calling (ViLTE), Dual-SIM routing, and local call recording.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/saikrishnakittz/therapy-companion",
+      "title": "saikrishnakittz/therapy-companion",
+      "excerpt": "AI-powered emotional wellness and guided reflection mobile application built with React Native and Supabase",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/aon-co-jp/RUNO",
+      "title": "aon-co-jp/RUNO",
+      "excerpt": "open-aruaru-runo-iLumi プロジェクトの統合管理本部　東京都あきる野市の、るのバスからヒントを得て名づけました。",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/mehreenhusn-cmyk/Jarvis",
+      "title": "mehreenhusn-cmyk/Jarvis",
+      "excerpt": "Personal",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/n2ray/xdesk",
+      "title": "n2ray/xdesk",
+      "excerpt": "XDesk: Android apps or a Linux desktop on an external, car or wireless display, with the phone as touchpad and keyboard. No root. Based on Termux:X11",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
+      "url": "https://github.com/amanKG777/FukeX",
+      "title": "amanKG777/FukeX",
+      "excerpt": "screen-reader-friendly, accessible, lightweight media player for android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-15"
+    },
+    {
       "url": "https://github.com/incident201/brutal-morrowind",
       "title": "incident201/brutal-morrowind (Fork von OpenMW/openmw)",
       "excerpt": "Morrowind with the melee combat of Dark Messiah of Might and Magic, built on OpenMW",
@@ -6037,398 +6429,6 @@
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/stormpanda/megingiard",
-      "title": "Megingiard 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ds17f/andropolis",
-      "title": "Micropolis",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/josiahg2502-glitch/Mother3Recomp",
-      "title": "MOTHER 3",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ogdanimal/Goemon64Recomp-Android",
-      "title": "Mystical Ninja Starring Goemon",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/cylonid/NativeAlphaForAndroid",
-      "title": "Native Alpha",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Sp4wnE/RavenDroid",
-      "title": "Native Android Port for Ravenfield, with offline game data and customizable touch controls.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/EddyGameDev/mgs3-recompiled-android",
-      "title": "Native Android port of MGS3 Subsistence via PS2Recomp static recompilation - launcher app, no game data",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/blackorange-sketch/RA3-Native",
-      "title": "Native Android port of Red Alert 3 (tools only, no game files)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/khorne-hub/gu-native",
-      "title": "Native Android port with touch controls. Bring your own copy of the game.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/HUEVOMAN77/xboxcore",
-      "title": "Native Android ports of original Xbox games by static recompilation (XboxXBERecomp SDK, MIT). No game code or",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/martin2844/juiced",
-      "title": "Native macOS, Linux/NixOS and Android ports of OpenJuice by Sidewinder. Requires original Juiced game data.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
-      "title": "Native PC and Android port of The Legend of Zelda: Phantom Hourglass by static recompilation. Bring your own R",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/zaps166/NFSIISE",
-      "title": "Need for Speed II SE",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/NFS3-HP-AndroidEvolved",
-      "title": "Need for Speed III: Hot Pursuit (Android Evolved)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/NFS-CARBON-360-ANDROID-RECOMP",
-      "title": "Need for Speed: Carbon",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/nfsmwpc-recompiled",
-      "title": "Need for Speed: Most Wanted (2005, PC recomp)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/nfsmw-android",
-      "title": "Need for Speed: Most Wanted (2005, PC)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/madelrandel-blip/NFSMW-Recompiled",
-      "title": "Need for Speed: Most Wanted (2005, Xbox 360)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/nfsu1-recompiled",
-      "title": "Need for Speed: Underground",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/codepdbh/nfsu2-recompiled",
-      "title": "Need for Speed: Underground 2",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/gurrhack/NetHack-Android",
-      "title": "NetHack",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/gamboozino/ngbrecomp",
-      "title": "Ninja Gaiden Black (Xbox, 2005) statically recompiled into native Linux and Windows builds, with an experiment",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/zhouwuqi/noitadroid",
-      "title": "Noita Android port: the Windows game statically recompiled to native ARM64, for Android handhelds and phones.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/heyalmoo/Obtainium-Android-Recomps",
-      "title": "Obtainium Android Recomps",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/linkzenic/Shipwright-Android",
-      "title": "Ocarina of Time (Ship of Harkinian, linkzenic fork)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ZahakJ/tandem",
-      "title": "Open-source dual-screen game frontend for Android handhelds",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rsigristc/OpenFusion-Pocket",
-      "title": "OpenFusion-Pocket 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/pelya/openttd-android",
-      "title": "OpenTTD",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sfalexrog/openxcom-android",
-      "title": "OpenXcom",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/kirby-letsgo/oracles-decomp",
-      "title": "Oracle of Ages and Oracle of Seasons",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/thibautbus/top",
-      "title": "Oracle of Ages and Oracle of Seasons (The Oracles Project)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sdlpal/sdlpal",
-      "title": "PAL (Legend of Sword and Fairy)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/izzy2lost/perfect_dark",
-      "title": "Perfect Dark",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-pipboy",
-      "title": "Pip-Boy companion for Fallout 4 on the AYN Thor's second screen (F4SE plugin + Android app, bring your own gam",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rexmont/Pixel-Guide-Android",
-      "title": "Pixel Guide",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sofianeelhor/PKForge",
-      "title": "PKForge",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/wszqkzqk/PvZ-Portable",
-      "title": "Plants vs. Zombies",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/johnpaulnarisetty/eden-duo",
-      "title": "Play Nintendo Switch games on dual-screen Android handhelds, with live companion screens on the second display",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/mstan/EmeraldRecomp",
-      "title": "Pokémon Emerald",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/bryanthaboi/gen1recomp",
-      "title": "Pokémon Red, Blue, Yellow, Gold, Silver, Crystal and more",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/missingno7/pre2_port",
-      "title": "Prehistorik 2",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/themuffinator/openQ4",
-      "title": "Quake 4",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/easleyclaymore/Rance10-Android-Port",
-      "title": "Rance10 Android native port - xsystem4 downstream fork (engine source only, no game assets)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/skynettx/raptor",
-      "title": "Raptor: Call of the Shadows",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/tokeneffortports/ReCompiledSteel",
-      "title": "Real Steel",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sirbilliams/Tinkerbell-Android",
-      "title": "Reconstruction of Disney's You Can Fly! with Tinker Bell (2002 PC) running natively on Android and the AYN Tho",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-ra2",
-      "title": "Red Alert 2 / Yuri's Revenge on the AYN Thor: map on top, touch command deck on the second screen (RA2 Engine",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sergiomanzur/regaiden-recomp",
-      "title": "Resident Evil Gaiden",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/empy94/retro-survival-thor",
-      "title": "Retro Survival sur Android : tactile et manettes, visée radiale, buffs ou sorts auto au choix, second écran fa",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6595,9 +6595,9 @@
     "rejected": 23
   },
   "watcher": {
-    "lastRun": "2026-11-14T12:13:49Z",
-    "newLeads": 42,
-    "newEvents": 6
+    "lastRun": "2026-11-15T12:47:05Z",
+    "newLeads": 49,
+    "newEvents": 4
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

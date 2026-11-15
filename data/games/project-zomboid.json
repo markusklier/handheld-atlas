@@ -116,6 +116,27 @@
           "credit": "ZomboidDS",
           "check": "ai-verified",
           "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Space001000/ZomboidDS/HEAD/docs/images/zomboidds-thor.jpg",
+          "caption": "ZomboidDS on an AYN Thor: the game on the top screen, the Inventory tab with you",
+          "source": "https://github.com/Space001000/ZomboidDS",
+          "credit": "ZomboidDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Space001000/ZomboidDS/HEAD/docs/images/zomboidds-tv.jpg",
+          "caption": "A TV",
+          "source": "https://github.com/Space001000/ZomboidDS",
+          "credit": "ZomboidDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Space001000/ZomboidDS/HEAD/docs/images/zomboidds-tailor.jpg",
+          "caption": "Tailor: a leather jacket on a body figure with its holes and patches, patching t",
+          "source": "https://github.com/Space001000/ZomboidDS",
+          "credit": "ZomboidDS",
+          "check": "readme"
         }
       ],
       "links": [
