@@ -25,7 +25,7 @@
   "versions": [
     {
       "id": "nintendo-gamecube",
-      "name": "Nintendo GameCube",
+      "name": "Nintendo GameCube (2006)",
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
@@ -65,7 +65,7 @@
     },
     {
       "id": "wii",
-      "name": "Wii",
+      "name": "Wii (2006)",
       "type": "release",
       "platforms": [
         "Wii"
@@ -78,14 +78,6 @@
         }
       ],
       "year": 2006
-    },
-    {
-      "id": "gamecube",
-      "name": "GameCube",
-      "type": "release",
-      "platforms": [
-        "Nintendo GameCube"
-      ]
     },
     {
       "id": "nvidia-shield-tv-2017",
@@ -101,6 +93,16 @@
           "url": "https://www.wikidata.org/wiki/Q735613"
         }
       ]
+    },
+    {
+      "id": "wii-u-2016",
+      "name": "Twilight Princess HD (Wii U, 2016)",
+      "type": "remaster",
+      "year": 2016,
+      "platforms": [
+        "Wii U"
+      ],
+      "note": "HD-Remaster mit überarbeiteten Texturen, Gamepad-Inventar und Amiibo-Funktionen."
     }
   ],
   "routes": [
@@ -108,7 +110,7 @@
       "id": "ds-dusklight-dual-screen",
       "name": "Dusklight Dual Screen",
       "kind": "decomp",
-      "release": "gamecube",
+      "release": "nintendo-gamecube",
       "runtime": null,
       "projects": [
         "dusklight-dual-screen"
@@ -142,7 +144,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-16",
   "wikidata": "Q735613",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Twilight_Princess",
   "genre": "action-adventure game"

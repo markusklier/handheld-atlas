@@ -1,0 +1,73 @@
+{
+  "id": "wizard101",
+  "title": "Wizard101",
+  "franchise": "Wizard101",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "MMORPG",
+  "summary": "Online-Rollenspiel von KingsIsle; der Windows-Client läuft über GameNative auf dem AYN Thor, mit Schnellstart, Controller-Profil und Touch-Panel auf dem unteren Bildschirm.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigenes Wizard101-Konto und Spieldateien",
+        "GameNative 1.4.0"
+      ],
+      "steps": [
+        "GameNative 1.4.0 installieren und den Wizard101-Ordner als eigenes Spiel hinzufügen (interner Speicher)",
+        "Container: Wine proton-9.0-arm64ec, Display Server X11, FEX-Preset Intermediate",
+        "W101Quick-arm64.exe aus den Releases als Download/W101Quick/W101Quick.exe ablegen und als Startpfad D:/W101Quick/W101Quick.exe eintragen",
+        "Controller-Profil Wizard101-Thor-v7.icp importieren und anwenden"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/StopHoginIt/wizard101-thor"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "status": "experimental",
+      "checkedAt": "2026-11-16",
+      "id": "w101-gamenative-thor",
+      "name": "GameNative + Wizard101-Thor-Paket",
+      "release": "pc",
+      "kind": "pc-runtime",
+      "edition": "Windows-Client",
+      "runtime": "GameNative 1.4.0 (Proton 9 ARM64EC, FEX, DXVK, Turnip)",
+      "projects": [
+        "wizard101-thor",
+        "gamenative"
+      ],
+      "dualScreenType": "companion",
+      "dualScreen": "Touchpad und Tastatur (GameNative „Hybrid“) sowie W101-Panel mit Kurzbefehl-Tasten.",
+      "benefit": "Schnellstarter ohne Passworteingabe und ohne KingsIsle-Launcher, Analog-Steuerung per Controller-Profil v7.",
+      "caveat": "Inoffizielles Fanprojekt. Spiel ist unter FEX CPU-lastig, etwas Ruckeln bleibt; Start bis zur Charakterauswahl etwa 1,5 Minuten. Spielordner muss im internen GameNative-Speicher liegen, nicht auf /sdcard.",
+      "effort": "advanced"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-16"
+}

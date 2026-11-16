@@ -87,8 +87,73 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map"
+      ],
+      "requires": [
+        "Eigene Spieldaten und erforderliche Systemdateien",
+        "Spielversion 3.0.0 oder 3.0.1",
+        "Eden Duo Runtime 17 oder neuer"
+      ],
+      "steps": [
+        "Purpura-vX.Y.Z.dsmod.zip aus den GitHub-Releases laden",
+        "In Eden Duo das Spiel lange drücken → Add-ons → Install → Dual screen mods → Paket wählen"
+      ],
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/party.png",
+          "caption": "Unterer Bildschirm: Team mit KP, Attacken und Werten (Vorschau mit Testdaten)",
+          "source": "https://github.com/jjprog17/sv-dualscreen-companion",
+          "credit": "sv-dualscreen-companion",
+          "check": "source-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/battle.png",
+          "caption": "Unterer Bildschirm: Kampfhilfe mit Schwächen, Resistenzen und Tipp (Vorschau mit Testdaten)",
+          "source": "https://github.com/jjprog17/sv-dualscreen-companion",
+          "credit": "sv-dualscreen-companion",
+          "check": "source-verified",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jjprog17/sv-dualscreen-companion"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "status": "active",
+      "checkedAt": "2026-11-16",
+      "id": "sv-eden-duo-companion",
+      "name": "Eden Duo + Dual-Screen-Companion",
+      "release": "nintendo-switch",
+      "kind": "emulator-mod",
+      "edition": "Nintendo Switch",
+      "runtime": "Eden Duo (Runtime 17+)",
+      "projects": [
+        "sv-dualscreen-companion",
+        "eden"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Team mit Live-KP, Kampfhilfe (Gegner, Schwächen, Tipp, Wechselvorschläge), Pokédex, Beutel, Karte mit Position und Trainerkarte.",
+      "benefit": "Kampfhilfe und Team-Übersicht auf dem unteren Bildschirm; funktioniert auch mit Mods wie Pokémon Compass. Ändert weder Speicher noch Spielstand.",
+      "caveat": "Gegnererkennung läuft über Bildschirmtext/KP-Änderungen, teils manuelle Auswahl nötig; Cursor-Suche experimentell. Bilder im README sind mit Testdaten erzeugt. Kein Atlas-Gerätetest.",
+      "version": "Pokémon Purpur 3.0.0/3.0.1",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-16",
   "wikidata": "Q111031687",
   "wikipedia": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Violet",
   "genre": "role-playing video game"

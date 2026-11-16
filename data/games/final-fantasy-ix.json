@@ -161,6 +161,81 @@
   ],
   "routes": [
     {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "widescreen",
+        "high-fps",
+        "mods",
+        "controller",
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von Final Fantasy IX (Import des Spielordners oder Download über das eigene Steam-Konto)"
+      ],
+      "steps": [
+        "APK aus den GitHub-Releases installieren",
+        "Spieldateien importieren (PC-Ordner mit Memoria) oder über Steam-QR-Anmeldung herunterladen",
+        "Mods wie Moguri Mod im Launcher installieren"
+      ],
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/dual-screen-field.jpg",
+          "caption": "Oben Alexandria mit Moguri Mod, unten Gruppe, Ort und Gegenstände",
+          "source": "https://github.com/bhuiyah/ff9-recomp-android",
+          "credit": "FF9Recomp",
+          "check": "source-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/dual-screen-battle.jpg",
+          "caption": "Kampf mit 60 FPS, unten ATB, Trance und Gegnerschwächen",
+          "source": "https://github.com/bhuiyah/ff9-recomp-android",
+          "credit": "FF9Recomp",
+          "check": "source-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/dual-screen-world-map.jpg",
+          "caption": "Weltkarte unten mit Position von Gruppe, Chocobo und Luftschiff",
+          "source": "https://github.com/bhuiyah/ff9-recomp-android",
+          "credit": "FF9Recomp",
+          "check": "source-verified",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/bhuiyah/ff9-recomp-android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "status": "experimental",
+      "checkedAt": "2026-11-16",
+      "id": "ff9-recomp",
+      "name": "FF9Recomp (nativ mit Memoria)",
+      "release": "mobile-pc-2016",
+      "kind": "source-port",
+      "edition": "PC (Steam/GOG)",
+      "runtime": ".NET 8 Mono mit eigener Engine statt Unity",
+      "projects": [
+        "ff9-recomp-android"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Gruppe mit Porträts, KP/MP, ATB und Trance; Ort, Spielzeit, Gil; Fähigkeiten, Gegenstände, Extras; im Kampf Gegnerwerte, Schwächen und Stehlbares; Weltkarte mit Position; Touch-Leiste (Menü, Speicherstände, Tempo).",
+      "benefit": "PC-Fassung nativ statt über Wine/FEX: 60 FPS (experimentell 120), 16:9, Memoria-Mods inkl. Moguri Mod aus dem integrierten Katalog, Speicherstände und Dual-Screen-Panel für den Thor.",
+      "caveat": "Laut Autor komplett mit KI gebaut, ohne zeilenweise Prüfung durch erfahrene Entwickler. Meilenstein „spielbar“ noch in Arbeit: nicht jedes Gebiet durchgespielt; Ergebnisbildschirm im Breitbild links abgeschnitten; Steam-Download noch nicht mit Steam-Kopie getestet (GOG-Import funktioniert). Nur auf dem Thor getestet.",
+      "effort": "guided"
+    },
+    {
       "id": "ff9-official-android",
       "name": "Offizielle Android-App von Square Enix",
       "kind": "native",
@@ -203,7 +278,7 @@
       "checkedAt": "2026-11-12"
     }
   ],
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-16",
   "wikidata": "Q474573",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_IX",
   "genre": "role-playing video game",

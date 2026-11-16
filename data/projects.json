@@ -432,7 +432,8 @@
         "tomb-raider",
         "the-elder-scrolls-v-skyrim",
         "hollow-knight",
-        "tomb-raider-chronicles"
+        "tomb-raider-chronicles",
+        "wizard101"
       ],
       "checkedAt": "2026-11-16",
       "latestRelease": {
@@ -2310,6 +2311,108 @@
         "url": "https://github.com/dfdx047/Zandatsu/releases/tag/v1.3",
         "date": "2026-11-13"
       }
+    },
+    {
+      "id": "cinderbox",
+      "name": "Cinderbox",
+      "kind": "launcher",
+      "url": "https://github.com/Ekyso/Cinderbox",
+      "repo": "Ekyso/Cinderbox",
+      "description": "Inoffizieller nativer Launcher für die Desktop-Fassung von Stardew Valley auf Android, mit eigener SMAPI-Fassung für PC-Mods. Eigene Spielkopie nötig.",
+      "games": [
+        "stardew-valley"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "joiplay",
+      "name": "JoiPlay",
+      "kind": "runtime",
+      "url": "https://joiplay.net",
+      "description": "Android-App für RPG-Maker-, Ren'Py- und andere PC-Engine-Spiele; Builds und Plugins laut Projektseite über Patreon.",
+      "games": [
+        "pokemon-rejuvenation"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "j2me-loader",
+      "name": "J2ME Loader",
+      "kind": "emulator",
+      "url": "https://github.com/nikita36078/J2ME-Loader",
+      "repo": "nikita36078/J2ME-Loader",
+      "description": "Quelloffener J2ME-Emulator für Android (2D- und 3D-Spiele inkl. Mascot Capsule), virtuelle Tastatur, Einstellungen je Spiel. Google Play und F-Droid.",
+      "games": [],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "sv-dualscreen-companion",
+      "name": "Scarlet/Violet Dual-Screen Companion",
+      "kind": "companion",
+      "url": "https://github.com/jjprog17/sv-dualscreen-companion",
+      "repo": "jjprog17/sv-dualscreen-companion",
+      "description": "Dual-Screen-Mod (.dsmod.zip) für Pokémon Karmesin/Purpur im Switch-Emulator Eden Duo: Team, Kampfhilfe, Pokédex, Beutel, Karte, Trainerkarte. Nur lesend.",
+      "games": [
+        "pokemon-scarlet",
+        "pokemon-violet"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "ff9-recomp-android",
+      "name": "FF9Recomp",
+      "kind": "port",
+      "url": "https://github.com/bhuiyah/ff9-recomp-android",
+      "repo": "bhuiyah/ff9-recomp-android",
+      "description": "Final Fantasy IX (PC-Fassung) mit Memoria und Moguri Mod nativ auf ARM64-Android ohne Unity; Dual-Screen-Panel für den AYN Thor. Eigene Spielkopie nötig.",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "gu-native",
+      "name": "MHGU for Android (gu-native)",
+      "kind": "port",
+      "url": "https://github.com/khorne-hub/gu-native",
+      "repo": "khorne-hub/gu-native",
+      "description": "Monster Hunter Generations Ultimate (Switch) nativ übersetzt für Android und PC, mit eigenen Touch-Steuerungen. Eigene Spielkopie (Update 1.4.0) nötig.",
+      "games": [
+        "monster-hunter-generations"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "wizard101-thor",
+      "name": "Wizard101 on the AYN Thor",
+      "kind": "companion",
+      "url": "https://github.com/StopHoginIt/wizard101-thor",
+      "repo": "StopHoginIt/wizard101-thor",
+      "description": "Schnellstarter, Controller-Profil und Touch-Panel für den Windows-Client von Wizard101 in GameNative auf dem AYN Thor.",
+      "games": [
+        "wizard101"
+      ],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "megingiard",
+      "name": "Megingiard",
+      "kind": "companion",
+      "url": "https://github.com/stormpanda/megingiard",
+      "repo": "stormpanda/megingiard",
+      "description": "Begleit-App für Dual-Screen-Handhelds (AYN Thor, Retroid Pocket Duo): Bildausschnitte des Hauptbildschirms spiegeln, virtuelle Tastatur, Touchpad, Makro-Tasten und virtuelles Gamepad auf dem zweiten Bildschirm.",
+      "games": [],
+      "checkedAt": "2026-11-16"
+    },
+    {
+      "id": "fractal",
+      "name": "Fractal",
+      "kind": "emulator-fork",
+      "url": "https://github.com/dfdx047/Fractal",
+      "repo": "dfdx047/Fractal",
+      "description": "Wii-U-Emulator für Android-Handhelds (Cemu-Fork, öffentliche Beta v0.1): Gamepad-Oberfläche, Turnip-Treiberkatalog, GamePad-Bild auf dem zweiten Bildschirm des AYN Thor.",
+      "games": [],
+      "checkedAt": "2026-11-16"
     }
   ]
 }

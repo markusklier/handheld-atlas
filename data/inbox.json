@@ -1,38 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://github.com/GooseRooster/openmw",
-      "title": "GooseRooster/openmw (Fork von OpenMW/openmw)",
-      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/HellingOut/openmw-ios6",
-      "title": "HellingOut/openmw-ios6 (Fork von OpenMW/openmw)",
-      "excerpt": "Vibecoded OpenMW port on iOS 6 armv7",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/TakunHiwatari/eden-duo",
-      "title": "TakunHiwatari/eden-duo (Fork von igawa6/eden-duo)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/khorne-hub/gu-native",
-      "title": "khorne-hub/gu-native",
-      "excerpt": "Native Android port with touch controls. Bring your own copy of the game.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/easleyclaymore/Rance10-Android-Port",
       "title": "easleyclaymore/Rance10-Android-Port",
       "excerpt": "Rance10 Android native port - xsystem4 downstream fork (engine source only, no game assets)",
@@ -105,14 +73,6 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/bhuiyah/ff9-recomp-android",
-      "title": "bhuiyah/ff9-recomp-android",
-      "excerpt": "FINAL FANTASY IX (Steam) with Memoria and Moguri Mod, running natively on Android. No game files included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/IamWilmar/resonance-recomp",
       "title": "IamWilmar/resonance-recomp",
       "excerpt": "Native Android port of Final Fantasy Resonance for the Retroid Pocket Flip 2. Early version. Bring your own extracted game files.",
@@ -153,89 +113,9 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/jjprog17/sv-dualscreen-companion",
-      "title": "jjprog17/sv-dualscreen-companion",
-      "excerpt": "Dual-screen companion for Pokémon Scarlet/Violet on the Eden Duo emulator (AYN Thor): live team, battle helper, Pokédex, bag and map. English and Spanish.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Easyllls/AppList",
-      "title": "Easyllls/AppList",
-      "excerpt": "一个持续维护更新的综合软件资源列表，收集整理各类 Android、Android TV 和 Windows 平台的实用工具与优秀软件，包含 Root 管理器、LSPosed、免 Root 框架、Magisk、KernelSU、Xposed 等 Root 生态相关模块。",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/StopHoginIt/wizard101-thor",
-      "title": "StopHoginIt/wizard101-thor",
-      "excerpt": "Dual-screen Wizard101 on the AYN Thor via GameNative quick-login launcher, controller profiles, bottom-sreen tools",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/stormpanda/megingiard",
-      "title": "stormpanda/megingiard",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/hector6872/awesome-esp32",
-      "title": "hector6872/awesome-esp32",
-      "excerpt": "A curated list of awesome ESP32 projects and resources",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/fabiandroguettdimabe/pokedaisy-rust",
-      "title": "fabiandroguettdimabe/pokedaisy-rust",
-      "excerpt": "PokeDaisy desktop port in Rust",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/srsholmes/reskate-thor-dazfix",
       "title": "srsholmes/reskate-thor-dazfix",
       "excerpt": "ReSkate DAZ guard: fixes skate. respawn loop under FEX/ARM",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/isleep2late/Hackmons-Controller",
-      "title": "isleep2late/Hackmons-Controller",
-      "excerpt": "Hackmons Controller: connect, log, display, replay and TAS-edit game controller input (GSE/BizHawk tools, Switch 2 GameCube over USB, GC Bridge Android app)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Der-Floh/Cubiomes-Viewer",
-      "title": "Der-Floh/Cubiomes-Viewer",
-      "excerpt": "A cross-platform Minecraft Java Edition seed finder and biome map viewer, built on top of the cubiomes world-generation library.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/elithril/blender-kiln",
-      "title": "elithril/blender-kiln",
-      "excerpt": "Claude Code plugin: describe an object or show a photo, and Claude builds a clean 3D model in Blender, for games, the web, AR or 3D printing. It animates characters too. New in 3.0: Kiln Studio, a local page to view, check and fix your models with Claude.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/jhbadger/Penultimate",
-      "title": "jhbadger/Penultimate",
-      "excerpt": "A Python/Tk homage to classic Ultima RPGs with a Canadian theme",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -249,38 +129,6 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/P1tayaa/godot-dual-screen",
-      "title": "P1tayaa/godot-dual-screen",
-      "excerpt": "Godot 4.7 addon for two-screen games (DS style): Android dual-screen handhelds, two desktop windows, or stacked.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/P1tayaa/godot-dual-core",
-      "title": "P1tayaa/godot-dual-core",
-      "excerpt": "Examples and tests for the godot-dual-screen addon.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Vihan-2008/living-room-sports",
-      "title": "Vihan-2008/living-room-sports",
-      "excerpt": "A Wii Menu for your PC: starts your own Wii Sports, Resort, Mario Kart Wii and Brawl discs in Dolphin, with phones as Wii Remotes.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/dfdx047/Fractal",
-      "title": "dfdx047/Fractal",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/vancopek123/FuraGPS",
       "title": "vancopek123/FuraGPS",
       "excerpt": "",
@@ -289,97 +137,9 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/yasuperu/dotplay-companion",
-      "title": "yasuperu/dotplay-companion",
-      "excerpt": "Dotplay Companion: dot down what you play on your Android handheld. Sends playtime from Cocoon, emulators and Android games to dotplayapp.com.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/bedsheetsosu/universepen",
-      "title": "bedsheetsosu/universepen",
-      "excerpt": "UniversePen – iPad + Pencil as a drawing display and second screen for the Mac: USB or Wi-Fi, pressure curves, keyboard, trackpad, multi-touch, 7 languages",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/EliteArtists/spiritpedia",
-      "title": "EliteArtists/spiritpedia",
-      "excerpt": "A modern spiritual encyclopedia bridging science and spirituality — featuring tools, teachings, and practices for raising consciousness.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/shakti69/DarkMusic",
-      "title": "shakti69/DarkMusic",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/IZRK/intranet",
-      "title": "IZRK/intranet",
-      "excerpt": "IZRK intranet app",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/JohannesHoppe/schnellbild",
-      "title": "JohannesHoppe/schnellbild",
-      "excerpt": "A fast macOS image/video viewer: open a folder, thumbnails, full view, keyboard navigation.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/amandaptuar/pantel-dental-clinic",
-      "title": "amandaptuar/pantel-dental-clinic",
-      "excerpt": "this is a crm of patel dental climnic ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Mostafa-Ahmed0/tempo-reader",
-      "title": "Mostafa-Ahmed0/tempo-reader",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/CrispStrobe/CrispCloud",
-      "title": "CrispStrobe/CrispCloud",
-      "excerpt": "Cross-platform Commander-style Client for Cloud Storage providers, supporting (unofficially) Filen.io, Internxt, WebDAV, SFTP; viewers and editors for XML/Code/Hex/Ebooks/PDF/Office files (doc, docx, xlsx, etc).",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/mRs-/Black-Friday-Deals",
-      "title": "mRs-/Black-Friday-Deals",
-      "excerpt": "Black Friday Deals for macOS / iOS Software & Books",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/fecampossantos/wanbo-light-os",
       "title": "fecampossantos/wanbo-light-os",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Etherealmber/atlas-commerce-android",
-      "title": "Etherealmber/atlas-commerce-android",
-      "excerpt": "Atlas Commerce native Android (Kotlin + Compose)",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -6586,13 +6346,37 @@
     "https://github.com/robinei/thor",
     "https://github.com/team-litigation-lab/Case-Management-Training",
     "https://github.com/tonywei92/banana-player",
-    "https://github.com/youngfish42/Awesome-FL"
+    "https://github.com/youngfish42/Awesome-FL",
+    "https://github.com/GooseRooster/openmw",
+    "https://github.com/HellingOut/openmw-ios6",
+    "https://github.com/TakunHiwatari/eden-duo",
+    "https://github.com/P1tayaa/godot-dual-screen",
+    "https://github.com/P1tayaa/godot-dual-core",
+    "https://github.com/Easyllls/AppList",
+    "https://github.com/hector6872/awesome-esp32",
+    "https://github.com/fabiandroguettdimabe/pokedaisy-rust",
+    "https://github.com/isleep2late/Hackmons-Controller",
+    "https://github.com/Der-Floh/Cubiomes-Viewer",
+    "https://github.com/elithril/blender-kiln",
+    "https://github.com/jhbadger/Penultimate",
+    "https://github.com/Vihan-2008/living-room-sports",
+    "https://github.com/yasuperu/dotplay-companion",
+    "https://github.com/bedsheetsosu/universepen",
+    "https://github.com/EliteArtists/spiritpedia",
+    "https://github.com/shakti69/DarkMusic",
+    "https://github.com/IZRK/intranet",
+    "https://github.com/JohannesHoppe/schnellbild",
+    "https://github.com/amandaptuar/pantel-dental-clinic",
+    "https://github.com/Mostafa-Ahmed0/tempo-reader",
+    "https://github.com/CrispStrobe/CrispCloud",
+    "https://github.com/mRs-/Black-Friday-Deals",
+    "https://github.com/Etherealmber/atlas-commerce-android"
   ],
   "agent": {
-    "lastRun": "2026-11-12T19:54:28Z",
-    "summary": "Issue #11 (update: doom-1993) erledigt; neues Spiel Metal Gear Rising mit Zandatsu-Port, offizielle Android-App für Final Fantasy IX; 8 Bilder bestätigt, 26 falsch zugeordnete entfernt; 12 Reihen korrigiert; 24 Leads bearbeitet (23 verworfen). Einschränkung: GitHub-Seiten fremder Repos waren in diesem Lauf nicht abrufbar – junge Recomp-Leads (NieR, MH Rise, Xenoblade, Disco Elysium, Orta, BM64-Android, Asphalt UGT2, Sonic Heroes, VS. SMB) und thor-ffix (FF IX Dual Screen), truck-companion, thor-control, Thortemis bleiben in leads. Warteschlange nicht abgearbeitet (backend api, Guthaben leer).",
-    "processed": 24,
-    "rejected": 23
+    "lastRun": "2026-11-16T20:45:00Z",
+    "summary": "Keine offenen abo-Issues; API-Guthaben leer → 3 Spiele aus der Warteschlange (Stardew Valley, Pokémon Rejuvenation, Tomb Raider: The Osiris Codex) abgearbeitet; neue Wege: FF9Recomp (Dual Screen), Eden-Duo-Companion für Pokémon Karmesin/Purpur, MHGU nativ, Cinderbox, JoiPlay; neues Spiel Wizard101; Plattformen Java ME (J2ME Loader) und Wii U (Fractal); 9 Bilder bestätigt, 8 falsche entfernt; 30 Leads bearbeitet (24 verworfen).",
+    "processed": 30,
+    "rejected": 24
   },
   "watcher": {
     "lastRun": "2026-11-16T13:42:09Z",

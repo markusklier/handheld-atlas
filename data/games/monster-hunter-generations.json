@@ -30,10 +30,81 @@
         "Nintendo 3DS"
       ],
       "year": 2015
+    },
+    {
+      "id": "switch-2018",
+      "name": "Monster Hunter Generations Ultimate (Switch, 2018)",
+      "type": "release",
+      "year": 2018,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Erweiterte Fassung (in Japan „Monster Hunter XX“) mit neuen Monstern und Stilen; Grundlage des nativen Android-Ports.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/khorne-hub/gu-native"
+        }
+      ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch",
+        "controller",
+        "high-fps",
+        "native-arm",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Switch-Spieldaten von MHGU inkl. Update 1.4.0 (exefs und romfs)",
+        "Android 9+, 64-bit, Vulkan 1.2",
+        "Etwa 13 GB freier Speicher"
+      ],
+      "steps": [
+        "exefs- und romfs-Ordner (mit Update 1.4.0) in einen Ordner legen",
+        "Spielcode am Handy in der App oder am PC mit dem Tool derselben Version erzeugen",
+        "APK aus den GitHub-Releases installieren und den Ordner wählen"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/khorne-hub/gu-native"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Galaxy S25 Ultra (Snapdragon 8 Elite)",
+          "result": "120 FPS (laut README, eigener FPS-Zähler)",
+          "source": "https://github.com/khorne-hub/gu-native",
+          "date": "2026-11-16"
+        }
+      ],
+      "verification": "ai-unverified",
+      "status": "active",
+      "checkedAt": "2026-11-16",
+      "id": "mhgu-native",
+      "name": "MHGU for Android (gu-native)",
+      "release": "switch-2018",
+      "kind": "recomp",
+      "edition": "Nintendo Switch (Update 1.4.0)",
+      "runtime": "Native Übersetzung des Spielcodes (kein Emulator)",
+      "projects": [
+        "gu-native"
+      ],
+      "benefit": "Ausgefeilte Touch-Steuerung, bis 120 FPS, einstellbare 3D-Auflösung, Low-End-Modus, Spielstand-Import von Emulator/PC, Cheats und Mods.",
+      "caveat": "Inoffizielles Projekt, laut Autor mit Claude Code erstellt. Spielcode wird einmalig aus den eigenen Dateien erzeugt (am Handy oder PC). Kein Thor-Messwert im README.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-16",
   "wikidata": "Q20856979",
   "wikipedia": "https://en.wikipedia.org/wiki/Monster_Hunter_Generations",
   "genre": "action role-playing game"

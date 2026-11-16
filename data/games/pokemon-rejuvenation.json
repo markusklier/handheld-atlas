@@ -21,7 +21,7 @@
       "name": "Rejuv Dual",
       "kind": "source-port",
       "release": "pc",
-      "runtime": null,
+      "runtime": "mkxp-z (Android-Fork mkxp-z-android-reworked)",
       "projects": [
         "rejuv-dual"
       ],
@@ -29,31 +29,86 @@
         "android"
       ],
       "features": [
-        "dual-screen"
+        "dual-screen",
+        "touch"
       ],
-      "dualScreen": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten sowie Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken einschließlich AP und Effektivität. Android-Player auf mkxp-z-Basis; automatischer Vorab-Build vom 8. November 2026.",
+      "dualScreen": "Team mit KP, Status, Typen und Attacken; im Kampf Gegnerdaten (Level, Typen, KP, gefangen/neu) und Touch-Schaltflächen für Kampf, Beutel, Pokémon, Flucht und Attacken mit AP und Effektivität.",
       "dualScreenType": "integrated",
-      "requires": [],
-      "benefit": "",
-      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
-      "steps": [],
+      "requires": [
+        "Eigener Spielordner von Pokémon Rejuvenation (PC)"
+      ],
+      "benefit": "Eigener Android-Player mit Begleitbildschirm im Stil von PokeDaisy; auf Geräten mit einem Bildschirm als Seitenleiste.",
+      "caveat": "Frühes Projekt: Die APK gibt es nur als Build-Artefakt der GitHub Actions (Anmeldung bei GitHub nötig), kein Release. Unterstützte Spielversion nicht angegeben. Geplant: Breitbild, Touch-Beutel, Kartenpanel.",
+      "steps": [
+        "APK aus dem letzten erfolgreichen „Build APK“-Lauf (Actions → Artifacts „rejuv-dual-apk“) laden und installieren",
+        "Inhalt des Rejuvenation-Spielordners nach /storage/emulated/0/mkxp-z/ kopieren (Game.exe, Data/, Graphics/ direkt darin)",
+        "Rejuv Dual öffnen und „Zugriff auf alle Dateien“ erlauben"
+      ],
       "version": null,
-      "effort": "guided",
-      "status": "active",
+      "effort": "advanced",
+      "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
       "screenshots": [],
       "links": [
         {
-          "label": "Quelle",
-          "url": "https://github.com/Enecchii/rejuv-dual/blob/main/README.md"
+          "label": "GitHub",
+          "url": "https://github.com/Enecchii/rejuv-dual"
         }
       ],
       "reports": [],
       "performance": [],
       "checkedAt": "2026-11-08"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch"
+      ],
+      "requires": [
+        "Eigener Spielordner von Pokémon Rejuvenation (PC)",
+        "JoiPlay und RPG-Maker-Plugin"
+      ],
+      "steps": [
+        "Spiel am PC entpacken und optional MapConverter im Spielordner ausführen",
+        "Spielordner aufs Gerät kopieren",
+        "In JoiPlay über „+“ die Start-.exe des Spiels wählen und starten"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Anleitung (rebornevo.com)",
+          "url": "https://www.rebornevo.com/forums/topic/62480-how-to-run-rejuvenation-and-reborn-on-android-and-sort-of-apple-for-pedantic-loons/"
+        },
+        {
+          "label": "JoiPlay",
+          "url": "https://joiplay.net"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "status": "active",
+      "checkedAt": "2026-11-16",
+      "id": "rejuv-joiplay",
+      "name": "JoiPlay mit RPG-Maker-Plugin",
+      "release": "pc",
+      "kind": "pc-runtime",
+      "edition": "PC",
+      "runtime": "JoiPlay + RPG-Maker-Plugin",
+      "projects": [
+        "joiplay"
+      ],
+      "benefit": "Bekannter Weg für Pokémon-Essentials-Fangames auf Android, ohne Dual Screen.",
+      "caveat": "Laut Anleitung auf rebornevo.com hilft MapConverter gegen leere Hintergründe und bei der Leistung; Wildkämpfe laden laut Kommentar langsamer. Spielversion nicht angegeben.",
+      "effort": "guided"
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-16",
+  "genre": "Rollenspiel",
+  "summary": "Pokémon-Essentials-Fangame für PC; auf Android über JoiPlay oder den Dual-Screen-Player Rejuv Dual mit Team- und Kampfanzeige auf dem zweiten Bildschirm."
 }

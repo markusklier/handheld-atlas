@@ -2,6 +2,107 @@
   "entries": [
     {
       "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: Cinderbox – Desktop-Fassung mit SMAPI-Mods nativ auf Android (KI-Fund)",
+      "game": "stardew-valley",
+      "url": "https://github.com/Ekyso/Cinderbox"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "by": "agent",
+      "text": "Thor Dual Screen: Anleitung, Voraussetzungen, Version v0.5.2 und 5 geprüfte Dual-Screen-Bilder",
+      "game": "stardew-valley",
+      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "by": "agent",
+      "text": "Rejuv Dual: Installationsschritte und Einschränkungen ergänzt (nur Actions-Build)",
+      "game": "pokemon-rejuvenation",
+      "url": "https://github.com/Enecchii/rejuv-dual"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: JoiPlay mit RPG-Maker-Plugin (KI-Fund)",
+      "game": "pokemon-rejuvenation",
+      "url": "https://www.rebornevo.com/forums/topic/62480-how-to-run-rejuvenation-and-reborn-on-android-and-sort-of-apple-for-pedantic-loons/"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "project-added",
+      "by": "agent",
+      "text": "J2ME Loader als allgemeiner Weg für Java-ME-Spiele (betrifft u. a. Tomb Raider: The Osiris Codex, DOOM RPG)",
+      "game": "tomb-raider-the-osiris-codex",
+      "url": "https://github.com/nikita36078/J2ME-Loader"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Dual-Screen-Weg: Eden Duo + Companion für Pokémon Karmesin (KI-Fund)",
+      "game": "pokemon-scarlet",
+      "url": "https://github.com/jjprog17/sv-dualscreen-companion"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Dual-Screen-Weg: Eden Duo + Companion für Pokémon Purpur (KI-Fund)",
+      "game": "pokemon-violet",
+      "url": "https://github.com/jjprog17/sv-dualscreen-companion"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Dual-Screen-Weg: FF9Recomp – PC-Fassung nativ mit Memoria-Mods und Thor-Panel (KI-Fund)",
+      "game": "final-fantasy-ix",
+      "url": "https://github.com/bhuiyah/ff9-recomp-android"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-added",
+      "by": "agent",
+      "text": "Neuer Spielweg: MHGU for Android – Monster Hunter Generations Ultimate nativ mit Touch-Steuerung (KI-Fund)",
+      "game": "monster-hunter-generations",
+      "url": "https://github.com/khorne-hub/gu-native"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "game-added",
+      "by": "agent",
+      "text": "Neues Spiel: Wizard101 mit Dual-Screen-Weg über GameNative auf dem AYN Thor (KI-Fund)",
+      "game": "wizard101",
+      "url": "https://github.com/StopHoginIt/wizard101-thor"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neues Werkzeug: Megingiard – zweiter Bildschirm als Spiegel-Ausschnitt, Tastatur, Touchpad und Makro-Pad (KI-Fund)",
+      "url": "https://github.com/stormpanda/megingiard"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "by": "agent",
+      "text": "Doppelte GameCube-Fassung zusammengeführt, Fassung Twilight Princess HD (Wii U, 2016) ergänzt",
+      "game": "the-legend-of-zelda-twilight-princess"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neuer Wii-U-Emulator Fractal (Cemu-Fork, Beta) mit GamePad-Bild auf dem zweiten Bildschirm – gilt jetzt für alle Wii-U-Fassungen (KI-Fund)",
+      "url": "https://github.com/dfdx047/Fractal"
+    },
+    {
+      "date": "2026-11-16",
       "type": "route-updated",
       "game": "sonic-adventure",
       "text": "1 Community-Berichte von EmuReady für Sonic Adventure (Geräte mit dem Chip des AYN Thor)"

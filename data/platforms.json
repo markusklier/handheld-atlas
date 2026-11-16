@@ -249,6 +249,28 @@
         ],
         "note": "Experimentelle Xbox-360-Emulation auf Xenia-Basis."
       }
+    ],
+    "Java ME": [
+      {
+        "name": "J2ME Loader",
+        "kind": "emulation",
+        "project": "j2me-loader",
+        "targets": [
+          "android"
+        ],
+        "note": "Java-Handyspiele (J2ME) auf Android; Kompatibilitätslisten im Projekt-Wiki. Bei Flackern „Immediate processing mode“ aktivieren, Filter kostet teils Leistung."
+      }
+    ],
+    "Wii U": [
+      {
+        "name": "Fractal (Beta)",
+        "kind": "emulation",
+        "project": "fractal",
+        "targets": [
+          "android"
+        ],
+        "note": "Cemu-Fork für Android 11+ (arm64, Vulkan 1.1+), öffentliche Beta: viele Spiele laufen, viele noch nicht. Zeigt das GamePad-Bild auf dem zweiten Bildschirm (AYN Thor). Spielstände sichern."
+      }
     ]
   }
 }

@@ -350,25 +350,11 @@
           "check": "ai-verified"
         },
         {
-          "url": "https://github.com/BrianJr03/GrandTheftCompanion/raw/main/assets/screenshot_v.png",
-          "caption": "GTA V oben, Companion-HUD unten",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "source-verified"
-        },
-        {
           "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/blips-v.png",
           "caption": "Blip-Liste für GTA V mit Entfernungen auf dem zweiten Bildschirm",
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/blips-iv.png",
-          "caption": "GTA IV blips panel: 22 blips with the TBoGT magenta accent, Helitour routed",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "ai-unclear"
         }
       ],
       "links": [
@@ -384,7 +370,7 @@
       "dualScreenType": "companion"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-16",
   "wikidata": "Q17452",
   "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
   "website": "https://www.rockstargames.com/V"

@@ -70,17 +70,19 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-skree-corridor-2d.png",
-          "caption": "Brinstar, Skree corridor (2D)",
+          "caption": "Brinstar oben, unten Karte mit Status und nächstem Ziel",
           "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
           "credit": "github.com",
-          "check": "ai-unclear"
+          "check": "source-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/brinstar-main-shaft-3d.png",
-          "caption": "Brinstar, main shaft (3D view)",
+          "caption": "Brinstar-Hauptschacht oben, unten Karte, Bosse und Zeit",
           "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
           "credit": "github.com",
-          "check": "ai-unclear"
+          "check": "source-verified",
+          "dual": true
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-shaft-3d.png",
@@ -116,7 +118,7 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-16",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Metroid%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"

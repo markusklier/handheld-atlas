@@ -13,12 +13,20 @@
       "platforms": [
         "Java ME"
       ],
-      "year": 2003
+      "year": 2003,
+      "note": "Entwickelt von Iomo, veröffentlicht von Eidos am 20.11.2003 für Java-Handys.",
+      "links": [
+        {
+          "label": "Tomb Raider Wiki",
+          "url": "https://tombraiderwiki.org/index.php/The_Osiris_Codex"
+        }
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-16",
   "wikidata": "Q2028547",
-  "genre": "platform game"
+  "genre": "Action-Adventure",
+  "summary": "Das erste Tomb Raider für Java-Handys (Iomo/Eidos, 2003) mit 15 Levels; auf Android über den J2ME-Emulator J2ME Loader."
 }

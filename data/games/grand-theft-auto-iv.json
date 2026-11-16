@@ -234,13 +234,6 @@
           "check": "ai-verified"
         },
         {
-          "url": "https://github.com/BrianJr03/GrandTheftCompanion/raw/main/assets/screenshot.png",
-          "caption": "GTA IV oben, Companion-HUD unten",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "source-verified"
-        },
-        {
           "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/weapon-wheel.png",
           "caption": "Waffenrad zum Antippen auf dem zweiten Bildschirm",
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
@@ -253,13 +246,6 @@
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/blips-v.png",
-          "caption": "GTA V blips panel: 52 blips grouped by name, nearest first, each with a route bu",
-          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
-          "credit": "Grand Theft Companion",
-          "check": "ai-unclear"
         }
       ],
       "links": [
@@ -416,7 +402,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-16",
   "mods": [
     {
       "id": "fusionfix",
