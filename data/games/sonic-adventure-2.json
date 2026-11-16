@@ -39,6 +39,35 @@
       "type": "original",
       "platforms": [
         "Dreamcast"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6e096e16-a68e-4e6b-b6da-f45c110b8a4d",
+          "device": "AYN Thor Max",
+          "emulator": "Flycast",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS at 2.5x",
+          "votes": 1,
+          "date": "2026-04-13",
+          "settings": {
+            "Emulator Version": "v2.6 git hash 392a459e8",
+            "Backend": "Vulkan",
+            "Resolution": "2.5",
+            "Region": "Auto",
+            "Broadcast": "Auto",
+            "Language": "English",
+            "Audio Latency": "100"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/bf0ad3c0-f492-412e-8f0d-94ff8b25c334"
+        }
       ]
     },
     {
@@ -62,6 +91,84 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q1070984"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7bdd7754-af4b-4585-9cd1-ccf4b057264f"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c2b8a163-7a9b-49d0-9088-760f3abc4d48",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "When you first boot. Need to set the resolution to 1280x720 make sure to click full screen and then go to player and change it to gamepad.",
+          "votes": 2,
+          "date": "2026-04-19",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ea4b0bae-72c5-4e92-82b7-11cf8782eda5",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Must choose “Open Container” and navigate to game folder, open “Launcher.exe”, configure resolution and check “Full Screen”. Under “Player” tab, change “Keyboard” to “Gamepad”. “Unpack Files” must be enabled. To access S",
+          "votes": 1,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "v0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[StevenMXZ] Turnip v26.2.0 R2|||Turnip_v26.2.0_R2.zip",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.6.1-gplasync"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9b1c0ce3-82e6-4897-935f-d481c67a8b11",
+          "device": "Samsung Galaxy S23+ (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I just added mono and the game started running perfectly. if you need to reopen the launcher, just remove the -q command and add it back in when you're finished.",
+          "votes": 0,
+          "date": "2026-03-05",
+          "settings": {
+            "Emulator Version": "5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Command Line": "-q",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "RGBA8"
+          }
         }
       ]
     }

@@ -48,6 +48,211 @@
       "type": "original",
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c10e41b1-b540-491f-9ecf-86858758a09d",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Use known config",
+          "votes": 5,
+          "date": "2026-03-19",
+          "settings": {
+            "Emulator Version": "0.8.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "box",
+            "Box64 Version": "0.3.6"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/66f5dac3-33a5-444a-ab6a-0f5e3515782c",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Did not work on proton 11.",
+          "votes": 4,
+          "date": "2026-05-07",
+          "settings": {
+            "Emulator Version": "0.9.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.4.1-gplasync"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3fded3c8-1aef-4261-84a2-f8773947d6ae",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works perfectly with default settings in my experience.",
+          "votes": 2,
+          "date": "2026-04-07",
+          "settings": {
+            "Emulator Version": "v5.1.3",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.0.0_R8",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/88966070-48d6-4554-8d3a-a8620c86ed7b",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Randomly crashed on me one time after picking up a card. Has some frame dips, other than that is plays very smooth",
+          "votes": 1,
+          "date": "2026-03-24",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Environment Variables": "\t",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4cdee8a9-572f-4294-bd17-a798da4d939f",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The game runs very smoothly overall with only occasional minor stutters when a lot of particles fill the screen",
+          "votes": 4,
+          "date": "2026-01-31"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d13be6ee-1285-447c-8c71-e139a95d79cb",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "When starting the game wait through the black screen don't close! should only be a minute. Only works with Fexcore 2601, anything higher will cause crashes. Box64 only works with version 0.4.0 or lower.",
+          "votes": 1,
+          "date": "2026-05-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/31b55f9f-e281-4a05-b906-53829ba246fd",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Initial startup will take a few seconds, first boot/hour was playable with slight input delay. After booting a few times, plays great.",
+          "votes": 1,
+          "date": "2026-05-03"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2e4d8784-c97e-4f36-90bc-9567c16f7e19",
+          "device": "AYN Thor Max",
+          "emulator": "DroidDeck",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Occasional stutters but otherwise performs just fine. Game tends to randomly stop working on GameHub and GameNative, so I highly recommend DroidDeck over the other options.",
+          "votes": 0,
+          "date": "2026-10-24",
+          "settings": {
+            "Emulator Version": "0.6.0",
+            "Store": "Steam",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f760105f-3e00-43b5-a9cb-b4d1fa6413ad",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game needs an existing cloud save to run. Also boots on GameHub Lite, but the controls weren't working so I had to switch to GameHub.",
+          "votes": 0,
+          "date": "2026-08-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/37496377-20fb-4e14-a62f-a05872accaf9",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-02-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d5d49688-a7c4-465a-a7ef-41e5c6e9ebb8",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Takes a sec to load and some tinkering, but is playable. Under graphics I set \"Present Modes\" to fifo. In game I set it to fullscreen (try disabling fullscreen all together if the game crashes or anything) and disabled p",
+          "votes": 1,
+          "date": "2026-06-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c0a32a7a-200c-4d4d-bff3-6b37b55cae18",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Boot takes a while but seems fine otherwise",
+          "votes": 0,
+          "date": "2026-05-08"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/eeb3d346-7d16-457b-bc54-8f897d937557"
+        }
       ]
     }
   ],

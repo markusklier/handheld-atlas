@@ -28,6 +28,62 @@
       "type": "original",
       "platforms": [
         "PlayStation"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3e718098-30fe-4d37-bde9-4b10ce42af6a",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/25a9cc4d-053a-493e-8836-5050804d56e6",
+          "device": "AYN Thor Pro",
+          "emulator": "DuckStation",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Cutscenes can be buggy. One cutscene refused to play and it locked me out from continuing further in the game this was at the games halfway point. For some reason using the emulators speed up/fast forward mechanic let me",
+          "votes": 0,
+          "date": "2026-06-10",
+          "settings": {
+            "Emulator Version": "0.1.8969-g611bb8fb4",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/6fef90f9-c905-4d06-9aab-5f3a295d6b01"
+        }
       ]
     }
   ],

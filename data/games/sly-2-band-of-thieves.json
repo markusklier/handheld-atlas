@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9aab0540-2fc2-45e3-a176-c43753d80125",
+          "device": "AYN Thor Max",
+          "emulator": "ARMSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-10-22",
+          "settings": {
+            "Emulator Version": "2.8.4",
+            "Custom FPS Limit": "60",
+            "Aspect Ratio": "16:9",
+            "Fast Boot": "True",
+            "Renderer": "Vulkan",
+            "Upscale": "1",
+            "Texture Filtering": "PS2 (default)",
+            "Interlace Mode": "Automatic",
+            "Texture Preloading": "Full",
+            "Blending Accuracy": "Basic"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a7e88adc-351e-4f2e-9e10-779cde6cea66"
+        }
       ]
     },
     {

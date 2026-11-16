@@ -28,6 +28,38 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b5ebcd52-e63c-4e23-8665-79f86888e4cb",
+          "device": "AYN Thor Max",
+          "emulator": "AetherSX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works perfectly fine",
+          "votes": 1,
+          "date": "2026-04-23",
+          "settings": {
+            "Emulator Version": "2.2",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Game Version": "Current",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/bf093c44-99b2-4240-98d5-7b5b1e674ba6"
+        }
       ]
     },
     {

@@ -1,6 +1,176 @@
 {
   "entries": [
     {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "sonic-adventure",
+      "text": "1 Community-Berichte von EmuReady für Sonic Adventure (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "sonic-adventure-2",
+      "text": "4 Community-Berichte von EmuReady für Sonic Adventure 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "sly-cooper-and-the-thievius-raccoonus",
+      "text": "3 Community-Berichte von EmuReady für Sly Cooper and the Thievius Raccoonus (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "sly-2-band-of-thieves",
+      "text": "1 Community-Berichte von EmuReady für Sly 2: Band of Thieves (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "slay-the-spire",
+      "text": "12 Community-Berichte von EmuReady für Slay the Spire (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "skies-of-arcadia-legends",
+      "text": "1 Community-Berichte von EmuReady für Skies of Arcadia Legends (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "silent-hill",
+      "text": "2 Community-Berichte von EmuReady für Silent Hill (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "route-updated",
+      "game": "silent-hill-4-the-room",
+      "text": "1 Community-Berichte von EmuReady für Silent Hill 4: The Room (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.8 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.8"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Project IGI Android Port gamepad_and_gyroscope veröffentlicht.",
+      "project": "project-igi-android-port",
+      "games": [
+        "project-igi-im-going-in"
+      ],
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port/releases/tag/gamepad_and_gyroscope"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.64 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.64"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "ducvd89/Bloodborne-Android android-2.3.0 veröffentlicht.",
+      "project": "ducvd89-bloodborne-android",
+      "games": [
+        "bloodborne"
+      ],
+      "url": "https://github.com/ducvd89/Bloodborne-Android/releases/tag/android-2.3.0"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "GBA DS v1.5.3 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5.3"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 4.0.0 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/4.0.0"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "WiiDS v1.26.1 (Vorabversion) veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.26.1"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Eden Duo Companions skyward-sword-hd-1.0.0 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-rebirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake",
+        "chained-echoes"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/skyward-sword-hd-1.0.0"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "release",
+      "text": "Eden Duo v1.4.0 veröffentlicht.",
+      "project": "eden",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-rebirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake",
+        "chained-echoes"
+      ],
+      "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.4.0"
+    },
+    {
       "date": "2026-11-15",
       "type": "screenshot-added",
       "by": "ai-research",

@@ -28,6 +28,35 @@
       "type": "original",
       "platforms": [
         "Dreamcast"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6c73ce05-7038-4c50-a4fc-f0d6caf2daaf",
+          "device": "AYN Thor Max",
+          "emulator": "Flycast",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "30 FPS. Unskippable cutscenes but fast forward helps",
+          "votes": 1,
+          "date": "2026-04-13",
+          "settings": {
+            "Emulator Version": "v2.6 git hash 392a459e8",
+            "Backend": "Vulkan",
+            "Resolution": "2.5",
+            "Region": "Auto",
+            "Broadcast": "Auto",
+            "Language": "English",
+            "Audio Latency": "100"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d61ee1cf-e4f5-4364-a84d-770bd3d898c3"
+        }
       ]
     },
     {

@@ -28,6 +28,86 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9445f747-7965-416a-99c0-1bf58048c761",
+          "device": "Retroid Pocket 6",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Set to Open GL & 1080p",
+          "votes": 2,
+          "date": "2026-05-18",
+          "settings": {
+            "Emulator Version": "2.2n",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "60",
+            "Upscale Multiplier": "2.5",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Average FPS": "60",
+            "EE Cycle Rate (Underclocking)": "100% (0)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9ccac125-0ef2-422d-81a9-676441bf28e7",
+          "device": "AYN Thor Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Completed the prologue and first level with no issues and stable frames.",
+          "votes": 2,
+          "date": "2025-12-30",
+          "settings": {
+            "Emulator Version": "2.2",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "3",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/46f6decc-2cb9-4f6b-afcc-3261e866f75e",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "AetherSX2",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "The beggining of the game there is slow down I was using specifically the neather sx2 version",
+          "votes": 0,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "1.5",
+            "Renderer": "OpenGL ES",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "3",
+            "Upscale Multiplier": "1",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "40"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/903114fe-9a78-4d05-b5b2-0ea2fd3081ed"
+        }
       ]
     },
     {
