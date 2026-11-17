@@ -15,6 +15,38 @@
       "year": 2008,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/928f70b5-30e3-492e-b489-18213e792041",
+          "device": "AYN Thor Pro",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Used linked video for all settings (not my video). Only difference is I used turnip drivers instead of system** **Non-Steam version** - Great performance, I get consistent 120 fps while my thor is in 120fps mode (excep",
+          "votes": 1,
+          "date": "2026-01-08",
+          "settings": {
+            "Winlator Fork": "cmod_bionic",
+            "Emulator Version": "bionic-vanilla-1.5.2",
+            "Controller Support": "True",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "PulseAudio",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.3.6",
+            "Resolution (Screen Size)": "1080p",
+            "Average FPS": "120"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/036d8097-15fb-4d56-8bce-1b17bd4eb02f"
+        }
       ]
     }
   ],
@@ -69,5 +101,43 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-16"
+  "updatedAt": "2026-11-16",
+  "wikidata": "Q614418",
+  "wikipedia": "https://en.wikipedia.org/wiki/Wizard101",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/799960/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/799960/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_741b909d39573968d3ef72ba2c11836bd8e24478.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_637c9b1751cf14254d7d181cc08681c694225361.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_90713c14c9ae97ad13e4026b7a9eda4305ac7200.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_933f65c204619d63ed0bd69b06fa4ac71df32873.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_426c77fcf2cba65944734ad735e2b22195a1c35d.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/799960/ss_45263f96d7b00eecf2212793e874361c0d593e48.1920x1080.jpg?t=1778853004",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/799960/"
+    }
+  ]
 }

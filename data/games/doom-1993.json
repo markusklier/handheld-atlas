@@ -567,7 +567,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_wolfenstein_enemy_territory.jpg",
+          "caption": "Wolfenstein: Enemy Territory",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_realrtcw.jpg",
+          "caption": "RealRTCW",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_openja.jpg",
+          "caption": "STAR WARS™ Jedi Knight   Jedi Academy™",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_openjo.jpg",
+          "caption": "STAR WARS™ Jedi Knight II   Jedi Outcast™",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_openmohaa.jpg",
+          "caption": "Medal of Honor: Allied Assault",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/glKarin/com.n0n3m4.diii4a/package/screenshot/Screenshot_wolf3d.jpg",
+          "caption": "Wolfenstein 3D",
+          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
+          "credit": "idTech4A++",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

@@ -28,6 +28,35 @@
       "type": "original",
       "platforms": [
         "Dreamcast"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b0f7679e-728d-4992-8c23-5b0b72f31139",
+          "device": "AYN Thor Max",
+          "emulator": "Flycast",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "60FPS with system driver. Game will not properly save to VMU in port A slot 1. Slot 1 must be set to \"None\" and Slot 2 must be set to VMU to allow the game to save properly.",
+          "votes": 1,
+          "date": "2026-04-08",
+          "settings": {
+            "Emulator Version": "v2.6 git hash 392a459e8",
+            "Backend": "Vulkan",
+            "Resolution": "2.5",
+            "Region": "Auto",
+            "Broadcast": "Auto",
+            "Language": "English",
+            "Audio Latency": "100"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3ac64f4a-a357-4704-9251-ff5642ca37be"
+        }
       ]
     },
     {

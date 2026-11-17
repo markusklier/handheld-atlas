@@ -1,6 +1,244 @@
 {
   "entries": [
     {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "star-ocean-second-evolution",
+      "text": "1 Community-Berichte von EmuReady für Star Ocean: Second Evolution (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "star-ocean-first-departure",
+      "text": "2 Community-Berichte von EmuReady für Star Ocean: First Departure (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "star-fox-assault",
+      "text": "1 Community-Berichte von EmuReady für Star Fox: Assault (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "star-fox-adventures",
+      "text": "1 Community-Berichte von EmuReady für Star Fox Adventures (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "spyro-year-of-the-dragon",
+      "text": "1 Community-Berichte von EmuReady für Spyro: Year of the Dragon (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "spyro-the-dragon",
+      "text": "1 Community-Berichte von EmuReady für Spyro the Dragon (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "spyro-2-ripto-s-rage",
+      "text": "1 Community-Berichte von EmuReady für Spyro 2: Ripto's Rage! (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "soulcalibur",
+      "text": "1 Community-Berichte von EmuReady für Soulcalibur (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "soulcalibur-ii",
+      "text": "1 Community-Berichte von EmuReady für Soulcalibur II (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "soulcalibur-broken-destiny",
+      "text": "1 Community-Berichte von EmuReady für Soulcalibur: Broken Destiny (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "route-updated",
+      "game": "wizard101",
+      "text": "1 Community-Berichte von EmuReady für Wizard101 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Fractal v0.1-beta (Vorabversion) veröffentlicht.",
+      "project": "fractal",
+      "url": "https://github.com/dfdx047/Fractal/releases/tag/v0.1-beta"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Megingiard 0.10.0 veröffentlicht.",
+      "project": "megingiard",
+      "url": "https://github.com/stormpanda/megingiard/releases/tag/0.10.0"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Wizard101 on the AYN Thor v0.7.0 veröffentlicht.",
+      "project": "wizard101-thor",
+      "games": [
+        "wizard101"
+      ],
+      "url": "https://github.com/StopHoginIt/wizard101-thor/releases/tag/v0.7.0"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "MHGU for Android (gu-native) v1.0.1 veröffentlicht.",
+      "project": "gu-native",
+      "games": [
+        "monster-hunter-generations"
+      ],
+      "url": "https://github.com/khorne-hub/gu-native/releases/tag/v1.0.1"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "FF9Recomp v0.1.18 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.18"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Scarlet/Violet Dual-Screen Companion v0.10.0 veröffentlicht.",
+      "project": "sv-dualscreen-companion",
+      "games": [
+        "pokemon-scarlet",
+        "pokemon-violet"
+      ],
+      "url": "https://github.com/jjprog17/sv-dualscreen-companion/releases/tag/v0.10.0"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "J2ME Loader continuous (Vorabversion) veröffentlicht.",
+      "project": "j2me-loader",
+      "url": "https://github.com/nikita36078/J2ME-Loader/releases/tag/continuous"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Cinderbox 0.8.1 veröffentlicht.",
+      "project": "cinderbox",
+      "games": [
+        "stardew-valley"
+      ],
+      "url": "https://github.com/Ekyso/Cinderbox/releases/tag/0.8.1"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.10 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.10"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Project IGI Android Port gamma_and_resolution veröffentlicht.",
+      "project": "project-igi-android-port",
+      "games": [
+        "project-igi-im-going-in"
+      ],
+      "url": "https://github.com/rayishere0/Project-IGI-Android-Port/releases/tag/gamma_and_resolution"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.65 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.65"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "GBA DS v1.5.4 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5.4"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "DS Forever v1.0.33 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.33"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 4.0.2 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/4.0.2"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "Skyrim Androidborn v1.0.1 veröffentlicht.",
+      "project": "skyrim-androidborn",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/igortiburcio/skyrim_androidborn/releases/tag/v1.0.1"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "WiiDS v1.26.2 (Vorabversion) veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v1.26.2"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "release",
+      "text": "ZomboidDS v1.6.1 veröffentlicht.",
+      "project": "zomboidds",
+      "games": [
+        "project-zomboid"
+      ],
+      "url": "https://github.com/Space001000/ZomboidDS/releases/tag/v1.6.1"
+    },
+    {
       "date": "2026-11-16",
       "type": "route-added",
       "by": "agent",

@@ -63,7 +63,50 @@
       "status": "active",
       "verification": "documented",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-party.webp",
+          "caption": "PARTY: the team in FireRed",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-battle-gen5.webp",
+          "caption": "BATTLE: FIGHT, BAG, RUN and POKEMON buttons, INFO and SUGGESTIONS",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-map.webp",
+          "caption": "MAP: Kanto with the player on it, FLY and TAKE OFF",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-guide.webp",
+          "caption": "GUIDE: the wild Pokemon on Route 4 and how many are caught",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-dex.webp",
+          "caption": "DEX: seen and caught, filters, entries",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-boxes.webp",
+          "caption": "BOXES: a PC box laid out like the game",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
+        }
+      ],
       "links": [],
       "checkedAt": "2026-11-08",
       "release": "game-boy-advance",

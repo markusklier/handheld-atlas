@@ -758,7 +758,8 @@
     "the-legend-of-zelda-majoras-mask-3d": "2026-11-12",
     "the-legend-of-zelda-ocarina-of-time-3d": "2026-11-12",
     "tomb-raider-anniversary": "2026-11-12",
-    "metal-gear-rising-revengeance": "2026-11-13"
+    "metal-gear-rising-revengeance": "2026-11-13",
+    "wizard101": "2026-11-17"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1714,6 +1715,7 @@
     "the-legend-of-zelda-majoras-mask-3d": 3,
     "the-legend-of-zelda-ocarina-of-time-3d": 3,
     "tomb-raider-anniversary": 3,
-    "metal-gear-rising-revengeance": 3
+    "metal-gear-rising-revengeance": 3,
+    "wizard101": 3
   }
 }

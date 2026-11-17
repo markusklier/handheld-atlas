@@ -81,6 +81,20 @@
           "credit": "sv-dualscreen-companion",
           "check": "source-verified",
           "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/dex.png",
+          "caption": "Pokédex",
+          "source": "https://github.com/jjprog17/sv-dualscreen-companion",
+          "credit": "Scarlet/Violet Dual-Screen Companion",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/bag.png",
+          "caption": "Bag",
+          "source": "https://github.com/jjprog17/sv-dualscreen-companion",
+          "credit": "Scarlet/Violet Dual-Screen Companion",
+          "check": "readme"
         }
       ],
       "links": [
