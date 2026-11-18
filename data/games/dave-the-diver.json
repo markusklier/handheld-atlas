@@ -3,7 +3,7 @@
   "title": "Dave the Diver",
   "franchise": "Dave the Diver",
   "platforms": [
-    "Nintendo Switch"
+    "PC"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
   "cover": {
@@ -13,8 +13,8 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
-      "type": "original",
+      "name": "Nintendo Switch (2023)",
+      "type": "port",
       "platforms": [
         "Nintendo Switch"
       ],
@@ -157,12 +157,13 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/4dd33cb8-d5c2-4a7b-9644-eff906ffc489"
         }
-      ]
+      ],
+      "year": 2023
     },
     {
       "id": "pc-2022",
-      "name": "PC (2022)",
-      "type": "port",
+      "name": "PC (2022/2023)",
+      "type": "original",
       "year": 2022,
       "platforms": [
         "PC"
@@ -172,7 +173,8 @@
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q114995908"
         }
-      ]
+      ],
+      "note": "Early Access ab Oktober 2022, Vollversion Juni 2023."
     },
     {
       "id": "macintosh-2023",

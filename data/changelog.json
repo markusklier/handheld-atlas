@@ -2,6 +2,60 @@
   "entries": [
     {
       "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "the-sims-medieval",
+      "text": "The Sims Medieval: Fassungen ergänzt (PC/Mac 2011, iOS 2011, Java ME 2011, Windows Phone 2013); kein Android-Port, PC-Laufzeiten und J2ME-Emulation infrage (Rechercheanfrage)",
+      "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "the-legend-of-zelda-the-wind-waker",
+      "text": "ZeldaWWHDRecomp geprüft: nativer Wii-U-Port mit GamePad-Bild auf dem zweiten Bildschirm, Hardware-Tests laut Projekt noch ausstehend (KI-Fund)",
+      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-tears-of-the-kingdom",
+      "text": "Neuer Spielweg: TotK Native – Tears of the Kingdom nativ auf Android mit Karte und Inventar auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/AurelioB/totk-android"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-breath-of-the-wild",
+      "text": "Neuer Spielweg: BotW Native – Breath of the Wild nativ auf dem AYN Thor, mit Eden-Duo-Companion (experimentell, KI-Fund)",
+      "url": "https://github.com/P1R4N351/botw-android"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "xenoblade-chronicles-3",
+      "text": "Neuer Spielweg: nativer Xenoblade-Chronicles-3-Port, nur für Retroid Pocket 5/Flip 2 (KI-Fund)",
+      "url": "https://github.com/IamWilmar/xenoblade3-recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "tactics-ogre-the-knight-of-lodis",
+      "text": "Neues Spiel: Tactics Ogre: The Knight of Lodis mit nativem Recomp-Port (Widescreen, zweiter Bildschirm, KI-Fund)",
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "screenshot-added",
+      "by": "agent",
+      "text": "Bildprüfung: 12 Spielweg-Bilder bestätigt (Project Zomboid, Pokémon Karmesin/Purpur, FF IX, Metroid, Pokémon Smaragd), 2 FireRed-Bilder vom Smaragd-Weg entfernt"
+    },
+    {
+      "date": "2026-11-18",
       "type": "screenshot-added",
       "by": "ai-research",
       "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 0 unpassende entfernt"

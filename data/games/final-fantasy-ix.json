@@ -210,10 +210,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/crt-filter.jpg",
-          "caption": "Alexandria with the CRT filter: scanlines and a phosphor mask",
+          "caption": "Alexandria mit CRT-Filter (Scanlines, Phosphormaske)",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/launcher-get-mods.jpg",

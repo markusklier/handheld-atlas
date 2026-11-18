@@ -65,22 +65,8 @@
       "testedOn": [],
       "screenshots": [
         {
-          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-party.webp",
-          "caption": "PARTY: the team in FireRed",
-          "source": "https://github.com/lidor30/pokedaisy",
-          "credit": "PokeDaisy",
-          "check": "ai-unclear"
-        },
-        {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-battle-gen5.webp",
           "caption": "BATTLE: FIGHT, BAG, RUN and POKEMON buttons, INFO and SUGGESTIONS",
-          "source": "https://github.com/lidor30/pokedaisy",
-          "credit": "PokeDaisy",
-          "check": "ai-unclear"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-map.webp",
-          "caption": "MAP: Kanto with the player on it, FLY and TAKE OFF",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
           "check": "ai-unclear"
@@ -190,10 +176,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_map_top.png",
-          "caption": "Widescreen gameplay in Littleroot Town",
+          "caption": "Widescreen in Wurzelheim",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_map_bottom.png",

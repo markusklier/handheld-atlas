@@ -3,7 +3,13 @@
   "title": "Cult of the Lamb",
   "franchise": "Cult of the Lamb",
   "platforms": [
-    "Nintendo Switch"
+    "PC",
+    "Macintosh",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox One",
+    "Xbox Series"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
   "cover": {
@@ -13,10 +19,16 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
+      "name": "PC/Konsolen (2022)",
       "type": "original",
       "platforms": [
-        "Nintendo Switch"
+        "PC",
+        "Macintosh",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
       ],
       "reports": [
         {
@@ -109,7 +121,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/40cc4599-e3c0-460a-a1a9-2cc7fe0b5fec"
         }
-      ]
+      ],
+      "year": 2022
     }
   ],
   "routes": [

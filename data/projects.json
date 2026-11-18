@@ -2461,6 +2461,54 @@
         "url": "https://github.com/dfdx047/Fractal/releases/tag/v0.1-beta",
         "date": "2026-11-15"
       }
+    },
+    {
+      "id": "totk-native",
+      "name": "TotK Native",
+      "kind": "port",
+      "url": "https://github.com/AurelioB/totk-android",
+      "repo": "AurelioB/totk-android",
+      "description": "Tears of the Kingdom 1.4.3 nativ auf Android (Adreno), mit Companion auf dem zweiten Bildschirm.",
+      "games": [
+        "the-legend-of-zelda-tears-of-the-kingdom"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "botw-native",
+      "name": "BotW Native",
+      "kind": "port",
+      "url": "https://github.com/P1R4N351/botw-android",
+      "repo": "P1R4N351/botw-android",
+      "description": "Breath of the Wild 1.6.0 nativ auf Android (Adreno), basiert auf TotK Native; Eden-Duo-Companion auf dem zweiten Bildschirm.",
+      "games": [
+        "the-legend-of-zelda-breath-of-the-wild"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "xenoblade3-port",
+      "name": "Xenoblade Chronicles 3 Port",
+      "kind": "port",
+      "url": "https://github.com/IamWilmar/xenoblade3-recomp",
+      "repo": "IamWilmar/xenoblade3-recomp",
+      "description": "Nativer Android-Port von Xenoblade Chronicles 3 nur für Retroid Pocket 5 und Flip 2 (Snapdragon 865).",
+      "games": [
+        "xenoblade-chronicles-3"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "knight-of-lodis-recomp",
+      "name": "Knight of Lodis Recomp",
+      "kind": "port",
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp",
+      "repo": "lucdubois/KnightOfLodisRecomp",
+      "description": "Nativer Port von Tactics Ogre: The Knight of Lodis (GBA) auf Basis von gbarecomp, mit Widescreen und zweitem Bildschirm.",
+      "games": [
+        "tactics-ogre-the-knight-of-lodis"
+      ],
+      "checkedAt": "2026-11-18"
     }
   ]
 }

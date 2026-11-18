@@ -8,15 +8,87 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
+      "name": "Nintendo Switch (2023)",
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "year": 2023
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-18",
+      "id": "totk-native",
+      "name": "TotK Native",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch, Spielversion 1.4.3",
+      "runtime": "Eigene Laufzeit + mitgelieferter Turnip-Vulkan-Treiber",
+      "projects": [
+        "totk-native"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "native-arm",
+        "fps-cap",
+        "upscaling",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Status (Herzen, Ausdauer, Ausrüstung, Weise, Minikarte), Karte mit drei Ebenen und Inventar; Gegenstände lassen sich auf dem zweiten Bildschirm ausrüsten, essen oder anheften.",
+      "requires": [
+        "Eigener Dump von Tears of the Kingdom, Version 1.4.3 (Spiel + Update, von der eigenen Switch)",
+        "Android 13+ (arm64) mit Qualcomm-Adreno-GPU"
+      ],
+      "benefit": "Kein Emulator: Der Spielcode läuft direkt auf dem Prozessor. Einrichtung auf dem Gerät aus den eigenen Dateien, Controller-Menü mit Geräteprofilen (AYN Thor, Odin 3, Retroid Pocket Duo), 30/40/60 FPS, FSR/GSR-Upscaling.",
+      "caveat": "Nur Spielversion 1.4.3. Die Leistungswerte stammen vom Entwickler (README), nicht aus einem unabhängigen Test.",
+      "version": "1.0.1 (laut CHANGELOG)",
+      "effort": "guided",
+      "status": "active",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/set-second-screen.webp",
+          "caption": "Einstellung „Zweiter Bildschirm“ (Karte, Inventar, Kurzbefehle unten)",
+          "source": "https://github.com/AurelioB/totk-android/blob/HEAD/README.md",
+          "credit": "TotK Native",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/home.webp",
+          "caption": "Startmenü der App",
+          "source": "https://github.com/AurelioB/totk-android/blob/HEAD/README.md",
+          "credit": "TotK Native",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/AurelioB/totk-android"
+        }
+      ],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Ø 30,0 FPS (Fenster 30,0–30,1) in Hateno, 1 von 1200 Bildern über 50 ms",
+          "settings": "Profil „Balanced“ (30 FPS, Originalauflösung)",
+          "source": "https://github.com/AurelioB/totk-android#performance",
+          "date": "2026-11-18"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Tears_of_the_Kingdom"

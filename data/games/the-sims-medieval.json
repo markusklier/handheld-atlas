@@ -1,10 +1,86 @@
 {
   "id": "the-sims-medieval",
   "title": "The Sims Medieval",
-  "franchise": "The Sims Medieval",
-  "platforms": [],
-  "versions": [],
+  "franchise": "The Sims",
+  "platforms": [
+    "PC",
+    "Macintosh"
+  ],
+  "genre": "Lebenssimulation / Action-Adventure",
+  "summary": "Keine Android-Fassung: Die PC-Fassung kommt nur über PC-Laufzeitumgebungen wie GameHub oder Winlator infrage, die eigenständige 2D-Java-Fassung von 2011 über J2ME-Emulation. Belege für den Thor fehlen noch.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC/Mac (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "PC",
+        "Macintosh"
+      ],
+      "note": "Von Maxis Redwood Shores; Abenteuerpaket „Pirates & Nobles“ (August 2011), auch als Deluxe-Edition. Die Mac-Fassung läuft nicht unter macOS Catalina oder neuer.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
+        },
+        {
+          "label": "Steam",
+          "url": "https://store.steampowered.com/app/102820/"
+        }
+      ]
+    },
+    {
+      "id": "ios-2011",
+      "name": "iOS (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "iOS"
+      ],
+      "note": "Eigene 3D-Fassung von Magic Pockets; nicht für Android erschienen.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
+        }
+      ]
+    },
+    {
+      "id": "java-me-2011",
+      "name": "Java ME (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Java ME"
+      ],
+      "note": "Eigenständige 2D-Fassung in isometrischer Ansicht für Handys.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
+        }
+      ]
+    },
+    {
+      "id": "windows-phone-2013",
+      "name": "Windows Phone (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Windows Phone"
+      ],
+      "note": "Portierung der iOS-Fassung.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
+        }
+      ]
+    }
+  ],
   "routes": [],
   "mods": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Sims_Medieval",
   "updatedAt": "2026-11-18"
 }

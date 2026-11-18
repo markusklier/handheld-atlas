@@ -1,38 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://github.com/Rrr119/openmw",
-      "title": "Rrr119/openmw (Fork von OpenMW/openmw)",
-      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/MeetRajput00/melonDS-android",
-      "title": "MeetRajput00/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "Android port of melonDS",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/Ginger-Beard/melonDS-android",
-      "title": "Ginger-Beard/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "Android port of melonDS",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/kaemble/eden-duo-armada",
-      "title": "kaemble/eden-duo-armada (Fork von igawa6/eden-duo)",
-      "excerpt": "ArmadaOS linux",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-18"
-    },
-    {
       "url": "https://github.com/zettelmuseum/Enigma",
       "title": "zettelmuseum/Enigma",
       "excerpt": "Pre-Alpha Enigma Puzzle Game  Android port 2026 (but it works for me)",
@@ -68,238 +36,6 @@
       "url": "https://github.com/zettelmuseum/Vexed",
       "title": "zettelmuseum/Vexed",
       "excerpt": "Vexed puzzle game Android port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/danielbuva/ror2-android-port",
-      "title": "danielbuva/ror2-android-port",
-      "excerpt": "Environment bootstrap and validation for a future native ARM64 Android port. No proprietary game content.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/IamWilmar/xenoblade3-recomp",
-      "title": "IamWilmar/xenoblade3-recomp",
-      "excerpt": "Native Android port of Xenoblade Chronicles 3 for the Retroid Pocket Flip 2. Early version. Bring your own extracted game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/P1R4N351/botw-android",
-      "title": "P1R4N351/botw-android",
-      "excerpt": "Native Android ports of Breath of the Wild 1.6.0 and Tears of the Kingdom 1.4.3 for the AYN Thor (BotW Native / TotK Native fork), built from one shared branch. Based on AurelioB/totk-android (MIT) and MacNativeGames (MIT). Bring your own game dump.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/krishna3163/best_shizuku_apps_for_android_no_root",
-      "title": "krishna3163/best_shizuku_apps_for_android_no_root",
-      "excerpt": "Curated Shizuku and no-root Android apps, wireless ADB tools, debloat utilities, privacy tools, and root alternatives.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/usermalik20-del/Kanta-reborn",
-      "title": "usermalik20-del/Kanta-reborn",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/FabianZettl/armadalive",
-      "title": "FabianZettl/armadalive",
-      "excerpt": "Companion app for the AYN Thor's bottom screen on Armada OS, for ES-DE and Steam / Big Picture",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/drpezzer/ambxst-mods",
-      "title": "drpezzer/ambxst-mods",
-      "excerpt": "Mods for the Ambxst desktop shell (1.3+ mod manager packages)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/whiteCcinn/ccinnOpenRTB",
-      "title": "whiteCcinn/ccinnOpenRTB",
-      "excerpt": "A native macOS simulator for OpenRTB 2.x and 3.0 ads — paste a bid response and see HTML/MRAID, Native 1.0–1.2 and VAST 2.0–4.2 render on simulated iPhones, foldables, iPads, Android phones and Apple TV, with every tracker in a live network view and HAR/curl export. Offline · Simulated · Real: no tracker is sent unless you ask.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/taburyak/my-stm32-console",
-      "title": "taburyak/my-stm32-console",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/Cenx-DuyLinh/aynime",
-      "title": "Cenx-DuyLinh/aynime",
-      "excerpt": "Aynime: anime browser with a Japanese subtitle box for the Ayn Thor. Releases hold the APK.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/ajhockey88/ThorPad",
-      "title": "ajhockey88/ThorPad",
-      "excerpt": "Turns the AYN Thor's bottom screen into a laptop-style trackpad for a mouse plus a smart keyboard for typing",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/BrianJr03/command-panel",
-      "title": "BrianJr03/command-panel",
-      "excerpt": "Thor Command Panel (TCP): a user-installable replacement for the AYN Thor's stock dual-screen assistant.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/leelening/ftc-sim",
-      "title": "leelening/ftc-sim",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/aliarisoy/gaming-benchmark-project",
-      "title": "aliarisoy/gaming-benchmark-project",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/osodoso1/gallery-approach",
-      "title": "osodoso1/gallery-approach",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/lucdubois/KnightOfLodisRecomp",
-      "title": "lucdubois/KnightOfLodisRecomp",
-      "excerpt": "A recomp project for Tactics Ogre: The Knight of Lodis, enhanced with modern features. Android only for now.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/nICOLAS-user15/arcade-game",
-      "title": "nICOLAS-user15/arcade-game",
-      "excerpt": "Recreation of Pac-Man in pure JavaScript and HTML5 Canvas. Study project on game loops, grid collision detection, and simple pathfinding. Play online or run locally with npm start.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/moaazk714/Language_Learning_App",
-      "title": "moaazk714/Language_Learning_App",
-      "excerpt": "A modern Flutter language learning app featuring interactive lessons, vocabulary practice, flashcards, quizzes, and offline progress tracking.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/arloo/iphone6s-linux-cyberdeck",
-      "title": "arloo/iphone6s-linux-cyberdeck",
-      "excerpt": "Community-driven Linux on iPhone 6s (Apple A9): touchscreen, Wi-Fi and Bluetooth bring-up, reproducible RAM-only boot and ARM64 cyberdeck tools",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
-      "title": "trungdq88/Awesome-Black-Friday-Cyber-Monday",
-      "excerpt": "Awesome apps, software, and SaaS deals on Black Friday.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/KazeSU/KazeSU",
-      "title": "KazeSU/KazeSU",
-      "excerpt": "A super advanced KernelSU based root solution",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/x-tech-laboratories/X-Tasks",
-      "title": "x-tech-laboratories/X-Tasks",
-      "excerpt": "A todo manager built with Electron, Preact and TypeScript",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/michiel-dewilde/rigalong",
-      "title": "michiel-dewilde/rigalong",
-      "excerpt": "Android sound module for the Yamaha CP-88: six synthesis engines over one USB-C cable, on a Galaxy Tab S9 Ultra. AAudio EXCLUSIVE/LOW_LATENCY, measured.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/tim1105neumann/sounddrop",
-      "title": "tim1105neumann/sounddrop",
-      "excerpt": "Send text, links, Wi-Fi logins and drawings between any devices over sound. Kotlin Multiplatform acoustic modem for Android, iOS, desktop and web.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/AndriyPastukh/esp32-wireless-audit",
-      "title": "AndriyPastukh/esp32-wireless-audit",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/aniruddhashelke20/eT617-endsem-24B0748",
-      "title": "aniruddhashelke20/eT617-endsem-24B0748",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/endean-eng/zero-telemetry-kids",
-      "title": "endean-eng/zero-telemetry-kids",
-      "excerpt": "Preschoolers shouldn't be monetized, tracked, or subjected to variable-ratio dopamine traps.  zero-telemetry-kids is a 100% free, 100% offline, zero-network, zero-ad Progressive Web App (PWA) built specifically for the motor and cognitive ergonomics of 3-to-4-year-olds.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/geobasinas/ormicode",
-      "title": "geobasinas/ormicode",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/Tr0j4n1/HeyMelody-Windows",
-      "title": "Tr0j4n1/HeyMelody-Windows",
-      "excerpt": "Windows desktop controller for OPPO/OnePlus/realme earbuds, built from the reverse-engineered HeyMelody protocol",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-18"
@@ -6610,13 +6346,43 @@
     "https://github.com/Mostafa-Ahmed0/tempo-reader",
     "https://github.com/CrispStrobe/CrispCloud",
     "https://github.com/mRs-/Black-Friday-Deals",
-    "https://github.com/Etherealmber/atlas-commerce-android"
+    "https://github.com/Etherealmber/atlas-commerce-android",
+    "https://github.com/Rrr119/openmw",
+    "https://github.com/MeetRajput00/melonDS-android",
+    "https://github.com/Ginger-Beard/melonDS-android",
+    "https://github.com/kaemble/eden-duo-armada",
+    "https://github.com/danielbuva/ror2-android-port",
+    "https://github.com/krishna3163/best_shizuku_apps_for_android_no_root",
+    "https://github.com/usermalik20-del/Kanta-reborn",
+    "https://github.com/FabianZettl/armadalive",
+    "https://github.com/drpezzer/ambxst-mods",
+    "https://github.com/whiteCcinn/ccinnOpenRTB",
+    "https://github.com/taburyak/my-stm32-console",
+    "https://github.com/Cenx-DuyLinh/aynime",
+    "https://github.com/ajhockey88/ThorPad",
+    "https://github.com/BrianJr03/command-panel",
+    "https://github.com/leelening/ftc-sim",
+    "https://github.com/aliarisoy/gaming-benchmark-project",
+    "https://github.com/osodoso1/gallery-approach",
+    "https://github.com/nICOLAS-user15/arcade-game",
+    "https://github.com/moaazk714/Language_Learning_App",
+    "https://github.com/arloo/iphone6s-linux-cyberdeck",
+    "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
+    "https://github.com/KazeSU/KazeSU",
+    "https://github.com/x-tech-laboratories/X-Tasks",
+    "https://github.com/michiel-dewilde/rigalong",
+    "https://github.com/tim1105neumann/sounddrop",
+    "https://github.com/AndriyPastukh/esp32-wireless-audit",
+    "https://github.com/aniruddhashelke20/eT617-endsem-24B0748",
+    "https://github.com/endean-eng/zero-telemetry-kids",
+    "https://github.com/geobasinas/ormicode",
+    "https://github.com/Tr0j4n1/HeyMelody-Windows"
   ],
   "agent": {
-    "lastRun": "2026-11-16T20:45:00Z",
-    "summary": "Keine offenen abo-Issues; API-Guthaben leer → 3 Spiele aus der Warteschlange (Stardew Valley, Pokémon Rejuvenation, Tomb Raider: The Osiris Codex) abgearbeitet; neue Wege: FF9Recomp (Dual Screen), Eden-Duo-Companion für Pokémon Karmesin/Purpur, MHGU nativ, Cinderbox, JoiPlay; neues Spiel Wizard101; Plattformen Java ME (J2ME Loader) und Wii U (Fractal); 9 Bilder bestätigt, 8 falsche entfernt; 30 Leads bearbeitet (24 verworfen).",
-    "processed": 30,
-    "rejected": 24
+    "lastRun": "2026-11-18T21:30:00Z",
+    "summary": "2 abo-Anfragen (The Sims Medieval, doppelt) erledigt; Warteschlange: Wind Waker (ZeldaWWHDRecomp geprüft, einziger Eintrag); neue Wege TotK Native, BotW Native, XC3-Port (Retroid), neues Spiel Knight of Lodis mit Recomp; 12 Bilder bestätigt, 2 entfernt; 33 Leads bearbeitet (30 verworfen, 5 Puzzle-Ports von zettelmuseum zurückgestellt); Originalfassungen von Dave the Diver, Stardew Valley, Cult of the Lamb korrigiert.",
+    "processed": 33,
+    "rejected": 30
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",

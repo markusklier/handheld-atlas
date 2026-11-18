@@ -1,0 +1,79 @@
+{
+  "id": "tactics-ogre-the-knight-of-lodis",
+  "title": "Tactics Ogre: The Knight of Lodis",
+  "franchise": "Ogre Battle",
+  "platforms": [
+    "Game Boy Advance"
+  ],
+  "genre": "Taktik-Rollenspiel",
+  "summary": "Ein nativer Recomp-Port für Android bringt Widescreen, eine 3D-wirkende Schlachtfeld-Darstellung und Infos auf dem zweiten Bildschirm des AYN Thor.",
+  "versions": [
+    {
+      "id": "gba",
+      "name": "Game Boy Advance (2001)",
+      "type": "original",
+      "year": 2001,
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "note": "Ableger von Tactics Ogre, entwickelt von Quest; in Japan 2001, in Nordamerika 2002 erschienen.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tactics_Ogre:_The_Knight_of_Lodis"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-18",
+      "id": "kol-recomp",
+      "name": "Knight of Lodis Recomp",
+      "release": "gba",
+      "kind": "recomp",
+      "edition": "GBA (USA, Spielcode ATOE)",
+      "runtime": "gbarecomp (statische Recompilation nach C++)",
+      "projects": [
+        "knight-of-lodis-recomp"
+      ],
+      "features": [
+        "dual-screen",
+        "widescreen",
+        "mods",
+        "controller",
+        "touch",
+        "native-arm"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Statusblatt der Einheit, Armeeliste, Hilfetexte und Optionsmenü auf dem zweiten Bildschirm (z. B. AYN Thor).",
+      "requires": [
+        "Eigene ROM „Tactics Ogre: The Knight of Lodis (USA)“",
+        "Optional: eigenes GBA-BIOS"
+      ],
+      "benefit": "Optionaler 16:9-Widescreen, Schlachtfeld mit Perspektive, Licht und Wetter, neu gerenderte Musik, Schnellvorlauf, Speicherstände, IPS/UPS/BPS-Mods und RetroAchievements; das Preset „Original“ spielt es unverändert.",
+      "caveat": "Junges Hobbyprojekt; Kompatibilität und Leistung auf dem Thor sind noch nicht belegt.",
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "screenshots": [],
+      "performance": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/lucdubois/KnightOfLodisRecomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tactics_Ogre:_The_Knight_of_Lodis",
+  "updatedAt": "2026-11-18"
+}

@@ -47,7 +47,7 @@
       "name": "ZeldaWWHDRecomp",
       "kind": "recomp",
       "release": "the-wind-waker-hd",
-      "runtime": null,
+      "runtime": "Statische Recompilation, Vulkan",
       "projects": [
         "zeldawwhdrecomp"
       ],
@@ -57,32 +57,40 @@
       "features": [
         "two-screens"
       ],
-      "dualScreen": "Separater Wii-U-GamePad-Ausgang für Karte, Gegenstände und Menüs einschließlich Touch-Eingabe, während das TV-Bild auf dem Hauptdisplay bleibt. Android-Dual-Display-Implementierung vorhanden; die Geräteprüfliste kennzeichnet reale Dual-Screen-Hardwaretests jedoch ausdrücklich als ausstehend. Deshalb als experimentell einordnen, nicht als bestätigte Thor-Kompatibilität.",
+      "dualScreen": "Das Spiel öffnet zwei Fenster: TV-Bild und GamePad-Bild (Karte, Gegenstände, Menüs, mit Touch). Laut Android-Prüfliste soll das GamePad-Bild auf den zweiten Bildschirm (ausdrücklich AYN Thor genannt); die Tests auf echten Geräten stehen dort noch aus.",
       "dualScreenType": "native",
-      "requires": [],
-      "benefit": "",
-      "caveat": "Vom Dual-Screen-Suchlauf gefunden; Details folgen mit der Tiefenrecherche.",
+      "requires": [
+        "Eigene Wii-U-Fassung von The Wind Waker HD (USA oder Europa, Version 0) als eigener Dump (.wux/.wud mit Schlüsseln, .wua oder entpackter Ordner)",
+        "Android 13+ (arm64) mit Vulkan 1.3"
+      ],
+      "benefit": "Nativer Port statt Emulation: laut README von Anfang bis Ende spielbar (macOS, Windows, Linux, Android). Die Release-App baut das Spiel auf dem Gerät aus dem eigenen Dump; ein Mod-SDK ist enthalten.",
+      "caveat": "Die Dual-Screen-Ausgabe auf echter Zwei-Bildschirm-Hardware ist laut Projekt-Prüfliste noch ungetestet; auf Android schaltet sonst ein Knopf zwischen TV-, GamePad- und kombinierter Ansicht. Das README nennt 30–32 FPS in den schwersten Szenen auf einem Galaxy S25 Ultra – für den Thor gibt es noch keinen Beleg.",
       "steps": [],
-      "version": null,
+      "version": "v0.3.0 (laut README)",
       "effort": "guided",
-      "status": "active",
+      "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
       "screenshots": [],
       "links": [
         {
-          "label": "Quelle",
+          "label": "GitHub",
+          "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp"
+        },
+        {
+          "label": "Android-Prüfliste",
           "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
         }
       ],
       "reports": [],
       "performance": [],
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-18",
+      "edition": "Wii U (USA oder Europa, Version 0)"
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q852563",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_The_Wind_Waker",
-  "genre": "action-adventure game",
+  "genre": "Action-Adventure",
   "website": "https://www.zelda.com/windwaker/"
 }

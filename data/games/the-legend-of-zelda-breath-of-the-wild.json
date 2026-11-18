@@ -3,7 +3,8 @@
   "title": "The Legend of Zelda: Breath of the Wild",
   "franchise": "The Legend of Zelda",
   "platforms": [
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "Wii U"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
   "versions": [
@@ -213,6 +214,23 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/14667b78-3225-499a-96da-95f30f72adda"
         }
+      ],
+      "year": 2017
+    },
+    {
+      "id": "wii-u",
+      "name": "Wii U (2017)",
+      "type": "original",
+      "year": 2017,
+      "platforms": [
+        "Wii U"
+      ],
+      "note": "Zeitgleich mit der Switch-Fassung erschienen; der Wii-U-GamePad zeigt nur ein Spiegelbild bzw. dient als Bildschirm im Off-TV-Modus.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+        }
       ]
     }
   ],
@@ -281,9 +299,72 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-18",
+      "id": "botw-native",
+      "name": "BotW Native",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch, Spielversion 1.6.0",
+      "runtime": "Laufzeit von TotK Native + mitgelieferter Turnip-Vulkan-Treiber",
+      "projects": [
+        "botw-native"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "native-arm",
+        "mods",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Die Shiekah-Stein-Seiten des Eden-Duo-Companions (Status, Minikarte, Quests) laufen in der App selbst auf dem zweiten Bildschirm; Touch und Gegenstandsaktionen sind noch nicht fertig.",
+      "requires": [
+        "Eigener Dump von Breath of the Wild, Version 1.6.0 (Spiel + Update, optional DLC, mit den Schlüsseln der eigenen Switch)",
+        "Android 13+ (arm64) mit Qualcomm-Adreno-GPU",
+        "Computer mit Python 3 und adb zum Vorbereiten des Spielordners",
+        "ca. 20 GB Speicher"
+      ],
+      "benefit": "Kein Emulator: Der Spielcode läuft direkt auf dem Gerät, laut Entwickler mit 30 FPS auf dem AYN Thor (Plateau und Menüs). DLC, RomFS-Mods (z. B. Second Wind) und IPS-Patches lassen sich einbinden.",
+      "caveat": "Experimentell und nur auf dem AYN Thor entwickelt; bisher bis zum Großen Plateau gespielt. Die Einrichtung läuft noch nicht auf dem Gerät, der Spielordner wird am Computer vorbereitet. Nur Version 1.6.0.",
+      "version": "Spielversion 1.6.0",
+      "effort": "advanced",
+      "status": "experimental",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-home.webp",
+          "caption": "Startmenü der App",
+          "source": "https://github.com/P1R4N351/botw-android/blob/HEAD/README.md",
+          "credit": "BotW Native",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/P1R4N351/botw-android"
+        }
+      ],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "30 FPS auf dem Großen Plateau und in den Menüs (Angabe des Entwicklers, noch nicht vermessen)",
+          "settings": "Standard (30 FPS, Handheld)",
+          "source": "https://github.com/P1R4N351/botw-android#performance",
+          "date": "2026-11-18"
+        }
+      ]
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Breath_of_the_Wild"

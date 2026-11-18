@@ -3,7 +3,6 @@
   "title": "Stardew Valley",
   "franchise": "Stardew Valley",
   "platforms": [
-    "Nintendo Switch",
     "PC"
   ],
   "genre": "Simulation / Sandbox",
@@ -47,8 +46,8 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
-      "type": "original",
+      "name": "Nintendo Switch (2017)",
+      "type": "port",
       "platforms": [
         "Nintendo Switch"
       ],
@@ -107,12 +106,13 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/9d5e4eb3-1a90-49a6-95dc-c428d07cb0e3"
         }
-      ]
+      ],
+      "year": 2017
     },
     {
       "id": "pc",
       "name": "PC",
-      "type": "release",
+      "type": "original",
       "platforms": [
         "PC"
       ],

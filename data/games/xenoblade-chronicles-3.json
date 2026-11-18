@@ -12,11 +12,62 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "year": 2022
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-18",
+      "id": "xc3-port",
+      "name": "Xenoblade Chronicles 3 Port (Retroid Pocket 5/Flip 2)",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch, Spielversion 2.2.0 (+ DLC optional)",
+      "runtime": "Nachgebaute Konsolenschnittstellen, Spielcode nativ ARM64",
+      "projects": [
+        "xenoblade3-port"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Kopie von Xenoblade Chronicles 3 (Version 2.2.0), auf der eigenen Konsole entpackt",
+        "Retroid Pocket 5 oder Retroid Pocket Flip 2 (Snapdragon 865)"
+      ],
+      "benefit": "Nativer Port statt Switch-Emulation, auf den Snapdragon 865 abgestimmt: laut Entwickler 30 FPS im Feld und in normalen Kämpfen auf dem Flip 2.",
+      "caveat": "Ausschließlich für Retroid Pocket 5 und Flip 2 gebaut – der AYN Thor wird nicht unterstützt. Version 0.1, nur der Anfang des Spiels getestet; gelegentliche kurze Ruckler.",
+      "version": "0.1",
+      "effort": "guided",
+      "status": "experimental",
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/IamWilmar/xenoblade3-recomp"
+        }
+      ],
+      "performance": [
+        {
+          "device": "Retroid Pocket Flip 2",
+          "result": "30 FPS im Feld und in normalen Kämpfen, 28,4–29,9 FPS im ersten großen Kampf",
+          "settings": "Handheld-Modus",
+          "source": "https://github.com/IamWilmar/xenoblade3-recomp#status",
+          "date": "2026-11-18"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/7/76/Xenoblade_3.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Xenoblade_Chronicles_3"

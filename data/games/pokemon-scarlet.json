@@ -84,17 +84,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/dex.png",
-          "caption": "Pokédex",
+          "caption": "Pokédex auf dem zweiten Bildschirm",
           "source": "https://github.com/jjprog17/sv-dualscreen-companion",
           "credit": "Scarlet/Violet Dual-Screen Companion",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/bag.png",
-          "caption": "Bag",
+          "caption": "Beutel (Medizin) auf dem zweiten Bildschirm",
           "source": "https://github.com/jjprog17/sv-dualscreen-companion",
           "credit": "Scarlet/Violet Dual-Screen Companion",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [
