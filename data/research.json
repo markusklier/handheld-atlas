@@ -1,8 +1,8 @@
 {
-  "backend": "api",
+  "backend": "abo",
   "fallback": "abo",
   "aboSchedule": "montags und donnerstags um 20:38",
-  "changed": "2026-11-11",
+  "changed": "2026-11-18",
   "status": {
     "ok": false,
     "reason": "OpenAI-Guthaben aufgebraucht",
