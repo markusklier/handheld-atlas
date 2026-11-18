@@ -213,21 +213,21 @@
           "caption": "Alexandria with the CRT filter: scanlines and a phosphor mask",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/launcher-get-mods.jpg",
           "caption": "Get mods: Memoria's catalog with search and categories",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/launcher-mods.jpg",
           "caption": "Mods: on and off, load order, info and remove",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [

@@ -2,6 +2,12 @@
   "entries": [
     {
       "date": "2026-11-18",
+      "type": "screenshot-added",
+      "by": "ai-research",
+      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 0 unpassende entfernt"
+    },
+    {
+      "date": "2026-11-18",
       "type": "route-updated",
       "game": "super-mario-galaxy-2",
       "text": "2 Community-Berichte von EmuReady für Super Mario Galaxy 2 (Geräte mit dem Chip des AYN Thor)"

@@ -128,14 +128,14 @@
           "caption": "Pokédex",
           "source": "https://github.com/jjprog17/sv-dualscreen-companion",
           "credit": "Scarlet/Violet Dual-Screen Companion",
-          "check": "readme"
+          "check": "ai-unclear"
         },
         {
           "url": "https://raw.githubusercontent.com/jjprog17/sv-dualscreen-companion/HEAD/docs/img/bag.png",
           "caption": "Bag",
           "source": "https://github.com/jjprog17/sv-dualscreen-companion",
           "credit": "Scarlet/Violet Dual-Screen Companion",
-          "check": "readme"
+          "check": "ai-unclear"
         }
       ],
       "links": [
