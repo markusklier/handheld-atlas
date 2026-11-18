@@ -2,6 +2,117 @@
   "entries": [
     {
       "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "celeste",
+      "text": "Neuer Spielweg: CelesteAndroid – nativer Android-Port der PC-Fassung mit fertiger APK (KI-Fund)",
+      "url": "https://github.com/BelmanteGu/CelesteAndroid"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "ninja-gaiden-2004",
+      "text": "Neues Spiel: Ninja Gaiden (2004) mit experimentellem nativem Android-Port von Ninja Gaiden Black (Recomp, KI-Fund)",
+      "url": "https://github.com/gamboozino/ngbrecomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "nightmare-creatures",
+      "text": "Neues Spiel: Nightmare Creatures mit nativem Port der PC-Fassung per Recompilation (KI-Fund)",
+      "url": "https://github.com/mxvisor/nightmare_creatures-recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "catherine",
+      "text": "Neues Spiel: Catherine mit nativem Android-Port von Full Body (nur Retroid Pocket 5/Flip 2, nicht Thor; KI-Fund)",
+      "url": "https://github.com/IamWilmar/catherine-recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neues Verzeichnis: Awesome Switch Recomp (Switch-Recomps mit Android-Abschnitt)",
+      "url": "https://github.com/AIshihzong/awesome-switch-recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect (2007)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect-2",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect 2 (2010)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect-3",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect 3 (2012) mit Wii-U-Fassung (Gamepad als zweiter Bildschirm)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect-andromeda",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect: Andromeda (2017)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect-galaxy",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect Galaxy (2009, iOS)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mass-effect-infiltrator",
+      "text": "Neues Spiel aus der Reihe Mass Effect: Mass Effect Infiltrator (2012) – offizielle Android-Fassung, seit 2015 nicht mehr im Play Store",
+      "url": "https://www.androidcentral.com/electronic-arts-brings-mass-effect-infiltrator-google-play-store"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "mod-added",
+      "by": "agent",
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "text": "Neue Mod: MGSHDFix für die PC-Fassung der Master Collection (KI-Fund)",
+      "url": "https://github.com/ShizCalev/MGSHDFix"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "mod-added",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Mods: MGSHDFix (Master Collection, PC) und Circle-Pad-Pro-Spielstände für Snake Eater 3D (KI-Fund)",
+      "url": "https://github.com/ShizCalev/MGSHDFix"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "mod-added",
+      "by": "agent",
+      "game": "silent-hill-2",
+      "text": "Neue Mod: Silent Hill 2: Enhanced Edition für die PC-Fassung (KI-Fund)",
+      "url": "https://enhanced.townofsilenthill.com/SH2/"
+    },
+    {
+      "date": "2026-11-18",
       "type": "game-added",
       "by": "agent",
       "game": "rollercoaster-tycoon-2",

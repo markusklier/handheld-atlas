@@ -1,0 +1,30 @@
+{
+  "id": "mass-effect-galaxy",
+  "title": "Mass Effect Galaxy",
+  "franchise": "Mass Effect",
+  "platforms": [
+    "iOS"
+  ],
+  "genre": "Action",
+  "summary": "Kleiner iOS-Ableger von 2009, nicht mehr erhältlich.",
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Mass_Effect_Galaxy"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

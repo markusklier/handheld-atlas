@@ -1,0 +1,34 @@
+{
+  "id": "mass-effect-andromeda",
+  "title": "Mass Effect: Andromeda",
+  "franchise": "Mass Effect",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Ableger von 2017 in der Andromeda-Galaxie; nur PC und PS4/Xbox One.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 4, Xbox One (2017)",
+      "type": "original",
+      "year": 2017,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Mass_Effect:_Andromeda"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "catherine",
+  "title": "Catherine",
+  "franchise": "Catherine",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360",
+    "PC",
+    "PlayStation 4",
+    "PlayStation Vita",
+    "Nintendo Switch"
+  ],
+  "genre": "Puzzle/Adventure",
+  "summary": "Puzzle-Adventure von Atlus; die Switch-Fassung von Full Body hat einen nativen Android-Port – allerdings nur für Retroid-Geräte mit Snapdragon 865.",
+  "versions": [
+    {
+      "id": "ps3-x360",
+      "name": "PlayStation 3, Xbox 360 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "classic-pc",
+      "name": "Catherine Classic (2019)",
+      "type": "port",
+      "year": 2019,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "full-body",
+      "name": "Catherine: Full Body (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation Vita",
+        "Nintendo Switch"
+      ],
+      "note": "Erweiterte Neuauflage mit neuer Figur, neuen Enden und Remix-Puzzles; Switch-Fassung 2020.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine:_Full_Body"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "requires": [
+        "Eigene, selbst ausgelesene ExeFS- und RomFS-Ordner der Switch-Fassung",
+        "Retroid Pocket 5 oder Retroid Pocket Flip 2 (Snapdragon 865)"
+      ],
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Retroid Pocket Flip 2",
+          "result": "stabile 30 FPS im ersten Puzzle-Level (6 Minuten gemessen)",
+          "settings": "720p, per FSR1 auf 1080p",
+          "source": "https://github.com/IamWilmar/catherine-recomp",
+          "date": "2026-11-18"
+        }
+      ],
+      "checkedAt": "2026-11-18",
+      "id": "catherine-recomp",
+      "name": "Catherine: Full Body Port",
+      "release": "full-body",
+      "kind": "native",
+      "edition": "Switch-Fassung (getestet mit 1.0.0)",
+      "runtime": "nativer ARM64-Code des Spiels, nachgebautes Konsolen-SDK, NVN auf Vulkan",
+      "projects": [
+        "catherine-recomp"
+      ],
+      "benefit": "Fertige APK in den Releases; laut Autor stabile 30 FPS (die native Bildrate des Spiels) im ersten Puzzle-Level auf dem Flip 2.",
+      "caveat": "Nur für Adreno 650 gebaut – andere GPUs, auch der AYN Thor (Adreno 740), werden ausdrücklich nicht unterstützt. Frühe Version, nur bis zum ersten Level geprüft.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/IamWilmar/catherine-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

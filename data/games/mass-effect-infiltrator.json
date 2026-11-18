@@ -1,0 +1,52 @@
+{
+  "id": "mass-effect-infiltrator",
+  "title": "Mass Effect Infiltrator",
+  "franchise": "Mass Effect",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Third-Person-Shooter",
+  "summary": "Mobiler Deckungs-Shooter zu Mass Effect 3, 2012 offiziell für Android erschienen; seit 2015 nicht mehr in den Stores.",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "iOS, Android (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.androidcentral.com/electronic-arts-brings-mass-effect-infiltrator-google-play-store"
+        },
+        {
+          "label": "Entfernung 2015",
+          "url": "https://mobilesyrup.com/2015/10/02/ea-removes-various-classic-games-google-apple/"
+        }
+      ],
+      "note": "Offizielle Android-Fassung (Google Play, Mai 2012); EA hat das Spiel 2015 aus den Stores genommen, ein Neukauf ist nicht mehr möglich."
+    },
+    {
+      "id": "blackberry",
+      "name": "BlackBerry 10 (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "BlackBerry 10"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

@@ -50,10 +50,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/story.jpg",
-          "caption": "Storymodus",
+          "caption": "Zwischensequenz im Storymodus",
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto Broken Bond Android Port",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/android-controls.png",
@@ -64,10 +64,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/title-screen.jpg",
-          "caption": "Title screen",
+          "caption": "Titelbildschirm des Ports mit PC-Optionen",
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto: The Broken Bond Android Port",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "reports": [],

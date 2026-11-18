@@ -118,5 +118,19 @@
   "updatedAt": "2026-11-18",
   "wikidata": "Q907226",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_2%3A_Sons_of_Liberty",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "mods": [
+    {
+      "id": "mgshdfix",
+      "name": "MGSHDFix",
+      "category": "fixes",
+      "url": "https://github.com/ShizCalev/MGSHDFix",
+      "edition": "PC-Fassung der Master Collection Vol. 1 (Windows-Laufzeit auf Android)",
+      "description": "Fan-Fix für die Master Collection: stellt fehlende Grafikeffekte wieder her, behebt Abstürze, erlaubt eigene Auflösungen/Ultrawide und DualShock-2/3-Steuerung. Die Projektseite beschreibt die Einrichtung unter Steam Deck/Proton; unter Winlator/GameHub auf Android ungeprüft.",
+      "verification": "ai-unverified",
+      "release": [
+        "master-collection-vol-1"
+      ]
+    }
+  ]
 }

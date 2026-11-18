@@ -132,5 +132,39 @@
   "updatedAt": "2026-11-18",
   "wikidata": "Q247935",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_3%3A_Snake_Eater",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "mods": [
+    {
+      "id": "mgshdfix",
+      "name": "MGSHDFix",
+      "category": "fixes",
+      "url": "https://github.com/ShizCalev/MGSHDFix",
+      "edition": "PC-Fassung der Master Collection Vol. 1 (Windows-Laufzeit auf Android)",
+      "description": "Fan-Fix für die Master Collection: stellt fehlende Grafikeffekte wieder her, behebt Abstürze, erlaubt eigene Auflösungen/Ultrawide und DualShock-2/3-Steuerung. Die Projektseite beschreibt die Einrichtung unter Steam Deck/Proton; unter Winlator/GameHub auf Android ungeprüft.",
+      "verification": "ai-unverified",
+      "release": [
+        "master-collection-vol-1"
+      ]
+    },
+    {
+      "id": "mgs3d-cpp-saves",
+      "name": "Circle-Pad-Pro-Spielstände für Citra",
+      "category": "controls",
+      "url": "https://gamebanana.com/mods/330633",
+      "edition": "Snake Eater 3D (3DS-Emulation, z. B. Azahar)",
+      "description": "Spielstände am Spielanfang (Normal, Hard, Extreme) mit aktiviertem Circle Pad Pro, damit die Kamera über den zweiten Stick läuft. Für Citra erstellt; mit Azahar auf Android ungeprüft.",
+      "verification": "ai-unverified",
+      "release": [
+        "snake-eater-3d"
+      ],
+      "screenshots": [
+        {
+          "url": "https://images.gamebanana.com/img/ss/mods/sgi_sd_image_6174e8b952bba.webp",
+          "caption": "Vorschaubild der Mod",
+          "source": "https://gamebanana.com/mods/330633",
+          "check": "ai"
+        }
+      ]
+    }
+  ]
 }

@@ -2603,6 +2603,64 @@
         "trails-in-the-sky-1st-chapter"
       ],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "celeste-android",
+      "name": "CelesteAndroid",
+      "kind": "port",
+      "url": "https://github.com/BelmanteGu/CelesteAndroid",
+      "repo": "BelmanteGu/CelesteAndroid",
+      "description": "Nativer Android-Port von Celeste aus der eigenen PC-Fassung (FNA-Build) mit .NET, FNA und SDL3.",
+      "games": [
+        "celeste"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "ngbrecomp",
+      "name": "Ninja Gaiden Black Recomp",
+      "kind": "port",
+      "url": "https://github.com/gamboozino/ngbrecomp",
+      "repo": "gamboozino/ngbrecomp",
+      "description": "Statische Recompilation von Ninja Gaiden Black (Xbox) für Linux, Windows und experimentell Android.",
+      "games": [
+        "ninja-gaiden-2004"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "nightmare-creatures-recomp",
+      "name": "Nightmare Creatures Recomp",
+      "kind": "port",
+      "url": "https://github.com/mxvisor/nightmare_creatures-recomp",
+      "repo": "mxvisor/nightmare_creatures-recomp",
+      "description": "Nativer Port der Windows-Fassung von Nightmare Creatures (1997) per statischer Recompilation mit SR, auch für Android.",
+      "games": [
+        "nightmare-creatures"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "catherine-recomp",
+      "name": "Catherine: Full Body Port",
+      "kind": "port",
+      "url": "https://github.com/IamWilmar/catherine-recomp",
+      "repo": "IamWilmar/catherine-recomp",
+      "description": "Nativer Android-Port der Switch-Fassung von Catherine: Full Body, nur für Retroid Pocket 5 und Flip 2 (Snapdragon 865).",
+      "games": [
+        "catherine"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "awesome-switch-recomp",
+      "name": "Awesome Switch Recomp",
+      "kind": "directory",
+      "url": "https://github.com/AIshihzong/awesome-switch-recomp",
+      "repo": "AIshihzong/awesome-switch-recomp",
+      "description": "Liste von Switch-Recompilationen und nativen Ports, mit eigenem Android-Abschnitt (Thor, Odin, Retroid).",
+      "games": [],
+      "checkedAt": "2026-11-18"
     }
   ]
 }

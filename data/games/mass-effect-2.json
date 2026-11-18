@@ -1,0 +1,84 @@
+{
+  "id": "mass-effect-2",
+  "title": "Mass Effect 2",
+  "franchise": "Mass Effect",
+  "platforms": [
+    "PC",
+    "Xbox 360",
+    "PlayStation 3"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Zweiter Teil der Trilogie; die PC-Fassung bzw. Legendary Edition ist der Ausgangspunkt für Windows-Laufzeiten auf Android.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, Xbox 360 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "PC",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "name": "PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "trilogy",
+      "name": "Mass Effect Trilogy (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "note": "Sammlung der ersten drei Teile.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "legendary-edition",
+      "name": "Mass Effect Legendary Edition (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "note": "Remaster der Trilogie mit überarbeiteter Grafik und fast allen Zusatzinhalten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Mass_Effect_Legendary_Edition"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

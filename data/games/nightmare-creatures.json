@@ -1,0 +1,95 @@
+{
+  "id": "nightmare-creatures",
+  "title": "Nightmare Creatures",
+  "franchise": "Nightmare Creatures",
+  "platforms": [
+    "PlayStation",
+    "PC",
+    "Nintendo 64"
+  ],
+  "genre": "Survival-Horror/Action",
+  "summary": "Horror-Actionspiel von Kalisto (1997); die Windows-Fassung läuft per statischer Recompilation nativ auf Android.",
+  "versions": [
+    {
+      "id": "ps1-pc",
+      "name": "PlayStation, PC (1997)",
+      "type": "original",
+      "year": 1997,
+      "platforms": [
+        "PlayStation",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Nightmare_Creatures"
+        }
+      ]
+    },
+    {
+      "id": "n64",
+      "name": "Nintendo 64 (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "Nintendo 64"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Nightmare_Creatures"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Nightmare-Creatures-PC-CD (als Image, auch für den Build nötig)",
+        "Android SDK/NDK zum Selbstbauen"
+      ],
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/nightmare_creatures-recomp/HEAD/docs/android.jpg",
+          "caption": "Erstes Level auf einem Android-Handy mit Bildschirmtasten",
+          "source": "https://github.com/mxvisor/nightmare_creatures-recomp",
+          "credit": "nightmare_creatures-recomp",
+          "check": "source-verified"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-18",
+      "id": "nc-recomp",
+      "name": "Nightmare Creatures Recomp",
+      "release": "ps1-pc",
+      "kind": "recomp",
+      "edition": "Windows-CD (NC.EXE v1.0)",
+      "runtime": "SR + SR-SDK, statisch nach ARM64 recompiliert, Direct3D auf OpenGL ES 3",
+      "projects": [
+        "nightmare-creatures-recomp"
+      ],
+      "benefit": "Originalcode läuft nativ; Filme, Menüs, Kämpfe, Ton und CD-Musik funktionieren, Bildschirmtasten auf Android.",
+      "caveat": "Keine fertige APK – Build nur mit eigener CD. Laut README nur das erste Level durchgespielt; spätere Level ungetestet. Controller-Unterstützung auf Android nicht dokumentiert.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mxvisor/nightmare_creatures-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

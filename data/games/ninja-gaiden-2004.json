@@ -1,0 +1,94 @@
+{
+  "id": "ninja-gaiden-2004",
+  "title": "Ninja Gaiden (2004)",
+  "franchise": "Ninja Gaiden",
+  "platforms": [
+    "Xbox"
+  ],
+  "genre": "Action",
+  "summary": "3D-Neustart der Reihe von Team Ninja; die erweiterte Fassung Ninja Gaiden Black läuft per statischer Recompilation experimentell nativ auf Android.",
+  "versions": [
+    {
+      "id": "xbox",
+      "name": "Xbox (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Ninja_Gaiden_(2004_video_game)"
+        }
+      ]
+    },
+    {
+      "id": "black",
+      "name": "Ninja Gaiden Black (2005)",
+      "type": "rerelease",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Erweiterte Fassung mit zusätzlichen Schwierigkeitsgraden und Missionen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Ninja_Gaiden_(2004_video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "widescreen",
+        "upscaling",
+        "mods"
+      ],
+      "requires": [
+        "Eigenes Disc-Image der US-Retail-Fassung von Ninja Gaiden Black",
+        "Android 10+ (13+ empfohlen), Vulkan 1.3"
+      ],
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-18",
+      "id": "ngbrecomp",
+      "name": "Ninja Gaiden Black Recomp",
+      "release": "black",
+      "kind": "recomp",
+      "edition": "Xbox, US-Fassung (Title-ID 5443000D)",
+      "runtime": "statische Recompilation (xboxrecomp) mit eigenem Vulkan-Renderer",
+      "projects": [
+        "ngbrecomp"
+      ],
+      "benefit": "Fertige Android-APK in den Releases; installiert das Spiel beim ersten Start aus dem eigenen Image. Breitbild, höhere Auflösung, Texturpakete und Mods.",
+      "caveat": "Android-Fassung laut README experimentell und nur auf einem Pixel 9a getestet (60 FPS); Handhelds nicht erwähnt. Arcade-Ninja-Gaiden und „Zurück zum Hauptmenü“ fehlen noch auf Android.",
+      "steps": [
+        "APK NinjaGaidenBlack-android-arm64.apk aus den Releases installieren",
+        "Eigenes Disc-Image (.iso) aufs Gerät kopieren",
+        "Beim ersten Start das Image wählen; das Spiel wird installiert (~6 GB)"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/gamboozino/ngbrecomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

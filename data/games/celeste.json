@@ -245,10 +245,65 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "widescreen"
+      ],
+      "requires": [
+        "Eigene Celeste-PC-Fassung als FNA-Build 1.4.0.0 (Steam-Beta „fna“ oder Linux-Zip von itch.io)",
+        "Android 8+ (ARM64)"
+      ],
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/BelmanteGu/CelesteAndroid/HEAD/docs/media/widescreen/01-widescreen-cap1.jpg",
+          "caption": "Celeste im Breitbild auf Android",
+          "source": "https://github.com/BelmanteGu/CelesteAndroid",
+          "credit": "CelesteAndroid",
+          "check": "source-verified"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-18",
+      "id": "celeste-android",
+      "name": "CelesteAndroid",
+      "release": "pc",
+      "kind": "native",
+      "edition": "PC-Fassung, FNA-Build 1.4.0.0",
+      "runtime": ".NET ARM64 + FNA/SDL3, Vulkan (GLES als Ausweichlösung)",
+      "projects": [
+        "celeste-android"
+      ],
+      "benefit": "Fertige APK in den Releases; das Spiel läuft nativ, mit Controller, anpassbarer Touch-Steuerung, Breitbild und Import der PC-Spielstände.",
+      "caveat": "Laut README nur auf einem Galaxy S23 getestet; Handhelds und der Thor sind nicht erwähnt. Everest-Mods noch nicht unterstützt. Spielstände liegen im App-Speicher und gehen bei Deinstallation verloren.",
+      "steps": [
+        "APK aus den GitHub-Releases installieren",
+        "Ordner der eigenen FNA-PC-Fassung (mit Celeste.exe, FNA.dll, Content/) in der App auswählen",
+        "Die App patcht das Spiel einmalig und startet es"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/BelmanteGu/CelesteAndroid"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-18",
   "wikidata": "Q28451532",
   "wikipedia": "https://en.wikipedia.org/wiki/Celeste_%28video_game%29",
   "genre": "platform game",
-  "website": "https://www.celestegame.com"
+  "website": "https://www.celestegame.com",
+  "summary": "Präzisions-Plattformer von 2018; die PC-Fassung läuft per nativem Fan-Port direkt auf Android."
 }

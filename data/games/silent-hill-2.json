@@ -75,5 +75,19 @@
   "updatedAt": "2026-11-18",
   "wikidata": "Q752835",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_2",
-  "genre": "psychological horror fiction"
+  "genre": "psychological horror fiction",
+  "mods": [
+    {
+      "id": "sh2-enhanced-edition",
+      "name": "Silent Hill 2: Enhanced Edition",
+      "category": "fixes",
+      "url": "https://enhanced.townofsilenthill.com/SH2/",
+      "edition": "PC-Fassung (2002) über eine Windows-Laufzeit",
+      "description": "Fan-Projekt für die PC-Fassung: läuft auf aktuellen Windows-Versionen, Widescreen, wiederhergestellter Nebel und Schatten, bessere Audio-, Bild- und Videoqualität, Fehlerkorrekturen. Unter Winlator/GameHub auf Android ungeprüft.",
+      "verification": "ai-unverified",
+      "release": [
+        "restless-dreams"
+      ]
+    }
+  ]
 }

@@ -9,33 +9,9 @@
       "foundAt": "2026-11-18"
     },
     {
-      "url": "https://github.com/zettelmuseum/MrMatt",
-      "title": "zettelmuseum/MrMatt",
-      "excerpt": "Mr.Matt 2007 game Android port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/zettelmuseum/Atomix",
-      "title": "zettelmuseum/Atomix",
-      "excerpt": "Atomix Puzzle Game Android Port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
       "url": "https://github.com/zettelmuseum/Lasertank",
       "title": "zettelmuseum/Lasertank",
       "excerpt": "Lasertank puzzle game 1:1 Android Port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/zettelmuseum/Vexed",
-      "title": "zettelmuseum/Vexed",
-      "excerpt": "Vexed puzzle game Android port",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-18"
@@ -65,14 +41,6 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/maxi000q/EvilInsidePort",
-      "title": "maxi000q/EvilInsidePort",
-      "excerpt": "Native Android port of PS5 titles via static recompilation: x86-64 game code AOT-compiled to ARM64, libSce* HLE on Android NDK + Vulkan + AAudio. Evil Inside Recomp. GPL-2.0, derived from PortPS5.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/Berny23/slingshot-animals-recomp",
       "title": "Berny23/slingshot-animals-recomp",
       "excerpt": "Unofficial static recompilation of Rovio's old Android Angry Birds games. Classic, Seasons, Rio, Space, Star Wars, Star Wars 2, Stella.",
@@ -89,14 +57,6 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/hiitsgabe/retro_toolbox",
-      "title": "hiitsgabe/retro_toolbox",
-      "excerpt": "A Complete Toolbox for Android and Batocera Based Consoles",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/easleyclaymore/Rance10-Android-Port",
       "title": "easleyclaymore/Rance10-Android-Port",
       "excerpt": "Rance10 Android native port - xsystem4 downstream fork (engine source only, no game assets)",
@@ -108,46 +68,6 @@
       "url": "https://github.com/CrownParkComputing/pacman-ce2-recomp",
       "title": "CrownParkComputing/pacman-ce2-recomp",
       "excerpt": "PAC-MAN Championship Edition 2 native Linux and Android port; runtime source and build instructions, game data supplied separately",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/gamboozino/ngbrecomp",
-      "title": "gamboozino/ngbrecomp",
-      "excerpt": "Ninja Gaiden Black (Xbox, 2005) statically recompiled into native Linux and Windows builds, with an experimental Android port, drawn by its own Vulkan renderer. A steady 60 fps, widescreen and ultrawide, keyboard and mouse, touch controls on Android, Steam Deck ready. Bring your own copy of the game.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/karopkatemirisonic-hash/Sonic-Dream-Team-Android-Port",
-      "title": "karopkatemirisonic-hash/Sonic-Dream-Team-Android-Port",
-      "excerpt": "This project is not an official project, it is a fan project. Sonic Dream Team is a game made only for iPhone, for Android you only need to download the APK, there is no play store.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/caos-obliquo/tboi-recomp",
-      "title": "caos-obliquo/tboi-recomp",
-      "excerpt": "Clean-room C++17 engine for The Binding of Isaac: Rebirth/Repentance. Reads your own Steam install at runtime; ships no game assets. Mobile-first (arm64-android), then linux-x86_64.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/AIshihzong/awesome-switch-recomp",
-      "title": "AIshihzong/awesome-switch-recomp",
-      "excerpt": "Awesome Switch Recomp: list of Nintendo Switch and Switch 2 static recompilation (recomp) projects and native ports. Play your own Switch games on iPhone, iPad, Mac, PC, Android and Steam Deck. Bring-your-own-copy only: no ROMs, no keys. Bilingual EN/中文.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/mxvisor/nightmare_creatures-recomp",
-      "title": "mxvisor/nightmare_creatures-recomp",
-      "excerpt": "Native port of Nightmare Creatures (1997, Windows) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -172,14 +92,6 @@
       "url": "https://github.com/CrownParkComputing/raiden-v-recomp",
       "title": "CrownParkComputing/raiden-v-recomp",
       "excerpt": "Linux x86-64 and Android ARM64 port of Raiden V: Director's Cut (CUSA07673). Original game data not included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/IamWilmar/catherine-recomp",
-      "title": "IamWilmar/catherine-recomp",
-      "excerpt": "Native Android port of Catherine: Full Body for the Retroid Pocket Flip 2. Early version. Bring your own extracted game files.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -217,70 +129,6 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/vancopek123/FuraGPS",
-      "title": "vancopek123/FuraGPS",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/fecampossantos/wanbo-light-os",
-      "title": "fecampossantos/wanbo-light-os",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/venkatesh4059/Buddy-First-App-",
-      "title": "venkatesh4059/Buddy-First-App-",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/anmoldev06/MIRRIVO",
-      "title": "anmoldev06/MIRRIVO",
-      "excerpt": "Aesthetic, Single-File Portable Android Screen Mirroring & PC Control (WPF .NET 10 + Scrcpy 5.0 + ADB)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Varian08/smart-local-planner",
-      "title": "Varian08/smart-local-planner",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/Aureon-R/aureon-r-client",
-      "title": "Aureon-R/aureon-r-client",
-      "excerpt": "Free Android proxy client with Xray and sing-box, one-click Debian VPS deployment, node sharing and encrypted backups. Official signed releases.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/BlackSingularities/OpenTakeoff",
-      "title": "BlackSingularities/OpenTakeoff",
-      "excerpt": "Darmowa pogoda lotnicza (METAR/TAF) i dane lotnisk dla wirtualnych pilotów — Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/jackdiver/melonDS-android",
-      "title": "jackdiver/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "melonDS for Android with Wi-Fi local multiplayer (2-8 devices) for DS games",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/Rayan-XOO/horizon",
       "title": "Rayan-XOO/horizon",
       "excerpt": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, touch controls and in-app game file download.",
@@ -289,33 +137,9 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/xmllua/tlou-remastered-android",
-      "title": "xmllua/tlou-remastered-android",
-      "excerpt": "The Last of Us Remastered Android port (FEX x86-64 translation + Vulkan). Mirror of erickmendes22/tlou-remastered-android branch tlou-ui-approval-log32-20261105 (real Android source). No game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/BelmanteGu/CelesteAndroid",
-      "title": "BelmanteGu/CelesteAndroid",
-      "excerpt": "Native Android port of Celeste (2018) running your own PC copy: .NET + FNA + SDL3, Vulkan, FMOD, launcher with game import.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/nurwed/openbgi-subahibi-android",
       "title": "nurwed/openbgi-subahibi-android",
       "excerpt": "Android port of OpenBGI (Ethornell/BGI engine reimplementation), patched and optimized to run Subarashiki Hibi (Wonderful Everyday). Requires your own copy of the game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/phys-winner/pc_decomp_frstp",
-      "title": "phys-winner/pc_decomp_frstp",
-      "excerpt": "Experimental Frostpunk ARM64 Android port via static recompilation, with Vulkan rendering and touch controls.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -6061,11 +5885,28 @@
     "https://github.com/zengzzzzz/golang-trending-archive",
     "https://github.com/Bemly/homebrew-tahoe",
     "https://github.com/gangully123/xaerodeck-app",
-    "https://github.com/78erik/mgs5-recomp"
+    "https://github.com/78erik/mgs5-recomp",
+    "https://github.com/zettelmuseum/MrMatt",
+    "https://github.com/zettelmuseum/Atomix",
+    "https://github.com/zettelmuseum/Vexed",
+    "https://github.com/maxi000q/EvilInsidePort",
+    "https://github.com/karopkatemirisonic-hash/Sonic-Dream-Team-Android-Port",
+    "https://github.com/caos-obliquo/tboi-recomp",
+    "https://github.com/hiitsgabe/retro_toolbox",
+    "https://github.com/jackdiver/melonDS-android",
+    "https://github.com/phys-winner/pc_decomp_frstp",
+    "https://github.com/xmllua/tlou-remastered-android",
+    "https://github.com/vancopek123/FuraGPS",
+    "https://github.com/fecampossantos/wanbo-light-os",
+    "https://github.com/venkatesh4059/Buddy-First-App-",
+    "https://github.com/anmoldev06/MIRRIVO",
+    "https://github.com/Varian08/smart-local-planner",
+    "https://github.com/Aureon-R/aureon-r-client",
+    "https://github.com/BlackSingularities/OpenTakeoff"
   ],
   "agent": {
-    "lastRun": "2026-11-18T23:30Z",
-    "summary": "Abo-Anfragen #16–18 (Reihen Tomb Raider, Metal Gear, Silent Hill) erledigt: 29 neue Spiele, ~20 Fassungen, 17 Spiele zur Tiefenrecherche vorgemerkt; neue Spielwege Silent Hill – Dualscreen (Thor) und Silent-Hill-PC-Port, RollerCoaster Tycoon 2 (RCTDS) und Trails in the Sky 1st Chapter (nx2android); 21 Leads verworfen; 8 Bilder bestätigt, 2 GTA-Bilder dem richtigen Spiel zugeordnet. Wikidata/Wikipedia waren aus der Sandbox nicht erreichbar, Reihen deshalb per Websuche."
+    "lastRun": "2026-11-18T23:20Z",
+    "summary": "Abo-Anfrage #19 (Reihe Mass Effect) erledigt: 6 neue Spiele mit Fassungen (u. a. Legendary Edition, Wii-U-Fassung von ME3, Infiltrator als frühere offizielle Android-Fassung), ME1–3 zur Tiefenrecherche vorgemerkt; Warteschlange: MGS2, MGS3, Silent Hill 2 abgearbeitet (Mods MGSHDFix, CPP-Spielstände für Snake Eater 3D, SH2 Enhanced Edition – keine spielspezifischen Android-Wege belegbar); 30 Leads gesichtet: neue Wege für Celeste, Ninja Gaiden Black, Nightmare Creatures, Catherine: Full Body, Verzeichnis Awesome Switch Recomp, 17 verworfen, übrige zurückgestellt (u. a. WoW Forever: Titel unbestätigt; PS4-Ports von CrownParkComputing; FF Resonance: Titel unbestätigt; Angry-Birds-Recomp, DQ4-Recomp, skate.-Fix, Schedule-I-Companion, Horizon, Enigma, Rance 10 ohne Android-Build); 8 Bilder bestätigt. Wikipedia/Wikidata, Reddit- und YouTube-Bilder aus der Sandbox nicht erreichbar."
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",
@@ -6095,7 +5936,10 @@
     "super-metroid": "2026-11-09",
     "metroid-prime": "2026-11-09",
     "metroid-prime-2-echoes": "2026-11-10",
-    "metroid-prime-3-corruption": "2026-11-10"
+    "metroid-prime-3-corruption": "2026-11-10",
+    "silent-hill-2": "2026-11-18",
+    "metal-gear-solid-2-sons-of-liberty": "2026-11-18",
+    "metal-gear-solid-3-snake-eater": "2026-11-18"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",
@@ -6375,6 +6219,35 @@
         }
       ],
       "queued": 7
+    },
+    "Mass Effect": {
+      "date": "2026-11-18",
+      "source": "agent",
+      "listed": 8,
+      "added": [
+        "mass-effect",
+        "mass-effect-2",
+        "mass-effect-3",
+        "mass-effect-andromeda",
+        "mass-effect-galaxy",
+        "mass-effect-infiltrator"
+      ],
+      "versions": [
+        "Mass Effect Trilogy (2012)",
+        "Mass Effect Legendary Edition (2021)",
+        "Mass Effect 3 Special Edition (Wii U)"
+      ],
+      "skipped": [
+        {
+          "title": "Mass Effect: Datapad",
+          "reason": "Begleit-App, nur iOS"
+        },
+        {
+          "title": "Mass Effect: Andromeda APEX HQ",
+          "reason": "Begleit-App, Dienst eingestellt"
+        }
+      ],
+      "queued": 3
     }
   },
   "imageRequests": {

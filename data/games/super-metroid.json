@@ -400,10 +400,10 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/title-screen.png",
-          "caption": "Super Metroid title screen",
+          "caption": "Titelbildschirm im nativen Port",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/opening-cinematic.png",
@@ -414,10 +414,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-arrival.png",
-          "caption": "Samus arriving at Ceres Station",
+          "caption": "Samus kommt auf der Raumstation Ceres an",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-ridley.png",
@@ -435,10 +435,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/draygon-grapple-kill.png",
-          "caption": "Defeating Draygon through the electrified Grapple Beam conduit",
+          "caption": "Kampf gegen Draygon mit dem Greifstrahl",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [
