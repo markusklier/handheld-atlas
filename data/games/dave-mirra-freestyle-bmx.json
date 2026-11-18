@@ -47,24 +47,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-tabletop.jpg",
-          "caption": "A tabletop at Woodward, 3440x1440",
+          "caption": "Tabletop in Woodward, in 21:9",
           "source": "https://github.com/DenzoNL/open-freestyle-bmx",
           "credit": "Open Freestyle BMX",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-cancan.jpg",
-          "caption": "A can can to fast plant on a 21:9 screen",
+          "caption": "Can-Can zu Fastplant im Breitbild",
           "source": "https://github.com/DenzoNL/open-freestyle-bmx",
           "credit": "Open Freestyle BMX",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/DenzoNL/open-freestyle-bmx/HEAD/docs/images/ultrawide-menu.jpg",
-          "caption": "The level select at 21:9, with the blurred sides",
+          "caption": "Levelauswahl in 21:9 mit unscharfen Rändern",
           "source": "https://github.com/DenzoNL/open-freestyle-bmx",
           "credit": "Open Freestyle BMX",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

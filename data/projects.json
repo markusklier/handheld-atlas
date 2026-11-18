@@ -2509,6 +2509,52 @@
         "tactics-ogre-the-knight-of-lodis"
       ],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "mostwanted-android",
+      "name": "NFS: Most Wanted for Android",
+      "kind": "port",
+      "url": "https://github.com/bang-ijall/MostWanted-Android",
+      "repo": "bang-ijall/MostWanted-Android",
+      "description": "Nativer Android-Port der Xbox-Fassung von Need for Speed: Most Wanted (2005) per statischer Recompilation, Vulkan-Renderer.",
+      "games": [
+        "need-for-speed-most-wanted"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "ra3-native",
+      "name": "RA3 Native",
+      "kind": "port",
+      "url": "https://github.com/blackorange-sketch/RA3-Native",
+      "repo": "blackorange-sketch/RA3-Native",
+      "description": "Command & Conquer: Red Alert 3 nativ auf Android per statischer Recompilation (ohne Winlator/Box64).",
+      "games": [
+        "command-and-conquer-red-alert-3"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "cyberia-recomp",
+      "name": "Cyberia Recomp",
+      "kind": "port",
+      "url": "https://github.com/mxvisor/cyberia-recomp",
+      "repo": "mxvisor/cyberia-recomp",
+      "description": "Nativer Port von Cyberia (DOS, 1994) für Linux, Windows und Android per statischer Recompilation mit SR.",
+      "games": [
+        "cyberia"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "port-launcher",
+      "name": "port-launcher",
+      "kind": "launcher",
+      "url": "https://github.com/AlexanderOttenhoff/port-launcher",
+      "repo": "AlexanderOttenhoff/port-launcher",
+      "description": "Android-App, die native N64-Decomp-Ports (Ship of Harkinian, 2 Ship 2 Harkinian, Ghostship, Starship u. a.) als herunterladbare Module startet; frühe, instabile Alpha.",
+      "games": [],
+      "checkedAt": "2026-11-18"
     }
   ]
 }

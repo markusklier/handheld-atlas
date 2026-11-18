@@ -41,65 +41,9 @@
       "foundAt": "2026-11-18"
     },
     {
-      "url": "https://github.com/weegee721/melonDS-android",
-      "title": "weegee721/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "Android port of melonDS",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/uplush/melonDS-android",
-      "title": "uplush/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "Android port of melonDS",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/51k0/Prince-Of-Persia-2008-Android-port",
-      "title": "51k0/Prince-Of-Persia-2008-Android-port",
-      "excerpt": "This is a native android port of the jave / j2me game Prince of Persia 2008 . i made this game with the help of multiple ai and a little bit of experience this is my first port and i hope you enjoy like i did. ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/51k0/Prince-of-Persia-2008-java-android-port-",
-      "title": "51k0/Prince-of-Persia-2008-java-android-port-",
-      "excerpt": "This is a native android port of the jave / j2me game Prince of Persia 2008 . i made this game with the help of multiple ai and a little bit of experience this is my first port and i hope you enjoy like i did. ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/yanm1103/grandchase-featurephone-recomp",
       "title": "yanm1103/grandchase-featurephone-recomp",
       "excerpt": "Static recompilation (ARM/WIPI-C → C) of the Korean feature-phone game Grand Chase, with SDL3 runtime, PT-BR retranslation and Android port. No game files included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/bang-ijall/MostWanted-Android",
-      "title": "bang-ijall/MostWanted-Android",
-      "excerpt": "Native Android port of Need for Speed: Most Wanted (Xbox, 2005): static recompilation to C++ with a Vulkan renderer, up to 120 fps. Bring your own game ISO.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/blackorange-sketch/RA3-Native",
-      "title": "blackorange-sketch/RA3-Native",
-      "excerpt": "Native Android port of Red Alert 3 (tools only, no game files)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/AlexanderOttenhoff/port-launcher",
-      "title": "AlexanderOttenhoff/port-launcher",
-      "excerpt": "One Android app running native N64 decomp ports as downloadable modules (soft launch, highly unstable)",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-17"
@@ -129,113 +73,9 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/do-nda/ARM-Turismo4",
-      "title": "do-nda/ARM-Turismo4",
-      "excerpt": "Very early alpha for an ARM recomp of Gran Turismo 4 for Switch and Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/Berny23/slingshot-animals-recomp",
       "title": "Berny23/slingshot-animals-recomp",
       "excerpt": "Unofficial static recompilation of Rovio's old Android Angry Birds games. Classic, Seasons, Rio, Space, Star Wars, Star Wars 2, Stella.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/mxvisor/cyberia-recomp",
-      "title": "mxvisor/cyberia-recomp",
-      "excerpt": "Native port of Cyberia (1994, DOS) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/bbauska/Road-to-Unfreedom",
-      "title": "bbauska/Road-to-Unfreedom",
-      "excerpt": "From Timothy Snyder, the Road to Unfreedom.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/puresinghara/pure-news",
-      "title": "puresinghara/pure-news",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/b3taisadonna/-droidbridge-pro",
-      "title": "b3taisadonna/-droidbridge-pro",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/sergopng/DroidBridge",
-      "title": "sergopng/DroidBridge",
-      "excerpt": "Android file transfer for macOS. Browse files over USB MTP or ADB, mirror and record the screen with scrcpy, manage APKs, and flash images with Fastboot.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/N4UX-GIT/Offhand-DualMonitor",
-      "title": "N4UX-GIT/Offhand-DualMonitor",
-      "excerpt": "Equip your Offhand. Dual wield your monitors!",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/notionmaster001-max/vice-city-companion-starter",
-      "title": "notionmaster001-max/vice-city-companion-starter",
-      "excerpt": "Open-Source Dual-Screen Quest Tracker & Checklist for Console & PC Gaming (2026 Starter Edition)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/alex61194/twin-embers",
-      "title": "alex61194/twin-embers",
-      "excerpt": "Native Nintendo 3DS port of Pokémon FireRed. Source only; build it with your own ROM.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/ClausMunch/ayn-ship-estimator",
-      "title": "ClausMunch/ayn-ship-estimator",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/gabrieldig/BMA_Ayn_Thor",
-      "title": "gabrieldig/BMA_Ayn_Thor",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-tandem",
-      "title": "harmssi/thor-tandem",
-      "excerpt": "Toravo Tandem: dual-screen game launcher for ArmadaOS on the AYN Thor (native Qt, per-game companion screens, bring your own games)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/sommepo/furoshiki",
-      "title": "sommepo/furoshiki",
-      "excerpt": "A game launcher for Android and Windows with sentence mining and text hooking built in.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-17"
@@ -6376,13 +6216,27 @@
     "https://github.com/aniruddhashelke20/eT617-endsem-24B0748",
     "https://github.com/endean-eng/zero-telemetry-kids",
     "https://github.com/geobasinas/ormicode",
-    "https://github.com/Tr0j4n1/HeyMelody-Windows"
+    "https://github.com/Tr0j4n1/HeyMelody-Windows",
+    "https://github.com/weegee721/melonDS-android",
+    "https://github.com/uplush/melonDS-android",
+    "https://github.com/51k0/Prince-Of-Persia-2008-Android-port",
+    "https://github.com/51k0/Prince-of-Persia-2008-java-android-port-",
+    "https://github.com/do-nda/ARM-Turismo4",
+    "https://github.com/bbauska/Road-to-Unfreedom",
+    "https://github.com/puresinghara/pure-news",
+    "https://github.com/b3taisadonna/-droidbridge-pro",
+    "https://github.com/sergopng/DroidBridge",
+    "https://github.com/N4UX-GIT/Offhand-DualMonitor",
+    "https://github.com/notionmaster001-max/vice-city-companion-starter",
+    "https://github.com/alex61194/twin-embers",
+    "https://github.com/ClausMunch/ayn-ship-estimator",
+    "https://github.com/gabrieldig/BMA_Ayn_Thor",
+    "https://github.com/harmssi/thor-tandem",
+    "https://github.com/sommepo/furoshiki"
   ],
   "agent": {
-    "lastRun": "2026-11-18T21:30:00Z",
-    "summary": "2 abo-Anfragen (The Sims Medieval, doppelt) erledigt; Warteschlange: Wind Waker (ZeldaWWHDRecomp geprüft, einziger Eintrag); neue Wege TotK Native, BotW Native, XC3-Port (Retroid), neues Spiel Knight of Lodis mit Recomp; 12 Bilder bestätigt, 2 entfernt; 33 Leads bearbeitet (30 verworfen, 5 Puzzle-Ports von zettelmuseum zurückgestellt); Originalfassungen von Dave the Diver, Stardew Valley, Cult of the Lamb korrigiert.",
-    "processed": 33,
-    "rejected": 30
+    "lastRun": "2026-11-18T22:38Z",
+    "summary": "Abo-Anfrage #15 (NFS Underground 2) erledigt; 3 neue Spiele mit nativen Ports (NFS Most Wanted, Red Alert 3, Cyberia) und port-launcher aus 30 Leads, 16 Leads verworfen, 10 vertagt (Akka Arrh/Polybius/Evil Inside/Angry-Birds-Recomp, zettelmuseum-Puzzleports, Grand Chase); Bildprüfung 5 bestätigt, 8 entfernt. Warteschlange war leer."
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",

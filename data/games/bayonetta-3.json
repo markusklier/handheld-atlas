@@ -122,28 +122,14 @@
           "caption": "Android-Launcher mit Datenprüfung und Leistungsprofilen",
           "source": "https://github.com/aoxzh/bayo3-recomp",
           "credit": "Bayonetta 3 Recomp",
-          "check": "ai-unclear"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/launcher-desktop-home.jpg",
-          "caption": "Bayonetta 3 Recomp desktop launcher on Windows: rain dark city, Bayonetta 3 word",
-          "source": "https://github.com/aoxzh/bayo3-recomp",
-          "credit": "Bayonetta 3 Recomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/chapter8-gameplay.png",
-          "caption": "Bayonetta 3 native Windows recompilation gameplay in Chapter 8",
+          "caption": "Spielszene aus Kapitel 8 (Recomp, Windows)",
           "source": "https://github.com/aoxzh/bayo3-recomp",
           "credit": "Bayonetta 3 Recomp",
-          "check": "ai-unclear"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/aoxzh/bayo3-recomp/HEAD/docs/images/launcher-desktop-settings.jpg",
-          "caption": "Bayonetta 3 Recomp desktop launcher settings on Windows and Steam Deck",
-          "source": "https://github.com/aoxzh/bayo3-recomp",
-          "credit": "Bayonetta 3 Recomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "reports": [],

@@ -1,0 +1,93 @@
+{
+  "id": "cyberia",
+  "title": "Cyberia",
+  "franchise": "Cyberia",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Ein nativer Port per statischer Recompilation (SR) läuft auf Android mit Bildschirmtasten – die APK muss man aber selbst aus der eigenen CD bauen.",
+  "versions": [
+    {
+      "id": "dos",
+      "name": "MS-DOS (1994)",
+      "type": "original",
+      "year": 1994,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Von Xatrix Entertainment, veröffentlicht von Interplay; vorgerenderte 3D-Szenen und Flugsequenzen.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cyberia_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "konsolen",
+      "name": "FM Towns/3DO/Saturn/PlayStation (1995–1996)",
+      "type": "port",
+      "year": 1995,
+      "platforms": [
+        "FM Towns",
+        "3DO",
+        "Sega Saturn",
+        "PlayStation"
+      ],
+      "note": "Portierungen 1995 (FM Towns, Japan) und 1996 (3DO, Saturn, PlayStation).",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cyberia_(video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "cyberia-recomp",
+      "name": "Cyberia Recomp",
+      "release": "dos",
+      "kind": "recomp",
+      "edition": "DOS-CD (russische oder englische Fassung, CYB.EXE V1.86)",
+      "runtime": "SR + SR-SDK (SDL2), statisch nach ARM64 recompiliert",
+      "projects": [
+        "cyberia-recomp"
+      ],
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "linux-arm64",
+        "windows-x86_64"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Cyberia-CD (als Image, auch für den Build nötig)",
+        "Android SDK/NDK zum Selbstbauen (make apk)"
+      ],
+      "benefit": "Die Originallogik läuft nativ; Bildschirmtasten ersetzen die Tastatur, eigenes Port-Menü für Bildgröße.",
+      "caveat": "Keine fertige APK belegt – der Build braucht die eigene CD. Controller-Unterstützung auf Android nicht dokumentiert.",
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mxvisor/cyberia-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-18"
+    }
+  ],
+  "mods": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Cyberia_(video_game)",
+  "updatedAt": "2026-11-18"
+}

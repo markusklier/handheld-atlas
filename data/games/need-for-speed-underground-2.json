@@ -1,0 +1,101 @@
+{
+  "id": "need-for-speed-underground-2",
+  "title": "Need for Speed: Underground 2",
+  "franchise": "Need for Speed",
+  "platforms": [
+    "PC",
+    "PlayStation 2",
+    "Xbox",
+    "Nintendo GameCube"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Kein nativer Android-Port bekannt: Auf dem Handheld bleibt PS2- oder GameCube-Emulation, für die PC-Fassung eine PC-Laufzeitumgebung (Winlator/GameHub) samt Widescreen Fix. Belege für den Thor fehlen noch.",
+  "versions": [
+    {
+      "id": "pc-konsolen-2004",
+      "name": "PC/PS2/Xbox/GameCube (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "PC",
+        "PlayStation 2",
+        "Xbox",
+        "Nintendo GameCube"
+      ],
+      "note": "Von EA Black Box: offene Stadt Bayview, ausgebautes Tuning und SUVs. Laut PCSX2-Wiki in allen Regionen spielbar, einzelne Effekte (z. B. Smog) werden teils falsch dargestellt.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        },
+        {
+          "label": "PCSX2-Wiki",
+          "url": "https://wiki.pcsx2.net/Need_for_Speed_Underground_2"
+        }
+      ]
+    },
+    {
+      "id": "gba",
+      "name": "Game Boy Advance (2004)",
+      "type": "port",
+      "year": 2004,
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "note": "Eigene Handheld-Fassung von Pocketeers.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ]
+    },
+    {
+      "id": "nds",
+      "name": "Nintendo DS (2005)",
+      "type": "port",
+      "year": 2005,
+      "platforms": [
+        "Nintendo DS"
+      ],
+      "note": "Eigene DS-Fassung (laut Wikipedia von Pocketeers; die Infobox nennt zusätzlich Team Fusion).",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "name": "Handy (Java ME)",
+      "type": "port",
+      "platforms": [
+        "Java ME"
+      ],
+      "note": "Eigenständige Handy-Fassung von Ideaworks Game Studio.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [
+    {
+      "id": "nfsu2-widescreen-fix",
+      "name": "NFSU2 Widescreen Fix (WidescreenFixesPack)",
+      "category": "widescreen-fps",
+      "release": [
+        "pc-konsolen-2004"
+      ],
+      "url": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/nfsu2",
+      "edition": "PC-Fassung",
+      "description": "Beliebige Auflösungen inkl. 16:9, korrigiertes Sichtfeld und HUD, 16:9-Videos, Bildratenbegrenzung, Analogstick-Totzonen und Konsolen-Tastensymbole. Ob es unter Winlator/GameHub läuft, ist nicht belegt.",
+      "verification": "ai-unverified"
+    }
+  ],
+  "updatedAt": "2026-11-18"
+}

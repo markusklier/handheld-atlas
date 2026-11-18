@@ -4,6 +4,53 @@
       "date": "2026-11-18",
       "type": "game-added",
       "by": "agent",
+      "game": "need-for-speed-underground-2",
+      "text": "Neues Spiel: Need for Speed: Underground 2 mit allen Fassungen (2004/2005) und Widescreen Fix für die PC-Fassung; kein nativer Android-Port bekannt (Anfrage #15)",
+      "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "need-for-speed-most-wanted",
+      "text": "Neues Spiel: Need for Speed: Most Wanted (2005) mit nativem Android-Port der Xbox-Fassung (Recomp, Vulkan, bis 120 Hz; KI-Fund)",
+      "url": "https://github.com/bang-ijall/MostWanted-Android"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "command-and-conquer-red-alert-3",
+      "text": "Neues Spiel: Command & Conquer: Red Alert 3 mit RA3 Native – PC-Fassung nativ auf Android ohne Winlator (KI-Fund)",
+      "url": "https://github.com/blackorange-sketch/RA3-Native"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "cyberia",
+      "text": "Neues Spiel: Cyberia (1994) mit nativem Recomp-Port für Android (selbst bauen; KI-Fund)",
+      "url": "https://github.com/mxvisor/cyberia-recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "project-added",
+      "by": "agent",
+      "game": null,
+      "text": "Neues Projekt: port-launcher – startet N64-Decomp-Ports als Module in einer Android-App (frühe Alpha)",
+      "url": "https://github.com/AlexanderOttenhoff/port-launcher"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": null,
+      "text": "Bildprüfung: 5 Spielweg-Bilder bestätigt (Bayonetta 3, Dave Mirra BMX), 8 unpassende entfernt (andere Spiele bei DOOM, Desktop-Launcher bei Bayonetta 3)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
       "game": "the-sims-medieval",
       "text": "The Sims Medieval: Fassungen ergänzt (PC/Mac 2011, iOS 2011, Java ME 2011, Windows Phone 2013); kein Android-Port, PC-Laufzeiten und J2ME-Emulation infrage (Rechercheanfrage)",
       "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
