@@ -60,11 +60,12 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/3a03aa94-4b24-4ef8-81fb-3537eb4bb4a2"
         }
-      ]
+      ],
+      "year": 2006
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q1996911",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_Portable_Ops",
   "genre": "action-adventure game"

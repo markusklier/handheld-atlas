@@ -4,7 +4,9 @@
   "franchise": "Tomb Raider",
   "platforms": [
     "PlayStation",
-    "PC"
+    "PC",
+    "iOS",
+    "Android"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20II%20-%20Starring%20Lara%20Croft%20%28USA%29.png",
@@ -65,10 +67,27 @@
           "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
         }
       ]
+    },
+    {
+      "id": "mobile-classic",
+      "name": "iOS (2014) und Android (2015)",
+      "type": "android",
+      "year": 2014,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.pocketgamer.com/tomb-raider-ii/tomb-raider-ii-just-back-flipped-out-of-the-past-and-landed-on-android"
+        }
+      ],
+      "note": "Portierung des Originals mit Touch- und Controllersteuerung; iOS im Dezember 2014, Android im Oktober 2015."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "summary": "Das PlayStation-Original per Emulation oder die Remastered-Sammlung, die es inzwischen auch als offizielle Android-Fassung gibt.",
   "wikidata": "Q816451",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider_II",

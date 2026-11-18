@@ -1,0 +1,56 @@
+{
+  "id": "metal-gear-solid-v-the-phantom-pain",
+  "title": "Metal Gear Solid V: The Phantom Pain",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "PlayStation 4",
+    "Xbox 360",
+    "Xbox One"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Open-World-Hauptteil von 2015; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 3/4, Xbox 360/One (2015)",
+      "type": "original",
+      "year": 2015,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4",
+        "Xbox 360",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "definitive-experience",
+      "name": "The Definitive Experience (2016)",
+      "type": "collection",
+      "year": 2016,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Ground Zeroes und The Phantom Pain mit allen Zusatzinhalten."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

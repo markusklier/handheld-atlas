@@ -82,12 +82,14 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/1bb0b535-ac18-420d-adbc-3fcd623b015d"
         }
-      ]
+      ],
+      "year": 2004
     }
   ],
   "routes": [],
   "updatedAt": "2026-11-08",
   "wikidata": "Q2480047",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_The_Twin_Snakes",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "remakeOf": "metal-gear-solid"
 }

@@ -217,17 +217,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/launcher-get-mods.jpg",
-          "caption": "Get mods: Memoria's catalog with search and categories",
+          "caption": "Launcher: Mod-Katalog von Memoria mit Suche und Kategorien",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/bhuiyah/ff9-recomp-android/HEAD/docs/images/launcher-mods.jpg",
-          "caption": "Mods: on and off, load order, info and remove",
+          "caption": "Launcher: Mods ein-/ausschalten und Ladereihenfolge festlegen",
           "source": "https://github.com/bhuiyah/ff9-recomp-android",
           "credit": "FF9Recomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

@@ -1,0 +1,74 @@
+{
+  "id": "rollercoaster-tycoon-2",
+  "title": "RollerCoaster Tycoon 2",
+  "franchise": "RollerCoaster Tycoon",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Wirtschaftssimulation",
+  "summary": "Über OpenRCT2 nativ auf Android spielbar; RCTDS nutzt den zweiten Bildschirm des Thor für Menüs und Bauwerkzeuge.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2002)",
+      "type": "original",
+      "year": 2002,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Die Spieldaten dieser Fassung braucht OpenRCT2.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_2"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "rct2-rctds",
+      "name": "RCTDS (Dual Screen)",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC",
+      "runtime": "OpenRCT2 (Android)",
+      "projects": [
+        "rctds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch",
+        "native-arm"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Park oben; Menüs, Bauwerkzeuge und Parkverwaltung auf dem unteren Touchscreen (Bauwerkzeuge können ihn ganz füllen)",
+      "requires": [
+        "Eigene Spieldaten von RollerCoaster Tycoon 2 (für RCT1-Inhalte zusätzlich RollerCoaster Tycoon 1)"
+      ],
+      "benefit": "Für den AYN Thor gebaut: Die Maussteuerung wandert auf den Touchscreen unten, der Park bleibt oben frei.",
+      "caveat": "Junges Community-Projekt; das Projekt nennt nur den AYN Thor. Ob eine fertige APK in den Releases liegt, war bei der Prüfung nicht erkennbar.",
+      "version": "RCTDS0.13",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrmushrooms11/RCTDS"
+        },
+        {
+          "label": "Release RCTDS0.13",
+          "url": "https://github.com/mrmushrooms11/RCTDS/releases/tag/RCTDS0.13"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

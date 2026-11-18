@@ -1,0 +1,55 @@
+{
+  "id": "metal-gear-ghost-babel",
+  "title": "Metal Gear: Ghost Babel",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "Game Boy / Game Boy Color",
+    "PC",
+    "Nintendo Switch",
+    "Nintendo Switch 2",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Eigenständiges Game-Boy-Color-Metal-Gear (im Westen als „Metal Gear Solid“); seit 2026 in der Master Collection Vol. 2.",
+  "versions": [
+    {
+      "id": "game-boy-color",
+      "name": "Game Boy Color (2000)",
+      "type": "original",
+      "year": 2000,
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-2",
+      "name": "Master Collection Vol. 2 (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "Nintendo Switch 2",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

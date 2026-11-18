@@ -1,0 +1,30 @@
+{
+  "id": "metal-gear-solid-touch",
+  "title": "Metal Gear Solid Touch",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "iOS"
+  ],
+  "genre": "Rail-Shooter",
+  "summary": "Touch-Shooter für iPhone zu MGS4, nicht mehr erhältlich.",
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

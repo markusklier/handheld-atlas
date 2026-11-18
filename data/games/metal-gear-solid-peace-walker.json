@@ -3,7 +3,15 @@
   "title": "Metal Gear Solid: Peace Walker",
   "franchise": "Metal Gear",
   "platforms": [
-    "PSP"
+    "PSP",
+    "PlayStation 3",
+    "Xbox 360",
+    "PlayStation Vita",
+    "PC",
+    "Nintendo Switch",
+    "Nintendo Switch 2",
+    "PlayStation 5",
+    "Xbox Series"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Metal%20Gear%20Solid%20-%20Peace%20Walker%20%28USA%29%20%28En%2CFr%2CEs%29%20%28v1.01%29.png",
@@ -60,11 +68,50 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/234bbac6-40eb-4ca5-9732-ab1279dc37c7"
         }
-      ]
+      ],
+      "year": 2010
+    },
+    {
+      "id": "hd-collection",
+      "name": "Metal Gear Solid HD Collection (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "HD-Sammlung mit MGS2, MGS3 und Peace Walker; die Vita-Fassung erschien 2012."
+    },
+    {
+      "id": "master-collection-vol-2",
+      "name": "Master Collection Vol. 2 (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "Nintendo Switch 2",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q2005935",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_Peace_Walker",
   "genre": "action-adventure game"

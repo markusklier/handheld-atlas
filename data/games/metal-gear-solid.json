@@ -3,7 +3,12 @@
   "title": "Metal Gear Solid",
   "franchise": "Metal Gear",
   "platforms": [
-    "PlayStation"
+    "PlayStation",
+    "PC",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox Series"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Metal%20Gear%20Solid%20%28USA%29.png",
@@ -28,11 +33,49 @@
       "type": "original",
       "platforms": [
         "PlayStation"
-      ]
+      ],
+      "year": 1998
+    },
+    {
+      "id": "integral",
+      "name": "Metal Gear Solid: Integral (1999)",
+      "type": "rerelease",
+      "year": 1999,
+      "platforms": [
+        "PlayStation",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Erweiterte Fassung mit VR-Missionen; PC-Fassung 2000."
+    },
+    {
+      "id": "master-collection-vol-1",
+      "name": "Master Collection Vol. 1 (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q6582527",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_%28video_game%29",
   "genre": "action-adventure game",

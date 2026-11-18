@@ -3,7 +3,10 @@
   "title": "Silent Hill 3",
   "franchise": "Silent Hill",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Silent%20Hill%203%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29.png",
@@ -28,11 +31,44 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
+      ],
+      "year": 2003
+    },
+    {
+      "id": "pc-2003",
+      "name": "PC (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
       ]
+    },
+    {
+      "id": "hd-collection",
+      "name": "Silent Hill HD Collection (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "note": "HD-Sammlung mit Silent Hill 2 und 3 (neu eingesprochen, umstritten)."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q837338",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_3",
   "genre": "psychological horror fiction",

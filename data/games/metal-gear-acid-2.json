@@ -1,0 +1,30 @@
+{
+  "id": "metal-gear-acid-2",
+  "title": "Metal Gear Acid 2",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PSP"
+  ],
+  "genre": "Taktik/Kartenspiel",
+  "summary": "Fortsetzung des Karten-Ablegers für die PSP.",
+  "versions": [
+    {
+      "id": "psp",
+      "name": "PSP (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

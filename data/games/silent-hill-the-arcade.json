@@ -1,0 +1,30 @@
+{
+  "id": "silent-hill-the-arcade",
+  "title": "Silent Hill: The Arcade",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "Arcade"
+  ],
+  "genre": "Lightgun-Shooter",
+  "summary": "Lightgun-Ableger für Spielhallen (2007).",
+  "versions": [
+    {
+      "id": "arcade",
+      "name": "Arcade (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Arcade"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

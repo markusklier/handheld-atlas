@@ -1,0 +1,34 @@
+{
+  "id": "silent-hill-homecoming",
+  "title": "Silent Hill: Homecoming",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360",
+    "PC"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Hauptteil von 2008 für PS3, Xbox 360 und PC.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PlayStation 3, Xbox 360 (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

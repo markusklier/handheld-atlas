@@ -1,0 +1,30 @@
+{
+  "id": "silent-hill-book-of-memories",
+  "title": "Silent Hill: Book of Memories",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation Vita"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Dungeon-Crawler-Ableger exklusiv für die PS Vita.",
+  "versions": [
+    {
+      "id": "vita",
+      "name": "PlayStation Vita (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

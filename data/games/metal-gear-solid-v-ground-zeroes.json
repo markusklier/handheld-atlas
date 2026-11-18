@@ -1,0 +1,56 @@
+{
+  "id": "metal-gear-solid-v-ground-zeroes",
+  "title": "Metal Gear Solid V: Ground Zeroes",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "PlayStation 4",
+    "Xbox 360",
+    "Xbox One"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Prolog zu The Phantom Pain mit offener Militärbasis.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 3/4, Xbox 360/One (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4",
+        "Xbox 360",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "definitive-experience",
+      "name": "The Definitive Experience (2016)",
+      "type": "collection",
+      "year": 2016,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Ground Zeroes und The Phantom Pain mit allen Zusatzinhalten."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

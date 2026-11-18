@@ -3,7 +3,17 @@
   "title": "Metal Gear Solid 3: Snake Eater",
   "franchise": "Metal Gear",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "PlayStation 3",
+    "Xbox 360",
+    "PlayStation Vita",
+    "Nintendo 3DS",
+    "Android",
+    "PC",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox Series"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Metal%20Gear%20Solid%203%20-%20Snake%20Eater%20%28USA%29.png",
@@ -28,11 +38,98 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
-      ]
+      ],
+      "year": 2004
+    },
+    {
+      "id": "subsistence",
+      "name": "Subsistence (2005)",
+      "type": "rerelease",
+      "year": 2005,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Erweiterte Fassung mit frei drehbarer Kamera."
+    },
+    {
+      "id": "hd-collection",
+      "name": "Metal Gear Solid HD Collection (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "HD-Sammlung mit MGS2, MGS3 und Peace Walker; die Vita-Fassung erschien 2012."
+    },
+    {
+      "id": "snake-eater-3d",
+      "name": "Snake Eater 3D (2012)",
+      "type": "port",
+      "year": 2012,
+      "platforms": [
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Portierung für den 3DS mit stereoskopischem 3D."
+    },
+    {
+      "id": "shield-2017",
+      "name": "NVIDIA Shield TV (2017)",
+      "type": "android",
+      "year": 2017,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.androidauthority.com/metal-gear-solid-3-snake-eater-hd-download-nvidia-shield-tv-google-play-store-816627"
+        }
+      ],
+      "note": "HD-Fassung, im November 2017 nur für NVIDIA Shield TV im Play Store; auf anderen Android-Geräten (auch dem Thor) nicht installierbar."
+    },
+    {
+      "id": "master-collection-vol-1",
+      "name": "Master Collection Vol. 1 (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q247935",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_3%3A_Snake_Eater",
   "genre": "action-adventure game"

@@ -1,0 +1,55 @@
+{
+  "id": "metal-gear-solid-4-guns-of-the-patriots",
+  "title": "Metal Gear Solid 4: Guns of the Patriots",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PlayStation 3",
+    "PC",
+    "Nintendo Switch",
+    "Nintendo Switch 2",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Lange PS3-exklusiv; seit 2026 in der Master Collection Vol. 2 auch für PC und andere Konsolen.",
+  "versions": [
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-2",
+      "name": "Master Collection Vol. 2 (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "Nintendo Switch 2",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

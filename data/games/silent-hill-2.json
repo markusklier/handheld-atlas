@@ -3,7 +3,11 @@
   "title": "Silent Hill 2",
   "franchise": "Silent Hill",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "Xbox",
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
@@ -28,11 +32,47 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
-      ]
+      ],
+      "year": 2001
+    },
+    {
+      "id": "restless-dreams",
+      "name": "Restless Dreams / Director's Cut (2001)",
+      "type": "rerelease",
+      "year": 2001,
+      "platforms": [
+        "Xbox",
+        "PC",
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "note": "Erweiterte Fassung mit dem Szenario „Born from a Wish“; PC-Fassung 2002 – Basis der Fan-Mod „Enhanced Edition“."
+    },
+    {
+      "id": "hd-collection",
+      "name": "Silent Hill HD Collection (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "note": "HD-Sammlung mit Silent Hill 2 und 3 (neu eingesprochen, umstritten)."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q752835",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_2",
   "genre": "psychological horror fiction"

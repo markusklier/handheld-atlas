@@ -1,0 +1,32 @@
+{
+  "id": "metal-gear-solid-mobile",
+  "title": "Metal Gear Solid Mobile",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "Java ME",
+    "Nokia N-Gage"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Handyspiel von 2008 (Java-Telefone und N-Gage).",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "Mobiltelefone und N-Gage (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "Java ME",
+        "Nokia N-Gage"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

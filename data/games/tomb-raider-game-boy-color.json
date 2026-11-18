@@ -1,0 +1,30 @@
+{
+  "id": "tomb-raider-game-boy-color",
+  "title": "Tomb Raider (Game Boy Color)",
+  "franchise": "Tomb Raider",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Eigenständiges 2D-Tomb-Raider von Core Design für den Game Boy Color (2000), Vorgänger von Curse of the Sword.",
+  "versions": [
+    {
+      "id": "game-boy-color",
+      "name": "Game Boy Color (2000)",
+      "type": "original",
+      "year": 2000,
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider_(Game_Boy_Color)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

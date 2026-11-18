@@ -3,7 +3,17 @@
   "title": "Metal Gear Solid 2: Sons of Liberty",
   "franchise": "Metal Gear",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "Xbox",
+    "PC",
+    "PlayStation 3",
+    "Xbox 360",
+    "PlayStation Vita",
+    "Android",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox Series"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Metal%20Gear%20Solid%202%20-%20Sons%20of%20Liberty%20%28USA%29.png",
@@ -28,11 +38,84 @@
       "type": "original",
       "platforms": [
         "PlayStation 2"
-      ]
+      ],
+      "year": 2001
+    },
+    {
+      "id": "substance",
+      "name": "Substance (2002)",
+      "type": "rerelease",
+      "year": 2002,
+      "platforms": [
+        "Xbox",
+        "PlayStation 2",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Erweiterte Fassung mit Zusatzmissionen; PS2 und PC 2003."
+    },
+    {
+      "id": "hd-collection",
+      "name": "Metal Gear Solid HD Collection (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360",
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "HD-Sammlung mit MGS2, MGS3 und Peace Walker; die Vita-Fassung erschien 2012."
+    },
+    {
+      "id": "shield-2017",
+      "name": "NVIDIA Shield TV (2017)",
+      "type": "android",
+      "year": 2017,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.androidpolice.com/2017/08/24/konamis-metal-gear-solid-2-sons-liberty-hd-edition-available-nvidia-shield-tv-sale/"
+        }
+      ],
+      "note": "HD-Fassung, im August 2017 nur für NVIDIA Shield TV im Play Store; auf anderen Android-Geräten (auch dem Thor) nicht installierbar."
+    },
+    {
+      "id": "master-collection-vol-1",
+      "name": "Master Collection Vol. 1 (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q907226",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_2%3A_Sons_of_Liberty",
   "genre": "action-adventure game"

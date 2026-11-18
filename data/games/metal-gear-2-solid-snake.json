@@ -1,0 +1,55 @@
+{
+  "id": "metal-gear-2-solid-snake",
+  "title": "Metal Gear 2: Solid Snake",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "MSX2",
+    "PC",
+    "Nintendo Switch",
+    "PlayStation 4",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "MSX2-Fortsetzung von 1990, ursprünglich nur in Japan; offiziell in der Master Collection Vol. 1 enthalten.",
+  "versions": [
+    {
+      "id": "msx2",
+      "name": "MSX2 (1990)",
+      "type": "original",
+      "year": 1990,
+      "platforms": [
+        "MSX2"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-1",
+      "name": "Master Collection Vol. 1 (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

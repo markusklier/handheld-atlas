@@ -1,0 +1,34 @@
+{
+  "id": "silent-hill-f",
+  "title": "Silent Hill f",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PC",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Im Japan der 1960er spielender Hauptteil (2025).",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 5, Xbox Series (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
+        "PC",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.techloy.com/everything-to-know-about-silent-hill-f-release-date-platforms-and-global-launch-times/"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

@@ -1,3 +1,89 @@
 {
-  "jobs": []
+  "jobs": [
+    {
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid-3-snake-eater",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-2",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid-peace-walker",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid-4-guns-of-the-patriots",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid-v-the-phantom-pain",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-3",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-downpour",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-2-remake",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-f",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "metal-gear-solid-delta-snake-eater",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-origins",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "silent-hill-shattered-memories",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "tomb-raider-ii",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "tomb-raider-legend",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    },
+    {
+      "game": "tomb-raider-2013",
+      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
+      "added": "2026-11-18"
+    }
+  ]
 }

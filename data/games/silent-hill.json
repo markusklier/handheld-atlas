@@ -84,12 +84,130 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/6fef90f9-c905-4d06-9aab-5f3a295d6b01"
         }
-      ]
+      ],
+      "year": 1999
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "sh-dualscreen",
+      "name": "Silent Hill – Dualscreen",
+      "release": "playstation",
+      "kind": "native-mod",
+      "edition": "PlayStation (USA)",
+      "runtime": "Android-Port auf Basis der Silent-Hill-Dekompilierung",
+      "projects": [
+        "silent-hill-dualscreen",
+        "silent-hill-pc-port"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "native-arm",
+        "controller",
+        "touch",
+        "mods"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Papierkarte mit Harrys Live-Position, Statusanzeige und antippbares Inventar (Waffen, Heilung, Taschenlampe, Radio)",
+      "requires": [
+        "Eigene Silent-Hill-Disc (PlayStation, USA) als selbst erstelltes .bin/.cue-Image",
+        "Android 7 oder neuer, 64-Bit (arm64)"
+      ],
+      "benefit": "Kein Emulator: nativer Port mit eigener Oberfläche für den zweiten Bildschirm; auf dem Thor läuft das Spiel oben, Karte/Status/Items unten. Kostüm-Mods seit v1.1.",
+      "caveat": "Junges Fan-Projekt (v1.2 vom 2. November 2026). Saves liegen im App-Ordner und gehen bei der Deinstallation verloren – vorher sichern. APK nur aus den GitHub-Releases beziehen.",
+      "steps": [
+        "Neueste APK aus den GitHub-Releases installieren.",
+        "Eigenes .bin und .cue nach Download/gamedata kopieren.",
+        "App öffnen, „Zugriff auf alle Dateien“ erlauben; auf Dual-Screen-Geräten „Über anderen Apps einblenden“ erlauben."
+      ],
+      "version": "v1.2 (2026-11-02)",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/TheYellowBee/silent-hill-dualscreen/main/images/thor-school-map.png",
+          "caption": "AYN Thor: Schule oben, Live-Karte mit Harrys Pfeil unten",
+          "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
+          "credit": "Silent Hill – Dualscreen",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheYellowBee/silent-hill-dualscreen/main/images/every-screen.png",
+          "caption": "Ansichten auf RG DS, Galaxy Fold6, AYN Thor und Pixel 8 Pro",
+          "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
+          "credit": "Silent Hill – Dualscreen",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/TheYellowBee/silent-hill-dualscreen"
+        },
+        {
+          "label": "Release v1.2",
+          "url": "https://github.com/TheYellowBee/silent-hill-dualscreen/releases/tag/v1.2"
+        },
+        {
+          "label": "Reddit (Vorstellung)",
+          "url": "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/silent_hill_1_dualscreen_mod_for_android_rg_ds/"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "sh-pc-port-android",
+      "name": "Silent Hill PC-Port – Android-Build",
+      "release": "playstation",
+      "kind": "decomp",
+      "edition": "PlayStation (USA)",
+      "runtime": "Nativer Port der Dekompilierung (PsyCross)",
+      "projects": [
+        "silent-hill-pc-port"
+      ],
+      "targets": [
+        "android",
+        "windows-x86_64"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Silent-Hill-Disc (PlayStation, USA, SLUS-00707) als selbst erstelltes .bin-Image"
+      ],
+      "benefit": "Nativer Port statt PS1-Emulation; Mod-Ordner (gamedata/load, texturemods) und anpassbare Steuerung auf Android.",
+      "caveat": "Beta („crossplatform-beta“, September 2026); die Android-Fassung war laut Autor ursprünglich für Arcade1Up-Automaten gedacht. Für zwei Bildschirme ist der Ableger „Silent Hill – Dualscreen“ die bessere Wahl.",
+      "version": "crossplatform-beta (2026-09-04)",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp"
+        },
+        {
+          "label": "Release",
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
+  "updatedAt": "2026-11-18",
   "wikidata": "Q753164",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_%28video_game%29",
-  "genre": "psychological horror fiction"
+  "genre": "psychological horror fiction",
+  "summary": "Seit 2026 nativ auf Android: Ein Port der vollständigen Dekompilierung und die Dual-Screen-Mod mit Live-Karte und Inventar auf dem zweiten Bildschirm des Thor."
 }

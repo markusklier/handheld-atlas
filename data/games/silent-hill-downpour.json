@@ -1,0 +1,37 @@
+{
+  "id": "silent-hill-downpour",
+  "title": "Silent Hill: Downpour",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Hauptteil von 2012 für PS3 und Xbox 360, nie für PC erschienen.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PlayStation 3, Xbox 360 (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        },
+        {
+          "label": "DownpourRecomp",
+          "url": "https://github.com/LittleBitUA/DownpourRecomp"
+        }
+      ],
+      "note": "Für die Xbox-360-Fassung gibt es seit 2026 den inoffiziellen nativen Windows-Port DownpourRecomp (statische Rekompilierung, eigene Spieldaten nötig); eine Android-Fassung nennt das Projekt nicht."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

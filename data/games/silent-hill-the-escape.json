@@ -1,0 +1,47 @@
+{
+  "id": "silent-hill-the-escape",
+  "title": "Silent Hill: The Escape",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Offizielles Mobile-Spiel (iPhone 2008), 2010 auch für Android erschienen; heute nicht mehr erhältlich.",
+  "versions": [
+    {
+      "id": "ios",
+      "name": "iOS (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Silent_Hill:_The_Escape"
+        }
+      ]
+    },
+    {
+      "id": "android",
+      "name": "Android (2010)",
+      "type": "android",
+      "year": 2010,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "note": "Nicht mehr im Play Store."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

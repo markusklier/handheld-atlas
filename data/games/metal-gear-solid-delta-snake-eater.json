@@ -1,0 +1,35 @@
+{
+  "id": "metal-gear-solid-delta-snake-eater",
+  "title": "Metal Gear Solid Delta: Snake Eater",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PC",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Unreal-Engine-5-Remake von MGS3 (2025); auf Android nur über Windows-Laufzeiten denkbar.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 5, Xbox Series (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
+        "PC",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18",
+  "remakeOf": "metal-gear-solid-3-snake-eater"
+}

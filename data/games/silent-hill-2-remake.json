@@ -1,0 +1,33 @@
+{
+  "id": "silent-hill-2-remake",
+  "title": "Silent Hill 2 (2024)",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation 5",
+    "PC"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Unreal-Engine-5-Remake von Bloober Team (2024); auf Android nur über Windows-Laufzeiten denkbar.",
+  "versions": [
+    {
+      "id": "ps5-pc",
+      "name": "PlayStation 5 und PC (2024)",
+      "type": "original",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 5",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18",
+  "remakeOf": "silent-hill-2"
+}

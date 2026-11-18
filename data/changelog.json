@@ -4,6 +4,422 @@
       "date": "2026-11-18",
       "type": "game-added",
       "by": "agent",
+      "game": "rollercoaster-tycoon-2",
+      "text": "Neues Spiel: RollerCoaster Tycoon 2 mit RCTDS – Dual-Screen-Port auf OpenRCT2-Basis für den AYN Thor (KI-Fund)",
+      "url": "https://github.com/mrmushrooms11/RCTDS"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "trails-in-the-sky-1st-chapter",
+      "text": "Neues Spiel: Trails in the Sky 1st Chapter (Remake 2025) mit experimentellem nativem Android-Port der Switch-Fassung (KI-Fund)",
+      "url": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "silent-hill",
+      "text": "Neuer Dual-Screen-Spielweg: Silent Hill – Dualscreen (nativer Android-Port, Live-Karte und Inventar unten auf dem Thor; KI-Fund)",
+      "url": "https://github.com/TheYellowBee/silent-hill-dualscreen"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "silent-hill",
+      "text": "Neuer Spielweg: Silent Hill PC-Port (Dekompilierung) mit Android-Build (KI-Fund)",
+      "url": "https://github.com/SlickAmogus/silent-hill-decomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "project-added",
+      "by": "agent",
+      "game": "silent-hill",
+      "text": "Neue Projekte: silent-hill-decomp (PC-Port) und Silent Hill – Dualscreen",
+      "url": "https://github.com/TheYellowBee/silent-hill-dualscreen"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "tomb-raider-game-boy-color",
+      "text": "Neues Spiel aus der Reihe Tomb Raider: Tomb Raider (Game Boy Color, 2000)",
+      "url": "https://en.wikipedia.org/wiki/Tomb_Raider_(Game_Boy_Color)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear (1987)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-2-solid-snake",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear 2: Solid Snake (1990)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "snake-s-revenge",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Snake's Revenge (1990)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-ghost-babel",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear: Ghost Babel (2000)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-acid",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Acid (2004)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-acid-2",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Acid 2 (2005)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-4-guns-of-the-patriots",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid 4: Guns of the Patriots (2008)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-v-ground-zeroes",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid V: Ground Zeroes (2014)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-v-the-phantom-pain",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid V: The Phantom Pain (2015)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-survive",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Survive (2018)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-mobile",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid Mobile (2008)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-touch",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid Touch (2009)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-social-ops",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid: Social Ops (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "metal-gear-solid-delta-snake-eater",
+      "text": "Neues Spiel aus der Reihe Metal Gear: Metal Gear Solid Delta: Snake Eater (2025) – Remake",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid",
+      "text": "Neue Fassung: Metal Gear Solid: Integral (1999)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid",
+      "text": "Neue Fassung: Master Collection Vol. 1 (2023)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "text": "Neue Fassung: Substance (2002)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "text": "Neue Fassung: Metal Gear Solid HD Collection (2011)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "text": "Neue Fassung: NVIDIA Shield TV (2017)",
+      "url": "https://www.androidpolice.com/2017/08/24/konamis-metal-gear-solid-2-sons-liberty-hd-edition-available-nvidia-shield-tv-sale/"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-2-sons-of-liberty",
+      "text": "Neue Fassung: Master Collection Vol. 1 (2023)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Fassung: Subsistence (2005)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Fassung: Metal Gear Solid HD Collection (2011)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Fassung: Snake Eater 3D (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Fassung: NVIDIA Shield TV (2017)",
+      "url": "https://www.androidauthority.com/metal-gear-solid-3-snake-eater-hd-download-nvidia-shield-tv-google-play-store-816627"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-3-snake-eater",
+      "text": "Neue Fassung: Master Collection Vol. 1 (2023)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-peace-walker",
+      "text": "Neue Fassung: Metal Gear Solid HD Collection (2011)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-peace-walker",
+      "text": "Neue Fassung: Master Collection Vol. 2 (2026)",
+      "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "metal-gear-solid-the-twin-snakes",
+      "text": "The Twin Snakes als Remake von Metal Gear Solid verknüpft",
+      "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "silent-hill-2",
+      "text": "Neue Fassung: Restless Dreams / Director's Cut (2001)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "silent-hill-2",
+      "text": "Neue Fassung: Silent Hill HD Collection (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "silent-hill-3",
+      "text": "Neue Fassung: PC (2003)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "silent-hill-3",
+      "text": "Neue Fassung: Silent Hill HD Collection (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-origins",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill Origins (2007)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-homecoming",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Homecoming (2008)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-downpour",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Downpour (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-shattered-memories",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Shattered Memories (2009) – Remake",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-book-of-memories",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Book of Memories (2012)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-the-arcade",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: The Arcade (2007)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-orphan",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Orphan (2007)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-the-escape",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: The Escape (2008)",
+      "url": "https://en.wikipedia.org/wiki/Silent_Hill:_The_Escape"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-ascension",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Ascension (2023)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-the-short-message",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: The Short Message (2024)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-2-remake",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill 2 (2024) (2024) – Remake",
+      "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-f",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill f (2025)",
+      "url": "https://www.techloy.com/everything-to-know-about-silent-hill-f-release-date-platforms-and-global-launch-times/"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "silent-hill-townfall",
+      "text": "Neues Spiel aus der Reihe Silent Hill: Silent Hill: Townfall (2026)",
+      "url": "https://www.notebookcheck.net/Silent-Hill-Townfall-release-date-platforms-and-price-confirmed.1327945.0.html"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "tomb-raider-ii",
+      "text": "Neue Fassung: iOS (2014) und Android (2015)",
+      "url": "https://www.pocketgamer.com/tomb-raider-ii/tomb-raider-ii-just-back-flipped-out-of-the-past-and-landed-on-android"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
       "game": "need-for-speed-underground-2",
       "text": "Neues Spiel: Need for Speed: Underground 2 mit allen Fassungen (2004/2005) und Widescreen Fix für die PC-Fassung; kein nativer Android-Port bekannt (Anfrage #15)",
       "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"

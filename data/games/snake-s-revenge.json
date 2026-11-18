@@ -1,0 +1,30 @@
+{
+  "id": "snake-s-revenge",
+  "title": "Snake's Revenge",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "NES"
+  ],
+  "genre": "Stealth-Action",
+  "summary": "Westliche NES-Fortsetzung von Metal Gear ohne Beteiligung von Hideo Kojima.",
+  "versions": [
+    {
+      "id": "nes",
+      "name": "NES (1990)",
+      "type": "original",
+      "year": 1990,
+      "platforms": [
+        "NES"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

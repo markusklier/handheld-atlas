@@ -1,0 +1,30 @@
+{
+  "id": "metal-gear-acid",
+  "title": "Metal Gear Acid",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "PSP"
+  ],
+  "genre": "Taktik/Kartenspiel",
+  "summary": "Rundenbasierter Karten-Ableger für die PSP.",
+  "versions": [
+    {
+      "id": "psp",
+      "name": "PSP (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

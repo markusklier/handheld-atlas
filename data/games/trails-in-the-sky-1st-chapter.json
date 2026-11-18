@@ -1,0 +1,103 @@
+{
+  "id": "trails-in-the-sky-1st-chapter",
+  "title": "Trails in the Sky 1st Chapter",
+  "franchise": "Trails",
+  "platforms": [
+    "Nintendo Switch",
+    "PlayStation 5",
+    "PC",
+    "Nintendo Switch 2"
+  ],
+  "genre": "Rollenspiel",
+  "remakeOf": "the-legend-of-heroes-trails-in-the-sky",
+  "summary": "3D-Remake von Trails in the Sky (2025); ein experimenteller Port bringt die Switch-Fassung nativ auf Android.",
+  "versions": [
+    {
+      "id": "switch-ps5-pc",
+      "name": "Switch, PS5 und PC (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
+        "Nintendo Switch",
+        "PlayStation 5",
+        "PC"
+      ],
+      "note": "Weltweit erschienen am 19. September 2025; später auch für Switch 2.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.rpgsite.net/news/17390-trails-in-the-sky-1st-chapter-release-date-worldwide-preorder-bonus"
+        },
+        {
+          "label": "Switch 2",
+          "url": "https://www.gematsu.com/2025/08/trails-in-the-sky-1st-chapter-adds-switch-2-version-prologue-demo-now-available-for-ps5-switch-and-pc"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "tits1-nx2android",
+      "name": "Nativer Android-Port (nx2android)",
+      "release": "switch-ps5-pc",
+      "kind": "recomp",
+      "edition": "Nintendo Switch (Update 1.0.7)",
+      "runtime": "nx2android (Switch-Systemdienste, Vulkan)",
+      "projects": [
+        "trails-sky-1st-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Switch-Fassung inkl. Update 1.0.7 und eigene Schlüssel von der eigenen Konsole",
+        "Mac oder Linux-PC zum Bauen der APK (ca. 30 GB frei), Gerät mit ca. 14 GB frei",
+        "Auf Snapdragon-Geräten Turnip-Vulkan-Treiber"
+      ],
+      "benefit": "Kein Switch-Emulator: Der Spielcode läuft direkt auf dem ARM64-Prozessor. Laut Autor auf dem AYN Odin 3 etwa 60 FPS in 1920×1080 (Docked-Modus), DLC werden erkannt.",
+      "caveat": "Experimentell und nur auf einem Gerät (AYN Odin 3) getestet; Filmsequenzen und spätere Kapitel ungeprüft. Keine fertige APK – sie muss aus den eigenen Daten gebaut werden.",
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "performance": [
+        {
+          "device": "AYN Odin 3",
+          "result": "etwa 60 FPS in 1920×1080 (Docked-Modus), laut Projektautor",
+          "source": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port",
+          "date": "2026-11-18"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/G0zsilva/trails-in-the-sky-1st-android-port/main/docs/images/bridge.jpg",
+          "caption": "Die Brücke bei Rolent (AYN Odin 3)",
+          "source": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port",
+          "credit": "trails-in-the-sky-1st-android-port",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/G0zsilva/trails-in-the-sky-1st-android-port/main/docs/images/road.jpg",
+          "caption": "Die Straße nach Rolent (AYN Odin 3)",
+          "source": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port",
+          "credit": "trails-in-the-sky-1st-android-port",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "silent-hill-ascension",
+  "title": "Silent Hill: Ascension",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "Browser",
+    "Android",
+    "iOS"
+  ],
+  "genre": "Interaktive Serie",
+  "summary": "Interaktive Streaming-Serie (2023) mit offizieller Android-App.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "Browser, Android, iOS (2023)",
+      "type": "original",
+      "year": 2023,
+      "platforms": [
+        "Browser",
+        "Android",
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

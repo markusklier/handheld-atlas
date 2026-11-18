@@ -194,31 +194,31 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/luta.jpg",
-          "caption": "Luta no Nativo",
+          "caption": "Kampf im nativen Android-Port",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/luta-ceu.jpg",
-          "caption": "Luta no Nativo, controle na tela",
+          "caption": "Kampf mit eingeblendeter Touch-Steuerung",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/titulo.jpg",
-          "caption": "Tela de título",
+          "caption": "Titelbild im nativen Port",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/menu-jogo.jpg",
-          "caption": "Menu do jogo",
+          "caption": "Pausemenü von Zandatsu (Video, Steuerung, System)",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/inicio.jpg",

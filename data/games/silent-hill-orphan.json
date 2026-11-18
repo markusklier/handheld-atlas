@@ -1,0 +1,30 @@
+{
+  "id": "silent-hill-orphan",
+  "title": "Silent Hill: Orphan",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "Java ME"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Point-and-Click-Handyspiel (2007), zwei Fortsetzungen bis 2010.",
+  "versions": [
+    {
+      "id": "java-me",
+      "name": "Java ME (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Java ME"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

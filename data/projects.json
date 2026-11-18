@@ -2555,6 +2555,54 @@
       "description": "Android-App, die native N64-Decomp-Ports (Ship of Harkinian, 2 Ship 2 Harkinian, Ghostship, Starship u. a.) als herunterladbare Module startet; frühe, instabile Alpha.",
       "games": [],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "silent-hill-pc-port",
+      "name": "Silent Hill PC-Port (silent-hill-decomp)",
+      "kind": "port",
+      "url": "https://github.com/SlickAmogus/silent-hill-decomp",
+      "repo": "SlickAmogus/silent-hill-decomp",
+      "description": "Nativer Port von Silent Hill (PS1) auf Basis der vollständigen Dekompilierung (PsyCross); Cross-Platform-Beta mit Builds für PC, Android, iOS und Xbox. Spieldaten (eigenes USA-Disc-Image) erforderlich.",
+      "games": [
+        "silent-hill"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "silent-hill-dualscreen",
+      "name": "Silent Hill – Dualscreen",
+      "kind": "mod",
+      "url": "https://github.com/TheYellowBee/silent-hill-dualscreen",
+      "repo": "TheYellowBee/silent-hill-dualscreen",
+      "description": "Dual-Screen-Fassung des Android-Ports von Silent Hill (1999): Spiel oben, Live-Karte mit Harrys Position, Status und antippbares Inventar unten. Für AYN Thor, RG DS, Galaxy Fold und Telefone.",
+      "games": [
+        "silent-hill"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "rctds",
+      "name": "RCTDS",
+      "kind": "port",
+      "url": "https://github.com/mrmushrooms11/RCTDS",
+      "repo": "mrmushrooms11/RCTDS",
+      "description": "Dual-Screen-Android-Port von RollerCoaster Tycoon 1 und 2 auf Basis von OpenRCT2, gebaut für den AYN Thor: Park oben, Menüs und Bauwerkzeuge auf dem unteren Touchscreen.",
+      "games": [
+        "rollercoaster-tycoon-2"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "trails-sky-1st-android",
+      "name": "Trails in the Sky 1st Chapter – Android-Port",
+      "kind": "port",
+      "url": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port",
+      "repo": "G0zsilva/trails-in-the-sky-1st-android-port",
+      "description": "Experimenteller nativer Android-Port der Switch-Fassung über nx2android (Spielcode läuft direkt auf ARM64, Grafik über Vulkan); APK wird aus eigenen Spieldaten selbst gebaut.",
+      "games": [
+        "trails-in-the-sky-1st-chapter"
+      ],
+      "checkedAt": "2026-11-18"
     }
   ]
 }

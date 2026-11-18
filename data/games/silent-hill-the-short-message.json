@@ -1,0 +1,30 @@
+{
+  "id": "silent-hill-the-short-message",
+  "title": "Silent Hill: The Short Message",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation 5"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Kostenloses PS5-Kurzspiel von 2024.",
+  "versions": [
+    {
+      "id": "playstation-5",
+      "name": "PlayStation 5 (2024)",
+      "type": "original",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 5"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "silent-hill-shattered-memories",
+  "title": "Silent Hill: Shattered Memories",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "Wii",
+    "PlayStation 2",
+    "PSP"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Neuinterpretation des ersten Teils mit Wii-Fernbedienung als Taschenlampe; 2010 auch für PS2 und PSP.",
+  "versions": [
+    {
+      "id": "wii",
+      "name": "Wii (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    },
+    {
+      "id": "ps2-psp",
+      "name": "PlayStation 2 und PSP (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "PlayStation 2",
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18",
+  "remakeOf": "silent-hill"
+}

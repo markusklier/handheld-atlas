@@ -1,0 +1,33 @@
+{
+  "id": "metal-gear-solid-social-ops",
+  "title": "Metal Gear Solid: Social Ops",
+  "franchise": "Metal Gear",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Sammelkartenspiel",
+  "summary": "Offizielles Sammelkartenspiel für iOS und Android (2012), inzwischen eingestellt.",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "iOS und Android (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Online-Spiel, Server abgeschaltet."
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

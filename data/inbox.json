@@ -81,14 +81,6 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/gangully123/xaerodeck-app",
-      "title": "gangully123/xaerodeck-app",
-      "excerpt": "XaeroDeck App - Your Second-Screen Xaero Map with Radar, Waypoints, Chat Relay, Meteor GUI and Watch",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/jaredgei/wow-forever-android",
       "title": "jaredgei/wow-forever-android",
       "excerpt": "Play the World of Warcraft: Forever beta natively on Snapdragon 8 Series / 8 Elite Android devices (AYN Thor, RP6, Odin Portal, Galaxy). Standalone launcher forked from GameNative.",
@@ -97,169 +89,9 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/mrmushrooms11/RCTDS",
-      "title": "mrmushrooms11/RCTDS",
-      "excerpt": "A dual screen port of Rollercoaster Tycoon 1 and 2, built on OpenRCT2",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/hiitsgabe/retro_toolbox",
       "title": "hiitsgabe/retro_toolbox",
       "excerpt": "A Complete Toolbox for Android and Batocera Based Consoles",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/Zakuroooo/clutch",
-      "title": "Zakuroooo/clutch",
-      "excerpt": "Clutch: a live-sport companion that calls you back when a moment matters, keeps the moments you missed, and explains them in your own terms.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/NiceKaleido/Bifrost-Link",
-      "title": "NiceKaleido/Bifrost-Link",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/sdkwork-ai/sdkwork-specs",
-      "title": "sdkwork-ai/sdkwork-specs",
-      "excerpt": "sdkwork-specs",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/jeffry-lacanglacang/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator",
-      "title": "jeffry-lacanglacang/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator",
-      "excerpt": "PLC-5000 Industrial Ladder Logic & Motor Control Simulator for both Android mobile touchscreens and desktop displays.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/Moncada25/fun-phone",
-      "title": "Moncada25/fun-phone",
-      "excerpt": "Private Android dialer with T9, contacts, notes, encrypted vault, QR tools and mini games. No ads, no analytics. GPL-3.0",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/SinaXhpm/Submarine",
-      "title": "SinaXhpm/Submarine",
-      "excerpt": "Free, open-source SSH & SFTP client with RDP, VNC and Telnet — terminal, dual-pane SFTP, port forwarding, folder mirror, encrypted profiles. Windows · macOS · Linux · Android. Rust + Tauri.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/fingerly-io/sdk-react-native",
-      "title": "fingerly-io/sdk-react-native",
-      "excerpt": "Fingerly SDK for React Native: device intelligence and fraud signals for iOS and Android apps",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/fingerly-io/sdk-lynx",
-      "title": "fingerly-io/sdk-lynx",
-      "excerpt": "Fingerly SDK for Lynx: device intelligence and fraud signals for Lynx apps",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/RizalAhmadMaulana/e-ujian-anticheat",
-      "title": "RizalAhmadMaulana/e-ujian-anticheat",
-      "excerpt": "Sistem Asesmen Digital Anti-Cheat Zero-Tolerance, Live Proctoring WebSocket & E-Jurnal Berita Acara Otomatis (React 18 Vite + Django 5 + ReportLab/OpenPyXL)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/thefoeyouknow/tpms-diagnostic-tool",
-      "title": "thefoeyouknow/tpms-diagnostic-tool",
-      "excerpt": "nRF52832 + CC1101 TPMS Diagnostic Tool firmware and WebBLE/Web Serial PWA dashboard",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/jaguarshens/rf-brain-reading",
-      "title": "jaguarshens/rf-brain-reading",
-      "excerpt": "Full spectrum brain wave reading through radio frequencies.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/NAJJAT/CoreLock",
-      "title": "NAJJAT/CoreLock",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/kkzzyyt/HarmonyCast",
-      "title": "kkzzyyt/HarmonyCast",
-      "excerpt": "OpenHarmony screen mirroring, HiLog filtering, and device debugging workbench for macOS on Apple Silicon.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/JackyNLam/PYQAlbum",
-      "title": "JackyNLam/PYQAlbum",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/SasynDev/Gear-Screen-Mirroring-Tool-",
-      "title": "SasynDev/Gear-Screen-Mirroring-Tool-",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/darethehair/HelioClock-ChatGPT",
-      "title": "darethehair/HelioClock-ChatGPT",
-      "excerpt": "Similar to HelioChat except generated by ChatGPT",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/eddiestuczynski/cadence-digital-practice-log",
-      "title": "eddiestuczynski/cadence-digital-practice-log",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/zengzzzzz/golang-trending-archive",
-      "title": "zengzzzzz/golang-trending-archive",
-      "excerpt": "track golang trending in github",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/Bemly/homebrew-tahoe",
-      "title": "Bemly/homebrew-tahoe",
-      "excerpt": "Personal Homebrew tap for macOS 26 (Tahoe) x86_64 (Intel)",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-17"
@@ -284,14 +116,6 @@
       "url": "https://github.com/gamboozino/ngbrecomp",
       "title": "gamboozino/ngbrecomp",
       "excerpt": "Ninja Gaiden Black (Xbox, 2005) statically recompiled into native Linux and Windows builds, with an experimental Android port, drawn by its own Vulkan renderer. A steady 60 fps, widescreen and ultrawide, keyboard and mouse, touch controls on Android, Steam Deck ready. Bring your own copy of the game.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/G0zsilva/trails-in-the-sky-1st-android-port",
-      "title": "G0zsilva/trails-in-the-sky-1st-android-port",
-      "excerpt": "Trails in the Sky 1st Chapter (Nintendo Switch) running natively on Android with nx2android: builds from your own dump, no game files included",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -508,14 +332,6 @@
       "url": "https://github.com/JeuelSosaLarocca/ios-launcher-recompile",
       "title": "JeuelSosaLarocca/ios-launcher-recompile",
       "excerpt": "Recompilable copy of an iOS-style Android launcher: Gradle project, DexMerge/PostCompile tooling, Spanish, light/dark icons",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/78erik/mgs5-recomp",
-      "title": "78erik/mgs5-recomp",
-      "excerpt": "Metal Gear Solid V (Xbox 360) static recompilation for ARM (Android/Switch) - research & multi-agent AI structure",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -4271,14 +4087,6 @@
       "foundAt": "2026-11-08"
     },
     {
-      "url": "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/silent_hill_1_dualscreen_mod_for_android_rg_ds/",
-      "title": "Silent Hill 1 dualscreen mod for Android (RG DS, Thor, phones): With live maps and items on the second screen",
-      "excerpt": "",
-      "game": null,
-      "source": "rss",
-      "foundAt": "2026-11-08"
-    },
-    {
       "url": "https://www.reddit.com/r/SBCGaming/comments/1xkwtu2/i_made_a_free_retro_game_launcher_nori_for_android/",
       "title": "I made a free retro game launcher \"Nori\" (for Android)",
       "excerpt": "",
@@ -6232,11 +6040,32 @@
     "https://github.com/ClausMunch/ayn-ship-estimator",
     "https://github.com/gabrieldig/BMA_Ayn_Thor",
     "https://github.com/harmssi/thor-tandem",
-    "https://github.com/sommepo/furoshiki"
+    "https://github.com/sommepo/furoshiki",
+    "https://github.com/Zakuroooo/clutch",
+    "https://github.com/NiceKaleido/Bifrost-Link",
+    "https://github.com/sdkwork-ai/sdkwork-specs",
+    "https://github.com/jeffry-lacanglacang/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator",
+    "https://github.com/Moncada25/fun-phone",
+    "https://github.com/SinaXhpm/Submarine",
+    "https://github.com/fingerly-io/sdk-react-native",
+    "https://github.com/fingerly-io/sdk-lynx",
+    "https://github.com/RizalAhmadMaulana/e-ujian-anticheat",
+    "https://github.com/thefoeyouknow/tpms-diagnostic-tool",
+    "https://github.com/jaguarshens/rf-brain-reading",
+    "https://github.com/NAJJAT/CoreLock",
+    "https://github.com/kkzzyyt/HarmonyCast",
+    "https://github.com/JackyNLam/PYQAlbum",
+    "https://github.com/SasynDev/Gear-Screen-Mirroring-Tool-",
+    "https://github.com/darethehair/HelioClock-ChatGPT",
+    "https://github.com/eddiestuczynski/cadence-digital-practice-log",
+    "https://github.com/zengzzzzz/golang-trending-archive",
+    "https://github.com/Bemly/homebrew-tahoe",
+    "https://github.com/gangully123/xaerodeck-app",
+    "https://github.com/78erik/mgs5-recomp"
   ],
   "agent": {
-    "lastRun": "2026-11-18T22:38Z",
-    "summary": "Abo-Anfrage #15 (NFS Underground 2) erledigt; 3 neue Spiele mit nativen Ports (NFS Most Wanted, Red Alert 3, Cyberia) und port-launcher aus 30 Leads, 16 Leads verworfen, 10 vertagt (Akka Arrh/Polybius/Evil Inside/Angry-Birds-Recomp, zettelmuseum-Puzzleports, Grand Chase); Bildprüfung 5 bestätigt, 8 entfernt. Warteschlange war leer."
+    "lastRun": "2026-11-18T23:30Z",
+    "summary": "Abo-Anfragen #16–18 (Reihen Tomb Raider, Metal Gear, Silent Hill) erledigt: 29 neue Spiele, ~20 Fassungen, 17 Spiele zur Tiefenrecherche vorgemerkt; neue Spielwege Silent Hill – Dualscreen (Thor) und Silent-Hill-PC-Port, RollerCoaster Tycoon 2 (RCTDS) und Trails in the Sky 1st Chapter (nx2android); 21 Leads verworfen; 8 Bilder bestätigt, 2 GTA-Bilder dem richtigen Spiel zugeordnet. Wikidata/Wikipedia waren aus der Sandbox nicht erreichbar, Reihen deshalb per Websuche."
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",
@@ -6439,7 +6268,9 @@
         "tomb-raider: Tomb Raider Collection 1",
         "tomb-raider: Tomb Raider I–VI Remastered"
       ],
-      "skipped": []
+      "skipped": [],
+      "date2": "2026-11-18",
+      "agentCheck": "Tomb Raider (GBC, 2000) ergänzt, Mobile-Fassung von TR II; 3 Spiele vorgemerkt"
     },
     "Metroid": {
       "date": "2026-11-09",
@@ -6467,6 +6298,83 @@
       ],
       "queued": 16,
       "basic": 0
+    },
+    "Metal Gear": {
+      "date": "2026-11-18",
+      "source": "agent",
+      "listed": 30,
+      "added": [
+        "metal-gear",
+        "metal-gear-2-solid-snake",
+        "snake-s-revenge",
+        "metal-gear-ghost-babel",
+        "metal-gear-acid",
+        "metal-gear-acid-2",
+        "metal-gear-solid-4-guns-of-the-patriots",
+        "metal-gear-solid-v-ground-zeroes",
+        "metal-gear-solid-v-the-phantom-pain",
+        "metal-gear-survive",
+        "metal-gear-solid-mobile",
+        "metal-gear-solid-touch",
+        "metal-gear-solid-social-ops",
+        "metal-gear-solid-delta-snake-eater"
+      ],
+      "versions": [
+        "Integral",
+        "Substance",
+        "Subsistence",
+        "HD Collection",
+        "Snake Eater 3D",
+        "Shield TV (MGS2/MGS3)",
+        "Master Collection Vol. 1/2"
+      ],
+      "skipped": [
+        {
+          "title": "Portable Ops Plus",
+          "reason": "eigenständige Erweiterung"
+        },
+        {
+          "title": "Metal Gear Online / Arcade",
+          "reason": "Online-/Automatenableger"
+        }
+      ],
+      "queued": 7
+    },
+    "Silent Hill": {
+      "date": "2026-11-18",
+      "source": "agent",
+      "listed": 22,
+      "added": [
+        "silent-hill-origins",
+        "silent-hill-homecoming",
+        "silent-hill-downpour",
+        "silent-hill-shattered-memories",
+        "silent-hill-book-of-memories",
+        "silent-hill-the-arcade",
+        "silent-hill-orphan",
+        "silent-hill-the-escape",
+        "silent-hill-ascension",
+        "silent-hill-the-short-message",
+        "silent-hill-2-remake",
+        "silent-hill-f",
+        "silent-hill-townfall"
+      ],
+      "versions": [
+        "Restless Dreams/Director's Cut",
+        "HD Collection",
+        "SH3 PC"
+      ],
+      "skipped": [
+        {
+          "title": "P.T.",
+          "reason": "spielbarer Teaser, nicht mehr erhältlich"
+        },
+        {
+          "title": "Orphan 2/3, Silent Hill Mobile",
+          "reason": "Handy-Ableger, nur Orphan 1 aufgenommen"
+        }
+      ],
+      "queued": 7
     }
   },
   "imageRequests": {

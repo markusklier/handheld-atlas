@@ -1,0 +1,46 @@
+{
+  "id": "silent-hill-origins",
+  "title": "Silent Hill Origins",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PSP",
+    "PlayStation 2"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Vorgeschichte zu Silent Hill für die PSP (2007), 2008 auch für die PS2.",
+  "versions": [
+    {
+      "id": "psp",
+      "name": "PSP (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

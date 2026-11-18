@@ -60,7 +60,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/bf093c44-99b2-4240-98d5-7b5b1e674ba6"
         }
-      ]
+      ],
+      "year": 2004
     },
     {
       "id": "pc-2004",
@@ -79,7 +80,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-18",
   "wikidata": "Q613124",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_4%3A_The_Room",
   "genre": "psychological horror fiction"

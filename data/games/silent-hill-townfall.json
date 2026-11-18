@@ -1,0 +1,32 @@
+{
+  "id": "silent-hill-townfall",
+  "title": "Silent Hill: Townfall",
+  "franchise": "Silent Hill",
+  "platforms": [
+    "PlayStation 5",
+    "PC"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Ableger von Screen Burn, erschienen am 24. September 2026 für PS5 und PC.",
+  "versions": [
+    {
+      "id": "ps5-pc",
+      "name": "PlayStation 5 und PC (2026)",
+      "type": "original",
+      "year": 2026,
+      "platforms": [
+        "PlayStation 5",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.notebookcheck.net/Silent-Hill-Townfall-release-date-platforms-and-price-confirmed.1327945.0.html"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}
