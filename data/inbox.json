@@ -1,6 +1,310 @@
 {
   "leads": [
     {
+      "url": "https://github.com/Rrr119/openmw",
+      "title": "Rrr119/openmw (Fork von OpenMW/openmw)",
+      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/MeetRajput00/melonDS-android",
+      "title": "MeetRajput00/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/Ginger-Beard/melonDS-android",
+      "title": "Ginger-Beard/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/kaemble/eden-duo-armada",
+      "title": "kaemble/eden-duo-armada (Fork von igawa6/eden-duo)",
+      "excerpt": "ArmadaOS linux",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/zettelmuseum/Enigma",
+      "title": "zettelmuseum/Enigma",
+      "excerpt": "Pre-Alpha Enigma Puzzle Game  Android port 2026 (but it works for me)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/zettelmuseum/MrMatt",
+      "title": "zettelmuseum/MrMatt",
+      "excerpt": "Mr.Matt 2007 game Android port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/zettelmuseum/Atomix",
+      "title": "zettelmuseum/Atomix",
+      "excerpt": "Atomix Puzzle Game Android Port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/zettelmuseum/Lasertank",
+      "title": "zettelmuseum/Lasertank",
+      "excerpt": "Lasertank puzzle game 1:1 Android Port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/zettelmuseum/Vexed",
+      "title": "zettelmuseum/Vexed",
+      "excerpt": "Vexed puzzle game Android port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/danielbuva/ror2-android-port",
+      "title": "danielbuva/ror2-android-port",
+      "excerpt": "Environment bootstrap and validation for a future native ARM64 Android port. No proprietary game content.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/IamWilmar/xenoblade3-recomp",
+      "title": "IamWilmar/xenoblade3-recomp",
+      "excerpt": "Native Android port of Xenoblade Chronicles 3 for the Retroid Pocket Flip 2. Early version. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/P1R4N351/botw-android",
+      "title": "P1R4N351/botw-android",
+      "excerpt": "Native Android ports of Breath of the Wild 1.6.0 and Tears of the Kingdom 1.4.3 for the AYN Thor (BotW Native / TotK Native fork), built from one shared branch. Based on AurelioB/totk-android (MIT) and MacNativeGames (MIT). Bring your own game dump.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/krishna3163/best_shizuku_apps_for_android_no_root",
+      "title": "krishna3163/best_shizuku_apps_for_android_no_root",
+      "excerpt": "Curated Shizuku and no-root Android apps, wireless ADB tools, debloat utilities, privacy tools, and root alternatives.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/usermalik20-del/Kanta-reborn",
+      "title": "usermalik20-del/Kanta-reborn",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/FabianZettl/armadalive",
+      "title": "FabianZettl/armadalive",
+      "excerpt": "Companion app for the AYN Thor's bottom screen on Armada OS, for ES-DE and Steam / Big Picture",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/drpezzer/ambxst-mods",
+      "title": "drpezzer/ambxst-mods",
+      "excerpt": "Mods for the Ambxst desktop shell (1.3+ mod manager packages)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/whiteCcinn/ccinnOpenRTB",
+      "title": "whiteCcinn/ccinnOpenRTB",
+      "excerpt": "A native macOS simulator for OpenRTB 2.x and 3.0 ads — paste a bid response and see HTML/MRAID, Native 1.0–1.2 and VAST 2.0–4.2 render on simulated iPhones, foldables, iPads, Android phones and Apple TV, with every tracker in a live network view and HAR/curl export. Offline · Simulated · Real: no tracker is sent unless you ask.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/taburyak/my-stm32-console",
+      "title": "taburyak/my-stm32-console",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/Cenx-DuyLinh/aynime",
+      "title": "Cenx-DuyLinh/aynime",
+      "excerpt": "Aynime: anime browser with a Japanese subtitle box for the Ayn Thor. Releases hold the APK.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/ajhockey88/ThorPad",
+      "title": "ajhockey88/ThorPad",
+      "excerpt": "Turns the AYN Thor's bottom screen into a laptop-style trackpad for a mouse plus a smart keyboard for typing",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/BrianJr03/command-panel",
+      "title": "BrianJr03/command-panel",
+      "excerpt": "Thor Command Panel (TCP): a user-installable replacement for the AYN Thor's stock dual-screen assistant.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/leelening/ftc-sim",
+      "title": "leelening/ftc-sim",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/aliarisoy/gaming-benchmark-project",
+      "title": "aliarisoy/gaming-benchmark-project",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/osodoso1/gallery-approach",
+      "title": "osodoso1/gallery-approach",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp",
+      "title": "lucdubois/KnightOfLodisRecomp",
+      "excerpt": "A recomp project for Tactics Ogre: The Knight of Lodis, enhanced with modern features. Android only for now.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/nICOLAS-user15/arcade-game",
+      "title": "nICOLAS-user15/arcade-game",
+      "excerpt": "Recreation of Pac-Man in pure JavaScript and HTML5 Canvas. Study project on game loops, grid collision detection, and simple pathfinding. Play online or run locally with npm start.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/moaazk714/Language_Learning_App",
+      "title": "moaazk714/Language_Learning_App",
+      "excerpt": "A modern Flutter language learning app featuring interactive lessons, vocabulary practice, flashcards, quizzes, and offline progress tracking.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/arloo/iphone6s-linux-cyberdeck",
+      "title": "arloo/iphone6s-linux-cyberdeck",
+      "excerpt": "Community-driven Linux on iPhone 6s (Apple A9): touchscreen, Wi-Fi and Bluetooth bring-up, reproducible RAM-only boot and ARM64 cyberdeck tools",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday",
+      "title": "trungdq88/Awesome-Black-Friday-Cyber-Monday",
+      "excerpt": "Awesome apps, software, and SaaS deals on Black Friday.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/KazeSU/KazeSU",
+      "title": "KazeSU/KazeSU",
+      "excerpt": "A super advanced KernelSU based root solution",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/x-tech-laboratories/X-Tasks",
+      "title": "x-tech-laboratories/X-Tasks",
+      "excerpt": "A todo manager built with Electron, Preact and TypeScript",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/michiel-dewilde/rigalong",
+      "title": "michiel-dewilde/rigalong",
+      "excerpt": "Android sound module for the Yamaha CP-88: six synthesis engines over one USB-C cable, on a Galaxy Tab S9 Ultra. AAudio EXCLUSIVE/LOW_LATENCY, measured.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/tim1105neumann/sounddrop",
+      "title": "tim1105neumann/sounddrop",
+      "excerpt": "Send text, links, Wi-Fi logins and drawings between any devices over sound. Kotlin Multiplatform acoustic modem for Android, iOS, desktop and web.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/AndriyPastukh/esp32-wireless-audit",
+      "title": "AndriyPastukh/esp32-wireless-audit",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/aniruddhashelke20/eT617-endsem-24B0748",
+      "title": "aniruddhashelke20/eT617-endsem-24B0748",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/endean-eng/zero-telemetry-kids",
+      "title": "endean-eng/zero-telemetry-kids",
+      "excerpt": "Preschoolers shouldn't be monetized, tracked, or subjected to variable-ratio dopamine traps.  zero-telemetry-kids is a 100% free, 100% offline, zero-network, zero-ad Progressive Web App (PWA) built specifically for the motor and cognitive ergonomics of 3-to-4-year-olds.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/geobasinas/ormicode",
+      "title": "geobasinas/ormicode",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
+      "url": "https://github.com/Tr0j4n1/HeyMelody-Windows",
+      "title": "Tr0j4n1/HeyMelody-Windows",
+      "excerpt": "Windows desktop controller for OPPO/OnePlus/realme earbuds, built from the reverse-engineered HeyMelody protocol",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-18"
+    },
+    {
       "url": "https://github.com/weegee721/melonDS-android",
       "title": "weegee721/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
       "excerpt": "Android port of melonDS",
@@ -6125,310 +6429,6 @@
       "game": "minecraft",
       "source": "modrinth",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/spooky-companions",
-      "title": "Meet 11 spooky companions for Minecraft Bedrock! Tame adorable Halloween pets with unique abilities, three color variants, and charming animations. From a treas",
-      "excerpt": "Meet 11 spooky companions for Minecraft Bedrock! Tame adorable Halloween pets with unique abilities, three color variants, and charming animations. From a treasure-hunting ghost pup to a spellcasting owl, bring a little magic to your next great adventure.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/tame-every-mob",
-      "title": "Tame every regular Minecraft mob, then command, ride, store and upgrade your companions.",
-      "excerpt": "Tame every regular Minecraft mob, then command, ride, store and upgrade your companions.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/tobys-camera",
-      "title": "Capture and share Minecraft moments with a client camera and companion server plugin",
-      "excerpt": "Capture and share Minecraft moments with a client camera and companion server plugin",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/undead-alliance",
-      "title": "Turn zombies into loyal companions with trust, personality, and smart AI. Recruit, command, and survive together in Minecraft.",
-      "excerpt": "Turn zombies into loyal companions with trust, personality, and smart AI. Recruit, command, and survive together in Minecraft.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/wanderers-across-worlds",
-      "title": "Companions from every world, brought to life in Minecraft, a living party that fights, feels, remembers, and forms bonds of its own. Download characters in-game",
-      "excerpt": "Companions from every world, brought to life in Minecraft, a living party that fights, feels, remembers, and forms bonds of its own. Download characters in-game (no dependencies.)",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/joiha-steven/plumemu",
-      "title": "A calm, light frontend (launcher) for Android retro handhelds. Names your games offline, picks the emulators,",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Nihilspire/SMBA-Dual-Screen-Mods",
-      "title": "A collection of ai-assisted dual screen applications for Super Mario Advance. For use with USA, Europe game.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/AlterDigga/Cult-of-the-lamb-companion",
-      "title": "A dual-screen companion for Cult of the Lamb, intended to be used with Eden Duo.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Alpish08/MinimaUI",
-      "title": "A minimalist frontend for android handhelds.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Frostie77/Skull-Kid",
-      "title": "A Native Android Port of the brutal action Flash game Skull Kid.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Frostie77/The-Last-Stand-2",
-      "title": "A Native Android Port of the classic Flash survival game The Last Stand 2.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Frostie77/Dad-n-Me",
-      "title": "A Native Android Port of the violent Flash game Dad 'n ME.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/cadeambrose/knox-link",
-      "title": "A second screen for Project Zomboid: map, vitals, gear, journal and more on a phone, tablet, second monitor or",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/elasota/Aerofoil",
-      "title": "Aerofoil (Glider PRO)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/harmssi/thor-aok",
-      "title": "Age of Empires II on the AYN Thor: map on top, command deck on the second screen (OpenAoK fork, plays from you",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/InukaAsith/TwinDesk",
-      "title": "All your computers and your phone, working as one desk. Screens, apps, files, clipboard, calls, texts, notifi",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/NoxProductions/Casualties_Android",
-      "title": "An Android port of the well known game Scav Prototype ( Also known as Casualties: Unknown )",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/predmore/foldcade",
-      "title": "An open-source gaming frontend built for the AYN Thor.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
-      "title": "An unofficial native GTA V port for Android, based on the Chinese Android port. Maintained by XHYN-PH. Require",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/zod701/Pagurin",
-      "title": "Android launcher that keeps your ported games in one app, such as those made with nx2android: library, per-gam",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/shahzadp/DoL-by-Alex",
-      "title": "Android port of Degrees of Lewdity - SugarCube/Twine adult game (CC BY-NC-SA 4.0). Community fork for Android;",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/richardyusan/multihero-android",
-      "title": "Android port of Multihero, a 2D multi-hero game from the original Blitz3D version.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/henroids/black-mesa-tennis",
-      "title": "android port of pretty much the only table tennis game.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/shahzadp/Project-Alice-Android-by-Alex",
-      "title": "Android port of Project Alice - the open-source engine for playing Victoria 2. Requires a copy of Victoria 2;",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/11NU0/taisei-android",
-      "title": "Android port of Taisei Project — an open-source Touhou Project danmaku (bullet hell) fan-game",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/Baggio94/SleepManager",
-      "title": "Android sleep/wake manager for handhelds — reduce standby battery drain by managing Wi-Fi, Bluetooth, Syncthin",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/zwaetschge/ACGC-Android-Port",
-      "title": "Animal Crossing (GameCube)",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/quantavil/awesome-android-games",
-      "title": "awesome-android-games",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/surfnterd/ayn-thor-notes",
-      "title": "AYN Thor: Valheim online multiplayer via DroidDeck (real Steam), Discord voice on the bottom screen, emulation",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/wyattabuntjer/AYN-Thor-WoW-Launcher",
-      "title": "Ayn-Thor-WoW-Launcher 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/denissteinhorst/thor-back-button-hero",
-      "title": "Back Button Hero - a customizable back-button utility for the AYN Thor Android handheld.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/hashtagbasit/Zaviya",
-      "title": "Based on SteamOS for ARM, built for ARM handhelds and tablets. Formerly known as Unofficial SteamOS ARM Port.",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/wootbeer/btgarecomp",
-      "title": "BattleTanx: Global Assault",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/openblack/openblack",
-      "title": "Black & White",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ducvd89/Bloodborne-Android",
-      "title": "Bloodborne-Android 🤖",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/sassiestrhihno/boxshelf-beta",
-      "title": "Boxshelf public beta for Windows, Android (AYN Thor) and Linux / Steam Deck: a TV-style 3D box-art shelf for y",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/bilgincoskun/brogue-android-port",
-      "title": "Brogue",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/xenophobentx/takedawn",
-      "title": "Burnout 3: Takedown",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6619,9 +6619,9 @@
     "rejected": 24
   },
   "watcher": {
-    "lastRun": "2026-11-17T14:28:42Z",
-    "newLeads": 48,
-    "newEvents": 17
+    "lastRun": "2026-11-18T14:02:20Z",
+    "newLeads": 38,
+    "newEvents": 10
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

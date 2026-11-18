@@ -12,6 +12,182 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/96991c06-146b-46da-bb1e-ee09667a78f2",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8dec0ebc-16c5-47ac-bdb4-f290b0ea54b4",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-05-02",
+          "settings": {
+            "Emulator Version": "Nightly (1991bd18ef)",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fe4d569c-e0c5-48d9-ba88-7c1eec91a702",
+          "device": "AYN Thor Base",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "the game runs on the standard performance profile with zero issue",
+          "votes": 1,
+          "date": "2026-03-23"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/50183ed9-5e96-4e81-a1b9-9b3c0a2ea283",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-08-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d8fe4fa1-5629-4744-9893-030e587cc93c",
+          "device": "Samsung Galaxy S23+ (SD)",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "3d world plays perfect, browser's fury runs perfect at locked 30 fps cap, with the 60fps mod it sometimes drops to 45 but averages 55",
+          "votes": 1,
+          "date": "2025-07-27",
+          "settings": {
+            "Emulator Version": "6.1",
+            "Driver Version": "[K11MCH1/AdrenoToolsDrivers] Mesa Turnip driver v24.3.0 - Revision 5",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Audio output engine": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0376c1e7-5e6d-4f5d-a2f9-69e1246094ec",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "GPU Driver = Mesa Turnip Driver v26.0.0 - R7",
+          "votes": 0,
+          "date": "2026-01-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d2f0f593-4d5e-4bd3-94c1-cb0231439755",
+          "device": "AYN Odin 2",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Some frame drops every now and again while it's compiling shaders but not really noticeable.",
+          "votes": 1,
+          "date": "2025-06-08"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a36d1aa7-5096-4801-a980-638e46e2a275",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-10-27"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f8901df4-b8ab-4f9f-a445-27efaff4f4b2",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Citron",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "**Officially ported from the Ryan Retro Compatibility List: https://ryanretro.com**",
+          "votes": 0,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "0.7",
+            "Driver Version": "Default System Driver",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f53e4711-9a32-4f22-9f5c-3de980723a1e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Intro",
+          "ratingDe": "Nur Intro/Menü",
+          "rank": 6,
+          "summary": "The game crashes with an infinite loading screen after the intro screens. Slight font corruption can be fixed by using \"Video Precision: High\". Enabling/disabling updates and/or changing drivers does not resolve the cras",
+          "votes": 1,
+          "date": "2025-12-01"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4a821e87-e9d1-464a-8c7b-c340f020ef0d"
+        }
       ]
     }
   ],

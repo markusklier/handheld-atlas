@@ -28,6 +28,36 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/60254fea-2f65-4016-ad98-e9a21b76d2d9",
+          "device": "AYN Thor Max",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "### Setup #### Game Super Mario 64 DS #### Emulator `MelonDualDS-0.6.0.apk` (dual-screen fork) installed with `Obtanium` ### Gameplay Notes Stable 60FPS. At the time of this review, melonDS did not support mapping the st",
+          "votes": 1,
+          "date": "2026-03-12",
+          "settings": {
+            "Renderer": "OpenGL",
+            "Resolution Scale": "5",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "Audio Interpolation": "Linear",
+            "Average FPS": "60",
+            "Emulator Version": "0.6.0"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b7d7553b-aa72-42de-95d9-ba262dc51e26"
+        }
       ]
     }
   ],

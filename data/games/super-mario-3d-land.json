@@ -28,6 +28,86 @@
       "type": "original",
       "platforms": [
         "Nintendo 3DS"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e627847e-ccfe-4d7c-90ad-5ec2019096ac",
+          "device": "AYN Thor Max",
+          "emulator": "Citra",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "The game runs perfect on normal New 3DS settings with very minor stutters but the game runs perfect.",
+          "votes": 2,
+          "date": "2026-01-14",
+          "settings": {
+            "Emulator Version": "Citra_MMJ_20251112",
+            "Graphics API": "Vulkan",
+            "Resolution Factor": "4",
+            "Texture Filter": "None",
+            "Texture Sampling": "Game Controlled",
+            "Layout Option": "Default",
+            "Use Hardware Shader": "True",
+            "Use Shader JIT": "True",
+            "Use Disk Shader Cache": "True",
+            "Game Version": "1.0"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5401502f-2614-4718-886f-960d44537371",
+          "device": "AYN Thor Base",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Great performance, very few slowdowns in the beginning when shaders are compiling, a few frames of missing texture/blocks in the level before everything loads. Otherwise, i was able to 100% the game without any major cra",
+          "votes": 3,
+          "date": "2026-01-13",
+          "settings": {
+            "Emulator Version": "2123.3",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Graphics API": "OpenGLES",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bdc87610-dffe-44d7-b463-81958608e9fd",
+          "device": "Retroid Pocket 6",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-09-19",
+          "settings": {
+            "Emulator Version": "2126.1.1",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T23-toasted.adpkg|||turnip_mrpurple_T23-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/56f785e8-aec6-40d5-ae2e-3089c067ee26"
+        }
       ]
     }
   ],

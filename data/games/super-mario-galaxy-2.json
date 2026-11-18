@@ -29,7 +29,62 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2010
+      "year": 2010,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/20271265-8ea3-4901-a2d5-55c99afa039b",
+          "device": "AYN Thor Pro",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-12-01",
+          "settings": {
+            "Emulator Version": "2509",
+            "Driver Version": "Mesa Turnip Driver v26.0.0.0-R2",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "100",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "VSync": "True",
+            "Average FPS": "60"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ea1ff30e-056a-4b23-94e5-eff9db3a6b69",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Dolphin",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-10-15",
+          "settings": {
+            "Emulator Version": "2506-338",
+            "Graphics Backend": "Vulkan",
+            "Internal Resolution": "1",
+            "Enable Dual Core": "True",
+            "DSP Emulator Engine": "HLE (Fast, Default)",
+            "Shader Compilation": "Specialized (Default)",
+            "Anti-Aliasing": "Off",
+            "Anisotropic Filtering": "1",
+            "VSync": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/32c86c8a-2440-4333-bde4-b88c2e2b2615"
+        }
+      ]
     }
   ],
   "routes": [],

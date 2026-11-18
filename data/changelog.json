@@ -1,6 +1,145 @@
 {
   "entries": [
     {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "super-mario-galaxy-2",
+      "text": "2 Community-Berichte von EmuReady für Super Mario Galaxy 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "super-mario-64-ds",
+      "text": "1 Community-Berichte von EmuReady für Super Mario 64 DS (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "super-mario-3d-world-bowser-s-fury",
+      "text": "10 Community-Berichte von EmuReady für Super Mario 3D World + Bowser's Fury (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "super-mario-3d-land",
+      "text": "3 Community-Berichte von EmuReady für Super Mario 3D Land (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "suikoden-ii",
+      "text": "1 Community-Berichte von EmuReady für Suikoden II (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-updated",
+      "game": "street-fighter-alpha-3-max",
+      "text": "1 Community-Berichte von EmuReady für Street Fighter Alpha 3 MAX (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "MHGU for Android (gu-native) v1.0.1.1 veröffentlicht.",
+      "project": "gu-native",
+      "games": [
+        "monster-hunter-generations"
+      ],
+      "url": "https://github.com/khorne-hub/gu-native/releases/tag/v1.0.1.1"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "FF9Recomp v0.1.25 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.25"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.11 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.11"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "PrimeRecomp v0.1.1 veröffentlicht.",
+      "project": "primerecomp",
+      "games": [
+        "metroid-prime"
+      ],
+      "url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.1.1"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "HollowKnightAndroid v2.0.50 veröffentlicht.",
+      "project": "hollowknightandroid",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid/releases/tag/v2.0.50"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "DS Forever v1.0.34 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.34"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 4.0.3 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/4.0.3"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "Skyrim Androidborn v1.1.7 veröffentlicht.",
+      "project": "skyrim-androidborn",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/igortiburcio/skyrim_androidborn/releases/tag/v1.1.7"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "DAO-Duo (Dragon Age: Origins Recomp Android) v0.2.3-alpha (Vorabversion) veröffentlicht.",
+      "project": "dao-duo",
+      "games": [
+        "dragon-age-origins"
+      ],
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.3-alpha"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "release",
+      "text": "PokeDaisy v1.6.1 veröffentlicht.",
+      "project": "pokedaisy",
+      "games": [
+        "pokemon-emerald"
+      ],
+      "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.6.1"
+    },
+    {
       "date": "2026-11-17",
       "type": "route-updated",
       "game": "star-ocean-second-evolution",
