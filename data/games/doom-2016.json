@@ -10,33 +10,144 @@
   "versions": [
     {
       "id": "pc",
-      "name": "PC (2016)",
+      "name": "PC/PS4/Xbox One (2016)",
       "type": "original",
+      "year": 2016,
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
       ],
-      "year": 2016
-    },
-    {
-      "id": "playstation-4",
-      "name": "PlayStation 4",
-      "type": "release",
-      "platforms": [
-        "PlayStation 4"
+      "note": "Von id Software; Vulkan-Renderer per Patch im Juli 2016 nachgereicht. Mit Kampagne, Mehrspieler und SnapMap.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+        }
       ]
     },
     {
-      "id": "xbox-one",
-      "name": "Xbox One",
-      "type": "release",
+      "id": "switch",
+      "name": "Nintendo Switch (2017)",
+      "type": "port",
+      "year": 2017,
       "platforms": [
-        "Xbox One"
+        "Nintendo Switch"
+      ],
+      "note": "Portierung von Panic Button; ohne SnapMap (Speicherplatz des Spielmoduls). Grundlage des nativen Android-Ports.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+        }
+      ]
+    },
+    {
+      "id": "stadia",
+      "name": "Google Stadia (2020)",
+      "type": "port",
+      "year": 2020,
+      "platforms": [
+        "Google Stadia"
+      ],
+      "note": "Erschien am 19. August 2020 auf Stadia; der Dienst wurde Anfang 2023 eingestellt.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+        }
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "doom-mobile",
+      "name": "DOOM Mobile",
+      "release": "switch",
+      "kind": "native",
+      "edition": "Switch-Fassung (Basisspiel + Update v262144)",
+      "runtime": "nativer ARM64-Code des Spiels, nachgebaute Switch-Systemdienste, NVN auf Vulkan",
+      "projects": [
+        "doom-mobile"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Switch-Fassung von DOOM samt Update v262144, selbst von der eigenen Konsole ausgelesen",
+        "prod.keys der eigenen Switch",
+        "PC mit Python 3 und .NET 10 SDK für setup.sh (rund 70 GB freier Speicher beim Entpacken)"
+      ],
+      "benefit": "Kein Emulator: Kampagne spielbar mit Controller, Gyro-Zielen, Zielhilfe und Vibration; Ausgabe standardmäßig 1600×720 im Breitbild.",
+      "caveat": "Experimentell, nur mit Adreno 740/750 getestet. Mehrspieler entfernt, Einstellungsdialog derzeit nur auf Russisch, in schweren Szenen unter 60 FPS. Nur genau dieses Update wird unterstützt.",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Desm0nt/doom-port/main/docs/images/combat.jpg",
+          "caption": "Kampf in der Marswüste auf dem Smartphone",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "credit": "DOOM Mobile",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Desm0nt/doom-port/main/docs/images/touch_combat.jpg",
+          "caption": "Touch-Steuerung mit FPS-Anzeige",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "credit": "DOOM Mobile",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Desm0nt/doom-port/main/docs/images/desert.jpg",
+          "caption": "Marslandschaft im Breitbild (1600×720)",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "credit": "DOOM Mobile",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Desm0nt/doom-port"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Desm0nt/doom-port/releases"
+        },
+        {
+          "label": "Bericht (Mobile Gamer)",
+          "url": "https://www.mobilegamer.com.br/en/2026/11/doom-2016-gets-apk-port-for-android.html"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Xiaomi 13 Pro (Snapdragon 8 Gen 2, Angabe des Projekts)",
+          "result": "etwa 40–50 FPS in der Kampagne, in schweren Abschnitten etwa 33–40 FPS",
+          "settings": "1600×720, Turnip v27, aufgewärmtes Gerät",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "date": "2026-11-18"
+        },
+        {
+          "device": "Xiaomi 14 Ultra (Snapdragon 8 Gen 3, Angabe des Projekts)",
+          "result": "50–60 FPS (auf 60 begrenzt), in schweren Abschnitten etwa 35–50 FPS",
+          "settings": "1600×720, Turnip v27, aufgewärmtes Gerät",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "date": "2026-11-18"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-18",
   "screenshots": [
     {
       "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/379720/ss_f989e793786bf1d6459da1139a484203efef1447.1920x1080.jpg?t=1750784856",
@@ -78,5 +189,7 @@
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379720/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/379720/"
-  }
+  },
+  "genre": "Ego-Shooter",
+  "summary": "Inoffizieller nativer Android-Port „DOOM Mobile“ der Switch-Fassung (2026): Spielcode läuft direkt auf ARM64, NVN wird auf Vulkan übersetzt – laut Projekt ~40–50 FPS auf dem Snapdragon 8 Gen 2 des Thor."
 }

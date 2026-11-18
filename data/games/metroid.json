@@ -93,17 +93,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-shaft-bottom-3d.png",
-          "caption": "Norfair, shaft bottom (3D view)",
+          "caption": "Norfair oben, Karte und Spielstand auf dem unteren Bildschirm",
           "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
           "credit": "github.com",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Metroid-Dual/main/docs/screenshots/norfair-screw-attack-3d.png",
-          "caption": "Norfair, Screw Attack room (3D view)",
+          "caption": "Raum mit Screw Attack, darunter Karte mit nächstem Ziel",
           "source": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md",
           "credit": "github.com",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

@@ -92,7 +92,46 @@
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "me1recomp",
+      "name": "ME1Recomp",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Fassung (default.xex 0.0.0.5)",
+      "runtime": "statische Recompilation (XenonRecomp), Android über den XDroid360-Launcher",
+      "projects": [
+        "me1recomp"
+      ],
+      "targets": [
+        "android",
+        "windows-x86_64"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Fassung von Mass Effect (genau diese default.xex)",
+        "Eigener Build – keine fertige APK"
+      ],
+      "benefit": "Erster Ansatz für Mass Effect nativ auf Android ohne Emulator.",
+      "caveat": "Frühes Entwicklungsstadium: Auf Android laufen laut Projekt erst Intro-Videos, Menüs und die Charaktererstellung (Galaxy S25); noch nicht durchspielbar. Kein Release, das Spielprofil fehlt noch im XDroid360-Launcher.",
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/udarmolota/ME1Recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-18"
+    }
+  ],
   "mods": [],
   "updatedAt": "2026-11-18"
 }

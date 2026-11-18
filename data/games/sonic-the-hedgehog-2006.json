@@ -1,0 +1,89 @@
+{
+  "id": "sonic-the-hedgehog-2006",
+  "title": "Sonic the Hedgehog (2006)",
+  "franchise": "Sonic the Hedgehog",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3"
+  ],
+  "genre": "Jump ’n’ Run",
+  "summary": "Seit 2026 statisch recompiliert (MarathonRecomp) – und als inoffizieller Android-Port mit fertiger APK; die Spieldateien kommen aus der eigenen Xbox-360-Fassung.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360/PS3 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "note": "Zum 15. Jubiläum der Reihe von Sonic Team; die PS3-Fassung erschien wenige Wochen später.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(2006_video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "marathonrecomp-android",
+      "name": "MarathonRecomp Android",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Fassung",
+      "runtime": "statische Recompilation (XenonRecomp) nach C++/SPIR-V, Vulkan",
+      "projects": [
+        "marathonrecomp-android",
+        "marathonrecomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Fassung von Sonic the Hedgehog (2006) – Spieldateien werden im Launcher als Ordner oder ZIP importiert",
+        "Android 10 oder neuer (arm64-v8a)"
+      ],
+      "benefit": "Fertige APK in den Releases; laut Projekt auf einem Snapdragon 7+ Gen 2 60 FPS im Hub und in Levels (60 % Renderskala), auf dem Snapdragon 8 Elite mit 125 % Renderskala. Ton, Touch-Steuerung und Spielstände funktionieren.",
+      "caveat": "Inoffizieller Port von MarathonRecomp (KI-gestützt entwickelt). Physische Controller, DLC, Android 10–15 und ein Durchspielen sind laut Projekt noch ungetestet; auf dem Thor nicht belegt. Für Windows/Linux gibt es MarathonRecomp selbst (November 2026).",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/SansNope/MarathonRecomp-Android"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/SansNope/MarathonRecomp-Android/releases"
+        },
+        {
+          "label": "MarathonRecomp (PC)",
+          "url": "https://github.com/sonicnext-dev/MarathonRecomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "POCO F5 (Snapdragon 7+ Gen 2, Angabe des Projekts)",
+          "result": "60 FPS im Hub und in Levels, kurze Einbrüche beim Laden",
+          "settings": "60 % Renderskala",
+          "source": "https://github.com/SansNope/MarathonRecomp-Android",
+          "date": "2026-11-18"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-18"
+}

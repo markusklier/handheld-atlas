@@ -66,17 +66,17 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-battle-gen5.webp",
-          "caption": "BATTLE: FIGHT, BAG, RUN and POKEMON buttons, INFO and SUGGESTIONS",
+          "caption": "Kampfmenü als Touch-Knöpfe auf dem zweiten Bildschirm",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-guide.webp",
-          "caption": "GUIDE: the wild Pokemon on Route 4 and how many are caught",
+          "caption": "Begleiter-Guide: wilde Pokémon auf Route 4",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-dex.webp",
@@ -190,10 +190,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_battle_top.png",
-          "caption": "A wild Pokémon battle",
+          "caption": "Wilder Pokémon-Kampf auf dem oberen Bildschirm",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_battle_bottom.png",
@@ -201,13 +201,6 @@
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_moves_top.png",
-          "caption": "Wild battle while choosing a move",
-          "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
-          "credit": "Pokémon Emerald Dual Screen",
-          "check": "ai-unclear"
         }
       ],
       "links": [

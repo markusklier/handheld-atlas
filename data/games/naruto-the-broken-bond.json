@@ -57,10 +57,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/android-controls.png",
-          "caption": "Bildschirm-Steuerung auf Android",
+          "caption": "Touch-Steuerung des Android-Ports",
           "source": "https://github.com/1nsec/Naruto-The-Broken-Bond-Android-Port",
           "credit": "Naruto Broken Bond Android Port",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/1nsec/Naruto-The-Broken-Bond-Android-Port/HEAD/docs/images/title-screen.jpg",

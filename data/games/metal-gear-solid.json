@@ -79,5 +79,6 @@
   "wikidata": "Q6582527",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_%28video_game%29",
   "genre": "action-adventure game",
-  "website": "https://www.konami.com/mg/archive/mgs/"
+  "website": "https://www.konami.com/mg/archive/mgs/",
+  "summary": "Kein nativer Android-Port bekannt: Auf dem Handheld läuft die PS1-Fassung per Emulation. Das Decompilierungsprojekt mgs_reversing erzeugt bisher nur wieder die PS1-Programmdatei, keinen PC- oder Android-Port."
 }

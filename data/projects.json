@@ -2661,6 +2661,78 @@
       "description": "Liste von Switch-Recompilationen und nativen Ports, mit eigenem Android-Abschnitt (Thor, Odin, Retroid).",
       "games": [],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "doom-mobile",
+      "name": "DOOM Mobile",
+      "kind": "port",
+      "url": "https://github.com/Desm0nt/doom-port",
+      "repo": "Desm0nt/doom-port",
+      "description": "Inoffizieller nativer Android-Port der Switch-Fassung von DOOM (2016): ARM64-Spielcode läuft direkt, NVN wird auf Vulkan übersetzt. Eigene Spieldateien nötig.",
+      "games": [
+        "doom-2016"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "nfsu2-recompiled",
+      "name": "NFSU2 Recompiled",
+      "kind": "port",
+      "url": "https://github.com/codepdbh/nfsu2-recompiled",
+      "repo": "codepdbh/nfsu2-recompiled",
+      "description": "Statische Recompilation der PC-Fassung von Need for Speed: Underground 2 für Windows und Android (ARM64). Eigene Spieldateien nötig.",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "nfsu2-revived-android",
+      "name": "NFSU2 Revived Android",
+      "kind": "port",
+      "url": "https://github.com/mininxd/NFSU2-Revived-Android",
+      "repo": "mininxd/NFSU2-Revived-Android",
+      "description": "Fork von NFSU2 Recompiled mit Mehrspieler über Prometheus-Adhoc. Eigene Spieldateien nötig.",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "marathonrecomp",
+      "name": "MarathonRecomp",
+      "kind": "port",
+      "url": "https://github.com/sonicnext-dev/MarathonRecomp",
+      "repo": "sonicnext-dev/MarathonRecomp",
+      "description": "Statische Recompilation von Sonic the Hedgehog (2006, Xbox 360) für den PC, mit optionalen Fehlerkorrekturen und Ultrawide. Eigene Spieldateien nötig.",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "marathonrecomp-android",
+      "name": "MarathonRecomp Android",
+      "kind": "port",
+      "url": "https://github.com/SansNope/MarathonRecomp-Android",
+      "repo": "SansNope/MarathonRecomp-Android",
+      "description": "Inoffizieller Android-Port von MarathonRecomp mit APK; Spieldateien aus der eigenen Xbox-360-Fassung.",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "me1recomp",
+      "name": "ME1Recomp",
+      "kind": "port",
+      "url": "https://github.com/udarmolota/ME1Recomp",
+      "repo": "udarmolota/ME1Recomp",
+      "description": "Frühe statische Recompilation von Mass Effect (Xbox 360) für Android (über XDroid360) und PC. Eigene Spieldateien nötig.",
+      "games": [
+        "mass-effect"
+      ],
+      "checkedAt": "2026-11-18"
     }
   ]
 }

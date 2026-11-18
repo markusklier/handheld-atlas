@@ -222,17 +222,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/inicio.jpg",
-          "caption": "Launcher, Início",
+          "caption": "Launcher: Startseite mit eigener ISO und Spielen-Knopf",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dfdx047/Zandatsu/HEAD/docs/assets/screens/graficos.jpg",
-          "caption": "Launcher, Gráficos",
+          "caption": "Launcher: Grafikprofile von Minimal (540p, FSR) bis Ultra",
           "source": "https://github.com/dfdx047/Zandatsu",
           "credit": "Zandatsu",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

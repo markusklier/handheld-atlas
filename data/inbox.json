@@ -153,14 +153,6 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/JeuelSosaLarocca/ios-launcher-recompile",
-      "title": "JeuelSosaLarocca/ios-launcher-recompile",
-      "excerpt": "Recompilable copy of an iOS-style Android launcher: Gradle project, DexMerge/PostCompile tooling, Spanish, light/dark icons",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/poglyadyi/dirt2-android-arm64",
       "title": "poglyadyi/dirt2-android-arm64",
       "excerpt": "Colin McRae: DiRT 2 - static recompilation for Android ARM64 (Android build of XITRIX/Dirt-2-Recomp)",
@@ -177,25 +169,9 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/SansNope/MarathonRecomp-Android",
-      "title": "SansNope/MarathonRecomp-Android",
-      "excerpt": "Unofficial Android port of MarathonRecomp, built with Anthropic's Opus 5.5 AI under human direction, device testing and debugging. Artifacts, freezes and audio issues possible. SPECIAL THANKS to everyone testing and reporting.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/mxvisor/ignition-recomp",
       "title": "mxvisor/ignition-recomp",
       "excerpt": "Native port of Ignition (1997, Windows) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/udarmolota/ME1Recomp",
-      "title": "udarmolota/ME1Recomp",
-      "excerpt": "Static recompilation runtime for Mass Effect (Xbox 360) on Android (XDroid360) and PC. No game code or data: the player's own copy is recompiled.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -209,25 +185,9 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/arda6401/LOST-ISLAND",
-      "title": "arda6401/LOST-ISLAND",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/prem241994/DroidBridge",
       "title": "prem241994/DroidBridge",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/dicechaos/DiceChaosDisplay",
-      "title": "dicechaos/DiceChaosDisplay",
-      "excerpt": "A native Windows DM Studio paired with a borderless Player TV Display—engineered specifically for playing D&D and TTRPGs with real physical miniatures and real dice sitting on TV glass at locked 60 FPS.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -5902,11 +5862,14 @@
     "https://github.com/anmoldev06/MIRRIVO",
     "https://github.com/Varian08/smart-local-planner",
     "https://github.com/Aureon-R/aureon-r-client",
-    "https://github.com/BlackSingularities/OpenTakeoff"
+    "https://github.com/BlackSingularities/OpenTakeoff",
+    "https://github.com/arda6401/LOST-ISLAND",
+    "https://github.com/JeuelSosaLarocca/ios-launcher-recompile",
+    "https://github.com/dicechaos/DiceChaosDisplay"
   ],
   "agent": {
-    "lastRun": "2026-11-18T23:20Z",
-    "summary": "Abo-Anfrage #19 (Reihe Mass Effect) erledigt: 6 neue Spiele mit Fassungen (u. a. Legendary Edition, Wii-U-Fassung von ME3, Infiltrator als frühere offizielle Android-Fassung), ME1–3 zur Tiefenrecherche vorgemerkt; Warteschlange: MGS2, MGS3, Silent Hill 2 abgearbeitet (Mods MGSHDFix, CPP-Spielstände für Snake Eater 3D, SH2 Enhanced Edition – keine spielspezifischen Android-Wege belegbar); 30 Leads gesichtet: neue Wege für Celeste, Ninja Gaiden Black, Nightmare Creatures, Catherine: Full Body, Verzeichnis Awesome Switch Recomp, 17 verworfen, übrige zurückgestellt (u. a. WoW Forever: Titel unbestätigt; PS4-Ports von CrownParkComputing; FF Resonance: Titel unbestätigt; Angry-Birds-Recomp, DQ4-Recomp, skate.-Fix, Schedule-I-Companion, Horizon, Enigma, Rance 10 ohne Android-Build); 8 Bilder bestätigt. Wikipedia/Wikidata, Reddit- und YouTube-Bilder aus der Sandbox nicht erreichbar."
+    "lastRun": "2026-11-18T23:40Z",
+    "summary": "Abo-Anfragen #20 (Bilder NFSU2) und #21 (DOOM 2016) erledigt: neue native Android-Wege NFSU2 Recompiled und DOOM Mobile (Switch-Port), Fassungen Switch/Stadia für DOOM 2016; Warteschlange MGS1, Peace Walker, MGS4 abgearbeitet (keine spielspezifischen Android-Wege belegbar); Leads: neues Spiel Sonic the Hedgehog (2006) mit MarathonRecomp Android, ME1Recomp für Mass Effect, 3 verworfen; DiRT-2-Android-Build (unklar, ob die APK Spielcode enthält) und SRW64-Recomp (bisher nur macOS) zurückgestellt; 9 Bilder bestätigt, 1 Dublette entfernt. Play-Store-, YouTube-, Steam- und Reddit-Bilder aus der Sandbox nicht erreichbar."
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",

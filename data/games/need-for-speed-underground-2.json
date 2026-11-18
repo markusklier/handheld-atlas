@@ -9,7 +9,7 @@
     "Nintendo GameCube"
   ],
   "genre": "Rennspiel",
-  "summary": "Kein nativer Android-Port bekannt: Auf dem Handheld bleibt PS2- oder GameCube-Emulation, für die PC-Fassung eine PC-Laufzeitumgebung (Winlator/GameHub) samt Widescreen Fix. Belege für den Thor fehlen noch.",
+  "summary": "Seit Oktober 2026 gibt es einen inoffiziellen nativen Android-Port der PC-Fassung per statischer Recompilation (NFSU2 Recompiled) – mit Controller, Touch und Gyro, eigene Spieldateien nötig.",
   "versions": [
     {
       "id": "pc-konsolen-2004",
@@ -82,7 +82,96 @@
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "nfsu2-recompiled",
+      "name": "NFSU2 Recompiled",
+      "release": "pc-konsolen-2004",
+      "kind": "recomp",
+      "edition": "PC-Fassung (SPEED2.EXE v1.2 US)",
+      "runtime": "statische Recompilation nach C (pcrecomp), DXVK auf Vulkan",
+      "projects": [
+        "nfsu2-recompiled"
+      ],
+      "targets": [
+        "android",
+        "windows-x86_64"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "fps-cap"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von Need for Speed: Underground 2 (SPEED2.EXE v1.2 US)",
+        "Android 10 oder neuer, Vulkan 1.1"
+      ],
+      "benefit": "Nativer ARM64-Port mit Gamepad (USB/Bluetooth), anpassbarer Touch-Steuerung, Gyro-Lenkung, Auflösungswahl und Bildratenbegrenzung; Rennen laut Projekt spielbar.",
+      "caveat": "Inoffiziell und in Arbeit (v0.14.9). Laut Bericht stürzt es auf manchen Chips (Exynos 850, Dimensity 7020) ab; auf dem Thor nicht belegt. Der Fork NFSU2 Revived (mininxd) ergänzt Mehrspieler über Prometheus-Adhoc.",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/codepdbh/nfsu2-recompiled/main/docs/images/android_race_action.png",
+          "caption": "Rennen in Bayview mit Touch-Steuerung",
+          "source": "https://github.com/codepdbh/nfsu2-recompiled",
+          "credit": "NFSU2 Recompiled",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/codepdbh/nfsu2-recompiled/main/docs/images/android_race_gameplay.png",
+          "caption": "Nachtrennen auf Android",
+          "source": "https://github.com/codepdbh/nfsu2-recompiled",
+          "credit": "NFSU2 Recompiled",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/codepdbh/nfsu2-recompiled/main/docs/images/android_garage_tuning.png",
+          "caption": "Fahrzeugauswahl für ein Schnellrennen",
+          "source": "https://github.com/codepdbh/nfsu2-recompiled",
+          "credit": "NFSU2 Recompiled",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/codepdbh/nfsu2-recompiled"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/codepdbh/nfsu2-recompiled/releases"
+        },
+        {
+          "label": "Fork mit Mehrspieler (NFSU2 Revived)",
+          "url": "https://github.com/mininxd/NFSU2-Revived-Android"
+        },
+        {
+          "label": "Bericht (iXBT.games)",
+          "url": "https://ixbt.games/en/news/2026/10/24/nocnye-gonki-v-karmane-need-for-speed-underground-2-portirovali-na-android.html"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Snapdragon 8 Gen 3 (Angabe des Projekts)",
+          "result": "35–51+ FPS in Rennen",
+          "source": "https://github.com/codepdbh/nfsu2-recompiled",
+          "date": "2026-11-18"
+        },
+        {
+          "device": "Galaxy S25 Ultra (Angabe des Autors laut iXBT.games)",
+          "result": "100–120 FPS",
+          "source": "https://ixbt.games/en/news/2026/10/24/nocnye-gonki-v-karmane-need-for-speed-underground-2-portirovali-na-android.html",
+          "date": "2026-11-18"
+        }
+      ],
+      "checkedAt": "2026-11-18"
+    }
+  ],
   "mods": [
     {
       "id": "nfsu2-widescreen-fix",
@@ -112,6 +201,21 @@
       "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
       "caption": "Titelbild",
       "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+      "caption": "GameCube-Fassung",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "DS-Fassung: Rennen oben, Streckenkarte unten",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+      "caption": "Game-Boy-Advance-Fassung",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
     }
   ]
 }

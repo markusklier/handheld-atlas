@@ -4,6 +4,54 @@
       "date": "2026-11-18",
       "type": "route-added",
       "by": "agent",
+      "game": "doom-2016",
+      "text": "Neuer Spielweg: DOOM Mobile – inoffizieller nativer Android-Port der Switch-Fassung, laut Projekt ~40–50 FPS auf Snapdragon 8 Gen 2 (KI-Fund); Fassungen Switch (2017) und Stadia (2020) ergänzt",
+      "url": "https://github.com/Desm0nt/doom-port"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "need-for-speed-underground-2",
+      "text": "Neuer Spielweg: NFSU2 Recompiled – nativer Android-Port der PC-Fassung per statischer Recompilation (KI-Fund)",
+      "url": "https://github.com/codepdbh/nfsu2-recompiled"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "need-for-speed-underground-2",
+      "text": "Bilder: Android-Port, GameCube-, DS- und GBA-Fassung",
+      "url": "https://github.com/codepdbh/nfsu2-recompiled"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "game-added",
+      "by": "agent",
+      "game": "sonic-the-hedgehog-2006",
+      "text": "Neues Spiel: Sonic the Hedgehog (2006) mit inoffiziellem Android-Port von MarathonRecomp (APK, KI-Fund)",
+      "url": "https://github.com/SansNope/MarathonRecomp-Android"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
+      "game": "mass-effect",
+      "text": "Neuer Spielweg: ME1Recomp – frühe Recompilation der Xbox-360-Fassung für Android, noch nicht spielbar (KI-Fund)",
+      "url": "https://github.com/udarmolota/ME1Recomp"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "verified",
+      "by": "agent",
+      "game": "metroid",
+      "text": "9 Spielweg-Bilder geprüft (Metroid Dual, Pokémon Emerald, MGR Zandatsu, Naruto, NFSU2); 1 doppeltes Bild entfernt",
+      "url": "https://github.com/Nihilspire/Metroid-Dual"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "route-added",
+      "by": "agent",
       "game": "celeste",
       "text": "Neuer Spielweg: CelesteAndroid – nativer Android-Port der PC-Fassung mit fertiger APK (KI-Fund)",
       "url": "https://github.com/BelmanteGu/CelesteAndroid"
