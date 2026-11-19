@@ -898,7 +898,7 @@ function viewFranchise(name) {
   return `<a class="btn back" href="#/franchises" data-back>${icon('back')}Franchises</a><h1>${esc(f.name)}</h1>
     <p class="muted">${f.games.length} Spiele${f.routes ? ` · ${f.routes} dokumentierte Spielwege` : ''}</p>
     <div class="panel section coverage"><div class="meter"><span>Tiefenrecherchiert</span><b>${c.done} von ${c.total}${c.queued ? ` · ${c.queued} in der Warteschlange` : ''}</b><i style="--v:${Math.round((c.done / c.total) * 100)}%"></i></div>
-      <p class="muted">Fehlen Spiele oder Fassungen? Die Reihen-Analyse legt fehlende Spiele an und recherchiert danach jedes Spiel einzeln in der Tiefe (die ersten sofort, der Rest alle 2 Stunden).</p>
+      <p class="muted">Ein Auftrag für die ganze Reihe: Fehlende Spiele werden angelegt, und jedes Spiel bekommt sofort sein Basisprofil – Fassungen je Plattform, Cover (auch je Fassung) und Originalbilder. Danach recherchiert die KI jedes Spiel in der Tiefe (Wege, Mods, Berichte, Dual Screen): mit der API die ersten sofort und der Rest alle 2 Stunden, mit dem Abo beim nächsten Pflegelauf. Einzelne Spiele musst du dafür nicht extra anfordern.</p>
       ${(() => {
         const scan = DB.franchiseScan[f.name];
         if (!scan) return '<p class="faint">Für diese Reihe lief noch keine Reihen-Analyse – ob Spiele fehlen, ist also noch offen.</p>';
@@ -1746,12 +1746,27 @@ function dualBox(g, ways) {
 /* Dual Screen tab: one card per game (cover + all its dual-screen ways as sub-rows).
    DS/3DS/Wii U games count too – their original had two screens, every emulator for them uses both. */
 const NATIVE_DUAL = ['Nintendo DS', 'Nintendo 3DS', 'Wii U'];
+/* Old games that came to the Wii U / 3DS only through the Virtual Console (or as a collection) do not use the second
+   screen – only real releases count (Wind Waker HD yes, Super Metroid on the Wii U Virtual Console no). */
+const VC_ERA = new Set(['NES', 'SNES', 'Nintendo 64', 'Game Boy / Game Boy Color', 'Game Boy Advance', 'Nintendo DS', 'Wii',
+  'Nintendo GameCube', 'Sega Mega Drive', 'Sega Game Gear', 'PlayStation', 'PC Engine']);
+function twoScreenPlatform(g) {
+  const vs = versionsOf(g);
+  const old = vs.filter((v) => v.type === 'original').some((v) => v.platforms.some((p) => VC_ERA.has(p) && !NATIVE_DUAL.includes(p)));
+  for (const v of vs) {
+    const p = v.platforms.find((x) => NATIVE_DUAL.includes(x));
+    if (!p) continue;
+    if (p === 'Nintendo DS' || ['original', 'remaster', 'remake', 'android'].includes(v.type)) return p;
+    if (v.type === 'port' && !old && !/virtual console|eshop/i.test(v.name)) return p;
+  }
+  return null;
+}
 const dualType = (w) => w.r?.dualScreenType || (w.features.includes('two-screens') ? 'native' : 'integrated');
 function dualEntries() {
   return DB.games.map((g) => {
     const ways = waysFor(g).filter((w) => w.fits);
     const dual = ways.filter(isDual);
-    const nativePlat = g.platforms.find((p) => NATIVE_DUAL.includes(p));
+    const nativePlat = twoScreenPlatform(g);
     // the emulators of the two-screen original (melonDS, Azahar …), best rated first
     const emus = nativePlat ? ways.filter((w) => !isDual(w) && w.v.platforms.includes(nativePlat)).sort((a, b) => b.score - a.score) : [];
     if (!dual.length && !nativePlat) return null;

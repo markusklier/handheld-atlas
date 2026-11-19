@@ -691,6 +691,13 @@ def research_franchise(name, token, model, log=print):
         report = read(DATA / 'inbox.json').get('franchiseScan', {}).get(name, {'date': TODAY, 'listed': 0, 'added': [],
                                                                                'versions': [], 'skipped': []})
         report['source'] = 'ki'
+    # every game of the series gets its free basic entry right away: base profile, one version per platform,
+    # covers, original screenshots, a cover per version (scripts/series.py) – not only the next day by the watcher
+    try:
+        import series
+        series.fill_free([g['id'] for g in franchise_games(name)], log=log)
+    except Exception as e:  # noqa: BLE001
+        log(f'  ! Basisprofile der Reihe: {type(e).__name__}: {str(e)[:150]}')
     # deep research only where it pays off
     done = read(DATA / 'inbox.json').get('aiResearch', {})
     todo = [g for g in franchise_games(name) if g['id'] not in done]
@@ -971,6 +978,8 @@ def dual_scan(token, model, log=print, max_new=25):
                         'input': f"""Suche aktuelle Dual-Screen-Projekte für Android-Handhelds mit zwei Displays (AYN Thor u. ä.):
 Mods, Companion-Apps, Emulator-Forks und native Ports, die den zweiten Bildschirm für ein bestimmtes Spiel nutzen
 (Karte, Inventar, HUD, Touch-Steuerung). Besonders Neues der letzten 90 Tage (GitHub, r/SBCGaming, r/AYN, r/EmulationOnAndroid).
+Denk auch an PC-Spiele über GameNative/Winlator/GameHub mit offizieller oder Fan-Begleit-App auf dem unteren Bildschirm
+(z. B. Pip-Boy-App für Fallout, Karten-Companions für Bethesda- und Open-World-Spiele) und an Ports mit eigenem DS-Modus.
 Prüfe zusätzlich diese Kandidaten aus unserem Watcher und nimm die echten Dual-Screen-Projekte auf:
 {json.dumps(lead_list, ensure_ascii=False)}
 Diese Projekte kennen wir schon (nicht erneut nennen): {json.dumps(sorted(known_urls)[:400])}
@@ -1342,6 +1351,31 @@ def add_image(target, url, token=None, model=None, log=print):
     return len(shots)
 
 
+def free_part(jobs, log=lambda *a: None):
+    """What a request gets without AI, at once (also in the subscription mode): a series is completed from Wikidata and
+    every game gets its base profile, versions, covers and screenshots and goes into the queue (scripts/series.py);
+    a single game gets its base profile and pictures. Returns report lines."""
+    import series
+    out = []
+    for kind, target, _ in jobs:
+        try:
+            if kind == 'franchise' and target:
+                r = series.run(target, log=log)
+                out.append(f"- Reihe **{target}** sofort (freie Quellen): {r['games']} Spiele, {len(r['added'])} neu aufgenommen, "
+                           f"{r['covers']} mit Cover, {r['shots']} mit Originalbildern; {r['queued']} zur Tiefenrecherche eingereiht")
+            elif kind in ('game', 'update') and target and (DATA / 'games' / f'{target}.json').exists():
+                series.fill_free([target], log=log)
+                out.append(f'- {target}: Basisprofil, Fassungen und Bilder aus freien Quellen aufgefrischt')
+            elif kind == 'new' and target:
+                gid, created = create_game(target, log=log)
+                series.fill_free([gid], log=log)
+                queue_add([gid], 'Neues Spiel', front=True)
+                out.append(f"- {'Neu angelegt' if created else 'Schon vorhanden'}: {gid} – Basisprofil und Bilder aus freien Quellen")
+        except Exception as e:  # noqa: BLE001
+            out.append(f'- Freie Quellen für {target}: Fehler – {type(e).__name__}: {str(e)[:150]}')
+    return out
+
+
 def images_basic(game_ids, log=print):
     """Free sources first (no AI): libretro-thumbnails, project READMEs/releases, Steam, Wikipedia."""
     import covers
@@ -1533,6 +1567,7 @@ def main():
         if from_issue:
             if images:                       # free sources (libretro, Steam, Wikipedia) need no AI
                 images_basic([gid for gid in images if (DATA / 'games' / f'{gid}.json').exists()])
+            lines += free_part(ai_jobs)      # series / game: everything free right away, the deep research later
             lines.append(handover(why, args.issue_title))
         else:
             print(f'Keine automatische KI-Arbeit: {why}.')

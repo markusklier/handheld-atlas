@@ -116,3 +116,53 @@ class QualityTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class SeriesTest(unittest.TestCase):
+    """scripts/series.py: one request fills every game of the series (free sources stubbed) and queues them."""
+    def setUp(self):
+        import ai_research
+        import covers
+        import media
+        import wikidata
+        self.tmp = Path(tempfile.mkdtemp())
+        shutil.copytree(atlas.DATA, self.tmp / 'data')
+        self.saved = (atlas.DATA, ai_research.DATA, wikidata.DATA, covers.DATA, media.DATA, wikidata.STATE)
+        atlas.DATA = ai_research.DATA = wikidata.DATA = covers.DATA = media.DATA = self.tmp / 'data'
+        wikidata.STATE = self.tmp / 'data' / 'wikidata_state.json'
+        self.calls = []
+        self.patches = [(wikidata, 'complete_series', lambda name, log=print: {'members': 3, 'added': ['zz-two'], 'versions': [], 'skipped': []}),
+                        (wikidata, 'enrich', lambda *a, **k: self.calls.append('wikidata') or 0),
+                        (covers, 'main', lambda only=None, **k: self.calls.append(('covers', sorted(only))) or 0),
+                        (covers, 'fill_versions', lambda only=None, **k: 0),
+                        (media, 'fill_steam', lambda **k: 0), (media, 'fill_wikipedia', lambda **k: 0),
+                        (media, 'fill_website_covers', lambda **k: 0), (media, 'fill_route_shots', lambda **k: 0)]
+        self.orig = [(m, n, getattr(m, n)) for m, n, _ in self.patches]
+        for m, n, f in self.patches:
+            setattr(m, n, f)
+        for gid, title, plats in (('zz-one', 'ZZ One', ['PC', 'PlayStation 2']), ('zz-two', 'ZZ Two', ['PC'])):
+            atlas.write(atlas.DATA / 'games' / f'{gid}.json', {
+                'id': gid, 'title': title, 'franchise': 'ZZ Reihe', 'platforms': plats, 'routes': [], 'mods': [], 'updatedAt': '2026-11-19',
+                'versions': [{'id': 'multi', 'name': ' / '.join(plats) + ' (2004)', 'type': 'original', 'year': 2004, 'platforms': plats}]})
+
+    def tearDown(self):
+        import ai_research
+        import covers
+        import media
+        import wikidata
+        for m, n, f in self.orig:
+            setattr(m, n, f)
+        atlas.DATA, ai_research.DATA, wikidata.DATA, covers.DATA, media.DATA, wikidata.STATE = self.saved
+        shutil.rmtree(self.tmp)
+
+    def test_series_fills_and_queues_every_game(self):
+        import series
+        r = series.run('ZZ Reihe', log=lambda *a: None)
+        self.assertEqual(r['games'], 2)
+        self.assertEqual(r['queued'], 2)
+        self.assertIn(('covers', ['zz-one', 'zz-two']), self.calls)
+        one = atlas.read(atlas.DATA / 'games' / 'zz-one.json')
+        self.assertEqual(sorted(v['platforms'][0] for v in one['versions']), ['PC', 'PlayStation 2'])   # one version per platform
+        q = atlas.read(atlas.DATA / 'queue.json')
+        self.assertEqual([j['game'] for j in q['jobs'][:2]], ['zz-one', 'zz-two'])
+        self.assertEqual(atlas.read(atlas.DATA / 'inbox.json')['franchiseScan']['ZZ Reihe']['queued'], 2)

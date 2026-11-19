@@ -25,7 +25,7 @@ app/                   die Web-App (lädt dist/data.json)
 app/setup.js           Setup-Assistent in der Oberfläche (Einrichten, Messfahrt, Feintuning, zwei Bildschirme) – docs/SETUP.md
 android/               Atlas-App (Kotlin, WebView + native Brücke); die Action „Android-App“ baut und veröffentlicht die APK
 data/setup/            Setup-Daten: devices, apps (handverlesen!), policy, runs/<spiel>.json (Messfahrten), selftest, learned
-scripts/atlas.py       validate | build | stats | format
+scripts/atlas.py       validate | build | stats | format | repair | check | merge | split
 scripts/watch.py       Watcher (läuft täglich als GitHub Action)
 scripts/covers.py      Cover + Originalscreenshots aus libretro-thumbnails
 scripts/media.py       Spielweg-Screenshots aus Projekt-READMEs, Steam- und Wikipedia-Cover
@@ -38,6 +38,8 @@ scripts/ai_research.py KI-Recherche über die OpenAI-API (GitHub Action „KI-Re
 scripts/ai_vision.py   KI-Bildprüfung neuer Screenshots (readme/ai/reddit → ai-verified, ai-unclear oder entfernt)
 scripts/emuready.py    Community-Berichte von EmuReady (Geräte mit dem Chip des Thor) → versions[].reports
 scripts/franchises.py  Reihen-Prüfung; `--fix` korrigiert (läuft täglich im Watcher)
+scripts/quality.py     Datenregeln (in repair): eine Fassung je Plattform, Remake-Neuauflagen zum Remake; `atlas.py check`
+scripts/series.py      Reihe in einem Zug: vervollständigen + Basisprofil, Fassungen, Cover, Bilder für jedes Spiel (kostenlos)
 scripts/dualsim.mjs    Zwei-Bildschirm-Simulator für app/dual.js (Bilder + Stresstest, ohne Gerät) – docs/SETUP.md
 ```
 
@@ -58,19 +60,31 @@ scripts/dualsim.mjs    Zwei-Bildschirm-Simulator für app/dual.js (Bilder + Stre
 - **Dual Screen** hat Priorität. Jeder Dual-Screen-Weg bekommt `dualScreenType`: `integrated` (Spiel/Port/Emulator-Mod
   zeichnet selbst live auf Bildschirm 2), `companion` (separate Begleit-App), `info` (nur statische Infos/Karte),
   `native` (Original hatte zwei Bildschirme; dann Feature `two-screens` statt `dual-screen`).
-- **Fassungen vollständig** (Archiv-Anspruch): alle offiziellen Veröffentlichungen, gleiche Veröffentlichung auf mehreren
-  Plattformen = eine Fassung mit mehreren Plattformen. Die App klappt Fassungen ohne Weg automatisch ein.
+- **Fassungen vollständig, eine je Plattform** (Archiv-Anspruch, Entscheidung von Markus 19.11.2026): alle offiziellen
+  Veröffentlichungen, und zwar **eine Fassung je Plattform, auf der man sie auf dem Handheld anders spielt** – „PlayStation 2
+  (2004)“, „Nintendo GameCube (2004)“, „PC (2004)“, nicht „PC/PS2/Xbox/GameCube“: Jede hat ihr eigenes Cover, sieht anders
+  aus und braucht einen anderen Emulator. Nur Plattformen ohne Android-Emulator (PS4, PS5, Xbox One/Series …) derselben
+  Veröffentlichung dürfen zusammen stehen. `python3 scripts/atlas.py repair` teilt gemischte Fassungen automatisch auf
+  (`scripts/quality.py`: Wege, Mods, Berichte, Hinweise und Wiki-Links gehen mit) – trotzdem gleich richtig anlegen.
+  Cover und Bilder je Fassung holt `scripts/covers.py` (libretro-thumbnails) selbst. Die App klappt Fassungen ohne Weg ein.
 - **Ein Spiel, viele Fassungen – keine Dubletten**: Remaster, Neuauflagen, Portierungen und Sammlungen sind
-  **Fassungen** des Originalspiels („DOOM + DOOM II“ 2024 → Fassung bei `doom-1993` und `doom-ii`, Metroid Prime
-  Remastered → Fassung bei `metroid-prime`). Dubletten zusammenführen mit
+  **Fassungen** des Originalspiels („DOOM + DOOM II“ 2024 → Fassung bei `doom-1993` und `doom-ii`, Skyrim Special
+  Edition → Fassung bei Skyrim). Dubletten zusammenführen mit
   `python3 scripts/atlas.py merge <dublette> <hauptspiel> --type remaster --year 2011 --name "…"` (verschiebt Fassungen,
   Wege, Mods, Bilder und alle Verweise; `--same` = wirklich dasselbe Spiel unter anderem Namen).
-- **Remakes sind eigene Spiele** (Entscheidung von Markus, 11.11.2026): neu gebaute Spiele wie Ocarina of Time 3D,
-  Link's Awakening (2019), Tomb Raider: Anniversary bekommen eine eigene Datei mit `"remakeOf": "<id des Originals>"`
-  und eigenen Wegen. Das Original zeigt sie unten unter „Remakes“ (aufklappbar: was das Remake bietet), der Vergleich
-  enthält ihre Wege eingeklappt. Eine Fassung mit `type: "remake"` spaltet `python3 scripts/atlas.py repair` automatisch
-  ab (läuft in Watcher und KI-Recherche); von Hand: `python3 scripts/atlas.py split <spiel> <fassung> [--title "…"]`.
-  Reboots ohne Bezug zum Original bleiben eigene Spiele ohne `remakeOf` („DOOM (2016)“).
+- **Remakes sind eigene Spiele** (Entscheidung von Markus, 11.11.2026, geschärft 19.11.): neu gebaute Spiele wie
+  Ocarina of Time 3D, Link's Awakening (2019), Tomb Raider: Anniversary, Dead Space (2023) bekommen eine eigene Datei mit
+  `"remakeOf": "<id des Originals>"` und eigenen Wegen. **Remake oder Remaster?** Remake = neu gebaut (neue Engine oder
+  komplett neue Grafik/Modelle) – auch wenn es „Remastered“ heißt: **Metroid Prime Remastered, Crash Team Racing
+  Nitro-Fueled**, Shadow of the Colossus (2018), Resident Evil 2 (2019). Remaster = das Originalspiel technisch
+  aufgefrischt, oft mit umschaltbarer Originalgrafik (Skyrim Special Edition, Tomb Raider I–III Remastered, Wind Waker HD,
+  Mass Effect Legendary Edition) → bleibt Fassung. **Neuauflagen und Sammlungen eines Remakes gehören zum Remake**
+  („Tomb Raider: Anniversary – PS4/PS5“, „The Tomb Raider Trilogy“), nicht zum Original. Automatisch (`atlas.py repair`,
+  läuft in Watcher und KI-Recherche): Fassungen mit `type: "remake"` werden abgespalten (mehrere Plattform-Fassungen =
+  ein Spiel; gibt es das Remake schon als Spiel, wird zusammengeführt und `remakeOf` gesetzt), Neuauflagen mit dem
+  Remake-Namen wandern zum Remake, Wikidata setzt `remakeOf` bei „video game remake“ + „based on“. Von Hand:
+  `python3 scripts/atlas.py split <spiel> <fassung>[,<fassung>] [--title "…"]`. Reboots mit gleichem Namen („DOOM (2016)“,
+  „Tomb Raider (2013)“) bekommen `"notRemake": true`, damit `atlas.py check` sie nicht mehr meldet.
 - **Stufenmodell** (KI-Geld nur, wo es nötig ist): Stufe 0/1 = Wikidata-Basisprofil (`wikidata`, `wikipedia`, Fassungen
   mit Jahren; Watcher täglich 150 Spiele, kostenlos) → Stufe 2 = Tiefenrecherche (KI) nur auf Anfrage oder wenn die
   Reihen-Auswahl (`triage`) ein Spiel für lohnend hält → Aktualisieren (`update: <id>`) = nur Änderungen seit der letzten
@@ -162,7 +176,15 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    was gewünscht ist (`game:`, `update:`, `new-game:`, `franchise:`, `images:`, `dual-scan:`, freier Wunschtext wie
    „DroidDeck fehlt“). Ergebnis eintragen, Issue kommentieren und schließen (Befehle unten). Im Modus `abo` arbeitest du
    zusätzlich 3–5 Spiele aus `data/queue.json` ab (vorne entnehmen) und übernimmst die Bildprüfung (Schritt 5), weil
-   die automatischen API-Läufe pausieren. `research.json` nie von Hand umschalten – das macht Markus per Knopf unter Info.
+   die automatischen API-Läufe pausieren. Ebenso den **Dual-Screen-Suchlauf**: ist `inbox.json` → `dualScan.lastRun`
+   älter als 7 Tage, suche selbst nach neuen Dual-Screen-Mods, Companion-Apps (auch für PC-Spiele über GameNative/Winlator,
+   z. B. Pip-Boy-App), Emulator-Forks und Ports (GitHub, r/AYN, r/SBCGaming, r/EmulationOnAndroid, letzte 90 Tage),
+   trage Belegtes als Weg ein und setze `"dualScan": {"lastRun": "YYYY-MM-DD", "found": <n>, "by": "agent"}`.
+   **Reihen-Anfragen** (`franchise:`): Die Action hat die kostenlosen Teile schon erledigt (Spiele angelegt, Basisprofil,
+   Fassungen, Cover, Bilder, alle Spiele vorne in der Warteschlange – `scripts/series.py`); falls nicht, selbst
+   `python3 scripts/series.py "<Reihe>"` ausführen. Danach die ersten 3–5 Spiele der Reihe aus der Warteschlange
+   tiefenrecherchieren, Issue mit Stand kommentieren und schließen; der Rest folgt in den nächsten Läufen.
+   `research.json` nie von Hand umschalten – das macht Markus per Knopf unter Info.
    Neue Issues mit Label `recherche` bearbeitet sofort die GitHub Action „KI-Recherche“ (OpenAI) und schließt sie.
    Deine Aufgabe: Changelog-Einträge mit `"by": "ai-research"` seit deinem letzten Lauf durchgehen, die Quellen öffnen,
    Falsches korrigieren oder entfernen, Fassungen zusammenführen, Texte glätten, Screenshots ergänzen.
@@ -176,7 +198,9 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    `gh api -X PATCH repos/markusklier/handheld-atlas/issues/<n> -f state=closed`.
    Wenn `gh api` nicht erreichbar ist: Schritt überspringen, im Laufbericht erwähnen.
 3. **Inbox abarbeiten** (bis zu 30 Leads, neueste zuerst)
-   Für jeden Lead die Quelle öffnen (README/Release/Post) und entscheiden:
+   Für jeden Lead die Quelle öffnen (README/Release/Post) und entscheiden. GitHub-Seiten fremder Repos (`github.com/…`) sind
+   aus der Sitzung oft gesperrt – das README ist trotzdem lesbar über
+   `curl -sL https://raw.githubusercontent.com/<owner>/<repo>/HEAD/README.md` (Releases: `…/HEAD/CHANGELOG.md`).
    - **Gehört zu einem Spiel** (Port, Dual-Screen-Mod, Companion, Recomp …): Projekt in `projects.json` anlegen
      (`kind`, `url`, `repo`, `description`, `games`), Spielweg im Spiel anlegen (`verification: ai-unverified`).
      Gibt es das Spiel noch nicht, neue Datei anlegen (id = Titel-Slug; vorher per Titel suchen, keine Dubletten).
@@ -224,7 +248,10 @@ Ziel pro Lauf: spürbarer Fortschritt in 30–45 Minuten, lieber 5 gute Einträg
    unter anderem Namen wie „Pokémon Smaragd“/„Pokémon Emerald“ – dann den bekannteren englischen Titel verwenden).
    Neue Spiele bekommen Franchise, Plattformen und einen Satz `summary`; Cover/Screenshots ergänzt der Watcher am nächsten Tag.
 7. **Datenqualität** (nebenbei, ~10 Korrekturen)
-   Franchise = Titel bei Spielen, die zu einer Reihe gehören → richtige Reihe; falsche Plattformen; Dubletten zusammenführen.
+   `python3 scripts/atlas.py check` zeigt, was eine Entscheidung braucht: Remake-Verdacht (Fassung wird als neu gebaut
+   beschrieben → `type: "remake"`), gleiche Titel ohne `remakeOf` (Remake → `remakeOf`, Reboot → `notRemake: true`).
+   Außerdem: Franchise = Titel bei Spielen, die zu einer Reihe gehören → richtige Reihe; falsche Plattformen; Dubletten
+   zusammenführen.
 8. **Changelog & Bericht**
    Für jede sichtbare Änderung einen Eintrag oben in `changelog.json`:
    `{"date": "YYYY-MM-DD", "type": "route-added", "by": "agent", "game": "<id>", "text": "Neuer Spielweg: … (KI-Fund)", "url": "<Quelle>"}`

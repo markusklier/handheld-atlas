@@ -1,6 +1,22 @@
 {
   "leads": [
     {
+      "url": "https://bitrebels.com/?p=373108",
+      "title": "Fallout 4 mit Pip-Boy-App auf dem unteren Bildschirm (AYN Thor, GameHub Lite)",
+      "excerpt": "Bericht über ein Setup: Fallout 4 (PC, GOTY) in GameHub Lite auf dem AYN Thor, die offizielle Pip-Boy-Companion-App (ältere APK, nicht mehr im Play Store) live auf dem unteren Bildschirm; Quelle nennt einen Reddit-Beitrag. Dual Screen – prüfen und als Weg bei fallout-4 eintragen.",
+      "game": "fallout-4",
+      "source": "agent",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://www.nexusmods.com/newvegas/mods/60135",
+      "title": "Pip-Boy-Companion-App für Fallout: New Vegas / Fallout 3 (Nexus Mods)",
+      "excerpt": "Fan-App, die den Pip-Boy auf einem Android-Gerät nachbildet (braucht NVSE). Prüfen: unterstützt sie Fallout 3? Läuft sie auf dem unteren Bildschirm des Thor zusammen mit GameNative/Winlator? Dual Screen (companion).",
+      "game": "fallout-new-vegas",
+      "source": "agent",
+      "foundAt": "2026-11-19"
+    },
+    {
       "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
       "title": "dguillot-gh/phantom-hourglass-recomp",
       "excerpt": "Native PC and Android port of The Legend of Zelda: Phantom Hourglass by static recompilation. Bring your own ROM: no game data included.",
