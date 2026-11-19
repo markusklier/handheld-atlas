@@ -178,10 +178,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/HEAD/docs/screenshots/02-windfall.jpg",
-          "caption": "Windfall Island",
+          "caption": "Windfall Island mit Touch-Steuerung",
           "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
           "credit": "WindWakerHD-Android-Plus",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/HEAD/docs/screenshots/03-dragon-roost-portuguese.jpg",

@@ -218,10 +218,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/HEAD/docs/screenshots/shot_moves_top.png",
-          "caption": "Wild battle while choosing a move",
+          "caption": "Wilder Kampf bei der Attackenwahl (oberer Bildschirm)",
           "source": "https://github.com/Goldoire/pokeemerald-dualscreen",
           "credit": "Pokémon Emerald Dual Screen",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

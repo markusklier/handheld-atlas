@@ -113,14 +113,6 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/Aliferous3/droidbridge-chatgpt",
-      "title": "Aliferous3/droidbridge-chatgpt",
-      "excerpt": "Personal hardened DroidBridge build for ChatGPT Secure MCP Tunnel (command tool removed)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/rsigristc/DW3-DS-Android",
       "title": "rsigristc/DW3-DS-Android",
       "excerpt": "Open-source Android dual-screen companion for Digimon World 2003 (SLES-03936) and Flawe's Mod 2.0. No ROM or BIOS included.",
@@ -177,22 +169,6 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/pearce31/3D-Browser",
-      "title": "pearce31/3D-Browser",
-      "excerpt": "3D Browser with native and Pseudo 3D ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/tiraUnderCode23/AQ_MGU",
-      "title": "tiraUnderCode23/AQ_MGU",
-      "excerpt": "Community MGU Store source catalog: apps, tools, docs and pinned upstream snapshots",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/pecsoniii/mwrgds",
       "title": "pecsoniii/mwrgds",
       "excerpt": "OpenMW-DS Android build for Morrowind on the Anbernic RG DS",
@@ -209,121 +185,9 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/joeizang/codingpad",
-      "title": "joeizang/codingpad",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/solardev-xyz/freedom-browser-android",
-      "title": "solardev-xyz/freedom-browser-android",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/shaikh4783/PRP-GodownPro",
-      "title": "shaikh4783/PRP-GodownPro",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/StateofIntent/epistemic-happ",
-      "title": "StateofIntent/epistemic-happ",
-      "excerpt": " Holochain hApp for epistemic discourse: claims/critiques/evidence graphs, Promise Theory validation, web-of-trust attestation, and a Twitter correlative-witness bridge.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/nihalmohammed18/New-Grad-and-Internships-2027",
-      "title": "nihalmohammed18/New-Grad-and-Internships-2027",
-      "excerpt": "New grad jobs and internships 2027 in the US, Canada and Europe, every field. Entry-level only (≤2 years asked), visa info, updated daily by FirstJobby.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/Supa-Media/context",
-      "title": "Supa-Media/context",
-      "excerpt": "Free your context. Share your context. One MCP endpoint for every AI client, backed by a markdown bucket you own.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/RyoM-app/posture-lab",
-      "title": "RyoM-app/posture-lab",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/moravian-ai/czechspeech-web",
-      "title": "moravian-ai/czechspeech-web",
-      "excerpt": "CzechSpeech for the web: offline Czech speech-to-text in the browser (WebGPU / WebAssembly)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/Llamenos-Hotline/llamenos-platform",
-      "title": "Llamenos-Hotline/llamenos-platform",
-      "excerpt": "E2EE encrypted telophony, messaging and/or signal communication hub, contact and case management system for hotlines and communities in crisis",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/kUmutUK/nixos-hyprland-vfio",
-      "title": "kUmutUK/nixos-hyprland-vfio",
-      "excerpt": "Declarative NixOS setup with Hyprland, AMD gaming optimizations and single-GPU VFIO passthrough.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/AbsoluTho/airmanship-procedure-trainer",
-      "title": "AbsoluTho/airmanship-procedure-trainer",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/qcom-toolbox/Banana-OS",
-      "title": "qcom-toolbox/Banana-OS",
-      "excerpt": "A Highly Experimental Operating System.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/UncookedNoodle/QudLink",
       "title": "UncookedNoodle/QudLink",
       "excerpt": "Second-screen companion app for Caves of Qud (AYN Thor etc.)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/silviot/voice-recorder-hw-bt-usb",
-      "title": "silviot/voice-recorder-hw-bt-usb",
-      "excerpt": "Hardware analysis, Linux USB disconnect fix (udev + exFAT boundary), and Bluetooth documentation for Smartlink SL6801 (HW_76 / pen133_2.0.65) voice recorders",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/yogesh2902/dpdp-kit",
-      "title": "yogesh2902/dpdp-kit",
-      "excerpt": "Build India's DPDP Act 2023 into your Node.js backend: declared purposes, tamper-evident consent records, erasure plans and a CI audit.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -444,102 +308,6 @@
       "url": "https://github.com/empy94/kaldora-thor",
       "title": "empy94/kaldora-thor",
       "excerpt": "Kaldora companion for the AYN Thor dual displays",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/mondaylabsltd/vela-wallet",
-      "title": "mondaylabsltd/vela-wallet",
-      "excerpt": "A self-custodial smart wallet for EVM networks",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/zevbuild/upgrade-app-zevsafe",
-      "title": "zevbuild/upgrade-app-zevsafe",
-      "excerpt": "build by gemini",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/LeanBitLab/LeanType",
-      "title": "LeanBitLab/LeanType",
-      "excerpt": "LeanType is an Open-source keyboard, fork of HeliBoard with additional features and customisation",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/satetapongsa/ustwo-couple-app",
-      "title": "satetapongsa/ustwo-couple-app",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/aon-co-jp/open-english",
-      "title": "aon-co-jp/open-english",
-      "excerpt": "📛 Renamed → maid-cafe-english (this repo is kept permanently; links/releases/auto-update keep working) / 改名: maid-cafe-english(このリポジトリは永久に残します)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/storytold/craft-libs",
-      "title": "storytold/craft-libs",
-      "excerpt": "Rust libraries for the Craft Apps",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/gathamediaofficial-lab/AetherCall",
-      "title": "gathamediaofficial-lab/AetherCall",
-      "excerpt": "Modern, offline-first Android dialer built with Kotlin & Jetpack Compose featuring Samsung One UI & Apple iOS 18 Contact Poster UI, Carrier HD Video Calling (ViLTE), Dual-SIM routing, and local call recording.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/saikrishnakittz/therapy-companion",
-      "title": "saikrishnakittz/therapy-companion",
-      "excerpt": "AI-powered emotional wellness and guided reflection mobile application built with React Native and Supabase",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/aon-co-jp/RUNO",
-      "title": "aon-co-jp/RUNO",
-      "excerpt": "open-aruaru-runo-iLumi プロジェクトの統合管理本部　東京都あきる野市の、るのバスからヒントを得て名づけました。",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/mehreenhusn-cmyk/Jarvis",
-      "title": "mehreenhusn-cmyk/Jarvis",
-      "excerpt": "Personal",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/n2ray/xdesk",
-      "title": "n2ray/xdesk",
-      "excerpt": "XDesk: Android apps or a Linux desktop on an external, car or wireless display, with the phone as touchpad and keyboard. No root. Based on Termux:X11",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/amanKG777/FukeX",
-      "title": "amanKG777/FukeX",
-      "excerpt": "screen-reader-friendly, accessible, lightweight media player for android.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -5704,6 +5472,35 @@
     }
   ],
   "rejected": [
+    "https://github.com/Aliferous3/droidbridge-chatgpt",
+    "https://github.com/pearce31/3D-Browser",
+    "https://github.com/tiraUnderCode23/AQ_MGU",
+    "https://github.com/joeizang/codingpad",
+    "https://github.com/solardev-xyz/freedom-browser-android",
+    "https://github.com/shaikh4783/PRP-GodownPro",
+    "https://github.com/StateofIntent/epistemic-happ",
+    "https://github.com/nihalmohammed18/New-Grad-and-Internships-2027",
+    "https://github.com/Supa-Media/context",
+    "https://github.com/RyoM-app/posture-lab",
+    "https://github.com/moravian-ai/czechspeech-web",
+    "https://github.com/Llamenos-Hotline/llamenos-platform",
+    "https://github.com/kUmutUK/nixos-hyprland-vfio",
+    "https://github.com/AbsoluTho/airmanship-procedure-trainer",
+    "https://github.com/qcom-toolbox/Banana-OS",
+    "https://github.com/silviot/voice-recorder-hw-bt-usb",
+    "https://github.com/yogesh2902/dpdp-kit",
+    "https://github.com/mondaylabsltd/vela-wallet",
+    "https://github.com/zevbuild/upgrade-app-zevsafe",
+    "https://github.com/LeanBitLab/LeanType",
+    "https://github.com/satetapongsa/ustwo-couple-app",
+    "https://github.com/aon-co-jp/open-english",
+    "https://github.com/storytold/craft-libs",
+    "https://github.com/gathamediaofficial-lab/AetherCall",
+    "https://github.com/saikrishnakittz/therapy-companion",
+    "https://github.com/aon-co-jp/RUNO",
+    "https://github.com/mehreenhusn-cmyk/Jarvis",
+    "https://github.com/n2ray/xdesk",
+    "https://github.com/amanKG777/FukeX",
     "https://www.reddit.com/r/SBCGaming/comments/1xkeard/most_reliable_of_the_main_retro_handhelds/",
     "https://www.reddit.com/r/SBCGaming/comments/1xkj6de/who_needs_dual_screens_anyway/",
     "https://www.reddit.com/r/SBCGaming/comments/1xkuq1g/jack_of_all_trades_or_specialize/",
@@ -5994,8 +5791,8 @@
     "https://github.com/Javpato/real-life-battle-tower"
   ],
   "agent": {
-    "lastRun": "2026-11-19T01:30Z",
-    "summary": "Abo #24 (Wind Waker: Recomp-Weg auf v0.5.1 mit GamePad-Bild auf dem Thor-Unterbildschirm aktualisiert, neuer Weg WindWakerHD-Android-Plus, Fassungen ergänzt) und #25 (Tomb Raider: Anniversary: Fassungen korrigiert, kein Android-spezifischer Weg belegbar) erledigt; Warteschlange Silent Hill Downpour/2 Remake/f (neuer PC-Laufzeit-Weg für Silent Hill f mit Messwerten; SH2-Remake-Belege nur als nicht abrufbare Videos); neues Spiel Super Robot Wars 64 (Marchwind-64-Recomp), Verzeichnis Obtainium Recomp Pack; 13 irrelevante Leads verworfen; DiRT-2-Android-Builds offen gelassen (APK enthält offenbar rekompilierten Spielcode – Klärung durch Markus); 10 Bilder geprüft (8 bestätigt, 2 falsch zugeordnete entfernt); Bilder auf Reddit/YouTube/Google-Play/GitHub-Assets aus der Sitzung nicht abrufbar."
+    "lastRun": "2026-11-19T20:45Z",
+    "summary": "Keine offenen Abo-Anfragen. Warteschlange: Tomb Raider II (neuer Weg I–III Remastered als Android-App mit 60-FPS-Option), MGS Delta, Silent Hill Origins und Shattered Memories ohne belegbaren Android-spezifischen Weg (nur allgemeine Emulation; Winlator-Seite mit Download-Links nicht als Quelle genutzt); 10 Bilder geprüft (7 bestätigt, 1 Logo entfernt, 2 vertauschte GTA-Companion-Bilder entfernt); 29 irrelevante Leads verworfen. Offen: GitHub-Seiten fremder Repos waren aus der Sitzung nicht abrufbar, daher ~25 vielversprechende Port-/Recomp-/Dual-Screen-Leads (u. a. Phantom Hourglass Recomp, THPS4, FTL, DW3-DS, QudLink, Kaldora, SMZ3) ungeprüft in leads belassen; Play-Store/YouTube/Artikel-Bilder nicht ladbar."
   },
   "watcher": {
     "lastRun": "2026-11-19T14:29:12Z",

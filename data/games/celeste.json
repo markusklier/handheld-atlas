@@ -274,24 +274,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/BelmanteGu/CelesteAndroid/HEAD/docs/media/widescreen/00-antes-16x9-cap1.jpg",
-          "caption": "Original 16:9, chapter 1",
+          "caption": "Kapitel 1 im ursprünglichen 16:9-Bild",
           "source": "https://github.com/BelmanteGu/CelesteAndroid",
           "credit": "CelesteAndroid",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/BelmanteGu/CelesteAndroid/HEAD/docs/media/widescreen/cap04.jpg",
-          "caption": "Chapter 4",
+          "caption": "Kapitel 4",
           "source": "https://github.com/BelmanteGu/CelesteAndroid",
           "credit": "CelesteAndroid",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/BelmanteGu/CelesteAndroid/HEAD/docs/media/widescreen/03-widescreen-pausa.jpg",
-          "caption": "Pause menu",
+          "caption": "Pausenmenü im Breitbild",
           "source": "https://github.com/BelmanteGu/CelesteAndroid",
           "credit": "CelesteAndroid",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "reports": [],

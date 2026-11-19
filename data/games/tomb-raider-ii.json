@@ -86,8 +86,65 @@
       "note": "Portierung des Originals mit Touch- und Controllersteuerung; iOS im Dezember 2014, Android im Oktober 2015."
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-18",
+  "routes": [
+    {
+      "id": "tr2-remastered-android",
+      "name": "I–III Remastered als offizielle Android-App",
+      "kind": "native",
+      "release": "remastered",
+      "runtime": "Offizielle Aspyr-Android-App",
+      "projects": [
+        "tomb-raider-iiii-remastered-aspyr"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen",
+        "high-fps"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Kauf der Vollversion über die offizielle App (Paket com.aspyr.trm)"
+      ],
+      "benefit": "Tomb Raider II ist Teil der offiziellen Sammlung – direkt auf Android, ohne Emulator und ohne eigene PC-Spieldaten. Grafik zwischen Original und Neufassung umschaltbar; seit dem Update vom August 2026 gibt es eine 60-FPS-Option für die Originalgrafik und einen Helligkeitsregler.",
+      "caveat": "Für Tomb Raider II liegt noch kein eigener Erfahrungsbericht von einem Handheld vor; der Bericht vom AYN Thor bezieht sich auf die Demo der Sammlung (siehe Tomb Raider). Vor dem Spielen aktualisieren – Aspyrs Patch vom 6. Oktober 2026 behebt u. a. Controller-Ausfälle nach dem Minimieren.",
+      "steps": [
+        "Die offizielle App mit der Paket-ID com.aspyr.trm aus Google Play installieren.",
+        "Die Vollversion in der App freischalten und Tomb Raider II im Hauptmenü wählen."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.aspyr.trm"
+        },
+        {
+          "label": "Pocket Gamer: Mobil-Release",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        },
+        {
+          "label": "Pocket Gamer: 60-FPS-Update",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/quality-of-life-fixes/"
+        },
+        {
+          "label": "Aspyr: Patch-Hinweise",
+          "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19"
+    }
+  ],
+  "updatedAt": "2026-11-19",
   "summary": "Das PlayStation-Original per Emulation oder die Remastered-Sammlung, die es inzwischen auch als offizielle Android-Fassung gibt.",
   "wikidata": "Q816451",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider_II",

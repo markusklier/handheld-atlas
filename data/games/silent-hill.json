@@ -147,10 +147,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/TheYellowBee/silent-hill-dualscreen/HEAD/images/phone-upright-cafe.png",
-          "caption": "Phone upright: the cafe, the menu and touch buttons",
+          "caption": "Hochkant: oben das Spiel, darunter Menü und Touch-Tasten",
           "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
           "credit": "Silent Hill – Dualscreen",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

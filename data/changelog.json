@@ -2,6 +2,27 @@
   "entries": [
     {
       "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "tomb-raider-ii",
+      "text": "Neuer Spielweg: Tomb Raider I–III Remastered als offizielle Android-App mit 60-FPS-Option (KI-Fund)",
+      "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/quality-of-life-fixes/"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "text": "Bildprüfung: 7 Screenshots bestätigt (Celeste, Super Robot Wars 64, Wind Waker, Pokémon Emerald, Silent Hill), 1 Logo entfernt, 2 vertauschte Bilder der Grand Theft Companion bei GTA IV/V entfernt"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "removed",
+      "by": "agent",
+      "game": "super-robot-wars-64",
+      "text": "Logo-Grafik aus den Screenshots von MARCHWIND64 entfernt"
+    },
+    {
+      "date": "2026-11-19",
       "type": "route-updated",
       "game": "dead-space-2",
       "text": "2 Community-Berichte von EmuReady für Dead Space 2 (Geräte mit dem Chip des AYN Thor)"
