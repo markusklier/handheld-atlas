@@ -1,0 +1,89 @@
+{
+  "id": "super-robot-wars-64",
+  "title": "Super Robot Wars 64",
+  "franchise": "Super Robot Wars",
+  "platforms": [
+    "Nintendo 64"
+  ],
+  "genre": "Taktik-Rollenspiel",
+  "summary": "Nur in Japan erschienenes N64-Strategiespiel; der Recomp-Port Marchwind 64 bringt es nativ auf Android – mit vollständiger englischer Übersetzung, Breitbild und optionalem HD-Grafikpaket.",
+  "versions": [
+    {
+      "id": "n64",
+      "name": "Nintendo 64 (1999, Japan)",
+      "type": "original",
+      "year": 1999,
+      "platforms": [
+        "Nintendo 64"
+      ],
+      "note": "Japanische N64-Fassung (Super Robot Taisen 64); offiziell nie außerhalb Japans erschienen."
+    }
+  ],
+  "routes": [
+    {
+      "id": "srw64-marchwind64",
+      "name": "Marchwind 64 (SRW64 Recomp)",
+      "release": "n64",
+      "kind": "recomp",
+      "edition": "Japanische ROM, Rev 0",
+      "runtime": "N64Recomp / RT64 (Vulkan)",
+      "projects": [
+        "srw64-recomp"
+      ],
+      "targets": [
+        "android",
+        "windows-x86_64",
+        "linux-x86_64"
+      ],
+      "features": [
+        "widescreen",
+        "touch",
+        "mods",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene japanische ROM von Super Robot Taisen 64 (Rev 0)",
+        "Android 9+ (arm64) mit Vulkan 1.1"
+      ],
+      "benefit": "Nativer Port mit Übersetzungen (Englisch, Chinesisch, Koreanisch), Breitbild ohne Verzerrung, optionalem HD-Paket mit neu gezeichneten Porträts, Spielbeschleunigung, Autosaves und Mod-Unterstützung. Auf Android zeigt die Touch-Steuerung nur die gerade nötigen Knöpfe.",
+      "caveat": "Android ist laut README experimentell. Empfohlen ab Snapdragon 865 (etwa 30 FPS); für den AYN Thor gibt es noch keinen Bericht.",
+      "steps": [],
+      "effort": "easy",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/media/compare-hd-en.webp",
+          "caption": "HD-Grafikpaket im Breitbild mit englischer Übersetzung",
+          "source": "https://github.com/dyzz/srw64-recomp",
+          "credit": "Marchwind 64",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/media/compare-original-en.webp",
+          "caption": "Originalgrafik in 4:3",
+          "source": "https://github.com/dyzz/srw64-recomp",
+          "credit": "Marchwind 64",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/dyzz/srw64-recomp"
+        },
+        {
+          "label": "Projektseite",
+          "url": "https://srw64.dreamquest.club/en/"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19"
+    }
+  ],
+  "mods": [],
+  "screenshots": [],
+  "updatedAt": "2026-11-19"
+}

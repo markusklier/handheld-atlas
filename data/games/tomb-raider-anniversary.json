@@ -8,34 +8,40 @@
     "PSP",
     "PC",
     "Wii",
+    "Xbox 360",
     "mobile phone"
   ],
-  "genre": "action-adventure game",
-  "summary": "Remake von Tomb Raider (2007).",
+  "genre": "Action-Adventure",
+  "summary": "Neu gebautes Remake des ersten Tomb Raider (2007, Crystal Dynamics). Auf Android läuft es über PS2- oder PSP-Emulation; für beide gibt es Bildraten- bzw. Kamera-Patches.",
   "versions": [
     {
       "id": "playstation-2",
       "name": "Tomb Raider: Anniversary (2007)",
-      "type": "remake",
+      "type": "original",
       "year": 2007,
       "platforms": [
         "PlayStation 2",
-        "PSP",
         "PC",
-        "Wii"
+        "PSP",
+        "Wii",
+        "Xbox 360"
       ],
-      "note": "Remake des ersten Teils mit neuer Engine und überarbeiteten Levels. Per PS2- oder PSP-Emulation spielbar; dafür gibt es Bildraten- und Steuerungs-Patches.",
+      "note": "Remake des ersten Teils mit der Engine von Tomb Raider: Legend und überarbeiteten Levels; 2007 für PS2, PC, PSP, Xbox 360 und Wii erschienen. Per PS2- oder PSP-Emulation spielbar; dafür gibt es Bildraten- und Steuerungs-Patches.",
       "links": [
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        },
+        {
+          "label": "Veröffentlichungen (Tomb Raider Wiki)",
+          "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
         }
       ]
     },
     {
       "id": "mobile-phone-2007",
-      "name": "Original (2007)",
-      "type": "original",
+      "name": "Handy-Fassung (2007)",
+      "type": "port",
       "year": 2007,
       "platforms": [
         "mobile phone"
@@ -44,8 +50,13 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q580667"
+        },
+        {
+          "label": "Tomb Raider for Mobile Devices",
+          "url": "https://mail.tombraiders.net/stella/trmobile.html"
         }
-      ]
+      ],
+      "note": "Eigenständige Fassung für Mobiltelefone (Dezember 2007), die die Schauplätze des Remakes aufgreift – kein Port des 3D-Spiels."
     },
     {
       "id": "macintosh-2008",
@@ -64,8 +75,8 @@
     },
     {
       "id": "playstation-3-2011",
-      "name": "PlayStation 3 (2011)",
-      "type": "port",
+      "name": "The Tomb Raider Trilogy (PS3, 2011)",
+      "type": "collection",
       "year": 2011,
       "platforms": [
         "PlayStation 3"
@@ -74,8 +85,13 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q580667"
+        },
+        {
+          "label": "Tomb Raider Wiki",
+          "url": "https://www.tombraiderwiki.org/index.php/The_Tomb_Raider_Trilogy"
         }
-      ]
+      ],
+      "note": "PS3-Sammlung mit Legend, Anniversary und Underworld; Anniversary mit überarbeiteter Grafik und eigenen Trophäen. Nur auf PS3 erschienen."
     }
   ],
   "routes": [],
@@ -106,7 +122,7 @@
     }
   ],
   "screenshots": [],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q580667",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_Anniversary",
   "cover": {

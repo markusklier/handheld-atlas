@@ -2,6 +2,60 @@
   "entries": [
     {
       "date": "2026-11-19",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "the-legend-of-zelda-the-wind-waker",
+      "text": "ZeldaWWHDRecomp auf v0.5.1: GamePad-Bild (Karte, Inventar) auf dem unteren Bildschirm des AYN Thor, eingebauter Randomizer",
+      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/CHANGELOG.md"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-the-wind-waker",
+      "text": "Neuer Spielweg: WindWakerHD-Android-Plus – Android-Fork ab Android 11 / Vulkan 1.1 (KI-Fund)",
+      "url": "https://github.com/Nycolazs/WindWakerHD-Android-Plus"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "tomb-raider-anniversary",
+      "text": "Fassungen korrigiert: Xbox 360 ergänzt, Handy-Fassung und PS3-Sammlung „The Tomb Raider Trilogy“ richtig eingeordnet",
+      "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "silent-hill-f",
+      "text": "Neuer Spielweg: PC-Fassung über GameHub oder Winlator, 20–40 FPS auf Snapdragon 8 Gen 3 (KI-Fund)",
+      "url": "https://vgtimes.com/gaming-news/134117-silent-hill-f-launched-on-android-using-an-emulator.html"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "super-robot-wars-64",
+      "text": "Neues Spiel: Super Robot Wars 64 mit nativem Recomp-Port Marchwind 64 (englisch, Breitbild, HD-Paket; KI-Fund)",
+      "url": "https://github.com/dyzz/srw64-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neues Verzeichnis: Obtainium Recomp Pack (Dual-Screen- und Recomp-Ports für den AYN Thor)",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "star-wars-rogue-squadron",
+      "text": "8 Spielweg-Bilder geprüft und beschriftet (Rogue Squadron, Sonic Free Riders, Shantae); 2 falsch zugeordnete Bilder bei Super Mario Sunshine entfernt"
+    },
+    {
+      "date": "2026-11-19",
       "type": "game-added",
       "by": "agent",
       "game": "dead-space",

@@ -26,12 +26,16 @@
         {
           "label": "DownpourRecomp",
           "url": "https://github.com/LittleBitUA/DownpourRecomp"
+        },
+        {
+          "label": "DownpourRecomp (Windows)",
+          "url": "https://github.com/LittleBitUA/DownpourRecomp"
         }
       ],
-      "note": "Für die Xbox-360-Fassung gibt es seit 2026 den inoffiziellen nativen Windows-Port DownpourRecomp (statische Rekompilierung, eigene Spieldaten nötig); eine Android-Fassung nennt das Projekt nicht."
+      "note": "Für die Xbox-360-Fassung gibt es seit 2026 den inoffiziellen nativen Windows-Port DownpourRecomp (statische Rekompilierung, eigene Spieldaten nötig); eine Android-Fassung nennt das Projekt nicht. Auf Android nur über die experimentelle Xbox-360- bzw. PS3-Emulation. Für Windows gibt es den Community-Port DownpourRecomp (aus eigenen Xbox-360-Spieldaten, 60 FPS); eine Android-Fassung davon gibt es nicht."
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-19"
 }

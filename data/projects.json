@@ -2853,6 +2853,40 @@
         "pac-man-championship-edition-2"
       ],
       "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "windwakerhd-android-plus",
+      "name": "WindWakerHD-Android-Plus",
+      "kind": "port",
+      "url": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+      "repo": "Nycolazs/WindWakerHD-Android-Plus",
+      "description": "Android-Fork des Wind-Waker-HD-Recomp-Ports (über GreenNaugahyde und SSunnKing): Android 11+ und Vulkan 1.1, HUD-Editor, Gyro, Speicherstände, Frame-Generation, portugiesische Übersetzung.",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "srw64-recomp",
+      "name": "Marchwind 64 (SRW64 Recomp)",
+      "kind": "port",
+      "url": "https://github.com/dyzz/srw64-recomp",
+      "repo": "dyzz/srw64-recomp",
+      "description": "Native Recompilation von Super Robot Wars 64 für Windows, macOS, Linux, Android und Switch mit Übersetzungen, Breitbild und HD-Grafikpaket.",
+      "games": [
+        "super-robot-wars-64"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "obtainium-recomp-pack",
+      "name": "Obtainium Recomp Pack",
+      "kind": "directory",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack",
+      "repo": "kyure001/obtainium_recomp_pack",
+      "description": "Obtainium-Importpaket für den AYN Thor: Dual-Screen-Ports, Thor-Werkzeuge und Decomp-/Recomp-Ports, die nicht im Recompa-Katalog stehen (Liste in STATUS.md).",
+      "games": [],
+      "checkedAt": "2026-11-19"
     }
   ]
 }

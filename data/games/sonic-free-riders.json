@@ -80,17 +80,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/custom-vrm-gameplay.png",
-          "caption": "A custom VRM model riding an Extreme Gear during a race",
+          "caption": "Eigenes VRM-Modell im Rennen",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/online-3-devices.png",
-          "caption": "Three devices in the same online race",
+          "caption": "Online-Rennen auf drei Geräten, rechts der AYN Thor",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

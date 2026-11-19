@@ -25,11 +25,13 @@
   "versions": [
     {
       "id": "nintendo-gamecube",
-      "name": "Nintendo GameCube",
+      "name": "GameCube (2002)",
       "type": "original",
       "platforms": [
         "Nintendo GameCube"
-      ]
+      ],
+      "year": 2002,
+      "note": "Original mit Cel-Shading-Grafik; Japan Dezember 2002, Nordamerika und Europa 2003."
     },
     {
       "id": "the-wind-waker-hd",
@@ -38,7 +40,24 @@
       "platforms": [
         "Wii U"
       ],
-      "year": 2013
+      "year": 2013,
+      "note": "HD-Remaster für Wii U mit überarbeiteter Beleuchtung, schnellerem Segel und Karte/Inventar auf dem GamePad-Bildschirm – Grundlage für den nativen Android-Port."
+    },
+    {
+      "id": "switch-2-nintendo-classics",
+      "name": "Nintendo Classics (Switch 2, 2025)",
+      "type": "rerelease",
+      "year": 2025,
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "note": "GameCube-Fassung im Abo Nintendo Switch Online + Erweiterungspaket, zum Start der Switch 2 erschienen.",
+      "links": [
+        {
+          "label": "Gematsu",
+          "url": "https://www.gematsu.com/2025/04/nintendo-gamecube-nintendo-classics-announced-for-nintendo-switch-online-expansion-pack-on-switch-2"
+        }
+      ]
     }
   ],
   "routes": [
@@ -55,18 +74,23 @@
         "android"
       ],
       "features": [
-        "two-screens"
+        "two-screens",
+        "touch-inventory",
+        "live-map",
+        "high-fps",
+        "mods",
+        "native-arm"
       ],
-      "dualScreen": "Das Spiel öffnet zwei Fenster: TV-Bild und GamePad-Bild (Karte, Gegenstände, Menüs, mit Touch). Laut Android-Prüfliste soll das GamePad-Bild auf den zweiten Bildschirm (ausdrücklich AYN Thor genannt); die Tests auf echten Geräten stehen dort noch aus.",
+      "dualScreen": "Das TV-Bild läuft auf dem Hauptbildschirm, das Wii-U-GamePad-Bild (Karte, Gegenstände, Menüs, mit Touch) auf dem unteren Bildschirm des AYN Thor. „GamePad screen: Off“ gibt den unteren Bildschirm für andere Apps frei.",
       "dualScreenType": "native",
       "requires": [
         "Eigene Wii-U-Fassung von The Wind Waker HD (USA oder Europa, Version 0) als eigener Dump (.wux/.wud mit Schlüsseln, .wua oder entpackter Ordner)",
         "Android 13+ (arm64) mit Vulkan 1.3"
       ],
-      "benefit": "Nativer Port statt Emulation: laut README von Anfang bis Ende spielbar (macOS, Windows, Linux, Android). Die Release-App baut das Spiel auf dem Gerät aus dem eigenen Dump; ein Mod-SDK ist enthalten.",
-      "caveat": "Die Dual-Screen-Ausgabe auf echter Zwei-Bildschirm-Hardware ist laut Projekt-Prüfliste noch ungetestet; auf Android schaltet sonst ein Knopf zwischen TV-, GamePad- und kombinierter Ansicht. Das README nennt 30–32 FPS in den schwersten Szenen auf einem Galaxy S25 Ultra – für den Thor gibt es noch keinen Beleg.",
+      "benefit": "Nativer Port statt Emulation (statische Recompilation, Vulkan): laut README von Anfang bis Ende spielbar. Die Setup-App baut das Spiel auf dem Gerät aus dem eigenen Dump. Seit v0.4.0 GamePad-Bild auf dem zweiten Bildschirm, 40-/60-FPS-Modi mit Hitzeschutz für Handhelds; v0.5.1 bringt einen eingebauten Randomizer, optionale GameCube-Modelle und einen Mod-Katalog im Spiel.",
+      "caveat": "Laut Android-Prüfliste stehen Tests auf echten Geräten (auch AYN Thor) noch aus. Die Testtabelle des Projekts nennt etwa 59 FPS auf Snapdragon 8 Elite und stabile 30 FPS auf Snapdragon 8 Gen 3 – für den Thor (Snapdragon 8 Gen 2) gibt es noch keine Messung. Android-Forks mit eigenen Zusatzfunktionen: GreenNaugahyde/ZeldaWWHDRecompAndroid und WindWakerHD-Android-Plus.",
       "steps": [],
-      "version": "v0.3.0 (laut README)",
+      "version": "v0.5.1",
       "effort": "guided",
       "status": "experimental",
       "verification": "ai-unverified",
@@ -80,17 +104,94 @@
         {
           "label": "Android-Prüfliste",
           "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
+        },
+        {
+          "label": "Android-Anleitung",
+          "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android.md"
+        },
+        {
+          "label": "Changelog",
+          "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/CHANGELOG.md"
+        },
+        {
+          "label": "Bericht v0.4.0 (OverclockedHQ)",
+          "url": "https://overclockedhq.com/news/wind-waker-hd-recompiled-0-4-0-android-world-editor"
         }
       ],
       "reports": [],
       "performance": [],
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "edition": "Wii U (USA oder Europa, Version 0)"
+    },
+    {
+      "id": "wwhd-android-plus",
+      "name": "WindWakerHD-Android-Plus",
+      "release": "the-wind-waker-hd",
+      "kind": "recomp",
+      "edition": "Wii U (USA, Europa oder Japan)",
+      "runtime": "Statische Recompilation, Vulkan 1.1",
+      "projects": [
+        "windwakerhd-android-plus"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch",
+        "high-fps",
+        "mods",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene Wii-U-Fassung von The Wind Waker HD als eigener Dump (.wua oder .wud/.wux mit Schlüsseln)",
+        "Android 11+ (arm64) mit Vulkan 1.1"
+      ],
+      "benefit": "Android-Fork des Wind-Waker-HD-Ports mit geringeren Anforderungen (Android 11, Vulkan 1.1): HUD-Editor, Touch-Steuerung, Gyro, Speicherstände, 60 FPS per Frame-Generation, Mods und portugiesische Übersetzung.",
+      "caveat": "Fork von GreenNaugahydes Android-Port (über den Enhanced-Fork von SSunnKing). Das README beschreibt keine Ausgabe auf einem zweiten Bildschirm – für den AYN Thor ist der Hauptport ZeldaWWHDRecomp mit GamePad-Bild unten die naheliegendere Wahl.",
+      "steps": [],
+      "version": "v1.14 (laut README)",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/main/docs/screenshots/01-outset-touch-controls.jpg",
+          "caption": "Präludeninsel mit Touch-Steuerung",
+          "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+          "credit": "WindWakerHD-Android-Plus",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/main/docs/screenshots/05-item-menu-widescreen.jpg",
+          "caption": "Gegenstandsmenü im Breitbild",
+          "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+          "credit": "WindWakerHD-Android-Plus",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/main/docs/screenshots/06-hud-layout-editor.jpg",
+          "caption": "HUD-Editor",
+          "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+          "credit": "WindWakerHD-Android-Plus",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Nycolazs/WindWakerHD-Android-Plus"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19"
     }
   ],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q852563",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_The_Wind_Waker",
   "genre": "Action-Adventure",
-  "website": "https://www.zelda.com/windwaker/"
+  "website": "https://www.zelda.com/windwaker/",
+  "summary": "Die Wii-U-Fassung Wind Waker HD läuft als nativer Recomp-Port auf Android – auf dem AYN Thor mit Karte und Inventar des GamePads auf dem unteren Bildschirm."
 }

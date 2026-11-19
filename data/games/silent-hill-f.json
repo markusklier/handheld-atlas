@@ -8,7 +8,7 @@
     "Xbox Series"
   ],
   "genre": "Survival-Horror",
-  "summary": "Im Japan der 1960er spielender Hauptteil (2025).",
+  "summary": "Im Japan der 1960er spielender Hauptteil (2025). Auf Android nur als PC-Fassung über Windows-Laufzeiten wie GameHub oder Winlator – auf starken Snapdragon-Chips mit 20–40 FPS.",
   "versions": [
     {
       "id": "multi",
@@ -28,7 +28,54 @@
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "shf-pc-runtime",
+      "name": "PC-Fassung über GameHub oder Winlator",
+      "release": "multi",
+      "kind": "pc-runtime",
+      "edition": "Windows (Steam)",
+      "runtime": "GameHub 5.0.2 oder Winlator Bionic Ludashi 2.5 (Wine/Box64)",
+      "projects": [
+        "gamehub",
+        "winlator"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von Silent Hill f (Steam)",
+        "Sehr starker Snapdragon-Chip"
+      ],
+      "benefit": "Ein Test auf einem Snapdragon-8-Gen-3-Smartphone zeigt, dass die Windows-Fassung über GameHub bzw. Winlator Bionic Ludashi startet und spielbar ist.",
+      "caveat": "Nur ein Test eines Fachportals (Snapdragon 8 Gen 3): 20–40 FPS, Winlator Frost startete nicht. Der AYN Thor (Snapdragon 8 Gen 2) ist schwächer – mit niedrigeren Bildraten rechnen; Unreal-Engine-5-Spiel mit hohem Speicherbedarf.",
+      "steps": [],
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Test (VGTimes)",
+          "url": "https://vgtimes.com/gaming-news/134117-silent-hill-f-launched-on-android-using-an-emulator.html"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "POCO F7 Pro (Snapdragon 8 Gen 3)",
+          "result": "20–40 FPS mit GameHub 5.0.2 und Winlator Bionic Ludashi 2.5; 20–30 FPS mit Winlator Bionic CMOD 13.1.1; Winlator Frost startet nicht",
+          "source": "https://vgtimes.com/gaming-news/134117-silent-hill-f-launched-on-android-using-an-emulator.html",
+          "date": "2025-09-26"
+        }
+      ],
+      "checkedAt": "2026-11-19"
+    }
+  ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-19"
 }
