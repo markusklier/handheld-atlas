@@ -45,5 +45,23 @@
   "routes": [],
   "mods": [],
   "updatedAt": "2026-11-18",
-  "remakeOf": "silent-hill"
+  "remakeOf": "silent-hill",
+  "wikidata": "Q1754133",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Shattered_Memories",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Silent%20Hill_%20Shattered%20Memories%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Silent%20Hill_%20Shattered%20Memories%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Silent%20Hill_%20Shattered%20Memories%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
 }

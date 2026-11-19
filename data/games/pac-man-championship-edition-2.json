@@ -24,6 +24,36 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/Pac-Man_Championship_Edition_2"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/756a8ef3-8647-4f77-ac4a-2495157c9a7c"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1e701a4e-da38-4cbf-9eb3-8fd9e8efa091",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Portal is in Xbox input mode and Standard power mode. Use SDL API for controls. Runs perfect 60 FPS. No cloud saves or online leaderboards.",
+          "votes": 1,
+          "date": "2025-08-08",
+          "settings": {
+            "Emulator Version": "v0.3.0",
+            "Graphics Driver": "Vortek (Universal)",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.4-gplasync",
+            "Audio Driver": "ALSA",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Average FPS": "60"
+          }
         }
       ]
     }
@@ -70,5 +100,41 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "cover": {
+    "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/header.jpg?t=1654694529",
+    "source": "https://store.steampowered.com/app/441380/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_b7eb1d63263119db019fcb5c1cac6f84b5d885c4.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_1b83759dab4663be54add0cf7bf1c3da76107b8a.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_fec474f9670718212085a239fe733a04bcdea4f6.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_5bfa8b36464ceac9a8dc6d815f73c1747e93b42f.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_3f8d0bf8ffde9e092493752850f430d8d4f1065d.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/441380/ss_aacc519570cb74e63b8b3cdd63c9139239f85f32.1920x1080.jpg?t=1654694529",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/441380/"
+    }
+  ]
 }

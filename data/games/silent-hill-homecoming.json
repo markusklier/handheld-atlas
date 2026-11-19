@@ -30,5 +30,11 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q938935",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Homecoming",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_Homecoming.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Homecoming"
+  }
 }

@@ -78,5 +78,10 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Shadowgun",
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q7460732",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Shadowgun_icon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Shadowgun"
+  }
 }

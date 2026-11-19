@@ -66,6 +66,13 @@
           "source": "https://github.com/mxvisor/nightmare_creatures-recomp",
           "credit": "nightmare_creatures-recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/nightmare_creatures-recomp/HEAD/docs/windows.jpg",
+          "caption": "The port's panel over the game on Windows",
+          "source": "https://github.com/mxvisor/nightmare_creatures-recomp",
+          "credit": "Nightmare Creatures Recomp",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -91,5 +98,23 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q536833",
+  "wikipedia": "https://en.wikipedia.org/wiki/Nightmare_Creatures",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Nightmare%20Creatures%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Nightmare%20Creatures%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Nightmare%20Creatures%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
 }

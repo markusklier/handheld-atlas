@@ -42,5 +42,23 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q840699",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Origins",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Silent%20Hill%20-%20Origins%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Silent%20Hill%20-%20Origins%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Silent%20Hill%20-%20Origins%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+    }
+  ]
 }

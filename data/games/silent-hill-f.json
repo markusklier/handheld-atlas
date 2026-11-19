@@ -77,5 +77,44 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q114772020",
+  "website": "https://www.konami.com/games/silenthill/f",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_f",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2947440/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/93e420a6665b42229735a3495b86bd35b7cb8c53/ss_93e420a6665b42229735a3495b86bd35b7cb8c53.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/fdfc1171e15f271eb16750cd0e5575e5e312a6af/ss_fdfc1171e15f271eb16750cd0e5575e5e312a6af.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/212938a6419ccb6f2d2b6bdfe9c09a2600b7d846/ss_212938a6419ccb6f2d2b6bdfe9c09a2600b7d846.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/596675f3269d51ef397a7db04a08199fe1987ff1/ss_596675f3269d51ef397a7db04a08199fe1987ff1.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/c2a0f8efcb4cc01d3046a5c68675f9c811ee90e4/ss_c2a0f8efcb4cc01d3046a5c68675f9c811ee90e4.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/0052fc9d54c4b4f1588b798a6638556c6b5d4db2/ss_0052fc9d54c4b4f1588b798a6638556c6b5d4db2.1920x1080.jpg?t=1770169624",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2947440/"
+    }
+  ]
 }

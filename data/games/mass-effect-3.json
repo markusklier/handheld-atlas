@@ -83,5 +83,12 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q753511",
+  "website": "https://www.ea.com/games/mass-effect/mass-effect-3)",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect_3",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Mass_Effect_3_Game_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mass_Effect_3"
+  }
 }

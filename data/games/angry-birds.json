@@ -24,6 +24,21 @@
           "url": "https://en.wikipedia.org/wiki/Angry_Birds_(video_game)"
         }
       ]
+    },
+    {
+      "id": "wii-2013",
+      "name": "Wii (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q4558721"
+        }
+      ]
     }
   ],
   "routes": [
@@ -69,5 +84,13 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q4558721",
+  "website": "https://www.angrybirds.com",
+  "playStore": "https://play.google.com/store/apps/details?id=com.rovio.angrybirds",
+  "wikipedia": "https://en.wikipedia.org/wiki/Angry_Birds_%28video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/2d/Angry_Birds_promo_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Angry_Birds_%28video_game%29"
+  }
 }

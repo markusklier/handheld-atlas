@@ -13,7 +13,195 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "year": 2023
+      "year": 2023,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/224fc673-5312-4964-a049-cb8343b23634",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "The Legend of Zelda: Tears of the Kingdom is now finally free of black squares on AYN Thor! With a combination of specific Eden Emulator build, settings and drivers everyone now can get rid of the annoying black squares ",
+          "votes": 4,
+          "date": "2026-09-21",
+          "settings": {
+            "Emulator Version": "PR build #4324 commit c3bdfd14c5",
+            "Driver Version": "Default System Driver",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "0.75",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO Relaxed",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a85eae7f-af57-48f7-a883-d677f4bdf0b8",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "**Do not use an update higher than 1.2.0, otherwise the game will not launch or will crash (example: 1.4.2.)** I'm deliberately staying at 720p + FSR (80%). Plus these settings in Eden Veil: RAII (ON) Speed ​​GPU Time (O",
+          "votes": 13,
+          "date": "2025-09-04",
+          "settings": {
+            "Emulator Version": "0.0.3 RC3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "AMD FidelityFX - Super Resolution",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e768db3b-f5ca-4efb-ae88-13825165d52c",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 8,
+          "date": "2025-11-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d030e729-47b4-4edf-93e9-bcaacfc593fd",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game runs at stable 30 fps, only during shader compilation the fps drops to 25 fps for a second. Use the Turnip 26.0.0 R4 for this game, it gives the best result of all tested drivers. The game has still some black artif",
+          "votes": 7,
+          "date": "2026-06-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/791f6c6e-52fe-4a6d-a56e-efaac756d8cd",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game runs at stable 30 fps, only during shader compilation the fps drops to 25 fps for a second. Use the Turnip 26.0.0 R4 for this game, it gives the best result of all tested drivers. The game has still some black artif",
+          "votes": 5,
+          "date": "2026-06-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/40009a09-c4e5-4c44-8d8d-e85111dcc7ff",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "8GB Model. Stable 30fps. Dips when loading shaders and new areas. Performance mode set to performance. Minor graphical issues",
+          "votes": 5,
+          "date": "2026-05-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2d5e4b82-2085-4447-91b9-444e34036e33",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-08-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5a6d87fa-a528-4da0-8bc9-d5c7ab7570bc",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs really great and very playable, tiny glitch stuff here and there but nothing too crazy. Runs only on 30 fps when I was playing.",
+          "votes": 1,
+          "date": "2026-04-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1df78dc6-fbf8-4f64-84f3-be74bc66e9ac",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "So far plays at 30fps, dipping to 20fps in big areas. Playable.",
+          "votes": 1,
+          "date": "2026-02-27"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0c588271-18d5-4768-b5a6-adfedfed89fe",
+          "device": "AYN Thor Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Works very well, haven't seen any crashes and the visual bugs lie mainly in shadows. Overall I've done the wind and lightning temple with playable frames and occasional dips. Villages will see more lowered FPS than usual",
+          "votes": 1,
+          "date": "2025-12-20",
+          "settings": {
+            "Emulator Version": "Citron Build 4491abc",
+            "Driver Version": "[KIMCHI Turnip] Mesa Turnip driver v25.0.0 - Revision 3|||turnip_v25.0.0_R3.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "0.75x (540p/810p)",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c76c7918-8bcc-43da-bf19-b8b21f2dd17a",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Runs at 60 fps, 1x resolution, using Mesa Turnip driver",
+          "votes": 8,
+          "date": "2025-12-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4c70274a-a8cf-49d1-b7ce-e7680cca2386",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "The game runs only with kimchi drivers and accuracy set to max. Some settings make it crash, especially Eden’s vail configs. Performance is about Switch 1-like (20-30 fps). The dealbreaker is that there is a constant gli",
+          "votes": 3,
+          "date": "2026-01-16"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d00e9bd0-e04f-4e83-856c-56a242ce7cc8"
+        }
+      ]
     }
   ],
   "routes": [
@@ -69,6 +257,34 @@
           "source": "https://github.com/AurelioB/totk-android/blob/HEAD/README.md",
           "credit": "TotK Native",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/graphics-performance.webp",
+          "caption": "Graphics: Performance tab with presets",
+          "source": "https://github.com/AurelioB/totk-android",
+          "credit": "TotK Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-install.webp",
+          "caption": "Setup preparing the game",
+          "source": "https://github.com/AurelioB/totk-android",
+          "credit": "TotK Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/set-render-res.webp",
+          "caption": "A setting with its illustration",
+          "source": "https://github.com/AurelioB/totk-android",
+          "credit": "TotK Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-welcome.webp",
+          "caption": "Welcome",
+          "source": "https://github.com/AurelioB/totk-android",
+          "credit": "TotK Native",
+          "check": "readme"
         }
       ],
       "links": [

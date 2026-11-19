@@ -80,5 +80,12 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q725057",
+  "website": "https://masseffectarchives.com/en_US/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect_2",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/05/MassEffect2_cover.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mass_Effect_2"
+  }
 }

@@ -39,6 +39,27 @@
           "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
           "credit": "take-no-prisoners-recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/level.jpg",
+          "caption": "The start of the first level, in the 3D mode",
+          "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
+          "credit": "Take No Prisoners – native Portierung (SR)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/panel.jpg",
+          "caption": "The port's panel (F12) over a fight of the game's demo, in Direct3D at 1024x768",
+          "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
+          "credit": "Take No Prisoners – native Portierung (SR)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/modes.jpg",
+          "caption": "\"Choose Mode\" with Display Additional Resolutions: the game's own modes and the ",
+          "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
+          "credit": "Take No Prisoners – native Portierung (SR)",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -76,5 +97,43 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q3284431",
+  "wikipedia": "https://en.wikipedia.org/wiki/Take_No_Prisoners_%28video_game%29",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2464670/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/2464670/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_b0c65ebdec4773f75ac208d6af168021a9866401.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_4b53e6d9f968cd64e53bfe0a62b301b5d994c936.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_5dd2f75b2e7e6a70359438500a97e57b8ee50b14.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_354048d881370b47078cd8804b1e0a2d72cb5a1b.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_782bac216f4065bfbea113c3929fd4f183078322.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2464670/ss_c7287c575e1b47e0b424572e25e3e8c641edbb68.1920x1080.jpg?t=1728493990",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/2464670/"
+    }
+  ]
 }

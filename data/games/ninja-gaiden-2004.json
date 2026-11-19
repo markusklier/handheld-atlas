@@ -61,7 +61,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/gamboozino/ngbrecomp/HEAD/docs/images/banner.jpg",
+          "caption": "Ninja Gaiden Black Recompiled",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/e9fb1579-2320-4ff9-8fc0-0ea2a724316b",
+          "caption": "Ultrawide 21:9: Ryu in front of Han",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/6dc8bc0d-c5c7-418d-9432-184055bbe3e1",
+          "caption": "Chapter 1",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/c4944721-b04b-4061-a42f-dbff16fbd29b",
+          "caption": "A fight, the HUD hidden",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/69f8a3fa-1aa2-42b0-b35a-c7531ff931d7",
+          "caption": "RECOMP SETTINGS: Graphics",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/dc1825e8-dbb7-4d00-a62b-990af3bfac53",
+          "caption": "RECOMP SETTINGS: Gameplay",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
+        }
+      ],
       "reports": [],
       "performance": [],
       "checkedAt": "2026-11-18",
@@ -90,5 +133,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q976995",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ninja_Gaiden_%282004_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/1d/Ninja_Gaiden_%282004_video_game%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Ninja_Gaiden_%282004_video_game%29"
+  }
 }

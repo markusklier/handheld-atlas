@@ -26,5 +26,12 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q3280262",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_Touch",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/13/Metal_Gear_Solid_Touch_%28teaser_screenshot%29.jpg",
+    "source": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_Touch",
+    "fallback": true
+  }
 }

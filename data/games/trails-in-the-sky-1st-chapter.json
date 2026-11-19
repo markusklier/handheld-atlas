@@ -31,6 +31,76 @@
         {
           "label": "Switch 2",
           "url": "https://www.gematsu.com/2025/08/trails-in-the-sky-1st-chapter-adds-switch-2-version-prologue-demo-now-available-for-ps5-switch-and-pc"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/bfe82c9d-7a6d-4efd-b2d5-28107a4349be"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e69a93f6-96d1-4470-9e8b-41277318ffca"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7743c58a-06d8-41ab-b0c1-8c78da47c2bd",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "I didn't check every single setting in the emulator, but it is all default settings. The only difference is the driver I'm using is Mesa Turnip Driver v25.2.0-R5. The game runs at good frames with no slowdowns or stutter",
+          "votes": 2,
+          "date": "2025-11-16",
+          "settings": {
+            "Game Version": "1.0.5",
+            "Average FPS": "35-45",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/441c2db2-2de9-4e9c-910c-61cc36b93f2b",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Eden",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Tried a variety of recent MrPurple drivers, but there's still a lot of graphical glitches and floating, out of place objects. Seems to run well performance wise, but I would still consider it unplayable as of right now.",
+          "votes": 1,
+          "date": "2026-10-06",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T30-toasted.adpkg|||turnip_mrpurple_T30-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/643acfc9-769f-4f4b-a312-0e95bfe2895a",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Tried a variety of recent MrPurple drivers, but there's still a lot of graphical glitches and floating, out of place objects. Seems to run well performance wise, but I would still consider it unplayable as of right now.",
+          "votes": 1,
+          "date": "2026-10-18"
         }
       ]
     }
@@ -99,5 +169,44 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q129920219",
+  "website": "https://www.falcom.co.jp/sora/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Trails_in_the_Sky_1st_Chapter",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3375780/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/3375780/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/a9da5f1c44b464bb54b6b2c391227d7c7fab0eba/ss_a9da5f1c44b464bb54b6b2c391227d7c7fab0eba.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/afdf39824c6d220281a2f300b309e70b89757b22/ss_afdf39824c6d220281a2f300b309e70b89757b22.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/ef0f801029655159aea77d50d67671bc6031bd0c/ss_ef0f801029655159aea77d50d67671bc6031bd0c.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/f42a2fe869f7a53b8df745b8e129a7d21607c197/ss_f42a2fe869f7a53b8df745b8e129a7d21607c197.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/cce5437178465d4d930e475dd69dd379c77dba4b/ss_cce5437178465d4d930e475dd69dd379c77dba4b.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3375780/27e315bcd4e577e1abf901eb191ecd4e24c97d61/ss_27e315bcd4e577e1abf901eb191ecd4e24c97d61.1920x1080.jpg?t=1791225209",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/3375780/"
+    }
+  ]
 }

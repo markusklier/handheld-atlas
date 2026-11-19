@@ -30,5 +30,12 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q114771966",
+  "website": "https://ascension.com",
+  "cover": {
+    "url": "https://genvid.com/wp-content/uploads/2025/06/winner2.jpg",
+    "source": "https://ascension.com",
+    "check": "ai"
+  }
 }

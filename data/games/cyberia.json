@@ -75,7 +75,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/cyberia-recomp/HEAD/docs/panel.jpg",
+          "caption": "The port's panel (F12) over a scene of the game, the window at 1024x768",
+          "source": "https://github.com/mxvisor/cyberia-recomp",
+          "credit": "Cyberia Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/cyberia-recomp/HEAD/docs/android.gif",
+          "caption": "On an Android phone: a flight with the on screen buttons, and the full keyboard ",
+          "source": "https://github.com/mxvisor/cyberia-recomp",
+          "credit": "Cyberia Recomp",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -89,5 +104,38 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Cyberia_(video_game)",
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q1147147",
+  "website": "https://www.interplay.com",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/624080/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/624080/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/624080/ss_92baf3d326c95e7897f96bfa5803564f875b5d3f.1920x1080.jpg?t=1762282174",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/624080/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/624080/ss_d13015d806d4d65e68e93f5bfdcd3d1c51ac403b.1920x1080.jpg?t=1762282174",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/624080/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/624080/ss_e4f8336a12c001d20c7a0bb67fcde3aca3a9e9f8.1920x1080.jpg?t=1762282174",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/624080/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/624080/ss_a56cc709ec3921e6e48cc5c0c50edf064031ea61.1920x1080.jpg?t=1762282174",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/624080/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/624080/ss_ea203a0b12ded64615f911ae2f97d3ce5b2b2cc3.1920x1080.jpg?t=1762282174",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/624080/"
+    }
+  ]
 }

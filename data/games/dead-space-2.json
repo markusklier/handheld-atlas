@@ -24,11 +24,59 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/c2c9243f-9f34-4aa1-a3eb-c3670968e7dd"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/055faf9d-0c07-40a5-b9bb-f9eb140c079f"
         }
-      ]
+      ],
+      "reports": []
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q842431",
+  "website": "https://www.ea.com/games/dead-space/dead-space-2",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dead_Space_2",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/47780/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/47780/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_6e1ba90fc5b7cc8ad7079dc979bd16ff359a32a0.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_94e2474db485a8d94e5a8063160321b45b77f299.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_9f45000d88cef3122b540fd3fcbbcb9cf254a777.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_9c30bec7afc2af52288d769d67a4894d46d31d53.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_bc2552aed0b045a4f32ccbb7da8558b349f8bc9a.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/47780/ss_f2e807c95fd902bcdda6b8a5285cd2371b47f788.1920x1080.jpg?t=1782255426",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/47780/"
+    }
+  ]
 }

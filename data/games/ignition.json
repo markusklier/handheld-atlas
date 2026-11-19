@@ -39,6 +39,20 @@
           "source": "https://github.com/mxvisor/ignition-recomp",
           "credit": "ignition-recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/panel.jpg",
+          "caption": "The port's panel (F12) over a race",
+          "source": "https://github.com/mxvisor/ignition-recomp",
+          "credit": "Ignition – native Portierung (SR)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/android.jpg",
+          "caption": "A race on an Android phone, with the port's on screen buttons",
+          "source": "https://github.com/mxvisor/ignition-recomp",
+          "credit": "Ignition – native Portierung (SR)",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -76,5 +90,43 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q2411602",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ignition_%28video_game%29",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/577990/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/577990/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_7a5ead324dcea7abef4514d8fb4facca8c66561d.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_4edbfcc6b8541e38155e05f439a1c6f41c007c16.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_e2b7c8d15ea6ad4e3a970d6b6932a67b4b43ab9c.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_295bfd9beea0d506d654a4a71436fdb4d1a4b42a.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_ae9a0e93ee1d78f93fcde67492560d3cb76aacde.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/577990/ss_d04ca4b0eff53a9c1e1782cb534d9277da7eb708.1920x1080.jpg?t=1762283076",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/577990/"
+    }
+  ]
 }

@@ -101,5 +101,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q3850855",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect_Infiltrator",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Mass_Effect_Infiltrator_Icon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mass_Effect_Infiltrator"
+  }
 }

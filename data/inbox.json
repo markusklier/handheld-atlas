@@ -1,6 +1,334 @@
 {
   "leads": [
     {
+      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
+      "title": "dguillot-gh/phantom-hourglass-recomp",
+      "excerpt": "Native PC and Android port of The Legend of Zelda: Phantom Hourglass by static recompilation. Bring your own ROM: no game data included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
+      "title": "XHYN-PH/XHYN-V-reborn",
+      "excerpt": "An unofficial native GTA V port for Android, based on the Chinese Android port. Maintained by XHYN-PH. Requires your own game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/IamWilmar/mhs2-recomp",
+      "title": "IamWilmar/mhs2-recomp",
+      "excerpt": "Native Android port of Monster Hunter Stories 2 for the Retroid Pocket 5 and Flip 2. Early version. Bring your own extracted game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases",
+      "title": "UnknuwProjects/THPS4-Android-Releases",
+      "excerpt": "Unofficial Android port of Tony Hawk's Pro Skater 4 (Xbox) - public release channel: stable builds and changelogs. Game data not included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/killdano/license-revoked",
+      "title": "killdano/license-revoked",
+      "excerpt": "License Revoked: Pebble game and its Android port",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/XHYN-PH/landofthedroid",
+      "title": "XHYN-PH/landofthedroid",
+      "excerpt": "Native 64-bit ARM Android port of Land of the Dead: Road to Fiddler's Green (Unreal Engine 2) with custom touch HUD, GLES3 rendering, and in-game cheats",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/CounterClockTTRPG/ftl-android",
+      "title": "CounterClockTTRPG/ftl-android",
+      "excerpt": "An android port of FTL. Needs the original game files",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+      "title": "Lazaer-YZY/ds2-sotfs-recomp",
+      "excerpt": "Static recompilation of Dark Souls II: Scholar of the First Sin (Xbox 360) for Android arm64",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/CowKillers/darkwatch-android",
+      "title": "CowKillers/darkwatch-android",
+      "excerpt": "Darkwatch: Darker Edition on Android — static recomp of the original Xbox game, based on linkssy2's PC port. Personal use; bring your own disc.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/M1LT0N3R2431/007-Project-Russia",
+      "title": "M1LT0N3R2431/007-Project-Russia",
+      "excerpt": "Unofficial Android port of 007: From Russia with Love (Xbox), built with XboxXBE-Recomp.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp",
+      "title": "EddyGameDev/bioshock1-native-recomp",
+      "excerpt": "Static recompilation launchers for BioShock 1 on Windows and Android - real ReXGlue runtime, guest-presented title screen, no game data in the APK",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/ch1ppyone/jail-recomp",
+      "title": "ch1ppyone/jail-recomp",
+      "excerpt": "Tokyo Ghoul: JAIL recompiled for macOS and Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/P1R4N351/hwaoc-android",
+      "title": "P1R4N351/hwaoc-android",
+      "excerpt": "Native Android port harness for Hyrule Warriors: Age of Calamity (v1.3.0)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/christianball123/fritchii-thor",
+      "title": "christianball123/fritchii-thor",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/Aliferous3/droidbridge-chatgpt",
+      "title": "Aliferous3/droidbridge-chatgpt",
+      "excerpt": "Personal hardened DroidBridge build for ChatGPT Secure MCP Tunnel (command tool removed)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/rsigristc/DW3-DS-Android",
+      "title": "rsigristc/DW3-DS-Android",
+      "excerpt": "Open-source Android dual-screen companion for Digimon World 2003 (SLES-03936) and Flawe's Mod 2.0. No ROM or BIOS included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/Broomm/broomm",
+      "title": "Broomm/broomm",
+      "excerpt": "Emulation frontend with automatic emulator configuration and integration with the RomM Manager to sync cloud saves and download Games, Updates and DLC",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/wasney/DroidDS",
+      "title": "wasney/DroidDS",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/P1R4N351/oot-android",
+      "title": "P1R4N351/oot-android",
+      "excerpt": "Native Android port & dual-screen companion for The Legend of Zelda: Ocarina of Time (Switch 2, v131072) on Adreno handhelds. Bring your own game dump.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/yassinsolim/mw3-recomp",
+      "title": "yassinsolim/mw3-recomp",
+      "excerpt": "Call of Duty: Modern Warfare 3 (2011) natively on Android and PC, recompiled from your own Xbox 360 disc. No game files included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/alexk0918/pokerun-tactics",
+      "title": "alexk0918/pokerun-tactics",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/manu0623/Arcoon-releases",
+      "title": "manu0623/Arcoon-releases",
+      "excerpt": "An AI fork of Argosy launcher that borrows the UI structure and look of Cocoon Launcher",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/pearce31/3D-Browser",
+      "title": "pearce31/3D-Browser",
+      "excerpt": "3D Browser with native and Pseudo 3D ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/tiraUnderCode23/AQ_MGU",
+      "title": "tiraUnderCode23/AQ_MGU",
+      "excerpt": "Community MGU Store source catalog: apps, tools, docs and pinned upstream snapshots",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/pecsoniii/mwrgds",
+      "title": "pecsoniii/mwrgds",
+      "excerpt": "OpenMW-DS Android build for Morrowind on the Anbernic RG DS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/doctor-utsugi/smz3-universe",
+      "title": "doctor-utsugi/smz3-universe",
+      "excerpt": "Dual-screen SMZ3 tracker/generator for the AYN Thor and Nintendo 3DS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/joeizang/codingpad",
+      "title": "joeizang/codingpad",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/solardev-xyz/freedom-browser-android",
+      "title": "solardev-xyz/freedom-browser-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/shaikh4783/PRP-GodownPro",
+      "title": "shaikh4783/PRP-GodownPro",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/StateofIntent/epistemic-happ",
+      "title": "StateofIntent/epistemic-happ",
+      "excerpt": " Holochain hApp for epistemic discourse: claims/critiques/evidence graphs, Promise Theory validation, web-of-trust attestation, and a Twitter correlative-witness bridge.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/nihalmohammed18/New-Grad-and-Internships-2027",
+      "title": "nihalmohammed18/New-Grad-and-Internships-2027",
+      "excerpt": "New grad jobs and internships 2027 in the US, Canada and Europe, every field. Entry-level only (≤2 years asked), visa info, updated daily by FirstJobby.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/Supa-Media/context",
+      "title": "Supa-Media/context",
+      "excerpt": "Free your context. Share your context. One MCP endpoint for every AI client, backed by a markdown bucket you own.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/RyoM-app/posture-lab",
+      "title": "RyoM-app/posture-lab",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/moravian-ai/czechspeech-web",
+      "title": "moravian-ai/czechspeech-web",
+      "excerpt": "CzechSpeech for the web: offline Czech speech-to-text in the browser (WebGPU / WebAssembly)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/Llamenos-Hotline/llamenos-platform",
+      "title": "Llamenos-Hotline/llamenos-platform",
+      "excerpt": "E2EE encrypted telophony, messaging and/or signal communication hub, contact and case management system for hotlines and communities in crisis",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/kUmutUK/nixos-hyprland-vfio",
+      "title": "kUmutUK/nixos-hyprland-vfio",
+      "excerpt": "Declarative NixOS setup with Hyprland, AMD gaming optimizations and single-GPU VFIO passthrough.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/AbsoluTho/airmanship-procedure-trainer",
+      "title": "AbsoluTho/airmanship-procedure-trainer",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/qcom-toolbox/Banana-OS",
+      "title": "qcom-toolbox/Banana-OS",
+      "excerpt": "A Highly Experimental Operating System.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/UncookedNoodle/QudLink",
+      "title": "UncookedNoodle/QudLink",
+      "excerpt": "Second-screen companion app for Caves of Qud (AYN Thor etc.)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/silviot/voice-recorder-hw-bt-usb",
+      "title": "silviot/voice-recorder-hw-bt-usb",
+      "excerpt": "Hardware analysis, Linux USB disconnect fix (udev + exFAT boundary), and Bluetooth documentation for Smartlink SL6801 (HW_76 / pen133_2.0.65) voice recorders",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
+      "url": "https://github.com/yogesh2902/dpdp-kit",
+      "title": "yogesh2902/dpdp-kit",
+      "excerpt": "Build India's DPDP Act 2023 into your Node.js backend: declared purposes, tamper-evident consent records, erasure plans and a CI audit.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-19"
+    },
+    {
       "url": "https://github.com/zettelmuseum/Enigma",
       "title": "zettelmuseum/Enigma",
       "excerpt": "Pre-Alpha Enigma Puzzle Game  Android port 2026 (but it works for me)",
@@ -5670,9 +5998,9 @@
     "summary": "Abo #24 (Wind Waker: Recomp-Weg auf v0.5.1 mit GamePad-Bild auf dem Thor-Unterbildschirm aktualisiert, neuer Weg WindWakerHD-Android-Plus, Fassungen ergänzt) und #25 (Tomb Raider: Anniversary: Fassungen korrigiert, kein Android-spezifischer Weg belegbar) erledigt; Warteschlange Silent Hill Downpour/2 Remake/f (neuer PC-Laufzeit-Weg für Silent Hill f mit Messwerten; SH2-Remake-Belege nur als nicht abrufbare Videos); neues Spiel Super Robot Wars 64 (Marchwind-64-Recomp), Verzeichnis Obtainium Recomp Pack; 13 irrelevante Leads verworfen; DiRT-2-Android-Builds offen gelassen (APK enthält offenbar rekompilierten Spielcode – Klärung durch Markus); 10 Bilder geprüft (8 bestätigt, 2 falsch zugeordnete entfernt); Bilder auf Reddit/YouTube/Google-Play/GitHub-Assets aus der Sitzung nicht abrufbar."
   },
   "watcher": {
-    "lastRun": "2026-11-18T14:02:20Z",
-    "newLeads": 38,
-    "newEvents": 10
+    "lastRun": "2026-11-19T14:29:12Z",
+    "newLeads": 41,
+    "newEvents": 39
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

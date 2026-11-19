@@ -31,6 +31,40 @@
         {
           "label": "PCSX2-Wiki",
           "url": "https://wiki.pcsx2.net/Need_for_Speed_Underground_2"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1d417ce3-9bd5-4b6e-a0be-2b045652f7c2"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7954c249-56a3-4b88-8c44-de005666a32c"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/22f4dabf-3da7-47e1-9a91-8b3a01d16ac6",
+          "device": "Motorola Edge+ (2023)",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-07-16",
+          "settings": {
+            "Emulator Version": "V1.1.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-11.0.-1-arm64ec-1",
+            "Resolution (Screen Size)": "640x480",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T29-toasted.adpkg|||turnip_mrpurple_T29-toas",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "2.4.1"
+          }
         }
       ]
     },
@@ -217,5 +251,7 @@
       "caption": "Game-Boy-Advance-Fassung",
       "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
     }
-  ]
+  ],
+  "wikidata": "Q726190",
+  "wikipedia": "https://en.wikipedia.org/wiki/Need_for_Speed%3A_Underground_2"
 }

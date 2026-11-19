@@ -28,5 +28,44 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q114771189",
+  "website": "https://screenburn.com/silent-hill-townfall",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Townfall",
+  "cover": {
+    "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/0ed1cb4bc30631f95b92f7f13bb06c15d49b4afa/header.jpg?t=1792553312",
+    "source": "https://store.steampowered.com/app/1636440/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/c6ae9fc8011c59932651baa3d45709ef0df69cb0/ss_c6ae9fc8011c59932651baa3d45709ef0df69cb0.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/9546770d94919d74d3867d218a66b58a0bd5cc6b/ss_9546770d94919d74d3867d218a66b58a0bd5cc6b.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/870894c942a3de88f35773657cee1fb0009e9a16/ss_870894c942a3de88f35773657cee1fb0009e9a16.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/df80a5fd1fca194c0e9350b4ca593688221944aa/ss_df80a5fd1fca194c0e9350b4ca593688221944aa.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/3f79747b702cf5bc1af778dd8963c0a17d7444f8/ss_3f79747b702cf5bc1af778dd8963c0a17d7444f8.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1636440/7d260fd4007fccdf13f2c2e93857ee2545a35bbf/ss_7d260fd4007fccdf13f2c2e93857ee2545a35bbf.1920x1080.jpg?t=1792553312",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1636440/"
+    }
+  ]
 }

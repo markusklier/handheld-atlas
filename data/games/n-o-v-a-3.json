@@ -77,5 +77,11 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/N.O.V.A._3",
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q6951565",
+  "website": "https://www.gameloft.com/en/game/nova-3",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/c/c7/N.O.V.A._3_-_Near_Orbit_Vanguard_Alliance_2012_iOS_App_Icon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/N.O.V.A._3"
+  }
 }

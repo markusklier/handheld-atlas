@@ -26,5 +26,11 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q2517274",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Acid_2",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e1/MGA2_box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Metal_Gear_Acid_2"
+  }
 }

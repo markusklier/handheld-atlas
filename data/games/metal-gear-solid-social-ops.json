@@ -29,5 +29,11 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q6822628",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_Social_Ops",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/01/Metal_Gear_Social_Ops_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_Social_Ops"
+  }
 }

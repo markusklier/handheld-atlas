@@ -71,5 +71,24 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q2310470",
+  "playStore": "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.dq4",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dragon_Quest_IV",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Snaps/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Titles/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+    }
+  ]
 }

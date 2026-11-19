@@ -144,6 +144,13 @@
           "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
           "credit": "Silent Hill – Dualscreen",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TheYellowBee/silent-hill-dualscreen/HEAD/images/phone-upright-cafe.png",
+          "caption": "Phone upright: the cafe, the menu and touch buttons",
+          "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
+          "credit": "Silent Hill – Dualscreen",
+          "check": "readme"
         }
       ],
       "links": [
@@ -202,7 +209,51 @@
           "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases"
         }
       ],
-      "checkedAt": "2026-11-18"
+      "checkedAt": "2026-11-18",
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/92876446-9a5a-4069-8cd2-5071149b7fe5",
+          "caption": "Build Screenshot 2026 10 26   22 38 03 43",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/01_title_screen.png",
+          "caption": "Title screen",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/02_intro_cutscene_16x9.png",
+          "caption": "Intro cutscene, 16:9",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/03_street_16x9.png",
+          "caption": "Street, 16:9",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/04_street_trees_16x9.png",
+          "caption": "Street with trees, 16:9",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/05_alley_entrance_16x9.png",
+          "caption": "Alley entrance, 16:9",
+          "source": "https://github.com/SlickAmogus/silent-hill-decomp",
+          "credit": "Silent Hill PC-Port (silent-hill-decomp)",
+          "check": "readme"
+        }
+      ]
     }
   ],
   "updatedAt": "2026-11-18",

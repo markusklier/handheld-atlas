@@ -106,6 +106,27 @@
           "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
           "credit": "HolyCaonima",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/ipad-campaign.jpg",
+          "caption": "Soviet campaign mission one on iPad",
+          "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+          "credit": "Red Alert 3 Native Recompilation",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/macos-battlefield.jpg",
+          "caption": "MacOS gameplay",
+          "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+          "credit": "Red Alert 3 Native Recompilation",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/ipad-macos-lan.jpg",
+          "caption": "Mac and iPad in the same LAN gameplay recording",
+          "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+          "credit": "Red Alert 3 Native Recompilation",
+          "check": "readme"
         }
       ],
       "reports": [],
@@ -142,5 +163,42 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert_3",
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q746351",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/17480/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/17480/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006501.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006502.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006503.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006504.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006505.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006506.1920x1080.jpg?t=1779987212",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/17480/"
+    }
+  ]
 }

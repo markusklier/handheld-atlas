@@ -52,5 +52,43 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q11879017",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_V%3A_Ground_Zeroes",
+  "cover": {
+    "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/header.jpg?t=1718869217",
+    "source": "https://store.steampowered.com/app/311340/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_ce2eecb2271794f12b1b5a9d17cd6befd57c98a4.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_4a27e36b1236e243a839cddda2f411d51335439a.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_b3466433dc0b33ede674c9b6769501ae588a7ba1.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_87293bd0bbc8d62986b4b76b9fc4fce7c45f43dd.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_ba19ac5db796dd6e88ca264216242e50e56e8e30.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/ss_80523f65fe4676ad23fbfa1d841396d5dd2a17c7.1920x1080.jpg?t=1718869217",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/311340/"
+    }
+  ]
 }

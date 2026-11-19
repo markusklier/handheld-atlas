@@ -26,5 +26,12 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q1765369",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Book_of_Memories",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Silent%20Hill%20-%20Book%20Of%20Memories%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+  },
+  "screenshots": []
 }

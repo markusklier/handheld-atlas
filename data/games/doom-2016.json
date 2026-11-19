@@ -110,6 +110,13 @@
           "source": "https://github.com/Desm0nt/doom-port",
           "credit": "DOOM Mobile",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Desm0nt/doom-port/HEAD/docs/images/touch_desert.jpg",
+          "caption": "Desert, on screen controls",
+          "source": "https://github.com/Desm0nt/doom-port",
+          "credit": "DOOM Mobile",
+          "check": "readme"
         }
       ],
       "links": [

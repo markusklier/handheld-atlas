@@ -37,6 +37,36 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ddf28303-7a38-44b8-9c03-a339f0a212fd"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/63de908f-b8ce-4e63-9cd9-f3023b81647b",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "RP6 12G Stick top. (Quiet Performance) Works pretty well. Due to the EA app needing to be accessed, you need to ensure that Use Legacy DRM is selected, Steam Offline Mode is activated, and Launch Steam Client (Beta) is a",
+          "votes": 1,
+          "date": "2026-04-25",
+          "settings": {
+            "Emulator Version": "v0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Exec Arguments": "-dx9c",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Graphics Driver": "Turnip (Adreno)",
+            "Dynamic Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 8 + super beta 8xx support|||turnip_a8xx.zip",
+            "DX Wrapper": "DXVK"
+          }
         }
       ]
     },
@@ -52,6 +82,34 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3b6588d1-d4c5-42a8-beff-4d26500d48c6"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7e35726e-4d48-4619-907d-579a9709d75e",
+          "device": "Sony Xperia 1 V",
+          "emulator": "aPS3e",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "- No game specific settings were used - You will encounter many visual glitches as the game slowly compiles all the shaders. Once shaders have compiled, the game looks as it should. **Performance details** - Erratic fram",
+          "votes": 0,
+          "date": "2025-11-15",
+          "settings": {
+            "Emulator Version": "1.32",
+            "Renderer": "Vulkan",
+            "Resolution Scale": "100",
+            "Anisotropic Filter": "Automatic",
+            "Anti-Aliasing": "Disabled",
+            "Frame Limit": "Auto",
+            "SPU Threads": "2",
+            "SPU Block Size": "Safe"
+          }
         }
       ]
     },
@@ -133,5 +191,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q275960",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect_%28video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e8/MassEffect.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mass_Effect_%28video_game%29"
+  }
 }

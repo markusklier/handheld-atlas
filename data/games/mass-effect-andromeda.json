@@ -30,5 +30,11 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q20113552",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect%3A_Andromeda",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/07/Mass_Effect_Andromeda_cover.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mass_Effect%3A_Andromeda"
+  }
 }

@@ -51,5 +51,23 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q2600361",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear%3A_Ghost_Babel",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    }
+  ]
 }

@@ -37,5 +37,11 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q288596",
+  "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Downpour",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e2/Silent_Hill_Downpour_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Downpour"
+  }
 }

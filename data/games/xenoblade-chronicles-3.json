@@ -13,7 +13,87 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "year": 2022
+      "year": 2022,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4515bc1c-00bf-470b-9350-885e6bd21c36",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Ran in docked mode with mostly default graphics settings. Enabled EDS at level 3 and a couple other options, which are my default settings for all games on Eden. Tested with no DLC and the base version, but I will also t",
+          "votes": 2,
+          "date": "2026-03-28",
+          "settings": {
+            "Emulator Version": "Nightly March 25th 2026",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/49e84f31-9cbb-47b6-bc48-1d48f11abf93",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "a few things are needed to get this running well. most importantly, you can remove vertex explosions by using JIT instead of NCE in the debug menu. if you want shadows to look right you need to disable temporal upscaling",
+          "votes": 2,
+          "date": "2026-03-09",
+          "settings": {
+            "Emulator Version": "0.2.0",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/da3702dc-6e1d-4895-b1cb-f02bb3a5964f",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Turn on \"Force Maximum Clock Speed\" in the graphics settings. I'm not sure if TV mode is necessary. It runs, but the frame rate drops to 20fps during combat.",
+          "votes": 0,
+          "date": "2026-04-15"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0f999047-b3d0-43fa-b4ca-031837beae78",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Some stuttering. It *seems* to run well overall, but it has some pretty bad graphical issues. Used to have constant crashes, but it seems playable now. 1.5x resolution doesn't really work. The performance is very area de",
+          "votes": 0,
+          "date": "2025-07-29"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4d513fc5-261b-4d96-883c-8a393de6a0f5"
+        }
+      ]
     }
   ],
   "routes": [

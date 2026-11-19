@@ -52,5 +52,43 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q717600",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_V%3A_The_Phantom_Pain",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287700/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/287700/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_258e5c725ba2da8a2fc2ee779ae75ba4b0aac0c6.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_d4c1b17dad6eeeef8e1ade44a66d8e644afcc4e6.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_969065fca2ad4538c2e7ed5d8bbd91cbd060cf47.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_dec3093b6d3ad9b688fd08df420c0f1053abc881.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_9c92ce8b9809a3f0b5b2316b7146684eabab07d3.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_cc4922b4b080aab6a7a4990fa37cdf01d1bad083.1920x1080.jpg?t=1778872866",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/287700/"
+    }
+  ]
 }

@@ -112,5 +112,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q277377",
+  "wikipedia": "https://en.wikipedia.org/wiki/Catherine_%28video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/2/20/Catherine_Cover_Art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Catherine_%28video_game%29"
+  }
 }

@@ -28,8 +28,21 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b3a7a134-f787-4a0f-abf1-52dec0c40d7b"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/13391208-2095-4864-806d-199f1001a86e"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/68776605-b9f5-49a4-b3dd-11bee7db1d19"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "xbox-360",
@@ -129,5 +142,23 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)",
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q220365",
+  "website": "https://www.ea.com/need-for-speed-most-wanted",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

@@ -30,5 +30,38 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q2501242",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dead_Space_3",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238060/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/1238060/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/ss_8435c833bbd57306d81c5f0252fd8c76cc1a8185.1920x1080.jpg?t=1794430344",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1238060/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/ss_bde8c6c8642d5f305ce471531b28cc31acda7abf.1920x1080.jpg?t=1794430344",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1238060/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/ss_ae19de8920a1ed209a3e697ea5f67e865536dda4.1920x1080.jpg?t=1794430344",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1238060/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/ss_675cbf8f1fcf76b411a7f083872163f54996defc.1920x1080.jpg?t=1794430344",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1238060/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/ss_6627e843d2da179f0bc74fb0df28bb4055c10b8e.1920x1080.jpg?t=1794430344",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1238060/"
+    }
+  ]
 }

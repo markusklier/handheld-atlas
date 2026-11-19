@@ -25,6 +25,21 @@
           "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(2006_video_game)"
         }
       ]
+    },
+    {
+      "id": "wii-2006",
+      "name": "Wii (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1068669"
+        }
+      ]
     }
   ],
   "routes": [
@@ -85,5 +100,11 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q1068669",
+  "wikipedia": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%282006_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/d/d1/Sonic_the_Hedgehog_Next-Gen_Box_Art.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%282006_video_game%29"
+  }
 }

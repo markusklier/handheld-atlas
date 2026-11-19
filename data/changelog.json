@@ -3,6 +3,441 @@
     {
       "date": "2026-11-19",
       "type": "route-updated",
+      "game": "dead-space-2",
+      "text": "2 Community-Berichte von EmuReady für Dead Space 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "xenoblade-chronicles-3",
+      "text": "4 Community-Berichte von EmuReady für Xenoblade Chronicles 3 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "trails-in-the-sky-1st-chapter",
+      "text": "7 Community-Berichte von EmuReady für Trails in the Sky 1st Chapter (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "the-legend-of-zelda-tears-of-the-kingdom",
+      "text": "12 Community-Berichte von EmuReady für The Legend of Zelda: Tears of the Kingdom (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "pac-man-championship-edition-2",
+      "text": "1 Community-Berichte von EmuReady für PAC-MAN Championship Edition 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "need-for-speed-underground-2",
+      "text": "2 Community-Berichte von EmuReady für Need for Speed: Underground 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "need-for-speed-most-wanted",
+      "text": "8 Community-Berichte von EmuReady für Need for Speed: Most Wanted (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "game": "mass-effect",
+      "text": "2 Community-Berichte von EmuReady für Mass Effect (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Obtainium Recomp Pack pack-2026.11.19-1141 veröffentlicht.",
+      "project": "obtainium-recomp-pack",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.19-1141"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Marchwind 64 (SRW64 Recomp) mod-battle-voices-originals-ai-1.0.5 veröffentlicht.",
+      "project": "srw64-recomp",
+      "games": [
+        "super-robot-wars-64"
+      ],
+      "url": "https://github.com/dyzz/srw64-recomp/releases/tag/mod-battle-voices-originals-ai-1.0.5"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "WindWakerHD-Android-Plus v1.14 veröffentlicht.",
+      "project": "windwakerhd-android-plus",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker"
+      ],
+      "url": "https://github.com/Nycolazs/WindWakerHD-Android-Plus/releases/tag/v1.14"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "slingshot-animals-recomp v1.1.0 veröffentlicht.",
+      "project": "slingshot-animals-recomp",
+      "games": [
+        "angry-birds"
+      ],
+      "url": "https://github.com/Berny23/slingshot-animals-recomp/releases/tag/v1.1.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "dw4-recomp v1.2.4 veröffentlicht.",
+      "project": "dw4-recomp",
+      "games": [
+        "dragon-quest-iv"
+      ],
+      "url": "https://github.com/jsp244/dw4-recomp/releases/tag/v1.2.4"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "WoW Forever for Android v2.4.6-rc3 (Vorabversion) veröffentlicht.",
+      "project": "wow-forever-android",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/jaredgei/wow-forever-android/releases/tag/v2.4.6-rc3"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "NOVA3 Bridge v0.8 veröffentlicht.",
+      "project": "nova3-bridge",
+      "games": [
+        "n-o-v-a-3"
+      ],
+      "url": "https://github.com/JamesCrumble/NOVA3-Bridge/releases/tag/v0.8"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Shadowgun Bridge v0.5 veröffentlicht.",
+      "project": "shadowgun-bridge",
+      "games": [
+        "shadowgun"
+      ],
+      "url": "https://github.com/JamesCrumble/shadowgun-bridge/releases/tag/v0.5"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Mass Effect Infiltrator Bridge v0.3 veröffentlicht.",
+      "project": "mass-effect-infiltrator-bridge",
+      "games": [
+        "mass-effect-infiltrator"
+      ],
+      "url": "https://github.com/JamesCrumble/mass-effect-infiltrator-bridge/releases/tag/v0.3"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "ME1Recomp profile-me1-6 veröffentlicht.",
+      "project": "me1recomp",
+      "games": [
+        "mass-effect"
+      ],
+      "url": "https://github.com/udarmolota/ME1Recomp/releases/tag/profile-me1-6"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "MarathonRecomp Android v0.2.9 veröffentlicht.",
+      "project": "marathonrecomp-android",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/SansNope/MarathonRecomp-Android/releases/tag/v0.2.9"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "MarathonRecomp v1.0.0 veröffentlicht.",
+      "project": "marathonrecomp",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/sonicnext-dev/MarathonRecomp/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "NFSU2 Revived Android v0.15.25.beta8 (Vorabversion) veröffentlicht.",
+      "project": "nfsu2-revived-android",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/mininxd/NFSU2-Revived-Android/releases/tag/v0.15.25.beta8"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "NFSU2 Recompiled v0.14.16 veröffentlicht.",
+      "project": "nfsu2-recompiled",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/codepdbh/nfsu2-recompiled/releases/tag/v0.14.16"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "DOOM Mobile v0.5.7 veröffentlicht.",
+      "project": "doom-mobile",
+      "games": [
+        "doom-2016"
+      ],
+      "url": "https://github.com/Desm0nt/doom-port/releases/tag/v0.5.7"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Awesome Switch Recomp v2026.11.10 veröffentlicht.",
+      "project": "awesome-switch-recomp",
+      "url": "https://github.com/AIshihzong/awesome-switch-recomp/releases/tag/v2026.11.10"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Catherine: Full Body Port v0.1.0 veröffentlicht.",
+      "project": "catherine-recomp",
+      "games": [
+        "catherine"
+      ],
+      "url": "https://github.com/IamWilmar/catherine-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Ninja Gaiden Black Recomp v0.9.74 veröffentlicht.",
+      "project": "ngbrecomp",
+      "games": [
+        "ninja-gaiden-2004"
+      ],
+      "url": "https://github.com/gamboozino/ngbrecomp/releases/tag/v0.9.74"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "CelesteAndroid v1.1.0 veröffentlicht.",
+      "project": "celeste-android",
+      "games": [
+        "celeste"
+      ],
+      "url": "https://github.com/BelmanteGu/CelesteAndroid/releases/tag/v1.1.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "RCTDS RCTDS0.13 veröffentlicht.",
+      "project": "rctds",
+      "games": [
+        "rollercoaster-tycoon-2"
+      ],
+      "url": "https://github.com/mrmushrooms11/RCTDS/releases/tag/RCTDS0.13"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Silent Hill – Dualscreen v1.2 veröffentlicht.",
+      "project": "silent-hill-dualscreen",
+      "games": [
+        "silent-hill"
+      ],
+      "url": "https://github.com/TheYellowBee/silent-hill-dualscreen/releases/tag/v1.2"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Silent Hill PC-Port (silent-hill-decomp) uwp-alpha-1 (Vorabversion) veröffentlicht.",
+      "project": "silent-hill-pc-port",
+      "games": [
+        "silent-hill"
+      ],
+      "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/uwp-alpha-1"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "RA3 Native v0.1.5 veröffentlicht.",
+      "project": "ra3-native",
+      "games": [
+        "command-and-conquer-red-alert-3"
+      ],
+      "url": "https://github.com/blackorange-sketch/RA3-Native/releases/tag/v0.1.5"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "NFS: Most Wanted for Android v0.9.0 (Vorabversion) veröffentlicht.",
+      "project": "mostwanted-android",
+      "games": [
+        "need-for-speed-most-wanted"
+      ],
+      "url": "https://github.com/bang-ijall/MostWanted-Android/releases/tag/v0.9.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Knight of Lodis Recomp v1.0.1 veröffentlicht.",
+      "project": "knight-of-lodis-recomp",
+      "games": [
+        "tactics-ogre-the-knight-of-lodis"
+      ],
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp/releases/tag/v1.0.1"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Xenoblade Chronicles 3 Port v0.4.0 veröffentlicht.",
+      "project": "xenoblade3-port",
+      "games": [
+        "xenoblade-chronicles-3"
+      ],
+      "url": "https://github.com/IamWilmar/xenoblade3-recomp/releases/tag/v0.4.0"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "BotW Native botw-v0.1.0-pre.1 (Vorabversion) veröffentlicht.",
+      "project": "botw-native",
+      "games": [
+        "the-legend-of-zelda-breath-of-the-wild"
+      ],
+      "url": "https://github.com/P1R4N351/botw-android/releases/tag/botw-v0.1.0-pre.1"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "TotK Native v1.0.1 veröffentlicht.",
+      "project": "totk-native",
+      "games": [
+        "the-legend-of-zelda-tears-of-the-kingdom"
+      ],
+      "url": "https://github.com/AurelioB/totk-android/releases/tag/v1.0.1"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "FF9Recomp v0.1.32 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.32"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.13 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.13"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Shantae Dual v0.48 veröffentlicht.",
+      "project": "shantae-dual",
+      "games": [
+        "shantae"
+      ],
+      "url": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods/releases/tag/v0.48"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.67 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.67"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "GBA DS v1.5.5 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5.5"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "DS Forever v1.0.35 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.35"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Skyrim_Android 0.40.1 veröffentlicht.",
+      "project": "skyrim-android",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/ttom795/Skyrim_Android/releases/tag/0.40.1"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "DAO-Duo (Dragon Age: Origins Recomp Android) v0.2.5-alpha (Vorabversion) veröffentlicht.",
+      "project": "dao-duo",
+      "games": [
+        "dragon-age-origins"
+      ],
+      "url": "https://github.com/mabencs/Dragon-Age-Origins-Recomp-Android-Duo/releases/tag/v0.2.5-alpha"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "GameNative v1.4.1-prerelease (Vorabversion) veröffentlicht.",
+      "project": "gamenative",
+      "games": [
+        "cyberpunk-2077",
+        "grand-theft-auto-iv",
+        "grand-theft-auto-v",
+        "tomb-raider",
+        "the-elder-scrolls-v-skyrim",
+        "hollow-knight",
+        "tomb-raider-chronicles",
+        "wizard101"
+      ],
+      "url": "https://github.com/utkarshdalal/GameNative/releases/tag/v1.4.1-prerelease"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "DuckStation latest veröffentlicht.",
+      "project": "duckstation",
+      "url": "https://github.com/stenzek/duckstation/releases/tag/latest"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "release",
+      "text": "Azahar 2127.0-rc4 (Vorabversion) veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc4"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
       "by": "agent",
       "game": "the-legend-of-zelda-the-wind-waker",
       "text": "ZeldaWWHDRecomp auf v0.5.1: GamePad-Bild (Karte, Inventar) auf dem unteren Bildschirm des AYN Thor, eingebauter Randomizer",
@@ -7578,111 +8013,6 @@
         "morrowind"
       ],
       "url": "https://github.com/OpenMW/openmw/releases/tag/openmw-52-rc1"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "NetherSX2 2.2n veröffentlicht.",
-      "project": "nethersx2",
-      "url": "https://github.com/Trixarian/NetherSX2-patch/releases/tag/2.2n"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "MetroidArch v1.0.2-debug2 (Vorabversion) veröffentlicht.",
-      "project": "metroidarch-new",
-      "games": [
-        "super-metroid"
-      ],
-      "url": "https://github.com/Raekwon1603/RetroArch/releases/tag/v1.0.2-debug2"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "melonDS Android nightly-release (Vorabversion) veröffentlicht.",
-      "project": "melonds",
-      "games": [
-        "chrono-trigger"
-      ],
-      "url": "https://github.com/rafaelvcaetano/melonDS-android/releases/tag/nightly-release"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Flycast v2.7 veröffentlicht.",
-      "project": "flycast",
-      "url": "https://github.com/flyinghead/flycast/releases/tag/v2.7"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Eden Duo Companions fire-emblem-three-houses-1.0.2 veröffentlicht.",
-      "project": "eden-companions",
-      "games": [
-        "metroid-dread",
-        "persona-5-royal",
-        "the-legend-of-zelda-link-s-awakening",
-        "mario-kart-8-deluxe",
-        "super-mario-bros-wonder",
-        "animal-crossing-new-horizons",
-        "fire-emblem-three-houses",
-        "the-binding-of-isaac-rebirth",
-        "pokemon-brilliant-diamond",
-        "pokemon-shining-pearl",
-        "crash-team-racing-nitro-fueled",
-        "dragon-quest-iii-hd-2d-remake"
-      ],
-      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/fire-emblem-three-houses-1.0.2"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Eden Duo v1.3.5 veröffentlicht.",
-      "project": "eden",
-      "games": [
-        "metroid-dread",
-        "persona-5-royal",
-        "the-legend-of-zelda-link-s-awakening",
-        "mario-kart-8-deluxe",
-        "super-mario-bros-wonder",
-        "animal-crossing-new-horizons",
-        "fire-emblem-three-houses",
-        "the-binding-of-isaac-rebirth",
-        "pokemon-brilliant-diamond",
-        "pokemon-shining-pearl",
-        "crash-team-racing-nitro-fueled",
-        "dragon-quest-iii-hd-2d-remake"
-      ],
-      "url": "https://github.com/igawa6/eden-duo/releases/tag/v1.3.5"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "DuckStation preview (Vorabversion) veröffentlicht.",
-      "project": "duckstation",
-      "url": "https://github.com/stenzek/duckstation/releases/tag/preview"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "BanjoRecomp Android android-v0.1.2 (Vorabversion) veröffentlicht.",
-      "project": "banjo",
-      "games": [
-        "banjo-kazooie"
-      ],
-      "url": "https://github.com/AurelioB/BanjoRecomp-Android/releases/tag/android-v0.1.2"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Azahar 2127.0-rc2 (Vorabversion) veröffentlicht.",
-      "project": "azahar",
-      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc2"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "system",
-      "text": "Atlas 1.0: Datenbank auf ein Spiel pro Datei umgestellt (701 Spiele, 60 Spielwege, 50 Projekte)."
     }
   ]
 }

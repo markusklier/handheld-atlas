@@ -66,9 +66,24 @@
           "url": "https://github.com/mrmushrooms11/RCTDS/releases/tag/RCTDS0.13"
         }
       ],
-      "checkedAt": "2026-11-18"
+      "checkedAt": "2026-11-18",
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/7c6a55d0-8750-4545-ab44-215793e3c542",
+          "caption": "Image",
+          "source": "https://github.com/mrmushrooms11/RCTDS",
+          "credit": "RCTDS",
+          "check": "readme"
+        }
+      ]
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-18",
+  "wikidata": "Q928874",
+  "wikipedia": "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_2",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e4/RollerCoaster_Tycoon_2_%28boxart%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_2"
+  }
 }

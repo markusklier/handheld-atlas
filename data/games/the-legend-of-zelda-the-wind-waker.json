@@ -175,6 +175,20 @@
           "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
           "credit": "WindWakerHD-Android-Plus",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/HEAD/docs/screenshots/02-windfall.jpg",
+          "caption": "Windfall Island",
+          "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+          "credit": "WindWakerHD-Android-Plus",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Nycolazs/WindWakerHD-Android-Plus/HEAD/docs/screenshots/03-dragon-roost-portuguese.jpg",
+          "caption": "Dragon Roost Island, dialogue in Portuguese",
+          "source": "https://github.com/Nycolazs/WindWakerHD-Android-Plus",
+          "credit": "WindWakerHD-Android-Plus",
+          "check": "readme"
         }
       ],
       "links": [
