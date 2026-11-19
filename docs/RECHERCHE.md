@@ -8,15 +8,22 @@ App unter **Info → „Wo wird recherchiert?“** mit einem Tipp umschalten.
 | Wer | GitHub Action „KI-Recherche“ mit OpenAI | geplante Claude-Aufgabe „Handheld Atlas Pflege“ (dein Claude-Abo) |
 | Wann | sofort, 3–5 Minuten nach der Anfrage | beim nächsten Pflegelauf (montags und donnerstags um 20:38) |
 | Kosten | OpenAI-Guthaben (Verbrauch unter Info) | keine zusätzlichen, zählt zum Abo-Kontingent |
-| Automatisch | Warteschlange alle 2 h, wöchentliche Recherche, Dual-Screen-Suchlauf, KI-Bildprüfung | pausiert – der Pflegelauf übernimmt Warteschlange (3–5 Spiele) und Bildprüfung |
+| Automatisch | Warteschlange alle 2 h, wöchentliche Recherche, Dual-Screen-Suchlauf, KI-Bildprüfung | pausiert – der Pflegelauf übernimmt Warteschlange (3–5 Spiele), Bildprüfung und den wöchentlichen Dual-Screen-Suchlauf |
 
 **Ausfall der API:** Ist kein OpenAI-Schlüssel hinterlegt, das Monatsbudget erreicht oder das Guthaben leer, geht eine
 Anfrage automatisch an die Abo-Aufgabe (`"fallback": "abo"`): Die Action kommentiert das Issue, setzt das Label
 **`abo`** und lässt es offen. Die App zeigt dann „wartet auf die Abo-Aufgabe (montags und donnerstags um 20:38)“.
 
 **Immer ohne KI und kostenlos:** Watcher (Releases, Funde), Wikidata-Basisprofile, EmuReady-Berichte, Bilder aus
-libretro/Steam/Wikipedia/READMEs, Rückmeldungen vom Gerät (`setup-report:`, `reddit-images:`), Übernahme einer
-Sofortanalyse (JSON im Issue) und das Umschalten selbst (`research-backend: api|abo`).
+libretro/Steam/Wikipedia/READMEs (auch Cover je Fassung), Rückmeldungen vom Gerät (`setup-report:`, `reddit-images:`),
+Übernahme einer Sofortanalyse (JSON im Issue) und das Umschalten selbst (`research-backend: api|abo`).
+
+**Sofort, auch im Abo-Modus:** Eine Anfrage erledigt in der Action alles Kostenlose gleich, nur die Tiefenrecherche
+wartet auf die Abo-Aufgabe (`free_part` in `scripts/ai_research.py`):
+- **Reihe** (`franchise:`): `scripts/series.py` vervollständigt die Reihe aus Wikidata, gibt jedem Spiel Basisprofil,
+  eine Fassung je Plattform, Cover (auch je Fassung) und Originalbilder und reiht alle noch nicht recherchierten Spiele
+  vorne in die Warteschlange. Mit der API wählt danach ein günstiger Aufruf die lohnenden Spiele aus (`triage`).
+- **Spiel** (`game:`, `update:`, `new-game:`): Basisprofil und Bilder aus freien Quellen; ein neues Spiel wird angelegt.
 
 ## Anfragen aus der App
 

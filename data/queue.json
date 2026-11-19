@@ -1,6 +1,11 @@
 {
   "jobs": [
     {
+      "game": "metroid-prime-remastered",
+      "reason": "Remake abgespalten",
+      "added": "2026-11-19"
+    },
+    {
       "game": "tomb-raider-legend",
       "reason": "Reihen-Analyse (Abo-Pflegelauf)",
       "added": "2026-11-18"

@@ -2,6 +2,12 @@
   "entries": [
     {
       "date": "2026-11-19",
+      "type": "system",
+      "text": "Neu: Reiter „Konsolen“ zum Stöbern nach Plattform. Jede Plattform ist jetzt eine eigene Fassung mit eigenem Cover (GameCube, PS2, PC …), die Spielseite zeigt je Fassung die besonderen Wege und darunter die Emulatoren als Rangliste. Remakes wie Metroid Prime Remastered sind eigene Spiele; „Reihe recherchieren“ füllt sofort alle Spiele der Reihe mit Bildern und Fassungen.",
+      "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/KONTEXT.md"
+    },
+    {
+      "date": "2026-11-19",
       "type": "route-added",
       "by": "agent",
       "game": "tomb-raider-ii",

@@ -405,15 +405,21 @@ async function fillOnlineIndex() {
         wikiQuery({ generator: 'search', gsrsearch: `${q} video game`, gsrlimit: '20' }),
         wikiQuery({ generator: 'search', gsrsearch: q, gsrlimit: '10' })]);
       const seen = new Set();
-      items = [...prefix, ...search, ...plain].filter((p) => GAME_DESC.test(p.description || '') && !seen.has(p.title) && seen.add(p.title))
+      // characters ("Isaac Clarke") are no games; "List of Dragon Age media" is the series "Dragon Age"
+      const listOf = (t) => /^List of (.+?) (?:media|video games|games|titles)$/i.exec(t);
+      items = [...prefix, ...search, ...plain].filter((p) => (GAME_DESC.test(p.description || '') || listOf(p.title))
+          && !/fictional character|protagonist|character in|character from/i.test(p.description || '') && !seen.has(p.title) && seen.add(p.title))
         .map((p) => {
+          const lo = listOf(p.title);
+          if (lo) return { title: lo[1], year: null, descYear: null, desc: p.description || 'Liste der Spiele der Reihe', thumb: p.thumbnail?.source, series: true,
+            url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(p.title.replace(/ /g, '_')) };
           const m = / \((?:(\d{4}) )?(?:video game|game|franchise|series|video game series)\)$/.exec(p.title);
           const dy = /\b(19[7-9]\d|20[0-4]\d)\b/.exec(p.description || '');
           return { title: m ? p.title.slice(0, m.index) : p.title, year: m?.[1] ? +m[1] : null, descYear: dy ? +dy[1] : null,
             desc: p.description, thumb: p.thumbnail?.source,
             series: /series|franchise/i.test(p.description || '') && !/^\d{4} /.test(p.description || ''),
             url: 'https://en.wikipedia.org/wiki/' + encodeURIComponent(p.title.replace(/ /g, '_')) };
-        });
+        }).filter((it, i, arr) => arr.findIndex((x) => titleKey(x.title) === titleKey(it.title) && x.series === it.series) === i);
       onlineCache.set(q, items);
     } catch {
       items = null;
@@ -797,10 +803,11 @@ function emuRow(g, row, i, n) {
   const lead = row.lead;
   const evidence = row.routes.length ? `<span class="tag v-community">${icon('check')}Für dieses Spiel belegt${row.routes.length > 1 ? ` (${row.routes.length})` : ''}</span>` : '';
   const generic = !row.routes.length && !row.community.length ? `<span class="tag">${icon('info')}allgemein, ungeprüft</span>` : '';
+  const mods = row.routes.some((w) => w.features.includes('mods')) ? `<span class="tag">${icon('wrench')}mit Mods belegt</span>` : '';
   const body = row.ways.map((w) => `<div id="${wayId(w.key)}">${row.routes.length && w.type === 'generic' ? '' : wayBody(g, w)}</div>`).join('');
   return `<details class="emu-row${i === 0 && n > 1 ? ' top' : ''}" ${open ? 'open' : ''}>
     <summary><span class="emu-rank">${i + 1}</span><span class="way-name">${esc(row.name)}<small>${esc(row.routes.length ? row.routes.map((w) => w.name).join(' · ') : label('kinds', lead.kind))}</small></span>
-      <span class="way-tags">${i === 0 && n > 1 ? '<span class="tag best">beste Wahl</span>' : ''}${evidence}${row.best ? `<span class="rating ${RANK_CLASS(row.best.rank)}">${esc(row.best.ratingDe || row.best.rating)} · ${row.community.length}</span>` : ''}${typeof setupBadge === 'function' ? setupBadge(g, lead) : ''}${generic}</span></summary>
+      <span class="way-tags">${i === 0 && n > 1 ? '<span class="tag best">beste Wahl</span>' : ''}${evidence}${mods}${row.best ? `<span class="rating ${RANK_CLASS(row.best.rank)}">${esc(row.best.ratingDe || row.best.rating)} · ${row.community.length}</span>` : ''}${typeof setupBadge === 'function' ? setupBadge(g, lead) : ''}${generic}</span></summary>
     ${typeof setupBar === 'function' ? setupBar(g, lead) : ''}${body}</details>`;
 }
 
@@ -811,7 +818,7 @@ function versionCard(g, v, ways) {
   const ranking = emuRanking(v, shown);
   const special = shown.filter((w) => !isEmuWay(w));
   const plats = esc(v.platforms.join(', '));
-  const plat = v.platforms[0] === 'PC' ? 'PC-Laufzeiten' : `Emulatoren für ${esc(v.platforms[0])}`;
+  const plat = v.platforms[0] === 'PC' ? ['PC-Laufzeit', 'PC-Laufzeiten'] : [`Emulator für ${esc(v.platforms[0])}`, `Emulatoren für ${esc(v.platforms[0])}`];
   return `<section class="version${special.length ? '' : ' plain'}" id="v-${esc(v.id)}">
     <div class="version-head">${versionCover(g, v)}<div class="grow"><h3>${esc(v.name)}</h3><div class="sub">${esc(meta)}${v.name.includes(v.platforms[0]) ? '' : ' · ' + plats}</div>
         <div class="row">${android ? `<span class="tag v-documented">${icon('check')}Android offiziell</span>` : ''}${(v.traits || []).map((t) => `<span class="tag">${esc(label('features', t))}</span>`).join('')}
@@ -822,7 +829,7 @@ function versionCard(g, v, ways) {
     ${!shown.length ? `<p class="faint">${ways.length ? 'Kein Dual-Screen-Weg für diese Fassung.' : 'Für diese Fassung ist auf Android noch kein Weg bekannt.'}</p>` : ''}
     ${special.length ? `<div class="ways-block"><h4>${icon('spark')}${special.length === 1 ? 'Besonderer Weg' : `${special.length} besondere Wege`}</h4>
       <div class="ways">${special.map((w) => wayRow(g, w, state.openWay === w.key, runsOn(w, ranking))).join('')}</div></div>` : ''}
-    ${ranking.length ? `<div class="ways-block emu-block"><h4>${icon('gamepad')}${ranking.length > 1 ? `${plat} – Rangliste` : plat.replace(/en$|n$/, '')}</h4>
+    ${ranking.length ? `<div class="ways-block emu-block"><h4>${icon('gamepad')}${ranking.length > 1 ? `${plat[1]} – Rangliste` : plat[0]}</h4>
       ${ranking.length > 1 ? `<p class="faint emu-why">Reihenfolge aus Berichten von Geräten mit dem Thor-Chip, Belegen für dieses Spiel, deinen Messfahrten und dem, was schon installiert ist. Beim Einrichten kannst du jederzeit einen anderen nehmen.</p>` : ''}
       <div class="ways">${ranking.map((row, i) => emuRow(g, row, i, ranking.length)).join('')}</div></div>` : ''}
     ${(v.links || []).length ? `<div class="row">${v.links.map((l) => `<a class="link" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${icon('ext')}</a>`).join('')}</div>` : ''}

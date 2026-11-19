@@ -115,3 +115,35 @@ Spiel → Fassung → Weg → Gerät → gemessenes Setup.
   Das Problem war nicht die Darstellung, sondern zwei Fenster mit je eigenem Zustand. Eine komplett native Oberfläche
   ist damit nicht nötig; nativ sind Fenster und Tasten. Geprüft mit `scripts/dualsim.mjs` (Stresstest), auf dem Thor
   noch nicht. Die echte Bildschirmdichte des Thor ist unbekannt – der Selbsttest (Info → Atlas-App) würde sie liefern.
+
+## Entscheidungen vom 19.11.2026
+
+- **Eine Fassung je Plattform** (Markus): nicht „PC/PS2/Xbox/GameCube (2004)“, sondern je eine Fassung für PC, PS2,
+  Xbox, GameCube – jede mit eigenem Cover, eigenen Bildern und eigenem Emulator. Nur Plattformen ohne Android-Emulator
+  derselben Veröffentlichung (PS4, PS5, Xbox One/Series) bleiben zusammen. `atlas.py repair` teilt automatisch auf
+  (`scripts/quality.py`), Wikidata und KI legen gleich richtig an. Erster Lauf: 126 Fassungen aufgeteilt.
+- **Remake oder Remaster** (Markus: „Ein Remake, gerade bei Metroid Prime, ist doch nochmal was anderes“): Remake = neu
+  gebaut, auch wenn es „Remastered“ heißt (Metroid Prime Remastered, CTR Nitro-Fueled) → eigenes Spiel mit `remakeOf`.
+  Remaster = aufgefrischtes Original (Skyrim SE, TR I–III Remastered) → Fassung. Neuauflagen und Sammlungen eines
+  Remakes gehören zum Remake (Tomb Raider: Anniversary PS4/PS5 stand fälschlich beim Original). Reboots: `notRemake`.
+  Läuft automatisch in `repair`; `atlas.py check` meldet, was eine Entscheidung braucht.
+- **Cover je Fassung**: `scripts/covers.py` holt Box und Bilder je Fassung aus libretro-thumbnails (595 Fassungen),
+  die Steam-Box gilt für die PC-Fassung. Die Spielseite zeigt oben eine Leiste aller Fassungen mit Cover.
+- **Spielseite**: je Fassung zuerst die besonderen Wege (Ports, Mods, Dual Screen, Apps) mit „läuft mit …“, darunter
+  die Emulatoren/PC-Laufzeiten als **Rangliste**. Ein Weg „Spiel über GameNative“ ist keine eigene Zeile mehr, sondern
+  Beleg in der Rangliste („Für dieses Spiel belegt“) – so widersprechen sich Weg und „beste Wahl“ nicht mehr.
+- **Konsolen**: neuer Reiter zum Stöbern nach Plattform (alle Fassungen zählen, also auch Portierungen), Konsolenseite
+  mit Emulatoren, besonderen Wegen, Dual Screen und Genre-Filter. Genres auf Deutsch; „Ähnliche Spiele“ nach Genre,
+  Plattform, Zeit und Art der Wege (vorher passte „video game“ auf alles), dazu „Mehr aus der Reihe“.
+- **Dual-Screen-Radar**: Spiele, die nur per Virtual Console oder als Sammlung auf Wii U/3DS kamen, zählen nicht als
+  „Original mit zwei Bildschirmen“ (Metroid Prime 1–3 standen dort wegen der Wii-U-Trilogy). Der wöchentliche
+  Suchlauf pausierte im Abo-Modus seit 8.11. – jetzt übernimmt ihn der Pflegelauf. Fallout: Für Fallout 4 gibt es einen
+  Bericht über die Pip-Boy-App auf dem unteren Bildschirm (GameHub Lite), für Fallout 3/New Vegas eine Fan-Pip-Boy-App
+  auf Nexus Mods; beide liegen als Funde zur Prüfung in der Inbox (aus der Sitzung nicht abrufbar, daher nicht eingetragen).
+- **Reihe in einem Zug**: „Reihe vervollständigen & recherchieren“ füllt sofort jedes Spiel (Basisprofil, Fassungen,
+  Cover, Bilder – `scripts/series.py`, kostenlos, auch im Abo-Modus) und reiht alle zur Tiefenrecherche ein; einzelne
+  Spiele muss man nicht mehr extra anfordern.
+- **Abo-Pflegelauf**: fremde GitHub-Seiten sind aus der Sitzung gesperrt, READMEs aber über raw.githubusercontent.com
+  lesbar (steht jetzt in CLAUDE.md) – damit lassen sich die liegengebliebenen Port-/Recomp-Funde prüfen.
+- Online-Suche: „List of Dragon Age media“ wird als Reihe „Dragon Age“ erkannt, Figuren („Isaac Clarke“) erscheinen nicht mehr.
+

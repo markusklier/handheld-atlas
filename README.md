@@ -2,9 +2,10 @@
 
 **Ein Spiel. Alle Wege, es zu spielen.** Spielzentrierte Discovery für Android-Handhelds, gebaut für den **AYN Thor**.
 
-Du suchst ein Spiel, zum Beispiel *GTA San Andreas*, und siehst zuerst die **Fassungen** (PS2-Original, PC,
-offizielle Android-App, Definitive Edition) und darunter je Fassung die **Spielwege** auf deinem Gerät: Emulator,
-nativer Port, App, Dual-Screen-Mod – mit Screenshots, Voraussetzungen, Erfahrungsberichten und dem neuesten Release.
+Du suchst ein Spiel, zum Beispiel *GTA San Andreas*, und siehst zuerst die **Fassungen** – eine je Plattform, mit
+eigenem Cover (PS2-Original, PC, offizielle Android-App, Definitive Edition) – und darunter je Fassung die **besonderen
+Wege** (nativer Port, App, Mod, Dual Screen, mit „läuft mit …“) und die **Emulatoren als Rangliste** – mit Screenshots,
+Voraussetzungen, Erfahrungsberichten und dem neuesten Release. Stöbern geht nach Spiel, Reihe, Dual Screen oder **Konsole**.
 Oben schlägt Atlas die drei Wege vor, die du dir für dein Gerät zuerst ansehen solltest, und begründet die Reihenfolge;
 der Reiter „Vergleich“ stellt alle Wege nebeneinander (Dual Screen, Bild, Mods, Aufwand, Prüfstufe, Berichte, Performance).
 
