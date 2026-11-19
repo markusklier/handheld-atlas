@@ -1,0 +1,73 @@
+{
+  "id": "angry-birds",
+  "title": "Angry Birds",
+  "franchise": "Angry Birds",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Physik-Puzzle",
+  "summary": "Rovios Schleuder-Hit (2009); die alten 32-Bit-Android-Fassungen laufen per Recompilation wieder nativ auf 64-Bit-Geräten.",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "iOS (2009), Android (2010)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Angry_Birds_(video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "slingshot-animals-recomp",
+      "name": "slingshot-animals-recomp",
+      "release": "mobile",
+      "kind": "recomp",
+      "edition": "Android 8.0.3 (armeabi-v7a)",
+      "runtime": "Statische Recompilation der nativen ARM-Bibliothek nach C++",
+      "projects": [
+        "slingshot-animals-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene APK von Angry Birds Classic 8.0.3 (SHA-256 wird geprüft)",
+        "PC mit „Slingshot Builder“ (Linux/Windows/macOS) zum Bauen der Android-APK"
+      ],
+      "benefit": "Spiellogik, Grafik und Ton laufen nativ und offline; Werbung, Online-Dienste und In-App-Käufe sind abgeschaltet. Unterstützt auch Seasons, Rio, Space HD, Star Wars HD, Star Wars II und Stella.",
+      "caveat": "Die APK wird auf dem PC aus der eigenen Spiel-APK gebaut und dann auf das Gerät kopiert.",
+      "effort": "guided",
+      "status": "active",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Berny23/slingshot-animals-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

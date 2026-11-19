@@ -3,7 +3,8 @@
   "title": "Dead Space: Extraction",
   "franchise": "Dead Space",
   "platforms": [
-    "Wii"
+    "Wii",
+    "PlayStation 3"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Dead%20Space_%20Extraction%20%28USA%29.png",
@@ -24,17 +25,40 @@
   "versions": [
     {
       "id": "wii",
-      "name": "Wii",
+      "name": "Wii (2009)",
       "type": "original",
       "platforms": [
         "Wii"
       ],
-      "year": 2009
+      "year": 2009,
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "name": "PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "note": "PlayStation-Move-Fassung, 2011 erschienen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q2632387",
   "wikipedia": "https://en.wikipedia.org/wiki/Dead_Space%3A_Extraction",
-  "genre": "shoot 'em up"
+  "genre": "Rail-Shooter",
+  "summary": "Rail-Shooter-Ableger (2009) für Wii, 2011 auch für PS3; auf Android über Wii-Emulation (Dolphin)."
 }

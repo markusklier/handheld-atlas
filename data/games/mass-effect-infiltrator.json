@@ -7,7 +7,7 @@
     "Android"
   ],
   "genre": "Third-Person-Shooter",
-  "summary": "Mobiler Deckungs-Shooter zu Mass Effect 3, 2012 offiziell für Android erschienen; seit 2015 nicht mehr in den Stores.",
+  "summary": "Mobiler Deckungs-Shooter zu Mass Effect 3, 2012 offiziell für Android erschienen und 2015 aus den Stores entfernt; ein Fan-Wrapper bringt die eigene APK auf heutige 64-Bit-Geräte.",
   "versions": [
     {
       "id": "mobile",
@@ -46,7 +46,60 @@
       ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "mei-bridge",
+      "name": "Mass Effect Infiltrator Bridge",
+      "release": "mobile",
+      "kind": "native-mod",
+      "edition": "Android-Fassung 1.0.58 (32-Bit-ARM)",
+      "runtime": "APK-Hülle mit gepatchtem qemu-arm und GLES-Brücke (basiert auf dem PortMaster-Port von EapRules)",
+      "projects": [
+        "mass-effect-infiltrator-bridge"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch",
+        "fps-cap",
+        "high-fps"
+      ],
+      "requires": [
+        "Eigene APK von Mass Effect Infiltrator in Version 1.0.58",
+        "Eigenes Cache-Archiv (.zip) mit den Spieldaten"
+      ],
+      "benefit": "Macht das seit 2015 aus den Stores entfernte Android-Spiel auf aktuellen 64-Bit-Geräten wieder spielbar; Auflösung (480–720p) und FPS-Limit (30–120) einstellbar.",
+      "caveat": "Laut Projekt bisher nur auf einem Gerät (OnePlus 13s, Snapdragon 8 Elite) geprüft; auf anderen Chips sind GLES-Treiberunterschiede möglich. Controller-Unterstützung ist nicht dokumentiert. Die Spieldateien gibt es nicht legal neu zu kaufen.",
+      "steps": [
+        "APK aus den GitHub-Releases installieren (Paket com.jamescrumble.meinfiltrator)",
+        "Eigene Spiel-APK 1.0.58 und das Cache-.zip nach /sdcard/Android/data/com.jamescrumble.meinfiltrator/files/ kopieren",
+        "App öffnen, Einstellungen wählen und „Играть“ (Spielen) tippen; der erste Start entpackt die Daten"
+      ],
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JamesCrumble/mass-effect-infiltrator-bridge"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "OnePlus 13s",
+          "result": "laut Entwickler 98–120 FPS im Kampf, Median 116",
+          "settings": "720p, FPS-Limit 120",
+          "source": "https://github.com/JamesCrumble/mass-effect-infiltrator-bridge",
+          "date": "2026-11-19"
+        }
+      ],
+      "checkedAt": "2026-11-19"
+    }
+  ],
   "mods": [],
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-19"
 }

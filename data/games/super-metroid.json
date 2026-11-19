@@ -407,10 +407,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/opening-cinematic.png",
-          "caption": "Opening cinematic",
+          "caption": "Eröffnungssequenz",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-arrival.png",
@@ -428,10 +428,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/ceres-escape.png",
-          "caption": "Ceres escape sequence",
+          "caption": "Flucht von der Ceres-Station",
           "source": "https://github.com/MrJackSpade/SuperMetroidDecomp",
           "credit": "SuperMetroidDecomp",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/MrJackSpade/SuperMetroidDecomp/HEAD/docs/images/draygon-grapple-kill.png",

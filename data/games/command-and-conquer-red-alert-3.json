@@ -92,9 +92,55 @@
         }
       ],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "targets": [
+        "android",
+        "windows-x86_64"
+      ],
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/main/docs/images/android-battlefield.jpg",
+          "caption": "Basis und Schlachtfeld auf Android",
+          "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+          "credit": "HolyCaonima",
+          "check": "source-verified"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "ra3-recomp-holycaonima",
+      "name": "Red Alert 3 Native Recompilation (HolyCaonima)",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "PC, Patch 1.12",
+      "runtime": "Statische Recompilation x86 → C, DXVK-Patches",
+      "projects": [
+        "ra3-recomp-holycaonima"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene PC-Fassung von Red Alert 3",
+        "Eigener Build – keine fertige APK"
+      ],
+      "benefit": "Zweites, unabhängiges Recomp-Projekt für Red Alert 3 mit Fokus auf iPad, Android und macOS; Entwicklungsvideos auf Bilibili.",
+      "caveat": "Forschungsstand (15.11.2026): auf Android laufen Menüs, Intro-Ton, Schlachtfeld und Einheitenauswahl, eine komplette Partie ist noch nicht belegt. Für Spieler ist RA3 Native derzeit weiter.",
+      "effort": "experimental",
+      "status": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp"
+        }
+      ]
     }
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert_3",
-  "updatedAt": "2026-11-18"
+  "updatedAt": "2026-11-19"
 }

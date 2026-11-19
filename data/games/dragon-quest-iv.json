@@ -1,0 +1,75 @@
+{
+  "id": "dragon-quest-iv",
+  "title": "Dragon Quest IV",
+  "franchise": "Dragon Quest",
+  "platforms": [
+    "NES"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Kapitel-RPG von 1990; auf Android gibt es eine native Recompilation der NES-Fassung mit Widescreen und Pixel-Remaster-Grafik.",
+  "versions": [
+    {
+      "id": "nes",
+      "name": "Famicom/NES (1990)",
+      "type": "original",
+      "year": 1990,
+      "platforms": [
+        "NES"
+      ],
+      "note": "In Nordamerika 1992 als Dragon Warrior IV erschienen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Dragon_Quest_IV"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android",
+        "windows-x86_64",
+        "linux-x86_64"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "dw4-recomp",
+      "name": "dw4-recomp",
+      "release": "nes",
+      "kind": "recomp",
+      "edition": "NES (USA), Dragon Warrior IV",
+      "runtime": "Statische Recompilation 6502 → C mit eigener PPU/APU",
+      "projects": [
+        "dw4-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "widescreen",
+        "controller",
+        "touch",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Dragon-Warrior-IV-ROM (USA); der Hash wird geprüft",
+        "Eigener Build der APK (Android-SDK/NDK)"
+      ],
+      "benefit": "Zwei APKs: für Handhelds mit Tasten und für Handys mit Touch-Controller. Speicherstände, Rücklauf, Shader, RetroAchievements, Widescreen, zuschaltbare ROM-Hacks und optionale Pixel-Remaster-Färbung.",
+      "caveat": "APK muss selbst gebaut werden (python android/build_apk.py); die Release-Pakete enthalten Hacks anderer Autoren.",
+      "effort": "advanced",
+      "status": "active",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jsp244/dw4-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

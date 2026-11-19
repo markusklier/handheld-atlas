@@ -1,0 +1,32 @@
+{
+  "id": "dead-space-ignition",
+  "title": "Dead Space Ignition",
+  "franchise": "Dead Space",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Puzzle",
+  "summary": "Downloadspiel (2010) als Vorgeschichte zu Dead Space 2; nur auf PS3/Xbox 360 erschienen.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PlayStation 3, Xbox 360 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "dead-space-2",
+  "title": "Dead Space 2",
+  "franchise": "Dead Space",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Fortsetzung (2011) mit Isaac Clarke auf der Sprawl; auf Android nur über Windows-Laufzeiten bzw. Emulation.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 3, Xbox 360 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

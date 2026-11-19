@@ -1,0 +1,82 @@
+{
+  "id": "shadowgun",
+  "title": "Shadowgun",
+  "franchise": "Shadowgun",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Third-Person-Shooter",
+  "summary": "Deckungs-Shooter von Madfinger (2011), offiziell für Android erschienen; ein Fan-Wrapper bringt die eigene 32-Bit-APK auf heutige 64-Bit-Geräte.",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "iOS, Android (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shadowgun"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "shadowgun-bridge",
+      "name": "Shadowgun Bridge",
+      "release": "mobile",
+      "kind": "native-mod",
+      "edition": "Android-Fassung 1.7.0 (32-Bit-ARMv7, Unity 5.3)",
+      "runtime": "APK-Hülle mit gepatchtem qemu-arm und GLES-Brücke",
+      "projects": [
+        "shadowgun-bridge"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch",
+        "controller",
+        "fps-cap",
+        "high-fps"
+      ],
+      "requires": [
+        "Eigene APK von Shadowgun in Version 1.7.0",
+        "Eigene Spieldaten (Cache-.zip oder .obb)"
+      ],
+      "benefit": "Macht die alte 32-Bit-Android-Fassung auf Geräten ohne AArch32-Unterstützung wieder spielbar; Auflösung und FPS-Limit einstellbar. Gamepad laut Projekt unterstützt.",
+      "caveat": "Laut Projekt bisher nur auf einem Gerät (OnePlus 13s, Snapdragon 8 Elite) geprüft; auf anderen Chips sind GLES-Treiberunterschiede möglich. Nur genau diese Spielversion wird unterstützt.",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JamesCrumble/shadowgun-bridge"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "OnePlus 13s",
+          "result": "laut Entwickler 60–90 FPS je nach Szene",
+          "settings": "720p",
+          "source": "https://github.com/JamesCrumble/shadowgun-bridge",
+          "date": "2026-11-19"
+        }
+      ],
+      "checkedAt": "2026-11-19"
+    }
+  ],
+  "mods": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Shadowgun",
+  "updatedAt": "2026-11-19"
+}

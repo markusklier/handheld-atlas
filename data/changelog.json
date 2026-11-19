@@ -1,6 +1,198 @@
 {
   "entries": [
     {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space-ignition",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space Ignition",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space-2",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space 2",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space-3",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space 3",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space-2011",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space (2011, Mobile – offiziell für Android)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dead-space-2023",
+      "text": "Neues Spiel aus der Reihe Dead Space: Dead Space (2023, Remake)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "dead-space-extraction",
+      "text": "Neue Fassung: PlayStation 3 (2011)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "mass-effect-infiltrator",
+      "text": "Neuer Spielweg: Mass Effect Infiltrator Bridge – eigene 32-Bit-APK auf 64-Bit-Geräten (KI-Fund)",
+      "url": "https://github.com/JamesCrumble/mass-effect-infiltrator-bridge"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "shadowgun",
+      "text": "Neues Spiel: Shadowgun mit Spielweg Shadowgun Bridge (KI-Fund)",
+      "url": "https://github.com/JamesCrumble/shadowgun-bridge"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "n-o-v-a-3",
+      "text": "Neues Spiel: N.O.V.A. 3 mit Spielweg NOVA3 Bridge (KI-Fund)",
+      "url": "https://github.com/JamesCrumble/NOVA3-Bridge"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "world-of-warcraft-forever",
+      "text": "Neuer Spielweg: WoW Forever for Android – laut Projekt auf dem AYN Thor getestet (KI-Fund)",
+      "url": "https://github.com/jaredgei/wow-forever-android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "command-and-conquer-red-alert-3",
+      "text": "Neuer Spielweg: Red Alert 3 Native Recompilation von HolyCaonima (KI-Fund)",
+      "url": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dragon-quest-iv",
+      "text": "Neues Spiel: Dragon Quest IV mit nativer NES-Recompilation dw4-recomp (KI-Fund)",
+      "url": "https://github.com/jsp244/dw4-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "angry-birds",
+      "text": "Neues Spiel: Angry Birds mit Recompilation slingshot-animals-recomp (KI-Fund)",
+      "url": "https://github.com/Berny23/slingshot-animals-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "take-no-prisoners",
+      "text": "Neues Spiel: Take No Prisoners mit nativer Recompilation (KI-Fund)",
+      "url": "https://github.com/mxvisor/take_no_prisoners-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "ignition",
+      "text": "Neues Spiel: Ignition (1997) mit nativer Recompilation (KI-Fund)",
+      "url": "https://github.com/mxvisor/ignition-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "pac-man-championship-edition-2",
+      "text": "Neues Spiel: PAC-MAN Championship Edition 2 mit nativer Android-Portierung der PS4-Fassung (KI-Fund)",
+      "url": "https://github.com/CrownParkComputing/pacman-ce2-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "pokemon-emerald",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "sephiria",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "shantae",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "sonic-free-riders",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "take-no-prisoners",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "ignition",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "command-and-conquer-red-alert-3",
+      "text": "Bilder geprüft und beschriftet"
+    },
+    {
       "date": "2026-11-18",
       "type": "route-added",
       "by": "agent",

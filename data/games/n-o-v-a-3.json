@@ -1,0 +1,81 @@
+{
+  "id": "n-o-v-a-3",
+  "title": "N.O.V.A. 3",
+  "franchise": "N.O.V.A.",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Gameloft-Ego-Shooter (2012), offiziell für Android erschienen; ein Fan-Wrapper bringt die eigene 32-Bit-APK 1.0.7 auf heutige 64-Bit-Geräte.",
+  "versions": [
+    {
+      "id": "mobile",
+      "name": "iOS, Android (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/N.O.V.A._3"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "nova3-bridge",
+      "name": "NOVA3 Bridge",
+      "release": "mobile",
+      "kind": "native-mod",
+      "edition": "Android-Fassung 1.0.7 (32-Bit-ARMv7)",
+      "runtime": "APK-Hülle mit gepatchtem qemu-arm und GLES-Brücke",
+      "projects": [
+        "nova3-bridge"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "touch",
+        "controller",
+        "fps-cap"
+      ],
+      "requires": [
+        "Eigene APK von N.O.V.A. 3 in Version 1.0.7",
+        "Eigene zwei OBB-Dateien"
+      ],
+      "benefit": "Macht die alte 32-Bit-Android-Fassung auf Geräten ohne AArch32-Unterstützung wieder spielbar; Auflösung und FPS-Limit einstellbar. Gamepad laut Projekt unterstützt.",
+      "caveat": "Laut Projekt bisher nur auf einem Gerät (OnePlus 13s, Snapdragon 8 Elite) geprüft; auf anderen Chips sind GLES-Treiberunterschiede möglich. Nur genau diese Spielversion wird unterstützt.",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JamesCrumble/NOVA3-Bridge"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "OnePlus 13s",
+          "result": "laut Entwickler Menüs und leichte Szenen bis 90 FPS und mehr, im Kampf deutlich weniger (25–55 FPS vor dem letzten qemu-Build)",
+          "settings": "720p",
+          "source": "https://github.com/JamesCrumble/NOVA3-Bridge",
+          "date": "2026-11-19"
+        }
+      ],
+      "checkedAt": "2026-11-19"
+    }
+  ],
+  "mods": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/N.O.V.A._3",
+  "updatedAt": "2026-11-19"
+}

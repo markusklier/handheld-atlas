@@ -96,24 +96,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/wide-view-3ds.png",
-          "caption": "WIDE VIEW on the 3DS top screen",
+          "caption": "WIDE VIEW aus (oben) und an (unten)",
           "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
           "credit": "Shantae Dual",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/shantae-tab.png",
-          "caption": "Shantae tab",
+          "caption": "Oben das Spiel, unten der Shantae-Reiter mit Inventar",
           "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
           "credit": "Shantae Dual",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Nihilspire/Shantae-Dual-Screen-Mods/HEAD/docs/screenshots/dance-list.png",
-          "caption": "Dance list with auto dance",
+          "caption": "Unterer Bildschirm: Tanzliste mit automatischem Tanzen",
           "source": "https://github.com/Nihilspire/Shantae-Dual-Screen-Mods",
           "credit": "Shantae Dual",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [

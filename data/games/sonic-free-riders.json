@@ -73,10 +73,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/camera-input-skeleton.png",
-          "caption": "Camera controlled gameplay alongside the live skeleton debug window",
+          "caption": "Spiel mit Kamerasteuerung neben dem Skelett-Debugfenster",
           "source": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
           "credit": "Free Riders Recompiled",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/YuutaTsubasa/Free-Riders-Recompiled/HEAD/docs/images/custom-vrm-gameplay.png",

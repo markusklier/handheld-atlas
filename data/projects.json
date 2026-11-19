@@ -2733,6 +2733,126 @@
         "mass-effect"
       ],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "mass-effect-infiltrator-bridge",
+      "name": "Mass Effect Infiltrator Bridge",
+      "kind": "port",
+      "url": "https://github.com/JamesCrumble/mass-effect-infiltrator-bridge",
+      "repo": "JamesCrumble/mass-effect-infiltrator-bridge",
+      "description": "Startet die 32-Bit-Android-App Mass Effect Infiltrator 1.0.58 auf reinen 64-Bit-Handys (gepatchtes qemu-user, OpenGL-ES-Brücke zur GPU). Enthält keine Spieldateien. GPL-3.0.",
+      "games": [
+        "mass-effect-infiltrator"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "shadowgun-bridge",
+      "name": "Shadowgun Bridge",
+      "kind": "port",
+      "url": "https://github.com/JamesCrumble/shadowgun-bridge",
+      "repo": "JamesCrumble/shadowgun-bridge",
+      "description": "Startet die 32-Bit-Android-App Shadowgun 1.7.0 auf reinen 64-Bit-Handys (gepatchtes qemu-user, OpenGL-ES-Brücke zur GPU). Enthält keine Spieldateien. GPL-3.0.",
+      "games": [
+        "shadowgun"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "nova3-bridge",
+      "name": "NOVA3 Bridge",
+      "kind": "port",
+      "url": "https://github.com/JamesCrumble/NOVA3-Bridge",
+      "repo": "JamesCrumble/NOVA3-Bridge",
+      "description": "Startet die 32-Bit-Android-App N.O.V.A. 3 1.0.7 auf reinen 64-Bit-Handys (gepatchtes qemu-user, OpenGL-ES-Brücke zur GPU). Enthält keine Spieldateien. GPL-3.0.",
+      "games": [
+        "n-o-v-a-3"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "wow-forever-android",
+      "name": "WoW Forever for Android",
+      "kind": "launcher",
+      "url": "https://github.com/jaredgei/wow-forever-android",
+      "repo": "jaredgei/wow-forever-android",
+      "description": "GameNative-Fork als Ein-Spiel-Launcher: startet Blizzards Windows-ARM64-Client von World of Warcraft: Forever über Wine/Proton ARM64EC, DXVK und Turnip auf Snapdragon-Handhelds. Keine Spieldateien enthalten.",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "ra3-recomp-holycaonima",
+      "name": "Red Alert 3 Native Recompilation",
+      "kind": "port",
+      "url": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
+      "repo": "HolyCaonima/ra3-ios-android-win-mac-recomp",
+      "description": "Statische Recompilation der x86-Logik von Red Alert 3 nach C für iPad, Android, Windows und macOS (MIT). Keine Spieldateien enthalten.",
+      "games": [
+        "command-and-conquer-red-alert-3"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "dw4-recomp",
+      "name": "dw4-recomp",
+      "kind": "port",
+      "url": "https://github.com/jsp244/dw4-recomp",
+      "repo": "jsp244/dw4-recomp",
+      "description": "Statische Recompilation von Dragon Warrior IV (NES, USA) nach C für Windows, Linux, Steam Deck und Android, mit Launcher, Speicherständen, Widescreen und optionaler Pixel-Remaster-Grafik. Eigene ROM nötig.",
+      "games": [
+        "dragon-quest-iv"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "slingshot-animals-recomp",
+      "name": "slingshot-animals-recomp",
+      "kind": "port",
+      "url": "https://github.com/Berny23/slingshot-animals-recomp",
+      "repo": "Berny23/slingshot-animals-recomp",
+      "description": "Statische Recompilation der alten Android-Angry-Birds-Spiele (Classic, Seasons, Rio, Space, Star Wars, Star Wars II, Stella) für Linux, Windows, macOS, 64-Bit-Android und Switch. Eigene APKs nötig.",
+      "games": [
+        "angry-birds"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "take-no-prisoners-recomp",
+      "name": "Take No Prisoners – native Portierung (SR)",
+      "kind": "port",
+      "url": "https://github.com/mxvisor/take_no_prisoners-recomp",
+      "repo": "mxvisor/take_no_prisoners-recomp",
+      "description": "Statische Recompilation (SR/SR-SDK) von Take No Prisoners (1997, Windows) für Linux, Windows und Android (arm64). MIT. Eigene Spiel-CD nötig.",
+      "games": [
+        "take-no-prisoners"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "ignition-recomp",
+      "name": "Ignition – native Portierung (SR)",
+      "kind": "port",
+      "url": "https://github.com/mxvisor/ignition-recomp",
+      "repo": "mxvisor/ignition-recomp",
+      "description": "Statische Recompilation (SR/SR-SDK) von Ignition (1997, Windows) für Linux, Windows und Android (arm64). MIT. Eigene Spiel-CD nötig.",
+      "games": [
+        "ignition"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "pacman-ce2-recomp",
+      "name": "PAC-MAN CE2 native port",
+      "kind": "port",
+      "url": "https://github.com/CrownParkComputing/pacman-ce2-recomp",
+      "repo": "CrownParkComputing/pacman-ce2-recomp",
+      "description": "Native Portierung der PS4-Fassung von PAC-MAN Championship Edition 2 (Arcade Game Series) für Linux x86-64 und Android ARM64 auf Basis der Tempest-4000-Laufzeit und des shadPS4-Renderers. GPL-2.0+. Spieldaten nötig.",
+      "games": [
+        "pac-man-championship-edition-2"
+      ],
+      "checkedAt": "2026-11-19"
     }
   ]
 }

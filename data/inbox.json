@@ -41,41 +41,9 @@
       "foundAt": "2026-11-17"
     },
     {
-      "url": "https://github.com/Berny23/slingshot-animals-recomp",
-      "title": "Berny23/slingshot-animals-recomp",
-      "excerpt": "Unofficial static recompilation of Rovio's old Android Angry Birds games. Classic, Seasons, Rio, Space, Star Wars, Star Wars 2, Stella.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
-      "url": "https://github.com/jaredgei/wow-forever-android",
-      "title": "jaredgei/wow-forever-android",
-      "excerpt": "Play the World of Warcraft: Forever beta natively on Snapdragon 8 Series / 8 Elite Android devices (AYN Thor, RP6, Odin Portal, Galaxy). Standalone launcher forked from GameNative.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-17"
-    },
-    {
       "url": "https://github.com/easleyclaymore/Rance10-Android-Port",
       "title": "easleyclaymore/Rance10-Android-Port",
       "excerpt": "Rance10 Android native port - xsystem4 downstream fork (engine source only, no game assets)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/CrownParkComputing/pacman-ce2-recomp",
-      "title": "CrownParkComputing/pacman-ce2-recomp",
-      "excerpt": "PAC-MAN Championship Edition 2 native Linux and Android port; runtime source and build instructions, game data supplied separately",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/mxvisor/take_no_prisoners-recomp",
-      "title": "mxvisor/take_no_prisoners-recomp",
-      "excerpt": "Native port of Take No Prisoners (1997, Windows) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -100,14 +68,6 @@
       "url": "https://github.com/CrownParkComputing/raiden-fighters-recomp",
       "title": "CrownParkComputing/raiden-fighters-recomp",
       "excerpt": "Raiden Fighters Remix Collection CUSA53688 Linux and Android port using the shared PS4 runtime; original game data required.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
-      "url": "https://github.com/jsp244/dw4-recomp",
-      "title": "jsp244/dw4-recomp",
-      "excerpt": "Dragon Quest IV (Dragon Warrior IV, NES) as a native program for Windows, Linux, Steam Deck and Android: static recompilation, widescreen, ROM hacks, Pixel Remaster textures. Bring your own ROM.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-16"
@@ -164,22 +124,6 @@
       "url": "https://github.com/dyzz/srw64-recomp",
       "title": "dyzz/srw64-recomp",
       "excerpt": "Unofficial native recompilation of Super Robot Wars 64 for Windows, macOS, Linux/Steam Deck, Android and Switch: Japanese, English, Simplified and Traditional Chinese, Korean, widescreen, optional HD art, mods and bug fixes. Requires your own ROM.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/mxvisor/ignition-recomp",
-      "title": "mxvisor/ignition-recomp",
-      "excerpt": "Native port of Ignition (1997, Windows) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
-      "title": "HolyCaonima/ra3-ios-android-win-mac-recomp",
-      "excerpt": "Red Alert 3 native recompilation for iOS, Android, Windows & macOS. Tools, runtime components and platform patches; no game assets or generated lift C. | 红警3原生重编译：公开工具、运行时组件与平台补丁，不含游戏资源和生成的 lift C。 Inspired by / 方法参考: https://github.com/elkir0/sc2-android-recomp",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -265,57 +209,9 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/aroum/fm1-custom-fw",
-      "title": "aroum/fm1-custom-fw",
-      "excerpt": "M-VAVE FM-1 resource hub: custom firmwares directory, docs, MIDI SysEx protocol tools & firmware flasher",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/p3perLTU/TV-Launcher-CastLink",
-      "title": "p3perLTU/TV-Launcher-CastLink",
-      "excerpt": "TV Launcher + CastLink: a light Google TV home screen and encrypted low-latency screen casting (phone/PC to TV, PC to phone, iPad or Mac)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/hyylanlian/wow-forever-android",
-      "title": "hyylanlian/wow-forever-android",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/quantavil/awesome-omarchy-plugins",
-      "title": "quantavil/awesome-omarchy-plugins",
-      "excerpt": "Curated directory of 2,600+ open-source Omarchy plugins, widgets, and status bars with live GitHub stats",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/Alexxfromgit/DashCluster",
-      "title": "Alexxfromgit/DashCluster",
-      "excerpt": "Customizable digital instrument cluster for racing games: live Forza Horizon telemetry on your PC, phone and other screens, with a visual dashboard editor. Rust + Slint.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/aypro/ocrclip",
       "title": "aypro/ocrclip",
       "excerpt": "Press a button while a game is running and OCR Clip reads the Japanese text on screen, copies it to the clipboard and, if you want, looks it up in a dictionary.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/misbahcmc/pc-hardware-monitor",
-      "title": "misbahcmc/pc-hardware-monitor",
-      "excerpt": "Real-time PC hardware monitor HUD (CPU, RAM, GPU, Temp) for Android/iOS devices via Web PWA.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
@@ -5865,11 +5761,20 @@
     "https://github.com/BlackSingularities/OpenTakeoff",
     "https://github.com/arda6401/LOST-ISLAND",
     "https://github.com/JeuelSosaLarocca/ios-launcher-recompile",
-    "https://github.com/dicechaos/DiceChaosDisplay"
+    "https://github.com/dicechaos/DiceChaosDisplay",
+    "https://github.com/hyylanlian/wow-forever-android",
+    "https://github.com/aroum/fm1-custom-fw",
+    "https://github.com/p3perLTU/TV-Launcher-CastLink",
+    "https://github.com/quantavil/awesome-omarchy-plugins",
+    "https://github.com/Alexxfromgit/DashCluster",
+    "https://github.com/misbahcmc/pc-hardware-monitor",
+    "https://github.com/GINESTR0/DeadSpaceReanimated",
+    "https://github.com/AlperenAdam/DeadSpaceReanimated",
+    "https://winlator-web.pages.dev/game/m/metal-gear-solid-v-the-phantom-pain/"
   ],
   "agent": {
-    "lastRun": "2026-11-18T23:40Z",
-    "summary": "Abo-Anfragen #20 (Bilder NFSU2) und #21 (DOOM 2016) erledigt: neue native Android-Wege NFSU2 Recompiled und DOOM Mobile (Switch-Port), Fassungen Switch/Stadia für DOOM 2016; Warteschlange MGS1, Peace Walker, MGS4 abgearbeitet (keine spielspezifischen Android-Wege belegbar); Leads: neues Spiel Sonic the Hedgehog (2006) mit MarathonRecomp Android, ME1Recomp für Mass Effect, 3 verworfen; DiRT-2-Android-Build (unklar, ob die APK Spielcode enthält) und SRW64-Recomp (bisher nur macOS) zurückgestellt; 9 Bilder bestätigt, 1 Dublette entfernt. Play-Store-, YouTube-, Steam- und Reddit-Bilder aus der Sandbox nicht erreichbar."
+    "lastRun": "2026-11-19T21:30Z",
+    "summary": "Abo #22 (Reihe Mass Effect: neuer Weg Mass Effect Infiltrator Bridge) und #23 („Isaac Clarke“ → Reihe Dead Space: 6 Spiele, PS3-Fassung von Extraction) erledigt; Warteschlange MGS V, Silent Hill 3, Mass Effect 1–3 ohne neue belegbare Android-Wege abgearbeitet; Leads: WoW Forever for Android (laut Projekt auf dem Thor getestet), zweiter RA3-Recomp, neue Spiele Dragon Quest IV, Angry Birds, Take No Prisoners, Ignition, PAC-MAN CE2, Shadowgun, N.O.V.A. 3; Dead Space Reanimated (verteilt die komplette EA-APK) und eine Piraterie-Seite verworfen; 14 Bilder bestätigt. Wikidata war aus der Sandbox nicht erreichbar, Reddit-/Play-Bilder weiterhin nicht prüfbar."
   },
   "watcher": {
     "lastRun": "2026-11-18T14:02:20Z",
@@ -6211,6 +6116,34 @@
         }
       ],
       "queued": 3
+    },
+    "Dead Space": {
+      "date": "2026-11-19",
+      "source": "agent",
+      "listed": 7,
+      "added": [
+        "dead-space",
+        "dead-space-ignition",
+        "dead-space-2",
+        "dead-space-3",
+        "dead-space-2011",
+        "dead-space-2023"
+      ],
+      "versions": [
+        "Dead Space: Extraction – PlayStation 3 (2011)"
+      ],
+      "skipped": [
+        {
+          "title": "No Known Survivors",
+          "reason": "Browser-ARG, kein eigenes Spiel"
+        },
+        {
+          "title": "Dead Space 2: Severed / Dead Space 3: Awakened",
+          "reason": "DLC"
+        }
+      ],
+      "queued": 0,
+      "note": "Angefragt als „Isaac Clarke“ (Hauptfigur der Reihe) – als Reihe Dead Space erledigt."
     }
   },
   "imageRequests": {

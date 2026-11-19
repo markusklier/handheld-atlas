@@ -1,0 +1,34 @@
+{
+  "id": "dead-space",
+  "title": "Dead Space",
+  "franchise": "Dead Space",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Survival-Horror-Klassiker von 2008; auf Android nur über Windows-Laufzeiten bzw. PS3-/Xbox-360-Emulation – keine offizielle Android-Fassung.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 3, Xbox 360 (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "PC",
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

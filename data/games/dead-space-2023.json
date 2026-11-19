@@ -1,0 +1,35 @@
+{
+  "id": "dead-space-2023",
+  "title": "Dead Space (2023)",
+  "franchise": "Dead Space",
+  "remakeOf": "dead-space",
+  "platforms": [
+    "PC",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "Survival-Horror",
+  "summary": "Remake von Dead Space (2023, Frostbite); auf Android nur über Windows-Laufzeiten denkbar.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 5, Xbox Series (2023)",
+      "type": "original",
+      "year": 2023,
+      "platforms": [
+        "PC",
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

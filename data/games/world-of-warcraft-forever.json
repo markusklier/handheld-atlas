@@ -1,7 +1,7 @@
 {
   "id": "world-of-warcraft-forever",
   "title": "World of Warcraft: Forever",
-  "franchise": "World of Warcraft: Forever",
+  "franchise": "Warcraft",
   "platforms": [
     "PC"
   ],
@@ -16,6 +16,51 @@
     }
   ],
   "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "wow-forever-android",
+      "name": "WoW Forever for Android",
+      "release": "pc",
+      "kind": "pc-runtime",
+      "edition": "Windows-ARM64-Client",
+      "runtime": "GameNative-Fork mit Proton 11 ARM64EC, DXVK 2.4.1 und gepatchtem Turnip",
+      "projects": [
+        "wow-forever-android"
+      ],
+      "features": [
+        "controller",
+        "online",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigenes Battle.net-Konto mit Zugang zu WoW Forever",
+        "Snapdragon 8 Gen 2 oder neuer (Adreno 7xx/8xx), Android 10+",
+        "Rund 60 GB freier Speicher, WLAN"
+      ],
+      "benefit": "Ein Tipp startet das Spiel: die App lädt den ARM64-Client von Blizzards CDN, aktualisiert ihn selbst und streamt Spieldaten nach. Laut Projekt auf dem AYN Thor getestet (bis in die Spielwelt, mit Controller); die Tastatur erscheint dort auf dem unteren Bildschirm.",
+      "caveat": "Inoffizielles Community-Projekt; Anmeldung bei Battle.net kann den Fehler BLZ51914400 auslösen (experimenteller Browser-Login als Ausweg). Ob Blizzard die Nutzung über Wine duldet, ist nicht geklärt.",
+      "steps": [
+        "WoW-Forever.apk aus den GitHub-Releases installieren (Paket app.wowforever)",
+        "Zugriff auf alle Dateien erlauben und „Install World of Warcraft“ tippen",
+        "Battle.net-Zugangsdaten im Setup eintragen, Region und Auflösung (720p/900p/1080p) wählen, Play"
+      ],
+      "effort": "guided",
+      "status": "active",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jaredgei/wow-forever-android"
+        }
+      ]
+    },
     {
       "id": "ds-ds-forever",
       "name": "DS Forever",
@@ -55,7 +100,7 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/b/be/World_of_Warcraft_Forever_logo.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/World_of_Warcraft%3A_Forever"

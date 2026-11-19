@@ -1,16 +1,6 @@
 {
   "jobs": [
     {
-      "game": "metal-gear-solid-v-the-phantom-pain",
-      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
-      "added": "2026-11-18"
-    },
-    {
-      "game": "silent-hill-3",
-      "reason": "Reihen-Analyse (Abo-Pflegelauf)",
-      "added": "2026-11-18"
-    },
-    {
       "game": "silent-hill-downpour",
       "reason": "Reihen-Analyse (Abo-Pflegelauf)",
       "added": "2026-11-18"
@@ -53,21 +43,6 @@
     {
       "game": "tomb-raider-2013",
       "reason": "Reihen-Analyse (Abo-Pflegelauf)",
-      "added": "2026-11-18"
-    },
-    {
-      "game": "mass-effect",
-      "reason": "Reihe Mass Effect (Abo-Pflegelauf)",
-      "added": "2026-11-18"
-    },
-    {
-      "game": "mass-effect-2",
-      "reason": "Reihe Mass Effect (Abo-Pflegelauf)",
-      "added": "2026-11-18"
-    },
-    {
-      "game": "mass-effect-3",
-      "reason": "Reihe Mass Effect (Abo-Pflegelauf)",
       "added": "2026-11-18"
     }
   ]

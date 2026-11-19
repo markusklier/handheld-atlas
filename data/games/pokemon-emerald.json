@@ -80,17 +80,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-dex.webp",
-          "caption": "DEX: seen and caught, filters, entries",
+          "caption": "Begleit-App: Pokédex mit gesehen/gefangen und Filtern",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
-          "check": "ai-unclear"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/companion-boxes.webp",
-          "caption": "BOXES: a PC box laid out like the game",
+          "caption": "Begleit-App: PC-Box wie im Spiel",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
-          "check": "ai-unclear"
+          "check": "source-verified"
         }
       ],
       "links": [],

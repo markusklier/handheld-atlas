@@ -1,0 +1,80 @@
+{
+  "id": "ignition",
+  "title": "Ignition",
+  "franchise": "Ignition",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Arcade-Rennspiel",
+  "summary": "Top-Down-Arcade-Rennspiel (1997); per statischer Recompilation nativ auf Android, 3dfx-Fassung in höherer Auflösung.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1997)",
+      "type": "original",
+      "year": 1997,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/mxvisor/ignition-recomp"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android",
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/race.jpg",
+          "caption": "Rennen in der 3dfx-Fassung (1024×768, Kantenglättung)",
+          "source": "https://github.com/mxvisor/ignition-recomp",
+          "credit": "ignition-recomp",
+          "check": "source-verified"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "ignition-recomp",
+      "name": "Ignition Recomp",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "Windows-95-Fassung (CD)",
+      "runtime": "Statische Recompilation (SR) mit SR-SDK auf SDL2/OpenGL ES",
+      "projects": [
+        "ignition-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Spiel-CD von Ignition",
+        "Eigener Build (make apk)"
+      ],
+      "benefit": "Spiellogik läuft als nativer Code; Gamepad, Bildrate und Port-Einstellungen über ein eigenes Panel.",
+      "caveat": "In Arbeit: das Spiel startet und ist spielbar, mit bekannten Fehlern; die Bildschirmtasten auf Android sind ein Prototyp.",
+      "effort": "advanced",
+      "status": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mxvisor/ignition-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}

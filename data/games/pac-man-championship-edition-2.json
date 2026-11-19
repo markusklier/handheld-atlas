@@ -1,0 +1,74 @@
+{
+  "id": "pac-man-championship-edition-2",
+  "title": "PAC-MAN Championship Edition 2",
+  "franchise": "Pac-Man",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "genre": "Arcade",
+  "summary": "Arcade-Neuauflage von PAC-MAN (2016); eine native Android-Portierung der PS4-Fassung ist in Arbeit.",
+  "versions": [
+    {
+      "id": "multi",
+      "name": "PC, PlayStation 4, Xbox One (2016)",
+      "type": "original",
+      "year": 2016,
+      "platforms": [
+        "PC",
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Pac-Man_Championship_Edition_2"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android",
+        "linux-x86_64"
+      ],
+      "testedOn": [],
+      "screenshots": [],
+      "reports": [],
+      "performance": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-19",
+      "id": "pacman-ce2-recomp",
+      "name": "PAC-MAN CE2 native port",
+      "release": "multi",
+      "kind": "recomp",
+      "edition": "PS4 (Arcade Game Series, CUSA06906)",
+      "runtime": "Tempest-4000-Laufzeit + shadPS4-Vulkan-Renderer, Turnip mitgeliefert",
+      "projects": [
+        "pacman-ce2-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "requires": [
+        "Eigene PS4-Fassung (Arcade Game Series, CUSA06906 v1.00)",
+        "Eigener Build"
+      ],
+      "benefit": "Auf Android laut Projekt spielbare Level mit Musik und Soundeffekten (Retroid Pocket Flip 2); Grafiktreiber wählbar (L3+R3).",
+      "caveat": "Entwicklungsstand; offene Android-Arbeiten im Projektstatus. Die PS4-Paketfassung enthält auch Galaga, PAC-MAN und Dig Dug.",
+      "effort": "experimental",
+      "status": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/CrownParkComputing/pacman-ce2-recomp"
+        }
+      ]
+    }
+  ],
+  "mods": [],
+  "updatedAt": "2026-11-19"
+}
