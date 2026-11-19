@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Game Boy Advance"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+          "caption": "Game Boy Advance-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Metroid%20-%20Zero%20Mission%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        }
       ]
     }
   ],
@@ -73,5 +89,6 @@
   "updatedAt": "2026-11-08",
   "wikidata": "Q2012171",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid%3A_Zero_Mission",
-  "genre": "Metroidvania"
+  "genre": "Metroidvania",
+  "remakeOf": "metroid"
 }

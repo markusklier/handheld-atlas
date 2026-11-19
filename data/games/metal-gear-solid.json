@@ -34,15 +34,61 @@
       "platforms": [
         "PlayStation"
       ],
-      "year": 1998
+      "year": 1998,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Metal%20Gear%20Solid%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Metal%20Gear%20Solid%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Metal%20Gear%20Solid%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
     },
     {
       "id": "integral",
-      "name": "Metal Gear Solid: Integral (1999)",
+      "name": "Metal Gear Solid: Integral – PlayStation (1999)",
       "type": "rerelease",
       "year": 1999,
       "platforms": [
-        "PlayStation",
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Metal%20Gear%20Solid%20-%20Integral%20%28Japan%2C%20Asia%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Metal%20Gear%20Solid%20-%20Integral%20%28Japan%2C%20Asia%29%20%28En%2CJa%29%20%28Disc%201%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Metal%20Gear%20Solid%20-%20Integral%20%28Japan%2C%20Asia%29%20%28En%2CJa%29%20%28Disc%201%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
+    },
+    {
+      "id": "integral-pc",
+      "name": "Metal Gear Solid: Integral – PC (1999)",
+      "type": "rerelease",
+      "year": 1999,
+      "platforms": [
         "PC"
       ],
       "links": [
@@ -55,12 +101,41 @@
     },
     {
       "id": "master-collection-vol-1",
-      "name": "Master Collection Vol. 1 (2023)",
+      "name": "Master Collection Vol. 1 – PC (2023)",
       "type": "collection",
       "year": 2023,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+    },
+    {
+      "id": "master-collection-vol-1-nintendo-switch",
+      "name": "Master Collection Vol. 1 – Nintendo Switch (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-1-playstation-4",
+      "name": "Master Collection Vol. 1 – PlayStation 4, PlayStation 5, Xbox Series (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox Series"
@@ -70,12 +145,11 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
-      ],
-      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q6582527",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_%28video_game%29",
   "genre": "action-adventure game",

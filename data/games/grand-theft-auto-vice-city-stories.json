@@ -84,6 +84,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/543ba9d9-4d78-4f62-891a-39f94f960cc4"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

@@ -21,6 +21,22 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Snake%27s%20Revenge%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Snaps/Snake%27s%20Revenge%20%28USA%29.png",
+          "caption": "NES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Titles/Snake%27s%20Revenge%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        }
       ]
     }
   ],

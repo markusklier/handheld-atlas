@@ -85,7 +85,23 @@
           "url": "https://www.emuready.com/games/6fef90f9-c905-4d06-9aab-5f3a295d6b01"
         }
       ],
-      "year": 1999
+      "year": 1999,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Silent%20Hill%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Silent%20Hill%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Silent%20Hill%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
     }
   ],
   "routes": [

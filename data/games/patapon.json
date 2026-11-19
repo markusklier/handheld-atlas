@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/11c481f1-a7de-4c9d-8282-c27aeb228901"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Patapon%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Patapon%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Patapon%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

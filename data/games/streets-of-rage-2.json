@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Streets%20of%20Rage%202%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Streets%20of%20Rage%202%20%28USA%29.png",
+          "caption": "Sega Mega Drive-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Streets%20of%20Rage%202%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        }
       ]
     }
   ],

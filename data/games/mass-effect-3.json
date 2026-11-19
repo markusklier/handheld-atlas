@@ -13,12 +13,40 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 3, Xbox 360 (2012)",
+      "name": "PC (2012)",
       "type": "original",
       "year": 2012,
       "platforms": [
-        "PC",
-        "PlayStation 3",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-playstation-3",
+      "name": "PlayStation 3 (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-xbox-360",
+      "name": "Xbox 360 (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
         "Xbox 360"
       ],
       "links": [
@@ -46,13 +74,11 @@
     },
     {
       "id": "trilogy",
-      "name": "Mass Effect Trilogy (2012)",
+      "name": "Mass Effect Trilogy – PC (2012)",
       "type": "collection",
       "year": 2012,
       "platforms": [
-        "PC",
-        "PlayStation 3",
-        "Xbox 360"
+        "PC"
       ],
       "note": "Sammlung der ersten drei Teile.",
       "links": [
@@ -63,16 +89,60 @@
       ]
     },
     {
+      "id": "trilogy-playstation-3",
+      "name": "Mass Effect Trilogy – PlayStation 3 (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
+      "id": "trilogy-xbox-360",
+      "name": "Mass Effect Trilogy – Xbox 360 (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        }
+      ]
+    },
+    {
       "id": "legendary-edition",
-      "name": "Mass Effect Legendary Edition (2021)",
+      "name": "Mass Effect Legendary Edition – PC (2021)",
       "type": "remaster",
       "year": 2021,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "note": "Remaster der Trilogie mit überarbeiteter Grafik und fast allen Zusatzinhalten.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Mass_Effect_Legendary_Edition"
+        }
+      ]
+    },
+    {
+      "id": "legendary-edition-playstation-4",
+      "name": "Mass Effect Legendary Edition – PlayStation 4, Xbox One (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
         "PlayStation 4",
         "Xbox One"
       ],
-      "note": "Remaster der Trilogie mit überarbeiteter Grafik und fast allen Zusatzinhalten.",
       "links": [
         {
           "label": "Quelle",
@@ -83,7 +153,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q753511",
   "website": "https://www.ea.com/games/mass-effect/mass-effect-3)",
   "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect_3",

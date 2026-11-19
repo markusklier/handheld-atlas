@@ -5,9 +5,7 @@
   "platforms": [
     "SNES",
     "Wii U",
-    "New Nintendo 3DS",
-    "New Nintendo 3DS XL",
-    "New Nintendo 2DS XL",
+    "Nintendo 3DS",
     "Super NES Classic Edition",
     "Nintendo Classic Mini: Super Nintendo Entertainment System",
     "Nintendo Classic Mini: Super Famicom",
@@ -40,7 +38,23 @@
       "platforms": [
         "SNES"
       ],
-      "year": 1994
+      "year": 1994,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+          "caption": "SNES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Super%20Metroid%20%28Europe%29%20%28En%2CFr%2CDe%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+        }
+      ]
     },
     {
       "id": "wii-2007",
@@ -81,9 +95,7 @@
       "name": "New Nintendo 3DS Virtual Console (2016)",
       "type": "rerelease",
       "platforms": [
-        "New Nintendo 3DS",
-        "New Nintendo 3DS XL",
-        "New Nintendo 2DS XL"
+        "Nintendo 3DS"
       ],
       "year": 2016,
       "traits": [
@@ -120,11 +132,10 @@
     },
     {
       "id": "nso-2019",
-      "name": "Nintendo Switch Online / Nintendo Classics (2019)",
+      "name": "Nintendo Switch Online / Nintendo Classics – Nintendo Switch (2019)",
       "type": "rerelease",
       "platforms": [
-        "Nintendo Switch",
-        "Nintendo Switch 2"
+        "Nintendo Switch"
       ],
       "year": 2019,
       "traits": [
@@ -139,18 +150,53 @@
       ]
     },
     {
-      "id": "nso-sp-2022",
-      "name": "Super Metroid SP: Samus Aran’s Ultimate Arsenal! (2022)",
+      "id": "nso-2019-nintendo-switch-2",
+      "name": "Nintendo Switch Online / Nintendo Classics – Nintendo Switch 2 (2019)",
       "type": "rerelease",
       "platforms": [
-        "Nintendo Switch",
         "Nintendo Switch 2"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Super-Nintendo-Entertainment-System-Nintendo-Classics-1632515.html"
+        }
+      ]
+    },
+    {
+      "id": "nso-sp-2022",
+      "name": "Super Metroid SP: Samus Aran’s Ultimate Arsenal! – Nintendo Switch (2022)",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch"
       ],
       "year": 2022,
       "traits": [
         "controller"
       ],
       "note": "Offizielle SP-Variante innerhalb der SNES-Abo-App, veröffentlicht im Februar 2022. Sie startet mit einem vorbereiteten Spielstand samt voller Gesundheit und sämtlichen Erweiterungen statt mit einem normalen neuen Spiel.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://omegametroid.com/super-metroid-sp-edition-added-to-nintendo-switch-online/"
+        }
+      ]
+    },
+    {
+      "id": "nso-sp-2022-nintendo-switch-2",
+      "name": "Super Metroid SP: Samus Aran’s Ultimate Arsenal! – Nintendo Switch 2 (2022)",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "year": 2022,
+      "traits": [
+        "controller"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -459,7 +505,7 @@
       "checkedAt": "2026-11-09"
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1194825",
   "wikipedia": "https://en.wikipedia.org/wiki/Super_Metroid",
   "mods": [

@@ -59,6 +59,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/5c360c83-85da-4371-89b5-e3fc1a5045ed"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/F-Zero%20GX%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/F-Zero%20GX%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/F-Zero%20GX%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     }
   ],

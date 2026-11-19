@@ -36,6 +36,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/15b0677c-8ec6-4a43-8757-97ec7246f109"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Monster%20Hunter%20Stories%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Monster%20Hunter%20Stories%20%28USA%29.png",
+          "caption": "Nintendo 3DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Monster%20Hunter%20Stories%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        }
       ]
     },
     {
@@ -55,12 +71,11 @@
     },
     {
       "id": "pc-2024",
-      "name": "PC, PlayStation 4 (2024)",
+      "name": "PC (2024)",
       "type": "port",
       "year": 2024,
       "platforms": [
-        "PC",
-        "PlayStation 4"
+        "PC"
       ],
       "links": [
         {
@@ -122,10 +137,25 @@
           }
         }
       ]
+    },
+    {
+      "id": "pc-2024-playstation-4",
+      "name": "PlayStation 4 (2024)",
+      "type": "port",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q26157961"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q26157961",
   "wikipedia": "https://en.wikipedia.org/wiki/Monster_Hunter_Stories",
   "genre": "role-playing video game",

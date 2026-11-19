@@ -22,6 +22,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Tactics_Ogre:_The_Knight_of_Lodis"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Tactics%20Ogre%20-%20The%20Knight%20of%20Lodis%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Tactics%20Ogre%20-%20The%20Knight%20of%20Lodis%20%28USA%29.png",
+          "caption": "Game Boy Advance-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Tactics%20Ogre%20-%20The%20Knight%20of%20Lodis%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        }
       ]
     }
   ],

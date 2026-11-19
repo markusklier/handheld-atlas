@@ -57,15 +57,45 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/d61ee1cf-e4f5-4364-a84d-770bd3d898c3"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Sonic%20Adventure%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Sonic%20Adventure%20%28USA%29.png",
+          "caption": "Dreamcast-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Sonic%20Adventure%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        }
       ]
     },
     {
       "id": "nintendo-gamecube-2003",
-      "name": "Nintendo GameCube, PC (2003)",
+      "name": "Nintendo GameCube (2003)",
       "type": "port",
       "year": 2003,
       "platforms": [
-        "Nintendo GameCube",
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1069059"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-gamecube-2003-pc",
+      "name": "PC (2003)",
+      "type": "port",
+      "year": 2003,
+      "platforms": [
         "PC"
       ],
       "links": [
@@ -92,7 +122,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1069059",
   "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Adventure",
   "genre": "platform game"

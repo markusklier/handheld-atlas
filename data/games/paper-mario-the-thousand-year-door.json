@@ -59,6 +59,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/d7fc7c75-527b-40d4-85e4-920676e3e91d"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Paper%20Mario_%20The%20Thousand-Year%20Door%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Paper%20Mario%20-%20The%20Thousand-Year%20Door%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Paper%20Mario%20-%20The%20Thousand-Year%20Door%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     }
   ],

@@ -29,7 +29,23 @@
       "platforms": [
         "Game Boy / Game Boy Color"
       ],
-      "year": 2002
+      "year": 2002,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Shantae%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Shantae%20%28USA%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Shantae%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        }
+      ]
     },
     {
       "id": "nintendo-3ds-2013",

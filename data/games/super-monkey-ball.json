@@ -29,7 +29,23 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2001
+      "year": 2001,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Super%20Monkey%20Ball%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Super%20Monkey%20Ball%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Super%20Monkey%20Ball%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
+      ]
     },
     {
       "id": "arcade-video-game-machine-2001",
@@ -37,7 +53,7 @@
       "type": "port",
       "year": 2001,
       "platforms": [
-        "arcade video game machine"
+        "Arcade"
       ],
       "links": [
         {

@@ -87,6 +87,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/dda95028-0484-4728-94d4-2b2c2056209f"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Grand%20Theft%20Auto%20-%20San%20Andreas%20%28USA%29%20%28v1.03%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
@@ -160,16 +176,67 @@
     },
     {
       "id": "definitive-edition",
-      "name": "The Definitive Edition (2021)",
+      "name": "The Definitive Edition – PC (2021)",
       "type": "remaster",
       "year": 2021,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: What’s on Netflix",
+          "url": "https://www.whats-on-netflix.com/leaving-soon/grand-theft-auto-san-andreas-set-to-leave-netflix-games/"
+        }
+      ]
+    },
+    {
+      "id": "definitive-edition-playstation-4",
+      "name": "The Definitive Edition – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch",
+        "Xbox Series"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: What’s on Netflix",
+          "url": "https://www.whats-on-netflix.com/leaving-soon/grand-theft-auto-san-andreas-set-to-leave-netflix-games/"
+        }
+      ]
+    },
+    {
+      "id": "definitive-edition-nintendo-switch",
+      "name": "The Definitive Edition – Nintendo Switch (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: What’s on Netflix",
+          "url": "https://www.whats-on-netflix.com/leaving-soon/grand-theft-auto-san-andreas-set-to-leave-netflix-games/"
+        }
+      ]
+    },
+    {
+      "id": "definitive-edition-android",
+      "name": "The Definitive Edition – Android (2021)",
+      "type": "remaster",
+      "year": 2021,
+      "platforms": [
         "Android"
       ],
       "traits": [
@@ -269,7 +336,7 @@
       "dualScreenType": "companion"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "summary": "Vier Fassungen mit sehr unterschiedlichen Stärken: PS2-Original per Emulation, PC-Fassung mit Mods, die offizielle Android-App (mit Dual-Screen-Companion) und die Definitive Edition.",
   "wikidata": "Q83265",
   "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto%3A_San_Andreas",

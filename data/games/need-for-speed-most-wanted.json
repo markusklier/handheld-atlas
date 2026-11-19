@@ -14,14 +14,11 @@
   "versions": [
     {
       "id": "pc-konsolen-2005",
-      "name": "PC/PS2/Xbox/GameCube (2005)",
+      "name": "PC (2005)",
       "type": "original",
       "year": 2005,
       "platforms": [
-        "PC",
-        "PlayStation 2",
-        "Xbox",
-        "Nintendo GameCube"
+        "PC"
       ],
       "note": "Von EA Canada und EA Black Box; Polizeiverfolgungen und „Blacklist“ in der offenen Stadt Rockport. Die Black Edition (PC, PS2, Xbox) erschien parallel mit Zusatzinhalten.",
       "links": [
@@ -41,8 +38,84 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/68776605-b9f5-49a4-b3dd-11bee7db1d19"
         }
+      ]
+    },
+    {
+      "id": "pc-konsolen-2005-playstation-2",
+      "name": "PlayStation 2 (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "PlayStation 2"
       ],
-      "reports": []
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29%20%28v1.01%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
+    },
+    {
+      "id": "pc-konsolen-2005-xbox",
+      "name": "Xbox (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
+        }
+      ]
+    },
+    {
+      "id": "pc-konsolen-2005-nintendo-gamecube",
+      "name": "Nintendo GameCube (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
+      ]
     },
     {
       "id": "xbox-360",
@@ -73,6 +146,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        }
       ]
     },
     {
@@ -88,6 +177,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+          "caption": "Game Boy Advance-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Need%20for%20Speed%20-%20Most%20Wanted%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        }
       ]
     }
   ],
@@ -95,7 +200,7 @@
     {
       "id": "nfsmw-android",
       "name": "NFS: Most Wanted for Android",
-      "release": "pc-konsolen-2005",
+      "release": "pc-konsolen-2005-xbox",
       "kind": "recomp",
       "edition": "Xbox (default.xbe mit SHA-1 f636a16a…)",
       "runtime": "XboxXBERecomp (statische Recompilation x86 → C++), Vulkan 1.3 / OpenGL ES 3.2",
@@ -142,7 +247,7 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Need_for_Speed:_Most_Wanted_(2005_video_game)",
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q220365",
   "website": "https://www.ea.com/need-for-speed-most-wanted",
   "cover": {

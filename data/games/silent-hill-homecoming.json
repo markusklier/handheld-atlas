@@ -12,12 +12,40 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PlayStation 3, Xbox 360 (2008)",
+      "name": "PlayStation 3 (2008)",
       "type": "original",
       "year": 2008,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-xbox-360",
+      "name": "Xbox 360 (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-pc",
+      "name": "PC (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
         "PC"
       ],
       "links": [
@@ -30,7 +58,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q938935",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill%3A_Homecoming",
   "cover": {

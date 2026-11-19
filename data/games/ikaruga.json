@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/33671047-f2e3-4e9c-9c3d-8488da88118a"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Ikaruga%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Ikaruga%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Ikaruga%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     },
     {
@@ -68,6 +84,22 @@
       "type": "release",
       "platforms": [
         "Dreamcast"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Ikaruga%20%28Japan%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Ikaruga%20%28Japan%29.png",
+          "caption": "Dreamcast-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Ikaruga%20%28Japan%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        }
       ]
     }
   ],

@@ -84,6 +84,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/32c86c8a-2440-4333-bde4-b88c2e2b2615"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Super%20Mario%20Galaxy%202%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Super%20Mario%20Galaxy%202%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Super%20Mario%20Galaxy%202%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
       ]
     }
   ],

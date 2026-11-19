@@ -77,11 +77,19 @@ def schema(meta):
 
 
 RULES = """Finde mit der Websuche:
-1. versions: VOLLSTÄNDIG alle offiziell erschienenen Fassungen (Atlas ist auch ein Archiv): Original mit allen
-   Erstplattformen, spätere Portierungen, Editionen (z. B. Special/Anniversary/GOTY), offizielle Android-Fassungen (auch
-   eingestellte), Remaster, Remakes (versionType "remake" – Atlas legt sie automatisch als eigenes Spiel mit Verweis
-   auf das Original an), Neuauflagen. Gleiche Veröffentlichung auf mehreren Plattformen = EINE Fassung mit
-   mehreren Plattformen (z. B. "Original (2011)": PC, Xbox 360, PlayStation 3). Höchstens 15. Weglassen nur:
+1. versions: VOLLSTÄNDIG alle offiziell erschienenen Fassungen (Atlas ist auch ein Archiv): Original auf jeder
+   Erstplattform, spätere Portierungen, Editionen (z. B. Special/Anniversary/GOTY), offizielle Android-Fassungen (auch
+   eingestellte), Remaster, Remakes, Neuauflagen. EINE FASSUNG JE PLATTFORM, auf der man sie auf dem Handheld anders
+   spielt (PS2 → NetherSX2, GameCube → Dolphin, PC → GameNative/Winlator, Switch → Eden): "PlayStation 2 (2004)",
+   "Nintendo GameCube (2004)", "PC (2004)" – nicht "PC/PS2/Xbox/GameCube". Nur Plattformen ohne Android-Emulator
+   (PS4, PS5, Xbox One, Xbox Series …) derselben Veröffentlichung dürfen zusammen in einer Fassung stehen.
+   REMAKE oder REMASTER: Remake = neu gebaut (neue Engine oder komplett neue Grafik/Modelle) – auch wenn es
+   „Remastered“ heißt (Metroid Prime Remastered, Crash Team Racing Nitro-Fueled, Tomb Raider: Anniversary,
+   Resident Evil 2 (2019), Shadow of the Colossus (2018)) → versionType "remake"; Atlas legt es automatisch als
+   eigenes Spiel mit Verweis auf das Original an, Neuauflagen DES REMAKES gehören dorthin, nicht zum Original.
+   Remaster = das Originalspiel technisch aufgefrischt (höhere Auflösung, überarbeitete Texturen, oft umschaltbare
+   Originalgrafik: Skyrim Special Edition, Tomb Raider I–III Remastered, Wind Waker HD) → versionType "remaster".
+   Reboots mit gleichem Namen („DOOM (2016)“) sind eigene Spiele ohne Bezug. Höchstens 20. Weglassen nur:
    angekündigte/unveröffentlichte Fassungen und reine Sammelboxen ohne Unterschied. Jeweils Plattformen, Erscheinungsjahr,
    was sie auszeichnet (traits, note: 1–2 Sätze, warum man sie wählen würde oder was anders ist).
    Für bekannte Fassungen den vorhandenen key wiederverwenden (auch wenn du weitere Plattformen ergänzt), sonst einen
@@ -728,7 +736,8 @@ Atlas kennt bereits (id | Titel | Jahr):
 relation + atlasId:
 - "existing": dasselbe Spiel steht schon oben (auch unter anderem Namen, z. B. "Doom II: Hell on Earth" = "DOOM II") → atlasId = dessen id.
 - "version": Remaster, Remake (auch mit anderem Namen, z. B. "Ocarina of Time 3D"), Neuauflage, Portierung oder Sammlung eines Spiels oben
-  (Remakes legt Atlas danach automatisch als eigenes Spiel mit Verweis auf das Original an)
+  (Remakes legt Atlas danach automatisch als eigenes Spiel mit Verweis auf das Original an; Remake = neu gebaut, auch
+  wenn es „Remastered“ heißt, z. B. "Metroid Prime Remastered"; Neuauflagen eines Remakes gehören zum Remake)
   (z. B. "Tomb Raider: Anniversary" → tomb-raider, "DOOM + DOOM II" (2024) → doom-1993) → atlasId = id des Spiels,
   zu dem es als Fassung gehört; versionType passend (remaster/remake/rerelease/port/collection).
 - "new": eigenständiges Spiel, das oben fehlt; atlasId = "". Reboots mit gleichem Namen sind eigene Spiele: Titel mit

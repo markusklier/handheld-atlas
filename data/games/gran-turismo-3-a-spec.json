@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/c7f36a8b-8d8b-4fc1-a8f8-9f25a639798c"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Gran%20Turismo%203%20-%20A-Spec%20%28USA%29%20%28v1.00%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Gran%20Turismo%203%20-%20A-Spec%20%28USA%29%20%28v1.00%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Gran%20Turismo%203%20-%20A-Spec%20%28USA%29%20%28v1.00%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     }
   ],

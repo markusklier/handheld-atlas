@@ -15,7 +15,23 @@
       ],
       "year": 2001,
       "note": "Game-Boy-Color-exklusives 2D-Abenteuer mit bewusst ausgeführten Kletter-, Sprung- und Kampfbewegungen. Keine Fassung für den ursprünglichen monochromen Game Boy; weitere offiziell veröffentlichte Portierungen, Remakes oder Neuauflagen sind nicht belegt.",
-      "traits": []
+      "traits": [],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Tomb%20Raider%20-%20Curse%20of%20the%20Sword%20%28USA%2C%20Europe%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        }
+      ]
     }
   ],
   "routes": [],

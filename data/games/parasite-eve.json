@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/062a9830-eb82-4c0a-a287-92b4c21c70d6"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Parasite%20Eve%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Parasite%20Eve%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Parasite%20Eve%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
       ]
     }
   ],

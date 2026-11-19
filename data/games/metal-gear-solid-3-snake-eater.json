@@ -39,7 +39,23 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2004
+      "year": 2004,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Metal%20Gear%20Solid%203%20-%20Snake%20Eater%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Metal%20Gear%20Solid%203%20-%20Snake%20Eater%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Metal%20Gear%20Solid%203%20-%20Snake%20Eater%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "subsistence",
@@ -55,16 +71,60 @@
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
       ],
-      "note": "Erweiterte Fassung mit frei drehbarer Kamera."
+      "note": "Erweiterte Fassung mit frei drehbarer Kamera.",
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Metal%20Gear%20Solid%203%20-%20Subsistence%20%28USA%29%20%28En%2CEs%29%20%28Disc%201%29%20%28Subsistence%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Metal%20Gear%20Solid%203%20Subsistence%20%28Translated%20PtBr%29%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Metal%20Gear%20Solid%203%20-%20Subsistence%20%28USA%29%20%28En%2CEs%29%20%28Disc%201%29%20%28Subsistence%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "hd-collection",
-      "name": "Metal Gear Solid HD Collection (2011)",
+      "name": "Metal Gear Solid HD Collection – PlayStation 3 (2011)",
       "type": "collection",
       "year": 2011,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "hd-collection-xbox-360",
+      "name": "Metal Gear Solid HD Collection – Xbox 360 (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "hd-collection-playstation-vita",
+      "name": "Metal Gear Solid HD Collection – PlayStation Vita (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
         "PlayStation Vita"
       ],
       "links": [
@@ -109,12 +169,41 @@
     },
     {
       "id": "master-collection-vol-1",
-      "name": "Master Collection Vol. 1 (2023)",
+      "name": "Master Collection Vol. 1 – PC (2023)",
       "type": "collection",
       "year": 2023,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+    },
+    {
+      "id": "master-collection-vol-1-nintendo-switch",
+      "name": "Master Collection Vol. 1 – Nintendo Switch (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-1-playstation-4",
+      "name": "Master Collection Vol. 1 – PlayStation 4, PlayStation 5, Xbox Series (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox Series"
@@ -124,12 +213,11 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
-      ],
-      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q247935",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_3%3A_Snake_Eater",
   "genre": "action-adventure game",

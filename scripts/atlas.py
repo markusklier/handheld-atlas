@@ -5,7 +5,9 @@
     python3 scripts/atlas.py build        # validate, then write dist/ (app + data.json + offline HTML)
     python3 scripts/atlas.py stats        # quick overview of the database
     python3 scripts/atlas.py format       # rewrite all data files with canonical formatting
-    python3 scripts/atlas.py repair       # drop non-https entries, strip markdown citations (runs before validate in workflows)
+    python3 scripts/atlas.py repair       # drop non-https entries, strip markdown citations, one version per playable
+                                          # platform, remake re-releases to the remake (runs before validate in workflows)
+    python3 scripts/atlas.py check        # what still needs a decision: remake suspects, mixed versions (scripts/quality.py)
     python3 scripts/atlas.py merge SRC INTO [--type remaster] [--year 2011] [--name "…"] [--same]
                                           # duplicate game SRC becomes a version of INTO (routes, mods, images move along)
     python3 scripts/atlas.py split GAME VERSION [--id ID] [--title "…"]
@@ -48,12 +50,23 @@ PLATFORM_ALIASES = {
     'Sega Genesis': 'Sega Mega Drive', 'Mega Drive': 'Sega Mega Drive', 'Genesis': 'Sega Mega Drive', 'Sega Dreamcast': 'Dreamcast',
     'Game Boy': 'Game Boy / Game Boy Color', 'Game Boy Color': 'Game Boy / Game Boy Color', 'GBA': 'Game Boy Advance',
     '3DS': 'Nintendo 3DS', 'NDS': 'Nintendo DS', 'DS': 'Nintendo DS', 'iPhone': 'iOS', 'iPadOS': 'iOS',
+    'New Nintendo 3DS': 'Nintendo 3DS', 'New Nintendo 3DS XL': 'Nintendo 3DS', 'New Nintendo 2DS XL': 'Nintendo 3DS',
+    'Nintendo 2DS': 'Nintendo 3DS', 'Nintendo DSi': 'Nintendo DS', 'PlayStation TV': 'PlayStation Vita', 'PSTV': 'PlayStation Vita',
+    'arcade video game machine': 'Arcade', 'arcade': 'Arcade', 'Mac OS (Classic)': 'Macintosh', 'Nintendo Famicom': 'NES',
+    'Famicom': 'NES', 'Famicom Disk System': 'NES', 'Super Famicom': 'SNES', 'Sega Genesis / Mega Drive': 'Sega Mega Drive',
+    # stores and services are not platforms: dropped when the version names a real platform
+    'Virtual Console': '', 'Wii Shop Channel': '', 'Nintendo eShop': '', 'PlayStation Network': '', 'Xbox Live Arcade': '',
+    'Steam': 'PC',
 }
 
 
 def canon_platforms(plats):
-    """Canonical platform names (the AI writes "PC (MS-DOS)", "Xbox Series X|S" …), without duplicates."""
-    return list(dict.fromkeys(PLATFORM_ALIASES.get((p or '').strip(), (p or '').strip()) for p in plats or [] if (p or '').strip()))
+    """Canonical platform names (the AI writes "PC (MS-DOS)", "Xbox Series X|S" …), without duplicates.
+    Store/service names ("Virtual Console") are dropped when a real platform is listed."""
+    raw = [(p or '').strip() for p in plats or [] if (p or '').strip()]
+    out = list(dict.fromkeys(PLATFORM_ALIASES.get(p, p) for p in raw))
+    real = [p for p in out if p]
+    return real or [p for p in raw if PLATFORM_ALIASES.get(p) == ''][:1]
 
 
 def read(path):
@@ -384,9 +397,16 @@ def repair():
         if json.dumps(g) != before:
             write(f, g)
     print(f'repair: {removed} ungültige Einträge entfernt')
+    import quality                                   # lazy: quality → atlas
+    split = quality.split_platforms()
+    if split:
+        print(f'repair: {len(split)} Fassung(en) je Plattform aufgeteilt')
     made = split_remakes()
     if made:
         print(f"repair: {len(made)} Remake(s) als eigene Spiele angelegt: {', '.join(made)}")
+    moved = quality.move_remake_versions()
+    if moved:
+        print(f'repair: {len(moved)} Fassung(en) zum Remake verschoben oder entfernt')
 
 
 MD_CITE = re.compile(r'\s*\(\[[^\]]*\]\([^)]*\)\)')   # " ([site.com](https://…))" citation markers from the model
@@ -402,6 +422,9 @@ def merge(src_id, into_id, vtype=None, year=None, name=None, same=False):
         twin = next((t for t in into.get('versions', []) if set(t['platforms']) == set(v['platforms'])), None) if same else None
         if twin:
             vmap[v['id']] = twin['id']
+            for k in ('year', 'note', 'traits'):
+                if v.get(k) and not twin.get(k):
+                    twin[k] = v[k]
             continue
         nv = dict(v)
         base = re.sub(r'[^a-z0-9]+', '-', (name or src['title']).lower()).strip('-')[:40] or v['id']
@@ -500,36 +523,49 @@ def remake_title(orig, v):
     return name
 
 
-def split(game_id, version_id, new_id=None, title=None, log=print):
-    """A remake version of GAME becomes its own game with "remakeOf": GAME. Routes, mods (only used with this version)
-    and community reports move along; the original keeps everything else. Returns the new game id."""
+def split(game_id, version_ids, new_id=None, title=None, log=print):
+    """Remake version(s) of GAME become their own game with "remakeOf": GAME (several versions = the same remake on
+    several platforms). Routes, mods (only used with these versions) and community reports move along; the original
+    keeps everything else. Returns the new game id."""
+    import quality                                   # lazy: quality → atlas
+    version_ids = [version_ids] if isinstance(version_ids, str) else list(version_ids)
     path = DATA / 'games' / f'{game_id}.json'
     g = read(path)
-    v = next((x for x in g.get('versions', []) if x['id'] == version_id), None)
-    if not v:
-        raise SystemExit(f'split: Fassung {version_id!r} gibt es in {game_id} nicht')
-    title = title or remake_title(g, v)
+    vs = [x for x in g.get('versions', []) if x['id'] in version_ids]
+    if not vs:
+        raise SystemExit(f'split: Fassung {version_ids!r} gibt es in {game_id} nicht')
+    v = vs[0]
+    title = title or remake_title(g, dict(v, name=quality.core_name(v) or v.get('name')))
     nid = new_id or re.sub(r'[^a-z0-9]+', '-', title.lower().replace("'", '')).strip('-')[:70]
     while (DATA / 'games' / f'{nid}.json').exists():
         nid += '-remake'
-    nv = dict(v, id=re.sub(r'[^a-z0-9]+', '-', '-'.join(v.get('platforms', [])[:1]).lower()).strip('-') or 'remake')
+    ids, nvs = {}, []
+    for x in vs:
+        vid = re.sub(r'[^a-z0-9]+', '-', '-'.join(x.get('platforms', [])[:1]).lower()).strip('-') or 'remake'
+        while vid in ids.values():
+            vid += '-2'
+        ids[x['id']] = vid
+        nvs.append(dict(x, id=vid))
+    years = [x.get('year') for x in vs if x.get('year')]
     new = {'id': nid, 'title': title, 'franchise': g.get('franchise') or g['title'], 'remakeOf': game_id,
-           'platforms': list(v.get('platforms', [])), 'genre': g.get('genre', ''),
-           'summary': f"Remake von {g['title']}" + (f" ({v['year']})" if v.get('year') else '') + '.',
-           'versions': [nv],
-           'routes': [dict(r, release=nv['id']) for r in g.get('routes', []) if r.get('release') == version_id],
-           'mods': [dict(m, release=[nv['id']]) for m in g.get('mods', []) if m.get('release') == [version_id]],
+           'platforms': list(dict.fromkeys(p for x in vs for p in x.get('platforms', []))), 'genre': g.get('genre', ''),
+           'summary': f"Remake von {g['title']}" + (f" ({min(years)})" if years else '') + '.',
+           'versions': nvs,
+           'routes': [dict(r, release=ids[r['release']]) for r in g.get('routes', []) if r.get('release') in ids],
+           'mods': [dict(m, release=[ids[x] for x in m['release']]) for m in g.get('mods', [])
+                    if m.get('release') and all(x in ids for x in m['release'])],
            'screenshots': [], 'updatedAt': datetime.now(timezone.utc).strftime('%Y-%m-%d')}
     if not new['genre']:
         new.pop('genre')
     moved_routes = {r['id'] for r in new['routes']}
-    g['versions'] = [x for x in g['versions'] if x['id'] != version_id]
+    g['versions'] = [x for x in g['versions'] if x['id'] not in ids]
     g['routes'] = [r for r in g.get('routes', []) if r['id'] not in moved_routes]
-    g['mods'] = [m for m in g.get('mods', []) if m.get('release') != [version_id]]
+    g['mods'] = [m for m in g.get('mods', []) if not (m.get('release') and all(x in ids for x in m['release']))]
     for m in g['mods']:                                  # mods for several versions stay with the original
-        if version_id in m.get('release', []):
-            m['release'] = [x for x in m['release'] if x != version_id]
-            new['mods'].append(dict(m, release=[nv['id']]))
+        both = [x for x in m.get('release', []) if x in ids]
+        if both:
+            m['release'] = [x for x in m['release'] if x not in ids]
+            new['mods'].append(dict(m, release=[ids[x] for x in both]))
     g['platforms'] = [p for p in g.get('platforms', []) if any(p in x.get('platforms', []) for x in g['versions'])] or g.get('platforms', [])
     g['updatedAt'] = new['updatedAt']
     write(DATA / 'games' / f'{nid}.json', new)
@@ -541,21 +577,38 @@ def split(game_id, version_id, new_id=None, title=None, log=print):
         if pr['id'] in moved_projects:
             pr['games'] = list(dict.fromkeys([*(x for x in pr.get('games', []) if x != game_id or pr['id'] in still), nid]))
     write(DATA / 'projects.json', pj)
-    log(f"split: {game_id}/{version_id} → {nid} „{title}“ ({len(new['routes'])} Spielwege, {len(new['mods'])} Mods)")
+    log(f"split: {game_id}/{','.join(ids)} → {nid} „{title}“ ({len(new['routes'])} Spielwege, {len(new['mods'])} Mods)")
+    # the remake may already be in Atlas as a game of its own (without "remakeOf"): fold into it instead of a duplicate
+    key = quality.simple(title)
+    twin = next((f.stem for f in (DATA / 'games').glob('*.json') if f.stem not in (nid, game_id)
+                 and quality.simple(read(f).get('title')) == key), None)
+    if twin:
+        merge(nid, twin, same=True)
+        t = read(DATA / 'games' / f'{twin}.json')
+        if not t.get('remakeOf'):
+            t['remakeOf'] = game_id
+            write(DATA / 'games' / f'{twin}.json', t)
+        log(f'split: {nid} war schon als {twin} vorhanden – zusammengeführt, remakeOf gesetzt')
+        return twin
     return nid
 
 
 def split_remakes(log=print):
-    """Every version of type "remake" becomes its own game (rule since 11.11.2026, docs/KONTEXT.md)."""
+    """Every version of type "remake" becomes its own game (rule since 11.11.2026, docs/KONTEXT.md); the same remake on
+    several platforms (one version per platform) becomes one game."""
+    import quality
     out = []
     for f in sorted((DATA / 'games').glob('*.json')):
         g = read(f)
         if g.get('remakeOf'):
             continue
+        groups = {}
         for v in [x for x in g.get('versions', []) if x.get('type') == 'remake']:
-            if len(g['versions']) < 2:
+            groups.setdefault(quality.simple(quality.core_name(v)) or v['id'], []).append(v['id'])
+        for ids in groups.values():
+            if len(read(f).get('versions', [])) - len(ids) < 1:
                 break
-            out.append(split(g['id'], v['id'], log=log))
+            out.append(split(g['id'], ids, log=log))
     return out
 
 
@@ -576,9 +629,10 @@ if __name__ == '__main__':
     if cmd == 'split':
         import argparse
         ap = argparse.ArgumentParser(prog='atlas.py split')
-        ap.add_argument('game'), ap.add_argument('version'), ap.add_argument('--id'), ap.add_argument('--title')
+        ap.add_argument('game'), ap.add_argument('version', help='Fassung(en), mehrere mit Komma')
+        ap.add_argument('--id'), ap.add_argument('--title')
         a = ap.parse_args(sys.argv[2:])
-        split(a.game, a.version, a.id, a.title)
+        split(a.game, a.version.split(','), a.id, a.title)
         sys.exit(0)
     if cmd == 'merge':
         import argparse
@@ -588,5 +642,9 @@ if __name__ == '__main__':
         ap.add_argument('--same', action='store_true', help='gleiches Spiel: Fassungen mit gleichen Plattformen zusammenlegen')
         a = ap.parse_args(sys.argv[2:])
         merge(a.src, a.into, a.type, a.year, a.name, a.same)
+        sys.exit(0)
+    if cmd == 'check':
+        import quality
+        quality.check()
         sys.exit(0)
     {'build': build, 'stats': stats, 'format': fmt, 'repair': repair}.get(cmd, lambda: sys.exit(__doc__))()

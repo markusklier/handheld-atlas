@@ -20,11 +20,20 @@
       "name": "PC (2000)",
       "type": "original",
       "platforms": [
-        "PC",
-        "Macintosh"
+        "PC"
       ],
       "year": 2000,
       "note": "Die bisher getrennten PC- und Mac-Einträge gehören zur ursprünglichen Veröffentlichung von 2000. Eigenständige Erweiterung zu Tomb Raider III mit sechs zusätzlichen Levels; interessant für das unveränderte klassische Spielerlebnis.",
+      "traits": []
+    },
+    {
+      "id": "pc-macintosh",
+      "name": "Macintosh (2000)",
+      "type": "original",
+      "platforms": [
+        "Macintosh"
+      ],
+      "year": 2000,
       "traits": []
     },
     {
@@ -37,15 +46,10 @@
     },
     {
       "id": "remastered-2024",
-      "name": "The Lost Artefact in Tomb Raider I–III Remastered (2024)",
+      "name": "The Lost Artefact in Tomb Raider I–III Remastered – PC (2024)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "year": 2024,
       "traits": [
@@ -53,6 +57,47 @@
         "widescreen"
       ],
       "note": "Enthält die überarbeitete Erweiterung mit umschaltbarer Original- und Remaster-Grafik. Die Veröffentlichung vom 14. Februar 2024 machte The Lost Artefact erstmals offiziell auf Konsolen verfügbar.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.crystaldynamics.com/blog/2023/09/14/aspyr-crystal-dynamics-reveal-tomb-raider-i-iii-remastered-starring-lara-croft-coming-to-pc-consoles-feb-14-2024/"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2024-playstation-4",
+      "name": "The Lost Artefact in Tomb Raider I–III Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.crystaldynamics.com/blog/2023/09/14/aspyr-crystal-dynamics-reveal-tomb-raider-i-iii-remastered-starring-lara-croft-coming-to-pc-consoles-feb-14-2024/"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2024-nintendo-switch",
+      "name": "The Lost Artefact in Tomb Raider I–III Remastered – Nintendo Switch (2024)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -222,11 +267,12 @@
       "description": "Korrigiert unter anderem fehlende Nasentexturen, blaue Texturfehler an Laras geholsterten Pistolen in Highland Fling und Shakespeare Cliff sowie weitere Modell- und Texturfehler. Nicht für das Remaster bestimmt; die separat aufgeführten Änderungen des Hauptspiels Tomb Raider III gelten nicht automatisch für die Erweiterung.",
       "verification": "ai-unverified",
       "release": [
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "summary": "Für Android-Handhelds ist die offizielle Android-Portierung von Tomb Raider I–III Remastered besonders interessant: Sie enthält The Lost Artefact und unterstützt Controller.",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Tomb_Raider_III.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",

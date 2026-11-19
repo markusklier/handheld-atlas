@@ -49,7 +49,11 @@
       "platforms": [
         "PC"
       ],
-      "year": 2015
+      "year": 2015,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/391540/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/391540/"
+      }
     },
     {
       "id": "macintosh-2015",
@@ -83,11 +87,25 @@
     },
     {
       "id": "playstation-4-2017",
-      "name": "PlayStation 4, PlayStation Vita (2017)",
+      "name": "PlayStation 4 (2017)",
       "type": "port",
       "year": 2017,
       "platforms": [
-        "PlayStation 4",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q21039924"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2017-playstation-vita",
+      "name": "PlayStation Vita (2017)",
+      "type": "port",
+      "year": 2017,
+      "platforms": [
         "PlayStation Vita"
       ],
       "links": [
@@ -114,7 +132,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q21039924",
   "wikipedia": "https://en.wikipedia.org/wiki/Undertale",
   "genre": "role-playing video game",

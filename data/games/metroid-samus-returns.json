@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/2df7b4c7-9001-4bb7-b3ef-37dcf0c2a4d1"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Metroid%20-%20Samus%20Returns%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Metroid%20-%20Samus%20Returns%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Nintendo 3DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Metroid%20-%20Samus%20Returns%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        }
       ]
     }
   ],

@@ -55,6 +55,17 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/aac0c651-6f4b-4eca-9e2c-3de6fe499824"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Lumines%20%28USA%29%20%28v1.01%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Lumines%20%28USA%29%20%28v1.01%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

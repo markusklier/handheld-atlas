@@ -213,22 +213,30 @@ class Labels:
 
 # ---------- versions from release years ----------
 def version_rows(f):
-    """[(type, year, [platforms])] – earliest year = original, later years = ports."""
+    """[(type, year, [platforms])] – earliest year = original, later years = ports. One version per platform that is
+    played differently on Android (own emulator, PC, official app); platforms without an Android emulator of the same
+    year stay together (scripts/quality.py, same rule as `atlas.py repair`)."""
+    import quality
+    plays = quality.playable()
     by_year = {}
     for p, y in f['platforms'].items():
         if y:
             by_year.setdefault(y, []).append(p)
     rows = []
     for i, y in enumerate(sorted(by_year)):
-        plats = sorted(by_year[y])
-        kind = 'original' if i == 0 else 'android' if 'Android' in plats and set(plats) <= {'Android', 'iOS'} else 'port'
-        rows.append((kind, y, plats))
+        groups = {}
+        for p in sorted(by_year[y]):
+            groups.setdefault(quality.group_of(p, plays), []).append(p)
+        for key in sorted(groups, key=lambda k: (k in ('other', 'mobile'), k)):
+            plats = groups[key]
+            kind = 'original' if i == 0 else 'android' if key == 'mobile' and 'Android' in plats else 'port'
+            rows.append((kind, y, plats))
     return rows
 
 
 def vname(kind, year, plats):
     short = ', '.join(plats[:3]) + (' u. a.' if len(plats) > 3 else '')
-    return f'Original ({year})' if kind == 'original' else f'{short} ({year})'
+    return f'{short} ({year})'
 
 
 def slug(s):
@@ -268,9 +276,12 @@ def enrich_game(g, f):
         if todo:
             new_rows.append((kind, year, todo))
     has_original = any(v.get('type') == 'original' for v in versions)
+    orig_years = {v.get('year') for v in versions if v.get('type') == 'original'}
     for kind, year, plats in new_rows:
-        if kind == 'original' and has_original:
+        if kind == 'original' and has_original and year not in orig_years:
             kind = 'port'
+        if kind == 'original':
+            orig_years.add(year)
         vid = slug(f"{plats[0]}-{year}")
         while any(v['id'] == vid for v in versions):
             vid += '-2'
@@ -293,11 +304,16 @@ def new_game(f, franchise):
         gid = slug(f"{title}-{f['year']}") if f.get('year') else gid + '-2'
         if f.get('year'):
             title = f"{title} ({f['year']})"
-    g = {'id': gid, 'title': title, 'franchise': franchise, 'platforms': rows[0][2] if rows else list(f['platforms'])[:4],
+    first = [p for kind, _, plats in rows if kind == 'original' for p in plats]
+    g = {'id': gid, 'title': title, 'franchise': franchise, 'platforms': first or list(f['platforms'])[:4],
          'versions': [], 'routes': [], 'mods': [], 'updatedAt': TODAY, 'tier': 'basis'}
-    if not rows and f['platforms']:            # no dated releases: one undated original
-        g['versions'] = [{'id': slug(list(f['platforms'])[0]), 'name': 'Original', 'type': 'original',
-                          'platforms': sorted(f['platforms'])[:8]}]
+    if not rows and f['platforms']:            # no dated releases: one undated original per platform group
+        import quality
+        groups = {}
+        for p in sorted(f['platforms'])[:8]:
+            groups.setdefault(quality.group_of(p, quality.playable()), []).append(p)
+        g['versions'] = [{'id': slug(ps[0]), 'name': ', '.join(ps), 'type': 'original', 'platforms': ps}
+                         for ps in groups.values()]
     enrich_game(g, f)
     return g
 
@@ -410,6 +426,12 @@ def enrich(limit=150, fetch=http, log=print, only=None):
     ents = entities(list(chosen.values()), fetch)
     labels = Labels(state, fetch).resolve(referenced(ents))
     touched = 0
+    by_qid = {}
+    for path in (DATA / 'games').glob('*.json'):
+        x = read(path)
+        if x.get('wikidata'):
+            by_qid[x['wikidata']] = x['id']
+    by_qid.update({q: gid for gid, q in chosen.items()})
     for g in games:
         q = chosen.get(g['id'])
         if not q or q not in ents:
@@ -418,6 +440,12 @@ def enrich(limit=150, fetch=http, log=print, only=None):
         state.setdefault('factsVersion', {})[g['id']] = 3
         before = json.dumps(g, sort_keys=True)
         changes = enrich_game(g, f)
+        # a remake is its own game that points to the original (rule since 11.11.2026)
+        if not g.get('remakeOf') and not g.get('notRemake') and any(REMAKE.search(k or '') for k in f['kinds']):
+            orig = next((by_qid[b] for b in f.get('basedOn') or [] if by_qid.get(b) not in (None, g['id'])), None)
+            if orig:
+                g['remakeOf'] = orig
+                changes.append(f'Remake von {orig}')
         if json.dumps(g, sort_keys=True) != before:
             write(DATA / 'games' / f"{g['id']}.json", g)
             touched += 1

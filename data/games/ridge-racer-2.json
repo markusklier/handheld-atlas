@@ -55,6 +55,17 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/4ad4ffbd-1a8d-43ee-a026-f75231d1cdc7"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Ridge%20Racer%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Ridge%20Racer%202%20%28Asia%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

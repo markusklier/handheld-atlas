@@ -52,7 +52,11 @@
       "type": "original",
       "platforms": [
         "PC"
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/9050/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/9050/"
+      }
     },
     {
       "id": "xbox-2005",
@@ -71,12 +75,40 @@
     },
     {
       "id": "doom-3-bfg-edition",
-      "name": "Doom 3: BFG Edition (2012)",
+      "name": "Doom 3: BFG Edition – PC (2012)",
       "type": "remaster",
       "year": 2012,
       "platforms": [
-        "PC",
-        "PlayStation 3",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "doom-3-bfg-edition-playstation-3",
+      "name": "Doom 3: BFG Edition – PlayStation 3 (2012)",
+      "type": "remaster",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "doom-3-bfg-edition-xbox-360",
+      "name": "Doom 3: BFG Edition – Xbox 360 (2012)",
+      "type": "remaster",
+      "year": 2012,
+      "platforms": [
         "Xbox 360"
       ],
       "links": [
@@ -103,7 +135,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q203310",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_3",
   "genre": "first-person shooter"

@@ -29,7 +29,23 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2007
+      "year": 2007,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Mario%20Strikers%20Charged%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Mario%20Strikers%20Charged%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Mario%20Strikers%20Charged%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
+      ]
     }
   ],
   "routes": [],

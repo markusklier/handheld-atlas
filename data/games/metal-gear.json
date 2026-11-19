@@ -43,16 +43,61 @@
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
       ],
-      "note": "Stark veränderte Konsolenfassung, in Nordamerika 1988."
+      "note": "Stark veränderte Konsolenfassung, in Nordamerika 1988.",
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Metal%20Gear%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Snaps/Metal%20Gear%20%28USA%29.png",
+          "caption": "NES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Titles/Metal%20Gear%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        }
+      ]
     },
     {
       "id": "master-collection-vol-1",
-      "name": "Master Collection Vol. 1 (2023)",
+      "name": "Master Collection Vol. 1 – PC (2023)",
       "type": "collection",
       "year": 2023,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+    },
+    {
+      "id": "master-collection-vol-1-nintendo-switch",
+      "name": "Master Collection Vol. 1 – Nintendo Switch (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-1-playstation-4",
+      "name": "Master Collection Vol. 1 – PlayStation 4, PlayStation 5, Xbox Series (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox Series"
@@ -62,13 +107,12 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
-      ],
-      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q6552947",
   "website": "https://www.konami.com/mg/us/en/",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_%28video_game%29",

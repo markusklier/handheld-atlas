@@ -21,7 +21,11 @@
           "label": "Quelle",
           "url": "https://github.com/mxvisor/take_no_prisoners-recomp"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2464670/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2464670/"
+      }
     }
   ],
   "routes": [

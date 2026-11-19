@@ -225,7 +225,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/7a448f80-7734-4bf2-b647-084cfb49d23f"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/504230/"
+      }
     },
     {
       "id": "linux-2018",

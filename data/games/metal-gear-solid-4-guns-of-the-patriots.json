@@ -30,12 +30,41 @@
     },
     {
       "id": "master-collection-vol-2",
-      "name": "Master Collection Vol. 2 (2026)",
+      "name": "Master Collection Vol. 2 – PC (2026)",
       "type": "collection",
       "year": 2026,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch",
+      "name": "Master Collection Vol. 2 – Nintendo Switch (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch-2",
+      "name": "Master Collection Vol. 2 – Nintendo Switch 2, PlayStation 5, Xbox Series (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
         "Nintendo Switch 2",
         "PlayStation 5",
         "Xbox Series"
@@ -45,13 +74,12 @@
           "label": "Quelle",
           "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
         }
-      ],
-      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q846167",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_4%3A_Guns_of_the_Patriots",
   "cover": {

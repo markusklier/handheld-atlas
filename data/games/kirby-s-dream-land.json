@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Game Boy / Game Boy Color"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Boxarts/Kirby%27s%20Dream%20Land%20%28USA%2C%20Europe%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Snaps/Kirby%27s%20Dream%20Land%20%28USA%2C%20Europe%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Titles/Kirby%27s%20Dream%20Land%20%28USA%2C%20Europe%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+        }
       ]
     }
   ],

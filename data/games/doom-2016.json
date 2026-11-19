@@ -10,15 +10,33 @@
   "versions": [
     {
       "id": "pc",
-      "name": "PC/PS4/Xbox One (2016)",
+      "name": "PC (2016)",
       "type": "original",
       "year": 2016,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "note": "Von id Software; Vulkan-Renderer per Patch im Juli 2016 nachgereicht. Mit Kampagne, Mehrspieler und SnapMap.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/379720/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/379720/"
+      }
+    },
+    {
+      "id": "pc-playstation-4",
+      "name": "PlayStation 4, Xbox One (2016)",
+      "type": "original",
+      "year": 2016,
+      "platforms": [
         "PlayStation 4",
         "Xbox One"
       ],
-      "note": "Von id Software; Vulkan-Renderer per Patch im Juli 2016 nachgereicht. Mit Kampagne, Mehrspieler und SnapMap.",
       "links": [
         {
           "label": "Wikipedia",
@@ -154,7 +172,7 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "screenshots": [
     {
       "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/379720/ss_f989e793786bf1d6459da1139a484203efef1447.1920x1080.jpg?t=1750784856",
@@ -198,5 +216,6 @@
     "source": "https://store.steampowered.com/app/379720/"
   },
   "genre": "Ego-Shooter",
-  "summary": "Inoffizieller nativer Android-Port „DOOM Mobile“ der Switch-Fassung (2026): Spielcode läuft direkt auf ARM64, NVN wird auf Vulkan übersetzt – laut Projekt ~40–50 FPS auf dem Snapdragon 8 Gen 2 des Thor."
+  "summary": "Inoffizieller nativer Android-Port „DOOM Mobile“ der Switch-Fassung (2026): Spielcode läuft direkt auf ARM64, NVN wird auf Vulkan übersetzt – laut Projekt ~40–50 FPS auf dem Snapdragon 8 Gen 2 des Thor.",
+  "notRemake": true
 }

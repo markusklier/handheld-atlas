@@ -88,7 +88,23 @@
           "url": "https://www.emuready.com/games/19a4c1ff-e5cb-49af-9199-7c4bf689fe30"
         }
       ],
-      "reports": []
+      "reports": [],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Rayman%20Origins%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Rayman%20Origins%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Rayman%20Origins%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
+      ]
     }
   ],
   "routes": [],

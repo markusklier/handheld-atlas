@@ -8,7 +8,6 @@
     "PlayStation 3",
     "PSP",
     "PlayStation Vita",
-    "PlayStation TV",
     "PlayStation 4",
     "PlayStation 5",
     "Xbox One",
@@ -23,7 +22,23 @@
       "platforms": [
         "PlayStation"
       ],
-      "year": 1999
+      "year": 1999,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
     },
     {
       "id": "pc",
@@ -51,13 +66,10 @@
     },
     {
       "id": "psone-classics",
-      "name": "PSone Classics",
+      "name": "PSone Classics – PlayStation 3 (2009)",
       "type": "rerelease",
       "platforms": [
-        "PlayStation 3",
-        "PSP",
-        "PlayStation Vita",
-        "PlayStation TV"
+        "PlayStation 3"
       ],
       "year": 2009,
       "traits": [
@@ -72,16 +84,47 @@
       ]
     },
     {
+      "id": "psone-classics-psp",
+      "name": "PSone Classics – PSP (2009)",
+      "type": "rerelease",
+      "platforms": [
+        "PSP"
+      ],
+      "year": 2009,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2009/10/15/playstation-store-update-107/"
+        }
+      ]
+    },
+    {
+      "id": "psone-classics-playstation-vita",
+      "name": "PSone Classics – PlayStation Vita (2009)",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "year": 2009,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.playstation.com/2009/10/15/playstation-store-update-107/"
+        }
+      ]
+    },
+    {
       "id": "remastered-2025",
-      "name": "The Last Revelation – Tomb Raider IV–VI Remastered",
+      "name": "The Last Revelation – Tomb Raider IV–VI Remastered – PC (2025)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "year": 2025,
       "traits": [
@@ -91,6 +134,51 @@
         "mods"
       ],
       "note": "Überarbeitete Grafik mit jederzeit umschaltbarer Originaldarstellung, moderner oder klassischer Steuerung, Fotomodus und Komfortverbesserungen. Enthält auch The Times Exclusive; keine eigenständige offizielle Android-Veröffentlichung dieser Sammlung belegt.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2025-playstation-4",
+      "name": "The Last Revelation – Tomb Raider IV–VI Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2025)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2025-nintendo-switch",
+      "name": "The Last Revelation – Tomb Raider IV–VI Remastered – Nintendo Switch (2025)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -229,7 +317,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "summary": "Für Android-Handhelds sind die grafisch aufgewertete Dreamcast-Portierung über Flycast und das PC-Remaster über Winlator interessant. Das Remaster bietet modernisierte Steuerung und den Times-Bonuslevel; ein spielspezifischer Dual-Screen-Weg ist nicht belegt.",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20-%20The%20Last%20Revelation%20%28USA%29.png",

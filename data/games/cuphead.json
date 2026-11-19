@@ -105,7 +105,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/346bce6e-eaed-40be-aadd-e57089323c2e"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/268910/"
+      }
     },
     {
       "id": "macintosh-2018",

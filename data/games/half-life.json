@@ -51,7 +51,11 @@
       "platforms": [
         "PC"
       ],
-      "year": 1998
+      "year": 1998,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/70/"
+      }
     },
     {
       "id": "linux-2013",

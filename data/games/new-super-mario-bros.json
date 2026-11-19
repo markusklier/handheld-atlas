@@ -58,6 +58,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/3a7b84e4-3e15-4e5c-b7fb-78c0aafaba58"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/New%20Super%20Mario%20Bros.%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/New%20Super%20Mario%20Bros.%20%28USA%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/New%20Super%20Mario%20Bros.%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        }
       ]
     }
   ],

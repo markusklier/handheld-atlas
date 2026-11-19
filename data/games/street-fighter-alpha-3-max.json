@@ -55,6 +55,17 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/ba3cb31f-5312-4eff-a713-17878b5d85cf"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Street%20Fighter%20Alpha%203%20Max%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Street%20Fighter%20Alpha%203%20Max%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

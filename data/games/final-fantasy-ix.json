@@ -110,17 +110,55 @@
           "url": "https://www.emuready.com/games/e44badd3-0868-4c47-91d4-785f1772c39a"
         }
       ],
-      "year": 2000
+      "year": 2000,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Fantasy%20IX%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Final%20Fantasy%20IX%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Final%20Fantasy%20IX%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
     },
     {
       "id": "mobile-pc-2016",
-      "name": "Neuauflage für Android, iOS und PC (2016)",
+      "name": "Neuauflage – PC (2016)",
+      "type": "rerelease",
+      "year": 2016,
+      "platforms": [
+        "PC"
+      ],
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Game Informer",
+          "url": "https://www.gameinformer.com/b/news/archive/2016/02/09/playstation-1s-final-fantasy-ix-arrives-on-ios-android.aspx"
+        },
+        {
+          "label": "Test: Android Central",
+          "url": "https://www.androidcentral.com/final-fantasy-ix-android-almost-great-port"
+        }
+      ]
+    },
+    {
+      "id": "mobile-pc-2016-android",
+      "name": "Neuauflage – Android, iOS (2016)",
       "type": "rerelease",
       "year": 2016,
       "platforms": [
         "Android",
-        "iOS",
-        "PC"
+        "iOS"
       ],
       "traits": [
         "controller",
@@ -140,17 +178,34 @@
     },
     {
       "id": "switch-xbox-2019",
-      "name": "Nintendo Switch und Xbox One (2019)",
+      "name": "Nintendo Switch (2019)",
       "type": "rerelease",
       "year": 2019,
       "platforms": [
-        "Nintendo Switch",
-        "Xbox One"
+        "Nintendo Switch"
       ],
       "traits": [
         "controller"
       ],
       "note": "Konsolenfassung der Neuauflage mit aufgewerteten Videos und Modellen sowie Autosave.",
+      "links": [
+        {
+          "label": "Quelle: Gematsu",
+          "url": "https://gematsu.com/2019/02/final-fantasy-ix-for-xbox-one-and-switch-available-now-final-fantasy-vii-launches-march-26"
+        }
+      ]
+    },
+    {
+      "id": "switch-xbox-2019-xbox-one",
+      "name": "Xbox One (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
+        "Xbox One"
+      ],
+      "traits": [
+        "controller"
+      ],
       "links": [
         {
           "label": "Quelle: Gematsu",
@@ -260,7 +315,7 @@
       "id": "ff9-official-android",
       "name": "Offizielle Android-App von Square Enix",
       "kind": "native",
-      "release": "mobile-pc-2016",
+      "release": "mobile-pc-2016-android",
       "runtime": "Offizielle App (com.square_enix.FFIXww.android_googleplay)",
       "projects": [],
       "targets": [
@@ -299,7 +354,7 @@
       "checkedAt": "2026-11-12"
     }
   ],
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q474573",
   "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_IX",
   "genre": "role-playing video game",

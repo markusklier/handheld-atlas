@@ -12,11 +12,29 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 5, Xbox Series (2025)",
+      "name": "PC (2025)",
       "type": "original",
       "year": 2025,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.techloy.com/everything-to-know-about-silent-hill-f-release-date-platforms-and-global-launch-times/"
+        }
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2947440/"
+      }
+    },
+    {
+      "id": "multi-playstation-5",
+      "name": "PlayStation 5, Xbox Series (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
         "PlayStation 5",
         "Xbox Series"
       ],

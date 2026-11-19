@@ -29,7 +29,23 @@
       "platforms": [
         "Nintendo DS"
       ],
-      "year": 2007
+      "year": 2007,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/World%20Ends%20with%20You%2C%20The%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/World%20Ends%20with%20You%2C%20The%20%28USA%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/World%20Ends%20with%20You%2C%20The%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        }
+      ]
     }
   ],
   "routes": [],

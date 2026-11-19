@@ -29,7 +29,23 @@
       "platforms": [
         "Nintendo DS"
       ],
-      "year": 2008
+      "year": 2008,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Fire%20Emblem%20-%20Shadow%20Dragon%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Fire%20Emblem%20-%20Shadow%20Dragon%20%28USA%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Fire%20Emblem%20-%20Shadow%20Dragon%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        }
+      ]
     },
     {
       "id": "wii-u-2015",

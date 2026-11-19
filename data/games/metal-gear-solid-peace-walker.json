@@ -69,16 +69,60 @@
           "url": "https://www.emuready.com/games/234bbac6-40eb-4ca5-9732-ab1279dc37c7"
         }
       ],
-      "year": 2010
+      "year": 2010,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Metal%20Gear%20Solid%20-%20Peace%20Walker%20%28USA%29%20%28En%2CFr%2CEs%29%20%28v1.01%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Metal%20Gear%20Solid%20-%20Peace%20Walker%20%28USA%29%20%28En%2CFr%2CEs%29%20%28v1.01%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Metal%20Gear%20Solid%20-%20Peace%20Walker%20%28USA%29%20%28En%2CFr%2CEs%29%20%28v1.01%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
+      ]
     },
     {
       "id": "hd-collection",
-      "name": "Metal Gear Solid HD Collection (2011)",
+      "name": "Metal Gear Solid HD Collection – PlayStation 3 (2011)",
       "type": "collection",
       "year": 2011,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "hd-collection-xbox-360",
+      "name": "Metal Gear Solid HD Collection – Xbox 360 (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "hd-collection-playstation-vita",
+      "name": "Metal Gear Solid HD Collection – PlayStation Vita (2011)",
+      "type": "collection",
+      "year": 2011,
+      "platforms": [
         "PlayStation Vita"
       ],
       "links": [
@@ -91,12 +135,41 @@
     },
     {
       "id": "master-collection-vol-2",
-      "name": "Master Collection Vol. 2 (2026)",
+      "name": "Master Collection Vol. 2 – PC (2026)",
       "type": "collection",
       "year": 2026,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch",
+      "name": "Master Collection Vol. 2 – Nintendo Switch (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch-2",
+      "name": "Master Collection Vol. 2 – Nintendo Switch 2, PlayStation 5, Xbox Series (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
         "Nintendo Switch 2",
         "PlayStation 5",
         "Xbox Series"
@@ -106,12 +179,11 @@
           "label": "Quelle",
           "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
         }
-      ],
-      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q2005935",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid%3A_Peace_Walker",
   "genre": "action-adventure game",

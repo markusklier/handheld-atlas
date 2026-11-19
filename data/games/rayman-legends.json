@@ -21,13 +21,11 @@
     },
     {
       "id": "pc-2013",
-      "name": "PC, PlayStation 3, Wii U (2013)",
+      "name": "PC (2013)",
       "type": "port",
       "year": 2013,
       "platforms": [
-        "PC",
-        "PlayStation 3",
-        "Wii U"
+        "PC"
       ],
       "links": [
         {
@@ -75,6 +73,36 @@
       ]
     },
     {
+      "id": "pc-2013-playstation-3",
+      "name": "PlayStation 3 (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2255492"
+        }
+      ]
+    },
+    {
+      "id": "pc-2013-wii-u",
+      "name": "Wii U (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2255492"
+        }
+      ]
+    },
+    {
       "id": "playstation-4-2014",
       "name": "PlayStation 4 (2014)",
       "type": "port",
@@ -91,7 +119,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q2255492",
   "wikipedia": "https://en.wikipedia.org/wiki/Rayman_Legends",
   "genre": "2D platform game"

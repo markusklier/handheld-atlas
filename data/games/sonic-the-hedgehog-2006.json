@@ -11,11 +11,25 @@
   "versions": [
     {
       "id": "xbox-360",
-      "name": "Xbox 360/PS3 (2006)",
+      "name": "Xbox 360 (2006)",
       "type": "original",
       "year": 2006,
       "platforms": [
-        "Xbox 360",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(2006_video_game)"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360-playstation-3",
+      "name": "PlayStation 3 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
         "PlayStation 3"
       ],
       "note": "Zum 15. Jubiläum der Reihe von Sonic Team; die PS3-Fassung erschien wenige Wochen später.",
@@ -100,11 +114,12 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1068669",
   "wikipedia": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%282006_video_game%29",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/d/d1/Sonic_the_Hedgehog_Next-Gen_Box_Art.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%282006_video_game%29"
-  }
+  },
+  "notRemake": true
 }

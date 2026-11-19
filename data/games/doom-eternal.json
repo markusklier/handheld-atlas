@@ -16,7 +16,11 @@
       "platforms": [
         "PC"
       ],
-      "year": 2020
+      "year": 2020,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/782330/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/782330/"
+      }
     },
     {
       "id": "playstation-4",

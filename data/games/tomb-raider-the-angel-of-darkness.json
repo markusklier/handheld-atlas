@@ -26,15 +26,10 @@
     },
     {
       "id": "remastered-2025",
-      "name": "The Angel of Darkness – Tomb Raider IV–VI Remastered",
+      "name": "The Angel of Darkness – Tomb Raider IV–VI Remastered – PC (2025)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "year": 2025,
       "traits": [
@@ -50,11 +45,56 @@
           "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
         }
       ]
+    },
+    {
+      "id": "remastered-2025-playstation-4",
+      "name": "The Angel of Darkness – Tomb Raider IV–VI Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2025)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
+    },
+    {
+      "id": "remastered-2025-nintendo-switch",
+      "name": "The Angel of Darkness – Tomb Raider IV–VI Remastered – Nintendo Switch (2025)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/Video%20Games/tomb-raider-iv-vi-remastered-available-now"
+        }
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/3/37/Tomb_Raider_-_The_Angel_of_Darkness.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_The_Angel_of_Darkness"

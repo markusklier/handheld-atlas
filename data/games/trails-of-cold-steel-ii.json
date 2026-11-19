@@ -32,11 +32,25 @@
     },
     {
       "id": "pc-2018",
-      "name": "PC, PlayStation 4 (2018)",
+      "name": "PC (2018)",
       "type": "port",
       "year": 2018,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q29600626"
+        }
+      ]
+    },
+    {
+      "id": "pc-2018-playstation-4",
+      "name": "PlayStation 4 (2018)",
+      "type": "port",
+      "year": 2018,
+      "platforms": [
         "PlayStation 4"
       ],
       "links": [
@@ -48,7 +62,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/81/Trails_of_Cold_Steel_II_Steam_artwork.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Legend_of_Heroes%3A_Trails_of_Cold_Steel_II"

@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Nintendo DS"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Kirby%20Mass%20Attack%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Kirby%20Mass%20Attack%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Kirby%20Mass%20Attack%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        }
       ]
     }
   ],

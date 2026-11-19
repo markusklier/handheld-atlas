@@ -45,16 +45,67 @@
     },
     {
       "id": "remastered",
-      "name": "Tomb Raider I–III Remastered (2024)",
+      "name": "Tomb Raider I–III Remastered – PC (2024)",
       "type": "remaster",
       "year": 2024,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-playstation-4",
+      "name": "Tomb Raider I–III Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch",
+        "Xbox Series"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-nintendo-switch",
+      "name": "Tomb Raider I–III Remastered – Nintendo Switch (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-android",
+      "name": "Tomb Raider I–III Remastered – Android (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
         "Android"
       ],
       "traits": [
@@ -91,7 +142,7 @@
       "id": "tr2-remastered-android",
       "name": "I–III Remastered als offizielle Android-App",
       "kind": "native",
-      "release": "remastered",
+      "release": "remastered-android",
       "runtime": "Offizielle Aspyr-Android-App",
       "projects": [
         "tomb-raider-iiii-remastered-aspyr"

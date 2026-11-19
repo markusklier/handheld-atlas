@@ -13,24 +13,16 @@
   "versions": [
     {
       "id": "pc-konsolen-2004",
-      "name": "PC/PS2/Xbox/GameCube (2004)",
+      "name": "PC (2004)",
       "type": "original",
       "year": 2004,
       "platforms": [
-        "PC",
-        "PlayStation 2",
-        "Xbox",
-        "Nintendo GameCube"
+        "PC"
       ],
-      "note": "Von EA Black Box: offene Stadt Bayview, ausgebautes Tuning und SUVs. Laut PCSX2-Wiki in allen Regionen spielbar, einzelne Effekte (z. B. Smog) werden teils falsch dargestellt.",
       "links": [
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
-        },
-        {
-          "label": "PCSX2-Wiki",
-          "url": "https://wiki.pcsx2.net/Need_for_Speed_Underground_2"
         },
         {
           "label": "EmuReady",
@@ -69,6 +61,88 @@
       ]
     },
     {
+      "id": "pc-konsolen-2004-playstation-2",
+      "name": "PlayStation 2 (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "note": "Von EA Black Box: offene Stadt Bayview, ausgebautes Tuning und SUVs. Laut PCSX2-Wiki in allen Regionen spielbar, einzelne Effekte (z. B. Smog) werden teils falsch dargestellt.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        },
+        {
+          "label": "PCSX2-Wiki",
+          "url": "https://wiki.pcsx2.net/Need_for_Speed_Underground_2"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
+    },
+    {
+      "id": "pc-konsolen-2004-xbox",
+      "name": "Xbox (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ]
+    },
+    {
+      "id": "pc-konsolen-2004-nintendo-gamecube",
+      "name": "Nintendo GameCube (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
+      ]
+    },
+    {
       "id": "gba",
       "name": "Game Boy Advance (2004)",
       "type": "port",
@@ -81,6 +155,22 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+          "caption": "Game Boy Advance-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Need%20for%20Speed%20-%20Underground%202%20%28USA%2C%20Europe%29%20%28En%2CFr%2CDe%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
         }
       ]
     },
@@ -97,6 +187,22 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed:_Underground_2"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Snaps/Need%20for%20Speed%20-%20Underground%202%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Nintendo DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_DS/master/Named_Titles/Need%20for%20Speed%20-%20Underground%202%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
         }
       ]
     },
@@ -220,7 +326,7 @@
       "verification": "ai-unverified"
     }
   ],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"

@@ -104,7 +104,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/2be69c20-3637-476e-90ce-30994e8fe282"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/1086940/"
+      }
     }
   ],
   "routes": [],

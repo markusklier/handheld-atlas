@@ -11,11 +11,25 @@
   "versions": [
     {
       "id": "mobile",
-      "name": "Mobiltelefone und N-Gage (2008)",
+      "name": "Java ME (2008)",
       "type": "original",
       "year": 2008,
       "platforms": [
-        "Java ME",
+        "Java ME"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "mobile-nokia-n-gage",
+      "name": "Nokia N-Gage (2008)",
+      "type": "original",
+      "year": 2008,
+      "platforms": [
         "Nokia N-Gage"
       ],
       "links": [
@@ -28,7 +42,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q3283971",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_Mobile",
   "cover": {

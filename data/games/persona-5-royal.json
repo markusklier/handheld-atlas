@@ -220,11 +220,25 @@
     },
     {
       "id": "pc-2022",
-      "name": "PC, Xbox Series (2022)",
+      "name": "PC (2022)",
       "type": "port",
       "year": 2022,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q63385672"
+        }
+      ]
+    },
+    {
+      "id": "pc-2022-xbox-series",
+      "name": "Xbox Series (2022)",
+      "type": "port",
+      "year": 2022,
+      "platforms": [
         "Xbox Series"
       ],
       "links": [
@@ -302,7 +316,7 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q63385672",
   "wikipedia": "https://en.wikipedia.org/wiki/Persona_5_Royal",
   "genre": "role-playing video game",

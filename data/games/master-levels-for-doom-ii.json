@@ -83,15 +83,10 @@
     },
     {
       "id": "kex-2024",
-      "name": "Master Levels in DOOM + DOOM II",
+      "name": "Master Levels in DOOM + DOOM II – PC (2024)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "year": 2024,
       "traits": [
@@ -103,6 +98,55 @@
         "widescreen"
       ],
       "note": "Überarbeitete Veröffentlichung mit enthaltenen Master Levels, plattformübergreifendem Mehrspieler, Mod-Browser und modernisierter Darstellung. Eine offizielle Android-Ausgabe dieser Neuauflage ist nicht ausgewiesen; sie ist von der mobilen Jubiläumsfassung zu unterscheiden.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024-playstation-4",
+      "name": "Master Levels in DOOM + DOOM II – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024-nintendo-switch",
+      "name": "Master Levels in DOOM + DOOM II – Nintendo Switch (2024)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -198,8 +242,10 @@
       "description": "Erzeugt aus eigenen WADs eine gemeinsame IPK3 mit Episodenauswahl. Unterstützt sowohl die 20 ursprünglichen Master-Levels-WADs als auch masterlevels.wad der KEX-Neuauflage; für den Thor-Dual-Screen-Weg besonders passend.",
       "verification": "ai-unverified",
       "release": [
+        "pc",
         "kex-2024",
-        "pc"
+        "kex-2024-playstation-4",
+        "kex-2024-nintendo-switch"
       ]
     },
     {
@@ -239,7 +285,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/2/29/Doom_II_-_Hell_on_Earth_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Doom_II"

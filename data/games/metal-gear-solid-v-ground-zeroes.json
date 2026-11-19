@@ -14,14 +14,31 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 3/4, Xbox 360/One (2014)",
+      "name": "PC (2014)",
       "type": "original",
       "year": 2014,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "cover": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/header.jpg?t=1718869217",
+        "source": "https://store.steampowered.com/app/311340/"
+      }
+    },
+    {
+      "id": "multi-playstation-3",
+      "name": "PlayStation 3, PlayStation 4, Xbox One (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
         "PlayStation 3",
         "PlayStation 4",
-        "Xbox 360",
         "Xbox One"
       ],
       "links": [
@@ -32,14 +49,27 @@
       ]
     },
     {
+      "id": "multi-xbox-360",
+      "name": "Xbox 360 (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
       "id": "definitive-experience",
-      "name": "The Definitive Experience (2016)",
+      "name": "The Definitive Experience – PC (2016)",
       "type": "collection",
       "year": 2016,
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "Xbox One"
+        "PC"
       ],
       "links": [
         {
@@ -48,11 +78,27 @@
         }
       ],
       "note": "Ground Zeroes und The Phantom Pain mit allen Zusatzinhalten."
+    },
+    {
+      "id": "definitive-experience-playstation-4",
+      "name": "The Definitive Experience – PlayStation 4, Xbox One (2016)",
+      "type": "collection",
+      "year": 2016,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q11879017",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_V%3A_Ground_Zeroes",
   "cover": {

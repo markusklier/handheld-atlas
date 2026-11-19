@@ -3,7 +3,9 @@
   "title": "Crash Team Racing Nitro-Fueled",
   "franchise": "Crash Bandicoot",
   "platforms": [
-    "Nintendo Switch"
+    "Nintendo Switch",
+    "PlayStation 4",
+    "Xbox One"
   ],
   "summary": "Dokumentierter Dual-Screen-Companion für Eden Duo. Erfordert eine exakt passende Spielversion.",
   "cover": {
@@ -27,6 +29,70 @@
         {
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/4a97ca04-8e34-4fb2-990b-f708b0a32603"
+        }
+      ]
+    },
+    {
+      "id": "crash-team-racing-nitro-fueled-playstation-4",
+      "name": "Crash Team Racing Nitro-Fueled – PlayStation 4, Xbox One (2019)",
+      "type": "remake",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "online",
+        "widescreen"
+      ],
+      "note": "Grafisch umfassend erneuerte Fassung mit zusätzlichen Strecken und Kampfarenen aus Crash Nitro Kart, Kart-Anpassung und Online-Mehrspieler. Die PS4-Ausgabe besitzt exklusive Retro-Inhalte.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
+        }
+      ]
+    },
+    {
+      "id": "nitro-fueled-oxide",
+      "name": "Crash Team Racing Nitro-Fueled – Nitros Oxide Edition – Nintendo Switch (2019)",
+      "type": "release",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "online",
+        "widescreen"
+      ],
+      "note": "Deluxe-Edition mit dem vollständigen Nitro-Fueled und zusätzlichen kosmetischen Inhalten wie den Star-Skins. Nitros Oxide und sein Hovercraft werden unmittelbar zugänglich; diese beiden Inhalte lassen sich auch in der Standardfassung erspielen.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
+        }
+      ]
+    },
+    {
+      "id": "nitro-fueled-oxide-playstation-4",
+      "name": "Crash Team Racing Nitro-Fueled – Nitros Oxide Edition – PlayStation 4, Xbox One (2019)",
+      "type": "release",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2019,
+      "traits": [
+        "controller",
+        "online",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
         }
       ]
     }
@@ -96,11 +162,105 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "id": "ai-nitro-fueled-mit-eden-duo-und-ctrnf-ds",
+      "name": "Nitro-Fueled mit Eden Duo und CTRNF-DS",
+      "kind": "emulator-mod",
+      "release": "nintendo-switch",
+      "runtime": "Eden Duo für Android mit spielbezogenem .dsmod.zip-Paket",
+      "projects": [
+        "eden"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "dual-screen",
+        "live-map",
+        "mods",
+        "touch"
+      ],
+      "dualScreen": "Das installierbare Companion-Modul zeichnet aus dem laufenden Spiel Fahrerreihenfolge, Live-Karte, Position, Runde und Zeit auf das zweite Display und kann fünf HUD-Elemente der Hauptansicht ausblenden.",
+      "requires": [
+        "Eigene Nintendo-Switch-Ausgabe von Crash Team Racing Nitro-Fueled",
+        "Eigener Spiel-Dump mit Titel-ID 0100F9F00C696000 und Update 1.0.15",
+        "Eigene Konsolenschlüssel und Firmware",
+        "Android 13 oder neuer auf ARM64 und ein zweites Display",
+        "Eden Duo ab Version 1.1.0 und das passende Companion-Paket"
+      ],
+      "dualScreenType": "integrated",
+      "benefit": "Auch die modernisierte Fassung erhält eine echte Live-Zusatzanzeige mit den Grafiken und Fahrernamen des Spiels.",
+      "caveat": "Das Modul ist exakt an Spielversion 1.0.15 gebunden und für einen lokalen Spieler während der Rennen ausgelegt. Es ist ein innerhalb des Emulator-Forks geladenes Modul, keine separate Begleit-App; eine konkrete Thor-Leistungszusage liegt nicht vor.",
+      "steps": [
+        "Eden Duo aus den Projekt-Releases installieren und eigene Schlüssel, Firmware sowie Spieldaten einrichten.",
+        "Das eigene Spiel auf die unterstützte Version 1.0.15 bringen.",
+        "Das Nitro-Fueled-Companion-Paket aus Eden Duo Companions beziehen.",
+        "Das Spiel lange drücken und unter Add-ons, Install und Dual screen mods die .dsmod.zip-Datei auswählen.",
+        "Das Spiel starten und die Zusatzanzeige während eines Rennens prüfen."
+      ],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/race.png",
+          "caption": "Rennansicht oben, Karte und Fahrerreihenfolge unten.",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/settings.png",
+          "caption": "HUD-Einstellungen auf dem zweiten Bildschirm.",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/igawa6/eden-duo-companions/main/screenshots/crash-team-racing-nitro-fueled/hud.png",
+          "caption": "Rennansicht und Zusatzdisplay mit Karte und Fahrerreihenfolge",
+          "source": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+          "credit": "Eden Duo",
+          "check": "ai-verified",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q59594323",
   "wikipedia": "https://en.wikipedia.org/wiki/Crash_Team_Racing_Nitro-Fueled",
   "genre": "racing video game",
-  "website": "https://www.crashbandicoot.com/crashteamracing"
+  "website": "https://www.crashbandicoot.com/crashteamracing",
+  "mods": [
+    {
+      "id": "ctrnf-ds-nitro-fueled-companion",
+      "name": "CTRNF-DS / Nitro-Fueled Companion",
+      "category": "dual-screen",
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/crash-team-racing-nitro-fueled-1.0.0",
+      "edition": "Nintendo Switch, Titel-ID 0100F9F00C696000, Update 1.0.15; Eden Duo",
+      "description": "Installierbares Zweitbildschirm-Modul mit Live-Streckenkarte, Fahrerporträts, Platzierungen, Runde und Rennzeit sowie Schaltern für fünf originale HUD-Elemente. Für einen lokalen Spieler ausgelegt; die benötigten Grafiken werden aus den eigenen Spieldaten gelesen.",
+      "verification": "ai-unverified",
+      "release": [
+        "nintendo-switch"
+      ]
+    }
+  ],
+  "screenshots": [],
+  "remakeOf": "crash-team-racing"
 }

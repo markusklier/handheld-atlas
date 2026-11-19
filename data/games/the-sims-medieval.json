@@ -11,14 +11,12 @@
   "versions": [
     {
       "id": "pc",
-      "name": "PC/Mac (2011)",
+      "name": "PC (2011)",
       "type": "original",
       "year": 2011,
       "platforms": [
-        "PC",
-        "Macintosh"
+        "PC"
       ],
-      "note": "Von Maxis Redwood Shores; Abenteuerpaket „Pirates & Nobles“ (August 2011), auch als Deluxe-Edition. Die Mac-Fassung läuft nicht unter macOS Catalina oder neuer.",
       "links": [
         {
           "label": "Wikipedia",
@@ -27,6 +25,22 @@
         {
           "label": "Steam",
           "url": "https://store.steampowered.com/app/102820/"
+        }
+      ]
+    },
+    {
+      "id": "pc-macintosh",
+      "name": "Macintosh (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "Macintosh"
+      ],
+      "note": "Von Maxis Redwood Shores; Abenteuerpaket „Pirates & Nobles“ (August 2011), auch als Deluxe-Edition. Die Mac-Fassung läuft nicht unter macOS Catalina oder neuer.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Sims_Medieval"
         }
       ]
     },
@@ -82,7 +96,7 @@
   "routes": [],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/The_Sims_Medieval",
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q257816",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/2/2c/The_Sims_Medieval.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",

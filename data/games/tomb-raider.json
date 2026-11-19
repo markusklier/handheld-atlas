@@ -9,7 +9,6 @@
     "Nokia N-Gage",
     "iOS",
     "Android",
-    "PlayStation 3",
     "PlayStation 4",
     "PlayStation 5",
     "Xbox Series",
@@ -103,6 +102,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/78ffb026-d05e-4e74-b8c0-dc8635846c48"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Tomb%20Raider%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Tomb%20Raider%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Tomb%20Raider%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
       ]
     },
     {
@@ -148,16 +163,67 @@
     },
     {
       "id": "remastered",
-      "name": "Tomb Raider I–III Remastered (2024)",
+      "name": "Tomb Raider I–III Remastered – PC (2024)",
       "type": "remaster",
       "year": 2024,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-playstation-4",
+      "name": "Tomb Raider I–III Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch",
+        "Xbox Series"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-nintendo-switch",
+      "name": "Tomb Raider I–III Remastered – Nintendo Switch (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: Pocket Gamer",
+          "url": "https://www.pocketgamer.com/tomb-raider-i-iii-remastered-starring-lara-croft/out-now-on-mobile"
+        }
+      ]
+    },
+    {
+      "id": "remastered-android",
+      "name": "Tomb Raider I–III Remastered – Android (2024)",
+      "type": "remaster",
+      "year": 2024,
+      "platforms": [
         "Android"
       ],
       "traits": [
@@ -265,41 +331,6 @@
       ]
     },
     {
-      "id": "anniversary-ps4-ps5",
-      "name": "Tomb Raider: Anniversary – PlayStation-Neuauflage",
-      "type": "rerelease",
-      "platforms": [
-        "PlayStation 4",
-        "PlayStation 5"
-      ],
-      "year": 2025,
-      "traits": [
-        "controller"
-      ],
-      "note": "Zusätzliche offizielle Wiederveröffentlichung von Anniversary im PlayStation Store vom 18. November 2025.",
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store"
-        }
-      ]
-    },
-    {
-      "id": "the-tomb-raider-trilogy",
-      "name": "The Tomb Raider Trilogy (2011)",
-      "type": "collection",
-      "year": 2011,
-      "platforms": [
-        "PlayStation 3"
-      ],
-      "links": [
-        {
-          "label": "Quelle",
-          "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
-        }
-      ]
-    },
-    {
       "id": "tomb-raider-collection-1",
       "name": "Tomb Raider Collection 1 (2024)",
       "type": "collection",
@@ -316,12 +347,40 @@
     },
     {
       "id": "tomb-raider-ivi-remastered",
-      "name": "Tomb Raider I–VI Remastered (2025)",
+      "name": "Tomb Raider I–VI Remastered – PC (2025)",
       "type": "collection",
       "year": 2025,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/products/games/tomb-raider-i-vi-remastered"
+        }
+      ]
+    },
+    {
+      "id": "tomb-raider-ivi-remastered-nintendo-switch",
+      "name": "Tomb Raider I–VI Remastered – Nintendo Switch (2025)",
+      "type": "collection",
+      "year": 2025,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/products/games/tomb-raider-i-vi-remastered"
+        }
+      ]
+    },
+    {
+      "id": "tomb-raider-ivi-remastered-playstation-4",
+      "name": "Tomb Raider I–VI Remastered – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2025)",
+      "type": "collection",
+      "year": 2025,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox One",
@@ -340,7 +399,7 @@
       "id": "ai-iiii-remastered-als-offizielle-android-app",
       "name": "I–III Remastered als offizielle Android-App",
       "kind": "native",
-      "release": "remastered",
+      "release": "remastered-android",
       "runtime": "Offizielle Aspyr-Android-App",
       "projects": [
         "tomb-raider-iiii-remastered-aspyr"
@@ -775,7 +834,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-19",
   "summary": "Am einfachsten ist die offizielle Android-Fassung von Tomb Raider I–III Remastered. Wer das Original will, spielt es per PlayStation-Emulation oder nativ mit OpenLara (experimentell).",
   "mods": [],
   "wikidata": "Q317620",

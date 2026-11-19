@@ -42,15 +42,33 @@
       "type": "release",
       "platforms": [
         "PC"
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/540840/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/540840/"
+      }
     },
     {
       "id": "playstation-4-2016",
-      "name": "PlayStation 4, PlayStation Vita (2016)",
+      "name": "PlayStation 4 (2016)",
       "type": "port",
       "year": 2016,
       "platforms": [
-        "PlayStation 4",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q20895586"
+        }
+      ]
+    },
+    {
+      "id": "playstation-4-2016-playstation-vita",
+      "name": "PlayStation Vita (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
         "PlayStation Vita"
       ],
       "links": [
@@ -63,7 +81,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/540840/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/540840/"

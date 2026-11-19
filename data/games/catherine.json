@@ -15,11 +15,25 @@
   "versions": [
     {
       "id": "ps3-x360",
-      "name": "PlayStation 3, Xbox 360 (2011)",
+      "name": "PlayStation 3 (2011)",
       "type": "original",
       "year": 2011,
       "platforms": [
-        "PlayStation 3",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "ps3-x360-xbox-360",
+      "name": "Xbox 360 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
         "Xbox 360"
       ],
       "links": [
@@ -46,12 +60,40 @@
     },
     {
       "id": "full-body",
-      "name": "Catherine: Full Body (2019)",
+      "name": "Catherine: Full Body – PlayStation 4 (2019)",
       "type": "rerelease",
       "year": 2019,
       "platforms": [
-        "PlayStation 4",
-        "PlayStation Vita",
+        "PlayStation 4"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine:_Full_Body"
+        }
+      ]
+    },
+    {
+      "id": "full-body-playstation-vita",
+      "name": "Catherine: Full Body – PlayStation Vita (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Catherine:_Full_Body"
+        }
+      ]
+    },
+    {
+      "id": "full-body-nintendo-switch",
+      "name": "Catherine: Full Body – Nintendo Switch (2019)",
+      "type": "rerelease",
+      "year": 2019,
+      "platforms": [
         "Nintendo Switch"
       ],
       "note": "Erweiterte Neuauflage mit neuer Figur, neuen Enden und Remix-Puzzles; Switch-Fassung 2020.",
@@ -94,7 +136,7 @@
       "checkedAt": "2026-11-18",
       "id": "catherine-recomp",
       "name": "Catherine: Full Body Port",
-      "release": "full-body",
+      "release": "full-body-nintendo-switch",
       "kind": "native",
       "edition": "Switch-Fassung (getestet mit 1.0.0)",
       "runtime": "nativer ARM64-Code des Spiels, nachgebautes Konsolen-SDK, NVN auf Vulkan",
@@ -112,7 +154,7 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q277377",
   "wikipedia": "https://en.wikipedia.org/wiki/Catherine_%28video_game%29",
   "cover": {

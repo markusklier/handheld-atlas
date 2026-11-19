@@ -14,12 +14,11 @@
   "versions": [
     {
       "id": "ps3-x360",
-      "name": "PlayStation 3 und Xbox 360 (2013)",
+      "name": "PlayStation 3 (2013)",
       "type": "original",
       "year": 2013,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360"
+        "PlayStation 3"
       ],
       "note": "Das Original von PlatinumGames und Konami. Die Xbox-360-Disc ist die Datenbasis für den Android-Port Zandatsu.",
       "links": [
@@ -30,13 +29,27 @@
       ]
     },
     {
+      "id": "ps3-x360-xbox-360",
+      "name": "Xbox 360 (2013)",
+      "type": "original",
+      "year": 2013,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+        }
+      ]
+    },
+    {
       "id": "pc-mac",
-      "name": "PC (2014) und Mac (2014)",
+      "name": "PC (2014)",
       "type": "port",
       "year": 2014,
       "platforms": [
-        "PC",
-        "Macintosh"
+        "PC"
       ],
       "links": [
         {
@@ -136,6 +149,21 @@
       ]
     },
     {
+      "id": "pc-mac-macintosh",
+      "name": "Macintosh (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Metal_Gear_Rising:_Revengeance"
+        }
+      ]
+    },
+    {
       "id": "shield-2016",
       "name": "NVIDIA Shield Android TV (2016)",
       "type": "android",
@@ -160,7 +188,7 @@
       "id": "mgr-zandatsu",
       "name": "Zandatsu – nativer Android-Port",
       "kind": "recomp",
-      "release": "ps3-x360",
+      "release": "ps3-x360-xbox-360",
       "edition": "Xbox 360",
       "runtime": "Statische Rekompilierung (ReXGlue SDK); Renderer Renut (Direct3D→Vulkan, Adreno/Turnip) oder Xenia (emulierte GPU, auch Mali)",
       "projects": [
@@ -269,7 +297,7 @@
       "checkedAt": "2026-11-12"
     }
   ],
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q930345",
   "website": "https://www.platinumgames.com/games/metal-gear-rising-revengeance",
   "playStore": "https://play.google.com/store/apps/details?id=com.nvidia.metalgearrisingrevengeance",

@@ -82,16 +82,48 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/56800dd4-11f2-4c9e-bdfc-262494ff4af5"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/105600/"
+      }
     },
     {
       "id": "android-2013",
-      "name": "Android, PlayStation 3, PlayStation Vita (2013)",
+      "name": "Android (2013)",
       "type": "port",
       "year": 2013,
       "platforms": [
-        "Android",
-        "PlayStation 3",
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "android-2013-playstation-3",
+      "name": "PlayStation 3 (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "android-2013-playstation-vita",
+      "name": "PlayStation Vita (2013)",
+      "type": "port",
+      "year": 2013,
+      "platforms": [
         "PlayStation Vita"
       ],
       "links": [
@@ -119,18 +151,48 @@
     },
     {
       "id": "linux-2015",
-      "name": "Linux, Macintosh, Nintendo 3DS (2015)",
+      "name": "Linux, Macintosh (2015)",
       "type": "port",
       "year": 2015,
       "platforms": [
         "Linux",
-        "Macintosh",
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ]
+    },
+    {
+      "id": "linux-2015-nintendo-3ds",
+      "name": "Nintendo 3DS (2015)",
+      "type": "port",
+      "year": 2015,
+      "platforms": [
         "Nintendo 3DS"
       ],
       "links": [
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q332697"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/Terraria%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Terraria%20%28USA%29.png",
+          "caption": "Nintendo 3DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Terraria%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
         }
       ]
     },
@@ -196,7 +258,7 @@
       "dualScreenType": "companion"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q332697",
   "wikipedia": "https://en.wikipedia.org/wiki/Terraria",
   "website": "https://terraria.org/",

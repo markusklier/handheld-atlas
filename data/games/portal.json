@@ -105,7 +105,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/da805799-604c-4edc-86dd-ee8d33c8102e"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/400/"
+      }
     },
     {
       "id": "playstation-3-2007",

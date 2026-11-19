@@ -25,18 +25,30 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/ef2724b1-5c4c-4c3e-9cbb-954a178250b2"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Doom%2064%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Doom%2064%20%28USA%29.png",
+          "caption": "Nintendo 64-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Doom%2064%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+        }
       ]
     },
     {
       "id": "remaster-2020",
-      "name": "DOOM 64 – Neuauflage (2020)",
+      "name": "DOOM 64 – Neuauflage – PC (2020)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "Nintendo Switch",
-        "PlayStation 4",
-        "Xbox One",
-        "Google Stadia"
+        "PC"
       ],
       "year": 2020,
       "traits": [
@@ -82,6 +94,46 @@
             "Resolution (Screen Size)": "1920x1080 (16:9)",
             "Exec Arguments": "-skipmovies"
           }
+        }
+      ]
+    },
+    {
+      "id": "remaster-2020-nintendo-switch",
+      "name": "DOOM 64 – Neuauflage – Nintendo Switch (2020)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.esrb.org/ratings/36902/doom-64/"
+        }
+      ]
+    },
+    {
+      "id": "remaster-2020-playstation-4",
+      "name": "DOOM 64 – Neuauflage – PlayStation 4, Xbox One, Google Stadia (2020)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One",
+        "Google Stadia"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.esrb.org/ratings/36902/doom-64/"
         }
       ]
     }
@@ -335,7 +387,9 @@
       "description": "Ergänzt zusätzliche beziehungsweise ursprünglich verworfene Gegner, überarbeitete Sprites und Waffenanimationen, Fehlerkorrekturen und einen weiteren Schwierigkeitsgrad. Kein gewöhnliches WAD für jeden Port: Die Engine-Erweiterungen benötigen den passenden Enhanced-Fork.",
       "verification": "ai-unverified",
       "release": [
-        "remaster-2020"
+        "remaster-2020",
+        "remaster-2020-nintendo-switch",
+        "remaster-2020-playstation-4"
       ]
     },
     {
@@ -387,7 +441,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Doom%2064%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"

@@ -53,19 +53,16 @@
   "versions": [
     {
       "id": "pc",
-      "name": "PC",
+      "name": "PC (2011)",
       "type": "original",
       "platforms": [
-        "PC",
-        "Xbox 360",
-        "PlayStation 3"
+        "PC"
       ],
       "year": 2011,
       "note": "Korrektur des bisherigen PC-Eintrags: Das Original erschien gleichzeitig auch für Xbox 360 und PlayStation 3. Die klassische PC-Fassung ist von der späteren Special Edition zu unterscheiden.",
       "traits": [
         "controller"
       ],
-      "reports": [],
       "links": [
         {
           "label": "EmuReady",
@@ -75,16 +72,42 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/97a9b386-8a74-41c0-937f-02b911917636"
         }
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/72850/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/72850/"
+      }
+    },
+    {
+      "id": "pc-xbox-360",
+      "name": "Xbox 360 (2011)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2011,
+      "traits": [
+        "controller"
+      ]
+    },
+    {
+      "id": "pc-playstation-3",
+      "name": "PlayStation 3 (2011)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2011,
+      "traits": [
+        "controller"
       ]
     },
     {
       "id": "se",
-      "name": "Skyrim Special Edition für PC",
+      "name": "Skyrim Special Edition – PC (2016)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "Xbox One"
+        "PC"
       ],
       "year": 2016,
       "traits": [
@@ -100,11 +123,44 @@
       ]
     },
     {
+      "id": "se-playstation-4",
+      "name": "Skyrim Special Edition – PlayStation 4, Xbox One (2016)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "year": 2016,
+      "traits": [
+        "controller",
+        "mods"
+      ]
+    },
+    {
       "id": "ae",
-      "name": "Skyrim Anniversary Edition für PC",
+      "name": "Skyrim Anniversary Edition – PC (2021)",
       "type": "rerelease",
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "year": 2021,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "note": "Special Edition samt den zum Jubiläumsstart veröffentlichten Creation-Club-Inhalten, darunter zusätzliche Quests, Ausrüstung und Spielmodi. Kein eigenständiges Remake: Für Mods und Laufzeiten sind die konkrete EXE-Version und der Store wichtiger als die Bezeichnung „Anniversary“.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq"
+        }
+      ]
+    },
+    {
+      "id": "ae-playstation-4",
+      "name": "Skyrim Anniversary Edition – PlayStation 4, Xbox One, PlayStation 5, Xbox Series (2021)",
+      "type": "rerelease",
+      "platforms": [
         "PlayStation 4",
         "Xbox One",
         "PlayStation 5",
@@ -115,7 +171,6 @@
         "controller",
         "mods"
       ],
-      "note": "Special Edition samt den zum Jubiläumsstart veröffentlichten Creation-Club-Inhalten, darunter zusätzliche Quests, Ausrüstung und Spielmodi. Kein eigenständiges Remake: Für Mods und Laufzeiten sind die konkrete EXE-Version und der Store wichtiger als die Bezeichnung „Anniversary“.",
       "links": [
         {
           "label": "Quelle",
@@ -193,12 +248,10 @@
     },
     {
       "id": "legendary",
-      "name": "Skyrim Legendary Edition",
+      "name": "Skyrim Legendary Edition – PC (2013)",
       "type": "rerelease",
       "platforms": [
-        "PC",
-        "Xbox 360",
-        "PlayStation 3"
+        "PC"
       ],
       "year": 2013,
       "traits": [
@@ -214,11 +267,66 @@
       ]
     },
     {
+      "id": "legendary-xbox-360",
+      "name": "Skyrim Legendary Edition – Xbox 360 (2013)",
+      "type": "rerelease",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2013,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.shacknews.com/article/78901/skyrim-legendary-edition-confirmed-for-june-4"
+        }
+      ]
+    },
+    {
+      "id": "legendary-playstation-3",
+      "name": "Skyrim Legendary Edition – PlayStation 3 (2013)",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2013,
+      "traits": [
+        "controller",
+        "mods"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.shacknews.com/article/78901/skyrim-legendary-edition-confirmed-for-june-4"
+        }
+      ]
+    },
+    {
       "id": "vr",
-      "name": "Skyrim VR",
+      "name": "Skyrim VR – PlayStation 4 (2017)",
       "type": "port",
       "platforms": [
-        "PlayStation 4",
+        "PlayStation 4"
+      ],
+      "year": 2017,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://elderscrolls.bethesda.net/en-US/news/4cHsGJ5fssgCaAUEwaMAWO/the-elder-scrolls-v-skyrim-vr-and-skyrim-for-nintendo-switch-launch-details"
+        }
+      ]
+    },
+    {
+      "id": "vr-pc",
+      "name": "Skyrim VR – PC (2017)",
+      "type": "port",
+      "platforms": [
         "PC"
       ],
       "year": 2017,
@@ -1008,7 +1116,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "mods": [
     {
       "id": "unofficial-skyrim-special-edition-patch-ussep",
@@ -1019,8 +1127,8 @@
       "description": "Umfangreiche Korrekturen für Quests, Objekte, Dialoge und weitere Spielfehler. Unbedingt die Anforderungen an Spielversion und enthaltene Creations prüfen; nicht für das Original von 2011 oder dessen ARM64-Rekompilation verwenden.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1032,8 +1140,8 @@
       "description": "Übersichtlichere Inventarlisten und Mod Configuration Menu. Benötigt funktionierendes SKSE; deshalb erst nach einem erfolgreichen SKSE-Test im gewählten Android-Spielweg installieren.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1045,8 +1153,8 @@
       "description": "Konfigurierbare Bildratenbegrenzung, Auflösungs- und Vollbildoptionen sowie Physikkorrekturen für hohe Bildraten. Kein garantierter Leistungsgewinn unter Android; die SKSE-Plugin-Version muss zur konkreten EXE passen.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1058,8 +1166,8 @@
       "description": "Optimiert Innenräume durch Occlusion-Planes, damit verdeckte Bereiche nicht unnötig gerendert werden. Interessant als Leistungsmod, aber Konflikte mit veränderten Innenräumen und die passende Downloadvariante beachten; keine belegte Thor-FPS-Zusage.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1071,9 +1179,9 @@
       "description": "Werkzeug für Grafikpresets und INI-Einstellungen; die Projektseite verweist inzwischen auf den Nachfolger Bethini Pie. Für Handhelds lassen sich Konfigurationen am PC vorbereiten, statt umfangreiche Grafikmods zu installieren; keine native Android-App.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
         "pc",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1085,8 +1193,8 @@
       "description": "Detailliertere Modelle für zahlreiche Alltagsobjekte und Umgebungsdetails. Als Grafikoption für die PC-Laufzeitwege relevant, aber kein Leistungsmod und kein bestätigtes Standardprofil für den Thor.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1098,8 +1206,8 @@
       "description": "Niedriger aufgelöste Varianten des großen Skyrim-202X-Texturpakets mit 1K-, 2K- und 4K-Auswahl. Die kleinere Variante ist für begrenzten Grafikspeicher die naheliegendere Wahl; zusätzliche Parallax-Effekte benötigen gesonderte Voraussetzungen und sind kein notwendiger Bestandteil eines Handheld-Setups.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1111,8 +1219,8 @@
       "description": "Scriptfreier Ausbau vieler Städte und Dörfer mit zusätzlichen Gebäuden und Details. Im Odin-2-Winlator-Bericht ausdrücklich erfolgreich getestet; trotzdem kein Leistungsmod und mit anderen Ortsüberarbeitungen auf Konflikte prüfen.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1124,8 +1232,8 @@
       "description": "Android-spezifische Konfiguration mit Switch-Tastenbelegung, größerer Schrift, angepassten Menüs und deutschen Übersetzungen. Enthält außerdem abgestimmte Grafik- und SKSE-Konfigurationen; nicht für die native Recomp bestätigt.",
       "verification": "ai-unverified",
       "release": [
-        "legendary",
-        "pc"
+        "pc",
+        "legendary"
       ]
     },
     {
@@ -1137,8 +1245,8 @@
       "description": "Grundlage vieler komplexer Interface- und Gameplay-Mods. Steam- und GOG-Builds unterscheiden sich; der Projektseite zufolge benötigt Steam-Build 1.7.104 SKSE 2.3.1. Keine Erweiterung für Switch oder die ARM64-Rekompilation.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1150,8 +1258,8 @@
       "description": "Behebt zahlreiche Fehler der Special-Edition-Engine. Passende Ausgabe und dokumentierte Laufzeitabhängigkeiten verwenden; die Unterstützung einer Android-PC-Laufzeit muss separat geprüft werden.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1163,8 +1271,8 @@
       "description": "Wine-spezifischer Fork mit angepasstem Speicherallocator und Änderungen am Ladeverfahren. Für Android-Laufzeiten nur ein experimenteller Kandidat: dokumentiert sind Wine, Proton und CrossOver, nicht ausdrücklich Winlator; kein Nachweis für Steam-Build 1.7.104.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1176,8 +1284,8 @@
       "description": "Bereinigt Kompressionsartefakte und fehlerhafte Hochskalierung der Originaltexturen, statt ein umfangreiches neues HD-Design einzuführen. Die angebotenen Archivvarianten müssen zur installierten Spielversion passen.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1189,8 +1297,8 @@
       "description": "Ergänzt Occlusion-Culling für Außenbereiche. Bei Stadtumbauten wie JK's Skyrim passende Kompatibilitätspatches berücksichtigen; kein garantierter Leistungsgewinn für jedes Android-Profil.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1202,8 +1310,8 @@
       "description": "Überarbeitet Originalskripte für effizientere Ausführung und geringeren Ressourcenbedarf. Früh laden und spezialisierte Mods bei Konflikten überschreiben lassen; keine pauschale FPS-Steigerung versprechen.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1215,8 +1323,8 @@
       "description": "Dunkle, anpassbare Menügestaltung mit überarbeiteten Listen, Textfarben und optionalen Interface-Elementen. Unterstützt verschiedene Seitenverhältnisse; auf dem Handheld Schriftgröße und Lesbarkeit selbst prüfen.",
       "verification": "ai-unverified",
       "release": [
-        "ae",
-        "se"
+        "se",
+        "ae"
       ]
     },
     {
@@ -1228,8 +1336,8 @@
       "description": "Optimiert die Originaltexturen einschließlich verkleinerter einfarbiger Texturen und flacher Normalmaps. Für klassische PC-Laufzeit-Installationen interessant; die besonderen Dateiprüfungen einer Recomp müssen separat berücksichtigt werden.",
       "verification": "ai-unverified",
       "release": [
-        "legendary",
-        "pc"
+        "pc",
+        "legendary"
       ]
     }
   ],

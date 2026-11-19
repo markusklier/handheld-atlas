@@ -32,7 +32,23 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2003
+      "year": 2003,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Silent%20Hill%203%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Silent%20Hill%203%20%28USA%29%20%28Dublado%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Silent%20Hill%203%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%2CKo%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "pc-2003",
@@ -51,12 +67,11 @@
     },
     {
       "id": "hd-collection",
-      "name": "Silent Hill HD Collection (2012)",
+      "name": "Silent Hill HD Collection – PlayStation 3 (2012)",
       "type": "collection",
       "year": 2012,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360"
+        "PlayStation 3"
       ],
       "links": [
         {
@@ -65,6 +80,21 @@
         }
       ],
       "note": "HD-Sammlung mit Silent Hill 2 und 3 (neu eingesprochen, umstritten)."
+    },
+    {
+      "id": "hd-collection-xbox-360",
+      "name": "Silent Hill HD Collection – Xbox 360 (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
     }
   ],
   "routes": [],

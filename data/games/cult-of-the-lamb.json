@@ -19,17 +19,18 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "PC/Konsolen (2022)",
+      "name": "Nintendo Switch (2022)",
       "type": "original",
       "platforms": [
-        "PC",
-        "Macintosh",
-        "Nintendo Switch",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series"
+        "Nintendo Switch"
       ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/40cc4599-e3c0-460a-a1a9-2cc7fe0b5fec"
+        }
+      ],
+      "year": 2022,
       "reports": [
         {
           "source": "EmuReady",
@@ -115,12 +116,27 @@
           "votes": 1,
           "date": "2025-06-17"
         }
+      ]
+    },
+    {
+      "id": "nintendo-switch-pc",
+      "name": "PC (2022)",
+      "type": "original",
+      "platforms": [
+        "PC"
       ],
-      "links": [
-        {
-          "label": "EmuReady",
-          "url": "https://www.emuready.com/games/40cc4599-e3c0-460a-a1a9-2cc7fe0b5fec"
-        }
+      "year": 2022
+    },
+    {
+      "id": "nintendo-switch-macintosh",
+      "name": "Macintosh, PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2022)",
+      "type": "original",
+      "platforms": [
+        "Macintosh",
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
       ],
       "year": 2022
     }
@@ -185,7 +201,7 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q108273566",
   "wikipedia": "https://en.wikipedia.org/wiki/Cult_of_the_Lamb",
   "genre": "dungeon crawl",

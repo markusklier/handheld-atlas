@@ -55,6 +55,17 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/331759aa-8430-44f9-8bde-0e669cfa4663"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/BlazBlue%20-%20Continuum%20Shift%20II%20%28USA%29%20%28En%2CJa%2CZh%2CKo%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/BlazBlue%20-%20Continuum%20Shift%20II%20%28USA%29%20%28En%2CJa%2CZh%2CKo%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     },
     {
@@ -63,7 +74,7 @@
       "type": "port",
       "year": 2010,
       "platforms": [
-        "arcade video game machine"
+        "Arcade"
       ],
       "links": [
         {
@@ -74,11 +85,41 @@
     },
     {
       "id": "nintendo-3ds-2011",
-      "name": "Nintendo 3DS, PlayStation 3 (2011)",
+      "name": "Nintendo 3DS (2011)",
       "type": "port",
       "year": 2011,
       "platforms": [
-        "Nintendo 3DS",
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q112669290"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Boxarts/BlazBlue%20-%20Continuum%20Shift%20II%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Snaps/Blazblue%20-%20Continuum%20Shift%20II%20%28USA%29%20%28En%2CJa%2CZh%2CKo%29.png",
+          "caption": "Nintendo 3DS-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Blazblue%20-%20Continuum%20Shift%20II%20%28USA%29%20%28En%2CJa%2CZh%2CKo%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2011-playstation-3",
+      "name": "PlayStation 3 (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
         "PlayStation 3"
       ],
       "links": [
@@ -90,7 +131,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikipedia": "https://en.wikipedia.org/wiki/BlazBlue%3A_Continuum_Shift_II",
   "wikidata": "Q112669290"
 }

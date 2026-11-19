@@ -83,7 +83,23 @@
           "url": "https://www.emuready.com/games/1bb0b535-ac18-420d-adbc-3fcd623b015d"
         }
       ],
-      "year": 2004
+      "year": 2004,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Metal%20Gear%20Solid_%20The%20Twin%20Snakes%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Metal%20Gear%20Solid%20-%20The%20Twin%20Snakes%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Metal%20Gear%20Solid%20-%20The%20Twin%20Snakes%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
+      ]
     }
   ],
   "routes": [],

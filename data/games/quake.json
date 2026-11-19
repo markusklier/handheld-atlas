@@ -153,7 +153,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/f097b273-ad3d-4b2b-b6a4-d76856aafabf"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2310/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2310/"
+      }
     },
     {
       "id": "linux-1996",
@@ -182,6 +186,22 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q217423"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Quake%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Quake%20%28USA%29.png",
+          "caption": "Nintendo 64-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Quake%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
         }
       ]
     },

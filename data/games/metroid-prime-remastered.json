@@ -1,0 +1,160 @@
+{
+  "id": "metroid-prime-remastered",
+  "title": "Metroid Prime Remastered",
+  "franchise": "Metroid",
+  "remakeOf": "metroid-prime",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "first-person shooter",
+  "summary": "Remake von Metroid Prime (2023).",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Metroid Prime Remastered (2023)",
+      "type": "remake",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2023,
+      "note": "Überarbeitete Grafik und Audio sowie moderne Dual-Stick-Steuerung unterscheiden das Remaster vom Original.",
+      "traits": [
+        "controller",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q116734030"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ai-primerecomp-experimentelle-android-rekompilierung-des-rem",
+      "name": "PrimeRecomp – experimentelle Android-Rekompilierung des Remasters",
+      "kind": "recomp",
+      "release": "nintendo-switch",
+      "runtime": "PrimeRecomp Android ARM64 / Vulkan",
+      "projects": [
+        "primerecomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump von Metroid Prime Remastered für Switch, Version 1.0.0 ohne Updates.",
+        "Computer zum Erzeugen der Android-Spielcodebibliothek aus den eigenen exefs-Daten.",
+        "ARM64-Android mit Vulkan 1.3, laut Projektdokumentation praktisch Android 13 oder neuer.",
+        "Controller; Android-Touchsteuerung ist noch nicht vorhanden."
+      ],
+      "benefit": "Eigenständiger nativer Ansatz für die Switch-Remastered-Fassung statt Switch-Emulation; eine Android-Test-APK wird offiziell vom Projekt bereitgestellt.",
+      "caveat": "Nur für Experimente: Die Projektfreigabe bestätigt bislang lediglich den Titelbildschirm im Android-Emulator, keinen erfolgreichen Thor-Spieldurchlauf. Die APK allein genügt nicht, weil der Spielcode am Computer erzeugt und zusammen mit den Spieldaten übertragen werden muss.",
+      "steps": [
+        "Die Android-Test-APK aus den PrimeRecomp-Releases beziehen.",
+        "Nach docs/android.md die Android-Spielcodebibliothek primegame.so aus dem eigenen Dump am Computer erzeugen.",
+        "APK, Bibliothek und exefs-/romfs-Daten mit dem dokumentierten Deploy-Skript auf das Gerät übertragen.",
+        "Mit Controller testen und bei Startproblemen primerecomp.log auswerten."
+      ],
+      "version": null,
+      "effort": "experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/start_screen.jpg",
+          "caption": "Startbildschirm von PrimeRecomp",
+          "source": "https://github.com/gminustwo/primerecomp",
+          "credit": "PrimeRecomp",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gminustwo/primerecomp/HEAD/docs/landing_site.jpg",
+          "caption": "Samus am Landeplatz auf Tallon IV",
+          "source": "https://github.com/gminustwo/primerecomp",
+          "credit": "PrimeRecomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/gminustwo/primerecomp/blob/main/docs/android.md"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://github.com/gminustwo/primerecomp/issues/20",
+          "device": "POCO F5, Android 15",
+          "summary": "Der Tester meldet Startfehler der frühen Android-Version; spätere Logs zeigen außerdem eine fehlende, separat am Computer zu erzeugende Spielcodebibliothek und belegen damit keinen erfolgreichen Spielbetrieb.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "ai-mp-checklist-manuelle-zweitbildschirm-begleitung",
+      "name": "MP Checklist – manuelle Zweitbildschirm-Begleitung",
+      "kind": "companion",
+      "release": "nintendo-switch",
+      "runtime": "Separate Android-App aus Google Play",
+      "projects": [
+        "mp-checklist"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch"
+      ],
+      "dualScreen": "Separate Sammel-Checkliste, die sich als Begleit-App auf dem unteren Display verwenden lässt; Einträge werden manuell abgehakt, ohne Verbindung zu Spiel oder Emulator.",
+      "requires": [
+        "Eine separat laufende spielbare Fassung von Metroid Prime.",
+        "MP Checklist aus Google Play.",
+        "Für gleichzeitige Anzeige auf dem Thor: getrennte App-Platzierung auf den beiden Displays."
+      ],
+      "dualScreenType": "info",
+      "benefit": "Verfolgt Sammelgegenstände nach Region und Gegenstandstyp und unterstützt die Suche nach fehlenden Items auf dem Weg zu 100 Prozent.",
+      "caveat": "Keine Live-Karte, keine automatische Inventarsynchronisation und kein eigener Spielweg. Eine ausdrückliche Thor-Erprobung ist nicht belegt; die Zweitbildschirm-Nutzung ist eine manuelle Anordnung zweier Apps. Die App enthält Werbung und In-App-Käufe.",
+      "steps": [
+        "MP Checklist aus Google Play installieren.",
+        "Die Begleit-App auf dem unteren Display und den gewählten Spielweg auf dem oberen Display öffnen.",
+        "Region oder Gegenstandstyp auswählen und gefundene Items von Hand markieren."
+      ],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://play.google.com/store/apps/details?id=com.stifdev.mpchecklist&pli=1"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Metroid/comments/11h1ooa/i_built_a_little_mobile_app_to_help_me_get_all/",
+          "device": "Mobilgerät nicht genannt; Spiel auf Nintendo Switch",
+          "summary": "Der Entwickler beschreibt die eigene Nutzung der Checkliste bis zu 100 Prozent eingesammelten Items; Nutzer bestätigen den Nutzen der Liste und Notizfunktion.",
+          "date": "2026-11-09"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-09"
+    }
+  ],
+  "mods": [],
+  "screenshots": [],
+  "updatedAt": "2026-11-19"
+}

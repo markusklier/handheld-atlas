@@ -5,8 +5,9 @@ Only file *listings* are fetched (git tree, no image download); images are linke
 Titles are matched against No-Intro/Redump file names, e.g.
     "The Legend of Zelda: A Link to the Past" -> "Legend of Zelda, The - A Link to the Past (USA).png"
 
-    python3 scripts/covers.py            # fill games that have no cover yet
+    python3 scripts/covers.py            # fill games that have no cover yet, then every version's own cover
     python3 scripts/covers.py --force    # re-match everything that came from libretro
+    python3 scripts/covers.py --versions # only the versions (GameCube box, PS2 box … and their own screenshots)
 """
 import re
 import subprocess
@@ -140,5 +141,74 @@ def main(force=False, only=None):
     return filled
 
 
+def version_titles(g, v):
+    """Titles to look for a version's box: its own name ("Metroid Prime: Trilogy", "Subsistence" → "Metal Gear Solid 3:
+    Subsistence"), then the game's title."""
+    import quality
+    core = quality.core_name(v)
+    out = []
+    if core and norm(core) != norm(g['title']):
+        out.append(core)
+        if not norm(core).startswith(norm(g['title'].split(':')[0])):
+            out += [f"{g['title']} - {core}", f"{g['title'].split(':')[0]} - {core}"]
+    out.append(g['title'])
+    return list(dict.fromkeys(out))
+
+
+def fill_versions(only=None, force=False, log=print):
+    """Every version on a platform with a libretro set gets its own box art and, if there are any, its own
+    screenshots (a GameCube release looks different from the PS2 one). Exact title matches only."""
+    indexes, filled = {}, 0
+    for f in sorted((DATA / 'games').glob('*.json')):
+        if only is not None and f.stem not in only:
+            continue
+        g = read(f)
+        changed = False
+        steam = 'steamstatic.com' in (g.get('cover') or {}).get('url', '') or 'steampowered' in (g.get('cover') or {}).get('source', '')
+        for v in g.get('versions', []):
+            if v.get('cover') and not force:
+                continue
+            if steam and v.get('platforms', [])[:1] == ['PC'] and v.get('type') in ('original', 'release') and not v.get('cover'):
+                v['cover'] = dict(g['cover'])          # the Steam box is the PC release's box
+                changed = True
+                continue
+            repos = [r for plat in v.get('platforms', [])[:1] for r in REPOS.get(plat, [])]
+            if not repos:
+                continue
+            for repo in repos:
+                if repo not in indexes:
+                    try:
+                        indexes[repo] = listing(repo)
+                    except Exception as e:  # noqa: BLE001
+                        print(f'! {repo}: {e}', file=sys.stderr)
+                        indexes[repo] = {}
+            hit = None
+            for title in version_titles(g, v):
+                hit = next(((repo, m[1]) for repo in repos if (m := lookup(indexes[repo], title)) and 'Named_Boxarts' in m[1]), None)
+                if hit:
+                    break
+            if not hit:
+                continue
+            repo, files = hit
+            source = f'https://github.com/libretro-thumbnails/{repo}'
+            v['cover'] = {'url': url(repo, 'Named_Boxarts', pick(files['Named_Boxarts'])), 'source': source}
+            shots = [s for s in v.get('screenshots', []) if 'libretro-thumbnails' not in s['url']]
+            for folder, caption in (('Named_Snaps', f"{v['platforms'][0]}-Fassung"), ('Named_Titles', 'Titelbild')):
+                if files.get(folder):
+                    shots.append({'url': url(repo, folder, pick(files[folder])), 'caption': caption, 'source': source})
+            if shots:
+                v['screenshots'] = shots
+            changed = True
+            filled += 1
+        if changed:
+            write(f, g)
+    log(f'covers.py: {filled} Fassungen mit eigenem Cover')
+    return filled
+
+
 if __name__ == '__main__':
-    main(force='--force' in sys.argv)
+    if '--versions' in sys.argv:
+        fill_versions(force='--force' in sys.argv)
+    else:
+        main(force='--force' in sys.argv)
+        fill_versions()

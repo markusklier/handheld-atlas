@@ -48,7 +48,11 @@
       "type": "original",
       "platforms": [
         "PC"
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427520/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/427520/"
+      }
     }
   ],
   "routes": [],

@@ -20,11 +20,25 @@
     },
     {
       "id": "pc-2014",
-      "name": "PC, Wii U (2014)",
+      "name": "PC (2014)",
       "type": "port",
       "year": 2014,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15725934"
+        }
+      ]
+    },
+    {
+      "id": "pc-2014-wii-u",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
         "Wii U"
       ],
       "links": [
@@ -36,7 +50,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q15725934",
   "wikipedia": "https://en.wikipedia.org/wiki/Guacamelee%21",
   "genre": "Metroidvania"

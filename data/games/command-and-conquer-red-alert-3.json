@@ -24,15 +24,33 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert_3"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/17480/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/17480/"
+      }
     },
     {
       "id": "konsolen",
-      "name": "Xbox 360/PS3 (2008–2009)",
+      "name": "Xbox 360 (2008)",
       "type": "port",
       "year": 2008,
       "platforms": [
-        "Xbox 360",
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert_3"
+        }
+      ]
+    },
+    {
+      "id": "konsolen-playstation-3",
+      "name": "PlayStation 3 (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
         "PlayStation 3"
       ],
       "note": "Konsolenfassungen mit Controller-Steuerung; PS3 folgte 2009.",

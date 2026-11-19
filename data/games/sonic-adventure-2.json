@@ -68,6 +68,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/bf0ad3c0-f492-412e-8f0d-94ff8b25c334"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Sonic%20Adventure%202%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Sonic%20Adventure%202%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+          "caption": "Dreamcast-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Sonic%20Adventure%202%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        }
       ]
     },
     {
@@ -77,7 +93,23 @@
       "platforms": [
         "Nintendo GameCube"
       ],
-      "year": 2001
+      "year": 2001,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Sonic%20Adventure%202_%20Battle%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Sonic%20Adventure%202%20-%20Battle%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Sonic%20Adventure%202%20-%20Battle%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
+      ]
     },
     {
       "id": "pc-2012",

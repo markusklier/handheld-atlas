@@ -26,11 +26,25 @@
     },
     {
       "id": "pc-2016",
-      "name": "PC, PlayStation 4 (2016)",
+      "name": "PC (2016)",
       "type": "port",
       "year": 2016,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q17154489"
+        }
+      ]
+    },
+    {
+      "id": "pc-2016-playstation-4",
+      "name": "PlayStation 4 (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
         "PlayStation 4"
       ],
       "links": [
@@ -60,7 +74,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/2/29/Rise_of_the_Tomb_Raider.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Rise_of_the_Tomb_Raider"

@@ -23,7 +23,18 @@
       "name": "PC (1996)",
       "type": "original",
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "year": 1996,
+      "traits": [
+        "mods"
+      ]
+    },
+    {
+      "id": "pc-macintosh",
+      "name": "Macintosh (1996)",
+      "type": "original",
+      "platforms": [
         "Macintosh"
       ],
       "year": 1996,
@@ -48,6 +59,22 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/Final_Doom"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Final%20Doom%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Final%20Doom%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Final%20Doom%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
         }
       ]
     },
@@ -91,13 +118,67 @@
     },
     {
       "id": "unity-2020",
-      "name": "Offizielle Add-ons für DOOM / DOOM II (2020)",
+      "name": "Offizielle Add-ons für DOOM / DOOM II – PC (2020)",
       "type": "rerelease",
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii"
+        }
+      ]
+    },
+    {
+      "id": "unity-2020-playstation-4",
+      "name": "Offizielle Add-ons für DOOM / DOOM II – PlayStation 4, Xbox One (2020)",
+      "type": "rerelease",
+      "platforms": [
         "PlayStation 4",
-        "Xbox One",
-        "Nintendo Switch",
+        "Xbox One"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii"
+        }
+      ]
+    },
+    {
+      "id": "unity-2020-nintendo-switch",
+      "name": "Offizielle Add-ons für DOOM / DOOM II – Nintendo Switch (2020)",
+      "type": "rerelease",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2020,
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii"
+        }
+      ]
+    },
+    {
+      "id": "unity-2020-android",
+      "name": "Offizielle Add-ons für DOOM / DOOM II – Android, iOS (2020)",
+      "type": "rerelease",
+      "platforms": [
         "Android",
         "iOS"
       ],
@@ -116,15 +197,10 @@
     },
     {
       "id": "kex-2024",
-      "name": "Final Doom in DOOM + DOOM II (2024)",
+      "name": "Final Doom in DOOM + DOOM II – PC (2024)",
       "type": "remaster",
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "year": 2024,
       "traits": [
@@ -136,6 +212,55 @@
         "widescreen"
       ],
       "note": "Die am 8. August 2024 erschienene erweiterte Neuauflage enthält beide Kampagnen direkt und ergänzt unter anderem plattformübergreifenden Koop und Deathmatch sowie einen Mod-Browser. Keine offizielle Android-Ausgabe dieses Remasters; die mobilen Unity-Apps sind davon zu unterscheiden.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024-playstation-4",
+      "name": "Final Doom in DOOM + DOOM II – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "remaster",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes"
+        }
+      ]
+    },
+    {
+      "id": "kex-2024-nintendo-switch",
+      "name": "Final Doom in DOOM + DOOM II – Nintendo Switch (2024)",
+      "type": "remaster",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "year": 2024,
+      "traits": [
+        "controller",
+        "crossplay",
+        "high-fps",
+        "mods",
+        "online",
+        "widescreen"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -323,7 +448,7 @@
       "id": "ai-offizielle-android-app-mit-final-doom-add-ons",
       "name": "Offizielle Android-App mit Final-Doom-Add-ons",
       "kind": "native",
-      "release": "unity-2020",
+      "release": "unity-2020-android",
       "runtime": "DOOM oder DOOM II von Bethesda",
       "projects": [
         "doom-ii-fur-android"
@@ -445,7 +570,8 @@
       "description": "TNT31.WAD korrigiert den im Einzelspieler fehlenden gelben Schlüssel in Pharaoh. Als zusätzliche WAD nach TNT.WAD laden; bei bereits korrigierten Spieldaten ist dieser Patch nicht erforderlich.",
       "verification": "ai-unverified",
       "release": [
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     },
     {
@@ -458,7 +584,8 @@
       "verification": "ai-unverified",
       "release": [
         "anthology",
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     },
     {
@@ -471,7 +598,8 @@
       "verification": "ai-unverified",
       "release": [
         "anthology",
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     },
     {
@@ -484,7 +612,8 @@
       "verification": "ai-unverified",
       "release": [
         "anthology",
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     },
     {
@@ -497,11 +626,12 @@
       "verification": "ai-unverified",
       "release": [
         "anthology",
-        "pc"
+        "pc",
+        "pc-macintosh"
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/0/02/Final_Doom_Coverart.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Final_Doom"

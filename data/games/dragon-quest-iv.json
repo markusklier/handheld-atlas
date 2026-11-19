@@ -22,6 +22,22 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/Dragon_Quest_IV"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Boxarts/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Snaps/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+          "caption": "NES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System/master/Named_Titles/Dragon%20Quest%20IV%20%281990-02-11%29%28Enix%29%28JP%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_Entertainment_System"
+        }
       ]
     }
   ],

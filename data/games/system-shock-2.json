@@ -47,18 +47,46 @@
     },
     {
       "id": "remaster-2025",
-      "name": "25th Anniversary Remaster (2025)",
+      "name": "25th Anniversary Remaster – PC (2025)",
       "type": "remaster",
       "year": 2025,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "note": "Nightdive-Remaster mit eigener Engine; PC am 26. Juni 2025, Konsolen am 10. Juli 2025.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.rpgsite.net/news/17838-system-shock-2-25th-anniversary-remaster-console-release-date-switch-ps5-ps4-xbox"
+        }
+      ]
+    },
+    {
+      "id": "remaster-2025-playstation-5",
+      "name": "25th Anniversary Remaster – PlayStation 5, PlayStation 4, Xbox Series, Xbox One (2025)",
+      "type": "remaster",
+      "year": 2025,
+      "platforms": [
         "PlayStation 5",
         "PlayStation 4",
         "Xbox Series",
-        "Xbox One",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.rpgsite.net/news/17838-system-shock-2-25th-anniversary-remaster-console-release-date-switch-ps5-ps4-xbox"
+        }
+      ]
+    },
+    {
+      "id": "remaster-2025-nintendo-switch",
+      "name": "25th Anniversary Remaster – Nintendo Switch (2025)",
+      "type": "remaster",
+      "year": 2025,
+      "platforms": [
         "Nintendo Switch"
       ],
-      "note": "Nightdive-Remaster mit eigener Engine; PC am 26. Juni 2025, Konsolen am 10. Juli 2025.",
       "links": [
         {
           "label": "Quelle",
@@ -134,7 +162,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Systemshock2box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/System_Shock_2"

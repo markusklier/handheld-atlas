@@ -21,7 +21,11 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Silent%20Hill%20-%20Book%20Of%20Memories%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+      }
     }
   ],
   "routes": [],

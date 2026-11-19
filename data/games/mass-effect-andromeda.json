@@ -12,11 +12,25 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 4, Xbox One (2017)",
+      "name": "PC (2017)",
       "type": "original",
       "year": 2017,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Mass_Effect:_Andromeda"
+        }
+      ]
+    },
+    {
+      "id": "multi-playstation-4",
+      "name": "PlayStation 4, Xbox One (2017)",
+      "type": "original",
+      "year": 2017,
+      "platforms": [
         "PlayStation 4",
         "Xbox One"
       ],
@@ -30,7 +44,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q20113552",
   "wikipedia": "https://en.wikipedia.org/wiki/Mass_Effect%3A_Andromeda",
   "cover": {

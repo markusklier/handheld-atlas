@@ -280,7 +280,11 @@
           "url": "https://www.emuready.com/games/6d0dff78-b5fe-47db-82de-69f7260ddb14"
         }
       ],
-      "year": 2016
+      "year": 2016,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/413150/"
+      }
     },
     {
       "id": "linux-2016",

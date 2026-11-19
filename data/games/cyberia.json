@@ -22,24 +22,58 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Cyberia_(video_game)"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/624080/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/624080/"
+      }
     },
     {
       "id": "konsolen",
-      "name": "FM Towns/3DO/Saturn/PlayStation (1995–1996)",
+      "name": "FM Towns, 3DO, Sega Saturn (1995)",
       "type": "port",
       "year": 1995,
       "platforms": [
         "FM Towns",
         "3DO",
-        "Sega Saturn",
-        "PlayStation"
+        "Sega Saturn"
       ],
       "note": "Portierungen 1995 (FM Towns, Japan) und 1996 (3DO, Saturn, PlayStation).",
       "links": [
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Cyberia_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "konsolen-playstation",
+      "name": "PlayStation (1995)",
+      "type": "port",
+      "year": 1995,
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cyberia_(video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Cyberia%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Cyberia%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Cyberia%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
         }
       ]
     }
@@ -104,7 +138,7 @@
   ],
   "mods": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Cyberia_(video_game)",
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1147147",
   "website": "https://www.interplay.com",
   "cover": {

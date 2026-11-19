@@ -84,6 +84,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/25557ee5-5d55-48b0-a245-6ea9bf0094e3"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Killzone%20-%20Liberation%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CNl%2CPl%2CRu%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Killzone%20-%20Liberation%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CNl%2CPl%2CRu%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Killzone%20-%20Liberation%20%28USA%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CNl%2CPl%2CRu%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
       ]
     }
   ],

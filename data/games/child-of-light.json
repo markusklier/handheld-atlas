@@ -29,18 +29,31 @@
       "platforms": [
         "PlayStation Vita"
       ],
-      "year": 2014
+      "year": 2014,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Snaps/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+          "caption": "PlayStation Vita-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Titles/Child%20of%20Light%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%2CRu%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+        }
+      ]
     },
     {
       "id": "pc-2014",
-      "name": "PC, PlayStation 3, PlayStation 4 (2014)",
+      "name": "PC (2014)",
       "type": "port",
       "year": 2014,
       "platforms": [
-        "PC",
-        "PlayStation 3",
-        "PlayStation 4",
-        "Wii U"
+        "PC"
       ],
       "links": [
         {
@@ -55,12 +68,42 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/44a5c9de-3d4a-462d-8fd1-64596cdf5dd3"
         }
+      ]
+    },
+    {
+      "id": "pc-2014-playstation-3",
+      "name": "PlayStation 3, PlayStation 4 (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 3",
+        "PlayStation 4"
       ],
-      "reports": []
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16319370"
+        }
+      ]
+    },
+    {
+      "id": "pc-2014-wii-u",
+      "name": "Wii U (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Wii U"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q16319370"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikipedia": "https://en.wikipedia.org/wiki/Child_of_Light",
   "genre": "platform game",
   "wikidata": "Q16319370"

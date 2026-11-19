@@ -24,7 +24,18 @@
       "platforms": [
         "PSP"
       ],
-      "year": 2006
+      "year": 2006,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Syphon%20Filter%20-%20Dark%20Mirror%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Syphon%20Filter%20-%20Dark%20Mirror%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
+      ]
     }
   ],
   "routes": [],

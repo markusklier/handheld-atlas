@@ -9,24 +9,102 @@
     "PC",
     "Wii",
     "Xbox 360",
-    "mobile phone"
+    "mobile phone",
+    "PlayStation 4",
+    "PlayStation 5"
   ],
   "genre": "Action-Adventure",
   "summary": "Neu gebautes Remake des ersten Tomb Raider (2007, Crystal Dynamics). Auf Android läuft es über PS2- oder PSP-Emulation; für beide gibt es Bildraten- bzw. Kamera-Patches.",
   "versions": [
     {
       "id": "playstation-2",
-      "name": "Tomb Raider: Anniversary (2007)",
+      "name": "Tomb Raider: Anniversary – PlayStation 2 (2007)",
       "type": "original",
       "year": 2007,
       "platforms": [
-        "PlayStation 2",
-        "PC",
-        "PSP",
-        "Wii",
-        "Xbox 360"
+        "PlayStation 2"
       ],
       "note": "Remake des ersten Teils mit der Engine von Tomb Raider: Legend und überarbeiteten Levels; 2007 für PS2, PC, PSP, Xbox 360 und Wii erschienen. Per PS2- oder PSP-Emulation spielbar; dafür gibt es Bildraten- und Steuerungs-Patches.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        },
+        {
+          "label": "Veröffentlichungen (Tomb Raider Wiki)",
+          "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2-pc",
+      "name": "Tomb Raider: Anniversary – PC (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        },
+        {
+          "label": "Veröffentlichungen (Tomb Raider Wiki)",
+          "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2-psp",
+      "name": "Tomb Raider: Anniversary – PSP (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        },
+        {
+          "label": "Veröffentlichungen (Tomb Raider Wiki)",
+          "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2-wii",
+      "name": "Tomb Raider: Anniversary – Wii (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomb_Raider:_Anniversary"
+        },
+        {
+          "label": "Veröffentlichungen (Tomb Raider Wiki)",
+          "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Tomb%20Raider_%20Anniversary%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      }
+    },
+    {
+      "id": "playstation-2-xbox-360",
+      "name": "Tomb Raider: Anniversary – Xbox 360 (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Xbox 360"
+      ],
       "links": [
         {
           "label": "Wikipedia",
@@ -92,6 +170,26 @@
         }
       ],
       "note": "PS3-Sammlung mit Legend, Anniversary und Underworld; Anniversary mit überarbeiteter Grafik und eigenen Trophäen. Nur auf PS3 erschienen."
+    },
+    {
+      "id": "anniversary-ps4-ps5",
+      "name": "Tomb Raider: Anniversary – PlayStation-Neuauflage",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5"
+      ],
+      "year": 2025,
+      "traits": [
+        "controller"
+      ],
+      "note": "Zusätzliche offizielle Wiederveröffentlichung von Anniversary im PlayStation Store vom 18. November 2025.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store"
+        }
+      ]
     }
   ],
   "routes": [],
@@ -105,7 +203,7 @@
       "description": "CWCheat-Patch von Kabuto_Kun für unabhängige Kamera- und Zielsteuerung mit dem rechten Analogstick in PPSSPP. Die spielinternen Optionen zur Achseninvertierung bleiben nutzbar. Android-tauglicher Kamerapatch, kein Vita-exklusives PRX-Plugin.",
       "verification": "ai-unverified",
       "release": [
-        "playstation-2"
+        "playstation-2-psp"
       ]
     },
     {

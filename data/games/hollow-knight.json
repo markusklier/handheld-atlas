@@ -181,12 +181,10 @@
     },
     {
       "id": "pc",
-      "name": "PC",
+      "name": "PC (2017)",
       "type": "release",
       "platforms": [
-        "PC",
-        "Macintosh",
-        "Linux"
+        "PC"
       ],
       "year": 2017,
       "note": "Windows erschien am 24. Februar 2017; macOS und Linux folgten am 11. April desselben Jahres. Grundlage für PC-Mods und die hier aufgeführten Android-Fanprojekte; das offizielle Update von 2026 ergänzt unter anderem 16:10- und 21:9-Unterstützung.",
@@ -194,6 +192,12 @@
         "controller",
         "mods",
         "widescreen"
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/fdcea87b-192e-4a03-a502-9b97c684a8fa"
+        }
       ],
       "reports": [
         {
@@ -365,20 +369,50 @@
           "date": "2025-09-17"
         }
       ],
-      "links": [
-        {
-          "label": "EmuReady",
-          "url": "https://www.emuready.com/games/fdcea87b-192e-4a03-a502-9b97c684a8fa"
-        }
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/367520/"
+      }
+    },
+    {
+      "id": "pc-macintosh",
+      "name": "Macintosh, Linux (2017)",
+      "type": "release",
+      "platforms": [
+        "Macintosh",
+        "Linux"
+      ],
+      "year": 2017,
+      "traits": [
+        "controller",
+        "mods",
+        "widescreen"
       ]
     },
     {
       "id": "voidheart-2018",
-      "name": "Voidheart Edition (2018)",
+      "name": "Voidheart Edition – PlayStation 4, Xbox One (2018)",
       "type": "port",
       "platforms": [
         "PlayStation 4",
-        "Xbox One",
+        "Xbox One"
+      ],
+      "year": 2018,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.xbox.com/en-US/games/store/hollow-knight-voidheart-edition/9MW9469V91LM/0010/9ZMKD799TP74"
+        }
+      ]
+    },
+    {
+      "id": "voidheart-2018-pc",
+      "name": "Voidheart Edition – PC (2018)",
+      "type": "port",
+      "platforms": [
         "PC"
       ],
       "year": 2018,
@@ -520,7 +554,7 @@
       "id": "ai-hollow-knight-android-experimenteller-arm64-neuaufbau",
       "name": "Hollow Knight Android – experimenteller ARM64-Neuaufbau",
       "kind": "native",
-      "release": "pc",
+      "release": "pc-macintosh",
       "runtime": "Android-Launcher mit geräteinterner Konvertierung der Linux-Fassung",
       "projects": [
         "hollowknightandroid"
@@ -668,7 +702,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "mods": [
     {
       "id": "customknight-skins",

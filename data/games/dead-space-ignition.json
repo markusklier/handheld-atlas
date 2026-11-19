@@ -11,11 +11,25 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PlayStation 3, Xbox 360 (2010)",
+      "name": "PlayStation 3 (2010)",
       "type": "original",
       "year": 2010,
       "platforms": [
-        "PlayStation 3",
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
         "Xbox 360"
       ],
       "links": [

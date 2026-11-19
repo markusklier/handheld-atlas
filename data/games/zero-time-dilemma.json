@@ -17,11 +17,25 @@
     },
     {
       "id": "nintendo-3ds-2016",
-      "name": "Nintendo 3DS, PC (2016)",
+      "name": "Nintendo 3DS (2016)",
       "type": "port",
       "year": 2016,
       "platforms": [
-        "Nintendo 3DS",
+        "Nintendo 3DS"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q15845307"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds-2016-pc",
+      "name": "PC (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
         "PC"
       ],
       "links": [
@@ -63,7 +77,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/6/6b/Zero_Time_Dilemma.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Zero_Time_Dilemma"

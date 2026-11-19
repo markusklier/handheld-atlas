@@ -15,7 +15,11 @@
       "platforms": [
         "PC"
       ],
-      "year": 2014
+      "year": 2014,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289690/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/289690/"
+      }
     },
     {
       "id": "playstation-4",

@@ -60,6 +60,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/cf0f3a10-5ee8-4d48-9e9a-783f7f297e7c"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Resident%20Evil%20Zero%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Resident%20Evil%20Zero%20%28USA%29%20%28Disc%201%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Resident%20Evil%20Zero%20%28USA%29%20%28Disc%201%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     },
     {
@@ -79,11 +95,25 @@
     },
     {
       "id": "pc-2016",
-      "name": "PC, PlayStation 3, PlayStation 4 (2016)",
+      "name": "PC (2016)",
       "type": "port",
       "year": 2016,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q1056069"
+        }
+      ]
+    },
+    {
+      "id": "pc-2016-playstation-3",
+      "name": "PlayStation 3, PlayStation 4 (2016)",
+      "type": "port",
+      "year": 2016,
+      "platforms": [
         "PlayStation 3",
         "PlayStation 4"
       ],
@@ -96,7 +126,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1056069",
   "wikipedia": "https://en.wikipedia.org/wiki/Resident_Evil_Zero",
   "genre": "survival horror",

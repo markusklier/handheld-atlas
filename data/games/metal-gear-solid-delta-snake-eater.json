@@ -12,11 +12,25 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 5, Xbox Series (2025)",
+      "name": "PC (2025)",
       "type": "original",
       "year": 2025,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "multi-playstation-5",
+      "name": "PlayStation 5, Xbox Series (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
         "PlayStation 5",
         "Xbox Series"
       ],

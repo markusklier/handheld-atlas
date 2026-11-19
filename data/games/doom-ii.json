@@ -61,20 +61,19 @@
       "traits": [
         "mods"
       ],
-      "note": "Die klassischen WAD-Spieldaten. Grundlage für Source-Ports wie Delta Touch und für die riesige Mod-Szene (z. B. Brutal Doom)."
+      "note": "Die klassischen WAD-Spieldaten. Grundlage für Source-Ports wie Delta Touch und für die riesige Mod-Szene (z. B. Brutal Doom).",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2300/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2300/"
+      }
     },
     {
       "id": "doom-doom-ii-2024",
-      "name": "DOOM + DOOM II (2024)",
+      "name": "DOOM + DOOM II – PC (2024)",
       "type": "rerelease",
       "year": 2024,
       "platforms": [
-        "PC",
-        "PlayStation 4",
-        "PlayStation 5",
-        "Xbox One",
-        "Xbox Series",
-        "Nintendo Switch"
+        "PC"
       ],
       "traits": [
         "crossplay",
@@ -82,6 +81,49 @@
         "upscaling"
       ],
       "note": "Neuauflage von id Software und Nightdive (KEX-Engine): Crossplay-Deathmatch und -Koop für bis zu 16 Spieler, Mods direkt im Spiel, 4K und die neue Episode „Legacy of Rust“.",
+      "links": [
+        {
+          "label": "Quelle: PC Gamer",
+          "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
+        }
+      ]
+    },
+    {
+      "id": "doom-doom-ii-2024-playstation-4",
+      "name": "DOOM + DOOM II – PlayStation 4, PlayStation 5, Xbox One, Xbox Series (2024)",
+      "type": "rerelease",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 4",
+        "PlayStation 5",
+        "Xbox One",
+        "Xbox Series"
+      ],
+      "traits": [
+        "crossplay",
+        "mods",
+        "upscaling"
+      ],
+      "links": [
+        {
+          "label": "Quelle: PC Gamer",
+          "url": "https://pcgamer.com/games/fps/id-software-just-surprise-launched-doom-doom-2-a-definitive-bundle-that-adds-cross-platform-multiplayer-and-in-game-mod-support-to-every-retro-doom"
+        }
+      ]
+    },
+    {
+      "id": "doom-doom-ii-2024-nintendo-switch",
+      "name": "DOOM + DOOM II – Nintendo Switch (2024)",
+      "type": "rerelease",
+      "year": 2024,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "traits": [
+        "crossplay",
+        "mods",
+        "upscaling"
+      ],
       "links": [
         {
           "label": "Quelle: PC Gamer",
@@ -217,6 +259,22 @@
           "label": "Quelle",
           "url": "https://investor.activision.com/static-files/31b89230-c1c5-4581-bbc7-90e8ca9c35c8"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Boxarts/Doom%20II%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Snaps/Doom%20II%20%28USA%29.png",
+          "caption": "Game Boy Advance-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance/master/Named_Titles/Doom%20II%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
+        }
       ]
     },
     {
@@ -279,19 +337,53 @@
     },
     {
       "id": "bfg-2012",
-      "name": "DOOM II in DOOM 3: BFG Edition (2012)",
+      "name": "DOOM II in DOOM 3: BFG Edition – PC (2012)",
       "type": "rerelease",
       "platforms": [
-        "PC",
-        "PlayStation 3",
-        "Xbox 360",
-        "Android (NVIDIA SHIELD)"
+        "PC"
       ],
       "year": 2012,
       "traits": [
         "controller"
       ],
       "note": "Enthält DOOM II einschließlich No Rest for the Living mit gegenüber dem DOS-Original veränderten Inhalten. Die offizielle Android-Portierung erschien am 4. Juni 2015 für SHIELD Tablet und SHIELD TV; sie ist keine allgemeine Snapdragon-Android-Fassung.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "bfg-2012-playstation-3",
+      "name": "DOOM II in DOOM 3: BFG Edition – PlayStation 3, Android (NVIDIA SHIELD) (2012)",
+      "type": "rerelease",
+      "platforms": [
+        "PlayStation 3",
+        "Android (NVIDIA SHIELD)"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Doom_3"
+        }
+      ]
+    },
+    {
+      "id": "bfg-2012-xbox-360",
+      "name": "DOOM II in DOOM 3: BFG Edition – Xbox 360 (2012)",
+      "type": "rerelease",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2012,
+      "traits": [
+        "controller"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -631,12 +723,12 @@
       "description": "Offiziell veröffentlichte Sammlung zusätzlicher Karten. Bei der Android-Jubiläumsfassung bereits enthalten; bei einem PC-Source-Port müssen die entsprechenden Karten aus dem eigenen Kaufbestand stammen.",
       "verification": "ai-unverified",
       "release": [
-        "doom-doom-ii-2024",
-        "pc"
+        "pc",
+        "doom-doom-ii-2024"
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q755186",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_II",
   "playStore": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII"

@@ -30,12 +30,41 @@
     },
     {
       "id": "master-collection-vol-1",
-      "name": "Master Collection Vol. 1 (2023)",
+      "name": "Master Collection Vol. 1 – PC (2023)",
       "type": "collection",
       "year": 2023,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ],
+      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+    },
+    {
+      "id": "master-collection-vol-1-nintendo-switch",
+      "name": "Master Collection Vol. 1 – Nintendo Switch (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-1-playstation-4",
+      "name": "Master Collection Vol. 1 – PlayStation 4, PlayStation 5, Xbox Series (2023)",
+      "type": "collection",
+      "year": 2023,
+      "platforms": [
         "PlayStation 4",
         "PlayStation 5",
         "Xbox Series"
@@ -45,13 +74,12 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
-      ],
-      "note": "Sammlung mit Metal Gear, Metal Gear 2, Metal Gear Solid, MGS2 und MGS3; die PC-Fassung ist der Ausgangspunkt für Windows-Laufzeiten auf Android."
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1995422",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear_2%3A_Solid_Snake",
   "cover": {

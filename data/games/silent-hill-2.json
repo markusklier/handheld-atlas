@@ -33,17 +33,46 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2001
+      "year": 2001,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "restless-dreams",
-      "name": "Restless Dreams / Director's Cut (2001)",
+      "name": "Restless Dreams / Director's Cut – Xbox (2001)",
       "type": "rerelease",
       "year": 2001,
       "platforms": [
-        "Xbox",
-        "PC",
-        "PlayStation 2"
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
+    },
+    {
+      "id": "restless-dreams-pc",
+      "name": "Restless Dreams / Director's Cut – PC (2001)",
+      "type": "rerelease",
+      "year": 2001,
+      "platforms": [
+        "PC"
       ],
       "links": [
         {
@@ -54,13 +83,43 @@
       "note": "Erweiterte Fassung mit dem Szenario „Born from a Wish“; PC-Fassung 2002 – Basis der Fan-Mod „Enhanced Edition“."
     },
     {
+      "id": "restless-dreams-playstation-2",
+      "name": "Restless Dreams / Director's Cut – PlayStation 2 (2001)",
+      "type": "rerelease",
+      "year": 2001,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Silent%20Hill%202%20%28USA%29%20%28En%2CJa%29%20%28v1.20%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
+    },
+    {
       "id": "hd-collection",
-      "name": "Silent Hill HD Collection (2012)",
+      "name": "Silent Hill HD Collection – PlayStation 3 (2012)",
       "type": "collection",
       "year": 2012,
       "platforms": [
-        "PlayStation 3",
-        "Xbox 360"
+        "PlayStation 3"
       ],
       "links": [
         {
@@ -69,10 +128,25 @@
         }
       ],
       "note": "HD-Sammlung mit Silent Hill 2 und 3 (neu eingesprochen, umstritten)."
+    },
+    {
+      "id": "hd-collection-xbox-360",
+      "name": "Silent Hill HD Collection – Xbox 360 (2012)",
+      "type": "collection",
+      "year": 2012,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q752835",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_2",
   "genre": "psychological horror fiction",
@@ -86,7 +160,7 @@
       "description": "Fan-Projekt für die PC-Fassung: läuft auf aktuellen Windows-Versionen, Widescreen, wiederhergestellter Nebel und Schatten, bessere Audio-, Bild- und Videoqualität, Fehlerkorrekturen. Unter Winlator/GameHub auf Android ungeprüft.",
       "verification": "ai-unverified",
       "release": [
-        "restless-dreams"
+        "restless-dreams-pc"
       ]
     }
   ]

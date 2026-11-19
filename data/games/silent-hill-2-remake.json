@@ -11,12 +11,30 @@
   "versions": [
     {
       "id": "ps5-pc",
-      "name": "PlayStation 5 und PC (2024)",
+      "name": "PC (2024)",
       "type": "original",
       "year": 2024,
       "platforms": [
-        "PlayStation 5",
         "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        }
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2124490/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2124490/"
+      }
+    },
+    {
+      "id": "ps5-pc-playstation-5",
+      "name": "PlayStation 5 (2024)",
+      "type": "original",
+      "year": 2024,
+      "platforms": [
+        "PlayStation 5"
       ],
       "links": [
         {
@@ -43,7 +61,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "remakeOf": "silent-hill-2",
   "wikidata": "Q114770599",
   "website": "https://www.blooberteam.com/silent-hill-2",

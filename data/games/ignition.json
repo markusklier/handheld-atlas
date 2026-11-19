@@ -21,7 +21,11 @@
           "label": "Quelle",
           "url": "https://github.com/mxvisor/ignition-recomp"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/577990/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/577990/"
+      }
     }
   ],
   "routes": [

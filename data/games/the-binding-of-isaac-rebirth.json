@@ -201,7 +201,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/4ac986f6-21f8-4426-b9ab-4685255ef1f7"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/250900/"
+      }
     },
     {
       "id": "the-binding-of-isaac-afterbirth",

@@ -12,17 +12,47 @@
   "versions": [
     {
       "id": "ps1-pc",
-      "name": "PlayStation, PC (1997)",
+      "name": "PC (1997)",
       "type": "original",
       "year": 1997,
       "platforms": [
-        "PlayStation",
         "PC"
       ],
       "links": [
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/Nightmare_Creatures"
+        }
+      ]
+    },
+    {
+      "id": "ps1-pc-playstation",
+      "name": "PlayStation (1997)",
+      "type": "original",
+      "year": 1997,
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/Nightmare_Creatures"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Nightmare%20Creatures%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Nightmare%20Creatures%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Nightmare%20Creatures%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
         }
       ]
     },
@@ -38,6 +68,22 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/Nightmare_Creatures"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Nightmare%20Creatures%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Snaps/Nightmare%20Creatures%20%28USA%29.png",
+          "caption": "Nintendo 64-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Titles/Nightmare%20Creatures%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"
         }
       ]
     }
@@ -98,7 +144,7 @@
     }
   ],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q536833",
   "wikipedia": "https://en.wikipedia.org/wiki/Nightmare_Creatures",
   "cover": {

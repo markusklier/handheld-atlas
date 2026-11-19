@@ -57,6 +57,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/3ac64f4a-a357-4704-9251-ff5642ca37be"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Soulcalibur%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Soulcalibur%20%28USA%29.png",
+          "caption": "Dreamcast-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Soulcalibur%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        }
       ]
     },
     {
@@ -65,8 +81,7 @@
       "type": "port",
       "year": 1998,
       "platforms": [
-        "arcade",
-        "arcade video game machine"
+        "Arcade"
       ],
       "links": [
         {

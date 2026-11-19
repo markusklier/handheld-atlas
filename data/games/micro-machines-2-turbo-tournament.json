@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+          "caption": "Sega Mega Drive-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        }
       ]
     },
     {
@@ -42,6 +58,22 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q3312023"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+          "caption": "SNES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
         }
       ]
     }

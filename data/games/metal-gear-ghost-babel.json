@@ -26,16 +26,61 @@
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Metal%20Gear%20-%20Ghost%20Babel%20%28Japan%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        }
       ]
     },
     {
       "id": "master-collection-vol-2",
-      "name": "Master Collection Vol. 2 (2026)",
+      "name": "Master Collection Vol. 2 – PC (2026)",
       "type": "collection",
       "year": 2026,
       "platforms": [
-        "PC",
-        "Nintendo Switch",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ],
+      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch",
+      "name": "Master Collection Vol. 2 – Nintendo Switch (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
+        }
+      ]
+    },
+    {
+      "id": "master-collection-vol-2-nintendo-switch-2",
+      "name": "Master Collection Vol. 2 – Nintendo Switch 2, PlayStation 5, Xbox Series (2026)",
+      "type": "collection",
+      "year": 2026,
+      "platforms": [
         "Nintendo Switch 2",
         "PlayStation 5",
         "Xbox Series"
@@ -45,13 +90,12 @@
           "label": "Quelle",
           "url": "https://www.gematsu.com/games/metal-gear-solid-master-collection-vol-2"
         }
-      ],
-      "note": "Sammlung mit MGS4, Peace Walker (HD-Fassung) und Ghost Babel, erschienen am 27. August 2026."
+      ]
     }
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q2600361",
   "wikipedia": "https://en.wikipedia.org/wiki/Metal_Gear%3A_Ghost_Babel",
   "cover": {

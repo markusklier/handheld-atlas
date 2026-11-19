@@ -36,5 +36,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/en/3/32/Dead_Space_%28mobile%29_gameplay.jpg",
     "source": "https://en.wikipedia.org/wiki/Dead_Space_%28mobile_game%29",
     "fallback": true
-  }
+  },
+  "notRemake": true
 }

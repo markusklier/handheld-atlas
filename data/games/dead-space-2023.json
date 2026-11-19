@@ -13,11 +13,29 @@
   "versions": [
     {
       "id": "multi",
-      "name": "PC, PlayStation 5, Xbox Series (2023)",
+      "name": "PC (2023)",
       "type": "original",
       "year": 2023,
       "platforms": [
-        "PC",
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        }
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1693980/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/1693980/"
+      }
+    },
+    {
+      "id": "multi-playstation-5",
+      "name": "PlayStation 5, Xbox Series (2023)",
+      "type": "original",
+      "year": 2023,
+      "platforms": [
         "PlayStation 5",
         "Xbox Series"
       ],

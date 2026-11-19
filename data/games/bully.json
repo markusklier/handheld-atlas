@@ -83,16 +83,31 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/0211a865-ea0e-48c0-92e0-0c8c118a1a7a"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Bully%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Bully%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Bully%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
       "id": "pc-2008",
-      "name": "PC, Wii (2008)",
+      "name": "PC (2008)",
       "type": "port",
       "year": 2008,
       "platforms": [
-        "PC",
-        "Wii"
+        "PC"
       ],
       "links": [
         {
@@ -103,8 +118,22 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/705ff95c-c316-431c-a90d-6edb4ef7335b"
         }
+      ]
+    },
+    {
+      "id": "pc-2008-wii",
+      "name": "Wii (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Wii"
       ],
-      "reports": []
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q822849"
+        }
+      ]
     },
     {
       "id": "android-2016",
@@ -123,7 +152,7 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-19",
   "wikipedia": "https://en.wikipedia.org/wiki/Bully_%28video_game%29",
   "genre": "action-adventure game",
   "wikidata": "Q822849"

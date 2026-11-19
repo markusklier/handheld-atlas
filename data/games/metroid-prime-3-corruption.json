@@ -30,21 +30,74 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2007
+      "year": 2007,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Metroid%20Prime%203_%20Corruption%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Metroid%20Prime%203_%20Corruption%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Metroid%20Prime%203_%20Corruption%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
+      ]
     },
     {
       "id": "trilogy",
-      "name": "Metroid Prime: Trilogy",
+      "name": "Metroid Prime: Trilogy – Wii (2009)",
       "type": "collection",
       "platforms": [
-        "Wii",
-        "Wii U"
+        "Wii"
       ],
       "year": 2009,
       "traits": [
         "widescreen"
       ],
       "note": "Überarbeitete Corruption-Fassung innerhalb der Trilogie, unter anderem mit verändertem Bonusmenü, versetzten Logbucheinträgen und Fehlerkorrekturen; keine bloß unveränderte Sammelbox. 2015 auch als Wii-Download auf Wii U erschienen, nicht als eigenständiger HD-Port.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://www.nintendo.com/en-gb/Games/Wii/Metroid-Prime-Trilogy-282035.html"
+        },
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2539933"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Metroid%20Prime%20Trilogy%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Metroid%20Prime%20Trilogy%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Metroid%20Prime%20Trilogy%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
+      ]
+    },
+    {
+      "id": "trilogy-wii-u",
+      "name": "Metroid Prime: Trilogy – Wii U (2009)",
+      "type": "collection",
+      "platforms": [
+        "Wii U"
+      ],
+      "year": 2009,
+      "traits": [
+        "widescreen"
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -119,7 +172,7 @@
       "checkedAt": "2026-11-10"
     }
   ],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-19",
   "wikidata": "Q1987193",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_3%3A_Corruption",
   "genre": "first-person shooter",
@@ -133,8 +186,8 @@
       "description": "Gigapixel-AI-Hochskalierung der Spieltexturen, einschließlich Schriften; laut Autor zwischen Einzelspiel und Trilogy austauschbar. Über Dolphins beziehungsweise PrimeHacks Custom-Textures-Funktion nutzbar; das vollständige Vorladen ist sehr speicherintensiv.",
       "verification": "ai-unverified",
       "release": [
-        "trilogy",
-        "wii"
+        "wii",
+        "trilogy"
       ]
     },
     {
@@ -146,8 +199,8 @@
       "description": "Handgezeichnete Ersatztexturen für unscharfe HUD- und Menüelemente; ausdrücklich mit dem eigenständigen Prime 3 und Trilogy kompatibel. Enthält außerdem optionale kleine Fadenkreuze für PrimeHack.",
       "verification": "ai-unverified",
       "release": [
-        "trilogy",
-        "wii"
+        "wii",
+        "trilogy"
       ]
     },
     {

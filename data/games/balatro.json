@@ -252,7 +252,11 @@
           "url": "https://www.emuready.com/games/b06d6375-6641-4573-9851-a3b5ecfc63c5"
         }
       ],
-      "year": 2024
+      "year": 2024,
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/2379780/"
+      }
     },
     {
       "id": "android",

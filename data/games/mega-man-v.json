@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Game Boy / Game Boy Color"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Boxarts/Mega%20Man%20V%20%28USA%29%20%28SGB%20Enhanced%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Snaps/Mega%20Man%20V%20%28USA%29%20%28SGB%20Enhanced%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy/master/Named_Titles/Mega%20Man%20V%20%28USA%29%20%28SGB%20Enhanced%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy"
+        }
       ]
     }
   ],

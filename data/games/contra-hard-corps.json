@@ -28,6 +28,22 @@
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Contra%20-%20Hard%20Corps%20%28USA%29%20%28Genesis%20Mini%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Snaps/Contra%20-%20Hard%20Corps%20%28USA%29%20%28Genesis%20Mini%29.png",
+          "caption": "Sega Mega Drive-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Titles/Contra%20-%20Hard%20Corps%20%28USA%29%20%28Genesis%20Mini%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
+        }
       ]
     }
   ],

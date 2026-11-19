@@ -83,7 +83,11 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/c9476bd7-0110-4c78-8ef9-587e1b320bc4"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Vita/master/Named_Boxarts/Gravity%20Rush%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Vita"
+      }
     }
   ],
   "routes": [],
