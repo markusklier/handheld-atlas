@@ -503,6 +503,51 @@
       ],
       "performance": [],
       "checkedAt": "2026-11-09"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": "Live-Tracker: Karte beider Welten, Items, Checks, Zeit und Hinweise",
+      "steps": [],
+      "version": null,
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-metroid.png",
+          "caption": "Super Metroid oben, Tracker mit Karte unten (AYN Thor)",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "source-verified",
+          "dual": true
+        }
+      ],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "smz3-universe",
+      "name": "SMZ3 Universe (Randomizer mit Tracker)",
+      "release": "snes",
+      "kind": "emulator-mod",
+      "runtime": "Eigene App für den Thor (Randomizer + Tracker)",
+      "projects": [
+        "smz3-universe"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene ROMs von Super Metroid und A Link to the Past (beide nötig)"
+      ],
+      "benefit": "Kombinierter SMZ3-Randomizer: beide Spiele in einem Durchlauf, Tracker live auf dem unteren Bildschirm, Rücklauf und Sprite-Auswahl.",
+      "caveat": "Kein normales Durchspielen: Es ist ein Randomizer, der beide Spiele zu einem Lauf verbindet.",
+      "effort": "guided"
     }
   ],
   "updatedAt": "2026-11-19",

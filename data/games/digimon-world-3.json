@@ -1,0 +1,67 @@
+{
+  "id": "digimon-world-3",
+  "title": "Digimon World 3",
+  "franchise": "Digimon World",
+  "platforms": [
+    "PlayStation"
+  ],
+  "genre": "role-playing video game",
+  "summary": "PS1-Rollenspiel von 2002 (in Europa „Digimon World 2003“). Eine eigene Android-App spielt es mit einem Live-Digivice auf dem zweiten Bildschirm.",
+  "versions": [
+    {
+      "id": "playstation-2002",
+      "name": "PlayStation (2002)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Digimon_World_3"
+        }
+      ],
+      "year": 2002
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": "Digivice-Begleiter: Tamer, Partner, Story-Fortschritt, Ausrüstung, Schnellreise und Komplettlösung (live aus dem RAM)",
+      "steps": [],
+      "version": null,
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "dw3-dual-screen",
+      "name": "DW2003 Dual Screen",
+      "release": "playstation-2002",
+      "kind": "emulator-mod",
+      "runtime": "Eigene App mit PCSX-ReARMed (LibretroDroid)",
+      "projects": [
+        "dw2003-dual-screen"
+      ],
+      "features": [
+        "dual-screen",
+        "touch-inventory",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene Disc von Digimon World 2003 (PAL SLES-03936) oder Digimon World 3 (USA SLUS-01436)",
+        "Optional: eigenes BIOS, Flawe's Mod 2.0"
+      ],
+      "benefit": "Für den AYN Thor gebaut: Spiel oben, Live-Begleiter unten; auch für Foldables und Tablets (geteilte Ansicht).",
+      "caveat": "Teile des Begleiters wurden KI-gestützt geschrieben; RAM-Werte sind laut Projekt nicht in jeder Fassung vollständig.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-19"
+}

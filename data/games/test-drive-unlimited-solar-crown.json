@@ -1,0 +1,47 @@
+{
+  "id": "test-drive-unlimited-solar-crown",
+  "title": "Test Drive Unlimited Solar Crown",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC",
+    "PlayStation 5",
+    "Xbox Series"
+  ],
+  "genre": "racing video game",
+  "summary": "Open-World-Rennspiel auf Hongkong Island (KT Racing/Nacon, 12. September 2024) für PC, PS5 und Xbox Series; online-pflichtig und nur über Windows-Laufzeiten denkbar, belegte Android-Wege gibt es nicht.",
+  "versions": [
+    {
+      "id": "pc-2024",
+      "name": "PC (2024)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited_Solar_Crown"
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "id": "ps5-xbox-series",
+      "name": "PlayStation 5 / Xbox Series (2024)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox Series"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited_Solar_Crown"
+        }
+      ],
+      "year": 2024
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

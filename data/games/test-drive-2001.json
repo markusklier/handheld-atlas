@@ -1,0 +1,29 @@
+{
+  "id": "test-drive-2001",
+  "title": "Test Drive 2001",
+  "franchise": "Test Drive",
+  "platforms": [
+    "Game Boy / Game Boy Color"
+  ],
+  "genre": "racing video game",
+  "summary": "Game-Boy-Color-Ableger der Reihe (2000).",
+  "versions": [
+    {
+      "id": "game-boy-game-boy-color-2000",
+      "name": "Game Boy / Game Boy Color (2000)",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2000
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

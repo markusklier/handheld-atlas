@@ -5,7 +5,8 @@
   "platforms": [
     "PC",
     "PlayStation 3",
-    "Xbox 360"
+    "Xbox 360",
+    "Android"
   ],
   "versions": [
     {
@@ -49,11 +50,87 @@
           "url": "https://en.wikipedia.org/wiki/List_of_Tomb_Raider_media"
         }
       ]
+    },
+    {
+      "id": "android-2026",
+      "name": "Tomb Raider – Android (Feral, 2026)",
+      "type": "android",
+      "year": 2026,
+      "platforms": [
+        "Android"
+      ],
+      "traits": [
+        "controller",
+        "touch"
+      ],
+      "note": "Portierung von Feral Interactive (12. Februar 2026, auch für iOS) mit der kompletten Kampagne und allen 12 DLC-Paketen, ohne In-App-Käufe; Gamepad-Unterstützung und Grafik-/Leistungsmodi.",
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.tombraider_android"
+        },
+        {
+          "label": "9to5Google",
+          "url": "https://9to5google.com/2026/02/12/tomb-raider-2013-returns-to-android-now-available-for-19-99/"
+        }
+      ]
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "tr2013-feral-android",
+      "name": "Offizielle Android-App (Feral Interactive)",
+      "release": "android-2026",
+      "kind": "native",
+      "runtime": "Native Android-Portierung von Feral Interactive",
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Kauf im Google Play Store (19,99 $ / 15,99 €)",
+        "Android 13 oder neuer",
+        "Mindestens 12,5 GB freier Speicher, laut Feral besser das Doppelte für die Installation"
+      ],
+      "benefit": "Komplette Kampagne mit allen 12 DLC-Paketen nativ, ohne Windows-Laufzeit; volle Gamepad-Unterstützung und wählbare Modi (Grafik, Leistung, Akku sparen).",
+      "caveat": "Eine offizielle Geräteliste gab es zum Start nicht; ob der Play Store den Thor als kompatibel einstuft und wie das Spiel dort läuft, ist nicht belegt. Angaben zu Chip/RAM-Anforderungen stammen nur aus Community-Gesprächen.",
+      "steps": [],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.tombraider_android"
+        },
+        {
+          "label": "Trailer (Feral Interactive)",
+          "url": "https://www.youtube.com/watch?v=5ZLieoknwww"
+        },
+        {
+          "label": "MacRumors",
+          "url": "https://www.macrumors.com/2026/02/12/tomb-raider-reboot-launches-on-ios/"
+        },
+        {
+          "label": "Retro Handhelds",
+          "url": "https://retrohandhelds.gg/feral-brings-fully-fledged-modern-tomb-raider-to-mobile-dlc-included/"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19"
+    }
+  ],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/TombRaider2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Tomb_Raider_%282013_video_game%29"
@@ -62,5 +139,6 @@
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider_%282013_video_game%29",
   "genre": "action-adventure game",
   "playStore": "https://play.google.com/store/apps/details?id=com.nvidia.squareenix.tombraider2013",
-  "notRemake": true
+  "notRemake": true,
+  "summary": "Reboot von 2013 (Crystal Dynamics). Seit Februar 2026 gibt es eine offizielle Android-Fassung von Feral Interactive mit allen DLCs und Gamepad-Unterstützung – der einfachste Weg auf dem Handheld."
 }

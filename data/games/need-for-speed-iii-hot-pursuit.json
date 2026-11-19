@@ -1,0 +1,91 @@
+{
+  "id": "need-for-speed-iii-hot-pursuit",
+  "title": "Need for Speed III: Hot Pursuit",
+  "franchise": "Need for Speed",
+  "platforms": [
+    "PC",
+    "PlayStation"
+  ],
+  "genre": "racing video game",
+  "summary": "Rennspiel von 1998 mit Polizeiverfolgungen. Die PC-Fassung läuft auf Android als nativer Port ohne x86-Emulation.",
+  "versions": [
+    {
+      "id": "pc-1998",
+      "name": "PC (1998)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed_III:_Hot_Pursuit"
+        }
+      ],
+      "year": 1998
+    },
+    {
+      "id": "playstation-1998",
+      "name": "PlayStation (1998)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Need_for_Speed_III:_Hot_Pursuit"
+        }
+      ],
+      "year": 1998
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/race-widescreen.jpg",
+          "caption": "Rennen im Breitbild auf Android",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III Android",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "nfs3-android",
+      "name": "NFS III Android (Recomp-Port)",
+      "release": "pc-1998",
+      "kind": "recomp",
+      "runtime": "Nativer C++-Port auf SDL3/OpenGL ES",
+      "projects": [
+        "nfs3-android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen",
+        "online",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene NFS-III-Disc (ISO/BIN-CUE oder Ordner FEDATA und GAMEDATA)",
+        "Android 8+, OpenGL ES 3.0"
+      ],
+      "benefit": "Kein Emulator: Breitbild-Rennen, Vollfarb-Texturen, zwei Gamepads mit Splitscreen und Netzwerkrennen – auch gegen die PC-Originalfassung.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-19"
+}

@@ -112,17 +112,17 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/mxvisor/cyberia-recomp/HEAD/docs/panel.jpg",
-          "caption": "The port's panel (F12) over a scene of the game, the window at 1024x768",
+          "caption": "Port-Menü (F12) über einer Spielszene",
           "source": "https://github.com/mxvisor/cyberia-recomp",
           "credit": "Cyberia Recomp",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/cyberia-recomp/HEAD/docs/android.gif",
-          "caption": "On an Android phone: a flight with the on screen buttons, and the full keyboard ",
+          "caption": "Auf einem Android-Telefon: Flug mit Bildschirmtasten",
           "source": "https://github.com/mxvisor/cyberia-recomp",
           "credit": "Cyberia Recomp",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

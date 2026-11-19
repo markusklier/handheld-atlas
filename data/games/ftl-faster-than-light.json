@@ -1,0 +1,65 @@
+{
+  "id": "ftl-faster-than-light",
+  "title": "FTL: Faster Than Light",
+  "franchise": "FTL: Faster Than Light",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "roguelike",
+  "summary": "Roguelike-Raumschiffstrategie von Subset Games (2012). Auf Android über eine inoffizielle Kompatibilitätsschicht, die die Linux-Fassung mit Touch-Steuerung startet.",
+  "versions": [
+    {
+      "id": "pc-2012",
+      "name": "PC (2012)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/FTL:_Faster_Than_Light"
+        }
+      ],
+      "year": 2012
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "ftl-android",
+      "name": "FTL for Android (inoffiziell)",
+      "release": "pc-2012",
+      "kind": "pc-runtime",
+      "runtime": "Linux-Fassung über eigene Kompatibilitätsschicht (Mesa Turnip)",
+      "projects": [
+        "ftl-android"
+      ],
+      "features": [
+        "touch"
+      ],
+      "requires": [
+        "Eigene FTL-Kopie von Steam oder GOG (Linux-Dateien als ZIP)",
+        "Android 10+ (arm64)",
+        "Qualcomm-Adreno-GPU"
+      ],
+      "benefit": "Läuft laut Autor auf einem Snapdragon 7s Gen 3 durchgehend mit 60 FPS samt Ton; eigene Touch-Gesten für Rechtsklick und Energieverteilung.",
+      "caveat": "Nur Adreno-GPUs; ausdrückliche Controller-Unterstützung nennt die README nicht. Getestet nur auf einem POCO M8 Pro.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-19"
+}

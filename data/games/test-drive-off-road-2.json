@@ -1,0 +1,44 @@
+{
+  "id": "test-drive-off-road-2",
+  "title": "Test Drive Off-Road 2",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PlayStation",
+    "PC"
+  ],
+  "genre": "racing video game",
+  "summary": "Zweiter Gelände-Ableger (1998; in Europa „Test Drive 4X4“) für PlayStation und PC.",
+  "versions": [
+    {
+      "id": "playstation-1998",
+      "name": "PlayStation (1998)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1998
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

@@ -1,0 +1,132 @@
+{
+  "id": "tony-hawks-pro-skater-4",
+  "title": "Tony Hawk's Pro Skater 4",
+  "franchise": "Tony Hawk",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox",
+    "Nintendo GameCube",
+    "PlayStation",
+    "PC"
+  ],
+  "genre": "sports video game",
+  "summary": "Vierter Teil der Skate-Reihe (Neversoft, 2002). Auf Android gibt es einen inoffiziellen nativen Port der Xbox-Fassung.",
+  "versions": [
+    {
+      "id": "playstation-2-2002",
+      "name": "PlayStation 2 (2002)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Hawk%27s_Pro_Skater_4"
+        }
+      ],
+      "year": 2002
+    },
+    {
+      "id": "xbox-2002",
+      "name": "Xbox (2002)",
+      "type": "original",
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Hawk%27s_Pro_Skater_4"
+        }
+      ],
+      "year": 2002
+    },
+    {
+      "id": "nintendo-gamecube-2002",
+      "name": "Nintendo GameCube (2002)",
+      "type": "original",
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Hawk%27s_Pro_Skater_4"
+        }
+      ],
+      "year": 2002
+    },
+    {
+      "id": "playstation-2002",
+      "name": "PlayStation (2002)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Hawk%27s_Pro_Skater_4"
+        }
+      ],
+      "year": 2002
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tony_Hawk%27s_Pro_Skater_4"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "thps4-android",
+      "name": "THPS4 Android-Port",
+      "release": "xbox-2002",
+      "kind": "recomp",
+      "runtime": "Statisch rekompilierte Xbox-Fassung, eigene APK mit Launcher",
+      "projects": [
+        "thps4-android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "widescreen",
+        "fps-cap",
+        "mods",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene Spieldaten oder ISO der Xbox-Fassung im Ordner THPS4",
+        "Android 10+ (arm64)"
+      ],
+      "benefit": "Komplettes Spiel mit Karriere, Park-Editor und Splitscreen; Grafikoptionen (Renderauflösung, FPS-Begrenzung, Ultrawide), Mod-Manager und eigene Musik.",
+      "caveat": "Quellcode nicht öffentlich – das Repository ist nur Release-Kanal; die APK prüft selbst auf Updates. Mit Vorsicht installieren.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-19"
+}

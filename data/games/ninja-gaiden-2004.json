@@ -63,13 +63,6 @@
       "testedOn": [],
       "screenshots": [
         {
-          "url": "https://raw.githubusercontent.com/gamboozino/ngbrecomp/HEAD/docs/images/banner.jpg",
-          "caption": "Ninja Gaiden Black Recompiled",
-          "source": "https://github.com/gamboozino/ngbrecomp",
-          "credit": "Ninja Gaiden Black Recomp",
-          "check": "readme"
-        },
-        {
           "url": "https://github.com/user-attachments/assets/e9fb1579-2320-4ff9-8fc0-0ea2a724316b",
           "caption": "Ultrawide 21:9: Ryu in front of Han",
           "source": "https://github.com/gamboozino/ngbrecomp",

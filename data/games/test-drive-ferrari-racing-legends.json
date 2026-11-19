@@ -1,0 +1,59 @@
+{
+  "id": "test-drive-ferrari-racing-legends",
+  "title": "Test Drive: Ferrari Racing Legends",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "racing video game",
+  "summary": "Ferrari-Rennspiel von Slightly Mad Studios (2012) für PC, PS3 und Xbox 360.",
+  "versions": [
+    {
+      "id": "pc-2012",
+      "name": "PC (2012)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2012
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "original",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

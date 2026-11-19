@@ -1,0 +1,44 @@
+{
+  "id": "test-drive-eve-of-destruction",
+  "title": "Test Drive: Eve of Destruction",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox"
+  ],
+  "genre": "racing video game",
+  "summary": "Derby- und Crash-Ableger (2004, Monster Games) für PS2 und Xbox; in Europa „Driven to Destruction“.",
+  "versions": [
+    {
+      "id": "playstation-2-2004",
+      "name": "PlayStation 2 (2004)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2004
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox",
+      "type": "original",
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "quest-64",
+  "title": "Quest 64",
+  "franchise": "Quest 64",
+  "platforms": [
+    "Nintendo 64"
+  ],
+  "genre": "role-playing video game",
+  "summary": "N64-Rollenspiel von Imagineer (1998). Über Quest 64: Recompiled gibt es einen experimentellen nativen Android-Build.",
+  "versions": [
+    {
+      "id": "nintendo-64-1998",
+      "name": "Nintendo 64 (1998)",
+      "type": "original",
+      "platforms": [
+        "Nintendo 64"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Quest_64"
+        }
+      ],
+      "year": 1998
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "q64-recomp-android",
+      "name": "Quest 64: Recompiled (Android-Build)",
+      "release": "nintendo-64-1998",
+      "kind": "recomp",
+      "runtime": "N64Recomp-Port (Vulkan, SDL)",
+      "projects": [
+        "quest64-android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene Quest-64-ROM",
+        "Selbst bauen: das Repository enthält nur Patches und Skripte, keine APK"
+      ],
+      "benefit": "Nativ statt emuliert, mit Speicherständen, Vorspulen und Gamepad-Unterstützung; auch der Mod Eltale Odyssey läuft.",
+      "caveat": "Experimentell; getestet auf Galaxy Tab S8 und S25 Ultra. Code größtenteils KI-gestützt geschrieben, laut Autor auf echten Geräten getestet.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-19"
+}

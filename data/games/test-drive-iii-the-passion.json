@@ -1,0 +1,29 @@
+{
+  "id": "test-drive-iii-the-passion",
+  "title": "Test Drive III: The Passion",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "racing video game",
+  "summary": "Dritter Teil (1990, nur MS-DOS) mit frei befahrbarer 3D-Strecke. Auf Android nur über DOS-Emulation.",
+  "versions": [
+    {
+      "id": "pc-1990",
+      "name": "PC (1990)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1990
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

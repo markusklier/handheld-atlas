@@ -1,0 +1,44 @@
+{
+  "id": "test-drive-off-road-wide-open",
+  "title": "Test Drive: Off-Road – Wide Open",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox"
+  ],
+  "genre": "racing video game",
+  "summary": "Gelände-Ableger (2001, Angel Studios) für PS2 und Xbox; in Europa „Off-Road Wide Open“.",
+  "versions": [
+    {
+      "id": "playstation-2-2001",
+      "name": "PlayStation 2 (2001)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2001
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox",
+      "type": "original",
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

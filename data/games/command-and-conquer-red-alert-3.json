@@ -127,24 +127,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/ipad-campaign.jpg",
-          "caption": "Soviet campaign mission one on iPad",
+          "caption": "Sowjetische Kampagne, erste Mission (iPad)",
           "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
           "credit": "Red Alert 3 Native Recompilation",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/macos-battlefield.jpg",
-          "caption": "MacOS gameplay",
+          "caption": "Gefecht in der macOS-Fassung des Ports",
           "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
           "credit": "Red Alert 3 Native Recompilation",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/HolyCaonima/ra3-ios-android-win-mac-recomp/HEAD/docs/images/ipad-macos-lan.jpg",
-          "caption": "Mac and iPad in the same LAN gameplay recording",
+          "caption": "LAN-Partie zwischen Mac und iPad",
           "source": "https://github.com/HolyCaonima/ra3-ios-android-win-mac-recomp",
           "credit": "Red Alert 3 Native Recompilation",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "reports": [],

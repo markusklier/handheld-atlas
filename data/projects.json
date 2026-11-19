@@ -3063,6 +3063,91 @@
         "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.19-1141",
         "date": "2026-11-19"
       }
+    },
+    {
+      "id": "phantom-hourglass-recomp",
+      "name": "Phantom Hourglass Recomp",
+      "kind": "port",
+      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
+      "repo": "dguillot-gh/phantom-hourglass-recomp",
+      "description": "Statische Rekompilierung von Zelda: Phantom Hourglass (DS) für Windows und Android; DS-Hardware über den melonDS-Kern.",
+      "games": [
+        "the-legend-of-zelda-phantom-hourglass"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "thps4-android",
+      "name": "THPS4 – Unofficial Android Port",
+      "kind": "port",
+      "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases",
+      "repo": "UnknuwProjects/THPS4-Android-Releases",
+      "description": "Inoffizieller nativer Android-Port von Tony Hawk's Pro Skater 4 (Xbox) per statischer Rekompilierung; nur Release-Kanal, Quellcode privat.",
+      "games": [
+        "tony-hawks-pro-skater-4"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "ftl-android",
+      "name": "FTL for Android (unofficial)",
+      "kind": "port",
+      "url": "https://github.com/CounterClockTTRPG/ftl-android",
+      "repo": "CounterClockTTRPG/ftl-android",
+      "description": "Kompatibilitätsschicht, die die Linux-Fassung von FTL (Advanced Edition 1.6.13) auf arm64-Android mit Touch-Steuerung startet.",
+      "games": [
+        "ftl-faster-than-light"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "nfs3-android",
+      "name": "NFS III: Hot Pursuit – Android",
+      "kind": "port",
+      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+      "repo": "ZloiKILLER/nfs3recompiled-android",
+      "description": "Nativer Android-Port der PC-Fassung von NFS III, entstanden aus nfs-recompiled; SDL3/OpenGL ES, Touch, Splitscreen, Netzwerkrennen.",
+      "games": [
+        "need-for-speed-iii-hot-pursuit"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "quest64-android",
+      "name": "Quest 64 Recompiled for Android",
+      "kind": "port",
+      "url": "https://github.com/trevermfield/Quest64-Android",
+      "repo": "trevermfield/Quest64-Android",
+      "description": "Patches und Build-Skripte, mit denen Quest 64: Recompiled nativ auf Android läuft (selbst bauen, keine APK).",
+      "games": [
+        "quest-64"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "dw2003-dual-screen",
+      "name": "DW2003 Dual Screen",
+      "kind": "companion",
+      "url": "https://github.com/rsigristc/DW3-DS-Android",
+      "repo": "rsigristc/DW3-DS-Android",
+      "description": "Android-App, die Digimon World 2003/3 über PCSX-ReARMed startet und live einen Digivice-Begleiter auf dem zweiten Display zeigt (GPL-3.0).",
+      "games": [
+        "digimon-world-3"
+      ],
+      "checkedAt": "2026-11-19"
+    },
+    {
+      "id": "smz3-universe",
+      "name": "SMZ3 Universe",
+      "kind": "port",
+      "url": "https://github.com/doctor-utsugi/smz3-universe",
+      "repo": "doctor-utsugi/smz3-universe",
+      "description": "Super Metroid + A Link to the Past Randomizer für AYN Thor, 3DS und PC: Spiel auf einem, Live-Tracker (Karte, Items, Checks) auf dem anderen Bildschirm; Seeds werden offline auf dem Gerät erzeugt.",
+      "games": [
+        "super-metroid",
+        "a-link-to-the-past"
+      ],
+      "checkedAt": "2026-11-19"
     }
   ]
 }

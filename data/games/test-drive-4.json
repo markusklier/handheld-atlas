@@ -1,0 +1,44 @@
+{
+  "id": "test-drive-4",
+  "title": "Test Drive 4",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PlayStation",
+    "PC"
+  ],
+  "genre": "racing video game",
+  "summary": "Vierter Teil (1997, Pitbull Syndicate) mit Sport- und Muscle-Cars; die PS1-Fassung läuft über PlayStation-Emulation.",
+  "versions": [
+    {
+      "id": "playstation-1997",
+      "name": "PlayStation (1997)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1997
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

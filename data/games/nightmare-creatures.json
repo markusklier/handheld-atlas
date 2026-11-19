@@ -115,10 +115,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/nightmare_creatures-recomp/HEAD/docs/windows.jpg",
-          "caption": "The port's panel over the game on Windows",
+          "caption": "Port-Menü über dem Spiel (Windows)",
           "source": "https://github.com/mxvisor/nightmare_creatures-recomp",
           "credit": "Nightmare Creatures Recomp",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "reports": [],

@@ -1,0 +1,78 @@
+{
+  "id": "test-drive-unlimited-2",
+  "title": "Test Drive Unlimited 2",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "racing video game",
+  "summary": "Nachfolger auf Ibiza und Oʻahu (Eden Games, 2011). Offizielle Server und Verkauf sind eingestellt; Project Paradise 2 bringt den Online-Modus der PC-Fassung zurück.",
+  "versions": [
+    {
+      "id": "pc-2011",
+      "name": "PC (2011)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        },
+        {
+          "label": "Project Paradise 2 (gamepressure)",
+          "url": "https://www.gamepressure.com/newsroom/test-drive-unlimited-2-fans-resurrect-multiplayer-mode/z04444"
+        }
+      ],
+      "year": 2011,
+      "note": "PC-Fassung; offiziell nicht mehr erhältlich, Online-Server abgeschaltet. Basis für Project Paradise 2."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3",
+      "type": "original",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19",
+  "mods": [
+    {
+      "id": "tdu2-project-paradise-2",
+      "name": "Project Paradise 2",
+      "category": "multiplayer",
+      "release": [
+        "pc-2011"
+      ],
+      "url": "https://project-paradise2.de/",
+      "edition": "Test Drive Unlimited 2 für PC",
+      "description": "Fan-Projekt, das seit 2022 den Online-Modus von TDU2 mit Bestenlisten, Freundesliste und Community-Rennzentrum zurückbringt. Auf dem Handheld nur mit einer Windows-Laufzeit denkbar; Berichte dazu fehlen bisher.",
+      "verification": "ai-unverified"
+    }
+  ]
+}

@@ -47,8 +47,56 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/phone-16x9-compute-4x.png",
+          "caption": "16:9-Breitbild auf einem Android-Telefon (Compute-Renderer, 4×)",
+          "source": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
+          "credit": "Phantom Hourglass Recomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-19",
+      "id": "ph-recomp",
+      "name": "Phantom Hourglass Recomp",
+      "release": "nintendo-ds",
+      "kind": "recomp",
+      "runtime": "Statisch rekompilierter ARM9-Code + melonDS-Kern",
+      "projects": [
+        "phantom-hourglass-recomp"
+      ],
+      "features": [
+        "widescreen",
+        "upscaling",
+        "controller",
+        "touch",
+        "native-arm"
+      ],
+      "requires": [
+        "Eigenes Phantom-Hourglass-Modul (selbst gedumpt)",
+        "Windows-PC zum Bauen der APK aus dem eigenen ROM",
+        "Android 8+ (arm64)"
+      ],
+      "benefit": "Spielcode läuft nativ statt emuliert; Breitbild 16:9/21:9 mit mitwandernder HUD, bis zu 4× Auflösung (Compute-Renderer), Bildschirm-Layouts mit Seekarte oder beiden Bildschirmen übereinander.",
+      "caveat": "Die APK muss man selbst aus dem eigenen ROM bauen (Skripte für Windows); fertige Builds dürfen nicht geteilt werden. Eine Ausgabe auf dem zweiten Bildschirm des Thor nennt die README nicht. Bei 21:9 kann am Rand Szenerie aufploppen.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-19",
   "wikidata": "Q657710",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Phantom_Hourglass",
   "genre": "action-adventure game"

@@ -1,0 +1,104 @@
+{
+  "id": "test-drive",
+  "title": "Test Drive",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC",
+    "Amiga",
+    "Atari ST",
+    "Commodore 64",
+    "Apple II",
+    "PC-98"
+  ],
+  "genre": "racing video game",
+  "summary": "Der erste Teil der Reihe (1987, Distinctive Software/Accolade): Sportwagen auf Bergstraßen, Ausweichen vor Verkehr und Polizei. Auf Android nur über DOS- bzw. Heimcomputer-Emulation.",
+  "versions": [
+    {
+      "id": "pc-1987",
+      "name": "PC (1987)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1987
+    },
+    {
+      "id": "amiga",
+      "name": "Amiga",
+      "type": "original",
+      "platforms": [
+        "Amiga"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "atari-st",
+      "name": "Atari ST",
+      "type": "original",
+      "platforms": [
+        "Atari ST"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "commodore-64",
+      "name": "Commodore 64",
+      "type": "original",
+      "platforms": [
+        "Commodore 64"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "apple-ii",
+      "name": "Apple II",
+      "type": "original",
+      "platforms": [
+        "Apple II"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "pc-98",
+      "name": "PC-98",
+      "type": "original",
+      "platforms": [
+        "PC-98"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

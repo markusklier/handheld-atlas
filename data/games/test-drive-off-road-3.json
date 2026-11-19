@@ -1,0 +1,59 @@
+{
+  "id": "test-drive-off-road-3",
+  "title": "Test Drive: Off-Road 3",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PC",
+    "PlayStation",
+    "Game Boy / Game Boy Color"
+  ],
+  "genre": "racing video game",
+  "summary": "Dritter Gelände-Ableger (1999) für PC, PlayStation und Game Boy Color.",
+  "versions": [
+    {
+      "id": "pc-1999",
+      "name": "PC (1999)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1999
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "game-boy-game-boy-color",
+      "name": "Game Boy / Game Boy Color",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

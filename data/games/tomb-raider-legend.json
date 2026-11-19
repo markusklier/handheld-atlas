@@ -67,7 +67,7 @@
   ],
   "routes": [],
   "mods": [],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-19",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7000/library_600x900_2x.jpg",
     "source": "https://store.steampowered.com/app/7000/"
@@ -106,5 +106,6 @@
   ],
   "wikidata": "Q665785",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_Legend",
-  "genre": "action-adventure game"
+  "genre": "action-adventure game",
+  "summary": "Erster Teil der Legend-Trilogie von Crystal Dynamics (2006). Auf Android über PS2-, PSP- oder GameCube-Emulation; spielspezifische Patches oder Ports sind bisher nicht belegt."
 }

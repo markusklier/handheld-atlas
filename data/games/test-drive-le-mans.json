@@ -1,0 +1,89 @@
+{
+  "id": "test-drive-le-mans",
+  "title": "Test Drive Le Mans",
+  "franchise": "Test Drive",
+  "platforms": [
+    "PlayStation",
+    "PC",
+    "Dreamcast",
+    "Game Boy / Game Boy Color",
+    "PlayStation 2"
+  ],
+  "genre": "racing video game",
+  "summary": "Langstrecken-Rennspiel um die 24 Stunden von Le Mans (in Europa „Le Mans 24 Hours“, auf PS2 nur unter diesem Namen). Die Dreamcast- und PS2-Fassungen laufen über die entsprechenden Emulatoren.",
+  "versions": [
+    {
+      "id": "playstation-1999",
+      "name": "PlayStation (1999)",
+      "type": "original",
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 1999
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "dreamcast",
+      "name": "Dreamcast",
+      "type": "original",
+      "platforms": [
+        "Dreamcast"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "game-boy-game-boy-color",
+      "name": "Game Boy / Game Boy Color",
+      "type": "original",
+      "platforms": [
+        "Game Boy / Game Boy Color"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19"
+}

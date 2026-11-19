@@ -46,17 +46,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/panel.jpg",
-          "caption": "The port's panel (F12) over a race",
+          "caption": "Port-Menü (F12) während eines Rennens",
           "source": "https://github.com/mxvisor/ignition-recomp",
           "credit": "Ignition – native Portierung (SR)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/android.jpg",
-          "caption": "A race on an Android phone, with the port's on screen buttons",
+          "caption": "Rennen auf einem Android-Telefon mit Bildschirmtasten",
           "source": "https://github.com/mxvisor/ignition-recomp",
           "credit": "Ignition – native Portierung (SR)",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "reports": [],

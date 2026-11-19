@@ -1,0 +1,103 @@
+{
+  "id": "test-drive-unlimited",
+  "title": "Test Drive Unlimited",
+  "franchise": "Test Drive",
+  "platforms": [
+    "Xbox 360",
+    "PC",
+    "PlayStation 2",
+    "PSP"
+  ],
+  "genre": "racing video game",
+  "summary": "Open-World-Rennspiel auf Oʻahu (Eden Games, 2006). Die PS2- und PSP-Fassungen (Atari Melbourne House) laufen über Emulation; für die PC-Fassung halten Fans mit TDU Platinum und Project Paradise Inhalte und Online-Modus am Leben.",
+  "versions": [
+    {
+      "id": "xbox-360-2006",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2006
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "note": "PC-Fassung (Eden Games/Atari). Basis für die Fan-Projekte TDU Platinum und Project Paradise."
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "note": "Eigene Umsetzung von Atari Melbourne House für PS2; über PS2-Emulation spielbar."
+    },
+    {
+      "id": "psp",
+      "name": "PSP",
+      "type": "original",
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "note": "Eigene Umsetzung von Atari Melbourne House für PSP; über PSP-Emulation spielbar."
+    }
+  ],
+  "routes": [],
+  "updatedAt": "2026-11-19",
+  "mods": [
+    {
+      "id": "tdu-platinum",
+      "name": "Test Drive Unlimited Platinum",
+      "category": "content",
+      "release": [
+        "pc"
+      ],
+      "url": "https://turboduck.net/forums/topic/35843-released-test-drive-unlimited-platinum-v121/",
+      "edition": "Test Drive Unlimited für PC",
+      "description": "Großes Fan-Paket von Milli (TurboDuck-Forum, v1.21), das viele Einzelmods mit Überarbeitungen etwa der KI zu einem Gesamtpaket zusammenführt. Laut Autor 2025 weiter in Arbeit. Auf dem Handheld nur zusammen mit einer Windows-Laufzeit denkbar; dafür gibt es noch keine Berichte.",
+      "verification": "ai-unverified"
+    },
+    {
+      "id": "tdu-project-paradise",
+      "name": "Project Paradise",
+      "category": "multiplayer",
+      "release": [
+        "pc"
+      ],
+      "url": "https://turboduck.net/forums/topic/30648-test-drive-unlimited-project-paradise-v003a-public-beta-available/",
+      "edition": "Test Drive Unlimited für PC (mit TDU Platinum)",
+      "description": "Fan-Server für den eingestellten Online-Modus von Test Drive Unlimited (Freeride u. a.), seit 2012 als öffentliche Beta im TurboDuck-Forum. Der Betrieb hing zeitweise an einzelnen Betreuern; vor dem Einrichten den aktuellen Stand im Forum prüfen.",
+      "verification": "ai-unverified"
+    }
+  ]
+}

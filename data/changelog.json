@@ -2,6 +2,190 @@
   "entries": [
     {
       "date": "2026-11-19",
+      "type": "removed",
+      "by": "agent",
+      "game": "ninja-gaiden-2004",
+      "text": "Logo-Grafik aus den Screenshots von Ninja Gaiden Black Recompiled entfernt"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "screenshot-added",
+      "by": "agent",
+      "text": "Bildprüfung: 9 Screenshots bestätigt (Red Alert 3, Cyberia, DOOM (2016), Ignition, Nightmare Creatures), 1 Logo-Grafik bei Ninja Gaiden Black Recompiled entfernt"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "test-drive-unlimited",
+      "text": "Reihe Test Drive angelegt: 19 Spiele mit Fassungen je Plattform; Fan-Mods TDU Platinum, Project Paradise und Project Paradise 2 (KI-Fund)",
+      "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "tomb-raider-2013",
+      "text": "Neuer Spielweg: offizielle Android-Fassung von Feral Interactive (2026, alle DLCs, Gamepad) (KI-Fund)",
+      "url": "https://play.google.com/store/apps/details?id=com.feralinteractive.tombraider_android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-phantom-hourglass",
+      "text": "Neues Projekt: Phantom Hourglass Recomp (KI-Fund)",
+      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-phantom-hourglass",
+      "text": "Neuer Spielweg: Phantom Hourglass Recomp – nativer Android-Port mit Breitbild (KI-Fund)",
+      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "tony-hawks-pro-skater-4",
+      "text": "Neues Spiel: Tony Hawk's Pro Skater 4 (KI-Fund)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "tony-hawks-pro-skater-4",
+      "text": "Neues Projekt: THPS4 – Unofficial Android Port (KI-Fund)",
+      "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "tony-hawks-pro-skater-4",
+      "text": "Neuer Spielweg: THPS4 – inoffizieller nativer Android-Port der Xbox-Fassung (KI-Fund)",
+      "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "ftl-faster-than-light",
+      "text": "Neues Spiel: FTL: Faster Than Light (KI-Fund)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "ftl-faster-than-light",
+      "text": "Neues Projekt: FTL for Android (unofficial) (KI-Fund)",
+      "url": "https://github.com/CounterClockTTRPG/ftl-android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "ftl-faster-than-light",
+      "text": "Neuer Spielweg: FTL for Android – Linux-Fassung mit Touch-Steuerung (KI-Fund)",
+      "url": "https://github.com/CounterClockTTRPG/ftl-android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "need-for-speed-iii-hot-pursuit",
+      "text": "Neues Spiel: Need for Speed III: Hot Pursuit (KI-Fund)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "need-for-speed-iii-hot-pursuit",
+      "text": "Neues Projekt: NFS III: Hot Pursuit – Android (KI-Fund)",
+      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "need-for-speed-iii-hot-pursuit",
+      "text": "Neuer Spielweg: NFS III: Hot Pursuit als nativer Android-Port (KI-Fund)",
+      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "quest-64",
+      "text": "Neues Spiel: Quest 64 (KI-Fund)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "quest-64",
+      "text": "Neues Projekt: Quest 64 Recompiled for Android (KI-Fund)",
+      "url": "https://github.com/trevermfield/Quest64-Android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "quest-64",
+      "text": "Neuer Spielweg: Quest 64: Recompiled als experimenteller Android-Build (KI-Fund)",
+      "url": "https://github.com/trevermfield/Quest64-Android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "game-added",
+      "by": "agent",
+      "game": "digimon-world-3",
+      "text": "Neues Spiel: Digimon World 3 (KI-Fund)"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "digimon-world-3",
+      "text": "Neues Projekt: DW2003 Dual Screen (KI-Fund)",
+      "url": "https://github.com/rsigristc/DW3-DS-Android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "digimon-world-3",
+      "text": "Neuer Spielweg: DW2003 Dual Screen – Digimon World 3 mit Live-Digivice auf dem unteren Bildschirm (KI-Fund)",
+      "url": "https://github.com/rsigristc/DW3-DS-Android"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "project-added",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Neues Projekt: SMZ3 Universe (KI-Fund)",
+      "url": "https://github.com/doctor-utsugi/smz3-universe"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Neuer Spielweg: SMZ3 Universe – Randomizer mit Live-Tracker auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/doctor-utsugi/smz3-universe"
+    },
+    {
+      "date": "2026-11-19",
+      "type": "route-added",
+      "by": "agent",
+      "game": "a-link-to-the-past",
+      "text": "Neuer Spielweg: SMZ3 Universe – Randomizer mit Live-Tracker auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/doctor-utsugi/smz3-universe"
+    },
+    {
+      "date": "2026-11-19",
       "type": "system",
       "text": "Neu: Reiter „Konsolen“ zum Stöbern nach Plattform. Jede Plattform ist jetzt eine eigene Fassung mit eigenem Cover (GameCube, PS2, PC …), die Spielseite zeigt je Fassung die besonderen Wege und darunter die Emulatoren als Rangliste. Remakes wie Metroid Prime Remastered sind eigene Spiele; „Reihe recherchieren“ füllt sofort alle Spiele der Reihe mit Bildern und Fassungen.",
       "url": "https://github.com/markusklier/handheld-atlas/blob/main/docs/KONTEXT.md"

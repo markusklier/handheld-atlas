@@ -52,8 +52,13 @@
         {
           "label": "Veröffentlichungen (Tomb Raider Wiki)",
           "url": "https://www.tombraiderwiki.org/index.php/Lara_Croft_Tomb_Raider:_Anniversary_Release_Dates"
+        },
+        {
+          "label": "GOG",
+          "url": "https://www.gog.com/de/game/tomb_raider_anniversary"
         }
-      ]
+      ],
+      "note": "PC-Fassung, weiterhin digital bei Steam und GOG erhältlich. Auf dem Handheld nur über Windows-Laufzeiten; belegte Erfahrungsberichte dazu gibt es bisher nicht."
     },
     {
       "id": "playstation-2-psp",

@@ -17,14 +17,6 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
-      "title": "dguillot-gh/phantom-hourglass-recomp",
-      "excerpt": "Native PC and Android port of The Legend of Zelda: Phantom Hourglass by static recompilation. Bring your own ROM: no game data included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
       "title": "XHYN-PH/XHYN-V-reborn",
       "excerpt": "An unofficial native GTA V port for Android, based on the Chinese Android port. Maintained by XHYN-PH. Requires your own game files.",
@@ -41,14 +33,6 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases",
-      "title": "UnknuwProjects/THPS4-Android-Releases",
-      "excerpt": "Unofficial Android port of Tony Hawk's Pro Skater 4 (Xbox) - public release channel: stable builds and changelogs. Game data not included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/killdano/license-revoked",
       "title": "killdano/license-revoked",
       "excerpt": "License Revoked: Pebble game and its Android port",
@@ -60,14 +44,6 @@
       "url": "https://github.com/XHYN-PH/landofthedroid",
       "title": "XHYN-PH/landofthedroid",
       "excerpt": "Native 64-bit ARM Android port of Land of the Dead: Road to Fiddler's Green (Unreal Engine 2) with custom touch HUD, GLES3 rendering, and in-game cheats",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/CounterClockTTRPG/ftl-android",
-      "title": "CounterClockTTRPG/ftl-android",
-      "excerpt": "An android port of FTL. Needs the original game files",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -121,33 +97,9 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/christianball123/fritchii-thor",
-      "title": "christianball123/fritchii-thor",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/rsigristc/DW3-DS-Android",
-      "title": "rsigristc/DW3-DS-Android",
-      "excerpt": "Open-source Android dual-screen companion for Digimon World 2003 (SLES-03936) and Flawe's Mod 2.0. No ROM or BIOS included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/Broomm/broomm",
       "title": "Broomm/broomm",
       "excerpt": "Emulation frontend with automatic emulator configuration and integration with the RomM Manager to sync cloud saves and download Games, Updates and DLC",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/wasney/DroidDS",
-      "title": "wasney/DroidDS",
-      "excerpt": "",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -172,30 +124,6 @@
       "url": "https://github.com/alexk0918/pokerun-tactics",
       "title": "alexk0918/pokerun-tactics",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/manu0623/Arcoon-releases",
-      "title": "manu0623/Arcoon-releases",
-      "excerpt": "An AI fork of Argosy launcher that borrows the UI structure and look of Cocoon Launcher",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/pecsoniii/mwrgds",
-      "title": "pecsoniii/mwrgds",
-      "excerpt": "OpenMW-DS Android build for Morrowind on the Anbernic RG DS",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/doctor-utsugi/smz3-universe",
-      "title": "doctor-utsugi/smz3-universe",
-      "excerpt": "Dual-screen SMZ3 tracker/generator for the AYN Thor and Nintendo 3DS",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -345,14 +273,6 @@
       "foundAt": "2026-11-14"
     },
     {
-      "url": "https://github.com/trevermfield/Quest64-Android",
-      "title": "trevermfield/Quest64-Android",
-      "excerpt": "Unofficial Android port of Quest 64: Recompiled (patches and build scripts only, no game files)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
       "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
       "title": "huggy12/OpenRA_Androidport-PSX-controls-",
       "excerpt": "An unofficial Android port of OpenRA's Red Alert mod (bleed branch, commit b4d95a5, Nov 2026) with Bluetooth controller controls inspired by the PlayStation version. Built with .NET 10 and SDL2. No game files included; the freeware content downloads on first launch.",
@@ -364,14 +284,6 @@
       "url": "https://github.com/JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
       "title": "JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
       "excerpt": "An Android Port made by JC Gamer Nostalgic in Godot Engine 4.6",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/ZloiKILLER/nfs3recompiled-android",
-      "title": "ZloiKILLER/nfs3recompiled-android",
-      "excerpt": "Need For Speed III: Hot Pursuit recompiled PC port on Android",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-14"
@@ -420,62 +332,6 @@
       "url": "https://github.com/brettr7388/cuphead-thor-companion",
       "title": "brettr7388/cuphead-thor-companion",
       "excerpt": "Eden Duo bottom-screen companion for Cuphead on AYN Thor",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/lovelisy/LiquidBounce-Addon-DroidBridge",
-      "title": "lovelisy/LiquidBounce-Addon-DroidBridge",
-      "excerpt": "LiquidBounce 的 CEF 浏览器后端：main 分支出 jar，app 分支出 Mcef 承载 APK。",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/krishna3163/best-root-apps-for-android",
-      "title": "krishna3163/best-root-apps-for-android",
-      "excerpt": "Curated directory of Android root apps, Magisk, KernelSU, LSPosed modules, system tools, privacy utilities, and no-root Shizuku apps.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/mohammadabduljalil00-rgb/Athena-big-sis-companion",
-      "title": "mohammadabduljalil00-rgb/Athena-big-sis-companion",
-      "excerpt": "It is a dedicated esp32 and tft chatbot , which when connected to laptop via usb and grant  access will transfer itself to this page and we can interact with it anywhere",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/Shraghav/StudyBuddy",
-      "title": "Shraghav/StudyBuddy",
-      "excerpt": "A full-stack mobile study companion built with React Native and FastAPI that leverages Supabase to turn your PDFs into interactive, RAG-driven AI chat sessions on the go.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/aaron4567891-prog/Orbit-Frontend",
-      "title": "aaron4567891-prog/Orbit-Frontend",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/jiggy025/jiggy-portfolio",
-      "title": "jiggy025/jiggy-portfolio",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/Mat342116/Dai-MP4",
-      "title": "Mat342116/Dai-MP4",
-      "excerpt": "",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-14"
@@ -5804,11 +5660,22 @@
     "https://github.com/aypro/ocrclip",
     "https://github.com/Hoangxee/YTMucsicWP",
     "https://github.com/newkit/OCW",
-    "https://github.com/Javpato/real-life-battle-tower"
+    "https://github.com/Javpato/real-life-battle-tower",
+    "https://github.com/Mat342116/Dai-MP4",
+    "https://github.com/Shraghav/StudyBuddy",
+    "https://github.com/aaron4567891-prog/Orbit-Frontend",
+    "https://github.com/christianball123/fritchii-thor",
+    "https://github.com/jiggy025/jiggy-portfolio",
+    "https://github.com/krishna3163/best-root-apps-for-android",
+    "https://github.com/lovelisy/LiquidBounce-Addon-DroidBridge",
+    "https://github.com/manu0623/Arcoon-releases",
+    "https://github.com/mohammadabduljalil00-rgb/Athena-big-sis-companion",
+    "https://github.com/pecsoniii/mwrgds",
+    "https://github.com/wasney/DroidDS"
   ],
   "agent": {
-    "lastRun": "2026-11-19T20:45Z",
-    "summary": "Keine offenen Abo-Anfragen. Warteschlange: Tomb Raider II (neuer Weg I–III Remastered als Android-App mit 60-FPS-Option), MGS Delta, Silent Hill Origins und Shattered Memories ohne belegbaren Android-spezifischen Weg (nur allgemeine Emulation; Winlator-Seite mit Download-Links nicht als Quelle genutzt); 10 Bilder geprüft (7 bestätigt, 1 Logo entfernt, 2 vertauschte GTA-Companion-Bilder entfernt); 29 irrelevante Leads verworfen. Offen: GitHub-Seiten fremder Repos waren aus der Sitzung nicht abrufbar, daher ~25 vielversprechende Port-/Recomp-/Dual-Screen-Leads (u. a. Phantom Hourglass Recomp, THPS4, FTL, DW3-DS, QudLink, Kaldora, SMZ3) ungeprüft in leads belassen; Play-Store/YouTube/Artikel-Bilder nicht ladbar."
+    "lastRun": "2026-11-19T21:30Z",
+    "summary": "Abo-Anfragen #26 (Reihe Test Drive: 19 Spiele mit Fassungen je Plattform von Hand angelegt, da Wikidata aus der Sitzung gesperrt war; Fan-Mods TDU Platinum, Project Paradise, Project Paradise 2) und #27 (Tomb Raider: Anniversary – kein spielspezifischer Android-Weg belegt, PC-Fassung ergänzt) erledigt. Warteschlange: Tomb Raider (2013) bekommt die offizielle Android-Fassung von Feral (2026); Tomb Raider: Legend ohne belegten Sonderweg; Metroid Prime Remastered Text korrigiert. Leads: 8 neue Spielwege (Phantom Hourglass Recomp, THPS4-Port, FTL Android, NFS III Android, Quest 64 Android, DW2003 Dual Screen, SMZ3 Universe ×2), 5 neue Spiele, 11 Leads verworfen. 10 Bilder geprüft (9 bestätigt, 1 Logo entfernt). Offen: Wikidata/Steam/Reddit nicht erreichbar, daher keine Cover für die neuen Test-Drive-Spiele und keine Wikidata-Basisprofile; Test-Drive-Spiele nicht in die Warteschlange gestellt (kaum Android-Wege zu erwarten); übrige ~40 GitHub-Leads ungeprüft."
   },
   "watcher": {
     "lastRun": "2026-11-19T14:29:12Z",
@@ -5938,8 +5805,9 @@
     "https://www.reddit.com/r/SBCGaming/comments/1xq1kjq/skyrim_se_dual_screen_on_the_ayn_thor/"
   ],
   "dualScan": {
-    "lastRun": "2026-11-08",
-    "found": 13
+    "lastRun": "2026-11-19",
+    "found": 2,
+    "by": "agent"
   },
   "franchiseScan": {
     "Doom": {
