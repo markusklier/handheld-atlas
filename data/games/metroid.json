@@ -33,7 +33,7 @@
     },
     {
       "id": "famicom-disk-system-1986",
-      "name": "Famicom Disk System video game machine – NES (1986)",
+      "name": "Famicom Disk System (1986)",
       "type": "port",
       "year": 1986,
       "platforms": [
@@ -64,7 +64,7 @@
     },
     {
       "id": "famicom-disk-system-1986-arcade",
-      "name": "Famicom Disk System video game machine – Arcade (1986)",
+      "name": "Arcade (1986)",
       "type": "port",
       "year": 1986,
       "platforms": [
