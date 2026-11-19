@@ -73,6 +73,7 @@ const F = (id) => FILTERS.find((f) => f.id === id).test;
 const TABS = [
   { id: 'discover', href: '#/', label: 'Entdecken', icon: 'compass' },
   { id: 'dual', href: '#/dual', label: 'Dual Screen', icon: 'dual' },
+  { id: 'consoles', href: '#/konsolen', label: 'Konsolen', icon: 'console' },
   { id: 'franchises', href: '#/franchises', label: 'Franchises', icon: 'layers' },
   { id: 'projects', href: '#/projekte', label: 'Projekte', icon: 'box' },
   { id: 'news', href: '#/neu', label: 'Neu', icon: 'spark' },
@@ -120,6 +121,8 @@ function index(data) {
     const ty = /\((\d{4})\)/.exec(g.title);
     const ys = (g.versions || []).filter((v) => v.year && v.type === 'original').map((v) => v.year);
     g._year = ty ? +ty[1] : ys.length ? Math.min(...ys) : null;
+    g._plats = new Set([...g.platforms, ...(g.versions || []).flatMap((v) => v.platforms || [])]);
+    g._genre = canonGenre(g.genre);
     return g;
   });
   DB.byId = new Map(DB.games.map((g) => [g.id, g]));
@@ -134,6 +137,120 @@ function index(data) {
   })).sort((a, b) => (b.routes > 0) - (a.routes > 0) || b.games.length - a.games.length || a.name.localeCompare(b.name));
   redditMerge();
   DB.allPlatforms = [...new Set(DB.games.flatMap((g) => g.platforms))].sort((a, b) => a.localeCompare(b, 'de'));
+  DB.consoles = consoleList();
+}
+
+/* ---------- genres: one German name per genre, families for "similar" (Wikidata writes English labels) ---------- */
+const GENRES = [
+  ['action-rpg', 'Action-Rollenspiel', /action[ -]?(role|rollen)|hack.?and.?slash|soulslike|souls-like|diablo/i, 'rpg'],
+  ['tactics-rpg', 'Taktik-Rollenspiel', /tactic.*(role|rollen)|taktik-?rollen|strategy rpg|turn-based tactics|taktik\//i, 'rpg'],
+  ['rpg', 'Rollenspiel', /role-?playing|rollenspiel|\brpg\b|jrpg|dungeon crawl|mmorpg/i, 'rpg'],
+  ['metroidvania', 'Metroidvania', /metroidvania/i, 'action'],
+  ['action-adventure', 'Action-Adventure', /action-?adventure|lebenssimulation \/ action/i, 'action'],
+  ['survival-horror', 'Survival-Horror', /survival.?horror|psychological horror|\bhorror\b/i, 'action'],
+  ['stealth', 'Stealth', /stealth|schleich/i, 'action'],
+  ['fps', 'Ego-Shooter', /first-person shooter|ego-?shooter|\bfps\b/i, 'shooter'],
+  ['tps', 'Third-Person-Shooter', /third-person|taktik-shooter/i, 'shooter'],
+  ['shmup', "Shoot ’em up", /shoot.?.?em.?up|rail-?shooter|run and gun|lightgun|light gun|bullet hell/i, 'shooter'],
+  ['platformer', 'Jump ’n’ Run', /platform(er| game)|jump.?.?n.?.?run|plattform/i, 'platform'],
+  ['kart', 'Kart-Rennspiel', /kart/i, 'racing'],
+  ['racing', 'Rennspiel', /racing|rennspiel|driving|watercraft|rally/i, 'racing'],
+  ['fighting', 'Kampfspiel', /fighting|fighter|kampfspiel|prügel/i, 'fighting'],
+  ['beatemup', "Beat ’em up", /beat.?.?em.?up/i, 'fighting'],
+  ['strategy', 'Strategie', /strateg|real-time tactics|echtzeit/i, 'strategy'],
+  ['card', 'Kartenspiel', /card|karten/i, 'strategy'],
+  ['simulation', 'Simulation', /simulat|sandbox|management|pet\b|digital pet|tycoon|flug/i, 'sim'],
+  ['sports', 'Sport', /sport|tennis|football|soccer|golf|snowboard|skateboard|boxing|fitness|basketball/i, 'sports'],
+  ['puzzle', 'Puzzle', /puzzle|knobel/i, 'puzzle'],
+  ['music', 'Musik & Rhythmus', /music|rhythm|rhythmus/i, 'party'],
+  ['party', 'Party', /party|minigame/i, 'party'],
+  ['adventure', 'Adventure', /adventure|visual novel|interaktive serie|point.and.click/i, 'adventure'],
+  ['roguelike', 'Roguelike', /rogue/i, 'action'],
+  ['pinball', 'Flipper', /pinball|flipper/i, 'party'],
+  ['action', 'Action', /action|arcade|survival/i, 'action'],
+];
+const genreMemo = new Map();
+function canonGenre(raw) {
+  if (!raw) return null;
+  if (!genreMemo.has(raw)) {
+    const hit = GENRES.find(([, , rx]) => rx.test(raw));
+    genreMemo.set(raw, hit ? { key: hit[0], label: hit[1], fam: hit[3] } : { key: norm(raw), label: raw, fam: norm(raw) });
+  }
+  return genreMemo.get(raw);
+}
+
+/* ---------- consoles: every platform with its games (all versions count, so ports show up too) ---------- */
+const CONSOLE_GROUPS = [
+  ['nintendo-home', 'Nintendo – Heimkonsolen', ['NES', 'SNES', 'Nintendo 64', 'Nintendo GameCube', 'Wii', 'Wii U', 'Nintendo Switch', 'Nintendo Switch 2']],
+  ['nintendo-handheld', 'Nintendo – Handhelds', ['Game Boy / Game Boy Color', 'Game Boy Advance', 'Nintendo DS', 'Nintendo 3DS']],
+  ['sony', 'Sony PlayStation', ['PlayStation', 'PlayStation 2', 'PSP', 'PlayStation 3', 'PlayStation Vita', 'PlayStation 4', 'PlayStation 5']],
+  ['microsoft', 'Microsoft Xbox', ['Xbox', 'Xbox 360', 'Xbox One', 'Xbox Series']],
+  ['sega', 'Sega', ['Sega Master System', 'Sega Mega Drive', 'Sega Game Gear', 'Sega CD', 'Sega Saturn', 'Dreamcast']],
+  ['pc', 'PC & Mobil', ['PC', 'Macintosh', 'Linux', 'Android', 'iOS', 'Java ME', 'Nokia N-Gage']],
+];
+function consoleList() {
+  const count = new Map();
+  for (const g of DB.games) for (const p of g._plats) count.set(p, (count.get(p) || 0) + 1);
+  const known = new Set(CONSOLE_GROUPS.flatMap(([, , ps]) => ps));
+  const other = [...count.keys()].filter((p) => !known.has(p) && count.get(p) >= 2).sort((a, b) => count.get(b) - count.get(a));
+  return [...CONSOLE_GROUPS, ['other', 'Weitere', other]].map(([id, label, ps]) => ({ id, label, platforms: ps.filter((p) => count.get(p)).map((p) => ({ name: p, count: count.get(p) })) }))
+    .filter((grp) => grp.platforms.length);
+}
+const onPlatform = (p) => DB.games.filter((g) => g._plats.has(p));
+/* first released on this platform (not a Virtual Console or later port) */
+const originalOn = (g, p) => (g.versions || []).some((v) => v.type === 'original' && v.platforms.includes(p)) || (!(g.versions || []).length && g.platforms[0] === p);
+/* the box of the release on this platform (GameCube box on the GameCube page), else the game's own box if it is from there */
+function coverOn(g, p) {
+  const v = (g.versions || []).find((x) => x.cover && x.platforms.includes(p));
+  if (v) return v.cover;
+  return g.cover && (originalOn(g, p) || g.platforms[0] === p) ? g.cover : null;
+}
+const isSpecial = (g, p) => g.routes.some((r) => {
+  const v = (g.versions || []).find((x) => x.id === r.release);
+  return (!v || v.platforms.includes(p)) && (r.features?.includes('dual-screen') || NATIVE.has(r.kind) || r.kind === 'emulator-mod' || r.kind === 'companion');
+});
+function consoleTile(p, n) {
+  const games = onPlatform(p).filter((g) => coverOn(g, p)).sort((a, b) => originalOn(b, p) - originalOn(a, p) || b._score - a._score || completeness(b).pct - completeness(a).pct).slice(0, 3);
+  const special = onPlatform(p).filter((g) => isSpecial(g, p)).length;
+  const emus = (DB.platforms[p] || []).map((o) => o.name).slice(0, 2);
+  return `<a class="console-tile" href="#/konsole/${encodeURIComponent(p)}" style="--h:${hue(p)}">
+    <span class="console-covers">${games.map((g) => `<img src="${esc(coverOn(g, p).url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`).join('')}</span>
+    <span class="console-name">${platformBadge(p)}<b>${esc(p)}</b></span>
+    <span class="faint">${n} Spiele${special ? ` · ${special} mit besonderem Weg` : ''}</span>
+    ${emus.length ? `<span class="faint console-emu">${icon('gamepad')}${esc(emus.join(', '))}</span>` : '<span class="faint console-emu">kein Emulator eingetragen</span>'}</a>`;
+}
+function viewConsoles() {
+  return `<h1>Konsolen</h1><p class="muted">Alle Spiele je Plattform – auch Portierungen und Neuauflagen zählen mit. Auf jeder Konsolenseite: die Emulatoren, besondere Wege und Dual Screen.</p>
+    ${DB.consoles.map((grp) => `<section class="section"><div class="section-head"><h2>${esc(grp.label)}</h2><span class="faint">${grp.platforms.length} Plattformen</span></div>
+      <div class="console-grid">${grp.platforms.map((x) => consoleTile(x.name, x.count)).join('')}</div></section>`).join('')}`;
+}
+function viewConsole(p) {
+  const all = onPlatform(p);
+  if (!all.length) return `<div class="empty">Keine Spiele für ${esc(p)}. <a class="link" href="#/konsolen">Alle Konsolen</a></div>`;
+  const sort = state.consoleSort || 'best';
+  const genre = state.consoleGenre || '';
+  const genres = [...new Map(all.filter((g) => g._genre).map((g) => [g._genre.key, g._genre])).values()]
+    .map((x) => ({ ...x, n: all.filter((g) => g._genre?.key === x.key).length })).filter((x) => x.n >= 2).sort((a, b) => b.n - a.n).slice(0, 12);
+  const list = all.filter((g) => !genre || g._genre?.key === genre).sort(sort === 'az' ? (a, b) => a.title.localeCompare(b.title, 'de')
+    : sort === 'year' ? (a, b) => (a._year || 9999) - (b._year || 9999) || a.title.localeCompare(b.title, 'de')
+      : (a, b) => originalOn(b, p) - originalOn(a, p) || b._score - a._score || completeness(b).pct - completeness(a).pct);
+  const special = all.filter((g) => isSpecial(g, p)).sort((a, b) => b._score - a._score);
+  const ports = all.filter((g) => !originalOn(g, p)).length;
+  const dual = all.filter((g) => g._dual || twoScreenPlatform(g) === p).sort((a, b) => b._score - a._score);
+  const emus = DB.platforms[p] || [];
+  const shelf = (title, games) => games.length ? `<section class="section"><div class="section-head"><h2>${title}</h2><span class="faint">${games.length} Spiele</span></div><div class="shelf">${games.slice(0, 18).map(cardHTML).join('')}</div></section>` : '';
+  const limit = state.consoleLimit || PAGE;
+  return `<a class="btn back" href="#/konsolen" data-back>${icon('back')}Alle Konsolen</a>
+    <div class="console-hero" style="--h:${hue(p)}"><div>${platformBadge(p)}<h1>${esc(p)}</h1>
+      <p class="muted">${all.length} Spiele in Atlas${ports ? ` (${all.length - ports} hier zuerst erschienen, ${ports} als Portierung oder Neuauflage)` : ''} · ${special.length} mit besonderem Weg (Port, Mod, Dual Screen) · ${all.filter((g) => DB.researched?.[g.id]).length} tiefenrecherchiert</p></div>
+      ${emus.length ? `<div class="console-emus"><h4>${icon('gamepad')}${p === 'PC' ? 'PC-Laufzeiten' : 'Emulatoren'} auf Android</h4>${emus.map((o) => `<a class="emu-chip" href="#/projekt/${esc(o.project)}" title="${esc(o.note || '')}"><b>${esc(o.name)}</b>${o.note ? `<span>${esc(o.note.slice(0, 70))}${o.note.length > 70 ? '…' : ''}</span>` : ''}</a>`).join('')}</div>` : ''}</div>
+    ${shelf(`${icon('spark')} Besondere Wege`, special)}
+    ${shelf(`${icon('dual')} Dual Screen`, dual)}
+    <section class="section"><div class="result-head"><h2>Alle Spiele</h2><span class="faint">${list.length} Spiele</span></div>
+      <div class="filters"><button class="chip" data-cgenre="" aria-pressed="${!genre}">Alle Genres</button>${genres.map((x) => `<button class="chip" data-cgenre="${esc(x.key)}" aria-pressed="${genre === x.key}">${esc(x.label)} <span class="faint">${x.n}</span></button>`).join('')}
+        <select class="chip" id="csort" aria-label="Sortierung">${[['best', 'Empfehlung'], ['az', 'A–Z'], ['year', 'Erscheinungsjahr']].map(([v, l]) => `<option value="${v}" ${v === sort ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+      ${gridHTML(list.slice(0, limit))}
+      ${list.length > limit ? `<div class="more"><button class="btn" data-climit="${limit + PAGE}">Mehr laden (${list.length - limit} weitere)</button></div>` : ''}</section>`;
 }
 
 const device = () => DB.meta.devices?.find((d) => d.id === state.device) || DB.meta.devices?.[0] || {};
@@ -404,6 +521,9 @@ function viewDiscover() {
     const byScore = (a, b) => b._score - a._score;
     const recent = DB.changelog.flatMap((e) => [e.game, ...(e.games || [])]).filter(Boolean);
     const recentGames = [...new Set(recent)].map((id) => DB.byId.get(id)).filter((g) => g && g.routes.length);
+    html += `<section class="section"><div class="section-head"><h2>${icon('console')} Nach Konsole</h2><a href="#/konsolen">Alle</a></div>
+      <div class="console-strip">${DB.consoles.flatMap((grp) => grp.platforms).filter((x) => x.count >= 3).sort((a, b) => b.count - a.count).slice(0, 14)
+        .map((x) => `<a class="console-chip" href="#/konsole/${encodeURIComponent(x.name)}">${platformBadge(x.name)}<span>${esc(x.name)}</span><b>${x.count}</b></a>`).join('')}</div></section>`;
     html += shelf('Dual Screen auf dem Thor', DB.games.filter((g) => g._dual).sort(byScore), '#/filter/dual');
     html += shelf('Native Ports, Decomps &amp; Recomps', curated.filter(F('native')).sort(byScore), '#/filter/native');
     html += shelf('Offiziell für Android erschienen', DB.games.filter(F('android')).sort(byScore), '#/filter/android');
@@ -798,7 +918,7 @@ function viewGame(id) {
       <h1>${esc(g.title)}</h1>
       ${g.remakeOf && DB.byId.get(g.remakeOf) ? `<a class="remake-of" href="#/spiel/${esc(g.remakeOf)}">${icon('back')}Remake von <b>${esc(DB.byId.get(g.remakeOf).title)}</b>${(() => { const y = versionsOf(DB.byId.get(g.remakeOf))[0]?.year; return y ? ' (' + y + ')' : ''; })()}</a>` : ''}
       <div class="pfs">${badges(g.platforms, 8)}</div>
-      <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g.genre ? `<span class="tag">${esc(g.genre)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
+      <div class="row"><span class="tag">${versions.length} ${versions.length === 1 ? 'Fassung' : 'Fassungen'}</span><span class="tag">${fitting.length} ${fitting.length === 1 ? 'Weg' : 'Wege'} für ${esc(device().name)}</span>${g._genre ? `<span class="tag">${esc(g._genre.label)}</span>` : ''}${g._dual ? `<span class="tag dual">${icon('dual')}Dual Screen</span>` : ''}</div>
       ${g.summary ? `<p>${esc(g.summary)}</p>` : ''}
       <div class="row"><button class="btn ${fav ? 'on' : ''}" id="fav">${icon('bookmark')}${fav ? 'Gemerkt' : 'Merken'}</button>
       <button class="btn" data-analyze="${esc(g.id)}" title="Sofort auf diesem Gerät mit deinem OpenAI-Schlüssel">${icon('ai')}Sofortanalyse</button>
@@ -1699,18 +1819,29 @@ function eventsSince(g, since) {
   return DB.changelog.filter((e) => e.date > since && ((e.type === 'release' && pids.has(e.project)) || (e.game === g.id && e.by !== 'ai-research')));
 }
 /* Discovery: games of the same system / similar games, best explored first */
+/* Below a game: more of the series, similar games (genre first, then platform, era and kind of ways), more for the console. */
+function similarity(g, x) {
+  if (!g._genre || !x._genre) return 0;
+  let sc = g._genre.key === x._genre.key ? 6 : g._genre.fam === x._genre.fam ? 3 : 0;
+  if (!sc) return 0;
+  sc += x._plats.has(g.platforms[0]) ? 2 : [...g._plats].some((p) => x._plats.has(p)) ? 1 : 0;
+  if (g._year && x._year) { const d = Math.abs(g._year - x._year); sc += d <= 3 ? 2 : d <= 8 ? 1 : 0; }
+  if (g._dual && x._dual) sc += 2;
+  if (g.routes.some((r) => NATIVE.has(r.kind)) && x.routes.some((r) => NATIVE.has(r.kind))) sc += 1;
+  return sc + Math.min(x._score / 40, 2);
+}
 function relatedSections(g) {
   const sys = g.platforms[0];
   const others = DB.games.filter((x) => x.id !== g.id);
   const rank = (a, b) => b._score - a._score || completeness(b).pct - completeness(a).pct;
-  const sameSystem = sys ? others.filter((x) => x.platforms[0] === sys && x.franchise !== g.franchise).sort(rank) : [];
-  const words = (x) => new Set(norm(x.genre || '').split(/[^a-z0-9]+/).filter((w) => w.length > 3));
-  const gw = words(g);
-  const similar = gw.size ? others.filter((x) => x.franchise !== g.franchise && [...words(x)].some((w) => gw.has(w))
-    && x.platforms.some((p) => g.platforms.includes(p))).sort(rank) : [];
+  const series = others.filter((x) => x.franchise === g.franchise && x.remakeOf !== g.id && g.remakeOf !== x.id).sort((a, b) => (a._year || 9999) - (b._year || 9999));
+  const similar = others.filter((x) => x.franchise !== g.franchise).map((x) => [x, similarity(g, x)]).filter(([, sc]) => sc > 0)
+    .sort((a, b) => b[1] - a[1]).map(([x]) => x);
+  const sameSystem = sys ? others.filter((x) => x._plats.has(sys) && x.franchise !== g.franchise && !similar.slice(0, 14).includes(x)).sort(rank) : [];
   const shelf = (title, list, href) => list.length ? `<section class="section"><div class="section-head"><h2>${title}</h2>${href ? `<a href="${href}">Alle</a>` : ''}</div><div class="shelf">${list.slice(0, 14).map(cardHTML).join('')}</div></section>` : '';
-  return shelf(`Ähnliche Spiele${g.genre ? ` · ${esc(g.genre)}` : ''}`, similar)
-    + shelf(`Mehr für ${esc(sys || '')}`, sameSystem, sys ? `#/plattform/${encodeURIComponent(sys)}` : '');
+  return shelf(`Mehr aus der Reihe ${esc(g.franchise)}`, series.length && g.franchise !== g.title ? series : [], `#/franchise/${encodeURIComponent(g.franchise)}`)
+    + shelf(`Ähnliche Spiele${g._genre ? ` · ${esc(g._genre.label)}` : ''}`, similar)
+    + shelf(`Mehr für ${esc(sys || '')}`, sameSystem, sys ? `#/konsole/${encodeURIComponent(sys)}` : '');
 }
 
 function researchInfo(g) {
@@ -1870,6 +2001,11 @@ function route() {
   }
   else if (a === 'franchises') { html = viewFranchises(); tab = 'franchises'; }
   else if (a === 'dual') { html = viewDual(); tab = 'dual'; }
+  else if (a === 'konsolen') { html = viewConsoles(); tab = 'consoles'; }
+  else if (a === 'konsole') {
+    if (state.lastConsole !== b) { state.consoleGenre = ''; state.consoleLimit = PAGE; state.lastConsole = b; }
+    html = viewConsole(b); tab = 'consoles';
+  }
   else if (a === 'franchise') { html = viewFranchise(b); tab = 'franchises'; }
   else if (a === 'projekte') { html = viewProjects(); tab = 'projects'; }
   else if (a === 'projekt') { html = viewProject(b); tab = 'projects'; }
@@ -1878,7 +2014,7 @@ function route() {
   else if (a === 'info') { html = viewInfo(); tab = 'info'; }
   else if (a === 'neu-spiel') { html = viewNewGame(b); tab = null; }
   else if (a === 'einrichten' && typeof viewSetup === 'function') { html = viewSetup(b); tab = null; }
-  else if (a === 'plattform') { state.chips = new Set(); state.platform = decodeURIComponent(b || ''); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
+  else if (a === 'plattform') { history.replaceState({ d: depth }, '', '#/konsole/' + encodeURIComponent(b || '')); state.lastConsole = b; html = viewConsole(b); tab = 'consoles'; }
   else if (a === 'filter') { state.chips = new Set([b]); state.q = ''; $('#q').value = ''; state.limit = PAGE; history.replaceState({ d: depth }, '', '#/'); html = viewDiscover(); }
   else html = viewDiscover();
   scrollMemo.set(currentKey, window.scrollY);
@@ -1945,6 +2081,8 @@ document.addEventListener('click', (e) => {
   const t = e.target.closest('button, a');
   if (!t) return;
   if (t.dataset.dualtype !== undefined) { e.preventDefault(); state.dualType = t.dataset.dualtype; state.dualLimit = 40; route(); restoreFocus(`[data-dualtype="${t.dataset.dualtype}"]`); return; }
+  if (t.dataset.cgenre !== undefined) { e.preventDefault(); state.consoleGenre = t.dataset.cgenre; state.consoleLimit = PAGE; const y = window.scrollY; route(); window.scrollTo(0, y); restoreFocus(`[data-cgenre="${t.dataset.cgenre}"]`); return; }
+  if (t.dataset.climit) { e.preventDefault(); state.consoleLimit = +t.dataset.climit; const y = window.scrollY; route(); window.scrollTo(0, y); return; }
   if (t.dataset.duallimit) { e.preventDefault(); state.dualLimit = +t.dataset.duallimit; const y = window.scrollY; route(); window.scrollTo(0, y); return; }
   if (t.dataset.gotoWay) { state.pendingWay = t.dataset.gotoWay; }
   if (t.dataset.analyze) {
@@ -2020,6 +2158,7 @@ document.addEventListener('change', (e) => {
   if (e.target.id === 'platform') { state.platform = e.target.value; state.limit = PAGE; rerender(); restoreFocus('#platform'); }
   if (e.target.id === 'sort') { state.sort = e.target.value; rerender(); restoreFocus('#sort'); }
   if (e.target.id === 'dualsort') { state.dualSort = e.target.value; route(); restoreFocus('#dualsort'); }
+  if (e.target.id === 'csort') { state.consoleSort = e.target.value; const y = window.scrollY; route(); window.scrollTo(0, y); restoreFocus('#csort'); }
 });
 
 let qTimer;

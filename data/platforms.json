@@ -271,6 +271,18 @@
         ],
         "note": "Cemu-Fork für Android 11+ (arm64, Vulkan 1.1+), öffentliche Beta: viele Spiele laufen, viele noch nicht. Zeigt das GamePad-Bild auf dem zweiten Bildschirm (AYN Thor). Spielstände sichern."
       }
+    ],
+    "NES": [
+      {
+        "name": "RetroArch / NES-Kern",
+        "kind": "emulation",
+        "project": "retroarch",
+        "targets": [
+          "android",
+          "linux-x86_64"
+        ],
+        "note": "Allgemeiner NES-Emulatorweg (Kerne wie FCEUmm oder Mesen). Keine individuelle Prüfung des Spiels."
+      }
     ]
   }
 }

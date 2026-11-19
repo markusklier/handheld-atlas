@@ -805,3 +805,34 @@ body.dual-companion :focus, body.dual-companion :focus-visible { outline: none !
   .cp-head h1 { -webkit-line-clamp: 2; }
   .cp-thumb { width: 44px; }
 }
+
+/* ---------- Konsolen (Stöbern nach Plattform) ---------- */
+.console-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.console-tile { position: relative; display: flex; flex-direction: column; gap: 4px; padding: 10px 12px 12px; border-radius: 16px; border: 1px solid var(--line); overflow: hidden;
+  background: linear-gradient(160deg, hsl(var(--h) 28% 17%), var(--surface) 65%); color: var(--text); }
+.console-tile:hover, .console-tile:focus-visible { border-color: var(--accent); }
+.console-covers { display: flex; height: 92px; margin-bottom: 6px; padding-left: 4px; }
+.console-covers img { height: 92px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 7px; box-shadow: 0 6px 18px rgba(0, 0, 0, .5), 0 0 0 1px rgba(255, 255, 255, .08); margin-left: -14px; background: var(--surface-3); }
+.console-covers img:first-child { margin-left: 0; transform: rotate(-4deg); }
+.console-covers img:nth-child(2) { transform: translateY(4px); z-index: 1; }
+.console-covers img:nth-child(3) { transform: rotate(4deg); }
+.console-name { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.console-name b { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.console-tile .faint { font-size: 12.5px; }
+.console-emu { display: flex; align-items: center; gap: 4px; }
+.console-emu svg { width: 14px; height: 14px; }
+.console-strip { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px; scrollbar-width: thin; }
+.console-chip { flex: none; display: flex; align-items: center; gap: 7px; padding: 7px 11px 7px 8px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-size: 13.5px; font-weight: 600; white-space: nowrap; }
+.console-chip:hover, .console-chip:focus-visible { border-color: var(--accent); }
+.console-chip b { color: var(--muted); font-weight: 650; font-size: 12.5px; }
+.console-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 16px; align-items: start; padding: 16px; border-radius: 18px; border: 1px solid var(--line);
+  background: linear-gradient(150deg, hsl(var(--h) 30% 18%), var(--surface) 70%); margin-top: 6px; }
+.console-hero h1 { margin: 6px 0 4px; }
+.console-hero .muted { margin: 0; }
+.console-emus { display: flex; flex-direction: column; gap: 6px; }
+.console-emus h4 { margin: 0 0 2px; display: flex; gap: 6px; align-items: center; font-size: 12px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+.console-emus h4 svg { width: 15px; height: 15px; }
+.emu-chip { display: flex; flex-direction: column; gap: 1px; padding: 8px 11px; border-radius: 11px; background: rgba(10, 13, 12, .45); border: 1px solid var(--line); color: var(--text); }
+.emu-chip:hover, .emu-chip:focus-visible { border-color: var(--accent); }
+.emu-chip span { color: var(--muted); font-size: 12.5px; }
+@media (max-width: 640px) { .console-hero { grid-template-columns: 1fr; } }
