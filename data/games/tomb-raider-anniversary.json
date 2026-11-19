@@ -219,7 +219,38 @@
       ]
     }
   ],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002092.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002093.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002094.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002095.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002091.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8000/0000002096.1920x1080.jpg?t=1729009457",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8000/"
+    }
+  ],
   "updatedAt": "2026-11-19",
   "wikidata": "Q580667",
   "wikipedia": "https://en.wikipedia.org/wiki/Tomb_Raider%3A_Anniversary",
