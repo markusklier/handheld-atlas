@@ -1,0 +1,108 @@
+{
+  "id": "call-of-duty-modern-warfare-3",
+  "title": "Call of Duty: Modern Warfare 3",
+  "franchise": "Call of Duty",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3",
+    "PC",
+    "Wii"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Die Xbox-360-Fassung läuft als nativer Recomp-Port auf Android – laut Projekt auf dem AYN Thor mit rund 60 FPS in Kampagne, Spec Ops und Mehrspieler.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports (Disc-Fassung USA/Europa)."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (2011)",
+      "type": "original",
+      "year": 2011,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Wii (2011)",
+      "type": "port",
+      "year": 2011,
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yassinsolim/mw3-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Kampagne (Black Tuesday) ca. 58 FPS, Spec Ops Survival ca. 60 FPS, Mehrspieler Seatown 60 FPS",
+          "settings": "App-Standard, Turnip",
+          "source": "https://github.com/yassinsolim/mw3-recomp",
+          "date": "2026-11-20"
+        }
+      ],
+      "checkedAt": "2026-11-20",
+      "id": "mw3-recomp",
+      "name": "MW3 Recompiled",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Disc (USA/Europa)",
+      "runtime": "XenonRecomp, Vulkan (mitgelieferter Turnip-Treiber)",
+      "projects": [
+        "mw3-recomp"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "online",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Disc von Modern Warfare 3 als .iso",
+        "Windows-10/11-PC (64 Bit, 16 GB RAM, ca. 40 GB frei) zum Bauen des Spielcodes",
+        "Android 10+ (64 Bit) mit Vulkan, ca. 7 GB frei"
+      ],
+      "benefit": "Kampagne, Spec Ops Survival und Mehrspieler (Split-Screen, System Link, Bots) als native Android-App ohne Emulator. Die App aktualisiert sich selbst; derselbe Baukasten baut auch MW2.",
+      "caveat": "Laut README fast nur auf einem Gerät (AYN Thor) getestet; erster Bau dauert eine bis mehrere Stunden. Online-Lobby läuft über einen Relay des Projekts; Sprachchat ungetestet.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

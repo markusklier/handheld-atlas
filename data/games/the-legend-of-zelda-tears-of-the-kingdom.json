@@ -260,10 +260,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/graphics-performance.webp",
-          "caption": "Graphics: Performance tab with presets",
+          "caption": "Grafik-Einstellungen mit Leistungs-Voreinstellungen",
           "source": "https://github.com/AurelioB/totk-android",
           "credit": "TotK Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-install.webp",

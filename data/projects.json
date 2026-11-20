@@ -3252,6 +3252,78 @@
         "call-of-duty-modern-warfare-2"
       ],
       "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "mw3-recomp",
+      "name": "MW3 Recompiled",
+      "kind": "port",
+      "url": "https://github.com/yassinsolim/mw3-recomp",
+      "repo": "yassinsolim/mw3-recomp",
+      "description": "Statische Recompilation (XenonRecomp) von Call of Duty: Modern Warfare 3 (Xbox 360) als native Android- und Windows-App; auf dem AYN Thor gemessen.",
+      "games": [
+        "call-of-duty-modern-warfare-3"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "ds2-sotfs-recomp",
+      "name": "Dark Souls II: SotFS Android (Recomp)",
+      "kind": "port",
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+      "repo": "Lazaer-YZY/ds2-sotfs-recomp",
+      "description": "Statische Recompilation (ReXGlue SDK) von Dark Souls II: Scholar of the First Sin (Xbox 360) für Android arm64; auf dem AYN Thor entwickelt.",
+      "games": [
+        "dark-souls-ii"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "bioshock1-native-recomp",
+      "name": "BioShock 1 Native ReComp",
+      "kind": "port",
+      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp",
+      "repo": "EddyGameDev/bioshock1-native-recomp",
+      "description": "Statische Recompilation (ReXGlue SDK) von BioShock (Xbox 360) für Windows und Android; experimentell.",
+      "games": [
+        "bioshock"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "darkwatch-android",
+      "name": "Darkwatch: Darker Edition – Android",
+      "kind": "port",
+      "url": "https://github.com/CowKillers/darkwatch-android",
+      "repo": "CowKillers/darkwatch-android",
+      "description": "Nativer Android-Port von Darkwatch (Xbox) per statischer Recompilation, basierend auf dem PC-Port Darkwatch: Darker Edition.",
+      "games": [
+        "darkwatch"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "qudlink",
+      "name": "QudLink",
+      "kind": "companion",
+      "url": "https://github.com/UncookedNoodle/QudLink",
+      "repo": "UncookedNoodle/QudLink",
+      "description": "Zweitbildschirm-Begleiter für Caves of Qud (Mod + Android-App) für Dual-Screen-Handhelds wie den AYN Thor.",
+      "games": [
+        "caves-of-qud"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "oot-native",
+      "name": "OoT Native for Android",
+      "kind": "port",
+      "url": "https://github.com/P1R4N351/oot-android",
+      "repo": "P1R4N351/oot-android",
+      "description": "Nativer Android-Port der Switch-2-Fassung von Ocarina of Time (2026) für Adreno-Handhelds wie den AYN Thor; Begleitbildschirm geplant. Work in progress.",
+      "games": [
+        "the-legend-of-zelda-ocarina-of-time-2026"
+      ],
+      "checkedAt": "2026-11-20"
     }
   ]
 }

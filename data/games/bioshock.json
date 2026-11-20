@@ -1,0 +1,123 @@
+{
+  "id": "bioshock",
+  "title": "BioShock",
+  "franchise": "BioShock",
+  "platforms": [
+    "PC",
+    "Xbox 360",
+    "PlayStation 3"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Ein experimenteller Recomp-Port bringt die Xbox-360-Fassung nativ auf Android – Titelbild, Ton, Touch-Steuerung und Spielstände laufen bereits.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports (World Release, Title ID 545407D8)."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "remastered-pc",
+      "name": "BioShock Remastered – PC (2016)",
+      "type": "remaster",
+      "year": 2016,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "remastered-ps4-xbox-one",
+      "name": "BioShock Remastered – PS4/Xbox One (2016)",
+      "type": "remaster",
+      "year": 2016,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ]
+    },
+    {
+      "id": "remastered-switch",
+      "name": "BioShock Remastered – Nintendo Switch (2020)",
+      "type": "remaster",
+      "year": 2020,
+      "platforms": [
+        "Nintendo Switch"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": "v0.0.5.3-experimental",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/EddyGameDev/bioshock1-native-recomp/HEAD/docs/screenshots/android-title.png",
+          "caption": "Titelbild auf Android mit Touch-Steuerung",
+          "source": "https://github.com/EddyGameDev/bioshock1-native-recomp",
+          "credit": "BioShock 1 Native ReComp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/EddyGameDev/bioshock1-native-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20",
+      "id": "bioshock1-recomp",
+      "name": "BioShock 1 Native ReComp",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360 (World Release)",
+      "runtime": "ReXGlue SDK, eigener Xenos-Renderer (OpenGL ES 3.2/Vulkan)",
+      "projects": [
+        "bioshock1-native-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "upscaling",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Disc von BioShock (World Release, Media ID 44E704F7)",
+        "Android 9+ (arm64) mit Vulkan"
+      ],
+      "benefit": "Native Android-App ohne Emulator: Auflösung 360p–1440p live umschaltbar, Ton über AAudio, vollständige Xbox-360-Touch-Steuerung, Speichern und Laden im Spiel.",
+      "caveat": "Experimentelle Vorabversion (v0.0.5.3-experimental); laut README auf einem Samsung-Galaxy-Gerät getestet, nicht auf dem AYN Thor. Nur die genannte Disc-Fassung wird unterstützt.",
+      "effort": "experimental"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

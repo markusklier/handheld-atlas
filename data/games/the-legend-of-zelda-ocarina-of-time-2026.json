@@ -1,0 +1,80 @@
+{
+  "id": "the-legend-of-zelda-ocarina-of-time-2026",
+  "title": "The Legend of Zelda: Ocarina of Time (2026)",
+  "franchise": "The Legend of Zelda",
+  "platforms": [
+    "Nintendo Switch 2"
+  ],
+  "genre": "Action-Adventure",
+  "remakeOf": "the-legend-of-zelda-ocarina-of-time",
+  "summary": "Das Switch-2-Remake von 2026; ein früher nativer Android-Port (OoT Native) zielt auf den AYN Thor und plant einen Begleitbildschirm.",
+  "versions": [
+    {
+      "id": "switch-2",
+      "name": "Nintendo Switch 2 (2026)",
+      "type": "original",
+      "year": 2026,
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "note": "Neu gebautes Remake, erschienen am 5. November 2026.",
+      "links": [
+        {
+          "label": "Gematsu",
+          "url": "https://www.gematsu.com/games/the-legend-of-zelda-ocarina-of-time-2026"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": "v0.2.0-beta.1",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/P1R4N351/oot-android"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Kokiri-Wald ca. 15 FPS (Ziel 30+)",
+          "settings": "16-GB-Modell, Turnip, Low-RAM-Einstellungen",
+          "source": "https://github.com/P1R4N351/oot-android",
+          "date": "2026-11-20"
+        }
+      ],
+      "checkedAt": "2026-11-20",
+      "id": "oot2026-native",
+      "name": "OoT Native (Switch-2-Fassung)",
+      "release": "switch-2",
+      "kind": "recomp",
+      "edition": "Switch 2, Update v131072",
+      "runtime": "BananaNative-Laufzeit, Vulkan (Turnip)",
+      "projects": [
+        "oot-native"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "requires": [
+        "Eigene, selbst gedumpte Switch-2-Fassung (Update v131072)",
+        "Android-Handheld mit Adreno-GPU (Ziel: AYN Thor, 12–16 GB RAM)"
+      ],
+      "benefit": "Die AArch64-Module des Spiels werden einmalig umgeschrieben und laufen direkt auf dem Gerät, die Grafik über Vulkan. Laut README auf einem 16-GB-AYN-Thor bis ins 3D-Spiel gebootet (22 Minuten ohne Absturz).",
+      "caveat": "Sehr früher Stand (v0.2.0-beta.1, noch kein bestätigter Gerätetest der Release-APK); Kokiri-Wald laut README bei ca. 15 FPS. Der Begleitbildschirm (Karte, Items, Lieder) ist erst geplant (Meilenstein M4).",
+      "effort": "experimental"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

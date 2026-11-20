@@ -1,0 +1,150 @@
+{
+  "id": "dark-souls-ii",
+  "title": "Dark Souls II",
+  "franchise": "Dark Souls",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360",
+    "PC"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Scholar of the First Sin (Xbox 360) läuft als nativer Recomp-Port auf Android – laut Projekt auf dem AYN Thor mit 60 FPS im Schnitt.",
+  "versions": [
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
+        "Xbox 360"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (2014)",
+      "type": "original",
+      "year": 2014,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "sotfs-xbox-360",
+      "name": "Scholar of the First Sin – Xbox 360 (2015)",
+      "type": "rerelease",
+      "year": 2015,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Neuauflage mit allen drei DLC-Gebieten (auf Disc 2) und überarbeiteter Gegnerplatzierung; Grundlage des Android-Recomp-Ports."
+    },
+    {
+      "id": "sotfs-playstation-3",
+      "name": "Scholar of the First Sin – PlayStation 3 (2015)",
+      "type": "rerelease",
+      "year": 2015,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "sotfs-pc",
+      "name": "Scholar of the First Sin – PC (2015)",
+      "type": "remaster",
+      "year": 2015,
+      "platforms": [
+        "PC"
+      ],
+      "note": "DirectX-11-Fassung mit verbesserter Grafik und allen DLCs."
+    },
+    {
+      "id": "sotfs-ps4-xbox-one",
+      "name": "Scholar of the First Sin – PS4/Xbox One (2015)",
+      "type": "remaster",
+      "year": 2015,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/03.jpg",
+          "caption": "Majula, aufgenommen auf dem AYN Thor (60-FPS-Einstellung)",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "ds2-sotfs-recomp",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/first_scene.jpg",
+          "caption": "Erste Szene: Things Betwixt im Mondlicht (AYN Thor)",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "ds2-sotfs-recomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "60 FPS im Schnitt, 1%-Tiefs 48–56 FPS in Majula; schwerste Szenen 55–58 FPS",
+          "settings": "60-FPS-Einstellung, Turnip",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "date": "2026-11-20"
+        }
+      ],
+      "checkedAt": "2026-11-20",
+      "id": "ds2-sotfs-recomp",
+      "name": "Dark Souls II: SotFS – nativ auf Android",
+      "release": "sotfs-xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360, Scholar of the First Sin (Disc 1 und 2)",
+      "runtime": "ReXGlue SDK, Xenia-basierter Vulkan-Renderer (mitgelieferter Turnip-Treiber)",
+      "projects": [
+        "ds2-sotfs-recomp"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "upscaling",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Discs 1 und 2 von Dark Souls II: Scholar of the First Sin",
+        "Android 8+ (arm64) mit Vulkan, ca. 8 GB frei plus Platz für ein Disc-Image (7,8 GB)"
+      ],
+      "benefit": "Native Android-App ohne CPU-Emulation: 30/40/60 FPS, Renderauflösung 540p–1440p mit FSR 1, Touch- oder Controller-Steuerung, Leistungsanzeige. Auf dem AYN Thor entwickelt und gemessen.",
+      "caveat": "Laut README spielbar vom Spielstart bis Majula; kurze Einbrüche beim Nachladen neuer Gebiete. Andere GPUs als Adreno ungetestet.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

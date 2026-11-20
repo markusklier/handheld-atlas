@@ -94,10 +94,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/readme-on-the-game-screen.webp",
-          "caption": "Emerald: the quick menu",
+          "caption": "Smaragd mit HUD und Schnellmenü am Bildrand",
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/firered-field.webp",

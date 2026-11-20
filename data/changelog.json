@@ -2,6 +2,117 @@
   "entries": [
     {
       "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "call-of-duty-modern-warfare-3",
+      "text": "Neues Spiel: Call of Duty: Modern Warfare 3 (KI-Fund)",
+      "url": "https://github.com/yassinsolim/mw3-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "call-of-duty-modern-warfare-3",
+      "text": "Neuer Spielweg: MW3 Recompiled – nativer Android-Port der Xbox-360-Fassung, laut Projekt ca. 58–60 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/yassinsolim/mw3-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dark-souls-ii",
+      "text": "Neues Spiel: Dark Souls II mit Fassungen inkl. Scholar of the First Sin (KI-Fund)",
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "dark-souls-ii",
+      "text": "Neuer Spielweg: Dark Souls II SotFS nativ auf Android (Xbox-360-Recomp, auf dem AYN Thor entwickelt, 60 FPS im Schnitt laut Projekt) (KI-Fund)",
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "bioshock",
+      "text": "Neues Spiel: BioShock (KI-Fund)",
+      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "bioshock",
+      "text": "Neuer Spielweg: BioShock 1 Native ReComp – experimenteller Android-Port der Xbox-360-Fassung (KI-Fund)",
+      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "darkwatch",
+      "text": "Neues Spiel: Darkwatch (KI-Fund)",
+      "url": "https://github.com/CowKillers/darkwatch-android"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "darkwatch",
+      "text": "Neuer Spielweg: Darkwatch: Darker Edition – nativer Android-Port der Xbox-Fassung (KI-Fund)",
+      "url": "https://github.com/CowKillers/darkwatch-android"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "caves-of-qud",
+      "text": "Neues Spiel: Caves of Qud (KI-Fund)",
+      "url": "https://github.com/UncookedNoodle/QudLink"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "caves-of-qud",
+      "text": "Neuer Dual-Screen-Weg: QudLink – Bedienfeld mit Fähigkeiten, Inventar, Gegnern und Quests auf dem unteren Bildschirm (KI-Fund)",
+      "url": "https://github.com/UncookedNoodle/QudLink"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-ocarina-of-time-2026",
+      "text": "Neues Spiel: The Legend of Zelda: Ocarina of Time (2026), Remake für Switch 2 (KI-Fund)",
+      "url": "https://www.gematsu.com/games/the-legend-of-zelda-ocarina-of-time-2026"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-ocarina-of-time-2026",
+      "text": "Neuer Spielweg: OoT Native – früher nativer Android-Port der Switch-2-Fassung für den AYN Thor, Begleitbildschirm geplant (KI-Fund)",
+      "url": "https://github.com/P1R4N351/oot-android"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "morrowind",
+      "text": "Bilder geprüft: OpenMW-DS-Bild bestätigt, Banner bei OpenMW Android entfernt, Bildunterschriften auf Deutsch; Pressebericht verlinkt",
+      "url": "https://github.com/Josh-Daniels/OpenMW-DS"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "verified",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Bildprüfung: 10 README-Bilder in 9 Spielen gesichtet – 8 bestätigt, 2 Logos (Ninja Gaiden Black Recompiled, Marchwind64) entfernt"
+    },
+    {
+      "date": "2026-11-20",
       "type": "screenshot-added",
       "by": "device",
       "game": "mighty-doom",

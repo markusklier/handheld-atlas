@@ -516,6 +516,13 @@
       "testedOn": [],
       "screenshots": [
         {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-zelda.png",
+          "caption": "AYN Thor: A Link to the Past oben, Tracker und Karte unten",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "source-verified"
+        },
+        {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-metroid.png",
           "caption": "Super Metroid oben, Tracker mit Karte unten (AYN Thor)",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
@@ -524,18 +531,11 @@
           "dual": true
         },
         {
-          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-zelda.png",
-          "caption": "Thor, A Link to the Past",
-          "source": "https://github.com/doctor-utsugi/smz3-universe",
-          "credit": "SMZ3 Universe",
-          "check": "readme"
-        },
-        {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-runs.png",
-          "caption": "Thor, runs",
+          "caption": "AYN Thor: Lauf-Übersicht auf beiden Bildschirmen",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-3ds-game.png",

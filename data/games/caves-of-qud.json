@@ -1,0 +1,93 @@
+{
+  "id": "caves-of-qud",
+  "title": "Caves of Qud",
+  "franchise": "Caves of Qud",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Roguelike",
+  "summary": "Mit dem Mod QudLink wird der untere Bildschirm des AYN Thor zum Bedienfeld: Fähigkeiten, Inventar, Gegner, Werte und Quests per Touch, während Qud oben läuft.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2024)",
+      "type": "original",
+      "year": 2024,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Version 1.0 nach langer Early-Access-Phase (seit 2015).",
+      "links": [
+        {
+          "label": "Steam",
+          "url": "https://store.steampowered.com/app/333640/Caves_of_Qud/"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": "Unten ein Bedienfeld im Qud-Stil: Fähigkeiten und Schnellplätze, Boden-/Ausrüstungs-/Inventarliste, sichtbare Gegner mit LP und Bewegungsfeld, Werte, Quests und Log.",
+      "steps": [],
+      "version": "1.0.0",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/act.png",
+          "caption": "Reiter „Act“: Fähigkeiten, Schnellplätze und Befehle",
+          "source": "https://github.com/UncookedNoodle/QudLink",
+          "credit": "QudLink",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/items.png",
+          "caption": "Reiter „Items“: Boden, Ausrüstung und Inventar",
+          "source": "https://github.com/UncookedNoodle/QudLink",
+          "credit": "QudLink",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/UncookedNoodle/QudLink"
+        },
+        {
+          "label": "Steam Workshop",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3838966520"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20",
+      "id": "qud-qudlink",
+      "name": "QudLink (Zweitbildschirm-Begleiter)",
+      "release": "pc",
+      "kind": "companion",
+      "edition": "PC (Steam)",
+      "runtime": "PC-Laufzeit (z. B. Winlator/GameNative) + QudLink-Mod und -App",
+      "projects": [
+        "qudlink"
+      ],
+      "features": [
+        "dual-screen",
+        "touch-inventory"
+      ],
+      "dualScreenType": "companion",
+      "requires": [
+        "Eigene PC-Fassung von Caves of Qud (Steam)",
+        "QudLink-Mod aus dem Steam Workshop, im Mods-Menü aktiviert",
+        "QudLink-APK aus den GitHub-Releases"
+      ],
+      "benefit": "Für Zwei-Bildschirm-Handhelds wie den AYN Thor gemacht: Der Mod stellt den Spielzustand lokal bereit (Port 8765), die App zeigt ihn als Touch-Oberfläche und sendet Befehle zurück.",
+      "caveat": "Wie Qud selbst auf dem Gerät läuft (Winlator, GameNative o. Ä.), sagt das README nicht; ein Erfahrungsbericht fehlt noch. Neues Projekt (v1.0.0).",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

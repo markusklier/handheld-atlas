@@ -1,0 +1,95 @@
+{
+  "id": "darkwatch",
+  "title": "Darkwatch",
+  "franchise": "Darkwatch",
+  "platforms": [
+    "Xbox",
+    "PlayStation 2"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Der Western-Horror-Shooter läuft als nativer Recomp-Port der Xbox-Fassung (auf Basis von Darkwatch: Darker Edition) auf Android.",
+  "versions": [
+    {
+      "id": "xbox",
+      "name": "Xbox (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Grundlage von Darkwatch: Darker Edition (PC) und des Android-Ports."
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "PlayStation 2"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "dualScreen": null,
+      "steps": [],
+      "version": null,
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/CowKillers/darkwatch-android/HEAD/docs/screenshots/cemetery.jpg",
+          "caption": "Friedhof bei Nacht mit Touch-Steuerung",
+          "source": "https://github.com/CowKillers/darkwatch-android",
+          "credit": "darkwatch-android",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CowKillers/darkwatch-android/HEAD/docs/screenshots/menu.jpg",
+          "caption": "Hauptmenü",
+          "source": "https://github.com/CowKillers/darkwatch-android",
+          "credit": "darkwatch-android",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/CowKillers/darkwatch-android"
+        },
+        {
+          "label": "PC-Port (Darker Edition)",
+          "url": "https://github.com/linkssy2/DarkwatchDarkerEdition"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20",
+      "id": "darkwatch-android",
+      "name": "Darkwatch: Darker Edition – Android",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Xbox (USA), festgelegte Disc-Revision",
+      "runtime": "XboxXBERecomp, Vulkan",
+      "projects": [
+        "darkwatch-android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Darkwatch-Disc (Xbox, USA) in der genannten Revision",
+        "Android 10+"
+      ],
+      "benefit": "Native Android-App ohne Emulator, abgeleitet vom PC-Port Darkwatch: Darker Edition; Video und Ton laut Projekt behoben.",
+      "caveat": "Frühe Fassung: Bildfehler beim Zielen und Schussausrichtung werden noch behoben. Getestet auf Galaxy S23, S20+ und Poco X3 Pro – nicht auf dem AYN Thor.",
+      "effort": "experimental"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

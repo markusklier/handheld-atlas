@@ -49,33 +49,9 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
-      "title": "Lazaer-YZY/ds2-sotfs-recomp",
-      "excerpt": "Static recompilation of Dark Souls II: Scholar of the First Sin (Xbox 360) for Android arm64",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/CowKillers/darkwatch-android",
-      "title": "CowKillers/darkwatch-android",
-      "excerpt": "Darkwatch: Darker Edition on Android — static recomp of the original Xbox game, based on linkssy2's PC port. Personal use; bring your own disc.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/M1LT0N3R2431/007-Project-Russia",
       "title": "M1LT0N3R2431/007-Project-Russia",
       "excerpt": "Unofficial Android port of 007: From Russia with Love (Xbox), built with XboxXBE-Recomp.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp",
-      "title": "EddyGameDev/bioshock1-native-recomp",
-      "excerpt": "Static recompilation launchers for BioShock 1 on Windows and Android - real ReXGlue runtime, guest-presented title screen, no game data in the APK",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -105,33 +81,9 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/P1R4N351/oot-android",
-      "title": "P1R4N351/oot-android",
-      "excerpt": "Native Android port & dual-screen companion for The Legend of Zelda: Ocarina of Time (Switch 2, v131072) on Adreno handhelds. Bring your own game dump.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/yassinsolim/mw3-recomp",
-      "title": "yassinsolim/mw3-recomp",
-      "excerpt": "Call of Duty: Modern Warfare 3 (2011) natively on Android and PC, recompiled from your own Xbox 360 disc. No game files included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/alexk0918/pokerun-tactics",
       "title": "alexk0918/pokerun-tactics",
       "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/UncookedNoodle/QudLink",
-      "title": "UncookedNoodle/QudLink",
-      "excerpt": "Second-screen companion app for Caves of Qud (AYN Thor etc.)",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
@@ -5702,8 +5654,8 @@
     "https://github.com/Parth-Chavan-15/MedSetu-TechSprint"
   ],
   "agent": {
-    "lastRun": "2026-11-20T23:30Z",
-    "summary": "Abo-Anfragen #28 (Wind Waker: Android-Fork von GreenNaugahyde mit GamePad-Bild auf dem Thor-Unterbildschirm als neuer Weg) und #29 (Morrowind: Xbox-Fassung, OpenMW-DS v1.4.0, OpenMW Android von Andiweli vom Mod zum Spielweg) erledigt. Die Warteschlange war leer. Aus den Leads kamen das neue Spiel Call of Duty: Modern Warfare 2 (Recomp-Port mit Thor-Messwerten) sowie neue Wege für FTL (FTLDS Dual Screen), Soul Sacrifice Delta (ss-delta), Xenoblade Chronicles 2 (XC2 Recomp Android) und Fallout 4 (Pip-Boy-App unten); 28 Leads verworfen. Bei der Bildprüfung habe ich 12 Bilder geprüft und 5 entfernt. Offen: Korra-Recomp (noch kein Android-Build) und der Pip-Boy-Mod für New Vegas bleiben in den Leads; der Alpha3-Launcher war nicht prüfbar; ai-unclear-Bilder von Reddit, Google Play und YouTube sind aus der Sitzung nicht abrufbar."
+    "lastRun": "2026-11-21T00:10Z",
+    "summary": "Abo-Anfragen #31 (Bilder Morrowind: OpenMW-DS-Bild bestätigt, Banner entfernt, Bildunterschriften übersetzt) und #33 (Morrowind: nach dem Lauf vom Vortag nur Pressebericht ergänzt, keine neuen Wege gefunden) erledigt; Warteschlange leer. Aus den Leads neu: Call of Duty: Modern Warfare 3, Dark Souls II, BioShock, Darkwatch (je nativer Recomp-Port), Caves of Qud (QudLink, Dual Screen) und das OoT-Remake 2026 (OoT Native, experimentell). Bildprüfung: 10 README-Bilder, 2 Logos entfernt. Offen: AoC-Native-Lead (README zeigt nur BotW Native), Korra-Recomp, Pip-Boy-Mod für New Vegas, GTA-V-Port XHYN, MHS2-Recomp; OpenMW-Android-Bilder (user-attachments) aus der Sitzung nicht abrufbar."
   },
   "watcher": {
     "lastRun": "2026-11-20T14:04:09Z",

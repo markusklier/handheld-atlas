@@ -46,10 +46,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/level.jpg",
-          "caption": "The start of the first level, in the 3D mode",
+          "caption": "Beginn des ersten Levels im 3D-Modus",
           "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
           "credit": "Take No Prisoners – native Portierung (SR)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/panel.jpg",

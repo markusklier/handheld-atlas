@@ -68,10 +68,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-16x9-gpu.jpg",
-          "caption": "PC: a temple room in 16:9 with the GPU renderer at 8x",
+          "caption": "PC: Tempelraum in 16:9 mit GPU-Renderer (8×)",
           "source": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
           "credit": "Phantom Hourglass Recomp",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-4x3-gpu.jpg",

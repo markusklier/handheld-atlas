@@ -264,10 +264,10 @@
         },
         {
           "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/03_street_16x9.png",
-          "caption": "Street, 16:9",
+          "caption": "Straße im Nebel, 16:9",
           "source": "https://github.com/SlickAmogus/silent-hill-decomp",
           "credit": "Silent Hill PC-Port (silent-hill-decomp)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/xbox360-alpha-1/04_street_trees_16x9.png",
