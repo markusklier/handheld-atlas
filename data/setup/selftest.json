@@ -1,0 +1,158 @@
+{
+  "ayn-thor-max": {
+    "at": "2026-11-11T22:05:41.048826Z",
+    "appVersion": "0.1.12",
+    "info": {
+      "app": {
+        "version": "0.1.7",
+        "code": 7,
+        "package": "io.github.markusklier.handheldatlas",
+        "webview": "109.0.5414.123"
+      },
+      "role": "companion",
+      "displayId": 4,
+      "dual": true,
+      "second": true,
+      "device": {
+        "manufacturer": "AYN",
+        "brand": "qti",
+        "model": "AYN Thor",
+        "device": "kalama",
+        "product": "kalama",
+        "hardware": "qcom",
+        "board": "kalama",
+        "soc": "QCS8550",
+        "socMaker": "QTI",
+        "ramGb": 16,
+        "storageGb": 1011,
+        "storageFreeGb": 807,
+        "android": "13",
+        "sdk": 33,
+        "abis": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "armeabi"
+        ],
+        "build": "Thor_V1.0.0.377_20260206_165408_user"
+      },
+      "displays": [
+        {
+          "id": 0,
+          "name": "Built-in Screen",
+          "width": 1920,
+          "height": 1080,
+          "dpi": 369,
+          "xdpi": 318.97601318359375,
+          "ydpi": 320.8420104980469,
+          "hz": 60,
+          "modes": [
+            60,
+            120
+          ],
+          "areaSqIn": 20.3,
+          "default": true,
+          "private": false,
+          "on": true,
+          "game": true
+        },
+        {
+          "id": 4,
+          "name": "Screen-2",
+          "width": 1240,
+          "height": 1080,
+          "dpi": 369,
+          "xdpi": 318.97601318359375,
+          "ydpi": 320.8420104980469,
+          "hz": 120,
+          "modes": [
+            60,
+            120
+          ],
+          "areaSqIn": 13.1,
+          "default": false,
+          "private": false,
+          "on": true,
+          "game": false
+        }
+      ],
+      "shizuku": {
+        "installed": true,
+        "running": true,
+        "granted": true,
+        "version": 13,
+        "uid": 2000
+      },
+      "canInstall": true,
+      "notifications": false,
+      "measuring": false
+    },
+    "checks": [
+      {
+        "id": "shizuku",
+        "name": "Shizuku",
+        "ok": true,
+        "detail": "bereit (uid 2000)"
+      },
+      {
+        "id": "shell",
+        "name": "Shell-Rechte",
+        "ok": true,
+        "detail": "uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context=u:r:shell:s0"
+      },
+      {
+        "id": "layers",
+        "name": "Bildschirm-Ebenen lesen",
+        "ok": true,
+        "detail": "160 Ebenen, davon 8 von Atlas: 5822882 ActivityRecordInputSink io.github.markusklier.handheldatlas/.MainActivity#613 | ActivityRecord{94443c9 u0 io.github.markusklier.handheldatlas/.MainActivity}#605 | ecd5e3e io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.MainActivity#615"
+      },
+      {
+        "id": "frames",
+        "name": "Bildzeiten messen",
+        "ok": true,
+        "detail": "Ebene: io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.MainActivity#616 · neue Bilder: 74 · Periode: 16666666 ns · gewählt: true\n16666666\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0"
+      },
+      {
+        "id": "thermal",
+        "name": "Temperaturen lesen",
+        "ok": true,
+        "detail": "{\"cpuMax\":48.5,\"gpuMax\":44.9,\"batteryMax\":27,\"skinMax\":42.54,\"skinStart\":42.54,\"skinEnd\":42.54,\"throttleStatus\":0,\"source\":\"sysfs\"}\nIsStatusOverride: false\nThermalEventListeners:\n\tcallbacks: 2\n\tkilled: false\n\tbroadcasts count: -1\nThermalStatusListeners:\n\tcallbacks: 5\n\tkilled: false\n\tbroadcasts count: -1\nThermal Status: 0\nCached temperatures:\nHAL Ready: false\n===ATLAS-SYSFS===\npa 43400\npa1 \nmmw3 42600\nmmw_pa1 \nmmw_pa2 \nmmw_pa3 \nmmw_ific0 \nepm0 \nepm1 \nepm2 \nepm3 \nepm4 \nbcl_warn \nepm5 \nepm6 \nepm7 \nsdr_mmw_therm \nsub1_modem_cfg \nsub1_lte_cc \nsub1_mcg_fr1_cc \nsub1_mcg_fr2_cc \nsub1_scg_fr1_cc \nsub1_"
+      },
+      {
+        "id": "uinput",
+        "name": "Virtuelles Gamepad (uinput)",
+        "ok": true,
+        "detail": "-rwxr-xr-x 1 root shell 394 2009-01-01 00:00 /system/bin/uinput"
+      },
+      {
+        "id": "appdata",
+        "name": "App-Datenordner (Android/data)",
+        "ok": true,
+        "detail": "20 Einträge sichtbar"
+      },
+      {
+        "id": "screencap",
+        "name": "Screenshot aufnehmen",
+        "ok": true,
+        "detail": "Dateigröße 1126006 Bytes. -rw-rw---- 1 shell ext_data_rw 1126006 2026-11-11 22:05 /storage/emulated/0/Android/data/io.github.markusklier.handheldatlas/cache/selftest.png"
+      },
+      {
+        "id": "displayIds",
+        "name": "Bildschirm-Kennungen",
+        "ok": true,
+        "detail": "Display 4630946441858561667 (HWC display 0): port=131 pnpId=QCM displayName=\"\"\nDisplay 4630946482288158084 (HWC display 3): port=132 pnpId=QCM displayName=\"\""
+      },
+      {
+        "id": "pm",
+        "name": "Installieren ohne Nachfrage",
+        "ok": true,
+        "detail": "171 Pakete sichtbar"
+      },
+      {
+        "id": "perf",
+        "name": "Leistungsmodus lesbar",
+        "ok": true,
+        "detail": "dual_screen_display_mode=0\nfan_mode=0\ngearhead:driving_mode_settings_enabled=0\nis_quick_set_performance_and_fan_enable=1\nmode_ringer_streams_affected=166\nperformance_mode=0\nscreen_brightness_mode=0\ntcc_theme_mode=4\ntemp_abxy_layout_mode=1\ntty_mode=0\nPhenotype_flags=activity_starts_logging_enabled:alarm_manager_constants:alarm_manager_dummy_flags:always_on_display_constants:anomaly_config:anomaly_config_version:anomaly_detection_constants:app_idle_constants:app_standby_enabled:backup_agent_timeout_parameters:battery_stats_constants:battery_tip_constants:binder_calls_stats:ble_scan_balanced_inte"
+      }
+    ]
+  }
+}
