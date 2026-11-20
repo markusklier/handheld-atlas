@@ -375,9 +375,56 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "companion"
+    },
+    {
+      "id": "gta5-xhyn-v",
+      "name": "XHYN V – GTA V auf Android",
+      "release": "pc",
+      "kind": "native",
+      "edition": "PC (Legacy, Baseline 1.61 / Build 2699)",
+      "runtime": "Android-Launcher mit nativer ARM64-Laufzeit",
+      "projects": [
+        "xhyn-v"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Fassung von GTA V (Legacy-Dateien; Enhanced wird nicht unterstützt)",
+        "Englische Texte und Schriften in den Spieldaten"
+      ],
+      "benefit": "Launcher mit Touch- und Controller-Steuerung, Grafik- und Treibereinstellungen (Treiber-ZIPs importieren, Shader-Caches verwalten), Story-Mode-Trainer, Mod-Schnittstellen und Diagnose-Aufzeichnung. Eigener Mehrspieler-Modus im Story-Mode (LAN oder über die Bridge-App), kein GTA Online.",
+      "caveat": "Entwicklungs-Vorschau (0.3 Preview 4): Spielbarkeit und GPU-Kompatibilität sind laut README noch nicht breit getestet, einige Engine- und Texturfehler offen. Eine „Edition“ von XHYN-PH; die Herkunft der Laufzeit ist im README nicht offengelegt. Auf dem Thor unbelegt.",
+      "steps": [],
+      "version": "0.3 Preview 4",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/XHYN-PH/XHYN-V-reborn"
+        },
+        {
+          "label": "Release 0.3 Preview 4",
+          "url": "https://github.com/XHYN-PH/XHYN-V-reborn/releases/tag/v0.3-preview4"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
     }
   ],
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q17452",
   "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
   "website": "https://www.rockstargames.com/V"

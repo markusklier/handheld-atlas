@@ -691,22 +691,7 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://github.com/user-attachments/assets/1d871d56-2149-4925-8884-3b1664d08f95",
-          "caption": "Screenshot etqw",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        },
-        {
-          "url": "https://github.com/user-attachments/assets/69ef4e91-d11a-4724-b62e-825b98046c25",
-          "caption": "Screenshot quake4 awakening",
-          "source": "https://github.com/glKarin/com.n0n3m4.diii4a",
-          "credit": "idTech4A++",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [
         {
           "label": "Quelle",

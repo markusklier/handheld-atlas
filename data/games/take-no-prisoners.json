@@ -53,10 +53,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/panel.jpg",
-          "caption": "The port's panel (F12) over a fight of the game's demo, in Direct3D at 1024x768",
+          "caption": "Einstellungsmenü des Ports (F12) über einem Kampf",
           "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
           "credit": "Take No Prisoners – native Portierung (SR)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/modes.jpg",

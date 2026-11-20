@@ -17,22 +17,6 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
-      "title": "XHYN-PH/XHYN-V-reborn",
-      "excerpt": "An unofficial native GTA V port for Android, based on the Chinese Android port. Maintained by XHYN-PH. Requires your own game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/IamWilmar/mhs2-recomp",
-      "title": "IamWilmar/mhs2-recomp",
-      "excerpt": "Native Android port of Monster Hunter Stories 2 for the Retroid Pocket 5 and Flip 2. Early version. Bring your own extracted game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/killdano/license-revoked",
       "title": "killdano/license-revoked",
       "excerpt": "License Revoked: Pebble game and its Android port",
@@ -193,36 +177,12 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/poglyadyi/dirt2-android-arm64",
-      "title": "poglyadyi/dirt2-android-arm64",
-      "excerpt": "Colin McRae: DiRT 2 - static recompilation for Android ARM64 (Android build of XITRIX/Dirt-2-Recomp)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-15"
-    },
-    {
       "url": "https://github.com/empy94/kaldora-thor",
       "title": "empy94/kaldora-thor",
       "excerpt": "Kaldora companion for the AYN Thor dual displays",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-15"
-    },
-    {
-      "url": "https://github.com/incident201/brutal-morrowind",
-      "title": "incident201/brutal-morrowind (Fork von OpenMW/openmw)",
-      "excerpt": "Morrowind with the melee combat of Dark Messiah of Might and Magic, built on OpenMW",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/Rinto02/tekken-tag-tournament-2-Android",
-      "title": "Rinto02/tekken-tag-tournament-2-Android",
-      "excerpt": "Native Android port of Tekken Tag Tournament 2 (Xbox 360) by static recompilation. Not an emulator. Ships no game data - the installer builds the game from your own disc image and Title Update 3.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
     },
     {
       "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
@@ -244,14 +204,6 @@
       "url": "https://github.com/Kapro777/itp-recomp-android",
       "title": "Kapro777/itp-recomp-android",
       "excerpt": "Native Android port of Five Nights at Freddy's: Into the Pit (Nintendo Switch) via static recompilation. Bring your own game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/makarovladmir/Juiced2-Android-Recomp",
-      "title": "makarovladmir/Juiced2-Android-Recomp",
-      "excerpt": "",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-14"
@@ -284,14 +236,6 @@
       "url": "https://github.com/brettr7388/cuphead-thor-companion",
       "title": "brettr7388/cuphead-thor-companion",
       "excerpt": "Eden Duo bottom-screen companion for Cuphead on AYN Thor",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/Coupe5E/totk-android-nova",
-      "title": "Coupe5E/totk-android-nova",
-      "excerpt": "TotK Native for Android with a 4:3 mode and optional cheats.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-14"
@@ -5651,11 +5595,16 @@
     "https://github.com/AravindS2006/Glassbon-Launcher",
     "https://github.com/foxoman/retroui",
     "https://github.com/oloyaisaac/skills-exchange",
-    "https://github.com/Parth-Chavan-15/MedSetu-TechSprint"
+    "https://github.com/Parth-Chavan-15/MedSetu-TechSprint",
+    "https://github.com/Coupe5E/totk-android-nova",
+    "https://github.com/Rinto02/tekken-tag-tournament-2-Android",
+    "https://github.com/incident201/brutal-morrowind",
+    "https://github.com/makarovladmir/Juiced2-Android-Recomp",
+    "https://zodita.com"
   ],
   "agent": {
-    "lastRun": "2026-11-21T00:10Z",
-    "summary": "Abo-Anfragen #31 (Bilder Morrowind: OpenMW-DS-Bild bestätigt, Banner entfernt, Bildunterschriften übersetzt) und #33 (Morrowind: nach dem Lauf vom Vortag nur Pressebericht ergänzt, keine neuen Wege gefunden) erledigt; Warteschlange leer. Aus den Leads neu: Call of Duty: Modern Warfare 3, Dark Souls II, BioShock, Darkwatch (je nativer Recomp-Port), Caves of Qud (QudLink, Dual Screen) und das OoT-Remake 2026 (OoT Native, experimentell). Bildprüfung: 10 README-Bilder, 2 Logos entfernt. Offen: AoC-Native-Lead (README zeigt nur BotW Native), Korra-Recomp, Pip-Boy-Mod für New Vegas, GTA-V-Port XHYN, MHS2-Recomp; OpenMW-Android-Bilder (user-attachments) aus der Sitzung nicht abrufbar."
+    "lastRun": "2026-11-20T23:59Z",
+    "summary": "Abo-Anfragen #35 (Morrowind: 6 Steam-Originalbilder, Tiefenrecherche-Marker gesetzt) und #34 (Skyrim: SkyrimSE-DualScreen auf 1.0.3 aktualisiert) erledigt; media.py nutzt jetzt Steam-Links der Daten, wenn der Store-Name abweicht. Neu: DiRT 2 (ARM64-Recomp), Monster Hunter Stories 2 (Port nur RP5/Flip 2), XHYN V für GTA V. Verworfen: Zodita (kommerzielle unlizenzierte Ports), Brutal Morrowind, TTT2 (nur Windows), Juiced2 (404), TotK-Nova (Doppel von TotK Native). Bildprüfung: 7 bestätigt, 2 fremde entfernt. Offen: Korra-Recomp (noch kein Android-Build), DMC3-/Cuphead-Companion (unveröffentlicht), Kaldora Thor, Pip-Boy-Mod; Steam/Wikipedia aus der Sitzung nicht direkt erreichbar, fremde GitHub-API gesperrt."
   },
   "watcher": {
     "lastRun": "2026-11-20T14:04:09Z",
@@ -5665,7 +5614,7 @@
   "aiResearch": {
     "tomb-raider": "2026-11-08",
     "grand-theft-auto-iv": "2026-11-08",
-    "the-elder-scrolls-v-skyrim": "2026-11-08",
+    "the-elder-scrolls-v-skyrim": "2026-11-20",
     "doom-1993": "2026-11-08",
     "bloodborne": "2026-11-08",
     "crash-team-racing": "2026-11-08",
@@ -5688,7 +5637,8 @@
     "metroid-prime-3-corruption": "2026-11-10",
     "silent-hill-2": "2026-11-18",
     "metal-gear-solid-2-sons-of-liberty": "2026-11-18",
-    "metal-gear-solid-3-snake-eater": "2026-11-18"
+    "metal-gear-solid-3-snake-eater": "2026-11-18",
+    "morrowind": "2026-11-20"
   },
   "shotSearch": {
     "dave-the-diver/eden-dave-the-diver": "2026-11-08",

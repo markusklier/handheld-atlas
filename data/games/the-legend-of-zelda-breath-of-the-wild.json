@@ -348,10 +348,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-graphics.webp",
-          "caption": "Graphics: Performance tab with presets",
+          "caption": "Grafik-Einstellungen: Leistungsprofile mit Erklärung (Thor-Profil „Balanced“)",
           "source": "https://github.com/P1R4N351/botw-android",
           "credit": "BotW Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-gamedata.webp",
@@ -362,10 +362,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-about.webp",
-          "caption": "About",
+          "caption": "Info-Seite der App mit erkanntem Chip und Dual Screen",
           "source": "https://github.com/P1R4N351/botw-android",
           "credit": "BotW Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-controls.webp",

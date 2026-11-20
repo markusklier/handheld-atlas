@@ -3324,6 +3324,54 @@
         "the-legend-of-zelda-ocarina-of-time-2026"
       ],
       "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "dirt2-android-arm64",
+      "name": "DiRT 2 – Android ARM64",
+      "kind": "port",
+      "url": "https://github.com/poglyadyi/dirt2-android-arm64",
+      "repo": "poglyadyi/dirt2-android-arm64",
+      "description": "Android-ARM64-Build der statischen DiRT-2-Rekompilation (DXVK/Turnip).",
+      "games": [
+        "colin-mcrae-dirt-2"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "dirt-2-recomp",
+      "name": "DiRT 2 Recompiled",
+      "kind": "port",
+      "url": "https://github.com/XITRIX/Dirt-2-Recomp",
+      "repo": "XITRIX/Dirt-2-Recomp",
+      "description": "Statische Rekompilation der PC-Fassung von Colin McRae: DiRT 2 nach C (iOS, macOS, Switch, Android).",
+      "games": [
+        "colin-mcrae-dirt-2"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "mhs2-recomp",
+      "name": "MHS2-Port für Retroid Pocket 5 & Flip 2",
+      "kind": "port",
+      "url": "https://github.com/IamWilmar/mhs2-recomp",
+      "repo": "IamWilmar/mhs2-recomp",
+      "description": "Nativer Android-Port der Switch-Fassung von Monster Hunter Stories 2 für Snapdragon 865 / Adreno 650.",
+      "games": [
+        "monster-hunter-stories-2-wings-of-ruin"
+      ],
+      "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "xhyn-v",
+      "name": "XHYN V",
+      "kind": "port",
+      "url": "https://github.com/XHYN-PH/XHYN-V-reborn",
+      "repo": "XHYN-PH/XHYN-V-reborn",
+      "description": "GTA V (PC, Legacy) auf Android mit Launcher, Touch-Steuerung, Grafikoptionen und Story-Mode-Trainer.",
+      "games": [
+        "grand-theft-auto-v"
+      ],
+      "checkedAt": "2026-11-20"
     }
   ]
 }

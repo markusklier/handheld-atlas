@@ -288,5 +288,37 @@
   "updatedAt": "2026-11-20",
   "wikidata": "Q718448",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind",
-  "website": "https://elderscrolls.bethesda.net/morrowind/"
+  "website": "https://elderscrolls.bethesda.net/morrowind/",
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009069.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009070.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009071.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009072.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009073.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22320/0000009074.1920x1080.jpg?t=1760029380",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/22320/"
+    }
+  ]
 }

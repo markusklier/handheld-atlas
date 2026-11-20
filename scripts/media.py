@@ -166,6 +166,19 @@ def steam_lookup(title, fetch=get):
     return None
 
 
+def steam_appid_from_links(g):
+    """Steam store link already in the data (e.g. "Morrowind Game of the Year Edition" – store name differs from the title)."""
+    links = list(g.get('links') or [])
+    for v in g.get('versions') or []:
+        if 'PC' in (v.get('platforms') or []):
+            links += v.get('links') or []
+    for link in links:
+        m = re.search(r'store\.steampowered\.com/app/(\d+)', link.get('url') or '')
+        if m:
+            return int(m.group(1))
+    return None
+
+
 def fill_steam(fetch=get, pause=0.7, only=None):
     added = 0
     state = load_state()
@@ -181,7 +194,7 @@ def fill_steam(fetch=get, pause=0.7, only=None):
         if pause:
             time.sleep(pause)
         try:
-            appid = steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), fetch)
+            appid = steam_lookup(re.sub(r'\s*\(\d{4}\)$', '', g['title']), fetch) or steam_appid_from_links(g)
             if not appid:
                 continue
             details = fetch(f'https://store.steampowered.com/api/appdetails?appids={appid}&l=german', as_json=True)

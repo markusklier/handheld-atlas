@@ -2,6 +2,60 @@
   "entries": [
     {
       "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "morrowind",
+      "text": "6 Originalbilder der PC-Fassung (Steam) ergänzt – Anfrage #35",
+      "url": "https://store.steampowered.com/app/22320/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "the-elder-scrolls-v-skyrim",
+      "text": "SkyrimSE-DualScreen aktualisiert: ab 1.0.3 Mods im App-Speicher, 30-Mod-Empfehlungsliste, Leistungsprofile, Leistungsangabe des Autors – Anfrage #34",
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "colin-mcrae-dirt-2",
+      "text": "Neues Spiel: Colin McRae: DiRT 2 mit nativer ARM64-Rekompilation (KI-Fund)",
+      "url": "https://github.com/poglyadyi/dirt2-android-arm64"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "monster-hunter-stories-2-wings-of-ruin",
+      "text": "Neues Spiel: Monster Hunter Stories 2 mit nativem Port für Retroid Pocket 5/Flip 2 (KI-Fund)",
+      "url": "https://github.com/IamWilmar/mhs2-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "grand-theft-auto-v",
+      "text": "Neuer Spielweg: XHYN V – GTA V (PC-Legacy-Daten) auf Android, Entwicklungs-Vorschau (KI-Fund)",
+      "url": "https://github.com/XHYN-PH/XHYN-V-reborn"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "removed",
+      "by": "agent",
+      "game": "doom-1993",
+      "text": "Zwei Bilder anderer Spiele (Enemy Territory: Quake Wars, Quake 4) vom Weg idTech4a entfernt"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "verified",
+      "by": "agent",
+      "game": "the-legend-of-zelda-breath-of-the-wild",
+      "text": "7 README-Bilder geprüft (BotW Native, TotK Native, SRW64, Take No Prisoners) und deutsch beschriftet"
+    },
+    {
+      "date": "2026-11-20",
       "type": "game-added",
       "by": "agent",
       "game": "call-of-duty-modern-warfare-3",

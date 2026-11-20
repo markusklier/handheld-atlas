@@ -76,17 +76,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/media/history-en.webp",
-          "caption": "Dialogue history",
+          "caption": "Dialogverlauf (englische Übersetzung)",
           "source": "https://github.com/dyzz/srw64-recomp",
           "credit": "Marchwind 64 (SRW64 Recomp)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/media/prebattle-en.webp",
-          "caption": "Pre battle screen",
+          "caption": "Kampfvorschau vor dem Angriff",
           "source": "https://github.com/dyzz/srw64-recomp",
           "credit": "Marchwind 64 (SRW64 Recomp)",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

@@ -87,6 +87,24 @@ class FillTest(unittest.TestCase):
         self.assertIn('/apps/4242/library_600x900_2x.jpg', g['cover']['url'])
         self.assertEqual(g['cover']['source'], 'https://store.steampowered.com/app/4242/')
 
+    def test_steam_link_when_store_name_differs(self):
+        """Morrowind is sold as "… Game of the Year Edition": the Steam link of the PC version is used (on request)."""
+        def fetch(url, as_json=False):
+            if 'storesearch' in url:
+                return {'items': [{'id': 22320, 'name': 'The Elder Scrolls III: Morrowind Game of the Year Edition'}]}
+            if 'appdetails' in url and '22320' in url:
+                return {'22320': {'success': True, 'data': {'header_image': 'https://cdn/h.jpg',
+                        'screenshots': [{'path_full': 'https://cdn/mw1.jpg'}]}}}
+            return {'items': []}
+        f = media.DATA / 'games' / 'morrowind.json'
+        g = atlas.read(f)
+        g.pop('screenshots', None)
+        atlas.write(f, g)
+        media.fill_steam(fetch, pause=0, only={'morrowind'})
+        g = self.game('morrowind')
+        self.assertEqual(g['screenshots'][0]['url'], 'https://cdn/mw1.jpg')
+        self.assertEqual(g['screenshots'][0]['source'], 'https://store.steampowered.com/app/22320/')
+
     def test_wikipedia_only_accepts_video_game_articles(self):
         def fetch(url, as_json=False):
             if 'Metroid+Dread' in url:

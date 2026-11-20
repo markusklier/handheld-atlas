@@ -1,0 +1,92 @@
+{
+  "id": "colin-mcrae-dirt-2",
+  "title": "Colin McRae: DiRT 2",
+  "franchise": "Colin McRae Rally",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Die PC-Fassung läuft als statische Rekompilation nativ auf ARM64 – ohne Emulator und ohne Wine, mit Touch- und Controller-Steuerung.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Grundlage der Rekompilation (Version 1.1, dirt2_game.exe); Games for Windows Live wird durch eine Offline-Attrappe ersetzt."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "Xbox 360"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "dirt2-recomp-android",
+      "name": "DiRT 2 Recompiled – Android ARM64",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "PC v1.1",
+      "runtime": "Statische Rekompilation, DXVK → Vulkan (Turnip), SDL3",
+      "projects": [
+        "dirt2-android-arm64",
+        "dirt-2-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Fassung von DiRT 2 (Version 1.1, Spieldaten und dirt2_game.exe)",
+        "Turnip-Vulkantreiber (vom Projekt eingebunden über libadrenotools)"
+      ],
+      "benefit": "Kein Emulator und kein Wine: Der Maschinencode des Spiels ist nach C übersetzt und nativ für ARM64 gebaut; Direct3D 11 läuft über DXVK auf Vulkan, Bink-Videos über FFmpeg. Bei fehlendem Gamepad erscheint eine Touch-Steuerung.",
+      "caveat": "Android-Build eines Forks (poglyadyi) des Projekts von XITRIX, getestet laut README nur auf einem Honor-Gerät mit Adreno 810; auf dem Thor (Adreno 740) unbelegt. Rennen laufen mit den spieleigenen 30 FPS. Der Ursprungsautor veröffentlicht Builds nur als GitHub-Actions-Artefakte.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub (Android-Fork)",
+          "url": "https://github.com/poglyadyi/dirt2-android-arm64"
+        },
+        {
+          "label": "GitHub (Original-Recomp)",
+          "url": "https://github.com/XITRIX/Dirt-2-Recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

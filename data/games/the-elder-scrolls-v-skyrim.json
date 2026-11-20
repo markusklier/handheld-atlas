@@ -429,15 +429,15 @@
         "Zusätzlicher Speicher für die Laufzeit; laut Projekt ungefähr 3 GB",
         "Optional ein Nexus-Mods-Konto"
       ],
-      "benefit": "Der am stärksten auf den Thor zugeschnittene Weg: integrierte Touch-Bedienung und Modverwaltung statt eines lediglich gespiegelten zweiten Bildschirms.",
-      "caveat": "Sehr junges Projekt mit erster Veröffentlichung am 6. November 2026. Nur die ausdrücklich unterstützte Steam-Version verwenden; das ist keine native ARM-Neufassung von Skyrim. Leistungsangaben des Autors sind keine unabhängige Langzeitmessung.",
+      "benefit": "Der am stärksten auf den Thor zugeschnittene Weg: eine App für beide Bildschirme mit Nexus-Mods-Browser im Launcher. Seit 1.0.3 liegen Mods im App-Speicher (laut README 28 Mods in etwa 45 Sekunden bis zum Hauptmenü statt fast 4 Minuten), eine Liste „Recommended for the Thor“ installiert 30 getestete Mods in einem Zug. Leistungsprofile Max/Balanced/Cool (60/40/30 FPS), Überhitzungsschutz mit automatischem Speichern, Steam-Cloud-Spielstände und Offline-Spiel nach der ersten Anmeldung; Cocoon erkennt Skyrim als ein Spiel.",
+      "caveat": "Sehr junges Projekt (erste Veröffentlichung 6. November 2026). Nur die unterstützte Steam-Version verwenden; keine native ARM-Neufassung, sondern GameNative-Laufzeit (Wine/Proton, FEX/Box64, DXVK, Turnip). Beleuchtungs-Mods wie ELFX oder Lightened Skyrim hängen laut README beim Start. Updates über die alte App installieren, nicht vorher deinstallieren. Leistungsangaben stammen vom Autor.",
       "steps": [
         "Den vollständigen Skyrim-Special-Edition-Ordner vom PC auf den Thor kopieren.",
         "Die APK aus den offiziellen Projekt-Releases installieren.",
         "Dateizugriff erlauben, Spielordner auswählen und bei Steam anmelden.",
         "Die Laufzeit herunterladen lassen und das Spiel über Play starten."
       ],
-      "version": null,
+      "version": "ab 1.0.3 (Steam-Spielversion 1.7.104)",
       "effort": "guided",
       "status": "active",
       "verification": "ai-unverified",
@@ -506,8 +506,16 @@
           "date": "2026-11-08"
         }
       ],
-      "performance": [],
-      "checkedAt": "2026-11-08",
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "laut Autor etwa 57–60 FPS in der offenen Welt, auch mit der 30-Mod-Empfehlungsliste; kurze Einbrüche beim Speichern",
+          "settings": "Power › Max, Grafik › Thor, 720p",
+          "source": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
+          "date": "2026-11-20"
+        }
+      ],
+      "checkedAt": "2026-11-20",
       "dualScreenType": "companion"
     },
     {

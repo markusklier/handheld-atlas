@@ -1,0 +1,87 @@
+{
+  "id": "monster-hunter-stories-2-wings-of-ruin",
+  "title": "Monster Hunter Stories 2: Wings of Ruin",
+  "franchise": "Monster Hunter",
+  "platforms": [
+    "Nintendo Switch",
+    "PC"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Ein nativer Android-Port der Switch-Fassung, speziell für Retroid Pocket 5 und Flip 2 (Snapdragon 865) – das ARM64-Programm des Spiels läuft direkt auf dem Prozessor.",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch (2021)",
+      "type": "original",
+      "year": 2021,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Grundlage des nativen Android-Ports (getestet mit Version 1.5.2 und DLC)."
+    },
+    {
+      "id": "pc",
+      "name": "PC (2021)",
+      "type": "port",
+      "year": 2021,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "mhs2-native-rp5",
+      "name": "MHS2-Port für Retroid Pocket 5 & Flip 2",
+      "release": "nintendo-switch",
+      "kind": "native",
+      "edition": "Switch 1.5.2 (mit DLC)",
+      "runtime": "Nativ ARM64, nachgebaute Systemschnittstellen, Vulkan 1.1 (Adreno 650), FSR 1",
+      "projects": [
+        "mhs2-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "fps-cap",
+        "upscaling"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Retroid Pocket 5 oder Retroid Pocket Flip 2 (Snapdragon 865 / Adreno 650)",
+        "Eigene Switch-Fassung: ExeFS und RomFS mit Update, selbst von der eigenen Konsole extrahiert",
+        "Optional eigene DLC-RomFS"
+      ],
+      "benefit": "Das Spiel läuft ohne Konsolen-Emulation: Nur Dateien, Threads, Eingabe, Ton und Grafik sind nachgebaut. Fest 30 FPS bei rund 720p mit FSR-1-Hochskalierung auf 1080p; Shader werden im Hintergrund gebaut und zwischengespeichert.",
+      "caveat": "Version 0.1, früh: laut README nur bis Mahana Village gespielt. Ausdrücklich nur für Adreno 650 – auf dem AYN Thor (Adreno 740) nicht unterstützt. Ohne Wertung durch Dritte.",
+      "steps": [],
+      "version": "0.1",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/IamWilmar/mhs2-recomp"
+        }
+      ],
+      "performance": [
+        {
+          "device": "Retroid Pocket Flip 2",
+          "result": "laut Autor feste 30 FPS (ungebremst etwa 44–48 FPS im ersten Dorf)",
+          "settings": "Standard, Handheld-Modus",
+          "source": "https://github.com/IamWilmar/mhs2-recomp",
+          "date": "2026-11-20"
+        }
+      ],
+      "reports": [],
+      "checkedAt": "2026-11-20"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}

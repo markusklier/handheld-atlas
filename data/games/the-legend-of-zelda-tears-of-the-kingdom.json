@@ -267,17 +267,17 @@
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-install.webp",
-          "caption": "Setup preparing the game",
+          "caption": "Einrichtung: Spieldaten werden vorbereitet",
           "source": "https://github.com/AurelioB/totk-android",
           "credit": "TotK Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/set-render-res.webp",
-          "caption": "A setting with its illustration",
+          "caption": "Grafik-Einstellung Renderauflösung mit Vorschaubild",
           "source": "https://github.com/AurelioB/totk-android",
           "credit": "TotK Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-welcome.webp",
