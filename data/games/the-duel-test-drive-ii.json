@@ -156,9 +156,43 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+          "caption": "SNES-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+        }
       ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q1442104",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Duel%3A_Test_Drive_II",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Boxarts/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Snaps/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System/master/Named_Titles/Duel%2C%20The%20-%20Test%20Drive%20II%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Super_Nintendo_Entertainment_System"
+    }
+  ]
 }

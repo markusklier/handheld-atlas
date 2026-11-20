@@ -196,6 +196,41 @@
           "credit": "SMZ3 Universe",
           "check": "source-verified",
           "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-metroid.png",
+          "caption": "Thor, Super Metroid",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/thor-stacked-runs.png",
+          "caption": "Thor, runs",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-3ds-game.png",
+          "caption": "3DS",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-pc-game.png",
+          "caption": "PC",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-3ds-runs.png",
+          "caption": "3DS runs",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
         }
       ],
       "links": [],

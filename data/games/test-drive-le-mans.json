@@ -25,7 +25,23 @@
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
       ],
-      "year": 1999
+      "year": 1999,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ]
     },
     {
       "id": "pc",
@@ -39,7 +55,8 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
-      ]
+      ],
+      "year": 2000
     },
     {
       "id": "dreamcast",
@@ -52,6 +69,22 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Boxarts/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Snaps/Test%20Drive%20Le%20Mans%20%28USA%29.png",
+          "caption": "Dreamcast-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Dreamcast/master/Named_Titles/Test%20Drive%20Le%20Mans%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
         }
       ]
     },
@@ -66,6 +99,23 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
+        }
+      ],
+      "year": 2000,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
         }
       ]
     },
@@ -85,5 +135,23 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q1464617",
+  "wikipedia": "https://en.wikipedia.org/wiki/Le_Mans_24_Hours_%28video_game%29",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Test%20Drive%20Le%20Mans%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
 }

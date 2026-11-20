@@ -26,6 +26,204 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q116734030"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/1d1d049c-525e-4771-8525-a29301836d28"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f3c8e11f-3c8d-45c5-a2c2-914b678c9146",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Yuzu",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "**Officially ported from the Ryan Retro Compatibility List: https://ryanretro.com**",
+          "votes": 0,
+          "date": "2025-09-10",
+          "settings": {
+            "Emulator Version": "1728",
+            "Driver Version": "[KIMCHI Turnip] v25.3.0 - Revision 4|||Turnip_v25.3.0_R4_Auto.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ac126a8a-7ec6-431a-ae80-23e84698ffbf",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-06-17",
+          "settings": {
+            "Emulator Version": "canary-v0.6.1",
+            "Driver Version": "Turnip v25.2.0-R9",
+            "Accuracy Level": "Normal",
+            "Resolution": "1280x720",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c746be57-f30b-43fc-8201-19ca76021a66",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Texture bug when transitioning between the jungle and the desert. I haven't noticed anything else in my playtime. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-12",
+          "settings": {
+            "Emulator Version": "0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/97e1ba8f-05c7-4256-be41-ab3f7112d359",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game runs at 60 fps with only occasional stutters on building shaders. The only noticable graphics glitch is some weird water colors seen on this [screenshot](https://imgur.com/a/v0d21T8) Other than that, the game is ver",
+          "votes": 1,
+          "date": "2025-12-03",
+          "settings": {
+            "Average FPS": "60",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Use Fast GPU Time": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "GPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "Never"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dd39ece9-7221-408a-84b9-1417c77f0b53",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Setting GPU Mode to Accurate fixes crashes when loading into certain rooms. FPS drops are pretty frequent when moving between door transitions, but once loaded into a room it's stable at 60 FPS. Nothing I tried could fix",
+          "votes": 0,
+          "date": "2026-09-14"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/06151b90-19a3-4959-a254-122de068d940",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-06-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0bc16b18-22b5-4880-86d0-3dc34de2c3e2",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "game used to frequently slow down dramatically and crash, but enabling sync memory operations in eden nightly and using custom turnip drivers fixed this. turning off vsync and disabling docked mode helped smooth out the ",
+          "votes": 0,
+          "date": "2026-01-12"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/56e40fa8-3e09-4085-816a-fe035267355d",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs at 58 - 60 fps average on docked settings. There is some latency with input controls but not enough to make it unplayable, but will be noticeable.",
+          "votes": 0,
+          "date": "2025-11-28"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/83d7145a-8592-46ea-8f44-632e6f523a14",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Texture bugs in the 3D make the game unpleasant to play. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-12",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8664d359-9078-4b49-b3be-e82050a17524",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Intro",
+          "ratingDe": "Nur Intro/Menü",
+          "rank": 6,
+          "summary": "Crash after the introductory text. I haven't found a fix. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-12",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
         }
       ]
     }
@@ -156,5 +354,12 @@
   ],
   "mods": [],
   "screenshots": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q116734030",
+  "website": "https://www.nintendo.co.jp/switch/a3sda/index.html",
+  "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_Remastered",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/MetroidPrimebox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Metroid_Prime_Remastered"
+  }
 }

@@ -61,5 +61,44 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q4308783",
+  "website": "https://subsetgames.com/ftl.html",
+  "wikipedia": "https://en.wikipedia.org/wiki/FTL%3A_Faster_Than_Light",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/212680/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/212680/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_e0da2e5424e5830eaf8f2867c6174924bc88a944.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_232121bf491970efde5b05a582deba1cdf73c085.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_8bf68df04ec25e6f75071c8d5bbaaddb3bbafc21.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_62755ca7bc9c9b6681df38479621ec3709509d5b.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_21ce016cc277e7c19c5f202926151ebcb8d6ad1b.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/ss_6b25ef35b0abd5c15a8bbd417f71b068c031b51f.1920x1080.jpg?t=1748969356",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/212680/"
+    }
+  ]
 }

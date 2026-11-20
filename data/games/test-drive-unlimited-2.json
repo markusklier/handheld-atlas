@@ -74,5 +74,11 @@
       "description": "Fan-Projekt, das seit 2022 den Online-Modus von TDU2 mit Bestenlisten, Freundesliste und Community-Rennzentrum zurückbringt. Auf dem Handheld nur mit einer Windows-Laufzeit denkbar; Berichte dazu fehlen bisher.",
       "verification": "ai-unverified"
     }
-  ]
+  ],
+  "wikidata": "Q428297",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited_2",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/9/99/Test_Drive_Unlimited_2_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited_2"
+  }
 }

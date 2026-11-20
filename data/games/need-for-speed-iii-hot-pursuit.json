@@ -35,9 +35,55 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Need_for_Speed_III:_Hot_Pursuit"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/111f82e1-9f67-43b2-bd4b-eb1198ea6dc3"
         }
       ],
-      "year": 1998
+      "year": 1998,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+          "caption": "PlayStation-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d37027bc-6a15-4668-9447-83ba72e1b1d3",
+          "device": "AYN Thor Max",
+          "emulator": "DuckStation",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-10-16",
+          "settings": {
+            "Emulator Version": "v0.1-11609",
+            "Renderer": "Vulkan (Recommended)",
+            "Internal Resolution": "1",
+            "Texture Filtering": "Bilinear",
+            "Anti-Aliasing": "Disabled",
+            "PGXP Geometry Correction": "True",
+            "CPU Overclock": "100",
+            "GPU Overclock": "100",
+            "CD-ROM Read Speedup": "1",
+            "CD-ROM Seek Speedup": "1"
+          }
+        }
+      ]
     }
   ],
   "routes": [
@@ -58,6 +104,41 @@
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III Android",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/title.jpg",
+          "caption": "The title screen",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III: Hot Pursuit – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/car-select.jpg",
+          "caption": "Choosing a car",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III: Hot Pursuit – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/multiplayer.jpg",
+          "caption": "Two phones in a network race lobby",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III: Hot Pursuit – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/race-touch.jpg",
+          "caption": "Racing on the touch controls",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III: Hot Pursuit – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/pause-menu.jpg",
+          "caption": "The pause menu over a race",
+          "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+          "credit": "NFS III: Hot Pursuit – Android",
+          "check": "readme"
         }
       ],
       "links": [],
@@ -87,5 +168,23 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q1139007",
+  "wikipedia": "https://en.wikipedia.org/wiki/Need_for_Speed_III%3A_Hot_Pursuit",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Boxarts/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Snaps/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation/master/Named_Titles/Need%20for%20Speed%20III%20-%20Hot%20Pursuit%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
+    }
+  ]
 }

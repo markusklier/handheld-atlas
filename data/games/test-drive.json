@@ -100,5 +100,11 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q2732169",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_%281987_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/1/16/Test_Drive_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Test_Drive_%281987_video_game%29"
+  }
 }

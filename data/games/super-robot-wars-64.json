@@ -87,6 +87,13 @@
           "source": "https://github.com/dyzz/srw64-recomp",
           "credit": "Marchwind 64 (SRW64 Recomp)",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/brand/title-en.webp",
+          "caption": "MARCHWIND64",
+          "source": "https://github.com/dyzz/srw64-recomp",
+          "credit": "Marchwind 64 (SRW64 Recomp)",
+          "check": "readme"
         }
       ],
       "links": [

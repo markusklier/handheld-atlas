@@ -21,9 +21,43 @@
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
       ],
-      "year": 2000
+      "year": 2000,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Test%20Drive%20Cycles%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Test%20Drive%20Cycles%20%28USA%29.png",
+          "caption": "Game Boy / Game Boy Color-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Test%20Drive%20Cycles%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+        }
+      ]
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q3519024",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_Cycles",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Boxarts/Test%20Drive%20Cycles%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Snaps/Test%20Drive%20Cycles%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color/master/Named_Titles/Test%20Drive%20Cycles%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Color"
+    }
+  ]
 }

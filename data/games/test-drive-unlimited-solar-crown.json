@@ -43,5 +43,44 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q97095938",
+  "website": "https://testdriveunlimited.com/en-US",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited_Solar_Crown",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1249970/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/1249970/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/6d78032fa2b34ad906335efd5ef0048e09ff377c/ss_6d78032fa2b34ad906335efd5ef0048e09ff377c.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/22b2c525511f18966e66b9f4f0f6f5224eaff3f3/ss_22b2c525511f18966e66b9f4f0f6f5224eaff3f3.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/9a62b72e1911de9a043932cc1aa01285d5140621/ss_9a62b72e1911de9a043932cc1aa01285d5140621.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/8dae874b635212aed2c13dca3bc9f8b6a4baa353/ss_8dae874b635212aed2c13dca3bc9f8b6a4baa353.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/e812508caf111f42ae4de26993853133e62c60e8/ss_e812508caf111f42ae4de26993853133e62c60e8.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1249970/bd3ed9c3e861700b1e37426018b5901ba687b4f8/ss_bd3ed9c3e861700b1e37426018b5901ba687b4f8.1920x1080.jpg?t=1794503234",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1249970/"
+    }
+  ]
 }

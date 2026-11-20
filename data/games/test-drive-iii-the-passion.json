@@ -25,5 +25,11 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q1444226",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_III%3A_The_Passion",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/6/66/Test_Drive_III_-_The_Passion_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Test_Drive_III%3A_The_Passion"
+  }
 }

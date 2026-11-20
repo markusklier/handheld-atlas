@@ -22,12 +22,102 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Dead_Space_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/cc9f648f-544a-4596-a218-c0d37c50e903"
         }
       ],
       "cover": {
         "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1693980/library_600x900_2x.jpg",
         "source": "https://store.steampowered.com/app/1693980/"
-      }
+      },
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/29b4972a-4ce3-4818-a728-c37359b4812c",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Running on RP6 12G Stick top. Flawless even on Standard Performance mode with quiet fan.",
+          "votes": 1,
+          "date": "2026-02-15",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton9.0-x64-3",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_R1",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/838b18a9-99dd-49fa-bda6-d24d67dfd75d",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Using the GOG version of Dead Space (2008) Runs at 55-65fps on average, usually over 60. Occasional dips to 44fps when entering new areas or caching new shaders. Did not encounter any visual glitches In-game Visual setti",
+          "votes": 1,
+          "date": "2025-06-26",
+          "settings": {
+            "Winlator Fork": "frost_glibc",
+            "Emulator Version": "10.0 Final v4.1",
+            "Graphics Driver": "Turnip 25.2.0",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "v2.6.2 (0 FPS limit, 4096MB)",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.3.6",
+            "Resolution (Screen Size)": "1280x720"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6182fcb3-29fa-4b0b-bf42-3b9230751c8c",
+          "device": "Samsung Galaxy S23+ (SD)",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-03-28",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "wine10.6-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/23d8735d-2a7e-4085-8c93-0a032778618b",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "High settings, locked 60FPS",
+          "votes": 0,
+          "date": "2025-11-22"
+        }
+      ]
     },
     {
       "id": "multi-playstation-3",

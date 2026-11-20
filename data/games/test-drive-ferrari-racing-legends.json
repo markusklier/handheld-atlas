@@ -55,5 +55,11 @@
     }
   ],
   "routes": [],
-  "updatedAt": "2026-11-19"
+  "updatedAt": "2026-11-19",
+  "wikidata": "Q2067991",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive%3A_Ferrari_Racing_Legends",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/7c/Test_Drive_Ferrari_Racing_Legends_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Test_Drive%3A_Ferrari_Racing_Legends"
+  }
 }

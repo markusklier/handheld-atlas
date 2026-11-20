@@ -22,6 +22,60 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ff9d09ca-f3f1-4068-b506-53bb2134f9a6"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/24026a36-bad8-4fa7-9444-64cc139a6b52",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Winlator",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Install Visual C++ redists and PhysX 9.09.",
+          "votes": 0,
+          "date": "2025-10-24",
+          "settings": {
+            "Winlator Fork": "cmod_bionic",
+            "Emulator Version": "13.1.1",
+            "Wine Version": "proton-9.0-arm64ec",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.6.2-1-gplasync-1\nEnable async\nEnable async cache",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Other/Custom",
+            "Startup Selection": "Other",
+            "Box64 Version": "FEXCore 2507",
+            "Resolution (Screen Size)": "540p"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/8bfbb152-ba67-4c3e-87f5-42d6361987d9",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Winlator",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "",
+          "votes": 0,
+          "date": "2025-10-24",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "10.1",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.4.1",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Compatibility",
+            "Startup Selection": "Essential (Load only essential services)",
+            "Box64 Version": "0.3.6",
+            "Resolution (Screen Size)": "540p",
+            "Download Size": "16.5 GB"
+          }
         }
       ]
     },
@@ -37,8 +91,13 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Mass_Effect_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/fe486365-c184-472d-bc08-2693c1ca49df"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "ps3",

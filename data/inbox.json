@@ -1,6 +1,278 @@
 {
   "leads": [
     {
+      "url": "https://github.com/emu-bgm1x/melonDS-android",
+      "title": "emu-bgm1x/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/TanJunKiat/eden-duo",
+      "title": "TanJunKiat/eden-duo (Fork von igawa6/eden-duo)",
+      "excerpt": "",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/deivid22srk/nxnative-android",
+      "title": "deivid22srk/nxnative-android",
+      "excerpt": "Android port of the nxnative Switch-to-native runtime (bring your own game files)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/eren-coder07/RenPy-Android-Port",
+      "title": "eren-coder07/RenPy-Android-Port",
+      "excerpt": "RenPy Engine 8.6.1 - full launcher packaged for on-device game development (universal arm32+arm64)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/yassinsolim/mw2-recomp",
+      "title": "yassinsolim/mw2-recomp",
+      "excerpt": "Call of Duty: Modern Warfare 2 (2009) natively on Android, recompiled from your own Xbox 360 disc. Campaign, Special Ops and multiplayer in one auto-updating app. No game files included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/famiclone/xc2-recomp-android",
+      "title": "famiclone/xc2-recomp-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/CouldntFindit/korra-recomp",
+      "title": "CouldntFindit/korra-recomp",
+      "excerpt": "WIP - native Android and Windows port of The Legend of Korra (2014 PC) by static recompilation. Bring your own copy; source-only.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Mors74/Lemon-FE",
+      "title": "Mors74/Lemon-FE",
+      "excerpt": "A multiplatform emulation frontend",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Time-233/Android-emulator",
+      "title": "Time-233/Android-emulator",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/pgm1207/mali-open",
+      "title": "pgm1207/mali-open",
+      "excerpt": "Open Vulkan driver for Arm Mali GPUs on Android, in userspace on mali_kbase. MIT.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/lllllllay/HX",
+      "title": "lllllllay/HX",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/DELOS-STREAM/DELOS-android",
+      "title": "DELOS-STREAM/DELOS-android",
+      "excerpt": "Delos: an Android game streaming client for gaming handhelds. Console-like, controller-first interface for Vibepollo, Apollo and Sunshine hosts.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/mrmushrooms11/FTLDS",
+      "title": "mrmushrooms11/FTLDS",
+      "excerpt": "A Dual-Screen Port of Faster Than Light for Android Devices",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/djsaunde/1080-decomp",
+      "title": "djsaunde/1080-decomp",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/vita-recomps/ss-delta",
+      "title": "vita-recomps/ss-delta",
+      "excerpt": "A native PC port of Soul Sacrifice Delta (PS Vita, US PCSA00152 or EU PCSF00532, v1.30)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Alliance-Sky/PeanutNative-Test",
+      "title": "Alliance-Sky/PeanutNative-Test",
+      "excerpt": "Peanuts Native Test Build with Xenoblade Chronicles DE support",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Wolfarubot/Mobile",
+      "title": "Wolfarubot/Mobile",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/bsoverns/ClaudeOfficeWorkers",
+      "title": "bsoverns/ClaudeOfficeWorkers",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Beefnasty96/Thor-race-sim",
+      "title": "Beefnasty96/Thor-race-sim",
+      "excerpt": "Race sim on ayn thor ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/ChrisTorng/LivePerformer",
+      "title": "ChrisTorng/LivePerformer",
+      "excerpt": "Low-latency Android MIDI instrument with native Oboe/FluidSynth engine, prepared for Windows",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/keshavhere674/LALLA",
+      "title": "keshavhere674/LALLA",
+      "excerpt": "LALLA - Your Personal AI Companion (Android native with Compose, Room, Hilt, FreeLLMAPI & Ollama)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/MoxPy/lua-tauri",
+      "title": "MoxPy/lua-tauri",
+      "excerpt": "Build ultra-lightweight desktop apps with web frontends and Lua backends. A Tauri alternative.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/arfan1210/bolt-browser",
+      "title": "arfan1210/bolt-browser",
+      "excerpt": "Fast, private, Android-first WebView browser — no trackers, no bloat, ~2.6 MB APK. Source code; signed releases at arfan1210/bolt-browser-releases.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Zeusx212/onyx-c69hd-power-studio",
+      "title": "Zeusx212/onyx-c69hd-power-studio",
+      "excerpt": "Modern desktop suite for Onyx Boox C69HD (Faust 5 OEM) - 1-click profiles, Scrcpy mirroring, custom screensavers, debloater, and automated ADB setup",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/sunskiefer/VADER",
+      "title": "sunskiefer/VADER",
+      "excerpt": "Orbit-based vector synth for Akai Force / MPC OS (VST2) — load SVG, 3D or image shapes to drive the sound.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/noahklimczuk/iptv-player",
+      "title": "noahklimczuk/iptv-player",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/tboschese/RedesignAnything",
+      "title": "tboschese/RedesignAnything",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/ProtonyteTV/jedToolKit",
+      "title": "ProtonyteTV/jedToolKit",
+      "excerpt": "jedToolKit is a powerful diagnostics and utility suite for jailed iOS devices (iOS 15+), requiring no jailbreak. It offers tools like device info, hardware tests, terminal-style commands, system monitor, and theming.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/ballad0324/zyfun-tv",
+      "title": "ballad0324/zyfun-tv",
+      "excerpt": "Zyfun TV — Kotlin + Jetpack Compose Android media client, TV and phone dual-target with three product flavors.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Edselrenz/document",
+      "title": "Edselrenz/document",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/AravindS2006/Glassbon-Launcher",
+      "title": "AravindS2006/Glassbon-Launcher",
+      "excerpt": "A sleek, minimalist Android launcher with a clean aesthetic. ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/foxoman/retroui",
+      "title": "foxoman/retroui",
+      "excerpt": "Windows 3.1 style UI toolkit for Nim",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/oloyaisaac/skills-exchange",
+      "title": "oloyaisaac/skills-exchange",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
+      "url": "https://github.com/Parth-Chavan-15/MedSetu-TechSprint",
+      "title": "Parth-Chavan-15/MedSetu-TechSprint",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-20"
+    },
+    {
       "url": "https://bitrebels.com/?p=373108",
       "title": "Fallout 4 mit Pip-Boy-App auf dem unteren Bildschirm (AYN Thor, GameHub Lite)",
       "excerpt": "Bericht über ein Setup: Fallout 4 (PC, GOTY) in GameHub Lite auf dem AYN Thor, die offizielle Pip-Boy-Companion-App (ältere APK, nicht mehr im Play Store) live auf dem unteren Bildschirm; Quelle nennt einen Reddit-Beitrag. Dual Screen – prüfen und als Weg bei fallout-4 eintragen.",
@@ -5678,9 +5950,9 @@
     "summary": "Abo-Anfragen #26 (Reihe Test Drive: 19 Spiele mit Fassungen je Plattform von Hand angelegt, da Wikidata aus der Sitzung gesperrt war; Fan-Mods TDU Platinum, Project Paradise, Project Paradise 2) und #27 (Tomb Raider: Anniversary – kein spielspezifischer Android-Weg belegt, PC-Fassung ergänzt) erledigt. Warteschlange: Tomb Raider (2013) bekommt die offizielle Android-Fassung von Feral (2026); Tomb Raider: Legend ohne belegten Sonderweg; Metroid Prime Remastered Text korrigiert. Leads: 8 neue Spielwege (Phantom Hourglass Recomp, THPS4-Port, FTL Android, NFS III Android, Quest 64 Android, DW2003 Dual Screen, SMZ3 Universe ×2), 5 neue Spiele, 11 Leads verworfen. 10 Bilder geprüft (9 bestätigt, 1 Logo entfernt). Offen: Wikidata/Steam/Reddit nicht erreichbar, daher keine Cover für die neuen Test-Drive-Spiele und keine Wikidata-Basisprofile; Test-Drive-Spiele nicht in die Warteschlange gestellt (kaum Android-Wege zu erwarten); übrige ~40 GitHub-Leads ungeprüft."
   },
   "watcher": {
-    "lastRun": "2026-11-19T14:29:12Z",
-    "newLeads": 41,
-    "newEvents": 39
+    "lastRun": "2026-11-20T14:04:09Z",
+    "newLeads": 34,
+    "newEvents": 19
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

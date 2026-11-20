@@ -54,7 +54,23 @@
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
       ],
-      "note": "Eigene Umsetzung von Atari Melbourne House für PS2; über PS2-Emulation spielbar."
+      "note": "Eigene Umsetzung von Atari Melbourne House für PS2; über PS2-Emulation spielbar.",
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Test%20Drive%20Unlimited%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Test%20Drive%20Unlimited%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Test%20Drive%20Unlimited%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "psp",
@@ -69,7 +85,23 @@
           "url": "https://en.wikipedia.org/wiki/Test_Drive_(series)"
         }
       ],
-      "note": "Eigene Umsetzung von Atari Melbourne House für PSP; über PSP-Emulation spielbar."
+      "note": "Eigene Umsetzung von Atari Melbourne House für PSP; über PSP-Emulation spielbar.",
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Test%20Drive%20Unlimited%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/Test%20Drive%20Unlimited%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Test%20Drive%20Unlimited%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Promo%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
+      ]
     }
   ],
   "routes": [],
@@ -98,6 +130,24 @@
       "edition": "Test Drive Unlimited für PC (mit TDU Platinum)",
       "description": "Fan-Server für den eingestellten Online-Modus von Test Drive Unlimited (Freeride u. a.), seit 2012 als öffentliche Beta im TurboDuck-Forum. Der Betrieb hing zeitweise an einzelnen Betreuern; vor dem Einrichten den aktuellen Stand im Forum prüfen.",
       "verification": "ai-unverified"
+    }
+  ],
+  "wikidata": "Q853941",
+  "wikipedia": "https://en.wikipedia.org/wiki/Test_Drive_Unlimited",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Test%20Drive%20Unlimited%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Test%20Drive%20Unlimited%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Test%20Drive%20Unlimited%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
     }
   ]
 }

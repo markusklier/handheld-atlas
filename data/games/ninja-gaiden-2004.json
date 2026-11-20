@@ -96,6 +96,13 @@
           "source": "https://github.com/gamboozino/ngbrecomp",
           "credit": "Ninja Gaiden Black Recomp",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gamboozino/ngbrecomp/HEAD/docs/images/banner.jpg",
+          "caption": "Ninja Gaiden Black Recompiled",
+          "source": "https://github.com/gamboozino/ngbrecomp",
+          "credit": "Ninja Gaiden Black Recomp",
+          "check": "readme"
         }
       ],
       "reports": [],
