@@ -2,6 +2,84 @@
   "entries": [
     {
       "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-the-wind-waker",
+      "text": "Neuer Spielweg: TWW HD Recompiled – Android (GreenNaugahyde) mit GamePad-Bild auf dem unteren Bildschirm (KI-Fund)",
+      "url": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "morrowind",
+      "text": "OpenMW-DS auf v1.4.0 aktualisiert; Xbox-Fassung ergänzt",
+      "url": "https://github.com/Josh-Daniels/OpenMW-DS"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "morrowind",
+      "text": "Neuer Spielweg: OpenMW Android (Andiweli, OpenMW 0.51) – bisher fälschlich als Mod geführt (KI-Fund)",
+      "url": "https://github.com/Andiweli/OpenMW-Android"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "game-added",
+      "by": "agent",
+      "game": "call-of-duty-modern-warfare-2",
+      "text": "Neues Spiel: Call of Duty: Modern Warfare 2 (KI-Fund)",
+      "url": "https://github.com/yassinsolim/mw2-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "call-of-duty-modern-warfare-2",
+      "text": "Neuer Spielweg: MW2 Recompiled – nativer Android-Port der Xbox-360-Fassung, laut Projekt fast 60 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/yassinsolim/mw2-recomp"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "ftl-faster-than-light",
+      "text": "Neuer Spielweg: FTLDS – FTL mit Dual Screen für den AYN Thor, auch mit Multiverse (KI-Fund)",
+      "url": "https://github.com/mrmushrooms11/FTLDS"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "soul-sacrifice-delta",
+      "text": "Neuer Spielweg: ss-delta – nativer Recomp-Port der Vita-Fassung mit 60 FPS (KI-Fund)",
+      "url": "https://github.com/vita-recomps/ss-delta"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "xenoblade-chronicles-2",
+      "text": "Neuer Spielweg: XC2 Recomp (Android) – selbst zu bauender nativer Port (KI-Fund)",
+      "url": "https://github.com/famiclone/xc2-recomp-android"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "route-added",
+      "by": "agent",
+      "game": "fallout-4",
+      "text": "Neuer Spielweg: Pip-Boy-App auf dem unteren Bildschirm mit Winlator/GameHub (KI-Fund)",
+      "url": "https://www.reddit.com/r/Fallout/comments/1qgj3yr/fallout_4_on_the_ayn_thor/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "agent",
+      "text": "Bildprüfung: 12 Screenshots geprüft (SMZ3 Universe, NFS III Android, Grand Theft Companion); 5 Bilder anderer Plattformen bzw. des falschen Spiels entfernt"
+    },
+    {
+      "date": "2026-11-20",
       "type": "route-updated",
       "game": "mass-effect-2",
       "text": "2 Community-Berichte von EmuReady für Mass Effect 2 (Geräte mit dem Chip des AYN Thor)"

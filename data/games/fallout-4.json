@@ -194,8 +194,67 @@
       }
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "fo4-pipboy-thor",
+      "name": "Pip-Boy-App auf dem unteren Bildschirm",
+      "release": "pc",
+      "kind": "companion",
+      "edition": "PC (GOTY, z. B. von GOG)",
+      "runtime": "Winlator bzw. GameHub Lite + offizielle Fallout-Pip-Boy-App",
+      "projects": [],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory"
+      ],
+      "dualScreen": "Die offizielle Pip-Boy-Begleit-App von Bethesda läuft auf dem unteren Bildschirm und zeigt live Karte, Inventar, Werte und Radio, per Touch bedienbar, während Fallout 4 oben weiterläuft.",
+      "dualScreenType": "companion",
+      "requires": [
+        "Eigene PC-Fassung von Fallout 4",
+        "Winlator oder GameHub Lite",
+        "Offizielle Fallout-Pip-Boy-App (ältere Version, nicht mehr im Play Store)",
+        "Im Spiel die Begleit-App-Verbindung aktivieren"
+      ],
+      "benefit": "Echter Pip-Boy auf dem zweiten Bildschirm: Ein Reddit-Beitrag zeigt das Setup auf dem AYN Thor; die Berichte nennen ein meist stabiles Spiel mit Einbrüchen in Boston.",
+      "caveat": "Die Pip-Boy-App ist nicht mehr bei Google Play; eine ältere APK muss man selbst besorgen (nur aus vertrauenswürdiger Quelle). Die Berichte nennen unterschiedliche Laufzeiten (Winlator laut Reddit-Autor, GameHub Lite laut Bitrebels). FPS-Angaben sind nicht gemessen belegt.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Reddit (AYN Thor)",
+          "url": "https://www.reddit.com/r/Fallout/comments/1qgj3yr/fallout_4_on_the_ayn_thor/"
+        },
+        {
+          "label": "Vida Extra",
+          "url": "https://www.vidaextra.com/rpg/loco-acaba-convertirse-envidia-comunidad-fallout-4-ha-creado-experiencia-definitiva-consola-portatil"
+        },
+        {
+          "label": "Bitrebels",
+          "url": "https://bitrebels.com/?p=373108"
+        }
+      ],
+      "reports": [
+        {
+          "url": "https://www.reddit.com/r/Fallout/comments/1qgj3yr/fallout_4_on_the_ayn_thor/",
+          "device": "AYN Thor",
+          "summary": "Fallout 4 oben, offizielle Pip-Boy-App per Touch auf dem unteren Bildschirm; läuft weitgehend stabil, in Boston etwas schwächer.",
+          "date": "2026-01-21"
+        }
+      ],
+      "performance": [],
+      "checkedAt": "2026-11-20"
+    }
+  ],
+  "updatedAt": "2026-11-20",
   "wikidata": "Q10493813",
   "wikipedia": "https://en.wikipedia.org/wiki/Fallout_4",
   "genre": "action role-playing game",

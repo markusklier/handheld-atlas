@@ -107,38 +107,38 @@
         },
         {
           "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/title.jpg",
-          "caption": "The title screen",
+          "caption": "Titelbild",
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III: Hot Pursuit – Android",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/car-select.jpg",
-          "caption": "Choosing a car",
+          "caption": "Fahrzeugauswahl",
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III: Hot Pursuit – Android",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/multiplayer.jpg",
-          "caption": "Two phones in a network race lobby",
+          "caption": "Lobby für ein Netzwerkrennen",
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III: Hot Pursuit – Android",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/race-touch.jpg",
-          "caption": "Racing on the touch controls",
+          "caption": "Rennen mit Touch-Steuerung",
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III: Hot Pursuit – Android",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/HEAD/screenshots/pause-menu.jpg",
-          "caption": "The pause menu over a race",
+          "caption": "Pausenmenü im Rennen",
           "source": "https://github.com/ZloiKILLER/nfs3recompiled-android",
           "credit": "NFS III: Hot Pursuit – Android",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [],

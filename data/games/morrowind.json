@@ -3,10 +3,11 @@
   "title": "The Elder Scrolls III: Morrowind",
   "franchise": "The Elder Scrolls",
   "platforms": [
-    "PC"
+    "PC",
+    "Xbox"
   ],
   "genre": "Rollenspiel",
-  "summary": "Dieselben Spieldaten, unterschiedliche Engines: Dual-Screen auf Android oder OpenMW am Linux-Handheld.",
+  "summary": "Mit OpenMW läuft Morrowind nativ auf Android – auf dem AYN Thor mit OpenMW-DS: Spiel oben, Minikarte, Inventar und Journal live auf dem unteren Bildschirm.",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/5/53/MorrowindCOVER.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
@@ -14,12 +15,39 @@
   "versions": [
     {
       "id": "pc",
-      "name": "PC",
+      "name": "PC (2002)",
       "type": "original",
       "platforms": [
         "PC"
       ],
-      "year": 2002
+      "year": 2002,
+      "note": "Windows-Original; die Game of the Year Edition (2003) enthält die Erweiterungen Tribunal und Bloodmoon und ist heute bei Steam und GOG erhältlich. Ihre Spieldaten nutzen OpenMW und alle Android-Ports.",
+      "links": [
+        {
+          "label": "Steam",
+          "url": "https://store.steampowered.com/app/22320/The_Elder_Scrolls_III_Morrowind_Game_of_the_Year_Edition/"
+        },
+        {
+          "label": "GOG",
+          "url": "https://www.gog.com/en/game/the_elder_scrolls_iii_morrowind_goty_edition"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2002)",
+      "type": "port",
+      "year": 2002,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Konsolenfassung für die erste Xbox, 2003 auch als Game of the Year Edition. Für Android gibt es keinen ausgereiften Xbox-Emulator – auf dem Handheld spielt man die PC-Daten mit OpenMW.",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind"
+        }
+      ]
     }
   ],
   "routes": [
@@ -41,15 +69,15 @@
         "touch-inventory",
         "mods"
       ],
-      "dualScreen": "Karte, Journal, Inventar",
+      "dualScreen": "Unten Live-Minikarte mit Werten, Inventar, Zauber, Charakterbogen und Journal; Handel, Plündern, Alchemie, Verzauberung und Karten wahlweise auf beide Bildschirme verteilt.",
       "requires": [
-        "Eigene Morrowind-Spieldaten",
-        "Mod-Kompatibilität mit dem verwendeten OpenMW-Build"
+        "Eigene Morrowind-Spieldaten (z. B. GOTY Edition von Steam oder GOG)",
+        "Speicherberechtigung „Zugriff auf alle Dateien“"
       ],
-      "benefit": "Karte, Journal und Charakteroberfläche auf dem zweiten Display.",
-      "caveat": "Ein OpenMW-Fork, keine Windows-Emulation. Nicht jeder klassische Engine-Mod ist kompatibel.",
+      "benefit": "Für den AYN Thor gebaute OpenMW-App: Das Spiel läuft oben, der untere Bildschirm zeigt fünf live aktualisierte Reiter (HUD mit Minikarte, Inventar, Zauber, Werte, Journal) mit Touch- und Controller-Bedienung. Spielmenüs (Gespräch, Handel, Alchemie, Weltkarte …) lassen sich einzeln auf den unteren Bildschirm legen; laut README kompatibel mit Tamriel Rebuilt.",
+      "caveat": "Fork des Alpha3-Launchers (OpenMW-Android). Retroid-Dual-Screen und andere Zwei-Bildschirm-Geräte nur experimentell; braucht Zugriff auf alle Dateien. Nicht jeder klassische Engine-Mod (MWSE) läuft unter OpenMW.",
       "steps": [],
-      "version": null,
+      "version": "v1.4.0",
       "effort": "guided",
       "status": "active",
       "verification": "documented",
@@ -64,12 +92,79 @@
           "dual": true
         }
       ],
-      "links": [],
-      "checkedAt": "2026-11-08",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Josh-Daniels/OpenMW-DS"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/Josh-Daniels/OpenMW-DS/releases"
+        }
+      ],
+      "checkedAt": "2026-11-20",
       "release": "pc",
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "id": "mw-openmw-android",
+      "name": "OpenMW Android (Andiweli)",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC-Spieldaten",
+      "runtime": "OpenMW 0.51 (Android-Port auf Basis von CaveBros openmw-android)",
+      "projects": [
+        "openmw-android-andiweli"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "controller",
+        "touch",
+        "mods",
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Morrowind-Spieldaten",
+        "Android 64-Bit"
+      ],
+      "benefit": "Einfacher Ein-Bildschirm-Weg mit aktueller OpenMW-Engine 0.51: Launcher mit Einstellungen für Auflösung, Schatten, Bildrate und Oberfläche, verbesserte Gamepad-, Touch-, Tastatur- und Maussteuerung, optionale OMWFX-Shader.",
+      "caveat": "Kein zweiter Bildschirm – für den AYN Thor ist OpenMW-DS die Dual-Screen-Variante. Laut README mit KI-Unterstützung entwickelt.",
+      "steps": [],
+      "version": "OpenMW 0.51",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/993327f9-ee20-466c-b1bc-ef19c0cc1d00",
+          "caption": "Morrowind mit OpenMW auf Android",
+          "source": "https://github.com/Andiweli/OpenMW-Android",
+          "credit": "OpenMW Android (Andiweli)",
+          "check": "readme"
+        },
+        {
+          "url": "https://github.com/user-attachments/assets/0229b20f-f8cb-43cc-ab6f-3135c85689f1",
+          "caption": "Launcher-Einstellungen",
+          "source": "https://github.com/Andiweli/OpenMW-Android",
+          "credit": "OpenMW Android (Andiweli)",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Andiweli/OpenMW-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
     },
     {
       "id": "mw-openmw",
@@ -146,18 +241,6 @@
       ]
     },
     {
-      "id": "mw-openmw-android-port",
-      "name": "OpenMW Android/ChromeOS (Andiweli)",
-      "category": "other",
-      "url": "https://github.com/Andiweli/OpenMW-Android",
-      "edition": "Morrowind PC-Datendateien",
-      "description": "Eigenständiger Android-Port/Fork mit OpenMW 0.51, Touch- und Gamepad-Anpassungen. Alternativer Spielweg, nicht selbst eine Daten-/Performance-Mod; Einrichtung und Gerät separat prüfen.",
-      "verification": "documented",
-      "release": [
-        "pc"
-      ]
-    },
-    {
       "id": "mw-openmw-performance-config",
       "name": "OpenMW Performance Settings",
       "category": "performance",
@@ -170,7 +253,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q718448",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_III%3A_Morrowind",
   "website": "https://elderscrolls.bethesda.net/morrowind/"

@@ -26,6 +26,58 @@
   ],
   "routes": [
     {
+      "id": "ftl-ftlds",
+      "name": "FTLDS (FTL Thor)",
+      "release": "pc-2012",
+      "kind": "native",
+      "edition": "PC-Spieldaten (ftl.dat)",
+      "runtime": "Android-App",
+      "projects": [
+        "ftlds"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "touch",
+        "mods"
+      ],
+      "dualScreen": "Das eigene Schiff bleibt oben; unten zwischen den Begegnungen das Flugdeck, im Kampf das gegnerische Schiff mit Raum-Zielauswahl und Strahl-Zielen per Touch.",
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene PC-Fassung von FTL (Datei ftl.dat)",
+        "Android 8.0+"
+      ],
+      "benefit": "Für den AYN Thor ausgelegte Zwei-Bildschirm-Fassung von FTL; startet wahlweise das Grundspiel oder den Mod FTL: Multiverse 5.5.1 (mit Hyperspace) samt optionalen Add-ons, die der Launcher selbst herunterlädt.",
+      "caveat": "Inoffizieller Fan-Port, APK aus den GitHub-Releases. Multiverse braucht zusätzlich gut 700 MB Daten. Getrennte Spielstände für Vanilla und Multiverse.",
+      "steps": [],
+      "version": null,
+      "effort": "easy",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/1f6ff345-8ca7-4e53-8171-029dc4839888",
+          "caption": "FTL auf beiden Bildschirmen des AYN Thor",
+          "source": "https://github.com/mrmushrooms11/FTLDS",
+          "credit": "FTLDS",
+          "check": "readme",
+          "dual": true
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mrmushrooms11/FTLDS"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
+    },
+    {
       "targets": [
         "android"
       ],
@@ -61,7 +113,7 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q4308783",
   "website": "https://subsetgames.com/ftl.html",
   "wikipedia": "https://en.wikipedia.org/wiki/FTL%3A_Faster_Than_Light",

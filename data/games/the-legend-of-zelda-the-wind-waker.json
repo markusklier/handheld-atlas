@@ -104,7 +104,7 @@
         "Android 13+ (arm64) mit Vulkan 1.3"
       ],
       "benefit": "Nativer Port statt Emulation (statische Recompilation, Vulkan): laut README von Anfang bis Ende spielbar. Die Setup-App baut das Spiel auf dem Gerät aus dem eigenen Dump. Seit v0.4.0 GamePad-Bild auf dem zweiten Bildschirm, 40-/60-FPS-Modi mit Hitzeschutz für Handhelds; v0.5.1 bringt einen eingebauten Randomizer, optionale GameCube-Modelle und einen Mod-Katalog im Spiel.",
-      "caveat": "Laut Android-Prüfliste stehen Tests auf echten Geräten (auch AYN Thor) noch aus. Die Testtabelle des Projekts nennt etwa 59 FPS auf Snapdragon 8 Elite und stabile 30 FPS auf Snapdragon 8 Gen 3 – für den Thor (Snapdragon 8 Gen 2) gibt es noch keine Messung. Android-Forks mit eigenen Zusatzfunktionen: GreenNaugahyde/ZeldaWWHDRecompAndroid und WindWakerHD-Android-Plus.",
+      "caveat": "Laut Android-Prüfliste stehen Tests auf echten Geräten (auch AYN Thor) noch aus. Die Testtabelle des Projekts nennt etwa 59 FPS auf Snapdragon 8 Elite und stabile 30 FPS auf Snapdragon 8 Gen 3 – für den Thor (Snapdragon 8 Gen 2) gibt es noch keine Messung. Das Repository enthält bewusst keine Spielbilder. Der Android-Fork von GreenNaugahyde ist als eigener Weg eingetragen.",
       "steps": [],
       "version": "v0.5.1",
       "effort": "guided",
@@ -136,8 +136,71 @@
       ],
       "reports": [],
       "performance": [],
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "edition": "Wii U (USA oder Europa, Version 0)"
+    },
+    {
+      "id": "wwhd-greennaugahyde",
+      "name": "TWW HD Recompiled – Android (GreenNaugahyde)",
+      "release": "the-wind-waker-hd",
+      "kind": "recomp",
+      "edition": "Wii U (USA, Europa oder Japan)",
+      "runtime": "Statische Recompilation, auf dem Gerät mit LLVM gebaut, Vulkan 1.1",
+      "projects": [
+        "zeldawwhdrecomp-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "two-screens",
+        "touch-inventory",
+        "live-map",
+        "touch",
+        "high-fps",
+        "widescreen",
+        "mods",
+        "native-arm"
+      ],
+      "dualScreen": "Auf Zwei-Bildschirm-Geräten (laut README ausdrücklich AYN Thor) geht das GamePad-Bild mit Gegenständen, Karte und Flaschen automatisch auf den zweiten Bildschirm, mit Touch und an dessen Format angepasst.",
+      "dualScreenType": "native",
+      "requires": [
+        "Eigene Wii-U-Fassung von The Wind Waker HD als eigener Dump (.wud/.wux mit Disc-Key und common.key, oder .wua)",
+        "Android 11+ (arm64) mit Vulkan 1.1, ca. 2 GB freier Speicher und 2 GB freier Arbeitsspeicher für das einmalige Kompilieren"
+      ],
+      "benefit": "Eigenständige Android-App des Recomp-Ports: baut den Spielcode beim ersten Start auf dem Gerät, danach Start in einer halben Sekunde. Dazu Breitbild, Spielstände mit Vorschaubild, Gyro-Zielen, Vollbildkarte, eingebauter Randomizer, Mod-Pakete je Spielstand, 60 FPS per Zwischenbildern oder Frame-Generation (auch LSFG) und deutsche Oberfläche.",
+      "caveat": "Inoffizieller Fork; Grundlage auch für WindWakerHD-Android-Plus. Keine belegte Messung auf dem AYN Thor.",
+      "steps": [],
+      "version": "0.9.9c (laut README)",
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/touch-controls.jpg",
+          "caption": "Präludeninsel mit Touch-Steuerung",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "ZeldaWWHDRecompAndroid",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/item-ring.jpg",
+          "caption": "Gegenstandsring",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "ZeldaWWHDRecompAndroid",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
     },
     {
       "id": "wwhd-android-plus",
@@ -218,7 +281,7 @@
       "checkedAt": "2026-11-19"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q852563",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_The_Wind_Waker",
   "genre": "Action-Adventure",

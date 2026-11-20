@@ -8,18 +8,91 @@
   "versions": [
     {
       "id": "playstation-vita",
-      "name": "PlayStation Vita",
+      "name": "PlayStation Vita (2014)",
       "type": "original",
       "platforms": [
         "PlayStation Vita"
-      ]
+      ],
+      "year": 2014
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "ssd-recomp",
+      "name": "ss-delta (Soul Sacrifice Delta Recomp)",
+      "release": "playstation-vita",
+      "kind": "recomp",
+      "edition": "PS-Vita-Fassung (US PCSA00152 oder EU PCSF00532, v1.30)",
+      "runtime": "Statische Recompilation, Vulkan",
+      "projects": [
+        "ss-delta"
+      ],
+      "targets": [
+        "android",
+        "windows-x86_64",
+        "linux-x86_64"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump von Soul Sacrifice Delta (PS Vita, v1.30)",
+        "Android 9+ (arm64) mit Vulkan"
+      ],
+      "benefit": "Nativer Port statt Vita3K-Emulation: laut README läuft das ganze Spiel bis zum Endkampf mit 60 FPS; die Android-App baut das Spiel auf dem Gerät aus dem eigenen Dump, ohne PC. Der Entwickler testet auf einem AYN Thor.",
+      "caveat": "Die Enden nach dem Endkampf sind laut README noch nicht getestet. Android-Unterstützung ist neu (seit 0.4.0, Doku ab 19.11.2026). Ad-hoc-Mehrspieler im LAN laut README zwischen PC, Steam Deck und Mac erprobt.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/quest-desert.jpg",
+          "caption": "Kampf in den Wüstenruinen",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/quest-ice.jpg",
+          "caption": "Zauber zwischen Eis und Ketten",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/librom.jpg",
+          "caption": "Librom, das sprechende Buch",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/vita-recomps/ss-delta"
+        },
+        {
+          "label": "Android-Doku (AYN Thor)",
+          "url": "https://github.com/vita-recomps/ss-delta/blob/main/docs/09-android.md"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-20"
+    }
+  ],
+  "updatedAt": "2026-11-20",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/8/80/Soul_Sacrifice_NA_boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "source": "https://en.wikipedia.org/wiki/Soul_Sacrifice_%28video_game%29"
   },
-  "wikidata": "Q110147539"
+  "wikidata": "Q110147539",
+  "summary": "Das Vita-Spiel läuft als nativer Recomp-Port auf Android – mit 60 FPS, ohne Emulator."
 }

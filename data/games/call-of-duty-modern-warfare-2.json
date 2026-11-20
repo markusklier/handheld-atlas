@@ -1,0 +1,98 @@
+{
+  "id": "call-of-duty-modern-warfare-2",
+  "title": "Call of Duty: Modern Warfare 2",
+  "franchise": "Call of Duty",
+  "platforms": [
+    "Xbox 360",
+    "PC",
+    "PlayStation 3"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Die Xbox-360-Fassung läuft als nativer Recomp-Port auf Android – laut Projekt auf dem AYN Thor mit fast durchgehend 60 FPS, inklusive Kampagne, Spec Ops und Mehrspieler.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports (Disc-Fassung 1.0.557)."
+    },
+    {
+      "id": "pc",
+      "name": "PC (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "mw2-recomp",
+      "name": "MW2 Recompiled",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Disc (1.0.557, ohne Title Update)",
+      "runtime": "XenonRecomp, Vulkan (mitgelieferter Turnip-Treiber)",
+      "projects": [
+        "mw2-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "online",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Xbox-360-Disc von Modern Warfare 2 als .iso",
+        "Windows-10/11-PC (64 Bit, 16 GB RAM, ca. 40 GB frei) zum Bauen des Spielcodes",
+        "Android 8+ (64 Bit) mit Vulkan, ca. 7 GB frei"
+      ],
+      "benefit": "Kampagne, Spec Ops und Mehrspieler als native Android-App, kein Emulator und kein Streaming. Die Messtabelle des Projekts nennt auf dem AYN Thor 55–60 FPS in der Kampagne und im Mehrspieler (Standard-Limit 60).",
+      "caveat": "Erster Besuch eines Levels ruckelt, während Grafik-Pipelines kompiliert werden. Auf Qualcomm-Geräten ist der mitgelieferte Turnip-Treiber nötig. Title Update 6 fehlt; Split-Screen über zwei Geräte ungetestet.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yassinsolim/mw2-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Kampagne 54,7–60 FPS (S.S.D.D. 60,0; No Russian 58,7), Mehrspieler Terminal 59,9 und Rust 59,4 FPS",
+          "settings": "App-Standard (Limit 60 FPS), Turnip (Mesa 27.0.0), Touch-Steuerung",
+          "source": "https://github.com/yassinsolim/mw2-recomp",
+          "date": "2026-11-20"
+        }
+      ],
+      "checkedAt": "2026-11-20"
+    }
+  ],
+  "updatedAt": "2026-11-20"
+}
