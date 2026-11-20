@@ -62,6 +62,20 @@
           "source": "https://www.reddit.com/r/AM2R/comments/1wzi4mu/am2r_on_the_thor/",
           "credit": "AM2R Autopatcher für Android",
           "check": "ai-unclear"
+        },
+        {
+          "url": "https://external-preview.redd.it/bzJpYmp4OXdxeHRoMcjvTGF3eDcwUBq-eFGEVTeQIAwshIwmgOjQOSiUAy33.jpeg?format=pjpg&auto=webp&s=a23082bb21dfc7b54a3ca259e880b98e13962dc2",
+          "caption": "AM2R on the Thor!",
+          "source": "https://www.reddit.com/r/AM2R/comments/1wzi4mu/",
+          "credit": "Reddit · u/275242",
+          "check": "reddit"
+        },
+        {
+          "url": "https://external-preview.redd.it/MWhtaXpsMXZuaXVoMVQB4FiN7XFbieVBqIXJYa5DFlw2sWqFkwjD-2O-9t2d.png?format=pjpg&auto=webp&s=3c6a2253ce2a0fd75f44f9b2d5f762439755c5d0",
+          "caption": "AM2R for Android — Dual Screen edition [UNOFFICIAL]",
+          "source": "https://www.reddit.com/r/AM2R/comments/1x1yoqc/",
+          "credit": "Reddit · u/_PatchDev",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -77,5 +91,5 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-08"
+  "updatedAt": "2026-11-20"
 }

@@ -227,7 +227,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/YThpMXd6OGoxNmVnMV4s6vHq2yYdKoq1zfdTVjBXYnsPIdq4HethpK27DK3U.png?format=pjpg&auto=webp&s=76560e0f7239d8878e0f28ce79daa4eab09a8caa",
+          "caption": "Fallout 4 on the AYN Thor",
+          "source": "https://www.reddit.com/r/Fallout/comments/1qgj3yr/",
+          "credit": "Reddit · u/MrBrothason",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Reddit (AYN Thor)",

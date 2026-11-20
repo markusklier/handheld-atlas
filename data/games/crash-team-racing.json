@@ -102,6 +102,13 @@
           "source": "https://www.bunk.games/articles/crash-team-racing-ctr-ds-ayn-thor-setup/",
           "credit": "bunk.games",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://external-preview.redd.it/aXp3b3VlMmpoam1oMUjvGVLn7vTdVSAo-jLZJ1cwNqpe5TQ_t_cCKRp1Gbgq.png?format=pjpg&auto=webp&s=236f152e9f06340afec13037ff09dcf4553de87c",
+          "caption": "Crash Team Racing PS1 Dual Screen",
+          "source": "https://www.reddit.com/r/AynThor/comments/1w2mw0s/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -239,6 +246,13 @@
           "source": "https://github.com/ThiagoAciole/ctr-mobile",
           "credit": "CTR Mobile",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://external-preview.redd.it/aTg4ODYybGt4NnhoMUTXHDuKUOPPIgG-8Ep0qDBVgaGlKs9bI-5srLryyPMU.png?format=pjpg&auto=webp&s=9ae52a60c8b6e43b6dc27fc078a0cf68909cf43a",
+          "caption": "[WIP] CTR Mobile – Crash Team Racing (PS1) com port nativo para Android, control",
+          "source": "https://www.reddit.com/r/AndroidNativePorts/comments/1xd9ws5/",
+          "credit": "Reddit · u/Swimming-Builder-906",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -366,7 +380,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "summary": "Auf dem AYN Thor ist der inoffizielle Android-Port CTR-DS besonders interessant: Das Rennen bleibt oben, während HUD und Live-Streckenkarte unten erscheinen.",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/4/4f/CrashTeamRacingNACover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",

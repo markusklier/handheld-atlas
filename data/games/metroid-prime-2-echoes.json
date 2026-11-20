@@ -254,7 +254,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/r55rx00he7fd1.png",
+          "caption": "Widescreen HUD Mod for Metroid Prime 2: Echoes (GameCube)",
+          "source": "https://www.reddit.com/r/DolphinEmulator/comments/1ee1533/",
+          "credit": "Reddit · u/Nystrata",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/fyhvbewhe7fd1.png",
+          "caption": "Widescreen HUD Mod for Metroid Prime 2: Echoes (GameCube)",
+          "source": "https://www.reddit.com/r/DolphinEmulator/comments/1ee1533/",
+          "credit": "Reddit · u/Nystrata",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -329,7 +344,7 @@
       "checkedAt": "2026-11-11"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q2089035",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_2%3A_Echoes",
   "genre": "action-adventure game",

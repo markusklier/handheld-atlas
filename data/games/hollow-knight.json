@@ -477,7 +477,50 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/12gegdb4fukh1.png",
+          "caption": "Hollow Knight: Dual Souls, Unofficial dual-screen Android port is out",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vv1adg/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/hitb6696fukh1.png",
+          "caption": "Hollow Knight: Dual Souls, Unofficial dual-screen Android port is out",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vv1adg/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/ww36wfe7fukh1.png",
+          "caption": "Hollow Knight: Dual Souls, Unofficial dual-screen Android port is out",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vv1adg/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/sb5bnfq8fukh1.png",
+          "caption": "Hollow Knight: Dual Souls, Unofficial dual-screen Android port is out",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vv1adg/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/z9qlw1p9fukh1.png",
+          "caption": "Hollow Knight: Dual Souls, Unofficial dual-screen Android port is out",
+          "source": "https://www.reddit.com/r/AynThor/comments/1vv1adg/",
+          "credit": "Reddit · u/SuperbShop4757",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/0beyx5vpavxh1.jpeg",
+          "caption": "Birthday Thor",
+          "source": "https://www.reddit.com/r/AynThor/comments/1xg7giz/",
+          "credit": "Reddit · u/Strange_Concert9164",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -702,7 +745,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "mods": [
     {
       "id": "customknight-skins",

@@ -174,7 +174,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/ZW9haG8yeXplcDZmMYqGOpM3JeBmPUGOXWjJfNuBBtvBLSoTLhuahdLg5ftx.png?format=pjpg&auto=webp&s=195a961dbc54682bdd206598863a609ba9c3785b",
+          "caption": "DOOM 64 running at 30 fps instead of 60",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1lah8qt/",
+          "credit": "reddit.com",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -441,7 +449,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Doom%2064%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"

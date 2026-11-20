@@ -2,6 +2,118 @@
   "entries": [
     {
       "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "mighty-doom",
+      "text": "1 Bilder aus Reddit für Mighty DOOM Server – eigenes Backend (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/MightyDoom/comments/1litbsb/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "doom-64",
+      "text": "1 Bilder aus Reddit für Delta Touch mit DOOM64EX+ (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1lah8qt/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime-2-echoes",
+      "text": "2 Bilder aus Reddit für GameCube-Fassung mit EchoesWidescreenHUD und 16:9-Code (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/DolphinEmulator/comments/1ee1533/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "grand-theft-auto-iv",
+      "text": "1 Bilder aus Reddit für Grand Theft Companion (PC via Winlator/GameNative) (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1xbgmrm/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "silent-hill",
+      "text": "2 Bilder aus Reddit für Silent Hill – Dualscreen (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "am2r",
+      "text": "2 Bilder aus Reddit für AM2R Autopatcher (Dual-Screen-Edition) (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AM2R/comments/1wzi4mu/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "crash-team-racing",
+      "text": "2 Bilder aus Reddit für CTR-DS, CTR Mobile (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1w2mw0s/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "the-elder-scrolls-v-skyrim",
+      "text": "4 Bilder aus Reddit für Skyrim SE mit ProfMags' DualScreen Launcher, Special Edition über GameHub mit dokumentiertem Odin-2-Profil (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1w0z4tq/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "hollow-knight",
+      "text": "6 Bilder aus Reddit für HK: Dual Souls (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/AynThor/comments/1vv1adg/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "doom-ii",
+      "text": "2 Bilder aus Reddit für UZDoom mit echter Zweitbildschirm-Automap (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "final-doom",
+      "text": "2 Bilder aus Reddit für UZDoom mit echter Dual-Screen-Automap (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "master-levels-for-doom-ii",
+      "text": "2 Bilder aus Reddit für UZDoom-Dual-Screen-Fork mit WadFusion (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom/comments/1vim9bm/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "fallout-4",
+      "text": "1 Bilder aus Reddit für Pip-Boy-App auf dem unteren Bildschirm (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Fallout/comments/1qgj3yr/"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime-remastered",
+      "text": "4 Bilder aus Reddit für MP Checklist – manuelle Zweitbildschirm-Begleitung (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Metroid/comments/11h1ooa/"
+    },
+    {
+      "date": "2026-11-20",
       "type": "route-added",
       "by": "agent",
       "game": "the-legend-of-zelda-the-wind-waker",

@@ -508,7 +508,7 @@
       "testedOn": [],
       "screenshots": [
         {
-          "url": "https://preview.redd.it/43gg7bjmv2ih1.png?width=1188&format=png&auto=webp&s=6dac063f7d7f46e5fedbc18dc7fe520b4be4cf94",
+          "url": "https://i.redd.it/43gg7bjmv2ih1.png",
           "caption": "Dual-Screen-Handheld mit DOOM-Episodenmenü und Logos",
           "source": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
           "credit": "andreyvelsk/com.mobilerpgpack.phone",
@@ -516,7 +516,7 @@
           "dual": true
         },
         {
-          "url": "https://preview.redd.it/cr4qeyuov2ih1.png?width=1111&format=png&auto=webp&s=4a3fd5a899ac977224e684e52c7a656cd2a776df",
+          "url": "https://i.redd.it/cr4qeyuov2ih1.png",
           "caption": "DOOM auf dem Thor: oben Spiel, unten Automap und Statusleiste",
           "source": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
           "credit": "andreyvelsk/com.mobilerpgpack.phone",
@@ -865,7 +865,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "screenshots": [],
   "wikidata": "Q189784",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29",

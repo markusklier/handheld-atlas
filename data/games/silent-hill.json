@@ -167,6 +167,20 @@
           "source": "https://github.com/TheYellowBee/silent-hill-dualscreen",
           "credit": "Silent Hill – Dualscreen",
           "check": "source-verified"
+        },
+        {
+          "url": "https://i.redd.it/zpuyqg5y4xyh1.png",
+          "caption": "Silent Hill 1 dualscreen mod for Android (RG DS, Thor, phones): With live maps a",
+          "source": "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/",
+          "credit": "Reddit · u/Stock_Masterpiece_57",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/v26ac8zy4xyh1.png",
+          "caption": "Silent Hill 1 dualscreen mod for Android (RG DS, Thor, phones): With live maps a",
+          "source": "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/",
+          "credit": "Reddit · u/Stock_Masterpiece_57",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -272,7 +286,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q753164",
   "wikipedia": "https://en.wikipedia.org/wiki/Silent_Hill_%28video_game%29",
   "genre": "psychological horror fiction",

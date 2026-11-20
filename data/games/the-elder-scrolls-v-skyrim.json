@@ -878,7 +878,22 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/MDRsdjlpNnZ2NW1oMQjTvTNQP9j8joOnIiaDWzXOOqkB_RisSMwLVZUbsmPb.png?format=pjpg&auto=webp&s=cac7daeeee2d9bbd8a404cfb77d3932e509bf590",
+          "caption": "A Look At The Skyrim Mod",
+          "source": "https://www.reddit.com/r/AynThor/comments/1w0z4tq/",
+          "credit": "Reddit · u/ProfMags",
+          "check": "reddit"
+        },
+        {
+          "url": "https://external-preview.redd.it/a291d21mZTZ5bW1oMY9v3JylPkMs8znxbO7f0FK5LOQa9SrJtuzdTjw9z38S.png?format=pjpg&auto=webp&s=47b97c1a3ec159dfa8a6c11f4e3ea8d3536d0344",
+          "caption": "9 New Dual Screen Mods Available",
+          "source": "https://www.reddit.com/r/AynThor/comments/1w32w8v/",
+          "credit": "Reddit · u/ProfMags",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -978,7 +993,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/NnZrYnh1cDQ2c2hmMdXnlRHf56YKJOSbaLYrWOB1SxtUkhXe4Fmlrau713Q1.png?format=pjpg&auto=webp&s=8395ed2160a26569450e91657112b393242a5bbc",
+          "caption": "The Elder Scrolls V: Skyrim on Odin 2 Portal | Gamehub",
+          "source": "https://www.reddit.com/r/OdinHandheld/comments/1mksosf/",
+          "credit": "Reddit · u/TripShift",
+          "check": "reddit"
+        },
+        {
+          "url": "https://external-preview.redd.it/amZiamR6MDc3c2hmMdXnlRHf56YKJOSbaLYrWOB1SxtUkhXe4Fmlrau713Q1.png?format=pjpg&auto=webp&s=dcbf2772cea869e403b54e8fc8387a8fadd86560",
+          "caption": "The Elder Scrolls V: Skyrim on Odin 2 Portal | Gamehub",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1mksra7/",
+          "credit": "Reddit · u/TripShift",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -1116,7 +1146,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "mods": [
     {
       "id": "unofficial-skyrim-special-edition-patch-ussep",

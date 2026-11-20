@@ -504,7 +504,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/cr4qeyuov2ih1.png",
+          "caption": "Great way to play Doom on......",
+          "source": "https://www.reddit.com/r/Doom/comments/1vim9bm/",
+          "credit": "Reddit · u/tom-slacker",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/43gg7bjmv2ih1.png",
+          "caption": "Great way to play Doom on......",
+          "source": "https://www.reddit.com/r/Doom/comments/1vim9bm/",
+          "credit": "Reddit · u/tom-slacker",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -728,7 +743,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q755186",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_II",
   "playStore": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII"

@@ -333,7 +333,36 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/wkv065u16jla1.png",
+          "caption": "I built a little mobile app to help me get all the items in Metroid Prime Remast",
+          "source": "https://www.reddit.com/r/Metroid/comments/11h1ooa/",
+          "credit": "Reddit · u/Stif_br0",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/w6o76i7t5jla1.jpg",
+          "caption": "I built a little mobile app to help me get all the items in Metroid Prime Remast",
+          "source": "https://www.reddit.com/r/Metroid/comments/11h1ooa/",
+          "credit": "Reddit · u/Stif_br0",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/w6kyoarl5jla1.jpg",
+          "caption": "I built a little mobile app to help me get all the items in Metroid Prime Remast",
+          "source": "https://www.reddit.com/r/Metroid/comments/11h1ooa/",
+          "credit": "Reddit · u/Stif_br0",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/5hu1fvct6jla1.jpg",
+          "caption": "I built a little mobile app to help me get all the items in Metroid Prime Remast",
+          "source": "https://www.reddit.com/r/Metroid/comments/11h1ooa/",
+          "credit": "Reddit · u/Stif_br0",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -354,7 +383,7 @@
   ],
   "mods": [],
   "screenshots": [],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "wikidata": "Q116734030",
   "website": "https://www.nintendo.co.jp/switch/a3sda/index.html",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_Remastered",

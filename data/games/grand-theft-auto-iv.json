@@ -253,6 +253,13 @@
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
+        },
+        {
+          "url": "https://external-preview.redd.it/NGk2MTVtem52cndoMUK0JsrxfXqh1nZT1vxL3rKdhw9hfphq5Ye7ZsHvD_Ma.jpeg?format=pjpg&auto=webp&s=5eb85403106ceff2ba4873fd1634771a9aee6421",
+          "caption": "Repost After taken down BEST WAY TO PLAY GTA IV ON ANDROID",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1xbgmrm/",
+          "credit": "Reddit · u/Longjumping-Bison979",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -409,7 +416,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-20",
   "mods": [
     {
       "id": "fusionfix",
