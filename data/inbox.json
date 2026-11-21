@@ -5976,6 +5976,17 @@
       ],
       "queued": 0,
       "note": "Angefragt als „Isaac Clarke“ (Hauptfigur der Reihe) – als Reihe Dead Space erledigt."
+    },
+    "Just Cause": {
+      "date": "2026-11-21",
+      "source": "wikidata",
+      "listed": 0,
+      "added": [],
+      "versions": [],
+      "skipped": [],
+      "filled": 0,
+      "covers": 0,
+      "queued": 0
     }
   },
   "imageRequests": {
