@@ -1,6 +1,6 @@
 {
   "ayn-thor-max": {
-    "at": "2026-11-20T23:23:40.989074Z",
+    "at": "2026-11-21T00:49:49.022245Z",
     "appVersion": "0.1.12",
     "info": {
       "app": {
@@ -12,7 +12,7 @@
       "role": "main",
       "displayId": 0,
       "dual": true,
-      "second": false,
+      "second": true,
       "device": {
         "manufacturer": "AYN",
         "brand": "qti",
@@ -25,7 +25,7 @@
         "socMaker": "QTI",
         "ramGb": 16,
         "storageGb": 1011,
-        "storageFreeGb": 807,
+        "storageFreeGb": 803,
         "android": "13",
         "sdk": 33,
         "abis": [
@@ -63,7 +63,7 @@
           "dpi": 369,
           "xdpi": 318.97601318359375,
           "ydpi": 320.8420104980469,
-          "hz": 120,
+          "hz": 60,
           "modes": [
             60,
             120
@@ -103,19 +103,19 @@
         "id": "layers",
         "name": "Bildschirm-Ebenen lesen",
         "ok": true,
-        "detail": "173 Ebenen, davon 4 von Atlas: 69f3658 ActivityRecordInputSink io.github.markusklier.handheldatlas/.MainActivity#1283 | ActivityRecord{a763417 u0 io.github.markusklier.handheldatlas/.MainActivity}#1276 | c307b19 io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.MainActivity#1286"
+        "detail": "178 Ebenen, davon 8 von Atlas: 7fcbc2d ActivityRecordInputSink io.github.markusklier.handheldatlas/.SecondActivity#6083 | ActivityRecord{8df3fb0 u0 io.github.markusklier.handheldatlas/.SecondActivity}#6077 | fd66a6a io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.SecondActivity#6084"
       },
       {
         "id": "frames",
         "name": "Bildzeiten messen",
         "ok": true,
-        "detail": "Ebene: io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.MainActivity#4405 · neue Bilder: 48 · Periode: 16666666 ns · gewählt: true\n16666666\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0"
+        "detail": "Ebene: io.github.markusklier.handheldatlas/io.github.markusklier.handheldatlas.SecondActivity#6086 · neue Bilder: 0 · Periode: 16666666 ns · gewählt: true\n16666666\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0\n0\t0\t0"
       },
       {
         "id": "thermal",
         "name": "Temperaturen lesen",
         "ok": true,
-        "detail": "{\"cpuMax\":47.7,\"gpuMax\":43.4,\"batteryMax\":30,\"skinMax\":41.806,\"skinStart\":41.806,\"skinEnd\":41.806,\"throttleStatus\":0,\"source\":\"sysfs\"}\nIsStatusOverride: false\nThermalEventListeners:\n\tcallbacks: 2\n\tkilled: false\n\tbroadcasts count: -1\nThermalStatusListeners:\n\tcallbacks: 4\n\tkilled: false\n\tbroadcasts count: -1\nThermal Status: 0\nCached temperatures:\nHAL Ready: false\n===ATLAS-SYSFS===\npa 42200\npa1 \nmmw3 42200\nmmw_pa1 \nmmw_pa2 \nmmw_pa3 \nmmw_ific0 \nepm0 \nepm1 \nepm2 \nepm3 \nepm4 \nbcl_warn \nepm5 \nepm6 \nepm7 \nsdr_mmw_therm \nsub1_modem_cfg \nsub1_lte_cc \nsub1_mcg_fr1_cc \nsub1_mcg_fr2_cc \nsub1_scg_fr1_cc \nsu"
+        "detail": "{\"cpuMax\":48.9,\"gpuMax\":46.5,\"batteryMax\":30,\"skinMax\":46.268,\"skinStart\":46.268,\"skinEnd\":46.268,\"throttleStatus\":0,\"source\":\"sysfs\"}\nIsStatusOverride: false\nThermalEventListeners:\n\tcallbacks: 2\n\tkilled: false\n\tbroadcasts count: -1\nThermalStatusListeners:\n\tcallbacks: 5\n\tkilled: false\n\tbroadcasts count: -1\nThermal Status: 0\nCached temperatures:\nHAL Ready: false\n===ATLAS-SYSFS===\npa 45300\npa1 \nmmw3 45300\nmmw_pa1 \nmmw_pa2 \nmmw_pa3 \nmmw_ific0 \nepm0 \nepm1 \nepm2 \nepm3 \nepm4 \nbcl_warn \nepm5 \nepm6 \nepm7 \nsdr_mmw_therm \nsub1_modem_cfg \nsub1_lte_cc \nsub1_mcg_fr1_cc \nsub1_mcg_fr2_cc \nsub1_scg_fr1_cc \nsu"
       },
       {
         "id": "uinput",
@@ -133,7 +133,7 @@
         "id": "screencap",
         "name": "Screenshot aufnehmen",
         "ok": true,
-        "detail": "Dateigröße 200696 Bytes. -rw-rw---- 1 shell ext_data_rw 200696 2026-11-20 23:23 /storage/emulated/0/Android/data/io.github.markusklier.handheldatlas/cache/selftest.png"
+        "detail": "Dateigröße 204121 Bytes. -rw-rw---- 1 shell ext_data_rw 204121 2026-11-21 00:49 /storage/emulated/0/Android/data/io.github.markusklier.handheldatlas/cache/selftest.png"
       },
       {
         "id": "displayIds",
@@ -151,7 +151,7 @@
         "id": "perf",
         "name": "Leistungsmodus lesbar",
         "ok": true,
-        "detail": "dual_screen_display_mode=0\nfan_mode=4\ngearhead:driving_mode_settings_enabled=0\nis_quick_set_performance_and_fan_enable=1\nmode_ringer_streams_affected=166\nperformance_mode=0\nscreen_brightness_mode=0\ntcc_theme_mode=4\ntemp_abxy_layout_mode=1\ntty_mode=0\nPhenotype_flags=activity_starts_logging_enabled:alarm_manager_constants:alarm_manager_dummy_flags:always_on_display_constants:anomaly_config:anomaly_config_version:anomaly_detection_constants:app_idle_constants:app_standby_enabled:backup_agent_timeout_parameters:battery_stats_constants:battery_tip_constants:binder_calls_stats:ble_scan_balanced_inte"
+        "detail": "dual_screen_display_mode=0\nfan_mode=1\ngearhead:driving_mode_settings_enabled=0\nis_quick_set_performance_and_fan_enable=1\nmode_ringer_streams_affected=166\nperformance_mode=0\nscreen_brightness_mode=0\ntcc_theme_mode=4\ntemp_abxy_layout_mode=1\ntty_mode=0\nPhenotype_flags=activity_starts_logging_enabled:alarm_manager_constants:alarm_manager_dummy_flags:always_on_display_constants:anomaly_config:anomaly_config_version:anomaly_detection_constants:app_idle_constants:app_standby_enabled:backup_agent_timeout_parameters:battery_stats_constants:battery_tip_constants:binder_calls_stats:ble_scan_balanced_inte"
       }
     ]
   }
