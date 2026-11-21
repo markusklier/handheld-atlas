@@ -1,0 +1,110 @@
+{
+  "id": "just-cause",
+  "title": "Just Cause",
+  "franchise": "Just Cause",
+  "platforms": [
+    "PC",
+    "PlayStation 2",
+    "Xbox",
+    "Xbox 360"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Actionspiel von Avalanche Studios (2006) auf der Inselrepublik San Esperito; auf Android über PS2-Emulation oder PC-Laufzeiten spielbar, einen eigenen Port gibt es nicht.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_(video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_(video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_(video_game)",
+  "updatedAt": "2026-11-21",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Just%20Cause%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
+}

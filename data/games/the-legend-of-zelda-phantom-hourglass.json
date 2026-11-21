@@ -75,10 +75,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-4x3-gpu.jpg",
-          "caption": "PC: the same room in 4:3 with the GPU renderer at 8x",
+          "caption": "PC-Build: Raum in 4:3 mit GPU-Renderer",
           "source": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
           "credit": "Phantom Hourglass Recomp",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-software.jpg",
@@ -89,10 +89,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-menu.jpg",
-          "caption": "PC: the side menu (F1) over the game",
+          "caption": "PC-Build: Seitenmenü (F1) über dem Spiel",
           "source": "https://github.com/dguillot-gh/phantom-hourglass-recomp",
           "credit": "Phantom Hourglass Recomp",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/dguillot-gh/phantom-hourglass-recomp/HEAD/docs/images/pc-save-states.jpg",

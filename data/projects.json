@@ -3372,6 +3372,82 @@
         "grand-theft-auto-v"
       ],
       "checkedAt": "2026-11-20"
+    },
+    {
+      "id": "frwl-android",
+      "name": "007: From Russia with Love — Android",
+      "kind": "port",
+      "url": "https://github.com/M1LT0N3R2431/007-Project-Russia",
+      "repo": "M1LT0N3R2431/007-Project-Russia",
+      "description": "Inoffizieller Android-Port der Xbox-Fassung von 007: From Russia with Love, statisch rekompiliert mit XboxXBE-Recomp (Vulkan, SDL3).",
+      "games": [
+        "007-from-russia-with-love"
+      ]
+    },
+    {
+      "id": "jail-recomp",
+      "name": "JAIL Recompiled",
+      "kind": "port",
+      "url": "https://github.com/ch1ppyone/jail-recomp",
+      "repo": "ch1ppyone/jail-recomp",
+      "description": "Native Rekompilation von Tokyo Ghoul: JAIL (PS Vita, Japan) für macOS und Android; APK wird aus eigenen Dateien selbst gebaut.",
+      "games": [
+        "tokyo-ghoul-jail"
+      ]
+    },
+    {
+      "id": "aoc-native",
+      "name": "AoC Native",
+      "kind": "port",
+      "url": "https://github.com/P1R4N351/hwaoc-android",
+      "repo": "P1R4N351/hwaoc-android",
+      "description": "Hyrule Warriors: Age of Calamity 1.3.0 nativ auf Android (Adreno), Ableger von BotW/TotK Native; frühe Beta.",
+      "games": [
+        "hyrule-warriors-age-of-calamity"
+      ]
+    },
+    {
+      "id": "aoi-native",
+      "name": "AoI Native",
+      "kind": "port",
+      "url": "https://github.com/P1R4N351/hwaoi-android",
+      "repo": "P1R4N351/hwaoi-android",
+      "description": "Hyrule Warriors: Age of Imprisonment (Switch 2) nativ auf Android-Handhelds mit Adreno-GPU; Beta, auf dem AYN Thor entwickelt.",
+      "games": [
+        "hyrule-warriors-age-of-imprisonment"
+      ]
+    },
+    {
+      "id": "openra-android-psx",
+      "name": "OpenRA Red Alert für Android",
+      "kind": "port",
+      "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
+      "repo": "huggy12/OpenRA_Androidport-PSX-controls-",
+      "description": "Inoffizieller Android-Port der Red-Alert-Mod von OpenRA mit Controller-Steuerung nach Vorbild der PlayStation-Fassung.",
+      "games": [
+        "command-and-conquer-red-alert"
+      ]
+    },
+    {
+      "id": "switch-recomp-directory",
+      "name": "SwitchRecomp",
+      "kind": "directory",
+      "url": "https://recomp.denohub.com",
+      "repo": "justjavac/switch-recomp",
+      "description": "Navigationsseite (chinesisch) für Switch-Rekompilationen und Ports auf PC, Android und iOS – Quelle für neue Funde.",
+      "games": []
+    },
+    {
+      "id": "rsdkv4-decomp",
+      "name": "RSDKv4-Decompilation",
+      "kind": "port",
+      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation",
+      "repo": "RSDKModding/RSDKv4-Decompilation",
+      "description": "Vollständige Dekompilation der Retro Engine v4 und der Menüs von Sonic 1 & 2 (2013); läuft u. a. auf Android, braucht die Spieldaten einer offiziellen Fassung.",
+      "games": [
+        "sonic-the-hedgehog",
+        "sonic-the-hedgehog-2"
+      ]
     }
   ]
 }

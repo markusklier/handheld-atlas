@@ -78,7 +78,10 @@ class SetupApplyTest(unittest.TestCase):
                                            {'id': 'uinput', 'name': 'Virtuelles Gamepad', 'ok': False, 'detail': 'No such file'}]}}
         setup.apply(payload, log=lambda *a: None)
         s = setup.load()
-        self.assertEqual(s['learned'], {'azahar': {'package': 'org.azahar_emu.azahar', 'date': s['learned']['azahar']['date']}})
+        # only this payload's packages matter: learned.json may already hold packages reported by the device
+        self.assertEqual(s['learned']['azahar'], {'package': 'org.azahar_emu.azahar', 'date': s['learned']['azahar']['date']})
+        self.assertNotIn('gibt-es-nicht', s['learned'])
+        self.assertNotIn('winlator', s['learned'])
         self.assertEqual([c['ok'] for c in s['selftest']['ayn-thor-max']['checks']], [True, False])
         self.assertEqual(setup.bundle()['selftest']['ayn-thor-max']['appVersion'], '0.1.7')
         self.assertFalse(atlas.validate())

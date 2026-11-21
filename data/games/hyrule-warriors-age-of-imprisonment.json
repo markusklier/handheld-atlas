@@ -1,0 +1,77 @@
+{
+  "id": "hyrule-warriors-age-of-imprisonment",
+  "title": "Hyrule Warriors: Age of Imprisonment",
+  "franchise": "Hyrule Warriors",
+  "platforms": [
+    "Nintendo Switch 2"
+  ],
+  "genre": "Hack and Slay",
+  "summary": "Musou-Ableger (2025) zur Vorgeschichte von Tears of the Kingdom; AoI Native bringt die Switch-2-Fassung als frühe Beta nativ auf Android-Handhelds mit Adreno-GPU.",
+  "versions": [
+    {
+      "id": "nintendo-switch-2",
+      "name": "Nintendo Switch 2 (2025)",
+      "type": "original",
+      "year": 2025,
+      "platforms": [
+        "Nintendo Switch 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hyrule_Warriors:_Age_of_Imprisonment"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "aoi-native",
+      "name": "AoI Native",
+      "release": "nintendo-switch-2",
+      "kind": "recomp",
+      "edition": "Switch 2, Update v196608",
+      "runtime": "Native Horizon-Laufzeit + Turnip-Vulkan-Treiber",
+      "projects": [
+        "aoi-native"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "requires": [
+        "Eigener Dump der Switch-2-Fassung (Update v196608)",
+        "Android-Gerät mit Qualcomm-Adreno-GPU, viel RAM (auf dem Thor ca. 7 GB belegt)"
+      ],
+      "benefit": "Kein Emulator: Der AArch64-Code des Spiels läuft direkt auf dem Gerät; laut Entwickler-Telemetrie auf dem AYN Thor spielbar bis ins erste Gebiet.",
+      "caveat": "Frühe Beta (0.1.0-beta.1): spätere Kampfmissionen und Speichern mitten im Level sind laut Projekt noch ungetestet. Spielpaket wird am Computer vorbereitet.",
+      "effort": "experimental",
+      "status": "experimental",
+      "version": "0.1.0-beta.1",
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "52–56 FPS im ersten spielbaren Gebiet, 46,6 FPS in der ersten 3D-Zwischensequenz, 59,8 FPS in Menüs (Entwickler-Telemetrie, 1920×1080)",
+          "settings": "Turnip-Treiber, Entwicklerbuild 0.1.0-dev",
+          "source": "https://github.com/P1R4N351/hwaoi-android",
+          "date": "2026-11-21"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/P1R4N351/hwaoi-android"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21"
+}

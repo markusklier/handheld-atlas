@@ -1,0 +1,124 @@
+{
+  "id": "007-from-russia-with-love",
+  "title": "007: From Russia with Love",
+  "franchise": "James Bond",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox",
+    "Nintendo GameCube",
+    "PSP"
+  ],
+  "genre": "Third-Person-Shooter",
+  "summary": "Bond-Actionspiel von EA (2005) mit Sean Connery; die Xbox-Fassung läuft als inoffizieller, statisch rekompilierter Port nativ auf Android.",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Nintendo GameCube"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
+        }
+      ]
+    },
+    {
+      "id": "psp",
+      "name": "PSP (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "PSP"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [
+        "APK aus den Releases installieren",
+        "Zugriff auf alle Dateien erlauben",
+        "Spieldateien nach /storage/emulated/0/007FRWL (oder 007FRWL auf der SD-Karte) kopieren – die App startet, sobald sie sie findet"
+      ],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "frwl-android-recomp",
+      "name": "007 FRWL für Android",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Xbox (USA/Europa)",
+      "runtime": "XboxXBE-Recomp, Vulkan, SDL3",
+      "projects": [
+        "frwl-android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Xbox-Fassung (USA oder Europa) als default.xbe mit Datenordnern oder als Abbild",
+        "arm64-Gerät mit Vulkan 1.1, Android 8+"
+      ],
+      "benefit": "Kein Emulator: Der x86-Code der Xbox-Fassung ist statisch nach C++ rekompiliert; Touch-Steuerung mit Layout-Editor, Controller-Unterstützung, Ziel sind 60 FPS.",
+      "caveat": "Inoffizielles Fanprojekt; APK mit Debug-Schlüssel signiert. Belastbare Messwerte für den AYN Thor fehlen noch.",
+      "effort": "guided",
+      "status": "experimental",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/M1LT0N3R2431/007-Project-Russia"
+        },
+        {
+          "label": "Leistungstest (Video)",
+          "url": "https://youtu.be/T5RSvJPlW7E"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21"
+}

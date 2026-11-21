@@ -24,7 +24,7 @@
   "versions": [
     {
       "id": "sega-mega-drive",
-      "name": "Sega Mega Drive",
+      "name": "Sega Mega Drive (1991)",
       "type": "original",
       "platforms": [
         "Sega Mega Drive"
@@ -44,9 +44,71 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis"
         }
+      ],
+      "year": 1991
+    },
+    {
+      "id": "android-2013",
+      "name": "Android (2013)",
+      "type": "android",
+      "year": 2013,
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "note": "Neuauflage von Christian Whitehead auf Basis der Retro Engine mit Breitbild und Extras; inzwischen aus dem Play Store entfernt.",
+      "links": [
+        {
+          "label": "Quelle",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation"
+        }
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08"
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "rsdkv4-decomp",
+      "name": "RSDKv4-Decompilation",
+      "release": "android-2013",
+      "kind": "decomp",
+      "edition": "Sonic 1 & 2 (2013, Retro Engine)",
+      "runtime": "Retro Engine v4 (Dekompilation)",
+      "projects": [
+        "rsdkv4-decomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Data.rsdk aus der offiziellen Mobile-Fassung (2013) oder aus Sonic Origins",
+        "Selbst gebaute Android-APK (Anleitung im Repo)"
+      ],
+      "benefit": "Native Dekompilation der Retro-Engine-Neuauflage von 2013 mit eingebautem Mod-Loader und Skript-Compiler; Spielstände der alten Mobile-Fassung lassen sich übernehmen.",
+      "caveat": "Ohne Spieldaten aus einer offiziellen Fassung startet nichts; die Mobile-Fassungen sind aus den Stores entfernt, nur bei früherem Kauf erneut ladbar.",
+      "effort": "advanced",
+      "status": "active",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation"
+        },
+        {
+          "label": "Android-Anleitung",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation/blob/HEAD/dependencies/android/README.md"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21",
+  "summary": "Segas Jump-’n’-Run-Klassiker (1991); die Retro-Engine-Neuauflage von 2013 gibt es als native Dekompilation für Android."
 }

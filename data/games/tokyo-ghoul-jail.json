@@ -1,0 +1,93 @@
+{
+  "id": "tokyo-ghoul-jail",
+  "title": "Tokyo Ghoul: JAIL",
+  "franchise": "Tokyo Ghoul",
+  "platforms": [
+    "PlayStation Vita"
+  ],
+  "genre": "Action-Rollenspiel",
+  "summary": "Japan-exklusives Vita-Spiel (2015) zur Anime-Reihe; ein inoffizieller Recomp macht es nativ auf Android von Anfang bis Ende spielbar.",
+  "versions": [
+    {
+      "id": "playstation-vita",
+      "name": "PlayStation Vita (2015)",
+      "type": "original",
+      "year": 2015,
+      "platforms": [
+        "PlayStation Vita"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tokyo_Ghoul"
+        }
+      ],
+      "note": "Nur in Japan erschienen, nur japanische Texte."
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "jail-recompiled",
+      "name": "JAIL Recompiled",
+      "release": "playstation-vita",
+      "kind": "recomp",
+      "edition": "PS Vita, Japan 1.00 (PCSG00615)",
+      "runtime": "Vita-kompatible Laufzeit, SDL3/Vulkan",
+      "projects": [
+        "jail-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigenes PKG der japanischen Fassung 1.00 mit passender Lizenz (work.bin)",
+        "Vita-Firmware-Datei (PSVUPDAT.PUP)",
+        "Mac oder Linux-Rechner zum Selbstbauen der APK"
+      ],
+      "benefit": "Kein Emulator: Der ARMv7-Code ist vorab nach C übersetzt; laut Entwickler auf Android (Galaxy S25 Ultra) komplett durchspielbar, mit eingebautem PKG-Installer, Touch und Controller.",
+      "caveat": "Es gibt bewusst keine fertige APK – man baut sie selbst aus den eigenen Spieldateien. Nur die japanische Fassung 1.00, keine Übersetzung. Auf dem AYN Thor nicht belegt.",
+      "effort": "advanced",
+      "status": "active",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/android-story-gamepad.png",
+          "caption": "Story-Szene auf Android mit Touch-Steuerung",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/android-menu-gamepad.png",
+          "caption": "Titelmenü auf Android",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/android-launcher.png",
+          "caption": "Erster Start: PKG, Firmware und Lizenz auswählen",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ch1ppyone/jail-recomp"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21"
+}

@@ -60,10 +60,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/take_no_prisoners-recomp/HEAD/docs/modes.jpg",
-          "caption": "\"Choose Mode\" with Display Additional Resolutions: the game's own modes and the ",
+          "caption": "Modusauswahl mit zusätzlichen Auflösungen",
           "source": "https://github.com/mxvisor/take_no_prisoners-recomp",
           "credit": "Take No Prisoners – native Portierung (SR)",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "reports": [],

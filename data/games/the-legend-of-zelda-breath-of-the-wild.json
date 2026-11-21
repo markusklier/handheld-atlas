@@ -355,10 +355,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-gamedata.webp",
-          "caption": "Game data: installed game, mods and Lossless Scaling",
+          "caption": "Spieldaten-Menü der App: Installation, Shader, Treiber, Mods",
           "source": "https://github.com/P1R4N351/botw-android",
           "credit": "BotW Native",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-about.webp",
@@ -369,10 +369,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/P1R4N351/botw-android/HEAD/docs/images/botw-controls.webp",
-          "caption": "Controls & audio",
+          "caption": "Einstellungen für Steuerung und Ton",
           "source": "https://github.com/P1R4N351/botw-android",
           "credit": "BotW Native",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

@@ -17,76 +17,12 @@
       "foundAt": "2026-11-19"
     },
     {
-      "url": "https://github.com/killdano/license-revoked",
-      "title": "killdano/license-revoked",
-      "excerpt": "License Revoked: Pebble game and its Android port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/XHYN-PH/landofthedroid",
-      "title": "XHYN-PH/landofthedroid",
-      "excerpt": "Native 64-bit ARM Android port of Land of the Dead: Road to Fiddler's Green (Unreal Engine 2) with custom touch HUD, GLES3 rendering, and in-game cheats",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/M1LT0N3R2431/007-Project-Russia",
-      "title": "M1LT0N3R2431/007-Project-Russia",
-      "excerpt": "Unofficial Android port of 007: From Russia with Love (Xbox), built with XboxXBE-Recomp.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/ch1ppyone/jail-recomp",
-      "title": "ch1ppyone/jail-recomp",
-      "excerpt": "Tokyo Ghoul: JAIL recompiled for macOS and Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/P1R4N351/hwaoc-android",
-      "title": "P1R4N351/hwaoc-android",
-      "excerpt": "Native Android port harness for Hyrule Warriors: Age of Calamity (v1.3.0)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/Broomm/broomm",
-      "title": "Broomm/broomm",
-      "excerpt": "Emulation frontend with automatic emulator configuration and integration with the RomM Manager to sync cloud saves and download Games, Updates and DLC",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-19"
-    },
-    {
       "url": "https://github.com/alexk0918/pokerun-tactics",
       "title": "alexk0918/pokerun-tactics",
       "excerpt": "",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-19"
-    },
-    {
-      "url": "https://github.com/zettelmuseum/Enigma",
-      "title": "zettelmuseum/Enigma",
-      "excerpt": "Pre-Alpha Enigma Puzzle Game  Android port 2026 (but it works for me)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
-    },
-    {
-      "url": "https://github.com/zettelmuseum/Lasertank",
-      "title": "zettelmuseum/Lasertank",
-      "excerpt": "Lasertank puzzle game 1:1 Android Port",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-18"
     },
     {
       "url": "https://github.com/yanm1103/grandchase-featurephone-recomp",
@@ -145,14 +81,6 @@
       "foundAt": "2026-11-16"
     },
     {
-      "url": "https://github.com/srsholmes/reskate-thor-dazfix",
-      "title": "srsholmes/reskate-thor-dazfix",
-      "excerpt": "ReSkate DAZ guard: fixes skate. respawn loop under FEX/ARM",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-16"
-    },
-    {
       "url": "https://github.com/Rayan-XOO/horizon",
       "title": "Rayan-XOO/horizon",
       "excerpt": "Unofficial Android port of Horizon: Minecraft Java Edition 26.3 rewritten in Rust. Native APK with Vulkan, touch controls and in-app game file download.",
@@ -185,33 +113,9 @@
       "foundAt": "2026-11-15"
     },
     {
-      "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
-      "title": "huggy12/OpenRA_Androidport-PSX-controls-",
-      "excerpt": "An unofficial Android port of OpenRA's Red Alert mod (bleed branch, commit b4d95a5, Nov 2026) with Bluetooth controller controls inspired by the PlayStation version. Built with .NET 10 and SDL2. No game files included; the freeware content downloads on first launch.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
-      "title": "JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
-      "excerpt": "An Android Port made by JC Gamer Nostalgic in Godot Engine 4.6",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
       "url": "https://github.com/Kapro777/itp-recomp-android",
       "title": "Kapro777/itp-recomp-android",
       "excerpt": "Native Android port of Five Nights at Freddy's: Into the Pit (Nintendo Switch) via static recompilation. Bring your own game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/justjavac/switch-recomp",
-      "title": "justjavac/switch-recomp",
-      "excerpt": "收录 Nintendo Switch 游戏原生重编译与移植项目的导航站，覆盖 Windows、Linux、macOS、Android 与 iOS",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-14"
@@ -241,32 +145,8 @@
       "foundAt": "2026-11-14"
     },
     {
-      "url": "https://github.com/dodangquang/thor-instant-replay",
-      "title": "dodangquang/thor-instant-replay",
-      "excerpt": "NVIDIA ShadowPlay-style Instant Replay & Dual-Screen recorder for AYN Thor handheld console",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
       "url": "https://github.com/BrianJr03/better-dual-screen-assistant",
       "title": "BrianJr03/better-dual-screen-assistant",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/tarikbc/ZyperOS",
-      "title": "tarikbc/ZyperOS",
-      "excerpt": "A fast, light firmware for the GKD Pixel 2 that plays your whole retro library: forty systems, PortMaster ports, and your music, audiobooks and videos.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-14"
-    },
-    {
-      "url": "https://github.com/dodangquang/thor-native-fg",
-      "title": "dodangquang/thor-native-fg",
       "excerpt": "",
       "game": null,
       "source": "github-search",
@@ -5600,11 +5480,21 @@
     "https://github.com/Rinto02/tekken-tag-tournament-2-Android",
     "https://github.com/incident201/brutal-morrowind",
     "https://github.com/makarovladmir/Juiced2-Android-Recomp",
-    "https://zodita.com"
+    "https://zodita.com",
+    "https://github.com/killdano/license-revoked",
+    "https://github.com/XHYN-PH/landofthedroid",
+    "https://github.com/Broomm/broomm",
+    "https://github.com/zettelmuseum/Enigma",
+    "https://github.com/zettelmuseum/Lasertank",
+    "https://github.com/srsholmes/reskate-thor-dazfix",
+    "https://github.com/JC-Gamer-Nostalgic/Baldi-s-Basics-in-Funkin-3rd-Anniversary-Reskin-Android-Port-",
+    "https://github.com/dodangquang/thor-instant-replay",
+    "https://github.com/tarikbc/ZyperOS",
+    "https://github.com/dodangquang/thor-native-fg"
   ],
   "agent": {
-    "lastRun": "2026-11-20T23:59Z",
-    "summary": "Abo-Anfragen #35 (Morrowind: 6 Steam-Originalbilder, Tiefenrecherche-Marker gesetzt) und #34 (Skyrim: SkyrimSE-DualScreen auf 1.0.3 aktualisiert) erledigt; media.py nutzt jetzt Steam-Links der Daten, wenn der Store-Name abweicht. Neu: DiRT 2 (ARM64-Recomp), Monster Hunter Stories 2 (Port nur RP5/Flip 2), XHYN V für GTA V. Verworfen: Zodita (kommerzielle unlizenzierte Ports), Brutal Morrowind, TTT2 (nur Windows), Juiced2 (404), TotK-Nova (Doppel von TotK Native). Bildprüfung: 7 bestätigt, 2 fremde entfernt. Offen: Korra-Recomp (noch kein Android-Build), DMC3-/Cuphead-Companion (unveröffentlicht), Kaldora Thor, Pip-Boy-Mod; Steam/Wikipedia aus der Sitzung nicht direkt erreichbar, fremde GitHub-API gesperrt."
+    "lastRun": "2026-11-21T01:55Z",
+    "summary": "Abo-Anfrage #39 (Reihe Just Cause) erledigt: 4 Spiele mit Fassungen angelegt (Wikidata/Steam/Wikipedia aus der Sitzung gesperrt, Cover folgen über den Watcher; kein Android-Port bekannt). Neu: Hyrule Warriors AoI/AoC (native Ports), 007 From Russia with Love (Xbox-Recomp), Tokyo Ghoul: JAIL (Vita-Recomp), C&C Red Alert (OpenRA-Port), RSDKv4-Dekompilation für Sonic 1/2, Verzeichnis SwitchRecomp. Verworfen: LandOfTheDroid (liefert Spieldateien mit), Thor Native FG, Thor Instant Replay, ZyperOS, ReSkate-Fix (nur ArmadaOS), Baldi-Reskin, Lasertank, Enigma, License Revoked, Broomm. Bildprüfung: 9 bestätigt, 1 fremdes entfernt; github.com-Bilder (user-attachments) aus der Sitzung nicht ladbar. Datenqualität: Sonic 1/2 mit Jahren (behebt die Remake-Meldung zu Sonic 2006); Test test_setup an Gerätedaten in learned.json angepasst. Offen: Korra (kein Android-Build), DMC3-/Cuphead-Companion (unveröffentlicht), Kaldora Thor, Pip-Boy-Mod, PS4-Runtime-Ports (Raiden V u. a., Android ungeprüft), Final Fantasy Resonance (Spiel nicht belegbar); Warteschlange leer, Dual-Screen-Suchlauf erst am 26.11. fällig."
   },
   "watcher": {
     "lastRun": "2026-11-20T14:04:09Z",

@@ -539,24 +539,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-3ds-game.png",
-          "caption": "3DS",
+          "caption": "Super Metroid oben, Fortschritt und Karte auf dem unteren Bildschirm",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-pc-game.png",
-          "caption": "PC",
+          "caption": "Breitbildansicht mit Fortschritt und Minikarte am Rand",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-3ds-runs.png",
-          "caption": "3DS runs",
+          "caption": "Läufe und Ranglisten im Zwei-Bildschirm-Layout",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [],

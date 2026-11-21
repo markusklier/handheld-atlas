@@ -1,0 +1,48 @@
+{
+  "id": "just-cause-4",
+  "title": "Just Cause 4",
+  "franchise": "Just Cause",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Actionspiel (2018) im südamerikanischen Solís mit Wetterextremen; auf Android nur die PC-Fassung über PC-Laufzeiten, ein eigener Port ist nicht bekannt.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2018)",
+      "type": "original",
+      "year": 2018,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_4"
+        }
+      ]
+    },
+    {
+      "id": "ps4-xbox-one",
+      "name": "PlayStation 4/Xbox One (2018)",
+      "type": "original",
+      "year": 2018,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_4"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_4",
+  "updatedAt": "2026-11-21"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "command-and-conquer-red-alert",
+  "title": "Command & Conquer: Red Alert",
+  "franchise": "Command & Conquer",
+  "platforms": [
+    "PC",
+    "PlayStation"
+  ],
+  "genre": "Echtzeit-Strategie",
+  "summary": "Echtzeit-Strategieklassiker von Westwood (1996), seit 2008 Freeware; ein inoffizieller OpenRA-Port bringt ihn mit Controller-Steuerung nach Android.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1996)",
+      "type": "original",
+      "year": 1996,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert"
+        }
+      ],
+      "note": "Seit 2008 von EA als Freeware freigegeben."
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation (1997)",
+      "type": "port",
+      "year": 1997,
+      "platforms": [
+        "PlayStation"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Command_%26_Conquer:_Red_Alert"
+        }
+      ]
+    },
+    {
+      "id": "remastered-pc",
+      "name": "Command & Conquer Remastered Collection – PC (2020)",
+      "type": "remaster",
+      "year": 2020,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Command_%26_Conquer_Remastered_Collection"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [
+        "APK aus dem Ordner apk/ des Repos installieren",
+        "Controller koppeln und „OpenRA - Red Alert“ starten",
+        "Beim ersten Start „Quick Install“ wählen"
+      ],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "ra-openra-android",
+      "name": "OpenRA Red Alert für Android",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "Red-Alert-Mod von OpenRA (Freeware-Daten)",
+      "runtime": "OpenRA (bleed, Nov. 2026)",
+      "projects": [
+        "openra-android-psx"
+      ],
+      "features": [
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Internet beim ersten Start (der Inhalts-Installer lädt die Freeware-Spieldateien)",
+        "Bluetooth- oder USB-Controller empfohlen"
+      ],
+      "benefit": "Konsolenartige Controller-Steuerung nach Vorbild der PlayStation-Fassung, frei belegbar; Spezialfähigkeiten per Controller; Gefecht gegen KI läuft.",
+      "caveat": "Inoffizieller persönlicher Port (mit Claude Code erstellt), von OpenRA nicht unterstützt; getestet auf Smartphones (vivo, Galaxy S23 Ultra, Pixel 8 Pro), nicht auf dem AYN Thor.",
+      "effort": "easy",
+      "status": "experimental",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/huggy12/OpenRA_Androidport-PSX-controls-/HEAD/docs/preview.gif",
+          "caption": "Gefecht auf dem Smartphone mit Controller",
+          "source": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
+          "credit": "OpenRA Red Alert für Android",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-"
+        },
+        {
+          "label": "OpenRA",
+          "url": "https://www.openra.net/"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21"
+}

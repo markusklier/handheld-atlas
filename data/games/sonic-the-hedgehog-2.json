@@ -79,10 +79,54 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "rsdkv4-decomp",
+      "name": "RSDKv4-Decompilation",
+      "release": "android-2013",
+      "kind": "decomp",
+      "edition": "Sonic 1 & 2 (2013, Retro Engine)",
+      "runtime": "Retro Engine v4 (Dekompilation)",
+      "projects": [
+        "rsdkv4-decomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Data.rsdk aus der offiziellen Mobile-Fassung (2013) oder aus Sonic Origins",
+        "Selbst gebaute Android-APK (Anleitung im Repo)"
+      ],
+      "benefit": "Native Dekompilation der Retro-Engine-Neuauflage von 2013 mit eingebautem Mod-Loader und Skript-Compiler, dazu Online-2P-Modus für Sonic 2; Spielstände der alten Mobile-Fassung lassen sich übernehmen.",
+      "caveat": "Ohne Spieldaten aus einer offiziellen Fassung startet nichts; die Mobile-Fassungen sind aus den Stores entfernt, nur bei früherem Kauf erneut ladbar.",
+      "effort": "advanced",
+      "status": "active",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation"
+        },
+        {
+          "label": "Android-Anleitung",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation/blob/HEAD/dependencies/android/README.md"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21",
   "wikidata": "Q35627",
   "wikipedia": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_2",
   "genre": "2D platform game",
-  "playStore": "https://play.google.com/store/apps/details?id=com.sega.sonic2"
+  "playStore": "https://play.google.com/store/apps/details?id=com.sega.sonic2",
+  "summary": "Zweiter Mega-Drive-Teil (1992) mit Tails; die Retro-Engine-Neuauflage von 2013 läuft als native Dekompilation auf Android, inklusive Online-2P-Modus."
 }

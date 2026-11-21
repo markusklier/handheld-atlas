@@ -1,0 +1,71 @@
+{
+  "id": "hyrule-warriors-age-of-calamity",
+  "title": "Hyrule Warriors: Age of Calamity",
+  "franchise": "Hyrule Warriors",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "Hack and Slay",
+  "summary": "Musou-Ableger von Koei Tecmo (2020), 100 Jahre vor Breath of the Wild; ein früher nativer Android-Port aus dem Umfeld von BotW Native ist in Arbeit.",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch (2020)",
+      "type": "original",
+      "year": 2020,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hyrule_Warriors:_Age_of_Calamity"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "testedOn": [],
+      "reports": [],
+      "verification": "ai-unverified",
+      "checkedAt": "2026-11-21",
+      "id": "aoc-native",
+      "name": "AoC Native",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch, Spielversion 1.3.0",
+      "runtime": "Laufzeit von TotK/BotW Native + Turnip-Vulkan-Treiber",
+      "projects": [
+        "aoc-native"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "requires": [
+        "Eigener Dump von Age of Calamity mit Update 1.3.0",
+        "Android-Gerät mit Qualcomm-Adreno-GPU"
+      ],
+      "benefit": "Kein Emulator: gleicher Ansatz wie BotW Native; laut Projekt laufen Zwischensequenzen und 3D-Kämpfe bereits über Vulkan.",
+      "caveat": "Frühe Entwicklerfassung (Beta 0.1.0, Einrichtung über einen Entwicklerweg am Computer); einen Companion für den zweiten Bildschirm gibt es noch nicht. Nur Version 1.3.0, nicht 1.4.1/DLC.",
+      "effort": "experimental",
+      "status": "experimental",
+      "version": "0.1.0-beta.1",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/P1R4N351/hwaoc-android"
+        },
+        {
+          "label": "Stand der Portierung",
+          "url": "https://github.com/P1R4N351/hwaoc-android/blob/HEAD/games/hwaoc/README.md"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-21"
+}

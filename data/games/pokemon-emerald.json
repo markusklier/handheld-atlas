@@ -98,13 +98,6 @@
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/firered-field.webp",
-          "caption": "FireRed with EXPAND and the HUD: party, minimap, Poke Balls, PC, BAG and WILD",
-          "source": "https://github.com/lidor30/pokedaisy",
-          "credit": "PokeDaisy",
-          "check": "readme"
         }
       ],
       "links": [],

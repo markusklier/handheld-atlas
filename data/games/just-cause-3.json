@@ -1,0 +1,48 @@
+{
+  "id": "just-cause-3",
+  "title": "Just Cause 3",
+  "franchise": "Just Cause",
+  "platforms": [
+    "PC",
+    "PlayStation 4",
+    "Xbox One"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Actionspiel (2015) im Mittelmeer-Inselstaat Medici; auf Android nur die PC-Fassung über PC-Laufzeiten, ein eigener Port ist nicht bekannt.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2015)",
+      "type": "original",
+      "year": 2015,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_3"
+        }
+      ]
+    },
+    {
+      "id": "ps4-xbox-one",
+      "name": "PlayStation 4/Xbox One (2015)",
+      "type": "original",
+      "year": 2015,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_3"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_3",
+  "updatedAt": "2026-11-21"
+}

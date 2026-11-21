@@ -1,0 +1,62 @@
+{
+  "id": "just-cause-2",
+  "title": "Just Cause 2",
+  "franchise": "Just Cause",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Actionspiel (2010) auf der Insel Panau; auf Android bisher nur über PC-Laufzeiten wie Winlator oder GameNative, ohne eigenen Port.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "PC"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_2"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_2"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "original",
+      "year": 2010,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Just_Cause_2"
+        }
+      ]
+    }
+  ],
+  "routes": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_2",
+  "updatedAt": "2026-11-21"
+}

@@ -1,6 +1,91 @@
 {
   "entries": [
     {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "just-cause",
+      "text": "Reihe Just Cause angelegt: Just Cause, Just Cause 2, 3 und 4 mit je einer Fassung pro Plattform – Anfrage #39 (kein eigener Android-Port bekannt)",
+      "url": "https://github.com/markusklier/handheld-atlas/issues/39"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "hyrule-warriors-age-of-imprisonment",
+      "text": "Neues Spiel: Hyrule Warriors: Age of Imprisonment mit AoI Native – nativer Beta-Port der Switch-2-Fassung, laut Entwickler 52–56 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/P1R4N351/hwaoi-android"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "hyrule-warriors-age-of-calamity",
+      "text": "Neues Spiel: Hyrule Warriors: Age of Calamity mit AoC Native – früher nativer Port, Entwicklerstand (KI-Fund)",
+      "url": "https://github.com/P1R4N351/hwaoc-android"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "007-from-russia-with-love",
+      "text": "Neues Spiel: 007: From Russia with Love mit nativem Android-Port der Xbox-Fassung (Recomp, KI-Fund)",
+      "url": "https://github.com/M1LT0N3R2431/007-Project-Russia"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "tokyo-ghoul-jail",
+      "text": "Neues Spiel: Tokyo Ghoul: JAIL – Vita-Recomp, auf Android durchspielbar, APK wird selbst gebaut (KI-Fund)",
+      "url": "https://github.com/ch1ppyone/jail-recomp"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "game-added",
+      "by": "agent",
+      "game": "command-and-conquer-red-alert",
+      "text": "Neues Spiel: Command & Conquer: Red Alert mit OpenRA-Port für Android und Controller-Steuerung (KI-Fund)",
+      "url": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-added",
+      "by": "agent",
+      "game": "sonic-the-hedgehog",
+      "text": "Neuer Spielweg: RSDKv4-Dekompilation von Sonic 1 (2013) für Android, dazu Fassung „Android (2013)“ (KI-Fund)",
+      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-added",
+      "by": "agent",
+      "game": "sonic-the-hedgehog-2",
+      "text": "Neuer Spielweg: RSDKv4-Dekompilation von Sonic 2 (2013) für Android mit Online-2P (KI-Fund)",
+      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neues Verzeichnis: SwitchRecomp – Übersicht der Switch-Rekompilationen für PC, Android und iOS",
+      "url": "https://recomp.denohub.com"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "verified",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Bildprüfung: 9 README-Bilder bestätigt und deutsch beschriftet (SMZ3 Universe, Take No Prisoners, BotW/TotK Native, Phantom Hourglass)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "removed",
+      "by": "agent",
+      "game": "pokemon-emerald",
+      "text": "FireRed-Bild vom PokeDaisy-Weg bei Pokémon Smaragd entfernt (anderes Spiel)"
+    },
+    {
       "date": "2026-11-20",
       "type": "screenshot-added",
       "by": "agent",

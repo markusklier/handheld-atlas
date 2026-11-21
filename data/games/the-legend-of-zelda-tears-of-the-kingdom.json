@@ -281,10 +281,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/AurelioB/totk-android/HEAD/docs/images/setup-welcome.webp",
-          "caption": "Welcome",
+          "caption": "Startbildschirm der App mit Einrichtung",
           "source": "https://github.com/AurelioB/totk-android",
           "credit": "TotK Native",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [
