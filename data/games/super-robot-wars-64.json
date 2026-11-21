@@ -87,6 +87,13 @@
           "source": "https://github.com/dyzz/srw64-recomp",
           "credit": "Marchwind 64 (SRW64 Recomp)",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dyzz/srw64-recomp/HEAD/web/public/media/move-jump.webp",
+          "caption": "Jumping to the farthest square",
+          "source": "https://github.com/dyzz/srw64-recomp",
+          "credit": "Marchwind 64 (SRW64 Recomp)",
+          "check": "readme"
         }
       ],
       "links": [

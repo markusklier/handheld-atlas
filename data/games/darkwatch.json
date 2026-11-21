@@ -26,6 +26,52 @@
       "year": 2005,
       "platforms": [
         "PlayStation 2"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Darkwatch%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Darkwatch%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Darkwatch%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6fa3a9da-f431-4389-9e4e-55793b8991e8",
+          "device": "AYN Odin 2",
+          "emulator": "NethersX2",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Frequent stuttering is present using all rendering engine, i had better luck using Software Rendering.",
+          "votes": 0,
+          "date": "2025-06-15",
+          "settings": {
+            "Emulator Version": "Latest",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b721e50a-ce5e-4e33-8191-19b1922ed95d"
+        }
       ]
     }
   ],
@@ -54,6 +100,13 @@
           "source": "https://github.com/CowKillers/darkwatch-android",
           "credit": "darkwatch-android",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/CowKillers/darkwatch-android/HEAD/docs/screenshots/train.jpg",
+          "caption": "Train/mine corridor — dark interior, pipes, blood on the floor",
+          "source": "https://github.com/CowKillers/darkwatch-android",
+          "credit": "Darkwatch: Darker Edition – Android",
+          "check": "readme"
         }
       ],
       "links": [
@@ -91,5 +144,23 @@
       "effort": "experimental"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q2741916",
+  "wikipedia": "https://en.wikipedia.org/wiki/Darkwatch",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Darkwatch%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Darkwatch%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Darkwatch%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

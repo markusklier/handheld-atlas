@@ -76,5 +76,12 @@
       "effort": "experimental"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q140140365",
+  "website": "https://www.nintendo.com/jp/games/switch2/aaqja/",
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Ocarina_of_Time_%282026_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/7a/OcarinaofTime2026.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Ocarina_of_Time_%282026_video_game%29"
+  }
 }

@@ -102,6 +102,34 @@
           "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
           "credit": "ds2-sotfs-recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/motion/majula.gif",
+          "caption": "Walking through Majula",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "Dark Souls II: SotFS Android (Recomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/cutscene_hut.jpg",
+          "caption": "Opening cutscene: the witches",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "Dark Souls II: SotFS Android (Recomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/cutscene_crone.jpg",
+          "caption": "Opening cutscene: one of the three crones",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "Dark Souls II: SotFS Android (Recomp)",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/motion/cutscene.gif",
+          "caption": "Opening cutscene in motion",
+          "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
+          "credit": "Dark Souls II: SotFS Android (Recomp)",
+          "check": "readme"
         }
       ],
       "links": [
@@ -146,5 +174,44 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q3702740",
+  "website": "https://en.bandainamcoent.eu/dark-souls/dark-souls-ii",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dark_Souls_II",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236430/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/236430/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_811a32f3abdf906cce50e204e849880e71583740.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_abbbb6c1a1878f591e6a895a17a1870c62380161.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_821ac8a59caa024e75c49087947efbd71a82b237.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_0429fae1aa460aa56061190bcaa0592169fca2a4.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_87fc714a33c2a1b34e64152679685b3e0fc1c3cb.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236430/ss_9da48e604ad0d59add1a2fdec0140c1e052247cf.1920x1080.jpg?t=1726158600",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/236430/"
+    }
+  ]
 }

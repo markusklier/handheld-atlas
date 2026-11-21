@@ -2,6 +2,394 @@
   "entries": [
     {
       "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "metal-gear-solid-v-the-phantom-pain",
+      "text": "1 Community-Berichte von EmuReady für Metal Gear Solid V: The Phantom Pain (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "metal-gear-solid-v-ground-zeroes",
+      "text": "3 Community-Berichte von EmuReady für Metal Gear Solid V: Ground Zeroes (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "just-cause-2",
+      "text": "5 Community-Berichte von EmuReady für Just Cause 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "xenoblade-chronicles-2",
+      "text": "2 Community-Berichte von EmuReady für Xenoblade Chronicles 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "monster-hunter-stories-2-wings-of-ruin",
+      "text": "2 Community-Berichte von EmuReady für Monster Hunter Stories 2: Wings of Ruin (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "hyrule-warriors-age-of-calamity",
+      "text": "7 Community-Berichte von EmuReady für Hyrule Warriors: Age of Calamity (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "darkwatch",
+      "text": "1 Community-Berichte von EmuReady für Darkwatch (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "colin-mcrae-dirt-2",
+      "text": "1 Community-Berichte von EmuReady für Colin McRae: DiRT 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "call-of-duty-modern-warfare-2",
+      "text": "2 Community-Berichte von EmuReady für Call of Duty: Modern Warfare 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "route-updated",
+      "game": "bioshock",
+      "text": "1 Community-Berichte von EmuReady für BioShock (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "RSDKv4-Decompilation 1.3.3 veröffentlicht.",
+      "project": "rsdkv4-decomp",
+      "games": [
+        "sonic-the-hedgehog",
+        "sonic-the-hedgehog-2"
+      ],
+      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation/releases/tag/1.3.3"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "AoI Native v0.1.0-beta.1 (Vorabversion) veröffentlicht.",
+      "project": "aoi-native",
+      "games": [
+        "hyrule-warriors-age-of-imprisonment"
+      ],
+      "url": "https://github.com/P1R4N351/hwaoi-android/releases/tag/v0.1.0-beta.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "AoC Native hwaoc-v0.1.0-beta.1 (Vorabversion) veröffentlicht.",
+      "project": "aoc-native",
+      "games": [
+        "hyrule-warriors-age-of-calamity"
+      ],
+      "url": "https://github.com/P1R4N351/hwaoc-android/releases/tag/hwaoc-v0.1.0-beta.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "JAIL Recompiled v0.1.2 veröffentlicht.",
+      "project": "jail-recomp",
+      "games": [
+        "tokyo-ghoul-jail"
+      ],
+      "url": "https://github.com/ch1ppyone/jail-recomp/releases/tag/v0.1.2"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "007: From Russia with Love — Android v1.1 veröffentlicht.",
+      "project": "frwl-android",
+      "games": [
+        "007-from-russia-with-love"
+      ],
+      "url": "https://github.com/M1LT0N3R2431/007-Project-Russia/releases/tag/v1.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "XHYN V v0.3-preview4 (Vorabversion) veröffentlicht.",
+      "project": "xhyn-v",
+      "games": [
+        "grand-theft-auto-v"
+      ],
+      "url": "https://github.com/XHYN-PH/XHYN-V-reborn/releases/tag/v0.3-preview4"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "MHS2-Port für Retroid Pocket 5 & Flip 2 v0.1.0 veröffentlicht.",
+      "project": "mhs2-recomp",
+      "games": [
+        "monster-hunter-stories-2-wings-of-ruin"
+      ],
+      "url": "https://github.com/IamWilmar/mhs2-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "DiRT 2 – Android ARM64 v0.1 veröffentlicht.",
+      "project": "dirt2-android-arm64",
+      "games": [
+        "colin-mcrae-dirt-2"
+      ],
+      "url": "https://github.com/poglyadyi/dirt2-android-arm64/releases/tag/v0.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "OoT Native for Android v0.2.0-beta.1 (Vorabversion) veröffentlicht.",
+      "project": "oot-native",
+      "games": [
+        "the-legend-of-zelda-ocarina-of-time-2026"
+      ],
+      "url": "https://github.com/P1R4N351/oot-android/releases/tag/v0.2.0-beta.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "QudLink v1.0.0 veröffentlicht.",
+      "project": "qudlink",
+      "games": [
+        "caves-of-qud"
+      ],
+      "url": "https://github.com/UncookedNoodle/QudLink/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Darkwatch: Darker Edition – Android v0.1 (Vorabversion) veröffentlicht.",
+      "project": "darkwatch-android",
+      "games": [
+        "darkwatch"
+      ],
+      "url": "https://github.com/CowKillers/darkwatch-android/releases/tag/v0.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "BioShock 1 Native ReComp v0.0.6.5-mali-stutter-fix-experimental veröffentlicht.",
+      "project": "bioshock1-native-recomp",
+      "games": [
+        "bioshock"
+      ],
+      "url": "https://github.com/EddyGameDev/bioshock1-native-recomp/releases/tag/v0.0.6.5-mali-stutter-fix-experimental"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Dark Souls II: SotFS Android (Recomp) v0.1.13-test (Vorabversion) veröffentlicht.",
+      "project": "ds2-sotfs-recomp",
+      "games": [
+        "dark-souls-ii"
+      ],
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp/releases/tag/v0.1.13-test"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "MW3 Recompiled v0.1.0 veröffentlicht.",
+      "project": "mw3-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-3"
+      ],
+      "url": "https://github.com/yassinsolim/mw3-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "MW2 Recompiled v0.1.0 veröffentlicht.",
+      "project": "mw2-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-2"
+      ],
+      "url": "https://github.com/yassinsolim/mw2-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "ss-delta v0.3.1 veröffentlicht.",
+      "project": "ss-delta",
+      "games": [
+        "soul-sacrifice-delta"
+      ],
+      "url": "https://github.com/vita-recomps/ss-delta/releases/tag/v0.3.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "FTLDS v0.18 veröffentlicht.",
+      "project": "ftlds",
+      "games": [
+        "ftl-faster-than-light"
+      ],
+      "url": "https://github.com/mrmushrooms11/FTLDS/releases/tag/v0.18"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "OpenMW Android (Andiweli) 0.51.0-16 veröffentlicht.",
+      "project": "openmw-android-andiweli",
+      "games": [
+        "morrowind"
+      ],
+      "url": "https://github.com/Andiweli/OpenMW-Android/releases/tag/0.51.0-16"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "TWW HD Recompiled – Android v0.9.9c veröffentlicht.",
+      "project": "zeldawwhdrecomp-android",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker"
+      ],
+      "url": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/releases/tag/v0.9.9c"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Obtainium Recomp Pack pack-2026.11.21-1102 veröffentlicht.",
+      "project": "obtainium-recomp-pack",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.21-1102"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "MarathonRecomp Android v0.3.1 veröffentlicht.",
+      "project": "marathonrecomp-android",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/SansNope/MarathonRecomp-Android/releases/tag/v0.3.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "NFSU2 Revived Android v1.0.1 veröffentlicht.",
+      "project": "nfsu2-revived-android",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/mininxd/NFSU2-Revived-Android/releases/tag/v1.0.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "NFSU2 Recompiled v0.14.17 veröffentlicht.",
+      "project": "nfsu2-recompiled",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/codepdbh/nfsu2-recompiled/releases/tag/v0.14.17"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Ninja Gaiden Black Recomp v0.9.78 veröffentlicht.",
+      "project": "ngbrecomp",
+      "games": [
+        "ninja-gaiden-2004"
+      ],
+      "url": "https://github.com/gamboozino/ngbrecomp/releases/tag/v0.9.78"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "RA3 Native v0.2.5 veröffentlicht.",
+      "project": "ra3-native",
+      "games": [
+        "command-and-conquer-red-alert-3"
+      ],
+      "url": "https://github.com/blackorange-sketch/RA3-Native/releases/tag/v0.2.5"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Knight of Lodis Recomp v1.1.1 veröffentlicht.",
+      "project": "knight-of-lodis-recomp",
+      "games": [
+        "tactics-ogre-the-knight-of-lodis"
+      ],
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp/releases/tag/v1.1.1"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "MHGU for Android (gu-native) v1.0.2 veröffentlicht.",
+      "project": "gu-native",
+      "games": [
+        "monster-hunter-generations"
+      ],
+      "url": "https://github.com/khorne-hub/gu-native/releases/tag/v1.0.2"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "FF9Recomp v0.1.45 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.45"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "SuperMetroidDecomp v0.8.2 veröffentlicht.",
+      "project": "supermetroiddecomp",
+      "games": [
+        "super-metroid"
+      ],
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp/releases/tag/v0.8.2"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.72 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.72"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "HollowKnightAndroid v2.0.77 veröffentlicht.",
+      "project": "hollowknightandroid",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid/releases/tag/v2.0.77"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Classic Core Engines / com.mobilerpgpack.phone 4.0.4 veröffentlicht.",
+      "project": "classic-core-engines-com-mobilerpgpack-phone",
+      "games": [
+        "doom-1993",
+        "doom-ii",
+        "final-doom",
+        "doom-64"
+      ],
+      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/releases/tag/4.0.4"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "release",
+      "text": "Azahar 2127.0-rc5 (Vorabversion) veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0-rc5"
+    },
+    {
+      "date": "2026-11-21",
       "type": "game-added",
       "by": "agent",
       "game": "just-cause",
@@ -7688,727 +8076,6 @@
       "date": "2026-11-08",
       "by": "ai-research",
       "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Switch-Fassung über Eden – mit Skyrim-Erfahrungsberichten (Skyrim für Nintendo Switch, KI-Recherche)",
-      "url": "https://www.reddit.com/r/retroid/comments/1kkpiwn/i_cant_believe_how_well_redacted_games_run_on_the/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Skyrim Android Guide – Controller-, Schrift- und Übersetzungsprofil (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrim/mods/122056",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Skyrim Script Extender 64 – SKSE64 (KI-Recherche)",
-      "url": "https://skse.silverlock.org/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: SSE Engine Fixes (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/17230",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: SSE Engine Fixes for Wine (KI-Recherche)",
-      "url": "https://github.com/cashcon57/SSEEngineFixesForWine",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Cleaned Skyrim SE Textures (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/38775",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: eFPS – Exterior FPS Boost (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54907",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Vanilla Script (micro)Optimizations (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/54061",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Dear Diary Dark Mode (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/60837",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Optimized Vanilla Textures (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrim/mods/57353",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: The Ultimate DOOM (KI-Recherche)",
-      "url": "https://www.mobygames.com/game/707/the-ultimate-doom/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM (PlayStation) (KI-Recherche)",
-      "url": "https://www.shacknews.com/article/117322/terraform-the-making-of-doom-64",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM – offizielle Android-Fassung (KI-Recherche)",
-      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: UZDoom mit echter Dual-Screen-Automap (Original (PC, 1993), KI-Recherche)",
-      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Bethesdas offizielle Android-App (DOOM – offizielle Android-Fassung, KI-Recherche)",
-      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOM",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: PsyDoom über Classic Core / Engines Hub (DOOM (PlayStation), KI-Recherche)",
-      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: idTech4A++ mit UZDoom (Original (PC, 1993), KI-Recherche)",
-      "url": "https://f-droid.org/packages/com.karin.idTech4Amm/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: DOOM + DOOM II über Winlator (DOOM + DOOM II (2024), KI-Recherche)",
-      "url": "https://www.reddit.com/r/winlator/comments/1eu42fh/nightdive_remasters/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: SIGIL II (KI-Recherche)",
-      "url": "https://www.romerogames.com/games/sigil2-tapdh",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
-      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Voxel Doom (KI-Recherche)",
-      "url": "https://www.moddb.com/addons/voxel-doom",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Doom Neural Upscale 2X (KI-Recherche)",
-      "url": "https://www.moddb.com/downloads/doom-neural-upscale-2x",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: NightFright Widescreen Statusbars (KI-Recherche)",
-      "url": "https://github.com/NightFright2k19/doom_widehud",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-1993"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 16 Screenshots bestätigt, 1 unpassende entfernt"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Special Edition für PC (KI-Recherche)",
-      "url": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Anniversary Edition für PC (KI-Recherche)",
-      "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim für Nintendo Switch (KI-Recherche)",
-      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/The-Elder-Scrolls-V-Skyrim--1177455.html",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Anniversary Edition für Nintendo Switch (KI-Recherche)",
-      "url": "https://www.nintendo.com/us/whatsnew/available-now-the-elder-scrolls-v-skyrim-anniversary-edition-bundle/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: SkyrimSE-DualScreen auf dem Thor (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Special Edition über GameNative (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://www.reddit.com/r/AynThor/comments/1x1p837/any_tips_and_tricks_for_skyrim_se_on_gamenative/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "1 Erfahrungsbericht(e) zu Special Edition über GameNative (KI-Recherche)",
-      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1ue73v8/testing_modded_skyrim_anniversary_edition_100/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Special Edition über Winlator (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://www.reddit.com/r/OdinHandheld/comments/1e5vc97/how_to_fix_fallout_4_and_skyrim_se_in_winlator/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Originalfassung als ARM64-Rekompilation (PC, KI-Recherche)",
-      "url": "https://github.com/ttom795/Skyrim_Android",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Skyrim Androidborn mit Controller-Launcher (PC, KI-Recherche)",
-      "url": "https://github.com/igortiburcio/skyrim_androidborn",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: SkyrimWebMonitor als separater Zweitbildschirm-Companion (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://github.com/andreyvelsk/SkyrimWebSocket",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Unofficial Skyrim Special Edition Patch – USSEP (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/266",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: SkyUI für Special Edition (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/12604",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: SSE Display Tweaks (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/34705",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Skyrim Project Optimization SE (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/14084",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: BethINI / Bethini Pie (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/4875",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Static Mesh Improvement Mod – SMIM (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/659",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Skyrim 202X Downscale (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/68307",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: JK's Skyrim (KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrimspecialedition/mods/6289",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 31 Screenshots bestätigt, 4 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "project-zomboid",
-      "text": "1 Screenshots für ZomboidDS (Zomdroid + Companion) gefunden (KI, Prüfung folgt)",
-      "url": "https://andreyvelsk.github.io/GAFT/project/zomboidds/"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "grand-theft-auto-san-andreas",
-      "text": "1 Screenshots für SA-Companion (Android-Fassung) gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/AynThor/comments/1xngqbw/gta_sa_dual_screen_release/"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "am2r",
-      "text": "2 Screenshots für AM2R Autopatcher (Dual-Screen-Edition) gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/AM2R/comments/1x1yoqc/am2r_for_android_dual_screen_edition_unofficial/"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "va-11-hall-a-cyberpunk-bartender-action",
-      "text": "1 Screenshots für Eden Duo + Spiel-Companion gefunden (KI, Prüfung folgt)",
-      "url": "https://ko-fi.com/matinc"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "minecraft",
-      "text": "1 Screenshots für ExoJosh / Fabric + Android Companion gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/AynThor/comments/1vjvo8t/version_10_of_the_minecraft_dual_screen_mod_is/"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "minecraft",
-      "text": "4 Screenshots für DroidBridge + Dual Screen HUD gefunden (KI, Prüfung folgt)",
-      "url": "https://www.curseforge.com/minecraft/mc-mods/dual-screen/gallery"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "grand-theft-auto-v",
-      "text": "12 Community-Berichte von EmuReady für Grand Theft Auto V (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "grand-theft-auto-san-andreas",
-      "text": "3 Community-Berichte von EmuReady für Grand Theft Auto: San Andreas (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "grand-theft-auto-iv",
-      "text": "4 Community-Berichte von EmuReady für Grand Theft Auto IV (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "fire-emblem-three-houses",
-      "text": "3 Community-Berichte von EmuReady für Fire Emblem: Three Houses (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "fire-emblem-engage",
-      "text": "3 Community-Berichte von EmuReady für Fire Emblem Engage (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "dragon-quest-iii-hd-2d-remake",
-      "text": "2 Community-Berichte von EmuReady für Dragon Quest III HD-2D Remake (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "diablo-iii",
-      "text": "7 Community-Berichte von EmuReady für Diablo III: Eternal Collection (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "dave-the-diver",
-      "text": "8 Community-Berichte von EmuReady für Dave the Diver (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "cyberpunk-2077",
-      "text": "3 Community-Berichte von EmuReady für Cyberpunk 2077 (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "cult-of-the-lamb",
-      "text": "5 Community-Berichte von EmuReady für Cult of the Lamb (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "crash-team-racing-nitro-fueled",
-      "text": "6 Community-Berichte von EmuReady für Crash Team Racing Nitro-Fueled (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "chrono-trigger",
-      "text": "1 Community-Berichte von EmuReady für Chrono Trigger (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "chained-echoes",
-      "text": "3 Community-Berichte von EmuReady für Chained Echoes (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "castlevania-belmont-s-curse",
-      "text": "3 Community-Berichte von EmuReady für Castlevania: Belmont's Curse (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "balatro",
-      "text": "12 Community-Berichte von EmuReady für Balatro (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-updated",
-      "game": "animal-crossing-new-horizons",
-      "text": "12 Community-Berichte von EmuReady für Animal Crossing: New Horizons (Geräte mit dem Chip des AYN Thor)"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "XenDroid XenDroid-c4f6863 veröffentlicht.",
-      "project": "xendroid",
-      "url": "https://github.com/rfandango/XenDroid/releases/tag/XenDroid-c4f6863"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Winlator v11.2.0 veröffentlicht.",
-      "project": "winlator",
-      "url": "https://github.com/brunodev85/winlator/releases/tag/v11.2.0"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "XHYN IV 0.9.24-xhyn-layer-test1 (Vorabversion) veröffentlicht.",
-      "project": "xhyn-iv",
-      "games": [
-        "grand-theft-auto-iv"
-      ],
-      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp/releases/tag/0.9.24-xhyn-layer-test1"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "LibertyRecompAndroid v0.5.9.3 veröffentlicht.",
-      "project": "libertyrecompandroid",
-      "games": [
-        "grand-theft-auto-iv"
-      ],
-      "url": "https://github.com/vaduur/LibertyRecompAndroid/releases/tag/v0.5.9.3"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "EKA2L1 continous veröffentlicht.",
-      "project": "eka2l1",
-      "games": [
-        "tomb-raider"
-      ],
-      "url": "https://github.com/EKA2L1/EKA2L1/releases/tag/continous"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "Checkm8Croft/TRX ios veröffentlicht.",
-      "project": "checkm8croft-trx",
-      "games": [
-        "tomb-raider"
-      ],
-      "url": "https://github.com/Checkm8Croft/TRX/releases/tag/ios"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "release",
-      "text": "OpenLara latest veröffentlicht.",
-      "project": "openlara",
-      "games": [
-        "tomb-raider"
-      ],
-      "url": "https://github.com/XProger/OpenLara/releases/tag/latest"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Grand Theft Auto IV: The Complete Edition – PC-Neuauflage (KI-Recherche)",
-      "url": "https://www.gamedeveloper.com/game-platforms/-i-gta-iv-i-to-return-to-steam-after-cutting-games-for-windows-live-support",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "type": "route-updated",
-      "text": "1 Erfahrungsbericht(e) zu Grand Theft Companion (PC via Winlator/GameNative) (KI-Recherche)",
-      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1xbgmrm/repost_after_taken_down_best_way_to_play_gta_iv/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: LibertyRecompAndroid – native Xbox-360-Rekompilierung (Xbox 360, KI-Recherche)",
-      "url": "https://github.com/vaduur/LibertyRecompAndroid",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: XHYN IV – bedienungsorientierter LibertyRecompAndroid-Fork (Xbox 360, KI-Recherche)",
-      "url": "https://github.com/XHYN-PH/XHYN-IV-recomp",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: FusionFix (KI-Recherche)",
-      "url": "https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Mjolnir IV (KI-Recherche)",
-      "url": "https://github.com/llamacomma/Mjolnir_IV",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "grand-theft-auto-iv"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "removed",
-      "by": "agent",
-      "game": "tomb-raider",
-      "text": "Tomb Raider: 5 Fassungen ohne praktischen Weg auf Android entfernt (Pocket PC, Mac, Evercade, PS3-Trilogie, unveröffentlichtes Remake)."
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider – Sega Saturn (KI-Recherche)",
-      "url": "https://gamefaqs.gamespot.com/saturn/199041-tomb-raider/data",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider Gold / Unfinished Business (KI-Recherche)",
-      "url": "https://ns2.tombraiders.net/stella/trub.html",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider Gold – Macintosh (KI-Recherche)",
-      "url": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_Gold",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider – Pocket PC (KI-Recherche)",
-      "url": "https://www.tombraiderchronicles.com/games/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider – Nokia N-Gage (KI-Recherche)",
-      "url": "https://www.tombraiderchronicles.com/headlines1449.html",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider I – iOS (KI-Recherche)",
-      "url": "https://www.gamespot.com/articles/original-tomb-raider-hits-ios-for-99-cents-promises-15-hours-of-gameplay/1100-6416765/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider I – Android-Klassikport (KI-Recherche)",
-      "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: The Tomb Raider Trilogy (KI-Recherche)",
-      "url": "https://blog.playstation.com/?p=43005",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider: Anniversary – PlayStation-Neuauflage (KI-Recherche)",
-      "url": "https://www.tombraider.com/news/video-games/tomb-raider-anniversary-now-available-on-playstation-store",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider Collection 1 (KI-Recherche)",
-      "url": "https://www.tombraider.com/news/collaborations/tomb-raider-collection-1-launches-on-evercade-consoles-today",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tomb Raider: Legacy of Atlantis (KI-Recherche)",
-      "url": "https://www.tombraider.com/products/games/tomb-raider-legacy-of-atlantis",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: I–III Remastered als offizielle Android-App (Tomb Raider I–III Remastered (2024), KI-Recherche)",
-      "url": "https://support.aspyr.com/hc/en-us/articles/49416285853325-Tomb-Raider-I-III-Remastered-Challenge-Mode-Patch-4",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: OpenLara mit eigenen Original-Spieldaten (PC (MS-DOS, 1996), KI-Recherche)",
-      "url": "https://github.com/XProger/OpenLara/releases",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "tomb-raider"
     }
   ]
 }

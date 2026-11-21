@@ -1,6 +1,390 @@
 {
   "leads": [
     {
+      "url": "https://github.com/TanJunKiat/eden-duo",
+      "title": "TanJunKiat/eden-duo (Fork von igawa6/eden-duo)",
+      "excerpt": "",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/saefalasalynbtel198-a11y/stronghold-crusader-android",
+      "title": "saefalasalynbtel198-a11y/stronghold-crusader-android",
+      "excerpt": "Android port of Stronghold Crusader. A project to bring the classic PC strategy game to Android devices with touchscreen controls and APK support.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/ZinexDa/sonic-r-android",
+      "title": "ZinexDa/sonic-r-android",
+      "excerpt": "Native Android port of the Sonic R PC decompilation (jnmartin84). Features a custom GLES2 shader pipeline, 60 FPS, customizable touch controls, and SAF asset installation. Requires original PC game files (no retail assets included). Non-commercial open-source project.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/GUPRON98/EarthwormJim-Android",
+      "title": "GUPRON98/EarthwormJim-Android",
+      "excerpt": "Earthworm Jim (Gameloft / Samsung S8000) Native Android Port with True Landscape Fullscreen, 28-30 FPS lock, and In-Game Cheat Engine",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/GUPRON98/TheAvengers-Android",
+      "title": "GUPRON98/TheAvengers-Android",
+      "excerpt": "The Avengers (Gameloft / Samsung S8000) Native Android Port with True Landscape Fullscreen, 28-30 FPS lock, and In-Game Cheat Engine",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/GUPRON98/SpiderMan-ToxicCity-Android",
+      "title": "GUPRON98/SpiderMan-ToxicCity-Android",
+      "excerpt": "Spider-Man: Toxic City - Native Android Port with WVGA 800x480 Landscape, 28-30 FPS Lock, Touch Screen & In-Game Cheat Engine",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/NuggerTime/Felvidek_Android_Port",
+      "title": "NuggerTime/Felvidek_Android_Port",
+      "excerpt": "This port was created to make Felvidek playable on Android devices.  I have uploaded both the original version and the Turkish-translated version of the game. You can download whichever version you prefer.  If you encounter any problems, feel free to report them. I'll do my best to help you.  Enjoy the game!",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/kivi-man/SpiderMan2-2004-PC-Android",
+      "title": "kivi-man/SpiderMan2-2004-PC-Android",
+      "excerpt": "Unofficial Windows and Android ports of Spider-Man 2 (original Xbox, 2004), statically recompiled. Bring your own game; no game files included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/chouette-cc/ph-recomp-single-screen",
+      "title": "chouette-cc/ph-recomp-single-screen",
+      "excerpt": "Single Screen (Modern HUD) mod for Phantom Hourglass Recomp (PC & Android)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/chouette-cc/ph-recomp-mods",
+      "title": "chouette-cc/ph-recomp-mods",
+      "excerpt": "Official community mod catalog for Phantom Hourglass Recomp (PC & Android Mod Browser)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/RaykaFpp/BMX-XXX-Recomp-Android",
+      "title": "RaykaFpp/BMX-XXX-Recomp-Android",
+      "excerpt": "BMX XXX Recomp Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/mstan/WarioWareTwistedRecomp",
+      "title": "mstan/WarioWareTwistedRecomp",
+      "excerpt": "Static recompilation of WarioWare: Twisted! with Windows and Android gyro support · Part of the R.A.I.D. community",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/Chizuui/Carbon-Android",
+      "title": "Chizuui/Carbon-Android",
+      "excerpt": "Unofficial native Android port of Need for Speed: Carbon (Xbox). The x86 code is statically recompiled to C++ with XboxXBE-Recomp and built for arm64, with a Vulkan renderer, SDL3, touch/controller/keyboard input, and extended graphics options. No emulator, no game assets included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/BhatnagarPratham/recomp",
+      "title": "BhatnagarPratham/recomp",
+      "excerpt": "Android app for lifters: progressive-overload coaching and goal-driven nutrition (fat loss, recomp, maintain, lean bulk) with configurable personas. Offline-first, optional AI meal logging.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/aoaouou/WinJoyCon2-Plus",
+      "title": "aoaouou/WinJoyCon2-Plus",
+      "excerpt": "Unprecedented Joy-Con 2 to virtual Joy-Con 1 bridge for Windows: optical mouse, Galaxy-style gyro mouse, macros, bilingual UI.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/gbppimentel-dev/snap-companion",
+      "title": "gbppimentel-dev/snap-companion",
+      "excerpt": "Offline New Pokémon Snap companion for AYN Thor — live course maps, NEO-ONE tracking, Photodex, LenTalk and photo tips.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/dexedrne/nmc-decomposed",
+      "title": "dexedrne/nmc-decomposed",
+      "excerpt": "Nobody May Cry (Kingdom Hearts II Final Mix mod) decomposed: every change as readable patches rebuilt from your own vanilla game, with difficulty and other options. No game or mod files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/red77290/ArcadeMatrix",
+      "title": "red77290/ArcadeMatrix",
+      "excerpt": "Dmd firmware for Esp32 128x32 or 256x64",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/red77290/ArcadeMatrix_RPI",
+      "title": "red77290/ArcadeMatrix_RPI",
+      "excerpt": "Dmd Soft for RaspberryPi",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/mchurcher92/3ds-ocr",
+      "title": "mchurcher92/3ds-ocr",
+      "excerpt": "Real-time dual-screen Japanese OCR, dictionary lookup, AI translation, and Anki integration for Nintendo 3DS",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/crowdoeswobs/SlimVolume",
+      "title": "crowdoeswobs/SlimVolume",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/chankamman-dev/thor-capture",
+      "title": "chankamman-dev/thor-capture",
+      "excerpt": "AYN Thor dual-screen capture, framed exporter & Cocoon game library manager for Windows · AYN Thor 双屏截图录屏、带壳导出与 Cocoon 游戏库管理工具",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/erpiopio/LegacyTrilogy-Thor",
+      "title": "erpiopio/LegacyTrilogy-Thor",
+      "excerpt": "Dragon Ball Z Legacy Trilogy - Android dual-screen port for AYN Thor Max",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/demonazzi/dc2-thor-map",
+      "title": "demonazzi/dc2-thor-map",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/0sour/LumaDuo",
+      "title": "0sour/LumaDuo",
+      "excerpt": "LumaDuo (流明双屏) — a lightweight dual-screen Moonlight game-streaming client for Android handhelds",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/masong0508-lab/mandex",
+      "title": "masong0508-lab/mandex",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/Ziran123lst/divaft-aot",
+      "title": "Ziran123lst/divaft-aot",
+      "excerpt": "DIVA/FTDX (CUSA08053) native Android/ARM64 AOT port - runtime HLE + FSR framegen",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/xUmutKx/Pulse",
+      "title": "xUmutKx/Pulse",
+      "excerpt": "An all-in-one toolbox for Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/joiha-steven/plumemu",
+      "title": "joiha-steven/plumemu",
+      "excerpt": "A calm, light frontend (launcher) for Android retro handhelds. Names your games offline, picks the emulators, updates itself, and shows battery use on a second screen. Open source under GPL-3.0.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/RichterEdu/RichterEdu",
+      "title": "RichterEdu/RichterEdu",
+      "excerpt": "Meu perfil",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/dustinm16/portal",
+      "title": "dustinm16/portal",
+      "excerpt": " \"Open Relay Portal\" a Self-hosted Secure Infrastructure Gateway/ Encrypted Communications Relay/ Encrypted Stream Relay. Chat, live streaming, voice calls, SSH/VNC/RDP remote access, file management — one Python server, no Docker required.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/towkirahmedrony/OpenPhoneUse-PromptManager",
+      "title": "towkirahmedrony/OpenPhoneUse-PromptManager",
+      "excerpt": "OpenPhoneUse 0.0.8 — Android AI agent with a local System Prompt Manager",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/RheyMartt/POS-System-Project",
+      "title": "RheyMartt/POS-System-Project",
+      "excerpt": "POS System with SheetsSync feature for Mobile Phones ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/anis7t/anis-home-media-server",
+      "title": "anis7t/anis-home-media-server",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/jjuugk/CarPToCarL",
+      "title": "jjuugk/CarPToCarL",
+      "excerpt": "让 Android 手机把车机当成无线显示端：把本机 CarLife+ 的码流直通投到支持无线车机互联的车机上（非官方实验项目，需自备车机与手机）",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/Minaalex22/claude-trading-agents",
+      "title": "Minaalex22/claude-trading-agents",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/techievee/aismo",
+      "title": "techievee/aismo",
+      "excerpt": "AI SMS Manager",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/willingsonbarney-eng/chess-assistant-android.",
+      "title": "willingsonbarney-eng/chess-assistant-android.",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/andikpbw/flutter-fab-animation",
+      "title": "andikpbw/flutter-fab-animation",
+      "excerpt": "A modern Flutter library for creating smooth and interactive Floating Action Button (FAB) animations, featuring customizable transitions, fluid motion effects, and a flexible developer-friendly API.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/onion-talk/.github",
+      "title": "onion-talk/.github",
+      "excerpt": "OnionTalk Organization Profile, Mission Statement, Funding & Community Health Files",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/onion-talk/oniontalk-demo",
+      "title": "onion-talk/oniontalk-demo",
+      "excerpt": "Zero-Knowledge Tor v3 P2P Post-Quantum Messenger for Android — Live on Google Play & Direct Signed APK (X25519 + ML-KEM-768 + ChaCha20-Poly1305 + SQLCipher).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/onion-talk/oniontalk-protocol",
+      "title": "onion-talk/oniontalk-protocol",
+      "excerpt": "OnionTalk ENVELOPE_V3 Wire Protocol Specification — Hybrid Post-Quantum E2EE (X25519 + ML-KEM-768), S/Kademlia XOR Routing & Tor v3 Zero-Knowledge Mesh.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/onion-talk/oniontalk-relay",
+      "title": "onion-talk/oniontalk-relay",
+      "excerpt": "Hardened Non-Root Rust Tor v3 Hidden Service Relay Node (Tokio/Axum + DashMap) with Ed25519 PEX, GossipSub v1.2 & Cryptographic ACK Preimage Lock.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/trononly/tripwire",
+      "title": "trononly/tripwire",
+      "excerpt": "Tripwire is a local-first personal money analyzer for Android(Windows & Linux soon). It imports your history - PDF statements, and the M-Pesa SMS in your phone's inbox - parses it all into one normalized transaction model, and helps you understand where your money goes",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/ishandutta2007/Awesome-Automotive-Telematics-EV-Analytics",
+      "title": "ishandutta2007/Awesome-Automotive-Telematics-EV-Analytics",
+      "excerpt": "Top Automotive Telematics EV Analytics (Opensource)  Star if you like it! ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/algoreetham/ARTH-Automated-Response-To-Human-Intent",
+      "title": "algoreetham/ARTH-Automated-Response-To-Human-Intent",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/Dipesh029/financial-tracker",
+      "title": "Dipesh029/financial-tracker",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/samah3303/LuxeMart",
+      "title": "samah3303/LuxeMart",
+      "excerpt": "A modern, full-stack e-commerce monorepo featuring a Next.js 14 web storefront, a dedicated Admin Dashboard, and a cross-platform React Native (Expo) mobile app.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-21"
+    },
+    {
       "url": "https://github.com/CouldntFindit/korra-recomp",
       "title": "CouldntFindit/korra-recomp",
       "excerpt": "WIP - native Android and Windows port of The Legend of Korra (2014 PC) by static recompilation. Bring your own copy; source-only.",
@@ -5497,9 +5881,9 @@
     "summary": "Abo-Anfrage #39 (Reihe Just Cause) erledigt: 4 Spiele mit Fassungen angelegt (Wikidata/Steam/Wikipedia aus der Sitzung gesperrt, Cover folgen über den Watcher; kein Android-Port bekannt). Neu: Hyrule Warriors AoI/AoC (native Ports), 007 From Russia with Love (Xbox-Recomp), Tokyo Ghoul: JAIL (Vita-Recomp), C&C Red Alert (OpenRA-Port), RSDKv4-Dekompilation für Sonic 1/2, Verzeichnis SwitchRecomp. Verworfen: LandOfTheDroid (liefert Spieldateien mit), Thor Native FG, Thor Instant Replay, ZyperOS, ReSkate-Fix (nur ArmadaOS), Baldi-Reskin, Lasertank, Enigma, License Revoked, Broomm. Bildprüfung: 9 bestätigt, 1 fremdes entfernt; github.com-Bilder (user-attachments) aus der Sitzung nicht ladbar. Datenqualität: Sonic 1/2 mit Jahren (behebt die Remake-Meldung zu Sonic 2006); Test test_setup an Gerätedaten in learned.json angepasst. Offen: Korra (kein Android-Build), DMC3-/Cuphead-Companion (unveröffentlicht), Kaldora Thor, Pip-Boy-Mod, PS4-Runtime-Ports (Raiden V u. a., Android ungeprüft), Final Fantasy Resonance (Spiel nicht belegbar); Warteschlange leer, Dual-Screen-Suchlauf erst am 26.11. fällig."
   },
   "watcher": {
-    "lastRun": "2026-11-20T14:04:09Z",
-    "newLeads": 34,
-    "newEvents": 19
+    "lastRun": "2026-11-21T13:30:55Z",
+    "newLeads": 48,
+    "newEvents": 33
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

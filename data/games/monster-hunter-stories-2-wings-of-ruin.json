@@ -17,7 +17,63 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "note": "Grundlage des nativen Android-Ports (getestet mit Version 1.5.2 und DLC)."
+      "note": "Grundlage des nativen Android-Ports (getestet mit Version 1.5.2 und DLC).",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a51e5026-f4aa-4acf-aed4-0020de7b71ca",
+          "device": "OnePlus 12R",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Might update later after playing with settings. No issues so far. Perfect 60fps",
+          "votes": 3,
+          "date": "2025-08-07",
+          "settings": {
+            "Emulator Version": "0.0.3 rc2",
+            "Driver Version": "[MrPurple666/purple-turnip] turnip_mrpurple_T21-AYANEO.adpkg",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d68fea29-57c4-49db-99e3-f2adb97aaf0a",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "There is a rare bug where the camera zooms in close on the character. Additionally, I am unable to input certain languages ​​when naming the character; changing the keyboard via system settings or an app makes no differe",
+          "votes": 0,
+          "date": "2026-06-27",
+          "settings": {
+            "Emulator Version": "0.2.1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T28-toasted.adpkg|||turnip_mrpurple_T28-toas",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Window adapting filter": "Bilinear"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/d9c9f9c3-77b5-4fd8-896e-ff0598d213e8"
+        }
+      ]
     },
     {
       "id": "pc",
@@ -26,6 +82,13 @@
       "year": 2021,
       "platforms": [
         "PC"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/871466d4-959f-4a65-8e7e-2b4179636358"
+        }
       ]
     }
   ],
@@ -83,5 +146,44 @@
       "checkedAt": "2026-11-20"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q99448884",
+  "website": "https://www.monsterhunter.com/stories2",
+  "wikipedia": "https://en.wikipedia.org/wiki/Monster_Hunter_Stories_2%3A_Wings_of_Ruin",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1277400/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/1277400/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_fbbd608be7804aa499420ebe5596889b8909a392.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_e869a68f8a36e894766a1c94824fc7c26436ed7e.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_b26abc50c705039bb16e54fdf0fd1e5bc2311fe0.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_334f4d54d6977a1b09742a40223d08998c853e58.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_2cc9be650148777d9132f66e8505df748b4d1d85.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/ss_655f8bf7931590653277444466934084294e6c44.1920x1080.jpg?t=1768870791",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/1277400/"
+    }
+  ]
 }

@@ -112,5 +112,11 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q388225",
+  "wikipedia": "https://en.wikipedia.org/wiki/Command_%26_Conquer%3A_Red_Alert",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/7/71/Cncra-win-cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Command_%26_Conquer%3A_Red_Alert"
+  }
 }

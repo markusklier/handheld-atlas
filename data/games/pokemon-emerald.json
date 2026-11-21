@@ -98,6 +98,13 @@
           "source": "https://github.com/lidor30/pokedaisy",
           "credit": "PokeDaisy",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lidor30/pokedaisy/HEAD/website/public/media/soulgold-expand.webp",
+          "caption": "SoulGold with EXPAND",
+          "source": "https://github.com/lidor30/pokedaisy",
+          "credit": "PokeDaisy",
+          "check": "readme"
         }
       ],
       "links": [],

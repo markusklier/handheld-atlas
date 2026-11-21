@@ -17,6 +17,38 @@
       "year": 2007,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/736e3c13-00ac-46b8-a523-a5083de5c522",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "Winlator",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "- Had to change resolution outside of the game - Game stored in My Documents- https://github.com/piman-dev/Winlator-PreconfiguredGames/releases?q=bioshock&expanded=true",
+          "votes": 0,
+          "date": "2026-05-11",
+          "settings": {
+            "Winlator Fork": "other",
+            "Emulator Version": "Ludashi-plus 3.1.2",
+            "Controller Support": "True",
+            "Wine Version": "Proton 11.0-1 arm64ec",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.7.1-arm64ec-gplasync\nasync enabled",
+            "Audio Driver": "PulseAudio",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.4.3"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/ec2716b7-900f-4284-b225-8d5667b6435c"
+        }
       ]
     },
     {
@@ -36,6 +68,13 @@
       "year": 2008,
       "platforms": [
         "PlayStation 3"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2c51f68a-0cab-40f4-898a-428818652239"
+        }
       ]
     },
     {
@@ -119,5 +158,44 @@
       "effort": "experimental"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q57270",
+  "website": "https://2k.com/en-US/game/bioshock",
+  "wikipedia": "https://en.wikipedia.org/wiki/BioShock",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7670/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/7670/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002508.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002509.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002510.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002511.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002512.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/7670/0000002513.1920x1080.jpg?t=1730172622",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/7670/"
+    }
+  ]
 }

@@ -46,6 +46,22 @@
       "year": 2011,
       "platforms": [
         "Wii"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Call%20of%20Duty_%20Modern%20Warfare%203%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Call%20of%20Duty%20-%20Modern%20Warfare%203%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Call%20of%20Duty%20-%20Modern%20Warfare%203%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
       ]
     }
   ],
@@ -104,5 +120,23 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q486233",
+  "wikipedia": "https://en.wikipedia.org/wiki/Call_of_Duty%3A_Modern_Warfare_3",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Call%20of%20Duty_%20Modern%20Warfare%203%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Call%20of%20Duty%20-%20Modern%20Warfare%203%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Call%20of%20Duty%20-%20Modern%20Warfare%203%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
 }

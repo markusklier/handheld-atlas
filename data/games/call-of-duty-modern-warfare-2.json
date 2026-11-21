@@ -27,6 +27,62 @@
       "year": 2009,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/af2dfc3e-1865-4d2c-9b5a-feda21973bfc",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This is how to get controls working. Download this zip: https://drive.google.com/file/d/1xl801tVDTnIMuNj6offCiH7nHmfLmyaO/view?usp=sharing In your container copy the antimicrox folder to your game folder. Copy the start2",
+          "votes": 2,
+          "date": "2025-11-05",
+          "settings": {
+            "Emulator Version": "V4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton9.0-arm64x-3",
+            "Translation Parameters": "Other/Custom",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_r1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d21c4ede-8537-4d3a-9a53-6aa0bc9ecc2c",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "https://www.mediafire.com/file/r7eyq1id2qd8iua/mapped-codmw2.zip/file For controls do this: You just unzip and copy the antimicrox folder and start2.exe into main cod mw2 folder Make sure your mw2 exe is named iw4sp.exe ",
+          "votes": 1,
+          "date": "2025-11-05",
+          "settings": {
+            "Emulator Version": "V4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v25.0.0_r1",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4d2124b7-9ce2-4420-b180-a82b58cef111"
+        }
       ]
     },
     {
@@ -36,6 +92,21 @@
       "year": 2009,
       "platforms": [
         "PlayStation 3"
+      ]
+    },
+    {
+      "id": "macintosh-2014",
+      "name": "Macintosh (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q486351"
+        }
       ]
     }
   ],
@@ -94,5 +165,11 @@
       "checkedAt": "2026-11-20"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q486351",
+  "wikipedia": "https://en.wikipedia.org/wiki/Call_of_Duty%3A_Modern_Warfare_2",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/52/Call_of_Duty_Modern_Warfare_2_%282009%29_cover.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Call_of_Duty%3A_Modern_Warfare_2"
+  }
 }

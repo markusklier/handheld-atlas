@@ -79,6 +79,27 @@
           "source": "https://github.com/ch1ppyone/jail-recomp",
           "credit": "JAIL Recompiled",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/launcher-home.png",
+          "caption": "MacOS launcher",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/game-menu-jp.png",
+          "caption": "Main menu on macOS",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/jail-recomp/HEAD/docs/images/game-story-jp.png",
+          "caption": "Story scene on macOS",
+          "source": "https://github.com/ch1ppyone/jail-recomp",
+          "credit": "JAIL Recompiled",
+          "check": "readme"
         }
       ],
       "links": [

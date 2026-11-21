@@ -190,6 +190,34 @@
           "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
           "credit": "ZeldaWWHDRecompAndroid",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/layout-editor.jpg",
+          "caption": "The layout editor with its grid",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "TWW HD Recompiled – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/options-controls.jpg",
+          "caption": "The options as a page of the + menu, in the game's style",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "TWW HD Recompiled – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/picto-view.jpg",
+          "caption": "The large Picto Box view",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "TWW HD Recompiled – Android",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/HEAD/docs/screenshots/album-pages.jpg",
+          "caption": "Album pages: a full album goes on to page 2",
+          "source": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid",
+          "credit": "TWW HD Recompiled – Android",
+          "check": "readme"
         }
       ],
       "links": [

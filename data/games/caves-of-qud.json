@@ -50,6 +50,27 @@
           "source": "https://github.com/UncookedNoodle/QudLink",
           "credit": "QudLink",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/near.png",
+          "caption": "Near",
+          "source": "https://github.com/UncookedNoodle/QudLink",
+          "credit": "QudLink",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/status.png",
+          "caption": "Status",
+          "source": "https://github.com/UncookedNoodle/QudLink",
+          "credit": "QudLink",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/quests.png",
+          "caption": "Quests",
+          "source": "https://github.com/UncookedNoodle/QudLink",
+          "credit": "QudLink",
+          "check": "readme"
         }
       ],
       "links": [
@@ -89,5 +110,44 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q68208636",
+  "website": "https://www.cavesofqud.com",
+  "wikipedia": "https://en.wikipedia.org/wiki/Caves_of_Qud",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/333640/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/333640/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_0d7f344e2478cf941e174078297b5d2adde21567.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_796b188786b8978574444587bf9f4198fb18f724.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_fc17afe945a7d81473c1b2d728aa513ff2011fc2.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_66d82dec6de6943d34b56708f71c4287f0d8653e.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_be0b9ec895b5b2a791400dcc72eac8b8ba6f0dbe.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/ss_866865918c8405c0633b54a273b9b444285abe39.1920x1080.jpg?t=1790186617",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/333640/"
+    }
+  ]
 }

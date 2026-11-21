@@ -212,6 +212,27 @@
           "credit": "SMZ3 Universe",
           "check": "source-verified",
           "dual": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-pc-runs.png",
+          "caption": "PC runs",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/feature-rewind-thor.png",
+          "caption": "Rewind on the Thor",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/sprite-picker-grid-layout.png",
+          "caption": "Link sprite picker",
+          "source": "https://github.com/doctor-utsugi/smz3-universe",
+          "credit": "SMZ3 Universe",
+          "check": "readme"
         }
       ],
       "links": [],

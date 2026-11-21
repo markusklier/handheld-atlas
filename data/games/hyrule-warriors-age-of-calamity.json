@@ -20,6 +20,144 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Hyrule_Warriors:_Age_of_Calamity"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/7d8e3943-7d03-4cc9-ab29-cdfb23225708"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0b785db5-e9aa-46ac-8980-d097b25dbffe",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4d60a678-d08a-45a8-a490-566311bee70f",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/361c8ea3-0e48-486b-af9e-e7a9f5103cda",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at 60 fps (MOD installed)",
+          "votes": 0,
+          "date": "2025-11-20",
+          "settings": {
+            "Average FPS": "55",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed",
+            "Optimize SPIRV output": "On Load"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1aeffcc2-85cd-43fa-a114-2930088fd5e5",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Rare crashes",
+          "votes": 0,
+          "date": "2025-10-18"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d8bcae1a-0ad5-4e35-9892-27b6b2b2d663",
+          "device": "AYN Odin 2",
+          "emulator": "Sudachi",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "There are some graphical glitches but it's still playable. Sometimes it might crash, but the more you play the less it happens",
+          "votes": 2,
+          "date": "2025-06-07"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fc8a3ef4-03ff-4b5e-9b2f-ff3d9fb61797",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Turn on \"Force Maximum Clock Speed\" in the graphics settings. The game will run fine once you enter combat, but stuttering will become severe and frequent during intense action sequences like special attacks from mid-bos",
+          "votes": 0,
+          "date": "2026-04-18"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/1bd5d35d-fb20-4f62-96f8-d62e95b3f914",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Crackling sound, messy 3D. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-10",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
         }
       ]
     }
@@ -64,8 +202,52 @@
           "label": "Stand der Portierung",
           "url": "https://github.com/P1R4N351/hwaoc-android/blob/HEAD/games/hwaoc/README.md"
         }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/hwaoc-android/HEAD/docs/images/botw-home.webp",
+          "caption": "Home menu",
+          "source": "https://github.com/P1R4N351/hwaoc-android",
+          "credit": "AoC Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/hwaoc-android/HEAD/docs/images/botw-graphics.webp",
+          "caption": "Graphics: Performance tab with presets",
+          "source": "https://github.com/P1R4N351/hwaoc-android",
+          "credit": "AoC Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/hwaoc-android/HEAD/docs/images/botw-gamedata.webp",
+          "caption": "Game data: installed game, mods and Lossless Scaling",
+          "source": "https://github.com/P1R4N351/hwaoc-android",
+          "credit": "AoC Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/hwaoc-android/HEAD/docs/images/botw-about.webp",
+          "caption": "About",
+          "source": "https://github.com/P1R4N351/hwaoc-android",
+          "credit": "AoC Native",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/P1R4N351/hwaoc-android/HEAD/docs/images/botw-controls.webp",
+          "caption": "Controls & audio",
+          "source": "https://github.com/P1R4N351/hwaoc-android",
+          "credit": "AoC Native",
+          "check": "readme"
+        }
       ]
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q98969837",
+  "website": "https://www.zelda.com/hyrule-warriors",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hyrule_Warriors%3A_Age_of_Calamity",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/e/e1/Hyrule_Warriors_Age_Of_Calamity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Hyrule_Warriors%3A_Age_of_Calamity"
+  }
 }

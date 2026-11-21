@@ -844,7 +844,25 @@
     "test-drive-unlimited": "2026-11-20",
     "test-drive": "2026-11-20",
     "the-duel-test-drive-ii": "2026-11-20",
-    "tony-hawks-pro-skater-4": "2026-11-20"
+    "tony-hawks-pro-skater-4": "2026-11-20",
+    "007-from-russia-with-love": "2026-11-21",
+    "bioshock": "2026-11-21",
+    "call-of-duty-modern-warfare-2": "2026-11-21",
+    "call-of-duty-modern-warfare-3": "2026-11-21",
+    "caves-of-qud": "2026-11-21",
+    "colin-mcrae-dirt-2": "2026-11-21",
+    "command-and-conquer-red-alert": "2026-11-21",
+    "dark-souls-ii": "2026-11-21",
+    "darkwatch": "2026-11-21",
+    "hyrule-warriors-age-of-calamity": "2026-11-21",
+    "hyrule-warriors-age-of-imprisonment": "2026-11-21",
+    "just-cause-2": "2026-11-21",
+    "just-cause-3": "2026-11-21",
+    "just-cause-4": "2026-11-21",
+    "just-cause": "2026-11-21",
+    "monster-hunter-stories-2-wings-of-ruin": "2026-11-21",
+    "the-legend-of-zelda-ocarina-of-time-2026": "2026-11-21",
+    "tokyo-ghoul-jail": "2026-11-21"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1092,7 +1110,9 @@
     "Q124365333": "mecha video game",
     "Q7049700": "Nook Color",
     "Q3027757": "DigiBLAST",
-    "Q1892535": "space flight simulation game"
+    "Q1892535": "space flight simulation game",
+    "Q110887639": "crowd-combat video game",
+    "Q113259250": "vampire video game"
   },
   "factsVersion": {
     "1080-snowboarding": 3,
@@ -1909,6 +1929,23 @@
     "test-drive-unlimited": 3,
     "test-drive": 3,
     "the-duel-test-drive-ii": 3,
-    "tony-hawks-pro-skater-4": 3
+    "tony-hawks-pro-skater-4": 3,
+    "007-from-russia-with-love": 3,
+    "bioshock": 3,
+    "call-of-duty-modern-warfare-2": 3,
+    "call-of-duty-modern-warfare-3": 3,
+    "caves-of-qud": 3,
+    "colin-mcrae-dirt-2": 3,
+    "command-and-conquer-red-alert": 3,
+    "dark-souls-ii": 3,
+    "darkwatch": 3,
+    "hyrule-warriors-age-of-calamity": 3,
+    "hyrule-warriors-age-of-imprisonment": 3,
+    "just-cause-2": 3,
+    "just-cause-3": 3,
+    "just-cause-4": 3,
+    "just-cause": 3,
+    "monster-hunter-stories-2-wings-of-ruin": 3,
+    "the-legend-of-zelda-ocarina-of-time-2026": 3
   }
 }

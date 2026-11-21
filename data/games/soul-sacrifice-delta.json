@@ -71,6 +71,27 @@
           "source": "https://github.com/vita-recomps/ss-delta",
           "credit": "ss-delta",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/title.jpg",
+          "caption": "The title screen",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/journal.jpg",
+          "caption": "A page of Librom's journal",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/vita-recomps/ss-delta/HEAD/docs/assets/screenshots/quest-moon.jpg",
+          "caption": "A moonlit field of blue crystals",
+          "source": "https://github.com/vita-recomps/ss-delta",
+          "credit": "ss-delta",
+          "check": "readme"
         }
       ],
       "links": [

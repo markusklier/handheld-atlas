@@ -73,5 +73,12 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q133804382",
+  "website": "https://www.gamecity.ne.jp/zelda-fuuin/jp/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hyrule_Warriors%3A_Age_of_Imprisonment",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/82/HyruleWarriors-AgeOfImprisonment-KeyArt.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Hyrule_Warriors%3A_Age_of_Imprisonment"
+  }
 }

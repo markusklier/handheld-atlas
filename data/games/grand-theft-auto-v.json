@@ -362,6 +362,13 @@
           "source": "https://github.com/BrianJr03/GrandTheftCompanion",
           "credit": "Grand Theft Companion",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BrianJr03/GrandTheftCompanion/HEAD/assets/color_wheel.png",
+          "caption": "Color wheel full screen sheet",
+          "source": "https://github.com/BrianJr03/GrandTheftCompanion",
+          "credit": "Grand Theft Companion",
+          "check": "readme"
         }
       ],
       "links": [

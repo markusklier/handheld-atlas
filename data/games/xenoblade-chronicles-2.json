@@ -13,7 +13,63 @@
       "platforms": [
         "Nintendo Switch"
       ],
-      "year": 2017
+      "year": 2017,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/81ec5c8d-248a-4f47-aa75-d5b35d57a91f",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Sudachi",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game runs perfectly with Mesa Turnip Driver v25.2.0-R7 [auto] 1x (720p/1080p) Docked Mode _EVTS **Fun game if you've never played it before.** ***Game:*** **Base+ Update 2.1.0+ DLC 1, 2, 3, 4, 5, 6, 99 ←** Yes, that",
+          "votes": 3,
+          "date": "2025-06-27",
+          "settings": {
+            "Emulator Version": "Build c7431bd",
+            "Driver Version": "Mesa Turnip Driver v25.2.0-R7 [auto]",
+            "Accuracy Level": "High",
+            "Resolution": "1x (720p/1080p) Docked Mode ( Emulated via toggle switch)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/377ee66d-154f-44cf-b4c4-b471a8019281",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Very smooth gameplay, some slowdows when loading new areas and while compiling shaders. DynFPS mod yeilds around 5-10 fps depending on the area (30-45fps).",
+          "votes": 1,
+          "date": "2026-02-27",
+          "settings": {
+            "Emulator Version": "0.2.0-rc1",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO Relaxed",
+            "Anti-aliasing method": "None"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/26f2900f-6ccc-4020-8e90-a22f8f19d45c"
+        }
+      ]
     }
   ],
   "routes": [

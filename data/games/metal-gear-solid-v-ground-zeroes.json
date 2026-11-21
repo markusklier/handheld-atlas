@@ -24,12 +24,78 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/98f799d0-eeb0-45c0-afe6-0b72647714e2"
         }
       ],
       "cover": {
         "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311340/header.jpg?t=1718869217",
         "source": "https://store.steampowered.com/app/311340/"
-      }
+      },
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/474a058d-9322-4116-baf5-f55604e0330c",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays perfectly at a locked 60fps. Make sure to use x64 version of proton (won't boot on arm64).",
+          "votes": 2,
+          "date": "2025-11-26",
+          "settings": {
+            "Emulator Version": "v5.1",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b03c5b46-b563-4091-a350-978b29cab563",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Runs between 40-50fps without any tweaking.",
+          "votes": 1,
+          "date": "2025-11-13",
+          "settings": {
+            "Emulator Version": "v4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Auto",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip v25",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9cd73911-af44-462d-ba38-0867c8ed4711",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "plays great, can experience slight fps drops in heavier scenes to 50, ayn high performance recommended, lowest settings",
+          "votes": 0,
+          "date": "2026-01-01"
+        }
+      ]
     },
     {
       "id": "multi-playstation-3",

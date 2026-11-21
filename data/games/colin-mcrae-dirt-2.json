@@ -5,7 +5,8 @@
   "platforms": [
     "PC",
     "PlayStation 3",
-    "Xbox 360"
+    "Xbox 360",
+    "Wii"
   ],
   "genre": "Rennspiel",
   "summary": "Die PC-Fassung läuft als statische Rekompilation nativ auf ARM64 – ohne Emulator und ohne Wine, mit Touch- und Controller-Steuerung.",
@@ -18,7 +19,39 @@
       "platforms": [
         "PC"
       ],
-      "note": "Grundlage der Rekompilation (Version 1.1, dirt2_game.exe); Games for Windows Live wird durch eine Offline-Attrappe ersetzt."
+      "note": "Grundlage der Rekompilation (Version 1.1, dirt2_game.exe); Games for Windows Live wird durch eine Offline-Attrappe ersetzt.",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/db32b964-bf34-4b7c-99f5-d50c0e3f39c6",
+          "device": "AYN Thor Pro",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Game plays mostly at 60fps with some minor drops. But it requires a few tweaks: - Within game folder \"_Redist/OpenAL/\" install \"OpenALwEAX\" so the game will open. - Download this https://github.com/kcat/openal-soft/relea",
+          "votes": 2,
+          "date": "2026-03-26",
+          "settings": {
+            "Emulator Version": "0.8.1",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-x86_64",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "box",
+            "64-bit Emulator": "box",
+            "Box64 Version": "0.4.0"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/80c95c32-208d-498f-a7c0-c700b1d80804"
+        }
+      ]
     },
     {
       "id": "playstation-3",
@@ -27,6 +60,13 @@
       "year": 2009,
       "platforms": [
         "PlayStation 3"
+      ],
+      "reports": [],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/cfb892ba-3dbd-41d5-a111-bb9edb1212f0"
+        }
       ]
     },
     {
@@ -36,6 +76,37 @@
       "year": 2009,
       "platforms": [
         "Xbox 360"
+      ]
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q2269831"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
       ]
     }
   ],
@@ -88,5 +159,23 @@
       "checkedAt": "2026-11-20"
     }
   ],
-  "updatedAt": "2026-11-20"
+  "updatedAt": "2026-11-20",
+  "wikidata": "Q2269831",
+  "wikipedia": "https://en.wikipedia.org/wiki/Colin_McRae%3A_Dirt_2",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Colin%20McRae%20-%20DiRT%202%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
 }

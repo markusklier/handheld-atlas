@@ -44,5 +44,42 @@
   ],
   "routes": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_3",
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q18533576",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/225540/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/225540/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_3f7f935e42ab9a7816a6e0f9442da5a5a6362789.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_ae30914f50d33b12e5c1d65426cc94ed4e497bfa.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_d23bcbb686ed6327782ef7fadb1e9477883c56b0.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_f8158239f6386689730677bdc4f40c797d0fbbaf.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_de2dc07d91b51447cd26f01870eb1ff14d0b4ec4.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_7ea2465254fcbd03eb88802a48edd7069ac91848.1920x1080.jpg?t=1782912719",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/225540/"
+    }
+  ]
 }

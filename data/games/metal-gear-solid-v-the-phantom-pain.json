@@ -24,12 +24,42 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f899b4dd-dfe0-4275-a883-5fa057f46dad"
         }
       ],
       "cover": {
         "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287700/library_600x900_2x.jpg",
         "source": "https://store.steampowered.com/app/287700/"
-      }
+      },
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/50cc8339-4466-402e-8f72-2d8f8e770ec0",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "",
+          "votes": 3,
+          "date": "2026-04-06",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R6",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-proton-3.0b"
+          }
+        }
+      ]
     },
     {
       "id": "multi-playstation-3",
@@ -45,8 +75,13 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Metal_Gear_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f80629f0-4af0-415e-b27f-f198725f946d"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "multi-xbox-360",

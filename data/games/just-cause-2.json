@@ -22,6 +22,120 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Just_Cause_2"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/9f7c2351-1cf8-49d9-8c2c-7a44fed8367d"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c63158b0-8807-4130-ac77-c3ba415d79a6",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Getting 70-120fps with high settings. Benchmarks show 88FPS average. Texture details High, Shadows medium, 4x AA, 16x Anisotropic, Very High Water, High Object, V-Sync Off, High-Res Shadows Off, SSAO High, Point Light On",
+          "votes": 2,
+          "date": "2025-11-28",
+          "settings": {
+            "Emulator Version": "v5.1.4",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0255851f-5630-49a3-8ee5-9902f7a998fe",
+          "device": "Retroid Pocket 6",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 0,
+          "date": "2026-08-20",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "11.1",
+            "Controller Support": "True",
+            "Graphics Driver": "Vulkan Turnip 26.1.0",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "2.4.1 WineD3D",
+            "Audio Driver": "PulseAudio",
+            "Environment Variables": "ZINK_DESCRIPTORS = lazy\nZINK_DEBUG = compact\nMESA_SHADER_CACHE_DISABLE = false\nM",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f461b730-58db-45d9-8285-8eac643a02e5",
+          "device": "AYN Odin 2",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "ayn standard performance runs perfectly, native rendering+ removes input lag slight drops to 50ish fps when many visual effects are present it is crucial to turn off vsync and lock fps to 60 or you will get stuttery pict",
+          "votes": 0,
+          "date": "2026-04-01",
+          "settings": {
+            "Emulator Version": "5.3.5",
+            "Native Rendering+": "Force Enabled",
+            "Game Resolution": "1920 x 1080",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.1.0_R6",
+            "Surface Format": "BGRA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/9da2b66a-aba4-4372-86f7-27ed38a30e49",
+          "device": "Samsung Galaxy Tab S9+",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs with 60 FPS on turnip v25.0.0 R3 and beyond",
+          "votes": 0,
+          "date": "2026-01-16"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/c1e381b8-a3b9-45d3-a69f-1730e8596fb1",
+          "device": "Samsung Galaxy S23 (SD)",
+          "emulator": "Winlator",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "GOG version. The GOG installer even runs fine inside winlator, no pc needed. I only played the tutorial area and got around 60 fps and no issues. I assume the peformance will be worse in the open world so I marked it onl",
+          "votes": 1,
+          "date": "2025-10-03",
+          "settings": {
+            "Winlator Fork": "official",
+            "Emulator Version": "10.1",
+            "Controller Support": "True",
+            "Graphics Driver": "Vortek",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "Version: 2.4.1",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.3.6"
+          }
         }
       ]
     },
@@ -58,5 +172,42 @@
   ],
   "routes": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_2",
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q1114167",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/8190/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_8d164f548b7861512aa6e13cd8d274098ade7e92.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_1e816081cb2576e404ff64c7754b1cb70cb7a937.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_99b24792c4e2da969651e1c18563b11f3ebc603c.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_09ce43830f4566293ba29349126464f0a751239e.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_726fac86f8c8cf350c7c3019cf5753e8e4a6a958.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_8ea58d7b3a6c5cc82873d8f304e068c96d888eb7.1920x1080.jpg?t=1782912561",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/8190/"
+    }
+  ]
 }

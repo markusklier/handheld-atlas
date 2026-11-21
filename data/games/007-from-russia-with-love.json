@@ -24,6 +24,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
@@ -54,6 +70,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/007_%20From%20Russia%20With%20Love%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     },
     {
@@ -68,6 +100,22 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/007:_From_Russia_with_Love_(video_game)"
+        }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/007%20-%20From%20Russia%20with%20Love%20%28Asia%29%20%28En%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Snaps/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+          "caption": "PSP-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/007%20-%20From%20Russia%20with%20Love%20%28Asia%29%20%28En%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
         }
       ]
     }
@@ -120,5 +168,23 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-21"
+  "updatedAt": "2026-11-21",
+  "wikidata": "Q1783005",
+  "wikipedia": "https://en.wikipedia.org/wiki/From_Russia_with_Love_%28video_game%29",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/007%20-%20From%20Russia%20with%20Love%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }
