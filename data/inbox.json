@@ -1,6 +1,382 @@
 {
   "leads": [
     {
+      "url": "https://github.com/agugu2000/melonDS-android",
+      "title": "agugu2000/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/PostNoth/DualScreen",
+      "title": "PostNoth/DualScreen (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Android port of melonDS",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/GUPRON98/WonderZoo-Android",
+      "title": "GUPRON98/WonderZoo-Android",
+      "excerpt": "Gameloft Wonder Zoo (Samsung S8000 WVGA Touch Edition) Native Android Port with Direct Screen Touch & In-Game Cheats",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/aidrum/candy-flick-decomp",
+      "title": "aidrum/candy-flick-decomp",
+      "excerpt": "Om Nom Candy Flick decompilation and port to Unity 6.4 Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/cjml555/xbox-recomp",
+      "title": "cjml555/xbox-recomp",
+      "excerpt": "MCLA Recomp - Android port of Midnigth Club:LA for Android devices",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/K11MCH1/Keeper-Recomped",
+      "title": "K11MCH1/Keeper-Recomped",
+      "excerpt": "Dungeon Keeper on Android 15+ (ARM64) via KeeperFX: native engine, Vulkan, touch controls, engine compiled on the phone. Unofficial; bring your own game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/EkoSaputro14/genma-recomp-android",
+      "title": "EkoSaputro14/genma-recomp-android",
+      "excerpt": "Genma Onimusha Android ARM64 (API 29+, Vulkan 1.0+) static recompilation port & APK release pipeline",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/batinium/gta-stories-recompiled",
+      "title": "batinium/gta-stories-recompiled",
+      "excerpt": "GTA Liberty City Stories and Vice City Stories recompiled for PC (Windows, Mac) and Android, joined into one world, with a mod loader. Unofficial fan project: bring your own discs.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/mxvisor/comix_zone-recomp",
+      "title": "mxvisor/comix_zone-recomp",
+      "excerpt": "Native port of Comix Zone (1996, Windows 95) to Linux, Windows and Android by static recompilation with SR. Bring your own CD.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/P1R4N351/nx-second-screen",
+      "title": "P1R4N351/nx-second-screen",
+      "excerpt": "Clean-room MIT C11 game-state waist, guarded action ring, and Android secondary-display Presentation shell for native Switch / Switch 2 handheld ports",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/ZahakJ/tandem",
+      "title": "ZahakJ/tandem",
+      "excerpt": "Open-source dual-screen game frontend for Android handhelds",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/GenKnot/DuoLauncher",
+      "title": "GenKnot/DuoLauncher",
+      "excerpt": "Dual-screen 3DS-style game launcher for the Retroid Pocket Duo",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/pablogonz12/mali-open",
+      "title": "pablogonz12/mali-open",
+      "excerpt": "Open Vulkan driver for Arm Mali GPUs on Android, in userspace on mali_kbase. MIT.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/venatrix-ritz/KantoGearBottom",
+      "title": "venatrix-ritz/KantoGearBottom",
+      "excerpt": "Opens Kanto Gear's second-screen window on the AYN Thor's bottom screen (Decky plugin + Gen1Recomp mod)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/silflemming5-jpg/fl-studio-tabarin-beat-lab",
+      "title": "silflemming5-jpg/fl-studio-tabarin-beat-lab",
+      "excerpt": "A focused workspace for building and shaping beats in FL Studio.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/ProtonyteTV/tonEMU",
+      "title": "ProtonyteTV/tonEMU",
+      "excerpt": "tonEMU Multi-System Emulator.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Keralots/BambuHelper",
+      "title": "Keralots/BambuHelper",
+      "excerpt": "ESP32 desk monitor for Bambu Lab printers. Real-time MQTT dashboard on a color TFT - temps, progress, fans, AMS, HMS errors. LAN or Cloud, dual printers, OTA, web config portal. Flash from the browser.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Rahelio/stray-bot",
+      "title": "Rahelio/stray-bot",
+      "excerpt": "A simple recreation of the Momo companion in the Stray video game",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Nataraj-EL/mindora",
+      "title": "Nataraj-EL/mindora",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/khumam/gba-duo-companions",
+      "title": "khumam/gba-duo-companions",
+      "excerpt": "Companions for GBA Duo",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/khumam/gba-duo",
+      "title": "khumam/gba-duo",
+      "excerpt": "GBADuo is a Game Boy Advance, Game Boy Color and Game Boy player for dual-screen Android handhelds.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/MrKrisSatan/GrimfallCompanion",
+      "title": "MrKrisSatan/GrimfallCompanion",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/RetroValou/Yokoi_Game_-_Watch_emulator_3ds",
+      "title": "RetroValou/Yokoi_Game_-_Watch_emulator_3ds",
+      "excerpt": "Emulator Game & Watch for 3DS : SM5A SM510 SM511_2",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Darkaxt/DualPlay",
+      "title": "Darkaxt/DualPlay",
+      "excerpt": "Console-first dual-screen libretro frontend (AYN Thor) hosting DualDex in-process",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/aurict/tiphys",
+      "title": "aurict/tiphys",
+      "excerpt": "Control your PC and servers from your phone over Tailscale: Claude Code sessions (incl. Claude using your desktop), live screen, app-aware remotes, Firefox bridge, terminal, files, git and monitoring. Flutter app + Node agent.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Absurd28/AIRUX_OS",
+      "title": "Absurd28/AIRUX_OS",
+      "excerpt": "AIRUX: a Debian 13 OS with a Windows 11-style KDE Plasma desktop, AIRA (a fully local voice assistant that won't make things up) and AIROX Code, a VS Code-based editor with AIRA built in like Copilot.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/hridaya423/phonedriver",
+      "title": "hridaya423/phonedriver",
+      "excerpt": "MCP server and CLI that lets AI agents (Claude Code, Codex, Cursor) see and control Android phones and iPhones. Reads the screen as text. Asks before it pays.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/safesstudies-spec/lwos-connect",
+      "title": "safesstudies-spec/lwos-connect",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Sheekovic/Proteus-Browser",
+      "title": "Sheekovic/Proteus-Browser",
+      "excerpt": "A browser for keeping identities separate: every profile is its own device. Chromium patches and a profile manager.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/H33CKER/tab-s10-fe-optimiser",
+      "title": "H33CKER/tab-s10-fe-optimiser",
+      "excerpt": "Reversible ADB debloat + tuning for the Galaxy Tab S10 FE+ (and most Samsung tablets). Light / balanced / aggressive profiles, works on macOS, Windows and Linux.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/deivid22srk/lemon-native",
+      "title": "deivid22srk/lemon-native",
+      "excerpt": "Lemon Native — Switch games running natively on Android dual-screen handhelds (fork of Peanuts Native)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/bee-san/LearnFromGames",
+      "title": "bee-san/LearnFromGames",
+      "excerpt": "GameSentenceMiner for Android handhelds: tap a word in a game, read the entry, one press for an Anki card.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Naman-1508/DFIR",
+      "title": "Naman-1508/DFIR",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/BranProHengker/oto",
+      "title": "BranProHengker/oto",
+      "excerpt": "A music player fork from Sonora",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/BladeRunner2042/Helpy-Utilities",
+      "title": "BladeRunner2042/Helpy-Utilities",
+      "excerpt": "A super useful utilities app made for anyone who wants free and useful smart tools in one place.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/fareedfauzi/MANTIS",
+      "title": "fareedfauzi/MANTIS",
+      "excerpt": "Multi-Source Analysis & Threat Intelligence Search",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/411A/V2RayDAR",
+      "title": "411A/V2RayDAR",
+      "excerpt": "🛸 Cross-platform V2Ray subscription radar: fetch and verify with sing-box, rank by real download speed, upload capability, and latency, then serve the winners as a ranked subscription and a LAN-wide SOCKS5/HTTP proxy - no client needed. Starts on the first working config, fails over automatically, with a protocol picker, TUI, and web dashboard.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/ZSeven-W/openpencil",
+      "title": "ZSeven-W/openpencil",
+      "excerpt": "The world's first open-source AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/hiyasitomato/vaultstream",
+      "title": "hiyasitomato/vaultstream",
+      "excerpt": "Turn your Google AI Pro (5TB) / Google Drive into a $0/mo, End-to-End Encrypted, YouTube-fast private video streaming PWA (Next.js + WebCrypto + hls.js + 360p ABR + Cloudflare Pages)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/Bucifer6/OpenDJ",
+      "title": "Bucifer6/OpenDJ",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/mridulbansal4/Mudra",
+      "title": "mridulbansal4/Mudra",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/enowel1/BothNowCamera",
+      "title": "enowel1/BothNowCamera",
+      "excerpt": "BothNow Camera Android App",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/kfrei/bestNotes",
+      "title": "kfrei/bestNotes",
+      "excerpt": "BestNotes — Advanced Note-Taking App for iPadOS (Apple Pencil Pro), Android & Web with Illustrator/Photoshop & Math Tools",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/ra901625072-boop/FamDoc",
+      "title": "ra901625072-boop/FamDoc",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/sahaya-savari/daily-spark",
+      "title": "sahaya-savari/daily-spark",
+      "excerpt": "Offline-first daily streak & habit tracking app.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/divyanshuj91/Subtone",
+      "title": "divyanshuj91/Subtone",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
+      "url": "https://github.com/knandakumar25/frog_jumper",
+      "title": "knandakumar25/frog_jumper",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-22"
+    },
+    {
       "url": "https://github.com/TanJunKiat/eden-duo",
       "title": "TanJunKiat/eden-duo (Fork von igawa6/eden-duo)",
       "excerpt": "",
@@ -5881,9 +6257,9 @@
     "summary": "Abo-Anfrage #39 (Reihe Just Cause) erledigt: 4 Spiele mit Fassungen angelegt (Wikidata/Steam/Wikipedia aus der Sitzung gesperrt, Cover folgen über den Watcher; kein Android-Port bekannt). Neu: Hyrule Warriors AoI/AoC (native Ports), 007 From Russia with Love (Xbox-Recomp), Tokyo Ghoul: JAIL (Vita-Recomp), C&C Red Alert (OpenRA-Port), RSDKv4-Dekompilation für Sonic 1/2, Verzeichnis SwitchRecomp. Verworfen: LandOfTheDroid (liefert Spieldateien mit), Thor Native FG, Thor Instant Replay, ZyperOS, ReSkate-Fix (nur ArmadaOS), Baldi-Reskin, Lasertank, Enigma, License Revoked, Broomm. Bildprüfung: 9 bestätigt, 1 fremdes entfernt; github.com-Bilder (user-attachments) aus der Sitzung nicht ladbar. Datenqualität: Sonic 1/2 mit Jahren (behebt die Remake-Meldung zu Sonic 2006); Test test_setup an Gerätedaten in learned.json angepasst. Offen: Korra (kein Android-Build), DMC3-/Cuphead-Companion (unveröffentlicht), Kaldora Thor, Pip-Boy-Mod, PS4-Runtime-Ports (Raiden V u. a., Android ungeprüft), Final Fantasy Resonance (Spiel nicht belegbar); Warteschlange leer, Dual-Screen-Suchlauf erst am 26.11. fällig."
   },
   "watcher": {
-    "lastRun": "2026-11-21T13:30:55Z",
-    "newLeads": 48,
-    "newEvents": 33
+    "lastRun": "2026-11-22T13:24:47Z",
+    "newLeads": 47,
+    "newEvents": 21
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

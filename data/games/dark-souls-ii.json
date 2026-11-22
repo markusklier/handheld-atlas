@@ -35,7 +35,11 @@
       "year": 2014,
       "platforms": [
         "PC"
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/236430/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/236430/"
+      }
     },
     {
       "id": "sotfs-xbox-360",

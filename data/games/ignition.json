@@ -57,6 +57,13 @@
           "source": "https://github.com/mxvisor/ignition-recomp",
           "credit": "Ignition – native Portierung (SR)",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/ignition-recomp/HEAD/docs/android.gif",
+          "caption": "A race on an Android phone, with the port's on screen buttons: the picture switc",
+          "source": "https://github.com/mxvisor/ignition-recomp",
+          "credit": "Ignition – native Portierung (SR)",
+          "check": "readme"
         }
       ],
       "reports": [],

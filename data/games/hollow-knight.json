@@ -632,7 +632,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/launcher.webp",
+          "caption": "The Dual Souls launcher with Hollow Knight and Silksong ready to play",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-play.webp",
+          "caption": "Hollow Knight in Dirtmouth on the upper screen",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-lower.webp",
+          "caption": "Hollow Knight lower screen: HUD header above the Charms page",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/ss-play.webp",
+          "caption": "Silksong in Bone Bottom on the upper screen",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/ss-lower.webp",
+          "caption": "Silksong lower screen: HUD header above the Bone Bottom map",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/mods.webp",
+          "caption": "The in game Mods menu, World group, paused over Hollow Knight",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",

@@ -22,6 +22,10 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/4e4dc5c5-00cc-469a-965b-3cf395975383"
         }
       ],
       "cover": {
@@ -39,7 +43,8 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "ps2-psp",
@@ -53,6 +58,10 @@
         {
           "label": "Quelle",
           "url": "https://en.wikipedia.org/wiki/List_of_Silent_Hill_media"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/5a90d541-320b-4f4b-9439-16a79da5defa"
         }
       ],
       "cover": {
@@ -69,6 +78,32 @@
           "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Titles/Silent%20Hill%20-%20Shattered%20Memories%20%28USA%29.png",
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6f7e90ee-c10e-4ee9-ab3a-9f5a30e1480f",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "PPSSPP",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "This game works perfectly without any issue. In addition, the game is functioning flawlessly at ***8X PSP (4k).*** This game can be played on a less powerful system with a similar setting that is not as intensive. [Game ",
+          "votes": 2,
+          "date": "2025-09-27",
+          "settings": {
+            "Emulator Version": "1.19.3",
+            "Backend": "Vulkan (Recommended)",
+            "Rendering Resolution": "8",
+            "Antialiasing (MSAA)": "Off",
+            "VSync": "True",
+            "Texture Filtering": "Auto (Default)",
+            "Anisotropic Filtering": "1",
+            "Texture Scaling": "Off",
+            "Lower Resolution for Effects": "Off",
+            "Multithreaded (MT)": "True"
+          }
         }
       ]
     },

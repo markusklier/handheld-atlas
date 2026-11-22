@@ -23,7 +23,11 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Just_Cause_3"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/225540/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/225540/"
+      }
     },
     {
       "id": "ps4-xbox-one",

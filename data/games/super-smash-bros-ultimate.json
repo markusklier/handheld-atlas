@@ -12,6 +12,206 @@
       "type": "original",
       "platforms": [
         "Nintendo Switch"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b0adafa2-fc2a-4839-a1c9-3ccc69e5b956",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 5,
+          "date": "2025-08-29",
+          "settings": {
+            "Emulator Version": "0.0.3 RC3",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T21-AYANEO.adpkg|||turnip_mrpurple_T21-AYANE",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ffdcc5d8-0ee1-4b92-a03a-df403eb83a6c",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "In Eden, the Setting named Debug -> CPU Backend has to be set to Dynamic (JIT). Otherwise it will crash. The game can take up to 10 seconds to load. I played with Update 13.0.2 with all DLC on Firmware 20.5.0. I played o",
+          "votes": 4,
+          "date": "2026-01-19",
+          "settings": {
+            "Emulator Version": "0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "0.75",
+            "Disk shader cache": "True",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bb13b12a-1d0e-489a-b285-1d8d0e7e1579",
+          "device": "AYN Odin 2 Mini Pro",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 3,
+          "date": "2025-06-20",
+          "settings": {
+            "Emulator Version": "5100e249",
+            "Driver Version": "Mesa Turnip Driver v25.1.0 R1",
+            "Accuracy Level": "Normal",
+            "Resolution": "1X (720p/1080p)",
+            "VSync Mode": "Immediate (Off)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Docked Mode": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f9c8794a-9446-4c5b-828e-46a034607034",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Driver: Balemuni Apex v2 Ultimate (SD 8 gen 2) Sync memory operations: on Enable buffer history: on Optimized vertex buffers: on Gpu async emulation: As needed Companion: off",
+          "votes": 2,
+          "date": "2026-11-01"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/696dd9a3-42c1-428d-aef4-09f7a8685ed8",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-08-18"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d025db83-bcf7-4746-bea0-b20030ace4aa",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 2,
+          "date": "2026-07-05"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/7a2df6d3-196f-4a8d-843d-952615baa0b1",
+          "device": "AYN Thor Max",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Runs at a consistent 60fps with minimal stutters with Mr purple t26 drivers. Far sharpness set at 25%, FSR 2.0 quality",
+          "votes": 2,
+          "date": "2026-03-22",
+          "settings": {
+            "Emulator Version": "01c0420",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T26-toasted.adpkg|||turnip_mrpurple_T26-toas",
+            "Accuracy Level": "Normal",
+            "Resolution": "1x (720/1080)",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a5cf7459-0991-4aca-801e-9d03204ae597",
+          "device": "AYN Thor Max",
+          "emulator": "Citron",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Perfect but saving custom match settings crashes the game.",
+          "votes": 0,
+          "date": "2026-03-31"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/bea0b16d-c92e-49b6-9a1c-eeca7d0e383c",
+          "device": "Samsung Galaxy S23 Ultra (SD)",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "4",
+          "votes": 0,
+          "date": "2026-01-26"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d725bbce-b795-4d54-ae96-7aae3a1e19e1",
+          "device": "AYN Odin 2 Portal Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Full speed most of the time, only on shader compilation the fps drops a bit.",
+          "votes": 4,
+          "date": "2026-05-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3c459afa-ddf1-4d60-b4a7-0ccc9cc8c081",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Full speed most of the time, only on shader compilation the fps drops a bit.",
+          "votes": 2,
+          "date": "2026-05-02"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ba4d4cdd-22d6-49a9-8e28-42d087cee10d",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Great with minimal frame dips",
+          "votes": 0,
+          "date": "2026-03-31"
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/3792851c-90ec-420a-ba2f-ac8a77d6ec14"
+        }
       ]
     }
   ],

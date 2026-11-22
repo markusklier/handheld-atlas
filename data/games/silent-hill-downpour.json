@@ -29,9 +29,38 @@
         {
           "label": "DownpourRecomp (Windows)",
           "url": "https://github.com/LittleBitUA/DownpourRecomp"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/047b7196-dc4c-4031-9f20-7685d6a91108"
         }
       ],
-      "note": "Für die Xbox-360-Fassung gibt es seit 2026 den inoffiziellen nativen Windows-Port DownpourRecomp (statische Rekompilierung, eigene Spieldaten nötig); eine Android-Fassung nennt das Projekt nicht. Auf Android nur über die experimentelle Xbox-360- bzw. PS3-Emulation. Für Windows gibt es den Community-Port DownpourRecomp (aus eigenen Xbox-360-Spieldaten, 60 FPS); eine Android-Fassung davon gibt es nicht."
+      "note": "Für die Xbox-360-Fassung gibt es seit 2026 den inoffiziellen nativen Windows-Port DownpourRecomp (statische Rekompilierung, eigene Spieldaten nötig); eine Android-Fassung nennt das Projekt nicht. Auf Android nur über die experimentelle Xbox-360- bzw. PS3-Emulation. Für Windows gibt es den Community-Port DownpourRecomp (aus eigenen Xbox-360-Spieldaten, 60 FPS); eine Android-Fassung davon gibt es nicht.",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d7e05939-52d2-4266-97b9-5dced3b280ba",
+          "device": "AYN Thor Pro",
+          "emulator": "RPCSX",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Using custom driver v24.0.0r12 - aggressive beta extensions (from K11MCH1) fps reaches 30 a lot of the time but there are dips with more intensive effects happening and during shader compilation. Overall very much playab",
+          "votes": 0,
+          "date": "2026-01-04",
+          "settings": {
+            "Emulator Version": "20250425",
+            "Renderer": "Vulkan",
+            "Resolution Scale": "100",
+            "Anisotropic Filter": "Automatic",
+            "Anti-Aliasing": "Disabled",
+            "Frame Limit": "Auto",
+            "SPU Threads": "2",
+            "SPU Block Size": "Safe",
+            "Average FPS": "25-30"
+          }
+        }
+      ]
     },
     {
       "id": "multi-xbox-360",

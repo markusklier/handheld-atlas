@@ -137,7 +137,11 @@
             "Box64 Version": "0.3.6"
           }
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/8190/"
+      }
     },
     {
       "id": "playstation-3",

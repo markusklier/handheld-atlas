@@ -22,7 +22,11 @@
           "label": "Steam",
           "url": "https://store.steampowered.com/app/333640/Caves_of_Qud/"
         }
-      ]
+      ],
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/333640/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/333640/"
+      }
     }
   ],
   "routes": [

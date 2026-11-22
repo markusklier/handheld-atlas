@@ -1,6 +1,254 @@
 {
   "entries": [
     {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "super-smash-bros-ultimate",
+      "text": "12 Community-Berichte von EmuReady für Super Smash Bros. Ultimate (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "super-smash-bros-melee",
+      "text": "1 Community-Berichte von EmuReady für Super Smash Bros. Melee (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "super-smash-bros-for-nintendo-3ds",
+      "text": "1 Community-Berichte von EmuReady für Super Smash Bros. for Nintendo 3DS (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "super-monkey-ball",
+      "text": "1 Community-Berichte von EmuReady für Super Monkey Ball (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "super-monkey-ball-2",
+      "text": "1 Community-Berichte von EmuReady für Super Monkey Ball 2 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "silent-hill-shattered-memories",
+      "text": "1 Community-Berichte von EmuReady für Silent Hill: Shattered Memories (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "route-updated",
+      "game": "silent-hill-downpour",
+      "text": "1 Community-Berichte von EmuReady für Silent Hill: Downpour (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "OoT Native for Android v0.2.0-beta.2 (Vorabversion) veröffentlicht.",
+      "project": "oot-native",
+      "games": [
+        "the-legend-of-zelda-ocarina-of-time-2026"
+      ],
+      "url": "https://github.com/P1R4N351/oot-android/releases/tag/v0.2.0-beta.2"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Dark Souls II: SotFS Android (Recomp) v0.1.24-test (Vorabversion) veröffentlicht.",
+      "project": "ds2-sotfs-recomp",
+      "games": [
+        "dark-souls-ii"
+      ],
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp/releases/tag/v0.1.24-test"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "MW3 Recompiled v0.1.1 veröffentlicht.",
+      "project": "mw3-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-3"
+      ],
+      "url": "https://github.com/yassinsolim/mw3-recomp/releases/tag/v0.1.1"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "MW2 Recompiled v0.1.1 veröffentlicht.",
+      "project": "mw2-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-2"
+      ],
+      "url": "https://github.com/yassinsolim/mw2-recomp/releases/tag/v0.1.1"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "ss-delta v0.4.2 veröffentlicht.",
+      "project": "ss-delta",
+      "games": [
+        "soul-sacrifice-delta"
+      ],
+      "url": "https://github.com/vita-recomps/ss-delta/releases/tag/v0.4.2"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "FTLDS v0.24 veröffentlicht.",
+      "project": "ftlds",
+      "games": [
+        "ftl-faster-than-light"
+      ],
+      "url": "https://github.com/mrmushrooms11/FTLDS/releases/tag/v0.24"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "TWW HD Recompiled – Android v0.9.9d veröffentlicht.",
+      "project": "zeldawwhdrecomp-android",
+      "games": [
+        "the-legend-of-zelda-the-wind-waker"
+      ],
+      "url": "https://github.com/GreenNaugahyde/ZeldaWWHDRecompAndroid/releases/tag/v0.9.9d"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "DW2003 Dual Screen v1.7 veröffentlicht.",
+      "project": "dw2003-dual-screen",
+      "games": [
+        "digimon-world-3"
+      ],
+      "url": "https://github.com/rsigristc/DW3-DS-Android/releases/tag/v1.7"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Obtainium Recomp Pack pack-2026.11.22-1126 veröffentlicht.",
+      "project": "obtainium-recomp-pack",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.22-1126"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "WoW Forever for Android v2.4.6 veröffentlicht.",
+      "project": "wow-forever-android",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/jaredgei/wow-forever-android/releases/tag/v2.4.6"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "MarathonRecomp Android v0.3.2 veröffentlicht.",
+      "project": "marathonrecomp-android",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/SansNope/MarathonRecomp-Android/releases/tag/v0.3.2"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Catherine: Full Body Port v0.1.1 veröffentlicht.",
+      "project": "catherine-recomp",
+      "games": [
+        "catherine"
+      ],
+      "url": "https://github.com/IamWilmar/catherine-recomp/releases/tag/v0.1.1"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Ninja Gaiden Black Recomp v0.9.80 veröffentlicht.",
+      "project": "ngbrecomp",
+      "games": [
+        "ninja-gaiden-2004"
+      ],
+      "url": "https://github.com/gamboozino/ngbrecomp/releases/tag/v0.9.80"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Fractal v0.2-beta (Vorabversion) veröffentlicht.",
+      "project": "fractal",
+      "url": "https://github.com/dfdx047/Fractal/releases/tag/v0.2-beta"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "FF9Recomp v0.1.47 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.47"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.14 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.14"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "SuperMetroidDecomp v0.9.0 veröffentlicht.",
+      "project": "supermetroiddecomp",
+      "games": [
+        "super-metroid"
+      ],
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp/releases/tag/v0.9.0"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "nsmbu-recomp v0.10.0 veröffentlicht.",
+      "project": "nsmbu-recomp",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "url": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/tag/v0.10.0"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.74 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.74"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "HollowKnightAndroid v2.0.80 veröffentlicht.",
+      "project": "hollowknightandroid",
+      "games": [
+        "hollow-knight"
+      ],
+      "url": "https://github.com/Darkaxt/HollowKnightAndroid/releases/tag/v2.0.80"
+    },
+    {
+      "date": "2026-11-22",
+      "type": "release",
+      "text": "GBA DS v1.5.7 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.5.7"
+    },
+    {
       "date": "2026-11-21",
       "type": "route-updated",
       "game": "metal-gear-solid-v-the-phantom-pain",
@@ -7830,252 +8078,6 @@
       "date": "2026-11-08",
       "by": "ai-research",
       "game": "bloodborne"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: The Old Hunters Edition (KI-Recherche)",
-      "url": "https://www.fromsoftware.jp/ww/detail.html?csm=096",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: PlayStation Hits (KI-Recherche)",
-      "url": "https://blog.playstation.com/archive/2018/06/19/introducing-playstation-hits-acclaimed-ps4-games-for-only-19-99",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Bloodborne-Android mit Hunter’s Atlas (Game of the Year Edition, KI-Recherche)",
-      "url": "https://github.com/ducvd89/Bloodborne-Android",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Hunter’s Atlas – Android-Integration (KI-Recherche)",
-      "url": "https://github.com/MikeTat1988/HuntersAtlas",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Xbox (and switch) UI for Bloodborne (KI-Recherche)",
-      "url": "https://www.nexusmods.com/bloodborne/mods/30",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: More Options At Lamps (KI-Recherche)",
-      "url": "https://www.nexusmods.com/bloodborne/mods/107",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Reduced Physics (KI-Recherche)",
-      "url": "https://www.nexusmods.com/bloodborne/mods/114",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "bloodborne"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "pokemon-rejuvenation",
-      "text": "Dual Screen: Rejuv Dual für Pokémon Rejuvenation (Suchlauf)",
-      "url": "https://github.com/Enecchii/rejuv-dual/blob/main/README.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "xenogears",
-      "text": "Dual Screen: Xenogears-Link für Xenogears (Suchlauf)",
-      "url": "https://github.com/Nihilspire/Xenogears-Link/blob/main/README.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "world-of-warcraft-forever",
-      "text": "Dual Screen: DS Forever für World of Warcraft: Forever (Suchlauf)",
-      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.0"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "metroid-fusion",
-      "text": "Dual Screen: GBA DS für Metroid Fusion, Metroid: Zero Mission und Castlevania: Aria of Sorrow (Suchlauf)",
-      "url": "https://github.com/kyannon/gba-ds/blob/main/CHANGELOG.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "stardew-valley",
-      "text": "Dual Screen: Thor Dual Screen für Stardew Valley (Suchlauf)",
-      "url": "https://github.com/hung-eggie-do-covergo/stardew-thor-dual-screen/blob/main/README.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "bloodborne",
-      "text": "Dual Screen: Bloodborne · Thor Companion für Bloodborne (Suchlauf)",
-      "url": "https://github.com/emerytech/Bloodborne-Android"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "tomba-2-the-evil-swine-return",
-      "text": "Dual Screen: Tomba2RecompDS für Tomba! 2: The Evil Swine Return (Suchlauf)",
-      "url": "https://github.com/igawa6/Tomba2RecompDS"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "hollow-knight-silksong",
-      "text": "Dual Screen: Silksong Android für Hollow Knight: Silksong (Suchlauf)",
-      "url": "https://github.com/jakobkhansen/SilksongAndroid"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "hollow-knight",
-      "text": "Dual Screen: HK: Dual Souls für Hollow Knight (Suchlauf)",
-      "url": "https://github.com/igawa6/dualsouls/blob/main/README.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "the-legend-of-zelda-twilight-princess",
-      "text": "Dual Screen: Dusklight Dual Screen für The Legend of Zelda: Twilight Princess (Suchlauf)",
-      "url": "https://github.com/igawa6/dusklight"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "crash-team-racing",
-      "text": "Dual Screen: CTR-DS für Crash Team Racing (Suchlauf)",
-      "url": "https://github.com/igawa6/ctr-native-android"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "metroid",
-      "text": "Dual Screen: Metroid Dual / Metroid Link für Metroid (Suchlauf)",
-      "url": "https://github.com/Nihilspire/Metroid-Dual/blob/main/README.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "route-added",
-      "by": "ai-research",
-      "game": "the-legend-of-zelda-the-wind-waker",
-      "text": "Dual Screen: ZeldaWWHDRecomp für The Legend of Zelda: The Wind Waker HD (Suchlauf)",
-      "url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/blob/main/docs/android-device-checklist.md"
-    },
-    {
-      "date": "2026-11-08",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Legendary Edition (KI-Recherche)",
-      "url": "https://www.shacknews.com/article/78901/skyrim-legendary-edition-confirmed-for-june-4",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim VR (KI-Recherche)",
-      "url": "https://elderscrolls.bethesda.net/en-US/news/4cHsGJ5fssgCaAUEwaMAWO/the-elder-scrolls-v-skyrim-vr-and-skyrim-for-nintendo-switch-launch-details",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim: Very Special Edition (KI-Recherche)",
-      "url": "https://skills-store.amazon.com/deeplink/dp/B07D6STSX8",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Special Edition – Next-Gen-Fassung (KI-Recherche)",
-      "url": "https://elderscrolls.bethesda.net/en-US/news/skyrim-anniversary-edition-faq",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Skyrim Anniversary Edition für Nintendo Switch 2 (KI-Recherche)",
-      "url": "https://bethesda.net/en-US/news/the-elder-scrolls-v-skyrim-anniversary-edition-out-now-on-nintendo-switch-2",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "screenshot-added",
-      "text": "Screenshots für SkyrimSE-DualScreen auf dem Thor (KI-Recherche)",
-      "url": "https://raw.githubusercontent.com/Plus-Cloud/SkyrimSE-DualScreen/main/README.md",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Skyrim SE mit ProfMags' DualScreen Launcher (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://www.reddit.com/r/AynThor/comments/1w32w8v/9_new_dual_screen_mods_available/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Ayn Dual Screen für Skyrim SE – experimenteller Browser-Companion (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://raw.githubusercontent.com/Abacus1829/ayn-dual-screen/main/skyrimse/README.md",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Special Edition über GameHub mit dokumentiertem Odin-2-Profil (Skyrim Special Edition für PC, KI-Recherche)",
-      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1mksra7/the_elder_scrolls_v_skyrim_on_odin_2_portal/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Legendary Edition über GameHub mit Android-Handheld-Modprofil (Skyrim Legendary Edition, KI-Recherche)",
-      "url": "https://www.nexusmods.com/skyrim/mods/122056?tab=description",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "the-elder-scrolls-v-skyrim"
     }
   ]
 }

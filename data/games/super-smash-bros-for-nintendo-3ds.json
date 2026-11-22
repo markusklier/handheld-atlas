@@ -44,6 +44,38 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
         }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/72a5ea6f-d9f6-472c-8cc6-85cc4abdf9c8",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Small stutters occasionally",
+          "votes": 0,
+          "date": "2025-12-05",
+          "settings": {
+            "Emulator Version": "2123.2",
+            "Graphics Driver": "Default System Driver",
+            "Graphics API": "OpenGLES",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "native",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a25986b2-6fea-4cf0-a8e5-094c6ad32217"
+        }
       ]
     }
   ],
