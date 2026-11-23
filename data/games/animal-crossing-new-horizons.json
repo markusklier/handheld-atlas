@@ -28,7 +28,7 @@
           "ratingDe": "Perfekt",
           "rank": 1,
           "summary": "Beautiful and clean gameplay.",
-          "votes": 4,
+          "votes": 5,
           "date": "2025-08-15",
           "settings": {
             "Emulator Version": "0.0.3-r2-Optimised",
@@ -93,6 +93,18 @@
         },
         {
           "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/67fb4923-d139-4ab7-83ef-7455729ce8f8",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Everything works great. Stable 720p at 30 FPS, including in docked mode. After 25+ hours of gameplay, I experienced one freeze when entering a building. I had to restart the game and lost some progress. Didn't encounter ",
+          "votes": 1,
+          "date": "2026-10-10"
+        },
+        {
+          "source": "EmuReady",
           "url": "https://www.emuready.com/listings/2b3dad99-5779-49c5-9833-d870464ac0a5",
           "device": "AYN Thor Base",
           "emulator": "Eden",
@@ -102,18 +114,6 @@
           "summary": "",
           "votes": 1,
           "date": "2026-05-30"
-        },
-        {
-          "source": "EmuReady",
-          "url": "https://www.emuready.com/listings/67fb4923-d139-4ab7-83ef-7455729ce8f8",
-          "device": "AYN Thor Pro",
-          "emulator": "Eden",
-          "rating": "Perfect",
-          "ratingDe": "Perfekt",
-          "rank": 1,
-          "summary": "Everything works great. Stable 720p at 30 FPS, including in docked mode. After 25+ hours of gameplay, I experienced one freeze when entering a building. I had to restart the game and lost some progress. Didn't encounter ",
-          "votes": 0,
-          "date": "2026-10-10"
         },
         {
           "source": "EmuReady",

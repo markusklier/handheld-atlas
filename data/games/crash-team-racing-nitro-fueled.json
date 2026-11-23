@@ -51,8 +51,13 @@
         {
           "label": "Quelle",
           "url": "https://blog.activision.com/ca/en/crash-bandicoot/2019-03/Crash-Team-Racing-Nitro-Fueled-Turbo-Boosts-into-PAX-East-Giving-Fans-Their-First-Hands-On-Experience"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/586ebe60-80be-4d8a-a81d-64fbf9d8019d"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "nitro-fueled-oxide",

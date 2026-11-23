@@ -172,9 +172,67 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q114995908"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/0293f82a-1f11-4d51-b34b-87f9036b687c"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/6d9705ca-3d3d-45f2-b199-636dc87334d7"
         }
       ],
-      "note": "Early Access ab Oktober 2022, Vollversion Juni 2023."
+      "note": "Early Access ab Oktober 2022, Vollversion Juni 2023.",
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/25bc6012-b628-4494-a5fe-c3dcfb5edaf5",
+          "device": "AYN Odin 2 Portal",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Only runs with Steam client beta + Steam input. 1080p or 720p @ 30 FPS",
+          "votes": 2,
+          "date": "2026-07-03",
+          "settings": {
+            "Emulator Version": "1.1.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1920x1080 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "Startup Selection": "Normal (Load all services)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/89e12e48-118c-4b6a-a399-fb5b0db6b837",
+          "device": "AYN Odin 2 Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Using latest GameHub i managed to run my steam version of the game with cloud saves",
+          "votes": 2,
+          "date": "2025-09-11",
+          "settings": {
+            "Emulator Version": "5.0.1",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "GPU Driver": "turnip_v25.2.0_R13",
+            "DX Wrapper": "DXVK",
+            "DXVK Version": "dxvk-2.6-arm64ec-async\nvkd3d-proton-2.14.1",
+            "Audio Driver": "PulseAudio",
+            "Translation Parameters": "Performance",
+            "CPU Translator": "FEX_20250910",
+            "Game Resolution": "1920x1080",
+            "Game Version": "v1.0.0.1702"
+          }
+        }
+      ]
     },
     {
       "id": "macintosh-2023",

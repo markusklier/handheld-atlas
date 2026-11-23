@@ -125,7 +125,63 @@
       "platforms": [
         "PC"
       ],
-      "year": 2022
+      "year": 2022,
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e58a085b-7286-4dce-9d79-9da8b4a59504",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Manage to obtain 60FPS in menu and stable 30FPS in game.",
+          "votes": 5,
+          "date": "2025-11-06",
+          "settings": {
+            "Emulator Version": "v0.4.0",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Intermediate",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R2",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/df00ccc8-f813-4ae0-9ffc-ee70188dc6d3",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Limited testing, four about 15 minutes. Took a little while to load shaders and such, but was able to get a fairly consistent 30 in the combat, with about 20 or so in the town with all the NPCs. I would imagine the FPS w",
+          "votes": 2,
+          "date": "2026-04-13",
+          "settings": {
+            "Emulator Version": "0.9.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-10.0-arm64ec",
+            "Exec Arguments": "-force-gfx-direct",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "pulse",
+            "Steam Type": "normal",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/055ca23c-858c-4c1a-bdf4-ed2fb06e05a4"
+        }
+      ]
     },
     {
       "id": "nintendo-switch-macintosh",
