@@ -1,0 +1,127 @@
+{
+  "id": "need-for-speed-carbon",
+  "title": "Need for Speed: Carbon",
+  "franchise": "Need for Speed",
+  "platforms": [
+    "PC",
+    "PlayStation 2",
+    "Xbox",
+    "Xbox 360",
+    "Nintendo GameCube",
+    "PlayStation 3",
+    "Wii"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Straßenrennen mit Canyon-Duellen (2006); die Xbox-Fassung läuft als inoffizieller nativer Android-Port mit Touch- und Controller-Steuerung.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PC"
+      ]
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 2"
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports."
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360"
+      ]
+    },
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Nintendo GameCube"
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Wii (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Wii"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "carbon-android",
+      "name": "Need for Speed: Carbon for Android",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Xbox-Disc (.iso oder default.xbe)",
+      "runtime": "XboxXBE-Recomp, Vulkan, SDL3",
+      "projects": [
+        "carbon-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "upscaling"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Xbox-Disc von NFS Carbon (als .iso oder default.xbe mit NFS-Ordner)"
+      ],
+      "benefit": "Fertige APK: Spiel kopieren, starten. Laut README auf Handys getestet: Start, Menüs, Karriere-Intro und Rennen laufen.",
+      "caveat": "Work in progress; Canyon- und Drift-Rennen sind absichtlich sehr dunkel (Helligkeit im Menü anpassen).",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Chizuui/Carbon-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

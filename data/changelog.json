@@ -3,6 +3,173 @@
     {
       "date": "2026-11-23",
       "type": "route-updated",
+      "by": "agent",
+      "game": "warioware-twisted",
+      "text": "Reihe korrigiert: WarioWare-Spiele bilden eine eigene Reihe „WarioWare“ statt „Wario“",
+      "url": "https://en.wikipedia.org/wiki/WarioWare"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "grand-theft-auto-vice-city-stories",
+      "text": "Neuer Spielweg: GTA Stories Recompiled – PS2-Fassungen von LCS und VCS nativ auf Android (KI-Fund)",
+      "url": "https://github.com/batinium/gta-stories-recompiled"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "comix-zone",
+      "text": "Neuer Spielweg: nativer Android-Port der Windows-95-Fassung von Comix Zone (KI-Fund)",
+      "url": "https://github.com/mxvisor/comix_zone-recomp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "onimusha-warlords",
+      "text": "Neue Fassung Genma Onimusha (Xbox) mit experimentellem nativem Android-Port (KI-Fund)",
+      "url": "https://github.com/EkoSaputro14/genma-recomp-android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "warioware-twisted",
+      "text": "Neuer Spielweg: WarioWare: Twisted! Recomp mit Gyro-Steuerung auf Android (KI-Fund)",
+      "url": "https://github.com/mstan/WarioWareTwistedRecomp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "sonic-r",
+      "text": "Neues Spiel: Sonic R – nativer Android-Port der PC-Dekompilation (KI-Fund)",
+      "url": "https://github.com/ZinexDa/sonic-r-android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "spider-man-2",
+      "text": "Neues Spiel: Spider-Man 2 (2004) – Xbox-Fassung als selbst gebauter nativer Android-Port (KI-Fund)",
+      "url": "https://github.com/kivi-man/SpiderMan2-2004-PC-Android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "need-for-speed-carbon",
+      "text": "Neues Spiel: Need for Speed: Carbon – Xbox-Fassung als nativer Android-Port (KI-Fund)",
+      "url": "https://github.com/Chizuui/Carbon-Android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "dungeon-keeper",
+      "text": "Neues Spiel: Dungeon Keeper – KeeperFX nativ auf Android (Keeper Recomped, archiviert) (KI-Fund)",
+      "url": "https://github.com/K11MCH1/Keeper-Recomped"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "persona-5-royal",
+      "text": "Neuer Spielweg: P5R-Port für Retroid Pocket 5/Flip 2 – nativer Android-Port der Switch-Fassung, nur Snapdragon 865 (KI-Fund)",
+      "url": "https://github.com/IamWilmar/p5r-recomp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "need-for-speed-underground-2",
+      "text": "Neuer Spielweg: Underground 2 for Android – Xbox-Fassung statisch rekompiliert (früher Stand, KI-Fund)",
+      "url": "https://github.com/PotatoRecomp/Underground-2-Android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "carmageddon-ii-carpocalypse-now",
+      "text": "Neues Spiel: Carmageddon II – nativer Android-Port per APK-Builder aus der GOG-Fassung (KI-Fund)",
+      "url": "https://github.com/afrowebster/Carmageddon-2-Android-port"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "sea-dogs-to-each-his-own",
+      "text": "Neues Spiel: Sea Dogs: To Each His Own – Android-Port Seawolves auf der Storm Engine (KI-Fund)",
+      "url": "https://github.com/maxyo/seawolves"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "new-super-mario-bros-wii",
+      "text": "Neuer Spielweg: NSMB Wii Recompilation – nativer Android-Port, auch für Newer SMBW (KI-Fund)",
+      "url": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "sonic-shuffle",
+      "text": "Neuer Spielweg: Sonic Shuffle Recompiled – nativer Android-Port der Dreamcast-Fassung (KI-Fund)",
+      "url": "https://github.com/ch1ppyone/shuffle-recomp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "super-mario-rpg-2023",
+      "text": "Neues Spiel: Super Mario RPG (2023) – Remake als nativer Recomp-Port, laut Projekt 60 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/ElKiro1311/smrpg-recompiled-android"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "fight-night-round-3",
+      "text": "Neues Spiel: Fight Night Round 3 – Xbox-Fassung nativ auf Android, Kampfstatistik auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/Oxide-Shift/FightNight3OGX"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "game-added",
+      "by": "agent",
+      "game": "call-of-duty-4-modern-warfare",
+      "text": "Neues Spiel: Call of Duty 4: Modern Warfare – Xbox-360-Recomp, laut Projekt ~119 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/yassinsolim/cod4-recomp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-added",
+      "by": "agent",
+      "game": "castlevania-symphony-of-the-night",
+      "text": "Neue Spielwege: SymphonyRecomp für Android und Dual-Screen-Erweiterung mit Live-Karte (KI-Fund)",
+      "url": "https://github.com/pettersdark/SymphonyRecomp-DUAL"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neue Launcher für Dual-Screen-Handhelds: Járngreipr und Genkan (KI-Fund)",
+      "url": "https://github.com/BrianJr03/Jarngreipr"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "mod-added",
+      "by": "agent",
+      "game": "minecraft",
+      "text": "Neuer Mod: SKT’s Mobile Performance Pack für Java-Launcher auf Android (KI-Fund)",
+      "url": "https://modrinth.com/modpack/skt-mpp"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "route-updated",
       "game": "grand-theft-auto-v",
       "text": "12 Community-Berichte von EmuReady für Grand Theft Auto V (Geräte mit dem Chip des AYN Thor)"
     },

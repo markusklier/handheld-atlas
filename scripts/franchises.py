@@ -27,7 +27,7 @@ SERIES = [
     ('Mario Party', 'Mario Party'), ('Super Mario Party', 'Mario Party'), ('Mario Kart', 'Mario Kart'),
     ('Super Mario Kart', 'Mario Kart'), ('Mario Tennis', 'Mario Sports'), ('Mario Golf', 'Mario Sports'),
     ('Mario Strikers', 'Mario Sports'), ('Mario Superstar Baseball', 'Mario Sports'), ('Mario Power Tennis', 'Mario Sports'),
-    ('Wario', 'Wario'), ("Yoshi's", 'Yoshi'), ('Yoshi', 'Yoshi'), ('Donkey Kong', 'Donkey Kong'),
+    ('WarioWare', 'WarioWare'), ('Wario', 'Wario'), ("Yoshi's", 'Yoshi'), ('Yoshi', 'Yoshi'), ('Donkey Kong', 'Donkey Kong'),
     ('Super Smash Bros', 'Super Smash Bros.'), ('Kirby', 'Kirby'), ('Metroid', 'Metroid'),
     ('Pokémon', 'Pokémon'), ('Pokemon', 'Pokémon'), ('The Legend of Zelda', 'The Legend of Zelda'),
     ('Fire Emblem', 'Fire Emblem'), ('Xenoblade', 'Xenoblade Chronicles'), ('Animal Crossing', 'Animal Crossing'),

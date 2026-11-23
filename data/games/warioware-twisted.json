@@ -1,7 +1,7 @@
 {
   "id": "warioware-twisted",
   "title": "WarioWare: Twisted!",
-  "franchise": "Wario",
+  "franchise": "WarioWare",
   "platforms": [
     "Game Boy Advance"
   ],
@@ -24,7 +24,7 @@
   "versions": [
     {
       "id": "game-boy-advance",
-      "name": "Game Boy Advance",
+      "name": "Game Boy Advance (2004)",
       "type": "original",
       "platforms": [
         "Game Boy Advance"
@@ -44,11 +44,53 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Nintendo_-_Game_Boy_Advance"
         }
-      ]
+      ],
+      "year": 2004
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "warioware-twisted-recomp",
+      "name": "WarioWare: Twisted! Recomp",
+      "release": "game-boy-advance",
+      "kind": "recomp",
+      "edition": "GBA-Modul",
+      "runtime": "gbarecomp",
+      "projects": [
+        "warioware-twisted-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigener Dump des Moduls",
+        "Eigenes GBA-BIOS"
+      ],
+      "benefit": "Der eingebaute Kreisel des Moduls wird über den Gyrosensor des Geräts nachgebildet – Menüs, Mikrospiele und Spielstände laufen.",
+      "caveat": "Experimentelle Vorschau, auf Android nur mit einem Galaxy S22 Ultra getestet; Spielstände sichern.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mstan/WarioWareTwistedRecomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikidata": "Q1368157",
   "wikipedia": "https://en.wikipedia.org/wiki/WarioWare%3A_Twisted%21",
   "genre": "action game",

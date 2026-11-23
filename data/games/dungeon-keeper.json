@@ -1,0 +1,69 @@
+{
+  "id": "dungeon-keeper",
+  "title": "Dungeon Keeper",
+  "franchise": "Dungeon Keeper",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Strategie",
+  "summary": "Bullfrogs Böse-Burgherren-Strategie (1997); die Open-Source-Engine KeeperFX lief als Keeper Recomped nativ auf Android.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1997)",
+      "type": "original",
+      "year": 1997,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "keeper-recomped",
+      "name": "Keeper Recomped (KeeperFX)",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC-Fassung (DATA- und SOUND-Ordner, z. B. EA-App)",
+      "runtime": "KeeperFX, auf dem Gerät kompiliert; SDL3 + Vulkan",
+      "projects": [
+        "keeper-recomped"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "high-fps",
+        "online",
+        "crossplay",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Spieldateien von Dungeon Keeper (DATA und SOUND)",
+        "Android 15+ (arm64)"
+      ],
+      "benefit": "KeeperFX nativ mit bis zu 165 Hz, Touch-Gesten, LAN und Online-Spiel mit PC-Crossplay sowie Workshop-Karten aus dem Launcher.",
+      "caveat": "Laut README abgelöst von „Endless Keeper“, einem Mod, der derzeit nur für Windows erscheint – Keeper Recomped wird nicht mehr weiterentwickelt.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "archived",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/K11MCH1/Keeper-Recomped"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

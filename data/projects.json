@@ -3574,6 +3574,255 @@
         "date": "2025-11-02"
       },
       "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "p5r-recomp",
+      "name": "P5R-Port (Retroid)",
+      "kind": "port",
+      "url": "https://github.com/IamWilmar/p5r-recomp",
+      "repo": "IamWilmar/p5r-recomp",
+      "description": "Inoffizieller nativer Android-Port der Switch-Fassung von Persona 5 Royal, eigens für Snapdragon 865/Adreno 650 (Retroid Pocket 5, Flip 2).",
+      "games": [
+        "persona-5-royal"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "underground-2-android",
+      "name": "Underground 2 for Android",
+      "kind": "port",
+      "url": "https://github.com/PotatoRecomp/Underground-2-Android",
+      "repo": "PotatoRecomp/Underground-2-Android",
+      "description": "Inoffizieller nativer Android-Port der Xbox-Fassung von Need for Speed: Underground 2, statisch rekompiliert mit XboxXBE-Recomp (Vulkan).",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "carmageddon-2-android",
+      "name": "Carmageddon 2 Android port",
+      "kind": "port",
+      "url": "https://github.com/afrowebster/Carmageddon-2-Android-port",
+      "repo": "afrowebster/Carmageddon-2-Android-port",
+      "description": "Statische Recompilation der Windows-Fassung (GOG) von Carmageddon II als Android-APK, die man mit eigenem Installer selbst baut (SDL2, OpenGL ES 3).",
+      "games": [
+        "carmageddon-ii-carpocalypse-now"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "seawolves",
+      "name": "Seawolves",
+      "kind": "port",
+      "url": "https://github.com/maxyo/seawolves",
+      "repo": "maxyo/seawolves",
+      "description": "Android-App für Sea Dogs: To Each His Own (Корсары: Каждому своё) auf einem Android-Fork der quelloffenen Storm Engine, mit Touch-Oberfläche.",
+      "games": [
+        "sea-dogs-to-each-his-own"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "nsmbw-recompilation",
+      "name": "NSMB Wii Recompilation",
+      "kind": "port",
+      "url": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation",
+      "repo": "WitherBlitz/NSMB-Wii-Recompilation",
+      "description": "Statische Recompilation (WiiCompiled) von New Super Mario Bros. Wii als native App für Android, Windows und Linux; Newer Super Mario Bros. Wii läuft ebenfalls.",
+      "games": [
+        "new-super-mario-bros-wii"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "shuffle-recomp",
+      "name": "Sonic Shuffle Recompiled",
+      "kind": "port",
+      "url": "https://github.com/ch1ppyone/shuffle-recomp",
+      "repo": "ch1ppyone/shuffle-recomp",
+      "description": "Statische Recompilation (dreamcomp) von Sonic Shuffle für Android arm64, Windows und macOS mit SDL3/Vulkan-Laufzeit.",
+      "games": [
+        "sonic-shuffle"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "smrpg-recompiled-android",
+      "name": "SMRPG Recomp for Android",
+      "kind": "port",
+      "url": "https://github.com/ElKiro1311/smrpg-recompiled-android",
+      "repo": "ElKiro1311/smrpg-recompiled-android",
+      "description": "Statische Recompilation von Super Mario RPG (Switch, 2023) für Android auf der LASRecomp-Laufzeit (NVN → Vulkan).",
+      "games": [
+        "super-mario-rpg-2023"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "fightnight3ogx",
+      "name": "FightNight3OGX",
+      "kind": "port",
+      "url": "https://github.com/Oxide-Shift/FightNight3OGX",
+      "repo": "Oxide-Shift/FightNight3OGX",
+      "description": "Native Android-App für die Xbox-Fassung von Fight Night Round 3 aus der eigenen Disc, mit Statistiken und Ecke auf dem zweiten Bildschirm des AYN Thor und lokalen Erfolgen.",
+      "games": [
+        "fight-night-round-3"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "cod4-recomp",
+      "name": "CoD4 Recompiled",
+      "kind": "port",
+      "url": "https://github.com/yassinsolim/cod4-recomp",
+      "repo": "yassinsolim/cod4-recomp",
+      "description": "Statische Recompilation (XenonRecomp) von Call of Duty 4: Modern Warfare (Xbox 360) als native Android-App mit Kampagne und Mehrspieler; auf dem AYN Thor gemessen.",
+      "games": [
+        "call-of-duty-4-modern-warfare"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "symphonyrecomp-android",
+      "name": "SymphonyRecomp – Android",
+      "kind": "port",
+      "url": "https://github.com/sergiomanzur/SymphonyRecomp",
+      "repo": "sergiomanzur/SymphonyRecomp",
+      "description": "Android-Fork der statischen PlayStation-Recompilation von Castlevania: Symphony of the Night (BlackLabelHQ/RecompOne) mit Touch- und Controller-Steuerung.",
+      "games": [
+        "castlevania-symphony-of-the-night"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "symphonyrecomp-dual",
+      "name": "SymphonyRecomp – Android Dual Screen",
+      "kind": "port",
+      "url": "https://github.com/pettersdark/SymphonyRecomp-DUAL",
+      "repo": "pettersdark/SymphonyRecomp-DUAL",
+      "description": "Experimentelle Dual-Screen-Erweiterung von SymphonyRecomp für Android: Karte, Ausrüstung und Relikte auf dem zweiten Bildschirm.",
+      "games": [
+        "castlevania-symphony-of-the-night"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "jarngreipr",
+      "name": "Járngreipr",
+      "kind": "launcher",
+      "url": "https://github.com/BrianJr03/Jarngreipr",
+      "repo": "BrianJr03/Jarngreipr",
+      "description": "Android-Launcher für Dual-Screen-Geräte wie den AYN Thor: legt fest, auf welchem Bildschirm Apps öffnen, Spielebibliothek, Gamepad-Navigation; ergänzt Mjolnir.",
+      "games": [],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "genkan",
+      "name": "Genkan",
+      "kind": "launcher",
+      "url": "https://github.com/zacaronii/Genkan",
+      "repo": "zacaronii/Genkan",
+      "description": "Dual-Screen-Launcher für den AYN Thor mit Japanisch-Lesehilfe: unten Spieldetails bzw. Textverlauf mit Wörterbuch, Anki-Karten und OCR während des Spiels; RomM-Anbindung.",
+      "games": [],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "gta-stories-recompiled",
+      "name": "GTA Stories Recompiled",
+      "kind": "port",
+      "url": "https://github.com/batinium/gta-stories-recompiled",
+      "repo": "batinium/gta-stories-recompiled",
+      "description": "Statische Recompilation (PS2Recomp) der PS2-Fassungen von Liberty City Stories und Vice City Stories für PC und Android, mit Mod-Loader und experimenteller gemeinsamer Welt.",
+      "games": [
+        "grand-theft-auto-liberty-city-stories",
+        "grand-theft-auto-vice-city-stories"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "comix-zone-recomp",
+      "name": "Comix Zone – native port",
+      "kind": "port",
+      "url": "https://github.com/mxvisor/comix_zone-recomp",
+      "repo": "mxvisor/comix_zone-recomp",
+      "description": "Statische Recompilation (SR) der Windows-95-Fassung von Comix Zone für Linux, Windows und Android (SDL2).",
+      "games": [
+        "comix-zone"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "genma-recomp-android",
+      "name": "Genma Onimusha – Android ARM64 Port",
+      "kind": "port",
+      "url": "https://github.com/EkoSaputro14/genma-recomp-android",
+      "repo": "EkoSaputro14/genma-recomp-android",
+      "description": "Experimenteller nativer Android-Port (statische Recompilation, SDL3/Vulkan) von Genma Onimusha (Xbox) auf Basis von genma-recomp.",
+      "games": [
+        "onimusha-warlords"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "warioware-twisted-recomp",
+      "name": "WarioWare: Twisted! Recomp",
+      "kind": "port",
+      "url": "https://github.com/mstan/WarioWareTwistedRecomp",
+      "repo": "mstan/WarioWareTwistedRecomp",
+      "description": "Statische Recompilation (gbarecomp) von WarioWare: Twisted! für Windows und Android, mit Gyro-Steuerung über den Bewegungssensor des Geräts.",
+      "games": [
+        "warioware-twisted"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "sonic-r-android",
+      "name": "Sonic R – Android Edition",
+      "kind": "port",
+      "url": "https://github.com/ZinexDa/sonic-r-android",
+      "repo": "ZinexDa/sonic-r-android",
+      "description": "Android-Port der Sonic-R-Dekompilation von jnmartin84 mit OpenGL-ES-2-Renderer, Touch-Steuerung und Installer für die eigenen PC-Spieldaten.",
+      "games": [
+        "sonic-r"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "spiderman2-2004-android",
+      "name": "Spider-Man 2 (Xbox, 2004) – Windows and Android",
+      "kind": "port",
+      "url": "https://github.com/kivi-man/SpiderMan2-2004-PC-Android",
+      "repo": "kivi-man/SpiderMan2-2004-PC-Android",
+      "description": "Inoffizielle native Ports der Xbox-Fassung von Spider-Man 2 (2004) für Windows und Android, statisch rekompiliert mit XboxXBE-Recomp.",
+      "games": [
+        "spider-man-2"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "carbon-android",
+      "name": "Need for Speed: Carbon for Android",
+      "kind": "port",
+      "url": "https://github.com/Chizuui/Carbon-Android",
+      "repo": "Chizuui/Carbon-Android",
+      "description": "Inoffizieller nativer Android-Port der Xbox-Fassung von Need for Speed: Carbon (XboxXBE-Recomp, Vulkan), abgeleitet von MostWanted-Android.",
+      "games": [
+        "need-for-speed-carbon"
+      ],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "keeper-recomped",
+      "name": "Keeper Recomped",
+      "kind": "port",
+      "url": "https://github.com/K11MCH1/Keeper-Recomped",
+      "repo": "K11MCH1/Keeper-Recomped",
+      "description": "Dungeon Keeper auf Android: KeeperFX nativ für ARM64 (SDL3/Vulkan), Touch-Steuerung, LAN/Online mit PC-Crossplay; abgelöst von Endless Keeper (Windows).",
+      "games": [
+        "dungeon-keeper"
+      ],
+      "checkedAt": "2026-11-23"
     }
   ]
 }

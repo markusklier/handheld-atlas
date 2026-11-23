@@ -1,0 +1,87 @@
+{
+  "id": "spider-man-2",
+  "title": "Spider-Man 2",
+  "franchise": "Spider-Man",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox",
+    "Nintendo GameCube"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Spiel zum Film von Treyarch (2004); die Xbox-Fassung lässt sich als nativer Android-Port selbst bauen.",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "PlayStation 2"
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports (US-Fassung)."
+    },
+    {
+      "id": "nintendo-gamecube",
+      "name": "Nintendo GameCube (2004)",
+      "type": "original",
+      "year": 2004,
+      "platforms": [
+        "Nintendo GameCube"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "spiderman2-xbox-android",
+      "name": "Spider-Man 2 – Android-Port (Xbox-Recomp)",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Xbox, US-Fassung",
+      "runtime": "XboxXBE-Recomp, OpenGL ES 3.1",
+      "projects": [
+        "spiderman2-2004-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene US-Xbox-Fassung (default.xbe) als Disc-Abbild",
+        "PC mit Android SDK/NDK zum Bauen",
+        "64-Bit-Android mit OpenGL ES 3.1"
+      ],
+      "benefit": "Nativ übersetzter Xbox-Code statt Emulation; Kamera-Empfindlichkeit und Touch-Tasten über controls.ini einstellbar.",
+      "caveat": "Die APK muss selbst gebaut werden und enthält dann Spielcode – nicht weitergeben. Europäische Fassung noch nicht unterstützt.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kivi-man/SpiderMan2-2004-PC-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

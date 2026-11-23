@@ -109,24 +109,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/motion/majula.gif",
-          "caption": "Walking through Majula",
+          "caption": "Unterwegs in Majula",
           "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
           "credit": "Dark Souls II: SotFS Android (Recomp)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/cutscene_hut.jpg",
-          "caption": "Opening cutscene: the witches",
+          "caption": "Eröffnungssequenz: die Hütte der Hexen",
           "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
           "credit": "Dark Souls II: SotFS Android (Recomp)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/screens/cutscene_crone.jpg",
-          "caption": "Opening cutscene: one of the three crones",
+          "caption": "Eröffnungssequenz: eine der drei Alten",
           "source": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp",
           "credit": "Dark Souls II: SotFS Android (Recomp)",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Lazaer-YZY/ds2-sotfs-recomp/HEAD/docs/media/motion/cutscene.gif",

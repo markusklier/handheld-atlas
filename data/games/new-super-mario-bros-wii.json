@@ -172,9 +172,53 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "id": "nsmbw-recompilation",
+      "name": "NSMB Wii Recompilation (WitherBlitz)",
+      "release": "wii",
+      "kind": "recomp",
+      "edition": "Wii, USA (SMNE01, Revision 1)",
+      "runtime": "WiiCompiled, statische PowerPC-Recompilation",
+      "projects": [
+        "nsmbw-recompilation"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Wii-Disc New Super Mario Bros. Wii (USA, SMNE01, Rev. 1)",
+        "PC mit Dolphin zum Extrahieren der Spieldaten",
+        "Android 9+ (arm64)"
+      ],
+      "benefit": "Kein Emulator: der PowerPC-Code ist vorab nach nativem Code übersetzt; Touch-Steuerung als quergehaltene Wii-Fernbedienung, auch Newer Super Mario Bros. Wii läuft.",
+      "caveat": "Laut README enthalten die Downloads den übersetzten Spielcode (keine Level, Grafik oder Musik). Zweiter NSMBW-Recomp neben WiiDS.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-23",
   "wikidata": "Q170410",
   "wikipedia": "https://en.wikipedia.org/wiki/New_Super_Mario_Bros._Wii",
   "genre": "platform game"

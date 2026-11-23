@@ -652,9 +652,21 @@
       "release": [
         "pc"
       ]
+    },
+    {
+      "id": "skt-mpp",
+      "name": "SKT's Mobile Performance Pack",
+      "category": "performance",
+      "release": [
+        "pc"
+      ],
+      "url": "https://modrinth.com/modpack/skt-mpp",
+      "edition": "Java Edition",
+      "description": "Modpack für mehr Leistung, gezielt für Android-/iOS-Launcher (Pojav, Mojo, Zalith, Amethyst) zusammengestellt; läuft auch auf dem PC.",
+      "verification": "ai-unverified"
     }
   ],
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-23",
   "screenshots": [],
   "wikidata": "Q49740",
   "wikipedia": "https://en.wikipedia.org/wiki/Minecraft",

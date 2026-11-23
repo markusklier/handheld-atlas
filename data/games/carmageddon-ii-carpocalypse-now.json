@@ -1,0 +1,65 @@
+{
+  "id": "carmageddon-ii-carpocalypse-now",
+  "title": "Carmageddon II: Carpocalypse Now",
+  "franchise": "Carmageddon",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Brachiales Auto-Kampfrennspiel von 1998; die GOG-Fassung lässt sich per APK-Builder als native Android-App rekompilieren.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1998)",
+      "type": "original",
+      "year": 1998,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Grundlage des Android-Ports ist die GOG-Fassung (Installer 2.1.0.28)."
+    }
+  ],
+  "routes": [
+    {
+      "id": "carma2-android",
+      "name": "Carmageddon 2 Android port",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "GOG-Fassung (setup_carmageddon2_2.1.0.28.exe)",
+      "runtime": "Statische Recompilation nach C, SDL2 + OpenGL ES 3",
+      "projects": [
+        "carmageddon-2-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene GOG-Fassung von Carmageddon II (genau Installer 2.1.0.28)",
+        "PC (Windows, Linux oder macOS) für den APK-Builder"
+      ],
+      "benefit": "Der APK-Builder baut aus dem eigenen GOG-Installer eine native Android-App, ohne SDK oder Java; der erste Bau dauert 10–40 Minuten.",
+      "caveat": "Andere Fassungen als die GOG-Version 2.1.0.28 funktionieren nicht. Die gebaute APK enthält die eigenen Spieldaten und darf nicht weitergegeben werden.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/afrowebster/Carmageddon-2-Android-port"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

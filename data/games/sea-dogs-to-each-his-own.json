@@ -1,0 +1,81 @@
+{
+  "id": "sea-dogs-to-each-his-own",
+  "title": "Sea Dogs: To Each His Own",
+  "franchise": "Sea Dogs",
+  "platforms": [
+    "PC"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Russisches Piraten-Rollenspiel (Корсары: Каждому своё) auf der Storm Engine; der Fan-Port Seawolves bringt es mit eigener Spielkopie auf Android.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Der Android-Port ist auf Version 1.7.3 (x64) abgestimmt."
+    }
+  ],
+  "routes": [
+    {
+      "id": "seawolves",
+      "name": "Seawolves",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC, ver. 1.7.3 (26.11.21) x64",
+      "runtime": "Storm-Engine-Fork für Android (Vulkan 1.1 / OpenGL ES 3.2)",
+      "projects": [
+        "seawolves"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Kopie von Sea Dogs: To Each His Own (Version 1.7.3 x64)",
+        "Android 8+ (arm64), mind. 4 GB RAM, ca. 15 GB frei"
+      ],
+      "benefit": "Quelloffene Storm Engine nativ auf Android mit Touch-Oberfläche; das Spiel startet, läuft und speichert laut Projekt auf den gelisteten Geräten.",
+      "caveat": "Erste öffentliche Alpha: ein kompletter Durchlauf ist nicht bestätigt, Geräte außerhalb der Liste ungetestet. Skript-Korrekturen greifen nur bei Version 1.7.3.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/maxyo/seawolves/HEAD/docs/screenshots/sea.jpg",
+          "caption": "Seegefecht vor Martinique mit Touch-Steuerung",
+          "source": "https://github.com/maxyo/seawolves",
+          "credit": "Seawolves",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/maxyo/seawolves/HEAD/docs/screenshots/interior.jpg",
+          "caption": "Taverne von Saint-Pierre auf Android",
+          "source": "https://github.com/maxyo/seawolves",
+          "credit": "Seawolves",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/maxyo/seawolves"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

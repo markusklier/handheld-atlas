@@ -1,0 +1,78 @@
+{
+  "id": "super-mario-rpg-2023",
+  "title": "Super Mario RPG (2023)",
+  "franchise": "Super Mario",
+  "remakeOf": "super-mario-rpg",
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Das Switch-Remake des SNES-Rollenspiels läuft als inoffizieller Recomp-Port nativ auf Android – laut Projekt mit 60 FPS auf dem AYN Thor.",
+  "versions": [
+    {
+      "id": "nintendo-switch",
+      "name": "Nintendo Switch (2023)",
+      "type": "original",
+      "year": 2023,
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "note": "Neu gebautes Remake des SNES-Spiels von 1996; Grundlage des Android-Ports ist Version 1.0.0."
+    }
+  ],
+  "routes": [
+    {
+      "id": "smrpg-recomp-android",
+      "name": "SMRPG Recomp for Android",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch, Version 1.0.0",
+      "runtime": "LASRecomp (NVN → Vulkan)",
+      "projects": [
+        "smrpg-recompiled-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "upscaling",
+        "high-fps",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Switch-Fassung (exefs und romfs von Version 1.0.0, selbst extrahiert)",
+        "Windows-PC zum Erzeugen des Spielcodes (lasgame.so)",
+        "Android 13+ (arm64) mit Vulkan 1.3"
+      ],
+      "benefit": "Interne Auflösung ab 720p, Snapdragon GSR 1/2 und FSR 1, HD-Texturen, Tastenbelegung; laut Projekt 60 FPS auf dem AYN Thor.",
+      "caveat": "Alpha. Der Spielcode muss vorerst auf einem Windows-PC gebaut werden; andere GPUs als Adreno 740 ungetestet.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ElKiro1311/smrpg-recompiled-android"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "60 FPS in Filmen, Menüs, Erkundung und Kämpfen (bisher getestet)",
+          "settings": "Projekt-Standard",
+          "source": "https://github.com/ElKiro1311/smrpg-recompiled-android",
+          "date": "2026-11-23"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

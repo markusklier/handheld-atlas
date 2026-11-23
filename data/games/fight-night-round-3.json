@@ -1,0 +1,118 @@
+{
+  "id": "fight-night-round-3",
+  "title": "Fight Night Round 3",
+  "franchise": "Fight Night",
+  "platforms": [
+    "Xbox",
+    "PlayStation 2",
+    "PSP",
+    "Xbox 360",
+    "PlayStation 3"
+  ],
+  "genre": "Sport",
+  "summary": "Boxspiel von EA (2006); die Xbox-Fassung läuft als native Android-App mit Kampfstatistik und Ecke auf dem unteren Bildschirm des AYN Thor.",
+  "versions": [
+    {
+      "id": "xbox",
+      "name": "Xbox (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Grundlage des Android-Ports FightNight3OGX (nordamerikanische Disc)."
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 2"
+      ]
+    },
+    {
+      "id": "psp",
+      "name": "PSP (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "PSP"
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360"
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2006)",
+      "type": "port",
+      "year": 2006,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "fightnight3ogx",
+      "name": "FightNight3OGX",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Original-Xbox, nordamerikanische Disc",
+      "runtime": "Native ARM64-App, Vulkan",
+      "projects": [
+        "fightnight3ogx"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "native-arm",
+        "touch",
+        "controller",
+        "high-fps"
+      ],
+      "dualScreen": "Oben läuft die TV-Übertragung, unten Schlagstatistik, Rundenwertung, Ausdauer und die Ecke zwischen den Runden; dazu Karriere-Ansichten (Verträge, Training, Shop).",
+      "requires": [
+        "Eigenes Disc-Abbild (ISO) der nordamerikanischen Xbox-Fassung",
+        "Android 11+ (arm64)"
+      ],
+      "benefit": "Die App baut das Spiel lokal aus der eigenen Disc (auf einem Thor Pro laut Projekt in 1:39 min), mit 52 eigenen Erfolgen und Thor-Voreinstellung Vulkan/1080p/60 FPS.",
+      "caveat": "Inoffizielles Fan-Projekt im Alpha-Stadium; laut README auf dem AYN Thor getestet, andere Dual-Screen-Geräte unklar.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/career-desks.jpg",
+          "caption": "Karriere-Ansichten auf dem unteren Bildschirm",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Oxide-Shift/FightNight3OGX"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23",
+      "dualScreenType": "integrated"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

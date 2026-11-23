@@ -24,7 +24,7 @@
   "versions": [
     {
       "id": "playstation",
-      "name": "PlayStation",
+      "name": "PlayStation (1997)",
       "type": "original",
       "platforms": [
         "PlayStation"
@@ -76,11 +76,100 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation"
         }
-      ]
+      ],
+      "year": 1997
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "symphonyrecomp-android",
+      "name": "SymphonyRecomp – Android",
+      "release": "playstation",
+      "kind": "recomp",
+      "edition": "PlayStation-Disc",
+      "runtime": "RecompOne (Android-Fork), statische Recompilation",
+      "projects": [
+        "symphonyrecomp-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "widescreen",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PlayStation-Disc von Symphony of the Night (wird beim ersten Start importiert)",
+        "Android 5.0+ (arm64 oder x64)"
+      ],
+      "benefit": "Nativer Recomp-Port mit Breitbild und Komfortfunktionen des BlackLabelHQ-Projekts; die APK (Beta 0.11.1, ca. 60 MB) enthält keine Spieldaten.",
+      "caveat": "Inoffizieller Fork mit starker KI-Unterstützung; BlackLabelHQ unterstützt ihn nicht und plant einen eigenen Android-Port.",
+      "steps": [],
+      "version": "Beta 0.11.1",
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/sergiomanzur/SymphonyRecomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    },
+    {
+      "id": "symphonyrecomp-dual",
+      "name": "SymphonyRecomp – Android Dual Screen",
+      "release": "playstation",
+      "kind": "recomp",
+      "edition": "PlayStation-Disc",
+      "runtime": "SymphonyRecomp-Android + Begleitfenster",
+      "projects": [
+        "symphonyrecomp-dual"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "native-arm"
+      ],
+      "dualScreen": "Zweiter Bildschirm mit Reitern KARTE (erkundete Räume und Spielerposition), AUSRÜSTUNG und RELIKTE.",
+      "requires": [
+        "Eigene PlayStation-Disc von Symphony of the Night",
+        "Android-Gerät mit zweitem Bildschirm"
+      ],
+      "benefit": "Live-Karte und Inventar auf dem unteren Bildschirm, während das Spiel oben läuft.",
+      "caveat": "Experimentelle Erweiterung eines inoffiziellen Forks, mit KI-Unterstützung entwickelt; nicht von den Upstream-Projekten unterstützt.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/pettersdark/SymphonyRecomp-DUAL"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23",
+      "dualScreenType": "integrated"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikidata": "Q2007022",
   "wikipedia": "https://en.wikipedia.org/wiki/Castlevania%3A_Symphony_of_the_Night",
   "genre": "action role-playing game",

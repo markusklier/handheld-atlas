@@ -310,6 +310,49 @@
         }
       ],
       "checkedAt": "2026-11-18"
+    },
+    {
+      "id": "nfsu2-xbox-android",
+      "name": "Underground 2 for Android (Xbox-Recomp)",
+      "release": "pc-konsolen-2004-xbox",
+      "kind": "recomp",
+      "edition": "Xbox, US-Disc (Titel 4541005A)",
+      "runtime": "XboxXBE-Recomp, Vulkan, SDL3",
+      "projects": [
+        "underground-2-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "upscaling"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene US-Xbox-Disc von Underground 2 (als .iso oder default.xbe mit Spieldaten)",
+        "Android 10+ (arm64), Vulkan 1.1, 4 GB RAM"
+      ],
+      "benefit": "Native Android-App mit Touch-Steuerung, Controller, Grafikoptionen (Renderauflösung, MSAA/FXAA, Bildrate) und eigener Musik.",
+      "caveat": "Früher Entwicklungsstand: laut README noch nicht auf einem Gerät getestet, spielspezifische Arbeit steht aus.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/PotatoRecomp/Underground-2-Android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
     }
   ],
   "mods": [
@@ -326,7 +369,7 @@
       "verification": "ai-unverified"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-23",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Underground%202%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"

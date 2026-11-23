@@ -9,7 +9,7 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
+      "name": "Nintendo Switch (2022)",
       "type": "original",
       "platforms": [
         "Nintendo Switch"
@@ -201,7 +201,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/6a916fc6-9fec-43cd-bbde-59e88a100cd5"
         }
-      ]
+      ],
+      "year": 2022
     },
     {
       "id": "playstation-4-2020",
@@ -314,9 +315,60 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "id": "p5r-recomp",
+      "name": "P5R-Port für Retroid Pocket 5/Flip 2",
+      "release": "nintendo-switch",
+      "kind": "recomp",
+      "edition": "Switch-Fassung (getestet mit 1.0.0)",
+      "runtime": "Nativer ARM64-Code des Spiels + eigene Systemschicht, Vulkan 1.1, FSR 1",
+      "projects": [
+        "p5r-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "upscaling",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Switch-Fassung von Persona 5 Royal (ExeFS und RomFS, auf der eigenen Konsole extrahiert)",
+        "Gerät mit Snapdragon 865 / Adreno 650",
+        "ca. 1 GB zusätzlich für Shader-Cache und Spielstände"
+      ],
+      "benefit": "Der ARM64-Code der Switch-Fassung läuft direkt auf der CPU, nur die Systemaufrufe werden nachgebaut; laut Projekt feste 30 FPS im Handheld-Modus auf dem Retroid Pocket Flip 2.",
+      "caveat": "Version 0.1: nur bis zum Ende des Prologs getestet. Ausdrücklich nur für Snapdragon 865/Adreno 650 gebaut – andere GPUs (auch die Adreno 740 des AYN Thor) werden nicht unterstützt. Online-Funktionen fehlen.",
+      "steps": [],
+      "version": "0.1",
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/IamWilmar/p5r-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "Retroid Pocket Flip 2",
+          "result": "feste 30 FPS im Handheld-Modus bis zum Ende des Prologs; TV-Modus 27–28 FPS",
+          "settings": "Handheld-Auflösung (~720p) mit FSR 1 auf 1080p",
+          "source": "https://github.com/IamWilmar/p5r-recomp",
+          "date": "2026-11-23"
+        }
+      ],
+      "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-23",
   "wikidata": "Q63385672",
   "wikipedia": "https://en.wikipedia.org/wiki/Persona_5_Royal",
   "genre": "role-playing video game",

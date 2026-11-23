@@ -215,24 +215,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/readme-pc-runs.png",
-          "caption": "PC runs",
+          "caption": "Run-Übersicht des Ports (PC)",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/feature-rewind-thor.png",
-          "caption": "Rewind on the Thor",
+          "caption": "Zurückspulen auf dem AYN Thor",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/doctor-utsugi/smz3-universe/HEAD/docs/shots/sprite-picker-grid-layout.png",
-          "caption": "Link sprite picker",
+          "caption": "Auswahl der Link-Sprites",
           "source": "https://github.com/doctor-utsugi/smz3-universe",
           "credit": "SMZ3 Universe",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [],

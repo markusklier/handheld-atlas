@@ -1,0 +1,75 @@
+{
+  "id": "sonic-r",
+  "title": "Sonic R",
+  "franchise": "Sonic the Hedgehog",
+  "platforms": [
+    "Sega Saturn",
+    "PC"
+  ],
+  "genre": "Rennspiel",
+  "summary": "Sonic-Rennspiel von Traveller's Tales; die PC-Fassung läuft über eine Dekompilation als nativer Android-Port.",
+  "versions": [
+    {
+      "id": "sega-saturn",
+      "name": "Sega Saturn (1997)",
+      "type": "original",
+      "year": 1997,
+      "platforms": [
+        "Sega Saturn"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (1998)",
+      "type": "port",
+      "year": 1998,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Grundlage der Dekompilation und des Android-Ports."
+    }
+  ],
+  "routes": [
+    {
+      "id": "sonic-r-android",
+      "name": "Sonic R – Android Edition",
+      "release": "pc",
+      "kind": "decomp",
+      "edition": "PC-Fassung",
+      "runtime": "Dekompilation (jnmartin84), SDL2 + OpenGL ES 2.0",
+      "projects": [
+        "sonic-r-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PC-Fassung von Sonic R (Spielordner)"
+      ],
+      "benefit": "Nativer Port mit eigenem Shader-Renderer, frei verschiebbaren Touch-Tasten und geführtem Installer für die Spieldaten.",
+      "caveat": "Kleines Fan-Projekt; Mehrspieler erst geplant, keine Gerätetests im README.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ZinexDa/sonic-r-android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

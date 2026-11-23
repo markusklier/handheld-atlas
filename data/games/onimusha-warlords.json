@@ -3,7 +3,8 @@
   "title": "Onimusha: Warlords",
   "franchise": "Onimusha",
   "platforms": [
-    "PlayStation 2"
+    "PlayStation 2",
+    "Xbox"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Onimusha%20-%20Warlords%20%28USA%29.png",
@@ -24,7 +25,7 @@
   "versions": [
     {
       "id": "playstation-2",
-      "name": "PlayStation 2",
+      "name": "PlayStation 2 (2001)",
       "type": "original",
       "platforms": [
         "PlayStation 2"
@@ -44,11 +45,65 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
         }
-      ]
+      ],
+      "year": 2001
+    },
+    {
+      "id": "xbox-2002",
+      "name": "Genma Onimusha – Xbox (2002)",
+      "type": "port",
+      "year": 2002,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Erweiterte Xbox-Fassung mit neuen Gegnern und Gebieten; Grundlage des Android-Recomp-Ports."
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "genma-recomp-android",
+      "name": "Genma Onimusha – Android-Port",
+      "release": "xbox-2002",
+      "kind": "recomp",
+      "edition": "Xbox (default.xbe)",
+      "runtime": "genma-recomp, SDL3 + Vulkan 1.0+",
+      "projects": [
+        "genma-recomp-android"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Xbox-Disc von Genma Onimusha",
+        "Android 10+ (arm64), Vulkan 1.1+"
+      ],
+      "benefit": "Nativ übersetzter Xbox-Code mit Touch-Overlay und Gamepad, eigener Vulkan-Renderthread.",
+      "caveat": "Experimentell: auf Adreno nur teilweise getestet, Mali/Exynos/Tensor ungetestet.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/EkoSaputro14/genma-recomp-android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikidata": "Q1144140",
   "wikipedia": "https://en.wikipedia.org/wiki/Onimusha%3A_Warlords",
   "genre": "action-adventure game"

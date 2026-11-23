@@ -3,7 +3,8 @@
   "title": "Comix Zone",
   "franchise": "Comix Zone",
   "platforms": [
-    "Sega Mega Drive"
+    "Sega Mega Drive",
+    "PC"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sega_-_Mega_Drive_-_Genesis/master/Named_Boxarts/Comix%20Zone%20%28USA%29.png",
@@ -61,10 +62,72 @@
           "url": "https://www.wikidata.org/wiki/Q1114985"
         }
       ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (1996)",
+      "type": "port",
+      "year": 1996,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Windows-95-Umsetzung des Mega-Drive-Spiels; Grundlage des nativen Android-Ports."
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "comix-zone-recomp",
+      "name": "Comix Zone – nativer Port (Windows-95-Fassung)",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "Windows-95-CD",
+      "runtime": "SR (statische Recompilation), SR-SDK auf SDL2",
+      "projects": [
+        "comix-zone-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "mods"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene CD der Windows-95-Fassung von Comix Zone",
+        "Selbst bauen (Android SDK/NDK)"
+      ],
+      "benefit": "Jede Anweisung von COMIX.EXE ist nativer Code; auf Android mit Bildschirmtasten, optionale Mods (z. B. Block auf eigener Taste).",
+      "caveat": "Keine fertige APK im README beschrieben – Bau aus dem Quellcode nötig.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/comix_zone-recomp/HEAD/docs/android.jpg",
+          "caption": "Erste Seite auf einem Android-Handy mit Bildschirmtasten",
+          "source": "https://github.com/mxvisor/comix_zone-recomp",
+          "credit": "comix_zone-recomp",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mxvisor/comix_zone-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikipedia": "https://en.wikipedia.org/wiki/Comix_Zone",
   "genre": "beat 'em up",
   "wikidata": "Q1114985",

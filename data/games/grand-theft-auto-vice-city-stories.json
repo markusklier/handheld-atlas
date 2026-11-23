@@ -3,7 +3,8 @@
   "title": "Grand Theft Auto: Vice City Stories",
   "franchise": "Grand Theft Auto",
   "platforms": [
-    "PSP"
+    "PSP",
+    "PlayStation 2"
   ],
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_Portable/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
@@ -24,7 +25,7 @@
   "versions": [
     {
       "id": "psp",
-      "name": "PSP",
+      "name": "PSP (2006)",
       "type": "original",
       "platforms": [
         "PSP"
@@ -100,11 +101,67 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_Portable"
         }
-      ]
+      ],
+      "year": 2006
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2007)",
+      "type": "port",
+      "year": 2007,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "note": "Umsetzung des PSP-Originals; Grundlage von GTA Stories Recompiled."
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "gta-stories-recompiled",
+      "name": "GTA Stories Recompiled (Android-App)",
+      "release": "playstation-2",
+      "kind": "recomp",
+      "edition": "PS2-Disc",
+      "runtime": "PS2Recomp, Vulkan 1.3",
+      "projects": [
+        "gta-stories-recompiled"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "mods",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene PS2-Disc des Spiels",
+        "Android 13+ (arm64) mit Vulkan 1.3, ca. 3 GB frei je Spiel",
+        "PC zum Erzeugen des Spielpakets (empfohlen)"
+      ],
+      "benefit": "Kein Emulator: der PS2-Code ist vorab übersetzt; eine App für Liberty City Stories und Vice City Stories, mit Mod-Loader.",
+      "caveat": "Laut Gerätetabelle mit gemischten Ergebnissen: auf Snapdragon-Geräten spielbar, auf einem AYANEO Pocket FIT (Adreno 750) zeigt VCS nur ein schwarzes Bild; AYN Thor nicht gelistet.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/batinium/gta-stories-recompiled"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikidata": "Q94640",
   "wikipedia": "https://en.wikipedia.org/wiki/Grand_Theft_Auto%3A_Vice_City_Stories",
   "genre": "action-adventure game",

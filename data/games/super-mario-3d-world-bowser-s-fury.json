@@ -8,7 +8,7 @@
   "versions": [
     {
       "id": "nintendo-switch",
-      "name": "Nintendo Switch",
+      "name": "Nintendo Switch (2021)",
       "type": "original",
       "platforms": [
         "Nintendo Switch"
@@ -188,7 +188,8 @@
           "label": "EmuReady",
           "url": "https://www.emuready.com/games/4a821e87-e9d1-464a-8c7b-c340f020ef0d"
         }
-      ]
+      ],
+      "year": 2021
     }
   ],
   "routes": [],

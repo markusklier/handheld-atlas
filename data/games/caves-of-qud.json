@@ -57,24 +57,24 @@
         },
         {
           "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/near.png",
-          "caption": "Near",
+          "caption": "Companion: Umgebung und Bewegung",
           "source": "https://github.com/UncookedNoodle/QudLink",
           "credit": "QudLink",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/status.png",
-          "caption": "Status",
+          "caption": "Companion: Charakterwerte",
           "source": "https://github.com/UncookedNoodle/QudLink",
           "credit": "QudLink",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/UncookedNoodle/QudLink/HEAD/screenshots/quests.png",
-          "caption": "Quests",
+          "caption": "Companion: aktive Quests",
           "source": "https://github.com/UncookedNoodle/QudLink",
           "credit": "QudLink",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

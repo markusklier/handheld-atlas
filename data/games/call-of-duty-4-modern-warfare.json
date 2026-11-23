@@ -1,0 +1,104 @@
+{
+  "id": "call-of-duty-4-modern-warfare",
+  "title": "Call of Duty 4: Modern Warfare",
+  "franchise": "Call of Duty",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3",
+    "PC"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Die Xbox-360-Fassung läuft als nativer Recomp-Port auf Android – laut Projekt mit rund 119 FPS auf dem AYN Thor, Kampagne und Mehrspieler.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "note": "Grundlage des Android-Recomp-Ports (Disc-Fassung ohne Title Update)."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PlayStation 3"
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (2007)",
+      "type": "original",
+      "year": 2007,
+      "platforms": [
+        "PC"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "cod4-recomp",
+      "name": "CoD4 Recompiled",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Disc (ohne Title Update)",
+      "runtime": "XenonRecomp, Vulkan (mitgelieferter Turnip-Treiber, Mesa 27.0.0)",
+      "projects": [
+        "cod4-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "online",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigene Xbox-360-Disc von Call of Duty 4 als .iso",
+        "PC zum Bauen des Spielcodes"
+      ],
+      "benefit": "Kampagne und Mehrspieler (System Link zwischen zwei Geräten) als native Android-App; gleiche Codebasis wie MW2/MW3 Recompiled.",
+      "caveat": "Jüngstes der drei Projekte: nur drei Kampagnenlevel und zwei Mehrspielerkarten gespielt. Ruckler bei der Hubschrauberlandung in „Charlie Don’t Surf“ und beim ersten Besuch eines Levels.",
+      "steps": [],
+      "version": null,
+      "effort": "advanced",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yassinsolim/cod4-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Kampagne 117–119 FPS (F.N.G. 119,0; Crew Expendable 119,0; Charlie Don’t Surf 117,4), Mehrspieler Crash 119,1 FPS",
+          "settings": "App-Standard (Limit 120 Hz), Turnip (Mesa 27.0.0), Touch-Steuerung",
+          "source": "https://github.com/yassinsolim/cod4-recomp",
+          "date": "2026-11-23"
+        },
+        {
+          "device": "Retroid Pocket Flip 2",
+          "result": "59,5–60 FPS in Kampagne und Mehrspieler",
+          "settings": "App-Standard (Limit 60 Hz), Turnip (Mesa 27.0.0)",
+          "source": "https://github.com/yassinsolim/cod4-recomp",
+          "date": "2026-11-23"
+        }
+      ],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23"
+}

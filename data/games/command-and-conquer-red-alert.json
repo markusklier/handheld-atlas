@@ -98,13 +98,6 @@
           "source": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
           "credit": "OpenRA Red Alert für Android",
           "check": "source-verified"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/huggy12/OpenRA_Androidport-PSX-controls-/HEAD/docs/combined-arms-menu.jpg",
-          "caption": "Combined Arms main menu on a vivo phone",
-          "source": "https://github.com/huggy12/OpenRA_Androidport-PSX-controls-",
-          "credit": "OpenRA Red Alert für Android",
-          "check": "readme"
         }
       ],
       "links": [

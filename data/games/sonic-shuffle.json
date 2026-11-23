@@ -24,7 +24,7 @@
   "versions": [
     {
       "id": "dreamcast",
-      "name": "Dreamcast",
+      "name": "Dreamcast (2000)",
       "type": "original",
       "platforms": [
         "Dreamcast"
@@ -44,11 +44,55 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Sega_-_Dreamcast"
         }
-      ]
+      ],
+      "year": 2000
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "id": "shuffle-recomp",
+      "name": "Sonic Shuffle Recompiled",
+      "release": "dreamcast",
+      "kind": "recomp",
+      "edition": "Dreamcast (CHD, GDI oder CUE)",
+      "runtime": "dreamcomp, SDL3 + Vulkan",
+      "projects": [
+        "shuffle-recomp"
+      ],
+      "targets": [
+        "android"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": null,
+      "requires": [
+        "Eigenes Dreamcast-Abbild von Sonic Shuffle (CHD, GDI oder CUE)",
+        "Android arm64 mit Vulkan"
+      ],
+      "benefit": "Nativer Port mit eingebautem Android-Launcher, Touch-Steuerung und Gamepad – kein Emulator.",
+      "caveat": "Projektstatus „experimentell“; auf Android nur auf einem Samsung Galaxy S25 Ultra geprüft.",
+      "steps": [],
+      "version": null,
+      "effort": "guided",
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ch1ppyone/shuffle-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-23"
+    }
+  ],
+  "updatedAt": "2026-11-23",
   "wikidata": "Q2345230",
   "wikipedia": "https://en.wikipedia.org/wiki/Sonic_Shuffle",
   "genre": "party video game"
