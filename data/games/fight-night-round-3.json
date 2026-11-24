@@ -29,6 +29,22 @@
       "year": 2006,
       "platforms": [
         "PlayStation 2"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Fight%20Night%20Round%203%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Fight%20Night%20Round%203%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Fight%20Night%20Round%203%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
@@ -100,6 +116,41 @@
           "source": "https://github.com/Oxide-Shift/FightNight3OGX",
           "credit": "FightNight3OGX",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/fight-hud.jpg",
+          "caption": "Gatti and Ward trading punches with 30 seconds left in round one. The lower scre",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/fight-setup.jpg",
+          "caption": "Fight Setup after disc import, with Enter the ring, Check for updates, frame rat",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/manual-cutman.jpg",
+          "caption": "Close up of the cutman treating a boxer above the touchscreen sweep pad. The low",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/thor-controls.jpg",
+          "caption": "Configuration 3 in the Thor loading guide. The face buttons throw hooks and stra",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/achievements.jpg",
+          "caption": "The Finishes shelf in the Fight Night stencil font. Earned medals are gold, lock",
+          "source": "https://github.com/Oxide-Shift/FightNight3OGX",
+          "credit": "FightNight3OGX",
+          "check": "readme"
         }
       ],
       "links": [
@@ -114,5 +165,23 @@
       "dualScreenType": "integrated"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q2601461",
+  "wikipedia": "https://en.wikipedia.org/wiki/Fight_Night_Round_3",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Fight%20Night%20Round%203%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Fight%20Night%20Round%203%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Fight%20Night%20Round%203%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

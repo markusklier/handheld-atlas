@@ -1,6 +1,446 @@
 {
   "leads": [
     {
+      "url": "https://github.com/kikamitrsh22/SaintsRow-Android-Port",
+      "title": "kikamitrsh22/SaintsRow-Android-Port",
+      "excerpt": "Static recompilation port of Saints Row (Xbox 360) to Windows and Android. Bring your own game files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Psychoghost/Vanillara_android_port",
+      "title": "Psychoghost/Vanillara_android_port",
+      "excerpt": "Vanillara source port for android. Buy the game with link provided (not affiliate) ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/edwin-ma26/krypto-card-game",
+      "title": "edwin-ma26/krypto-card-game",
+      "excerpt": "Arithmetic card game for iOS with ranked real-time multiplayer. SwiftUI + Firebase (TypeScript Cloud Functions) + Kotlin/Compose Android port.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/phys-winner/pc_decomp_bs1",
+      "title": "phys-winner/pc_decomp_bs1",
+      "excerpt": "Experimental Android ARM64 port of BioShock Classic via static recompilation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Yurgil/RecompVR",
+      "title": "Yurgil/RecompVR",
+      "excerpt": "Lightweight OpenXR helpers for native standalone VR game ports on Meta Quest. Written in C, with Android and Vulkan support.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled-Android",
+      "title": "almost-drowned-rat/THPS2X-Recompiled-Android",
+      "excerpt": "THPS 2X Recompiled for Android - the static recompilation of Tony Hawk's Pro Skater 2X (Xbox).",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/dzepdzep/wwe13-recomp-android",
+      "title": "dzepdzep/wwe13-recomp-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/dguillot-gh/spirit-tracks-recomp",
+      "title": "dguillot-gh/spirit-tracks-recomp",
+      "excerpt": "Native PC and Android port of Zelda: Spirit Tracks (DS) by static recompilation. No game data: build from your own ROM.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/biliboobrian/romcloud-android",
+      "title": "biliboobrian/romcloud-android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/mesudal/android-mirroring",
+      "title": "mesudal/android-mirroring",
+      "excerpt": "제로소프트 안드로이드 화면 미러링용",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/alifconstantine/tsukuyomi",
+      "title": "alifconstantine/tsukuyomi",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/IsaMasih-Kryptonite/diamond-controls-converter",
+      "title": "IsaMasih-Kryptonite/diamond-controls-converter",
+      "excerpt": "Convert Zalith 1, Zalith 2, MojoLauncher (MJ), and DroidBridge touch controls to Diamond Launcher Schema v3",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/paritoshpky5/agy-droidbridge",
+      "title": "paritoshpky5/agy-droidbridge",
+      "excerpt": "Use your Antigravity allowance in BYOK apps and tools through a custom localhost endpoint on Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/eugene-sew/droidbridge",
+      "title": "eugene-sew/droidbridge",
+      "excerpt": "iPhone Mirroring-style Android ↔ macOS bridge: screen mirroring, remote control and notification sync. No ADB, no root, end-to-end encrypted.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Alzeros/DroidBridge",
+      "title": "Alzeros/DroidBridge",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Todd0042/letsvibe-engine",
+      "title": "Todd0042/letsvibe-engine",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Jdiller-86/Jellyfin3DS",
+      "title": "Jdiller-86/Jellyfin3DS",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/intercontinentalmassacre/Gameplay",
+      "title": "intercontinentalmassacre/Gameplay",
+      "excerpt": "Play your PC games on Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/visorcraft/GhostGalleon",
+      "title": "visorcraft/GhostGalleon",
+      "excerpt": "Ghost Galleon Dual Screen Launcher - dual-screen Android game launcher for the One X Sugar and other dual-display handhelds: curated 3DS-style grid + card carousel, ROM library with artwork, per-emulator direct launching",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/DigantaDey/AirBridge",
+      "title": "DigantaDey/AirBridge",
+      "excerpt": "One encrypted cross-platform bridge built best for Android & Mac (plus Windows & Linux): 30fps screen share, Studio recording, notifications, calls, clipboard & files.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/zFitness/nx2androidX",
+      "title": "zFitness/nx2androidX",
+      "excerpt": "A compatibility layer for porting your own Switch games to Android, one game at a time. The game's own code runs on the device; no game content ships here.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/vita-recomps/utakata",
+      "title": "vita-recomps/utakata",
+      "excerpt": "A native PC port of Shinobido 2: Revenge of Zen",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/bhuiyah/ff8-recomp-android",
+      "title": "bhuiyah/ff8-recomp-android",
+      "excerpt": "FINAL FANTASY VIII (2013 or Remastered) recompiled to native ARM64 Android, built on your device from your own copy",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Beefnasty96/Loot-shoot-",
+      "title": "Beefnasty96/Loot-shoot-",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Wingdom/thor-features",
+      "title": "Wingdom/thor-features",
+      "excerpt": "Adding the Thor features LineageOS is missing",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Broomm/thumbrest",
+      "title": "Broomm/thumbrest",
+      "excerpt": "Android companion app to Broomm to control the controller through software, including hold and turbo and turbo hold",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/JavToscano/nxforge",
+      "title": "JavToscano/nxforge",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/maptoan/tivikit",
+      "title": "maptoan/tivikit",
+      "excerpt": "Bo cong cu TiviKit cho Android TV",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/pvidram/dm-companion",
+      "title": "pvidram/dm-companion",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/madnovelist-sys/hearthwork",
+      "title": "madnovelist-sys/hearthwork",
+      "excerpt": "Contains source code for the Hearthwork productivity app.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/TheBlueDrago/NebuluxOS",
+      "title": "TheBlueDrago/NebuluxOS",
+      "excerpt": "Nebulux OS: a Windows 11 style desktop OS that runs in the browser, with Nebulux designs.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/freefrank/LostOdysseyRecomp",
+      "title": "freefrank/LostOdysseyRecomp",
+      "excerpt": "Experimental native PC port of Lost Odyssey using static recompilation. No game assets included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/wintermute42/dream",
+      "title": "wintermute42/dream",
+      "excerpt": "dream – live AI visuals for VJs, Artists and Installations",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Thor-Wayfinder/thor-wayfinder",
+      "title": "Thor-Wayfinder/thor-wayfinder",
+      "excerpt": "Wayfinder — two screens, one controller. Moves apps between the AYN Thor's screens, per-game controls, quick panel. Source-available.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/hbermu/obsidian-dm-screens",
+      "title": "hbermu/obsidian-dm-screens",
+      "excerpt": "Turn your notes into a live player screen and a true-scale battle map for in-person D&D 5e.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/EIonTusk/COBRA",
+      "title": "EIonTusk/COBRA",
+      "excerpt": "COBRA — Chess Opening Builder and Repertoire Analyzer.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/goetzrobin/foldkit-native",
+      "title": "goetzrobin/foldkit-native",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/GASQBDUV/mina-hollower-android",
+      "title": "GASQBDUV/mina-hollower-android",
+      "excerpt": "Run the macOS build of Mina the Hollower on Android (arm64) with a live map on the second screen. Experimental; no game data included.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/lingda-ai/dsh-plugin",
+      "title": "lingda-ai/dsh-plugin",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/AyoDatalyst/sis-firmware",
+      "title": "AyoDatalyst/sis-firmware",
+      "excerpt": "ESP32 smart irrigation system with automatic and manual pump control, soil moisture and water-level sensing, offline-first operation and Firebase Realtime Database sync. Final year project firmware.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/hens18/Mat-Log",
+      "title": "hens18/Mat-Log",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/aman-dhakar-191/Contacts",
+      "title": "aman-dhakar-191/Contacts",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/terravoltsdynamic/Smart-Solar-Diesel-Hybrid-Dewatering-System",
+      "title": "terravoltsdynamic/Smart-Solar-Diesel-Hybrid-Dewatering-System",
+      "excerpt": "Smart Solar-Diesel Hybrid Dewatering System for Copper Mines (TerraVolts) — ESP32-C6 automated sump dewatering with sunflower LDR solar tracking, solar-to-diesel failover, flow-based billing telemetry, and Firebase app shutdown by Terra World Dynamics.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/andyholst/trending-local-llms",
+      "title": "andyholst/trending-local-llms",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Miningflo/FlightBook",
+      "title": "Miningflo/FlightBook",
+      "excerpt": "Personal EASA pilot logbook (offline-first PWA)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Ajitjha3095/Ultimate-AI-Models-API-Directory",
+      "title": "Ajitjha3095/Ultimate-AI-Models-API-Directory",
+      "excerpt": "Structured intelligence directory cataloging 608+ global AI models, LLMs, open-source runners, coding agents, multimodal studios, and enterprise AIs across 32 categories with ecosystem statistics, pricing tiers, and automated CI validation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/IHUI-INF-AI/IHUI-AI",
+      "title": "IHUI-INF-AI/IHUI-AI",
+      "excerpt": "Eight-platform full-stack AI operating system - unifies 176 LLMs via LangGraph + MCP + A2A. Multi-tenant RLS over 340 tables, RAG knowledge base, agent marketplace. Web/API/CLI/Desktop/Extension/Mobile/Miniapp. Apache 2.0.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/pocketotp/pocketotp-android",
+      "title": "pocketotp/pocketotp-android",
+      "excerpt": "PocketOTP Android app: forwards SMS verification codes from your own phone to your AI agent, with confirm-before-send. https://pocketotp.com",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/HS7097/ActingCommand",
+      "title": "HS7097/ActingCommand",
+      "excerpt": "ActingCommand: AGPL-3.0-only multi-game automation command framework with UI/runtime decoupling and upstream-compatible integration planning.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/nishchalr/Prayana-AI-Trip-Planner",
+      "title": "nishchalr/Prayana-AI-Trip-Planner",
+      "excerpt": "AI-powered dynamic group trip planner with effort-aware routing, live wearable vitals sync, 4-tier budget rebalancing, and offline menu allergen screening.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/Wolklaw/sparkos",
+      "title": "Wolklaw/sparkos",
+      "excerpt": "SparkOS: a gaming and everyday-work Linux desktop built on Fedora",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/oliexe/Dashborne",
+      "title": "oliexe/Dashborne",
+      "excerpt": "Tweak injector, app loader & ADB enabler for Enhance S3XY DASH.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/erykjuraszczyk-ui/JumanjiUE",
+      "title": "erykjuraszczyk-ui/JumanjiUE",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/maxplane-KKR/RideLink-Thai",
+      "title": "maxplane-KKR/RideLink-Thai",
+      "excerpt": "Android Auto ไร้สายขึ้นหน้าจอ TFT มอเตอร์ไซค์ (EasyConn / PXC Protocol) ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
+      "url": "https://github.com/MaksimGalatin/padam-nocturne",
+      "title": "MaksimGalatin/padam-nocturne",
+      "excerpt": "Local sovereign SQLite AI agent memory & 4-ring Agentic Shield: stops prompt-injection, MCP rug-pulls & key leaks ($0 cloud telemetry). MCP + Studio + Android. PADAM License 1.0",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-24"
+    },
+    {
       "url": "https://github.com/BelmanteGu/3dWorldRecomp",
       "title": "BelmanteGu/3dWorldRecomp",
       "excerpt": "Static recompilation of a Wii U 3D platformer (RedCarpet.rpx) to native Android and PC with Vulkan. No game code, assets or keys.",
@@ -5989,30 +6429,6 @@
       "game": "minecraft",
       "source": "modrinth",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/raccoonsbytapka",
-      "title": "Raccoons! adds mischievous raccoons to Minecraft that climb blocks and steal loot from chests. Tame your own companion, equip them with a craftable hat, and com",
-      "excerpt": "Raccoons! adds mischievous raccoons to Minecraft that climb blocks and steal loot from chests. Tame your own companion, equip them with a craftable hat, and complete unique in-game achievements.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/ride-together-mca-immersive-vehicles",
-      "title": "Automatically lets Minecraft Comes Alive Reborn companions ride with you in Immersive Vehicles instead of running behind your vehicle.",
-      "excerpt": "Automatically lets Minecraft Comes Alive Reborn companions ride with you in Immersive Vehicles instead of running behind your vehicle.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/root-companion",
-      "title": "Root Companion is a Minecraft Forge 1.20.1 mod that turns Root, Aywen's mascot, into a useful and interactive companion for the player.",
-      "excerpt": "Root Companion is a Minecraft Forge 1.20.1 mod that turns Root, Aywen's mascot, into a useful and interactive companion for the player.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6411,9 +6827,9 @@
     "summary": "Keine offenen Abo-Anfragen, Warteschlange leer. Aus 39 Leads: 9 neue Spiele (Carmageddon II, Sea Dogs: To Each His Own, Super Mario RPG (2023) als Remake, Fight Night Round 3 mit Dual Screen, Call of Duty 4, Sonic R, Spider-Man 2, NFS Carbon, Dungeon Keeper) und neue Spielwege für Persona 5 Royal, NFSU2 (Xbox), NSMB Wii, Sonic Shuffle, Castlevania SotN (SymphonyRecomp + Dual-Screen-Karte), GTA LCS/VCS (PS2-Recomp), Comix Zone (PC), Genma Onimusha, WarioWare: Twisted!; Launcher Járngreipr und Genkan, Minecraft-Modpack. Verworfen: 18 (u. a. Sonic-4-Port mit Spieldaten im APK, Treiber für andere Geräte, Desktop-Tools). Bildprüfung: 11 bestätigt, 1 entfernt (OpenRA Combined Arms); Reddit/YouTube/Google-Play-Bilder (ai-unclear) aus der Sitzung nicht ladbar. Datenqualität: WarioWare als eigene Reihe, Jahre bei 8 Fassungen. Offen: 3dWorldRecomp (Spiel liegt nur als Switch-Neuauflage vor), MCLA-Recomp (bootet noch nicht), Gen1Recomp-Erfolge, Dual-Screen-Suchlauf am 26.11. fällig."
   },
   "watcher": {
-    "lastRun": "2026-11-23T16:02:02Z",
-    "newLeads": 56,
-    "newEvents": 26
+    "lastRun": "2026-11-24T15:57:43Z",
+    "newLeads": 55,
+    "newEvents": 41
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",

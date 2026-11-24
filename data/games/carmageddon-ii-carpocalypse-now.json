@@ -49,7 +49,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/afrowebster/Carmageddon-2-Android-port/HEAD/docs/builder.png",
+          "caption": "The APK builder window",
+          "source": "https://github.com/afrowebster/Carmageddon-2-Android-port",
+          "credit": "Carmageddon 2 Android port",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -61,5 +69,11 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q660034",
+  "wikipedia": "https://en.wikipedia.org/wiki/Carmageddon_II%3A_Carpocalypse_Now",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Carmageddon2Box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Carmageddon_II%3A_Carpocalypse_Now"
+  }
 }

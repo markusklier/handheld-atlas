@@ -27,6 +27,60 @@
       "year": 2007,
       "platforms": [
         "PlayStation 3"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5efb6de0-4dcc-4e52-aff4-a06db5bd199b",
+          "device": "Retroid Pocket 6",
+          "emulator": "aPS3e",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "It will stutter in some moments, but the game plays and I'm pretty in the campaign. Make sure it's the most up to date driver and it will run.",
+          "votes": 2,
+          "date": "2026-03-02",
+          "settings": {
+            "Emulator Version": "1.36",
+            "Renderer": "Vulkan",
+            "Resolution Scale": "65",
+            "Anisotropic Filter": "Automatic",
+            "Anti-Aliasing": "Disabled",
+            "Frame Limit": "Auto",
+            "SPU Threads": "2",
+            "SPU Block Size": "Safe"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/047b7c57-f150-4a48-a324-93c745a75284",
+          "device": "Sony Xperia 1 V",
+          "emulator": "RPCSX",
+          "rating": "Poor",
+          "ratingDe": "Schwach",
+          "rank": 4,
+          "summary": "Doesn't crash, however performance is all over the place. Outdoor areas drops the framerate down to 5-15 FPS, regardless of driver used. No Graphical glitches observed, just poor performance. Certain indoor areas brings ",
+          "votes": 1,
+          "date": "2025-08-24",
+          "settings": {
+            "Emulator Version": "v20250813-bdc0203-armv8-a",
+            "Renderer": "Vulkan",
+            "Resolution Scale": "100",
+            "Anisotropic Filter": "Automatic",
+            "Anti-Aliasing": "Disabled",
+            "Frame Limit": "Auto",
+            "SPU Threads": "3",
+            "SPU Block Size": "Safe",
+            "Game Version": "1",
+            "Average FPS": "5-20"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e002a4ef-6cc1-476b-b43c-8c8735ea2aab"
+        }
       ]
     },
     {
@@ -36,6 +90,115 @@
       "year": 2007,
       "platforms": [
         "PC"
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/860ff4fb-9abe-42d8-8080-38c56006e479",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "If you are patient enough to manually map the keys on GameNative, you can enjoy this game at 60 FPS on GameNative v1.0.0 on Campaign mode (I haven't tried anything else yet). I played this through Steam fwiw. For this (a",
+          "votes": 1,
+          "date": "2026-06-19",
+          "settings": {
+            "Emulator Version": "v1.0.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "alsa",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/870397b9-538e-4b7b-8765-f3d43b918168",
+          "device": "Retroid Pocket 6",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "used IW3SP mod by JerryALT for controller support",
+          "votes": 0,
+          "date": "2026-09-11",
+          "settings": {
+            "Winlator Fork": "ludashi",
+            "Emulator Version": "3.1",
+            "Controller Support": "True",
+            "Turnip Driver Version ": "[Mr. Purple Turnip] turnip_mrpurple_T30-toasted.adpkg|||turnip_mrpurple_T30-toas",
+            "DX Wrapper": "DXVK",
+            "Audio Driver": "PulseAudio",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Resolution (Screen Size)": "720p"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/fda95d4a-86b1-4d03-b938-86869066f859",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Winlator",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "This listing is for the DVD release of Call of Duty 4 (Not the Steam release)! While performance is great at 65-85FPS, the game lacks controller support, as this is the 2007 release. External Mouse support works, but ext",
+          "votes": 1,
+          "date": "2025-06-28",
+          "settings": {
+            "Winlator Fork": "frost_glibc",
+            "Emulator Version": "10.0 Final v4.1",
+            "Graphics Driver": "Turnip v25.2.0",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "v2.6.2 / 4096MB",
+            "Audio Driver": "ALSA",
+            "Box64 Preset": "Intermediate",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "Box64 Version": "0.3.6",
+            "Resolution (Screen Size)": "1280x720"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/8ee525a1-d4d7-40c8-a166-4f70be41a5a3"
+        }
+      ]
+    },
+    {
+      "id": "macintosh-2008",
+      "name": "Macintosh (2008)",
+      "type": "port",
+      "year": 2008,
+      "platforms": [
+        "Macintosh"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q76255"
+        }
+      ]
+    },
+    {
+      "id": "wii-2009",
+      "name": "Wii (2009)",
+      "type": "port",
+      "year": 2009,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q76255"
+        }
       ]
     }
   ],
@@ -100,5 +263,11 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q76255",
+  "wikipedia": "https://en.wikipedia.org/wiki/Call_of_Duty_4%3A_Modern_Warfare",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Call_of_Duty_4%3A_Modern_Warfare"
+  }
 }

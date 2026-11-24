@@ -148,6 +148,84 @@
         {
           "label": "Test: Android Central",
           "url": "https://www.androidcentral.com/final-fantasy-ix-android-almost-great-port"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/749814fa-77f4-4750-861e-aa8aa3e7717e"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/849210bb-5bd4-450b-b6f1-b33f730cac7a",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "On Startup it gives you resolution and windows mode options. change the resolution to 1280x720 and unchecked windowed then hit play. Remeber this is an older game for the psx videos will be only 15fps while the main game",
+          "votes": 1,
+          "date": "2026-04-19",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R4",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-2.12"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/31b89491-e36a-40ce-972c-b48d900f3dd3",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "Winlator",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Moguri Mod v9.0 Processor Affinity: All checked (0 - 7) Save FF9_Launcher as a shortcut and load into the laucher each time - Mods: Moguri Mod + Moguri 30fps videos - Resolution: 1280x720 - Window Mode: Fullscreen - FPS:",
+          "votes": 0,
+          "date": "2025-08-27",
+          "settings": {
+            "Winlator Fork": "cmod_bionic",
+            "Emulator Version": "v13.1.1",
+            "Controller Support": "True",
+            "Wine Version": "proton-9.0-x86_64",
+            "Turnip Driver Version ": "[KIMCHI Turnip] v25.3.0 - Revision 3|||Turnip_v25.3.0_R3_Auto.zip",
+            "Graphics Driver": "Wrapper-v2, Max Memory: 4096 MB, Frame Sync: Always",
+            "DX Wrapper": "DXVK",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "Version 2.7-0\nFrame Rate 0\nMax Memory 4096 MB",
+            "Audio Driver": "ALSA",
+            "Environment Variables": "default (unchecked HUD variables)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/f93412b5-580b-47c6-9d00-083b03c17d6a",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "It will take work to get to run. First I should mention that if you’re just installing from your steam account on GameHub it will run PERFECT. However, if you’re wanting to get Moguri Mod and Alternate Fantasy, it’s goin",
+          "votes": 2,
+          "date": "2025-12-18",
+          "settings": {
+            "Emulator Version": "v5.3.5",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1920x1080",
+            "Compatibility Layer": "proton10.0-x64x-1",
+            "Translation Parameters": "Performance",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.0.0_R6",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vk3d-2.12"
+          }
         }
       ]
     },
@@ -192,6 +270,84 @@
         {
           "label": "Quelle: Gematsu",
           "url": "https://gematsu.com/2019/02/final-fantasy-ix-for-xbox-one-and-switch-available-now-final-fantasy-vii-launches-march-26"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/a2730688-2b7d-444d-827b-09c103c90bfa"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/05e90193-0f1e-40b5-b339-6f55f8dbcb0c",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Dozens of hours of gameplay would be needed to be sure the game is stable and complete. Understand that the test can only be superficial (works or not, with or without bugs). Screenshots available.",
+          "votes": 2,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3a0ae13d-ed91-4d45-8775-a0c18c1f26ec",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "It would take dozens of hours of gameplay to be sure the game is stable/completeable. Understand that the test can only be superficial (works or not, with or without bugs). Just a minor bug with the combat entry transiti",
+          "votes": 1,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/3ad677dd-701e-4552-ad85-f40e45bb114f",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Dozens of hours of gameplay would be needed to be sure the game is stable and complete. Understand that the test can only be superficial (works or not, with or without bugs). The sound crackles. Screenshots available.",
+          "votes": 2,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0 (Kenji-NX 2.05 and less does not support Upd/Dlc in .XCI)",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
         }
       ]
     },

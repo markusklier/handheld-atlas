@@ -114,6 +114,20 @@
           "source": "https://github.com/mxvisor/comix_zone-recomp",
           "credit": "comix_zone-recomp",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/comix_zone-recomp/HEAD/docs/screens.gif",
+          "caption": "The title screen, the first page of the first episode and the game's Options men",
+          "source": "https://github.com/mxvisor/comix_zone-recomp",
+          "credit": "Comix Zone – native port",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mxvisor/comix_zone-recomp/HEAD/docs/filters.gif",
+          "caption": "The port's panel (F12) over the first page: the filters none, smooth, pixelart, ",
+          "source": "https://github.com/mxvisor/comix_zone-recomp",
+          "credit": "Comix Zone – native port",
+          "check": "readme"
         }
       ],
       "links": [

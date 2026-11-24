@@ -113,6 +113,84 @@
         {
           "label": "Quelle",
           "url": "https://www.esrb.org/ratings/36902/doom-64/"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/74f6547f-b32a-4677-928b-d50e2876407e"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e6797212-5902-4660-8e56-2609cf0bcd29",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "0.0.4",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T21-AYANEO.adpkg|||turnip_mrpurple_T21-AYANE",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Disk shader cache": "True",
+            "Use async shaders": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6a27724f-c730-4639-af56-532c9a562713",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Kenji-NX",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "The frame rate is a bit low, which is noticeable when playing. Screenshots available.",
+          "votes": 1,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "2.05",
+            "Game Version": "1.0.0",
+            "Docked Mode": "True",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted",
+            "VSync": "Switch",
+            "DRAM Size": "4GiB",
+            "Ignore Missing Services": "True",
+            "Performance Mode": "True",
+            "NCE (Native Code Execution)": "True",
+            "PPTC (Profiled Persistent Translation Cache)": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/967051ba-006e-4378-b384-8ee4499ef4e5",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Loadable",
+          "ratingDe": "Lädt nur",
+          "rank": 7,
+          "summary": "Massive GFX bugs + Crash",
+          "votes": 1,
+          "date": "2026-01-08",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
         }
       ]
     },

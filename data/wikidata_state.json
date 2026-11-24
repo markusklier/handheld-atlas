@@ -862,7 +862,16 @@
     "just-cause": "2026-11-21",
     "monster-hunter-stories-2-wings-of-ruin": "2026-11-21",
     "the-legend-of-zelda-ocarina-of-time-2026": "2026-11-21",
-    "tokyo-ghoul-jail": "2026-11-21"
+    "tokyo-ghoul-jail": "2026-11-21",
+    "call-of-duty-4-modern-warfare": "2026-11-24",
+    "carmageddon-ii-carpocalypse-now": "2026-11-24",
+    "dungeon-keeper": "2026-11-24",
+    "fight-night-round-3": "2026-11-24",
+    "need-for-speed-carbon": "2026-11-24",
+    "sea-dogs-to-each-his-own": "2026-11-24",
+    "sonic-r": "2026-11-24",
+    "spider-man-2": "2026-11-24",
+    "super-mario-rpg-2023": "2026-11-24"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1946,6 +1955,15 @@
     "just-cause-4": 3,
     "just-cause": 3,
     "monster-hunter-stories-2-wings-of-ruin": 3,
-    "the-legend-of-zelda-ocarina-of-time-2026": 3
+    "the-legend-of-zelda-ocarina-of-time-2026": 3,
+    "call-of-duty-4-modern-warfare": 3,
+    "carmageddon-ii-carpocalypse-now": 3,
+    "dungeon-keeper": 3,
+    "fight-night-round-3": 3,
+    "need-for-speed-carbon": 3,
+    "sea-dogs-to-each-his-own": 3,
+    "sonic-r": 3,
+    "spider-man-2": 3,
+    "super-mario-rpg-2023": 3
   }
 }

@@ -1,6 +1,474 @@
 {
   "entries": [
     {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "hollow-knight-silksong",
+      "text": "8 Community-Berichte von EmuReady für Hollow Knight: Silksong (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "grand-theft-auto-vice-city-stories",
+      "text": "3 Community-Berichte von EmuReady für Grand Theft Auto: Vice City Stories (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "grand-theft-auto-liberty-city-stories",
+      "text": "1 Community-Berichte von EmuReady für Grand Theft Auto: Liberty City Stories (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "final-fantasy-ix",
+      "text": "9 Community-Berichte von EmuReady für Final Fantasy IX (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "fallout-4",
+      "text": "6 Community-Berichte von EmuReady für Fallout 4 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "doom-64",
+      "text": "4 Community-Berichte von EmuReady für Doom 64 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "crash-team-racing",
+      "text": "1 Community-Berichte von EmuReady für Crash Team Racing (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "celeste",
+      "text": "11 Community-Berichte von EmuReady für Celeste (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "castlevania-symphony-of-the-night",
+      "text": "1 Community-Berichte von EmuReady für Castlevania: Symphony of the Night (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "route-updated",
+      "game": "call-of-duty-4-modern-warfare",
+      "text": "5 Community-Berichte von EmuReady für Call of Duty 4: Modern Warfare (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Keeper Recomped v0.1.0 veröffentlicht.",
+      "project": "keeper-recomped",
+      "games": [
+        "dungeon-keeper"
+      ],
+      "url": "https://github.com/K11MCH1/Keeper-Recomped/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Keeper Recomped wurde archiviert (nicht mehr gepflegt).",
+      "project": "keeper-recomped",
+      "games": [
+        "dungeon-keeper"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Need for Speed: Carbon for Android v2026.11.22.12 veröffentlicht.",
+      "project": "carbon-android",
+      "games": [
+        "need-for-speed-carbon"
+      ],
+      "url": "https://github.com/Chizuui/Carbon-Android/releases/tag/v2026.11.22.12"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Sonic R – Android Edition v1.3.2 veröffentlicht.",
+      "project": "sonic-r-android",
+      "games": [
+        "sonic-r"
+      ],
+      "url": "https://github.com/ZinexDa/sonic-r-android/releases/tag/v1.3.2"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "WarioWare: Twisted! Recomp android-v0.0.6-rc.1 (Vorabversion) veröffentlicht.",
+      "project": "warioware-twisted-recomp",
+      "games": [
+        "warioware-twisted"
+      ],
+      "url": "https://github.com/mstan/WarioWareTwistedRecomp/releases/tag/android-v0.0.6-rc.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Genma Onimusha – Android ARM64 Port v0.8.15-android veröffentlicht.",
+      "project": "genma-recomp-android",
+      "games": [
+        "onimusha-warlords"
+      ],
+      "url": "https://github.com/EkoSaputro14/genma-recomp-android/releases/tag/v0.8.15-android"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "GTA Stories Recompiled v0.3.2 veröffentlicht.",
+      "project": "gta-stories-recompiled",
+      "games": [
+        "grand-theft-auto-liberty-city-stories",
+        "grand-theft-auto-vice-city-stories"
+      ],
+      "url": "https://github.com/batinium/gta-stories-recompiled/releases/tag/v0.3.2"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Járngreipr v3.1.3 veröffentlicht.",
+      "project": "jarngreipr",
+      "url": "https://github.com/BrianJr03/Jarngreipr/releases/tag/v3.1.3"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "SymphonyRecomp – Android Dual Screen v0.22 veröffentlicht.",
+      "project": "symphonyrecomp-dual",
+      "games": [
+        "castlevania-symphony-of-the-night"
+      ],
+      "url": "https://github.com/pettersdark/SymphonyRecomp-DUAL/releases/tag/v0.22"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "SymphonyRecomp – Android android-v0.11.1b veröffentlicht.",
+      "project": "symphonyrecomp-android",
+      "games": [
+        "castlevania-symphony-of-the-night"
+      ],
+      "url": "https://github.com/sergiomanzur/SymphonyRecomp/releases/tag/android-v0.11.1b"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "CoD4 Recompiled v0.1.2 veröffentlicht.",
+      "project": "cod4-recomp",
+      "games": [
+        "call-of-duty-4-modern-warfare"
+      ],
+      "url": "https://github.com/yassinsolim/cod4-recomp/releases/tag/v0.1.2"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "FightNight3OGX v0.4.0-alpha.63 veröffentlicht.",
+      "project": "fightnight3ogx",
+      "games": [
+        "fight-night-round-3"
+      ],
+      "url": "https://github.com/Oxide-Shift/FightNight3OGX/releases/tag/v0.4.0-alpha.63"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "SMRPG Recomp for Android 0.10.0-alpha veröffentlicht.",
+      "project": "smrpg-recompiled-android",
+      "games": [
+        "super-mario-rpg-2023"
+      ],
+      "url": "https://github.com/ElKiro1311/smrpg-recompiled-android/releases/tag/0.10.0-alpha"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Sonic Shuffle Recompiled v0.1.0 veröffentlicht.",
+      "project": "shuffle-recomp",
+      "games": [
+        "sonic-shuffle"
+      ],
+      "url": "https://github.com/ch1ppyone/shuffle-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "NSMB Wii Recompilation v0.5.0 veröffentlicht.",
+      "project": "nsmbw-recompilation",
+      "games": [
+        "new-super-mario-bros-wii"
+      ],
+      "url": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation/releases/tag/v0.5.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Seawolves v1.0.0-alpha.1 (Vorabversion) veröffentlicht.",
+      "project": "seawolves",
+      "games": [
+        "sea-dogs-to-each-his-own"
+      ],
+      "url": "https://github.com/maxyo/seawolves/releases/tag/v1.0.0-alpha.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Carmageddon 2 Android port v1.2.0 veröffentlicht.",
+      "project": "carmageddon-2-android",
+      "games": [
+        "carmageddon-ii-carpocalypse-now"
+      ],
+      "url": "https://github.com/afrowebster/Carmageddon-2-Android-port/releases/tag/v1.2.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Underground 2 for Android v1.0.0 veröffentlicht.",
+      "project": "underground-2-android",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/PotatoRecomp/Underground-2-Android/releases/tag/v1.0.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "P5R-Port (Retroid) v0.1.0 veröffentlicht.",
+      "project": "p5r-recomp",
+      "games": [
+        "persona-5-royal"
+      ],
+      "url": "https://github.com/IamWilmar/p5r-recomp/releases/tag/v0.1.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "MW3 Recompiled v0.1.7 veröffentlicht.",
+      "project": "mw3-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-3"
+      ],
+      "url": "https://github.com/yassinsolim/mw3-recomp/releases/tag/v0.1.7"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "MW2 Recompiled v0.1.7 veröffentlicht.",
+      "project": "mw2-recomp",
+      "games": [
+        "call-of-duty-modern-warfare-2"
+      ],
+      "url": "https://github.com/yassinsolim/mw2-recomp/releases/tag/v0.1.7"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "ss-delta v0.5.1 veröffentlicht.",
+      "project": "ss-delta",
+      "games": [
+        "soul-sacrifice-delta"
+      ],
+      "url": "https://github.com/vita-recomps/ss-delta/releases/tag/v0.5.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "OpenMW Android (Andiweli) 0.51.0-18 veröffentlicht.",
+      "project": "openmw-android-andiweli",
+      "games": [
+        "morrowind"
+      ],
+      "url": "https://github.com/Andiweli/OpenMW-Android/releases/tag/0.51.0-18"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Obtainium Recomp Pack pack-2026.11.24-1344 veröffentlicht.",
+      "project": "obtainium-recomp-pack",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.24-1344"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "slingshot-animals-recomp v1.2.1 veröffentlicht.",
+      "project": "slingshot-animals-recomp",
+      "games": [
+        "angry-birds"
+      ],
+      "url": "https://github.com/Berny23/slingshot-animals-recomp/releases/tag/v1.2.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "dw4-recomp v1.3.0 veröffentlicht.",
+      "project": "dw4-recomp",
+      "games": [
+        "dragon-quest-iv"
+      ],
+      "url": "https://github.com/jsp244/dw4-recomp/releases/tag/v1.3.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "ME1Recomp profile-me1-7 veröffentlicht.",
+      "project": "me1recomp",
+      "games": [
+        "mass-effect"
+      ],
+      "url": "https://github.com/udarmolota/ME1Recomp/releases/tag/profile-me1-7"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "MarathonRecomp Android v0.3.3 veröffentlicht.",
+      "project": "marathonrecomp-android",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/SansNope/MarathonRecomp-Android/releases/tag/v0.3.3"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "NFSU2 Revived Android v1.0.3 veröffentlicht.",
+      "project": "nfsu2-revived-android",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/mininxd/NFSU2-Revived-Android/releases/tag/v1.0.3"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Catherine: Full Body Port v0.1.3 veröffentlicht.",
+      "project": "catherine-recomp",
+      "games": [
+        "catherine"
+      ],
+      "url": "https://github.com/IamWilmar/catherine-recomp/releases/tag/v0.1.3"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Ninja Gaiden Black Recomp v0.9.85 veröffentlicht.",
+      "project": "ngbrecomp",
+      "games": [
+        "ninja-gaiden-2004"
+      ],
+      "url": "https://github.com/gamboozino/ngbrecomp/releases/tag/v0.9.85"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Knight of Lodis Recomp v1.2.1 veröffentlicht.",
+      "project": "knight-of-lodis-recomp",
+      "games": [
+        "tactics-ogre-the-knight-of-lodis"
+      ],
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp/releases/tag/v1.2.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "FF9Recomp v0.1.51 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.51"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Gears3Recomp v1.1.1 veröffentlicht.",
+      "project": "gears3-recomp",
+      "games": [
+        "gears-of-war-3"
+      ],
+      "url": "https://github.com/Jauidev/Gears3Recomp/releases/tag/v1.1.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "SuperMetroidDecomp v0.9.7 veröffentlicht.",
+      "project": "supermetroiddecomp",
+      "games": [
+        "super-metroid"
+      ],
+      "url": "https://github.com/MrJackSpade/SuperMetroidDecomp/releases/tag/v0.9.7"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Free Riders Recompiled v0.10.76 veröffentlicht.",
+      "project": "free-riders-recompiled",
+      "games": [
+        "sonic-free-riders"
+      ],
+      "url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.76"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "GBA DS v1.6.1.1 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.6.1.1"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "DS Forever v1.0.39 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.39"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "SkyrimSE-DualScreen v1.0.7 veröffentlicht.",
+      "project": "skyrimse-dualscreen",
+      "games": [
+        "the-elder-scrolls-v-skyrim"
+      ],
+      "url": "https://github.com/Plus-Cloud/SkyrimSE-DualScreen/releases/tag/v1.0.7"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "WiiDS v2.0.0 veröffentlicht.",
+      "project": "wiids",
+      "games": [
+        "mario-kart-wii",
+        "new-super-mario-bros-wii",
+        "super-mario-sunshine",
+        "super-mario-galaxy",
+        "mario-kart-double-dash",
+        "super-smash-bros-brawl"
+      ],
+      "url": "https://github.com/Maddex712/WiiDS/releases/tag/v2.0.0"
+    },
+    {
+      "date": "2026-11-24",
+      "type": "release",
+      "text": "Azahar 2127.0 veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0"
+    },
+    {
       "date": "2026-11-23",
       "type": "route-updated",
       "by": "agent",
@@ -7721,620 +8189,6 @@
       "date": "2026-11-09",
       "by": "ai-research",
       "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: The UnMaking für DOOM 64 CE (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce/addons/the-unmaking",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Rumble Pak (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce/addons/rumble-pak-a-selection-of-community-made-maps",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Beta 64 für DOOM 64 CE (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce/addons/beta64-for-doom-64-knee-deep-in-the-dead",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: PlayStation (1996) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Final_Doom",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Überarbeitete id-Anthology-Fassung (1996) (KI-Recherche)",
-      "url": "https://www.pcgamingwiki.com/wiki/Final_Doom",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Final Doom in DOOM Classic Complete (2012) (KI-Recherche)",
-      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Offizielle Add-ons für DOOM / DOOM II (2020) (KI-Recherche)",
-      "url": "https://bethesda.net/en-US/news/add-ons-quick-saves-60-fps-and-more-doom-and-doom-ii",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Final Doom in DOOM + DOOM II (2024) (KI-Recherche)",
-      "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Final Doom in The DOOM Collection (2026) (KI-Recherche)",
-      "url": "https://www.gamespress.com/de/Evercade-Announces-The-DOOM-Collection-Cartridge-and-Limited-Edition-E",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: UZDoom mit echter Dual-Screen-Automap (PC (1996), KI-Recherche)",
-      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Delta Touch mit GZDoom oder klassischem Source-Port (PC (1996), KI-Recherche)",
-      "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Offizielle Android-App mit Final-Doom-Add-ons (Offizielle Add-ons für DOOM / DOOM II (2020), KI-Recherche)",
-      "url": "https://toucharcade.com/2020/01/09/doom-ii-update-out-now-60-fps-romero-sigil-level-select-cheats-add-ons-final-doom-bethesda-net-account-ios-android/",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: PlayStation-Fassung über PsyDoom für Android (PlayStation (1996), KI-Recherche)",
-      "url": "https://github.com/BodbDearg/PsyDoom/blob/master/README.md",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: TNT MAP31 – offizieller Schlüssel-Fix (KI-Recherche)",
-      "url": "https://www.doomworld.com/idgames/themes/TeamTNT/finaldoom/tnt31fix",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: WidePix (KI-Recherche)",
-      "url": "https://github.com/nashmuhandes/WidePix",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
-      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: WadFusion (KI-Recherche)",
-      "url": "https://github.com/Owlet7/wadfusion",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Plutonia MIDI Pack (KI-Recherche)",
-      "url": "https://www.jamespaddockmusic.com/doom/",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "final-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Final Doom – PlayStation-Fassung (KI-Recherche)",
-      "url": "https://www.videogamemanual.com/ps1/Final%20Doom%20%28USA%29.pdf",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Master Levels in Doom 3: Resurrection of Evil (KI-Recherche)",
-      "url": "https://investor.activisionblizzard.com/static-files/0c675c65-17af-41eb-bf3a-501a062a8beb",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Master Levels in Doom Classic Complete (KI-Recherche)",
-      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Master Levels in DOOM + DOOM II (KI-Recherche)",
-      "url": "https://slayersclub.bethesda.net/en-US/news/doom-doomii-release-notes",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Master Levels in The DOOM Collection (KI-Recherche)",
-      "url": "https://evercadia.co.uk/manuals/carts/89/The_Doom_Collection.pdf",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: UZDoom-Dual-Screen-Fork mit WadFusion (PC (1995), KI-Recherche)",
-      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: WadFusion (KI-Recherche)",
-      "url": "https://github.com/Owlet7/wadfusion",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: WadSmoosh (KI-Recherche)",
-      "url": "https://jp.itch.io/wadsmoosh",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Works of the Masters (KI-Recherche)",
-      "url": "https://jp.itch.io/deluxe-master-levels",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: WadSmoosh MIDI Pack (KI-Recherche)",
-      "url": "https://github.com/liPillON/wadsmoosh_midi_pack",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 7 Screenshots bestätigt, 15 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "mighty-doom",
-      "text": "1 Screenshots für Mighty DOOM Server – eigenes Backend gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/MightyDoom/comments/1litbsb/mighty_doom_resurrection_server_working/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "mighty-doom",
-      "text": "1 Screenshots für Mighty Resurrection – gehosteter Community-Server gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/Doom/comments/1x11e2e/something_that_was_never_seen_before_on_mighty/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "mighty-doom",
-      "text": "1 Screenshots für Offizielle Android-App – eingestellt gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/MightyDoom/comments/120rhcq/fusion_tutorial_bug_is_there_any_way_to_report/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "doom-ii",
-      "text": "1 Screenshots für Delta Touch (GZDoom, PrBoom+ u. a.) gefunden (KI, Prüfung folgt)",
-      "url": "https://www.reddit.com/r/retroid/comments/1k6ykrr/doom_1_2_running_natively_on_retroid_pocket_2s/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "master-levels-for-doom-ii",
-      "text": "Neues Spiel aus der Reihe Doom: Master Levels for Doom II (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_II"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "final-doom",
-      "text": "Neues Spiel aus der Reihe Doom: Final Doom (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Final_Doom"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: id Anthology (1996)",
-      "url": "https://www.gamespot.com/reviews/id-anthology-review/1900-2535421/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-64",
-      "text": "Neues Spiel aus der Reihe Doom: Doom 64 (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_64"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: The Depths of Doom Trilogy (1997)",
-      "url": "https://www.mobygames.com/game/5147/the-depths-of-doom-trilogy/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: DOOM: Collector's Edition (2001)",
-      "url": "https://gamefaqs.gamespot.com/pc/924560-doom-collectors-edition/data"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-3",
-      "text": "Neue Fassung aus der Reihen-Analyse: DOOM 3 (2005)",
-      "url": "https://en.wikipedia.org/wiki/Doom_3"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-rpg",
-      "text": "Neues Spiel aus der Reihe Doom: Doom RPG (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-resurrection",
-      "text": "Neues Spiel aus der Reihe Doom: Doom Resurrection (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: Doom Classic (2009)",
-      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-ii-rpg",
-      "text": "Neues Spiel aus der Reihe Doom: Doom II RPG (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-3",
-      "text": "Neue Fassung aus der Reihen-Analyse: Doom 3: BFG Edition (2012)",
-      "url": "https://en.wikipedia.org/wiki/Doom_3"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: Doom Classic Complete (2012)",
-      "url": "https://www.mobygames.com/game/59222/doom-classic-complete/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-2016",
-      "text": "Neues Spiel aus der Reihe Doom: DOOM (2016) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(2016_video_game)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-vfr",
-      "text": "Neues Spiel aus der Reihe Doom: Doom VFR (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: DOOM Slayers Collection (2019)",
-      "url": "https://gamefaqs.gamespot.com/ps4/278964-doom-slayers-collection/data"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "game-added",
-      "by": "ai-research",
-      "game": "doom-eternal",
-      "text": "Neues Spiel aus der Reihe Doom: Doom Eternal (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_Eternal"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-3",
-      "text": "Neue Fassung aus der Reihen-Analyse: Doom 3: VR Edition (2021)",
-      "url": "https://en.wikipedia.org/wiki/Doom_(franchise)"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: DOOM: The Classics Collection (2021)",
-      "url": "https://www.mobygames.com/game/181768/doom-the-classics-collection/releases/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "route-updated",
-      "by": "ai-research",
-      "game": "doom-1993",
-      "text": "Neue Fassung aus der Reihen-Analyse: DOOM Anthology (2024)",
-      "url": "https://gamefaqs.gamespot.com/pc/479521-doom-anthology/data"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Offizielle Android-App – eingestellt (Android (2021), KI-Recherche)",
-      "url": "https://help.bethesda.net/app/answers/detail/a_id/59032/~/where-can-i-download-mighty-doom%3F",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "mighty-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Mighty Resurrection – gehosteter Community-Server (Android (2021), KI-Recherche)",
-      "url": "https://mightyresurrection.app/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "mighty-doom"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Mighty DOOM Server – eigenes Backend (Android (2021), KI-Recherche)",
-      "url": "https://www.reddit.com/r/MightyDoom/comments/1lj67wy/mighty_doom_resurrection_private_server_tutorial/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "mighty-doom"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Mighty Resurrection – Inhaltswiederherstellung 1.14.1 (KI-Recherche)",
-      "url": "https://mightyresurrection.app/release",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "mighty-doom"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Macintosh-Portierung (1995) (KI-Recherche)",
-      "url": "https://groups.google.com/g/bit.listserv.games-l/c/1NQvF_9jw3o",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: NEC-PC-98-Portierung (1995) (KI-Recherche)",
-      "url": "https://www.mobygames.com/game/299/doom-ii/releases/pc98/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM für PlayStation – DOOM-II-Kampagne (1995) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM II für Windows 95 / Doom95 (1996) (KI-Recherche)",
-      "url": "https://doom.fandom.com/wiki/Doom95",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM für Sega Saturn – DOOM-II-Kampagne (1997) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: AcornDoom / DOOM Trilogy für RISC OS (1998) (KI-Recherche)",
-      "url": "https://presentation.riscos.online/doom-games/speaker-notes.html",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Game-Boy-Advance-Portierung (2002) (KI-Recherche)",
-      "url": "https://investor.activision.com/static-files/31b89230-c1c5-4581-bbc7-90e8ca9c35c8",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Tapwave-Zodiac-Portierung (2004) (KI-Recherche)",
-      "url": "https://www.mobygames.com/game/299/doom-ii/releases/zodiac/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Xbox-Portierung in DOOM 3 / Resurrection of Evil (2005) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/List_of_Doom_ports",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: Xbox Live Arcade (2010) (KI-Recherche)",
-      "url": "https://www.xbox.com/en-US/games/store/doom-ii/BRJXN52GVNLG/0001",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM II in DOOM 3: BFG Edition (2012) (KI-Recherche)",
-      "url": "https://en.wikipedia.org/wiki/Doom_3",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM II in DOOM Classic Complete (2012) (KI-Recherche)",
-      "url": "https://blog.playstation.com/2012/11/20/playstation-store-update-266/comment-page-4/",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: UZDoom mit echter Zweitbildschirm-Automap (Original (PC, 1994), KI-Recherche)",
-      "url": "https://github.com/andreyvelsk/com.mobilerpgpack.phone/releases",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: PsyDoom für Android – PlayStation-DOOM-II-Kampagne (DOOM für PlayStation – DOOM-II-Kampagne (1995), KI-Recherche)",
-      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone/blob/main/README.md",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Freedoom for Android 2026 mit eigener DOOM2.WAD (Original (PC, 1994), KI-Recherche)",
-      "url": "https://github.com/manuelsiuro/GZDoom-Android-2026",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Beautiful Doom (KI-Recherche)",
-      "url": "https://github.com/jekyllgrim/Beautiful-Doom",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Widescreen Statusbars (KI-Recherche)",
-      "url": "https://github.com/NightFright2k19/doom_widehud",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Eviternity II (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/eviternity-ii",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: BTSX / Back to Saturn X – Episode 1 und 2 (KI-Recherche)",
-      "url": "https://bethesda.net/en-US/news/new-add-on-available-btsx-episode-1",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: PSX DOOM CE (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce",
-      "date": "2026-11-08",
-      "by": "ai-research",
-      "game": "doom-ii"
     }
   ]
 }

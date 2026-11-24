@@ -64,6 +64,13 @@
           "source": "https://github.com/maxyo/seawolves",
           "credit": "Seawolves",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/maxyo/seawolves/HEAD/docs/screenshots/hero.jpg",
+          "caption": "The character window on its Skills tab: the hero",
+          "source": "https://github.com/maxyo/seawolves",
+          "credit": "Seawolves",
+          "check": "readme"
         }
       ],
       "links": [
@@ -77,5 +84,42 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q4234310",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223330/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/223330/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_f1d8b80709fa9151cd2813c2972b75c556d94126.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_88bd9862e80faa4eb2dbe6aac4c35b3870c8b819.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_9732acdcfbebc6159edcd3131b94fe71dac52ac6.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_2165bea6c6ce70204d0823668086ecf5f356d30b.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_f0925dab2344f6990f58095d580095316ac40b48.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223330/ss_0719f49bd95192c8409de50f561d840acb1c2063.1920x1080.jpg?t=1771612193",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/223330/"
+    }
+  ]
 }

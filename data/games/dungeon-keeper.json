@@ -53,7 +53,50 @@
       "status": "archived",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-level.jpg",
+          "caption": "Level 1 on a phone",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-realm.jpg",
+          "caption": "The realm map",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-menu.jpg",
+          "caption": "Main menu",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-lobby.jpg",
+          "caption": "LAN multiplayer lobby",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/launcher-play.jpg",
+          "caption": "Launcher: Play tab",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/launcher-graphics.jpg",
+          "caption": "Launcher: Graphics tab",
+          "source": "https://github.com/K11MCH1/Keeper-Recomped",
+          "credit": "Keeper Recomped",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -65,5 +108,11 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q1265742",
+  "wikipedia": "https://en.wikipedia.org/wiki/Dungeon_Keeper",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/4/4b/Dungkeep.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Dungeon_Keeper"
+  }
 }

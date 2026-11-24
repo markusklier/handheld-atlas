@@ -30,6 +30,22 @@
       "year": 2006,
       "platforms": [
         "PlayStation 2"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
@@ -58,6 +74,22 @@
       "year": 2006,
       "platforms": [
         "Nintendo GameCube"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Boxarts/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Snaps/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+          "caption": "Nintendo GameCube-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_GameCube/master/Named_Titles/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_GameCube"
+        }
       ]
     },
     {
@@ -76,6 +108,17 @@
       "year": 2006,
       "platforms": [
         "Wii"
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Need%20for%20Speed%20Carbon%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
       ]
     }
   ],
@@ -111,7 +154,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Chizuui/Carbon-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "caption": "NFS Carbon",
+          "source": "https://github.com/Chizuui/Carbon-Android",
+          "credit": "Need for Speed: Carbon for Android",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -123,5 +174,23 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q219795",
+  "wikipedia": "https://en.wikipedia.org/wiki/Need_for_Speed%3A_Carbon",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Need%20for%20Speed%20-%20Carbon%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

@@ -206,7 +206,22 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/WitherBlitz/NSMB-Wii-Recompilation/HEAD/docs/screenshots/android-title.webp",
+          "caption": "New Super Mario Bros. Wii running natively on an Android phone, with the on scre",
+          "source": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation",
+          "credit": "NSMB Wii Recompilation",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/WitherBlitz/NSMB-Wii-Recompilation/HEAD/docs/screenshots/windows-lan-couch-toggle.png",
+          "caption": "The Couch / LAN button at the top right of the Select a File screen, on Windows",
+          "source": "https://github.com/WitherBlitz/NSMB-Wii-Recompilation",
+          "credit": "NSMB Wii Recompilation",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

@@ -343,7 +343,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/PotatoRecomp/Underground-2-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "caption": "Underground 2",
+          "source": "https://github.com/PotatoRecomp/Underground-2-Android",
+          "credit": "Underground 2 for Android",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

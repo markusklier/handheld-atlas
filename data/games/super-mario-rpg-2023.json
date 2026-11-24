@@ -74,5 +74,12 @@
       "checkedAt": "2026-11-23"
     }
   ],
-  "updatedAt": "2026-11-23"
+  "updatedAt": "2026-11-23",
+  "wikidata": "Q119822934",
+  "website": "https://www.nintendo.co.jp/switch/a8lua/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Super_Mario_RPG_%282023_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/8/89/SuperMarioRPGSNESCoverArtUS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Super_Mario_RPG_%282023_video_game%29"
+  }
 }

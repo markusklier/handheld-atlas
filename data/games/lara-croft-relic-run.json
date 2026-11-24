@@ -38,9 +38,9 @@
   "mods": [],
   "updatedAt": "2026-11-09",
   "cover": {
-    "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Lara_Croft_Relic_Run_Icon.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "source": "https://en.wikipedia.org/wiki/Lara_Croft%3A_Relic_Run",
-    "fallback": true
+    "url": "https://play-lh.googleusercontent.com/Nv145J-7-ewRpJKts_VhqDZ0UvvIHbzdzVZBe28wYFKRr1I7l9WZ223IlbLMVm_UKL4eTpoax1yMSXvWDRiq=w1280-h640",
+    "source": "https://play.google.com/store/apps/details?id=com.squareenix.relicrun",
+    "check": "ai"
   },
   "wikidata": "Q20747190",
   "wikipedia": "https://en.wikipedia.org/wiki/Lara_Croft%3A_Relic_Run",

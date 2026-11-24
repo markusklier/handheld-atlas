@@ -112,7 +112,55 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "note": "Umsetzung des PSP-Originals; Grundlage von GTA Stories Recompiled."
+      "note": "Umsetzung des PSP-Originals; Grundlage von GTA Stories Recompiled.",
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Grand%20Theft%20Auto%20-%20Vice%20City%20Stories%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/6e6574b0-16f2-42cb-852c-66fa458c26c1",
+          "device": "AYN Odin 2 Portal Pro",
+          "emulator": "NethersX2",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "",
+          "votes": 1,
+          "date": "2025-07-27",
+          "settings": {
+            "Emulator Version": "V2.0",
+            "Renderer": "Vulkan (Recommended)",
+            "BIOS Region": "USA (NTSC-U)",
+            "Internal Resolution": "1",
+            "Upscale Multiplier": "2",
+            "Multi-threaded VU": "True",
+            "Threading Mode": "Multi-threaded (Default)",
+            "Texture Filtering": "Bilinear (PS2)",
+            "Frame Pacing": "True",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/b66bac3d-531c-4b80-aa9d-a3a5ca46f93d"
+        }
+      ]
     }
   ],
   "routes": [
@@ -149,7 +197,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://img.youtube.com/vi/OvINqoUC0Uo/maxresdefault.jpg",
+          "caption": "GTA Stories Recompiled trailer",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/batinium/gta-stories-recompiled/HEAD/docs/media/hero_portland_sunset.jpg",
+          "caption": "Liberty City Stories on PC: Portland at sunset, 1000% draw distance",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/batinium/gta-stories-recompiled/HEAD/docs/media/stories_docks.jpg",
+          "caption": "GTA Stories: Vice City on the horizon seen from Portland Docks in Liberty City",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/batinium/gta-stories-recompiled/HEAD/docs/media/stories_vice_to_liberty.jpg",
+          "caption": "GTA Stories: Liberty City on the horizon seen from Escobar International in Vice",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/batinium/gta-stories-recompiled/HEAD/docs/images/stories/vic_in_liberty_city.jpg",
+          "caption": "Vic Vance standing at Portland Docks in Liberty City Stories on PC",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/batinium/gta-stories-recompiled/HEAD/docs/images/stories/high_over_the_border.jpg",
+          "caption": "View from high over the border between Liberty City and Vice City, looking east",
+          "source": "https://github.com/batinium/gta-stories-recompiled",
+          "credit": "GTA Stories Recompiled",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

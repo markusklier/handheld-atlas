@@ -80,7 +80,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/launcher-desktop.png",
+          "caption": "MacOS and Windows launcher",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/launcher-android.png",
+          "caption": "Android launcher",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/menu-desktop.png",
+          "caption": "MacOS and Windows main menu",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/menu-android.png",
+          "caption": "Android main menu",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/game-desktop.png",
+          "caption": "MacOS and Windows gameplay",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ch1ppyone/shuffle-recomp/HEAD/docs/images/game-android.png",
+          "caption": "Android gameplay",
+          "source": "https://github.com/ch1ppyone/shuffle-recomp",
+          "credit": "Sonic Shuffle Recompiled",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

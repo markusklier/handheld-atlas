@@ -137,6 +137,23 @@
         },
         {
           "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ce045ad9-f4b3-4cfb-8eb0-11156f6c9108",
+          "device": "AYN Thor Pro",
+          "emulator": "DroidDeck",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Works flawlessly at 1080p, 120 FPS, I cap it to 60 for battery life at times (the game barely sips any power though).",
+          "votes": 1,
+          "date": "2026-11-09",
+          "settings": {
+            "Emulator Version": "0.6.9",
+            "Store": "Steam",
+            "Average FPS": "120"
+          }
+        },
+        {
+          "source": "EmuReady",
           "url": "https://www.emuready.com/listings/c73d26f3-6ee1-49ec-a7a8-61e65e173d22",
           "device": "AYN Thor Base",
           "emulator": "GameNative",
