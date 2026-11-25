@@ -1,6 +1,302 @@
 {
   "entries": [
     {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "pokemon-brilliant-diamond",
+      "text": "4 Community-Berichte von EmuReady für Pokémon Brilliant Diamond (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "persona-5-royal",
+      "text": "16 Community-Berichte von EmuReady für Persona 5 Royal (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "persona-3-portable",
+      "text": "2 Community-Berichte von EmuReady für Persona 3 Portable (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "octopath-traveler-0",
+      "text": "7 Community-Berichte von EmuReady für Octopath Traveler 0 (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "new-super-mario-bros-wii",
+      "text": "2 Community-Berichte von EmuReady für New Super Mario Bros. Wii (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "minecraft",
+      "text": "4 Community-Berichte von EmuReady für Minecraft (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "metroid-prime",
+      "text": "1 Community-Berichte von EmuReady für Metroid Prime (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "metroid-prime-4-beyond",
+      "text": "7 Community-Berichte von EmuReady für Metroid Prime 4: Beyond (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "metroid-prime-2-echoes",
+      "text": "1 Community-Berichte von EmuReady für Metroid Prime 2: Echoes (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "metroid-dread",
+      "text": "11 Community-Berichte von EmuReady für Metroid Dread (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "mario-kart-double-dash",
+      "text": "2 Community-Berichte von EmuReady für Mario Kart: Double Dash!! (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "mario-kart-8-deluxe",
+      "text": "12 Community-Berichte von EmuReady für Mario Kart 8 Deluxe (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "route-updated",
+      "game": "hollow-knight",
+      "text": "15 Community-Berichte von EmuReady für Hollow Knight (Geräte mit dem Chip des AYN Thor)"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Járngreipr v4.0.3 veröffentlicht.",
+      "project": "jarngreipr",
+      "url": "https://github.com/BrianJr03/Jarngreipr/releases/tag/v4.0.3"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "FightNight3OGX v0.4.0-alpha.73 veröffentlicht.",
+      "project": "fightnight3ogx",
+      "games": [
+        "fight-night-round-3"
+      ],
+      "url": "https://github.com/Oxide-Shift/FightNight3OGX/releases/tag/v0.4.0-alpha.73"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Dark Souls II: SotFS Android (Recomp) v0.5.7 veröffentlicht.",
+      "project": "ds2-sotfs-recomp",
+      "games": [
+        "dark-souls-ii"
+      ],
+      "url": "https://github.com/Lazaer-YZY/ds2-sotfs-recomp/releases/tag/v0.5.7"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "ss-delta v0.5.3 veröffentlicht.",
+      "project": "ss-delta",
+      "games": [
+        "soul-sacrifice-delta"
+      ],
+      "url": "https://github.com/vita-recomps/ss-delta/releases/tag/v0.5.3"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Obtainium Recomp Pack pack-2026.11.25-1256 veröffentlicht.",
+      "project": "obtainium-recomp-pack",
+      "url": "https://github.com/kyure001/obtainium_recomp_pack/releases/tag/pack-2026.11.25-1256"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Marchwind 64 (SRW64 Recomp) v0.5.4 veröffentlicht.",
+      "project": "srw64-recomp",
+      "games": [
+        "super-robot-wars-64"
+      ],
+      "url": "https://github.com/dyzz/srw64-recomp/releases/tag/v0.5.4"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "MarathonRecomp Android v0.3.4.1 veröffentlicht.",
+      "project": "marathonrecomp-android",
+      "games": [
+        "sonic-the-hedgehog-2006"
+      ],
+      "url": "https://github.com/SansNope/MarathonRecomp-Android/releases/tag/v0.3.4.1"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "NFSU2 Revived Android v1.0.5 veröffentlicht.",
+      "project": "nfsu2-revived-android",
+      "games": [
+        "need-for-speed-underground-2"
+      ],
+      "url": "https://github.com/mininxd/NFSU2-Revived-Android/releases/tag/v1.0.5"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Catherine: Full Body Port v0.1.5 veröffentlicht.",
+      "project": "catherine-recomp",
+      "games": [
+        "catherine"
+      ],
+      "url": "https://github.com/IamWilmar/catherine-recomp/releases/tag/v0.1.5"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "RA3 Native v0.2.6 veröffentlicht.",
+      "project": "ra3-native",
+      "games": [
+        "command-and-conquer-red-alert-3"
+      ],
+      "url": "https://github.com/blackorange-sketch/RA3-Native/releases/tag/v0.2.6"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Knight of Lodis Recomp v1.2.2 veröffentlicht.",
+      "project": "knight-of-lodis-recomp",
+      "games": [
+        "tactics-ogre-the-knight-of-lodis"
+      ],
+      "url": "https://github.com/lucdubois/KnightOfLodisRecomp/releases/tag/v1.2.2"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "FF9Recomp v0.1.55 veröffentlicht.",
+      "project": "ff9-recomp-android",
+      "games": [
+        "final-fantasy-ix"
+      ],
+      "url": "https://github.com/bhuiyah/ff9-recomp-android/releases/tag/v0.1.55"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Bayonetta 3 Recomp v0.3.17 veröffentlicht.",
+      "project": "bayo3-recomp",
+      "games": [
+        "bayonetta-3"
+      ],
+      "url": "https://github.com/aoxzh/bayo3-recomp/releases/tag/v0.3.17"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "nsmbu-recomp v0.10.1 veröffentlicht.",
+      "project": "nsmbu-recomp",
+      "games": [
+        "new-super-mario-bros-u"
+      ],
+      "url": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/tag/v0.10.1"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "GBA DS v1.6.2 veröffentlicht.",
+      "project": "gba-ds",
+      "games": [
+        "metroid-fusion",
+        "metroid-zero-mission",
+        "castlevania-aria-of-sorrow"
+      ],
+      "url": "https://github.com/kyannon/gba-ds/releases/tag/v1.6.2"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "DS Forever v1.0.41 veröffentlicht.",
+      "project": "ds-forever",
+      "games": [
+        "world-of-warcraft-forever"
+      ],
+      "url": "https://github.com/Jreese702/DS-Forever/releases/tag/v1.0.41"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Recompa v0.5.1 veröffentlicht.",
+      "project": "recompa",
+      "url": "https://github.com/kalasyan/recompa/releases/tag/v0.5.1"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "PokeDaisy v1.6.2.1 veröffentlicht.",
+      "project": "pokedaisy",
+      "games": [
+        "pokemon-emerald"
+      ],
+      "url": "https://github.com/lidor30/pokedaisy/releases/tag/v1.6.2.1"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "GameNative v1.4.1 veröffentlicht.",
+      "project": "gamenative",
+      "games": [
+        "cyberpunk-2077",
+        "grand-theft-auto-iv",
+        "grand-theft-auto-v",
+        "tomb-raider",
+        "the-elder-scrolls-v-skyrim",
+        "hollow-knight",
+        "tomb-raider-chronicles",
+        "wizard101"
+      ],
+      "url": "https://github.com/utkarshdalal/GameNative/releases/tag/v1.4.1"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Eden Duo Companions star-ocean-the-second-story-r-1.0.0 veröffentlicht.",
+      "project": "eden-companions",
+      "games": [
+        "metroid-dread",
+        "persona-5-royal",
+        "mario-kart-8-deluxe",
+        "super-mario-bros-wonder",
+        "animal-crossing-new-horizons",
+        "fire-emblem-three-houses",
+        "the-binding-of-isaac-rebirth",
+        "pokemon-brilliant-diamond",
+        "pokemon-shining-pearl",
+        "crash-team-racing-nitro-fueled",
+        "dragon-quest-iii-hd-2d-remake",
+        "chained-echoes"
+      ],
+      "url": "https://github.com/igawa6/eden-duo-companions/releases/tag/star-ocean-the-second-story-r-1.0.0"
+    },
+    {
+      "date": "2026-11-25",
+      "type": "release",
+      "text": "Azahar 2127.0.1 veröffentlicht.",
+      "project": "azahar",
+      "url": "https://github.com/azahar-emu/azahar/releases/tag/2127.0.1"
+    },
+    {
       "date": "2026-11-24",
       "type": "route-updated",
       "game": "hollow-knight-silksong",
@@ -7957,238 +8253,6 @@
       "type": "screenshot-added",
       "by": "ai-research",
       "text": "KI-Bildprüfung: 4 Screenshots bestätigt, 8 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "2 Bilder für N-Gage-Portierung über EKA2L1 gefunden (Prüfung folgt)",
-      "url": "https://www.youtube.com/watch?v=5Uu7wgYtQMU"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "4 Bilder für Historische offizielle Android-App aus eigenem Kaufkonto gefunden (Prüfung folgt)",
-      "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "3 Bilder für OpenLara mit eigenen Original-Spieldaten gefunden (Prüfung folgt)",
-      "url": "https://www.langweiledich.net/spielt-tomb-raider-1-in-eurem-browser/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 2 Screenshots bestätigt, 0 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 9 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "final-doom",
-      "text": "6 Bilder für Offizielle Android-App mit Final-Doom-Add-ons gefunden (Prüfung folgt)",
-      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 0 Screenshots bestätigt, 11 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "final-doom",
-      "text": "1 Bilder für PlayStation-Fassung über PsyDoom für Android gefunden (Prüfung folgt)",
-      "url": "https://github.com/BodbDearg/PsyDoom/blob/master/README.md"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "final-doom",
-      "text": "6 Bilder für Offizielle Android-App mit Final-Doom-Add-ons gefunden (Prüfung folgt)",
-      "url": "https://play.google.com/store/apps/details?id=com.bethsoft.DOOMII"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "final-doom",
-      "text": "6 Bilder für Delta Touch mit GZDoom oder klassischem Source-Port gefunden (Prüfung folgt)",
-      "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 8 Screenshots bestätigt, 9 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "2 Bilder für N-Gage-Portierung über EKA2L1 gefunden (Prüfung folgt)",
-      "url": "https://www.youtube.com/watch?v=oV4aHSsXnfc"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "3 Bilder für Historische offizielle Android-App aus eigenem Kaufkonto gefunden (Prüfung folgt)",
-      "url": "https://www.pocketgamer.com/tomb-raider-i/square-enix-unearths-a-dusty-relic-called-tomb-raider-on-android/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "1 Bilder für OpenLara mit eigenen Original-Spieldaten gefunden (Prüfung folgt)",
-      "url": "https://www.youtube.com/watch?v=do-0CL7wYjc"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "6 Bilder für I–III Remastered als offizielle Android-App gefunden (Prüfung folgt)",
-      "url": "https://play.google.com/store/apps/details?id=com.aspyr.trm"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 3 Screenshots bestätigt, 8 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "crash-team-racing",
-      "text": "2 Bilder für PlayStation mit 60-FPS-/Widescreen-Patch gefunden (Prüfung folgt)",
-      "url": "https://www.youtube.com/watch?v=XdkeiIj2R4c"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "crash-team-racing",
-      "text": "6 Bilder für CTR-DS gefunden (Prüfung folgt)",
-      "url": "https://www.bunk.games/articles/crash-team-racing-ctr-ds-ayn-thor-setup/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 1 Screenshots bestätigt, 2 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "game": "tomb-raider",
-      "text": "1 Screenshots für Historische offizielle Android-App aus eigenem Kaufkonto gefunden (KI, Prüfung folgt)",
-      "url": "https://www.tomb-of-ash.com/play-the-original-tomb-raider-on-android-with/"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 4 Screenshots bestätigt, 3 unpassende entfernt"
-    },
-    {
-      "date": "2026-11-09",
-      "type": "screenshot-added",
-      "by": "ai-research",
-      "text": "KI-Bildprüfung: 1 Screenshots bestätigt, 0 unpassende entfernt"
-    },
-    {
-      "type": "route-updated",
-      "text": "Neue Fassung: DOOM 64 – Neuauflage (2020) (KI-Recherche)",
-      "url": "https://www.esrb.org/ratings/36902/doom-64/",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Delta Touch mit DOOM64EX+ (DOOM 64 – Neuauflage (2020), KI-Recherche)",
-      "url": "https://github.com/atsb/Doom64EX-Plus",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: Engines Hub mit Doom64 EX Plus (DOOM 64 – Neuauflage (2020), KI-Recherche)",
-      "url": "https://github.com/sandstranger/com.mobilerpgpack.phone",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: DOOM 64 CE über Delta Touch (DOOM 64 – Neuauflage (2020), KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce/downloads/doom-64-ce-400-full-download",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "route-added",
-      "text": "Neuer Spielweg: PC-Neuauflage über DroidDeck (DOOM 64 – Neuauflage (2020), KI-Recherche)",
-      "url": "https://github.com/Droid-Deck/DroidDeck/releases/tag/0.6.9",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: DOOM 64: Complete Edition (KI-Recherche)",
-      "url": "https://github.com/azamorapl/doom64-complete-edition",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: DOOM 64 XE (KI-Recherche)",
-      "url": "https://github.com/Immorpher/doom64xe",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: DOOM 64 EX+ Enhanced (KI-Recherche)",
-      "url": "https://github.com/Styd051/DOOM64-EX-Plus-Enhanced",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
-    },
-    {
-      "type": "mod-added",
-      "text": "Neuer Mod: Upscaled Textures Addon (KI-Recherche)",
-      "url": "https://www.moddb.com/mods/doom-ce/addons/upscale-addon",
-      "date": "2026-11-09",
-      "by": "ai-research",
-      "game": "doom-64"
     }
   ]
 }

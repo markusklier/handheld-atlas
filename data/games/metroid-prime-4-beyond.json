@@ -23,6 +23,144 @@
         {
           "label": "Quelle",
           "url": "https://www.nintendo.com/ph/news/article/5cO1ScZizXa224ZCA5J9Yg"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/21b561d4-e7ec-43e2-876c-c54431fc6bc0"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a1ac18d8-2384-4836-94be-92d8e8e76b46",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Plays great. I’m in max and haven’t noticed any major issues after updating to firmware 21 awhile back and have since completed the games. Only issue is slight lag during cutscenes due to max cpu usage.",
+          "votes": 2,
+          "date": "2026-01-28",
+          "settings": {
+            "Emulator Version": "v0.1.0-Standard",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 4|||Turnip_v26.0.0_R4.zip",
+            "Docked Mode": "True",
+            "Limit Speed": "True",
+            "Accuracy Level": "Normal",
+            "Resolution": "1",
+            "Use reactive flushing": "True",
+            "VSync Mode": "FIFO (On)",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Auto"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/65ef25c1-2578-4edf-8fb2-89f26edb60a1",
+          "device": "Xiaomi Poco F6 Pro",
+          "emulator": "Eden",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Run 40-60 Fps,slight frame drops but returns to 60fps, sometimes there are graphic glitches",
+          "votes": 0,
+          "date": "2026-01-02",
+          "settings": {
+            "Game Version": "1.0.0",
+            "Average FPS": "58",
+            "Limit Speed": "True",
+            "GPU API": "Vulkan",
+            "CPU accuracy": "Auto",
+            "CPU backend": "Native code execution (NCE)",
+            "Enhanced Frame Pacing": "True",
+            "VRAM Usage Mode": "Conservative",
+            "NVDEC Emulation": "CPU",
+            "ASTC Recompression Method": "Uncompressed"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/eb8f5544-89fb-4bfb-a620-9410ca0f662e",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Playable but with issues: choppy sound, slowdown, occasional GFX problems, shadow bugs, and firmware 20.0.1 + 20.0.5 keys are mandatory, otherwise the game crashes. screenshots available.",
+          "votes": 1,
+          "date": "2025-12-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b978a42f-a340-4b07-9f69-5bc47e711861",
+          "device": "AYN Thor Max",
+          "emulator": "Eden",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Crash at certain cutscenes",
+          "votes": 0,
+          "date": "2026-02-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/21aadb36-636e-4946-b04f-5ed7cdd91592",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Ingame",
+          "ratingDe": "Mit Fehlern",
+          "rank": 5,
+          "summary": "Report as of 12/4/25 **USE EDEN TEST BUILD:** https://github.com/Eden-CI/PR/releases/tag/3143 - NX Firmware 21.0.1 - Prod Key 21.0.1 Major Audio Desyncs when cutscenes are playing. Along with a lot of audio stuttering an",
+          "votes": 5,
+          "date": "2025-12-04"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/abed9b2a-1112-4d81-b387-e6e402010eff",
+          "device": "AYN Odin 2 Max",
+          "emulator": "Citron",
+          "rating": "Intro",
+          "ratingDe": "Nur Intro/Menü",
+          "rank": 6,
+          "summary": "Crash during the intro. I tried several settings and drivers, without success.",
+          "votes": 1,
+          "date": "2025-12-29",
+          "settings": {
+            "Emulator Version": "0.12.25",
+            "Driver Version": "[Mr. Purple Turnip] turnip_mrpurple_T22hf-toasted.adpkg|||turnip_mrpurple_T22hf-",
+            "Accuracy Level": "Normal",
+            "Resolution": "1080p",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/413ee839-471d-4007-a120-d4e63821c6da",
+          "device": "AYN Thor Pro",
+          "emulator": "Citron",
+          "rating": "Nothing",
+          "ratingDe": "Läuft nicht",
+          "rank": 8,
+          "summary": "As of 12/3/25, the game fails to load on any Switch Emulator due to audio issues on startup. On the latest NX Firmware Firmware 21.0.1 with the Prod Key version 21.0.1.",
+          "votes": 3,
+          "date": "2025-12-03",
+          "settings": {
+            "Emulator Version": "4491abc",
+            "Driver Version": "[KIMCHI Turnip] v26.0.0 - Revision 5|||Turnip_v26.0.0_R5.zip",
+            "Accuracy Level": "Normal",
+            "Resolution": "1280x720",
+            "VSync Mode": "FIFO (On)",
+            "Window adapting filter": "Bilinear",
+            "Anti-aliasing method": "None",
+            "Anisotropic filtering": "Default",
+            "Disk shader cache": "True",
+            "Use async shaders": "True"
+          }
         }
       ]
     },

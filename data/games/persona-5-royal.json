@@ -231,6 +231,89 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q63385672"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/397a70a2-5a9a-43e0-b568-791592554109"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/dd32c765-18a2-482c-bb81-1edcfd5b82eb",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "50-60 fps @ high settings. didn't test past tutorial though. glibc box64 0.3.8 You need to get past initial denuvo check somehow. Try proton and denuvo/compat box presets with steam client and updates enabled. you just n",
+          "votes": 8,
+          "date": "2026-02-04",
+          "settings": {
+            "Emulator Version": "7.1",
+            "Graphics Driver": "Turnip (Adreno)",
+            "DX Wrapper": "VKD3D",
+            "DXVK Version": "2.6.1-gplasync",
+            "DX Wrapper Config (Version, Frame Rate, Max Memory)": "VKD3D 2.14.1",
+            "Audio Driver": "PulseAudio",
+            "Box64 Version": "0.3.6",
+            "Box64 Preset": "Performance",
+            "Startup Selection": "Essential (Load only essential services)",
+            "Resolution (Screen Size)": "1280x720"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ae172881-3869-4491-8cd4-e055915a769c",
+          "device": "AYN Thor Max",
+          "emulator": "DroidDeck",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Used default settings of DroidDeck. Runs at 30~60 fps well. Random crashes hurt for a game where you can go a while without a save point.",
+          "votes": 0,
+          "date": "2026-10-23",
+          "settings": {
+            "Emulator Version": "0.5.0",
+            "Store": "Steam",
+            "Average FPS": "30"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2cb62cbe-39bc-40d2-85f9-3a6438a540a8",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Please note, that I am using the same setup settings for Gamenative from the AYN THOR setup video from retrogamecorps on youtube. Not super tech savvy on that part, so note that the emulator specific information may not ",
+          "votes": 0,
+          "date": "2026-07-20",
+          "settings": {
+            "Emulator Version": "1.1.0",
+            "Container Variant": "bionic",
+            "Wine Version": "proton-9.0-arm64ec",
+            "Resolution (Screen Size)": "1280x720 (16:9)",
+            "Audio Driver": "other",
+            "Steam Type": "normal",
+            "Startup Selection": "Aggressive (Stop services on startup)",
+            "32-bit Emulator": "fex",
+            "64-bit Emulator": "fex",
+            "Box64 Version": "0.3.6"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/4344cab2-0d0a-4094-85db-b083d1c9d175",
+          "device": "AYN Thor Max",
+          "emulator": "GameNative",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "",
+          "votes": 1,
+          "date": "2026-03-18"
         }
       ]
     },

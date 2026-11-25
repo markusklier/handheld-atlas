@@ -77,6 +77,18 @@
         },
         {
           "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/ef895080-087a-4cb2-aa79-fcf811ab1288",
+          "device": "Retroid Pocket 6",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Latest version 3.0.5 and DLC working great. Average around 60FPS with latest T24 Mr Purple Turnip and default settings. Tested the first five 50CC Cups and had zero issues, played perfectly!",
+          "votes": 7,
+          "date": "2026-02-27"
+        },
+        {
+          "source": "EmuReady",
           "url": "https://www.emuready.com/listings/fb62415e-08be-4415-8c1f-5abc748d26f1",
           "device": "AYN Thor Max",
           "emulator": "Eden",
@@ -98,18 +110,6 @@
           "summary": "",
           "votes": 6,
           "date": "2025-12-05"
-        },
-        {
-          "source": "EmuReady",
-          "url": "https://www.emuready.com/listings/ef895080-087a-4cb2-aa79-fcf811ab1288",
-          "device": "Retroid Pocket 6",
-          "emulator": "Eden",
-          "rating": "Perfect",
-          "ratingDe": "Perfekt",
-          "rank": 1,
-          "summary": "Latest version 3.0.5 and DLC working great. Average around 60FPS with latest T24 Mr Purple Turnip and default settings. Tested the first five 50CC Cups and had zero issues, played perfectly!",
-          "votes": 5,
-          "date": "2026-02-27"
         },
         {
           "source": "EmuReady",

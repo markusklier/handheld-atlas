@@ -16,7 +16,11 @@
       "platforms": [
         "PC"
       ],
-      "note": "Der Android-Port ist auf Version 1.7.3 (x64) abgestimmt."
+      "note": "Der Android-Port ist auf Version 1.7.3 (x64) abgestimmt.",
+      "cover": {
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223330/library_600x900_2x.jpg",
+        "source": "https://store.steampowered.com/app/223330/"
+      }
     }
   ],
   "routes": [

@@ -24,7 +24,25 @@
         "mods"
       ],
       "note": "Die Fassung mit dem größten Mod-Ökosystem (Fabric, Forge). Auf Android über Java-Launcher; Basis der meisten Dual-Screen-Mods.",
-      "reports": [],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a62f734e-e7ae-4161-85c4-49c92790c624",
+          "device": "Retroid Pocket 6",
+          "emulator": "DroidDeck",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "To play Minecraft: 1. Install desktop on Droiddeck. 2. In the Droiddeck desktop tab, click on the app store icon. 3. Search, install and run Prism Launcher. 4. After adding your Microsoft account, add a new Minecraft ins",
+          "votes": 0,
+          "date": "2026-11-17",
+          "settings": {
+            "Emulator Version": "0.7.1",
+            "Store": "Other",
+            "Game Version": "26.3"
+          }
+        }
+      ],
       "links": [
         {
           "label": "EmuReady",

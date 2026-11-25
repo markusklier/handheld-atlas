@@ -1,6 +1,262 @@
 {
   "leads": [
     {
+      "url": "https://modrinth.com/mod/bedrock-simple-voice",
+      "title": "Bedrock Simple Voice",
+      "excerpt": "Proximity voice chat for Bedrock & Java via Simple Voice Chat — in the browser or Android app. No extra web port needed (free relay or self-hosted).",
+      "game": null,
+      "source": "modrinth",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/JayElDragon/Pokeborne-Android",
+      "title": "JayElDragon/Pokeborne-Android",
+      "excerpt": "Offline Android port of the Pokeborne web game: WebView wrapper, on-screen controls, 60/120 Hz ",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/manuk-bulan/MANUK-MKSM-Xbox-Android",
+      "title": "manuk-bulan/MANUK-MKSM-Xbox-Android",
+      "excerpt": "Unofficial Android (arm64) port of Mortal Kombat: Shaolin Monks (Xbox), statically recompiled with XboxXBE-Recomp. Vulkan renderer, touch controls, gamepad support, optional CRT/scanline filters, FXAA/SSAA and cheats. No game files included — bring your own disc image.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/UnknuwProjects/THPS4-Port-Android",
+      "title": "UnknuwProjects/THPS4-Port-Android",
+      "excerpt": "Unofficial native Android port of Tony Hawk's Pro Skater 4 (original Xbox), statically recompiled with XboxXBE-Recomp.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Nyaldee/Ports-Launcher",
+      "title": "Nyaldee/Ports-Launcher",
+      "excerpt": "A library manager and installer for unofficial native game ports and recomps. Fully portable, with zero runtime dependencies, and compatible with Windows, Linux, and Android. Written in Rust. Requires a working OpenGL driver for the UI.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/dfdx047/HiddenLeaf",
+      "title": "dfdx047/HiddenLeaf",
+      "excerpt": "A Naruto Ultimate Ninja Static Recomp for Android",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/ps4star/WhiteRecomp",
+      "title": "ps4star/WhiteRecomp",
+      "excerpt": "WhiteRecomp: builds FINAL FANTASY XIII from your Steam copy. Compiles for native Windows, macOS, Linux (ARM64 Supported), or Android.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Ethiquema/obtainium-thor-pack",
+      "title": "Ethiquema/obtainium-thor-pack",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Davitt3054/Showdown-thor",
+      "title": "Davitt3054/Showdown-thor",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/yangyws/DualScreenBrowser",
+      "title": "yangyws/DualScreenBrowser",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Stezkoy/ScreenFlip",
+      "title": "Stezkoy/ScreenFlip",
+      "excerpt": "An application that swaps active applications between two console screens.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/jkoehler11/ROMulus",
+      "title": "jkoehler11/ROMulus",
+      "excerpt": "A RomM fork with a plugin shelf: manifests on disk, panels filled by sources you choose, settings per user.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/nikalbazu24/Integral-dual-screen-IDS-",
+      "title": "nikalbazu24/Integral-dual-screen-IDS-",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/ngoducthangvna-ui/chieumanhinh",
+      "title": "ngoducthangvna-ui/chieumanhinh",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/cjland/family-face-off",
+      "title": "cjland/family-face-off",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/sreevarshan-xenoz/friday-mobile",
+      "title": "sreevarshan-xenoz/friday-mobile",
+      "excerpt": "FRIDAY Mobile: your FRIDAY computer on your Android phone (screen, input, files, and answering FRIDAY). Built from Pocketdesk.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/CaYatur/SoundVisualizer",
+      "title": "CaYatur/SoundVisualizer",
+      "excerpt": "CaYaDev SoundVisualizer — free, open-source music visualizer & VJ software for Windows, macOS and Linux, with an Android app on the way. Real MilkDrop engine, 71 audio-reactive modes, layers and 44 GPU effects, a live page with T-bar, phone remote, OBS overlay, Spout/Syphon, projection mapping, RGB lighting, timeline, video export and MCP control.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/seandettmann/schoolbag",
+      "title": "seandettmann/schoolbag",
+      "excerpt": "A bottom-screen HUD for The Binding of Isaac: Repentance+ on dual-screen handhelds like the AYN Thor.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/nzimas/bigorna",
+      "title": "nzimas/bigorna",
+      "excerpt": "Bigorna: a firmware for the M-VAVE FM-1 for rhythmic noise, power noise, industrial and IDM, after the Elektron Digitone II.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Rahul6051276/primefilx-",
+      "title": "Rahul6051276/primefilx-",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/MaulanaASetiawan/Nusantara-Guard",
+      "title": "MaulanaASetiawan/Nusantara-Guard",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/h333ndrik/thr4ce",
+      "title": "h333ndrik/thr4ce",
+      "excerpt": "project for flash and stencil creation and editing",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/codmir-labs/sdk",
+      "title": "codmir-labs/sdk",
+      "excerpt": "Official Codmir SDK — error tracking, session replay, AI agents. Apache 2.0.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Edeh-Chinecherem/solar-track",
+      "title": "Edeh-Chinecherem/solar-track",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/BilboSherlock/Production-Suite",
+      "title": "BilboSherlock/Production-Suite",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Yuerchu/meridian",
+      "title": "Yuerchu/meridian",
+      "excerpt": "隐私优先的 AI 桌面客户端——编程 agent、多模型接入、内置输入法。| Privacy-first AI desktop client with coding agent, multi-provider support, and a built-in input method",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Plaguedoctor-sudo/talos--android",
+      "title": "Plaguedoctor-sudo/talos--android",
+      "excerpt": "TALOS / LibreMobile OS — Sovereign, un-Googled, bit-for-  bit reproducible mobile OS for ARM64 Project Treble hardware",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/Promenar/Infinity-Deck",
+      "title": "Promenar/Infinity-Deck",
+      "excerpt": "The AI agent that runs on your phone. An open-source Android app with a built-in Linux, git, SSH and Tailscale. Bring your own key; your data stays on your device.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/WinBlader/Vaulta-Smart-Expense-Tracker",
+      "title": "WinBlader/Vaulta-Smart-Expense-Tracker",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/AlexLX4773H/LXTrackList",
+      "title": "AlexLX4773H/LXTrackList",
+      "excerpt": "A personal media tracking Android app for Anime, Manga, Manhwa, Movies, Shows & Books",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/hackerstudent29/Zenify",
+      "title": "hackerstudent29/Zenify",
+      "excerpt": "High-fidelity open-source Android music & video streaming app built with Flutter & Media3 ExoPlayer. 320kbps Akamai CDN audio, 20-style DJ crossfade, syllable-synced lyrics, Studio FX DSP, Room Together voice sync, offline downloads, and strictly zero ads.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
+      "url": "https://github.com/zypherianastrid/Geovanta",
+      "title": "zypherianastrid/Geovanta",
+      "excerpt": "Geovanta Vector Editor - 100% Offline Precision Vector Design Studio (Rust + Tauri v2 + React 18 + Skia CanvasKit WASM + 17 MCP AI Tools)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-25"
+    },
+    {
       "url": "https://github.com/kikamitrsh22/SaintsRow-Android-Port",
       "title": "kikamitrsh22/SaintsRow-Android-Port",
       "excerpt": "Static recompilation port of Saints Row (Xbox 360) to Windows and Android. Bring your own game files.",
@@ -6173,262 +6429,6 @@
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/dzepdzep/Voltcap",
-      "title": "dzepdzep/Voltcap",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/ester987222-max/AniForge-Hub",
-      "title": "ester987222-max/AniForge-Hub",
-      "excerpt": "Best Open Source Anime & Manga Streaming App 2026",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/qProve/ExLog",
-      "title": "qProve/ExLog",
-      "excerpt": "App for tracking workouts",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/denhamd2/aegis",
-      "title": "denhamd2/aegis",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/nasrinaiv0/movo",
-      "title": "nasrinaiv0/movo",
-      "excerpt": "Financial Tracker",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rm32910/Vicious-Antelope-Scoring-Synths",
-      "title": "rm32910/Vicious-Antelope-Scoring-Synths",
-      "excerpt": "Vicious Antelope Scoring Synths Vol 1 - 2026 Cinematic Sound Design Library",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/rmediatech/keryx",
-      "title": "rmediatech/keryx",
-      "excerpt": "Sovereign Cross-Device Fleet Alert, HUD & Tactical Messenger Engine across Smart TVs, Android, and Terminals",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/starling-client/starling",
-      "title": "Starling — native Rust engine alternative for Android",
-      "excerpt": "Unofficial Android port of Horizon's Rust Minecraft engine, rather than a JVM launcher or console emulator. Documents Vulkan rendering, editable touch controls, resource packs and native .hmod mods. Fabric/Forge Java code does not run in this client; server and anticheat compatibility requires separ",
-      "game": "minecraft",
-      "source": "ai-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://github.com/DankMiimer/minecraft-bedrock-handheld-port",
-      "title": "Minecraft Bedrock handheld PortMaster launcher",
-      "excerpt": "Unofficial Linux-handheld launcher using minecraft-linux to load the Android ARM game library. Requires a legally owned APK or complete split-APK bundle; includes no game files. Documents Knulli, muOS and ROCKNIX scope, an experimental RGDS second-screen companion, pending R36S/armhf acceptance and ",
-      "game": "minecraft",
-      "source": "ai-search",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/advanced-keystrokes",
-      "title": "The Advanced Keystrokes Mod is an on-screen heads-up display (HUD) that tracks and shows your real-time keyboard and mouse inputs, including WASD/movement keys,",
-      "excerpt": "The Advanced Keystrokes Mod is an on-screen heads-up display (HUD) that tracks and shows your real-time keyboard and mouse inputs, including WASD/movement keys, the spacebar, left-click (LMB), right-click (RMB), and your clicks per second (CPS).",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/ai-buddy",
-      "title": "“A persistent AI companion for Minecraft that can talk, follow, find resources, transform into different forms, and fly with you.”",
-      "excerpt": "“A persistent AI companion for Minecraft that can talk, follow, find resources, transform into different forms, and fly with you.”",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/akusticstatus",
-      "title": "A music companion app with Discord Rich Presence, Spotify & YouTube Music support, mobile control, and Minecraft mod integration.",
-      "excerpt": "A music companion app with Discord Rich Presence, Spotify & YouTube Music support, mobile control, and Minecraft mod integration.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/best-buddys",
-      "title": "Best Buddys adds animated 3D companions to Minecraft. Choose a buddy, customize it with headwear and held items, and let it follow you through singleplayer, mul",
-      "excerpt": "Best Buddys adds animated 3D companions to Minecraft. Choose a buddy, customize it with headwear and held items, and let it follow you through singleplayer, multiplayer, and servers that do not have the mod installed.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/betterpets",
-      "title": "Customize your Minecraft experience with new pets, offering unique abilities and companionship during your adventures.",
-      "excerpt": "Customize your Minecraft experience with new pets, offering unique abilities and companionship during your adventures.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/brainrot-pet",
-      "title": "A client-side Minecraft companion following your movement direction.",
-      "excerpt": "A client-side Minecraft companion following your movement direction.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/catchem-all",
-      "title": "Catch'Em All adds four types of Poké Balls with unique capture multipliers to Minecraft. Weaken mobs to improve your chances, then right-click to throw—and once",
-      "excerpt": "Catch'Em All adds four types of Poké Balls with unique capture multipliers to Minecraft. Weaken mobs to improve your chances, then right-click to throw—and once caught, your new companion will fight alongside you and never turn against you.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/champion-companions",
-      "title": "Discover, challenge, recruit, and build League-inspired Champion companions in survival Minecraft.",
-      "excerpt": "Discover, challenge, recruit, and build League-inspired Champion companions in survival Minecraft.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/corpanion",
-      "title": "Corpanion - The Companion Mod for the German Corpium Minecraft Server.",
-      "excerpt": "Corpanion - The Companion Mod for the German Corpium Minecraft Server.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/craftyai",
-      "title": "An intelligent, free AI companion for Minecraft. Talk naturally, scan your surroundings, and run game actions in chat!",
-      "excerpt": "An intelligent, free AI companion for Minecraft. Talk naturally, scan your surroundings, and run game actions in chat!",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/doubaoai",
-      "title": "I added Doubao into MC.  A Minecraft mod that lets players summon AI companions with customizable names, skins, and personalities.",
-      "excerpt": "I added Doubao into MC.  A Minecraft mod that lets players summon AI companions with customizable names, skins, and personalities.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/fast-ghast",
-      "title": "VanillaBackport addon for Minecraft 1.21.1. While riding your Happy Ghast, hold up a Ghast Tear and your little companion will unleash its full power.",
-      "excerpt": "VanillaBackport addon for Minecraft 1.21.1. While riding your Happy Ghast, hold up a Ghast Tear and your little companion will unleash its full power.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/girlfriend",
-      "title": "A cute, loyal girlfriend companion for Minecraft. She follows you, protects you, picks you flowers, chats with you and grows closer every day. Fabric 26.3.",
-      "excerpt": "A cute, loyal girlfriend companion for Minecraft. She follows you, protects you, picks you flowers, chats with you and grows closer every day. Fabric 26.3.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/greenwood-mods",
-      "title": "Official client companion mod for the GreenWood Minecraft server.",
-      "excerpt": "Official client companion mod for the GreenWood Minecraft server.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/hubextended",
-      "title": "CustomCosmetics is a client-side companion mod designed exclusively for the PokéHub Minecraft server.",
-      "excerpt": "CustomCosmetics is a client-side companion mod designed exclusively for the PokéHub Minecraft server.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/lamai",
-      "title": "LamAI adds an AI assistant to Minecraft, allowing players to chat with an intelligent companion in-game",
-      "excerpt": "LamAI adds an AI assistant to Minecraft, allowing players to chat with an intelligent companion in-game",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/lovely-robot-tribute",
-      "title": "A faithful recreation of lilacx02's original companion mod. Four robots, their original colours, their original feel — modernised to run on current Minecraft ve",
-      "excerpt": "A faithful recreation of lilacx02's original companion mod. Four robots, their original colours, their original feel — modernised to run on current Minecraft versions.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/minecraft-sync",
-      "title": "Two-way chat between your Minecraft server and a Discord channel, plus server status, whitelist and alerts. No open port needed. Companion plugin for the Minecr",
-      "excerpt": "Two-way chat between your Minecraft server and a Discord channel, plus server status, whitelist and alerts. No open port needed. Companion plugin for the Minecraft Sync Discord bot.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/mebahels-rpg-villager-quests-and-companions",
-      "title": "Turn Minecraft villages into living RPG adventures with story-driven villager quests, branching choices, recruitable companions, quest-board contracts, a quest ",
-      "excerpt": "Turn Minecraft villages into living RPG adventures with story-driven villager quests, branching choices, recruitable companions, quest-board contracts, a quest journal, and an in-game quest creator.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/menace-modmaki",
-      "title": "A Minecraft mod adding a certain cat maid as an adoptable companion.",
-      "excerpt": "A Minecraft mod adding a certain cat maid as an adoptable companion.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/more-protective-and-fun-mods",
-      "title": "This mod adds practical companion items, rare iron golem taming and various interesting survival tweaks to enrich your Minecraft adventure gameplay.",
-      "excerpt": "This mod adds practical companion items, rare iron golem taming and various interesting survival tweaks to enrich your Minecraft adventure gameplay.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/player2npc",
-      "title": "This is not just another companion mod; it is a live showcase of the PlayerEngine framework, built to fundamentally change our perception of AI NPCs in Minecraf",
-      "excerpt": "This is not just another companion mod; it is a live showcase of the PlayerEngine framework, built to fundamentally change our perception of AI NPCs in Minecraft.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
-    },
-    {
-      "url": "https://modrinth.com/mod/pulseai",
-      "title": "PulseAI: A futuristic AI companion living inside your Minecraft HUD.",
-      "excerpt": "PulseAI: A futuristic AI companion living inside your Minecraft HUD.",
-      "game": "minecraft",
-      "source": "modrinth",
-      "foundAt": "2026-11-08"
     }
   ],
   "rejected": [
@@ -6827,9 +6827,9 @@
     "summary": "Keine offenen Abo-Anfragen, Warteschlange leer. Aus 39 Leads: 9 neue Spiele (Carmageddon II, Sea Dogs: To Each His Own, Super Mario RPG (2023) als Remake, Fight Night Round 3 mit Dual Screen, Call of Duty 4, Sonic R, Spider-Man 2, NFS Carbon, Dungeon Keeper) und neue Spielwege für Persona 5 Royal, NFSU2 (Xbox), NSMB Wii, Sonic Shuffle, Castlevania SotN (SymphonyRecomp + Dual-Screen-Karte), GTA LCS/VCS (PS2-Recomp), Comix Zone (PC), Genma Onimusha, WarioWare: Twisted!; Launcher Járngreipr und Genkan, Minecraft-Modpack. Verworfen: 18 (u. a. Sonic-4-Port mit Spieldaten im APK, Treiber für andere Geräte, Desktop-Tools). Bildprüfung: 11 bestätigt, 1 entfernt (OpenRA Combined Arms); Reddit/YouTube/Google-Play-Bilder (ai-unclear) aus der Sitzung nicht ladbar. Datenqualität: WarioWare als eigene Reihe, Jahre bei 8 Fassungen. Offen: 3dWorldRecomp (Spiel liegt nur als Switch-Neuauflage vor), MCLA-Recomp (bootet noch nicht), Gen1Recomp-Erfolge, Dual-Screen-Suchlauf am 26.11. fällig."
   },
   "watcher": {
-    "lastRun": "2026-11-24T15:57:43Z",
-    "newLeads": 55,
-    "newEvents": 41
+    "lastRun": "2026-11-25T15:40:30Z",
+    "newLeads": 32,
+    "newEvents": 21
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",
