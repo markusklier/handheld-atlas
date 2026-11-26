@@ -8,7 +8,7 @@
     "Xbox 360"
   ],
   "genre": "Action-Adventure",
-  "summary": "Open-World-Actionspiel (2010) auf der Insel Panau; auf Android bisher nur über PC-Laufzeiten wie Winlator oder GameNative, ohne eigenen Port.",
+  "summary": "Open-World-Actionspiel (2010) auf der Insel Panau; kein Android-Port, aber die PC-Fassung läuft laut EmuReady-Berichten über GameHub und Winlator auf Geräten mit dem Chip des Thor (Odin 2) flüssig.",
   "versions": [
     {
       "id": "pc",
@@ -141,7 +141,9 @@
       "cover": {
         "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900_2x.jpg",
         "source": "https://store.steampowered.com/app/8190/"
-      }
+      },
+      "note": "Die Fassung für Android-Handhelds: läuft über PC-Laufzeiten (GameHub, Winlator, GameNative); Steam- und GOG-Fassung erhältlich.",
+      "traits": []
     },
     {
       "id": "playstation-3",
@@ -176,7 +178,7 @@
   ],
   "routes": [],
   "wikipedia": "https://en.wikipedia.org/wiki/Just_Cause_2",
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q1114167",
   "cover": {
     "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/8190/library_600x900_2x.jpg",
@@ -212,6 +214,20 @@
       "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/ss_8ea58d7b3a6c5cc82873d8f304e068c96d888eb7.1920x1080.jpg?t=1782912561",
       "caption": "Originalspiel",
       "source": "https://store.steampowered.com/app/8190/"
+    }
+  ],
+  "mods": [
+    {
+      "id": "jc2-mp",
+      "name": "Just Cause 2: Multiplayer Mod",
+      "category": "multiplayer",
+      "release": [
+        "pc"
+      ],
+      "url": "https://store.steampowered.com/app/259080",
+      "edition": "Steam-Fassung von Just Cause 2 (kostenloser Zusatz auf Steam)",
+      "description": "Offiziell auf Steam veröffentlichter Fan-Mehrspieler-Mod (Dezember 2013) für hunderte Spieler auf einem Server in Panau. Ob er unter GameHub/Winlator auf Android läuft, ist nicht belegt.",
+      "verification": "ai-unverified"
     }
   ]
 }

@@ -1,0 +1,98 @@
+{
+  "id": "mortal-kombat-shaolin-monks",
+  "title": "Mortal Kombat: Shaolin Monks",
+  "franchise": "Mortal Kombat",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox"
+  ],
+  "genre": "Beat ’em up",
+  "summary": "Kooperatives Prügel-Abenteuer mit Liu Kang und Kung Lao (2005); die Xbox-Fassung gibt es als inoffiziellen nativen Android-Port per statischer Rekompilierung.",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mortal_Kombat:_Shaolin_Monks"
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2005)",
+      "type": "original",
+      "year": 2005,
+      "platforms": [
+        "Xbox"
+      ],
+      "note": "Grundlage des nativen Android-Ports (USA- und Europa-Disc identisch).",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mortal_Kombat:_Shaolin_Monks"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://img.youtube.com/vi/_NjKztafI74/maxresdefault.jpg",
+          "caption": "Spielszene auf einem Xiaomi Pad 7 (60 FPS)",
+          "source": "https://github.com/RanggaCasper/ShaolinMonks-Android",
+          "credit": "ShaolinMonks-Android",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Gameplay-Video",
+          "url": "https://youtu.be/_NjKztafI74"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "mksm-android",
+      "name": "Shaolin Monks für Android",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Xbox",
+      "runtime": "XboxXBE-Recomp (x86 → C++ → arm64), Vulkan, SDL3",
+      "projects": [
+        "shaolinmonks-android",
+        "manuk-mksm-android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "fps-cap",
+        "mods"
+      ],
+      "requires": [
+        "Eigene Xbox-Fassung (ISO oder default.xbe mit Disc-Dateien)",
+        "Android 9+ (arm64), Vulkan 1.1"
+      ],
+      "benefit": "Kein Emulator: Renderauflösung 20–200 %, V-Sync, frei wählbare Bildrate, Touch-, Controller- und Tastatursteuerung. Der Fork von Manuk Bulan ergänzt Mod-Loader und „Play As“.",
+      "caveat": "Laut Originalprojekt noch in Arbeit und auf einem Gerät nicht durchgespielt. Inoffizielles Fanprojekt.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

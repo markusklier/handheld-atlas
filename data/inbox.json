@@ -1,246 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://modrinth.com/mod/bedrock-simple-voice",
-      "title": "Bedrock Simple Voice",
-      "excerpt": "Proximity voice chat for Bedrock & Java via Simple Voice Chat — in the browser or Android app. No extra web port needed (free relay or self-hosted).",
-      "game": null,
-      "source": "modrinth",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/JayElDragon/Pokeborne-Android",
-      "title": "JayElDragon/Pokeborne-Android",
-      "excerpt": "Offline Android port of the Pokeborne web game: WebView wrapper, on-screen controls, 60/120 Hz ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/manuk-bulan/MANUK-MKSM-Xbox-Android",
-      "title": "manuk-bulan/MANUK-MKSM-Xbox-Android",
-      "excerpt": "Unofficial Android (arm64) port of Mortal Kombat: Shaolin Monks (Xbox), statically recompiled with XboxXBE-Recomp. Vulkan renderer, touch controls, gamepad support, optional CRT/scanline filters, FXAA/SSAA and cheats. No game files included — bring your own disc image.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/UnknuwProjects/THPS4-Port-Android",
-      "title": "UnknuwProjects/THPS4-Port-Android",
-      "excerpt": "Unofficial native Android port of Tony Hawk's Pro Skater 4 (original Xbox), statically recompiled with XboxXBE-Recomp.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Nyaldee/Ports-Launcher",
-      "title": "Nyaldee/Ports-Launcher",
-      "excerpt": "A library manager and installer for unofficial native game ports and recomps. Fully portable, with zero runtime dependencies, and compatible with Windows, Linux, and Android. Written in Rust. Requires a working OpenGL driver for the UI.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/dfdx047/HiddenLeaf",
-      "title": "dfdx047/HiddenLeaf",
-      "excerpt": "A Naruto Ultimate Ninja Static Recomp for Android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/ps4star/WhiteRecomp",
-      "title": "ps4star/WhiteRecomp",
-      "excerpt": "WhiteRecomp: builds FINAL FANTASY XIII from your Steam copy. Compiles for native Windows, macOS, Linux (ARM64 Supported), or Android.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Ethiquema/obtainium-thor-pack",
-      "title": "Ethiquema/obtainium-thor-pack",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Davitt3054/Showdown-thor",
-      "title": "Davitt3054/Showdown-thor",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/yangyws/DualScreenBrowser",
-      "title": "yangyws/DualScreenBrowser",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Stezkoy/ScreenFlip",
-      "title": "Stezkoy/ScreenFlip",
-      "excerpt": "An application that swaps active applications between two console screens.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/jkoehler11/ROMulus",
-      "title": "jkoehler11/ROMulus",
-      "excerpt": "A RomM fork with a plugin shelf: manifests on disk, panels filled by sources you choose, settings per user.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/nikalbazu24/Integral-dual-screen-IDS-",
-      "title": "nikalbazu24/Integral-dual-screen-IDS-",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/ngoducthangvna-ui/chieumanhinh",
-      "title": "ngoducthangvna-ui/chieumanhinh",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/cjland/family-face-off",
-      "title": "cjland/family-face-off",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/sreevarshan-xenoz/friday-mobile",
-      "title": "sreevarshan-xenoz/friday-mobile",
-      "excerpt": "FRIDAY Mobile: your FRIDAY computer on your Android phone (screen, input, files, and answering FRIDAY). Built from Pocketdesk.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/CaYatur/SoundVisualizer",
-      "title": "CaYatur/SoundVisualizer",
-      "excerpt": "CaYaDev SoundVisualizer — free, open-source music visualizer & VJ software for Windows, macOS and Linux, with an Android app on the way. Real MilkDrop engine, 71 audio-reactive modes, layers and 44 GPU effects, a live page with T-bar, phone remote, OBS overlay, Spout/Syphon, projection mapping, RGB lighting, timeline, video export and MCP control.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/seandettmann/schoolbag",
-      "title": "seandettmann/schoolbag",
-      "excerpt": "A bottom-screen HUD for The Binding of Isaac: Repentance+ on dual-screen handhelds like the AYN Thor.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/nzimas/bigorna",
-      "title": "nzimas/bigorna",
-      "excerpt": "Bigorna: a firmware for the M-VAVE FM-1 for rhythmic noise, power noise, industrial and IDM, after the Elektron Digitone II.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Rahul6051276/primefilx-",
-      "title": "Rahul6051276/primefilx-",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/MaulanaASetiawan/Nusantara-Guard",
-      "title": "MaulanaASetiawan/Nusantara-Guard",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/h333ndrik/thr4ce",
-      "title": "h333ndrik/thr4ce",
-      "excerpt": "project for flash and stencil creation and editing",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/codmir-labs/sdk",
-      "title": "codmir-labs/sdk",
-      "excerpt": "Official Codmir SDK — error tracking, session replay, AI agents. Apache 2.0.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Edeh-Chinecherem/solar-track",
-      "title": "Edeh-Chinecherem/solar-track",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/BilboSherlock/Production-Suite",
-      "title": "BilboSherlock/Production-Suite",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Yuerchu/meridian",
-      "title": "Yuerchu/meridian",
-      "excerpt": "隐私优先的 AI 桌面客户端——编程 agent、多模型接入、内置输入法。| Privacy-first AI desktop client with coding agent, multi-provider support, and a built-in input method",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Plaguedoctor-sudo/talos--android",
-      "title": "Plaguedoctor-sudo/talos--android",
-      "excerpt": "TALOS / LibreMobile OS — Sovereign, un-Googled, bit-for-  bit reproducible mobile OS for ARM64 Project Treble hardware",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/Promenar/Infinity-Deck",
-      "title": "Promenar/Infinity-Deck",
-      "excerpt": "The AI agent that runs on your phone. An open-source Android app with a built-in Linux, git, SSH and Tailscale. Bring your own key; your data stays on your device.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/WinBlader/Vaulta-Smart-Expense-Tracker",
-      "title": "WinBlader/Vaulta-Smart-Expense-Tracker",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/AlexLX4773H/LXTrackList",
-      "title": "AlexLX4773H/LXTrackList",
-      "excerpt": "A personal media tracking Android app for Anime, Manga, Manhwa, Movies, Shows & Books",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-25"
-    },
-    {
       "url": "https://github.com/hackerstudent29/Zenify",
       "title": "hackerstudent29/Zenify",
       "excerpt": "High-fidelity open-source Android music & video streaming app built with Flutter & Media3 ExoPlayer. 320kbps Akamai CDN audio, 20-style DJ crossfade, syllable-synced lyrics, Studio FX DSP, Room Together voice sync, offline downloads, and strictly zero ads.",
@@ -255,22 +15,6 @@
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-25"
-    },
-    {
-      "url": "https://github.com/kikamitrsh22/SaintsRow-Android-Port",
-      "title": "kikamitrsh22/SaintsRow-Android-Port",
-      "excerpt": "Static recompilation port of Saints Row (Xbox 360) to Windows and Android. Bring your own game files.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
-    },
-    {
-      "url": "https://github.com/Psychoghost/Vanillara_android_port",
-      "title": "Psychoghost/Vanillara_android_port",
-      "excerpt": "Vanillara source port for android. Buy the game with link provided (not affiliate) ",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
     },
     {
       "url": "https://github.com/edwin-ma26/krypto-card-game",
@@ -292,30 +36,6 @@
       "url": "https://github.com/Yurgil/RecompVR",
       "title": "Yurgil/RecompVR",
       "excerpt": "Lightweight OpenXR helpers for native standalone VR game ports on Meta Quest. Written in C, with Android and Vulkan support.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
-    },
-    {
-      "url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled-Android",
-      "title": "almost-drowned-rat/THPS2X-Recompiled-Android",
-      "excerpt": "THPS 2X Recompiled for Android - the static recompilation of Tony Hawk's Pro Skater 2X (Xbox).",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
-    },
-    {
-      "url": "https://github.com/dzepdzep/wwe13-recomp-android",
-      "title": "dzepdzep/wwe13-recomp-android",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
-    },
-    {
-      "url": "https://github.com/dguillot-gh/spirit-tracks-recomp",
-      "title": "dguillot-gh/spirit-tracks-recomp",
-      "excerpt": "Native PC and Android port of Zelda: Spirit Tracks (DS) by static recompilation. No game data: build from your own ROM.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-24"
@@ -6820,11 +6540,35 @@
     "https://github.com/catzeyea/ThorBro",
     "https://github.com/CHINW3/ThorSport",
     "https://github.com/salahuddinselim/Ayn",
-    "https://github.com/Guilhem-Bonnet/ludotheque"
+    "https://github.com/Guilhem-Bonnet/ludotheque",
+    "https://modrinth.com/mod/bedrock-simple-voice",
+    "https://github.com/JayElDragon/Pokeborne-Android",
+    "https://github.com/Nyaldee/Ports-Launcher",
+    "https://github.com/Davitt3054/Showdown-thor",
+    "https://github.com/yangyws/DualScreenBrowser",
+    "https://github.com/Stezkoy/ScreenFlip",
+    "https://github.com/jkoehler11/ROMulus",
+    "https://github.com/nikalbazu24/Integral-dual-screen-IDS-",
+    "https://github.com/ngoducthangvna-ui/chieumanhinh",
+    "https://github.com/cjland/family-face-off",
+    "https://github.com/sreevarshan-xenoz/friday-mobile",
+    "https://github.com/CaYatur/SoundVisualizer",
+    "https://github.com/nzimas/bigorna",
+    "https://github.com/Rahul6051276/primefilx-",
+    "https://github.com/MaulanaASetiawan/Nusantara-Guard",
+    "https://github.com/h333ndrik/thr4ce",
+    "https://github.com/codmir-labs/sdk",
+    "https://github.com/Edeh-Chinecherem/solar-track",
+    "https://github.com/BilboSherlock/Production-Suite",
+    "https://github.com/Yuerchu/meridian",
+    "https://github.com/Plaguedoctor-sudo/talos--android",
+    "https://github.com/Promenar/Infinity-Deck",
+    "https://github.com/WinBlader/Vaulta-Smart-Expense-Tracker",
+    "https://github.com/AlexLX4773H/LXTrackList"
   ],
   "agent": {
-    "lastRun": "2026-11-23T20:55Z",
-    "summary": "Keine offenen Abo-Anfragen, Warteschlange leer. Aus 39 Leads: 9 neue Spiele (Carmageddon II, Sea Dogs: To Each His Own, Super Mario RPG (2023) als Remake, Fight Night Round 3 mit Dual Screen, Call of Duty 4, Sonic R, Spider-Man 2, NFS Carbon, Dungeon Keeper) und neue Spielwege für Persona 5 Royal, NFSU2 (Xbox), NSMB Wii, Sonic Shuffle, Castlevania SotN (SymphonyRecomp + Dual-Screen-Karte), GTA LCS/VCS (PS2-Recomp), Comix Zone (PC), Genma Onimusha, WarioWare: Twisted!; Launcher Járngreipr und Genkan, Minecraft-Modpack. Verworfen: 18 (u. a. Sonic-4-Port mit Spieldaten im APK, Treiber für andere Geräte, Desktop-Tools). Bildprüfung: 11 bestätigt, 1 entfernt (OpenRA Combined Arms); Reddit/YouTube/Google-Play-Bilder (ai-unclear) aus der Sitzung nicht ladbar. Datenqualität: WarioWare als eigene Reihe, Jahre bei 8 Fassungen. Offen: 3dWorldRecomp (Spiel liegt nur als Switch-Neuauflage vor), MCLA-Recomp (bootet noch nicht), Gen1Recomp-Erfolge, Dual-Screen-Suchlauf am 26.11. fällig."
+    "lastRun": "2026-11-26T21:30Z",
+    "summary": "Abo #94 Just Cause 2 erledigt (Multiplayer-Mod, Zusammenfassung); 19 doppelte Reddit-Rückmeldungen (#50–#93, bereits übernommen) geschlossen. Aus 35 Leads: 5 neue Spiele (Mortal Kombat: Shaolin Monks, Naruto Shippuden: UN5 mit Hidden Leaf, Final Fantasy XIII mit WhiteRecomp, Saints Row, WWE '13), neue Wege für Isaac (Schoolbag, Dual Screen), Spirit Tracks, THPS 2x, Red Alert (Vanillara), Verzeichnis obtainium-thor-pack; 24 verworfen (u. a. Pokeborne-Wrapper, Showdown-App, Desktop-Launcher, allgemeine Thor-Werkzeuge). Dual-Screen-Suchlauf: RetroDS (ALttP, Super Metroid, SotN) und ShulkDS (Minecraft). Bildprüfung: 9 bestätigt, 4 entfernt; Reddit- und GitHub-Anhang-Bilder aus der Sitzung nicht ladbar. Warteschlange leer. Offen: Diptych (KH1/TTW, noch Testphase), BioShock-Lead (README nicht abrufbar), App schickt Reddit-Rückmeldungen mehrfach."
   },
   "watcher": {
     "lastRun": "2026-11-25T15:40:30Z",
@@ -6952,11 +6696,15 @@
     "https://modrinth.com/mod/lamai",
     "https://modrinth.com/mod/lovely-robot-tribute",
     "https://www.reddit.com/r/SBCGaming/comments/1xkssjq/silent_hill_1_dualscreen_mod_for_android_rg_ds/",
-    "https://www.reddit.com/r/SBCGaming/comments/1xq1kjq/skyrim_se_dual_screen_on_the_ayn_thor/"
+    "https://www.reddit.com/r/SBCGaming/comments/1xq1kjq/skyrim_se_dual_screen_on_the_ayn_thor/",
+    "https://github.com/NaiSenshin/ShulkDS",
+    "https://github.com/iosue-iulianus/retro-ds",
+    "https://github.com/TristanAdams03/diptych",
+    "https://github.com/HiramRG/Delphis"
   ],
   "dualScan": {
-    "lastRun": "2026-11-19",
-    "found": 2,
+    "lastRun": "2026-11-26",
+    "found": 5,
     "by": "agent"
   },
   "franchiseScan": {

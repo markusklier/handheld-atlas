@@ -1,0 +1,103 @@
+{
+  "id": "wwe-13",
+  "title": "WWE '13",
+  "franchise": "WWE",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3",
+    "Wii"
+  ],
+  "genre": "Sport (Wrestling)",
+  "summary": "Wrestling-Spiel mit Attitude-Era-Modus (2012); die Xbox-360-Fassung läuft als statische Rekompilierung nativ auf Android, laut Autor mit 60 FPS auf dem Odin 2 Portal.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/WWE_%2713"
+        }
+      ]
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/WWE_%2713"
+        }
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Wii (2012)",
+      "type": "original",
+      "year": 2012,
+      "platforms": [
+        "Wii"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/WWE_%2713"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Odin 2 Portal",
+          "result": "60 FPS",
+          "source": "https://github.com/dzepdzep/wwe13-recomp-android",
+          "date": "2026-11-26"
+        }
+      ],
+      "checkedAt": "2026-11-26",
+      "id": "wwe13-recomp-android",
+      "name": "WWE '13 Recomp für Android",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360 (mit Title Update 2.0.1.0 und DLC, falls vorhanden)",
+      "runtime": "Android-Port von wwe13-recomp (PromethenDev), eigener Launcher",
+      "projects": [
+        "wwe13-recomp-android"
+      ],
+      "features": [
+        "native-arm",
+        "controller"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Fassung von WWE '13",
+        "Android 13+ (arm64) mit Snapdragon/Adreno"
+      ],
+      "benefit": "Alle Hauptmodi, Creations und WWE Universe getestet; eigene Einzugsmusik, Einstellbare CPU-Kick-outs, Launcher im Stil des Spiels.",
+      "caveat": "Auf Snapdragon 865/870/888 kann Turnip nach ein bis zwei Minuten abstürzen (dort Standardtreiber voreingestellt).",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

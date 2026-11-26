@@ -259,9 +259,59 @@
       "benefit": "Kombinierter SMZ3-Randomizer: beide Spiele in einem Durchlauf, Tracker live auf dem unteren Bildschirm, Rücklauf und Sprite-Auswahl.",
       "caveat": "Kein normales Durchspielen: Es ist ein Randomizer, der beide Spiele zu einem Lauf verbindet.",
       "effort": "guided"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-world-map.webp",
+          "caption": "Weltkarte mit Markierungen auf dem oberen Bildschirm, Spiel unten",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/iosue-iulianus/retro-ds/releases/latest"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "retrods",
+      "name": "RetroDS",
+      "release": "snes",
+      "kind": "emulator-mod",
+      "edition": "SNES (USA)",
+      "runtime": "RetroDS (bsnes)",
+      "projects": [
+        "retrods"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Weltkarte aus dem bereits Gesehenen mit eigenen Markierungen, Item-Bildschirm zum Antippen, Dungeon-Karten je Etage",
+      "requires": [
+        "Eigene ROM der USA-Fassung"
+      ],
+      "benefit": "Das Spiel läuft unverändert im genauen Emulator; RetroDS liest den Spielspeicher und zeichnet den zweiten Bildschirm live im Stil des Spiels. Speicherstände und Cheats funktionieren normal.",
+      "caveat": "Gebaut und getestet für den Retroid Pocket Duo; auf dem AYN Thor laut Projekt nicht ausprobiert. Nur die USA-Fassung bekommt den zweiten Bildschirm.",
+      "effort": "easy"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q370055",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_A_Link_to_the_Past"
 }

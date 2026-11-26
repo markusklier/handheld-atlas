@@ -632,6 +632,57 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "companion"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/NaiSenshin/ShulkDS/HEAD/packaging/screenshots/dual_screen.png",
+          "caption": "Titelbild oben, Hauptmenü auf dem unteren Bildschirm (Retroid Pocket Duo)",
+          "source": "https://github.com/NaiSenshin/ShulkDS",
+          "credit": "ShulkDS",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/NaiSenshin/ShulkDS/releases/latest"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "mc-shulkds",
+      "name": "ShulkDS",
+      "release": "pc",
+      "kind": "java",
+      "edition": "Java Edition 26.3",
+      "runtime": "ShulkDS (Fork von Horizon/Starling, Rust)",
+      "projects": [
+        "shulkds"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "touch-inventory",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Minikarte mit Uhr, Kompass, Koordinaten und Biom, Touch-Inventar und Schnelleinstellungen auf dem unteren Bildschirm",
+      "requires": [
+        "Microsoft-Konto mit Minecraft: Java Edition (die App lädt das Spiel selbst)"
+      ],
+      "benefit": "Eigener Dual-Screen-Client im Stil der 3DS- und Wii-U-Edition, Konsolenmenüs (Legacy4J), Ruhemodus beim Zuklappen, Updates in der App.",
+      "caveat": "Kein offizielles Minecraft-Produkt; vor allem für den Retroid Pocket Duo gebaut, auf dem Thor laut Autor nur „teilweise“ (Skalierung des unteren Bildschirms noch in Arbeit).",
+      "version": "1.0.3",
+      "effort": "easy"
     }
   ],
   "mods": [
@@ -684,7 +735,7 @@
       "verification": "ai-unverified"
     }
   ],
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-26",
   "screenshots": [],
   "wikidata": "Q49740",
   "wikipedia": "https://en.wikipedia.org/wiki/Minecraft",

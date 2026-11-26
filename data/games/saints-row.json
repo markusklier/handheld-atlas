@@ -1,0 +1,73 @@
+{
+  "id": "saints-row",
+  "title": "Saints Row",
+  "franchise": "Saints Row",
+  "platforms": [
+    "Xbox 360"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Gangsterspiel in Stilwater (2006, nur Xbox 360); ein früher nativer Android-Port per XenonRecomp läuft laut Autor mit 60 FPS auf dem Odin 3.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2006)",
+      "type": "original",
+      "year": 2006,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Saints_Row_(2006_video_game)"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Odin 3",
+          "result": "60 FPS in der Stadt",
+          "source": "https://github.com/kikamitrsh22/SaintsRow-Android-Port",
+          "date": "2026-11-26"
+        }
+      ],
+      "checkedAt": "2026-11-26",
+      "id": "saintsrow-android",
+      "name": "Saints Row Android-Port",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox 360 (Title ID 545107D1, ohne TU1)",
+      "runtime": "XenonRecomp + Teile von Xendroid+ (GPU, Audio), Vulkan",
+      "projects": [
+        "saintsrow-android"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "fps-cap"
+      ],
+      "requires": [
+        "Eigener Dump der Xbox-360-Fassung (Originalversion, nicht TU1)",
+        "Windows-PC zum Erzeugen des Codes und Bauen der APK",
+        "Android (arm64, Vulkan)"
+      ],
+      "benefit": "Freies Spiel in der Stadt, Fahren, Ton, Speichern und Laden funktionieren; Bildrate 30/40/60/120 wählbar.",
+      "caveat": "Frühes Stadium: Kampagne nicht durchgetestet; mit manchen Turnip-Treibern GPU-Abstürze, mit dem Standard-Adreno-Treiber fehlerhafte Schatten. Die APK baut man selbst aus dem eigenen default.xex.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

@@ -289,9 +289,46 @@
       "reports": [],
       "performance": [],
       "dualScreenType": "integrated"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "schoolbag",
+      "name": "Schoolbag (HUD auf Bildschirm 2)",
+      "release": "pc",
+      "kind": "companion",
+      "edition": "PC (Steam) mit Repentance+",
+      "runtime": "GameNative + Lua-Mod und Begleit-App",
+      "projects": [
+        "schoolbag"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "mods"
+      ],
+      "dualScreenType": "companion",
+      "dualScreen": "Herzen, Gegenstände, Karte, Raum und Werte im Notizbuch-Stil des Spiels auf dem unteren Bildschirm",
+      "requires": [
+        "Eigene Steam-Fassung mit Repentance+",
+        "Startoption --luadebug (in GameNative: Exec Arguments)"
+      ],
+      "benefit": "Der Mod blendet das HUD oben aus und überträgt den Spielstand lokal an die App unten – der Hauptbildschirm bleibt frei.",
+      "caveat": "Frühes Stadium: Mod 0.1.0 nur gegen eine Test-Attrappe geprüft, die Begleit-App ist noch nicht erschienen. --luadebug gibt allen Lua-Mods Datei- und Netzzugriff.",
+      "effort": "experimental"
     }
   ],
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q16267631",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Binding_of_Isaac%3A_Rebirth",
   "genre": "action-adventure game"

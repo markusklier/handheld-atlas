@@ -147,10 +147,15 @@
       "verification": "ai-unverified",
       "testedOn": [],
       "screenshots": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Quellcode",
+          "url": "https://github.com/UnknuwProjects/THPS4-Port-Android"
+        }
+      ],
       "reports": [],
       "performance": [],
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-26",
       "id": "thps4-android",
       "name": "THPS4 Android-Port",
       "release": "xbox-2002",
@@ -172,7 +177,7 @@
         "Android 10+ (arm64)"
       ],
       "benefit": "Komplettes Spiel mit Karriere, Park-Editor und Splitscreen; Grafikoptionen (Renderauflösung, FPS-Begrenzung, Ultrawide), Mod-Manager und eigene Musik.",
-      "caveat": "Quellcode nicht öffentlich – das Repository ist nur Release-Kanal; die APK prüft selbst auf Updates. Mit Vorsicht installieren.",
+      "caveat": "Quellcode erst teilweise öffentlich (App und Werkzeuge in THPS4-Port-Android, der rekompilierte Spielcode folgt mit 1.0.4); offizielle APKs sind mit einem festen Zertifikat signiert, das die App beim Start prüft.",
       "effort": "guided"
     }
   ],

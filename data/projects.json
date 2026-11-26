@@ -3089,7 +3089,7 @@
       "kind": "port",
       "url": "https://github.com/UnknuwProjects/THPS4-Android-Releases",
       "repo": "UnknuwProjects/THPS4-Android-Releases",
-      "description": "Inoffizieller nativer Android-Port von Tony Hawk's Pro Skater 4 (Xbox) per statischer Rekompilierung; nur Release-Kanal, Quellcode privat.",
+      "description": "Inoffizieller nativer Android-Port von Tony Hawk's Pro Skater 4 (Xbox) per statischer Rekompilierung; Releases hier, Quellcode im Repository THPS4-Port-Android (nativer Teil folgt mit 1.0.4).",
       "games": [
         "tony-hawks-pro-skater-4"
       ],
@@ -3935,6 +3935,162 @@
         "url": "https://github.com/K11MCH1/Keeper-Recomped/releases/tag/v0.1.0",
         "date": "2026-10-29"
       }
+    },
+    {
+      "id": "shaolinmonks-android",
+      "name": "ShaolinMonks-Android",
+      "kind": "port",
+      "url": "https://github.com/RanggaCasper/ShaolinMonks-Android",
+      "repo": "RanggaCasper/ShaolinMonks-Android",
+      "description": "Inoffizieller nativer Android-Port der Xbox-Fassung von Mortal Kombat: Shaolin Monks, statisch rekompiliert mit XboxXBE-Recomp (Vulkan, SDL3).",
+      "games": [
+        "mortal-kombat-shaolin-monks"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "manuk-mksm-android",
+      "name": "Manuk Shaolin Monks (Mod-Loader)",
+      "kind": "port",
+      "url": "https://github.com/manuk-bulan/MANUK-MKSM-Xbox-Android",
+      "repo": "manuk-bulan/MANUK-MKSM-Xbox-Android",
+      "description": "Fork von ShaolinMonks-Android mit Mod-Loader, „Play As“ und weiteren Optionen.",
+      "games": [
+        "mortal-kombat-shaolin-monks"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "hiddenleaf",
+      "name": "Hidden Leaf",
+      "kind": "port",
+      "url": "https://github.com/dfdx047/HiddenLeaf",
+      "repo": "dfdx047/HiddenLeaf",
+      "description": "Naruto Shippuden: Ultimate Ninja 5 (PS2) nativ auf Android per PS2Recomp, mit Launcher, Touch-Steuerung, Mods und Online-Kämpfen.",
+      "games": [
+        "naruto-shippuden-ultimate-ninja-5"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "whiterecomp",
+      "name": "WhiteRecomp",
+      "kind": "port",
+      "url": "https://github.com/ps4star/WhiteRecomp",
+      "repo": "ps4star/WhiteRecomp",
+      "description": "Neukompilierung von Final Fantasy XIII aus der eigenen Steam-Fassung für Windows, Linux, macOS und Android (ARM64-APK per Cross-Compile).",
+      "games": [
+        "final-fantasy-xiii"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "schoolbag",
+      "name": "Schoolbag",
+      "kind": "companion",
+      "url": "https://github.com/seandettmann/schoolbag",
+      "repo": "seandettmann/schoolbag",
+      "description": "HUD für The Binding of Isaac: Repentance+ auf dem zweiten Bildschirm von Dual-Screen-Handhelds (Lua-Mod + Begleit-App); frühes Stadium.",
+      "games": [
+        "the-binding-of-isaac-rebirth"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "obtainium-thor-pack",
+      "name": "obtainium-thor-pack",
+      "kind": "directory",
+      "url": "https://github.com/Ethiquema/obtainium-thor-pack",
+      "repo": "Ethiquema/obtainium-thor-pack",
+      "description": "Täglich erneuerte Obtainium-Importdatei für den AYN Thor: über 200 Emulatoren, Frontends, native Ports, Dual-Screen-Companions und Werkzeuge.",
+      "games": [],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "saintsrow-android",
+      "name": "Saints Row Android-Port",
+      "kind": "port",
+      "url": "https://github.com/kikamitrsh22/SaintsRow-Android-Port",
+      "repo": "kikamitrsh22/SaintsRow-Android-Port",
+      "description": "Nativer Android-Port von Saints Row (Xbox 360) per XenonRecomp mit Teilen von Xendroid+.",
+      "games": [
+        "saints-row"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "wwe13-recomp-android",
+      "name": "WWE '13 Recomp für Android",
+      "kind": "port",
+      "url": "https://github.com/dzepdzep/wwe13-recomp-android",
+      "repo": "dzepdzep/wwe13-recomp-android",
+      "description": "Android-Port der statischen Rekompilierung von WWE '13 (Xbox 360).",
+      "games": [
+        "wwe-13"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "spirit-tracks-recomp",
+      "name": "Spirit Tracks Recomp",
+      "kind": "port",
+      "url": "https://github.com/dguillot-gh/spirit-tracks-recomp",
+      "repo": "dguillot-gh/spirit-tracks-recomp",
+      "description": "Nativer Port von Zelda: Spirit Tracks (DS) für Windows und Android per statischer Rekompilierung, Schwesterprojekt von phantom-hourglass-recomp.",
+      "games": [
+        "the-legend-of-zelda-spirit-tracks"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "thps2x-recompiled-android",
+      "name": "THPS 2X Recompiled – Android",
+      "kind": "port",
+      "url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled-Android",
+      "repo": "almost-drowned-rat/THPS2X-Recompiled-Android",
+      "description": "Android-Fassung der statischen Rekompilierung von Tony Hawk's Pro Skater 2X (Xbox); baut das Spiel auf dem Gerät aus der eigenen Disc.",
+      "games": [
+        "tony-hawk-s-pro-skater-2"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "vanillara",
+      "name": "Vanillara",
+      "kind": "port",
+      "url": "https://github.com/Psychoghost/Vanillara_android_port",
+      "repo": "Psychoghost/Vanillara_android_port",
+      "description": "Nativer Android-Source-Port von Command & Conquer: Red Alert aus dem GPLv3-Quellcode von EA.",
+      "games": [
+        "command-and-conquer-red-alert"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "retrods",
+      "name": "RetroDS",
+      "kind": "emulator-fork",
+      "url": "https://github.com/iosue-iulianus/retro-ds",
+      "repo": "iosue-iulianus/retro-ds",
+      "description": "SNES- und PlayStation-Emulator (bsnes, SwanStation) für Dual-Screen-Handhelds, der für unterstützte Spiele live einen zweiten Bildschirm zeichnet (ALttP, Super Metroid, SotN); entstanden aus GBA DS.",
+      "games": [
+        "a-link-to-the-past",
+        "super-metroid",
+        "castlevania-symphony-of-the-night"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "shulkds",
+      "name": "ShulkDS",
+      "kind": "launcher",
+      "url": "https://github.com/NaiSenshin/ShulkDS",
+      "repo": "NaiSenshin/ShulkDS",
+      "description": "Dual-Screen-Client für Minecraft: Java Edition auf Android-Handhelds (Retroid Pocket Duo, AYN Thor) mit Karte und Inventar unten.",
+      "games": [
+        "minecraft"
+      ],
+      "checkedAt": "2026-11-26"
     }
   ]
 }

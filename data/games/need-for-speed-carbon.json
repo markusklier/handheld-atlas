@@ -154,15 +154,7 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [
-        {
-          "url": "https://raw.githubusercontent.com/Chizuui/Carbon-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
-          "caption": "NFS Carbon",
-          "source": "https://github.com/Chizuui/Carbon-Android",
-          "credit": "Need for Speed: Carbon for Android",
-          "check": "readme"
-        }
-      ],
+      "screenshots": [],
       "links": [
         {
           "label": "GitHub",

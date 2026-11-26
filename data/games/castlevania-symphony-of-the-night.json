@@ -167,9 +167,58 @@
       "performance": [],
       "checkedAt": "2026-11-23",
       "dualScreenType": "integrated"
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/sotn-map.webp",
+          "caption": "Schlosskarte mit Raumzähler oben, Alucard auf dem unteren Bildschirm",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/iosue-iulianus/retro-ds/releases/latest"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "retrods",
+      "name": "RetroDS",
+      "release": "playstation",
+      "kind": "emulator-mod",
+      "edition": "PlayStation (USA, SLUS-00067)",
+      "runtime": "RetroDS (SwanStation)",
+      "projects": [
+        "retrods"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "controller"
+      ],
+      "dualScreenType": "integrated",
+      "dualScreen": "Schlosskarte mit erkundeten Räumen und Prozentangabe; auf Wunsch das Spielmenü verbreitert auf dem zweiten Bildschirm",
+      "requires": [
+        "Eigene Disc (.cue/.bin) und PS1-BIOS der USA-Fassung"
+      ],
+      "benefit": "Das Spiel läuft unverändert im genauen Emulator; RetroDS liest den Spielspeicher und zeichnet den zweiten Bildschirm live im Stil des Spiels. Speicherstände und Cheats funktionieren normal.",
+      "caveat": "Gebaut und getestet für den Retroid Pocket Duo; auf dem AYN Thor laut Projekt nicht ausprobiert. Nur die USA-Fassung bekommt den zweiten Bildschirm.",
+      "effort": "easy"
     }
   ],
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q2007022",
   "wikipedia": "https://en.wikipedia.org/wiki/Castlevania%3A_Symphony_of_the_Night",
   "genre": "action role-playing game",

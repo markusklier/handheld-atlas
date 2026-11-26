@@ -2,6 +2,140 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "just-cause-2",
+      "text": "Just Cause 2 recherchiert (Abo #94): PC-Fassung über GameHub/Winlator, Multiplayer-Mod JC2-MP ergänzt (KI-Fund)",
+      "url": "https://store.steampowered.com/app/259080"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mortal-kombat-shaolin-monks",
+      "text": "Neues Spiel mit nativem Android-Port der Xbox-Fassung (XboxXBE-Recomp, KI-Fund)",
+      "url": "https://github.com/RanggaCasper/ShaolinMonks-Android"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "naruto-shippuden-ultimate-ninja-5",
+      "text": "Neues Spiel: Hidden Leaf – PS2-Rekompilierung für Android mit Online-Kämpfen (KI-Fund)",
+      "url": "https://github.com/dfdx047/HiddenLeaf"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "final-fantasy-xiii",
+      "text": "Neues Spiel: WhiteRecomp baut aus der Steam-Fassung eine Android-APK (KI-Fund)",
+      "url": "https://github.com/ps4star/WhiteRecomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "saints-row",
+      "text": "Neues Spiel: nativer Android-Port der Xbox-360-Fassung per XenonRecomp (KI-Fund)",
+      "url": "https://github.com/kikamitrsh22/SaintsRow-Android-Port"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "wwe-13",
+      "text": "Neues Spiel: WWE '13 Recomp für Android, 60 FPS auf dem Odin 2 Portal laut Autor (KI-Fund)",
+      "url": "https://github.com/dzepdzep/wwe13-recomp-android"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-binding-of-isaac-rebirth",
+      "text": "Neuer Dual-Screen-Weg: Schoolbag – HUD auf dem unteren Bildschirm (frühes Stadium, KI-Fund)",
+      "url": "https://github.com/seandettmann/schoolbag"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "a-link-to-the-past",
+      "text": "Neuer Dual-Screen-Weg: RetroDS – Weltkarte und Items live auf Bildschirm 2 (KI-Fund)",
+      "url": "https://github.com/iosue-iulianus/retro-ds"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "super-metroid",
+      "text": "Neuer Dual-Screen-Weg: RetroDS – Gebietskarte und Ausrüstung auf Bildschirm 2 (KI-Fund)",
+      "url": "https://github.com/iosue-iulianus/retro-ds"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "castlevania-symphony-of-the-night",
+      "text": "Neuer Dual-Screen-Weg: RetroDS – Schlosskarte auf Bildschirm 2 (KI-Fund)",
+      "url": "https://github.com/iosue-iulianus/retro-ds"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "minecraft",
+      "text": "Neuer Dual-Screen-Weg: ShulkDS – Java-Client mit Karte und Inventar unten (KI-Fund)",
+      "url": "https://github.com/NaiSenshin/ShulkDS"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "the-legend-of-zelda-spirit-tracks",
+      "text": "Neuer Spielweg: Spirit Tracks Recomp – nativer Port mit Breitbild und HD-Text (KI-Fund)",
+      "url": "https://github.com/dguillot-gh/spirit-tracks-recomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "tony-hawk-s-pro-skater-2",
+      "text": "Neue Fassung THPS 2x (Xbox) mit Spielweg THPS 2X Recompiled für Android (KI-Fund)",
+      "url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled-Android"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "command-and-conquer-red-alert",
+      "text": "Neuer Spielweg: Vanillara – Source-Port aus EAs Quellcode (KI-Fund)",
+      "url": "https://github.com/Psychoghost/Vanillara_android_port"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-updated",
+      "by": "agent",
+      "game": "tony-hawks-pro-skater-4",
+      "text": "THPS4-Port: Quellcode-Repository ergänzt, Hinweis aktualisiert",
+      "url": "https://github.com/UnknuwProjects/THPS4-Port-Android"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "project-added",
+      "by": "agent",
+      "text": "Neues Verzeichnis: obtainium-thor-pack (über 200 Apps für den Thor)",
+      "url": "https://github.com/Ethiquema/obtainium-thor-pack"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "hollow-knight",
+      "text": "Bildprüfung: 9 README-Bilder bestätigt (u. a. RetroDS, Fight Night, Hollow Knight), 4 Logos/App-Icons entfernt"
+    },
+    {
+      "date": "2026-11-26",
       "type": "screenshot-added",
       "by": "device",
       "game": "doom-64",

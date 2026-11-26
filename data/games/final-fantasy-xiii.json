@@ -1,0 +1,104 @@
+{
+  "id": "final-fantasy-xiii",
+  "title": "Final Fantasy XIII",
+  "franchise": "Final Fantasy",
+  "platforms": [
+    "PlayStation 3",
+    "Xbox 360",
+    "PC"
+  ],
+  "genre": "Rollenspiel",
+  "summary": "Square Enix’ Rollenspiel um Lightning und Cocoon; WhiteRecomp baut aus der eigenen Steam-Fassung eine native Fassung, auch als APK für Android-Handhelds.",
+  "versions": [
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2009)",
+      "type": "original",
+      "year": 2009,
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Final_Fantasy_XIII"
+        }
+      ]
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "port",
+      "year": 2010,
+      "platforms": [
+        "Xbox 360"
+      ],
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Final_Fantasy_XIII"
+        }
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC (2014)",
+      "type": "port",
+      "year": 2014,
+      "platforms": [
+        "PC"
+      ],
+      "note": "Steam-Fassung; Grundlage von WhiteRecomp.",
+      "links": [
+        {
+          "label": "Steam",
+          "url": "https://store.steampowered.com/app/292120/"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/ps4star/WhiteRecomp/releases"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "whiterecomp",
+      "name": "WhiteRecomp",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "PC (Steam)",
+      "runtime": "XRC (x86 → C), Cross-Compile zu Android ARM64",
+      "projects": [
+        "whiterecomp"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "requires": [
+        "Eigene, unveränderte Steam-Fassung von Final Fantasy XIII",
+        "Windows- oder Linux-PC zum Bauen der APK (Reiter Cross-Compile)",
+        "Android 10+ (arm64, Vulkan)"
+      ],
+      "benefit": "Native Neukompilierung statt PC-Laufzeit; Android-Voreinstellung (960×540, 60 FPS), Touch-Steuerung mit zwei Sticks, Zwischensequenzen über den Android-Decoder.",
+      "caveat": "Die APK baut man selbst am PC; das Android-Ziel ist neu, Leistung auf dem Thor nicht belegt.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

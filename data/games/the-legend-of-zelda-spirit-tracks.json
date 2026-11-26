@@ -47,8 +47,54 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/dguillot-gh/spirit-tracks-recomp/HEAD/docs/images/phone-21x9-minimap.jpg",
+          "caption": "21:9-Breitbild mit HD-Text und Minikarte auf einem Android-Handy",
+          "source": "https://github.com/dguillot-gh/spirit-tracks-recomp",
+          "credit": "Spirit Tracks Recomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "spirit-tracks-recomp",
+      "name": "Spirit Tracks Recomp",
+      "release": "nintendo-ds",
+      "kind": "recomp",
+      "edition": "Nintendo DS (USA 1.0)",
+      "runtime": "Statische Rekompilierung des ARM9-Codes, Rest aus melonDS",
+      "projects": [
+        "spirit-tracks-recomp"
+      ],
+      "features": [
+        "native-arm",
+        "widescreen",
+        "upscaling",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigener Dump der USA-Fassung 1.0 (nicht 1.1)",
+        "PC (Windows) zum Bauen; Android 8+ (arm64)"
+      ],
+      "benefit": "Breitbild bis 21:9, bis 4× Auflösung, HD-Text, Steuerkreuz und Analogstick ohne ROM-Patch, 12 Speicherstände, Minikarte des zweiten DS-Bildschirms in der Ecke.",
+      "caveat": "Nutzt auf dem Thor nicht den zweiten Bildschirm (Minikarte statt Dual Screen). Selbstgebaute APKs enthalten das Spiel – nicht weitergeben.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26",
   "wikidata": "Q868545",
   "wikipedia": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda%3A_Spirit_Tracks",
   "genre": "action-adventure game"

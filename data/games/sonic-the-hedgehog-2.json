@@ -121,15 +121,7 @@
           "url": "https://github.com/RSDKModding/RSDKv4-Decompilation/blob/HEAD/dependencies/android/README.md"
         }
       ],
-      "screenshots": [
-        {
-          "url": "https://raw.githubusercontent.com/RSDKModding/RSDKv4-Decompilation/HEAD/header.png?raw=true",
-          "caption": "Header",
-          "source": "https://github.com/RSDKModding/RSDKv4-Decompilation",
-          "credit": "RSDKv4-Decompilation",
-          "check": "readme"
-        }
-      ]
+      "screenshots": []
     }
   ],
   "updatedAt": "2026-11-21",

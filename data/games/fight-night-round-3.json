@@ -119,10 +119,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/fight-hud.jpg",
-          "caption": "Gatti and Ward trading punches with 30 seconds left in round one. The lower scre",
+          "caption": "Kampf oben, Rundenstatistik „In Your Corner“ auf dem unteren Bildschirm",
           "source": "https://github.com/Oxide-Shift/FightNight3OGX",
           "credit": "FightNight3OGX",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/Oxide-Shift/FightNight3OGX/HEAD/docs/screenshots/fight-setup.jpg",

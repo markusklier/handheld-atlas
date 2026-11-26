@@ -110,9 +110,48 @@
           "url": "https://www.openra.net/"
         }
       ]
+    },
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/Psychoghost/Vanillara_android_port/releases/latest"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "vanillara",
+      "name": "Vanillara",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "PC (1996), auch Freeware-Fassung",
+      "runtime": "EA-Quellcode (GPLv3) mit Android-Schicht aus ra-port",
+      "projects": [
+        "vanillara"
+      ],
+      "features": [
+        "native-arm",
+        "touch"
+      ],
+      "requires": [
+        "Eigene Red-Alert-Daten (Alliierten- und Sowjet-Disc, Installation oder Freeware-Fassung)",
+        "Android 6+ (arm64)"
+      ],
+      "benefit": "Originalspiel statt Nachbau: beide Kampagnen, Gefechte, Videos mit Ton, Counterstrike und Aftermath (ab v0.3.0); Touch-Steuerung.",
+      "caveat": "Nur debug-signierte APK, kein signiertes Release. Mit KI-Hilfe entstanden.",
+      "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q388225",
   "wikipedia": "https://en.wikipedia.org/wiki/Command_%26_Conquer%3A_Red_Alert",
   "cover": {

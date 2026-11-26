@@ -634,6 +634,13 @@
       "testedOn": [],
       "screenshots": [
         {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-lower.webp",
+          "caption": "Unterer Bildschirm: HUD-Kopf über der Amulett-Seite",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "source-verified"
+        },
+        {
           "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/launcher.webp",
           "caption": "The Dual Souls launcher with Hollow Knight and Silksong ready to play",
           "source": "https://github.com/Darkaxt/HollowKnightAndroid",
@@ -643,13 +650,6 @@
         {
           "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-play.webp",
           "caption": "Hollow Knight in Dirtmouth on the upper screen",
-          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
-          "credit": "HollowKnightAndroid",
-          "check": "readme"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-lower.webp",
-          "caption": "Hollow Knight lower screen: HUD header above the Charms page",
           "source": "https://github.com/Darkaxt/HollowKnightAndroid",
           "credit": "HollowKnightAndroid",
           "check": "readme"

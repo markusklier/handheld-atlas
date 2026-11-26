@@ -1,0 +1,89 @@
+{
+  "id": "naruto-shippuden-ultimate-ninja-5",
+  "title": "Naruto Shippuden: Ultimate Ninja 5",
+  "franchise": "Naruto",
+  "platforms": [
+    "PlayStation 2"
+  ],
+  "genre": "Kampfspiel",
+  "summary": "Letztes Ultimate-Ninja-Spiel für die PS2 (in Japan „Naruto Shippūden: Narutimate Accel 2“); Hidden Leaf bringt die europäische Fassung als statische Rekompilierung nativ auf Android – mit Online-Kämpfen.",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "note": "Der Android-Port braucht die europäische Fassung (SLES-55605).",
+      "links": [
+        {
+          "label": "Hidden Leaf",
+          "url": "https://github.com/dfdx047/HiddenLeaf"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/fight-zabuza.jpg",
+          "caption": "Kampf gegen Zabuza mit Touch-Steuerung auf einem Android-Handy",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/launcher-home.jpg",
+          "caption": "Launcher",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "readme"
+        }
+      ],
+      "links": [
+        {
+          "label": "Releases",
+          "url": "https://github.com/dfdx047/HiddenLeaf/releases"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "hiddenleaf",
+      "name": "Hidden Leaf",
+      "release": "playstation-2",
+      "kind": "recomp",
+      "edition": "PlayStation 2 (Europa, SLES-55605)",
+      "runtime": "PS2Recomp (MIPS → ARM64), GS über Vulkan",
+      "projects": [
+        "hiddenleaf"
+      ],
+      "features": [
+        "native-arm",
+        "controller",
+        "touch",
+        "online",
+        "widescreen",
+        "high-fps",
+        "mods"
+      ],
+      "requires": [
+        "Eigene ISO der europäischen Fassung (SLES-55605)",
+        "Android 10+ (arm64)"
+      ],
+      "benefit": "Kein emulierter Prozessor: eigener Launcher, Touch-Steuerung für das Spiel, Breitbild, 60/120-FPS-Interpolation, Mods (u. a. UN6 Alpha) und Online-Kämpfe (Räume, Schnellsuche, lokales WLAN). Laut Projekt getestet u. a. auf AYN Odin 2 Mini, Odin 3 und Retroid Pocket 5.",
+      "caveat": "Beta (v0.1.0-beta): manche Effekte weichen noch von der PS2 ab, der Leicht-Modus kann Effekte auslassen oder flackern. Fanprojekt.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}
