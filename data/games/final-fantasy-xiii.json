@@ -22,8 +22,13 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Final_Fantasy_XIII"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/56266fdf-3628-4038-b125-96b6d24e53f3"
         }
-      ]
+      ],
+      "reports": []
     },
     {
       "id": "xbox-360",
@@ -53,6 +58,111 @@
         {
           "label": "Steam",
           "url": "https://store.steampowered.com/app/292120/"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/15e53bf6-4020-4a11-af0e-cc8be3c6bcf8"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/d082bef4-d336-44da-b388-ff828529231d",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Really good performance with frame gen on flow mode. Just a heads up, it's important to grab the FF13Fix mod and run the 4GB patcher. Without it performance was bouncing between 40 and 60 FPS. You can download the mod it",
+          "votes": 3,
+          "date": "2026-07-12",
+          "settings": {
+            "Emulator Version": "v5.1.8",
+            "Using GameHub Lite": "True",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "960 x 544",
+            "Compatibility Layer": "proton10.0-arm64x-2",
+            "Translation Parameters": "Stability",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "turnip_v26.1.0_R3",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/aba8d011-12df-4b01-93b2-0fec6365d1a0",
+          "device": "Retroid Pocket 6",
+          "emulator": "GameHub",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Need the patch for this game to make it run",
+          "votes": 0,
+          "date": "2026-06-23",
+          "settings": {
+            "Emulator Version": "V6.0.9",
+            "Native Rendering+": "Disabled",
+            "Game Resolution": "1280 x 720",
+            "Compatibility Layer": "proton9.0-arm64x-3",
+            "Translation Parameters": "Game Preset",
+            "DInput Library": "Prefer Native",
+            "GPU Driver": "Turnip_v26.2.0_R3",
+            "Surface Format": "RGBA8",
+            "Audio Driver": "Pulse",
+            "VKD3D Version": "vkd3d-proton-2.14.1"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a541a0f0-81fd-40a0-9b20-064bfbde84e6",
+          "device": "AYN Thor Base",
+          "emulator": "GameHub",
+          "rating": "Great",
+          "ratingDe": "Sehr gut",
+          "rank": 2,
+          "summary": "Plays mostly above 30fps. Characters flicker in and out of existence when not inside a battle. Sometimes your character disapears. Save frequently! As for the launch options, since the launcher does not work; you have to",
+          "votes": 3,
+          "date": "2025-11-29"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/5b46f8d5-b2d1-4278-9884-3b16f84935f3",
+          "device": "AYN Thor Max",
+          "emulator": "GameHub",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Make sure to install gecko and mono. If you wait long enough, (up to 10mn) on the initial black screen with just a mouse cursor, the launcher should show up eventually. Testing was done with unmodified legit steam versio",
+          "votes": 3,
+          "date": "2026-01-22"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/a54acc70-bf3e-4fd7-867a-55f2f01a5e09",
+          "device": "AYN Thor Pro",
+          "emulator": "GameHub",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "MAKE SURE TO INSTALL GECKO AND MONO COMPONENTS Everything worked great, even got the settings screen that normally opens with FFXIII on steam. You can use fullscreen!",
+          "votes": 1,
+          "date": "2026-03-04"
+        }
+      ]
+    },
+    {
+      "id": "android-2015",
+      "name": "Android (2015)",
+      "type": "android",
+      "year": 2015,
+      "platforms": [
+        "Android"
+      ],
+      "links": [
+        {
+          "label": "Wikidata",
+          "url": "https://www.wikidata.org/wiki/Q390595"
         }
       ]
     }
@@ -100,5 +210,45 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q390595",
+  "website": "https://www.square-enix-games.com/en_EU/games/final-fantasy-xiii",
+  "playStore": "https://play.google.com/store/apps/details?id=jp.co.sqex.game.ff13",
+  "wikipedia": "https://en.wikipedia.org/wiki/Final_Fantasy_XIII",
+  "cover": {
+    "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292120/library_600x900_2x.jpg",
+    "source": "https://store.steampowered.com/app/292120/"
+  },
+  "screenshots": [
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_0cec13de14f2bfaecc1e66fe5ec2051e3acd0679.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_02d9c5fd6308948221b1bef8509dfd6000e7d7d9.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_c0dc1ccba0c459e86c03b13ab98121a9d4900075.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_9f9c7917deb65825d0f953e8435d30991081569b.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_b0b5fab50e290f1225a19d98b85458c7c6f4f27c.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    },
+    {
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292120/ss_129084b82f27e7d526bd2d91cde741e73885b786.1920x1080.jpg?t=1775176878",
+      "caption": "Originalspiel",
+      "source": "https://store.steampowered.com/app/292120/"
+    }
+  ]
 }

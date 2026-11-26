@@ -44,6 +44,37 @@
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_DS"
         }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/75233f59-1ce3-4568-9bbd-41538d10c478",
+          "device": "AYN Thor Max",
+          "emulator": "melonDS",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "OpenGL has flickering shadows Video: Software Renderer + LCD Filter Layout (Settings > Input > Layouts): - UP Screen: W_1118 x H_838; Aspect ratio 4:3 - Down Screen (stretched to the maximum): W_1240 x H_1080",
+          "votes": 0,
+          "date": "2026-04-01",
+          "settings": {
+            "Emulator Version": "0.6.1 by SapphireRhodonite",
+            "Renderer": "Software",
+            "Resolution Scale": "1",
+            "Texture Filtering": "True",
+            "Threaded Rendering": "True",
+            "JIT Enabled": "True",
+            "DSi Mode": "True",
+            "Audio Interpolation": "Linear",
+            "Average FPS": "60"
+          }
+        }
+      ],
+      "links": [
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/2b9fdf92-51d1-49ad-aea2-01ab7837a62d"
+        }
       ]
     }
   ],
@@ -63,6 +94,20 @@
           "source": "https://github.com/dguillot-gh/spirit-tracks-recomp",
           "credit": "Spirit Tracks Recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dguillot-gh/spirit-tracks-recomp/HEAD/docs/images/phone-21x9-cutscene.jpg",
+          "caption": "A Spirit Tracks cutscene at 21:9 on an Android phone: the scene fills the whole ",
+          "source": "https://github.com/dguillot-gh/spirit-tracks-recomp",
+          "credit": "Spirit Tracks Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dguillot-gh/spirit-tracks-recomp/HEAD/docs/images/phone-two-screen-joined.jpg",
+          "caption": "A Tower of Spirits room on an Android phone: the DS's top and bottom screens sho",
+          "source": "https://github.com/dguillot-gh/spirit-tracks-recomp",
+          "credit": "Spirit Tracks Recomp",
+          "check": "readme"
         }
       ],
       "links": [],

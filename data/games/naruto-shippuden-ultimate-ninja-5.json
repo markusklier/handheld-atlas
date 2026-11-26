@@ -21,6 +21,22 @@
           "label": "Hidden Leaf",
           "url": "https://github.com/dfdx047/HiddenLeaf"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     }
   ],
@@ -44,6 +60,34 @@
         {
           "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/launcher-home.jpg",
           "caption": "Launcher",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/banner.jpg",
+          "caption": "Hidden Leaf",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/fight-naruto.jpg",
+          "caption": "Naruto against Naruto, online",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/mode-select-online.jpg",
+          "caption": "Naruto Online in Mode Select",
+          "source": "https://github.com/dfdx047/HiddenLeaf",
+          "credit": "Hidden Leaf",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dfdx047/HiddenLeaf/HEAD/docs/images/online-panel.jpg",
+          "caption": "The online panel inside the game",
           "source": "https://github.com/dfdx047/HiddenLeaf",
           "credit": "Hidden Leaf",
           "check": "readme"
@@ -85,5 +129,22 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q15113418",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Naruto%20Shippuden%20-%20Ultimate%20Ninja%205%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

@@ -115,6 +115,34 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q332697"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/5314af14-24dc-43b1-b808-82da72a0866c"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0db85b7c-2ace-407e-8c6a-1d1eba495937",
+          "device": "Retroid Pocket 6",
+          "emulator": "RPCSX",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Plays great out of the box with latest ps3 firmware",
+          "votes": 1,
+          "date": "2026-08-26",
+          "settings": {
+            "Emulator Version": "v20260630-e8ae148-armv8-a",
+            "Renderer": "Vulkan",
+            "Resolution Scale": "100",
+            "Anisotropic Filter": "Automatic",
+            "Anti-Aliasing": "Disabled",
+            "Frame Limit": "Auto",
+            "SPU Threads": "2",
+            "SPU Block Size": "Safe"
+          }
         }
       ]
     },
@@ -177,6 +205,10 @@
         {
           "label": "Wikidata",
           "url": "https://www.wikidata.org/wiki/Q332697"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/f1e5e743-0572-4aa6-8526-df8848518970"
         }
       ],
       "cover": {
@@ -193,6 +225,32 @@
           "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS/master/Named_Titles/Terraria%20%28USA%29.png",
           "caption": "Titelbild",
           "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_3DS"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/2b1e9a1c-41a7-45e5-acaa-2dbd0b7fdf29",
+          "device": "AYN Thor Max",
+          "emulator": "Azahar",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "Inputting anything on the keyboard causes the game to hang, but the music continues to play. I was able to get it to save my character name by restarting the game, but creating a world hasn't worked for me yet. I saw a g",
+          "votes": 1,
+          "date": "2026-02-22",
+          "settings": {
+            "Emulator Version": "2124.3-vanilla",
+            "Graphics Driver": "[Mr. Purple Turnip] turnip_mrpurple_T24-toasted.adpkg|||turnip_mrpurple_T24-toas",
+            "Graphics API": "Vulkan",
+            "Enable SPIR-V shader generation": "True",
+            "Disable SPIR-V Optimizer": "True",
+            "Internal Resolution": "4",
+            "Linear Filtering": "True",
+            "Disk Shader Cache": "True",
+            "Texture Filter": "None",
+            "Stereoscopic 3D Mode": "Off"
+          }
         }
       ]
     },

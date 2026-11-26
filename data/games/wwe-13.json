@@ -53,6 +53,17 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/WWE_%2713"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/WWE%20%2713%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/WWE%20%2713%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
       ]
     }
   ],
@@ -99,5 +110,18 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q1339155",
+  "wikipedia": "https://en.wikipedia.org/wiki/WWE_%2713",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/WWE%20%2713%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/WWE%20%2713%20%28USA%29%20%28En%2CFr%2CEs%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+    }
+  ]
 }

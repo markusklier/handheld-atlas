@@ -119,7 +119,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://github.com/user-attachments/assets/a3e37932-4628-4ae8-a4e3-47f755d08a62",
+          "caption": "Image",
+          "source": "https://github.com/Psychoghost/Vanillara_android_port",
+          "credit": "Vanillara",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "Releases",

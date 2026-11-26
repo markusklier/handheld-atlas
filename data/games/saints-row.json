@@ -69,5 +69,11 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q2020055",
+  "wikipedia": "https://en.wikipedia.org/wiki/Saints_Row_%282006_video_game%29",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/59/Saints_Row_Box_Art.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Saints_Row_%282006_video_game%29"
+  }
 }

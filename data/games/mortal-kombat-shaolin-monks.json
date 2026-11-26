@@ -22,6 +22,22 @@
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Mortal_Kombat:_Shaolin_Monks"
         }
+      ],
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
       ]
     },
     {
@@ -57,6 +73,13 @@
           "source": "https://github.com/RanggaCasper/ShaolinMonks-Android",
           "credit": "ShaolinMonks-Android",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RanggaCasper/ShaolinMonks-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "caption": "Shaolin Monks",
+          "source": "https://github.com/RanggaCasper/ShaolinMonks-Android",
+          "credit": "ShaolinMonks-Android",
+          "check": "readme"
         }
       ],
       "links": [
@@ -94,5 +117,23 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q1313975",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mortal_Kombat%3A_Shaolin_Monks",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Mortal%20Kombat%20-%20Shaolin%20Monks%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

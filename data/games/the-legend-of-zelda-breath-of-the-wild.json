@@ -66,18 +66,6 @@
         },
         {
           "source": "EmuReady",
-          "url": "https://www.emuready.com/listings/b4bfa6ac-b035-4dbf-80bf-6088e29556a5",
-          "device": "AYN Thor Pro",
-          "emulator": "Eden",
-          "rating": "Perfect",
-          "ratingDe": "Perfekt",
-          "rank": 1,
-          "summary": "I have only played the start so I'm not sure about graphical bugs later on but I got it working at a locked 30fps docked mode once shaders were cached. Using a medium underclock in cluster tune, temperatures range from 6",
-          "votes": 7,
-          "date": "2026-08-06"
-        },
-        {
-          "source": "EmuReady",
           "url": "https://www.emuready.com/listings/d3be6fca-8930-4f5e-bfdd-b5152447424d",
           "device": "AYN Odin 2 Portal",
           "emulator": "Citron",
@@ -85,7 +73,7 @@
           "ratingDe": "Perfekt",
           "rank": 1,
           "summary": "Game completed. only a couple of issues. Sometimes water shader looks white but I found that any driver with vulkan 1.3.274 fixes that issue. In adition I used BOTW NX Optimizer mod to get 60fps but you will need to disa",
-          "votes": 7,
+          "votes": 8,
           "date": "2025-09-10",
           "settings": {
             "Emulator Version": "0.7",
@@ -99,6 +87,18 @@
             "Disk shader cache": "True",
             "Use async shaders": "True"
           }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/b4bfa6ac-b035-4dbf-80bf-6088e29556a5",
+          "device": "AYN Thor Pro",
+          "emulator": "Eden",
+          "rating": "Perfect",
+          "ratingDe": "Perfekt",
+          "rank": 1,
+          "summary": "I have only played the start so I'm not sure about graphical bugs later on but I got it working at a locked 30fps docked mode once shaders were cached. Using a medium underclock in cluster tune, temperatures range from 6",
+          "votes": 7,
+          "date": "2026-08-06"
         },
         {
           "source": "EmuReady",
@@ -205,7 +205,7 @@
           "ratingDe": "Sehr gut",
           "rank": 2,
           "summary": "These settings would also work for other devices using the Snapdragon 8 gen 2 with at least 12GB of RAM. RAM usage ranges from around 9GB-11GB. Average frame rate is around 34-40 fps with no drops below 30 fps including ",
-          "votes": 8,
+          "votes": 9,
           "date": "2026-04-02"
         }
       ],
@@ -230,6 +230,60 @@
         {
           "label": "Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+        },
+        {
+          "label": "EmuReady",
+          "url": "https://www.emuready.com/games/e1a96dc1-9dea-4a3e-8d0e-b91e12fe2595"
+        }
+      ],
+      "reports": [
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/e5e53361-bfd3-49a7-838f-ef0275635bbe",
+          "device": "AYN Odin 2",
+          "emulator": "Cemu",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Usual stutters during compilation of shaders and FPS is below 30 but certainly playable.",
+          "votes": 2,
+          "date": "2025-06-06"
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/0590c04c-9d29-4177-a5d4-29c8500ab2f2",
+          "device": "OnePlus 12R",
+          "emulator": "Cemu",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Game was running at around 18 FPS with the help of the graphic pack, lowered the Resolution and used FPS++ to set the games FPS limit to 20 so that the game can run smoothly. **The game's frames drop heavily in the villa",
+          "votes": 0,
+          "date": "2025-12-26",
+          "settings": {
+            "Emulator Version": "0.3",
+            "Driver Version": "Default System Driver",
+            "Resolution": "960x540",
+            "Graphics API": "Vulkan (Recommended)",
+            "VSync": "Off",
+            "Async Shader Compiler": "True",
+            "GPU Buffer Cache Accuracy": "Medium (Default)",
+            "Console Region": "Auto (Default)",
+            "Upscale Filter": "Bilinear",
+            "Audio API (PC)": "Cubeb (Mac/Linux)"
+          }
+        },
+        {
+          "source": "EmuReady",
+          "url": "https://www.emuready.com/listings/42686a70-1f25-4e76-9df2-c54ccab4a239",
+          "device": "Sony Xperia 1 V",
+          "emulator": "Cemu",
+          "rating": "Playable",
+          "ratingDe": "Spielbar",
+          "rank": 3,
+          "summary": "Average framerate is around 15fps (ranging from 13-17fps), even with graphics packs adjusting for performance. Internal resolution set to 1720x720 (21:9). Framerate was the same at 1280x720 (16:9). Framerate was unlocked",
+          "votes": 0,
+          "date": "2025-06-17"
         }
       ]
     }

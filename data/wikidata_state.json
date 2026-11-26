@@ -871,7 +871,12 @@
     "sea-dogs-to-each-his-own": "2026-11-24",
     "sonic-r": "2026-11-24",
     "spider-man-2": "2026-11-24",
-    "super-mario-rpg-2023": "2026-11-24"
+    "super-mario-rpg-2023": "2026-11-24",
+    "final-fantasy-xiii": "2026-11-26",
+    "mortal-kombat-shaolin-monks": "2026-11-26",
+    "naruto-shippuden-ultimate-ninja-5": "2026-11-26",
+    "saints-row": "2026-11-26",
+    "wwe-13": "2026-11-26"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1121,7 +1126,8 @@
     "Q3027757": "DigiBLAST",
     "Q1892535": "space flight simulation game",
     "Q110887639": "crowd-combat video game",
-    "Q113259250": "vampire video game"
+    "Q113259250": "vampire video game",
+    "Q105221690": "professional wrestling video game"
   },
   "factsVersion": {
     "1080-snowboarding": 3,
@@ -1964,6 +1970,11 @@
     "sea-dogs-to-each-his-own": 3,
     "sonic-r": 3,
     "spider-man-2": 3,
-    "super-mario-rpg-2023": 3
+    "super-mario-rpg-2023": 3,
+    "final-fantasy-xiii": 3,
+    "mortal-kombat-shaolin-monks": 3,
+    "naruto-shippuden-ultimate-ninja-5": 3,
+    "saints-row": 3,
+    "wwe-13": 3
   }
 }

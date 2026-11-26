@@ -599,6 +599,41 @@
           "source": "https://github.com/iosue-iulianus/retro-ds",
           "credit": "RetroDS",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/zelda-title-sword.webp",
+          "caption": "A Link to the Past",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-world-map.webp",
+          "caption": "A Link to the Past: the Light World map built from what Link has seen, clouds ov",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-items.webp",
+          "caption": "A Link to the Past: the items screen over the map, in the Ice Palace",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-dungeon-map.webp",
+          "caption": "A Link to the Past: a dungeon",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/super-metroid-samus.webp",
+          "caption": "Super Metroid: the SAMUS equipment page on the top screen",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
         }
       ],
       "links": [
