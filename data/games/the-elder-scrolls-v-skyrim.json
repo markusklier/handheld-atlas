@@ -552,7 +552,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/amhmeXVmcXdyNjloMaa8n_LQ8nZAezd26LZMOu5UJzQOBhE14ZotWjZRPnWt.png?format=pjpg&auto=webp&s=9493b91f48356b5d32ed0b50779affc2a54429b4",
+          "caption": "Testing Modded Skyrim anniversary edition 100+ mods with GameNative 1.1.0 Previe",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1ue73v8/",
+          "credit": "Reddit · u/JustANormalGu7",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -1135,6 +1143,20 @@
           "source": "https://www.youtube.com/watch?v=np1grtjFDdQ",
           "credit": "youtube.com",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://i.redd.it/kkvstih90c0f1.jpeg",
+          "caption": "I can't believe how well [REDACTED] games run on the Pocket Flip 2",
+          "source": "https://www.reddit.com/r/retroid/comments/1kkpiwn/",
+          "credit": "Reddit · u/Mechagouki1971",
+          "check": "reddit"
+        },
+        {
+          "url": "https://external-preview.redd.it/NHZoZ2ZjY2psdHlmMXu_tmj7mOWgzE8qYMVfJe11r3w4XbfgV1J7Z6EGQirX.png?format=pjpg&auto=webp&s=adfab855c89bfefc0cfce09ca5058dbb5b3778a1",
+          "caption": "Freezing of Skyrim during emulation. Eden.",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1omduu7/",
+          "credit": "Reddit · u/SeveralEfficiency934",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -1161,7 +1183,7 @@
       "checkedAt": "2026-11-08"
     }
   ],
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-26",
   "mods": [
     {
       "id": "unofficial-skyrim-special-edition-patch-ussep",

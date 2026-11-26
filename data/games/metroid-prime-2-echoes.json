@@ -325,7 +325,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/eXlyM2gwOG83Z3FmMTKTpZzk87_Jdem88-uE_8s-G8exHzDk2hg_WrY6GiTH.png?format=pjpg&auto=webp&s=def688adef4524f1a8ec3f7c255ca959732fbf78",
+          "caption": "Android version of Primehack Dolphin fork (Metroid Prime Trilogy with modern con",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/",
+          "credit": "Reddit · u/First_HistoryMan",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Releases",
@@ -344,7 +352,7 @@
       "checkedAt": "2026-11-11"
     }
   ],
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q2089035",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_2%3A_Echoes",
   "genre": "action-adventure game",

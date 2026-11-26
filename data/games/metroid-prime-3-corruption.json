@@ -149,7 +149,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/3g0wndnmbdeg1.png",
+          "caption": "Could someone else using Primehack on Android help me confirm an issue",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1qhgjhz/",
+          "credit": "Reddit · u/macroSnack",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/y3pf5bnmbdeg1.png",
+          "caption": "Could someone else using Primehack on Android help me confirm an issue",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1qhgjhz/",
+          "credit": "Reddit · u/macroSnack",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -172,7 +187,7 @@
       "checkedAt": "2026-11-10"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q1987193",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_3%3A_Corruption",
   "genre": "first-person shooter",

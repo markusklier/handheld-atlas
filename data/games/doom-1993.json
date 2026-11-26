@@ -639,7 +639,50 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/3x8cbl1jja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/58l3aa0mja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/e567tthnja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/ynmerm6pja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/pk9lidpqja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        },
+        {
+          "url": "https://i.redd.it/bwp9j41tja5g1.jpg",
+          "caption": "Tested more Android ports on RP5",
+          "source": "https://www.reddit.com/r/retroid/comments/1peijq0/",
+          "credit": "Reddit · u/DarkDigital",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -850,7 +893,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-26",
   "screenshots": [],
   "wikidata": "Q189784",
   "wikipedia": "https://en.wikipedia.org/wiki/Doom_%281993_video_game%29",

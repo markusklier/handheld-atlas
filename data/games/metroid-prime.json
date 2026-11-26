@@ -280,7 +280,22 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/eXlyM2gwOG83Z3FmMTKTpZzk87_Jdem88-uE_8s-G8exHzDk2hg_WrY6GiTH.png?format=pjpg&auto=webp&s=def688adef4524f1a8ec3f7c255ca959732fbf78",
+          "caption": "Android version of Primehack Dolphin fork (Metroid Prime Trilogy with modern con",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/",
+          "credit": "Reddit · u/First_HistoryMan",
+          "check": "reddit"
+        },
+        {
+          "url": "https://external-preview.redd.it/bHlyOGc5cGEycHpmMZKgodW0GNJ9_Qb4gx2ZP2haZqIIehfA1fhzjbpbbK6C.png?format=pjpg&auto=webp&s=a4a65c99aa7330954d70e43b1bc8e53b4b3cc896",
+          "caption": "Primehack (Metroid Prime Trilogy with proper fps controls) full setup and contro",
+          "source": "https://www.reddit.com/r/retroid/comments/1oq9ldc/",
+          "credit": "Reddit · u/Warm_Path",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -327,7 +342,7 @@
       "checkedAt": "2026-11-09"
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-26",
   "wikidata": "Q1765733",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime",
   "genre": "first-person shooter",
@@ -405,6 +420,15 @@
       "verification": "ai-unverified",
       "release": [
         "trilogy-2009"
+      ],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/bHlyOGc5cGEycHpmMZKgodW0GNJ9_Qb4gx2ZP2haZqIIehfA1fhzjbpbbK6C.png?format=pjpg&auto=webp&s=a4a65c99aa7330954d70e43b1bc8e53b4b3cc896",
+          "caption": "Primehack (Metroid Prime Trilogy with proper fps controls) full setup and contro",
+          "source": "https://www.reddit.com/r/retroid/comments/1oq9ldc/",
+          "credit": "Reddit · u/Warm_Path",
+          "check": "reddit"
+        }
       ]
     }
   ],

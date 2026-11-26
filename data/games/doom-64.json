@@ -369,6 +369,13 @@
           "source": "https://www.moddb.com/mods/doom-ce/downloads/doom-64-ce-400-full-download",
           "credit": "DOOM CE",
           "check": "ai-verified"
+        },
+        {
+          "url": "https://i.redd.it/2ov7pgxd5ltf1.png",
+          "caption": "Doom 64 EX+ 5.0 Released!",
+          "source": "https://www.reddit.com/r/Doom64/comments/1o00hoy/",
+          "credit": "Reddit · u/Immorpher",
+          "check": "reddit"
         }
       ],
       "links": [
@@ -527,7 +534,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-26",
   "cover": {
     "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Nintendo_64/master/Named_Boxarts/Doom%2064%20%28USA%29.png",
     "source": "https://github.com/libretro-thumbnails/Nintendo_-_Nintendo_64"

@@ -222,7 +222,15 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://external-preview.redd.it/YXp2cjF4NXl5NjlnMbAtxmViuKYU9WMgBWmyOGd_3K6ooOtf-Tl0lvXFEsep.png?format=pjpg&auto=webp&s=54285365df621913f857e30265593dc6574e3595",
+          "caption": "Metroid Prime 4 Beyond Android 60 Fps 1080p.",
+          "source": "https://www.reddit.com/r/EmulationOnAndroid/comments/1putemc/",
+          "credit": "Reddit · u/SCP-6190",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -279,7 +287,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-26",
   "tier": "basis",
   "wikidata": "Q30749509",
   "wikipedia": "https://en.wikipedia.org/wiki/Metroid_Prime_4%3A_Beyond",

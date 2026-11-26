@@ -165,7 +165,15 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://i.redd.it/yo8g6m4lkvph1.jpeg",
+          "caption": "Thoughts on the mobile port of TR Remastered?",
+          "source": "https://www.reddit.com/r/TombRaider/comments/1whvoxe/",
+          "credit": "Reddit · u/Mickey_mouse_2169",
+          "check": "reddit"
+        }
+      ],
       "links": [
         {
           "label": "Quelle",
@@ -272,7 +280,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-26",
   "summary": "Für Android-Handhelds ist die offizielle Android-Portierung von Tomb Raider I–III Remastered besonders interessant: Sie enthält The Lost Artefact und unterstützt Controller.",
   "cover": {
     "url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Tomb_Raider_III.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",

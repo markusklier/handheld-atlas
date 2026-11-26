@@ -1,6 +1,86 @@
 {
   "entries": [
     {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "doom-64",
+      "text": "1 Bilder aus Reddit für DOOM 64 CE über Delta Touch (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom64/comments/1o00hoy/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "tomb-raider-the-lost-artefact",
+      "text": "1 Bilder aus Reddit für Offizielle Android-App: Tomb Raider I–III Remastered (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/TombRaider/comments/1whvoxe/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "mighty-doom",
+      "text": "1 Bilder aus Reddit für Mighty Resurrection – gehosteter Community-Server (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/Doom/comments/1w670wr/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "the-elder-scrolls-v-skyrim",
+      "text": "3 Bilder aus Reddit für Special Edition über GameNative, Switch-Fassung über Eden – mit Skyrim-Erfahrungsberichten (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1ue73v8/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "tomb-raider",
+      "text": "1 Bilder aus Reddit für PC-Remaster über GameNative mit manuellem EXE-Start (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/GameNative/comments/1tk3t1b/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime-3-corruption",
+      "text": "2 Bilder aus Reddit für PrimeHack Android: Trilogy mit Dual-Stick-Steuerung (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1qhgjhz/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime-4-beyond",
+      "text": "1 Bilder aus Reddit für Switch-Fassung mit Eden und spielspezifischen Fehlerkorrekturen (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1putemc/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "doom-1993",
+      "text": "6 Bilder aus Reddit für PsyDoom über Classic Core / Engines Hub (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/retroid/comments/1peijq0/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime",
+      "text": "3 Bilder aus Reddit für PrimeHack Android – Trilogy mit Dual-Stick-Steuerung, Warm_Path – Retroid/Odin Button Prompts (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "device",
+      "game": "metroid-prime-2-echoes",
+      "text": "1 Bilder aus Reddit für PrimeHack-Android: Trilogy mit Dual-Stick-Steuerung (vom AYN Thor geladen, Prüfung folgt)",
+      "url": "https://www.reddit.com/r/EmulationOnAndroid/comments/1nmj01i/"
+    },
+    {
       "date": "2026-11-25",
       "type": "route-updated",
       "game": "pokemon-brilliant-diamond",
