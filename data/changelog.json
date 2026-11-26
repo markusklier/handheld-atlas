@@ -2,6 +2,78 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "chips-challenge",
+      "text": "Neues Spiel: Chip's Challenge – nativer Android-Port der Windows-Fassung mit Levelübersicht auf dem zweiten Bildschirm (KI-Fund)",
+      "url": "https://github.com/GASQBDUV/chips-challenge-android"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "call-of-duty-advanced-warfare",
+      "text": "Neues Spiel: Call of Duty: Advanced Warfare – Xbox-360-Recomp AW Recompiled, laut Projekt 115–119 FPS auf dem AYN Thor (KI-Fund)",
+      "url": "https://github.com/yassinsolim/aw-recomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "mafia-ii",
+      "text": "Neues Spiel: Mafia II – sehr früher nativer Recompilation-Port mafia2-re (KI-Fund)",
+      "url": "https://github.com/VinTeRuS/mafia2-re"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "scarface-the-world-is-yours",
+      "text": "Neues Spiel: Scarface: The World Is Yours – Xbox-Recomp LittleRecomp für Android (KI-Fund)",
+      "url": "https://github.com/erickgxbriel/littlerecomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "game-added",
+      "by": "agent",
+      "game": "age-of-empires-ii",
+      "text": "Neues Spiel: Age of Empires II – OpenAokHD mit Karte oben und Touch-Befehlsleiste unten (KI-Fund)",
+      "url": "https://github.com/Dreamaker12313/OpenAok-HD"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "pokemon-snap",
+      "text": "Neuer Spielweg: Snap64 Recomp (N64-Recomp, Android-Beta) (KI-Fund)",
+      "url": "https://github.com/JackandBeans/Snap64Recomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "route-added",
+      "by": "agent",
+      "game": "harvest-moon",
+      "text": "Neuer Spielweg: HarvestMoonSnesDecomp – nativer Port mit Pausenmenü auf dem unteren Bildschirm (KI-Fund)",
+      "url": "https://github.com/RodoLy/HarvestMoonSnesDecomp"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "removed",
+      "by": "agent",
+      "game": "castlevania-symphony-of-the-night",
+      "text": "RetroDS: Bilder anderer Spiele (A Link to the Past, Super Metroid) aus dem Spielweg entfernt",
+      "url": "https://github.com/iosue-iulianus/retro-ds"
+    },
+    {
+      "date": "2026-11-26",
+      "type": "screenshot-added",
+      "by": "agent",
+      "game": "a-link-to-the-past",
+      "text": "RetroDS: Dual-Screen-Bilder geprüft, fremde Super-Metroid-Bilder entfernt",
+      "url": "https://github.com/iosue-iulianus/retro-ds"
+    },
+    {
+      "date": "2026-11-26",
       "type": "route-updated",
       "game": "the-legend-of-zelda-echoes-of-wisdom",
       "text": "8 Community-Berichte von EmuReady für The Legend of Zelda: Echoes of Wisdom (Geräte mit dem Chip des AYN Thor)"

@@ -1,0 +1,100 @@
+{
+  "id": "scarface-the-world-is-yours",
+  "title": "Scarface: The World Is Yours",
+  "franchise": "Scarface",
+  "platforms": [
+    "PlayStation 2",
+    "Xbox",
+    "PC",
+    "Wii"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Fortsetzung des Films (2006); die Xbox-Fassung läuft als statische Rekompilierung nativ auf Android.",
+  "versions": [
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2006)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "year": 2006
+    },
+    {
+      "id": "xbox",
+      "name": "Xbox (2006)",
+      "type": "original",
+      "platforms": [
+        "Xbox"
+      ],
+      "year": 2006,
+      "note": "Grundlage von scarface-recomp und LittleRecomp."
+    },
+    {
+      "id": "pc",
+      "name": "PC (2006)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2006
+    },
+    {
+      "id": "wii",
+      "name": "Wii (2007)",
+      "type": "port",
+      "platforms": [
+        "Wii"
+      ],
+      "year": 2007
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/erickgxbriel/littlerecomp"
+        },
+        {
+          "label": "scarface-recomp (Grundlage)",
+          "url": "https://github.com/efm-games/scarface-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "littlerecomp",
+      "name": "LittleRecomp",
+      "release": "xbox",
+      "kind": "recomp",
+      "edition": "Original-Xbox (USA/Europa)",
+      "runtime": "scarface-recomp (XboxXBE-Recomp), Vulkan 1.1",
+      "projects": [
+        "littlerecomp"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller",
+        "upscaling"
+      ],
+      "requires": [
+        "Eigene Original-Xbox-Fassung (.iso/.xiso oder Ordner mit default.xbe)",
+        "Android 11+ (arm64) mit Vulkan 1.1"
+      ],
+      "benefit": "Einrichtung komplett auf dem Gerät, streamt direkt aus der ISO; Auflösungsskalierung mit Snapdragon GSR/FSR, experimentelle 60 FPS.",
+      "caveat": "Version 0.1.0-beta, nur auf einem Exynos-Gerät (Mali) getestet. PS2- und PC-Fassung funktionieren nicht. Die Recompilation selbst stammt von efm-games/scarface-recomp.",
+      "effort": "guided"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

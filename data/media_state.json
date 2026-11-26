@@ -365,7 +365,8 @@
     "https://raw.githubusercontent.com/huggy12/OpenRA_Androidport-PSX-controls-/HEAD/docs/combined-arms-menu.jpg",
     "https://raw.githubusercontent.com/Chizuui/Carbon-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "https://raw.githubusercontent.com/PotatoRecomp/Underground-2-Android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
-    "https://raw.githubusercontent.com/RSDKModding/RSDKv4-Decompilation/HEAD/header.png?raw=true"
+    "https://raw.githubusercontent.com/RSDKModding/RSDKv4-Decompilation/HEAD/header.png?raw=true",
+    "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/zelda-title-sword.webp"
   ],
   "wikipedia-article": {
     "danganronpa-2-goodbye-despair": "2026-11-09",
@@ -732,5 +733,27 @@
         "added": 0
       }
     }
+  },
+  "rejectedRouteImages": {
+    "a-link-to-the-past/retrods": [
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/super-metroid-map.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/super-metroid-samus.webp"
+    ],
+    "super-metroid/retrods": [
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-world-map.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-items.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-dungeon-map.webp"
+    ],
+    "castlevania-symphony-of-the-night/retrods": [
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-world-map.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-items.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/alttp-dungeon-map.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/super-metroid-map.webp",
+      "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/super-metroid-samus.webp"
+    ],
+    "hollow-knight/ai-hollow-knight-android-experimenteller-arm64-neuaufbau": [
+      "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/ss-play.webp",
+      "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/ss-lower.webp"
+    ]
   }
 }

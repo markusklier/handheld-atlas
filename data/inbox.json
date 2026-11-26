@@ -1,294 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://modrinth.com/mod/advanced-keystrokes",
-      "title": "Advanced Keystrokes",
-      "excerpt": "The Advanced Keystrokes Mod is an on-screen heads-up display (HUD) that tracks and shows your real-time keyboard and mouse inputs, including WASD/movement keys, the spacebar, left-click (LMB), right-click (RMB), and your clicks per second (CPS).",
-      "game": null,
-      "source": "modrinth",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/lukerb52/openmw",
-      "title": "lukerb52/openmw (Fork von OpenMW/openmw)",
-      "excerpt": "OpenMW is an open-source open-world RPG game engine that supports playing Morrowind. Main repo and issue tracker can be found here: https://gitlab.com/OpenMW/openmw/",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/hitomi101kami/melonDS-android",
-      "title": "hitomi101kami/melonDS-android (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "Android port of melonDS",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/hosseinbannaei/CozyDS",
-      "title": "hosseinbannaei/CozyDS (Fork von rafaelvcaetano/melonDS-android)",
-      "excerpt": "A fork of MelonDS with a unique purpose.",
-      "game": null,
-      "source": "github-fork",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/GASQBDUV/chips-challenge-android",
-      "title": "GASQBDUV/chips-challenge-android",
-      "excerpt": "Chip's Challenge (Windows 3.1) native Android port: own SDL2 engine, OPL3/MIDI music, second-screen map. No game data included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Omarjaziel/GDZGb-android-port-",
-      "title": "Omarjaziel/GDZGb-android-port-",
-      "excerpt": "Un Port no oficial del videojuego de Godzilla de la game boy(obvio ROM original)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/VinTeRuS/mafia2-re",
-      "title": "VinTeRuS/mafia2-re",
-      "excerpt": "Mafia II (2010) native Android port: static x86 recompilation, own Win32/D3D9 layer. Very early stage, bring your own game copy.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/JackandBeans/Snap64Recomp",
-      "title": "JackandBeans/Snap64Recomp",
-      "excerpt": "Native Windows, Linux, macOS and Android (beta) port of Pokémon Snap (N64) by static recompilation. Plays like the cartridge by default; every enhancement is opt-in. Bring your own dump; no game data is included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/erickgxbriel/littlerecomp",
-      "title": "erickgxbriel/littlerecomp",
-      "excerpt": "LittleRecomp: Native Android ARM64 + Vulkan 1.1 TBDR port of efm-games/scarface-recomp (BYOG, zero game assets included)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/sionlimitles-spec/xbox-recompile-apk",
-      "title": "sionlimitles-spec/xbox-recompile-apk",
-      "excerpt": "Scaffold launcher/toolchain untuk eksperimen recompile Xbox ke Android (tanpa data game)",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/HanVian-06/OH2Recomp",
-      "title": "HanVian-06/OH2Recomp",
-      "excerpt": "An open-source static recompilation project bringing an IOS ARM64 3D action-adventure title to Android natively. Built with C/C++. Requires your own .ipa file. No game data assets included",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/salchipotato78-hue/Fever-Recompiled",
-      "title": "salchipotato78-hue/Fever-Recompiled",
-      "excerpt": "Native static recompilation of rhythm heaven fever for android",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/popzol/heavenfall-recomp-android",
-      "title": "popzol/heavenfall-recomp-android",
-      "excerpt": "An android apk that generates a static recompilation and launches the game with 4U heavenfall mod",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/christianball123/peanuts-native-linux",
-      "title": "christianball123/peanuts-native-linux",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/APT-101/BeeKeePer",
-      "title": "APT-101/BeeKeePer",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/mbadaz/droidbridge",
-      "title": "mbadaz/droidbridge",
-      "excerpt": "Browse and transfer files between your Mac and Android phone over USB or Wi‑Fi. Finder drag & drop, QR-code wireless pairing, no phone app needed. Built on ADB with Electron + React.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/edfork1011/edge-swipe-plus",
-      "title": "edfork1011/edge-swipe-plus",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/LokeyCode3/lumaWall",
-      "title": "LokeyCode3/lumaWall",
-      "excerpt": "Native macOS live video wallpaper studio with Obsidian Aurora UI, auto border-crop, local storage, and companion Screen Saver.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/d3mocide/Oscilla",
-      "title": "d3mocide/Oscilla",
-      "excerpt": "Wireless discovery and field telemetry tool for the CardputerAdv",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
-      "title": "RodoLy/HarvestMoonSnesDecomp",
-      "excerpt": "Harvest Moon (SNES) decompiled to readable C, verified byte by byte — and playable natively from that C: launcher, widescreen 16:9, HM64-style pause menu, endless game, cheats, save states. ROM not included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Proginji2000/ayn-thor-wifi-fix",
-      "title": "Proginji2000/ayn-thor-wifi-fix",
-      "excerpt": "Runtime PM workaround for AYN Thor Wi-Fi scan lockups",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/yassinsolim/aw-recomp",
-      "title": "yassinsolim/aw-recomp",
-      "excerpt": "Call of Duty: Advanced Warfare (2014) natively on Android, recompiled from your own two Xbox 360 discs. Campaign, multiplayer and Exo Survival in one auto-updating app. No game files included.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Dreamaker12313/OpenAok-HD",
-      "title": "Dreamaker12313/OpenAok-HD",
-      "excerpt": "A free, open-source engine for Age of Empires II: HD Edition,，anytime and anywhere in your pocket.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/AaronCWacker/AI-UI-UX-JS",
-      "title": "AaronCWacker/AI-UI-UX-JS",
-      "excerpt": "🏭 All.AI (719+ Apps Strong) AI-UI-UX-JS Apps w/ ThreeJS - AI Pair Programming and Co-Evolution of AI in JS, py, svg, html, glb, mp3, mp4",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Manveer-Singh-99/Integrator",
-      "title": "Manveer-Singh-99/Integrator",
-      "excerpt": "High-performance direct USB-C CDC-NCM network bridge and dual-display extended screen streaming between macOS and Windows 11",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/pr0toboy/loom-mesh",
-      "title": "pr0toboy/loom-mesh",
-      "excerpt": "A mesh of persistent AI coding agents across several machines: filesystem-first JSONL bus, inotify push into tmux panes, ticket queue whose state is its directory, FastAPI dashboard and Matrix bridge.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/BrendanJvR-ux/defend-the-heart",
-      "title": "BrendanJvR-ux/defend-the-heart",
-      "excerpt": "Defend the Heart: an anatomy tower defence across five organs",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Topzic/sortlens-rust",
-      "title": "Topzic/sortlens-rust",
-      "excerpt": "Local-first photo culling and library for photographers. Pure Rust, an ArtCraft Craft App.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/ASHISDEY1998/aerofiles",
-      "title": "ASHISDEY1998/aerofiles",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/lagtastic-legends/zenodeck",
-      "title": "lagtastic-legends/zenodeck",
-      "excerpt": "⚡ 100% on-device WebAssembly media & document suite with 120Hz buttery smooth motion, zero touch delay, 5-tier back guards & native haptics. Web + Android APK.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/dhyankrishna24/linksync",
-      "title": "dhyankrishna24/linksync",
-      "excerpt": "Phone Link alternative with bidirectional clipboard syncing, notifications, calls, sms, screen mirroring, and photo gallery",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/JuanenRac/HYDRA-UMC-SDK",
-      "title": "JuanenRac/HYDRA-UMC-SDK",
-      "excerpt": "Shared versioned contracts, thin clients and conformance fixtures for services, UIs and CM5 adapters; it does not replace vendor APIs.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/Anomali1304/The_Logo",
-      "title": "Anomali1304/The_Logo",
-      "excerpt": "Edit and flash MTK logo.img",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/techtrainer20/Homeserver_2026",
-      "title": "techtrainer20/Homeserver_2026",
-      "excerpt": "",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/NormandinSystems/normandin-tunnel",
-      "title": "NormandinSystems/normandin-tunnel",
-      "excerpt": "Send files, folders and text between two devices with a one-time code. End-to-end encrypted, no accounts.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
-      "url": "https://github.com/h4lo-void/bageo-call",
-      "title": "h4lo-void/bageo-call",
-      "excerpt": "AI phone assistant for your real phone number: Gemini Live answers and makes calls through a spare rooted Android phone (Pixel) with your own SIM. Call screening, spam/scam call stalling, transcripts, summaries. Self-hosted, open source. 八哥 AI 接電話／代打電話",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-26"
-    },
-    {
       "url": "https://github.com/tszszszszszsz/flit",
       "title": "tszszszszszsz/flit",
       "excerpt": "",
@@ -332,14 +44,6 @@
       "url": "https://github.com/edwin-ma26/krypto-card-game",
       "title": "edwin-ma26/krypto-card-game",
       "excerpt": "Arithmetic card game for iOS with ranked real-time multiplayer. SwiftUI + Firebase (TypeScript Cloud Functions) + Kotlin/Compose Android port.",
-      "game": null,
-      "source": "github-search",
-      "foundAt": "2026-11-24"
-    },
-    {
-      "url": "https://github.com/phys-winner/pc_decomp_bs1",
-      "title": "phys-winner/pc_decomp_bs1",
-      "excerpt": "Experimental Android ARM64 port of BioShock Classic via static recompilation.",
       "game": null,
       "source": "github-search",
       "foundAt": "2026-11-24"
@@ -6844,11 +6548,41 @@
     "https://github.com/Plaguedoctor-sudo/talos--android",
     "https://github.com/Promenar/Infinity-Deck",
     "https://github.com/WinBlader/Vaulta-Smart-Expense-Tracker",
-    "https://github.com/AlexLX4773H/LXTrackList"
+    "https://github.com/AlexLX4773H/LXTrackList",
+    "https://github.com/APT-101/BeeKeePer",
+    "https://github.com/ASHISDEY1998/aerofiles",
+    "https://github.com/AaronCWacker/AI-UI-UX-JS",
+    "https://github.com/Anomali1304/The_Logo",
+    "https://github.com/BrendanJvR-ux/defend-the-heart",
+    "https://github.com/HanVian-06/OH2Recomp",
+    "https://github.com/JuanenRac/HYDRA-UMC-SDK",
+    "https://github.com/LokeyCode3/lumaWall",
+    "https://github.com/Manveer-Singh-99/Integrator",
+    "https://github.com/NormandinSystems/normandin-tunnel",
+    "https://github.com/Omarjaziel/GDZGb-android-port-",
+    "https://github.com/Proginji2000/ayn-thor-wifi-fix",
+    "https://github.com/Topzic/sortlens-rust",
+    "https://github.com/christianball123/peanuts-native-linux",
+    "https://github.com/d3mocide/Oscilla",
+    "https://github.com/dhyankrishna24/linksync",
+    "https://github.com/edfork1011/edge-swipe-plus",
+    "https://github.com/h4lo-void/bageo-call",
+    "https://github.com/hitomi101kami/melonDS-android",
+    "https://github.com/hosseinbannaei/CozyDS",
+    "https://github.com/lagtastic-legends/zenodeck",
+    "https://github.com/lukerb52/openmw",
+    "https://github.com/mbadaz/droidbridge",
+    "https://github.com/phys-winner/pc_decomp_bs1",
+    "https://github.com/popzol/heavenfall-recomp-android",
+    "https://github.com/pr0toboy/loom-mesh",
+    "https://github.com/salchipotato78-hue/Fever-Recompiled",
+    "https://github.com/sionlimitles-spec/xbox-recompile-apk",
+    "https://github.com/techtrainer20/Homeserver_2026",
+    "https://modrinth.com/mod/advanced-keystrokes"
   ],
   "agent": {
-    "lastRun": "2026-11-26T21:30Z",
-    "summary": "Abo #94 Just Cause 2 erledigt (Multiplayer-Mod, Zusammenfassung); 19 doppelte Reddit-Rückmeldungen (#50–#93, bereits übernommen) geschlossen. Aus 35 Leads: 5 neue Spiele (Mortal Kombat: Shaolin Monks, Naruto Shippuden: UN5 mit Hidden Leaf, Final Fantasy XIII mit WhiteRecomp, Saints Row, WWE '13), neue Wege für Isaac (Schoolbag, Dual Screen), Spirit Tracks, THPS 2x, Red Alert (Vanillara), Verzeichnis obtainium-thor-pack; 24 verworfen (u. a. Pokeborne-Wrapper, Showdown-App, Desktop-Launcher, allgemeine Thor-Werkzeuge). Dual-Screen-Suchlauf: RetroDS (ALttP, Super Metroid, SotN) und ShulkDS (Minecraft). Bildprüfung: 9 bestätigt, 4 entfernt; Reddit- und GitHub-Anhang-Bilder aus der Sitzung nicht ladbar. Warteschlange leer. Offen: Diptych (KH1/TTW, noch Testphase), BioShock-Lead (README nicht abrufbar), App schickt Reddit-Rückmeldungen mehrfach."
+    "lastRun": "2026-11-26T22:30Z",
+    "summary": "Keine offenen Abo-Anfragen, Warteschlange leer. Aus 37 Leads: 5 neue Spiele (Chip's Challenge mit Dual-Screen-Port, CoD Advanced Warfare, Mafia II, Scarface, Age of Empires II mit OpenAokHD) und neue Wege für Pokémon Snap (Snap64 Recomp) und Harvest Moon (Decomp mit Dual-Screen-Menü); 30 verworfen (u. a. Oceanhorn-2-Recomp wegen entschlüsselter IPA, Fever Recompiled nur Selbstbau mit privatem Repo, unveränderte melonDS-/OpenMW-Forks, Linux-Werkzeug Peanuts Native). Bildprüfung: 7 Bilder bestätigt, 14 fremde Bilder aus RetroDS-/Hollow-Knight-Wegen entfernt; media.py kennt jetzt abgelehnte Bilder je Spielweg (rejectedRouteImages), damit sie nicht zurückkommen. Externe Bildhosts (Google Play, YouTube, Reddit) aus der Sitzung nicht ladbar."
   },
   "watcher": {
     "lastRun": "2026-11-26T15:22:47Z",

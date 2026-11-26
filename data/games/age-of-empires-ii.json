@@ -1,0 +1,97 @@
+{
+  "id": "age-of-empires-ii",
+  "title": "Age of Empires II: The Age of Kings",
+  "franchise": "Age of Empires",
+  "platforms": [
+    "PC",
+    "PlayStation 2"
+  ],
+  "genre": "Echtzeitstrategie",
+  "summary": "Echtzeitstrategie-Klassiker (1999); aus den Daten der HD Edition läuft ein nativer Android-Port mit Karte oben und Touch-Befehlsleiste unten auf dem AYN Thor.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (1999)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 1999
+    },
+    {
+      "id": "playstation-2",
+      "name": "PlayStation 2 (2001)",
+      "type": "port",
+      "platforms": [
+        "PlayStation 2"
+      ],
+      "year": 2001
+    },
+    {
+      "id": "hd-edition",
+      "name": "HD Edition – PC (2013)",
+      "type": "remaster",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2013,
+      "note": "Steam-Neuauflage mit HD-Oberfläche und Erweiterungen; Grundlage von OpenAokHD."
+    },
+    {
+      "id": "definitive-edition",
+      "name": "Definitive Edition – PC (2019)",
+      "type": "remaster",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2019
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Dreamaker12313/OpenAok-HD"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "openaok-hd",
+      "name": "OpenAokHD",
+      "release": "hd-edition",
+      "kind": "source-port",
+      "edition": "Age of Empires II: HD Edition (2013)",
+      "runtime": "OpenAoK (C++20, SDL2)",
+      "projects": [
+        "openaok-hd"
+      ],
+      "features": [
+        "dual-screen",
+        "native-arm",
+        "touch",
+        "widescreen"
+      ],
+      "dualScreen": "Karte auf dem oberen, Touch-Befehlsleiste auf dem unteren Bildschirm",
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene Age of Empires II: HD Edition",
+        "PC mit Python zum Erzeugen des Datenpakets (ca. 1 GB)",
+        "APK selbst bauen (Android SDK/NDK)"
+      ],
+      "benefit": "31 Zivilisationen, Kampagnen von Age of Kings bis The Forgotten, native 16:9-Oberfläche (1688×768 auf dem Thor).",
+      "caveat": "Projekt mit chinesischem Schwerpunkt; im README keine fertige APK, nur Bau aus dem Quellcode. Kampagnen-Intros und manche Zufallskarten-Skripte unvollständig.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

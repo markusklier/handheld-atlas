@@ -1,0 +1,86 @@
+{
+  "id": "mafia-ii",
+  "title": "Mafia II",
+  "franchise": "Mafia",
+  "platforms": [
+    "PC",
+    "PlayStation 3",
+    "Xbox 360"
+  ],
+  "genre": "Action-Adventure",
+  "summary": "Open-World-Gangsterepos (2010); die PC-Fassung läuft in einem sehr frühen inoffiziellen Recompilation-Port nativ auf Android.",
+  "versions": [
+    {
+      "id": "pc",
+      "name": "PC (2010)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2010,
+      "note": "GOG-Fassung ist Grundlage des Android-Ports."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2010)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2010
+    },
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2010)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2010
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/VinTeRuS/mafia2-re"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "mafia2-re",
+      "name": "mafia2-re",
+      "release": "pc",
+      "kind": "recomp",
+      "edition": "GOG Mafia II (2010, nicht Definitive Edition)",
+      "runtime": "Statische x86-Recompilation, eigene Win32/D3D9-Schicht (SDL2, DXVK)",
+      "projects": [
+        "mafia2-re"
+      ],
+      "features": [
+        "native-arm",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigene GOG-Fassung von Mafia II (Ordner pc und edit)",
+        "PhysX-2.8.3-DLLs aus dem Redist-Ordner der eigenen Installation",
+        "Android 10+ (arm64), mindestens 8 GB RAM empfohlen"
+      ],
+      "benefit": "Ganzes Spiel inkl. DLC-Episoden startbar, mit situationsabhängiger Touch-Steuerung, Gamepad und Grafik-/Akku-Einstellungen.",
+      "caveat": "Laut Autor erster Testbuild: Abstürze, Grafikfehler und Ruckler erwartet. Nur auf einem Pixel 6 (Mali) getestet, dort ca. 35 FPS im Benchmark; Adreno-GPUs wie im Thor ungetestet.",
+      "effort": "experimental"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

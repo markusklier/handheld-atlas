@@ -1,0 +1,107 @@
+{
+  "id": "call-of-duty-advanced-warfare",
+  "title": "Call of Duty: Advanced Warfare",
+  "franchise": "Call of Duty",
+  "platforms": [
+    "Xbox 360",
+    "PlayStation 3",
+    "PC",
+    "Xbox One",
+    "PlayStation 4"
+  ],
+  "genre": "Ego-Shooter",
+  "summary": "Die Xbox-360-Fassung läuft als nativer Recomp-Port auf Android – Kampagne, Mehrspieler und Exo Survival; laut Projekt auf dem AYN Thor mit 115–119 FPS.",
+  "versions": [
+    {
+      "id": "xbox-360",
+      "name": "Xbox 360 (2014)",
+      "type": "original",
+      "platforms": [
+        "Xbox 360"
+      ],
+      "year": 2014,
+      "note": "Grundlage des Android-Recomp-Ports (Spiel- und Installations-Disc, USA/Europa)."
+    },
+    {
+      "id": "playstation-3",
+      "name": "PlayStation 3 (2014)",
+      "type": "original",
+      "platforms": [
+        "PlayStation 3"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "pc",
+      "name": "PC (2014)",
+      "type": "original",
+      "platforms": [
+        "PC"
+      ],
+      "year": 2014
+    },
+    {
+      "id": "xbox-one-ps4",
+      "name": "Xbox One / PlayStation 4 (2014)",
+      "type": "original",
+      "platforms": [
+        "Xbox One",
+        "PlayStation 4"
+      ],
+      "year": 2014
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/yassinsolim/aw-recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [
+        {
+          "device": "AYN Thor",
+          "result": "Kampagne 115–119 FPS (Induction, Fusion), Team Deathmatch mit 6 Bots 119 FPS",
+          "settings": "App-Standard",
+          "source": "https://github.com/yassinsolim/aw-recomp",
+          "date": "2026-11-24"
+        }
+      ],
+      "checkedAt": "2026-11-26",
+      "id": "aw-recomp",
+      "name": "AW Recompiled",
+      "release": "xbox-360",
+      "kind": "recomp",
+      "edition": "Xbox-360-Discs (USA/Europa, ohne Title Update)",
+      "runtime": "XenonRecomp, Vulkan",
+      "projects": [
+        "aw-recomp"
+      ],
+      "features": [
+        "high-fps",
+        "native-arm",
+        "online",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigene Xbox-360-Discs von Advanced Warfare (Spiel- und Installations-Disc) als .iso",
+        "Android 10+ mit Snapdragon 865 oder besser, 8 GB RAM empfohlen"
+      ],
+      "benefit": "Kampagne, Mehrspieler (System Link mit Bots, Matchsuche über den Server des Projekts) und Exo Survival als native App; der Spielcode wird ohne PC direkt auf dem Gerät gebaut (laut README ca. 13 Minuten).",
+      "caveat": "Jüngster und am wenigsten gespielter Port des Autors; Exo Survival, Exo Zombies und Split-Screen laut README mit Einschränkungen. Über 60 FPS sind Sonnenschatten aus.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

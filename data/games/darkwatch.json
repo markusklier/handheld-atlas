@@ -103,10 +103,10 @@
         },
         {
           "url": "https://raw.githubusercontent.com/CowKillers/darkwatch-android/HEAD/docs/screenshots/train.jpg",
-          "caption": "Train/mine corridor — dark interior, pipes, blood on the floor",
+          "caption": "Dunkler Zug-/Minengang mit Touch-Steuerung",
           "source": "https://github.com/CowKillers/darkwatch-android",
           "credit": "Darkwatch: Darker Edition – Android",
-          "check": "readme"
+          "check": "source-verified"
         }
       ],
       "links": [

@@ -1,0 +1,77 @@
+{
+  "id": "chips-challenge",
+  "title": "Chip's Challenge",
+  "franchise": "Chip's Challenge",
+  "platforms": [
+    "Atari Lynx",
+    "PC"
+  ],
+  "genre": "Puzzle",
+  "summary": "Klassisches Kachel-Puzzlespiel (1989); die Windows-Fassung läuft als inoffizieller nativer Android-Port, der auf Dual-Screen-Geräten das ganze Level auf dem zweiten Bildschirm zeigt.",
+  "versions": [
+    {
+      "id": "atari-lynx",
+      "name": "Atari Lynx (1989)",
+      "type": "original",
+      "platforms": [
+        "Atari Lynx"
+      ],
+      "year": 1989
+    },
+    {
+      "id": "pc",
+      "name": "PC (Windows 3.1)",
+      "type": "port",
+      "platforms": [
+        "PC"
+      ],
+      "note": "Fassung aus dem Microsoft Entertainment Pack; Grundlage des Android-Ports (CHIPS.EXE, CHIPS.DAT)."
+    }
+  ],
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/GASQBDUV/chips-challenge-android"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "cc-android-port",
+      "name": "Chip's Challenge for Android",
+      "release": "pc",
+      "kind": "source-port",
+      "edition": "Windows 3.1",
+      "runtime": "Eigene C-Engine auf SDL2",
+      "projects": [
+        "chips-challenge-android"
+      ],
+      "features": [
+        "dual-screen",
+        "live-map",
+        "native-arm",
+        "controller",
+        "touch"
+      ],
+      "dualScreen": "Ganzes Level mit den Original-Kacheln, Infotafel und Hinweis auf dem zweiten Bildschirm",
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene Dateien der Windows-Fassung (CHIPS.EXE, CHIPS.DAT, .WAV- und .MID-Dateien)"
+      ],
+      "benefit": "Nachbau der Spielregeln, liest Grafik und Level zur Laufzeit aus den eigenen Originaldateien; OPL3- oder MIDI-Musik, Touch-, Gamepad- und Tastatursteuerung.",
+      "caveat": "Laut README für den Retroid Pocket Duo abgestimmt; ob die Levelübersicht auf dem Thor-Unterbildschirm genauso erscheint, ist nicht belegt. APK-Bau aus dem Quellcode beschrieben, fertige Releases nicht geprüft.",
+      "effort": "advanced"
+    }
+  ],
+  "updatedAt": "2026-11-26"
+}

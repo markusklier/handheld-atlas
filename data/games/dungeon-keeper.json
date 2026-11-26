@@ -56,17 +56,17 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-level.jpg",
-          "caption": "Level 1 on a phone",
+          "caption": "Level 1 auf einem Android-Handy",
           "source": "https://github.com/K11MCH1/Keeper-Recomped",
           "credit": "Keeper Recomped",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-realm.jpg",
-          "caption": "The realm map",
+          "caption": "Weltkarte des Reichs",
           "source": "https://github.com/K11MCH1/Keeper-Recomped",
           "credit": "Keeper Recomped",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/K11MCH1/Keeper-Recomped/HEAD/docs/images/game-menu.jpg",

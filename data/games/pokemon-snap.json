@@ -47,8 +47,60 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "experimental",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/04-beach.png",
+          "caption": "Strand-Level mit surfendem Pikachu",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JackandBeans/Snap64Recomp"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "snap64recomp",
+      "name": "Snap64 Recomp",
+      "release": "nintendo-64",
+      "kind": "recomp",
+      "edition": "N64 (USA)",
+      "runtime": "N64: Recompiled, RT64 (Vulkan)",
+      "projects": [
+        "snap64recomp"
+      ],
+      "features": [
+        "widescreen",
+        "high-fps",
+        "native-arm",
+        "mods",
+        "touch",
+        "controller"
+      ],
+      "requires": [
+        "Eigene ROM der US-Fassung von Pokémon Snap",
+        "Android 10+ (arm64)"
+      ],
+      "benefit": "Spielt standardmäßig wie das Modul; Breitbild, höhere Bildrate, Gyro-Zielen, Foto-Export und Mods (Thunderstore) lassen sich einzeln zuschalten.",
+      "caveat": "Android-Fassung ist Beta: laut README nur auf einem Galaxy S25 Ultra und im Android-Emulator gelaufen, echte Gamepads noch ungetestet. Nur die US-ROM funktioniert.",
+      "effort": "easy"
+    }
+  ],
+  "updatedAt": "2026-11-26",
   "wikidata": "Q1705294",
   "wikipedia": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Snap",
   "genre": "photography game"

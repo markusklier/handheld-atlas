@@ -4169,6 +4169,90 @@
         "url": "https://github.com/NaiSenshin/ShulkDS/releases/tag/v1.0.3",
         "date": "2026-11-25"
       }
+    },
+    {
+      "id": "chips-challenge-android",
+      "name": "Chip's Challenge for Android",
+      "kind": "port",
+      "url": "https://github.com/GASQBDUV/chips-challenge-android",
+      "repo": "GASQBDUV/chips-challenge-android",
+      "description": "Inoffizieller, von Grund auf neu geschriebener nativer Android-Port der Windows-3.1-Fassung von Chip's Challenge (SDL2) mit Levelübersicht auf dem zweiten Bildschirm.",
+      "games": [
+        "chips-challenge"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "snap64recomp",
+      "name": "Snap64 Recomp",
+      "kind": "port",
+      "url": "https://github.com/JackandBeans/Snap64Recomp",
+      "repo": "JackandBeans/Snap64Recomp",
+      "description": "Statische Recompilation (N64: Recompiled, RT64) von Pokémon Snap (N64, US) für Windows, Linux, macOS und Android (Beta).",
+      "games": [
+        "pokemon-snap"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "harvestmoonsnesdecomp",
+      "name": "HarvestMoonSnesDecomp",
+      "kind": "port",
+      "url": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+      "repo": "RodoLy/HarvestMoonSnesDecomp",
+      "description": "Harvest Moon (SNES) vollständig in C neu geschrieben und nativ spielbar, u. a. als Android-APK mit Dual-Screen-Pausenmenü auf dem AYN Thor.",
+      "games": [
+        "harvest-moon"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "aw-recomp",
+      "name": "AW Recompiled",
+      "kind": "port",
+      "url": "https://github.com/yassinsolim/aw-recomp",
+      "repo": "yassinsolim/aw-recomp",
+      "description": "Statische Recompilation (XenonRecomp) von Call of Duty: Advanced Warfare (Xbox 360) als native Android-App; Spielcode wird aus den eigenen Discs auf dem Gerät gebaut.",
+      "games": [
+        "call-of-duty-advanced-warfare"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "mafia2-re",
+      "name": "mafia2-re",
+      "kind": "port",
+      "url": "https://github.com/VinTeRuS/mafia2-re",
+      "repo": "VinTeRuS/mafia2-re",
+      "description": "Nativer Android-Port von Mafia II (2010, GOG-Fassung) per statischer x86-Recompilation mit eigener Win32/D3D9-Schicht (SDL2, DXVK); sehr frühes Stadium.",
+      "games": [
+        "mafia-ii"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "littlerecomp",
+      "name": "LittleRecomp",
+      "kind": "port",
+      "url": "https://github.com/erickgxbriel/littlerecomp",
+      "repo": "erickgxbriel/littlerecomp",
+      "description": "Android-ARM64-Port (Vulkan) von efm-games/scarface-recomp, der statischen Recompilation der Xbox-Fassung von Scarface: The World Is Yours.",
+      "games": [
+        "scarface-the-world-is-yours"
+      ],
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "id": "openaok-hd",
+      "name": "OpenAokHD",
+      "kind": "port",
+      "url": "https://github.com/Dreamaker12313/OpenAok-HD",
+      "repo": "Dreamaker12313/OpenAok-HD",
+      "description": "Nativer Android-Port von Age of Empires II: HD Edition auf Basis von OpenAoK, mit Karte oben und Touch-Befehlsleiste unten auf Dual-Screen-Geräten wie dem AYN Thor.",
+      "games": [
+        "age-of-empires-ii"
+      ],
+      "checkedAt": "2026-11-26"
     }
   ]
 }

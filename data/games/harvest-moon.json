@@ -48,8 +48,67 @@
       ]
     }
   ],
-  "routes": [],
-  "updatedAt": "2026-11-08",
+  "routes": [
+    {
+      "targets": [
+        "android"
+      ],
+      "steps": [],
+      "status": "active",
+      "verification": "ai-unverified",
+      "testedOn": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/android_two_screens.png",
+          "caption": "Spiel oben, Pausenmenü mit Inventar auf dem unteren Bildschirm des AYN Thor",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "source-verified"
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/RodoLy/HarvestMoonSnesDecomp"
+        },
+        {
+          "label": "Release v1.0.0",
+          "url": "https://github.com/RodoLy/HarvestMoonSnesDecomp/releases/tag/v1.0.0"
+        }
+      ],
+      "reports": [],
+      "performance": [],
+      "checkedAt": "2026-11-26",
+      "id": "hm-snes-decomp",
+      "name": "HarvestMoonSnesDecomp",
+      "release": "snes",
+      "kind": "decomp",
+      "edition": "SNES (USA)",
+      "runtime": "Native C-Neuimplementierung",
+      "projects": [
+        "harvestmoonsnesdecomp"
+      ],
+      "features": [
+        "dual-screen",
+        "touch-inventory",
+        "widescreen",
+        "native-arm",
+        "touch",
+        "controller"
+      ],
+      "dualScreen": "Pausenmenü (Inventar, Herzen, Hof, Tiere) bleibt live auf dem unteren Bildschirm und wird per Touch bedient",
+      "dualScreenType": "integrated",
+      "requires": [
+        "Eigene ROM von Harvest Moon (USA)",
+        "Android 8+"
+      ],
+      "benefit": "Ganzes Spiel als lesbarer C-Code, Byte für Byte gegen das Original geprüft; fertige APK (v1.0.0), optionale Extras wie Breitbild, alles standardmäßig aus.",
+      "caveat": "App auf dem oberen Bildschirm starten, damit das Menü unten erscheint (laut README).",
+      "effort": "easy",
+      "version": "v1.0.0"
+    }
+  ],
+  "updatedAt": "2026-11-26",
   "wikidata": "Q7146181",
   "wikipedia": "https://en.wikipedia.org/wiki/Harvest_Moon_%28video_game%29",
   "genre": "simulation video game"

@@ -113,7 +113,7 @@
           "caption": "Erste Seite auf einem Android-Handy mit Bildschirmtasten",
           "source": "https://github.com/mxvisor/comix_zone-recomp",
           "credit": "comix_zone-recomp",
-          "check": "readme"
+          "check": "source-verified"
         },
         {
           "url": "https://raw.githubusercontent.com/mxvisor/comix_zone-recomp/HEAD/docs/screens.gif",

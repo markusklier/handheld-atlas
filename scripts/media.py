@@ -115,7 +115,10 @@ def fill_route_shots(fetch=get, fetch_json=None, only=None):
     """New README/release-note images for game-specific projects; also tops up routes that already have pictures.
     Images rejected by ai_vision.py (media_state.json → rejectedImages) never come back."""
     projects = {p['id']: p for p in read(DATA / 'projects.json')['projects']}
-    rejected = set(load_state().get('rejectedImages', []))
+    state = load_state()
+    rejected = set(state.get('rejectedImages', []))
+    # per route: images of another game from a shared multi-game README (e.g. RetroDS) – "<game>/<route>": [urls]
+    rejected_route = state.get('rejectedRouteImages', {})
     cache, added = {}, 0
     for f in sorted((DATA / 'games').glob('*.json')):
         if only is not None and f.stem not in only:
@@ -137,7 +140,8 @@ def fill_route_shots(fetch=get, fetch_json=None, only=None):
                     url, text = readme(repo, p.get('branch'), fetch)
                     imgs = readme_images(text, url, repo) if text else []
                     cache[key] = imgs + [i for i in release_images(repo, fetch_json) if i['url'] not in {x['url'] for x in imgs}]
-                new = [i for i in cache[key] if i['url'] not in have and i['url'] not in rejected]
+                skip = rejected | set(rejected_route.get(f"{g['id']}/{r['id']}", []))
+                new = [i for i in cache[key] if i['url'] not in have and i['url'] not in skip]
                 if not new:
                     continue
                 source = f"https://github.com/{repo}" + (f"/tree/{p['branch']}" if p.get('branch') else '')
