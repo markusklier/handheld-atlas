@@ -25,7 +25,23 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2001
+      "year": 2001,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "hd-edition",
@@ -56,7 +72,22 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/Dreamaker12313/OpenAok-HD/HEAD/docs/images/dlc-units.jpg",
+          "caption": "DLC 文明特色兵种",
+          "source": "https://github.com/Dreamaker12313/OpenAok-HD",
+          "credit": "OpenAokHD",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Dreamaker12313/OpenAok-HD/HEAD/docs/images/hd-intro.png",
+          "caption": "HD 开场过场",
+          "source": "https://github.com/Dreamaker12313/OpenAok-HD",
+          "credit": "OpenAokHD",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -93,5 +124,23 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q34852",
+  "wikipedia": "https://en.wikipedia.org/wiki/Age_of_Empires_II",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Age%20of%20Empires%20II%20-%20The%20Age%20of%20Kings%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28v1.20%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

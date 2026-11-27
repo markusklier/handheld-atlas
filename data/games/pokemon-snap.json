@@ -63,6 +63,41 @@
           "source": "https://github.com/JackandBeans/Snap64Recomp",
           "credit": "Snap64 Recomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/01s-title-118.png",
+          "caption": "The title screen",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/03-course-select.png",
+          "caption": "Course select",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/06-volcano.png",
+          "caption": "The Volcano: Charizard",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/16-oak-check-close.png",
+          "caption": "Oak",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/HEAD/docs/screenshots/09-graphics.png",
+          "caption": "The port",
+          "source": "https://github.com/JackandBeans/Snap64Recomp",
+          "credit": "Snap64 Recomp",
+          "check": "readme"
         }
       ],
       "links": [

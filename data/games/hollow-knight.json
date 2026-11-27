@@ -660,6 +660,20 @@
           "source": "https://github.com/Darkaxt/HollowKnightAndroid",
           "credit": "HollowKnightAndroid",
           "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-page-inventory.webp",
+          "caption": "Hollow Knight lower screen: Inventory page",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Darkaxt/HollowKnightAndroid/HEAD/docs/screenshots/hk-page-charms.webp",
+          "caption": "Hollow Knight lower screen: Charms page",
+          "source": "https://github.com/Darkaxt/HollowKnightAndroid",
+          "credit": "HollowKnightAndroid",
+          "check": "readme"
         }
       ],
       "links": [

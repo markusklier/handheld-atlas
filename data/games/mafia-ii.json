@@ -82,5 +82,12 @@
       "effort": "experimental"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q59154",
+  "website": "https://mafiagame.com/mafia-2/",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mafia_II",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/0/0d/Mafia_II_Boxart.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Mafia_II"
+  }
 }

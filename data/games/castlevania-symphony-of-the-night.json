@@ -183,6 +183,27 @@
           "source": "https://github.com/iosue-iulianus/retro-ds",
           "credit": "RetroDS",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/sotn-menu.webp",
+          "caption": "Symphony of the Night: the game",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/game-list.webp",
+          "caption": "RetroDS",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/iosue-iulianus/retro-ds/HEAD/docs/media/pause-menu.webp",
+          "caption": "RetroDS",
+          "source": "https://github.com/iosue-iulianus/retro-ds",
+          "credit": "RetroDS",
+          "check": "readme"
         }
       ],
       "links": [

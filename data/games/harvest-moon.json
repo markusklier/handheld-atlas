@@ -64,6 +64,41 @@
           "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
           "credit": "HarvestMoonSnesDecomp",
           "check": "source-verified"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/android_touch.png",
+          "caption": "Touch controls",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/launcher.png",
+          "caption": "Launcher",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/options.png",
+          "caption": "Options",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/controls.png",
+          "caption": "Controls",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RodoLy/HarvestMoonSnesDecomp/HEAD/docs/screenshots/gamepad.png",
+          "caption": "Gamepad",
+          "source": "https://github.com/RodoLy/HarvestMoonSnesDecomp",
+          "credit": "HarvestMoonSnesDecomp",
+          "check": "readme"
         }
       ],
       "links": [

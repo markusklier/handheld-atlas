@@ -236,7 +236,29 @@
       "status": "experimental",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/cod4-recomp/HEAD/docs/images/readme/cod4-setup-1.png",
+          "caption": "Step 1 of the setup: Pick your disc image, with the .iso found on the device and",
+          "source": "https://github.com/yassinsolim/cod4-recomp",
+          "credit": "CoD4 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/cod4-recomp/HEAD/docs/images/readme/cod4-setup-2.png",
+          "caption": "Step 2 of the setup: Build the game, with one progress bar",
+          "source": "https://github.com/yassinsolim/cod4-recomp",
+          "credit": "CoD4 Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/cod4-recomp/HEAD/docs/images/readme/cod4-setup-3.png",
+          "caption": "The setup's last screen: Ready to play, with the button Play",
+          "source": "https://github.com/yassinsolim/cod4-recomp",
+          "credit": "CoD4 Recompiled",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",

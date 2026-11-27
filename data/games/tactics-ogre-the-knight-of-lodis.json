@@ -79,7 +79,50 @@
       "version": null,
       "effort": "easy",
       "status": "active",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/ruins-original.png",
+          "caption": "Ruins by the water, Original preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/ruins-enhanced.png",
+          "caption": "Ruins by the water, Enhanced preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/rain-town-original.png",
+          "caption": "A town in the rain, Original preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/rain-town-enhanced.png",
+          "caption": "A town in the rain, Enhanced preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/castle-original.png",
+          "caption": "Inside the castle, Original preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lucdubois/KnightOfLodisRecomp/HEAD/docs/screenshots/castle-enhanced.png",
+          "caption": "Inside the castle, Enhanced preset",
+          "source": "https://github.com/lucdubois/KnightOfLodisRecomp",
+          "credit": "Knight of Lodis Recomp",
+          "check": "readme"
+        }
+      ],
       "performance": [],
       "links": [
         {

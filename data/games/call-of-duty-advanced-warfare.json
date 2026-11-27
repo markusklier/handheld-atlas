@@ -60,7 +60,29 @@
       "status": "active",
       "verification": "ai-unverified",
       "testedOn": [],
-      "screenshots": [],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/aw-recomp/HEAD/docs/images/readme/aw-setup-1.png",
+          "caption": "Step 1 of the setup: Pick your two disc images",
+          "source": "https://github.com/yassinsolim/aw-recomp",
+          "credit": "AW Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/aw-recomp/HEAD/docs/images/readme/aw-setup-2.png",
+          "caption": "Step 2 of the setup: Build the game, with one progress bar",
+          "source": "https://github.com/yassinsolim/aw-recomp",
+          "credit": "AW Recompiled",
+          "check": "readme"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yassinsolim/aw-recomp/HEAD/docs/images/readme/aw-setup-3.png",
+          "caption": "The setup's last screen: Ready to play, with the button Play",
+          "source": "https://github.com/yassinsolim/aw-recomp",
+          "credit": "AW Recompiled",
+          "check": "readme"
+        }
+      ],
       "links": [
         {
           "label": "GitHub",
@@ -103,5 +125,11 @@
       "effort": "advanced"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q16743064",
+  "wikipedia": "https://en.wikipedia.org/wiki/Call_of_Duty%3A_Advanced_Warfare",
+  "cover": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Advanced_Warfare.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "https://en.wikipedia.org/wiki/Call_of_Duty%3A_Advanced_Warfare"
+  }
 }

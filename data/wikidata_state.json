@@ -876,7 +876,12 @@
     "mortal-kombat-shaolin-monks": "2026-11-26",
     "naruto-shippuden-ultimate-ninja-5": "2026-11-26",
     "saints-row": "2026-11-26",
-    "wwe-13": "2026-11-26"
+    "wwe-13": "2026-11-26",
+    "age-of-empires-ii": "2026-11-27",
+    "call-of-duty-advanced-warfare": "2026-11-27",
+    "chips-challenge": "2026-11-27",
+    "mafia-ii": "2026-11-27",
+    "scarface-the-world-is-yours": "2026-11-27"
   },
   "labels": {
     "Q846224": "fighting game",
@@ -1127,7 +1132,9 @@
     "Q1892535": "space flight simulation game",
     "Q110887639": "crowd-combat video game",
     "Q113259250": "vampire video game",
-    "Q105221690": "professional wrestling video game"
+    "Q105221690": "professional wrestling video game",
+    "Q753657": "Atari Lynx",
+    "Q11084095": "historical video game"
   },
   "factsVersion": {
     "1080-snowboarding": 3,
@@ -1975,6 +1982,11 @@
     "mortal-kombat-shaolin-monks": 3,
     "naruto-shippuden-ultimate-ninja-5": 3,
     "saints-row": 3,
-    "wwe-13": 3
+    "wwe-13": 3,
+    "age-of-empires-ii": 3,
+    "call-of-duty-advanced-warfare": 3,
+    "chips-challenge": 3,
+    "mafia-ii": 3,
+    "scarface-the-world-is-yours": 3
   }
 }

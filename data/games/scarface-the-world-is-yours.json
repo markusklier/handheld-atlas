@@ -18,7 +18,23 @@
       "platforms": [
         "PlayStation 2"
       ],
-      "year": 2006
+      "year": 2006,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+          "caption": "PlayStation 2-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+        }
+      ]
     },
     {
       "id": "xbox",
@@ -46,7 +62,23 @@
       "platforms": [
         "Wii"
       ],
-      "year": 2007
+      "year": 2007,
+      "cover": {
+        "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Boxarts/Scarface_%20The%20World%20Is%20Yours%20%28USA%29.png",
+        "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+      },
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Snaps/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+          "caption": "Wii-Fassung",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/libretro-thumbnails/Nintendo_-_Wii/master/Named_Titles/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+          "caption": "Titelbild",
+          "source": "https://github.com/libretro-thumbnails/Nintendo_-_Wii"
+        }
+      ]
     }
   ],
   "routes": [
@@ -96,5 +128,23 @@
       "effort": "guided"
     }
   ],
-  "updatedAt": "2026-11-26"
+  "updatedAt": "2026-11-26",
+  "wikidata": "Q1139501",
+  "wikipedia": "https://en.wikipedia.org/wiki/Scarface%3A_The_World_Is_Yours",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+    "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+  },
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Snaps/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+      "caption": "Originalspiel",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Titles/Scarface%20-%20The%20World%20Is%20Yours%20%28USA%29.png",
+      "caption": "Titelbild",
+      "source": "https://github.com/libretro-thumbnails/Sony_-_PlayStation_2"
+    }
+  ]
 }

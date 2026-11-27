@@ -1,6 +1,286 @@
 {
   "leads": [
     {
+      "url": "https://github.com/Chiispiitas/PitahayaDS",
+      "title": "Chiispiitas/PitahayaDS (Fork von rafaelvcaetano/melonDS-android)",
+      "excerpt": "Unofficial melonDS Android fork with Potato mode and controller-to-touch mapping",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/okkyun7-cmd/eden-duo",
+      "title": "okkyun7-cmd/eden-duo (Fork von igawa6/eden-duo)",
+      "excerpt": "",
+      "game": null,
+      "source": "github-fork",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/eggbility-collab/postal2-android-port",
+      "title": "eggbility-collab/postal2-android-port",
+      "excerpt": "Community development workspace exploring a lawful Android compatibility approach for POSTAL 2. No proprietary game assets or binaries.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/leonvb/revc-android-port-evolved",
+      "title": "leonvb/revc-android-port-evolved",
+      "excerpt": "Reverse engineering the classic GTA Vice City game",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/phys-winner/pc_decomp_pk",
+      "title": "phys-winner/pc_decomp_pk",
+      "excerpt": "Experimental Painkiller Black Edition port for Android ARM64 through static x86 recompilation.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/retrogameworld/Forgotten-Sands-Android-Recomp",
+      "title": "retrogameworld/Forgotten-Sands-Android-Recomp",
+      "excerpt": "Unofficial native Android port of Prince of Persia: The Forgotten Sands (Xbox 360) by static recompilation - bring your own disc",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/almost-drowned-rat/Grand-Theft-Auto-2-Recompiled-Android",
+      "title": "almost-drowned-rat/Grand-Theft-Auto-2-Recompiled-Android",
+      "excerpt": "Android version of Grand Theft Auto 2 Recompiled",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/mdalifhossain69/ROTTR-Recompiled-Android",
+      "title": "mdalifhossain69/ROTTR-Recompiled-Android",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/almost-drowned-rat/Grand-Theft-Auto-2-Recompiled",
+      "title": "almost-drowned-rat/Grand-Theft-Auto-2-Recompiled",
+      "excerpt": "GTA 2 (PC, 2004 freeware) statically recompiled for Linux, Windows and Android - Vulkan, no game data included",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/ydorb-design/trails-sky-companion",
+      "title": "ydorb-design/trails-sky-companion",
+      "excerpt": "Dual-screen companion for Trails in the Sky 2nd Chapter (Eden Duo / Peanuts)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/swagedencool/eden-pokelink",
+      "title": "swagedencool/eden-pokelink",
+      "excerpt": "Pokémon avec tes potes, sans serveur, simplifié, sans téléchargement de logiciel chelou. J'aime pas le délire de télécharger des jeux ou des applis faites à l'IA : là, tout tourne sur le browser, t'as pas de jeux ou de software à download, et tu peux même faire ton propre random de ton côté.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/swagedencool/eden64",
+      "title": "swagedencool/eden64",
+      "excerpt": "Émulateur Nintendo 64 directement sur browser : pas besoin de télécharger quoi que ce soit, juste ouvre le site et fais-toi kiffer.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/keithhb33/Speedrun-Record-Watch",
+      "title": "keithhb33/Speedrun-Record-Watch",
+      "excerpt": "Newly verified speedrun.com #1 records tracker",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/karthikeyakolli/DroidBridge",
+      "title": "karthikeyakolli/DroidBridge",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/NaustudentX18/r36s-companion",
+      "title": "NaustudentX18/r36s-companion",
+      "excerpt": "USB OTG smart companion and auxiliary hardware HUD for handheld Linux devices",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/IGUNUBLUE/My-HyDE-dots",
+      "title": "IGUNUBLUE/My-HyDE-dots",
+      "excerpt": "My hyprland configurations with base HyDE project",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/tommiperfect31/pokedaisy",
+      "title": "tommiperfect31/pokedaisy",
+      "excerpt": "Play Pokémon Game Boy, GBC, GBA and DS ROMs and hacks with a live companion, dual-screen or single-screen HUD, quick menu, and free open-source tools.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/gamingnews5/awesome-decomp-games",
+      "title": "gamingnews5/awesome-decomp-games",
+      "excerpt": "Rated, auto-refreshed list of decompiled, recompiled & reverse-engineered games: decomps, static recomps, source ports, engine remakes, browser ports.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/shipoclu/thor-kernel",
+      "title": "shipoclu/thor-kernel",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/shipoclu/thor-ubuntu",
+      "title": "shipoclu/thor-ubuntu",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Dekirai/DW4_PC",
+      "title": "Dekirai/DW4_PC",
+      "excerpt": "Digimon World 4 for PC with seamless online multiplayer",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/samuelgoestomars2607/USBCD",
+      "title": "samuelgoestomars2607/USBCD",
+      "excerpt": "USBCD turns an Android tablet into a low-latency USB-C second monitor for Windows 11. Touch and S Pen control Windows, the tablet speakers work as an audio output and the front camera as a webcam. It includes a Rust-based Windows app with an all-in-one installer and an Android companion app.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Todd0042/superstore-saga",
+      "title": "Todd0042/superstore-saga",
+      "excerpt": "Superstore Saga: Escape From MegaMart - Satirical hands-free corporate survival voice JRPG for Android (VoiceRPG Engine)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/MehmetCanWT/sonata",
+      "title": "MehmetCanWT/sonata",
+      "excerpt": "Cross-platform music player for Android, Linux Desktop & Terminal — powered by Rust. Liquid Glass UI, animated covers, word-synced lyrics, Hi-Fi audio & offline downloads.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/jryang2026-code/MenuBarHome",
+      "title": "jryang2026-code/MenuBarHome",
+      "excerpt": "macOS / Windows menu bar control for Xiaomi Mijia and Home Assistant devices (formerly MenuBarMijia)",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Zijian-Ni/awesome-ai-agents-2026",
+      "title": "Zijian-Ni/awesome-ai-agents-2026",
+      "excerpt": "🤖 A curated list of AI Agent frameworks, tools, platforms, and resources for 2026 — the year agents went mainstream",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/spudhero/NetVplayer",
+      "title": "spudhero/NetVplayer",
+      "excerpt": "Native macOS media player for user-owned content. Open-source SwiftUI shell and signed Provider extensions. Apple Silicon, macOS 14+.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/AhmadHassan-BTed/Jantt",
+      "title": "AhmadHassan-BTed/Jantt",
+      "excerpt": "Create interactive Gantt charts with AI : no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, React/Vue/Svelte/Python/MCP.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/dedy45/gososmed-mobile-agent",
+      "title": "dedy45/gososmed-mobile-agent",
+      "excerpt": "Agent GoSosmed BYOD mobile agent: APK Android (AccessibilityService) connect outbound ke GoSosmed agenthub untuk kontrol HP real tanpa adb/PC",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Amnibro/Amni-Drive",
+      "title": "Amnibro/Amni-Drive",
+      "excerpt": "Open-source Android Auto replacement over USB — resizable car cockpit, live embedded Amni-Map, packaged Amni Apps, and built-in SHA-256 OTA auto-updater.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Todd0042/voice-rpg-engine",
+      "title": "Todd0042/voice-rpg-engine",
+      "excerpt": "Voice-controlled RPG engine for Android with real-time speech recognition, ATB combat, dynamic acoustics, and screenless Pocket Mode",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/audiogravity/audiogravity.site",
+      "title": "audiogravity/audiogravity.site",
+      "excerpt": "Audiogravity : Your streamer is your source. Audiogravity is the conductor. MPD, Roon, HQPlayer, AirPlay, UPnP, internet radio — every player, every source, down to DSD and Hi-Res PCM. Audiogravity coordinates each component of your stack, from the RT kernel to your Qobuz and Tidal libraries, without replacing any of them.",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Mohammedsayeed-builder/NEXFLEX-tui",
+      "title": "Mohammedsayeed-builder/NEXFLEX-tui",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/motherskitchenblr2/TERMUX-SENTINEL-CLI",
+      "title": "motherskitchenblr2/TERMUX-SENTINEL-CLI",
+      "excerpt": "Doctor for Terminal Memory and Directories Issue",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
+      "url": "https://github.com/Bastiengry/bg-cyber-ot",
+      "title": "Bastiengry/bg-cyber-ot",
+      "excerpt": "",
+      "game": null,
+      "source": "github-search",
+      "foundAt": "2026-11-27"
+    },
+    {
       "url": "https://github.com/tszszszszszsz/flit",
       "title": "tszszszszszsz/flit",
       "excerpt": "",
@@ -6585,9 +6865,9 @@
     "summary": "Keine offenen Abo-Anfragen, Warteschlange leer. Aus 37 Leads: 5 neue Spiele (Chip's Challenge mit Dual-Screen-Port, CoD Advanced Warfare, Mafia II, Scarface, Age of Empires II mit OpenAokHD) und neue Wege für Pokémon Snap (Snap64 Recomp) und Harvest Moon (Decomp mit Dual-Screen-Menü); 30 verworfen (u. a. Oceanhorn-2-Recomp wegen entschlüsselter IPA, Fever Recompiled nur Selbstbau mit privatem Repo, unveränderte melonDS-/OpenMW-Forks, Linux-Werkzeug Peanuts Native). Bildprüfung: 7 Bilder bestätigt, 14 fremde Bilder aus RetroDS-/Hollow-Knight-Wegen entfernt; media.py kennt jetzt abgelehnte Bilder je Spielweg (rejectedRouteImages), damit sie nicht zurückkommen. Externe Bildhosts (Google Play, YouTube, Reddit) aus der Sitzung nicht ladbar."
   },
   "watcher": {
-    "lastRun": "2026-11-26T15:22:47Z",
-    "newLeads": 39,
-    "newEvents": 40
+    "lastRun": "2026-11-27T15:09:59Z",
+    "newLeads": 35,
+    "newEvents": 35
   },
   "aiResearch": {
     "tomb-raider": "2026-11-08",
